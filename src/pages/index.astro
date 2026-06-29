@@ -1,17 +1,31 @@
 ---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Clients from '../components/Clients.astro';
+import About from '../components/About.astro';
+import Services from '../components/Services.astro';
+import WhyChooseUs from '../components/WhyChooseUs.astro';
+import Portfolio from '../components/Portfolio.astro';
+import Testimonials from '../components/Testimonials.tsx';
+import FAQ from '../components/FAQ.astro';
+import FooterCTA from '../components/FooterCTA.astro';
 
+const title = "Web Design Company in Kerala — Teknoppy | Website Design and Development";
+const description = "Teknoppy is a trusted Web Design Company in Kerala delivering SEO-friendly, responsive, and conversion-focused websites for businesses across Kerala and Kochi. Book your free consultation today.";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title={title} description={description}>
+  <Header />
+  <main>
+    <Hero />
+    <About />
+    <Clients />
+    <Services />
+    <WhyChooseUs />
+    <Portfolio />
+    <Testimonials client:visible />
+    <FAQ />
+  </main>
+  <FooterCTA />
+</Layout>

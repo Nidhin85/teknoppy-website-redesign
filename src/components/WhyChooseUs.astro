@@ -1,0 +1,269 @@
+---
+import { SearchCheck, LineChart, BadgeDollarSign, MapPin, Rocket, LifeBuoy, CheckCircle2 } from 'lucide-react';
+
+const features = [
+  {
+    title: "Every Website We Build Is SEO-Friendly from Day One",
+    description: "We do not bolt SEO on after launch. Every project begins with keyword research, structured data planning, and Core Web Vitals benchmarking — making SEO-friendly website design Kerala businesses need a foundational principle, not an afterthought.",
+    icon: SearchCheck,
+    span: "col-span-1 md:col-span-2 lg:col-span-2",
+    theme: "primary"
+  },
+  {
+    title: "A Proven Track Record Kerala Businesses Rely On",
+    description: "As a Web Design Company in Kerala with over 150 completed projects, our work speaks louder than promises. Clients across Kochi, Thrissur, Kozhikode, and Ernakulam have seen measurable improvements in search rankings, lead generation, and website engagement within the first 90 days of launch.",
+    icon: LineChart,
+    span: "col-span-1 md:col-span-1 lg:col-span-1",
+    theme: "secondary"
+  },
+  {
+    title: "Affordable Website Design Without Compromising Quality",
+    description: "We believe every Kerala business — from a Thrissur-based startup to a Kochi enterprise — deserves a world-class website at a fair price. Our affordable website design Kerala packages are transparent, clearly scoped, and delivered on time with zero hidden costs.",
+    icon: BadgeDollarSign,
+    span: "col-span-1 md:col-span-1 lg:col-span-1",
+    theme: "black"
+  },
+  {
+    title: "We Understand the Kerala Business Landscape",
+    description: "Our team lives and works in Kerala. We understand how Kerala buyers search online, what local businesses need to stand out in competitive markets, and how to position your brand for both statewide and city-level search visibility.",
+    icon: MapPin,
+    span: "col-span-1 md:col-span-2 lg:col-span-2",
+    theme: "primary"
+  },
+  {
+    title: "From Strategy to Launch — We Handle Everything",
+    description: "Design, development, content integration, SEO setup, speed optimisation, schema markup, and post-launch support — Teknoppy delivers a technically sound, conversion-focused website under one roof so you never need to coordinate multiple vendors.",
+    icon: Rocket,
+    span: "col-span-1 md:col-span-2 lg:col-span-2",
+    theme: "secondary"
+  },
+  {
+    title: "We Are With You After Your Website Goes Live",
+    description: "Our relationship does not end at launch. Every client receives dedicated post-launch support, performance monitoring, and proactive maintenance to ensure your website continues to rank, load fast, and convert visitors into leads long after going live.",
+    icon: LifeBuoy,
+    span: "col-span-1 md:col-span-1 lg:col-span-1",
+    theme: "primary"
+  }
+];
+
+const getThemeStyles = (theme: string) => {
+  if (theme === 'primary') return 'group-hover:bg-primary group-hover:border-primary group-hover:shadow-[0_10px_30px_rgba(249,98,50,0.3)]';
+  if (theme === 'secondary') return 'group-hover:bg-secondary group-hover:border-secondary group-hover:shadow-[0_10px_30px_rgba(248,179,66,0.3)]';
+  return 'group-hover:bg-black group-hover:border-black group-hover:shadow-[0_10px_30px_rgba(0,0,0,0.2)]';
+};
+
+const getIconColor = (theme: string) => {
+  if (theme === 'primary') return 'text-primary';
+  if (theme === 'secondary') return 'text-secondary';
+  return 'text-black';
+};
+---
+
+<section class="py-24 md:py-32 bg-white relative overflow-hidden">
+  <!-- Decorative Top Blur -->
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-primary/5 blur-[120px] -z-10"></div>
+
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+    <div class="flex flex-col lg:flex-row justify-between items-end gap-10 mb-16">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black text-white text-sm font-bold uppercase tracking-wider mb-8 shadow-lg transform -rotate-1">
+          The Teknoppy Advantage
+        </div>
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] text-black">
+          Why Kerala Businesses Choose <br class="hidden lg:block" /> Teknoppy as Their Web Design Partner
+        </h2>
+      </div>
+      
+      <!-- Trust Indicator Badge -->
+      <div class="hidden lg:flex items-center gap-4 bg-white border border-border shadow-lg p-4 rounded-2xl flex-shrink-0">
+        <div class="flex -space-x-3">
+          {[1,2,3,4].map((i) => (
+             <div class="w-10 h-10 rounded-full border-2 border-white bg-gray-100 flex items-center justify-center overflow-hidden">
+               <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+             </div>
+          ))}
+        </div>
+        <div>
+          <p class="text-xs font-bold text-muted uppercase">Trusted By</p>
+          <p class="text-lg font-black text-black">150+ Brands</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bento Grid (with Mobile Scroll-Spy Focus & Accordion) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative w-full">
+      {features.map((feature, index) => (
+        <div 
+          class={`relative bg-white rounded-[2rem] p-6 md:p-8 border border-border/60 hover:border-transparent transition-all duration-500 group flex flex-col overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 advantage-card opacity-0 translate-y-12 w-full cursor-pointer md:cursor-default ${feature.span}`}
+          style={`transition-delay: ${index * 80}ms`}
+        >
+          
+          <!-- Hover Gradient Background -->
+          <div class="absolute inset-0 bg-gradient-to-br from-gray-50 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
+          
+          <div class="flex justify-between items-start mb-4 md:mb-6">
+            <div class={`w-12 h-12 rounded-xl bg-white shadow-sm border border-border flex items-center justify-center transition-all duration-500 ${getThemeStyles(feature.theme)}`}>
+              <feature.icon className={`w-6 h-6 transition-colors duration-500 group-hover:text-white ${getIconColor(feature.theme)}`} />
+            </div>
+            
+            <div class="flex items-center gap-2">
+              <!-- Desktop Arrow Indicator -->
+              <div class="hidden md:flex w-7 h-7 rounded-full border border-border items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-4 group-hover:translate-x-0">
+                <svg class="w-3.5 h-3.5 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+              </div>
+              <!-- Mobile Accordion Plus Icon -->
+              <div class="flex md:hidden w-7 h-7 rounded-full border border-border items-center justify-center toggle-icon-wrapper transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="toggle-plus-icon transition-transform duration-300"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </div>
+            </div>
+          </div>
+          
+          <h3 class="text-lg md:text-xl font-bold text-black leading-snug group-hover:text-black transition-colors">
+            {feature.title}
+          </h3>
+          
+          <!-- Collapsible description wrapper (Mobile only) -->
+          <div class="card-description-wrapper overflow-hidden transition-all duration-300">
+            <p class="text-muted text-sm leading-relaxed font-medium">
+              {feature.description}
+            </p>
+          </div>
+
+          <!-- Decorative Line -->
+          <div class="mt-auto pt-4 md:pt-6">
+            <div class="h-1 w-12 bg-gray-200 rounded-full group-hover:w-full transition-all duration-700 ease-out overflow-hidden relative">
+              <div class={`absolute inset-0 w-full h-full transform -translate-x-full group-hover:translate-x-0 transition-transform duration-700 delay-100 ease-out ${feature.theme === 'primary' ? 'bg-primary' : feature.theme === 'secondary' ? 'bg-secondary' : 'bg-black'}`}></div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .advantage-card {
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), 
+                border-color 0.4s ease, 
+                box-shadow 0.4s ease, 
+                opacity 0.4s ease;
+  }
+
+  @media (max-width: 767px) {
+    .advantage-card {
+      opacity: 0.8;
+      padding-bottom: 1.25rem !important;
+    }
+    
+    .advantage-card.active-scroll {
+      opacity: 1 !important;
+      transform: scale(1.02) translateY(-2px) !important;
+      border-color: rgba(249, 98, 50, 0.3) !important;
+      box-shadow: 0 10px 20px rgba(249, 98, 50, 0.05) !important;
+    }
+
+    .card-description-wrapper {
+      max-height: 0;
+      opacity: 0;
+      transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, margin-top 0.3s ease;
+    }
+
+    .advantage-card.is-expanded .card-description-wrapper {
+      max-height: 180px;
+      opacity: 1;
+      margin-top: 12px;
+    }
+
+    .advantage-card.is-expanded .toggle-plus-icon {
+      transform: rotate(135deg);
+    }
+  }
+</style>
+
+<script>
+  const advantageCards = document.querySelectorAll('.advantage-card');
+
+  // Reveal cards on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove('opacity-0', 'translate-y-12');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  advantageCards.forEach(card => observer.observe(card));
+
+  // High-performance IntersectionObserver scroll-spy for mobile screen center (auto-expand)
+  let scrollSpyObserver: IntersectionObserver | null = null;
+
+  const initScrollSpy = () => {
+    if (window.innerWidth < 768) {
+      if (!scrollSpyObserver) {
+        scrollSpyObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active-scroll', 'is-expanded');
+            } else {
+              entry.target.classList.remove('active-scroll', 'is-expanded');
+            }
+          });
+        }, {
+          // Triggers when the card crosses the center 20% vertical area of the screen
+          rootMargin: "-40% 0px -40% 0px",
+          threshold: 0
+        });
+        
+        advantageCards.forEach(card => scrollSpyObserver?.observe(card));
+      }
+    } else {
+      if (scrollSpyObserver) {
+        scrollSpyObserver.disconnect();
+        scrollSpyObserver = null;
+      }
+      advantageCards.forEach(card => {
+        card.classList.remove('active-scroll', 'is-expanded');
+      });
+    }
+  };
+
+  // Custom column parallax scroll effect (for desktop only)
+  const handleParallax = () => {
+    const viewportHeight = window.innerHeight;
+    
+    advantageCards.forEach((card, idx) => {
+      const rect = card.getBoundingClientRect();
+      const cardCenter = rect.top + rect.height / 2;
+      const distanceFromCenter = (cardCenter - viewportHeight / 2) / viewportHeight;
+      const col = idx % 3;
+      const speed = (col - 1) * 35; // -35, 0, 35
+      const translateY = distanceFromCenter * speed;
+      const cappedY = Math.max(-40, Math.min(40, translateY));
+      
+      if (!card.classList.contains('opacity-0')) {
+        (card as HTMLElement).style.transform = `translateY(${cappedY}px)`;
+      }
+    });
+  };
+
+  // Handle scroll events cleanly (Parallax only on desktop)
+  window.addEventListener('scroll', () => {
+    if (window.innerWidth > 768) {
+      window.requestAnimationFrame(handleParallax);
+    }
+  });
+
+  // Handle resize updates
+  window.addEventListener('resize', () => {
+    initScrollSpy();
+    if (window.innerWidth <= 768) {
+      advantageCards.forEach(card => {
+        (card as HTMLElement).style.transform = '';
+      });
+    }
+  });
+
+  // Run on mount
+  initScrollSpy();
+</script>
