@@ -2,12 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
-import Clients from '../components/Clients.astro';
 import About from '../components/About.astro';
 import Services from '../components/Services.astro';
 import WhyChooseUs from '../components/WhyChooseUs.astro';
 import Portfolio from '../components/Portfolio.astro';
 import Testimonials from '../components/Testimonials.tsx';
+import Blog from '../components/Blog.astro';
 import FAQ from '../components/FAQ.astro';
 import FooterCTA from '../components/FooterCTA.astro';
 
@@ -20,11 +20,11 @@ const description = "Teknoppy is a trusted Web Design Company in Kerala deliveri
   <main>
     <Hero />
     <About />
-    <Clients />
     <Services />
     <WhyChooseUs />
     <Portfolio />
     <Testimonials client:visible />
+    <Blog />
     <FAQ />
   </main>
   <FooterCTA />

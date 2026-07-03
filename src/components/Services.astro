@@ -86,7 +86,7 @@ const services = [
     <!-- Redesigned Glassmorphic Services Grid (with mobile stacking scroll fixed) -->
     <div class="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
       {services.map((service, index) => (
-        <a href={service.href} class="group relative services-card-sticky bg-[#0E0E0E] md:bg-white/5 backdrop-blur-xl rounded-[2rem] p-8 md:p-10 border border-primary/20 md:border-white/10 md:hover:border-primary/30 shadow-[0_0_20px_rgba(249,98,50,0.06)] md:shadow-xl md:hover:shadow-[0_0_30px_rgba(249,98,50,0.12)] md:hover:-translate-y-1.5 transition-all duration-500 flex flex-col h-full overflow-hidden" style={`--stack-idx: ${index};`}>
+        <a href={service.href} class="group relative services-card-sticky bg-[#0E0E0E] md:bg-white/5 backdrop-blur-xl rounded-2xl p-8 md:p-10 border border-primary/20 md:border-white/10 md:hover:border-primary/30 shadow-[0_0_20px_rgba(249,98,50,0.06)] md:shadow-xl md:hover:shadow-[0_0_30px_rgba(249,98,50,0.12)] md:hover:-translate-y-1.5 transition-all duration-500 flex flex-col h-full overflow-hidden" style={`--stack-idx: ${index};`}>
           
           <!-- Hover Accent Glow (Permanent on mobile, hover on desktop) -->
           <div class="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-primary/20 md:from-primary/35 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-700 blur-xl md:blur-2xl -z-10"></div>

@@ -1,0 +1,114 @@
+---
+import { ArrowRight, Calendar, Clock } from 'lucide-react';
+
+const posts = [
+  {
+    title: "Latest Web Design Trends in 2026: Modern Styles and Techniques That Convert",
+    excerpt: "Your website is either working for you or against you. In 2026, there is very little middle ground. Discover every major trend that is defining the industry this year.",
+    image: "/blog/blog1.png",
+    category: "Design Trends",
+    date: "July 3, 2026",
+    readTime: "8 min read",
+    href: "/blog/latest-web-design-trends-2026/"
+  },
+  {
+    title: "Why SEO-Friendly Website Design is Critical for Kerala Businesses",
+    excerpt: "Building a website without SEO is like building a road without a destination. Discover how integrated search strategy drives organic traffic and client enquiries for Kerala brands.",
+    image: "/blog_thumbnail_seo.png",
+    category: "SEO & Design",
+    date: "July 2, 2026",
+    readTime: "5 min read",
+    href: "#"
+  },
+  {
+    title: "How to Build a High-Converting Ecommerce Website in Kerala",
+    excerpt: "With the retail sector expanding online, building a custom ecommerce solution requires fast page speeds, local gateway integrations, and conversion-optimized checkouts.",
+    image: "/blog_thumbnail_ecommerce.png",
+    category: "Ecommerce",
+    date: "June 15, 2026",
+    readTime: "6 min read",
+    href: "#"
+  }
+];
+---
+
+<section id="blog" class="py-24 md:py-32 bg-neutral-50/45 relative overflow-hidden">
+  <!-- Soft Background Accent Glows -->
+  <div class="absolute top-0 left-0 w-80 h-80 bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
+  <div class="absolute bottom-0 right-0 w-80 h-80 bg-secondary/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
+    <!-- Header -->
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16">
+      <div class="max-w-2xl">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black text-white text-sm font-bold uppercase tracking-wider mb-6 shadow-lg transform -rotate-1">
+          Our Blog
+        </div>
+        <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-neutral-900 leading-tight">
+          Insights & Latest <span class="text-primary">Articles</span>
+        </h2>
+      </div>
+      <p class="text-neutral-500 text-sm md:text-base leading-relaxed max-w-sm">
+        Stay updated with expert perspectives, strategies, and resources on web development and SEO in Kerala.
+      </p>
+    </div>
+
+    <!-- Blog Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {posts.map((post) => (
+        <article class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md border border-neutral-100 transition-all duration-300 flex flex-col h-full">
+          <!-- Image Container -->
+          <div class="overflow-hidden aspect-[16/10] bg-neutral-100 relative">
+            <img 
+              src={post.image} 
+              alt={post.title} 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <!-- Category Tag -->
+            <div class="absolute top-4 left-4 bg-primary text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-md shadow-sm">
+              {post.category}
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-6 md:p-8 flex flex-col flex-grow justify-between">
+            <div class="space-y-4">
+              <!-- Meta Info -->
+              <div class="flex items-center gap-4 text-xs font-medium text-neutral-400">
+                <span class="flex items-center gap-1.5">
+                  <Calendar class="w-3.5 h-3.5" />
+                  {post.date}
+                </span>
+                <span class="flex items-center gap-1.5">
+                  <Clock class="w-3.5 h-3.5" />
+                  {post.readTime}
+                </span>
+              </div>
+
+              <!-- Title -->
+              <h3 class="text-xl font-bold text-neutral-900 leading-snug group-hover:text-primary transition-colors duration-300">
+                <a href={post.href}>{post.title}</a>
+              </h3>
+
+              <!-- Excerpt -->
+              <p class="text-sm text-neutral-500 leading-relaxed font-medium">
+                {post.excerpt}
+              </p>
+            </div>
+
+            <!-- Read More CTA -->
+            <div class="pt-6 mt-6 border-t border-neutral-50">
+              <a 
+                href={post.href} 
+                class="inline-flex items-center gap-2 text-sm font-bold text-neutral-850 hover:text-primary transition-colors duration-300"
+              >
+                Read Article
+                <ArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+              </a>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

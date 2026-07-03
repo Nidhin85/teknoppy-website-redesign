@@ -1,5 +1,5 @@
 ---
-import { ChevronDown, HelpCircle } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 
 const faqs = [
   {
@@ -34,32 +34,34 @@ const schema = {
 };
 ---
 
-<section id="faq" class="py-32 bg-white relative">
+<section id="faq" class="py-24 md:py-32 bg-white relative">
   <!-- Subtle Gradient Accent -->
-  <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-gray-50 to-transparent -z-10"></div>
+  <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-neutral-50/30 to-transparent -z-10"></div>
 
-  <div class="max-w-[800px] mx-auto px-6 lg:px-12">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
     <div class="text-center mb-16">
-      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-sm font-bold text-blue-600 uppercase tracking-wider mb-8">
-        <HelpCircle className="w-4 h-4" />
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black text-white text-sm font-bold uppercase tracking-wider mb-8 shadow-lg transform -rotate-1">
         Have Questions?
       </div>
-      <h2 class="text-3xl md:text-4xl lg:text-5xl font-black leading-tight text-black mb-6">
-        Frequently Asked Questions — <br class="hidden md:block"/> Web Design Company in Kerala
+      <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-neutral-900 leading-tight mb-4">
+        Frequently Asked <span class="text-primary">Questions</span>
       </h2>
+      <p class="text-neutral-500 text-sm md:text-base leading-relaxed max-w-xl mx-auto">
+        Find quick answers to common questions about our website design and digital solutions in Kerala.
+      </p>
     </div>
 
-    <div class="space-y-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
       {faqs.map((faq, index) => (
-        <details class="faq-group bg-white rounded-2xl shadow-sm border border-border overflow-hidden [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:border-black/20 hover:shadow-md" name="faq">
-          <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none font-bold text-lg md:text-xl text-black transition-colors faq-summary">
+        <details class="faq-group bg-neutral-50/50 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden border-0 transition-all duration-300 hover:bg-neutral-50" name="faq">
+          <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none font-bold text-lg text-neutral-850 transition-colors faq-summary">
             <h3 class="pr-8 leading-snug">{faq.question}</h3>
-            <span class="ml-auto flex-shrink-0 bg-gray-50 rounded-full p-2.5 transition-all duration-300 faq-icon-container border border-border">
-              <ChevronDown className="w-5 h-5 text-black transition-transform duration-300 faq-icon" />
+            <span class="ml-auto flex-shrink-0 bg-white rounded-full p-2 transition-all duration-300 faq-icon-container shadow-sm border border-neutral-100/50">
+              <ChevronDown className="w-4 h-4 text-neutral-500 transition-transform duration-300 faq-icon" />
             </span>
           </summary>
-          <div class="px-6 md:px-8 pb-6 md:pb-8 text-muted leading-relaxed font-medium faq-content">
-            <div class="h-px w-full bg-border mb-6"></div>
+          <div class="px-6 md:px-8 pb-6 md:pb-8 text-neutral-500 leading-relaxed font-normal text-sm md:text-base faq-content">
+            <div class="h-px w-full bg-neutral-100/80 mb-6"></div>
             <p>{faq.answer}</p>
           </div>
         </details>
@@ -67,10 +69,14 @@ const schema = {
     </div>
     
     <!-- Direct Action Prompt below FAQs -->
-    <div class="mt-16 text-center bg-gray-50 p-8 rounded-[2rem] border border-border/80 shadow-inner">
-      <p class="text-xl font-bold text-black mb-4">Still have a question?</p>
-      <p class="text-muted mb-8 font-medium">Our team is ready to provide the answers you need to make an informed decision.</p>
-      <a href="https://wa.me/916282249224" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-4 text-sm font-bold text-white bg-[#25D366] rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+    <div class="mt-16 text-center bg-neutral-50/40 p-8 md:p-10 rounded-xl border-0 relative overflow-hidden">
+      <div class="absolute -right-12 -bottom-12 w-48 h-48 bg-primary/5 rounded-full blur-2xl pointer-events-none"></div>
+      
+      <p class="text-xl font-bold text-neutral-900 mb-2">Still have a question?</p>
+      <p class="text-neutral-500 mb-8 text-sm md:text-base font-normal max-w-md mx-auto">
+        Our team is ready to provide the answers you need to make an informed decision.
+      </p>
+      <a href="https://wa.me/916282249224" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-4 text-sm font-bold text-white bg-[#25D366] hover:bg-[#22C35E] rounded-xl shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
         Chat on WhatsApp
       </a>
@@ -84,8 +90,9 @@ const schema = {
 <style>
   /* Premium styling for active states */
   .faq-group[open] {
-    border-color: var(--color-black);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    background-color: var(--color-white);
+    box-shadow: 0 16px 32px -8px rgba(0,0,0,0.04);
+    border: 1px solid var(--color-border);
   }
   
   .faq-group[open] .faq-summary {
@@ -93,8 +100,8 @@ const schema = {
   }
   
   .faq-group[open] .faq-icon-container {
-    background-color: var(--color-black);
-    border-color: var(--color-black);
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
   }
   
   .faq-group[open] .faq-icon {

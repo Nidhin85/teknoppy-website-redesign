@@ -43,8 +43,7 @@ const projects = [
   <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
     <div class="flex flex-col md:flex-row md:items-end justify-between gap-10 mb-24">
       <div class="max-w-3xl relative">
-        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-sm font-bold text-white uppercase tracking-wider mb-8 backdrop-blur-md">
-          <BarChart3 className="w-4 h-4 text-secondary" />
+        <div class="inline-flex items-center px-4 py-2 rounded-full bg-primary text-white text-sm font-bold uppercase tracking-wider mb-8 shadow-lg transform -rotate-1">
           Proven Results
         </div>
         <h2 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-white mb-6">
@@ -95,7 +94,7 @@ const projects = [
             </div>
             
             <!-- Floating Mobile Mockup -->
-            <div class={`absolute -bottom-10 ${index % 2 !== 0 ? '-left-10' : '-right-10'} w-[35%] aspect-[9/19] bg-black rounded-[2rem] shadow-2xl border-4 border-gray-800 overflow-hidden transform group-hover:-translate-y-8 ${index % 2 !== 0 ? 'group-hover:translate-x-4 rotate-6' : 'group-hover:-translate-x-4 -rotate-6'} transition-all duration-700 hidden md:block z-30`}>
+            <div class={`absolute -bottom-10 ${index % 2 !== 0 ? '-left-10' : '-right-10'} w-[35%] aspect-[9/19] bg-black rounded-2xl shadow-2xl border-4 border-gray-800 overflow-hidden transform group-hover:-translate-y-8 ${index % 2 !== 0 ? 'group-hover:translate-x-4 rotate-6' : 'group-hover:-translate-x-4 -rotate-6'} transition-all duration-700 hidden md:block z-30`}>
                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[40%] h-4 bg-gray-800 rounded-b-xl z-10"></div>
                <div class="w-full h-full bg-[#111] flex flex-col items-center justify-center text-xs text-gray-500 gap-2">
                  <Smartphone className="w-6 h-6 text-gray-600" />
