@@ -2,19 +2,18 @@
 import { CheckCircle } from 'lucide-react';
 ---
 
-<section id="about" class="py-24 md:py-32 bg-white relative overflow-hidden">
+<section id="about" class="py-24 md:py-32 bg-cream relative overflow-hidden">
   <!-- Subtle decorative background -->
-  <div class="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] opacity-30"></div>
+  <div class="absolute -right-16 -bottom-16 w-64 h-64 bg-secondary/15 rounded-full blur-3xl -z-10"></div>
+  <div class="absolute -left-12 -top-12 w-48 h-48 bg-primary/10 rounded-full blur-2xl -z-10"></div>
   
   <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
     
     <!-- Tier 1: Header & Key Message (Full width, centered on mobile, left-aligned on desktop) -->
     <div class="max-w-4xl flex flex-col items-center text-center lg:items-start lg:text-left mb-12 md:mb-16">
-      <!-- Floating Accent -->
-      <div class="absolute -left-12 -top-12 w-24 h-24 bg-secondary/10 rounded-full blur-2xl -z-10"></div>
       
       <!-- Badge -->
-      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black text-white text-sm font-bold uppercase tracking-wider mb-6 shadow-lg transform -rotate-1">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-bold uppercase tracking-wider mb-6 shadow-sm transform -rotate-1">
         Who We Are
       </div>
       
@@ -43,46 +42,46 @@ import { CheckCircle } from 'lucide-react';
       </div>
 
       <!-- Right Column: Stats Grid (5 cols) -->
-      <div class="lg:col-span-5 grid grid-cols-2 gap-x-8 gap-y-10 w-full mt-4 lg:mt-0">
+      <div class="lg:col-span-5 grid grid-cols-2 gap-6 w-full mt-4 lg:mt-0">
         
         <!-- Websites -->
-        <div class="stat-card opacity-0 translate-y-12 flex flex-col transition-all duration-500 hover:-translate-y-1 group" style="transition-delay: 0ms;">
+        <div class="stat-card opacity-0 translate-y-12 flex flex-col bg-white p-5 sm:p-6 rounded-2xl shadow-sm border border-neutral-100/60 transition-all duration-500 hover:-translate-y-1 hover:shadow-md hover:border-primary/20 group" style="transition-delay: 0ms;">
           <h3 class="text-4xl sm:text-5xl lg:text-6xl font-black text-black tracking-tight leading-none flex items-baseline gap-0.5">
             <span class="counter" data-target="150">0</span>
             <span class="text-primary font-bold">+</span>
           </h3>
-          <p class="text-xs font-bold text-black uppercase tracking-wider mt-3">Websites Delivered</p>
-          <p class="text-xs text-muted mt-1 leading-normal max-w-[180px]">High-performance products built to rank and convert.</p>
+          <p class="text-xs font-bold text-neutral-800 uppercase tracking-wider mt-3">Websites Delivered</p>
+          <p class="text-xs text-muted mt-1 leading-normal">High-performance products built to rank and convert.</p>
         </div>
 
         <!-- Clients -->
-        <div class="stat-card opacity-0 translate-y-12 flex flex-col transition-all duration-500 hover:-translate-y-1 group" style="transition-delay: 150ms;">
+        <div class="stat-card opacity-0 translate-y-12 flex flex-col bg-white p-5 sm:p-6 rounded-2xl shadow-sm border border-neutral-100/60 transition-all duration-500 hover:-translate-y-1 hover:shadow-md hover:border-primary/20 group" style="transition-delay: 150ms;">
           <h3 class="text-4xl sm:text-5xl lg:text-6xl font-black text-black tracking-tight leading-none flex items-baseline gap-0.5">
             <span class="counter" data-target="100">0</span>
             <span class="text-secondary font-bold">+</span>
           </h3>
-          <p class="text-xs font-bold text-black uppercase tracking-wider mt-3">Kerala Clients</p>
-          <p class="text-xs text-muted mt-1 leading-normal max-w-[180px]">Trusted by local businesses and brands since 2016.</p>
+          <p class="text-xs font-bold text-neutral-800 uppercase tracking-wider mt-3">Kerala Clients</p>
+          <p class="text-xs text-muted mt-1 leading-normal">Trusted by local businesses and brands since 2016.</p>
         </div>
 
         <!-- Experience -->
-        <div class="stat-card opacity-0 translate-y-12 flex flex-col transition-all duration-500 hover:-translate-y-1 group" style="transition-delay: 300ms;">
+        <div class="stat-card opacity-0 translate-y-12 flex flex-col bg-white p-5 sm:p-6 rounded-2xl shadow-sm border border-neutral-100/60 transition-all duration-500 hover:-translate-y-1 hover:shadow-md hover:border-primary/20 group" style="transition-delay: 300ms;">
           <h3 class="text-4xl sm:text-5xl lg:text-6xl font-black text-black tracking-tight leading-none flex items-baseline gap-0.5">
             <span class="counter" data-target="8">0</span>
-            <span class="text-black font-bold">+</span>
+            <span class="text-primary font-bold">+</span>
           </h3>
-          <p class="text-xs font-bold text-black uppercase tracking-wider mt-3">Years Experience</p>
-          <p class="text-xs text-muted mt-1 leading-normal max-w-[180px]">Nearly a decade of delivering custom web design.</p>
+          <p class="text-xs font-bold text-neutral-800 uppercase tracking-wider mt-3">Years Experience</p>
+          <p class="text-xs text-muted mt-1 leading-normal">Nearly a decade of delivering custom web design.</p>
         </div>
 
         <!-- Industries -->
-        <div class="stat-card opacity-0 translate-y-12 flex flex-col transition-all duration-500 hover:-translate-y-1 group" style="transition-delay: 450ms;">
+        <div class="stat-card opacity-0 translate-y-12 flex flex-col bg-white p-5 sm:p-6 rounded-2xl shadow-sm border border-neutral-100/60 transition-all duration-500 hover:-translate-y-1 hover:shadow-md hover:border-primary/20 group" style="transition-delay: 450ms;">
           <h3 class="text-4xl sm:text-5xl lg:text-6xl font-black text-black tracking-tight leading-none flex items-baseline gap-0.5">
             <span class="counter" data-target="12">0</span>
             <span class="text-primary font-bold">+</span>
           </h3>
-          <p class="text-xs font-bold text-black uppercase tracking-wider mt-3">Industries Covered</p>
-          <p class="text-xs text-muted mt-1 leading-normal max-w-[180px]">Broad sector expertise from retail to corporate portals.</p>
+          <p class="text-xs font-bold text-neutral-800 uppercase tracking-wider mt-3">Industries Covered</p>
+          <p class="text-xs text-muted mt-1 leading-normal">Broad sector expertise from retail to corporate portals.</p>
         </div>
 
       </div>

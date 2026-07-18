@@ -63,22 +63,22 @@ const services = [
 ];
 ---
 
-<section id="services" class="pt-16 md:pt-24 pb-32 bg-black relative">
+<section id="services" class="pt-16 md:pt-24 pb-32 bg-white relative">
   <!-- Dynamic background container to prevent overflow issues without breaking sticky scroll -->
   <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
-    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/20 via-black to-black"></div>
-    <div class="absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-t from-primary/10 to-transparent blur-[100px]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-secondary/15 via-white to-white"></div>
+    <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-primary/5 rounded-full blur-[100px]"></div>
   </div>
 
   <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
     <div class="max-w-3xl mx-auto text-center flex flex-col items-center mb-16 md:mb-20">
-      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-bold uppercase tracking-wider mb-8 shadow-lg transform -rotate-1 backdrop-blur-sm">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#FFC247]/10 border border-[#FFC247]/30 text-primary text-sm font-bold uppercase tracking-wider mb-8 shadow-sm transform -rotate-1 backdrop-blur-sm">
         What We Do
       </div>
-      <h2 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-white mb-6">
+      <h2 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-neutral-900 mb-6">
         Our <span class="text-primary">Website Design</span> and <br class="hidden md:block" /> <span class="text-primary">Digital Services</span> in Kerala
       </h2>
-      <p class="text-xl text-gray-400 leading-relaxed font-medium">
+      <p class="text-xl text-neutral-600 leading-relaxed font-medium">
         As a leading Web Design Company in Kerala, Teknoppy offers a complete range of digital services — from website design and development to SEO, ecommerce, and online marketing solutions Kerala businesses need to compete and grow in 2026.
       </p>
     </div>
@@ -86,29 +86,29 @@ const services = [
     <!-- Redesigned Glassmorphic Services Grid (with mobile stacking scroll fixed) -->
     <div class="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
       {services.map((service, index) => (
-        <a href={service.href} class="group relative services-card-sticky bg-[#0E0E0E] md:bg-white/5 backdrop-blur-xl rounded-2xl p-8 md:p-10 border border-primary/20 md:border-white/10 md:hover:border-primary/30 shadow-[0_0_20px_rgba(249,98,50,0.06)] md:shadow-xl md:hover:shadow-[0_0_30px_rgba(249,98,50,0.12)] md:hover:-translate-y-1.5 transition-all duration-500 flex flex-col h-full overflow-hidden" style={`--stack-idx: ${index};`}>
+        <a href={service.href} class="group relative services-card-sticky bg-white rounded-2xl p-8 md:p-10 border border-neutral-100/85 shadow-[0_10px_35px_rgba(255,107,26,0.04)] hover:border-primary/35 hover:shadow-[0_15px_40px_rgba(255,107,26,0.08)] hover:-translate-y-1.5 transition-all duration-500 flex flex-col h-full overflow-hidden" style={`--stack-idx: ${index};`}>
           
           <!-- Hover Accent Glow (Permanent on mobile, hover on desktop) -->
-          <div class="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-primary/20 md:from-primary/35 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-700 blur-xl md:blur-2xl -z-10"></div>
+          <div class="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-primary/10 md:from-primary/15 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-700 blur-xl md:blur-2xl -z-10"></div>
           
           <!-- Large Background Watermark Icon -->
-          <div class="absolute -right-6 -bottom-6 text-white opacity-[0.03] group-hover:opacity-[0.07] group-hover:scale-110 pointer-events-none transition-all duration-700 select-none -z-10 [&>svg]:w-36 [&>svg]:h-36 [&>svg]:stroke-[0.8]" set:html={service.iconHtml}></div>
+          <div class="absolute -right-6 -bottom-6 text-primary opacity-[0.02] group-hover:opacity-[0.05] group-hover:scale-110 pointer-events-none transition-all duration-700 select-none -z-10 [&>svg]:w-36 [&>svg]:h-36 [&>svg]:stroke-[0.8]" set:html={service.iconHtml}></div>
 
           <div class="flex justify-between items-start mb-8">
-            <div class="w-14 h-14 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center transition-all duration-300 group-hover:bg-primary group-hover:border-primary group-hover:shadow-[0_0_20px_rgba(249,98,50,0.4)] text-white" set:html={service.iconHtml}>
+            <div class="w-14 h-14 rounded-2xl bg-primary/5 border border-primary/10 flex items-center justify-center transition-all duration-300 group-hover:bg-primary group-hover:border-primary group-hover:shadow-[0_8px_20px_rgba(255,107,26,0.35)] text-primary group-hover:text-white" set:html={service.iconHtml}>
             </div>
             
             <!-- Arrow indicator -->
-            <div class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center opacity-40 group-hover:opacity-100 group-hover:bg-white group-hover:border-white transition-all duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-white group-hover:text-black transform -rotate-45 group-hover:rotate-0 transition-all duration-300"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <div class="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center opacity-70 group-hover:opacity-100 group-hover:bg-primary/5 group-hover:border-primary/20 transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-neutral-500 group-hover:text-primary transform -rotate-45 group-hover:rotate-0 transition-all duration-300"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </div>
           </div>
           
-          <h3 class="text-2xl font-black text-white mb-4 leading-snug">
+          <h3 class="text-2xl font-black text-neutral-900 mb-4 leading-snug">
             {service.title}
           </h3>
           
-          <p class="text-gray-400 text-base leading-relaxed flex-grow font-medium">
+          <p class="text-neutral-600 text-base leading-relaxed flex-grow font-medium">
             {service.description}
           </p>
         </a>

@@ -130,23 +130,30 @@ export default function Testimonials() {
   const currentVideo = videoTestimonials[currentIndex];
 
   return (
-    <section className="py-24 md:py-32 bg-white relative overflow-hidden" id="testimonials">
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-12">
+    <section className="py-24 md:py-32 bg-cream relative overflow-hidden" id="testimonials">
+      {/* Background overlapping rings */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        <div className="absolute top-10 left-10 w-96 h-96 rounded-full border border-[#FF6B1A]/8 animate-float-slow"></div>
+        <div className="absolute top-20 left-20 w-[450px] h-[450px] rounded-full border border-dashed border-[#FFC247]/10 animate-float-slower"></div>
+        <div className="absolute bottom-10 right-10 w-80 h-80 rounded-full border border-[#FF6B1A]/10 animate-float-slow"></div>
+      </div>
+
+      <div className="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
         
         {/* Combined Section Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black text-white text-sm font-bold uppercase tracking-wider mb-6 shadow-lg transform -rotate-1">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#FFC247]/10 border border-[#FFC247]/30 text-primary text-sm font-bold uppercase tracking-wider mb-6 shadow-sm transform -rotate-1">
               Client Success Stories
             </div>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-neutral-900 mb-4 leading-tight">
               What Our Clients Say About <span className="text-primary">Teknoppy</span> — Web Design Agency Kerala
             </h2>
-            <p className="text-neutral-500 text-sm md:text-base leading-relaxed">
+            <p className="text-neutral-600 text-sm md:text-base leading-relaxed">
               Hundreds of businesses across Kerala have trusted our website design Kerala expertise to build their online presence — here is what some of them have to say about working with Teknoppy web design agency.
             </p>
           </div>
-          <div className="text-2xl md:text-3xl font-bold text-neutral-900 tracking-tight shrink-0">
+          <div className="text-2xl md:text-3xl font-bold text-neutral-950 tracking-tight shrink-0">
             150+ global clients
           </div>
         </div>
@@ -159,25 +166,25 @@ export default function Testimonials() {
             className="lg:col-span-4 relative flex flex-col justify-between bg-white rounded-xl p-8 border border-neutral-100 shadow-sm min-h-[440px] md:min-h-[460px] overflow-visible"
           >
             {/* Stacked Cards Effect behind the main card */}
-            <div className="absolute inset-0 bg-neutral-50 rounded-xl -translate-y-4 scale-[0.94] border border-neutral-100 -z-20"></div>
-            <div className="absolute inset-0 bg-neutral-100/50 rounded-xl -translate-y-2 scale-[0.97] border border-neutral-100 -z-10"></div>
+            <div className="absolute inset-0 bg-[#FFF8EF] rounded-xl -translate-y-4 scale-[0.94] border border-neutral-100 -z-20"></div>
+            <div className="absolute inset-0 bg-[#FFC247]/5 rounded-xl -translate-y-2 scale-[0.97] border border-neutral-100 -z-10"></div>
 
             {/* Top Row: Quote Mark & Controls */}
             <div className="flex justify-between items-center mb-8">
-              <span className="text-6xl font-serif font-black text-neutral-200 select-none leading-none">
+              <span className="text-6xl font-serif font-black text-primary/20 select-none leading-none">
                 “
               </span>
               <div className="flex gap-1.5 bg-neutral-50 border border-neutral-100 p-1 rounded-full">
                 <button 
                   onClick={prevSlide}
-                  className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-neutral-600 hover:text-primary hover:bg-neutral-50 shadow-sm transition-all border border-neutral-100"
+                  className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-neutral-650 hover:text-primary hover:bg-neutral-50 shadow-sm transition-all border border-neutral-100"
                   aria-label="Previous testimonial"
                 >
                   <ChevronLeft className="w-4 h-4" />
                 </button>
                 <button 
                   onClick={nextSlide}
-                  className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-neutral-600 hover:text-primary hover:bg-neutral-50 shadow-sm transition-all border border-neutral-100"
+                  className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-neutral-650 hover:text-primary hover:bg-neutral-50 shadow-sm transition-all border border-neutral-100"
                   aria-label="Next testimonial"
                 >
                   <ChevronRight className="w-4 h-4" />
@@ -205,13 +212,13 @@ export default function Testimonials() {
             </div>
 
             {/* Bottom: Client Profile */}
-            <div className="flex items-center gap-3 pt-6 border-t border-neutral-50">
-              <div className="w-10 h-10 rounded-full bg-neutral-100 border border-neutral-200 flex items-center justify-center text-sm font-bold text-neutral-800 flex-shrink-0">
+            <div className="flex items-center gap-3 pt-6 border-t border-neutral-100">
+              <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-sm font-bold text-primary flex-shrink-0">
                 {current.initials}
               </div>
               <div>
                 <h4 className="font-bold text-neutral-900 text-sm">{current.name}</h4>
-                <p className="text-xs text-neutral-400 font-medium">{current.role}</p>
+                <p className="text-xs text-neutral-500 font-medium">{current.role}</p>
               </div>
             </div>
           </div>
@@ -242,8 +249,9 @@ export default function Testimonials() {
 
                 {/* Play Button Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="absolute w-28 h-28 rounded-full bg-[#FFC247]/30 blur-xl pointer-events-none animate-pulse"></div>
                   <button 
-                    className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 shadow-xl"
+                    className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 shadow-xl relative z-10"
                     aria-label="Play video testimonial"
                   >
                     <Play className="w-6 h-6 fill-white text-white translate-x-0.5" />
@@ -253,7 +261,7 @@ export default function Testimonials() {
                 {/* Video Label Overlay */}
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-xs font-bold text-white">
+                    <div className="w-8 h-8 rounded-full bg-primary border border-primary/10 flex items-center justify-center text-xs font-bold text-white">
                       {currentVideo.initial}
                     </div>
                     <div>

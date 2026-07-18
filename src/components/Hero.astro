@@ -1,240 +1,366 @@
 ---
-import { ArrowRight, Play, Globe2, Smile, Award, Star } from 'lucide-react';
+import { ArrowRight, Play, Globe2, Smile, Award, Star } from "lucide-react";
 ---
 
-<section class="relative pt-28 pb-20 md:pt-32 md:pb-20 overflow-hidden bg-gradient-to-br from-[#F96232] via-[#E55A2D] to-[#D44A1E]">
+<section
+  class="relative pt-20 pb-20 md:pt-24 md:pb-28 overflow-hidden bg-cover bg-center bg-no-repeat hero-bg"
+>
   <!-- Rich Decorative Background Layer -->
   <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
     <!-- Fine grid pattern texture -->
-    <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.06)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_at_center,white,transparent_85%)]"></div>
-    
-    <!-- Glowing Orbs -->
-    <div class="absolute -top-48 -right-48 w-[600px] h-[600px] rounded-full bg-secondary/30 blur-[130px] animate-[pulse_8s_infinite_alternate]"></div>
-    <div class="absolute top-[30%] -left-48 w-[500px] h-[500px] rounded-full bg-black/10 blur-[120px]"></div>
-    <div class="absolute -bottom-48 right-[10%] w-[500px] h-[500px] rounded-full bg-white/15 blur-[100px] animate-[pulse_6s_infinite_alternate_1s]"></div>
+    <div
+      class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,107,26,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,107,26,0.02)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_at_center,white,transparent_85%)]"
+    >
+    </div>
 
-    <!-- Wavy SVGs with increased opacity and layout -->
-    <svg class="absolute top-0 left-0 w-full h-full opacity-15" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M-100 200C200 100 400 400 800 200C1200 0 1300 300 1600 100" stroke="white" stroke-width="3" stroke-linecap="round" />
-      <path d="M-100 450C300 250 500 550 900 350C1300 150 1400 450 1600 250" stroke="white" stroke-width="1.5" stroke-dasharray="8 8" stroke-linecap="round" />
+    <!-- Glowing Orbs (Warm Agency Theme) -->
+    <div
+      class="absolute -top-48 -right-48 w-[600px] h-[600px] rounded-full bg-secondary/10 blur-[135px] animate-[pulse_8s_infinite_alternate]"
+    >
+    </div>
+    <div
+      class="absolute top-[30%] -left-48 w-[500px] h-[500px] rounded-full bg-primary/5 blur-[120px]"
+    >
+    </div>
+    <div
+      class="absolute -bottom-48 right-[10%] w-[500px] h-[500px] rounded-full bg-secondary/8 blur-[100px] animate-[pulse_6s_infinite_alternate_1s]"
+    >
+    </div>
+
+    <!-- Office graphic concentric circular outlines -->
+    <svg
+      class="absolute right-0 top-12 w-[600px] h-[600px] opacity-15 text-primary pointer-events-none"
+      viewBox="0 0 200 200"
+      fill="none"
+    >
+      <circle
+        cx="120"
+        cy="80"
+        r="80"
+        stroke="currentColor"
+        stroke-width="0.3"
+        stroke-dasharray="2 2"></circle>
+      <circle cx="120" cy="80" r="60" stroke="currentColor" stroke-width="0.3"
+      ></circle>
+      <circle
+        cx="120"
+        cy="80"
+        r="40"
+        stroke="currentColor"
+        stroke-width="0.6"
+        stroke-dasharray="4 4"></circle>
+      <path
+        d="M20,100 C60,40 140,160 180,100"
+        stroke="currentColor"
+        stroke-width="0.3"></path>
     </svg>
   </div>
 
-  <div class="max-w-[1280px] mx-auto px-6 lg:px-12 grid xl:grid-cols-2 gap-12 xl:gap-8 items-center relative z-10">
-    
+  <div
+    class="max-w-[1280px] mx-auto px-6 lg:px-12 grid xl:grid-cols-12 gap-12 xl:gap-8 items-center relative z-10"
+  >
     <!-- Content (Left Column) -->
-    <div class="flex flex-col items-center text-center xl:items-start xl:text-left pt-4">
-      
-
-      
+    <div
+      class="xl:col-span-5 flex flex-col items-center text-center xl:items-start xl:text-left pt-8 xl:pt-16"
+    >
       <!-- Headline -->
-      <h1 class="text-4xl sm:text-5xl lg:text-[60px] font-black leading-[1.15] tracking-tight text-white mb-5">
-        Built to <span class="inline-block bg-white text-primary px-4 py-0.5 rounded-[1.5rem] transform -rotate-2 mt-1 shadow-xl">Rank.</span> <br />
-        Designed to <span class="inline-block bg-black text-white px-4 py-0.5 rounded-[1.5rem] transform rotate-1 mt-1 shadow-xl">Convert.</span> <br />
-        Engineered to <span class="inline-block bg-white text-primary px-4 py-0.5 rounded-[1.5rem] transform -rotate-1 mt-1 shadow-xl">Grow.</span>
+      <h1
+        class="text-4xl sm:text-5xl lg:text-[48px] xl:text-[54px] font-black leading-[1.2] tracking-tight text-neutral-900 mb-5"
+      >
+        <span class="block xl:whitespace-nowrap"
+          >Built to <span
+            class="inline-block bg-[#FFC247]/20 text-primary px-4 py-0.5 rounded-[1.5rem] transform -rotate-2 mt-1 shadow-sm"
+            >Rank.</span
+          ></span
+        >
+        <span class="block xl:whitespace-nowrap mt-2 xl:mt-3"
+          >Designed to <span
+            class="inline-block bg-primary text-white px-4 py-0.5 rounded-[1.5rem] transform rotate-1 mt-1 shadow-md"
+            >Convert.</span
+          ></span
+        >
+        <span class="block xl:whitespace-nowrap mt-2 xl:mt-3"
+          >Engineered to <span
+            class="inline-block bg-[#FFF8EF] border border-primary/20 text-primary px-4 py-0.5 rounded-[1.5rem] transform -rotate-1 mt-1 shadow-sm"
+            >Grow.</span
+          ></span
+        >
       </h1>
 
-      <p class="text-base md:text-lg text-white/90 mb-8 max-w-lg mx-auto xl:mx-0 leading-relaxed font-medium">
-        We create SEO-driven websites that help Kerala businesses increase visibility, generate qualified leads, and achieve measurable growth.
+      <p
+        class="text-base lg:text-lg text-neutral-600 mb-8 max-w-lg mx-auto xl:mx-0 leading-relaxed font-medium"
+      >
+        We create SEO-driven websites that help Kerala businesses increase
+        visibility, generate qualified leads, and achieve measurable growth.
       </p>
 
       <!-- Primary Action Area -->
-      <div class="flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto mb-6">
-        <a href="#consultation" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-white bg-[#111] rounded-full shadow-[0_6px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.5)] hover:-translate-y-0.5 transition-all duration-300">
+      <div
+        class="flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto mb-2"
+      >
+        <a
+          href="#consultation"
+          class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(255,107,26,0.25)] hover:bg-primary/95 hover:shadow-[0_6px_25px_rgba(255,107,26,0.35)] hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap"
+        >
           Book a Free Consultation
           <ArrowRight className="w-4 h-4" />
         </a>
-        <a href="#portfolio" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-white bg-transparent border border-white/30 rounded-full hover:border-white hover:bg-white/10 transition-all duration-300">
-          <span class="flex items-center justify-center w-6 h-6 rounded-full border border-white text-white">
+        <a
+          href="#portfolio"
+          class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-neutral-700 bg-white border border-neutral-200 rounded-full hover:border-primary/50 hover:bg-[#FFF8EF] transition-all duration-300 shadow-sm whitespace-nowrap"
+        >
+          <span
+            class="flex items-center justify-center w-6 h-6 rounded-full border border-neutral-300 text-primary"
+          >
             <Play className="w-2.5 h-2.5 fill-current ml-0.5" />
           </span>
           View Our Portfolio
         </a>
       </div>
 
-      <!-- Redesigned Grid Stats (Fixed wrapping and cropping on mobile) -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-6 pt-6 border-t border-white/10 w-full">
-        
-        <!-- Websites -->
-        <div class="flex flex-col items-center xl:items-start">
-          <div class="flex items-center gap-1.5 text-white/80">
-            <Globe2 className="w-4 h-4" />
-            <span class="text-base sm:text-lg font-black text-white">150+</span>
-          </div>
-          <p class="text-[10px] sm:text-xs text-white/70 font-semibold mt-1 leading-tight">Websites Delivered</p>
+      <!-- Trusted Brands Section -->
+      <div
+        class="mt-4 pt-4 border-t border-neutral-100/60 w-full flex flex-col items-center xl:items-start gap-3"
+      >
+        <span
+          class="text-xs text-neutral-400 font-bold uppercase tracking-wider"
+          >Trusted by Brands Across the World</span
+        >
+        <div
+          class="flex flex-wrap items-center justify-center xl:justify-start gap-4 sm:gap-5 grayscale opacity-55"
+        >
+          <img
+            src="/client logos/Abroad-career-1.jpg"
+            alt="Abroad Career logo"
+            class="h-11 w-auto object-contain rounded"
+          />
+          <div class="h-6 w-[1px] bg-neutral-200/60"></div>
+          <img
+            src="/client logos/abu-dhabi.jpg"
+            alt="Abu Dhabi logo"
+            class="h-11 w-auto object-contain rounded"
+          />
+          <div class="h-6 w-[1px] bg-neutral-200/60"></div>
+          <img
+            src="/client logos/al-coffee-1.jpg"
+            alt="Al Coffee logo"
+            class="h-11 w-auto object-contain rounded"
+          />
+          <div class="h-6 w-[1px] bg-neutral-200/60"></div>
+          <img
+            src="/client logos/amster.jpg"
+            alt="Amster logo"
+            class="h-11 w-auto object-contain rounded"
+          />
+          <div class="h-6 w-[1px] bg-neutral-200/60"></div>
+          <img
+            src="/client logos/ar.jpg"
+            alt="AR logo"
+            class="h-11 w-auto object-contain rounded"
+          />
         </div>
-        
-        <!-- Clients -->
-        <div class="flex flex-col items-center xl:items-start border-l border-white/10 pl-3 sm:pl-6">
-          <div class="flex items-center gap-1.5 text-white/80">
-            <Smile className="w-4 h-4" />
-            <span class="text-base sm:text-lg font-black text-white">100+</span>
-          </div>
-          <p class="text-[10px] sm:text-xs text-white/70 font-semibold mt-1 leading-tight">Happy Clients</p>
-        </div>
-
-        <!-- Experience -->
-        <div class="flex flex-col items-center xl:items-start border-l-0 md:border-l border-white/10 pl-0 md:pl-6">
-          <div class="flex items-center gap-1.5 text-white/80">
-            <Award className="w-4 h-4" />
-            <span class="text-base sm:text-lg font-black text-white">8 Years</span>
-          </div>
-          <p class="text-[10px] sm:text-xs text-white/70 font-semibold mt-1 leading-tight">Experience</p>
-        </div>
-
-        <!-- Google Rated -->
-        <div class="flex flex-col items-center xl:items-start border-l border-white/10 pl-3 sm:pl-6">
-          <div class="flex items-center gap-1.5 text-white/80">
-            <Star className="w-4 h-4 text-amber-300 fill-amber-300" />
-            <span class="text-base sm:text-lg font-black text-white">5 Star</span>
-          </div>
-          <p class="text-[10px] sm:text-xs text-white/70 font-semibold mt-1 leading-tight">Google Rated</p>
-        </div>
-
       </div>
     </div>
 
-    <!-- Visual Presentation (Mockups based on the image) -->
-    <div class="relative w-full h-[550px] hidden xl:block mt-6">
-      
+    <!-- Visual Presentation (Mockups with Warm Agency Highlights) -->
+    <!-- Device Showcase (position: relative) -->
+    <div
+      id="device-showcase"
+      class="xl:col-span-7 relative w-full h-[620px] hidden xl:flex items-center justify-center mt-6"
+    >
       <!-- Central Background Glow -->
-      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-white/20 rounded-full blur-[60px] -z-10"></div>
+      <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-secondary/15 rounded-full blur-[85px] -z-10"
+      >
+      </div>
 
-      <!-- Main Desktop Mockup (Bright screen, light border to pop against orange) -->
-      <div class="absolute top-[12%] left-[8%] w-[580px] h-[350px] transform -rotate-2 z-10 animate-[float_6s_ease-in-out_infinite]">
-        <!-- Screen -->
-        <div class="w-full h-full bg-white rounded-t-xl rounded-b-sm shadow-[0_20px_50px_rgba(0,0,0,0.2)] border-2 border-white overflow-hidden relative flex flex-col">
-          <!-- Browser Header -->
-          <div class="h-8 bg-gray-50 border-b border-gray-200 flex items-center px-3 justify-between">
-            <div class="flex gap-1.5">
-              <div class="w-2 h-2 rounded-full bg-red-500"></div>
-              <div class="w-2 h-2 rounded-full bg-yellow-400"></div>
-              <div class="w-2 h-2 rounded-full bg-green-500"></div>
-            </div>
-            <div class="flex gap-3 text-[9px] font-bold text-gray-500 uppercase">
-              <span>Home</span>
-              <span>About</span>
-              <span>Services</span>
-              <span>Portfolio</span>
-              <span>Contact</span>
-            </div>
-            <div class="px-2 py-0.5 bg-black text-white text-[9px] rounded-full font-bold">Get In Touch</div>
-          </div>
-          <!-- Fake Inner Content -->
-          <div class="p-6 flex-grow relative bg-white">
-            <h3 class="text-2xl font-black text-black leading-tight mb-3">
-              Digital Solutions <br /> That <span class="text-primary">Drive Results</span>
-            </h3>
-            <p class="text-[10px] text-gray-500 max-w-[240px] mb-5">
-              We build fast, SEO-optimized websites that rank higher and convert better.
-            </p>
-            <div class="flex gap-2">
-              <div class="px-3 py-1.5 bg-primary text-white text-[10px] font-bold rounded-full">Start Your Project →</div>
-              <div class="px-3 py-1.5 border border-gray-200 bg-white text-black text-[10px] font-bold rounded-full flex items-center gap-1"><Play className="w-2.5 h-2.5"/> Explore Work</div>
-            </div>
-          </div>
+      <!-- Mockup Device Image Container -->
+      <div
+        class="w-full max-w-[750px] z-10 scale-160 xl:-translate-y-15 origin-center"
+      >
+        <img
+          src="/mockup.png"
+          alt="Teknoppy Performance Dashboard Mockups"
+          class="w-full h-auto object-contain"
+        />
+      </div>
+
+      <!-- Projects Delivered (Top Left of laptop) -->
+      <div
+        class="absolute top-[8%] left-[20%] w-[185px] bg-white rounded-2xl border border-neutral-100/70 p-3 z-20 hover:-translate-y-1 transition-all duration-300 anim-float-1 shadow-[0_12px_35px_rgba(255,107,26,0.04)] flex items-center gap-3"
+      >
+        <div
+          class="w-9 h-9 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0"
+        >
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2.5"
+            ><path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5 13l4 4L19 7"></path></svg
+          >
         </div>
-        <!-- Laptop Base -->
-        <div class="w-[110%] h-3 bg-gray-200 rounded-b-lg -ml-[5%] relative shadow-2xl">
-           <div class="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-1 bg-gray-300 rounded-b-sm"></div>
+        <div class="flex flex-col min-w-0">
+          <span
+            class="text-[14px] font-extrabold text-neutral-900 leading-tight"
+            >150+ Projects</span
+          >
+          <span
+            class="text-[10px] text-neutral-500 font-semibold leading-none mt-0.5"
+            >Delivered Globally</span
+          >
         </div>
       </div>
 
-      <!-- Mobile Phone Mockup -->
-      <div class="absolute bottom-[2%] right-[5%] w-[170px] h-[360px] bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.2)] border-[6px] border-black transform rotate-6 z-20 overflow-hidden">
-        <!-- Dynamic Island -->
-        <div class="absolute top-1.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-black rounded-full z-30"></div>
-        <!-- Phone Content -->
-        <div class="w-full h-full bg-white flex flex-col pt-8 px-3">
-          <div class="text-[9px] font-black mb-3 text-black">TEKNOPPY</div>
-          <h4 class="text-base font-black leading-tight mb-2 text-black">Results-Driven Websites for <span class="text-primary">Growing</span> Businesses</h4>
-          <p class="text-[7px] text-gray-500 mb-4">We help businesses attract the right audience, generate leads and scale online.</p>
-          <div class="px-3 py-1.5 bg-black text-white text-[9px] font-bold rounded-full w-max mb-5">Get a Free Audit →</div>
-          <div class="text-[9px] font-bold mb-2 text-black">Our Services</div>
-          <div class="grid grid-cols-2 gap-1.5">
-             <div class="h-10 bg-gray-50 rounded border border-gray-100"></div>
-             <div class="h-10 bg-gray-50 rounded border border-gray-100"></div>
-          </div>
+      <!-- Top Rated Card (Left Center beside laptop) -->
+      <div
+        class="absolute top-[38%] left-[20%] w-[190px] bg-white rounded-2xl border border-neutral-100/70 p-3 z-20 hover:-translate-y-1 transition-all duration-300 anim-float-2 shadow-[0_12px_35px_rgba(255,107,26,0.04)] flex items-center gap-3"
+      >
+        <div
+          class="w-9 h-9 rounded-full bg-amber-50 text-amber-500 flex items-center justify-center flex-shrink-0"
+        >
+          <svg class="w-4.5 h-4.5 fill-current" viewBox="0 0 24 24"
+            ><path
+              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+            ></path></svg
+          >
+        </div>
+        <div class="flex flex-col min-w-0">
+          <span
+            class="text-[14px] font-extrabold text-neutral-900 leading-tight"
+            >Top Rated</span
+          >
+          <span
+            class="text-[10px] text-neutral-500 font-semibold leading-none mt-0.5"
+            >Digital Agency</span
+          >
         </div>
       </div>
 
-      <!-- Floating Stat Card 1: Leads Generated (Bright styling to contrast orange) -->
-      <div class="absolute top-[40%] -left-[2%] w-[150px] bg-white rounded-xl shadow-[0_15px_40px_rgba(0,0,0,0.15)] border border-gray-100 p-3 z-30 transform -rotate-3 animate-[float_5s_ease-in-out_infinite_reverse]">
-        <div class="flex justify-between items-start mb-1.5">
-          <p class="text-[9px] font-bold text-black">Leads Generated</p>
-          <div class="w-3.5 h-3.5 rounded-full bg-green-100 flex items-center justify-center">
-            <ArrowRight className="w-2 h-2 text-green-500 -rotate-45" />
-          </div>
+      <!-- Google Partner Card (Top Right beside laptop) -->
+      <div
+        class="absolute top-[1%] right-[2%] w-[185px] bg-white rounded-2xl border border-neutral-100/70 p-3 z-20 hover:-translate-y-1 transition-all duration-300 anim-float-3 shadow-[0_12px_35px_rgba(255,107,26,0.04)] flex items-center gap-3"
+      >
+        <div
+          class="w-9 h-9 rounded-full bg-neutral-50 flex items-center justify-center flex-shrink-0 shadow-inner"
+        >
+          <svg
+            class="w-4.5 h-4.5"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            ><path
+              d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+              fill="#4285F4"></path><path
+              d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+              fill="#34A853"></path><path
+              d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"
+              fill="#FBBC05"></path><path
+              d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+              fill="#EA4335"></path></svg
+          >
         </div>
-        <p class="text-lg font-black text-black">+182%</p>
-        <p class="text-[7px] text-gray-500 mb-2">vs last 6 months</p>
-        <!-- Bar chart -->
-        <div class="flex items-end gap-1 h-6">
-          <div class="w-full bg-[#F8B342]/30 rounded-t-sm h-[30%]"></div>
-          <div class="w-full bg-[#F8B342]/50 rounded-t-sm h-[50%]"></div>
-          <div class="w-full bg-[#F8B342]/70 rounded-t-sm h-[65%]"></div>
-          <div class="w-full bg-primary/80 rounded-t-sm h-[80%]"></div>
-          <div class="w-full bg-primary rounded-t-sm h-[100%]"></div>
-        </div>
-      </div>
-
-      <!-- Floating Stat Card 2: Website Traffic -->
-      <div class="absolute top-[8%] right-[22%] w-[140px] bg-white rounded-xl shadow-[0_15px_40px_rgba(0,0,0,0.15)] border border-gray-100 p-3 z-0 transform rotate-2 animate-[float_7s_ease-in-out_infinite]">
-        <div class="flex justify-between items-start mb-1.5">
-          <p class="text-[9px] font-bold text-black">Website Traffic</p>
-          <div class="w-3.5 h-3.5 rounded-full bg-green-100 flex items-center justify-center">
-            <ArrowRight className="w-2 h-2 text-green-500 -rotate-45" />
-          </div>
-        </div>
-        <p class="text-lg font-black text-black">+156%</p>
-        <p class="text-[7px] text-gray-500 mb-2">vs last 3 months</p>
-        <!-- Line chart simple SVG -->
-        <svg class="w-full h-6" viewBox="0 0 100 30" preserveAspectRatio="none">
-          <path d="M0,30 L10,25 L30,28 L50,15 L70,20 L90,5 L100,0" fill="none" stroke="#F96232" stroke-width="2" />
-          <path d="M0,30 L10,25 L30,28 L50,15 L70,20 L90,5 L100,0 L100,30 L0,30 Z" fill="url(#grad1_light)" opacity="0.15" />
-          <defs>
-            <linearGradient id="grad1_light" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" style="stop-color:#F96232;stop-opacity:1" />
-              <stop offset="100%" style="stop-color:#F96232;stop-opacity:0" />
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
-
-      <!-- Floating Stat Card 3: Google Rankings -->
-      <div class="absolute top-[28%] -right-[2%] w-[140px] bg-white rounded-xl shadow-[0_15px_40px_rgba(0,0,0,0.15)] border border-gray-100 p-3 z-0 transform rotate-3 animate-[float_6s_ease-in-out_infinite_1s]">
-        <div class="flex justify-between items-start mb-1.5">
-          <p class="text-[9px] font-bold text-black">Google Rankings</p>
-          <div class="w-3.5 h-3.5 rounded-full bg-green-100 flex items-center justify-center">
-            <ArrowRight className="w-2 h-2 text-green-500 -rotate-45" />
-          </div>
-        </div>
-        <p class="text-lg font-black text-black">+248%</p>
-        <p class="text-[7px] text-gray-500 mb-2">vs last 6 months</p>
-        <!-- Line chart simple SVG -->
-        <svg class="w-full h-6" viewBox="0 0 100 30" preserveAspectRatio="none">
-          <path d="M0,30 L20,20 L40,25 L60,10 L80,15 L100,0" fill="none" stroke="#F96232" stroke-width="2" />
-          <path d="M0,30 L20,20 L40,25 L60,10 L80,15 L100,0 L100,30 L0,30 Z" fill="url(#grad2_light)" opacity="0.15" />
-          <defs>
-            <linearGradient id="grad2_light" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" style="stop-color:#F96232;stop-opacity:1" />
-              <stop offset="100%" style="stop-color:#F96232;stop-opacity:0" />
-            </linear.Gradient>
-          </defs>
-        </svg>
-      </div>
-
-      <!-- Floating Stat Card 4: PageSpeed -->
-      <div class="absolute bottom-[5%] right-[32%] w-[160px] bg-white rounded-full shadow-[0_15px_40px_rgba(0,0,0,0.15)] border border-gray-100 p-2 px-4 z-30 transform -rotate-2 flex items-center gap-3 animate-[float_4s_ease-in-out_infinite]">
-        <div class="w-8 h-8 rounded-full border-[3px] border-green-500 flex items-center justify-center text-[10px] font-bold text-green-600">
-          98
-        </div>
-        <div>
-          <p class="text-[9px] font-bold text-black">PageSpeed Score</p>
-          <p class="text-xs font-black text-green-500">98/100</p>
+        <div class="flex flex-col min-w-0">
+          <span
+            class="text-[14px] font-extrabold text-neutral-900 leading-tight"
+            >Google Partner</span
+          >
+          <span
+            class="text-[10px] text-neutral-500 font-semibold leading-none mt-0.5"
+            >Certified & Trusted</span
+          >
         </div>
       </div>
 
+      <!-- Client Satisfaction Card (Bottom Right beside phone) -->
+      <div
+        class="absolute bottom-[22%] right-[2%] w-[180px] bg-white rounded-2xl border border-neutral-100/70 p-3 z-20 hover:-translate-y-1 transition-all duration-300 anim-float-4 shadow-[0_12px_35px_rgba(255,107,26,0.04)] flex items-center gap-3"
+      >
+        <div
+          class="w-9 h-9 rounded-full bg-rose-50 text-rose-500 flex items-center justify-center flex-shrink-0"
+        >
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"
+            ><path
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+            ></path></svg
+          >
+        </div>
+        <div class="flex flex-col min-w-0">
+          <span
+            class="text-[14px] font-extrabold text-neutral-900 leading-tight"
+            >100% Satisfied</span
+          >
+          <span
+            class="text-[10px] text-neutral-500 font-semibold leading-none mt-0.5"
+            >Client Happiness Rate</span
+          >
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
+<style>
+  .hero-bg {
+    background-image: url("/mobileherobg2.png");
+  }
+  @media (min-width: 768px) {
+    .hero-bg {
+      background-image: url("/tekenoppyherobg.png");
+    }
+  }
+
+  /* Custom Floating Callout Animations */
+  .anim-float-1 {
+    animation: float1 7s ease-in-out infinite;
+  }
+  .anim-float-2 {
+    animation: float2 6s ease-in-out infinite;
+  }
+  .anim-float-3 {
+    animation: float3 8s ease-in-out infinite;
+  }
+  .anim-float-4 {
+    animation: float4 7.5s ease-in-out infinite;
+  }
+
+  @keyframes float1 {
+    0%,
+    100% {
+      transform: translateY(0) rotate(-3deg);
+    }
+    50% {
+      transform: translateY(-7px) rotate(-3deg);
+    }
+  }
+  @keyframes float2 {
+    0%,
+    100% {
+      transform: translateY(0) rotate(2deg);
+    }
+    50% {
+      transform: translateY(-6px) rotate(2deg);
+    }
+  }
+  @keyframes float3 {
+    0%,
+    100% {
+      transform: translateY(0) rotate(1deg);
+    }
+    50% {
+      transform: translateY(-7px) rotate(1deg);
+    }
+  }
+  @keyframes float4 {
+    0%,
+    100% {
+      transform: translateY(0) rotate(-2deg);
+    }
+    50% {
+      transform: translateY(-6px) rotate(-2deg);
+    }
+  }
+</style>
