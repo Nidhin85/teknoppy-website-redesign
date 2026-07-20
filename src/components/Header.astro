@@ -1,4 +1,10 @@
 ---
+interface Props {
+  forceSolidBg?: boolean;
+}
+
+const { forceSolidBg = false } = Astro.props;
+
 const links = [
   { name: 'Home', href: '/', active: true },
   { name: 'Services', href: '#services', hasDropdown: true },
@@ -9,7 +15,15 @@ const links = [
 ];
 ---
 
-<header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent border-b border-transparent pt-9 pb-4">
+<header 
+  id="site-header" 
+  class={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+    forceSolidBg 
+      ? 'bg-white border-b border-neutral-200/50 py-3 shadow-md shadow-black/[0.03]' 
+      : 'bg-transparent border-b border-transparent pt-9 pb-4'
+  }`}
+  data-force-solid={forceSolidBg ? "true" : "false"}
+>
   <div class="max-w-[1280px] mx-auto px-6 lg:px-12 flex items-center justify-between">
     
     <!-- Logo -->
@@ -89,7 +103,9 @@ const links = [
   const mobileCta = document.querySelector('.mobile-cta');
 
   // Sticky header handling
+  const forceSolid = header?.dataset.forceSolid === 'true';
   window.addEventListener('scroll', () => {
+    if (forceSolid) return;
     if (window.scrollY > 20) {
       header?.classList.add('py-3', 'bg-white/95', 'backdrop-blur-md', 'border-neutral-200/50', 'shadow-md', 'shadow-black/[0.03]');
       header?.classList.remove('pt-9', 'pb-4', 'bg-transparent', 'border-transparent');

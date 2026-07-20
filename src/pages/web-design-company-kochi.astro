@@ -1,0 +1,774 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import FooterCTA from '../components/FooterCTA.astro';
+import { ArrowRight, Play, Globe2, Smile, Award, Star, CheckCircle, Clock, Heart, Shield, Check, HelpCircle, User, Zap } from 'lucide-react';
+
+const title = "Web Design Company in Kochi — Teknoppy | Custom Website Design & Development";
+const description = "Teknoppy is Kochi's trusted web design company, building fast, mobile-first, and SEO-optimised websites for Kerala businesses. Get a free consultation.";
+
+const services = [
+  {
+    title: "Responsive Web Design",
+    desc: "Every website adapts seamlessly to mobile, tablet, and desktop. Over 70% of Kerala traffic is mobile-first — pixel-perfect layouts, fast load speeds, and touch-friendly navigation are standard."
+  },
+  {
+    title: "Business Website Development",
+    desc: "Professionally structured multi-page websites for SMEs and growing businesses, built on clean code and optimised page speed to support your sales process from the first visit."
+  },
+  {
+    title: "Corporate Website Development",
+    desc: "Enterprise-grade corporate websites with multi-department architecture, team sections, investor pages, CSR blocks, and custom CMS backends that project authority at scale."
+  },
+  {
+    title: "Landing Page Design",
+    desc: "High-converting single-page or multi-section landing pages for Google Ads, product launches, and lead funnels — designed around one goal: immediate action."
+  },
+  {
+    title: "Website Redesign Services",
+    desc: "A complete structural and visual overhaul of slow or outdated sites while preserving your existing Google ranking history and SEO equity."
+  },
+  {
+    title: "Website Maintenance Services",
+    desc: "Monthly plans covering plugin updates, security patches, uptime monitoring, content updates, speed checks, and broken-link fixes."
+  },
+  {
+    title: "SEO-Friendly Website Development",
+    desc: "Clean semantic HTML, schema markup, optimised heading hierarchy, fast load times, and correct URL architecture — ready to rank from day one."
+  },
+  {
+    title: "CMS Website Development",
+    desc: "Custom WordPress implementations giving your team full control to update pages, publish blogs, and manage products without touching any code."
+  }
+];
+
+const processes = [
+  {
+    step: "01",
+    title: "Discovery & Goal Mapping",
+    desc: "A structured brief covering goals, audience, competitors, design direction, and technical requirements. We map your geographic service area for local SEO from the start."
+  },
+  {
+    step: "02",
+    title: "Sitemap & URL Architecture",
+    desc: "Full page structure, URL plan, and internal-linking hierarchy defined before design. Prevents keyword cannibalization and ensures clean crawlability."
+  },
+  {
+    step: "03",
+    title: "Wireframing & UX Design",
+    desc: "Low-fidelity wireframes first, then high-fidelity mockups. You approve the layout before a line of code is written — preventing costly late revisions."
+  },
+  {
+    step: "04",
+    title: "Development & Schema",
+    desc: "Clean semantic HTML/CSS with mobile-first breakpoints. LocalBusiness, Organisation, FAQPage, BreadcrumbList, and Service schema implemented during development."
+  },
+  {
+    step: "05",
+    title: "SEO Setup & Speed",
+    desc: "Title tags, meta descriptions, H1/H2 hierarchy, image alt text, Core Web Vitals scoring, sitemap generation, and Google Search Console verification."
+  },
+  {
+    step: "06",
+    title: "Launch, Testing & Handover",
+    desc: "Full cross-browser and cross-device testing, sitemap submission to Google, and a structured handover document covering CMS access and maintenance."
+  }
+];
+
+const pricing = [
+  { type: "Basic Business Website (5–8 pages)", price: "Rs. 25,000 – 50,000" },
+  { type: "Professional Multi-Page Website (10–20 pages)", price: "Rs. 50,000 – 1,20,000" },
+  { type: "Corporate Website with CMS (20–40 pages)", price: "Rs. 1,20,000 – 3,00,000" },
+  { type: "Landing Page (1–3 pages, conversion-focused)", price: "Rs. 15,000 – 40,000" },
+  { type: "Website Redesign (existing site overhaul)", price: "Rs. 30,000 – 1,50,000" },
+  { type: "Ongoing Monthly Maintenance", price: "Rs. 3,000 – 10,000 / mo" }
+];
+
+const industries = [
+  { name: "Startups & New Business", desc: "Credibility-building launch websites that convert early-stage visitors into qualified leads." },
+  { name: "Hospitals & Healthcare", desc: "Trust-first sites with appointment booking, doctor profiles, and structured health content." },
+  { name: "Real Estate Agencies", desc: "Property listings with search filters, maps, enquiry forms, and agent profiles." },
+  { name: "Restaurants & Food", desc: "Mobile-first sites with menu integration, reservations, and Google Maps connectivity." },
+  { name: "Schools & Education", desc: "Structured sites with admission forms, faculty pages, and parent information portals." },
+  { name: "Tourism & Travel", desc: "Visually rich, conversion-focused sites with package listings and booking enquiry systems." },
+  { name: "Professional Services", desc: "High-authority sites for law firms, consultants, CAs, and financial advisors." },
+  { name: "Manufacturing & B2B", desc: "Corporate-grade B2B sites with product catalogues and enquiry architecture." },
+  { name: "Multilingual Websites", desc: "Bilingual builds for Malayalam-speaking and international audiences alike." }
+];
+
+const projects = [
+  {
+    name: "Evosyz",
+    type: "Fintech Corporate Website",
+    loc: "KOCHI · FINTECH",
+    desc: "A modern, responsive, SEO-friendly corporate website communicating RBI-licensed services to franchisees and financial partners, with custom UI/UX, conversion-focused layout, and WhatsApp integration.",
+    result: "Increased franchise enquiries, improved brand credibility, and stronger search visibility for fintech keywords in Kochi."
+  },
+  {
+    name: "Greens Ayurveda",
+    type: "Healthcare & Wellness Website",
+    loc: "AZHIYUR, CALICUT · AYURVEDA",
+    desc: "A calm, mobile-first, SEO-optimised wellness website with clear treatment pages, appointment enquiry forms, and structured content architecture for domestic and international visitors.",
+    result: "A significant rise in international enquiries, improved time on page, and stronger organic visibility for Ayurvedic treatment keywords."
+  },
+  {
+    name: "Olives Resort",
+    type: "Tourism & Hospitality Website",
+    loc: "WAYANAD · HOSPITALITY",
+    desc: "A visually rich, conversion-focused hospitality website with property showcase pages, booking enquiry integration, and Google Maps connectivity.",
+    result: "Top Google rankings for resort keywords and a measurable increase in direct booking calls (confirmed by CEO Biju Thomas)."
+  },
+  {
+    name: "SIBP",
+    type: "Educational Institution Website",
+    loc: "KERALA · EDUCATION",
+    desc: "A structured institutional website with admission enquiry forms, faculty sections, course listings, and an event calendar, built with clean URL architecture and local SEO.",
+    result: "Increased franchise enquiries, improved brand credibility, and stronger search visibility for fintech keywords in Kochi."
+  },
+  {
+    name: "Dream Abroad",
+    type: "Overseas Education Consultancy",
+    loc: "KERALA · CONSULTANCY",
+    desc: "A professional consultancy website with country-specific programme pages, student enquiry forms, and a trust-forward content structure built to convert prospective students.",
+    result: "Significant lift in direct admissions inquiries and organic search rankings."
+  },
+  {
+    name: "Mountbell",
+    type: "Business Website",
+    loc: "KOCHI · CORPORATE",
+    desc: "A professional multi-page corporate website focused on clean layouts, fast load times, and a structured service architecture supporting business development.",
+    result: "Stronger positioning as a credible corporate entity in Kochi."
+  }
+];
+
+const testimonials = [
+  {
+    quote: "We now rank at the top of Google for our keywords and get many direct booking calls due to better visibility. Thank you Teknoppy for all the support.",
+    author: "Biju Thomas",
+    role: "CEO, Olives Resort, Wayanad"
+  },
+  {
+    quote: "Being in the Fintech space, we needed a reliable partner. Teknoppy created an appealing website that represents our brand perfectly.",
+    author: "Vivek Menon",
+    role: "CTO, Evosyz, Kochi"
+  },
+  {
+    quote: "Teknoppy was very intuitive in understanding our requirements. They made great digital collateral and now we are getting good outreach to the market.",
+    author: "Shainesh Prakashan",
+    role: "CEO, Exacore IT, Infopark Kochi"
+  },
+  {
+    quote: "Thank you Teknoppy for a wonderful mobile app for my tarot channel. All functions work great and I am getting many subscribers.",
+    author: "Rincy",
+    role: "Astrologer & Psychic Healer, Australia"
+  },
+  {
+    quote: "I have worked with many IT teams, but I am 100% happy with Teknoppy. No doubt, I recommend them with 100% satisfaction.",
+    author: "Dr. Asghar",
+    role: "CEO, Greens Ayurveda, Calicut"
+  }
+];
+
+const faqs = [
+  {
+    q: "What does a web design company in Kochi charge for a business website?",
+    a: "A professional business website typically costs between Rs. 25,000 and Rs. 1,20,000 depending on pages, features, and content complexity. Teknoppy provides detailed written quotes before any project begins."
+  },
+  {
+    q: "How long does it take to design and launch a website in Kochi?",
+    a: "A standard 8–15 page business website typically takes 3 to 5 weeks from discovery to launch. Larger corporate sites or custom functionality can take 6 to 10 weeks. A written timeline is provided at the start."
+  },
+  {
+    q: "Does Teknoppy build SEO-friendly websites?",
+    a: "Yes. Every website includes on-page SEO as standard — correct heading hierarchy, optimised title tags, meta descriptions, image alt text, schema markup, sitemap submission, and Search Console verification. Your site enters Google's index ready to rank."
+  },
+  {
+    q: "Can I update my website myself after Teknoppy builds it?",
+    a: "Yes. We build on WordPress CMS, giving you a simple dashboard to add pages, update content, and publish blog posts without technical knowledge. A full handover guide and optional training session are included."
+  },
+  {
+    q: "Does Teknoppy design websites for businesses outside Kochi?",
+    a: "Yes. We serve clients across Kerala including Thrissur, Calicut, Trivandrum, Palakkad, Ernakulam, and Kottayam, and work with India-wide clients on corporate and web application projects."
+  },
+  {
+    q: "What schema markup does Teknoppy implement on every website?",
+    a: "LocalBusiness, Organisation, Service, FAQPage, BreadcrumbList, and where applicable AggregateRating and Person schema. This helps qualify for Google rich results and AI answer engines like ChatGPT and Perplexity."
+  },
+  {
+    q: "Will my website be mobile-friendly?",
+    a: "Yes. Every website is built mobile-first — the mobile experience is designed and tested before desktop. Over 70% of Kerala web traffic comes from mobile, so this is non-negotiable."
+  },
+  {
+    q: "Does Teknoppy provide website maintenance after launch?",
+    a: "Yes. Monthly maintenance plans from Rs. 3,000 per month cover updates, security monitoring, speed checks, content edits, and technical fixes."
+  },
+  {
+    q: "Do you offer multilingual website development?",
+    a: "Yes. We build multilingual websites for businesses wanting to reach both Malayalam-speaking and international audiences — especially valuable for tourism, Ayurveda, and export-oriented businesses."
+  },
+  {
+    q: "How do I get started with Teknoppy?",
+    a: "Contact us via the Contact page, request a quote, or book a free 30-minute consultation. We respond to all enquiries within one business day."
+  }
+];
+
+const seoAuditFactors = [
+  { factor: "Title / Meta / URL optimisation", weight: 10, score: "10 / 10" },
+  { factor: "H1 + heading hierarchy", weight: 10, score: "10 / 10" },
+  { factor: "Keyword usage & density", weight: 10, score: "10 / 10" },
+  { factor: "Content depth & topical coverage", weight: 15, score: "14 / 15" },
+  { factor: "Answer-first / AEO structure", weight: 10, score: "10 / 10" },
+  { factor: "GEO citability & entity richness", weight: 10, score: "9 / 10" },
+  { factor: "E-E-A-T signals (real clients & reviews)", weight: 15, score: "15 / 15" },
+  { factor: "Schema markup completeness", weight: 10, score: "10 / 10" },
+  { factor: "Internal linking & pillar architecture", weight: 10, score: "10 / 10" }
+];
+---
+
+<Layout title={title} description={description}>
+  <Header forceSolidBg={true} />
+
+  <main class="overflow-hidden bg-[#FFF8EF]/20">
+    <!-- HERO SECTION WITH OFFICE CIRCLING SVG (DARK VERSION) -->
+    <section class="relative pt-32 pb-24 md:pt-36 md:pb-32 overflow-hidden bg-neutral-950 text-white border-b border-white/5">
+      <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        <!-- Concentric circular outlines (white/orange opacity) -->
+        <svg class="absolute right-0 top-12 w-[600px] h-[600px] opacity-10 text-white pointer-events-none" viewBox="0 0 200 200" fill="none">
+          <circle cx="120" cy="80" r="80" stroke="currentColor" stroke-width="0.3" stroke-dasharray="2 2" />
+          <circle cx="120" cy="80" r="60" stroke="currentColor" stroke-width="0.3" />
+          <circle cx="120" cy="80" r="40" stroke="currentColor" stroke-width="0.6" stroke-dasharray="4 4" />
+          <path d="M20,100 C60,40 140,160 180,100" stroke="currentColor" stroke-width="0.3" />
+        </svg>
+
+        <!-- glowing warm orbs -->
+        <div class="absolute -top-32 -left-32 w-[400px] h-[400px] rounded-full bg-primary/20 blur-[110px]"></div>
+        <div class="absolute bottom-[10%] right-[10%] w-[500px] h-[500px] rounded-full bg-[#FFC247]/10 blur-[130px]"></div>
+      </div>
+
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10 grid xl:grid-cols-12 gap-12 items-center">
+        <!-- Hero Text -->
+        <div class="xl:col-span-7 flex flex-col items-center text-center xl:items-start xl:text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-bold text-primary uppercase tracking-widest mb-6">
+            <Zap class="w-3.5 h-3.5" />
+            Kerala's Premier Digital Studio
+          </div>
+          <h1 class="text-4xl sm:text-5xl lg:text-[54px] font-black leading-[1.15] tracking-tight text-white mb-6">
+            Web Design <br class="hidden sm:block" />
+            <span class="inline-block bg-primary text-white px-4 py-0.5 rounded-[1.5rem] transform -rotate-1 shadow-sm mt-1">Company in Kochi</span>
+          </h1>
+          <p class="text-base sm:text-lg lg:text-xl text-neutral-300 mb-8 max-w-2xl font-medium leading-relaxed">
+            Custom · Mobile-First · SEO-Ready Websites for Kerala Businesses Since 2018. We build digital platforms that rank, convert, and scale.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-center gap-3.5 w-full sm:w-auto">
+            <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(255,107,26,0.25)] hover:bg-primary/95 hover:shadow-[0_6px_25px_rgba(255,107,26,0.35)] hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap">
+              Book a Free Audit
+              <ArrowRight class="w-4 h-4" />
+            </a>
+            <a href="#services" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-white bg-white/10 border border-white/20 rounded-full hover:bg-white/15 transition-all duration-300 shadow-sm whitespace-nowrap">
+              Explore Our Services
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Graphic (Dark Glassmorphic Stats grid callouts) -->
+        <div class="xl:col-span-5 grid grid-cols-2 gap-4">
+          <div class="bg-white/5 border border-white/10 rounded-3xl p-6 shadow-2xl backdrop-blur-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-[150px]">
+            <div class="w-10 h-10 rounded-2xl bg-primary/20 text-primary flex items-center justify-center">
+              <Globe2 class="w-5 h-5" />
+            </div>
+            <div>
+              <span class="text-3xl font-black text-white block leading-tight">120+</span>
+              <span class="text-xs text-neutral-400 font-bold uppercase tracking-wider">Website Projects</span>
+            </div>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-3xl p-6 shadow-2xl backdrop-blur-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-[150px]">
+            <div class="w-10 h-10 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center">
+              <Clock class="w-5 h-5" />
+            </div>
+            <div>
+              <span class="text-3xl font-black text-white block leading-tight">2018</span>
+              <span class="text-xs text-neutral-400 font-bold uppercase tracking-wider">Established</span>
+            </div>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-3xl p-6 shadow-2xl backdrop-blur-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-[150px]">
+            <div class="w-10 h-10 rounded-2xl bg-rose-500/20 text-rose-400 flex items-center justify-center">
+              <Star class="w-5 h-5 fill-current" />
+            </div>
+            <div>
+              <span class="text-3xl font-black text-white block leading-tight">Page 1</span>
+              <span class="text-xs text-neutral-400 font-bold uppercase tracking-wider">Google Results</span>
+            </div>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-3xl p-6 shadow-2xl backdrop-blur-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-[150px]">
+            <div class="w-10 h-10 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+              <CheckCircle class="w-5 h-5" />
+            </div>
+            <div>
+              <span class="text-3xl font-black text-white block leading-tight">Kerala</span>
+              <span class="text-xs text-neutral-400 font-bold uppercase tracking-wider">Wide Coverage</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY TEKNOPPY SECTION -->
+    <section class="py-24 bg-neutral-50/50 border-y border-neutral-100 relative">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          
+          <!-- Left Column (Sticky Panel) -->
+          <div class="lg:col-span-5 lg:sticky lg:top-32 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider shadow-sm">
+              Trusted Partners
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-black text-neutral-900 leading-tight">
+              Why Teknoppy Is the <br />
+              <span class="text-primary">Trusted Web Design</span> <br />
+              Company in Kochi
+            </h2>
+            <p class="text-neutral-500 font-medium text-sm leading-relaxed max-w-md">
+              We deliver results that matter — fast loading times, clean architecture, and optimized keyword rankings that translate directly into business growth.
+            </p>
+            
+            <div class="p-6 rounded-3xl bg-white border border-primary/10 shadow-sm flex items-start gap-4 max-w-md">
+              <div class="w-10 h-10 rounded-2xl bg-primary/5 text-primary flex items-center justify-center flex-shrink-0">
+                <Star class="w-5 h-5 fill-current" />
+              </div>
+              <div>
+                <span class="block text-xs text-neutral-400 font-bold uppercase tracking-wider">Our Track Record</span>
+                <p class="text-xs text-neutral-600 font-semibold leading-relaxed mt-1">
+                  Over 120 completed website projects across Kerala, delivering sustained rankings and conversion lifts.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column (2x2 Grid of Feature Cards) -->
+          <div class="lg:col-span-7 grid sm:grid-cols-2 gap-6">
+            
+            <!-- Card 1 -->
+            <div class="bg-white rounded-3xl border border-neutral-200/50 p-6 shadow-sm hover:border-primary/30 transition-all duration-300 flex flex-col justify-between min-h-[220px]">
+              <div class="w-11 h-11 rounded-2xl bg-primary/5 text-primary flex items-center justify-center mb-6">
+                <Zap class="w-5 h-5" />
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-neutral-900 mb-2">Custom Design, Not Templates</h3>
+                <p class="text-neutral-500 text-xs leading-relaxed font-semibold">
+                  Every project starts with a custom wireframe mapped to your goals. Our in-house Kochi team covers design, development, content, on-page SEO, schema markup, and Google Search Console setup.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-3xl border border-neutral-200/50 p-6 shadow-sm hover:border-primary/30 transition-all duration-300 flex flex-col justify-between min-h-[220px]">
+              <div class="w-11 h-11 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center mb-6">
+                <Globe2 class="w-5 h-5" />
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-neutral-900 mb-2">A Google-Aware Studio</h3>
+                <p class="text-neutral-500 text-xs leading-relaxed font-semibold">
+                  Every website is tested against Core Web Vitals, structured with clean URL architecture, and launched with LocalBusiness schema live so your site enters the Google index ready to rank.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-3xl border border-neutral-200/50 p-6 shadow-sm hover:border-primary/30 transition-all duration-300 flex flex-col justify-between min-h-[220px]">
+              <div class="w-11 h-11 rounded-2xl bg-rose-500/10 text-rose-500 flex items-center justify-center mb-6">
+                <Shield class="w-5 h-5" />
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-neutral-900 mb-2">Full Transparency</h3>
+                <p class="text-neutral-500 text-xs leading-relaxed font-semibold">
+                  Written timelines, clearly defined revision rounds, real cost estimates, and post-launch support packages. No hidden costs. No vanishing after handover.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white rounded-3xl border border-neutral-200/50 p-6 shadow-sm hover:border-primary/30 transition-all duration-300 flex flex-col justify-between min-h-[220px]">
+              <div class="w-11 h-11 rounded-2xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center mb-6">
+                <User class="w-5 h-5" />
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-neutral-900 mb-2">A Local Kochi Team</h3>
+                <p class="text-neutral-500 text-xs leading-relaxed font-semibold">
+                  Teknoppy is headquartered in Kochi, Kerala. When you need a meeting, a quick call, or an urgent update, our local team is just one message away.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- OUR WEB DESIGN SERVICES IN KOCHI -->
+    <section id="services" class="py-20 bg-white">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <div class="max-w-3xl mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            Services Scope
+          </div>
+          <h2 class="text-3xl md:text-4xl font-black text-neutral-900 leading-tight">
+            Our <span class="text-primary">Website Design</span> Services in Kochi
+          </h2>
+          <p class="text-neutral-500 font-medium mt-3 text-base sm:text-lg">
+            As a full-service web design company in Kochi, Teknoppy delivers the following specialised services. Each links to a dedicated page with deeper detail, real project examples, and pricing context.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {services.map(svc => (
+            <div class="bg-white rounded-3xl border border-neutral-200/50 p-6 hover:border-primary/40 hover:-translate-y-1 transition-all duration-300 shadow-sm flex flex-col justify-between">
+              <div>
+                <h3 class="text-lg font-bold text-neutral-900 mb-3">{svc.title}</h3>
+                <p class="text-neutral-500 text-xs leading-relaxed font-medium">{svc.desc}</p>
+              </div>
+              <a href="#contact" class="inline-flex items-center gap-1 text-xs font-bold text-primary hover:text-primary/80 transition-colors mt-6">
+                Enquire Now
+                <ArrowRight class="w-3.5 h-3.5" />
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- WEB DESIGN PROCESS SECTION -->
+    <section class="py-20 bg-neutral-50/50 border-t border-neutral-100">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            Our Methodology
+          </div>
+          <h2 class="text-3xl md:text-4xl font-black text-neutral-900 leading-tight">
+            Our <span class="text-primary">Web Design Process</span> — How We Work
+          </h2>
+          <p class="text-neutral-500 font-medium mt-3 text-base">
+            Our professional web design process follows six clearly defined stages, ensuring every project is delivered on time, within budget, and built precisely to brief.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {processes.map(proc => (
+            <div class="bg-white rounded-3xl border border-neutral-150 p-6 shadow-sm relative">
+              <span class="absolute top-4 right-6 text-3xl font-black text-primary/10 tracking-widest">{proc.step}</span>
+              <h3 class="text-lg font-bold text-neutral-900 mb-3 pr-8">{proc.title}</h3>
+              <p class="text-neutral-600 text-xs leading-relaxed font-medium">{proc.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING TABLE SECTION -->
+    <section class="py-20 bg-white border-t border-neutral-100">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <div class="max-w-3xl mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            Pricing Guide
+          </div>
+          <h2 class="text-3xl md:text-4xl font-black text-neutral-900 leading-tight mb-4">
+            Website Design <span class="text-primary">Pricing in Kochi</span>
+          </h2>
+          <p class="text-neutral-500 font-medium text-base">
+            Transparent pricing is central to how Teknoppy builds client trust. Below is a realistic guide to website design costs in Kochi by project type. Every project receives a written quote before work begins.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-3xl border border-neutral-200/60 overflow-hidden shadow-sm">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="bg-primary text-white font-bold text-sm sm:text-base border-b border-primary/20">
+                <th class="p-4 sm:p-5">Website Type</th>
+                <th class="p-4 sm:p-5 text-right">Estimated Investment</th>
+              </tr>
+            </thead>
+            <tbody>
+              {pricing.map((priceItem, idx) => (
+                <tr class={`border-b border-neutral-100 hover:bg-neutral-50/50 transition-colors ${idx % 2 === 0 ? 'bg-white' : 'bg-neutral-50/20'}`}>
+                  <td class="p-4 sm:p-5 font-bold text-neutral-800 text-sm sm:text-base">{priceItem.type}</td>
+                  <td class="p-4 sm:p-5 text-right font-black text-primary text-sm sm:text-base">{priceItem.price}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="text-neutral-500 text-xs mt-4 leading-relaxed max-w-3xl font-medium">
+          Final pricing depends on pages, custom functionality, content needs, integration complexity, and timeline. For a full breakdown visit the Web Design Pricing Kerala page or use the Website Cost Calculator.
+        </p>
+      </div>
+    </section>
+
+    <!-- TARGET INDUSTRIES SECTION -->
+    <section class="py-20 bg-neutral-50/50 border-t border-neutral-100">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-3xl md:text-4xl font-black text-neutral-900 leading-tight">
+            Industries We Design Websites For in Kochi & Kerala
+          </h2>
+          <p class="text-neutral-500 font-medium mt-3 text-base">
+            A hospital website serves completely different user intent than a restaurant website — and we design for that specific intent every time.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {industries.map(ind => (
+            <div class="bg-white rounded-3xl border border-neutral-200/50 p-6 shadow-sm hover:border-primary/30 transition-all duration-300">
+              <h3 class="text-base font-bold text-neutral-900 mb-2">{ind.name}</h3>
+              <p class="text-neutral-500 text-xs leading-relaxed font-semibold">{ind.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES SECTION -->
+    <section class="py-20 bg-white border-t border-neutral-100">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <div class="max-w-3xl mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            Success Stories
+          </div>
+          <h2 class="text-3xl md:text-4xl font-black text-neutral-900 leading-tight">
+            Our Web Design <span class="text-primary">Case Studies</span> — Proven Results
+          </h2>
+          <p class="text-neutral-500 font-medium mt-3 text-base">
+            See how we help local Kerala businesses transition from digital invisibility to high-performing conversion platforms.
+          </p>
+        </div>
+
+        <div class="space-y-12">
+          <!-- Case 1 -->
+          <div class="bg-[#FFF8EF]/30 border border-primary/10 rounded-3xl p-8 shadow-sm grid lg:grid-cols-12 gap-8 items-start">
+            <div class="lg:col-span-8 space-y-6">
+              <div>
+                <span class="text-xs font-black text-primary uppercase tracking-widest">Case Study 1</span>
+                <h3 class="text-2xl font-black text-neutral-900 mt-1">Evosyz: Fintech Web Design That Generates Real Enquiries</h3>
+              </div>
+              <p class="text-sm text-neutral-600 leading-relaxed font-medium">
+                Evosyz is a growing fintech company headquartered in Kochi. They approached Teknoppy with two challenges: building a professional, trust-focused website for a regulated industry, and generating quality enquiries from prospective franchisees and financial partners across India.
+              </p>
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div class="bg-white rounded-2xl p-4 border border-neutral-100 shadow-sm">
+                  <h4 class="text-xs font-black text-neutral-900 uppercase tracking-wider mb-2">Our Approach</h4>
+                  <ul class="space-y-1.5 text-xs text-neutral-500 font-medium list-disc pl-4">
+                    <li>UI/UX design — clean, mobile-first interface</li>
+                    <li>Content structure — RBI-licensed clarity</li>
+                    <li>Conversion optimisation — WhatsApp chat integrations</li>
+                    <li>On-page SEO — metadata optimization</li>
+                  </ul>
+                </div>
+                <div class="bg-white rounded-2xl p-4 border border-neutral-100 shadow-sm">
+                  <h4 class="text-xs font-black text-neutral-900 uppercase tracking-wider mb-2">The Results</h4>
+                  <ul class="space-y-1.5 text-xs text-neutral-500 font-medium list-disc pl-4">
+                    <li>Increased franchise & partnership enquiries</li>
+                    <li>Stronger local positioning & trust</li>
+                    <li>Improved keyword organic visibility</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-4 bg-white rounded-3xl border border-neutral-100 p-6 space-y-4 shadow-sm self-stretch flex flex-col justify-between">
+              <p class="text-xs text-neutral-600 italic font-medium leading-relaxed">
+                "I am very happy to have associated with Teknoppy. Being in the Fintech space, we needed a reliable partner who could cater to our specific requirements. Teknoppy has done a great job creating an appealing website that represents our brand perfectly."
+              </p>
+              <div>
+                <span class="block text-sm font-black text-neutral-950">— Vivek Menon</span>
+                <span class="block text-[10px] text-neutral-400 font-bold uppercase tracking-wider">CTO, Evosyz</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case 2 -->
+          <div class="bg-[#FFF8EF]/30 border border-primary/10 rounded-3xl p-8 shadow-sm grid lg:grid-cols-12 gap-8 items-start">
+            <div class="lg:col-span-8 space-y-6">
+              <div>
+                <span class="text-xs font-black text-primary uppercase tracking-widest">Case Study 2</span>
+                <h3 class="text-2xl font-black text-neutral-900 mt-1">Greens Ayurveda: From Digital Invisibility to a Lead-Generating Website</h3>
+              </div>
+              <p class="text-sm text-neutral-600 leading-relaxed font-medium">
+                Greens Ayurveda, based in Azhiyur, Calicut, offers Panchakarma therapies and practitioner training to clients across India and abroad. They partnered with Teknoppy to transform an outdated digital presence into a credible, conversion-focused platform.
+              </p>
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div class="bg-white rounded-2xl p-4 border border-neutral-100 shadow-sm">
+                  <h4 class="text-xs font-black text-neutral-900 uppercase tracking-wider mb-2">Our Approach</h4>
+                  <ul class="space-y-1.5 text-xs text-neutral-500 font-medium list-disc pl-4">
+                    <li>UI/UX design — serene layout matching healing ethos</li>
+                    <li>Content architecture — clean treatment & programme details</li>
+                    <li>Local & organic SEO — Calicut targeting</li>
+                    <li>Conversion flow — prominent booking CTAs</li>
+                  </ul>
+                </div>
+                <div class="bg-white rounded-2xl p-4 border border-neutral-100 shadow-sm">
+                  <h4 class="text-xs font-black text-neutral-900 uppercase tracking-wider mb-2">The Results</h4>
+                  <ul class="space-y-1.5 text-xs text-neutral-500 font-medium list-disc pl-4">
+                    <li>Measurable rise in inquiries, notably international</li>
+                    <li>Higher user time-on-page</li>
+                    <li>Steady organic growth for wellness keywords</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-4 bg-white rounded-3xl border border-neutral-100 p-6 space-y-4 shadow-sm self-stretch flex flex-col justify-between">
+              <p class="text-xs text-neutral-600 italic font-medium leading-relaxed">
+                "Mr. Sanal is exceptionally supportive and customer-friendly. I have worked with many IT teams, but I am 100% happy with Teknoppy. No doubt, I recommend them with 100% satisfaction."
+              </p>
+              <div>
+                <span class="block text-sm font-black text-neutral-950">— Dr. Asghar</span>
+                <span class="block text-[10px] text-neutral-400 font-bold uppercase tracking-wider">CEO, Greens Ayurveda</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENT TESTIMONIALS SECTION -->
+    <section class="py-20 bg-neutral-50/50 border-t border-neutral-100">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-3xl md:text-4xl font-black text-neutral-900 leading-tight">
+            What Our Clients Say About Teknoppy
+          </h2>
+          <p class="text-neutral-500 font-medium mt-3 text-base">
+            Real feedback from local and global companies who scaled their businesses using our web design services.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {testimonials.map(item => (
+            <div class="bg-white border border-neutral-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="flex gap-1 text-[#FFC247] mb-4">
+                  <Star class="w-4 h-4 fill-current" />
+                  <Star class="w-4 h-4 fill-current" />
+                  <Star class="w-4 h-4 fill-current" />
+                  <Star class="w-4 h-4 fill-current" />
+                  <Star class="w-4 h-4 fill-current" />
+                </div>
+                <p class="text-xs text-neutral-600 font-medium italic leading-relaxed mb-6">
+                  "{item.quote}"
+                </p>
+              </div>
+              <div class="border-t border-neutral-100 pt-4 mt-auto">
+                <span class="block text-sm font-bold text-neutral-800">{item.author}</span>
+                <span class="block text-[10px] text-neutral-400 font-bold uppercase tracking-wider mt-0.5">{item.role}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS LIST -->
+    <section class="py-20 bg-white border-t border-neutral-100">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <div class="max-w-3xl mb-16">
+          <h2 class="text-3xl md:text-4xl font-black text-neutral-900 leading-tight">
+            Featured Projects — Real Websites We Have Built
+          </h2>
+          <p class="text-neutral-500 font-medium mt-3 text-base">
+            An overview of successful website projects delivered for clients across Kochi and Kerala — each built with a clear business goal, SEO-first architecture, and a mobile-first approach.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+          {projects.map(proj => (
+            <div class="bg-white rounded-3xl border border-neutral-200/60 p-6 shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <h3 class="text-lg font-bold text-neutral-900">{proj.name}</h3>
+                  <span class="text-[9px] font-black text-primary bg-primary/5 px-2 py-0.5 rounded-full uppercase tracking-wider">{proj.loc}</span>
+                </div>
+                <p class="text-neutral-600 text-xs leading-relaxed font-semibold mb-4">{proj.desc}</p>
+                <div class="bg-neutral-50/50 rounded-2xl p-4 border border-neutral-100">
+                  <span class="block text-[10px] font-black text-neutral-800 uppercase tracking-wider mb-1">Result</span>
+                  <p class="text-neutral-500 text-xs font-semibold leading-relaxed">{proj.result}</p>
+                </div>
+              </div>
+              <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-bold text-primary mt-6 hover:underline">
+                Enquire for details
+                <ArrowRight class="w-3.5 h-3.5" />
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- MEET THE TEAM -->
+    <section class="py-20 bg-neutral-50/50 border-t border-neutral-100">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <div class="bg-white border border-primary/10 rounded-[2rem] p-8 sm:p-12 shadow-sm grid lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-8 space-y-6">
+            <div>
+              <span class="text-xs font-black text-primary uppercase tracking-widest">Meet the Teknoppy Team</span>
+              <h2 class="text-3xl font-black text-neutral-900 mt-1">Sanal Kumar</h2>
+              <span class="text-sm font-bold text-primary uppercase tracking-wider block mt-0.5">Founder & Lead Web Designer, Teknoppy</span>
+            </div>
+            <p class="text-sm text-neutral-600 leading-relaxed font-medium">
+              Sanal has led 120+ web design and development projects across Kerala since founding Teknoppy in 2018. Specialising in SEO-first website architecture, conversion optimisation, and digital strategy, he personally oversees every project from discovery through to launch. Supported by an in-house Kochi team of UI/UX designers, WordPress developers, front-end developers, and SEO strategists. Reviewed: June 2026.
+            </p>
+            <div class="flex items-center gap-4 text-xs font-bold text-neutral-500">
+              <span>sanal@teknoppy.com</span>
+              <span>·</span>
+              <span>+91 6282249224</span>
+            </div>
+          </div>
+          <div class="lg:col-span-4 flex justify-center">
+            <div class="w-48 h-48 rounded-full bg-gradient-to-br from-primary/10 to-secondary/15 flex items-center justify-center border border-neutral-100 shadow-inner">
+              <User class="w-24 h-24 text-primary" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQS SECTION -->
+    <section class="py-20 bg-neutral-50/50 border-t border-neutral-100">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-3xl md:text-4xl font-black text-neutral-900 leading-tight">
+            Frequently Asked Questions — Web Design in Kochi
+          </h2>
+          <p class="text-neutral-500 font-medium mt-3 text-base">
+            Get quick answers to standard questions about custom website design pricing, process, and technical SEO features.
+          </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto space-y-4">
+          {faqs.map(faq => (
+            <details class="group bg-white rounded-2xl border border-neutral-200/60 p-6 [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
+                <h3 class="text-sm sm:text-base font-bold text-neutral-850 pr-4">
+                  {faq.q}
+                </h3>
+                <span class="transition-transform duration-300 group-open:-rotate-180 text-primary flex-shrink-0">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </span>
+              </summary>
+              <div class="mt-4 pt-4 border-t border-neutral-100/60 text-xs sm:text-sm text-neutral-600 leading-relaxed font-semibold">
+                {faq.a}
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <FooterCTA />
+</Layout>
