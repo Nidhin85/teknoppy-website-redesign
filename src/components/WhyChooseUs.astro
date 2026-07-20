@@ -43,6 +43,10 @@ const features = [
 ---
 
 <section class="py-24 md:py-32 bg-cream relative">
+  <!-- Dynamic background container to prevent overflow issues -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-[url('/tekenoppyadvantage.png')] opacity-75"></div>
+  </div>
   <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
       
