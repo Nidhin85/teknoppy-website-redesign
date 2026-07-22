@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import FooterCTA from '../components/FooterCTA.astro';
 import { ArrowRight, Zap, Rocket, Calendar, TrendingUp, Globe2 } from 'lucide-react';
+import { getCollection } from 'astro:content';
 
 const title = "Web Design Portfolio Kerala | Teknoppy — Websites & Projects We Have Built";
 const description = "Explore Teknoppy's web design portfolio — real websites and digital platforms built for Kerala businesses across fintech, healthcare, hospitality, education, and more. 120+ projects since 2018.";
@@ -16,44 +17,14 @@ const stats = [
 
 const filters = ["All", "Web Design", "WordPress", "Ecommerce", "Web Applications", "SEO"];
 
-const projects = [
-  {
-    name: "Evosyz",
-    loc: "KOCHI · FINTECH",
-    desc: "A modern, responsive, SEO-friendly corporate website communicating RBI-licensed services to franchisees and financial partners, with custom UI/UX, conversion-focused layout, and WhatsApp integration.",
-    result: "Increased franchise enquiries, improved brand credibility, and stronger search visibility for fintech keywords in Kochi."
-  },
-  {
-    name: "Greens Ayurveda",
-    loc: "AZHIYUR, CALICUT · AYURVEDA",
-    desc: "A calm, mobile-first, SEO-optimised wellness website with clear treatment pages, appointment enquiry forms, and structured content architecture for domestic and international visitors.",
-    result: "A significant rise in international enquiries, improved time on page, and stronger organic visibility for Ayurvedic treatment keywords."
-  },
-  {
-    name: "Olives Resort",
-    loc: "WAYANAD · HOSPITALITY",
-    desc: "A visually rich, conversion-focused hospitality website with property showcase pages, booking enquiry integration, and Google Maps connectivity.",
-    result: "Top Google rankings for resort keywords and a measurable increase in direct booking calls (confirmed by CEO Biju Thomas)."
-  },
-  {
-    name: "SIBP",
-    loc: "KERALA · EDUCATION",
-    desc: "A structured institutional website with admission enquiry forms, faculty sections, course listings, and an event calendar, built with clean URL architecture and local SEO.",
-    result: "Improved admission enquiries and stronger local search visibility."
-  },
-  {
-    name: "Dream Abroad",
-    loc: "KERALA · CONSULTANCY",
-    desc: "A professional consultancy website with country-specific programme pages, student enquiry forms, and a trust-forward content structure built to convert prospective students.",
-    result: "Higher-quality student enquiries and improved organic rankings."
-  },
-  {
-    name: "Mountbell",
-    loc: "KOCHI · CORPORATE",
-    desc: "A professional multi-page corporate website focused on clean layouts, fast load times, and a structured service architecture supporting business development.",
-    result: "Stronger positioning as a credible corporate entity in Kochi."
-  }
-];
+const projects = (await getCollection('portfolio', ({ data }) => !data.draft))
+  .sort((a, b) => a.data.order - b.data.order)
+  .map((e) => ({
+    name: e.data.name,
+    loc: `${e.data.location} · ${e.data.industry}`.toUpperCase(),
+    desc: e.data.description,
+    result: e.data.result,
+  }));
 ---
 
 <Layout title={title} description={description}>

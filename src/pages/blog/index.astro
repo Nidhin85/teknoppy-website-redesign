@@ -3,68 +3,24 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import FooterCTA from '../../components/FooterCTA.astro';
 import { ArrowRight, Calendar, Clock } from 'lucide-react';
+import { getCollection } from 'astro:content';
 
 const title = "Web Design & Digital Marketing Blog | Teknoppy Kerala";
 const description = "Expert insights, guides, and strategies on web design, WordPress, ecommerce, SEO, and digital marketing for Kerala businesses — from the Teknoppy team.";
 
 const categories = ["Web Design", "WordPress", "Ecommerce", "SEO", "Kerala Business"];
 
-const posts = [
-  {
-    title: "Latest Web Design Trends in 2026: Modern Styles and Techniques That Convert",
-    excerpt: "Your website is either working for you or against you. In 2026, there is very little middle ground. Discover every major trend that is defining the industry this year.",
-    category: "Design Trends",
-    date: "July 3, 2026",
-    readTime: "8 min read",
-    image: "/blog/blog1.png",
-    href: "/blog/latest-web-design-trends-2026/"
-  },
-  {
-    title: "Why SEO-Friendly Website Design is Critical for Kerala Businesses",
-    excerpt: "Building a website without SEO is like building a road without a destination. Discover how integrated search strategy drives organic traffic and client enquiries for Kerala brands.",
-    category: "SEO & Design",
-    date: "July 2, 2026",
-    readTime: "5 min read",
-    image: "/blog_thumbnail_seo.png",
-    href: "#"
-  },
-  {
-    title: "How to Build a High-Converting Ecommerce Website in Kerala",
-    excerpt: "With the retail sector expanding online, building a custom ecommerce solution requires fast page speeds, local gateway integrations, and conversion-optimized checkouts.",
-    category: "Ecommerce",
-    date: "June 15, 2026",
-    readTime: "6 min read",
-    image: "/blog_thumbnail_ecommerce.png",
-    href: "#"
-  },
-  {
-    title: "How to Start Selling Online in Kerala: A Step-by-Step Guide for Small Business Owners",
-    excerpt: "Platform choice, payment integration, and first-sale strategy for Kerala entrepreneurs launching e-commerce.",
-    category: "Ecommerce",
-    date: "June 2, 2026",
-    readTime: "7 min read",
-    image: "/blog_thumbnail_ecommerce.png",
-    href: "#"
-  },
-  {
-    title: "Beyond Rankings: How Top SEO Companies Are Redefining Digital Success in the AI-First Era",
-    excerpt: "How AI is reshaping organic search and what Kerala businesses must do differently in 2026.",
-    category: "SEO",
-    date: "May 20, 2026",
-    readTime: "6 min read",
-    image: "/blog_thumbnail_seo.png",
-    href: "#"
-  },
-  {
-    title: "How to Choose the Right Website Design Company in Kerala",
-    excerpt: "Key questions, red flags, and what separates a results-driven studio from a template shop.",
-    category: "Web Design",
-    date: "May 8, 2026",
-    readTime: "5 min read",
-    image: "/blog/blog1.png",
-    href: "#"
-  }
-];
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .map((e) => ({
+    title: e.data.title,
+    excerpt: e.data.excerpt,
+    category: e.data.category,
+    date: e.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
+    readTime: e.data.readTime,
+    image: e.data.cover,
+    href: `/blog/${e.id}/`,
+  }));
 ---
 
 <Layout title={title} description={description}>

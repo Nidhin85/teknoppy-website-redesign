@@ -1,0 +1,99 @@
+backend:
+  name: github
+  repo: Lymdata-Labs-Private-Limited/tekenoppy
+  branch: main
+  base_url: https://tekenoppy.vercel.app
+  auth_endpoint: api/auth
+
+# Lets you run the CMS locally against local files (npx @sveltia/cms-server) without login.
+local_backend: true
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+site_url: https://tekenoppy.vercel.app
+display_url: https://tekenoppy.vercel.app
+
+collections:
+  - name: blog
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    description: "Articles shown on /blog and the homepage. Set Draft on to hide a post."
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "yaml-frontmatter"
+    preview_path: "blog/{{slug}}"
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: "Title", widget: string }
+      - { name: excerpt, label: "Excerpt", widget: text, hint: "Short summary shown on cards" }
+      - { name: category, label: "Category", widget: string, default: "Web Design" }
+      - { name: date, label: "Date", widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
+      - { name: readTime, label: "Read time", widget: string, default: "5 min read" }
+      - { name: cover, label: "Cover image", widget: image, default: "/blog/blog1.png" }
+      - { name: draft, label: "Draft (hide from site)", widget: boolean, default: false }
+      - { name: body, label: "Body", widget: markdown }
+
+  - name: portfolio
+    label: "Portfolio Projects"
+    label_singular: "Project"
+    description: "Projects shown on /portfolios and the homepage portfolio section."
+    folder: "src/content/portfolio"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "yaml-frontmatter"
+    sortable_fields: [order, name]
+    fields:
+      - { name: name, label: "Project name", widget: string }
+      - { name: location, label: "Location", widget: string }
+      - { name: industry, label: "Industry", widget: string }
+      - { name: description, label: "Description", widget: text }
+      - { name: result, label: "Result", widget: text }
+      - { name: order, label: "Order", widget: number, default: 0, value_type: int }
+      - { name: draft, label: "Draft (hide from site)", widget: boolean, default: false }
+
+  - name: testimonials
+    label: "Testimonials"
+    label_singular: "Testimonial"
+    description: "Client reviews shown on the homepage and pillar pages."
+    folder: "src/content/testimonials"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "yaml-frontmatter"
+    sortable_fields: [order, name]
+    fields:
+      - { name: name, label: "Client name", widget: string }
+      - { name: role, label: "Role / Company", widget: string }
+      - { name: quote, label: "Quote", widget: text }
+      - { name: initials, label: "Initials", widget: string, hint: "e.g. BT" }
+      - { name: order, label: "Order", widget: number, default: 0, value_type: int }
+
+  - name: settings
+    label: "Site Settings"
+    description: "Global contact details used across the site (footer, contact page, mobile bar, schema)."
+    files:
+      - name: site
+        label: "Site & Contact"
+        file: "src/data/site.json"
+        fields:
+          - { name: businessName, label: "Business name", widget: string }
+          - { name: phone, label: "Phone (display)", widget: string }
+          - { name: phoneLink, label: "Phone for tel: link", widget: string, hint: "Digits with country code, no spaces — e.g. +916282249224" }
+          - { name: whatsapp, label: "WhatsApp number", widget: string, hint: "Digits with country code, no plus — e.g. 916282249224" }
+          - { name: email, label: "Email", widget: string }
+          - { name: address, label: "Full address", widget: text }
+          - { name: addressShort, label: "Short address", widget: string }
+          - { name: founderName, label: "Founder name", widget: string }
+          - { name: founderRole, label: "Founder role", widget: string }
+          - { name: established, label: "Established year", widget: string }
+          - name: social
+            label: "Social links"
+            widget: object
+            fields:
+              - { name: twitter, label: "Twitter / X URL", widget: string, required: false }
+              - { name: linkedin, label: "LinkedIn URL", widget: string, required: false }
+              - { name: instagram, label: "Instagram URL", widget: string, required: false }

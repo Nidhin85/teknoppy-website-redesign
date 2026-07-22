@@ -1,35 +1,19 @@
 ---
 import { ArrowRight, Calendar, Clock } from 'lucide-react';
+import { getCollection } from 'astro:content';
 
-const posts = [
-  {
-    title: "Latest Web Design Trends in 2026: Modern Styles and Techniques That Convert",
-    excerpt: "Your website is either working for you or against you. In 2026, there is very little middle ground. Discover every major trend that is defining the industry this year.",
-    image: "/blog/blog1.png",
-    category: "Design Trends",
-    date: "July 3, 2026",
-    readTime: "8 min read",
-    href: "/blog/latest-web-design-trends-2026/"
-  },
-  {
-    title: "Why SEO-Friendly Website Design is Critical for Kerala Businesses",
-    excerpt: "Building a website without SEO is like building a road without a destination. Discover how integrated search strategy drives organic traffic and client enquiries for Kerala brands.",
-    image: "/blog_thumbnail_seo.png",
-    category: "SEO & Design",
-    date: "July 2, 2026",
-    readTime: "5 min read",
-    href: "#"
-  },
-  {
-    title: "How to Build a High-Converting Ecommerce Website in Kerala",
-    excerpt: "With the retail sector expanding online, building a custom ecommerce solution requires fast page speeds, local gateway integrations, and conversion-optimized checkouts.",
-    image: "/blog_thumbnail_ecommerce.png",
-    category: "Ecommerce",
-    date: "June 15, 2026",
-    readTime: "6 min read",
-    href: "#"
-  }
-];
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 3)
+  .map((e) => ({
+    title: e.data.title,
+    excerpt: e.data.excerpt,
+    image: e.data.cover,
+    category: e.data.category,
+    date: e.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
+    readTime: e.data.readTime,
+    href: `/blog/${e.id}/`,
+  }));
 ---
 
 <section id="blog" class="py-24 md:py-32 bg-white relative overflow-hidden">

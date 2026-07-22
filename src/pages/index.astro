@@ -10,9 +10,14 @@ import Testimonials from '../components/Testimonials.tsx';
 import Blog from '../components/Blog.astro';
 import FAQ from '../components/FAQ.astro';
 import FooterCTA from '../components/FooterCTA.astro';
+import { getCollection } from 'astro:content';
 
 const title = "Web Design Company in Kerala — Teknoppy | Website Design and Development";
 const description = "Teknoppy is a trusted Web Design Company in Kerala delivering SEO-friendly, responsive, and conversion-focused websites for businesses across Kerala and Kochi. Book your free consultation today.";
+
+const testimonials = (await getCollection('testimonials'))
+  .sort((a, b) => a.data.order - b.data.order)
+  .map((e) => ({ name: e.data.name, role: e.data.role, content: e.data.quote, initials: e.data.initials }));
 ---
 
 <Layout title={title} description={description}>
@@ -23,7 +28,7 @@ const description = "Teknoppy is a trusted Web Design Company in Kerala deliveri
     <Services />
     <WhyChooseUs />
     <Portfolio />
-    <Testimonials client:visible />
+    <Testimonials testimonials={testimonials} client:visible />
     <Blog />
     <FAQ />
   </main>

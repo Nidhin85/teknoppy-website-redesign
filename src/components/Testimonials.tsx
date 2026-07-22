@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Play } from 'lucide-react';
 
-const testimonials = [
+const defaultTestimonials = [
   {
     name: "Biju Thomas",
     role: "CEO, Olives Resort, Wayanad",
@@ -35,39 +35,6 @@ const testimonials = [
   }
 ];
 
-const videoTestimonials = [
-  {
-    name: "Biju Thomas",
-    initial: "B",
-    company: "CEO, Olives Resort, Wayanad",
-    image: "/testimonial_video_preview.png"
-  },
-  {
-    name: "Vivek Menon",
-    initial: "V",
-    company: "CTO, Evosyz, Kochi",
-    image: "/testimonial_video_preview_2.png"
-  },
-  {
-    name: "Shainesh Prakashan",
-    initial: "S",
-    company: "CEO, Exacore IT, Infopark Kochi",
-    image: "/testimonial_video_preview_3.png"
-  },
-  {
-    name: "Dr. Asghar",
-    initial: "A",
-    company: "CEO, Greens Ayurveda, Calicut",
-    image: "/testimonial_video_preview.png"
-  },
-  {
-    name: "Rincy",
-    initial: "R",
-    company: "Astrologer & Psychic Healer, Australia",
-    image: "/testimonial_video_preview_2.png"
-  }
-];
-
 const clientLogos = [
   '/client logos/Abroad-career-1.jpg',
   '/client logos/abu-dhabi.jpg',
@@ -80,7 +47,14 @@ const clientLogos = [
   '/client logos/olive.jpg'
 ];
 
-export default function Testimonials() {
+export default function Testimonials({ testimonials = defaultTestimonials }: { testimonials?: typeof defaultTestimonials } = {}) {
+  const previewImages = ['/testimonial_video_preview.png', '/testimonial_video_preview_2.png', '/testimonial_video_preview_3.png'];
+  const videoTestimonials = testimonials.map((t, i) => ({
+    name: t.name,
+    initial: t.name.charAt(0),
+    company: t.role,
+    image: previewImages[i % previewImages.length],
+  }));
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(1);
 
