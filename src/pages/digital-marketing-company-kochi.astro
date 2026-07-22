@@ -1,0 +1,813 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import FooterCTA from '../components/FooterCTA.astro';
+import { ArrowRight, Play, Globe2, Smile, Award, Star, CheckCircle, Clock, Heart, Shield, Check, HelpCircle, User, Zap, Rocket, Activity, Home, Utensils, GraduationCap, Compass, Briefcase, Factory, Languages, MonitorSmartphone, Building2, Edit, ShieldCheck, Search, Layers, Network, Code, Gauge, LayoutGrid, Calendar, TrendingUp } from 'lucide-react';
+
+const title = "Digital Marketing Company in Kochi | Teknoppy";
+const description = "Teknoppy is a trusted Digital Marketing Company in Kochi offering SEO, Google Ads, social media & content that bring real leads to Kerala businesses.";
+
+const services = [
+  {
+    title: "Search Engine Optimisation (SEO)",
+    desc: "Technical, on-page, and local SEO services in Kochi that earn durable Page-1 rankings — keyword strategy, site architecture, schema, and content built to rank and convert.",
+    icon: Search
+  },
+  {
+    title: "Google Ads & PPC Management",
+    desc: "Google Ads management Kochi and PPC services in Kochi engineered for low cost-per-lead — tight targeting, conversion tracking, and continuous bid optimisation.",
+    icon: TrendingUp
+  },
+  {
+    title: "Social Media Marketing",
+    desc: "As a social media marketing company in Kochi, we run Instagram, Facebook, and LinkedIn strategy, content, and paid social that build audience and drive enquiries.",
+    icon: Network
+  },
+  {
+    title: "Content Marketing",
+    desc: "As a content marketing agency in Kochi, we produce SEO-led blogs and copy that answer real buyer questions, earn AI-engine citations, and move prospects down the funnel.",
+    icon: Edit
+  },
+  {
+    title: "Email Marketing & Automation",
+    desc: "Email marketing services Kochi businesses use to turn existing leads into repeat customers — nurture sequences, newsletters, and lifecycle automation at near-zero marginal cost.",
+    icon: Zap
+  },
+  {
+    title: "Branding & Creative",
+    desc: "As a branding agency in Kochi, we craft identity, messaging, and ad creative that make your business look credible across every channel and lift campaign performance.",
+    icon: Award
+  },
+  {
+    title: "Landing Pages & CRO",
+    desc: "Conversion-focused landing pages and A/B testing that turn traffic you already pay for into measurably more leads.",
+    icon: LayoutGrid
+  },
+  {
+    title: "Analytics & Performance",
+    desc: "As a performance marketing agency Kochi brands rely on, we set up GA4, Search Console, and call tracking so every channel is measured and every report tells the truth.",
+    icon: Gauge
+  }
+];
+
+const processes = [
+  {
+    step: "01",
+    title: "Audit & Goal Mapping",
+    desc: "We audit your website, search visibility, ads, and competitors, then define the real goal — leads, calls, or sales — and the numbers that prove it.",
+    icon: Search
+  },
+  {
+    step: "02",
+    title: "Strategy & Channel Plan",
+    desc: "We choose the channels that fit your market and budget — SEO, Google Ads, social, or a blend — with a clear plan, timeline, and forecast before any spend.",
+    icon: Compass
+  },
+  {
+    step: "03",
+    title: "Tracking & Measurement Setup",
+    desc: "GA4, Google Search Console, conversion events, and call tracking are configured first, so results are attributable from day one — not estimated later.",
+    icon: Activity
+  },
+  {
+    step: "04",
+    title: "Campaign Launch & Creative",
+    desc: "We produce the assets — copy, creative, landing pages, ad sets, and optimised content — and launch in controlled phases to validate before scaling.",
+    icon: Rocket
+  },
+  {
+    step: "05",
+    title: "Optimisation & A/B Testing",
+    desc: "Continuous refinement of keywords, bids, audiences, and creative based on live data — cutting waste and doubling down on what produces leads.",
+    icon: TrendingUp
+  },
+  {
+    step: "06",
+    title: "Reporting & Scaling",
+    desc: "Plain-English monthly reports on leads, cost-per-result, and ROI, plus a review call to decide where to scale next.",
+    icon: Gauge
+  }
+];
+
+const pricing = [
+  { type: "Local / Small-Business SEO", price: "Rs. 15,000 – 35,000 / mo" },
+  { type: "Competitive / Ecommerce SEO", price: "Rs. 35,000 – 75,000 / mo" },
+  { type: "Social Media Marketing (organic + creative)", price: "Rs. 12,000 – 40,000 / mo" },
+  { type: "Google Ads / PPC Management", price: "Rs. 10,000 – 30,000 / mo + ad spend" },
+  { type: "Content Marketing (blogs + on-page)", price: "Rs. 15,000 – 50,000 / mo" },
+  { type: "Full-Funnel Growth Package (multi-channel)", price: "Rs. 50,000 – 1,50,000 / mo" },
+  { type: "Branding / Strategy (one-time)", price: "Rs. 25,000 – 1,00,000" }
+];
+
+const industries = [
+  { name: "Startups & New Business", desc: "A popular digital marketing company for startups in Kochi — go-to-market campaigns and lead funnels that prove traction on a lean budget.", icon: Rocket },
+  { name: "Hospitals & Healthcare", desc: "Local SEO, reputation, and appointment-focused campaigns that reach patients while staying trust-first.", icon: Activity },
+  { name: "Real Estate", desc: "High-intent Google and Meta lead-gen for property enquiries, with landing pages and qualification built in.", icon: Home },
+  { name: "Restaurants & Food", desc: "Local SEO, Google Business Profile, and social that drive footfall, reservations, and online orders.", icon: Utensils },
+  { name: "Schools & Education", desc: "Admission-season campaigns across search, social, and content that fill enquiry forms with qualified parents.", icon: GraduationCap },
+  { name: "Tourism & Travel", desc: "Visual, conversion-focused campaigns and SEO for packages and resorts — domestic and international demand.", icon: Compass },
+  { name: "Professional Services", desc: "Authority content and local SEO for law firms, consultants, CAs, and advisors who win clients on trust.", icon: Briefcase },
+  { name: "Small Businesses & SMEs", desc: "Digital marketing for small businesses Kochi that keeps costs sensible while still delivering steady growth.", icon: Building2 }
+];
+
+const projects = [
+  {
+    name: "Olives Resort",
+    type: "Tourism & Hospitality",
+    loc: "WAYANAD · HOSPITALITY",
+    desc: "A conversion-focused hospitality website paired with local and organic SEO for resort and Wayanad-stay keywords.",
+    result: "Top Google rankings for core resort keywords and a measurable increase in direct booking calls (confirmed by CEO Biju Thomas)."
+  },
+  {
+    name: "Greens Ayurveda",
+    type: "Healthcare & Ayurveda",
+    loc: "AZHIYUR, CALICUT · AYURVEDA",
+    desc: "Local and organic SEO targeting Ayurvedic-treatment and Panchakarma-centre keywords, with schema and a structured enquiry flow.",
+    result: "A significant rise in international enquiries and steady organic growth for wellness keywords."
+  },
+  {
+    name: "Evosyz",
+    type: "Fintech",
+    loc: "KOCHI · FINTECH",
+    desc: "On-page SEO and conversion optimisation for a regulated fintech brand.",
+    result: "Stronger search visibility for fintech keywords in Kochi and increased franchise and partnership enquiries."
+  }
+];
+
+const testimonials = [
+  {
+    quote: "Being in the Fintech space, we needed a reliable partner. Teknoppy created an appealing website that represents our brand perfectly.",
+    author: "Vivek Menon",
+    role: "CTO, Evosyz, Kochi"
+  },
+  {
+    quote: "Teknoppy was very intuitive in understanding our requirements. They made great digital collateral and now we are getting good outreach to the market.",
+    author: "Shainesh Prakashan",
+    role: "CEO, Exacore IT, Infopark Kochi"
+  },
+  {
+    quote: "Thank you Teknoppy for a wonderful mobile app for my tarot channel. All functions work great and I am getting many subscribers.",
+    author: "Rincy",
+    role: "Astrologer & Psychic Healer, Australia"
+  }
+];
+
+const faqs = [
+  {
+    q: "How much does digital marketing cost in Kochi?",
+    a: "Most Kochi businesses invest between Rs. 10,000 and Rs. 75,000 per month depending on channels and competition, while full-funnel programmes range higher. Google Ads also needs a separate ad budget. We share a written quote before any work begins."
+  },
+  {
+    q: "How long does digital marketing take to show results?",
+    a: "Paid ads like Google Ads can generate leads within days. SEO and content typically show meaningful movement in 3 to 6 months and compound from there. We set realistic timelines and milestones at the start."
+  },
+  {
+    q: "Which is the best digital marketing company in Kochi?",
+    a: "The best choice is the agency that fits your goals and budget and can prove its results. Teknoppy is trusted by startups, clinics, resorts, and established brands across Kerala for exactly that reason."
+  },
+  {
+    q: "How to choose a digital marketing agency in Kochi?",
+    a: "Look for clear reporting, real case studies, honest pricing, and a team that explains things simply. Avoid anyone who promises instant results or hides how your budget is spent."
+  },
+  {
+    q: "What does a digital marketing company do?",
+    a: "A digital marketing company helps your business get found online and grow — improving your Google ranking, running paid ads, managing social media, and creating content, all measured against real business goals."
+  },
+  {
+    q: "Is digital marketing worth it for small businesses?",
+    a: "Yes — when it is measured. Even a small budget can bring a clear cost-per-lead you can judge for yourself. Waste only happens when money is spent without tracking, which we prevent."
+  },
+  {
+    q: "Do you optimise for AI answer engines like ChatGPT and Perplexity?",
+    a: "Yes. Alongside traditional SEO we structure content and schema for answer engines and generative search (AEO and GEO) — clear question-led sections and verifiable detail AI assistants can cite."
+  },
+  {
+    q: "Do you work with businesses near me and outside Kochi?",
+    a: "Yes. When you search for a digital marketing agency near me Kochi, we are a local choice as a digital marketing company in Kochi, Kerala and a digital marketing company in Ernakulam, and we serve Thrissur, Calicut, and Trivandrum plus India-wide clients."
+  }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.a
+    }
+  }))
+};
+---
+
+<Layout title={title} description={description}>
+  <Header forceSolidBg={true} />
+
+  <main class="overflow-hidden bg-[#FFF8EF]/20">
+    <!-- HERO SECTION WITH OFFICE CIRCLING SVG (DARK VERSION) -->
+    <section class="relative pt-32 pb-24 md:pt-36 md:pb-32 overflow-hidden bg-neutral-950 text-white border-b border-white/5">
+      <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-[url('/herodarkwebdesign.png')]"></div>
+      </div>
+
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10 grid xl:grid-cols-12 gap-12 items-center">
+        <!-- Hero Text -->
+        <div class="xl:col-span-7 flex flex-col items-center text-center xl:items-start xl:text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-bold text-primary uppercase tracking-widest mb-6">
+            <Zap class="w-3.5 h-3.5" />
+            Kerala's Performance Marketing Studio
+          </div>
+          <h1 class="text-4xl sm:text-5xl lg:text-[56px] font-black leading-[1.1] tracking-tight text-white mb-6">
+            Digital
+            <span class="relative inline-block text-primary">
+              Marketing
+              <svg class="absolute -bottom-2 left-0 w-full h-2 text-primary" viewBox="0 0 100 10" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 7C30 3 70 3 97 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+              </svg>
+            </span>
+            <br class="hidden sm:block" />
+            Company in Kochi
+          </h1>
+          <p class="text-base sm:text-lg lg:text-xl text-neutral-300 mb-6 max-w-2xl font-medium leading-relaxed">
+            SEO · Google Ads · Social Media · Content — Performance Marketing for Kerala Businesses Since 2018. Marketing that is measurable, not just visible.
+          </p>
+          <p class="text-sm sm:text-base text-neutral-400 mb-8 max-w-2xl font-medium leading-relaxed">
+            Teknoppy is a results-driven digital marketing company in Kochi delivering SEO, paid advertising, social media, and content marketing for businesses across Kerala. Since 2018, we have delivered 120+ web and marketing projects — building search visibility, qualified leads, and measurable revenue for brands in Kochi, Thrissur, Calicut, Trivandrum, and the wider Kerala market.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+            <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.35)] hover:bg-primary/95 hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap">
+              Book a Free Audit
+              <ArrowRight class="w-4 h-4" />
+            </a>
+            <a href="#services" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-white border border-white/20 rounded-full hover:bg-white/5 transition-all duration-300 shadow-sm whitespace-nowrap">
+              Explore Our Services
+              <ArrowRight class="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Graphic (Redesigned Stats Cards Grid) -->
+        <div class="xl:col-span-5 grid grid-cols-2 gap-4 sm:gap-6">
+
+          <!-- Card 1 -->
+          <div class="bg-[#0c0c0e] border border-white/5 rounded-[2rem] p-8 shadow-2xl hover:border-primary/30 hover:shadow-[0_0_30px_rgba(240,90,44,0.12)] hover:-translate-y-1 transition-all duration-300 flex flex-col items-start min-h-[220px] group">
+            <div class="w-11 h-11 rounded-full border border-primary/30 flex items-center justify-center text-primary bg-primary/5 shadow-[0_0_15px_rgba(240,90,44,0.25)] mb-6 group-hover:scale-105 transition-transform">
+              <Rocket class="w-5 h-5" />
+            </div>
+            <span class="text-3xl font-black text-white block leading-none mb-2">120+</span>
+            <div class="w-8 h-[2px] bg-primary mb-4"></div>
+            <span class="text-[9px] font-black text-neutral-400 uppercase tracking-widest leading-normal">Projects Delivered</span>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-[#0c0c0e] border border-white/5 rounded-[2rem] p-8 shadow-2xl hover:border-primary/30 hover:shadow-[0_0_30px_rgba(240,90,44,0.12)] hover:-translate-y-1 transition-all duration-300 flex flex-col items-start min-h-[220px] group">
+            <div class="w-11 h-11 rounded-full border border-primary/30 flex items-center justify-center text-primary bg-primary/5 shadow-[0_0_15px_rgba(240,90,44,0.25)] mb-6 group-hover:scale-105 transition-transform">
+              <Calendar class="w-5 h-5" />
+            </div>
+            <span class="text-3xl font-black text-white block leading-none mb-2">2018</span>
+            <div class="w-8 h-[2px] bg-primary mb-4"></div>
+            <span class="text-[9px] font-black text-neutral-400 uppercase tracking-widest leading-normal">Established</span>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-[#0c0c0e] border border-white/5 rounded-[2rem] p-8 shadow-2xl hover:border-primary/30 hover:shadow-[0_0_30px_rgba(240,90,44,0.12)] hover:-translate-y-1 transition-all duration-300 flex flex-col items-start min-h-[220px] group">
+            <div class="w-11 h-11 rounded-full border border-primary/30 flex items-center justify-center text-primary bg-primary/5 shadow-[0_0_15px_rgba(240,90,44,0.25)] mb-6 group-hover:scale-105 transition-transform">
+              <TrendingUp class="w-5 h-5" />
+            </div>
+            <span class="text-3xl font-black text-white block leading-none mb-2">Multi-Channel</span>
+            <div class="w-8 h-[2px] bg-primary mb-4"></div>
+            <span class="text-[9px] font-black text-neutral-400 uppercase tracking-widest leading-normal">SEO · Ads · Social</span>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-[#0c0c0e] border border-white/5 rounded-[2rem] p-8 shadow-2xl hover:border-primary/30 hover:shadow-[0_0_30px_rgba(240,90,44,0.12)] hover:-translate-y-1 transition-all duration-300 flex flex-col items-start min-h-[220px] group">
+            <div class="w-11 h-11 rounded-full border border-primary/30 flex items-center justify-center text-primary bg-primary/5 shadow-[0_0_15px_rgba(240,90,44,0.25)] mb-6 group-hover:scale-105 transition-transform">
+              <Globe2 class="w-5 h-5" />
+            </div>
+            <span class="text-3xl font-black text-white block leading-none mb-2">Kerala</span>
+            <div class="w-8 h-[2px] bg-primary mb-4"></div>
+            <span class="text-[9px] font-black text-neutral-400 uppercase tracking-widest leading-normal">Wide Coverage</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY TEKNOPPY SECTION -->
+    <section class="py-24 bg-[#FFF8EF]/30 border-y border-neutral-100 relative">
+      <!-- Dynamic background container to prevent overflow issues -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-[url('/whoweare.png')] opacity-50"></div>
+      </div>
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+
+          <!-- Left Column (Sticky Panel) -->
+          <div class="lg:col-span-5 lg:sticky lg:top-32 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider shadow-sm">
+              Trusted Partners
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-black text-neutral-900 leading-tight">
+              Why Teknoppy Is the Trusted <br />
+              <span class="text-primary">Digital Marketing Company in Kochi</span>
+            </h2>
+            <p class="text-neutral-500 font-medium text-sm leading-relaxed max-w-sm">
+              Marketing today is not about being everywhere — it is about being measurable. As a full-funnel digital marketing agency in Kochi, Teknoppy combines technical SEO, paid media, conversion-focused creative, and transparent analytics, so every rupee you spend is tracked to a result. Our clients include startups, hospitals, real estate firms, restaurants, manufacturers, and established enterprises who need leads, not just likes.
+            </p>
+          </div>
+
+          <!-- Right Column (Premium Custom Cards Grid) -->
+          <div class="lg:col-span-7 grid sm:grid-cols-2 gap-6 lg:gap-8">
+
+            <!-- Card 1 -->
+            <div class="bg-white rounded-3xl border border-neutral-100 p-8 shadow-[0_12px_40px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-4">01 . Data</span>
+                <h3 class="text-xl font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-3">Data-Driven, Not Vanity Metrics</h3>
+                <p class="text-neutral-500 text-xs leading-relaxed font-semibold">
+                  We report on leads, cost-per-acquisition, and revenue — not just impressions and follower counts. As a result-driven digital marketing agency Kochi owners trust, every campaign ties to a goal you care about.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-3xl border border-neutral-100 p-8 shadow-[0_12px_40px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-4">02 . Full Funnel</span>
+                <h3 class="text-xl font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-3">Full Funnel Under One Roof</h3>
+                <p class="text-neutral-500 text-xs leading-relaxed font-semibold">
+                  SEO, Google Ads, social, content, email, and landing pages handled by one in-house Kochi team — no disconnected freelancers, no finger-pointing between agencies.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-3xl border border-neutral-100 p-8 shadow-[0_12px_40px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-4">03 . Transparency</span>
+                <h3 class="text-xl font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-3">Transparent, ROI-Focused Reporting</h3>
+                <p class="text-neutral-500 text-xs leading-relaxed font-semibold">
+                  Live dashboards and monthly reviews built around ROI-focused digital marketing Kochi businesses can verify — you always know what was done, what it cost, and what it returned.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white rounded-3xl border border-neutral-100 p-8 shadow-[0_12px_40px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-4">04 . Local</span>
+                <h3 class="text-xl font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-3">A Local Kochi Team</h3>
+                <p class="text-neutral-500 text-xs leading-relaxed font-semibold">
+                  Headquartered in Kochi, Kerala, we understand the local market and Malayalam-speaking audiences — and we are a call or meeting away, not a remote offshore agency.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR DIGITAL MARKETING SERVICES IN KOCHI -->
+    <section id="services" class="py-20 bg-white relative">
+      <!-- Dynamic background container to prevent overflow issues -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-[url('/bgourservices.png')]" style="opacity: 0.45;"></div>
+      </div>
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
+        <div class="max-w-3xl mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            Services Scope
+          </div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+            Our <span class="text-primary">Digital Marketing</span> Services in Kochi
+          </h2>
+          <p class="text-neutral-500 font-medium mt-3 text-base sm:text-lg">
+            We provide complete digital marketing services in Kochi under one roof, so you never manage several agencies at once. From SEO services in Kochi to paid media and creative, here is how we help.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {services.map(svc => {
+            const IconComp = svc.icon;
+            return (
+              <div class="relative overflow-hidden bg-white rounded-3xl border border-neutral-100 p-6 sm:p-7 shadow-[0_12px_30px_-15px_rgba(0,0,0,0.03)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.06)] transition-all duration-300 flex flex-col">
+                <!-- Left Gradient Stroke -->
+                <div class="absolute left-0 top-0 bottom-0 w-[4px] bg-gradient-to-b from-primary via-[#F58439] to-[#FFE2D1]"></div>
+                <div class="flex items-center gap-4">
+                  <div class="w-14 h-14 bg-primary/5 text-primary rounded-2xl flex items-center justify-center flex-shrink-0 border border-primary/10 shadow-inner">
+                    <IconComp class="w-6 h-6" />
+                  </div>
+                  <h3 class="text-base sm:text-[17px] font-black text-neutral-850 leading-snug">{svc.title}</h3>
+                </div>
+                <p class="text-neutral-500 text-xs leading-relaxed mt-4 font-semibold">{svc.desc}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    <!-- DIGITAL MARKETING PROCESS SECTION (LIGHT TIMELINE CARDS) -->
+    <section class="py-24 bg-[#FFF9F6]/40 border-t border-neutral-100 relative">
+      <!-- Dynamic background container to prevent overflow issues -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-[url('/tekenoppyadvantage.png')]" style="opacity: 0.8;"></div>
+      </div>
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            • Our Process •
+          </div>
+          <h2 class="text-4xl sm:text-5xl font-black text-neutral-900 leading-tight">
+            Our <span class="text-primary">Digital Marketing Process</span> — How We Work
+          </h2>
+          <p class="text-neutral-500 font-medium mt-3 text-base">
+            Our process follows six clearly defined stages, so every campaign is built on strategy, measured accurately, and optimised toward a business outcome.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-6 lg:gap-x-8 relative z-10">
+          {processes.map((proc, idx) => {
+            const IconComponent = proc.icon;
+            return (
+              <div class="relative bg-white rounded-3xl border border-neutral-100 p-8 shadow-[0_10px_30px_rgba(0,0,0,0.02)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.06)] transition-all duration-300 flex flex-col justify-between group min-h-[260px]">
+                <div>
+                  <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 bg-primary/5 text-primary rounded-2xl flex items-center justify-center flex-shrink-0 border border-primary/10 shadow-inner">
+                      <IconComponent class="w-6 h-6" />
+                    </div>
+                    <div>
+                      <span class="block text-[9px] font-black text-primary uppercase tracking-widest">Step {proc.step}</span>
+                      <h3 class="text-base sm:text-[17px] font-black text-neutral-850 leading-snug mt-0.5 group-hover:text-primary transition-colors duration-300">{proc.title}</h3>
+                    </div>
+                  </div>
+                  <p class="text-neutral-500 text-xs leading-relaxed mt-5 font-semibold">{proc.desc}</p>
+                </div>
+                <div class="w-10 h-[3px] bg-primary/80 mt-6 rounded-full"></div>
+
+                {/* Horizontal Connector Arrow */}
+                {idx % 3 !== 2 && (
+                  <div class="hidden lg:flex absolute right-[-20px] top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-primary text-white items-center justify-center shadow-md shadow-primary/20 z-20 transition-transform duration-300 group-hover:scale-110">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="3.5" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING TABLE SECTION -->
+    <section class="py-20 bg-white border-t border-neutral-100 relative">
+      <!-- Dynamic background container to prevent overflow issues -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-[url('/pricingbg.png')] opacity-75"></div>
+      </div>
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
+        <div class="max-w-3xl mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            Pricing Guide
+          </div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight mb-4">
+            Digital Marketing <span class="text-primary">Pricing in Kochi</span>
+          </h2>
+          <p class="text-neutral-500 font-medium text-base">
+            Transparent pricing is central to how Teknoppy builds client trust. Below is a realistic guide to digital marketing costs in Kochi by service type. Every engagement receives a written quote before work begins.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-3xl border border-neutral-200/60 overflow-hidden shadow-sm">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="bg-primary text-white font-bold text-sm sm:text-base border-b border-primary/20">
+                <th class="p-4 sm:p-5">Service</th>
+                <th class="p-4 sm:p-5 text-right">Estimated Investment</th>
+              </tr>
+            </thead>
+            <tbody>
+              {pricing.map((priceItem, idx) => (
+                <tr class={`border-b border-neutral-100 hover:bg-neutral-50/50 transition-colors ${idx % 2 === 0 ? 'bg-white' : 'bg-neutral-50/20'}`}>
+                  <td class="p-4 sm:p-5 font-bold text-neutral-800 text-sm sm:text-base">{priceItem.type}</td>
+                  <td class="p-4 sm:p-5 text-right font-black text-primary text-sm sm:text-base">{priceItem.price}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="text-neutral-500 text-xs mt-4 leading-relaxed max-w-3xl font-medium">
+          Final pricing depends on competition, channels, content volume, and ad budget. We offer an affordable digital marketing company in Kochi option for smaller teams and scale up for larger, multi-channel programmes.
+        </p>
+      </div>
+    </section>
+
+    <!-- TARGET INDUSTRIES SECTION (DARK AMBER THEME) -->
+    <section class="py-20 bg-neutral-950 text-white border-t border-white/5 relative">
+      <!-- Dynamic background container to prevent overflow issues -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-[url('/industriesbg.png')] opacity-75"></div>
+      </div>
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/20 border border-amber-500/30 text-amber-400 text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            Our Verticals
+          </div>
+          <h2 class="text-4xl md:text-5xl font-black text-white leading-tight">
+            <span class="text-[#F9AE42]">Industries We Run</span> Campaigns For in Kochi & Kerala
+          </h2>
+          <p class="text-neutral-400 font-medium mt-3 text-base">
+            A hospital, a resort, and a manufacturer each need a different strategy. We plan our digital marketing services for Kochi businesses around that specific intent every time.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {industries.map(ind => {
+            const IconComponent = ind.icon;
+            return (
+              <div class="bg-neutral-900/60 border border-amber-500/10 p-6 rounded-3xl shadow-lg hover:border-amber-500/40 hover:-translate-y-1 transition-all duration-300 flex items-start gap-4">
+                <div class="w-10 h-10 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <IconComponent class="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 class="text-base font-bold text-white mb-2">{ind.name}</h3>
+                  <p class="text-neutral-400 text-xs leading-relaxed font-semibold">{ind.desc}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES SECTION (PORTFOLIO STYLE) -->
+    <section class="py-24 bg-white border-t border-neutral-100">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <div class="max-w-3xl mb-20">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            Success Stories
+          </div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+            Our Digital Marketing <span class="text-primary">Case Studies</span> — Proven Results
+          </h2>
+          <p class="text-neutral-500 font-medium mt-3 text-base">
+            See how we help local Kerala businesses move from low search visibility to measurable leads, calls, and bookings.
+          </p>
+        </div>
+
+        <div class="space-y-24">
+
+          <!-- Case 1 (Olives Resort) -->
+          <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 group relative">
+            <!-- Left: Mockup Window -->
+            <div class="w-full lg:w-[48%] relative z-10">
+              <!-- Glow -->
+              <div class="absolute inset-0 bg-gradient-to-tr from-blue-500/20 to-indigo-500/20 rounded-[2rem] scale-105 opacity-0 group-hover:opacity-100 transition-all duration-700 blur-xl"></div>
+
+              <!-- Browser -->
+              <div class="relative bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.04)] border border-neutral-100 overflow-hidden transform group-hover:-translate-y-1.5 transition-all duration-500">
+                <div class="h-10 bg-neutral-50 border-b border-neutral-100/80 flex items-center px-4 gap-2">
+                  <div class="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
+                  <div class="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
+                  <div class="w-3 h-3 rounded-full bg-[#27C93F]"></div>
+                </div>
+                <div class="aspect-[16/10] bg-[#0c0c0e] relative overflow-hidden flex flex-col items-center justify-center p-8 text-center">
+                  <!-- Abstract mesh -->
+                  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent"></div>
+                  <span class="text-xs font-black text-blue-400 uppercase tracking-widest mb-3">Tourism & Hospitality</span>
+                  <span class="text-4xl sm:text-5xl font-black text-white leading-none mb-3">Page 1</span>
+                  <span class="text-xs text-neutral-400 uppercase tracking-wider font-semibold">Core Resort Keywords</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Content -->
+            <div class="w-full lg:w-[52%] space-y-6">
+              <div>
+                <span class="text-xs font-black text-primary uppercase tracking-widest">Case Study 01</span>
+                <h3 class="text-2xl font-black text-neutral-900 mt-1">Olives Resort: Local SEO That Fills the Calendar</h3>
+              </div>
+              <p class="text-sm text-neutral-500 leading-relaxed font-medium">
+                Olives Resort in Wayanad needed direct bookings rather than dependence on commission-heavy portals. Teknoppy paired a conversion-focused website with a focused local and organic SEO campaign for high-intent resort keywords.
+              </p>
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div class="bg-neutral-50/50 rounded-2xl p-5 border border-neutral-100">
+                  <h4 class="text-xs font-black text-neutral-900 uppercase tracking-wider mb-2">Our Approach</h4>
+                  <ul class="space-y-1.5 text-xs text-neutral-500 font-semibold list-disc pl-4">
+                    <li>Local SEO — Google Business Profile optimisation, location keywords, and map visibility for travellers outside Kerala</li>
+                    <li>On-page SEO — optimised property pages, structured content, and schema for accommodation search</li>
+                    <li>Conversion flow — prominent booking CTAs, click-to-call, and Google Maps connectivity</li>
+                  </ul>
+                </div>
+                <div class="bg-neutral-50/50 rounded-2xl p-5 border border-neutral-100">
+                  <h4 class="text-xs font-black text-neutral-900 uppercase tracking-wider mb-2">The Results</h4>
+                  <ul class="space-y-1.5 text-xs text-neutral-500 font-semibold list-disc pl-4">
+                    <li>Top Google rankings for core resort keywords in the Wayanad market</li>
+                    <li>A measurable increase in direct booking calls, reducing portal dependence</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Testimonial Quote -->
+              <div class="border-l-4 border-primary pl-4 py-1.5 bg-[#FFF8EF]/30 rounded-r-2xl">
+                <p class="text-xs text-neutral-600 font-medium italic leading-relaxed">
+                  "We now rank at the top of Google for our keywords and get many direct booking calls due to better visibility. Thank you Teknoppy for all the support."
+                </p>
+                <span class="block text-xs font-black text-neutral-900 mt-2">— Biju Thomas, CEO, Olives Resort, Wayanad</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case 2 (Greens Ayurveda) -->
+          <div class="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-16 group relative">
+            <!-- Left: Mockup Window -->
+            <div class="w-full lg:w-[48%] relative z-10">
+              <!-- Glow -->
+              <div class="absolute inset-0 bg-gradient-to-tr from-emerald-500/20 to-teal-500/20 rounded-[2rem] scale-105 opacity-0 group-hover:opacity-100 transition-all duration-700 blur-xl"></div>
+
+              <!-- Browser -->
+              <div class="relative bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.04)] border border-neutral-100 overflow-hidden transform group-hover:-translate-y-1.5 transition-all duration-500">
+                <div class="h-10 bg-neutral-50 border-b border-neutral-100/80 flex items-center px-4 gap-2">
+                  <div class="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
+                  <div class="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
+                  <div class="w-3 h-3 rounded-full bg-[#27C93F]"></div>
+                </div>
+                <div class="aspect-[16/10] bg-[#0c0c0e] relative overflow-hidden flex flex-col items-center justify-center p-8 text-center">
+                  <!-- Abstract mesh -->
+                  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-emerald-500/10 via-transparent to-transparent"></div>
+                  <span class="text-xs font-black text-emerald-400 uppercase tracking-widest mb-3">Healthcare & Wellness</span>
+                  <span class="text-4xl sm:text-5xl font-black text-white leading-none mb-3">Global</span>
+                  <span class="text-xs text-neutral-400 uppercase tracking-wider font-semibold">International Enquiries</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Content -->
+            <div class="w-full lg:w-[52%] space-y-6">
+              <div>
+                <span class="text-xs font-black text-primary uppercase tracking-widest">Case Study 02</span>
+                <h3 class="text-2xl font-black text-neutral-900 mt-1">Greens Ayurveda: From Invisible to International Enquiries</h3>
+              </div>
+              <p class="text-sm text-neutral-500 leading-relaxed font-medium">
+                Greens Ayurveda in Calicut offers Panchakarma therapies to clients in India and abroad, but an outdated presence left it nearly invisible in search. As a digital marketing company with proven results Kochi clients can verify, Teknoppy rebuilt the platform and ran an organic SEO and content programme for domestic and overseas audiences.
+              </p>
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div class="bg-neutral-50/50 rounded-2xl p-5 border border-neutral-100">
+                  <h4 class="text-xs font-black text-neutral-900 uppercase tracking-wider mb-2">Our Approach</h4>
+                  <ul class="space-y-1.5 text-xs text-neutral-500 font-semibold list-disc pl-4">
+                    <li>Keyword & content strategy targeting Ayurvedic-treatment Kerala and Panchakarma-centre Calicut demand</li>
+                    <li>Technical & local SEO — schema, clean architecture, and local signals</li>
+                    <li>Conversion flow — appointment CTAs, enquiry forms, and WhatsApp integration for international leads</li>
+                  </ul>
+                </div>
+                <div class="bg-neutral-50/50 rounded-2xl p-5 border border-neutral-100">
+                  <h4 class="text-xs font-black text-neutral-900 uppercase tracking-wider mb-2">The Results</h4>
+                  <ul class="space-y-1.5 text-xs text-neutral-500 font-semibold list-disc pl-4">
+                    <li>A measurable rise in enquiries, notably from international visitors</li>
+                    <li>Improved engagement and steady organic growth for wellness keywords</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Testimonial Quote -->
+              <div class="border-l-4 border-primary pl-4 py-1.5 bg-[#FFF8EF]/30 rounded-r-2xl">
+                <p class="text-xs text-neutral-600 font-medium italic leading-relaxed">
+                  "Mr. Sanal is exceptionally supportive and customer-friendly. I have worked with many IT teams, but I am 100% happy with Teknoppy. No doubt, I recommend them with 100% satisfaction."
+                </p>
+                <span class="block text-xs font-black text-neutral-900 mt-2">— Dr. Asghar, CEO, Greens Ayurveda, Calicut</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENT TESTIMONIALS SECTION -->
+    <section class="py-20 bg-neutral-50/50 border-t border-neutral-100">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            Testimonials
+          </div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+            What Our <span class="text-primary">Clients Say</span> About Teknoppy
+          </h2>
+          <p class="text-neutral-500 font-medium mt-3 text-base">
+            Real feedback from local and global companies who scaled their businesses using our digital marketing services.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {testimonials.map(item => (
+            <div class="bg-white border border-neutral-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="flex gap-1 text-[#F9AE42] mb-4">
+                  <Star class="w-4 h-4 fill-current" />
+                  <Star class="w-4 h-4 fill-current" />
+                  <Star class="w-4 h-4 fill-current" />
+                  <Star class="w-4 h-4 fill-current" />
+                  <Star class="w-4 h-4 fill-current" />
+                </div>
+                <p class="text-xs text-neutral-600 font-medium italic leading-relaxed mb-6">
+                  "{item.quote}"
+                </p>
+              </div>
+              <div class="border-t border-neutral-100 pt-4 mt-auto">
+                <span class="block text-sm font-bold text-neutral-800">{item.author}</span>
+                <span class="block text-[10px] text-neutral-400 font-bold uppercase tracking-wider mt-0.5">{item.role}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS LIST -->
+    <section class="py-20 bg-white border-t border-neutral-100">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <div class="max-w-3xl mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            Our Portfolio
+          </div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+            Featured Work — <span class="text-primary">Real Kerala Brands</span> We Have Grown
+          </h2>
+          <p class="text-neutral-500 font-medium mt-3 text-base">
+            An overview of real Kerala brands we have grown through SEO, paid media, and content — each built around a clear business goal and measured against results.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+          {projects.map(proj => (
+            <div class="bg-white rounded-3xl border border-neutral-200/60 p-6 shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <h3 class="text-lg font-bold text-neutral-900">{proj.name}</h3>
+                  <span class="text-[9px] font-black text-primary bg-primary/5 px-2 py-0.5 rounded-full uppercase tracking-wider">{proj.loc}</span>
+                </div>
+                <p class="text-neutral-600 text-xs leading-relaxed font-semibold mb-4">{proj.desc}</p>
+                <div class="bg-neutral-50/50 rounded-2xl p-4 border border-neutral-100">
+                  <span class="block text-[10px] font-black text-neutral-800 uppercase tracking-wider mb-1">Result</span>
+                  <p class="text-neutral-500 text-xs font-semibold leading-relaxed">{proj.result}</p>
+                </div>
+              </div>
+              <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-bold text-primary mt-6 hover:underline">
+                Enquire for details
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQS SECTION -->
+    <section class="py-20 bg-neutral-50/50 border-t border-neutral-100">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            Support & FAQs
+          </div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+            Frequently Asked Questions — <span class="text-primary">Digital Marketing in Kochi</span>
+          </h2>
+          <p class="text-neutral-500 font-medium mt-3 text-base">
+            Get quick answers to standard questions about digital marketing pricing, timelines, and how we measure results.
+          </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto space-y-4">
+          {faqs.map(faq => (
+            <details class="group bg-white rounded-2xl border border-neutral-200/60 p-6 [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
+                <h3 class="text-sm sm:text-base font-bold text-neutral-850 pr-4">
+                  {faq.q}
+                </h3>
+                <span class="transition-transform duration-300 group-open:-rotate-180 text-primary flex-shrink-0">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </span>
+              </summary>
+              <div class="mt-4 pt-4 border-t border-neutral-100/60 text-xs sm:text-sm text-neutral-600 leading-relaxed font-semibold">
+                {faq.a}
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+
+      <!-- FAQ Schema (FAQPage JSON-LD) -->
+      <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    </section>
+  </main>
+
+  <FooterCTA />
+</Layout>

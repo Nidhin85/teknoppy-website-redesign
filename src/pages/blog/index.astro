@@ -1,0 +1,188 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import FooterCTA from '../../components/FooterCTA.astro';
+import { ArrowRight, Calendar, Clock } from 'lucide-react';
+
+const title = "Web Design & Digital Marketing Blog | Teknoppy Kerala";
+const description = "Expert insights, guides, and strategies on web design, WordPress, ecommerce, SEO, and digital marketing for Kerala businesses — from the Teknoppy team.";
+
+const categories = ["Web Design", "WordPress", "Ecommerce", "SEO", "Kerala Business"];
+
+const posts = [
+  {
+    title: "Latest Web Design Trends in 2026: Modern Styles and Techniques That Convert",
+    excerpt: "Your website is either working for you or against you. In 2026, there is very little middle ground. Discover every major trend that is defining the industry this year.",
+    category: "Design Trends",
+    date: "July 3, 2026",
+    readTime: "8 min read",
+    image: "/blog/blog1.png",
+    href: "/blog/latest-web-design-trends-2026/"
+  },
+  {
+    title: "Why SEO-Friendly Website Design is Critical for Kerala Businesses",
+    excerpt: "Building a website without SEO is like building a road without a destination. Discover how integrated search strategy drives organic traffic and client enquiries for Kerala brands.",
+    category: "SEO & Design",
+    date: "July 2, 2026",
+    readTime: "5 min read",
+    image: "/blog_thumbnail_seo.png",
+    href: "#"
+  },
+  {
+    title: "How to Build a High-Converting Ecommerce Website in Kerala",
+    excerpt: "With the retail sector expanding online, building a custom ecommerce solution requires fast page speeds, local gateway integrations, and conversion-optimized checkouts.",
+    category: "Ecommerce",
+    date: "June 15, 2026",
+    readTime: "6 min read",
+    image: "/blog_thumbnail_ecommerce.png",
+    href: "#"
+  },
+  {
+    title: "How to Start Selling Online in Kerala: A Step-by-Step Guide for Small Business Owners",
+    excerpt: "Platform choice, payment integration, and first-sale strategy for Kerala entrepreneurs launching e-commerce.",
+    category: "Ecommerce",
+    date: "June 2, 2026",
+    readTime: "7 min read",
+    image: "/blog_thumbnail_ecommerce.png",
+    href: "#"
+  },
+  {
+    title: "Beyond Rankings: How Top SEO Companies Are Redefining Digital Success in the AI-First Era",
+    excerpt: "How AI is reshaping organic search and what Kerala businesses must do differently in 2026.",
+    category: "SEO",
+    date: "May 20, 2026",
+    readTime: "6 min read",
+    image: "/blog_thumbnail_seo.png",
+    href: "#"
+  },
+  {
+    title: "How to Choose the Right Website Design Company in Kerala",
+    excerpt: "Key questions, red flags, and what separates a results-driven studio from a template shop.",
+    category: "Web Design",
+    date: "May 8, 2026",
+    readTime: "5 min read",
+    image: "/blog/blog1.png",
+    href: "#"
+  }
+];
+---
+
+<Layout title={title} description={description}>
+  <Header forceSolidBg={true} />
+
+  <main class="overflow-hidden bg-[#FFF8EF]/20">
+    <!-- DARK HERO SECTION -->
+    <section class="relative pt-32 pb-24 md:pt-36 md:pb-32 overflow-hidden bg-neutral-950 text-white border-b border-white/5">
+      <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-[url('/herodarkwebdesign.png')]"></div>
+      </div>
+
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10 flex flex-col items-center text-center">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-bold text-primary uppercase tracking-widest mb-6">
+          Our Blog
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-[56px] font-black leading-[1.1] tracking-tight text-white mb-6">
+          Insights &amp;
+          <span class="relative inline-block text-primary">
+            Guides
+            <svg class="absolute -bottom-2 left-0 w-full h-2 text-primary" viewBox="0 0 100 10" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 7C30 3 70 3 97 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+            </svg>
+          </span>
+        </h1>
+        <p class="text-base sm:text-lg lg:text-xl text-neutral-300 mb-8 max-w-2xl font-medium leading-relaxed">
+          Expert perspectives, strategies, and how-to guides on web design, WordPress, ecommerce, SEO, and digital growth for Kerala businesses.
+        </p>
+
+        <!-- Category Chips -->
+        <div class="flex flex-wrap items-center justify-center gap-3">
+          {categories.map(cat => (
+            <span class="inline-flex items-center px-4 py-2 rounded-full bg-white/5 border border-white/15 text-xs font-bold text-neutral-300 uppercase tracking-wider">
+              {cat}
+            </span>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG GRID SECTION -->
+    <section class="py-24 md:py-32 bg-white relative overflow-hidden">
+      <!-- Soft Background Accent Glows -->
+      <div class="absolute top-0 left-0 w-80 h-80 bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
+      <div class="absolute bottom-0 right-0 w-80 h-80 bg-[#F9AE42]/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
+        <div class="max-w-3xl mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            Latest Articles
+          </div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+            All <span class="text-primary">Articles</span> &amp; Guides
+          </h2>
+          <p class="text-neutral-500 font-medium mt-3 text-base sm:text-lg">
+            Stay updated with expert perspectives, strategies, and resources on web design, WordPress, ecommerce, SEO, and digital growth in Kerala.
+          </p>
+        </div>
+
+        <!-- Blog Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {posts.map((post) => (
+            <article class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md hover:border-primary/30 border border-neutral-100/80 transition-all duration-300 flex flex-col h-full">
+              <!-- Image Container -->
+              <div class="overflow-hidden aspect-[16/10] bg-neutral-100 relative">
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <span class="absolute top-4 left-4 inline-flex items-center px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-black text-primary uppercase tracking-wider shadow-sm">
+                  {post.category}
+                </span>
+              </div>
+
+              <!-- Card Content -->
+              <div class="p-6 md:p-8 flex flex-col flex-grow justify-between">
+                <div class="space-y-4">
+                  <!-- Meta Info -->
+                  <div class="flex items-center gap-4 text-xs font-medium text-neutral-400">
+                    <span class="flex items-center gap-1.5">
+                      <Calendar class="w-3.5 h-3.5" />
+                      {post.date}
+                    </span>
+                    <span class="flex items-center gap-1.5">
+                      <Clock class="w-3.5 h-3.5" />
+                      {post.readTime}
+                    </span>
+                  </div>
+
+                  <!-- Title -->
+                  <h3 class="text-xl font-bold text-neutral-900 leading-snug group-hover:text-primary transition-colors duration-300">
+                    <a href={post.href}>{post.title}</a>
+                  </h3>
+
+                  <!-- Excerpt -->
+                  <p class="text-sm text-neutral-500 leading-relaxed font-medium">
+                    {post.excerpt}
+                  </p>
+                </div>
+
+                <!-- Read More CTA -->
+                <div class="pt-6 mt-6 border-t border-neutral-50">
+                  <a
+                    href={post.href}
+                    class="inline-flex items-center gap-2 text-sm font-bold text-neutral-850 hover:text-primary transition-colors duration-300"
+                  >
+                    Read Article
+                    <ArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+                  </a>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <FooterCTA />
+</Layout>

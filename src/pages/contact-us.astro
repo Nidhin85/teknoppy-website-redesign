@@ -1,0 +1,185 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import FooterCTA from '../components/FooterCTA.astro';
+import { Phone, Mail, MapPin, MessageCircle, Zap, ArrowRight } from 'lucide-react';
+
+const title = "Contact Teknoppy — Web Design Company in Kochi, Kerala";
+const description = "Contact Teknoppy, a trusted web design and digital agency in Kochi, Kerala. Call +91 6282249224, WhatsApp, or email sanal@teknoppy.com — we respond within one business day.";
+
+const contactMethods = [
+  {
+    label: "Call Us",
+    value: "+91 6282249224",
+    href: "tel:+916282249224",
+    icon: Phone,
+    aria: "Call Teknoppy on +91 6282249224",
+    external: false
+  },
+  {
+    label: "WhatsApp",
+    value: "+91 6282249224",
+    href: "https://wa.me/916282249224",
+    icon: MessageCircle,
+    aria: "Message Teknoppy on WhatsApp",
+    external: true
+  },
+  {
+    label: "Email Us",
+    value: "sanal@teknoppy.com",
+    href: "mailto:sanal@teknoppy.com",
+    icon: Mail,
+    aria: "Email Teknoppy at sanal@teknoppy.com",
+    external: false
+  },
+  {
+    label: "Visit Us",
+    value: "Kaithakal Building, Near Thykoodam Metro, Vyttila PO, Kochi, Kerala 682019",
+    href: null,
+    icon: MapPin,
+    aria: null,
+    external: false
+  }
+];
+
+const serviceAreas = [
+  "Kochi", "Ernakulam", "Thrissur", "Calicut", "Trivandrum", "Palakkad",
+  "Kottayam", "Kannur", "Wayanad", "Kerala", "India"
+];
+---
+
+<Layout title={title} description={description}>
+  <Header forceSolidBg={true} />
+
+  <main class="overflow-hidden bg-[#FFF8EF]/20">
+    <!-- DARK HERO SECTION -->
+    <section class="relative pt-32 pb-24 md:pt-36 md:pb-32 overflow-hidden bg-neutral-950 text-white border-b border-white/5">
+      <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-[url('/herodarkwebdesign.png')]"></div>
+      </div>
+
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10 flex flex-col items-center text-center">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-bold text-primary uppercase tracking-widest mb-6">
+          <Zap class="w-3.5 h-3.5" />
+          Get in Touch
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-[56px] font-black leading-[1.1] tracking-tight text-white mb-6">
+          <span class="relative inline-block text-primary">
+            Contact
+            <svg class="absolute -bottom-2 left-0 w-full h-2 text-primary" viewBox="0 0 100 10" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 7C30 3 70 3 97 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+            </svg>
+          </span> Teknoppy
+        </h1>
+        <p class="text-base sm:text-lg lg:text-xl text-neutral-300 mb-8 max-w-2xl font-medium leading-relaxed">
+          Let's build a website that ranks, converts, and grows your business. Reach us any way you like — we respond within one business day.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+          <a href="tel:+916282249224" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.35)] hover:bg-primary/95 hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap">
+            Call Us Now
+            <ArrowRight class="w-4 h-4" />
+          </a>
+          <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-white border border-white/20 rounded-full hover:bg-white/5 transition-all duration-300 shadow-sm whitespace-nowrap">
+            Request a Quote
+            <ArrowRight class="w-4 h-4" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT METHODS SECTION -->
+    <section class="py-20 md:py-24 bg-white relative">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
+        <div class="max-w-3xl mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            Contact Details
+          </div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+            Reach Teknoppy <span class="text-primary">Your Way</span>
+          </h2>
+          <p class="text-neutral-500 font-medium mt-3 text-base sm:text-lg">
+            Whether you prefer a quick call, a WhatsApp message, or a detailed email — our Kochi team is ready to help. Pick the channel that suits you and we'll respond within one business day.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {contactMethods.map(method => {
+            const IconComp = method.icon;
+            const cardBody = (
+              <div class="relative overflow-hidden bg-white rounded-3xl border border-neutral-100 p-6 sm:p-7 shadow-[0_12px_30px_-15px_rgba(0,0,0,0.03)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.06)] transition-all duration-300 flex flex-col h-full">
+                <div class="absolute left-0 top-0 bottom-0 w-[4px] bg-gradient-to-b from-primary via-[#F58439] to-[#FFE2D1]"></div>
+                <div class="w-14 h-14 bg-primary/5 text-primary rounded-2xl flex items-center justify-center flex-shrink-0 border border-primary/10 shadow-inner mb-5">
+                  <IconComp class="w-6 h-6" />
+                </div>
+                <span class="text-[10px] font-black text-primary uppercase tracking-widest block mb-2">{method.label}</span>
+                <p class="text-base font-bold text-neutral-850 leading-snug break-words">{method.value}</p>
+              </div>
+            );
+
+            if (method.href) {
+              return (
+                <a
+                  href={method.href}
+                  aria-label={method.aria}
+                  {...(method.external ? { target: "_blank", rel: "noopener" } : {})}
+                  class="block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 rounded-3xl"
+                >
+                  {cardBody}
+                </a>
+              );
+            }
+
+            return cardBody;
+          })}
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE AREAS BAND -->
+    <section class="py-14 bg-[#FFF8EF]/40 border-y border-neutral-100 relative">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10 text-center">
+        <span class="block text-[11px] font-black text-primary uppercase tracking-widest mb-5">Service Areas</span>
+        <div class="flex flex-wrap items-center justify-center gap-2.5">
+          {serviceAreas.map(area => (
+            <span class="inline-flex items-center px-4 py-2 rounded-full bg-white border border-neutral-200/70 text-xs sm:text-sm font-bold text-neutral-700 shadow-sm hover:border-primary/30 hover:text-primary transition-colors">
+              {area}
+            </span>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section class="py-20 md:py-24 bg-white relative">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
+        <div class="max-w-3xl mb-10">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            Our Location
+          </div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+            Visit Our <span class="text-primary">Kochi Office</span>
+          </h2>
+          <p class="text-neutral-500 font-medium mt-3 text-base sm:text-lg">
+            Kaithakal Building, Near Thykoodam Metro, Vyttila PO, Kochi, Kerala 682019. Drop by for a face-to-face consultation with our team.
+          </p>
+        </div>
+
+        <div class="rounded-3xl overflow-hidden border border-neutral-200 shadow-sm">
+          <iframe
+            src="https://www.google.com/maps?q=Kaithakal%20Building%20Near%20Thykoodam%20Metro%20Vyttila%20Kochi%20Kerala%20682019&output=embed"
+            width="100%"
+            height="420"
+            style="border:0;"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Teknoppy office location on Google Maps"
+            class="w-full"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <FooterCTA />
+</Layout>

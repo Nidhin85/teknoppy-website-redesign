@@ -5,13 +5,34 @@ interface Props {
 
 const { forceSolidBg = false } = Astro.props;
 
+const pathname = Astro.url.pathname;
+const isActive = (href: string) => {
+  if (href === '/') return pathname === '/';
+  if (href.startsWith('/#')) return false;
+  const clean = href.replace(/\/$/, '');
+  return pathname === href || pathname === clean;
+};
+
+const services = [
+  { name: 'Web Design', href: '/web-design-company-kochi/', desc: 'Custom, SEO-ready websites' },
+  { name: 'WordPress Development', href: '/wordpress-development-company-kochi/', desc: 'Custom WordPress & WooCommerce' },
+  { name: 'Ecommerce Development', href: '/ecommerce-website-development-company-kochi/', desc: 'Online stores built to sell' },
+  { name: 'Web Application Development', href: '/web-application-development-company-kochi/', desc: 'Scalable custom web apps' },
+  { name: 'Digital Marketing', href: '/digital-marketing-company-kochi/', desc: 'SEO, Ads, social & content' },
+];
+
+const servicesActive = services.some(s => {
+  const clean = s.href.replace(/\/$/, '');
+  return pathname === s.href || pathname === clean;
+});
+
 const links = [
-  { name: 'Home', href: '/', active: true },
-  { name: 'Services', href: '#services', hasDropdown: true },
-  { name: 'About Us', href: '#about' },
-  { name: 'Portfolio', href: '#portfolio' },
-  { name: 'Blog', href: '#blog' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Home', href: '/' },
+  { name: 'Services', href: '/#services', hasDropdown: true },
+  { name: 'About Us', href: '/about-us/' },
+  { name: 'Portfolio', href: '/portfolios/' },
+  { name: 'Blog', href: '/blog/' },
+  { name: 'Contact', href: '/contact-us/' },
 ];
 ---
 
@@ -34,24 +55,63 @@ const links = [
     <!-- Desktop Nav -->
     <nav class="hidden md:flex items-center gap-8">
       {links.map(link => (
-        <a 
-          href={link.href} 
-          class={`relative py-1 text-[15px] font-bold transition-all duration-300 flex items-center gap-1 ${
-            link.active 
-              ? 'text-primary' 
-              : 'text-neutral-700 hover:text-primary'
-          }`}
-        >
-          {link.name}
-          {link.hasDropdown && (
-            <svg class="w-3.5 h-3.5 text-neutral-450 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-            </svg>
-          )}
-          {link.active && (
-            <span class="absolute -bottom-[2px] left-0 w-full h-[2px] bg-primary"></span>
-          )}
-        </a>
+        link.hasDropdown ? (
+          <div class="relative group">
+            <a
+              href={link.href}
+              class={`relative py-1 text-[15px] font-bold transition-all duration-300 flex items-center gap-1 group-hover:text-primary ${
+                servicesActive ? 'text-primary' : 'text-neutral-700'
+              }`}
+            >
+              {link.name}
+              <svg class="w-3.5 h-3.5 text-neutral-450 mt-0.5 transition-transform duration-300 group-hover:rotate-180 group-hover:text-primary" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+              {servicesActive && (
+                <span class="absolute -bottom-[2px] left-0 w-full h-[2px] bg-primary"></span>
+              )}
+            </a>
+
+            <!-- Services Dropdown Panel -->
+            <div class="absolute left-1/2 -translate-x-1/2 top-full pt-4 w-[330px] opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 ease-out z-50">
+              <div class="bg-white rounded-2xl border border-neutral-100 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.18)] p-2">
+                {services.map(svc => {
+                  const active = pathname === svc.href || pathname === svc.href.replace(/\/$/, '');
+                  return (
+                    <a
+                      href={svc.href}
+                      class={`flex items-start gap-3 px-4 py-3 rounded-xl transition-colors group/item ${active ? 'bg-[#FFF8EF]' : 'hover:bg-[#FFF8EF]'}`}
+                    >
+                      <span class="mt-[7px] w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>
+                      <span class="flex flex-col">
+                        <span class={`text-sm font-bold transition-colors ${active ? 'text-primary' : 'text-neutral-800 group-hover/item:text-primary'}`}>{svc.name}</span>
+                        <span class="text-xs text-neutral-400 font-medium leading-snug mt-0.5">{svc.desc}</span>
+                      </span>
+                    </a>
+                  );
+                })}
+                <a href="/#services" class="flex items-center justify-center gap-1.5 mt-1 px-4 py-2.5 text-xs font-bold text-primary hover:bg-[#FFF8EF] rounded-xl transition-colors border-t border-neutral-100">
+                  View all services
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <a
+            href={link.href}
+            class={`relative py-1 text-[15px] font-bold transition-all duration-300 flex items-center gap-1 ${
+              isActive(link.href)
+                ? 'text-primary'
+                : 'text-neutral-700 hover:text-primary'
+            }`}
+          >
+            {link.name}
+            {isActive(link.href) && (
+              <span class="absolute -bottom-[2px] left-0 w-full h-[2px] bg-primary"></span>
+            )}
+          </a>
+        )
       ))}
     </nav>
 
@@ -72,15 +132,32 @@ const links = [
  
   <!-- Mobile Dropdown Menu -->
   <div id="mobile-menu" class="fixed inset-0 top-[75px] bg-white z-40 transform translate-x-full transition-transform duration-300 md:hidden flex flex-col justify-between p-8 border-t border-border">
-    <nav class="flex flex-col gap-6">
+    <nav class="flex flex-col gap-5">
       {links.map((link, idx) => (
-        <a 
-          href={link.href} 
-          class="mobile-link text-2xl font-bold text-neutral-900 hover:text-primary transition-colors duration-300 py-2 border-b border-border/40 opacity-0 transform translate-y-4"
-          style={`transition-delay: ${idx * 50}ms`}
-        >
-          {link.name}
-        </a>
+        link.hasDropdown ? (
+          <div
+            class="mobile-link opacity-0 transform translate-y-4 transition-all duration-300 border-b border-border/40 pb-3"
+            style={`transition-delay: ${idx * 50}ms`}
+          >
+            <span class="block text-2xl font-bold text-neutral-900 py-2">{link.name}</span>
+            <div class="flex flex-col gap-3 pl-4 pt-1">
+              {services.map(svc => (
+                <a href={svc.href} class="mobile-sublink text-base font-semibold text-neutral-500 hover:text-primary transition-colors flex items-center gap-2.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary/60 flex-shrink-0"></span>
+                  {svc.name}
+                </a>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <a
+            href={link.href}
+            class="mobile-link text-2xl font-bold text-neutral-900 hover:text-primary transition-colors duration-300 py-2 border-b border-border/40 opacity-0 transform translate-y-4"
+            style={`transition-delay: ${idx * 50}ms`}
+          >
+            {link.name}
+          </a>
+        )
       ))}
     </nav>
     <div class="mt-auto pt-8 border-t border-border/60 opacity-0 transform translate-y-4 transition-all duration-300 delay-300 mobile-cta">
@@ -156,6 +233,13 @@ const links = [
 
   // Close menu when a link is clicked
   mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (isMenuOpen) toggleMenu();
+    });
+  });
+
+  // Close menu when a Services sub-link is clicked
+  document.querySelectorAll('.mobile-sublink').forEach(link => {
     link.addEventListener('click', () => {
       if (isMenuOpen) toggleMenu();
     });

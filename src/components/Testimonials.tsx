@@ -4,43 +4,67 @@ import { ChevronLeft, ChevronRight, Play } from 'lucide-react';
 
 const testimonials = [
   {
-    name: "Arun Mathew",
-    role: "Greenleaf Exports, Kochi",
-    content: "Teknoppy completely transformed our online presence. Within three months of the new website going live, our enquiries doubled and our Google ranking moved from page 3 to page 1 for our target keyword. The team was professional, on time, and genuinely understood what our business needed.",
-    initials: "AM"
+    name: "Biju Thomas",
+    role: "CEO, Olives Resort, Wayanad",
+    content: "We now rank at the top of Google for our keywords and get many direct booking calls due to better visibility. Thank you Teknoppy for all the support.",
+    initials: "BT"
   },
   {
-    name: "Priya Nair",
-    role: "Nair Jewellery House, Thrissur",
-    content: "We approached Teknoppy for a full website redesign and SEO setup. The results have been outstanding. Our website now loads in under two seconds, ranks for multiple keywords, and our sales inquiries have increased by over 40 percent. Highly recommended for any Kerala business serious about digital growth.",
-    initials: "PN"
+    name: "Vivek Menon",
+    role: "CTO, Evosyz, Kochi",
+    content: "Being in the Fintech space, we needed a reliable partner. Teknoppy created an appealing website that represents our brand perfectly.",
+    initials: "VM"
   },
   {
-    name: "Dr. Suresh Kumar",
-    role: "Suresh Medical Centre, Ernakulam",
-    content: "The team at Teknoppy delivered exactly what they promised — a clean, fast, and SEO-optimised website for our clinic. Patients now find us easily on Google and our appointment bookings through the website have grown consistently month on month.",
-    initials: "SK"
+    name: "Shainesh Prakashan",
+    role: "CEO, Exacore IT, Infopark Kochi",
+    content: "Teknoppy was very intuitive in understanding our requirements. They made great digital collateral and now we are getting good outreach to the market.",
+    initials: "SP"
+  },
+  {
+    name: "Dr. Asghar",
+    role: "CEO, Greens Ayurveda, Calicut",
+    content: "Mr. Sanal is exceptionally supportive and customer-friendly. I have worked with many IT teams, but I am 100% happy with Teknoppy. No doubt, I recommend them with 100% satisfaction.",
+    initials: "DA"
+  },
+  {
+    name: "Rincy",
+    role: "Astrologer & Psychic Healer, Australia",
+    content: "Thank you Teknoppy for a wonderful mobile app for my tarot channel. All functions work great and I am getting many subscribers.",
+    initials: "R"
   }
 ];
 
 const videoTestimonials = [
   {
-    name: "Arun Mathew",
-    initial: "A",
-    company: "Founder Greenleaf Exports",
+    name: "Biju Thomas",
+    initial: "B",
+    company: "CEO, Olives Resort, Wayanad",
     image: "/testimonial_video_preview.png"
   },
   {
-    name: "Priya Nair",
-    initial: "P",
-    company: "Director Nair Jewellery House",
+    name: "Vivek Menon",
+    initial: "V",
+    company: "CTO, Evosyz, Kochi",
     image: "/testimonial_video_preview_2.png"
   },
   {
-    name: "Dr. Suresh Kumar",
+    name: "Shainesh Prakashan",
     initial: "S",
-    company: "Suresh Medical Centre",
+    company: "CEO, Exacore IT, Infopark Kochi",
     image: "/testimonial_video_preview_3.png"
+  },
+  {
+    name: "Dr. Asghar",
+    initial: "A",
+    company: "CEO, Greens Ayurveda, Calicut",
+    image: "/testimonial_video_preview.png"
+  },
+  {
+    name: "Rincy",
+    initial: "R",
+    company: "Astrologer & Psychic Healer, Australia",
+    image: "/testimonial_video_preview_2.png"
   }
 ];
 
@@ -133,9 +157,9 @@ export default function Testimonials() {
     <section className="py-24 md:py-32 bg-cream relative overflow-hidden" id="testimonials">
       {/* Background overlapping rings */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
-        <div className="absolute top-10 left-10 w-96 h-96 rounded-full border border-[#FF6B1A]/8 animate-float-slow"></div>
-        <div className="absolute top-20 left-20 w-[450px] h-[450px] rounded-full border border-dashed border-[#FFC247]/10 animate-float-slower"></div>
-        <div className="absolute bottom-10 right-10 w-80 h-80 rounded-full border border-[#FF6B1A]/10 animate-float-slow"></div>
+        <div className="absolute top-10 left-10 w-96 h-96 rounded-full border border-[#F05A2C]/8 animate-float-slow"></div>
+        <div className="absolute top-20 left-20 w-[450px] h-[450px] rounded-full border border-dashed border-[#F9AE42]/10 animate-float-slower"></div>
+        <div className="absolute bottom-10 right-10 w-80 h-80 rounded-full border border-[#F05A2C]/10 animate-float-slow"></div>
       </div>
 
       <div className="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
@@ -143,7 +167,7 @@ export default function Testimonials() {
         {/* Combined Section Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#FFC247]/10 border border-[#FFC247]/30 text-primary text-sm font-bold uppercase tracking-wider mb-6 shadow-sm transform -rotate-1">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F9AE42]/10 border border-[#F9AE42]/30 text-primary text-sm font-bold uppercase tracking-wider mb-6 shadow-sm transform -rotate-1">
               Client Success Stories
             </div>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-neutral-900 mb-4 leading-tight">
@@ -154,7 +178,7 @@ export default function Testimonials() {
             </p>
           </div>
           <div className="text-2xl md:text-3xl font-bold text-neutral-950 tracking-tight shrink-0">
-            150+ global clients
+            120+ global clients
           </div>
         </div>
 
@@ -167,7 +191,7 @@ export default function Testimonials() {
           >
             {/* Stacked Cards Effect behind the main card */}
             <div className="absolute inset-0 bg-[#FFF8EF] rounded-xl -translate-y-4 scale-[0.94] border border-neutral-100 -z-20"></div>
-            <div className="absolute inset-0 bg-[#FFC247]/5 rounded-xl -translate-y-2 scale-[0.97] border border-neutral-100 -z-10"></div>
+            <div className="absolute inset-0 bg-[#F9AE42]/5 rounded-xl -translate-y-2 scale-[0.97] border border-neutral-100 -z-10"></div>
 
             {/* Top Row: Quote Mark & Controls */}
             <div className="flex justify-between items-center mb-8">
@@ -249,7 +273,7 @@ export default function Testimonials() {
 
                 {/* Play Button Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="absolute w-28 h-28 rounded-full bg-[#FFC247]/30 blur-xl pointer-events-none animate-pulse"></div>
+                  <div className="absolute w-28 h-28 rounded-full bg-[#F9AE42]/30 blur-xl pointer-events-none animate-pulse"></div>
                   <button 
                     className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 shadow-xl relative z-10"
                     aria-label="Play video testimonial"

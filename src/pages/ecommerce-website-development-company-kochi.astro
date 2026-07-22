@@ -1,0 +1,796 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import FooterCTA from '../components/FooterCTA.astro';
+import { ArrowRight, Play, Globe2, Smile, Award, Star, CheckCircle, Clock, Heart, Shield, Check, HelpCircle, User, Zap, Rocket, Activity, Home, Utensils, GraduationCap, Compass, Briefcase, Factory, Languages, MonitorSmartphone, Building2, Edit, ShieldCheck, Search, Layers, Network, Code, Gauge, LayoutGrid, Calendar, TrendingUp } from 'lucide-react';
+
+const title = "Ecommerce Website Development Company in Kochi | Teknoppy";
+const description = "Teknoppy is a trusted ecommerce website development company in Kochi building fast, secure, SEO-ready online stores for Kerala businesses. Get a free quote.";
+
+const services = [
+  {
+    title: "Custom Ecommerce Development",
+    desc: "Tailor-made stores with product filtering, subscriptions, bundles, and custom checkout flows built on clean, scalable code.",
+    icon: Code
+  },
+  {
+    title: "WooCommerce Development",
+    desc: "Flexible, SEO-friendly stores on WordPress and WooCommerce, giving you full ownership and easy day-to-day control.",
+    icon: Layers
+  },
+  {
+    title: "Shopify Development",
+    desc: "Quick-to-launch, reliable Shopify stores for brands wanting a hosted, low-maintenance platform with predictable costs.",
+    icon: Rocket
+  },
+  {
+    title: "Multi-Vendor Marketplace Development",
+    desc: "Platforms where many sellers list and sell, with vendor dashboards, commission handling, and automated order routing.",
+    icon: Network
+  },
+  {
+    title: "Payment Gateway Integration",
+    desc: "Secure setup of Indian and international payment options, with full testing and PCI-aware configuration.",
+    icon: Shield
+  },
+  {
+    title: "Ecommerce Redesign & Migration",
+    desc: "A complete overhaul or platform move that preserves your existing Google ranking history and SEO equity.",
+    icon: Edit
+  }
+];
+
+const processes = [
+  {
+    step: "01",
+    title: "Discovery & Goal Mapping",
+    desc: "A structured brief covering products, target markets, competitors, and technical needs. We map your local SEO area from the start.",
+    icon: Search
+  },
+  {
+    step: "02",
+    title: "Sitemap & URL Architecture",
+    desc: "Category and product URL planning and internal linking, defined before design to prevent cannibalization and ensure crawlability.",
+    icon: Network
+  },
+  {
+    step: "03",
+    title: "Wireframing & UX Design",
+    desc: "Low-fidelity wireframes first, then high-fidelity mockups. You approve the layout before a line of code is written.",
+    icon: LayoutGrid
+  },
+  {
+    step: "04",
+    title: "Development & Schema",
+    desc: "Clean, mobile-first code with Product, Offer, Organisation, BreadcrumbList, and FAQPage schema built in for rich results.",
+    icon: Code
+  },
+  {
+    step: "05",
+    title: "Payments, SEO & Speed",
+    desc: "Secure gateway setup, optimised metadata, image compression, Core Web Vitals tuning, and Search Console verification.",
+    icon: Gauge
+  },
+  {
+    step: "06",
+    title: "Launch, Testing & Handover",
+    desc: "Full cross-device and checkout testing, sitemap submission, and a clear handover document covering store management.",
+    icon: Rocket
+  }
+];
+
+const pricing = [
+  { type: "Starter Online Store (up to 50 products)", price: "Rs. 45,000 – 90,000" },
+  { type: "Professional Ecommerce Store (WooCommerce / Shopify)", price: "Rs. 90,000 – 2,00,000" },
+  { type: "Custom Ecommerce / B2B Portal", price: "Rs. 2,00,000 – 6,00,000" },
+  { type: "Multi-Vendor Marketplace", price: "Rs. 3,00,000 – 8,00,000+" },
+  { type: "Ecommerce Redesign / Migration", price: "Rs. 50,000 – 2,00,000" },
+  { type: "Ongoing Monthly Maintenance", price: "Rs. 5,000 – 15,000 / mo" }
+];
+
+const industries = [
+  { name: "Fashion & Lifestyle", desc: "Visual product pages, size guides, and fast mobile checkout.", icon: Heart },
+  { name: "Ayurveda, Wellness & Export", desc: "Multilingual, multi-currency stores built to convert international buyers.", icon: Activity },
+  { name: "Groceries & FMCG", desc: "Bulk ordering, delivery zones, and repeat-purchase flows.", icon: Utensils },
+  { name: "Electronics & Gadgets", desc: "Detailed specifications, comparison tools, and secure payments.", icon: MonitorSmartphone },
+  { name: "Manufacturing & B2B", desc: "Catalogue stores with enquiry-to-order and custom pricing.", icon: Factory },
+  { name: "Handicrafts & Local Brands", desc: "Storytelling pages that sell Kerala products to India and the world.", icon: Award }
+];
+
+const projects = [
+  {
+    name: "Evosyz",
+    loc: "KOCHI · FINTECH",
+    desc: "On-page SEO and conversion optimisation for a regulated fintech brand with WhatsApp integration.",
+    result: "Stronger search visibility for fintech keywords in Kochi and increased franchise and partnership enquiries."
+  },
+  {
+    name: "Greens Ayurveda",
+    loc: "AZHIYUR, CALICUT · AYURVEDA",
+    desc: "Local and organic SEO with schema and a structured enquiry flow for Ayurvedic-treatment keywords.",
+    result: "A significant rise in international enquiries and steady organic growth for wellness keywords."
+  },
+  {
+    name: "Olives Resort",
+    loc: "WAYANAD · HOSPITALITY",
+    desc: "Conversion-focused website paired with local and organic SEO for resort keywords.",
+    result: "Top Google rankings for core resort keywords and a measurable increase in direct booking calls (confirmed by CEO Biju Thomas)."
+  }
+];
+
+const testimonials = [
+  {
+    quote: "We now rank at the top of Google for our keywords and get many direct booking calls due to better visibility. Thank you Teknoppy for all the support.",
+    author: "Biju Thomas",
+    role: "CEO, Olives Resort, Wayanad"
+  },
+  {
+    quote: "Being in the Fintech space, we needed a reliable partner. Teknoppy created an appealing website that represents our brand perfectly.",
+    author: "Vivek Menon",
+    role: "CTO, Evosyz, Kochi"
+  },
+  {
+    quote: "Teknoppy was very intuitive in understanding our requirements. They made great digital collateral and now we are getting good outreach to the market.",
+    author: "Shainesh Prakashan",
+    role: "CEO, Exacore IT, Infopark Kochi"
+  },
+  {
+    quote: "I have worked with many IT teams, but I am 100% happy with Teknoppy. No doubt, I recommend them with 100% satisfaction.",
+    author: "Dr. Asghar",
+    role: "CEO, Greens Ayurveda, Calicut"
+  }
+];
+
+const faqs = [
+  {
+    q: "How much does ecommerce website development cost in Kochi?",
+    a: "A standard online store typically costs between Rs. 45,000 and Rs. 2,00,000 depending on product count, features, and design. Custom and marketplace platforms cost more. A detailed written quote is provided before any project begins."
+  },
+  {
+    q: "Which is the best platform for an ecommerce website in Kerala?",
+    a: "It depends on your goals. WooCommerce is best for control and SEO; Shopify for a hosted, low-maintenance store; custom builds for large or complex businesses. We recommend the right fit after understanding your products and budget."
+  },
+  {
+    q: "How long does it take to build an online store in Kochi?",
+    a: "A standard ecommerce website takes 4 to 8 weeks from discovery to launch. Larger custom or multi-vendor platforms take 8 to 14 weeks. A written timeline is shared at the start."
+  },
+  {
+    q: "Can I manage and update my store myself after launch?",
+    a: "Yes. We build on user-friendly platforms like WooCommerce and Shopify, giving you a simple dashboard to add products, update prices, and run offers without any coding. A handover guide and optional training are included."
+  },
+  {
+    q: "Do you build ecommerce websites for international customers?",
+    a: "Yes. We build multi-currency, multilingual stores with international payment gateways and shipping logic — ideal for Ayurveda, handicraft, and export brands selling beyond India."
+  },
+  {
+    q: "What schema markup do you implement on ecommerce stores?",
+    a: "Product, Offer, Organisation, BreadcrumbList, FAQPage, and where applicable AggregateRating and Review schema — helping qualify for Google rich results and AI answer engines like ChatGPT and Perplexity."
+  },
+  {
+    q: "Are your ecommerce websites SEO-friendly and mobile-first?",
+    a: "Yes. Every store is built mobile-first with clean code, Product schema, optimised metadata, and Core Web Vitals tuning, so it is ready to rank from launch. Over 70% of Kerala web traffic comes from mobile, so this is standard."
+  },
+  {
+    q: "Do you provide maintenance after the store goes live?",
+    a: "Yes. Monthly maintenance plans from Rs. 5,000 per month cover updates, security monitoring, speed checks, product edits, and technical fixes."
+  }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.a
+    }
+  }))
+};
+---
+
+<Layout title={title} description={description}>
+  <Header forceSolidBg={true} />
+
+  <main class="overflow-hidden bg-[#FFF8EF]/20">
+    <!-- HERO SECTION WITH OFFICE CIRCLING SVG (DARK VERSION) -->
+    <section class="relative pt-32 pb-24 md:pt-36 md:pb-32 overflow-hidden bg-neutral-950 text-white border-b border-white/5">
+      <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-[url('/herodarkwebdesign.png')]"></div>
+      </div>
+
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10 grid xl:grid-cols-12 gap-12 items-center">
+        <!-- Hero Text -->
+        <div class="xl:col-span-7 flex flex-col items-center text-center xl:items-start xl:text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-bold text-primary uppercase tracking-widest mb-6">
+            <Zap class="w-3.5 h-3.5" />
+            Kerala's Ecommerce Studio
+          </div>
+          <h1 class="text-4xl sm:text-5xl lg:text-[56px] font-black leading-[1.1] tracking-tight text-white mb-6">
+            <span class="relative inline-block text-primary">
+              Ecommerce
+              <svg class="absolute -bottom-2 left-0 w-full h-2 text-primary" viewBox="0 0 100 10" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 7C30 3 70 3 97 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+              </svg>
+            </span> Website Development <br class="hidden sm:block" />
+            Company in Kochi
+          </h1>
+          <p class="text-base sm:text-lg lg:text-xl text-neutral-300 mb-5 max-w-2xl font-medium leading-relaxed">
+            Custom · Secure · SEO-Ready Online Stores for Kerala Businesses Since 2018. We build online stores that rank and sell — at home in India and across the world.
+          </p>
+          <p class="text-sm sm:text-base text-neutral-400 mb-8 max-w-2xl font-medium leading-relaxed">
+            Ecommerce Website Development Company in Kochi — Teknoppy builds custom, mobile-first, conversion-focused online stores that help Kerala businesses sell more, both at home in India and to customers around the world. Since 2018, we have delivered 120+ website and ecommerce projects, from compact single-brand stores to large multi-vendor marketplaces, helping Kerala brands sell online with confidence.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+            <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.35)] hover:bg-primary/95 hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap">
+              Get a Free Quote
+              <ArrowRight class="w-4 h-4" />
+            </a>
+            <a href="#services" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-white border border-white/20 rounded-full hover:bg-white/5 transition-all duration-300 shadow-sm whitespace-nowrap">
+              Explore Our Services
+              <ArrowRight class="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Graphic (Redesigned Stats Cards Grid) -->
+        <div class="xl:col-span-5 grid grid-cols-2 gap-4 sm:gap-6">
+
+          <!-- Card 1 -->
+          <div class="bg-[#0c0c0e] border border-white/5 rounded-[2rem] p-8 shadow-2xl hover:border-primary/30 hover:shadow-[0_0_30px_rgba(240,90,44,0.12)] hover:-translate-y-1 transition-all duration-300 flex flex-col items-start min-h-[220px] group">
+            <div class="w-11 h-11 rounded-full border border-primary/30 flex items-center justify-center text-primary bg-primary/5 shadow-[0_0_15px_rgba(240,90,44,0.25)] mb-6 group-hover:scale-105 transition-transform">
+              <Rocket class="w-5 h-5" />
+            </div>
+            <span class="text-3xl font-black text-white block leading-none mb-2">120+</span>
+            <div class="w-8 h-[2px] bg-primary mb-4"></div>
+            <span class="text-[9px] font-black text-neutral-400 uppercase tracking-widest leading-normal">Projects Delivered</span>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-[#0c0c0e] border border-white/5 rounded-[2rem] p-8 shadow-2xl hover:border-primary/30 hover:shadow-[0_0_30px_rgba(240,90,44,0.12)] hover:-translate-y-1 transition-all duration-300 flex flex-col items-start min-h-[220px] group">
+            <div class="w-11 h-11 rounded-full border border-primary/30 flex items-center justify-center text-primary bg-primary/5 shadow-[0_0_15px_rgba(240,90,44,0.25)] mb-6 group-hover:scale-105 transition-transform">
+              <Calendar class="w-5 h-5" />
+            </div>
+            <span class="text-3xl font-black text-white block leading-none mb-2">2018</span>
+            <div class="w-8 h-[2px] bg-primary mb-4"></div>
+            <span class="text-[9px] font-black text-neutral-400 uppercase tracking-widest leading-normal">Established</span>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-[#0c0c0e] border border-white/5 rounded-[2rem] p-8 shadow-2xl hover:border-primary/30 hover:shadow-[0_0_30px_rgba(240,90,44,0.12)] hover:-translate-y-1 transition-all duration-300 flex flex-col items-start min-h-[220px] group">
+            <div class="w-11 h-11 rounded-full border border-primary/30 flex items-center justify-center text-primary bg-primary/5 shadow-[0_0_15px_rgba(240,90,44,0.25)] mb-6 group-hover:scale-105 transition-transform">
+              <TrendingUp class="w-5 h-5" />
+            </div>
+            <span class="text-3xl font-black text-white block leading-none mb-2">Page 1</span>
+            <div class="w-8 h-[2px] bg-primary mb-4"></div>
+            <span class="text-[9px] font-black text-neutral-400 uppercase tracking-widest leading-normal">Google Results</span>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-[#0c0c0e] border border-white/5 rounded-[2rem] p-8 shadow-2xl hover:border-primary/30 hover:shadow-[0_0_30px_rgba(240,90,44,0.12)] hover:-translate-y-1 transition-all duration-300 flex flex-col items-start min-h-[220px] group">
+            <div class="w-11 h-11 rounded-full border border-primary/30 flex items-center justify-center text-primary bg-primary/5 shadow-[0_0_15px_rgba(240,90,44,0.25)] mb-6 group-hover:scale-105 transition-transform">
+              <Globe2 class="w-5 h-5" />
+            </div>
+            <span class="text-3xl font-black text-white block leading-none mb-2">Kerala + Global</span>
+            <div class="w-8 h-[2px] bg-primary mb-4"></div>
+            <span class="text-[9px] font-black text-neutral-400 uppercase tracking-widest leading-normal">Wide Coverage</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO BAND -->
+    <section class="py-16 bg-white border-b border-neutral-100 relative">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
+        <p class="text-neutral-600 text-base sm:text-lg leading-relaxed font-medium max-w-4xl">
+          Every business today needs more than a shopping cart. It needs a fast, secure, search-optimised platform that turns visitors into paying customers and handles payments, stock, and shipping without friction. As a dedicated ecommerce development company in Kochi, Teknoppy combines clean store design with secure payment integration, Product schema markup, and Core Web Vitals optimisation — so your store does not just look great, it ranks and sells. Our clients include startups, retailers, Ayurveda and export brands, manufacturers, and established enterprises across Kochi, Thrissur, Calicut, Trivandrum, and the wider Kerala market.
+        </p>
+      </div>
+    </section>
+
+    <!-- WHY TEKNOPPY SECTION -->
+    <section class="py-24 bg-[#FFF8EF]/30 border-y border-neutral-100 relative">
+      <!-- Dynamic background container to prevent overflow issues -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-[url('/whoweare.png')] opacity-50"></div>
+      </div>
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+
+          <!-- Left Column (Sticky Panel) -->
+          <div class="lg:col-span-5 lg:sticky lg:top-32 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider shadow-sm">
+              Trusted Partners
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-black text-neutral-900 leading-tight">
+              Why Teknoppy Is the Trusted <br />
+              <span class="text-primary">Ecommerce Website Development Company in Kochi.</span>
+            </h2>
+            <p class="text-neutral-500 font-medium text-sm leading-relaxed max-w-sm">
+              We strip away generic shopping-cart templates to engineer custom-built, high-performance online stores designed to rank, scale, and convert browsers into buyers.
+            </p>
+          </div>
+
+          <!-- Right Column (Premium Custom Cards Grid) -->
+          <div class="lg:col-span-7 grid sm:grid-cols-2 gap-6 lg:gap-8">
+
+            <!-- Card 1 -->
+            <div class="bg-white rounded-3xl border border-neutral-100 p-8 shadow-[0_12px_40px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-4">01 . Strategy</span>
+                <h3 class="text-xl font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-3">Custom Stores, Not Templates</h3>
+                <p class="text-neutral-500 text-xs leading-relaxed font-semibold">
+                  Every project begins with a custom wireframe mapped to your products, customers, and sales goals — design, development, payments, on-page SEO, and schema, all under one roof.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-3xl border border-neutral-100 p-8 shadow-[0_12px_40px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-4">02 . Conversion</span>
+                <h3 class="text-xl font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-3">Built to Sell, Not Just Display</h3>
+                <p class="text-neutral-500 text-xs leading-relaxed font-semibold">
+                  We design for conversions: fast product pages, clear calls to action, simple checkout, and trust signals that reduce abandoned carts and turn browsers into buyers.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-3xl border border-neutral-100 p-8 shadow-[0_12px_40px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-4">03 . Payments</span>
+                <h3 class="text-xl font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-3">Secure Payments, Local & Global</h3>
+                <p class="text-neutral-500 text-xs leading-relaxed font-semibold">
+                  UPI, cards, and net banking for India, plus PayPal and Stripe for overseas buyers — so customers in Kerala and abroad pay with confidence on a secure, tested checkout.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white rounded-3xl border border-neutral-100 p-8 shadow-[0_12px_40px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-4">04 . Partnership</span>
+                <h3 class="text-xl font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-3">A Local Kochi Team</h3>
+                <p class="text-neutral-500 text-xs leading-relaxed font-semibold">
+                  Teknoppy is headquartered in Kochi, Kerala — not a remote offshore agency. When you need a meeting, a quick call, or an urgent update, we are one message away.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR ECOMMERCE DEVELOPMENT SERVICES IN KOCHI -->
+    <section id="services" class="py-20 bg-white relative">
+      <!-- Dynamic background container to prevent overflow issues -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-[url('/bgourservices.png')]" style="opacity: 0.45;"></div>
+      </div>
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
+        <div class="max-w-3xl mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            Services Scope
+          </div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+            Our <span class="text-primary">Ecommerce Development</span> Services in Kochi
+          </h2>
+          <p class="text-neutral-500 font-medium mt-3 text-base sm:text-lg">
+            As a full-service ecommerce development company in Kochi, Teknoppy delivers the following specialised services.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {services.map(svc => {
+            const IconComp = svc.icon;
+            return (
+              <div class="relative overflow-hidden bg-white rounded-3xl border border-neutral-100 p-6 sm:p-7 shadow-[0_12px_30px_-15px_rgba(0,0,0,0.03)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.06)] transition-all duration-300 flex flex-col">
+                <!-- Left Gradient Stroke -->
+                <div class="absolute left-0 top-0 bottom-0 w-[4px] bg-gradient-to-b from-primary via-[#F58439] to-[#FFE2D1]"></div>
+                <div class="flex items-center gap-4">
+                  <div class="w-14 h-14 bg-primary/5 text-primary rounded-2xl flex items-center justify-center flex-shrink-0 border border-primary/10 shadow-inner">
+                    <IconComp class="w-6 h-6" />
+                  </div>
+                  <h3 class="text-base sm:text-[17px] font-black text-neutral-850 leading-snug">{svc.title}</h3>
+                </div>
+                <p class="text-neutral-500 text-xs leading-relaxed mt-4 font-semibold">{svc.desc}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    <!-- ECOMMERCE PROCESS SECTION (LIGHT TIMELINE CARDS) -->
+    <section class="py-24 bg-[#FFF9F6]/40 border-t border-neutral-100 relative">
+      <!-- Dynamic background container to prevent overflow issues -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-[url('/tekenoppyadvantage.png')]" style="opacity: 0.8;"></div>
+      </div>
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            • Our Process •
+          </div>
+          <h2 class="text-4xl sm:text-5xl font-black text-neutral-900 leading-tight">
+            Our <span class="text-primary">Ecommerce Process</span> — How We Work
+          </h2>
+          <p class="text-neutral-500 font-medium mt-3 text-base">
+            Our ecommerce development process follows six clearly defined stages, ensuring every project is delivered on time, within budget, and built precisely to brief.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-6 lg:gap-x-8 relative z-10">
+          {processes.map((proc, idx) => {
+            const IconComponent = proc.icon;
+            return (
+              <div class="relative bg-white rounded-3xl border border-neutral-100 p-8 shadow-[0_10px_30px_rgba(0,0,0,0.02)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.06)] transition-all duration-300 flex flex-col justify-between group min-h-[260px]">
+                <div>
+                  <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 bg-primary/5 text-primary rounded-2xl flex items-center justify-center flex-shrink-0 border border-primary/10 shadow-inner">
+                      <IconComponent class="w-6 h-6" />
+                    </div>
+                    <div>
+                      <span class="block text-[9px] font-black text-primary uppercase tracking-widest">Step {proc.step}</span>
+                      <h3 class="text-base sm:text-[17px] font-black text-neutral-850 leading-snug mt-0.5 group-hover:text-primary transition-colors duration-300">{proc.title}</h3>
+                    </div>
+                  </div>
+                  <p class="text-neutral-500 text-xs leading-relaxed mt-5 font-semibold">{proc.desc}</p>
+                </div>
+                <div class="w-10 h-[3px] bg-primary/80 mt-6 rounded-full"></div>
+
+                {/* Horizontal Connector Arrow */}
+                {idx % 3 !== 2 && (
+                  <div class="hidden lg:flex absolute right-[-20px] top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-primary text-white items-center justify-center shadow-md shadow-primary/20 z-20 transition-transform duration-300 group-hover:scale-110">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="3.5" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING TABLE SECTION -->
+    <section class="py-20 bg-white border-t border-neutral-100 relative">
+      <!-- Dynamic background container to prevent overflow issues -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-[url('/pricingbg.png')] opacity-75"></div>
+      </div>
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
+        <div class="max-w-3xl mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            Pricing Guide
+          </div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight mb-4">
+            Ecommerce Website <span class="text-primary">Development Cost in Kochi</span>
+          </h2>
+          <p class="text-neutral-500 font-medium text-base">
+            Transparent pricing is central to how Teknoppy builds client trust. Below is a realistic guide to ecommerce website development costs in Kochi by store type. Every project receives a written quote before work begins.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-3xl border border-neutral-200/60 overflow-hidden shadow-sm">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="bg-primary text-white font-bold text-sm sm:text-base border-b border-primary/20">
+                <th class="p-4 sm:p-5">Store Type</th>
+                <th class="p-4 sm:p-5 text-right">Estimated Investment</th>
+              </tr>
+            </thead>
+            <tbody>
+              {pricing.map((priceItem, idx) => (
+                <tr class={`border-b border-neutral-100 hover:bg-neutral-50/50 transition-colors ${idx % 2 === 0 ? 'bg-white' : 'bg-neutral-50/20'}`}>
+                  <td class="p-4 sm:p-5 font-bold text-neutral-800 text-sm sm:text-base">{priceItem.type}</td>
+                  <td class="p-4 sm:p-5 text-right font-black text-primary text-sm sm:text-base">{priceItem.price}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="text-neutral-500 text-xs mt-4 leading-relaxed max-w-3xl font-medium">
+          Final pricing depends on product count, custom functionality, integrations, and timeline. Prices are in Indian Rupees; international clients can request a quote in their currency.
+        </p>
+      </div>
+    </section>
+
+    <!-- TARGET INDUSTRIES SECTION (DARK AMBER THEME) -->
+    <section class="py-20 bg-neutral-950 text-white border-t border-white/5 relative">
+      <!-- Dynamic background container to prevent overflow issues -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-[url('/industriesbg.png')] opacity-75"></div>
+      </div>
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/20 border border-amber-500/30 text-amber-400 text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            Our Verticals
+          </div>
+          <h2 class="text-4xl md:text-5xl font-black text-white leading-tight">
+            <span class="text-[#F9AE42]">Industries We Build</span> Ecommerce Websites For in Kochi & Kerala
+          </h2>
+          <p class="text-neutral-400 font-medium mt-3 text-base">
+            A fashion store serves completely different user intent than a spice exporter — and we design for that specific intent every time.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {industries.map(ind => {
+            const IconComponent = ind.icon;
+            return (
+              <div class="bg-neutral-900/60 border border-amber-500/10 p-6 rounded-3xl shadow-lg hover:border-amber-500/40 hover:-translate-y-1 transition-all duration-300 flex items-start gap-4">
+                <div class="w-10 h-10 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <IconComponent class="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 class="text-base font-bold text-white mb-2">{ind.name}</h3>
+                  <p class="text-neutral-400 text-xs leading-relaxed font-semibold">{ind.desc}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES SECTION (PORTFOLIO STYLE) -->
+    <section class="py-24 bg-white border-t border-neutral-100">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <div class="max-w-3xl mb-20">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            Success Stories
+          </div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+            Our Ecommerce <span class="text-primary">Case Studies</span> — Proven Results.
+          </h2>
+          <p class="text-neutral-500 font-medium mt-3 text-base">
+            See how Teknoppy matches the right platform to your products and builds stores engineered to rank and sell from day one.
+          </p>
+        </div>
+
+        <div class="space-y-24">
+
+          <!-- Case 1 (Ecommerce Platforms We Build On) -->
+          <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 group relative">
+            <!-- Left: Mockup Window -->
+            <div class="w-full lg:w-[48%] relative z-10">
+              <!-- Glow -->
+              <div class="absolute inset-0 bg-gradient-to-tr from-blue-500/20 to-indigo-500/20 rounded-[2rem] scale-105 opacity-0 group-hover:opacity-100 transition-all duration-700 blur-xl"></div>
+
+              <!-- Browser -->
+              <div class="relative bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.04)] border border-neutral-100 overflow-hidden transform group-hover:-translate-y-1.5 transition-all duration-500">
+                <div class="h-10 bg-neutral-50 border-b border-neutral-100/80 flex items-center px-4 gap-2">
+                  <div class="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
+                  <div class="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
+                  <div class="w-3 h-3 rounded-full bg-[#27C93F]"></div>
+                </div>
+                <div class="aspect-[16/10] bg-[#0c0c0e] relative overflow-hidden flex flex-col items-center justify-center p-8 text-center">
+                  <!-- Abstract mesh -->
+                  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent"></div>
+                  <span class="text-xs font-black text-blue-400 uppercase tracking-widest mb-3">Platform Fit</span>
+                  <span class="text-4xl sm:text-5xl font-black text-white leading-none mb-3">3+</span>
+                  <span class="text-xs text-neutral-400 uppercase tracking-wider font-semibold">Platforms Supported</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Content -->
+            <div class="w-full lg:w-[52%] space-y-6">
+              <div>
+                <span class="text-xs font-black text-primary uppercase tracking-widest">Ecommerce Platforms</span>
+                <h3 class="text-2xl font-black text-neutral-900 mt-1">Ecommerce Platforms We Build On</h3>
+              </div>
+              <p class="text-sm text-neutral-500 leading-relaxed font-medium">
+                Different businesses need different platforms, and as an experienced ecommerce development company in Kochi we recommend the right one instead of pushing a single solution. WooCommerce is best for control, content-led SEO, and no monthly platform fees — ideal for WordPress ecommerce development. Shopify suits brands wanting a hosted, low-maintenance store with predictable costs. Magento handles large catalogues and complex pricing, while a custom build is right for unique workflows or custom ecommerce store development in Kochi. Whether you sell B2C or run a B2B ecommerce store, we match the platform to your products, budget, and growth plan.
+              </p>
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div class="bg-neutral-50/50 rounded-2xl p-5 border border-neutral-100">
+                  <h4 class="text-xs font-black text-neutral-900 uppercase tracking-wider mb-2">Our Approach</h4>
+                  <ul class="space-y-1.5 text-xs text-neutral-500 font-semibold list-disc pl-4">
+                    <li>WooCommerce — control, content-led SEO, no platform fees</li>
+                    <li>Shopify — hosted, low-maintenance, predictable costs</li>
+                    <li>Magento — large catalogues and complex pricing</li>
+                    <li>Custom build — unique workflows and B2B</li>
+                  </ul>
+                </div>
+                <div class="bg-neutral-50/50 rounded-2xl p-5 border border-neutral-100">
+                  <h4 class="text-xs font-black text-neutral-900 uppercase tracking-wider mb-2">The Results</h4>
+                  <ul class="space-y-1.5 text-xs text-neutral-500 font-semibold list-disc pl-4">
+                    <li>Right-fit platform for your products and budget</li>
+                    <li>Secure, tested checkout for India and abroad</li>
+                    <li>A store built to rank and sell from launch</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case 2 (Built for Real Selling) -->
+          <div class="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-16 group relative">
+            <!-- Left: Mockup Window -->
+            <div class="w-full lg:w-[48%] relative z-10">
+              <!-- Glow -->
+              <div class="absolute inset-0 bg-gradient-to-tr from-emerald-500/20 to-teal-500/20 rounded-[2rem] scale-105 opacity-0 group-hover:opacity-100 transition-all duration-700 blur-xl"></div>
+
+              <!-- Browser -->
+              <div class="relative bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.04)] border border-neutral-100 overflow-hidden transform group-hover:-translate-y-1.5 transition-all duration-500">
+                <div class="h-10 bg-neutral-50 border-b border-neutral-100/80 flex items-center px-4 gap-2">
+                  <div class="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
+                  <div class="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
+                  <div class="w-3 h-3 rounded-full bg-[#27C93F]"></div>
+                </div>
+                <div class="aspect-[16/10] bg-[#0c0c0e] relative overflow-hidden flex flex-col items-center justify-center p-8 text-center">
+                  <!-- Abstract mesh -->
+                  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-emerald-500/10 via-transparent to-transparent"></div>
+                  <span class="text-xs font-black text-emerald-400 uppercase tracking-widest mb-3">Conversion First</span>
+                  <span class="text-4xl sm:text-5xl font-black text-white leading-none mb-3">70%+</span>
+                  <span class="text-xs text-neutral-400 uppercase tracking-wider font-semibold">Kerala Traffic Is Mobile</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Content -->
+            <div class="w-full lg:w-[52%] space-y-6">
+              <div>
+                <span class="text-xs font-black text-primary uppercase tracking-widest">Built for Selling</span>
+                <h3 class="text-2xl font-black text-neutral-900 mt-1">Built for Real Selling</h3>
+              </div>
+              <p class="text-sm text-neutral-500 leading-relaxed font-medium">
+                Every store is built mobile-first with clean code, Product schema, optimised metadata, and Core Web Vitals tuning, so it is ready to rank from launch. Over 70% of Kerala web traffic comes from mobile, so this is standard.
+              </p>
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div class="bg-neutral-50/50 rounded-2xl p-5 border border-neutral-100">
+                  <h4 class="text-xs font-black text-neutral-900 uppercase tracking-wider mb-2">Our Approach</h4>
+                  <ul class="space-y-1.5 text-xs text-neutral-500 font-semibold list-disc pl-4">
+                    <li>Mobile-first, fast product pages</li>
+                    <li>Secure gateway setup for UPI, cards, PayPal, Stripe</li>
+                    <li>Product & Offer schema for rich results</li>
+                  </ul>
+                </div>
+                <div class="bg-neutral-50/50 rounded-2xl p-5 border border-neutral-100">
+                  <h4 class="text-xs font-black text-neutral-900 uppercase tracking-wider mb-2">The Results</h4>
+                  <ul class="space-y-1.5 text-xs text-neutral-500 font-semibold list-disc pl-4">
+                    <li>Lower abandoned carts</li>
+                    <li>Faster load and better Core Web Vitals</li>
+                    <li>Ready to rank and sell from launch</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENT TESTIMONIALS SECTION -->
+    <section class="py-20 bg-neutral-50/50 border-t border-neutral-100">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            Testimonials
+          </div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+            What Our <span class="text-primary">Clients Say</span> About Teknoppy
+          </h2>
+          <p class="text-neutral-500 font-medium mt-3 text-base">
+            Real feedback from local and global companies who scaled their businesses using our ecommerce development services.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {testimonials.map(item => (
+            <div class="bg-white border border-neutral-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="flex gap-1 text-[#F9AE42] mb-4">
+                  <Star class="w-4 h-4 fill-current" />
+                  <Star class="w-4 h-4 fill-current" />
+                  <Star class="w-4 h-4 fill-current" />
+                  <Star class="w-4 h-4 fill-current" />
+                  <Star class="w-4 h-4 fill-current" />
+                </div>
+                <p class="text-xs text-neutral-600 font-medium italic leading-relaxed mb-6">
+                  "{item.quote}"
+                </p>
+              </div>
+              <div class="border-t border-neutral-100 pt-4 mt-auto">
+                <span class="block text-sm font-bold text-neutral-800">{item.author}</span>
+                <span class="block text-[10px] text-neutral-400 font-bold uppercase tracking-wider mt-0.5">{item.role}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS LIST -->
+    <section class="py-20 bg-white border-t border-neutral-100">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <div class="max-w-3xl mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            Our Portfolio
+          </div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+            Featured Projects — <span class="text-primary">Real Stores</span> We Have Built.
+          </h2>
+          <p class="text-neutral-500 font-medium mt-3 text-base">
+            Genuine online-store builds.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+          {projects.map(proj => (
+            <div class="bg-white rounded-3xl border border-neutral-200/60 p-6 shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <h3 class="text-lg font-bold text-neutral-900">{proj.name}</h3>
+                  <span class="text-[9px] font-black text-primary bg-primary/5 px-2 py-0.5 rounded-full uppercase tracking-wider">{proj.loc}</span>
+                </div>
+                <p class="text-neutral-600 text-xs leading-relaxed font-semibold mb-4">{proj.desc}</p>
+                <div class="bg-neutral-50/50 rounded-2xl p-4 border border-neutral-100">
+                  <span class="block text-[10px] font-black text-neutral-800 uppercase tracking-wider mb-1">Result</span>
+                  <p class="text-neutral-500 text-xs font-semibold leading-relaxed">{proj.result}</p>
+                </div>
+              </div>
+              <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-bold text-primary mt-6 hover:underline">
+                Enquire for details
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQS SECTION -->
+    <section class="py-20 bg-neutral-50/50 border-t border-neutral-100">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            Support & FAQs
+          </div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+            Frequently Asked Questions — <span class="text-primary">Ecommerce Development in Kochi</span>
+          </h2>
+          <p class="text-neutral-500 font-medium mt-3 text-base">
+            Get quick answers to standard questions about ecommerce website development pricing, platforms, process, and technical SEO features.
+          </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto space-y-4">
+          {faqs.map(faq => (
+            <details class="group bg-white rounded-2xl border border-neutral-200/60 p-6 [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
+                <h3 class="text-sm sm:text-base font-bold text-neutral-850 pr-4">
+                  {faq.q}
+                </h3>
+                <span class="transition-transform duration-300 group-open:-rotate-180 text-primary flex-shrink-0">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </span>
+              </summary>
+              <div class="mt-4 pt-4 border-t border-neutral-100/60 text-xs sm:text-sm text-neutral-600 leading-relaxed font-semibold">
+                {faq.a}
+              </div>
+            </details>
+          ))}
+        </div>
+
+        <!-- FAQ Schema -->
+        <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+      </div>
+    </section>
+  </main>
+
+  <FooterCTA />
+</Layout>
