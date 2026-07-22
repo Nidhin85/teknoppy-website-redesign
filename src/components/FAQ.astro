@@ -1,24 +1,8 @@
 ---
 import { ChevronDown } from 'lucide-react';
+import home from "../data/home.json";
 
-const faqs = [
-  {
-    question: "Which web design company in Kerala is reliable?",
-    answer: "Teknoppy has been delivering professional website design and development from our Kochi office since 2018. With over 120 completed projects and a verified 5-star rating on Google, we are one of Kerala's most trusted digital agencies — backed by real client results, not just claims."
-  },
-  {
-    question: "How to choose a web design company in Kerala?",
-    answer: "Look for three things — a verified portfolio with real Kerala clients, demonstrated SEO knowledge built into the design process, and clear post-launch support terms. A good Kerala web design agency delivers not just a website but measurable business outcomes including search rankings and lead generation."
-  },
-  {
-    question: "What does a web design company in Kerala provide?",
-    answer: "A full-service Web Design Company in Kerala provides website design, custom development, ecommerce solutions, SEO integration, UI UX design, web application development, and ongoing technical support — everything a Kerala business needs to build, rank, and grow its digital presence."
-  },
-  {
-    question: "How much does website design cost in Kerala?",
-    answer: "Website design costs in Kerala vary based on scope — a business website typically starts from a clearly scoped package price while ecommerce and web application projects are quoted based on features and complexity. View our detailed pricing to understand which package suits your business."
-  }
-];
+const faqs = home.faq.items;
 
 const schema = {
   "@context": "https://schema.org",
@@ -41,13 +25,13 @@ const schema = {
   <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
     <div class="text-center mb-16">
       <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F9AE42]/10 border border-[#F9AE42]/30 text-primary text-sm font-bold uppercase tracking-wider mb-8 shadow-sm transform -rotate-1">
-        Have Questions?
+        {home.faq.badge}
       </div>
       <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-neutral-900 leading-tight mb-4">
-        Frequently Asked Questions — <span class="text-primary">Web Design Company in Kerala</span>
+        {home.faq.headingLead} <span class="text-primary">{home.faq.headingAccent}</span>
       </h2>
       <p class="text-neutral-600 text-sm md:text-base leading-relaxed max-w-xl mx-auto">
-        Find quick answers to common questions about our website design and digital solutions in Kerala.
+        {home.faq.intro}
       </p>
     </div>
 

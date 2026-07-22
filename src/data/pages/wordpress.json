@@ -1,0 +1,368 @@
+{
+  "meta": {
+    "title": "WordPress Development Company Kochi | Custom WordPress Services",
+    "description": "Teknoppy is a trusted WordPress development company Kochi delivering custom WordPress websites, WooCommerce development, and migration services for Kerala businesses. AWS certified developers since 2018."
+  },
+  "hero": {
+    "badge": "Kerala's Premier Digital Studio",
+    "heading": {
+      "highlight": "WordPress",
+      "after": "Development Company Kochi"
+    },
+    "body": "Custom · Mobile-First · SEO-Ready WordPress Solutions for Kerala Businesses Since 2018. We build WordPress platforms that rank, convert, and scale.",
+    "ctaPrimary": { "label": "Book a Free Audit", "href": "#contact" },
+    "ctaSecondary": { "label": "Explore Our Services", "href": "#services" },
+    "statCards": [
+      { "value": "120+", "label": "WordPress Projects" },
+      { "value": "2018", "label": "Established" },
+      { "value": "Page 1", "label": "Google Results" },
+      { "value": "Kerala", "label": "Wide Coverage" }
+    ]
+  },
+  "introBand": {
+    "paragraphs": [
+      "Teknoppy is a professional WordPress development company Kochi delivering custom, mobile-first, SEO-ready WordPress solutions for businesses across Kerala. Since 2018, we have completed 120+ WordPress projects — from focused WordPress web design to large-scale enterprise WordPress development — helping Kerala brands build a strong digital presence and generate consistent leads online.",
+      "Every business needs more than a standard website. It needs a fast, credible, search-optimised platform that turns visitors into paying customers. As a dedicated WordPress development company, Teknoppy combines professional WordPress web design with custom development, on-page SEO architecture, structured schema markup, and Core Web Vitals optimisation — so your WordPress site ranks and converts. Our clients include startups, hospitals, real estate firms, restaurants, manufacturers, and established enterprises across Kochi, Thrissur, Calicut, Trivandrum, and the wider Kerala market."
+    ]
+  },
+  "whyTeknoppy": {
+    "badge": "Trusted Partners",
+    "heading": {
+      "before": "Why Teknoppy Is the Trusted",
+      "highlight": "WordPress Development Company Kochi"
+    },
+    "intro": "We strip away generic templates to engineer custom-built high-performance web platforms designed to rank, scale, and convert visitors into clients.",
+    "cards": [
+      {
+        "tag": "01 . Strategy",
+        "title": "Custom WordPress Development, Not Templates",
+        "description": "Every project begins with custom WordPress architecture mapped to your business goals. Our in-house Kochi team covers WordPress web design, custom development, content structure, on-page SEO, schema markup, and Google Search Console setup — all under one roof."
+      },
+      {
+        "tag": "02 . Expertise",
+        "title": "AWS-Certified Senior Developer",
+        "description": "Abilash KR, our senior developer, brings AWS certification and 15+ years of WordPress expertise. Every WordPress website is built on proven architecture, secure infrastructure, and performance optimization from day one."
+      },
+      {
+        "tag": "03 . Clarity",
+        "title": "Full Transparency",
+        "description": "Written project timelines, clearly defined revision rounds, real cost estimates, and post-launch support packages. No hidden costs. No vanishing after handover."
+      },
+      {
+        "tag": "04 . Partnership",
+        "title": "A Local Kochi Team",
+        "description": "Teknoppy is headquartered in Kochi, Kerala — not a remote offshore agency. When you need a meeting, a quick call, or an urgent WordPress update, we are one message away."
+      }
+    ]
+  },
+  "services": {
+    "badge": "Services Scope",
+    "heading": {
+      "before": "Our",
+      "highlight": "WordPress Web Design",
+      "after": "Services in Kochi"
+    },
+    "intro": "As a full-service WordPress development company in Kochi, Teknoppy delivers the following specialised services.",
+    "cards": [
+      {
+        "title": "WordPress Web Design Kochi",
+        "desc": "Professional interface design for corporate sites, landing pages, and conversion-focused platforms combining visual excellence with user experience strategy."
+      },
+      {
+        "title": "Custom WordPress Development Kochi",
+        "desc": "Fully custom WordPress builds from discovery through launch, including theme development, plugin customization, and database architecture tailored to your business needs."
+      },
+      {
+        "title": "WordPress Website Design Kochi",
+        "desc": "Complete website design covering responsive layouts, mobile-first design, and pixel-perfect mockups ensuring your WordPress site looks stunning on all devices."
+      },
+      {
+        "title": "WooCommerce Development Kochi",
+        "desc": "E-commerce WordPress stores with product catalogs, payment gateway integration, inventory management, and conversion-optimized checkout flows."
+      },
+      {
+        "title": "WordPress Migration Kochi",
+        "desc": "Seamless migration from Wix, Shopify, Blogger, or other platforms to WordPress while preserving SEO rankings and redirecting old URLs correctly."
+      },
+      {
+        "title": "WordPress Maintenance Services Kochi",
+        "desc": "Monthly plans covering plugin updates, security patches, uptime monitoring, content updates, speed checks, and technical WordPress support."
+      },
+      {
+        "title": "WordPress Speed Optimization Kochi",
+        "desc": "Core Web Vitals optimization, image compression, caching strategies, and performance tuning ensuring sub-2.5-second load times."
+      },
+      {
+        "title": "WordPress Security & Updates Kochi",
+        "desc": "SSL certificates, daily backups, malware scanning, security hardening, and automated WordPress core plugin updates protecting your site 24/7."
+      }
+    ]
+  },
+  "process": {
+    "badge": "• Our Process •",
+    "heading": {
+      "before": "Our",
+      "highlight": "WordPress Development Company",
+      "after": "Process — How We Work"
+    },
+    "intro": "Our professional web design process follows six clearly defined stages, ensuring every project is delivered on time, within budget, and built precisely to brief.",
+    "steps": [
+      {
+        "step": "01",
+        "title": "Discovery & Requirements",
+        "desc": "Detailed stakeholder interviews mapping your business goals, target audience, competitor landscape, and technical requirements for WordPress development."
+      },
+      {
+        "step": "02",
+        "title": "WordPress Architecture Planning",
+        "desc": "Custom WordPress structure, URL hierarchy, database design, and internal-linking strategy preventing keyword cannibalization and ensuring clean crawlability."
+      },
+      {
+        "step": "03",
+        "title": "WordPress Web Design & Wireframing",
+        "desc": "Low-fidelity wireframes approved before development. High-fidelity mockups for WordPress web design ensuring zero revision surprises after coding starts."
+      },
+      {
+        "step": "04",
+        "title": "Custom WordPress Development",
+        "desc": "Clean semantic HTML/CSS, mobile-first responsive design with custom themes, plugin integration, and API connectivity as needed for your WordPress website."
+      },
+      {
+        "step": "05",
+        "title": "SEO Setup & Content Migration",
+        "desc": "On-page SEO optimization, schema markup implementation, sitemap generation, and Google Search Console verification for WordPress ranking readiness."
+      },
+      {
+        "step": "06",
+        "title": "Testing, Launch & Training",
+        "desc": "Full cross-browser cross-device testing, WordPress security hardening, performance verification, sitemap submission, and comprehensive handover documentation."
+      }
+    ]
+  },
+  "pricing": {
+    "badge": "Pricing Guide",
+    "heading": {
+      "before": "WordPress Development",
+      "highlight": "Pricing in Kochi"
+    },
+    "intro": "Transparent pricing is central to how Teknoppy builds client trust. Below is a realistic guide to WordPress development costs in Kochi by project type. Every project receives a written quote before work begins.",
+    "tableHead": {
+      "type": "WordPress Project Type",
+      "price": "Estimated Investment"
+    },
+    "rows": [
+      { "type": "Basic WordPress Website (5–8 pages)", "price": "Rs. 40,000 – 80,000" },
+      { "type": "Professional Multi-Page WordPress (10–20 pages)", "price": "Rs. 80,000 – 1,80,000" },
+      { "type": "Corporate WordPress with CMS (20–40 pages)", "price": "Rs. 1,80,000 – 4,00,000" },
+      { "type": "WooCommerce Store (15–30 products)", "price": "Rs. 1,00,000 – 2,50,000" },
+      { "type": "WordPress Migration (from other platforms)", "price": "Rs. 30,000 – 1,20,000" },
+      { "type": "WordPress Maintenance Plans (monthly)", "price": "Rs. 5,000 – 15,000 / mo" }
+    ],
+    "footnote": "Final pricing depends on pages, custom functionality, content needs, integration complexity, and timeline. Every project receives a written quote before work begins."
+  },
+  "industries": {
+    "badge": "Our Verticals",
+    "heading": {
+      "highlight": "Industries We Build",
+      "after": "WordPress Solutions For"
+    },
+    "intro": "A hospital website serves completely different user intent than a restaurant website — and we design for that specific intent every time.",
+    "items": [
+      { "name": "Startups & New Business", "desc": "Credibility-building WordPress launch sites converting early-stage visitors into qualified leads." },
+      { "name": "Hospitals & Healthcare", "desc": "Trust-first WordPress sites with appointment booking, doctor profiles, and structured health content." },
+      { "name": "Real Estate Agencies", "desc": "Property listing WordPress platforms with search filters, maps, enquiry forms, and agent profiles." },
+      { "name": "Restaurants & Food", "desc": "Mobile-first WordPress sites with menu integration, reservations, and Google Maps connectivity." },
+      { "name": "Schools & Education", "desc": "Structured WordPress sites with admission forms, faculty pages, course listings, and parent portals." },
+      { "name": "Tourism & Travel", "desc": "Visually rich conversion-focused WordPress sites with package listings and booking enquiry systems." },
+      { "name": "Professional Services", "desc": "High-authority WordPress sites for law firms, consultants, CAs, and financial advisors." },
+      { "name": "Manufacturing & B2B", "desc": "Corporate-grade WordPress B2B sites with product catalogues and enquiry architecture." }
+    ]
+  },
+  "caseStudies": {
+    "badge": "Success Stories",
+    "heading": {
+      "before": "Our WordPress",
+      "highlight": "Case Studies",
+      "after": "— Proven Results"
+    },
+    "intro": "See how we help local Kerala businesses transition from digital invisibility to high-performing conversion platforms.",
+    "blocks": [
+      {
+        "label": "Case Study 01",
+        "tag": "Fintech Platform",
+        "metric": "+150%",
+        "metricSub": "Franchise Leads Generated",
+        "title": "Evosyz: WordPress Development That Generates Real Enquiries",
+        "intro": "Evosyz is a growing fintech company headquartered in Kochi. They approached Teknoppy with two challenges: building a professional, trust-focused WordPress website for a regulated industry, and generating quality enquiries from prospective franchisees and financial partners across India.",
+        "approach": [
+          "Custom WordPress web design — clean, mobile-first interface",
+          "Content strategy — RBI-licensed services clarity and franchise value propositions",
+          "Conversion optimization — prominent CTAs, lead capture forms, WhatsApp integration",
+          "On-page SEO — optimized titles, headings, metadata, and schema for fintech search visibility"
+        ],
+        "results": [
+          "Increased franchise and partnership enquiries from targeted segments",
+          "Stronger positioning as credible fintech WordPress company",
+          "Improved engagement with SEO-ready architecture from day one"
+        ],
+        "quote": "Being in the Fintech space, we needed a reliable WordPress partner. Teknoppy created an appealing WordPress website that represents our brand perfectly.",
+        "author": "— Vivek Menon, CTO, Evosyz",
+        "accent": "blue"
+      },
+      {
+        "label": "Case Study 02",
+        "tag": "Healthcare & Wellness",
+        "metric": "Global",
+        "metricSub": "International Patient Bookings",
+        "title": "Greens Ayurveda: From Digital Invisibility to Lead-Generating WordPress Website",
+        "intro": "Greens Ayurveda, based in Azhiyur, Calicut, offers Panchakarma therapies and practitioner training to clients across India and abroad. They partnered with Teknoppy to transform an outdated digital presence into a credible, conversion-focused WordPress platform.",
+        "approach": [
+          "UI/UX design — a calm, mobile-first layout with serene imagery matching the healing ethos",
+          "Content architecture — treatment pages, programme listings, practitioner profiles, FAQs, and structured enquiry flow",
+          "Local & organic SEO — targeted content for Ayurvedic treatment Kerala and Panchakarma centre Calicut, with schema markup",
+          "Conversion flow — prominent appointment CTAs, enquiry forms, WhatsApp integration"
+        ],
+        "results": [
+          "A measurable rise in enquiries, notably from international visitors",
+          "Improved engagement — higher time on page and reduced bounce rate",
+          "Steady organic growth for relevant wellness and treatment keywords"
+        ],
+        "quote": "Mr. Sanal is exceptionally supportive and customer-friendly. I have worked with many IT teams, but I am 100% happy with Teknoppy. No doubt, I recommend them with 100% satisfaction.",
+        "author": "— Dr. Asghar, CEO, Greens Ayurveda",
+        "accent": "emerald"
+      }
+    ]
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "heading": {
+      "before": "What Our",
+      "highlight": "Clients Say",
+      "after": "About Teknoppy"
+    },
+    "intro": "Real feedback from local and global companies who scaled their businesses using our web design services.",
+    "items": [
+      {
+        "quote": "We now rank at the top of Google for our WordPress keywords and get many direct booking calls. Thank you Teknoppy for all the support.",
+        "author": "Biju Thomas",
+        "role": "CEO, Olives Resort, Wayanad"
+      },
+      {
+        "quote": "Teknoppy was very intuitive in understanding our WordPress requirements. They made great digital collateral and now we are getting good outreach to the market.",
+        "author": "Shainesh Prakashan",
+        "role": "CEO, Exacore IT, Infopark Kochi"
+      },
+      {
+        "quote": "I have worked with many IT teams, but I am 100% happy with Teknoppy. No doubt, I recommend them with 100% satisfaction.",
+        "author": "Dr. Asghar",
+        "role": "CEO, Greens Ayurveda, Calicut"
+      },
+      {
+        "quote": "Being in the Fintech space, we needed a reliable WordPress partner. Teknoppy created an appealing WordPress website that represents our brand perfectly.",
+        "author": "Vivek Menon",
+        "role": "CTO, Evosyz, Kochi"
+      }
+    ]
+  },
+  "projects": {
+    "badge": "Our Portfolio",
+    "heading": {
+      "before": "Featured Projects —",
+      "highlight": "Real Websites",
+      "after": "We Have Built"
+    },
+    "intro": "An overview of successful website projects delivered for clients across Kochi and Kerala — each built with a clear business goal, SEO-first architecture, and a mobile-first approach.",
+    "items": [
+      {
+        "name": "Evosyz",
+        "loc": "KOCHI · FINTECH",
+        "desc": "Custom WordPress development communicating RBI-licensed services to franchisees and financial partners, with custom UI/UX, conversion-focused layout, and WhatsApp integration.",
+        "result": "Increased franchise enquiries, improved brand credibility, and stronger search visibility for fintech keywords in Kochi."
+      },
+      {
+        "name": "Greens Ayurveda",
+        "loc": "AZHIYUR, CALICUT · AYURVEDA",
+        "desc": "Mobile-first SEO-optimised WordPress wellness site with clear treatment pages, appointment enquiry forms, and structured content architecture for domestic and international visitors.",
+        "result": "A significant rise in international enquiries, improved time on page, and stronger organic visibility for Ayurvedic treatment keywords."
+      },
+      {
+        "name": "Olives Resort",
+        "loc": "WAYANAD · HOSPITALITY",
+        "desc": "Visually rich conversion-focused WordPress hospitality site with property showcase pages, booking integration, and Google Maps connectivity.",
+        "result": "Top Google rankings for resort keywords and measurable increase in direct booking calls (confirmed by CEO Biju Thomas)."
+      },
+      {
+        "name": "SIBP",
+        "loc": "KERALA · EDUCATION",
+        "desc": "Structured institutional WordPress website with admission enquiry forms, faculty sections, course listings, and event calendar, built with clean URL architecture and local SEO.",
+        "result": "Improved admission enquiries and stronger local search visibility."
+      },
+      {
+        "name": "Dream Abroad",
+        "loc": "KERALA · CONSULTANCY",
+        "desc": "Professional consultancy WordPress website with country-specific programme pages, student enquiry forms, and trust-forward content structure built to convert prospective students.",
+        "result": "Higher quality student enquiries and improved organic rankings."
+      },
+      {
+        "name": "Mountbell",
+        "loc": "KOCHI · CORPORATE",
+        "desc": "Professional multi-page corporate WordPress website focused on clean layouts, fast load times, and structured service architecture supporting business development.",
+        "result": "Stronger positioning as a credible corporate entity in Kochi."
+      }
+    ]
+  },
+  "faqs": {
+    "badge": "Support & FAQs",
+    "heading": {
+      "before": "Frequently Asked Questions —",
+      "highlight": "WordPress Development in Kochi"
+    },
+    "intro": "Get quick answers to standard questions about custom WordPress development pricing, process, and technical SEO features.",
+    "items": [
+      {
+        "q": "What services does a WordPress development company offer?",
+        "a": "Professional WordPress development companies offer custom WordPress web design, custom development, WooCommerce e-commerce, WordPress maintenance, migration services, speed optimization, and ongoing support covering discovery through launch and beyond."
+      },
+      {
+        "q": "How much does WordPress development cost in Kochi?",
+        "a": "Costs range from Rs. 40,000 for basic websites to Rs. 4,00,000+ for enterprise WordPress solutions. Every project receives a written quote based on pages, functionality, and complexity."
+      },
+      {
+        "q": "How long does WordPress development take?",
+        "a": "Standard WordPress websites take 3-5 weeks from discovery to launch. Larger sites with custom functionality can take 6-12 weeks. Written timelines are provided at project start."
+      },
+      {
+        "q": "Can you migrate my existing website to WordPress?",
+        "a": "Yes. Our WordPress migration services handle transfers from Shopify, Wix, Blogger, and other platforms while preserving SEO rankings and implementing proper redirects."
+      },
+      {
+        "q": "Is custom WordPress development better than templates?",
+        "a": "Custom WordPress development provides better security, performance, scalability, and unique branding compared to template-based solutions. Custom WordPress is built specifically for your business requirements."
+      },
+      {
+        "q": "Is WordPress SEO-friendly?",
+        "a": "Yes. WordPress with proper optimization is highly SEO-friendly. Every WordPress site includes on-page SEO, schema markup, mobile optimization, and speed tuning standard."
+      },
+      {
+        "q": "What makes a WordPress website secure?",
+        "a": "Security includes SSL certificates, daily backups, malware scanning, security hardening, regular WordPress core updates, plugin updates, and 24/7 monitoring."
+      },
+      {
+        "q": "Does your WordPress development company provide ongoing support?",
+        "a": "Yes. Monthly WordPress maintenance plans cover updates, security monitoring, speed optimization, content changes, and technical WordPress support."
+      },
+      {
+        "q": "Do you offer multilingual WordPress development?",
+        "a": "Yes. We build multilingual WordPress websites for businesses wanting to reach both Malayalam-speaking and international audiences — especially valuable for tourism, Ayurveda, and export-oriented businesses."
+      },
+      {
+        "q": "How do I get started with Teknoppy?",
+        "a": "Contact us via the Contact page, request a quote, or book a free 30-minute consultation. We respond to all enquiries within one business day."
+      },
+      {
+        "q": "Do you provide website maintenance after launch?",
+        "a": "Yes. Monthly WordPress maintenance plans from Rs. 5,000 per month cover updates, security monitoring, speed checks, content edits, and technical fixes."
+      }
+    ]
+  }
+}

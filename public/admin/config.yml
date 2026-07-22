@@ -15,6 +15,1187 @@ site_url: https://tekenoppy.vercel.app
 display_url: https://tekenoppy.vercel.app
 
 collections:
+  - name: pages
+    label: "Pages (Home & Service Pillars)"
+    description: "Editable content for the homepage sections and the 5 service pillar pages."
+    files:
+      - name: home
+        label: "Homepage"
+        file: "src/data/home.json"
+        fields:
+          - name: hero
+            label: "Hero"
+            widget: object
+            fields:
+              - name: headlines
+                label: "Headlines"
+                widget: list
+                fields:
+                  - { name: lead, label: "Lead", widget: string }
+                  - { name: highlight, label: "Highlight", widget: string }
+              - { name: body, label: "Body", widget: text }
+              - name: primaryCta
+                label: "Primary CTA"
+                widget: object
+                fields:
+                  - { name: label, label: "Label", widget: string }
+                  - { name: href, label: "Href", widget: string }
+              - name: secondaryCta
+                label: "Secondary CTA"
+                widget: object
+                fields:
+                  - { name: label, label: "Label", widget: string }
+                  - { name: href, label: "Href", widget: string }
+              - { name: trustedLabel, label: "Trusted Label", widget: string }
+          - name: about
+            label: "About"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingAccent, label: "Heading Accent", widget: string }
+              - { name: headingRest, label: "Heading Rest", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: paragraphs
+                label: "Paragraphs"
+                widget: list
+                field: { label: "Paragraph", widget: text }
+              - name: stats
+                label: "Stats"
+                widget: list
+                fields:
+                  - { name: value, label: "Value", widget: number }
+                  - { name: suffix, label: "Suffix", widget: string }
+                  - { name: label, label: "Label", widget: string }
+                  - { name: sublabel, label: "Sublabel", widget: text }
+          - name: services
+            label: "Services"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingLead, label: "Heading Lead", widget: string }
+              - { name: headingAccent1, label: "Heading Accent 1", widget: string }
+              - { name: headingMid, label: "Heading Mid", widget: string }
+              - { name: headingAccent2, label: "Heading Accent 2", widget: string }
+              - { name: headingRest, label: "Heading Rest", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: cards
+                label: "Cards"
+                widget: list
+                fields:
+                  - { name: title, label: "Title", widget: string }
+                  - { name: description, label: "Description", widget: text }
+                  - { name: linkText, label: "Link Text", widget: string }
+                  - { name: href, label: "Href", widget: string }
+          - name: whyChooseUs
+            label: "Why Choose Us"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingLead, label: "Heading Lead", widget: string }
+              - { name: headingAccent, label: "Heading Accent", widget: string }
+              - { name: headingRest, label: "Heading Rest", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: features
+                label: "Features"
+                widget: list
+                fields:
+                  - { name: title, label: "Title", widget: string }
+                  - { name: description, label: "Description", widget: text }
+          - name: faq
+            label: "FAQ"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingLead, label: "Heading Lead", widget: string }
+              - { name: headingAccent, label: "Heading Accent", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: items
+                label: "Items"
+                widget: list
+                fields:
+                  - { name: question, label: "Question", widget: string }
+                  - { name: answer, label: "Answer", widget: text }
+      - name: web_design
+        label: "Web Design (Kochi) Page"
+        file: "src/data/pages/web-design.json"
+        fields:
+          - name: meta
+            label: "Meta / SEO"
+            widget: object
+            fields:
+              - { name: title, label: "Meta title", widget: string }
+              - { name: description, label: "Meta description", widget: text }
+
+          - name: hero
+            label: "Hero"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingLead, label: "Heading — lead", widget: string }
+              - { name: headingAccent, label: "Heading — accent (underlined word)", widget: string }
+              - { name: headingRest, label: "Heading — rest", widget: string }
+              - { name: body, label: "Body / subheadline", widget: text }
+              - name: ctaPrimary
+                label: "Primary CTA"
+                widget: object
+                fields:
+                  - { name: label, label: "Label", widget: string }
+                  - { name: href, label: "Link", widget: string }
+              - name: ctaSecondary
+                label: "Secondary CTA"
+                widget: object
+                fields:
+                  - { name: label, label: "Label", widget: string }
+                  - { name: href, label: "Link", widget: string }
+              - name: stats
+                label: "Stat cards"
+                widget: list
+                fields:
+                  - { name: value, label: "Value", widget: string }
+                  - { name: label, label: "Label", widget: string }
+
+          - name: whyTeknoppy
+            label: "Why Teknoppy"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingLead, label: "Heading — lead", widget: string }
+              - { name: headingAccent, label: "Heading — accent", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: cards
+                label: "Cards"
+                widget: list
+                fields:
+                  - { name: tag, label: "Tag (e.g. 01 . Strategy)", widget: string }
+                  - { name: title, label: "Title", widget: string }
+                  - { name: description, label: "Description", widget: text }
+
+          - name: services
+            label: "Services"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingLead, label: "Heading — lead", widget: string }
+              - { name: headingAccent, label: "Heading — accent", widget: string }
+              - { name: headingRest, label: "Heading — rest", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: cards
+                label: "Service cards (icons fixed by order)"
+                widget: list
+                fields:
+                  - { name: title, label: "Title", widget: string }
+                  - { name: desc, label: "Description", widget: text }
+
+          - name: process
+            label: "Process"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingLead, label: "Heading — lead", widget: string }
+              - { name: headingAccent, label: "Heading — accent", widget: string }
+              - { name: headingRest, label: "Heading — rest", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: steps
+                label: "Steps (icons fixed by order)"
+                widget: list
+                fields:
+                  - { name: step, label: "Step number (e.g. 01)", widget: string }
+                  - { name: title, label: "Title", widget: string }
+                  - { name: desc, label: "Description", widget: text }
+
+          - name: pricing
+            label: "Pricing"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingLead, label: "Heading — lead", widget: string }
+              - { name: headingAccent, label: "Heading — accent", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - { name: footnote, label: "Footnote", widget: text }
+              - name: rows
+                label: "Price rows"
+                widget: list
+                fields:
+                  - { name: type, label: "Website type", widget: string }
+                  - { name: price, label: "Estimated investment", widget: string }
+
+          - name: industries
+            label: "Industries"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingAccent, label: "Heading — accent", widget: string }
+              - { name: headingRest, label: "Heading — rest", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: items
+                label: "Industry items (icons fixed by order)"
+                widget: list
+                fields:
+                  - { name: name, label: "Name", widget: string }
+                  - { name: desc, label: "Description", widget: text }
+
+          - name: caseStudies
+            label: "Case Studies"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingLead, label: "Heading — lead", widget: string }
+              - { name: headingAccent, label: "Heading — accent", widget: string }
+              - { name: headingRest, label: "Heading — rest", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: blocks
+                label: "Case study blocks"
+                widget: list
+                fields:
+                  - { name: label, label: "Mockup label", widget: string }
+                  - { name: metric, label: "Metric (big number)", widget: string }
+                  - { name: metricSub, label: "Metric subtitle", widget: string }
+                  - { name: title, label: "Title", widget: string }
+                  - { name: intro, label: "Intro paragraph", widget: text }
+                  - name: approach
+                    label: "Our Approach (bullets)"
+                    widget: list
+                    field: { label: "Point", widget: string }
+                  - name: results
+                    label: "The Results (bullets)"
+                    widget: list
+                    field: { label: "Point", widget: string }
+                  - { name: quote, label: "Quote", widget: text }
+                  - { name: author, label: "Author line (e.g. — Name, Role)", widget: string }
+                  - { name: accent, label: "Accent colour theme", widget: select, options: ["blue", "emerald"] }
+
+          - name: testimonials
+            label: "Testimonials"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingLead, label: "Heading — lead", widget: string }
+              - { name: headingAccent, label: "Heading — accent", widget: string }
+              - { name: headingRest, label: "Heading — rest", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: items
+                label: "Testimonial cards"
+                widget: list
+                fields:
+                  - { name: quote, label: "Quote", widget: text }
+                  - { name: author, label: "Author", widget: string }
+                  - { name: role, label: "Role / Company", widget: string }
+
+          - name: projects
+            label: "Projects"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingLead, label: "Heading — lead", widget: string }
+              - { name: headingAccent, label: "Heading — accent", widget: string }
+              - { name: headingRest, label: "Heading — rest", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: items
+                label: "Project cards"
+                widget: list
+                fields:
+                  - { name: name, label: "Name", widget: string }
+                  - { name: loc, label: "Location / tag", widget: string }
+                  - { name: desc, label: "Description", widget: text }
+                  - { name: result, label: "Result", widget: text }
+
+          - name: faqs
+            label: "FAQs"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingLead, label: "Heading — lead", widget: string }
+              - { name: headingAccent, label: "Heading — accent", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: items
+                label: "FAQ items"
+                widget: list
+                fields:
+                  - { name: q, label: "Question", widget: string }
+                  - { name: a, label: "Answer", widget: text }
+      - name: wordpress
+        label: "WordPress (Kochi) Page"
+        file: "src/data/pages/wordpress.json"
+        fields:
+          - name: meta
+            label: Meta
+            widget: object
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: description, label: Description, widget: text }
+          - name: hero
+            label: Hero
+            widget: object
+            fields:
+              - { name: badge, label: Badge, widget: string }
+              - name: heading
+                label: Heading
+                widget: object
+                fields:
+                  - { name: highlight, label: Highlight, widget: string }
+                  - { name: after, label: After, widget: string }
+              - { name: body, label: Body, widget: text }
+              - name: ctaPrimary
+                label: CTA Primary
+                widget: object
+                fields:
+                  - { name: label, label: Label, widget: string }
+                  - { name: href, label: Href, widget: string }
+              - name: ctaSecondary
+                label: CTA Secondary
+                widget: object
+                fields:
+                  - { name: label, label: Label, widget: string }
+                  - { name: href, label: Href, widget: string }
+              - name: statCards
+                label: Stat Cards
+                widget: list
+                fields:
+                  - { name: value, label: Value, widget: string }
+                  - { name: label, label: Label, widget: string }
+          - name: introBand
+            label: Intro Band
+            widget: object
+            fields:
+              - name: paragraphs
+                label: Paragraphs
+                widget: list
+                field: { name: paragraph, label: Paragraph, widget: text }
+          - name: whyTeknoppy
+            label: Why Teknoppy
+            widget: object
+            fields:
+              - { name: badge, label: Badge, widget: string }
+              - name: heading
+                label: Heading
+                widget: object
+                fields:
+                  - { name: before, label: Before, widget: string }
+                  - { name: highlight, label: Highlight, widget: string }
+              - { name: intro, label: Intro, widget: text }
+              - name: cards
+                label: Cards
+                widget: list
+                fields:
+                  - { name: tag, label: Tag, widget: string }
+                  - { name: title, label: Title, widget: string }
+                  - { name: description, label: Description, widget: text }
+          - name: services
+            label: Services
+            widget: object
+            fields:
+              - { name: badge, label: Badge, widget: string }
+              - name: heading
+                label: Heading
+                widget: object
+                fields:
+                  - { name: before, label: Before, widget: string }
+                  - { name: highlight, label: Highlight, widget: string }
+                  - { name: after, label: After, widget: string }
+              - { name: intro, label: Intro, widget: text }
+              - name: cards
+                label: Cards
+                widget: list
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: desc, label: Description, widget: text }
+          - name: process
+            label: Process
+            widget: object
+            fields:
+              - { name: badge, label: Badge, widget: string }
+              - name: heading
+                label: Heading
+                widget: object
+                fields:
+                  - { name: before, label: Before, widget: string }
+                  - { name: highlight, label: Highlight, widget: string }
+                  - { name: after, label: After, widget: string }
+              - { name: intro, label: Intro, widget: text }
+              - name: steps
+                label: Steps
+                widget: list
+                fields:
+                  - { name: step, label: Step, widget: string }
+                  - { name: title, label: Title, widget: string }
+                  - { name: desc, label: Description, widget: text }
+          - name: pricing
+            label: Pricing
+            widget: object
+            fields:
+              - { name: badge, label: Badge, widget: string }
+              - name: heading
+                label: Heading
+                widget: object
+                fields:
+                  - { name: before, label: Before, widget: string }
+                  - { name: highlight, label: Highlight, widget: string }
+              - { name: intro, label: Intro, widget: text }
+              - name: tableHead
+                label: Table Head
+                widget: object
+                fields:
+                  - { name: type, label: Type Column, widget: string }
+                  - { name: price, label: Price Column, widget: string }
+              - name: rows
+                label: Rows
+                widget: list
+                fields:
+                  - { name: type, label: Type, widget: string }
+                  - { name: price, label: Price, widget: string }
+              - { name: footnote, label: Footnote, widget: text }
+          - name: industries
+            label: Industries
+            widget: object
+            fields:
+              - { name: badge, label: Badge, widget: string }
+              - name: heading
+                label: Heading
+                widget: object
+                fields:
+                  - { name: highlight, label: Highlight, widget: string }
+                  - { name: after, label: After, widget: string }
+              - { name: intro, label: Intro, widget: text }
+              - name: items
+                label: Items
+                widget: list
+                fields:
+                  - { name: name, label: Name, widget: string }
+                  - { name: desc, label: Description, widget: text }
+          - name: caseStudies
+            label: Case Studies
+            widget: object
+            fields:
+              - { name: badge, label: Badge, widget: string }
+              - name: heading
+                label: Heading
+                widget: object
+                fields:
+                  - { name: before, label: Before, widget: string }
+                  - { name: highlight, label: Highlight, widget: string }
+                  - { name: after, label: After, widget: string }
+              - { name: intro, label: Intro, widget: text }
+              - name: blocks
+                label: Blocks
+                widget: list
+                fields:
+                  - { name: label, label: Label, widget: string }
+                  - { name: tag, label: Tag, widget: string }
+                  - { name: metric, label: Metric, widget: string }
+                  - { name: metricSub, label: Metric Subtitle, widget: string }
+                  - { name: title, label: Title, widget: string }
+                  - { name: intro, label: Intro, widget: text }
+                  - name: approach
+                    label: Approach
+                    widget: list
+                    field: { name: point, label: Point, widget: text }
+                  - name: results
+                    label: Results
+                    widget: list
+                    field: { name: point, label: Point, widget: text }
+                  - { name: quote, label: Quote, widget: text }
+                  - { name: author, label: Author, widget: string }
+                  - { name: accent, label: Accent, widget: string }
+          - name: testimonials
+            label: Testimonials
+            widget: object
+            fields:
+              - { name: badge, label: Badge, widget: string }
+              - name: heading
+                label: Heading
+                widget: object
+                fields:
+                  - { name: before, label: Before, widget: string }
+                  - { name: highlight, label: Highlight, widget: string }
+                  - { name: after, label: After, widget: string }
+              - { name: intro, label: Intro, widget: text }
+              - name: items
+                label: Items
+                widget: list
+                fields:
+                  - { name: quote, label: Quote, widget: text }
+                  - { name: author, label: Author, widget: string }
+                  - { name: role, label: Role, widget: string }
+          - name: projects
+            label: Projects
+            widget: object
+            fields:
+              - { name: badge, label: Badge, widget: string }
+              - name: heading
+                label: Heading
+                widget: object
+                fields:
+                  - { name: before, label: Before, widget: string }
+                  - { name: highlight, label: Highlight, widget: string }
+                  - { name: after, label: After, widget: string }
+              - { name: intro, label: Intro, widget: text }
+              - name: items
+                label: Items
+                widget: list
+                fields:
+                  - { name: name, label: Name, widget: string }
+                  - { name: loc, label: Location, widget: string }
+                  - { name: desc, label: Description, widget: text }
+                  - { name: result, label: Result, widget: text }
+          - name: faqs
+            label: FAQs
+            widget: object
+            fields:
+              - { name: badge, label: Badge, widget: string }
+              - name: heading
+                label: Heading
+                widget: object
+                fields:
+                  - { name: before, label: Before, widget: string }
+                  - { name: highlight, label: Highlight, widget: string }
+              - { name: intro, label: Intro, widget: text }
+              - name: items
+                label: Items
+                widget: list
+                fields:
+                  - { name: q, label: Question, widget: string }
+                  - { name: a, label: Answer, widget: text }
+# CMS "files" entry for the Ecommerce (Kochi) pillar page.
+# Paste this single item into the `files:` list of a Decap/Sveltia CMS
+# collection in public/admin/config.yml. It is indented to sit directly
+# alongside the existing `- name: site` entry under the "Site Settings"
+# collection (the entry dash starts at 6 leading spaces). Fields mirror
+# src/data/pages/ecommerce.json one-to-one.
+      - name: ecommerce
+        label: "Ecommerce (Kochi) Page"
+        file: "src/data/pages/ecommerce.json"
+        fields:
+          - name: meta
+            label: "SEO Meta"
+            widget: object
+            fields:
+              - { name: title, label: "Meta title", widget: string }
+              - { name: description, label: "Meta description", widget: text }
+          - name: hero
+            label: "Hero"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingAccent, label: "Heading — accent word", widget: string }
+              - { name: headingMid, label: "Heading — middle", widget: string }
+              - { name: headingRest, label: "Heading — rest", widget: string }
+              - { name: subheadline, label: "Subheadline", widget: text }
+              - { name: body, label: "Body paragraph", widget: text }
+              - name: ctaPrimary
+                label: "Primary CTA"
+                widget: object
+                fields:
+                  - { name: label, label: "Label", widget: string }
+                  - { name: href, label: "Link", widget: string }
+              - name: ctaSecondary
+                label: "Secondary CTA"
+                widget: object
+                fields:
+                  - { name: label, label: "Label", widget: string }
+                  - { name: href, label: "Link", widget: string }
+              - name: stats
+                label: "Stat cards"
+                widget: list
+                fields:
+                  - { name: value, label: "Value", widget: string }
+                  - { name: label, label: "Label", widget: string }
+          - { name: introBand, label: "Intro band paragraph", widget: text }
+          - name: whyTeknoppy
+            label: "Why Teknoppy"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingLead, label: "Heading — lead", widget: string }
+              - { name: headingAccent, label: "Heading — accent", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: cards
+                label: "Cards"
+                widget: list
+                fields:
+                  - { name: tag, label: "Tag", widget: string }
+                  - { name: title, label: "Title", widget: string }
+                  - { name: description, label: "Description", widget: text }
+          - name: services
+            label: "Services"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingLead, label: "Heading — lead", widget: string }
+              - { name: headingAccent, label: "Heading — accent", widget: string }
+              - { name: headingRest, label: "Heading — rest", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: cards
+                label: "Service cards"
+                widget: list
+                fields:
+                  - { name: title, label: "Title", widget: string }
+                  - { name: desc, label: "Description", widget: text }
+          - name: process
+            label: "Process"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingLead, label: "Heading — lead", widget: string }
+              - { name: headingAccent, label: "Heading — accent", widget: string }
+              - { name: headingRest, label: "Heading — rest", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: steps
+                label: "Steps"
+                widget: list
+                fields:
+                  - { name: step, label: "Step number", widget: string }
+                  - { name: title, label: "Title", widget: string }
+                  - { name: desc, label: "Description", widget: text }
+          - name: pricing
+            label: "Pricing"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingLead, label: "Heading — lead", widget: string }
+              - { name: headingAccent, label: "Heading — accent", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - { name: footnote, label: "Footnote", widget: text }
+              - name: rows
+                label: "Price rows"
+                widget: list
+                fields:
+                  - { name: type, label: "Store type", widget: string }
+                  - { name: price, label: "Price", widget: string }
+          - name: industries
+            label: "Industries"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingAccent, label: "Heading — accent", widget: string }
+              - { name: headingRest, label: "Heading — rest", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: items
+                label: "Industry items"
+                widget: list
+                fields:
+                  - { name: name, label: "Name", widget: string }
+                  - { name: desc, label: "Description", widget: text }
+          - name: caseStudies
+            label: "Case Studies"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingLead, label: "Heading — lead", widget: string }
+              - { name: headingAccent, label: "Heading — accent", widget: string }
+              - { name: headingRest, label: "Heading — rest", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: blocks
+                label: "Case study blocks"
+                widget: list
+                fields:
+                  - { name: label, label: "Mockup label", widget: string }
+                  - { name: metric, label: "Metric", widget: string }
+                  - { name: metricSub, label: "Metric caption", widget: string }
+                  - { name: eyebrow, label: "Eyebrow", widget: string }
+                  - { name: title, label: "Title", widget: string }
+                  - { name: intro, label: "Intro", widget: text }
+                  - name: approach
+                    label: "Our Approach"
+                    widget: list
+                    field: { name: point, label: "Point", widget: string }
+                  - name: results
+                    label: "The Results"
+                    widget: list
+                    field: { name: point, label: "Point", widget: string }
+                  - { name: accent, label: "Accent colour", widget: select, options: ["blue", "emerald"] }
+          - name: testimonials
+            label: "Testimonials"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingLead, label: "Heading — lead", widget: string }
+              - { name: headingAccent, label: "Heading — accent", widget: string }
+              - { name: headingRest, label: "Heading — rest", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: items
+                label: "Testimonial items"
+                widget: list
+                fields:
+                  - { name: quote, label: "Quote", widget: text }
+                  - { name: author, label: "Author", widget: string }
+                  - { name: role, label: "Role / Company", widget: string }
+          - name: projects
+            label: "Featured Projects"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingLead, label: "Heading — lead", widget: string }
+              - { name: headingAccent, label: "Heading — accent", widget: string }
+              - { name: headingRest, label: "Heading — rest", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: items
+                label: "Project items"
+                widget: list
+                fields:
+                  - { name: name, label: "Name", widget: string }
+                  - { name: loc, label: "Location tag", widget: string }
+                  - { name: desc, label: "Description", widget: text }
+                  - { name: result, label: "Result", widget: text }
+          - name: faqs
+            label: "FAQs"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingLead, label: "Heading — lead", widget: string }
+              - { name: headingAccent, label: "Heading — accent", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: items
+                label: "FAQ items"
+                widget: list
+                fields:
+                  - { name: q, label: "Question", widget: string }
+                  - { name: a, label: "Answer", widget: text }
+# Paste this entry into public/admin/config.yml, inside a collection's `files:` list
+# (same shape as the existing "settings" collection). Indented with 6 leading
+# spaces so it drops straight under `files:`.
+      - name: web_application
+        label: "Web Application (Kochi) Page"
+        file: "src/data/pages/web-application.json"
+        fields:
+          - name: meta
+            label: "Meta (SEO)"
+            widget: object
+            fields:
+              - { name: title, label: "Title tag", widget: string }
+              - { name: description, label: "Meta description", widget: text }
+          - name: hero
+            label: "Hero"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingPre, label: "Heading — before highlight", widget: string }
+              - { name: headingHighlight, label: "Heading — highlight word", widget: string }
+              - { name: headingPost, label: "Heading — after highlight", widget: string }
+              - { name: subheadline, label: "Sub-headline", widget: text }
+              - { name: body, label: "Body paragraph", widget: text }
+              - name: ctaPrimary
+                label: "Primary CTA"
+                widget: object
+                fields:
+                  - { name: label, label: "Label", widget: string }
+                  - { name: href, label: "Link", widget: string }
+              - name: ctaSecondary
+                label: "Secondary CTA"
+                widget: object
+                fields:
+                  - { name: label, label: "Label", widget: string }
+                  - { name: href, label: "Link", widget: string }
+              - name: statCards
+                label: "Stat cards"
+                widget: list
+                fields:
+                  - { name: value, label: "Value", widget: string }
+                  - { name: label, label: "Label", widget: string }
+          - { name: introBand, label: "Intro band", widget: text }
+          - name: whyTeknoppy
+            label: "Why Teknoppy"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingPre, label: "Heading — before highlight", widget: string }
+              - { name: headingHighlight, label: "Heading — highlight", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: cards
+                label: "Cards"
+                widget: list
+                fields:
+                  - { name: tag, label: "Tag (e.g. 01 . Architecture)", widget: string }
+                  - { name: title, label: "Title", widget: string }
+                  - { name: description, label: "Description", widget: text }
+          - name: services
+            label: "Services"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingPre, label: "Heading — before highlight", widget: string }
+              - { name: headingHighlight, label: "Heading — highlight", widget: string }
+              - { name: headingPost, label: "Heading — after highlight", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: cards
+                label: "Service cards"
+                widget: list
+                fields:
+                  - { name: title, label: "Title", widget: string }
+                  - { name: desc, label: "Description", widget: text }
+          - name: process
+            label: "Process"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingPre, label: "Heading — before highlight", widget: string }
+              - { name: headingHighlight, label: "Heading — highlight", widget: string }
+              - { name: headingPost, label: "Heading — after highlight", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: steps
+                label: "Steps"
+                widget: list
+                fields:
+                  - { name: step, label: "Step number", widget: string }
+                  - { name: title, label: "Title", widget: string }
+                  - { name: desc, label: "Description", widget: text }
+          - name: pricing
+            label: "Pricing"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingPre, label: "Heading — before highlight", widget: string }
+              - { name: headingHighlight, label: "Heading — highlight", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - { name: footnote, label: "Footnote", widget: text }
+              - name: rows
+                label: "Pricing rows"
+                widget: list
+                fields:
+                  - { name: type, label: "Service Type", widget: string }
+                  - { name: price, label: "Estimated Investment", widget: string }
+                  - { name: timeline, label: "Timeline", widget: string }
+          - name: industries
+            label: "Industries"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingHighlight, label: "Heading — highlight", widget: string }
+              - { name: headingPost, label: "Heading — after highlight", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: items
+                label: "Industry items"
+                widget: list
+                fields:
+                  - { name: name, label: "Name", widget: string }
+                  - { name: desc, label: "Description", widget: text }
+          - name: caseStudies
+            label: "Case Studies"
+            widget: object
+            fields:
+              - { name: headingPre, label: "Heading — before highlight", widget: string }
+              - { name: headingHighlight, label: "Heading — highlight", widget: string }
+              - { name: headingPost, label: "Heading — after highlight", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: blocks
+                label: "Case study blocks"
+                widget: list
+                fields:
+                  - { name: label, label: "Mockup label", widget: string }
+                  - { name: metric, label: "Metric", widget: string }
+                  - { name: metricSub, label: "Metric sub-label", widget: string }
+                  - { name: title, label: "Title", widget: string }
+                  - { name: intro, label: "Intro paragraph", widget: text }
+                  - name: approach
+                    label: "Our Approach (bullets)"
+                    widget: list
+                    field: { name: item, label: "Bullet", widget: string }
+                  - name: results
+                    label: "The Results (bullets)"
+                    widget: list
+                    field: { name: item, label: "Bullet", widget: string }
+                  - { name: quote, label: "Quote", widget: text }
+                  - { name: author, label: "Quote author (no leading dash)", widget: string }
+                  - { name: accent, label: "Accent colour", widget: select, options: ["blue", "emerald", "violet"] }
+          - name: testimonials
+            label: "Testimonials"
+            widget: object
+            fields:
+              - { name: headingPre, label: "Heading — before highlight", widget: string }
+              - { name: headingHighlight, label: "Heading — highlight", widget: string }
+              - { name: headingPost, label: "Heading — after highlight", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: items
+                label: "Testimonials"
+                widget: list
+                fields:
+                  - { name: quote, label: "Quote", widget: text }
+                  - { name: author, label: "Author", widget: string }
+                  - { name: role, label: "Role / Company", widget: string }
+          - name: projects
+            label: "Featured Projects"
+            widget: object
+            fields:
+              - { name: headingPre, label: "Heading — before highlight", widget: string }
+              - { name: headingHighlight, label: "Heading — highlight", widget: string }
+              - { name: headingPost, label: "Heading — after highlight", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: items
+                label: "Projects"
+                widget: list
+                fields:
+                  - { name: name, label: "Name", widget: string }
+                  - { name: loc, label: "Location / tag", widget: string }
+                  - { name: desc, label: "Description", widget: text }
+                  - { name: result, label: "Result", widget: text }
+          - name: faqs
+            label: "FAQs"
+            widget: object
+            fields:
+              - { name: headingPre, label: "Heading — before highlight", widget: string }
+              - { name: headingHighlight, label: "Heading — highlight", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: items
+                label: "Questions"
+                widget: list
+                fields:
+                  - { name: q, label: "Question", widget: string }
+                  - { name: a, label: "Answer", widget: text }
+# Decap/Netlify CMS "files" collection entry for the Digital Marketing (Kochi) pillar page.
+# Paste this entry under a `files:` list of a collection in your CMS config (config.yml).
+# The entry itself is indented with 6 leading spaces so it drops straight into:
+#
+# collections:
+#   - name: pages
+#     label: Pages
+#     files:
+# <-- (paste here) -->
+#
+      - name: digital_marketing
+        label: "Digital Marketing (Kochi) Page"
+        file: "src/data/pages/digital-marketing.json"
+        fields:
+          - label: Meta
+            name: meta
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: text }
+
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Badge, name: badge, widget: string }
+              - label: Heading
+                name: heading
+                widget: object
+                fields:
+                  - { label: Lead, name: lead, widget: string, required: false }
+                  - { label: Highlight, name: highlight, widget: string }
+                  - { label: Tail, name: tail, widget: string, required: false }
+              - { label: Subheadline, name: subheadline, widget: text }
+              - { label: Body, name: body, widget: text }
+              - label: Primary CTA
+                name: ctaPrimary
+                widget: object
+                fields:
+                  - { label: Label, name: label, widget: string }
+                  - { label: Href, name: href, widget: string }
+              - label: Secondary CTA
+                name: ctaSecondary
+                widget: object
+                fields:
+                  - { label: Label, name: label, widget: string }
+                  - { label: Href, name: href, widget: string }
+              - label: Stat Cards
+                name: statCards
+                widget: list
+                fields:
+                  - { label: Value, name: value, widget: string }
+                  - { label: Label, name: label, widget: string }
+
+          - label: Why Teknoppy
+            name: whyTeknoppy
+            widget: object
+            fields:
+              - { label: Badge, name: badge, widget: string }
+              - label: Heading
+                name: heading
+                widget: object
+                fields:
+                  - { label: Lead, name: lead, widget: string, required: false }
+                  - { label: Highlight, name: highlight, widget: string }
+                  - { label: Tail, name: tail, widget: string, required: false }
+              - { label: Intro, name: intro, widget: text }
+              - label: Cards
+                name: cards
+                widget: list
+                fields:
+                  - { label: Tag, name: tag, widget: string }
+                  - { label: Title, name: title, widget: string }
+                  - { label: Description, name: description, widget: text }
+
+          - label: Services
+            name: services
+            widget: object
+            fields:
+              - { label: Badge, name: badge, widget: string }
+              - label: Heading
+                name: heading
+                widget: object
+                fields:
+                  - { label: Lead, name: lead, widget: string, required: false }
+                  - { label: Highlight, name: highlight, widget: string }
+                  - { label: Tail, name: tail, widget: string, required: false }
+              - { label: Intro, name: intro, widget: text }
+              - label: Cards
+                name: cards
+                widget: list
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Description, name: desc, widget: text }
+
+          - label: Process
+            name: process
+            widget: object
+            fields:
+              - { label: Badge, name: badge, widget: string }
+              - label: Heading
+                name: heading
+                widget: object
+                fields:
+                  - { label: Lead, name: lead, widget: string, required: false }
+                  - { label: Highlight, name: highlight, widget: string }
+                  - { label: Tail, name: tail, widget: string, required: false }
+              - { label: Intro, name: intro, widget: text }
+              - label: Steps
+                name: steps
+                widget: list
+                fields:
+                  - { label: Step, name: step, widget: string }
+                  - { label: Title, name: title, widget: string }
+                  - { label: Description, name: desc, widget: text }
+
+          - label: Pricing
+            name: pricing
+            widget: object
+            fields:
+              - { label: Badge, name: badge, widget: string }
+              - label: Heading
+                name: heading
+                widget: object
+                fields:
+                  - { label: Lead, name: lead, widget: string, required: false }
+                  - { label: Highlight, name: highlight, widget: string }
+                  - { label: Tail, name: tail, widget: string, required: false }
+              - { label: Intro, name: intro, widget: text }
+              - { label: Footnote, name: footnote, widget: text }
+              - label: Rows
+                name: rows
+                widget: list
+                fields:
+                  - { label: Service Type, name: type, widget: string }
+                  - { label: Price, name: price, widget: string }
+
+          - label: Industries
+            name: industries
+            widget: object
+            fields:
+              - { label: Badge, name: badge, widget: string }
+              - label: Heading
+                name: heading
+                widget: object
+                fields:
+                  - { label: Lead, name: lead, widget: string, required: false }
+                  - { label: Highlight, name: highlight, widget: string }
+                  - { label: Tail, name: tail, widget: string, required: false }
+              - { label: Intro, name: intro, widget: text }
+              - label: Items
+                name: items
+                widget: list
+                fields:
+                  - { label: Name, name: name, widget: string }
+                  - { label: Description, name: desc, widget: text }
+
+          - label: Case Studies
+            name: caseStudies
+            widget: object
+            fields:
+              - { label: Badge, name: badge, widget: string }
+              - label: Heading
+                name: heading
+                widget: object
+                fields:
+                  - { label: Lead, name: lead, widget: string, required: false }
+                  - { label: Highlight, name: highlight, widget: string }
+                  - { label: Tail, name: tail, widget: string, required: false }
+              - { label: Intro, name: intro, widget: text }
+              - label: Blocks
+                name: blocks
+                widget: list
+                fields:
+                  - { label: Label, name: label, widget: string }
+                  - { label: Metric, name: metric, widget: string }
+                  - { label: Metric Sub, name: metricSub, widget: string }
+                  - { label: Title, name: title, widget: string }
+                  - { label: Intro, name: intro, widget: text }
+                  - label: Approach
+                    name: approach
+                    widget: list
+                    field: { label: Point, name: point, widget: string }
+                  - label: Results
+                    name: results
+                    widget: list
+                    field: { label: Point, name: point, widget: string }
+                  - { label: Quote, name: quote, widget: text }
+                  - { label: Author, name: author, widget: string }
+                  - label: Accent
+                    name: accent
+                    widget: select
+                    options: ["blue", "emerald"]
+
+          - label: Testimonials
+            name: testimonials
+            widget: object
+            fields:
+              - { label: Badge, name: badge, widget: string }
+              - label: Heading
+                name: heading
+                widget: object
+                fields:
+                  - { label: Lead, name: lead, widget: string, required: false }
+                  - { label: Highlight, name: highlight, widget: string }
+                  - { label: Tail, name: tail, widget: string, required: false }
+              - { label: Intro, name: intro, widget: text }
+              - label: Items
+                name: items
+                widget: list
+                fields:
+                  - { label: Quote, name: quote, widget: text }
+                  - { label: Author, name: author, widget: string }
+                  - { label: Role, name: role, widget: string }
+
+          - label: Projects
+            name: projects
+            widget: object
+            fields:
+              - { label: Badge, name: badge, widget: string }
+              - label: Heading
+                name: heading
+                widget: object
+                fields:
+                  - { label: Lead, name: lead, widget: string, required: false }
+                  - { label: Highlight, name: highlight, widget: string }
+                  - { label: Tail, name: tail, widget: string, required: false }
+              - { label: Intro, name: intro, widget: text }
+              - label: Items
+                name: items
+                widget: list
+                fields:
+                  - { label: Name, name: name, widget: string }
+                  - { label: Location, name: loc, widget: string }
+                  - { label: Description, name: desc, widget: text }
+                  - { label: Result, name: result, widget: text }
+
+          - label: FAQs
+            name: faqs
+            widget: object
+            fields:
+              - { label: Badge, name: badge, widget: string }
+              - label: Heading
+                name: heading
+                widget: object
+                fields:
+                  - { label: Lead, name: lead, widget: string, required: false }
+                  - { label: Highlight, name: highlight, widget: string }
+                  - { label: Tail, name: tail, widget: string, required: false }
+              - { label: Intro, name: intro, widget: text }
+              - label: Items
+                name: items
+                widget: list
+                fields:
+                  - { label: Question, name: q, widget: string }
+                  - { label: Answer, name: a, widget: text }
   - name: blog
     label: "Blog Posts"
     label_singular: "Blog Post"

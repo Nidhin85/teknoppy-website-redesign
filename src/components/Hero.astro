@@ -1,5 +1,6 @@
 ---
 import { ArrowRight, Play, Globe2, Smile, Award, Star } from "lucide-react";
+import home from "../data/home.json";
 ---
 
 <section
@@ -68,21 +69,21 @@ import { ArrowRight, Play, Globe2, Smile, Award, Star } from "lucide-react";
         class="text-4xl sm:text-5xl lg:text-[48px] xl:text-[54px] font-black leading-[1.2] tracking-tight text-neutral-900 mb-5"
       >
         <span class="block xl:whitespace-nowrap"
-          >Built to <span
+          >{home.hero.headlines[0].lead} <span
             class="inline-block bg-[#F9AE42]/20 text-primary px-4 py-0.5 rounded-[1.5rem] transform -rotate-2 mt-1 shadow-sm"
-            >Rank.</span
+            >{home.hero.headlines[0].highlight}</span
           ></span
         >
         <span class="block xl:whitespace-nowrap mt-2 xl:mt-3"
-          >Designed to <span
+          >{home.hero.headlines[1].lead} <span
             class="inline-block bg-primary text-white px-4 py-0.5 rounded-[1.5rem] transform rotate-1 mt-1 shadow-md"
-            >Convert.</span
+            >{home.hero.headlines[1].highlight}</span
           ></span
         >
         <span class="block xl:whitespace-nowrap mt-2 xl:mt-3"
-          >Engineered to <span
+          >{home.hero.headlines[2].lead} <span
             class="inline-block bg-[#FFF8EF] border border-primary/20 text-primary px-4 py-0.5 rounded-[1.5rem] transform -rotate-1 mt-1 shadow-sm"
-            >Grow.</span
+            >{home.hero.headlines[2].highlight}</span
           ></span
         >
       </h1>
@@ -90,8 +91,7 @@ import { ArrowRight, Play, Globe2, Smile, Award, Star } from "lucide-react";
       <p
         class="text-base lg:text-lg text-neutral-600 mb-8 max-w-lg mx-auto xl:mx-0 leading-relaxed font-medium"
       >
-        We create SEO-driven websites that help Kerala businesses increase
-        visibility, generate qualified leads, and achieve measurable growth.
+        {home.hero.body}
       </p>
 
       <!-- Primary Action Area -->
@@ -99,14 +99,14 @@ import { ArrowRight, Play, Globe2, Smile, Award, Star } from "lucide-react";
         class="flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto mb-2"
       >
         <a
-          href="#consultation"
+          href={home.hero.primaryCta.href}
           class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.25)] hover:bg-primary/95 hover:shadow-[0_6px_25px_rgba(240,90,44,0.35)] hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap"
         >
-          Book a Free Consultation
+          {home.hero.primaryCta.label}
           <ArrowRight className="w-4 h-4" />
         </a>
         <a
-          href="#portfolio"
+          href={home.hero.secondaryCta.href}
           class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-neutral-700 bg-white border border-neutral-200 rounded-full hover:border-primary/50 hover:bg-[#FFF8EF] transition-all duration-300 shadow-sm whitespace-nowrap"
         >
           <span
@@ -114,7 +114,7 @@ import { ArrowRight, Play, Globe2, Smile, Award, Star } from "lucide-react";
           >
             <Play className="w-2.5 h-2.5 fill-current ml-0.5" />
           </span>
-          View Our Portfolio
+          {home.hero.secondaryCta.label}
         </a>
       </div>
 
@@ -124,7 +124,7 @@ import { ArrowRight, Play, Globe2, Smile, Award, Star } from "lucide-react";
       >
         <span
           class="text-xs text-neutral-400 font-bold uppercase tracking-wider"
-          >Trusted by Brands Across the World</span
+          >{home.hero.trustedLabel}</span
         >
         <div
           class="flex flex-wrap items-center justify-center xl:justify-start gap-4 sm:gap-5 grayscale opacity-55"

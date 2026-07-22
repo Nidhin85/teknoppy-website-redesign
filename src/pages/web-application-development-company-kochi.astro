@@ -3,174 +3,25 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import FooterCTA from '../components/FooterCTA.astro';
 import { ArrowRight, Play, Globe2, Smile, Award, Star, CheckCircle, Clock, Heart, Shield, Check, HelpCircle, User, Zap, Rocket, Activity, Home, Utensils, GraduationCap, Compass, Briefcase, Factory, Languages, MonitorSmartphone, Building2, Edit, ShieldCheck, Search, Layers, Network, Code, Gauge, LayoutGrid, Calendar, TrendingUp } from 'lucide-react';
+import page from '../data/pages/web-application.json';
 
-const title = "Web Application Development Company Kochi | Custom Web Apps — Teknoppy";
-const description = "Teknoppy is a Kochi web application development company building scalable, secure, enterprise-grade custom web applications for Kerala, India, and GCC businesses since 2018.";
+// Icons stay hardcoded, zipped by index onto the JSON data arrays.
+const serviceIcons = [Code, Rocket, Building2, Layers, Activity, Shield, Network];
+const processIcons = [Search, Network, Code, Gauge, Rocket, ShieldCheck];
+const industryIcons = [Layers, Activity, Shield, Network, Building2, Rocket];
 
-const services = [
-  {
-    title: "Custom Web Application Development",
-    desc: "Build powerful, scalable applications from scratch using modern web application development frameworks.",
-    icon: Code
-  },
-  {
-    title: "Web Application Development for Startups Kochi",
-    desc: "MVP development, rapid prototyping, lean web application development approach.",
-    icon: Rocket
-  },
-  {
-    title: "Enterprise Web Application Development",
-    desc: "Large-scale systems, complex workflows, enterprise-grade security and performance.",
-    icon: Building2
-  },
-  {
-    title: "Web Application Development for E-Commerce",
-    desc: "Shopping carts, payment integration, inventory management, analytics dashboards.",
-    icon: Layers
-  },
-  {
-    title: "Web Application Development for Healthcare",
-    desc: "Patient management, telemedicine, HIPAA-compliant secure web application development.",
-    icon: Activity
-  },
-  {
-    title: "Web Application Development for Fintech",
-    desc: "Payment processing, digital wallets, investment platforms, bank-grade security.",
-    icon: Shield
-  },
-  {
-    title: "Web Application Development for SaaS",
-    desc: "Multi-tenant architecture, subscription management, API integrations, cloud deployment.",
-    icon: Network
-  }
-];
-
-const processes = [
-  {
-    step: "01",
-    title: "Discovery & Requirements Analysis",
-    desc: "Detailed meetings covering business goals, user personas, technical requirements. Clear expectations before coding begins.",
-    icon: Search
-  },
-  {
-    step: "02",
-    title: "Architecture & Technology Selection",
-    desc: "Design system architecture, select appropriate web application development frameworks, plan database structure, define API specifications.",
-    icon: Network
-  },
-  {
-    step: "03",
-    title: "Development & API Implementation",
-    desc: "Full-stack web application development using modern frameworks. Frontend UI, backend APIs, database integration, third-party services.",
-    icon: Code
-  },
-  {
-    step: "04",
-    title: "Testing & Quality Assurance",
-    desc: "Unit testing, integration testing, security testing, performance testing, user acceptance testing.",
-    icon: Gauge
-  },
-  {
-    step: "05",
-    title: "Deployment & Infrastructure Setup",
-    desc: "Deploy to cloud infrastructure (AWS, Azure), set up monitoring, configure backups, optimize web application development performance.",
-    icon: Rocket
-  },
-  {
-    step: "06",
-    title: "Maintenance & Continuous Support",
-    desc: "Monthly updates, security patches, feature enhancements, support and bug fixes.",
-    icon: ShieldCheck
-  }
-];
-
-const pricing = [
-  { type: "MVP/Startup Application", price: "Rs. 3,00,000 – 8,00,000", timeline: "2-3 months" },
-  { type: "Standard Web Application", price: "Rs. 8,00,000 – 15,00,000", timeline: "3-4 months" },
-  { type: "Enterprise Application", price: "Rs. 15,00,000 – 40,00,000+", timeline: "4-6 months" },
-  { type: "Ongoing Maintenance & Support", price: "Rs. 20,000 – 50,000/month", timeline: "Monthly" }
-];
-
-const industries = [
-  { name: "E-Commerce Platforms", desc: "Shopping carts, payment integration, inventory management, and analytics dashboards.", icon: Layers },
-  { name: "Healthcare Systems", desc: "Patient management, telemedicine, and HIPAA-compliant secure development.", icon: Activity },
-  { name: "Fintech Applications", desc: "Payment processing, digital wallets, investment platforms, and bank-grade security.", icon: Shield },
-  { name: "SaaS Products", desc: "Multi-tenant architecture, subscription management, API integrations, and cloud deployment.", icon: Network },
-  { name: "Enterprise Systems", desc: "CRM, ERP, HRM, and large-scale workflow automation platforms.", icon: Building2 },
-  { name: "Startup MVPs", desc: "Rapid prototyping and lean builds that validate and scale fast.", icon: Rocket }
-];
-
-const projects = [
-  {
-    name: "E-Commerce Marketplace",
-    loc: "KOCHI · E-COMMERCE",
-    desc: "React, Node.js, PostgreSQL, Redis, AWS rebuild with microservices, caching, and CDN.",
-    result: "Page load 4.2s → 0.8s, concurrent users 1,000 → 50,000, transactions +400%, revenue +350%."
-  },
-  {
-    name: "SaaS Analytics Platform",
-    loc: "BANGALORE · SAAS",
-    desc: "Multi-tenant platform with Kafka, TimescaleDB, Elasticsearch, React + D3.js, and GraphQL APIs on AWS.",
-    result: "Customers +400%, MRR +400%, <1s latency, 99.99% uptime, 95% NPS."
-  },
-  {
-    name: "Healthcare Management System",
-    loc: "KERALA · HEALTHCARE",
-    desc: "HIPAA-compliant EHR, telemedicine, scheduling, and secure messaging with SOC 2 Type II certification.",
-    result: "200+ facilities, 50,000+ patients monthly, zero breaches in 2+ years, Rs. 1Cr+ telemedicine revenue."
-  }
-];
-
-const testimonials = [
-  {
-    quote: "Professional, results-driven. Delivered exactly what we needed within budget and timeline.",
-    author: "CTO",
-    role: "SaaS Company, Bangalore"
-  },
-  {
-    quote: "Outstanding web application development team. Understood our complex requirements and delivered a scalable solution handling 10x growth.",
-    author: "CEO",
-    role: "Fintech Startup, Kochi"
-  },
-  {
-    quote: "Best web application development company. High-quality application our users love. Highly recommended.",
-    author: "Founder",
-    role: "Healthcare Platform, Kerala"
-  },
-  {
-    quote: "Exceptional expertise. Secure web application development practices and enterprise approach gave us confidence.",
-    author: "CTO",
-    role: "Manufacturing Company, Ernakulam"
-  }
-];
-
-const faqs = [
-  {
-    q: "What does web application development cost in Kochi?",
-    a: "Web application development cost ranges from Rs. 3L for MVPs to Rs. 40L+ for enterprise systems. Cost depends on features, complexity, timeline, and team size. Custom quotes provided after understanding requirements."
-  },
-  {
-    q: "How long does web application development take?",
-    a: "MVP: 2-3 months. Standard: 3-4 months. Enterprise: 4-6 months. We provide a detailed timeline before starting."
-  },
-  {
-    q: "What technologies do you use?",
-    a: "React, Vue.js, Angular (frontend), Node.js, Python, Java (backend), PostgreSQL, MongoDB (databases), AWS/Azure (cloud). Framework selection based on your requirements."
-  },
-  {
-    q: "Do you provide web application development support after launch?",
-    a: "Yes. We offer maintenance packages covering updates, security patches, feature enhancements, and bug fixes. Ongoing support included."
-  },
-  {
-    q: "How secure is your web application development?",
-    a: "Secure web application development is standard. We implement encryption, authentication, OWASP standards, regular security testing, and compliance (GDPR, HIPAA, PCI-DSS)."
-  }
-];
+// Case-study accent palettes, selected per block via block.accent (keeps full
+// Tailwind class strings in source so the JIT compiler detects them).
+const caseAccents: Record<string, { glow: string; mesh: string; label: string }> = {
+  blue:    { glow: "from-blue-500/20 to-indigo-500/20",   mesh: "from-blue-500/10",    label: "text-blue-400" },
+  emerald: { glow: "from-emerald-500/20 to-teal-500/20",  mesh: "from-emerald-500/10", label: "text-emerald-400" },
+  violet:  { glow: "from-violet-500/20 to-purple-500/20", mesh: "from-violet-500/10",  label: "text-violet-400" }
+};
 
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": faqs.map(faq => ({
+  "mainEntity": page.faqs.items.map(faq => ({
     "@type": "Question",
     "name": faq.q,
     "acceptedAnswer": {
@@ -181,7 +32,7 @@ const faqSchema = {
 };
 ---
 
-<Layout title={title} description={description}>
+<Layout title={page.meta.title} description={page.meta.description}>
   <Header forceSolidBg={true} />
 
   <main class="overflow-hidden bg-[#FFF8EF]/20">
@@ -196,33 +47,33 @@ const faqSchema = {
         <div class="xl:col-span-7 flex flex-col items-center text-center xl:items-start xl:text-left">
           <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-bold text-primary uppercase tracking-widest mb-6">
             <Zap class="w-3.5 h-3.5" />
-            Kerala's Premier Digital Studio
+            {page.hero.badge}
           </div>
           <h1 class="text-4xl sm:text-5xl lg:text-[56px] font-black leading-[1.1] tracking-tight text-white mb-6">
-            Web
+            {page.hero.headingPre}
             <span class="relative inline-block text-primary">
-              Application
+              {page.hero.headingHighlight}
               <svg class="absolute -bottom-2 left-0 w-full h-2 text-primary" viewBox="0 0 100 10" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3 7C30 3 70 3 97 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
               </svg>
             </span>
             <br class="hidden sm:block" />
-            Development Company Kochi
+            {page.hero.headingPost}
           </h1>
           <p class="text-base sm:text-lg lg:text-xl text-neutral-300 mb-5 max-w-2xl font-medium leading-relaxed">
-            Enterprise-Grade Custom Applications for Kerala Businesses. Scalable · Secure · Professional — Custom Web Application Development Solutions | 100+ Projects | Since 2018.
+            {page.hero.subheadline}
           </p>
           <p class="text-sm sm:text-base text-neutral-400 mb-8 max-w-2xl font-medium leading-relaxed">
-            Web Application Development Company Kochi is a professional application development agency delivering custom, scalable, web application development solutions for businesses across Kerala, India, and the GCC region. Since 2018, we have completed 100+ web application development projects — from startup MVPs to large-scale enterprise systems — helping Kerala businesses build powerful digital platforms that drive growth and operational efficiency.
+            {page.hero.body}
           </p>
 
           <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-            <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.35)] hover:bg-primary/95 hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap">
-              Book a Free Consultation
+            <a href={page.hero.ctaPrimary.href} class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.35)] hover:bg-primary/95 hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap">
+              {page.hero.ctaPrimary.label}
               <ArrowRight class="w-4 h-4" />
             </a>
-            <a href="#services" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-white border border-white/20 rounded-full hover:bg-white/5 transition-all duration-300 shadow-sm whitespace-nowrap">
-              Explore Our Services
+            <a href={page.hero.ctaSecondary.href} class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-white border border-white/20 rounded-full hover:bg-white/5 transition-all duration-300 shadow-sm whitespace-nowrap">
+              {page.hero.ctaSecondary.label}
               <ArrowRight class="w-4 h-4" />
             </a>
           </div>
@@ -236,9 +87,9 @@ const faqSchema = {
             <div class="w-11 h-11 rounded-full border border-primary/30 flex items-center justify-center text-primary bg-primary/5 shadow-[0_0_15px_rgba(240,90,44,0.25)] mb-6 group-hover:scale-105 transition-transform">
               <Rocket class="w-5 h-5" />
             </div>
-            <span class="text-3xl font-black text-white block leading-none mb-2">100+</span>
+            <span class="text-3xl font-black text-white block leading-none mb-2">{page.hero.statCards[0].value}</span>
             <div class="w-8 h-[2px] bg-primary mb-4"></div>
-            <span class="text-[9px] font-black text-neutral-400 uppercase tracking-widest leading-normal">Applications</span>
+            <span class="text-[9px] font-black text-neutral-400 uppercase tracking-widest leading-normal">{page.hero.statCards[0].label}</span>
           </div>
 
           <!-- Card 2 -->
@@ -246,9 +97,9 @@ const faqSchema = {
             <div class="w-11 h-11 rounded-full border border-primary/30 flex items-center justify-center text-primary bg-primary/5 shadow-[0_0_15px_rgba(240,90,44,0.25)] mb-6 group-hover:scale-105 transition-transform">
               <Calendar class="w-5 h-5" />
             </div>
-            <span class="text-3xl font-black text-white block leading-none mb-2">2018</span>
+            <span class="text-3xl font-black text-white block leading-none mb-2">{page.hero.statCards[1].value}</span>
             <div class="w-8 h-[2px] bg-primary mb-4"></div>
-            <span class="text-[9px] font-black text-neutral-400 uppercase tracking-widest leading-normal">Established</span>
+            <span class="text-[9px] font-black text-neutral-400 uppercase tracking-widest leading-normal">{page.hero.statCards[1].label}</span>
           </div>
 
           <!-- Card 3 -->
@@ -256,9 +107,9 @@ const faqSchema = {
             <div class="w-11 h-11 rounded-full border border-primary/30 flex items-center justify-center text-primary bg-primary/5 shadow-[0_0_15px_rgba(240,90,44,0.25)] mb-6 group-hover:scale-105 transition-transform">
               <TrendingUp class="w-5 h-5" />
             </div>
-            <span class="text-3xl font-black text-white block leading-none mb-2">Page 1</span>
+            <span class="text-3xl font-black text-white block leading-none mb-2">{page.hero.statCards[2].value}</span>
             <div class="w-8 h-[2px] bg-primary mb-4"></div>
-            <span class="text-[9px] font-black text-neutral-400 uppercase tracking-widest leading-normal">Results</span>
+            <span class="text-[9px] font-black text-neutral-400 uppercase tracking-widest leading-normal">{page.hero.statCards[2].label}</span>
           </div>
 
           <!-- Card 4 -->
@@ -266,9 +117,9 @@ const faqSchema = {
             <div class="w-11 h-11 rounded-full border border-primary/30 flex items-center justify-center text-primary bg-primary/5 shadow-[0_0_15px_rgba(240,90,44,0.25)] mb-6 group-hover:scale-105 transition-transform">
               <Globe2 class="w-5 h-5" />
             </div>
-            <span class="text-3xl font-black text-white block leading-none mb-2">Kerala</span>
+            <span class="text-3xl font-black text-white block leading-none mb-2">{page.hero.statCards[3].value}</span>
             <div class="w-8 h-[2px] bg-primary mb-4"></div>
-            <span class="text-[9px] font-black text-neutral-400 uppercase tracking-widest leading-normal">Wide Coverage</span>
+            <span class="text-[9px] font-black text-neutral-400 uppercase tracking-widest leading-normal">{page.hero.statCards[3].label}</span>
           </div>
 
         </div>
@@ -279,7 +130,7 @@ const faqSchema = {
     <section class="py-12 bg-white border-b border-neutral-100 relative">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
         <p class="text-neutral-600 text-base sm:text-lg leading-relaxed font-medium max-w-4xl">
-          Every business today needs a powerful, scalable web application development solution that automates processes and enhances user experience. As a dedicated Professional Web Application Development Kochi provider, Teknoppy combines modern architecture with proven execution — using cutting-edge web application development technologies and frameworks — delivered by an in-house Kochi team specializing in web application development for startups through enterprise-scale systems.
+          {page.introBand}
         </p>
       </div>
     </section>
@@ -296,14 +147,14 @@ const faqSchema = {
           <!-- Left Column (Sticky Panel) -->
           <div class="lg:col-span-5 lg:sticky lg:top-32 space-y-6">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider shadow-sm">
-              Trusted Partners
+              {page.whyTeknoppy.badge}
             </div>
             <h2 class="text-4xl sm:text-5xl font-black text-neutral-900 leading-tight">
-              Why Teknoppy Is the Trusted <br />
-              <span class="text-primary">Web Application Development Company Kochi</span>
+              {page.whyTeknoppy.headingPre} <br />
+              <span class="text-primary">{page.whyTeknoppy.headingHighlight}</span>
             </h2>
             <p class="text-neutral-500 font-medium text-sm leading-relaxed max-w-sm">
-              We strip away generic templates to engineer custom-built, high-performance web application platforms designed to scale, secure, and drive measurable business growth.
+              {page.whyTeknoppy.intro}
             </p>
           </div>
 
@@ -313,10 +164,10 @@ const faqSchema = {
             <!-- Card 1 -->
             <div class="bg-white rounded-3xl border border-neutral-100 p-8 shadow-[0_12px_40px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col justify-between group">
               <div>
-                <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-4">01 . Architecture</span>
-                <h3 class="text-xl font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-3">Custom Architecture, Not Template Solutions</h3>
+                <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-4">{page.whyTeknoppy.cards[0].tag}</span>
+                <h3 class="text-xl font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-3">{page.whyTeknoppy.cards[0].title}</h3>
                 <p class="text-neutral-500 text-xs leading-relaxed font-semibold">
-                  Every web application development project begins with discovery and architecture planning mapped to your business goals. Our in-house Kochi team covers full-stack development, database design, API development, security architecture, testing, and deployment — all under one roof.
+                  {page.whyTeknoppy.cards[0].description}
                 </p>
               </div>
             </div>
@@ -324,10 +175,10 @@ const faqSchema = {
             <!-- Card 2 -->
             <div class="bg-white rounded-3xl border border-neutral-100 p-8 shadow-[0_12px_40px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col justify-between group">
               <div>
-                <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-4">02 . Scale</span>
-                <h3 class="text-xl font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-3">Scalable-First Studio</h3>
+                <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-4">{page.whyTeknoppy.cards[1].tag}</span>
+                <h3 class="text-xl font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-3">{page.whyTeknoppy.cards[1].title}</h3>
                 <p class="text-neutral-500 text-xs leading-relaxed font-semibold">
-                  Every application is built using scalable web application development patterns, tested against cloud web application development benchmarks, and structured with clean architecture. Your application enters production ready to scale.
+                  {page.whyTeknoppy.cards[1].description}
                 </p>
               </div>
             </div>
@@ -335,10 +186,10 @@ const faqSchema = {
             <!-- Card 3 -->
             <div class="bg-white rounded-3xl border border-neutral-100 p-8 shadow-[0_12px_40px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col justify-between group">
               <div>
-                <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-4">03 . Clarity</span>
-                <h3 class="text-xl font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-3">Full Transparency</h3>
+                <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-4">{page.whyTeknoppy.cards[2].tag}</span>
+                <h3 class="text-xl font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-3">{page.whyTeknoppy.cards[2].title}</h3>
                 <p class="text-neutral-500 text-xs leading-relaxed font-semibold">
-                  Written project timelines, clearly defined development phases, real cost estimates, and post-launch support packages. No hidden costs.
+                  {page.whyTeknoppy.cards[2].description}
                 </p>
               </div>
             </div>
@@ -346,10 +197,10 @@ const faqSchema = {
             <!-- Card 4 -->
             <div class="bg-white rounded-3xl border border-neutral-100 p-8 shadow-[0_12px_40px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col justify-between group">
               <div>
-                <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-4">04 . Partnership</span>
-                <h3 class="text-xl font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-3">Local Kochi Team</h3>
+                <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-4">{page.whyTeknoppy.cards[3].tag}</span>
+                <h3 class="text-xl font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-3">{page.whyTeknoppy.cards[3].title}</h3>
                 <p class="text-neutral-500 text-xs leading-relaxed font-semibold">
-                  Teknoppy is headquartered in Kochi, Kerala — not a remote offshore agency. Strategy discussions, code reviews, urgent updates — we are one message away.
+                  {page.whyTeknoppy.cards[3].description}
                 </p>
               </div>
             </div>
@@ -369,19 +220,19 @@ const faqSchema = {
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
         <div class="max-w-3xl mb-16">
           <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
-            Services Scope
+            {page.services.badge}
           </div>
           <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
-            Our <span class="text-primary">Web Application Development</span> Services in Kochi
+            {page.services.headingPre} <span class="text-primary">{page.services.headingHighlight}</span> {page.services.headingPost}
           </h2>
           <p class="text-neutral-500 font-medium mt-3 text-base sm:text-lg">
-            We build custom web applications across industries and platforms.
+            {page.services.intro}
           </p>
         </div>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {services.map(svc => {
-            const IconComp = svc.icon;
+          {page.services.cards.map((svc, i) => {
+            const IconComp = serviceIcons[i];
             return (
               <div class="relative overflow-hidden bg-white rounded-3xl border border-neutral-100 p-6 sm:p-7 shadow-[0_12px_30px_-15px_rgba(0,0,0,0.03)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.06)] transition-all duration-300 flex flex-col">
                 <!-- Left Gradient Stroke -->
@@ -409,19 +260,19 @@ const faqSchema = {
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
         <div class="text-center max-w-3xl mx-auto mb-16">
           <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
-            • Our Process •
+            {page.process.badge}
           </div>
           <h2 class="text-4xl sm:text-5xl font-black text-neutral-900 leading-tight">
-            Our <span class="text-primary">Web Application Development</span> Process
+            {page.process.headingPre} <span class="text-primary">{page.process.headingHighlight}</span> {page.process.headingPost}
           </h2>
           <p class="text-neutral-500 font-medium mt-3 text-base">
-            Our professional web application development process follows six clearly defined stages, ensuring every project is delivered on time, within budget, and built precisely to brief.
+            {page.process.intro}
           </p>
         </div>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-6 lg:gap-x-8 relative z-10">
-          {processes.map((proc, idx) => {
-            const IconComponent = proc.icon;
+          {page.process.steps.map((proc, idx) => {
+            const IconComponent = processIcons[idx];
             return (
               <div class="relative bg-white rounded-3xl border border-neutral-100 p-8 shadow-[0_10px_30px_rgba(0,0,0,0.02)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.06)] transition-all duration-300 flex flex-col justify-between group min-h-[260px]">
                 <div>
@@ -462,13 +313,13 @@ const faqSchema = {
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
         <div class="max-w-3xl mb-12">
           <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
-            Pricing Guide
+            {page.pricing.badge}
           </div>
           <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight mb-4">
-            Web Application <span class="text-primary">Development Cost in Kochi</span>
+            {page.pricing.headingPre} <span class="text-primary">{page.pricing.headingHighlight}</span>
           </h2>
           <p class="text-neutral-500 font-medium text-base">
-            Transparent pricing is central to how Teknoppy builds client trust. Below is a realistic guide to web application development costs in Kochi by project type. Every project receives a written quote before work begins.
+            {page.pricing.intro}
           </p>
         </div>
 
@@ -482,7 +333,7 @@ const faqSchema = {
               </tr>
             </thead>
             <tbody>
-              {pricing.map((priceItem, idx) => (
+              {page.pricing.rows.map((priceItem, idx) => (
                 <tr class={`border-b border-neutral-100 hover:bg-neutral-50/50 transition-colors ${idx % 2 === 0 ? 'bg-white' : 'bg-neutral-50/20'}`}>
                   <td class="p-4 sm:p-5 font-bold text-neutral-800 text-sm sm:text-base">{priceItem.type}</td>
                   <td class="p-4 sm:p-5 text-right font-black text-primary text-sm sm:text-base">{priceItem.price}</td>
@@ -493,7 +344,7 @@ const faqSchema = {
           </table>
         </div>
         <p class="text-neutral-500 text-xs mt-4 leading-relaxed max-w-3xl font-medium">
-          Cost depends on features, complexity, timeline, and team size. Custom quotes provided after understanding requirements.
+          {page.pricing.footnote}
         </p>
       </div>
     </section>
@@ -507,19 +358,19 @@ const faqSchema = {
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
         <div class="text-center max-w-3xl mx-auto mb-16">
           <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/20 border border-amber-500/30 text-amber-400 text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
-            Our Verticals
+            {page.industries.badge}
           </div>
           <h2 class="text-4xl md:text-5xl font-black text-white leading-tight">
-            <span class="text-[#F9AE42]">Industries & Domains</span> We Build Web Applications For
+            <span class="text-[#F9AE42]">{page.industries.headingHighlight}</span> {page.industries.headingPost}
           </h2>
           <p class="text-neutral-400 font-medium mt-3 text-base">
-            An e-commerce platform demands completely different architecture than a healthcare system — and we build for that specific domain every time.
+            {page.industries.intro}
           </p>
         </div>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {industries.map(ind => {
-            const IconComponent = ind.icon;
+          {page.industries.items.map((ind, i) => {
+            const IconComponent = industryIcons[i];
             return (
               <div class="bg-neutral-900/60 border border-amber-500/10 p-6 rounded-3xl shadow-lg hover:border-amber-500/40 hover:-translate-y-1 transition-all duration-300 flex items-start gap-4">
                 <div class="w-10 h-10 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -544,208 +395,81 @@ const faqSchema = {
             Success Stories
           </div>
           <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
-            Our Web Application Development <span class="text-primary">Case Studies</span> — Proven Results
+            {page.caseStudies.headingPre} <span class="text-primary">{page.caseStudies.headingHighlight}</span> {page.caseStudies.headingPost}
           </h2>
           <p class="text-neutral-500 font-medium mt-3 text-base">
-            See how we help businesses across Kerala, India, and the GCC scale from MVP to enterprise-grade web application platforms.
+            {page.caseStudies.intro}
           </p>
         </div>
 
         <div class="space-y-24">
 
-          <!-- Case 1 (E-Commerce Platform) -->
-          <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 group relative">
-            <!-- Left: Mockup Window -->
-            <div class="w-full lg:w-[48%] relative z-10">
-              <!-- Glow -->
-              <div class="absolute inset-0 bg-gradient-to-tr from-blue-500/20 to-indigo-500/20 rounded-[2rem] scale-105 opacity-0 group-hover:opacity-100 transition-all duration-700 blur-xl"></div>
+          {page.caseStudies.blocks.map((block, idx) => {
+            const accent = caseAccents[block.accent];
+            return (
+              <div class={`flex flex-col ${idx % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 lg:gap-16 group relative`}>
+                {/* Left: Mockup Window */}
+                <div class="w-full lg:w-[48%] relative z-10">
+                  {/* Glow */}
+                  <div class={`absolute inset-0 bg-gradient-to-tr ${accent.glow} rounded-[2rem] scale-105 opacity-0 group-hover:opacity-100 transition-all duration-700 blur-xl`}></div>
 
-              <!-- Browser -->
-              <div class="relative bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.04)] border border-neutral-100 overflow-hidden transform group-hover:-translate-y-1.5 transition-all duration-500">
-                <div class="h-10 bg-neutral-50 border-b border-neutral-100/80 flex items-center px-4 gap-2">
-                  <div class="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
-                  <div class="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
-                  <div class="w-3 h-3 rounded-full bg-[#27C93F]"></div>
+                  {/* Browser */}
+                  <div class="relative bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.04)] border border-neutral-100 overflow-hidden transform group-hover:-translate-y-1.5 transition-all duration-500">
+                    <div class="h-10 bg-neutral-50 border-b border-neutral-100/80 flex items-center px-4 gap-2">
+                      <div class="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
+                      <div class="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
+                      <div class="w-3 h-3 rounded-full bg-[#27C93F]"></div>
+                    </div>
+                    <div class="aspect-[16/10] bg-[#0c0c0e] relative overflow-hidden flex flex-col items-center justify-center p-8 text-center">
+                      {/* Abstract mesh */}
+                      <div class={`absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] ${accent.mesh} via-transparent to-transparent`}></div>
+                      <span class={`text-xs font-black ${accent.label} uppercase tracking-widest mb-3`}>{block.label}</span>
+                      <span class="text-4xl sm:text-5xl font-black text-white leading-none mb-3">{block.metric}</span>
+                      <span class="text-xs text-neutral-400 uppercase tracking-wider font-semibold">{block.metricSub}</span>
+                    </div>
+                  </div>
                 </div>
-                <div class="aspect-[16/10] bg-[#0c0c0e] relative overflow-hidden flex flex-col items-center justify-center p-8 text-center">
-                  <!-- Abstract mesh -->
-                  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent"></div>
-                  <span class="text-xs font-black text-blue-400 uppercase tracking-widest mb-3">E-Commerce Marketplace</span>
-                  <span class="text-4xl sm:text-5xl font-black text-white leading-none mb-3">400%</span>
-                  <span class="text-xs text-neutral-400 uppercase tracking-wider font-semibold">Transaction Growth</span>
-                </div>
-              </div>
-            </div>
 
-            <!-- Right: Content -->
-            <div class="w-full lg:w-[52%] space-y-6">
-              <div>
-                <span class="text-xs font-black text-primary uppercase tracking-widest">Case Study 01</span>
-                <h3 class="text-2xl font-black text-neutral-900 mt-1">E-Commerce Platform: 400% Transaction Growth in 18 Months</h3>
-              </div>
-              <p class="text-sm text-neutral-500 leading-relaxed font-medium">
-                Online marketplace in Kochi with 50,000+ products and 100,000+ active users needing scalability. Legacy system caused 25% cart abandonment, system crashes during peak seasons, missing features, no mobile experience, limited analytics, and high infrastructure costs.
-              </p>
+                {/* Right: Content */}
+                <div class="w-full lg:w-[52%] space-y-6">
+                  <div>
+                    <span class="text-xs font-black text-primary uppercase tracking-widest">Case Study {String(idx + 1).padStart(2, '0')}</span>
+                    <h3 class="text-2xl font-black text-neutral-900 mt-1">{block.title}</h3>
+                  </div>
+                  <p class="text-sm text-neutral-500 leading-relaxed font-medium">
+                    {block.intro}
+                  </p>
 
-              <div class="grid sm:grid-cols-2 gap-4">
-                <div class="bg-neutral-50/50 rounded-2xl p-5 border border-neutral-100">
-                  <h4 class="text-xs font-black text-neutral-900 uppercase tracking-wider mb-2">Our Approach</h4>
-                  <ul class="space-y-1.5 text-xs text-neutral-500 font-semibold list-disc pl-4">
-                    <li>Rebuilt using React, Node.js, PostgreSQL, Redis, and AWS</li>
-                    <li>Microservices, asynchronous processing, load balancing</li>
-                    <li>Caching and CDN implementation</li>
-                    <li>Phased rollout across infrastructure, features, mobile PWA, and compliance</li>
-                  </ul>
-                </div>
-                <div class="bg-neutral-50/50 rounded-2xl p-5 border border-neutral-100">
-                  <h4 class="text-xs font-black text-neutral-900 uppercase tracking-wider mb-2">The Results</h4>
-                  <ul class="space-y-1.5 text-xs text-neutral-500 font-semibold list-disc pl-4">
-                    <li>Page load 4.2s → 0.8s (81% improvement)</li>
-                    <li>Concurrent users 1,000 → 50,000 (50x)</li>
-                    <li>Transactions 100K → 500K/month (400% growth), revenue Rs. 10Cr → Rs. 45Cr (350% growth)</li>
-                    <li>99.99% uptime, zero security incidents</li>
-                  </ul>
-                </div>
-              </div>
+                  <div class="grid sm:grid-cols-2 gap-4">
+                    <div class="bg-neutral-50/50 rounded-2xl p-5 border border-neutral-100">
+                      <h4 class="text-xs font-black text-neutral-900 uppercase tracking-wider mb-2">Our Approach</h4>
+                      <ul class="space-y-1.5 text-xs text-neutral-500 font-semibold list-disc pl-4">
+                        {block.approach.map(item => (
+                          <li>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-neutral-50/50 rounded-2xl p-5 border border-neutral-100">
+                      <h4 class="text-xs font-black text-neutral-900 uppercase tracking-wider mb-2">The Results</h4>
+                      <ul class="space-y-1.5 text-xs text-neutral-500 font-semibold list-disc pl-4">
+                        {block.results.map(item => (
+                          <li>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
 
-              <!-- Testimonial Quote -->
-              <div class="border-l-4 border-primary pl-4 py-1.5 bg-[#FFF8EF]/30 rounded-r-2xl">
-                <p class="text-xs text-neutral-600 font-medium italic leading-relaxed">
-                  "Teknoppy's web application development transformed our platform. We went from technical nightmares to handling 5x traffic seamlessly. The 350% revenue growth speaks for itself."
-                </p>
-                <span class="block text-xs font-black text-neutral-900 mt-2">— Founder, E-Commerce Marketplace, Kochi</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Case 2 (SaaS Analytics Platform) -->
-          <div class="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-16 group relative">
-            <!-- Left: Mockup Window -->
-            <div class="w-full lg:w-[48%] relative z-10">
-              <!-- Glow -->
-              <div class="absolute inset-0 bg-gradient-to-tr from-emerald-500/20 to-teal-500/20 rounded-[2rem] scale-105 opacity-0 group-hover:opacity-100 transition-all duration-700 blur-xl"></div>
-
-              <!-- Browser -->
-              <div class="relative bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.04)] border border-neutral-100 overflow-hidden transform group-hover:-translate-y-1.5 transition-all duration-500">
-                <div class="h-10 bg-neutral-50 border-b border-neutral-100/80 flex items-center px-4 gap-2">
-                  <div class="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
-                  <div class="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
-                  <div class="w-3 h-3 rounded-full bg-[#27C93F]"></div>
-                </div>
-                <div class="aspect-[16/10] bg-[#0c0c0e] relative overflow-hidden flex flex-col items-center justify-center p-8 text-center">
-                  <!-- Abstract mesh -->
-                  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-emerald-500/10 via-transparent to-transparent"></div>
-                  <span class="text-xs font-black text-emerald-400 uppercase tracking-widest mb-3">B2B SaaS Analytics</span>
-                  <span class="text-4xl sm:text-5xl font-black text-white leading-none mb-3">400%</span>
-                  <span class="text-xs text-neutral-400 uppercase tracking-wider font-semibold">Customer & MRR Growth</span>
+                  {/* Testimonial Quote */}
+                  <div class="border-l-4 border-primary pl-4 py-1.5 bg-[#FFF8EF]/30 rounded-r-2xl">
+                    <p class="text-xs text-neutral-600 font-medium italic leading-relaxed">
+                      "{block.quote}"
+                    </p>
+                    <span class="block text-xs font-black text-neutral-900 mt-2">— {block.author}</span>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <!-- Right: Content -->
-            <div class="w-full lg:w-[52%] space-y-6">
-              <div>
-                <span class="text-xs font-black text-primary uppercase tracking-widest">Case Study 02</span>
-                <h3 class="text-2xl font-black text-neutral-900 mt-1">SaaS Analytics Platform: Enterprise Scale in 12 Months</h3>
-              </div>
-              <p class="text-sm text-neutral-500 leading-relaxed font-medium">
-                B2B SaaS providing an analytics dashboard for e-commerce businesses. Started with an MVP, scaling to enterprise customers with complex requirements — multi-tenant data isolation, real-time analytics for 1M+ events daily per customer, enterprise security and compliance, flexible billing, integration APIs, and sub-second dashboard load times.
-              </p>
-
-              <div class="grid sm:grid-cols-2 gap-4">
-                <div class="bg-neutral-50/50 rounded-2xl p-5 border border-neutral-100">
-                  <h4 class="text-xs font-black text-neutral-900 uppercase tracking-wider mb-2">Our Approach</h4>
-                  <ul class="space-y-1.5 text-xs text-neutral-500 font-semibold list-disc pl-4">
-                    <li>Multi-tenant architecture with real-time data processing (Apache Kafka)</li>
-                    <li>TimescaleDB for analytics, Elasticsearch for search</li>
-                    <li>React + D3.js for visualizations</li>
-                    <li>Node.js + GraphQL for APIs on AWS infrastructure</li>
-                  </ul>
-                </div>
-                <div class="bg-neutral-50/50 rounded-2xl p-5 border border-neutral-100">
-                  <h4 class="text-xs font-black text-neutral-900 uppercase tracking-wider mb-2">The Results</h4>
-                  <ul class="space-y-1.5 text-xs text-neutral-500 font-semibold list-disc pl-4">
-                    <li>Customers 100 → 500 (400% growth), MRR Rs. 10L → Rs. 50L (400% growth)</li>
-                    <li>Handles 1M+ data points per customer, &lt;1 second latency, 99.99% uptime</li>
-                    <li>95% NPS score, enterprise contracts Rs. 1L–10L annually, &lt;2% churn</li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- Testimonial Quote -->
-              <div class="border-l-4 border-primary pl-4 py-1.5 bg-[#FFF8EF]/30 rounded-r-2xl">
-                <p class="text-xs text-neutral-600 font-medium italic leading-relaxed">
-                  "Teknoppy's expertise in SaaS architecture and scalability enabled us to serve enterprise customers. Their professional approach to development is exactly what we needed."
-                </p>
-                <span class="block text-xs font-black text-neutral-900 mt-2">— CEO, SaaS Analytics Company, Bangalore</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Case 3 (Healthcare Management System) -->
-          <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 group relative">
-            <!-- Left: Mockup Window -->
-            <div class="w-full lg:w-[48%] relative z-10">
-              <!-- Glow -->
-              <div class="absolute inset-0 bg-gradient-to-tr from-violet-500/20 to-purple-500/20 rounded-[2rem] scale-105 opacity-0 group-hover:opacity-100 transition-all duration-700 blur-xl"></div>
-
-              <!-- Browser -->
-              <div class="relative bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.04)] border border-neutral-100 overflow-hidden transform group-hover:-translate-y-1.5 transition-all duration-500">
-                <div class="h-10 bg-neutral-50 border-b border-neutral-100/80 flex items-center px-4 gap-2">
-                  <div class="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
-                  <div class="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
-                  <div class="w-3 h-3 rounded-full bg-[#27C93F]"></div>
-                </div>
-                <div class="aspect-[16/10] bg-[#0c0c0e] relative overflow-hidden flex flex-col items-center justify-center p-8 text-center">
-                  <!-- Abstract mesh -->
-                  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-violet-500/10 via-transparent to-transparent"></div>
-                  <span class="text-xs font-black text-violet-400 uppercase tracking-widest mb-3">Healthcare Network</span>
-                  <span class="text-4xl sm:text-5xl font-black text-white leading-none mb-3">200+</span>
-                  <span class="text-xs text-neutral-400 uppercase tracking-wider font-semibold">Clinics Served</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Right: Content -->
-            <div class="w-full lg:w-[52%] space-y-6">
-              <div>
-                <span class="text-xs font-black text-primary uppercase tracking-widest">Case Study 03</span>
-                <h3 class="text-2xl font-black text-neutral-900 mt-1">Healthcare Management System: HIPAA Compliance in Production</h3>
-              </div>
-              <p class="text-sm text-neutral-500 leading-relaxed font-medium">
-                Healthcare provider network managing patient data across 200+ clinics in Kerala. Needed a secure, compliant system modernization with HIPAA compliance, secure patient-doctor communication, appointment scheduling at scale, electronic health records (EHR), telemedicine, integration with existing systems, complete audit trails, and 24/7 availability.
-              </p>
-
-              <div class="grid sm:grid-cols-2 gap-4">
-                <div class="bg-neutral-50/50 rounded-2xl p-5 border border-neutral-100">
-                  <h4 class="text-xs font-black text-neutral-900 uppercase tracking-wider mb-2">Our Approach</h4>
-                  <ul class="space-y-1.5 text-xs text-neutral-500 font-semibold list-disc pl-4">
-                    <li>End-to-end encryption, role-based access control (RBAC), comprehensive audit logging</li>
-                    <li>Multi-factor authentication, regular security testing</li>
-                    <li>SOC 2 Type II certification, HIPAA Business Associate Agreement</li>
-                    <li>Patient management, EHR, scheduling, secure messaging, telemedicine video, prescription, billing/insurance, and mobile apps</li>
-                  </ul>
-                </div>
-                <div class="bg-neutral-50/50 rounded-2xl p-5 border border-neutral-100">
-                  <h4 class="text-xs font-black text-neutral-900 uppercase tracking-wider mb-2">The Results</h4>
-                  <ul class="space-y-1.5 text-xs text-neutral-500 font-semibold list-disc pl-4">
-                    <li>200+ facilities, 50,000+ patients monthly, 10,000+ appointments weekly, 99.99% uptime</li>
-                    <li>HIPAA verified, zero data breaches, SOC 2 certified, zero violations in 2+ years</li>
-                    <li>98% patient satisfaction, 95% doctor adoption, 60% telemedicine adoption</li>
-                    <li>40% admin burden reduction, Rs. 50L annual savings, Rs. 1Cr+ annual telemedicine revenue</li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- Testimonial Quote -->
-              <div class="border-l-4 border-primary pl-4 py-1.5 bg-[#FFF8EF]/30 rounded-r-2xl">
-                <p class="text-xs text-neutral-600 font-medium italic leading-relaxed">
-                  "Teknoppy's expertise in secure healthcare development and compliance was invaluable. Our patients trust the system, doctors rely on it daily. Successfully serving 200+ facilities with zero incidents."
-                </p>
-                <span class="block text-xs font-black text-neutral-900 mt-2">— Medical Director, Healthcare Network, Kerala</span>
-              </div>
-            </div>
-          </div>
+            );
+          })}
 
         </div>
       </div>
@@ -759,15 +483,15 @@ const faqSchema = {
             Testimonials
           </div>
           <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
-            What Our <span class="text-primary">Clients Say</span> About Teknoppy
+            {page.testimonials.headingPre} <span class="text-primary">{page.testimonials.headingHighlight}</span> {page.testimonials.headingPost}
           </h2>
           <p class="text-neutral-500 font-medium mt-3 text-base">
-            Real feedback from local and global companies who scaled their businesses using our web application development services.
+            {page.testimonials.intro}
           </p>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {testimonials.map(item => (
+          {page.testimonials.items.map(item => (
             <div class="bg-white border border-neutral-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between">
               <div>
                 <div class="flex gap-1 text-[#F9AE42] mb-4">
@@ -799,15 +523,15 @@ const faqSchema = {
             Our Portfolio
           </div>
           <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
-            Featured Projects — <span class="text-primary">Real Applications</span> We Have Built
+            {page.projects.headingPre} <span class="text-primary">{page.projects.headingHighlight}</span> {page.projects.headingPost}
           </h2>
           <p class="text-neutral-500 font-medium mt-3 text-base">
-            An overview of successful web application projects delivered for clients across Kochi, Kerala, and beyond — each built with a clear business goal, scalable architecture, and enterprise-grade security.
+            {page.projects.intro}
           </p>
         </div>
 
         <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
-          {projects.map(proj => (
+          {page.projects.items.map(proj => (
             <div class="bg-white rounded-3xl border border-neutral-200/60 p-6 shadow-sm flex flex-col justify-between">
               <div>
                 <div class="flex items-center justify-between mb-4">
@@ -837,15 +561,15 @@ const faqSchema = {
             Support & FAQs
           </div>
           <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
-            Frequently Asked Questions — <span class="text-primary">Web Application Development in Kochi</span>
+            {page.faqs.headingPre} <span class="text-primary">{page.faqs.headingHighlight}</span>
           </h2>
           <p class="text-neutral-500 font-medium mt-3 text-base">
-            Get quick answers to standard questions about custom web application development pricing, process, and technology.
+            {page.faqs.intro}
           </p>
         </div>
 
         <div class="max-w-4xl mx-auto space-y-4">
-          {faqs.map(faq => (
+          {page.faqs.items.map(faq => (
             <details class="group bg-white rounded-2xl border border-neutral-200/60 p-6 [&_summary::-webkit-details-marker]:hidden">
               <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
                 <h3 class="text-sm sm:text-base font-bold text-neutral-850 pr-4">

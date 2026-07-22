@@ -1,0 +1,153 @@
+{
+  "hero": {
+    "headlines": [
+      { "lead": "Built to", "highlight": "Rank." },
+      { "lead": "Designed to", "highlight": "Convert." },
+      { "lead": "Engineered to", "highlight": "Grow." }
+    ],
+    "body": "We create SEO-driven websites that help Kerala businesses increase visibility, generate qualified leads, and achieve measurable growth.",
+    "primaryCta": { "label": "Book a Free Consultation", "href": "#consultation" },
+    "secondaryCta": { "label": "View Our Portfolio", "href": "#portfolio" },
+    "trustedLabel": "Trusted by Brands Across the World"
+  },
+  "about": {
+    "badge": "Who We Are",
+    "headingAccent": "Kerala's Professional",
+    "headingRest": "Web Design Agency",
+    "intro": "Teknoppy Kerala is a full-service digital agency founded and headquartered in Kochi, serving businesses across Kerala, Thrissur, and South India. Led by Sanal and a dedicated team of designers, developers, and SEO strategists, we have been building high-performance websites since 2018.",
+    "paragraphs": [
+      "As a professional web design agency Kerala businesses have trusted for nearly a decade, we bring together creative design and technical precision to deliver websites that rank, convert, and represent your brand with authority. From custom website design Kerala startups need to enterprise-level web development Kerala corporations demand — our work spans industries, project sizes, and business goals.",
+      "We have delivered over 120 successful websites across healthcare, retail, hospitality, education, real estate, and manufacturing sectors. Every project begins with strategy and ends with measurable results."
+    ],
+    "stats": [
+      {
+        "value": 120,
+        "suffix": "+",
+        "label": "Websites Delivered",
+        "sublabel": "High-performance products built to rank and convert."
+      },
+      {
+        "value": 100,
+        "suffix": "+",
+        "label": "Kerala Clients",
+        "sublabel": "Trusted by local businesses and brands since 2018."
+      },
+      {
+        "value": 8,
+        "suffix": "+",
+        "label": "Years Experience",
+        "sublabel": "Nearly a decade of delivering custom web design."
+      },
+      {
+        "value": 12,
+        "suffix": "+",
+        "label": "Industries Covered",
+        "sublabel": "Broad sector expertise from retail to corporate portals."
+      }
+    ]
+  },
+  "services": {
+    "badge": "What We Do",
+    "headingLead": "Our",
+    "headingAccent1": "Website Design",
+    "headingMid": "and",
+    "headingAccent2": "Digital Services",
+    "headingRest": "in Kerala",
+    "intro": "As a leading Web Design Company in Kerala, Teknoppy offers a complete range of digital services — from website design and development to SEO, ecommerce, and online marketing solutions Kerala businesses need to compete and grow in 2026.",
+    "cards": [
+      {
+        "title": "Website Design and Development",
+        "description": "We create responsive web design Kerala businesses are proud to show — clean, fast, mobile-optimised, and built to convert. From corporate portals to business landing pages, every website we design is engineered for performance and search visibility.",
+        "linkText": "Explore our web design services in Kochi",
+        "href": "/web-design-company-kochi/"
+      },
+      {
+        "title": "WordPress Website Development",
+        "description": "Our WordPress development team builds scalable, secure, and easily manageable websites for Kerala businesses of all sizes. Whether you need a fresh build or a complete platform migration, we deliver WordPress solutions that perform reliably from day one.",
+        "linkText": "Explore WordPress development",
+        "href": "/wordpress-development-company-kochi/"
+      },
+      {
+        "title": "Ecommerce Website Development",
+        "description": "We design and develop online stores that sell. From WooCommerce to Shopify, our business website design Kerala ecommerce solutions are built for seamless shopping experiences, secure transactions, and maximum conversion rates.",
+        "linkText": "Explore ecommerce website development",
+        "href": "/ecommerce-website-development-company-kochi/"
+      },
+      {
+        "title": "Web Application Development",
+        "description": "Our team builds powerful custom web applications — from SaaS platforms and CRM systems to ERP portals and booking engines. We engineer solutions that automate processes and solve real business problems for Kerala companies.",
+        "linkText": "Explore web application development",
+        "href": "/web-application-development-company-kochi/"
+      },
+      {
+        "title": "SEO and Search Visibility",
+        "description": "Every website we build starts with SEO-friendly website design Kerala businesses need to rank on Google's first page. Our SEO services cover technical SEO, on-page optimisation, Core Web Vitals, local SEO, and ecommerce SEO — all under one roof.",
+        "linkText": "Explore professional SEO services",
+        "href": "#"
+      },
+      {
+        "title": "UI UX Design",
+        "description": "Great design is invisible — it simply works. Our UI UX team creates mobile-friendly website design Kerala users find intuitive, engaging, and conversion-ready. From wireframes and prototypes to final pixel-perfect interfaces, we design digital experiences that retain users.",
+        "linkText": "Explore UI UX design",
+        "href": "#"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "badge": "The Teknoppy Advantage",
+    "headingLead": "Why Kerala Businesses Choose",
+    "headingAccent": "Teknoppy",
+    "headingRest": "as Their Web Design Partner",
+    "intro": "We combine high-performance engineering with custom design to build websites that look stunning, load fast, and generate actual business results.",
+    "features": [
+      {
+        "title": "Every Website We Build Is SEO-Friendly from Day One",
+        "description": "We do not bolt SEO on after launch. Every project begins with keyword research, structured data planning, and Core Web Vitals benchmarking — making SEO-friendly website design Kerala businesses need a foundational principle, not an afterthought."
+      },
+      {
+        "title": "A Proven Track Record Kerala Businesses Rely On",
+        "description": "As a Web Design Company in Kerala with over 120 completed projects, our work speaks louder than promises. Clients across Kochi, Thrissur, Kozhikode, and Ernakulam have seen measurable improvements in search rankings, lead generation, and website engagement within the first 90 days of launch."
+      },
+      {
+        "title": "Affordable Website Design Without Compromising Quality",
+        "description": "We believe every Kerala business — from a Thrissur-based startup to a Kochi enterprise — deserves a world-class website at a fair price. Our affordable website design Kerala packages are transparent, clearly scoped, and delivered on time with zero hidden costs."
+      },
+      {
+        "title": "We Understand the Kerala Business Landscape",
+        "description": "Our team lives and works in Kerala. We understand how Kerala buyers search online, what local businesses need to stand out in competitive markets, and how to position your brand for both statewide and city-level search visibility."
+      },
+      {
+        "title": "From Strategy to Launch — We Handle Everything",
+        "description": "Design, development, content integration, SEO setup, speed optimisation, schema markup, and post-launch support — Teknoppy delivers a technically sound, conversion-focused website under one roof so you never need to coordinate multiple vendors."
+      },
+      {
+        "title": "We Are With You After Your Website Goes Live",
+        "description": "Our relationship does not end at launch. Every client receives dedicated post-launch support, performance monitoring, and proactive maintenance to ensure your website continues to rank, load fast, and convert visitors into leads long after going live."
+      }
+    ]
+  },
+  "faq": {
+    "badge": "Have Questions?",
+    "headingLead": "Frequently Asked Questions —",
+    "headingAccent": "Web Design Company in Kerala",
+    "intro": "Find quick answers to common questions about our website design and digital solutions in Kerala.",
+    "items": [
+      {
+        "question": "Which web design company in Kerala is reliable?",
+        "answer": "Teknoppy has been delivering professional website design and development from our Kochi office since 2018. With over 120 completed projects and a verified 5-star rating on Google, we are one of Kerala's most trusted digital agencies — backed by real client results, not just claims."
+      },
+      {
+        "question": "How to choose a web design company in Kerala?",
+        "answer": "Look for three things — a verified portfolio with real Kerala clients, demonstrated SEO knowledge built into the design process, and clear post-launch support terms. A good Kerala web design agency delivers not just a website but measurable business outcomes including search rankings and lead generation."
+      },
+      {
+        "question": "What does a web design company in Kerala provide?",
+        "answer": "A full-service Web Design Company in Kerala provides website design, custom development, ecommerce solutions, SEO integration, UI UX design, web application development, and ongoing technical support — everything a Kerala business needs to build, rank, and grow its digital presence."
+      },
+      {
+        "question": "How much does website design cost in Kerala?",
+        "answer": "Website design costs in Kerala vary based on scope — a business website typically starts from a clearly scoped package price while ecommerce and web application projects are quoted based on features and complexity. View our detailed pricing to understand which package suits your business."
+      }
+    ]
+  }
+}

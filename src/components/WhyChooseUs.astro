@@ -1,45 +1,11 @@
 ---
 import { SearchCheck, LineChart, BadgeDollarSign, MapPin, Rocket, LifeBuoy } from 'lucide-react';
+import home from "../data/home.json";
 
-const features = [
-  {
-    title: "Every Website We Build Is SEO-Friendly from Day One",
-    description: "We do not bolt SEO on after launch. Every project begins with keyword research, structured data planning, and Core Web Vitals benchmarking — making SEO-friendly website design Kerala businesses need a foundational principle, not an afterthought.",
-    icon: SearchCheck,
-    theme: "primary"
-  },
-  {
-    title: "A Proven Track Record Kerala Businesses Rely On",
-    description: "As a Web Design Company in Kerala with over 120 completed projects, our work speaks louder than promises. Clients across Kochi, Thrissur, Kozhikode, and Ernakulam have seen measurable improvements in search rankings, lead generation, and website engagement within the first 90 days of launch.",
-    icon: LineChart,
-    theme: "secondary"
-  },
-  {
-    title: "Affordable Website Design Without Compromising Quality",
-    description: "We believe every Kerala business — from a Thrissur-based startup to a Kochi enterprise — deserves a world-class website at a fair price. Our affordable website design Kerala packages are transparent, clearly scoped, and delivered on time with zero hidden costs.",
-    icon: BadgeDollarSign,
-    theme: "black"
-  },
-  {
-    title: "We Understand the Kerala Business Landscape",
-    description: "Our team lives and works in Kerala. We understand how Kerala buyers search online, what local businesses need to stand out in competitive markets, and how to position your brand for both statewide and city-level search visibility.",
-    icon: MapPin,
-    theme: "primary"
-  },
-  {
-    title: "From Strategy to Launch — We Handle Everything",
-    description: "Design, development, content integration, SEO setup, speed optimisation, schema markup, and post-launch support — Teknoppy delivers a technically sound, conversion-focused website under one roof so you never need to coordinate multiple vendors.",
-    icon: Rocket,
-    theme: "secondary"
-  },
-  {
-    title: "We Are With You After Your Website Goes Live",
-    description: "Our relationship does not end at launch. Every client receives dedicated post-launch support, performance monitoring, and proactive maintenance to ensure your website continues to rank, load fast, and convert visitors into leads long after going live.",
-    icon: LifeBuoy,
-    theme: "primary"
-  }
-];
+const features = home.whyChooseUs.features;
 
+// Feature icons stay hardcoded here and are zipped with the JSON features by index.
+const icons = [SearchCheck, LineChart, BadgeDollarSign, MapPin, Rocket, LifeBuoy];
 ---
 
 <section class="py-24 md:py-32 bg-cream relative">
@@ -54,13 +20,13 @@ const features = [
       <div class="lg:col-span-5 lg:sticky lg:top-32 space-y-8">
         <div>
           <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F9AE42]/10 border border-[#F9AE42]/30 text-primary text-sm font-bold uppercase tracking-wider mb-6 shadow-sm transform -rotate-1">
-            The Teknoppy Advantage
+            {home.whyChooseUs.badge}
           </div>
           <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-neutral-900 leading-[1.15] mb-6">
-            Why Kerala Businesses Choose <span class="text-primary">Teknoppy</span> as Their Web Design Partner
+            {home.whyChooseUs.headingLead} <span class="text-primary">{home.whyChooseUs.headingAccent}</span> {home.whyChooseUs.headingRest}
           </h2>
           <p class="text-neutral-600 text-base leading-relaxed">
-            We combine high-performance engineering with custom design to build websites that look stunning, load fast, and generate actual business results.
+            {home.whyChooseUs.intro}
           </p>
         </div>
 
@@ -87,15 +53,17 @@ const features = [
 
       <!-- Right Feature Cards Column -->
       <div class="lg:col-span-7 space-y-6">
-        {features.map((feature, index) => (
-          <div 
+        {features.map((feature, index) => {
+          const Icon = icons[index];
+          return (
+          <div
             class="relative bg-white border border-neutral-100/80 hover:border-primary/30 rounded-2xl p-8 transition-all duration-500 group flex flex-col justify-between shadow-sm hover:shadow-[0_20px_50px_rgba(240,90,44,0.06)] hover:-translate-y-1 advantage-card opacity-0 translate-y-8 w-full"
             style={`transition-delay: ${index * 60}ms`}
           >
             <div>
               <div class="flex justify-between items-start mb-6">
                 <div class="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center transition-all duration-500 group-hover:bg-primary group-hover:scale-110 group-hover:shadow-[0_6px_15px_rgba(240,90,44,0.25)]">
-                  <feature.icon className="w-5 h-5 text-primary group-hover:text-white transition-colors duration-500" />
+                  <Icon className="w-5 h-5 text-primary group-hover:text-white transition-colors duration-500" />
                 </div>
                 
                 <span class="text-xs font-mono font-semibold text-neutral-300 group-hover:text-primary transition-colors">
@@ -112,7 +80,8 @@ const features = [
               </p>
             </div>
           </div>
-        ))}
+          );
+        })}
       </div>
 
     </div>

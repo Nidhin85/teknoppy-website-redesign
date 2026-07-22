@@ -1,0 +1,339 @@
+{
+  "meta": {
+    "title": "Web Design Company in Kochi — Teknoppy | Custom Website Design & Development",
+    "description": "Teknoppy is Kochi's trusted web design company, building fast, mobile-first, and SEO-optimised websites for Kerala businesses. Get a free consultation."
+  },
+  "hero": {
+    "badge": "Kerala's Premier Digital Studio",
+    "headingLead": "Web Design",
+    "headingAccent": "Company",
+    "headingRest": "in Kochi",
+    "body": "Custom · Mobile-First · SEO-Ready Websites for Kerala Businesses Since 2018. We build digital platforms that rank, convert, and scale.",
+    "ctaPrimary": { "label": "Book a Free Audit", "href": "#contact" },
+    "ctaSecondary": { "label": "Explore Our Services", "href": "#services" },
+    "stats": [
+      { "value": "120+", "label": "Website Projects" },
+      { "value": "2018", "label": "Established" },
+      { "value": "Page 1", "label": "Google Results" },
+      { "value": "Kerala", "label": "Wide Coverage" }
+    ]
+  },
+  "whyTeknoppy": {
+    "badge": "Trusted Partners",
+    "headingLead": "Why Kochi's Best Brands",
+    "headingAccent": "Choose Teknoppy",
+    "intro": "We strip away generic templates to engineer custom-built high-performance web platforms designed to rank, scale, and convert visitors into clients.",
+    "cards": [
+      {
+        "tag": "01 . Strategy",
+        "title": "Custom Design, Not Templates",
+        "description": "Every project begins with a custom wireframe mapped to your goals. Our in-house Kochi team covers custom layout designs, development, content, on-page SEO, and schema setup under one roof."
+      },
+      {
+        "tag": "02 . Rankings",
+        "title": "A Google-Aware Studio",
+        "description": "Every website is benchmarked against Core Web Vitals, designed with semantic markup, and launched with live schemas so your site enters the Google index ready to rank immediately."
+      },
+      {
+        "tag": "03 . Clarity",
+        "title": "Full Transparency",
+        "description": "Detailed timelines, clearly defined revision rounds, real estimates, and post-launch maintenance. No surprise charges and no vanishing after handover."
+      },
+      {
+        "tag": "04 . Partnership",
+        "title": "A Local Kochi Team",
+        "description": "Teknoppy is headquartered in Kochi, Kerala. When you need a quick consultation, design alignment, or urgent support, our local team is just one message away."
+      }
+    ]
+  },
+  "services": {
+    "badge": "Services Scope",
+    "headingLead": "Our",
+    "headingAccent": "Website Design",
+    "headingRest": "Services in Kochi",
+    "intro": "As a full-service web design company in Kochi, Teknoppy delivers the following specialised services. Each links to a dedicated page with deeper detail, real project examples, and pricing context.",
+    "cards": [
+      {
+        "title": "Responsive Web Design",
+        "desc": "Pixel-perfect, mobile-first websites that look great and perform flawlessly across all devices and screen sizes."
+      },
+      {
+        "title": "Business Website Development",
+        "desc": "Strategic, fast, and scalable websites for SMEs and growing businesses built on clean code and optimised for conversions."
+      },
+      {
+        "title": "Corporate Website Development",
+        "desc": "Enterprise-grade websites with multi-department structure, team sections, investor pages, and custom CMS backend."
+      },
+      {
+        "title": "Landing Page Design",
+        "desc": "High-converting landing pages for ads, product launches, and campaigns — crafted to drive leads and results."
+      },
+      {
+        "title": "Website Redesign Services",
+        "desc": "Modern, user-friendly redesigns that improve performance while preserving your SEO rankings and brand identity."
+      },
+      {
+        "title": "Website Maintenance Services",
+        "desc": "Ongoing support with updates, security, backups, uptime monitoring, speed optimisation, and more — so your site stays healthy."
+      },
+      {
+        "title": "SEO-Friendly Website Development",
+        "desc": "Built with clean code, schema markup, optimised content structure, and lightning-fast performance for better rankings."
+      },
+      {
+        "title": "CMS Website Development",
+        "desc": "Custom WordPress solutions that give you full control to manage pages, blogs, products, and more without touching code."
+      }
+    ]
+  },
+  "process": {
+    "badge": "• Our Process •",
+    "headingLead": "Our",
+    "headingAccent": "Web Design Process",
+    "headingRest": "— How We Work",
+    "intro": "Our professional web design process follows six clearly defined stages, ensuring every project is delivered on time, within budget, and built precisely to brief.",
+    "steps": [
+      {
+        "step": "01",
+        "title": "Discovery & Goal Mapping",
+        "desc": "A structured brief covering goals, audience, competitors, design direction, and technical requirements. We map your geographic service area for local SEO from the start."
+      },
+      {
+        "step": "02",
+        "title": "Sitemap & URL Architecture",
+        "desc": "Full page structure, URL plan, and internal-linking hierarchy defined before design. Prevents keyword cannibalization and ensures clean crawlability."
+      },
+      {
+        "step": "03",
+        "title": "Wireframing & UX Design",
+        "desc": "Low-fidelity wireframes first, then high-fidelity mockups. You approve the layout before a line of code is written — preventing costly late revisions."
+      },
+      {
+        "step": "04",
+        "title": "Development & Schema",
+        "desc": "Clean semantic HTML/CSS with mobile-first breakpoints. LocalBusiness, Organisation, FAQPage, BreadcrumbList, and Service schema implemented during development."
+      },
+      {
+        "step": "05",
+        "title": "SEO Setup & Speed",
+        "desc": "Title tags, meta descriptions, H1/H2 hierarchy, image alt text, Core Web Vitals scoring, sitemap generation, and Google Search Console verification."
+      },
+      {
+        "step": "06",
+        "title": "Launch, Testing & Handover",
+        "desc": "Full cross-browser and cross-device testing, sitemap submission to Google, and a structured handover document covering CMS access and maintenance."
+      }
+    ]
+  },
+  "pricing": {
+    "badge": "Pricing Guide",
+    "headingLead": "Website Design",
+    "headingAccent": "Pricing in Kochi",
+    "intro": "Transparent pricing is central to how Teknoppy builds client trust. Below is a realistic guide to website design costs in Kochi by project type. Every project receives a written quote before work begins.",
+    "footnote": "Final pricing depends on pages, custom functionality, content needs, integration complexity, and timeline. For a full breakdown visit the Web Design Pricing Kerala page or use the Website Cost Calculator.",
+    "rows": [
+      { "type": "Basic Business Website (5–8 pages)", "price": "Rs. 25,000 – 50,000" },
+      { "type": "Professional Multi-Page Website (10–20 pages)", "price": "Rs. 50,000 – 1,20,000" },
+      { "type": "Corporate Website with CMS (20–40 pages)", "price": "Rs. 1,20,000 – 3,00,000" },
+      { "type": "Landing Page (1–3 pages, conversion-focused)", "price": "Rs. 15,000 – 40,000" },
+      { "type": "Website Redesign (existing site overhaul)", "price": "Rs. 30,000 – 1,50,000" },
+      { "type": "Ongoing Monthly Maintenance", "price": "Rs. 3,000 – 10,000 / mo" }
+    ]
+  },
+  "industries": {
+    "badge": "Our Verticals",
+    "headingAccent": "Industries We Design",
+    "headingRest": "Websites For in Kochi & Kerala",
+    "intro": "A hospital website serves completely different user intent than a restaurant website — and we design for that specific intent every time.",
+    "items": [
+      { "name": "Startups & New Business", "desc": "Credibility-building launch websites that convert early-stage visitors into qualified leads." },
+      { "name": "Hospitals & Healthcare", "desc": "Trust-first sites with appointment booking, doctor profiles, and structured health content." },
+      { "name": "Real Estate Agencies", "desc": "Property listings with search filters, maps, enquiry forms, and agent profiles." },
+      { "name": "Restaurants & Food", "desc": "Mobile-first sites with menu integration, reservations, and Google Maps connectivity." },
+      { "name": "Schools & Education", "desc": "Structured sites with admission forms, faculty pages, and parent information portals." },
+      { "name": "Tourism & Travel", "desc": "Visually rich, conversion-focused sites with package listings and booking enquiry systems." },
+      { "name": "Professional Services", "desc": "High-authority sites for law firms, consultants, CAs, and financial advisors." },
+      { "name": "Manufacturing & B2B", "desc": "Corporate-grade B2B sites with product catalogues and enquiry architecture." },
+      { "name": "Multilingual Websites", "desc": "Bilingual builds for Malayalam-speaking and international audiences alike." }
+    ]
+  },
+  "caseStudies": {
+    "badge": "Success Stories",
+    "headingLead": "Our Web Design",
+    "headingAccent": "Case Studies",
+    "headingRest": "— Proven Results",
+    "intro": "See how we help local Kerala businesses transition from digital invisibility to high-performing conversion platforms.",
+    "blocks": [
+      {
+        "label": "Fintech Platform",
+        "metric": "+150%",
+        "metricSub": "Franchise Leads Generated",
+        "title": "Evosyz: Fintech Web Design That Generates Real Enquiries",
+        "intro": "Evosyz is a growing fintech company headquartered in Kochi. They approached Teknoppy to build a professional, trust-focused website for a regulated industry, and generate quality enquiries from prospective franchisees and financial partners across India.",
+        "approach": [
+          "UI/UX design — clean, mobile-first interface",
+          "Content structure — RBI-licensed clarity",
+          "Conversion optimisation — WhatsApp chat integrations",
+          "On-page SEO — metadata optimization"
+        ],
+        "results": [
+          "Increased franchise & partnership enquiries",
+          "Stronger local positioning & trust",
+          "Improved keyword organic visibility"
+        ],
+        "quote": "Being in the Fintech space, we needed a reliable partner. Teknoppy has done a great job creating an appealing website that represents our brand perfectly.",
+        "author": "— Vivek Menon, CTO, Evosyz",
+        "accent": "blue"
+      },
+      {
+        "label": "Healthcare & Wellness",
+        "metric": "Global",
+        "metricSub": "International Patient Bookings",
+        "title": "Greens Ayurveda: From Digital Invisibility to a Lead-Generating Website",
+        "intro": "Greens Ayurveda, based in Azhiyur, Calicut, offers Panchakarma therapies and practitioner training to clients across India and abroad. They partnered with Teknoppy to transform an outdated digital presence into a credible, conversion-focused platform.",
+        "approach": [
+          "UI/UX design — serene layout matching healing ethos",
+          "Content architecture — clean treatment & programme details",
+          "Local & organic SEO — Calicut targeting",
+          "Conversion flow — prominent booking CTAs"
+        ],
+        "results": [
+          "Measurable rise in inquiries, notably international",
+          "Higher user time-on-page",
+          "Steady organic growth for wellness keywords"
+        ],
+        "quote": "I have worked with many IT teams, but I am 100% happy with Teknoppy. Mr. Sanal is exceptionally supportive and customer-friendly.",
+        "author": "— Dr. Asghar, CEO, Greens Ayurveda",
+        "accent": "emerald"
+      }
+    ]
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "headingLead": "What Our",
+    "headingAccent": "Clients Say",
+    "headingRest": "About Teknoppy",
+    "intro": "Real feedback from local and global companies who scaled their businesses using our web design services.",
+    "items": [
+      {
+        "quote": "We now rank at the top of Google for our keywords and get many direct booking calls due to better visibility. Thank you Teknoppy for all the support.",
+        "author": "Biju Thomas",
+        "role": "CEO, Olives Resort, Wayanad"
+      },
+      {
+        "quote": "Being in the Fintech space, we needed a reliable partner. Teknoppy created an appealing website that represents our brand perfectly.",
+        "author": "Vivek Menon",
+        "role": "CTO, Evosyz, Kochi"
+      },
+      {
+        "quote": "Teknoppy was very intuitive in understanding our requirements. They made great digital collateral and now we are getting good outreach to the market.",
+        "author": "Shainesh Prakashan",
+        "role": "CEO, Exacore IT, Infopark Kochi"
+      },
+      {
+        "quote": "Thank you Teknoppy for a wonderful mobile app for my tarot channel. All functions work great and I am getting many subscribers.",
+        "author": "Rincy",
+        "role": "Astrologer & Psychic Healer, Australia"
+      },
+      {
+        "quote": "I have worked with many IT teams, but I am 100% happy with Teknoppy. No doubt, I recommend them with 100% satisfaction.",
+        "author": "Dr. Asghar",
+        "role": "CEO, Greens Ayurveda, Calicut"
+      }
+    ]
+  },
+  "projects": {
+    "badge": "Our Portfolio",
+    "headingLead": "Featured Projects —",
+    "headingAccent": "Real Websites",
+    "headingRest": "We Have Built",
+    "intro": "An overview of successful website projects delivered for clients across Kochi and Kerala — each built with a clear business goal, SEO-first architecture, and a mobile-first approach.",
+    "items": [
+      {
+        "name": "Evosyz",
+        "loc": "KOCHI · FINTECH",
+        "desc": "A modern, responsive, SEO-friendly corporate website communicating RBI-licensed services to franchisees and financial partners, with custom UI/UX, conversion-focused layout, and WhatsApp integration.",
+        "result": "Increased franchise enquiries, improved brand credibility, and stronger search visibility for fintech keywords in Kochi."
+      },
+      {
+        "name": "Greens Ayurveda",
+        "loc": "AZHIYUR, CALICUT · AYURVEDA",
+        "desc": "A calm, mobile-first, SEO-optimised wellness website with clear treatment pages, appointment enquiry forms, and structured content architecture for domestic and international visitors.",
+        "result": "A significant rise in international enquiries, improved time on page, and stronger organic visibility for Ayurvedic treatment keywords."
+      },
+      {
+        "name": "Olives Resort",
+        "loc": "WAYANAD · HOSPITALITY",
+        "desc": "A visually rich, conversion-focused hospitality website with property showcase pages, booking enquiry integration, and Google Maps connectivity.",
+        "result": "Top Google rankings for resort keywords and a measurable increase in direct booking calls (confirmed by CEO Biju Thomas)."
+      },
+      {
+        "name": "SIBP",
+        "loc": "KERALA · EDUCATION",
+        "desc": "A structured institutional website with admission enquiry forms, faculty sections, course listings, and an event calendar, built with clean URL architecture and local SEO.",
+        "result": "Increased franchise enquiries, improved brand credibility, and stronger search visibility for fintech keywords in Kochi."
+      },
+      {
+        "name": "Dream Abroad",
+        "loc": "KERALA · CONSULTANCY",
+        "desc": "A professional consultancy website with country-specific programme pages, student enquiry forms, and a trust-forward content structure built to convert prospective students.",
+        "result": "Significant lift in direct admissions inquiries and organic search rankings."
+      },
+      {
+        "name": "Mountbell",
+        "loc": "KOCHI · CORPORATE",
+        "desc": "A professional multi-page corporate website focused on clean layouts, fast load times, and a structured service architecture supporting business development.",
+        "result": "Stronger positioning as a credible corporate entity in Kochi."
+      }
+    ]
+  },
+  "faqs": {
+    "badge": "Support & FAQs",
+    "headingLead": "Frequently Asked Questions —",
+    "headingAccent": "Web Design in Kochi",
+    "intro": "Get quick answers to standard questions about custom website design pricing, process, and technical SEO features.",
+    "items": [
+      {
+        "q": "What does a web design company in Kochi charge for a business website?",
+        "a": "A professional business website typically costs between Rs. 25,000 and Rs. 1,20,000 depending on pages, features, and content complexity. Teknoppy provides detailed written quotes before any project begins."
+      },
+      {
+        "q": "How long does it take to design and launch a website in Kochi?",
+        "a": "A standard 8–15 page business website typically takes 3 to 5 weeks from discovery to launch. Larger corporate sites or custom functionality can take 6 to 10 weeks. A written timeline is provided at the start."
+      },
+      {
+        "q": "Does Teknoppy build SEO-friendly websites?",
+        "a": "Yes. Every website includes on-page SEO as standard — correct heading hierarchy, optimised title tags, meta descriptions, image alt text, schema markup, sitemap submission, and Search Console verification. Your site enters Google's index ready to rank."
+      },
+      {
+        "q": "Can I update my website myself after Teknoppy builds it?",
+        "a": "Yes. We build on WordPress CMS, giving you a simple dashboard to add pages, update content, and publish blog posts without technical knowledge. A full handover guide and optional training session are included."
+      },
+      {
+        "q": "Does Teknoppy design websites for businesses outside Kochi?",
+        "a": "Yes. We serve clients across Kerala including Thrissur, Calicut, Trivandrum, Palakkad, Ernakulam, and Kottayam, and work with India-wide clients on corporate and web application projects."
+      },
+      {
+        "q": "What schema markup does Teknoppy implement on every website?",
+        "a": "LocalBusiness, Organisation, Service, FAQPage, BreadcrumbList, and where applicable AggregateRating and Person schema. This helps qualify for Google rich results and AI answer engines like ChatGPT and Perplexity."
+      },
+      {
+        "q": "Will my website be mobile-friendly?",
+        "a": "Yes. Every website is built mobile-first — the mobile experience is designed and tested before desktop. Over 70% of Kerala web traffic comes from mobile, so this is non-negotiable."
+      },
+      {
+        "q": "Does Teknoppy provide website maintenance after launch?",
+        "a": "Yes. Monthly maintenance plans from Rs. 3,000 per month cover updates, security monitoring, speed checks, content edits, and technical fixes."
+      },
+      {
+        "q": "Do you offer multilingual website development?",
+        "a": "Yes. We build multilingual websites for businesses wanting to reach both Malayalam-speaking and international audiences — especially valuable for tourism, Ayurveda, and export-oriented businesses."
+      },
+      {
+        "q": "How do I get started with Teknoppy?",
+        "a": "Contact us via the Contact page, request a quote, or book a free 30-minute consultation. We respond to all enquiries within one business day."
+      }
+    ]
+  }
+}
