@@ -58,16 +58,25 @@
           return gate;
         }
 
+        var hideTimer = null;
         function sync() {
-          if (findLoginBtn()) ensureGate().style.display = 'flex';
-          else if (gate) gate.style.display = 'none';
+          if (findLoginBtn()) {
+            // Login screen present → cover it. Cancel any pending hide (transient re-render).
+            if (hideTimer) { clearTimeout(hideTimer); hideTimer = null; }
+            ensureGate().style.display = 'flex';
+          } else if (gate && gate.style.display !== 'none' && !hideTimer) {
+            // Button gone — could be a Svelte re-render blip or a real login. Debounce.
+            hideTimer = setTimeout(function () {
+              hideTimer = null;
+              if (!findLoginBtn()) gate.style.display = 'none';
+            }, 1200);
+          }
         }
 
         try {
           new MutationObserver(sync).observe(document.documentElement, { childList: true, subtree: true });
         } catch (e) {}
-        var n = 0;
-        var iv = setInterval(function () { sync(); if (++n > 200) clearInterval(iv); }, 150);
+        setInterval(sync, 300);
         sync();
       })();
     </script>
