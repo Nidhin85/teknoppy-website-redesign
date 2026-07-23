@@ -13,6 +13,29 @@
   </head>
   <body>
     <!-- Sveltia CMS (Decap-compatible). Config: /admin/config.yml -->
-    <script is:inline src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
+    <script is:inline src="https://unpkg.com/@sveltia/cms@0.172.4/dist/sveltia-cms.js"></script>
+
+    <!-- Rebrand the login screen as a simple password login (hide GitHub wording). -->
+    <script is:inline>
+      (function () {
+        function customize() {
+          document.querySelectorAll('span, div, button, a, h1, h2, p').forEach(function (el) {
+            if (el.children.length) return;
+            var t = (el.textContent || '').trim();
+            if (t === 'Sign In with GitHub') el.textContent = 'Log in';
+            else if (t === 'Sveltia CMS') el.textContent = 'Teknoppy CMS';
+            else if (t === 'Sign In Using Access Token') {
+              var b = el.closest('button') || el.closest('a') || el.parentElement;
+              if (b) b.style.display = 'none';
+            }
+          });
+        }
+        try {
+          new MutationObserver(customize).observe(document.documentElement, { childList: true, subtree: true });
+        } catch (e) {}
+        var n = 0;
+        var iv = setInterval(function () { customize(); if (++n > 60) clearInterval(iv); }, 200);
+      })();
+    </script>
   </body>
 </html>

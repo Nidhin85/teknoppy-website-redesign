@@ -17,6 +17,7 @@ public_folder: "/uploads"
 
 site_url: https://tekenoppy.vercel.app
 display_url: https://tekenoppy.vercel.app
+logo_url: /logo.svg
 
 collections:
   - name: pages
