@@ -2,8 +2,12 @@ backend:
   name: github
   repo: Lymdata-Labs-Private-Limited/tekenoppy
   branch: main
-  # No OAuth app needed — at /admin/ choose "Use Personal Access Token" and paste a
-  # GitHub fine-grained PAT scoped to this repo with Contents: Read and write.
+  base_url: https://tekenoppy.vercel.app
+  auth_endpoint: api/auth
+  # Simple password login: clicking "Sign In with GitHub" at /admin/ opens a password
+  # prompt served by /api/auth. Editors never touch GitHub. One-time owner setup:
+  # set CMS_PASSWORD (any password) and CMS_GITHUB_TOKEN (a GitHub token with repo
+  # Contents: read/write) in Vercel → Settings → Environment Variables, then redeploy.
 
 # Lets you run the CMS locally against local files (npx @sveltia/cms-server) without login.
 local_backend: true
