@@ -1,6 +1,8 @@
 ---
 // Sveltia CMS admin — served as an Astro route so /admin/ works in dev AND prod.
 // Config lives at /public/admin/config.yml (served at /admin/config.yml).
+// A Teknoppy-branded gate overlays Sveltia's default (GitHub-worded) login screen,
+// so editors only see a simple "Log in" button.
 ---
 
 <!doctype html>
@@ -10,37 +12,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <title>Content Manager — Teknoppy</title>
+    <style>
+      #tk-gate {
+        position: fixed; inset: 0; z-index: 2147483647; display: none;
+        align-items: center; justify-content: center; background: #f4f4f5;
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      }
+      #tk-gate .tk-card {
+        background: #fff; padding: 36px 30px; border-radius: 16px;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1); width: 320px; text-align: center;
+      }
+      #tk-gate img { height: 46px; width: auto; margin-bottom: 16px; }
+      #tk-gate .tk-title { font-weight: 800; font-size: 19px; color: #111; }
+      #tk-gate .tk-sub { color: #999; font-size: 13px; margin: 4px 0 22px; }
+      #tk-gate button {
+        width: 100%; padding: 13px; background: #f05a2c; color: #fff; border: 0;
+        border-radius: 10px; font-weight: 700; font-size: 15px; cursor: pointer;
+      }
+      #tk-gate button:hover { background: #d84d22; }
+    </style>
   </head>
   <body>
     <!-- Sveltia CMS (Decap-compatible). Config: /admin/config.yml -->
     <script is:inline src="https://unpkg.com/@sveltia/cms@0.172.4/dist/sveltia-cms.js"></script>
 
-    <!-- Rebrand the login screen as a simple password login (hide GitHub wording). -->
     <script is:inline>
       (function () {
-        function customize() {
+        var gate = null;
+
+        function findLoginBtn() {
           var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null);
           var node;
           while ((node = walker.nextNode())) {
-            var v = node.nodeValue;
-            if (!v || !v.trim()) continue;
-            var tv = v.trim();
-            if (tv === 'Sign In with GitHub') node.nodeValue = v.replace('Sign In with GitHub', 'Log in');
-            else if (tv === 'Sveltia CMS') node.nodeValue = v.replace('Sveltia CMS', 'Teknoppy CMS');
-            else if (tv === 'Sign In Using Access Token') {
+            if ((node.nodeValue || '').trim() === 'Sign In with GitHub') {
               var p = node.parentElement;
-              var btn = p && (p.closest('button') || p.closest('a'));
-              if (btn) btn.style.display = 'none';
+              return (p && (p.closest('button') || p.closest('a'))) || p;
             }
           }
+          return null;
         }
-        try {
-          new MutationObserver(customize).observe(document.documentElement, {
-            childList: true, subtree: true, characterData: true,
+
+        function ensureGate() {
+          if (gate && document.body.contains(gate)) return gate;
+          gate = document.createElement('div');
+          gate.id = 'tk-gate';
+          gate.innerHTML =
+            '<form class="tk-card">' +
+            '<img src="/logo.svg" alt="Teknoppy" />' +
+            '<div class="tk-title">Teknoppy CMS</div>' +
+            '<div class="tk-sub">Sign in to manage your website content</div>' +
+            '<button type="submit">Log in</button>' +
+            '</form>';
+          document.body.appendChild(gate);
+          gate.querySelector('form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            var btn = findLoginBtn();
+            if (btn) btn.click();
           });
+          return gate;
+        }
+
+        function sync() {
+          if (findLoginBtn()) ensureGate().style.display = 'flex';
+          else if (gate) gate.style.display = 'none';
+        }
+
+        try {
+          new MutationObserver(sync).observe(document.documentElement, { childList: true, subtree: true });
         } catch (e) {}
         var n = 0;
-        var iv = setInterval(function () { customize(); if (++n > 80) clearInterval(iv); }, 200);
+        var iv = setInterval(function () { sync(); if (++n > 200) clearInterval(iv); }, 150);
+        sync();
       })();
     </script>
   </body>
