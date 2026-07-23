@@ -1,8 +1,8 @@
 ---
 // Sveltia CMS admin — served as an Astro route so /admin/ works in dev AND prod.
 // Config lives at /public/admin/config.yml (served at /admin/config.yml).
-// A Teknoppy-branded gate overlays Sveltia's default (GitHub-worded) login screen,
-// so editors only see a simple "Log in" button.
+// A Teknoppy-branded gate (all styles inline, so nothing can strip them) overlays
+// Sveltia's default GitHub-worded login — editors only see a simple "Log in".
 ---
 
 <!doctype html>
@@ -12,25 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <title>Content Manager — Teknoppy</title>
-    <style is:global>
-      #tk-gate {
-        position: fixed; inset: 0; z-index: 2147483647; display: none;
-        align-items: center; justify-content: center; background: #f4f4f5;
-        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-      }
-      #tk-gate .tk-card {
-        background: #fff; padding: 36px 30px; border-radius: 16px;
-        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1); width: 320px; text-align: center;
-      }
-      #tk-gate img { height: 46px; width: auto; margin-bottom: 16px; }
-      #tk-gate .tk-title { font-weight: 800; font-size: 19px; color: #111; }
-      #tk-gate .tk-sub { color: #999; font-size: 13px; margin: 4px 0 22px; }
-      #tk-gate button {
-        width: 100%; padding: 13px; background: #f05a2c; color: #fff; border: 0;
-        border-radius: 10px; font-weight: 700; font-size: 15px; cursor: pointer;
-      }
-      #tk-gate button:hover { background: #d84d22; }
-    </style>
   </head>
   <body>
     <!-- Sveltia CMS (Decap-compatible). Config: /admin/config.yml -->
@@ -55,13 +36,18 @@
         function ensureGate() {
           if (gate && document.body.contains(gate)) return gate;
           gate = document.createElement('div');
-          gate.id = 'tk-gate';
+          gate.setAttribute('style',
+            'position:fixed;inset:0;z-index:2147483647;display:none;' +
+            'align-items:center;justify-content:center;background:#f4f4f5;' +
+            'font-family:system-ui,-apple-system,Segoe UI,sans-serif');
           gate.innerHTML =
-            '<form class="tk-card">' +
-            '<img src="/logo.svg" alt="Teknoppy" />' +
-            '<div class="tk-title">Teknoppy CMS</div>' +
-            '<div class="tk-sub">Sign in to manage your website content</div>' +
-            '<button type="submit">Log in</button>' +
+            '<form style="background:#fff;padding:36px 30px;border-radius:16px;' +
+            'box-shadow:0 12px 40px rgba(0,0,0,.1);width:320px;text-align:center">' +
+            '<img src="/logo.svg" alt="Teknoppy" style="height:46px;width:auto;margin-bottom:16px" />' +
+            '<div style="font-weight:800;font-size:19px;color:#111">Teknoppy CMS</div>' +
+            '<div style="color:#999;font-size:13px;margin:4px 0 22px">Sign in to manage your website content</div>' +
+            '<button type="submit" style="width:100%;padding:13px;background:#f05a2c;color:#fff;border:0;' +
+            'border-radius:10px;font-weight:700;font-size:15px;cursor:pointer">Log in</button>' +
             '</form>';
           document.body.appendChild(gate);
           gate.querySelector('form').addEventListener('submit', function (e) {
