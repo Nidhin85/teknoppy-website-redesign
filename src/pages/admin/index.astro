@@ -1,0 +1,18 @@
+---
+// Sveltia CMS admin — served as an Astro route so /admin/ works in dev AND prod.
+// Config lives at /public/admin/config.yml (served at /admin/config.yml).
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Content Manager — Teknoppy</title>
+  </head>
+  <body>
+    <!-- Sveltia CMS (Decap-compatible). Config: /admin/config.yml -->
+    <script is:inline src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
+  </body>
+</html>
