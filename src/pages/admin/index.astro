@@ -19,22 +19,28 @@
     <script is:inline>
       (function () {
         function customize() {
-          document.querySelectorAll('span, div, button, a, h1, h2, p').forEach(function (el) {
-            if (el.children.length) return;
-            var t = (el.textContent || '').trim();
-            if (t === 'Sign In with GitHub') el.textContent = 'Log in';
-            else if (t === 'Sveltia CMS') el.textContent = 'Teknoppy CMS';
-            else if (t === 'Sign In Using Access Token') {
-              var b = el.closest('button') || el.closest('a') || el.parentElement;
-              if (b) b.style.display = 'none';
+          var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null);
+          var node;
+          while ((node = walker.nextNode())) {
+            var v = node.nodeValue;
+            if (!v || !v.trim()) continue;
+            var tv = v.trim();
+            if (tv === 'Sign In with GitHub') node.nodeValue = v.replace('Sign In with GitHub', 'Log in');
+            else if (tv === 'Sveltia CMS') node.nodeValue = v.replace('Sveltia CMS', 'Teknoppy CMS');
+            else if (tv === 'Sign In Using Access Token') {
+              var p = node.parentElement;
+              var btn = p && (p.closest('button') || p.closest('a'));
+              if (btn) btn.style.display = 'none';
             }
-          });
+          }
         }
         try {
-          new MutationObserver(customize).observe(document.documentElement, { childList: true, subtree: true });
+          new MutationObserver(customize).observe(document.documentElement, {
+            childList: true, subtree: true, characterData: true,
+          });
         } catch (e) {}
         var n = 0;
-        var iv = setInterval(function () { customize(); if (++n > 60) clearInterval(iv); }, 200);
+        var iv = setInterval(function () { customize(); if (++n > 80) clearInterval(iv); }, 200);
       })();
     </script>
   </body>
