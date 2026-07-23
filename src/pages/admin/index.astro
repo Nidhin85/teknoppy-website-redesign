@@ -21,13 +21,14 @@
       (function () {
         var gate = null;
 
+        // Svelte wraps interpolated words in invisible bidi-isolate chars (U+2066–2069),
+        // so match on the button's data-label after stripping them.
+        function clean(s) { return (s || '').replace(/[\u2066\u2067\u2068\u2069]/g, '').trim(); }
         function findLoginBtn() {
-          var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null);
-          var node;
-          while ((node = walker.nextNode())) {
-            if ((node.nodeValue || '').trim() === 'Sign In with GitHub') {
-              var p = node.parentElement;
-              return (p && (p.closest('button') || p.closest('a'))) || p;
+          var els = document.querySelectorAll('[data-label]');
+          for (var i = 0; i < els.length; i++) {
+            if (clean(els[i].getAttribute('data-label')) === 'Sign In with GitHub') {
+              return els[i].closest('button, a, [role="button"]') || els[i];
             }
           }
           return null;
