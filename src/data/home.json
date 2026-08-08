@@ -1,27 +1,38 @@
 {
   "hero": {
-    "headlines": [
-      { "lead": "Built to", "highlight": "Rank." },
-      { "lead": "Designed to", "highlight": "Convert." },
-      { "lead": "Engineered to", "highlight": "Grow." }
-    ],
-    "body": "We create SEO-driven websites that help Kerala businesses increase visibility, generate qualified leads, and achieve measurable growth.",
+    "h1Lead": "Web Design Company in",
+    "h1Accent": "Kerala",
+    "subheadline": {
+      "pre": "Kerala's Best Web Design Company — Websites That",
+      "a1": "Rank",
+      "mid1": "on Google,",
+      "a2": "Convert",
+      "mid2": "Visitors, and",
+      "a3": "Grow",
+      "post": "Your Business"
+    },
+    "body": "Teknoppy is a professional Web Design Company in Kerala helping businesses across the state establish a powerful digital presence. From responsive website design Kerala businesses trust to full-scale web development Kerala enterprises rely on — we build websites that do more than look good. We build websites that work.",
     "primaryCta": { "label": "Book a Free Consultation", "href": "#contact" },
     "secondaryCta": { "label": "View Our Portfolio", "href": "#portfolio" },
-    "trustedLabel": "Trusted by Brands Across the World"
+    "trustBar": [
+      { "value": "150+", "label": "Websites Delivered" },
+      { "value": "100+", "label": "Happy Clients" },
+      { "value": "8 Years", "label": "of Experience" },
+      { "value": "5-Star", "label": "Google Rated" }
+    ]
   },
   "about": {
     "badge": "Who We Are",
     "headingAccent": "Kerala's Professional",
     "headingRest": "Web Design Agency",
-    "intro": "Teknoppy Kerala is a full-service digital agency founded and headquartered in Kochi, serving businesses across Kerala, Thrissur, and South India. Led by Sanal and a dedicated team of designers, developers, and SEO strategists, we have been building high-performance websites since 2018.",
+    "intro": "Teknoppy Kerala is a full-service digital agency founded and headquartered in Kochi, serving businesses across Kerala, Thrissur, and South India. Led by Sanal and a dedicated team of designers, developers, and SEO strategists, we have been building high-performance websites since 2016.",
     "paragraphs": [
       "As a professional web design agency Kerala businesses have trusted for nearly a decade, we bring together creative design and technical precision to deliver websites that rank, convert, and represent your brand with authority. From custom website design Kerala startups need to enterprise-level web development Kerala corporations demand — our work spans industries, project sizes, and business goals.",
-      "We have delivered over 120 successful websites across healthcare, retail, hospitality, education, real estate, and manufacturing sectors. Every project begins with strategy and ends with measurable results."
+      "We have delivered over 150 successful websites across healthcare, retail, hospitality, education, real estate, and manufacturing sectors. Every project begins with strategy and ends with measurable results."
     ],
     "stats": [
       {
-        "value": 120,
+        "value": 150,
         "suffix": "+",
         "label": "Websites Delivered",
         "sublabel": "High-performance products built to rank and convert."
@@ -30,7 +41,7 @@
         "value": 100,
         "suffix": "+",
         "label": "Kerala Clients",
-        "sublabel": "Trusted by local businesses and brands since 2018."
+        "sublabel": "Trusted by local businesses and brands since 2016."
       },
       {
         "value": 8,
@@ -106,7 +117,7 @@
       },
       {
         "title": "A Proven Track Record Kerala Businesses Rely On",
-        "description": "As a Web Design Company in Kerala with over 120 completed projects, our work speaks louder than promises. Clients across Kochi, Thrissur, Kozhikode, and Ernakulam have seen measurable improvements in search rankings, lead generation, and website engagement within the first 90 days of launch."
+        "description": "As a Web Design Company in Kerala with over 150 completed projects, our work speaks louder than promises. Clients across Kochi, Thrissur, Kozhikode, and Ernakulam have seen measurable improvements in search rankings, lead generation, and website engagement within the first 90 days of launch."
       },
       {
         "title": "Affordable Website Design Without Compromising Quality",
@@ -134,7 +145,7 @@
     "items": [
       {
         "question": "Which web design company in Kerala is reliable?",
-        "answer": "Teknoppy has been delivering professional website design and development from our Kochi office since 2018. With over 120 completed projects and a verified 5-star rating on Google, we are one of Kerala's most trusted digital agencies — backed by real client results, not just claims."
+        "answer": "Teknoppy has been delivering professional website design and development from our Kochi office since 2016. With over 150 completed projects and a verified 5-star rating on Google, we are one of Kerala's most trusted digital agencies — backed by real client results, not just claims."
       },
       {
         "question": "How to choose a web design company in Kerala?",

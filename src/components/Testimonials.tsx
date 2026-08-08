@@ -152,7 +152,7 @@ export default function Testimonials({ testimonials = defaultTestimonials }: { t
             </p>
           </div>
           <div className="text-2xl md:text-3xl font-bold text-neutral-950 tracking-tight shrink-0">
-            120+ global clients
+            150+ global clients
           </div>
         </div>
 

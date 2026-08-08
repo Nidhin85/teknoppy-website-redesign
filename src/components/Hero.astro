@@ -64,29 +64,33 @@ import home from "../data/home.json";
     <div
       class="xl:col-span-5 flex flex-col items-center text-center xl:items-start xl:text-left pt-8 xl:pt-16"
     >
-      <!-- Headline -->
+      <!-- Headline (H1) -->
       <h1
-        class="text-4xl sm:text-5xl lg:text-[48px] xl:text-[54px] font-black leading-[1.2] tracking-tight text-neutral-900 mb-5"
+        class="text-4xl sm:text-5xl lg:text-[48px] xl:text-[54px] font-black leading-[1.15] tracking-tight text-neutral-900 mb-5"
       >
-        <span class="block xl:whitespace-nowrap"
-          >{home.hero.headlines[0].lead} <span
-            class="inline-block bg-[#F9AE42]/20 text-primary px-4 py-0.5 rounded-[1.5rem] transform -rotate-2 mt-1 shadow-sm"
-            >{home.hero.headlines[0].highlight}</span
-          ></span
-        >
-        <span class="block xl:whitespace-nowrap mt-2 xl:mt-3"
-          >{home.hero.headlines[1].lead} <span
-            class="inline-block bg-primary text-white px-4 py-0.5 rounded-[1.5rem] transform rotate-1 mt-1 shadow-md"
-            >{home.hero.headlines[1].highlight}</span
-          ></span
-        >
-        <span class="block xl:whitespace-nowrap mt-2 xl:mt-3"
-          >{home.hero.headlines[2].lead} <span
-            class="inline-block bg-[#FFF8EF] border border-primary/20 text-primary px-4 py-0.5 rounded-[1.5rem] transform -rotate-1 mt-1 shadow-sm"
-            >{home.hero.headlines[2].highlight}</span
+        <span class="block"
+          >{home.hero.h1Lead} <span
+            class="inline-block bg-primary text-white px-4 py-0.5 rounded-[1.5rem] transform -rotate-1 mt-1 shadow-md"
+            >{home.hero.h1Accent}</span
           ></span
         >
       </h1>
+
+      <!-- H2 — AEO Subheadline (keeps the signature pill motif) -->
+      <h2
+        class="text-lg sm:text-xl lg:text-[22px] font-bold leading-snug tracking-tight text-neutral-800 mb-6 max-w-xl mx-auto xl:mx-0"
+      >
+        {home.hero.subheadline.pre} <span
+          class="inline-block bg-[#F9AE42]/20 text-primary px-2 py-0.5 rounded-lg shadow-sm"
+          >{home.hero.subheadline.a1}</span
+        > {home.hero.subheadline.mid1} <span
+          class="inline-block bg-primary text-white px-2 py-0.5 rounded-lg shadow-sm"
+          >{home.hero.subheadline.a2}</span
+        > {home.hero.subheadline.mid2} <span
+          class="inline-block bg-[#FFF8EF] border border-primary/20 text-primary px-2 py-0.5 rounded-lg shadow-sm"
+          >{home.hero.subheadline.a3}</span
+        > {home.hero.subheadline.post}
+      </h2>
 
       <p
         class="text-base lg:text-lg text-neutral-600 mb-8 max-w-lg mx-auto xl:mx-0 leading-relaxed font-medium"
@@ -118,47 +122,16 @@ import home from "../data/home.json";
         </a>
       </div>
 
-      <!-- Trusted Brands Section -->
+      <!-- Trust Bar -->
       <div
-        class="mt-4 pt-4 border-t border-neutral-100/60 w-full flex flex-col items-center xl:items-start gap-3"
+        class="mt-4 pt-5 border-t border-neutral-100/60 w-full grid grid-cols-2 sm:grid-cols-4 gap-y-4 gap-x-3 max-w-lg mx-auto xl:mx-0"
       >
-        <span
-          class="text-xs text-neutral-400 font-bold uppercase tracking-wider"
-          >{home.hero.trustedLabel}</span
-        >
-        <div
-          class="flex flex-wrap items-center justify-center xl:justify-start gap-4 sm:gap-5 grayscale opacity-55"
-        >
-          <img
-            src="/client logos/Abroad-career-1.jpg"
-            alt="Abroad Career logo"
-            class="h-11 w-auto object-contain rounded"
-          />
-          <div class="h-6 w-[1px] bg-neutral-200/60"></div>
-          <img
-            src="/client logos/abu-dhabi.jpg"
-            alt="Abu Dhabi logo"
-            class="h-11 w-auto object-contain rounded"
-          />
-          <div class="h-6 w-[1px] bg-neutral-200/60"></div>
-          <img
-            src="/client logos/al-coffee-1.jpg"
-            alt="Al Coffee logo"
-            class="h-11 w-auto object-contain rounded"
-          />
-          <div class="h-6 w-[1px] bg-neutral-200/60"></div>
-          <img
-            src="/client logos/amster.jpg"
-            alt="Amster logo"
-            class="h-11 w-auto object-contain rounded"
-          />
-          <div class="h-6 w-[1px] bg-neutral-200/60"></div>
-          <img
-            src="/client logos/ar.jpg"
-            alt="AR logo"
-            class="h-11 w-auto object-contain rounded"
-          />
-        </div>
+        {home.hero.trustBar.map((stat) => (
+          <div class="flex flex-col items-center xl:items-start">
+            <span class="text-xl lg:text-2xl font-black text-neutral-900 leading-none">{stat.value}</span>
+            <span class="text-[11px] text-neutral-500 font-semibold mt-1.5 uppercase tracking-wide text-center xl:text-left leading-tight">{stat.label}</span>
+          </div>
+        ))}
       </div>
     </div>
 
@@ -207,7 +180,7 @@ import home from "../data/home.json";
         <div class="flex flex-col min-w-0">
           <span
             class="text-[14px] font-extrabold text-neutral-900 leading-tight"
-            >120+ Projects</span
+            >150+ Projects</span
           >
           <span
             class="text-[10px] text-neutral-500 font-semibold leading-none mt-0.5"
