@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "title": "Web Design Portfolio Kerala | Teknoppy Projects",
+    "description": "Browse Teknoppy's web design, ecommerce, and web application projects for clients across Kerala and the GCC, organized by category with real case studies."
+  },
+  "breadcrumb": [
+    { "name": "Home", "href": "/" },
+    { "name": "Portfolio", "href": "/portfolios/" }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Our Work",
+      "h1Lead": "Web Design Portfolio",
+      "h1Accent": "Kerala",
+      "body": [
+        {
+          "html": "<a href=\"/\" class=\"text-primary hover:underline\">Teknoppy</a> has designed and built websites, online stores, and web applications for businesses across Kerala and <a href=\"/web-design-company-for-gcc-businesses/\" class=\"text-primary hover:underline\">the GCC</a>. This page collects that work by category, so you can find examples close to your own industry before reaching out. Projects range from small business sites in Kochi to multi-location ecommerce stores serving customers in the UAE and Qatar, along with custom web applications built for businesses whose workflow didn't fit any off-the-shelf tool. Browse a category below, or head straight to <a href=\"/case-study/\" class=\"text-primary hover:underline\">Case Studies</a> for the numbers behind specific projects."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "itemHeading": "h2",
+      "badge": "Browse by Category",
+      "items": [
+        {
+          "title": "Website Projects",
+          "text": "Business and corporate websites for Kerala clients, ranging from single-page sites to multi-department platforms with dozens of pages and multiple content types, each one designed around the client's actual sales process.",
+          "linkText": "See Website Projects →",
+          "href": "/portfolios/website-projects/"
+        },
+        {
+          "title": "WordPress Projects",
+          "text": "Custom WordPress builds and migrations, including sites moved off outdated platforms without losing existing search rankings, traffic, or years of published content.",
+          "linkText": "See WordPress Projects →",
+          "href": "/portfolios/wordpress-projects/"
+        },
+        {
+          "title": "Ecommerce Projects",
+          "text": "WooCommerce and Shopify stores for Kerala and GCC retailers, covering product catalogues, payment setup, checkout design, and post-launch conversion tracking.",
+          "linkText": "See Ecommerce Projects →",
+          "href": "/portfolios/ecommerce-projects/"
+        },
+        {
+          "title": "Web Application Projects",
+          "text": "Booking systems, customer portals, and dashboards for businesses running processes that off-the-shelf software couldn't handle, each one shaped around an existing workflow rather than forcing a new one.",
+          "linkText": "See Web Application Projects →",
+          "href": "/portfolios/web-application-projects/"
+        },
+        {
+          "title": "SEO Case Studies",
+          "text": "Search visibility work with ranking and traffic results, documented in full with real numbers on our dedicated case studies page.",
+          "linkText": "See SEO Case Studies →",
+          "href": "/portfolios/seo-case-studies/"
+        }
+      ]
+    },
+    {
+      "type": "projects",
+      "bg": "white",
+      "h2": "Featured Work"
+    },
+    {
+      "type": "prose",
+      "bg": "soft",
+      "h2": "Behind the Work",
+      "paragraphs": [
+        {
+          "html": "Every project here links to a full write-up on our <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">Case Studies</a> page, with the results and numbers behind it. Design decisions on each project are led by the same senior team across every engagement, not rotated between freelancers. For more on the people delivering the work, see our <a href=\"/sanal-edison-digital-strategist/\" class=\"text-primary font-semibold hover:underline\">Leadership</a> and <a href=\"/certifications/\" class=\"text-primary font-semibold hover:underline\">Certifications</a> pages."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "white",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Can I see live examples of Teknoppy's work?",
+          "a": "Yes. Browse projects by category above, or visit Case Studies for full write-ups with results."
+        },
+        {
+          "q": "Does Teknoppy have experience with GCC projects?",
+          "a": "Yes. Alongside Kerala clients, Teknoppy has built websites and stores for businesses in the UAE and Qatar."
+        },
+        {
+          "q": "Do you show results alongside the design work?",
+          "a": "Design examples live here. Ranking, traffic, and conversion numbers are documented separately on Case Studies, so each page stays focused on a single job and doesn't repeat the other's content."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "cream",
+      "h2": "Have a project in mind?",
+      "ctas": [
+        { "label": "Contact Teknoppy →", "href": "/contact-us/" },
+        { "label": "See Case Studies", "href": "/case-study/" }
+      ]
+    }
+  ],
+  "devNotes": {
+    "source": "PORTFOLIO.pdf — Teknoppy | Portfolio Hub Page — Final Copy (July 2026)",
+    "primaryKeyword": "Web Design Portfolio Kerala",
+    "wordCount": "405 words",
+    "featuredWorkPlaceholder": "[Add 3-6 project thumbnails with captions: client industry, project type, location. Do not launch this section empty.]",
+    "beforePublishing": [
+      "URL stays /portfolios/ — do not change, it is an existing indexed page.",
+      "Do not launch with the Featured Work section empty — add at least 3 real project thumbnails with captions before going live.",
+      "Confirm Leadership and Certifications pages exist and are live before linking to them from here.",
+      "This page must stay visual-first — do not expand the category blurbs into longer paragraphs, that is what the Case Studies and pillar pages are for."
+    ],
+    "schemaRequired": [
+      "CollectionPage or ItemList schema — marks this up as a project directory.",
+      "FAQPage schema on all 3 FAQ questions.",
+      "ImageObject schema on every featured project thumbnail once added.",
+      "BreadcrumbList schema: Home → Portfolio."
+    ],
+    "imagesRequired": [
+      "3-6 featured project thumbnails minimum — this is the highest-priority missing piece on this page.",
+      "Alt text format for every thumbnail: client industry + project type + location. Example: \"Ecommerce store for a Kochi home decor retailer.\" Never use generic file names as alt text.",
+      "Compress every image before upload — this page will carry more images than any other page on the site, so it is the highest Core Web Vitals risk."
+    ],
+    "internalLinks": "14 total — Homepage (/) and GCC Pillar (/web-design-company-for-gcc-businesses/) both linked from the intro paragraph; all 5 portfolio sub-pages; Case Studies (/case-study/) appears 4 times: intro, Behind the Work, and 2 FAQ answers; Leadership (/sanal-edison-digital-strategist/) and Certifications (/certifications/); Contact Us (/contact-us/) closing CTA.",
+    "doNotChangeWithoutSEO": [
+      "The primary keyword phrase (\"Web Design Portfolio Kerala\") and the H1 wording.",
+      "The role split with Case Studies — this page stays visual/project-based, Case Studies stays numbers/results-based. Blurring the two creates duplicate-content risk between two of Teknoppy's own pages.",
+      "Do not add project results, rankings, or traffic numbers directly on this page — link to Case Studies instead."
+    ]
+  }
+}

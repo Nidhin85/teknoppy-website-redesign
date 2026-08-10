@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "title": "Web Design & Digital Services in Kerala | Teknoppy",
+    "description": "Website design, development, SEO, and digital marketing under one in-house team, serving businesses across Kerala and the GCC. Explore Teknoppy's full services."
+  },
+  "breadcrumb": [
+    { "name": "Home", "href": "/" },
+    { "name": "Services", "href": "/services/" }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Services",
+      "h1Lead": "Web Design & Digital Services",
+      "h1Accent": "Kerala",
+      "body": [
+        {
+          "html": "<a href=\"/\" class=\"text-primary hover:underline\">Teknoppy</a> offers website design, development, and digital marketing under one team, working with businesses across Kerala and <a href=\"/web-design-company-for-gcc-businesses/\" class=\"text-primary hover:underline\">the GCC</a>. Everything below is handled in-house, from strategy through to launch and ongoing optimization, rather than split across separate vendors. Most clients start with one service and add others once the first is working well — a website build that grows into an SEO retainer, or an SEO project that turns into a full redesign. Explore each area below to see what it includes."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "itemHeading": "h2",
+      "badge": "What We Do",
+      "items": [
+        {
+          "title": "Website Design & Development",
+          "text": "Responsive websites for businesses across Kochi and Kerala, from simple business sites to complex custom builds, built to load fast and structured for search from day one. Includes ongoing maintenance and content updates after launch.",
+          "linkText": "See Website Design & Development →",
+          "href": "/web-design-company-kochi/"
+        },
+        {
+          "title": "WordPress Development",
+          "text": "Custom WordPress builds, migrations, and ongoing maintenance for businesses that want a flexible, easy-to-manage platform. We also handle speed optimization for existing WordPress sites that have slowed down over time.",
+          "linkText": "See WordPress Development →",
+          "href": "/wordpress-development-company-kochi/"
+        },
+        {
+          "title": "Ecommerce Development",
+          "text": "WooCommerce and Shopify stores with secure payment integration and a checkout flow designed around how your customers actually shop, plus product page SEO so listings surface in search from launch.",
+          "linkText": "See Ecommerce Development →",
+          "href": "/ecommerce-website-development-company-kochi/"
+        },
+        {
+          "title": "Web Application Development",
+          "text": "Custom web applications, from CRM and booking systems to customer portals and dashboards, built around how a business already works rather than forcing it into off-the-shelf software.",
+          "linkText": "See Web Application Development →",
+          "href": "/web-application-development-company-kochi/"
+        },
+        {
+          "title": "SEO Services",
+          "text": "Technical SEO, on-page optimization, and local search visibility, handled from day one on every project, plus ongoing audits to catch ranking drops early.",
+          "linkText": "See SEO Services →",
+          "href": "/seo/"
+        },
+        {
+          "title": "Digital Marketing",
+          "text": "Social media, Google Ads, content, and email marketing, planned alongside SEO so campaigns and search visibility support each other. Reporting covers actual traffic and conversions, sent monthly.",
+          "linkText": "See Digital Marketing →",
+          "href": "/digital-marketing-company-kochi/"
+        },
+        {
+          "title": "UI/UX Design",
+          "text": "Interface and experience design for websites, dashboards, and applications, shaped by usability testing and real user behaviour.",
+          "linkText": "See UI/UX Design →",
+          "href": "/ui-ux-design-company-kochi/"
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "Why Teknoppy",
+      "paragraphs": [
+        {
+          "html": "Design, development, and SEO sit inside one team, so nothing gets lost in handoffs between vendors. We work with businesses across Kerala and <a href=\"/web-design-company-for-gcc-businesses/\" class=\"text-primary font-semibold hover:underline\">the GCC</a>, and every project starts with research: competitors, keywords, and what your audience is actually searching for. <a href=\"/about-us/\" class=\"text-primary font-semibold hover:underline\">More about Teknoppy →</a> · <a href=\"/sanal-edison-digital-strategist/\" class=\"text-primary font-semibold hover:underline\">Meet our founder →</a> · <a href=\"/certifications/\" class=\"text-primary font-semibold hover:underline\">Certifications &amp; client reviews →</a>"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "soft",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "What services does Teknoppy offer?",
+          "a": "Website design and development, WordPress, ecommerce, web applications, SEO, digital marketing, and UI/UX design, all delivered by one in-house team."
+        },
+        {
+          "q": "Does Teknoppy work with businesses in the GCC?",
+          "a": "Yes. Alongside Kerala clients, Teknoppy works with businesses in the UAE and Qatar, with experience adapting sites and campaigns for both regions."
+        },
+        {
+          "q": "Can I get website design and SEO from the same team?",
+          "a": "Yes. Every website Teknoppy builds includes SEO from the design stage, so page structure, speed, and content are already aligned with search when the site goes live."
+        },
+        {
+          "q": "How do I start a project?",
+          "a": "Reach out through the Contact page or request a free website audit to see where your current site stands."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "white",
+      "h2": "Ready to talk about your project?",
+      "ctas": [
+        { "label": "Contact Teknoppy →", "href": "/contact-us/" },
+        { "label": "Free Website Audit", "href": "/free-website-audit-kerala/" }
+      ]
+    }
+  ],
+  "devNotes": {
+    "source": "SERVICE.pdf — Teknoppy | Services Hub Page — Final Copy (July 2026)",
+    "primaryKeyword": "Web Design & Digital Services Kerala",
+    "wordCount": "501 words",
+    "beforePublishing": [
+      "URL stays /services/ — do not change, it is an existing indexed page.",
+      "Confirm every linked page listed below actually exists before launch — Leadership and Certifications pages are new, build those first if they are not live yet.",
+      "This page should read as a directory, not a sales page — keep blurbs short, do not expand them into full pitches; that is what the pillar pages are for."
+    ],
+    "schemaRequired": [
+      "CollectionPage or ItemList schema — marks this up as a proper service directory, not just a plain page.",
+      "FAQPage schema on all 4 FAQ questions and answers.",
+      "BreadcrumbList schema: Home → Services."
+    ],
+    "internalLinks": "16 total — Homepage (/) from 'Teknoppy' in the opening line; GCC Pillar (/web-design-company-for-gcc-businesses/) linked twice, from 'the GCC' in the intro and again in Why Teknoppy; all 7 service pillars; About Us (/about-us/), Leadership (/sanal-edison-digital-strategist/), Certifications (/certifications/); Contact Us (/contact-us/) twice, in the FAQ and the closing CTA; Free Website Audit (/free-website-audit-kerala/). Every link should use the exact anchor text shown — it matches the destination page's own title, which is deliberate and helps that page rank.",
+    "doNotChangeWithoutSEO": [
+      "The primary keyword phrase (\"Web Design & Digital Services Kerala\") and the H1 wording.",
+      "The internal link targets — each one is set to avoid keyword cannibalization with the pillar pages it links to.",
+      "Do not copy sentences from any pillar page into this page's blurbs, or the reverse — that creates duplicate-content risk between two of Teknoppy's own pages.",
+      "Do not add the GCC Pillar as an 8th service card — it is a location page, not a service type. It stays as a text link inside the intro only, to keep this page's category structure clean."
+    ]
+  }
+}

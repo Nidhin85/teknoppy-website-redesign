@@ -1258,6 +1258,245 @@ collections:
       - { name: initials, label: "Initials", widget: string, hint: "e.g. BT" }
       - { name: order, label: "Order", widget: number, default: 0, value_type: int }
 
+  - name: inner_pages
+    label: "Pages (Hubs, Locations & Service Sub-Pages)"
+    description: "Content-driven pages rendered by the shared InnerPage template. Every page is a list of sections; pick a section type and fill in the copy."
+    files:
+      - name: services_hub
+        label: "Services Hub (/services/)"
+        file: "src/data/pages/services.json"
+        fields: &inner_page_fields
+          - name: meta
+            label: "Meta / SEO"
+            widget: object
+            fields:
+              - { name: title, label: "Meta title", widget: string }
+              - { name: description, label: "Meta description", widget: text }
+          - name: breadcrumb
+            label: "Breadcrumb"
+            widget: list
+            required: false
+            fields:
+              - { name: name, label: "Label", widget: string }
+              - { name: href, label: "URL", widget: string }
+          - name: sections
+            label: "Page sections"
+            widget: list
+            types:
+              - name: hero
+                label: "Hero"
+                widget: object
+                fields:
+                  - { name: badge, label: "Badge", widget: string, required: false }
+                  - { name: h1Lead, label: "H1 — lead", widget: string, required: false }
+                  - { name: h1Accent, label: "H1 — highlighted", widget: string }
+                  - { name: h1Rest, label: "H1 — rest", widget: string, required: false }
+                  - { name: subhead, label: "Sub-headline (H2)", widget: string, required: false }
+                  - name: body
+                    label: "Body paragraphs"
+                    widget: list
+                    required: false
+                    fields:
+                      - { name: text, label: "Text", widget: text, required: false }
+                      - { name: html, label: "HTML (use when the paragraph needs links)", widget: text, required: false }
+                  - name: ctas
+                    label: "Buttons"
+                    widget: list
+                    required: false
+                    fields:
+                      - { name: label, label: "Label", widget: string }
+                      - { name: href, label: "URL", widget: string }
+                  - name: stats
+                    label: "Stat cards"
+                    widget: list
+                    required: false
+                    fields:
+                      - { name: value, label: "Value", widget: string }
+                      - { name: label, label: "Label", widget: string }
+                  - { name: trustline, label: "Trust line", widget: text, required: false }
+              - name: prose
+                label: "Prose (heading + paragraphs)"
+                widget: object
+                fields:
+                  - { name: bg, label: "Background", widget: select, options: ["white", "cream", "soft", "warm"], required: false }
+                  - { name: badge, label: "Badge", widget: string, required: false }
+                  - { name: h2, label: "Heading (H2)", widget: string, required: false }
+                  - { name: intro, label: "Intro", widget: text, required: false }
+                  - name: paragraphs
+                    label: "Paragraphs"
+                    widget: list
+                    fields:
+                      - { name: lead, label: "Bold lead-in", widget: string, required: false }
+                      - { name: text, label: "Text", widget: text, required: false }
+                      - { name: html, label: "HTML (use when the paragraph needs links)", widget: text, required: false }
+              - name: cards
+                label: "Cards"
+                widget: object
+                fields:
+                  - { name: bg, label: "Background", widget: select, options: ["white", "cream", "soft", "warm"], required: false }
+                  - { name: badge, label: "Badge", widget: string, required: false }
+                  - { name: h2, label: "Heading (H2)", widget: string, required: false }
+                  - { name: intro, label: "Intro", widget: text, required: false }
+                  - { name: columns, label: "Columns", widget: number, required: false, value_type: int }
+                  - { name: itemHeading, label: "Card heading level", widget: select, options: ["h2", "h3"], required: false }
+                  - name: items
+                    label: "Cards"
+                    widget: list
+                    fields:
+                      - { name: title, label: "Title", widget: string }
+                      - { name: text, label: "Text", widget: text, required: false }
+                      - { name: html, label: "HTML (use when the text needs links or bold)", widget: text, required: false }
+                      - { name: linkText, label: "Link text", widget: string, required: false }
+                      - { name: href, label: "Link URL", widget: string, required: false }
+              - name: steps
+                label: "Numbered steps"
+                widget: object
+                fields:
+                  - { name: bg, label: "Background", widget: select, options: ["white", "cream", "soft", "warm"], required: false }
+                  - { name: badge, label: "Badge", widget: string, required: false }
+                  - { name: h2, label: "Heading (H2)", widget: string, required: false }
+                  - { name: intro, label: "Intro", widget: text, required: false }
+                  - name: items
+                    label: "Steps"
+                    widget: list
+                    fields:
+                      - { name: title, label: "Title", widget: string }
+                      - { name: text, label: "Text", widget: text }
+              - name: bullets
+                label: "Checklist"
+                widget: object
+                fields:
+                  - { name: bg, label: "Background", widget: select, options: ["white", "cream", "soft", "warm"], required: false }
+                  - { name: badge, label: "Badge", widget: string, required: false }
+                  - { name: h2, label: "Heading (H2)", widget: string, required: false }
+                  - { name: intro, label: "Intro", widget: text, required: false }
+                  - name: items
+                    label: "Bullets"
+                    widget: list
+                    fields:
+                      - { name: text, label: "Text", widget: text, required: false }
+                      - { name: html, label: "HTML (use when the bullet needs links or bold)", widget: text, required: false }
+                  - name: outro
+                    label: "Closing paragraphs"
+                    widget: list
+                    required: false
+                    fields:
+                      - { name: text, label: "Text", widget: text, required: false }
+                      - { name: html, label: "HTML (use when the paragraph needs links)", widget: text, required: false }
+              - name: links
+                label: "Related links"
+                widget: object
+                fields:
+                  - { name: bg, label: "Background", widget: select, options: ["white", "cream", "soft", "warm"], required: false }
+                  - { name: h2, label: "Heading (H2)", widget: string, required: false }
+                  - { name: intro, label: "Intro", widget: text, required: false }
+                  - name: items
+                    label: "Links"
+                    widget: list
+                    fields:
+                      - { name: label, label: "Label", widget: string }
+                      - { name: href, label: "URL", widget: string }
+                      - { name: text, label: "Descriptor", widget: string, required: false }
+              - name: projects
+                label: "Featured projects grid"
+                widget: object
+                fields:
+                  - { name: bg, label: "Background", widget: select, options: ["white", "cream", "soft", "warm"], required: false }
+                  - { name: h2, label: "Heading (H2)", widget: string, required: false }
+                  - { name: intro, label: "Intro", widget: text, required: false }
+              - name: faq
+                label: "FAQ"
+                widget: object
+                fields:
+                  - { name: bg, label: "Background", widget: select, options: ["white", "cream", "soft", "warm"], required: false }
+                  - { name: center, label: "Centre the heading", widget: boolean, required: false }
+                  - { name: badge, label: "Badge", widget: string, required: false }
+                  - { name: h2, label: "Heading (H2)", widget: string }
+                  - { name: intro, label: "Intro", widget: text, required: false }
+                  - name: items
+                    label: "Questions"
+                    widget: list
+                    fields:
+                      - { name: q, label: "Question", widget: string }
+                      - { name: a, label: "Answer", widget: text }
+              - name: cta
+                label: "Call to action"
+                widget: object
+                fields:
+                  - { name: bg, label: "Background", widget: select, options: ["white", "cream", "soft", "warm"], required: false }
+                  - { name: h2, label: "Heading (H2)", widget: string }
+                  - name: paragraphs
+                    label: "Paragraphs"
+                    widget: list
+                    required: false
+                    fields:
+                      - { name: text, label: "Text", widget: text }
+                  - name: ctas
+                    label: "Buttons"
+                    widget: list
+                    fields:
+                      - { name: label, label: "Label", widget: string }
+                      - { name: href, label: "URL", widget: string }
+              - name: nap
+                label: "Contact / NAP block"
+                widget: object
+                fields:
+                  - { name: bg, label: "Background", widget: select, options: ["white", "cream", "soft", "warm"], required: false }
+                  - { name: h2, label: "Heading (H2)", widget: string, required: false }
+                  - name: rows
+                    label: "Rows"
+                    widget: list
+                    fields:
+                      - { name: label, label: "Label", widget: string }
+                      - { name: value, label: "Value", widget: string }
+                      - { name: href, label: "Link (tel:/mailto:)", widget: string, required: false }
+              - name: byline
+                label: "Author / reviewed line"
+                widget: object
+                fields:
+                  - { name: bg, label: "Background", widget: select, options: ["white", "cream", "soft", "warm"], required: false }
+                  - { name: text, label: "Text", widget: text }
+      - name: portfolio_hub
+        label: "Portfolio Hub (/portfolios/)"
+        file: "src/data/pages/portfolios.json"
+        fields: *inner_page_fields
+      - name: seo_company_kerala
+        label: "SEO Company Kerala"
+        file: "src/data/pages/seo-company-kerala.json"
+        fields: *inner_page_fields
+      - name: digital_marketing_company_kerala
+        label: "Digital Marketing Company Kerala"
+        file: "src/data/pages/digital-marketing-company-kerala.json"
+        fields: *inner_page_fields
+      - name: web_design_company_uae
+        label: "Web Design Company for UAE Businesses"
+        file: "src/data/pages/web-design-company-uae.json"
+        fields: *inner_page_fields
+      - name: corporate_website_development_kochi
+        label: "Corporate Website Development (Kochi)"
+        file: "src/data/pages/corporate-website-development-kochi.json"
+        fields: *inner_page_fields
+      - name: custom_ecommerce_development_kochi
+        label: "Custom Ecommerce Development (Kochi)"
+        file: "src/data/pages/custom-ecommerce-development-kochi.json"
+        fields: *inner_page_fields
+      - name: wordpress_web_design_kochi
+        label: "WordPress Web Design (Kochi)"
+        file: "src/data/pages/wordpress-web-design-kochi.json"
+        fields: *inner_page_fields
+      - name: wordpress_maintenance_services_kochi
+        label: "WordPress Maintenance Services (Kochi)"
+        file: "src/data/pages/wordpress-maintenance-services-kochi.json"
+        fields: *inner_page_fields
+      - name: wordpress_migration_services_kochi
+        label: "WordPress Migration Services (Kochi)"
+        file: "src/data/pages/wordpress-migration-services-kochi.json"
+        fields: *inner_page_fields
+      - name: wordpress_speed_optimization_kochi
+        label: "WordPress Speed Optimization (Kochi)"
+        file: "src/data/pages/wordpress-speed-optimization-kochi.json"
+        fields: *inner_page_fields
+
   - name: settings
     label: "Site Settings"
     description: "Global contact details used across the site (footer, contact page, mobile bar, schema)."

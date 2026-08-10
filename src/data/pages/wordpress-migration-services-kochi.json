@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "title": "WordPress Migration Services Kochi | Teknoppy",
+    "description": "Moving hosts or domains? Teknoppy's WordPress Migration Services Kochi ensure zero downtime, no data loss. Book a free migration consult."
+  },
+  "breadcrumb": [
+    { "name": "Home", "href": "/" },
+    { "name": "WordPress Development Company in Kochi", "href": "/wordpress-development-company-kochi/" },
+    { "name": "WordPress Migration Services Kochi", "href": "/wordpress-migration-services-kochi/" }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "WordPress Development",
+      "h1Lead": "WordPress Migration Services",
+      "h1Accent": "Kochi",
+      "subhead": "Moving Your Site Without Losing Traffic, Rankings, or Data",
+      "body": [
+        {
+          "html": "<strong>WordPress Migration Services Kochi</strong> is what Teknoppy provides when a website needs to move — to a new host, a new domain, or onto WordPress from another platform entirely — without breaking anything along the way. A migration sounds simple until it isn't: a missed database table, a broken redirect, an email service that stops working mid-switch. We handle the move as a planned, tested process rather than a copy-paste job done live on production, so the site comes back up exactly as it should."
+        },
+        {
+          "html": "Businesses across Kochi usually need this for one of a few reasons — a hosting renewal that's become too expensive, a developer relationship that's ending, or outgrowing a builder platform that can't scale anymore. <strong>WordPress Migration Services Kochi</strong> work exists to make that transition invisible to your visitors and safe for your search rankings, instead of a stressful weekend of troubleshooting."
+        }
+      ],
+      "ctas": [
+        { "label": "Book a Free Migration Consult", "href": "/book-a-consultation/" },
+        { "label": "Request a Quote", "href": "/request-a-quote/" }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "columns": 2,
+      "badge": "What's Included",
+      "h2": "What Our Migration Service Includes",
+      "items": [
+        {
+          "title": "WordPress Site Migration",
+          "html": "Our <strong>WordPress site migration Kochi</strong> process covers a full transfer of files, database, plugins, and configuration from the old environment to the new one, verified against the original before the switch goes live."
+        },
+        {
+          "title": "Hosting Migration",
+          "html": "A <strong>WordPress hosting migration service</strong> moves your site to a new host without the downtime that comes from doing it manually — DNS, SSL certificates, and email routing are all planned in advance, not fixed after something breaks."
+        },
+        {
+          "title": "Domain Migration",
+          "html": "<strong>WordPress domain migration Kochi</strong> work includes a full URL redirect map, so search engines and existing links follow the site to its new address instead of returning dead pages."
+        },
+        {
+          "title": "Platform-to-WordPress Migration",
+          "html": "If you're not already on WordPress, our team also handles <strong>website migration to WordPress</strong> from builders like Wix, Squarespace, or Shopify — rebuilding the content and structure natively rather than importing a messy export file."
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "bg": "white",
+      "badge": "How We Work",
+      "h2": "How Our Migration Process Works",
+      "items": [
+        {
+          "title": "Pre-Migration Audit",
+          "text": "We map every plugin, page, form, and integration on the current site so nothing gets missed during the move."
+        },
+        {
+          "title": "Staging Environment Setup",
+          "text": "The site is rebuilt on a staging copy of the new host first, so the live site stays untouched until everything is verified."
+        },
+        {
+          "title": "Data & Database Transfer",
+          "text": "Our WordPress data migration Kochi process moves content, media, and database tables with a checksum comparison against the original."
+        },
+        {
+          "title": "DNS & Redirect Cutover",
+          "text": "Timed for low-traffic hours, with a full WordPress migration checklist followed step by step to catch anything that could break during the switch."
+        },
+        {
+          "title": "Post-Migration Verification",
+          "text": "Every page, form, and integration is re-tested on the live site immediately after cutover, not left to be discovered broken later."
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "bg": "soft",
+      "h2": "Who Needs This",
+      "items": [
+        { "text": "You're switching web hosts and don't want the downtime or data loss that comes with doing it yourself" },
+        { "text": "Your domain is changing and you need old URLs redirected properly to protect your search rankings" },
+        { "text": "Your current developer or agency is no longer available and the site needs a clean handover to a new host" },
+        { "html": "You need a <strong>WordPress server migration service</strong> because your current server can't handle current traffic" },
+        { "html": "You want <strong>zero downtime WordPress migration</strong> because the site generates leads or sales and can't afford to go offline" }
+      ],
+      "outro": [
+        {
+          "html": "This is also common for businesses expanding into GCC markets, where a faster or region-appropriate hosting setup becomes necessary as more traffic starts coming from outside Kerala. If you're not migrating an existing WordPress site but building fresh functionality instead, see our <a href=\"/custom-wordpress-development-kochi/\" class=\"text-primary font-semibold hover:underline\">Custom WordPress Development Kochi</a> page. If your site just needs to load faster on its current host, our <a href=\"/wordpress-speed-optimization-kochi/\" class=\"text-primary font-semibold hover:underline\">WordPress Speed Optimization</a> page covers that separately."
+        },
+        {
+          "html": "Businesses considering <strong>WordPress Migration Services Kochi</strong> work usually already know which of these situations applies to them, which is why we start every project with a short scoping call rather than a blind quote."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "Migrations We've Completed",
+      "paragraphs": [
+        {
+          "html": "Teknoppy has migrated WordPress sites across Kochi and Kerala between hosts, domains, and from other platforms — each one planned and tested before going live. See related work in our <a href=\"/portfolios/website-projects/\" class=\"text-primary font-semibold hover:underline\">Website Projects Portfolio</a>."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "cream",
+      "h2": "WordPress Migration Pricing",
+      "paragraphs": [
+        {
+          "html": "Pricing depends on site size, the number of integrations involved, and whether it's a like-for-like WordPress move or a full platform switch. A small brochure site migration costs less than an ecommerce store with payment integrations and a large product catalog. For an estimate based on your specific site, use our <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Cost Calculator</a> or <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a>."
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "h2": "Related Services",
+      "items": [
+        { "label": "WordPress Development Company in Kochi", "href": "/wordpress-development-company-kochi/", "text": "our full WordPress development pillar" },
+        { "label": "WordPress Maintenance Services", "href": "/wordpress-maintenance-services-kochi/" },
+        { "label": "WordPress Speed Optimization", "href": "/wordpress-speed-optimization-kochi/" },
+        { "label": "Custom WordPress Development Kochi", "href": "/custom-wordpress-development-kochi/" }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "soft",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions — WordPress Migration Services Kochi",
+      "items": [
+        {
+          "q": "What does WordPress migration service include?",
+          "a": "It includes a full audit, staging setup, database and file transfer, DNS and redirect cutover, and post-migration testing — everything needed to move a site without losing data, rankings, or functionality."
+        },
+        {
+          "q": "Can you migrate my website to WordPress Kochi businesses trust from another platform?",
+          "a": "Yes. If you want to migrate website to WordPress Kochi from Wix, Squarespace, Shopify, or another builder, we rebuild the site natively on WordPress rather than relying on an automated import."
+        },
+        {
+          "q": "Will migration affect my Google rankings?",
+          "a": "Not if done correctly. A proper URL redirect map and unchanged content structure mean search engines follow the site to its new location without losing indexed rankings."
+        },
+        {
+          "q": "Do you offer emergency migration support?",
+          "a": "Yes. Emergency website migration Kochi support is available if your current host is failing, your site is down, or you need to move on short notice."
+        },
+        {
+          "q": "How long does a typical migration take?",
+          "a": "Most migrations are completed within a planned maintenance window of a few hours, though the audit and staging setup beforehand can take several days depending on site complexity."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "white",
+      "h2": "Ready to Move Your Website Without the Risk?",
+      "paragraphs": [
+        { "text": "A poorly handled migration can cost you search rankings, broken forms, and days of downtime. Teknoppy's WordPress migration team plans the move, tests it on staging first, and verifies everything before calling it done." }
+      ],
+      "ctas": [
+        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
+        { "label": "Request a Quote", "href": "/request-a-quote/" }
+      ]
+    },
+    {
+      "type": "byline",
+      "bg": "cream",
+      "text": "Teknoppy · Vyttila, Kochi, Kerala · sanal@teknoppy.com · +91 6282249224 — Author: Sanal Edison, Digital Strategist · Reviewed: August 2026"
+    }
+  ],
+  "devNotes": {
+    "source": "WordPress Development pillar page - word press migration services kochi innerpage.pdf",
+    "primaryKeyword": "WordPress Migration Services Kochi",
+    "metaTitleLength": "54 characters",
+    "metaDescriptionLength": "144 characters",
+    "heldPlaceholders": [
+      "Migrations We've Completed — [STAT NEEDED: add 2–3 verified figures — e.g. number of migrations completed, average downtime achieved, largest site size migrated.]"
+    ],
+    "schema": "Service + LocalBusiness + FAQPage + BreadcrumbList"
+  }
+}
