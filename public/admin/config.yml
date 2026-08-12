@@ -1558,6 +1558,10 @@ collections:
         label: "Business Website Development (Kochi)"
         file: "src/data/pages/business-website-development-kochi.json"
         fields: *inner_page_fields
+      - name: landing_page_design_kochi
+        label: "Landing Page Design (Kochi)"
+        file: "src/data/pages/landing-page-design-kochi.json"
+        fields: *inner_page_fields
       - name: corporate_website_development_kochi
         label: "Corporate Website Development (Kochi)"
         file: "src/data/pages/corporate-website-development-kochi.json"
