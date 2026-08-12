@@ -4,8 +4,14 @@
     "description": "Website design, development, SEO, and digital marketing under one in-house team, serving businesses across Kerala and the GCC. Explore Teknoppy's full services."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Services", "href": "/services/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    }
   ],
   "sections": [
     {
@@ -100,7 +106,8 @@
         },
         {
           "q": "How do I start a project?",
-          "a": "Reach out through the Contact page or request a free website audit to see where your current site stands."
+          "a": "Reach out through the Contact page or request a free website audit to see where your current site stands.",
+          "aHtml": "Reach out through the <a href=\"/contact-us/\" class=\"text-primary font-semibold hover:underline\">Contact page</a> or request a <a href=\"/free-website-audit-kerala/\" class=\"text-primary font-semibold hover:underline\">free website audit</a> to see where your current site stands."
         }
       ]
     },
@@ -109,8 +116,10 @@
       "bg": "white",
       "h2": "Ready to talk about your project?",
       "ctas": [
-        { "label": "Contact Teknoppy →", "href": "/contact-us/" },
-        { "label": "Free Website Audit", "href": "/free-website-audit-kerala/" }
+        {
+          "label": "Contact Teknoppy →",
+          "href": "/contact-us/"
+        }
       ]
     }
   ],
@@ -135,5 +144,59 @@
       "Do not copy sentences from any pillar page into this page's blurbs, or the reverse — that creates duplicate-content risk between two of Teknoppy's own pages.",
       "Do not add the GCC Pillar as an 8th service card — it is a location page, not a service type. It stays as a text link inside the intro only, to keep this page's category structure clean."
     ]
+  },
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Web Design & Digital Services in Kerala | Teknoppy",
+    "description": "Website design, development, SEO, and digital marketing under one in-house team, serving businesses across Kerala and the GCC. Explore Teknoppy's full services.",
+    "url": "https://teknoppy.com/services/",
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Website Design & Development",
+          "url": "https://teknoppy.com/web-design-company-kochi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "WordPress Development",
+          "url": "https://teknoppy.com/wordpress-development-company-kochi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Ecommerce Development",
+          "url": "https://teknoppy.com/ecommerce-website-development-company-kochi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Web Application Development",
+          "url": "https://teknoppy.com/web-application-development-company-kochi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "SEO Services",
+          "url": "https://teknoppy.com/seo-services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Digital Marketing",
+          "url": "https://teknoppy.com/digital-marketing-company-kochi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "UI/UX Design",
+          "url": "https://teknoppy.com/ui-ux-design-company-in-kochi/"
+        }
+      ]
+    }
   }
 }
