@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "title": "Teknoppy Certifications & Client Reviews | Kochi",
+    "description": "See Teknoppy's certifications, verified client reviews, and ratings from Google, Clutch, and Trustpilot — real trust signals from our Kochi team."
+  },
+  "hero": {
+    "badge": "Trust & Proof",
+    "h1Lead": "Teknoppy Certifications and",
+    "h1Accent": "Client Reviews",
+    "intro": "This page brings together our platform certifications, verified client reviews, and real client testimonials in one place, so you can check our credibility independently before choosing to work with us. We believe trust should be provable, not just claimed, which is why every badge and rating shown here links back to its original, verifiable source rather than being described in our own words alone.",
+    "verifiedLine": "Verified and updated July 2026"
+  },
+  "certifications": {
+    "heading": "Platform Certifications",
+    "intro": "Teknoppy holds active certifications across the platforms and tools we work with every day, including web development, SEO, and digital marketing platforms. Each certification badge below is currently valid and links to its official verification page, so you can confirm it independently rather than taking our word for it. We update this section whenever a certification is renewed, added, or retired.",
+    "items": []
+  },
+  "ratings": {
+    "heading": "Client Reviews and Ratings",
+    "intro": "Our client reviews are collected directly from Google, Clutch, and Trustpilot, not written or curated internally. Each score below reflects the live rating on that platform at the time this page was last updated, along with the total number of verified reviews behind it.",
+    "items": [
+      { "platform": "Google Reviews", "rating": "", "reviewCount": "", "url": "" },
+      { "platform": "Clutch Rating", "rating": "", "reviewCount": "", "url": "" },
+      { "platform": "Trustpilot Rating", "rating": "", "reviewCount": "", "url": "" }
+    ]
+  },
+  "testimonials": {
+    "heading": "Featured Testimonials",
+    "intro": "A few words from clients we have worked with recently across Kerala and the GCC region, shared here with their permission.",
+    "items": []
+  },
+  "whyThisMatters": {
+    "heading": "Why This Matters",
+    "html": "Certifications and reviews are not decoration, they are proof. A certification shows we know the platforms we work on. A verified review shows a real client was satisfied enough to say so publicly, on a platform we do not control. Together, they give you a way to check our claims before you commit to a project, the same way we would want to check an agency before hiring one ourselves. For more detail on real project outcomes, see our <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">case studies</a>, where every result is backed by at least three hard numbers such as traffic growth, ranking position, or enquiry count."
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "Is Teknoppy a certified web design agency?",
+        "a": "Yes. Teknoppy holds active certifications across the web development, SEO, and digital marketing platforms we use daily, each of which is linked above to its official, verifiable source rather than simply claimed on this page."
+      },
+      {
+        "q": "Where can I read genuine Teknoppy client reviews?",
+        "a": "You can read verified Teknoppy reviews directly on Google, Clutch, and Trustpilot, all linked above. We do not write or edit these reviews ourselves, they come directly from the platforms and reflect real client feedback."
+      },
+      {
+        "q": "How many clients has Teknoppy worked with?",
+        "a": "Teknoppy has worked with businesses across Kerala and the GCC region, including the UAE and Qatar. You can see specific client examples on our Clients page and detailed project outcomes on our Case Studies page.",
+        "aHtml": "Teknoppy has worked with businesses across Kerala and the GCC region, including the UAE and Qatar. You can see specific client examples on our <a href=\"/clients/\" class=\"text-primary font-semibold hover:underline\">Clients page</a> and detailed project outcomes on our <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">Case Studies</a> page."
+      },
+      {
+        "q": "Are the testimonials on this page real?",
+        "a": "Yes. Every testimonial shown here is a real client quote, used with permission, and connected to a named client or company wherever possible rather than left anonymous or unattributed."
+      }
+    ]
+  },
+  "cta": {
+    "html": "Ready to see if we are the right fit for your project? Get in touch with our team or explore our case studies to see real results first, backed by real numbers.",
+    "buttons": [
+      { "label": "Get in Touch", "href": "/contact-us/" },
+      { "label": "Explore Case Studies", "href": "/case-study/" }
+    ],
+    "leadershipHtml": "Behind every certification and review is the team delivering the work — meet our founder on the <a href=\"/sanal-edison-digital-strategist/\" class=\"text-primary font-semibold hover:underline\">Leadership</a> page."
+  },
+  "devNotes": {
+    "source": "CERTIFCATION.pdf — Teknoppy Certifications & Trust Badges Page, Final Page Content (July 2026)",
+    "primaryKeyword": "Teknoppy Certifications and Client Reviews",
+    "wordCount": "610",
+    "publishingRule": "IMPORTANT — the doc states: \"Every bracketed placeholder below (certification badges, ratings, review counts, testimonials) must be replaced with Teknoppy's real, current, verifiable data. Do not publish placeholder figures live, and never invent numbers — an unverifiable rating undermines the exact trust this page is built to create.\" The build honours this literally: certifications, ratings and testimonials are empty, and each block renders only once real data is entered. Nothing is invented and no placeholder text reaches the live page.",
+    "dataNeededBeforeLaunch": [
+      "3 certification badges — logo image, certification name, and official verification URL for each. Badges must be real logo images, not text labels.",
+      "Google, Clutch and Trustpilot ratings — verified rating, review count, and the live listing URL for each.",
+      "3 client testimonials — quote, client name and company, used with permission. Never write one on a client's behalf.",
+      "Organization sameAs URLs — verified Google Business Profile, Clutch and Trustpilot listings (site.json social fields are still \"#\")."
+    ],
+    "schemaBehaviour": "FAQPage (4 questions, schema copy identical to the visible text) and BreadcrumbList (Home > Certifications) always emit. Organization emits sameAs only for real URLs. AggregateRating is withheld until a rating has at least 5 genuine reviews behind it, per the doc's instruction not to mark up placeholder or estimated figures.",
+    "contentRulesForFutureUpdates": [
+      "Update the \"Verified and updated\" date whenever a badge, rating, or testimonial is added, changed, or removed.",
+      "Remove any certification immediately once it expires or lapses — never leave an invalid badge live.",
+      "Refresh review counts and ratings periodically so the figures shown always match the live platform data.",
+      "Never add a testimonial without the client's permission, and never write one on a client's behalf."
+    ]
+  }
+}

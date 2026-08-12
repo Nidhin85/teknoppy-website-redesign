@@ -1594,6 +1594,100 @@ collections:
               - { name: text, label: "Text", widget: text }
               - { name: label, label: "Button label", widget: string }
               - { name: href, label: "Button URL", widget: string }
+      - name: certifications
+        label: "Certifications & Client Reviews (/certifications/)"
+        file: "src/data/pages/certifications.json"
+        fields:
+          - name: meta
+            label: "Meta / SEO"
+            widget: object
+            fields:
+              - { name: title, label: "Meta title", widget: string }
+              - { name: description, label: "Meta description", widget: text }
+          - name: hero
+            label: "Hero"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: h1Lead, label: "H1 — lead", widget: string }
+              - { name: h1Accent, label: "H1 — highlighted", widget: string }
+              - { name: intro, label: "Intro paragraph", widget: text }
+              - { name: verifiedLine, label: "Verified and updated line", widget: string, hint: "Update this date whenever a badge, rating, or testimonial is added, changed, or removed." }
+          - name: certifications
+            label: "Platform Certifications"
+            widget: object
+            fields:
+              - { name: heading, label: "Heading", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: items
+                label: "Certifications"
+                widget: list
+                required: false
+                hint: "Only real, currently valid certifications. Remove immediately once one expires."
+                fields:
+                  - { name: name, label: "Certification name", widget: string }
+                  - { name: badge, label: "Badge image", widget: image, required: false, hint: "Real logo image, not a text label." }
+                  - { name: verificationUrl, label: "Official verification URL", widget: string }
+          - name: ratings
+            label: "Client Reviews and Ratings"
+            widget: object
+            fields:
+              - { name: heading, label: "Heading", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: items
+                label: "Platform ratings"
+                widget: list
+                hint: "Leave rating blank to hide a platform. Never enter an estimated figure — it must match the live listing."
+                fields:
+                  - { name: platform, label: "Platform", widget: string }
+                  - { name: rating, label: "Verified rating", widget: string, required: false }
+                  - { name: reviewCount, label: "Number of reviews", widget: string, required: false }
+                  - { name: url, label: "Live listing URL", widget: string, required: false }
+          - name: testimonials
+            label: "Featured Testimonials"
+            widget: object
+            fields:
+              - { name: heading, label: "Heading", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: items
+                label: "Testimonials"
+                widget: list
+                required: false
+                hint: "Real client quotes only, used with permission. Never write one on a client's behalf."
+                fields:
+                  - { name: quote, label: "Quote", widget: text }
+                  - { name: name, label: "Client name", widget: string }
+                  - { name: company, label: "Company", widget: string, required: false }
+          - name: whyThisMatters
+            label: "Why This Matters"
+            widget: object
+            fields:
+              - { name: heading, label: "Heading", widget: string }
+              - { name: html, label: "Paragraph (HTML — contains links)", widget: text }
+          - name: faq
+            label: "FAQ"
+            widget: object
+            fields:
+              - { name: heading, label: "Heading", widget: string }
+              - name: items
+                label: "Questions"
+                widget: list
+                fields:
+                  - { name: q, label: "Question", widget: string }
+                  - { name: a, label: "Answer (plain text — used for schema)", widget: text }
+                  - { name: aHtml, label: "Answer (HTML — shown on page)", widget: text, required: false, hint: "Same wording as the plain answer, with links added." }
+          - name: cta
+            label: "Closing CTA"
+            widget: object
+            fields:
+              - { name: html, label: "Text", widget: text }
+              - name: buttons
+                label: "Buttons"
+                widget: list
+                fields:
+                  - { name: label, label: "Label", widget: string }
+                  - { name: href, label: "URL", widget: string }
+              - { name: leadershipHtml, label: "Leadership line (HTML)", widget: text }
       - name: portfolio_hub
         label: "Portfolio Hub (/portfolios/)"
         file: "src/data/pages/portfolios.json"
