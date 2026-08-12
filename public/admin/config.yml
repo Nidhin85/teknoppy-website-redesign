@@ -1554,6 +1554,10 @@ collections:
         label: "Web Design Company for UAE Businesses"
         file: "src/data/pages/web-design-company-uae.json"
         fields: *inner_page_fields
+      - name: business_website_development_kochi
+        label: "Business Website Development (Kochi)"
+        file: "src/data/pages/business-website-development-kochi.json"
+        fields: *inner_page_fields
       - name: corporate_website_development_kochi
         label: "Corporate Website Development (Kochi)"
         file: "src/data/pages/corporate-website-development-kochi.json"
