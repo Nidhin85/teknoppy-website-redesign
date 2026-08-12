@@ -9,6 +9,9 @@ const blog = defineCollection({
     excerpt: z.string(),
     category: z.string(),
     date: z.coerce.date(),
+    // GEO rule (site structure doc §10): posts expose a published and, when
+    // revised, an updated date so AI crawlers can verify freshness.
+    updated: z.coerce.date().optional(),
     // The blog hub doc requires every post preview to carry a named author.
     author: z.string().default('Teknoppy SEO and Content Team'),
     readTime: z.string().default('5 min read'),

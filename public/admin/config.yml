@@ -1217,6 +1217,7 @@ collections:
       - { name: excerpt, label: "Excerpt", widget: text, hint: "Short summary shown on cards" }
       - { name: category, label: "Category", widget: string, default: "Web Design" }
       - { name: date, label: "Date", widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
+      - { name: updated, label: "Last updated", widget: datetime, required: false, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, picker_utc: true, hint: "Set this when you revise a published post — it shows on the page and in Article schema." }
       - { name: author, label: "Author", widget: string, default: "Teknoppy SEO and Content Team", hint: "Every post must show a named author — never leave this blank." }
       - { name: readTime, label: "Read time", widget: string, default: "5 min read" }
       - { name: cover, label: "Cover image", widget: image, default: "/blog/blog1.png" }

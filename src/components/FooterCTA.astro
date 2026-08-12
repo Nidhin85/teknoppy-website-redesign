@@ -17,13 +17,20 @@ const schema = {
   "name": businessInfo.name,
   "telephone": businessInfo.phone,
   "email": businessInfo.email,
+  "url": "https://teknoppy.com/",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Kochi",
+    "streetAddress": "Kaithakal Building, Near Thykoodam Metro, Vyttila PO",
     "addressLocality": "Kochi",
     "addressRegion": "Kerala",
+    "postalCode": "682019",
     "addressCountry": "IN"
-  }
+  },
+  "areaServed": [
+    { "@type": "State", "name": "Kerala" },
+    { "@type": "Country", "name": "United Arab Emirates" },
+    { "@type": "Country", "name": "Qatar" }
+  ]
 };
 ---
 

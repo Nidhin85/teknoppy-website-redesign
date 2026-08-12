@@ -8,6 +8,20 @@ import page from '../data/pages/web-design.json';
 const title = page.meta.title;
 const description = page.meta.description;
 
+// AEO rule (site structure doc §10): every pillar page carries its own FAQPage block.
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": page.faqs.items.map(faq => ({
+    "@type": "Question",
+    "name": faq.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.a
+    }
+  }))
+};
+
 // Icons stay hardcoded here, zipped by index with the JSON lists.
 const heroStatIcons = [Rocket, Calendar, TrendingUp, Globe2];
 const serviceIcons = [MonitorSmartphone, Briefcase, Building2, Rocket, Edit, ShieldCheck, Search, Layers];
@@ -520,6 +534,9 @@ const seoAuditFactors = [
           ))}
         </div>
       </div>
+
+      <!-- FAQ Schema -->
+      <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
     </section>
   </main>
 

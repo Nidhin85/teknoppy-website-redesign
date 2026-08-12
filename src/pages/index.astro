@@ -11,9 +11,53 @@ import Blog from '../components/Blog.astro';
 import FAQ from '../components/FAQ.astro';
 import FooterCTA from '../components/FooterCTA.astro';
 import { getCollection } from 'astro:content';
+import site from '../data/site.json';
 
 const title = "Web Design Company in Kerala — Teknoppy | Website Design and Development";
 const description = "Teknoppy is a trusted Web Design Company in Kerala delivering SEO-friendly, responsive, and conversion-focused websites for businesses across Kerala and Kochi. Book your free consultation today.";
+
+// Structure doc §1: the homepage carries LocalBusiness (from FooterCTA) +
+// Organization + WebSite + FAQPage (from the FAQ component).
+const siteUrl = 'https://teknoppy.com/';
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": `${siteUrl}#organization`,
+  "name": site.businessName,
+  "url": siteUrl,
+  "logo": `${siteUrl}logo.svg`,
+  "email": site.email,
+  "telephone": site.phone,
+  "foundingDate": site.established,
+  "founder": {
+    "@type": "Person",
+    "name": site.founderName,
+    "jobTitle": site.founderRole
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Kaithakal Building, Near Thykoodam Metro, Vyttila PO",
+    "addressLocality": "Kochi",
+    "addressRegion": "Kerala",
+    "postalCode": "682019",
+    "addressCountry": "IN"
+  },
+  "areaServed": [
+    { "@type": "State", "name": "Kerala" },
+    { "@type": "Country", "name": "United Arab Emirates" },
+    { "@type": "Country", "name": "Qatar" }
+  ]
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${siteUrl}#website`,
+  "name": site.businessName,
+  "url": siteUrl,
+  "inLanguage": "en-IN",
+  "publisher": { "@id": `${siteUrl}#organization` }
+};
 
 const testimonials = (await getCollection('testimonials'))
   .sort((a, b) => a.data.order - b.data.order)
@@ -33,4 +77,7 @@ const testimonials = (await getCollection('testimonials'))
     <FAQ />
   </main>
   <FooterCTA />
+
+  <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
 </Layout>
