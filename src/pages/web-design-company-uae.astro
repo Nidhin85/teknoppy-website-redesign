@@ -7,6 +7,12 @@ import page from '../data/pages/web-design-company-uae.json';
 ---
 
 <Layout title={page.meta.title} description={page.meta.description}>
+  <Fragment slot="head">
+    <!-- Doc: Geo Meta — target country United Arab Emirates -->
+    <meta name="geo.region" content="AE" />
+    <meta name="geo.placename" content="Dubai, Abu Dhabi, Sharjah" />
+  </Fragment>
+
   <Header forceSolidBg={true} />
 
   <main class="overflow-hidden bg-[#FFF8EF]/20">

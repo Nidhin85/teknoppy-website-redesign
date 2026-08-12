@@ -4,9 +4,18 @@
     "description": "Teknoppy is a trusted Digital Marketing Company Kerala businesses rely on for SEO-backed strategy, social media, and PPC growth. Book a free consultation."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Kerala", "href": "/" },
-    { "name": "Digital Marketing Company Kerala", "href": "/digital-marketing-company-kerala/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Kerala",
+      "href": "/"
+    },
+    {
+      "name": "Digital Marketing Company Kerala",
+      "href": "/digital-marketing-company-kerala/"
+    }
   ],
   "sections": [
     {
@@ -21,14 +30,32 @@
         }
       ],
       "ctas": [
-        { "label": "Book a Free Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Free Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ],
       "stats": [
-        { "value": "150+", "label": "Websites Delivered" },
-        { "value": "100+", "label": "Happy Clients" },
-        { "value": "8 Years", "label": "of Experience" },
-        { "value": "5-Star", "label": "Google Rated" }
+        {
+          "value": "150+",
+          "label": "Websites Delivered"
+        },
+        {
+          "value": "100+",
+          "label": "Happy Clients"
+        },
+        {
+          "value": "8 Years",
+          "label": "of Experience"
+        },
+        {
+          "value": "5-Star",
+          "label": "Google Rated"
+        }
       ]
     },
     {
@@ -182,49 +209,140 @@
       "bg": "cream",
       "h2": "Ready to Work with Teknoppy in Kerala?",
       "paragraphs": [
-        { "text": "Whether you are a startup building your first digital presence or an established Kerala brand ready to scale, Teknoppy's team is ready to build a Digital Marketing Company Kerala strategy around your specific market and goals. Book a free consultation or request a quote and receive a clear, no-obligation proposal within 24 hours." }
+        {
+          "text": "Whether you are a startup building your first digital presence or an established Kerala brand ready to scale, Teknoppy's team is ready to build a Digital Marketing Company Kerala strategy around your specific market and goals. Book a free consultation or request a quote and receive a clear, no-obligation proposal within 24 hours."
+        }
       ],
       "ctas": [
-        { "label": "Book a Free Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Free Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
       "type": "nap",
       "bg": "white",
       "rows": [
-        { "label": "Business Name", "value": "Teknoppy" },
-        { "label": "Location", "value": "Kochi, Kerala" },
-        { "label": "Phone", "value": "+91 6282249224", "href": "tel:+916282249224" },
-        { "label": "Email", "value": "sanal@teknoppy.com", "href": "mailto:sanal@teknoppy.com" }
+        {
+          "label": "Business Name",
+          "value": "Teknoppy"
+        },
+        {
+          "label": "Location",
+          "value": "Kochi, Kerala"
+        },
+        {
+          "label": "Phone",
+          "value": "+91 6282249224",
+          "href": "tel:+916282249224"
+        },
+        {
+          "label": "Email",
+          "value": "sanal@teknoppy.com",
+          "href": "mailto:sanal@teknoppy.com"
+        }
       ]
+    },
+    {
+      "type": "byline",
+      "bg": "soft",
+      "text": "Author: Sanal Edison, Founder and Digital Strategist, Teknoppy · Reviewed: August 2026"
     }
   ],
-  "schema": {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Teknoppy",
-    "telephone": "+91 6282249224",
-    "email": "sanal@teknoppy.com",
-    "url": "https://teknoppy.com/digital-marketing-company-kerala/",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Kaithakal Building, Near Thykoodam Metro, Vyttila PO",
-      "addressLocality": "Kochi",
-      "addressRegion": "Kerala",
-      "postalCode": "682019",
-      "addressCountry": "IN"
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Teknoppy",
+      "telephone": "+91 6282249224",
+      "email": "sanal@teknoppy.com",
+      "url": "https://teknoppy.com/digital-marketing-company-kerala/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kaithakal Building, Near Thykoodam Metro, Vyttila PO",
+        "addressLocality": "Kochi",
+        "addressRegion": "Kerala",
+        "postalCode": "682019",
+        "addressCountry": "IN"
+      },
+      "areaServed": [
+        {
+          "@type": "State",
+          "name": "Kerala"
+        },
+        {
+          "@type": "City",
+          "name": "Kochi"
+        },
+        {
+          "@type": "City",
+          "name": "Thrissur"
+        },
+        {
+          "@type": "City",
+          "name": "Calicut"
+        },
+        {
+          "@type": "City",
+          "name": "Trivandrum"
+        },
+        {
+          "@type": "City",
+          "name": "Palakkad"
+        },
+        {
+          "@type": "City",
+          "name": "Kottayam"
+        }
+      ],
+      "@id": "https://teknoppy.com/#localbusiness"
     },
-    "areaServed": [
-      { "@type": "State", "name": "Kerala" },
-      { "@type": "City", "name": "Kochi" },
-      { "@type": "City", "name": "Thrissur" },
-      { "@type": "City", "name": "Calicut" },
-      { "@type": "City", "name": "Trivandrum" },
-      { "@type": "City", "name": "Palakkad" },
-      { "@type": "City", "name": "Kottayam" }
-    ]
-  },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Digital Marketing Company Kerala",
+      "serviceType": "Digital Marketing",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        {
+          "@type": "State",
+          "name": "Kerala"
+        },
+        {
+          "@type": "City",
+          "name": "Kochi"
+        },
+        {
+          "@type": "City",
+          "name": "Thrissur"
+        },
+        {
+          "@type": "City",
+          "name": "Calicut"
+        },
+        {
+          "@type": "City",
+          "name": "Trivandrum"
+        },
+        {
+          "@type": "City",
+          "name": "Palakkad"
+        },
+        {
+          "@type": "City",
+          "name": "Kottayam"
+        }
+      ],
+      "url": "https://teknoppy.com/digital-marketing-company-kerala/"
+    }
+  ],
   "devNotes": {
     "source": "TEKNOPPY LOCATION UNDER INNERPAGE-Digital_Marketing_Company_Kerala_.pdf",
     "primaryKeyword": "Digital Marketing Company Kerala",

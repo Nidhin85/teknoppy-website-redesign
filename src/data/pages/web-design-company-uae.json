@@ -4,9 +4,18 @@
     "description": "Teknoppy is a trusted web design company for UAE businesses, building bilingual, VAT-ready websites for Dubai, Abu Dhabi and beyond. Book a consultation today."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "GCC", "href": "/web-design-company-for-gcc-businesses/" },
-    { "name": "Web Design Company for UAE Businesses", "href": "/web-design-company-uae/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "GCC",
+      "href": "/web-design-company-for-gcc-businesses/"
+    },
+    {
+      "name": "Web Design Company for UAE Businesses",
+      "href": "/web-design-company-uae/"
+    }
   ],
   "sections": [
     {
@@ -21,13 +30,28 @@
         }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ],
       "stats": [
-        { "value": "120+", "label": "Projects Delivered" },
-        { "value": "2018", "label": "Established" },
-        { "value": "24-Hr", "label": "Response, GST/AST Hours" }
+        {
+          "value": "120+",
+          "label": "Projects Delivered"
+        },
+        {
+          "value": "2018",
+          "label": "Established"
+        },
+        {
+          "value": "24-Hr",
+          "label": "Response, GST/AST Hours"
+        }
       ]
     },
     {
@@ -170,12 +194,23 @@
       "bg": "white",
       "h2": "Ready to Start Your UAE Website Project?",
       "paragraphs": [
-        { "text": "Whether the goal is a new corporate site, a VAT-ready online store, or a custom web application, Teknoppy is ready to build it as a trusted web design company for UAE businesses, with a team responding within 24 hours across GST and AST time zones." }
+        {
+          "text": "Whether the goal is a new corporate site, a VAT-ready online store, or a custom web application, Teknoppy is ready to build it as a trusted web design company for UAE businesses, with a team responding within 24 hours across GST and AST time zones."
+        }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" },
-        { "label": "Free Website Audit", "href": "/free-website-audit-kerala/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        },
+        {
+          "label": "Free Website Audit",
+          "href": "/free-website-audit-kerala/"
+        }
       ]
     },
     {
@@ -184,23 +219,43 @@
       "text": "Teknoppy, Kochi, Kerala, India · Call +91 6282249224 · sanal@teknoppy.com · Reviewed August 2026 by Sanal Edison, Founder and Digital Strategist. Serving UAE clients with GCC-aligned coordination and no invented local office."
     }
   ],
-  "schema": {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Teknoppy",
-    "telephone": "+91 6282249224",
-    "email": "sanal@teknoppy.com",
-    "url": "https://teknoppy.com/web-design-company-uae/",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Kaithakal Building, Near Thykoodam Metro, Vyttila PO",
-      "addressLocality": "Kochi",
-      "addressRegion": "Kerala",
-      "postalCode": "682019",
-      "addressCountry": "IN"
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Teknoppy",
+      "telephone": "+91 6282249224",
+      "email": "sanal@teknoppy.com",
+      "url": "https://teknoppy.com/web-design-company-uae/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kaithakal Building, Near Thykoodam Metro, Vyttila PO",
+        "addressLocality": "Kochi",
+        "addressRegion": "Kerala",
+        "postalCode": "682019",
+        "addressCountry": "IN"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United Arab Emirates"
+      },
+      "@id": "https://teknoppy.com/#localbusiness"
     },
-    "areaServed": { "@type": "Country", "name": "United Arab Emirates" }
-  },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Web Design Company for UAE Businesses",
+      "serviceType": "Web Design",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United Arab Emirates"
+      },
+      "url": "https://teknoppy.com/web-design-company-uae/"
+    }
+  ],
   "devNotes": {
     "source": "Teknoppy location page under inner page-Web_Design_Company_UAE_Businesses.pdf",
     "primaryKeyword": "Web Design Company for UAE Businesses",

@@ -4,9 +4,18 @@
     "description": "Teknoppy is a results-driven SEO company in Kerala serving Kochi, Thrissur, Calicut, Trivandrum and Kottayam. Book a free SEO audit. Call +91 6282249224."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Kerala", "href": "/" },
-    { "name": "SEO Company Kerala", "href": "/seo-company-kerala/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Kerala",
+      "href": "/"
+    },
+    {
+      "name": "SEO Company Kerala",
+      "href": "/seo-company-kerala/"
+    }
   ],
   "sections": [
     {
@@ -21,8 +30,14 @@
         }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ],
       "trustline": "Trusted across multiple business districts statewide. Ranking progress tracked monthly. Transparent reporting with no jargon."
     },
@@ -170,11 +185,19 @@
       "bg": "white",
       "h2": "Ready to Work with Teknoppy in Kerala?",
       "paragraphs": [
-        { "text": "If you need an SEO partner that understands regional search behaviour and reports on real enquiries, not just rankings, Teknoppy is ready to help. Book a free consultation or request a quote to see where your website currently stands." }
+        {
+          "text": "If you need an SEO partner that understands regional search behaviour and reports on real enquiries, not just rankings, Teknoppy is ready to help. Book a free consultation or request a quote to see where your website currently stands."
+        }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
@@ -182,9 +205,20 @@
       "bg": "cream",
       "h2": "Teknoppy",
       "rows": [
-        { "label": "Location", "value": "Kochi, Kerala" },
-        { "label": "Email", "value": "sanal@teknoppy.com", "href": "mailto:sanal@teknoppy.com" },
-        { "label": "Phone", "value": "+91 6282249224", "href": "tel:+916282249224" }
+        {
+          "label": "Location",
+          "value": "Kochi, Kerala"
+        },
+        {
+          "label": "Email",
+          "value": "sanal@teknoppy.com",
+          "href": "mailto:sanal@teknoppy.com"
+        },
+        {
+          "label": "Phone",
+          "value": "+91 6282249224",
+          "href": "tel:+916282249224"
+        }
       ]
     }
   ],
@@ -193,5 +227,47 @@
     "primaryKeyword": "SEO Company Kerala",
     "secondaryKeywords": "best SEO services in Kerala, SEO agency for Kerala businesses, local SEO Kerala, SEO experts Kerala, SEO packages for small businesses in Kerala, website ranking company Kerala",
     "pendingCopy": "Proven Results section — original copy contains the placeholder: [Publishable traffic, ranking-position and enquiry figures to be inserted here once confirmed per client.] Held out of the live page until real figures are supplied."
-  }
+  },
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "SEO Company Kerala",
+      "serviceType": "Search Engine Optimisation",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        {
+          "@type": "State",
+          "name": "Kerala"
+        },
+        {
+          "@type": "City",
+          "name": "Kochi"
+        },
+        {
+          "@type": "City",
+          "name": "Thrissur"
+        },
+        {
+          "@type": "City",
+          "name": "Kozhikode"
+        },
+        {
+          "@type": "City",
+          "name": "Thiruvananthapuram"
+        },
+        {
+          "@type": "City",
+          "name": "Palakkad"
+        },
+        {
+          "@type": "City",
+          "name": "Kottayam"
+        }
+      ],
+      "url": "https://teknoppy.com/seo-company-kerala/"
+    }
+  ]
 }

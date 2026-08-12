@@ -479,4 +479,6 @@ const breadcrumbSchema = page.breadcrumb && {
 
 {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 {breadcrumbSchema && <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />}
-{page.schema && <script type="application/ld+json" set:html={JSON.stringify(page.schema)} />}
+{(Array.isArray(page.schema) ? page.schema : page.schema ? [page.schema] : []).map((sc: any) => (
+  <script type="application/ld+json" set:html={JSON.stringify(sc)} />
+))}
