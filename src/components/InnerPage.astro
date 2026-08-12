@@ -425,7 +425,7 @@ const breadcrumbSchema = page.breadcrumb && {
                 </span>
               </summary>
               <div class="mt-4 pt-4 border-t border-neutral-100/60 text-xs sm:text-sm text-neutral-600 leading-relaxed font-semibold">
-                {faq.a}
+                {faq.aHtml ? <Fragment set:html={faq.aHtml} /> : faq.a}
               </div>
             </details>
           ))}

@@ -4,8 +4,14 @@
     "description": "Browse Teknoppy's web design, ecommerce, and web application projects for clients across Kerala and the GCC, organized by category with real case studies."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Portfolio", "href": "/portfolios/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Portfolio",
+      "href": "/portfolios/"
+    }
   ],
   "sections": [
     {
@@ -81,7 +87,8 @@
       "items": [
         {
           "q": "Can I see live examples of Teknoppy's work?",
-          "a": "Yes. Browse projects by category above, or visit Case Studies for full write-ups with results."
+          "a": "Yes. Browse projects by category above, or visit Case Studies for full write-ups with results.",
+          "aHtml": "Yes. Browse projects by category above, or visit <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">Case Studies</a> for full write-ups with results."
         },
         {
           "q": "Does Teknoppy have experience with GCC projects?",
@@ -89,7 +96,8 @@
         },
         {
           "q": "Do you show results alongside the design work?",
-          "a": "Design examples live here. Ranking, traffic, and conversion numbers are documented separately on Case Studies, so each page stays focused on a single job and doesn't repeat the other's content."
+          "a": "Design examples live here. Ranking, traffic, and conversion numbers are documented separately on Case Studies, so each page stays focused on a single job and doesn't repeat the other's content.",
+          "aHtml": "Design examples live here. Ranking, traffic, and conversion numbers are documented separately on <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">Case Studies</a>, so each page stays focused on a single job and doesn't repeat the other's content."
         }
       ]
     },
@@ -98,8 +106,10 @@
       "bg": "cream",
       "h2": "Have a project in mind?",
       "ctas": [
-        { "label": "Contact Teknoppy →", "href": "/contact-us/" },
-        { "label": "See Case Studies", "href": "/case-study/" }
+        {
+          "label": "Contact Teknoppy →",
+          "href": "/contact-us/"
+        }
       ]
     }
   ],
@@ -131,5 +141,47 @@
       "The role split with Case Studies — this page stays visual/project-based, Case Studies stays numbers/results-based. Blurring the two creates duplicate-content risk between two of Teknoppy's own pages.",
       "Do not add project results, rankings, or traffic numbers directly on this page — link to Case Studies instead."
     ]
+  },
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Web Design Portfolio Kerala | Teknoppy Projects",
+    "description": "Browse Teknoppy's web design, ecommerce, and web application projects for clients across Kerala and the GCC, organized by category with real case studies.",
+    "url": "https://teknoppy.com/portfolios/",
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Website Projects",
+          "url": "https://teknoppy.com/portfolios/website-projects/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "WordPress Projects",
+          "url": "https://teknoppy.com/portfolios/wordpress-projects/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Ecommerce Projects",
+          "url": "https://teknoppy.com/portfolios/ecommerce-projects/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Web Application Projects",
+          "url": "https://teknoppy.com/portfolios/web-application-projects/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "SEO Case Studies",
+          "url": "https://teknoppy.com/portfolios/seo-case-studies/"
+        }
+      ]
+    }
   }
 }
