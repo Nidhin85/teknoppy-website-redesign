@@ -34,6 +34,10 @@
       "heading": "WordPress",
       "links": [
         {
+          "label": "Custom WordPress Development",
+          "href": "/custom-wordpress-development-kochi/"
+        },
+        {
           "label": "WordPress Web Design",
           "href": "/wordpress-web-design-kochi/"
         },
@@ -48,6 +52,27 @@
         {
           "label": "WordPress Speed Optimization",
           "href": "/wordpress-speed-optimization-kochi/"
+        }
+      ]
+    },
+    {
+      "heading": "Ecommerce",
+      "links": [
+        {
+          "label": "WooCommerce Development",
+          "href": "/woocommerce-development-company-kochi/"
+        },
+        {
+          "label": "Shopify Development",
+          "href": "/shopify-development-company-kochi/"
+        },
+        {
+          "label": "Marketplace Development",
+          "href": "/marketplace-development-company-kochi/"
+        },
+        {
+          "label": "Payment Gateway Integration",
+          "href": "/payment-gateway-integration-kochi/"
         }
       ]
     },

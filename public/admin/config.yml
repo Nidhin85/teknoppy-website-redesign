@@ -1713,6 +1713,26 @@ collections:
         label: "Landing Page Design (Kochi)"
         file: "src/data/pages/landing-page-design-kochi.json"
         fields: *inner_page_fields
+      - name: shopify_development_company_kochi
+        label: "Shopify Development (Kochi)"
+        file: "src/data/pages/shopify-development-company-kochi.json"
+        fields: *inner_page_fields
+      - name: woocommerce_development_company_kochi
+        label: "WooCommerce Development (Kochi)"
+        file: "src/data/pages/woocommerce-development-company-kochi.json"
+        fields: *inner_page_fields
+      - name: payment_gateway_integration_kochi
+        label: "Payment Gateway Integration (Kochi)"
+        file: "src/data/pages/payment-gateway-integration-kochi.json"
+        fields: *inner_page_fields
+      - name: marketplace_development_company_kochi
+        label: "Marketplace Development (Kochi)"
+        file: "src/data/pages/marketplace-development-company-kochi.json"
+        fields: *inner_page_fields
+      - name: custom_wordpress_development_kochi
+        label: "Custom WordPress Development (Kochi)"
+        file: "src/data/pages/custom-wordpress-development-kochi.json"
+        fields: *inner_page_fields
       - name: corporate_website_development_kochi
         label: "Corporate Website Development (Kochi)"
         file: "src/data/pages/corporate-website-development-kochi.json"
