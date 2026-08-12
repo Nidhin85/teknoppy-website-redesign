@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "title": "Web Design & Digital Marketing Blog | Teknoppy Kerala",
+    "description": "Explore Teknoppy's blog for web design, WordPress, SEO, ecommerce and digital marketing tips for Kerala businesses. Written by our expert team."
+  },
+  "hero": {
+    "badge": "Our Blog",
+    "h1Lead": "Web Design & Digital Marketing",
+    "h1Accent": "Blog",
+    "intro": "Welcome to the Teknoppy blog, a resource hub for business owners across Kerala who want to build, grow, and manage a stronger online presence. Here you will find practical, no fluff guidance on web design, WordPress, ecommerce, SEO, and digital marketing, written by the same team that builds and manages live websites for clients across Kochi, Kerala, and the GCC region. Every article is written to help you make one clear decision faster, whether that is choosing a website platform, fixing a slow loading page, planning your next marketing move, or understanding what your developer just told you.",
+    "trustlineHtml": "Written and reviewed by <a href=\"/sanal-edison-digital-strategist/\" class=\"text-primary hover:underline\">Teknoppy's SEO and Content Team</a> · Last updated July 2026"
+  },
+  "categories": {
+    "intro": "Browse by topic below. Each category is written for a specific stage of your website journey, from first build to ongoing growth, so you can jump straight to what matters right now.",
+    "items": [
+      {
+        "title": "Web Design Tips and Guides Kerala",
+        "text": "Practical web design tips and guides for Kerala businesses, covering layout, mobile usability, and what actually makes a website convert visitors into enquiries.",
+        "href": "/blog/web-design/"
+      },
+      {
+        "title": "WordPress Tips and Tutorials Kerala",
+        "text": "Step by step WordPress tips and tutorials for Kerala businesses, from choosing the right theme to keeping your site fast, secure, and easy to manage yourself.",
+        "href": "/blog/wordpress/"
+      },
+      {
+        "title": "Ecommerce Website Tips Kerala",
+        "text": "Ecommerce website tips for Kerala businesses selling online, covering product pages, checkout flow, and the small changes that turn browsers into buyers.",
+        "href": "/blog/ecommerce/"
+      },
+      {
+        "title": "Web Application Development Guides Kerala",
+        "text": "Web application development guides for Kerala businesses building custom tools, from CRMs to booking systems, explained in plain, non technical language.",
+        "href": "/blog/web-application/"
+      },
+      {
+        "title": "SEO Tips and Strategies for Kerala Businesses",
+        "text": "SEO tips and strategies for Kerala businesses, focused on the technical, local, and content moves that genuinely move rankings, not just theory.",
+        "href": "/blog/seo/"
+      },
+      {
+        "title": "Kerala Business Growth and Digital Tips",
+        "text": "Kerala business growth and digital tips covering marketing, branding, and how to use your website as a genuine sales tool rather than a digital brochure.",
+        "href": "/blog/kerala-business/"
+      }
+    ]
+  },
+  "latest": {
+    "heading": "Latest From The Blog",
+    "intro": "Our newest articles, updated regularly, each with a named author and publish date so you always know how current the advice is before you act on it."
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "How often does Teknoppy publish new blog content?",
+        "a": "We publish new articles every month across web design, SEO, WordPress, ecommerce, and digital marketing. Each post is written and reviewed by our in-house team based on real project experience, not generic advice, so the information stays current and genuinely useful for Kerala businesses planning their next step."
+      },
+      {
+        "q": "Who writes the articles on this blog?",
+        "a": "All articles are written by Teknoppy's SEO and content team, the same specialists who manage live client websites across Kerala and the GCC. Every post carries a named author and a published date, so you always know who wrote it, when, and whether the advice still applies today."
+      },
+      {
+        "q": "Is this blog only useful for Kerala businesses?",
+        "a": "Most examples focus on Kerala and Kochi, but the guidance on web design, SEO, and digital marketing applies to any small or growing business, including our clients across the UAE and Qatar who face similar website and growth challenges."
+      },
+      {
+        "q": "Can I request a specific topic to be covered?",
+        "a": "Yes. If you have a question about your website, SEO, or digital marketing that is not covered yet, reach out through our contact page and we will consider it for an upcoming article written by our team."
+      },
+      {
+        "q": "Does Teknoppy offer services related to the topics covered in the blog?",
+        "a": "Yes. Teknoppy provides web design, WordPress development, ecommerce, SEO, and digital marketing services for businesses across Kerala and the GCC. Explore our services page or request a free website audit to see where your site currently stands."
+      }
+    ]
+  },
+  "cta": {
+    "text": "Not sure where to start? Request a Free Website Audit and our team will review your site and recommend the right next step for your business, in plain language, with no obligation.",
+    "label": "Request a Free Website Audit",
+    "href": "/free-website-audit-kerala/"
+  },
+  "devNotes": {
+    "source": "BLOG.pdf — Teknoppy Blog Hub Page, Final Page Content (July 2026)",
+    "primaryKeyword": "Web Design & Digital Marketing Blog",
+    "wordCount": "634",
+    "url": "teknoppy.com/blog/ (existing URL — unchanged)",
+    "pendingPages": "The 6 category cards link to /blog/web-design/, /blog/wordpress/, /blog/ecommerce/, /blog/web-application/, /blog/seo/ and /blog/kerala-business/ as the doc requires. Those category hub pages are separate deliverables and do not exist yet — they need their own copy docs.",
+    "contentRulesForFutureUpdates": [
+      "Every future blog post must display a named author and a published/updated date — never leave this blank.",
+      "Do not add any new commercial keyword-targeted text to this hub page — it must stay informational only, to avoid competing with Service, Location, or GCC pages.",
+      "Update the \"Last updated\" date on this hub page whenever category descriptions or FAQs are edited."
+    ],
+    "openItems": [
+      "Category thumbnails not supplied — the doc asks for a thumbnail per category card with descriptive alt text including the category name. Cards currently render text-only.",
+      "Existing posts default to the author \"Teknoppy SEO and Content Team\". The doc requires a named author per post — replace with real names in the CMS.",
+      "Certifications reference is optional per the doc (\"if added visually\") and is not currently rendered, since /certifications/ does not exist yet."
+    ],
+    "schema": "FAQPage (5 questions, copy identical to the visible text) + BreadcrumbList (Home > Blog) + Organization"
+  }
+}

@@ -1217,6 +1217,7 @@ collections:
       - { name: excerpt, label: "Excerpt", widget: text, hint: "Short summary shown on cards" }
       - { name: category, label: "Category", widget: string, default: "Web Design" }
       - { name: date, label: "Date", widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
+      - { name: author, label: "Author", widget: string, default: "Teknoppy SEO and Content Team", hint: "Every post must show a named author — never leave this blank." }
       - { name: readTime, label: "Read time", widget: string, default: "5 min read" }
       - { name: cover, label: "Cover image", widget: image, default: "/blog/blog1.png" }
       - { name: draft, label: "Draft (hide from site)", widget: boolean, default: false }
@@ -1538,6 +1539,61 @@ collections:
             fields:
               - { name: label, label: "Label", widget: string }
               - { name: href, label: "URL", widget: string }
+      - name: blog_hub
+        label: "Blog Hub (/blog/)"
+        file: "src/data/pages/blog.json"
+        fields:
+          - name: meta
+            label: "Meta / SEO"
+            widget: object
+            fields:
+              - { name: title, label: "Meta title", widget: string }
+              - { name: description, label: "Meta description", widget: text }
+          - name: hero
+            label: "Hero"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: h1Lead, label: "H1 — lead", widget: string }
+              - { name: h1Accent, label: "H1 — highlighted", widget: string }
+              - { name: intro, label: "Intro paragraph", widget: text }
+              - { name: trustlineHtml, label: "Trust line (HTML)", widget: text, hint: "Update the Last updated date whenever category descriptions or FAQs are edited." }
+          - name: categories
+            label: "Browse by topic"
+            widget: object
+            fields:
+              - { name: intro, label: "Intro", widget: text }
+              - name: items
+                label: "Category cards"
+                widget: list
+                fields:
+                  - { name: title, label: "Title", widget: string }
+                  - { name: text, label: "Description", widget: text }
+                  - { name: href, label: "URL", widget: string }
+          - name: latest
+            label: "Latest From The Blog"
+            widget: object
+            fields:
+              - { name: heading, label: "Heading", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+          - name: faq
+            label: "FAQ"
+            widget: object
+            fields:
+              - { name: heading, label: "Heading", widget: string }
+              - name: items
+                label: "Questions"
+                widget: list
+                fields:
+                  - { name: q, label: "Question", widget: string }
+                  - { name: a, label: "Answer", widget: text }
+          - name: cta
+            label: "Closing CTA"
+            widget: object
+            fields:
+              - { name: text, label: "Text", widget: text }
+              - { name: label, label: "Button label", widget: string }
+              - { name: href, label: "Button URL", widget: string }
       - name: portfolio_hub
         label: "Portfolio Hub (/portfolios/)"
         file: "src/data/pages/portfolios.json"
