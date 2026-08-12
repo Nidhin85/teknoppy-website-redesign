@@ -133,30 +133,28 @@ const labelClass = "block text-[11px] font-black text-neutral-700 uppercase trac
             </div>
 
             <form id="contact-form-el" data-endpoint={formEndpoint} data-success={page.form.successMessage} data-error={page.form.errorMessage} novalidate class="space-y-5">
-              <div class="grid sm:grid-cols-2 gap-5">
-                <div>
-                  <label for="cf-name" class={labelClass}>Name</label>
-                  <input id="cf-name" name="name" type="text" required autocomplete="name" class={fieldClass} placeholder="Your full name" />
-                </div>
-                <div>
-                  <label for="cf-email" class={labelClass}>Email</label>
-                  <input id="cf-email" name="email" type="email" required autocomplete="email" aria-describedby="cf-email-err" class={fieldClass} placeholder="name@company.com" />
-                  <p id="cf-email-err" class="hidden text-xs font-semibold text-red-600 mt-1.5" role="alert">Enter a valid email address.</p>
-                </div>
+              <div>
+                <label for="cf-name" class={labelClass}>Name</label>
+                <input id="cf-name" name="name" type="text" required autocomplete="name" class={fieldClass} placeholder="Your full name" />
               </div>
 
-              <div class="grid sm:grid-cols-2 gap-5">
-                <div>
-                  <label for="cf-phone" class={labelClass}>Phone</label>
-                  <input id="cf-phone" name="phone" type="tel" required autocomplete="tel" aria-describedby="cf-phone-err" class={fieldClass} placeholder="+91 00000 00000" />
-                  <p id="cf-phone-err" class="hidden text-xs font-semibold text-red-600 mt-1.5" role="alert">Enter a valid phone number.</p>
-                </div>
-                <div>
-                  <label for="cf-company" class={labelClass}>
-                    Company <span class="text-neutral-400 font-bold normal-case tracking-normal">(optional)</span>
-                  </label>
-                  <input id="cf-company" name="company" type="text" autocomplete="organization" class={fieldClass} placeholder="Your company name" />
-                </div>
+              <div>
+                <label for="cf-email" class={labelClass}>Email</label>
+                <input id="cf-email" name="email" type="email" required autocomplete="email" aria-describedby="cf-email-err" class={fieldClass} placeholder="name@company.com" />
+                <p id="cf-email-err" class="hidden text-xs font-semibold text-red-600 mt-1.5" role="alert">Enter a valid email address.</p>
+              </div>
+
+              <div>
+                <label for="cf-phone" class={labelClass}>Phone</label>
+                <input id="cf-phone" name="phone" type="tel" required autocomplete="tel" aria-describedby="cf-phone-err" class={fieldClass} placeholder="+91 00000 00000" />
+                <p id="cf-phone-err" class="hidden text-xs font-semibold text-red-600 mt-1.5" role="alert">Enter a valid phone number.</p>
+              </div>
+
+              <div>
+                <label for="cf-company" class={labelClass}>
+                  Company <span class="text-neutral-400 font-bold normal-case tracking-normal">(optional)</span>
+                </label>
+                <input id="cf-company" name="company" type="text" autocomplete="organization" class={fieldClass} placeholder="Your company name" />
               </div>
 
               <div>
