@@ -1456,6 +1456,88 @@ collections:
                 fields:
                   - { name: bg, label: "Background", widget: select, options: ["white", "cream", "soft", "warm"], required: false }
                   - { name: text, label: "Text", widget: text }
+      - name: contact_us
+        label: "Contact Us (/contact-us/)"
+        file: "src/data/pages/contact.json"
+        fields:
+          - name: meta
+            label: "Meta / SEO"
+            widget: object
+            fields:
+              - { name: title, label: "Meta title", widget: string }
+              - { name: description, label: "Meta description", widget: text }
+          - name: hero
+            label: "Hero"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: h1Lead, label: "H1 — lead", widget: string }
+              - { name: h1Accent, label: "H1 — highlighted", widget: string }
+              - { name: intro, label: "Intro paragraph", widget: text }
+          - name: reachUs
+            label: "Reach Us Directly"
+            widget: object
+            fields:
+              - { name: heading, label: "Heading", widget: string }
+              - name: items
+                label: "Contact methods"
+                widget: list
+                fields:
+                  - { name: label, label: "Label", widget: string }
+                  - { name: value, label: "Value", widget: string }
+                  - { name: href, label: "Link (tel:/mailto:)", widget: string, required: false }
+                  - { name: icon, label: "Icon", widget: select, options: ["phone", "mail", "map", "clock"] }
+              - { name: whatsappLabel, label: "WhatsApp button label", widget: string }
+          - name: map
+            label: "Map"
+            widget: object
+            fields:
+              - { name: title, label: "Iframe title (accessibility)", widget: string }
+              - { name: query, label: "Google Maps search query", widget: string }
+          - name: form
+            label: "Form"
+            widget: object
+            fields:
+              - { name: heading, label: "Heading", widget: string }
+              - { name: submitLabel, label: "Submit button label", widget: string }
+              - { name: serviceOptions, label: "Service dropdown options", widget: list, field: { name: option, label: "Option", widget: string } }
+              - { name: successMessage, label: "Success message", widget: text }
+              - { name: errorMessage, label: "Error message", widget: text }
+          - name: whereWeWork
+            label: "Where We Work"
+            widget: object
+            fields:
+              - { name: heading, label: "Heading", widget: string }
+              - { name: html, label: "Paragraph (HTML — contains links)", widget: text }
+          - name: afterSubmit
+            label: "What Happens After You Submit"
+            widget: object
+            fields:
+              - { name: heading, label: "Heading", widget: string }
+              - name: paragraphs
+                label: "Paragraphs"
+                widget: list
+                fields:
+                  - { name: text, label: "Text", widget: text, required: false }
+                  - { name: html, label: "HTML (use when the paragraph needs links)", widget: text, required: false }
+          - name: faq
+            label: "FAQ"
+            widget: object
+            fields:
+              - { name: heading, label: "Heading", widget: string }
+              - name: items
+                label: "Questions"
+                widget: list
+                fields:
+                  - { name: q, label: "Question", widget: string }
+                  - { name: a, label: "Answer", widget: text }
+              - { name: footnoteHtml, label: "Footnote (HTML)", widget: text }
+          - name: closingCtas
+            label: "Closing buttons"
+            widget: list
+            fields:
+              - { name: label, label: "Label", widget: string }
+              - { name: href, label: "URL", widget: string }
       - name: portfolio_hub
         label: "Portfolio Hub (/portfolios/)"
         file: "src/data/pages/portfolios.json"
@@ -1501,6 +1583,30 @@ collections:
     label: "Site Settings"
     description: "Global contact details used across the site (footer, contact page, mobile bar, schema)."
     files:
+      - name: footer
+        label: "Footer"
+        file: "src/data/footer.json"
+        fields:
+          - { name: tagline, label: "Tagline", widget: text }
+          - name: columns
+            label: "Link columns"
+            widget: list
+            fields:
+              - { name: heading, label: "Column heading", widget: string }
+              - name: links
+                label: "Links"
+                widget: list
+                fields:
+                  - { name: label, label: "Label", widget: string }
+                  - { name: href, label: "URL", widget: string, hint: "Only link to pages that exist — dead links hurt SEO on every page." }
+          - { name: serviceAreas, label: "Areas we serve", widget: string }
+          - name: legal
+            label: "Legal links (bottom bar)"
+            widget: list
+            required: false
+            fields:
+              - { name: label, label: "Label", widget: string }
+              - { name: href, label: "URL", widget: string }
       - name: site
         label: "Site & Contact"
         file: "src/data/site.json"

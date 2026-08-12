@@ -1,0 +1,51 @@
+{
+  "tagline": "Teknoppy is a web design and digital marketing company in Kochi, building websites, online stores, and web applications for businesses across Kerala and the GCC. Design, development, and SEO sit inside one in-house team.",
+  "columns": [
+    {
+      "heading": "Services",
+      "links": [
+        { "label": "Web Design Company in Kochi", "href": "/web-design-company-kochi/" },
+        { "label": "WordPress Development", "href": "/wordpress-development-company-kochi/" },
+        { "label": "Ecommerce Development", "href": "/ecommerce-website-development-company-kochi/" },
+        { "label": "Web Application Development", "href": "/web-application-development-company-kochi/" },
+        { "label": "Digital Marketing", "href": "/digital-marketing-company-kochi/" },
+        { "label": "All services", "href": "/services/" }
+      ]
+    },
+    {
+      "heading": "WordPress",
+      "links": [
+        { "label": "WordPress Web Design", "href": "/wordpress-web-design-kochi/" },
+        { "label": "WordPress Maintenance", "href": "/wordpress-maintenance-services-kochi/" },
+        { "label": "WordPress Migration", "href": "/wordpress-migration-services-kochi/" },
+        { "label": "WordPress Speed Optimization", "href": "/wordpress-speed-optimization-kochi/" }
+      ]
+    },
+    {
+      "heading": "Specialist Builds",
+      "links": [
+        { "label": "Corporate Website Development", "href": "/corporate-website-development-kochi/" },
+        { "label": "Custom Ecommerce Development", "href": "/custom-ecommerce-development-kochi/" }
+      ]
+    },
+    {
+      "heading": "Where We Work",
+      "links": [
+        { "label": "SEO Company Kerala", "href": "/seo-company-kerala/" },
+        { "label": "Digital Marketing Company Kerala", "href": "/digital-marketing-company-kerala/" },
+        { "label": "Web Design Company for UAE Businesses", "href": "/web-design-company-uae/" }
+      ]
+    },
+    {
+      "heading": "Company",
+      "links": [
+        { "label": "About Us", "href": "/about-us/" },
+        { "label": "Portfolio", "href": "/portfolios/" },
+        { "label": "Blog", "href": "/blog/" },
+        { "label": "Contact Us", "href": "/contact-us/" }
+      ]
+    }
+  ],
+  "serviceAreas": "Kochi · Thrissur · Kozhikode · Thiruvananthapuram · Palakkad · Kottayam · UAE · Qatar",
+  "legal": []
+}

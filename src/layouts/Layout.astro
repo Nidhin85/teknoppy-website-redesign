@@ -51,7 +51,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://teknoppy
     <!-- Slot for additional head elements like Schema.org scripts -->
     <slot name="head" />
   </head>
-  <body class="min-h-screen flex flex-col relative pb-20 md:pb-0">
+  <body id="top" class="min-h-screen flex flex-col relative pb-20 md:pb-0">
     <slot />
 
     <!-- Premium Floating Bottom CTA Bar (Mobile Only) -->
