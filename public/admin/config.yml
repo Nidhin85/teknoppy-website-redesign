@@ -1792,6 +1792,18 @@ collections:
         label: "Custom WordPress Development (Kochi)"
         file: "src/data/pages/custom-wordpress-development-kochi.json"
         fields: *inner_page_fields
+      - name: seo_services
+        label: "SEO Services (pillar)"
+        file: "src/data/pages/seo-services.json"
+        fields: *inner_page_fields
+      - name: ui_ux_design_company_in_kochi
+        label: "UI/UX Design Company in Kochi (pillar)"
+        file: "src/data/pages/ui-ux-design-company-in-kochi.json"
+        fields: *inner_page_fields
+      - name: gcc_pillar
+        label: "Web Design Company for GCC Businesses (pillar)"
+        file: "src/data/pages/web-design-company-for-gcc-businesses.json"
+        fields: *inner_page_fields
       - name: corporate_website_development_kochi
         label: "Corporate Website Development (Kochi)"
         file: "src/data/pages/corporate-website-development-kochi.json"
