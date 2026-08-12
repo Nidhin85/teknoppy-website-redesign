@@ -29,11 +29,7 @@ const organizationSchema = {
   "email": site.email,
   "telephone": site.phone,
   "foundingDate": site.established,
-  "founder": {
-    "@type": "Person",
-    "name": site.founderName,
-    "jobTitle": site.founderRole
-  },
+  "founder": { "@id": "https://teknoppy.com/sanal-edison-digital-strategist/#person" },
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Kaithakal Building, Near Thykoodam Metro, Vyttila PO",

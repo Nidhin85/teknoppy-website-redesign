@@ -1689,6 +1689,65 @@ collections:
                   - { name: label, label: "Label", widget: string }
                   - { name: href, label: "URL", widget: string }
               - { name: leadershipHtml, label: "Leadership line (HTML)", widget: text }
+      - name: leadership
+        label: "Leadership / Founder (/sanal-edison-digital-strategist/)"
+        file: "src/data/pages/leadership.json"
+        fields:
+          - name: meta
+            label: "Meta / SEO"
+            widget: object
+            fields:
+              - { name: title, label: "Meta title", widget: string }
+              - { name: description, label: "Meta description", widget: text }
+          - name: hero
+            label: "Profile header"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: name, label: "Name", widget: string, hint: "Keep the spelling consistent site-wide as \"Sanal Edison\" — never any other variant." }
+              - { name: role, label: "Role", widget: string }
+              - { name: photo, label: "Photo", widget: image }
+              - { name: photoAlt, label: "Photo alt text", widget: string }
+              - { name: intro, label: "Intro paragraph", widget: text }
+              - { name: reviewedLine, label: "Profile reviewed line", widget: string, hint: "Update this date whenever content, credentials, or links change." }
+          - name: sections
+            label: "Body sections"
+            widget: list
+            fields:
+              - { name: heading, label: "Heading", widget: string }
+              - { name: text, label: "Text", widget: text }
+          - name: connect
+            label: "Connect With Sanal"
+            widget: object
+            fields:
+              - { name: heading, label: "Heading", widget: string }
+              - { name: linkedinUrl, label: "LinkedIn URL", widget: string, required: false, hint: "Real verified profile URL. Left blank, the word renders as plain text instead of a dead link." }
+              - { name: personalWebsiteUrl, label: "Personal website URL", widget: string, required: false }
+              - { name: html, label: "Paragraph (HTML)", widget: text, hint: "Use {{linkedin}} and {{website}} where those links should appear." }
+              - name: relatedLinks
+                label: "Related links"
+                widget: list
+                fields:
+                  - { name: label, label: "Label", widget: string }
+                  - { name: href, label: "URL", widget: string }
+          - name: faq
+            label: "FAQ"
+            widget: object
+            fields:
+              - { name: heading, label: "Heading", widget: string }
+              - name: items
+                label: "Questions"
+                widget: list
+                fields:
+                  - { name: q, label: "Question", widget: string }
+                  - { name: a, label: "Answer", widget: text }
+          - name: cta
+            label: "Closing CTA"
+            widget: object
+            fields:
+              - { name: text, label: "Text", widget: text }
+              - { name: label, label: "Button label", widget: string }
+              - { name: href, label: "Button URL", widget: string }
       - name: portfolio_hub
         label: "Portfolio Hub (/portfolios/)"
         file: "src/data/pages/portfolios.json"

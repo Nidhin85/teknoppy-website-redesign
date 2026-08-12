@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Sanal Edison — Digital Strategist, Teknoppy Kochi",
+    "description": "Meet Sanal Edison, founder and Digital Strategist at Teknoppy, leading web design, SEO, and digital marketing strategy for clients across Kerala and the GCC."
+  },
+  "hero": {
+    "badge": "Leadership",
+    "name": "Sanal Edison",
+    "role": "Digital Strategist & Founder, Teknoppy",
+    "photo": "/sanal.png",
+    "photoAlt": "Sanal Edison, Founder and Digital Strategist at Teknoppy",
+    "intro": "Sanal Edison is the founder and Digital Strategist at Teknoppy, a web design and digital marketing agency based in Kochi, Kerala, serving businesses across Kerala, the UAE, and Qatar. He leads the team's approach to web design, SEO, and digital marketing strategy, working directly with clients to turn a website from a static brochure into a tool that actually brings in enquiries and measurable business growth.",
+    "reviewedLine": "Profile reviewed · Last updated July 2026"
+  },
+  "sections": [
+    {
+      "heading": "Professional Background",
+      "text": "Sanal Edison founded Teknoppy with a simple goal, build websites and digital strategies that are judged by results, not just looks. His work spans web design, technical SEO, and digital marketing strategy for businesses across a range of industries, from local service providers in Kerala to companies operating across the GCC, including clients in the UAE and Qatar. Over the years, this has meant staying close to how search engines and, increasingly, AI platforms actually evaluate a website, rather than following outdated checklists that no longer reflect how people and machines find information today."
+    },
+    {
+      "heading": "What Sanal Leads at Teknoppy",
+      "text": "As Digital Strategist, Sanal Edison sets the direction for how Teknoppy approaches each client project, from the initial site structure and keyword strategy through to ongoing SEO and digital marketing execution. He works closely with the design, development, and content teams to make sure every website Teknoppy builds is planned around real search intent and business goals, not just visual preference. This includes overseeing site architecture decisions, keyword ownership across pages, and the SEO, AEO, GEO, and E-E-A-T framework applied consistently across every Teknoppy project, including the structure of this website itself."
+    },
+    {
+      "heading": "Approach and Philosophy",
+      "text": "Sanal Edison's approach centers on one idea, a website should be easy to justify. Every page should have a clear reason to exist, a specific keyword it owns, and a measurable role in bringing in business. This is why Teknoppy's own site structure follows strict rules around avoiding keyword overlap between pages, and why client projects are built the same way, with clear ownership for every page and every keyword, checked and re-checked before anything goes live. It is a deliberately practical approach, built around what actually moves rankings and enquiries, not what looks impressive in a slide deck."
+    }
+  ],
+  "connect": {
+    "heading": "Connect With Sanal",
+    "linkedinUrl": "",
+    "personalWebsiteUrl": "",
+    "html": "You can connect with Sanal Edison on {{linkedin}} or visit his {{website}} for more on his background and approach to digital strategy. Teknoppy's own <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">case studies</a> and <a href=\"/portfolios/\" class=\"text-primary font-semibold hover:underline\">client work</a> reflect the same strategy he applies across the agency's projects, and the same standards are applied to every page on this site.",
+    "relatedLinks": [
+      { "label": "Certifications & Client Reviews", "href": "/certifications/" },
+      { "label": "About Teknoppy", "href": "/about-us/" }
+    ]
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "Who is Sanal Edison?",
+        "a": "Sanal Edison is the founder and Digital Strategist at Teknoppy, a web design and digital marketing agency based in Kochi, Kerala, working with clients across Kerala and the GCC region, including the UAE and Qatar."
+      },
+      {
+        "q": "What does the Digital Strategist at Teknoppy do?",
+        "a": "The Digital Strategist sets the direction for web design, SEO, and digital marketing strategy across every Teknoppy project, overseeing site structure, keyword ownership, and overall strategy from planning through execution and ongoing review."
+      },
+      {
+        "q": "How can I connect with Sanal Edison?",
+        "a": "You can connect with Sanal Edison through LinkedIn or his personal website, both linked on this page, or reach out directly through Teknoppy's contact page for project enquiries and collaboration."
+      },
+      {
+        "q": "Does Sanal Edison work directly with clients?",
+        "a": "Yes. Sanal Edison is involved in setting strategy for client projects and works closely with the wider Teknoppy team throughout the design, development, and SEO process, from first consultation to launch."
+      }
+    ]
+  },
+  "cta": {
+    "text": "Want to work with the team behind this approach? Get in touch with Teknoppy to discuss your website, SEO, or digital marketing project.",
+    "label": "Get in Touch",
+    "href": "/contact-us/"
+  },
+  "devNotes": {
+    "source": "LEADERSHIP.pdf — Teknoppy Leadership / Founder Page, Final Page Content (July 2026)",
+    "primaryKeyword": "Sanal Edison — Digital Strategist, Teknoppy",
+    "wordCount": "603",
+    "dataNeededBeforeLaunch": [
+      "Sanal Edison's real, verified LinkedIn URL and personal website URL. Until both are supplied the words render as plain text rather than as links, and sameAs is omitted from the Person schema — the doc's own rule is to replace the placeholders before publishing, never to ship a placeholder link.",
+      "The page uses the existing /sanal.png photo. Confirm this is the intended professional photo, or supply a higher-resolution replacement."
+    ],
+    "schemaNotes": "Person schema is exclusive to this page and carries an @id. The Organization blocks on the homepage, Contact and Certifications pages reference that @id for their founder property instead of re-declaring a Person, so the identity signal stays concentrated here as the doc requires.",
+    "contentRulesForFutureUpdates": [
+      "Keep the name spelling consistent site-wide as \"Sanal Edison\" — never any other variant.",
+      "Update the \"Last updated\" date whenever this page's content, credentials, or links are edited.",
+      "Do not add commercial service-selling language to this page — it must stay a credibility and entity page only.",
+      "Only add credentials, awards, or media mentions once they are genuinely confirmed — never fabricate proof points."
+    ]
+  }
+}

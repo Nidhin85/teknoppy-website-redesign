@@ -1,0 +1,177 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import FooterCTA from '../components/FooterCTA.astro';
+import { Zap, ArrowRight } from 'lucide-react';
+import site from '../data/site.json';
+import page from '../data/pages/leadership.json';
+
+const PERSON_ID = 'https://teknoppy.com/sanal-edison-digital-strategist/#person';
+
+// The doc requires the placeholder LinkedIn / personal-site links to be replaced
+// with verified URLs before publishing. Until they are supplied the words render
+// as plain text rather than as dead links, and sameAs is left out of the schema.
+const { linkedinUrl, personalWebsiteUrl } = page.connect;
+const sameAs = [linkedinUrl, personalWebsiteUrl].filter((u) => u && u !== '#');
+
+const link = (url: string, label: string) =>
+  url && url !== '#'
+    ? `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-primary font-semibold hover:underline">${label}</a>`
+    : `<strong class="text-neutral-800">${label}</strong>`;
+
+const connectHtml = page.connect.html
+  .replace('{{linkedin}}', link(linkedinUrl, 'LinkedIn'))
+  .replace('{{website}}', link(personalWebsiteUrl, 'personal website'));
+
+const schemas: any[] = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": PERSON_ID,
+    "name": page.hero.name,
+    "jobTitle": ["Digital Strategist", "Founder"],
+    "image": `https://teknoppy.com${page.hero.photo}`,
+    "url": "https://teknoppy.com/sanal-edison-digital-strategist/",
+    "worksFor": {
+      "@type": "Organization",
+      "@id": "https://teknoppy.com/#organization",
+      "name": site.businessName,
+      "url": "https://teknoppy.com/"
+    },
+    ...(sameAs.length ? { sameAs } : {})
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": page.faq.items.map((f: any) => ({
+      "@type": "Question",
+      "name": f.q,
+      "acceptedAnswer": { "@type": "Answer", "text": f.a }
+    }))
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://teknoppy.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Leadership", "item": "https://teknoppy.com/sanal-edison-digital-strategist/" }
+    ]
+  }
+];
+---
+
+<Layout title={page.meta.title} description={page.meta.description}>
+  <Header forceSolidBg={true} />
+
+  <main class="overflow-hidden bg-[#FFF8EF]/20">
+    <!-- HERO — photo and name stack above the intro on mobile -->
+    <section class="relative pt-32 pb-20 md:pt-36 md:pb-24 overflow-hidden bg-neutral-950 text-white border-b border-white/5">
+      <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-[url('/herodarkwebdesign.png')]"></div>
+      </div>
+
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-bold text-primary uppercase tracking-widest mb-8">
+          <Zap class="w-3.5 h-3.5" />
+          {page.hero.badge}
+        </div>
+
+        <div class="flex flex-col md:flex-row md:items-center gap-8 md:gap-10">
+          <div class="relative w-32 h-32 sm:w-36 sm:h-36 flex-shrink-0">
+            <div class="absolute inset-0 rounded-full border border-white/20 scale-110"></div>
+            <div class="absolute inset-0 rounded-full border-2 border-white/80 overflow-hidden shadow-lg">
+              <img src={page.hero.photo} alt={page.hero.photoAlt} width="144" height="144" class="w-full h-full object-cover" />
+            </div>
+          </div>
+
+          <div>
+            <h1 class="text-4xl sm:text-5xl lg:text-[54px] font-black leading-[1.1] tracking-tight text-white mb-3">
+              {page.hero.name}
+            </h1>
+            <p class="text-base sm:text-lg font-bold text-primary">{page.hero.role}</p>
+          </div>
+        </div>
+
+        <p class="text-base sm:text-lg text-neutral-300 max-w-3xl font-medium leading-relaxed mt-8">
+          {page.hero.intro}
+        </p>
+        <p class="text-xs sm:text-sm text-neutral-400 font-semibold italic mt-6">{page.hero.reviewedLine}</p>
+      </div>
+    </section>
+
+    <!-- BACKGROUND / LEADS / PHILOSOPHY -->
+    {page.sections.map((s: any, i: number) => (
+      <section class={`py-16 sm:py-20 border-t border-neutral-100 ${i % 2 === 0 ? 'bg-white' : 'bg-[#FFF8EF]/30'}`}>
+        <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+          <h2 class="text-3xl sm:text-4xl md:text-[42px] font-black text-neutral-900 leading-tight mb-6">{s.heading}</h2>
+          <p class="max-w-4xl text-neutral-600 text-sm sm:text-base leading-relaxed font-medium">{s.text}</p>
+        </div>
+      </section>
+    ))}
+
+    <!-- CONNECT WITH SANAL -->
+    <section class="py-16 sm:py-20 bg-neutral-50/50 border-t border-neutral-100">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <h2 class="text-3xl sm:text-4xl md:text-[42px] font-black text-neutral-900 leading-tight mb-6">{page.connect.heading}</h2>
+        <p class="max-w-4xl text-neutral-600 text-sm sm:text-base leading-relaxed font-medium" set:html={connectHtml} />
+
+        <div class="flex flex-wrap gap-4 mt-8">
+          {page.connect.relatedLinks.map((l: any) => (
+            <a
+              href={l.href}
+              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white border border-neutral-200 text-sm font-bold text-neutral-700 hover:border-primary/30 hover:text-primary transition-colors shadow-sm"
+            >
+              {l.label}
+              <ArrowRight class="w-3.5 h-3.5" />
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 sm:py-20 bg-white border-t border-neutral-100">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <h2 class="text-3xl sm:text-4xl md:text-[42px] font-black text-neutral-900 leading-tight mb-10 text-center">{page.faq.heading}</h2>
+
+        <div class="max-w-4xl mx-auto space-y-4">
+          {page.faq.items.map((faq: any) => (
+            <details class="group bg-white rounded-2xl border border-neutral-200/60 p-6 [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
+                <h3 class="text-sm sm:text-base font-bold text-neutral-850 pr-4">{faq.q}</h3>
+                <span class="transition-transform duration-300 group-open:-rotate-180 text-primary flex-shrink-0">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </span>
+              </summary>
+              <div class="mt-4 pt-4 border-t border-neutral-100/60 text-xs sm:text-sm text-neutral-600 leading-relaxed font-semibold">
+                {faq.a}
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 sm:py-20 bg-[#FFF8EF]/30 border-t border-neutral-100">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <div class="max-w-4xl mx-auto text-center">
+          <p class="text-neutral-700 font-medium text-base sm:text-lg leading-relaxed mb-8">{page.cta.text}</p>
+          <a
+            href={page.cta.href}
+            class="inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.35)] hover:bg-primary/95 hover:-translate-y-0.5 transition-all duration-300"
+          >
+            {page.cta.label}
+            <ArrowRight class="w-4 h-4" />
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <FooterCTA />
+
+  {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+</Layout>
