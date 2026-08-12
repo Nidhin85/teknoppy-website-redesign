@@ -1804,6 +1804,34 @@ collections:
         label: "Web Design Company for GCC Businesses (pillar)"
         file: "src/data/pages/web-design-company-for-gcc-businesses.json"
         fields: *inner_page_fields
+      - name: local_seo_services_kochi
+        label: "Local SEO Services (Kochi)"
+        file: "src/data/pages/local-seo-services-kochi.json"
+        fields: *inner_page_fields
+      - name: ecommerce_seo_services_kochi
+        label: "Ecommerce SEO Services (Kochi)"
+        file: "src/data/pages/ecommerce-seo-services-kochi.json"
+        fields: *inner_page_fields
+      - name: website_speed_optimization_services_kochi
+        label: "Website Speed Optimization Services (Kochi)"
+        file: "src/data/pages/website-speed-optimization-services-kochi.json"
+        fields: *inner_page_fields
+      - name: website_ui_design_kochi
+        label: "Website UI Design (Kochi)"
+        file: "src/data/pages/website-ui-design-kochi.json"
+        fields: *inner_page_fields
+      - name: dashboard_ui_design_kochi
+        label: "Dashboard UI Design (Kochi)"
+        file: "src/data/pages/dashboard-ui-design-kochi.json"
+        fields: *inner_page_fields
+      - name: web_app_ui_design_kochi
+        label: "Web App UI Design (Kochi)"
+        file: "src/data/pages/web-app-ui-design-kochi.json"
+        fields: *inner_page_fields
+      - name: ux_audit_services_kochi
+        label: "UX Audit Services (Kochi)"
+        file: "src/data/pages/ux-audit-services-kochi.json"
+        fields: *inner_page_fields
       - name: corporate_website_development_kochi
         label: "Corporate Website Development (Kochi)"
         file: "src/data/pages/corporate-website-development-kochi.json"

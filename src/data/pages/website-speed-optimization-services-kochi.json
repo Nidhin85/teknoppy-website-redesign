@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "title": "Website Speed Optimization Services Kochi | Teknoppy",
+    "description": "Need Website Speed Optimization Services Kochi businesses trust? Teknoppy fixes server, caching, and image load issues. Book a consultation."
+  },
+  "breadcrumb": [
+    { "name": "Home", "href": "/" },
+    { "name": "SEO Services", "href": "/seo-services/" },
+    { "name": "Website Speed Optimization Services Kochi", "href": "/website-speed-optimization-services-kochi/" }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "SEO Services",
+      "h1Lead": "Website Speed Optimization Services",
+      "h1Accent": "Kochi",
+      "subhead": "Faster Pages Mean Fewer Lost Visitors, Better Rankings, and Higher Conversions",
+      "body": [
+        { "html": "<strong>Website Speed Optimization Services Kochi</strong> — that's what businesses search for when their site feels sluggish across the board, not just failing a specific Core Web Vitals metric. Teknoppy's speed optimization work tackles the underlying infrastructure and code causing slow load times, since every second of delay measurably costs visitor patience and search visibility." },
+        { "html": "Choosing the right <strong>Website Speed Optimization Services Kochi</strong> partner matters because speed problems usually stack — server response, unoptimized images, heavy code, and poor caching often combine, and fixing only one rarely delivers the full improvement a site actually needs." }
+      ],
+      "ctas": [
+        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
+        { "label": "Request a Quote", "href": "/request-a-quote/" }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "columns": 2,
+      "badge": "What's Included",
+      "h2": "What Our Website Speed Optimization Includes",
+      "items": [
+        { "title": "Page Load & Performance Audits", "html": "<strong>Page load speed optimization Kochi</strong> starts with a full diagnostic of what's actually slowing your site down, from server response to render-blocking scripts, before any fix is applied." },
+        { "title": "Server & Hosting Optimization", "html": "<strong>Server response time optimization</strong> and <strong>hosting performance optimization Kochi</strong> address the foundation everything else builds on — a fast frontend can't compensate for a slow server." },
+        { "title": "Caching & Content Delivery", "html": "<strong>Website caching optimization Kochi</strong> and <strong>CDN setup and optimization</strong> ensure repeat visitors and users across regions get pages served quickly, not rebuilt from scratch on every request." },
+        { "title": "Asset & Code Optimization", "html": "<strong>Image compression services for websites</strong> and <strong>code minification services</strong> strip unnecessary weight from every page, directly improving both <strong>website performance optimization services</strong> and mobile experience." }
+      ]
+    },
+    {
+      "type": "steps",
+      "bg": "white",
+      "badge": "How We Work",
+      "h2": "Our Website Speed Optimization Process",
+      "items": [
+        { "title": "Website Speed Audit —", "text": "A full website speed audit Kochi identifies every factor contributing to slow load times, ranked by actual impact." },
+        { "title": "Server & Hosting Review —", "text": "Server response times and hosting configuration are checked and optimized first, since this affects every page equally." },
+        { "title": "Asset Optimization —", "text": "Images are compressed, code is minified, and unnecessary scripts are removed or deferred." },
+        { "title": "Caching & CDN Setup —", "text": "Caching rules and content delivery are configured to serve pages faster on repeat visits and across geographic regions." },
+        { "title": "Testing & Verification —", "text": "Speed improvements are tested across real devices and connections, with mobile website speed optimization verified specifically, since most traffic is mobile." }
+      ]
+    },
+    {
+      "type": "bullets",
+      "bg": "soft",
+      "h2": "Why Choose Teknoppy for Website Speed Optimization in Kochi",
+      "items": [
+        { "html": "<strong>We fix the whole stack, not just one layer.</strong> Server, caching, images, and code are addressed together, since speed problems rarely have a single cause." },
+        { "html": "<strong>Website performance optimization services</strong> measured against real load-time improvements, not just a lab-test score that doesn't reflect actual visitor experience." },
+        { "html": "<strong>Mobile-first prioritization</strong>, since most Kerala and Gulf-market visitors browse on mobile, where slow load times cost the most conversions." },
+        { "html": "<strong>Clear before-and-after data.</strong> You see actual load-time and performance numbers, not vague claims that \"the site was optimized.\"" }
+      ]
+    },
+    {
+      "type": "bullets",
+      "bg": "white",
+      "h2": "Who Needs Website Speed Optimization",
+      "intro": "This service fits businesses that are:",
+      "items": [
+        { "text": "Running a site that feels slow across most pages, not just failing one specific technical metric" },
+        { "text": "Seeing high bounce rates that correlate with slow load times, especially on mobile" },
+        { "text": "Planning to add more content, images, or features without wanting performance to degrade further" }
+      ],
+      "outro": [
+        { "html": "If your issue is specifically the three named Core Web Vitals metrics (LCP, INP, CLS), see <a href=\"/core-web-vitals-optimization-kochi/\" class=\"text-primary font-semibold hover:underline\">Core Web Vitals Optimization</a>. For broader technical SEO beyond speed, see <a href=\"/technical-seo-services-kochi/\" class=\"text-primary font-semibold hover:underline\">Technical SEO Services</a>." },
+        { "text": "Businesses often notice speed problems only after traffic grows or more content gets added — a site that felt fast at launch can slow down gradually as images, plugins, and third-party scripts accumulate over time without anyone tracking the cumulative effect." }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "cream",
+      "h2": "Website Speed Optimization Projects We've Delivered",
+      "paragraphs": [
+        { "html": "Teknoppy has improved page load times for businesses across Kochi and Kerala, addressing server response, image weight, and caching issues that were slowing sites down across the board. See our full case studies on the <a href=\"/seo-services/\" class=\"text-primary font-semibold hover:underline\">SEO Services</a> page." }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "Website Speed Optimization Pricing",
+      "paragraphs": [
+        { "html": "Speed optimization work is typically scoped as part of a broader SEO or development engagement, priced by site size and the extent of underlying issues. See our <a href=\"/seo-services/\" class=\"text-primary font-semibold hover:underline\">SEO Services investment guide</a> or <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a> for a tailored estimate." }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "soft",
+      "h2": "Related Services",
+      "items": [
+        { "label": "SEO Services", "href": "/seo-services/", "text": "our full SEO services pillar" },
+        { "label": "Core Web Vitals Optimization", "href": "/core-web-vitals-optimization-kochi/" },
+        { "label": "Technical SEO Services", "href": "/technical-seo-services-kochi/" },
+        { "label": "On-Page SEO Services", "href": "/on-page-seo-services-kochi/" }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "white",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions — Website Speed Optimization Services Kochi",
+      "items": [
+        { "q": "How is this different from Core Web Vitals optimization?", "a": "Core Web Vitals optimization targets three specific Google-measured metrics — LCP, INP, and CLS. Website speed optimization is broader, covering overall performance including server response, caching, and asset weight that affect the whole site." },
+        { "q": "What usually causes a slow website?", "a": "Common causes include unoptimized images, slow server response, excessive scripts, and missing caching configuration. A website speed audit Kochi identifies which of these apply to your specific site." },
+        { "q": "Will speed optimization affect my site's design or content?", "a": "No. Image compression services for websites and code minification services reduce file size and unnecessary code without changing how your site looks or reads to visitors." },
+        { "q": "Do you set up a CDN as part of this service?", "a": "Yes, where appropriate. CDN setup and optimization is included for sites serving visitors across multiple regions, including Gulf-based traffic alongside domestic Kerala visitors." },
+        { "q": "How much faster will my site actually become?", "a": "Improvement varies by starting point and issues found, but most sites see meaningful load-time reductions after addressing server response, images, and caching together rather than in isolation. We'll share expected improvement ranges after the initial speed audit rather than promising a fixed number upfront." },
+        { "q": "Is mobile speed handled differently from desktop?", "a": "Yes. Mobile website speed optimization is prioritized specifically, since mobile devices and connections are typically slower, and most search traffic is measured on mobile performance first." }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "cream",
+      "h2": "Ready to Start Your Website Speed Optimization Project?",
+      "paragraphs": [
+        { "text": "A slow website costs you visitors, conversions, and search visibility every day it stays that way. Teknoppy's Website Speed Optimization Services Kochi team fixes the full stack — server, caching, images, and code — for real, measurable improvement." }
+      ],
+      "ctas": [
+        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
+        { "label": "Request a Quote", "href": "/request-a-quote/" }
+      ]
+    },
+    {
+      "type": "byline",
+      "bg": "white",
+      "text": "Teknoppy · Vyttila, Kochi, Kerala · sanal@teknoppy.com · +91 6282249224 — Author: Sanal Edison, Digital Strategist · Reviewed: August 2026"
+    }
+  ],
+  "devNotes": {
+    "source": "Pillar page SEO Services -website speed optimization services kochi innerpage.pdf",
+    "primaryKeyword": "Website Speed Optimization Services Kochi",
+    "metaTitleLength": "52 characters",
+    "metaDescriptionLength": "140 characters",
+    "heldPlaceholders": [
+      "Website Speed Optimization Projects We've Delivered — [STAT NEEDED: add 2–3 verified figures — e.g. load time reduction, bounce rate improvement, or a specific performance score change.]"
+    ],
+    "schema": "Service + LocalBusiness + FAQPage + BreadcrumbList",
+    "urlNote": "The SEO Services pillar linked this as /website-speed-optimization/. This doc specifies /website-speed-optimization-services-kochi/, so the page is built there and the pillar link was repointed. Note this is distinct from the existing WordPress-cluster page at /wordpress-speed-optimization-kochi/, which covers WordPress-specific fixes."
+  }
+}
