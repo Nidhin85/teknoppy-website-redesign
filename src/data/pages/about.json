@@ -1,0 +1,49 @@
+{
+  "faq": {
+    "badge": "Have Questions?",
+    "heading": "Frequently Asked Questions",
+    "intro": "Common questions about who we are, what we handle, and how a project starts.",
+    "items": [
+      {
+        "q": "What services does Teknoppy offer?",
+        "a": "Website design and development, WordPress, ecommerce, web applications, SEO, digital marketing, and UI/UX design, all delivered by one in-house team.",
+        "aHtml": "Website design and development, WordPress, ecommerce, web applications, SEO, digital marketing, and UI/UX design, all delivered by one in-house team. <a href=\"/services/\" class=\"text-primary font-semibold hover:underline\">See all services →</a>",
+        "source": "/services/"
+      },
+      {
+        "q": "Does Teknoppy work with businesses in the GCC?",
+        "a": "Yes. Alongside Kerala clients, Teknoppy works with businesses in the UAE and Qatar, with experience adapting sites and campaigns for both regions.",
+        "aHtml": "Yes. Alongside Kerala clients, Teknoppy works with businesses in the UAE and Qatar, with experience adapting sites and campaigns for both regions. <a href=\"/web-design-company-for-gcc-businesses/\" class=\"text-primary font-semibold hover:underline\">See our GCC work →</a>",
+        "source": "/services/"
+      },
+      {
+        "q": "Can I get website design and SEO from the same team?",
+        "a": "Yes. Every website Teknoppy builds includes SEO from the design stage, so page structure, speed, and content are already aligned with search when the site goes live.",
+        "source": "/services/"
+      },
+      {
+        "q": "Who is Sanal Edison?",
+        "a": "Sanal Edison is the founder and Digital Strategist at Teknoppy, a web design and digital marketing agency based in Kochi, Kerala, working with clients across Kerala and the GCC region, including the UAE and Qatar.",
+        "aHtml": "Sanal Edison is the founder and Digital Strategist at Teknoppy, a web design and digital marketing agency based in Kochi, Kerala, working with clients across Kerala and the GCC region, including the UAE and Qatar. <a href=\"/sanal-edison-digital-strategist/\" class=\"text-primary font-semibold hover:underline\">Read his profile →</a>",
+        "source": "/sanal-edison-digital-strategist/"
+      },
+      {
+        "q": "How fast does Teknoppy reply to enquiries?",
+        "a": "Within one business day, usually sooner during the week.",
+        "source": "/contact-us/"
+      },
+      {
+        "q": "How do I start a project?",
+        "a": "Reach out through the Contact page or request a free website audit to see where your current site stands.",
+        "aHtml": "Reach out through the <a href=\"/contact-us/\" class=\"text-primary font-semibold hover:underline\">Contact page</a> or request a <a href=\"/free-website-audit-kerala/\" class=\"text-primary font-semibold hover:underline\">free website audit</a> to see where your current site stands.",
+        "source": "/services/"
+      }
+    ]
+  },
+  "devNotes": {
+    "origin": "No About Us copy doc has been supplied. At the client's instruction, these six questions are reused verbatim from existing pages rather than newly written — each item records its `source` page.",
+    "duplicateContentRisk": "Every question and answer here also appears on the page named in its `source`. The project's docs repeatedly require zero cannibalization, so this set should ideally be reworded for About Us, or replaced once an About Us copy doc exists. The visible copy is duplicated deliberately; see the schema note below for how that is handled.",
+    "schemaDecision": "FAQPage schema is deliberately NOT emitted on /about-us/. Marking up the same Q&A entities on two URLs is what Google treats as duplicate FAQ markup, and the source pages (/services/, /contact-us/, /sanal-edison-digital-strategist/) already own that markup. The FAQ renders visibly for readers; the schema stays with the page that owns each question.",
+    "pending": "Supply an About Us copy doc and this page can be rebuilt like the rest — content in JSON, CMS-editable, with its own FAQ and FAQPage schema."
+  }
+}

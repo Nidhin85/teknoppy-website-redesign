@@ -1748,6 +1748,25 @@ collections:
               - { name: text, label: "Text", widget: text }
               - { name: label, label: "Button label", widget: string }
               - { name: href, label: "Button URL", widget: string }
+      - name: about_us_faq
+        label: "About Us — FAQ (/about-us/)"
+        file: "src/data/pages/about.json"
+        fields:
+          - name: faq
+            label: "FAQ"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: heading, label: "Heading", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: items
+                label: "Questions"
+                widget: list
+                fields:
+                  - { name: q, label: "Question", widget: string }
+                  - { name: a, label: "Answer (plain text)", widget: text }
+                  - { name: aHtml, label: "Answer (HTML — same wording, with links)", widget: text, required: false }
+                  - { name: source, label: "Reused from page", widget: string, required: false, hint: "The page that owns this question and its FAQPage schema." }
       - name: portfolio_hub
         label: "Portfolio Hub (/portfolios/)"
         file: "src/data/pages/portfolios.json"
