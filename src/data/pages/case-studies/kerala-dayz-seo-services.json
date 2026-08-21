@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "title": "Kerala Dayz SEO Services — Case Study | Teknoppy",
+    "description": "How Teknoppy rebuilt the SEO foundation for keraladayz.com, a Kochi taxi and tour operator, with a zero-cannibalization site structure, GBP fixes, and competitor-benchmarked pillar pages."
+  },
+  "breadcrumb": [
+    { "name": "Home", "href": "/" },
+    { "name": "Case Studies", "href": "/case-study/" },
+    { "name": "Kerala Dayz — SEO Services", "href": "/case-studies/kerala-dayz-seo-services/" }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Case Study",
+      "h1Lead": "Kerala Dayz: Rebuilding an",
+      "h1Accent": "SEO Foundation",
+      "h1Rest": "for a Kochi Taxi & Tour Operator"
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "Objective",
+      "paragraphs": [
+        { "text": "Kerala Dayz is a Kochi-based taxi and tour operator offering airport transfers, Kerala tour packages, pilgrim taxi services, tempo traveller rentals, and houseboat bookings across Kerala, Karnataka, and Tamil Nadu. Teknoppy's goal was to fix a fragmented local SEO presence and an unstructured site, then rebuild both around a zero-cannibalization architecture that could compete against established Kochi taxi brands in search." }
+      ]
+    },
+    {
+      "type": "nap",
+      "bg": "cream",
+      "h2": "Project Details",
+      "rows": [
+        { "label": "Key Services", "value": "SEO Services, Local SEO / Google Business Profile Optimization, Site Structure Strategy" },
+        { "label": "Live Website", "value": "keraladayz.com — Visit Website", "href": "https://keraladayz.com" }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "h2": "Before Teknoppy",
+      "items": [
+        { "title": "Fragmented local presence", "text": "Audits found NAP (Name, Address, Phone) inconsistencies across 3–4 separate Google listings, including a duplicate/similarly-named \"Kerala Holiday Taxi\" listing, splitting local ranking signals instead of consolidating them." },
+        { "title": "Low Google Business Profile completeness", "text": "Independent audits scored the GBP profile at 54–58 out of 100, well behind what's needed to compete with established local competitors." },
+        { "title": "No cannibalization-proof site structure", "text": "With overlapping services (taxi services, packages, pilgrim taxi, tempo travellers) spread across pages with no consistent architecture, the site risked pages competing against each other in search rather than each owning a distinct topic." }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "h2": "With Teknoppy",
+      "items": [
+        { "title": "Zero-cannibalization hub-and-spoke architecture (directly answers Problem 3)", "text": "A consolidated cannibalization matrix maps every pillar and child page (routes, locations, fleet, pilgrim, purpose, trust/E-E-A-T) so no two pages compete for the same search intent." },
+        { "title": "GBP and NAP cleanup roadmap (directly answers Problems 1 & 2)", "text": "A phased 0–90/0–180 day action plan addresses listing consolidation, GBP category and completeness fixes, and citation cleanup against the fragmented listings identified in audit." },
+        { "title": "Competitor-benchmarked page structure", "text": "Pillar and child pages were built against a direct gap analysis of competitors including Kochi Taxi 24X7, J&J Taxi Service, Pepper Kerala Holidays, BCabs, Mallu Cabs, and Cochin Runway Cabs, rather than generic template content." }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "paragraphs": [
+        { "lead": "Approach:", "text": "Discovery started with three rounds of GBP and local SEO auditing to establish an accurate baseline (listing fragmentation, GBP score, competitor positioning). From there, Teknoppy built a full site structure strategy — universal page templates, word count and keyword density bands by page type, and a build-priority rollout (routes first, then trust hub, locations, fleet, pilgrim/purpose, blog) — all governed by a single cannibalization matrix to keep every page's target intent distinct." }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "soft",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "FAQ",
+      "items": [
+        { "q": "What was the main SEO problem Kerala Dayz needed to solve?", "a": "A fragmented local listing presence (NAP inconsistencies across multiple Google listings) combined with a site structure where overlapping service pages risked competing against each other in search." },
+        { "q": "What does the new site structure look like?", "a": "A hub-and-spoke architecture with pillar pages for routes, locations, fleet, pilgrim travel, and trust/E-E-A-T content, each governed by a cannibalization matrix so no two pages target the same search intent." },
+        { "q": "Did the project address Google Business Profile issues?", "a": "Yes — audits identified a GBP completeness score in the 54–58/100 range and NAP fragmentation across multiple listings; a phased action plan was built to address both." },
+        { "q": "Who were the competitors this strategy was benchmarked against?", "a": "Kochi Taxi 24X7, J&J Taxi Service, Kerala Taxi, Pepper Kerala Holidays, BCabs, Mallu Cabs, and Cochin Runway Cabs, among others in the Kochi taxi and tour market." }
+      ]
+    },
+    {
+      "type": "byline",
+      "bg": "white",
+      "text": "Written by Sanal Edison, Digital Strategist at Teknoppy"
+    },
+    {
+      "type": "links",
+      "bg": "cream",
+      "h2": "Related Case Studies",
+      "items": [
+        { "label": "Abrus Krishna Finance", "text": "WordPress site for a KML-registered Kerala lending company", "href": "/case-studies/abrus-krishna-finance-wordpress-development/" },
+        { "label": "Varma Ayurveda", "text": "Multilingual WordPress site for a German Ayurvedic retreat", "href": "/case-studies/varma-ayurveda-wordpress-development/" },
+        { "label": "General Tech Services", "text": "UAE ISO 17025 calibration lab website redesign", "href": "/case-studies/general-tech-services-web-design/" }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "h2": "Related Service",
+      "items": [
+        { "label": "SEO Services", "text": "Teknoppy's matching service page", "href": "/seo-services/" }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "cream",
+      "paragraphs": [
+        { "text": "Need an SEO strategy that fixes a fragmented local presence and stops your own pages from competing with each other? Talk to Teknoppy: +91 6282249224." }
+      ],
+      "ctas": [
+        { "label": "Talk to Teknoppy", "href": "tel:+916282249224" },
+        { "label": "Contact Us", "href": "/contact-us/" }
+      ]
+    }
+  ],
+  "devNotes": {
+    "source": "case study-Kerala dayz seo services - inner page.pdf",
+    "permalink": "/case-studies/kerala-dayz-seo-services/",
+    "heroImage": "[Client logo: Kerala Dayz] Hero image: keraladayz.com homepage — desktop + mobile",
+    "visualShowcase": "Screenshots pending: GBP before/after screenshots, and full-page desktop + mobile captures of the homepage and a rebuilt pillar page. Add once available.",
+    "results": "Post-implementation performance data (GBP score improvement, ranking movement, enquiry volume) will be added here once a measurement window has passed and figures are pulled from GA / Search Console / GBP Insights. Publishing this section without sourced numbers would weaken the case study rather than strengthen it.",
+    "clientTestimonial": "Testimonial pending — a direct quote with the client's full name and designation will be added once collected.",
+    "urlNote": "The doc's internal link reads /seo-agency-kochi/, which is not built. The link points at the built SEO pillar /seo-services/ — repoint to /seo-agency-kochi/ if that page lands.",
+    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)"
+  }
+}

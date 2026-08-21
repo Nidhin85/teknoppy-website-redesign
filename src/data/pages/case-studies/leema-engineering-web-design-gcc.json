@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "Leema Engineering Web Design Case Study — GCC Industrial Supplier | Teknoppy",
+    "description": "How Teknoppy restructured leemaeng.com for a Sharjah-based pipes, fittings, and flanges supplier serving the wider GCC — a clear pillar and location structure for a 50-year industrial brand."
+  },
+  "breadcrumb": [
+    { "name": "Home", "href": "/" },
+    { "name": "Case Studies", "href": "/case-study/" },
+    { "name": "Leema Engineering — Web Design", "href": "/case-studies/leema-engineering-web-design-gcc/" }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Case Study",
+      "h1Lead": "Leema Engineering: A",
+      "h1Accent": "Web Design Case Study",
+      "h1Rest": "for a GCC Industrial Supplier"
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "Objective",
+      "paragraphs": [
+        { "text": "Leema Engineering Works (LEW) is an ISO 9001-2015 certified pipes, fittings, and flanges supplier based in Sharjah, UAE, with over 50 years of legacy serving the Oil & Gas, Power, Steel, Marine, Water Treatment, Food, and Mining sectors across Sharjah, Dubai, Abu Dhabi, and the wider GCC. Teknoppy's goal was to restructure the site around a clear pillar and location framework that could represent the full breadth of LEW's products, services, and GCC-wide reach, without pages competing against each other for the same search terms." }
+      ]
+    },
+    {
+      "type": "nap",
+      "bg": "cream",
+      "h2": "Project Details",
+      "rows": [
+        { "label": "Key Services", "value": "Web Design, Website Structure & Information Architecture, SEO" },
+        { "label": "Live Website", "value": "leemaeng.com — Visit Website", "href": "https://leemaeng.com" }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "h2": "Before Teknoppy",
+      "items": [
+        { "title": "Repetitive, keyword-stuffed content", "text": "Phrases like \"Sharjah, Dubai and UAE\" were repeated throughout nearly every section of the site instead of being supported by structured, location-specific pages, diluting rather than strengthening local relevance." },
+        { "title": "Products, services, and industries loosely bundled", "text": "Pipes, fittings, flanges, valves, and accessories sat under a handful of broad sections rather than a clear, expandable pillar structure." },
+        { "title": "Limited GCC coverage", "text": "Only isolated pages existed for Bahrain and Qatar, with no consistent structure extending coverage to the wider GCC market LEW actually serves." }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "h2": "With Teknoppy",
+      "items": [
+        { "title": "An eight-pillar content structure (directly answers Problem 1 & 2)", "text": "A full 66-page restructure organizes LEW's products, services, and industries into eight distinct topical pillars, replacing scattered, repetitive sections with a clear, expandable framework." },
+        { "title": "15 location pages across the GCC (directly answers Problem 3)", "text": "Dedicated location pages, including Bahrain, extend structured coverage across the wider GCC market instead of leaving it to a couple of isolated pages." },
+        { "title": "Cannibalization-aware structure", "text": "Pillars and location pages are built to stay distinct from one another, so overlapping products and regions don't end up competing for the same search terms." }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "paragraphs": [
+        { "lead": "Approach:", "text": "Discovery, pillar mapping, and page-by-page build details specific to this project — timeline and key decisions — should be pulled from the project intake and added here once confirmed." }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "soft",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "FAQ",
+      "items": [
+        { "q": "What was the main goal of the Leema Engineering website project?", "a": "To restructure a 50-year industrial supplier's site around a clear pillar and location framework that represents its full product range and GCC-wide reach without pages competing against each other." },
+        { "q": "What does Leema Engineering supply?", "a": "Pipes, pipe fittings, flanges, valves, and industrial accessories for the Oil & Gas, Power, Steel, Marine, Water Treatment, Food, and Mining sectors." },
+        { "q": "Which locations does the new structure cover?", "a": "15 location pages across the GCC, including Bahrain, alongside LEW's core Sharjah, Dubai, and Abu Dhabi coverage." },
+        { "q": "Did the project affect Leema Engineering's existing rankings?", "a": "The restructure was scoped to avoid keyword cannibalization across LEW's product, service, and location pages — no overlapping targets were introduced." }
+      ]
+    },
+    {
+      "type": "byline",
+      "bg": "white",
+      "text": "Written by Sanal Edison, Digital Strategist at Teknoppy"
+    },
+    {
+      "type": "links",
+      "bg": "cream",
+      "h2": "Related Case Studies",
+      "items": [
+        { "label": "General Tech Services", "text": "UAE ISO 17025 calibration lab website redesign", "href": "/case-studies/general-tech-services-web-design/" },
+        { "label": "Abrus Krishna Finance", "text": "WordPress site for a KML-registered Kerala lending company", "href": "/case-studies/abrus-krishna-finance-wordpress-development/" },
+        { "label": "Kaydenz", "text": "Dubai Autodesk Authorized Training Center", "href": "/case-study/" }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "h2": "Related Service",
+      "items": [
+        { "label": "Web Design Company for GCC Businesses", "text": "Teknoppy's matching service page", "href": "/web-design-company-for-gcc-businesses/" }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "cream",
+      "paragraphs": [
+        { "text": "Need a website structure that represents your full product range across every market you serve — without your own pages competing with each other? Talk to Teknoppy: +91 6282249224." }
+      ],
+      "ctas": [
+        { "label": "Talk to Teknoppy", "href": "tel:+916282249224" },
+        { "label": "Contact Us", "href": "/contact-us/" }
+      ]
+    }
+  ],
+  "devNotes": {
+    "source": "leema-engineering-GCC-case-study.pdf",
+    "permalink": "/case-studies/leema-engineering-web-design-gcc/",
+    "heroImage": "[Client logo: Leema Engineering Works] Hero image: leemaeng.com homepage — desktop + mobile",
+    "beforeTeknoppyDisclaimer": "[These are a reasonable structural inference from the live site, not confirmed client-stated facts — confirm against the actual project intake before publishing]",
+    "visualShowcase": "Screenshots pending: full-page desktop + mobile captures of the homepage, a pillar page, and a location page. Add once available.",
+    "results": "Post-launch performance data (traffic, ranking movement, enquiry volume) will be added here once a measurement window has passed and figures are pulled from GA / Search Console / CRM. Publishing this section without sourced numbers would weaken the case study rather than strengthen it.",
+    "clientTestimonial": "Testimonial pending — a direct quote with the client's full name and designation will be added once collected.",
+    "pendingLinks": "\"Kaydenz\" has no case study page yet; it points at the Case Studies hub until that page is built.",
+    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "title": "TriQare Web Application Case Study — Teknoppy",
+    "description": "How Teknoppy designed and built the pre-launch web platform for TriQare, a healthtech startup redefining emergency ambulance response in India."
+  },
+  "breadcrumb": [
+    { "name": "Home", "href": "/" },
+    { "name": "Case Studies", "href": "/case-study/" },
+    { "name": "TriQare — Web Application Design", "href": "/case-studies/triqare-web-application-design/" }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Case Study",
+      "h1Lead": "TriQare: Building a",
+      "h1Accent": "Trust-First Pre-Launch Platform",
+      "h1Rest": "for India's First One-Tap Emergency SOS App"
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "Objective",
+      "paragraphs": [
+        { "text": "TriQare is a Mumbai-registered healthtech startup (Triqare Healthtech Private Limited) building India's first one-tap emergency ambulance SOS app, aimed at cutting the response delays that contribute to over 24,000 preventable deaths a day in India. Ahead of app launch, TriQare needed a web platform that could do something most startup sites aren't built for: convert cold visitors into qualified waitlist sign-ups for a service they can't use yet, while carrying the credibility of a brand people are trusting with life-and-death decisions. Teknoppy's goal was to design and build that platform — content, structure, and SEO foundation included." },
+        { "html": "<em>Note: this case study covers the web application/website work delivered for TriQare's pre-launch phase.</em>" }
+      ]
+    },
+    {
+      "type": "nap",
+      "bg": "cream",
+      "h2": "Project Details",
+      "rows": [
+        { "label": "Key Services", "value": "Web Design, Content Strategy, SEO" },
+        { "label": "Platform/Tech", "value": "[confirm exact platform used for the engagement]" },
+        { "label": "Live Website", "value": "triqare.in — Visit Website", "href": "https://triqare.in" }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "h2": "Before Teknoppy",
+      "items": [
+        { "title": "No conversion path for a pre-launch product", "text": "A healthtech brand with no live app yet had no dedicated way to capture early demand, so interested visitors had nowhere to go and no reason to return before launch." },
+        { "title": "No visual trust foundation for a life-critical service", "text": "Asking someone to hand over their name, phone number, and emergency-care expectations needs stronger credibility signals than a typical landing page, and that foundation didn't exist yet." },
+        { "title": "No content or SEO foundation", "text": "With no organic footprint, TriQare had no way to be found by the people actively searching for faster emergency response in their city." }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "h2": "With Teknoppy",
+      "items": [
+        { "title": "A dedicated waitlist funnel (directly answers Problem 1)", "text": "Built a founding-member waitlist (name, contact, state, and a qualifying \"what's your biggest challenge getting emergency care\" question) that turns visitors into a warm pre-launch pipeline instead of a dead end." },
+        { "title": "A trust-first narrative and design system (directly answers Problem 2)", "text": "Structured the site around a clear \"How it Works\" explainer, mission/vision storytelling, and real user testimonials, so a visitor understands exactly what happens in the seconds after they tap SOS before they're asked to commit." },
+        { "title": "A content and SEO foundation built to grow (directly answers Problem 3)", "text": "Structured core pages (Home, Who We Are, Contact), keyword-aligned copy, and metadata built to support local and service-based search visibility as TriQare expands city by city." },
+        { "title": "A visual language suited to an emergency healthcare brand", "text": "Design choices reflect urgency and reassurance in equal measure, rather than generic startup template styling." }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "paragraphs": [
+        { "lead": "Approach:", "text": "Discovery, wireframing, and copy/design decisions specific to this project — timeline and key choices — should be pulled from the project intake and added here once confirmed." }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "soft",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "FAQ",
+      "items": [
+        { "q": "What was TriQare launching when Teknoppy built the site?", "a": "A pre-launch waitlist platform for India's first one-tap emergency ambulance SOS app." },
+        { "q": "What was the main goal of the website?", "a": "Converting early visibility into qualified waitlist sign-ups ahead of the app's launch, while establishing trust for a life-critical service." },
+        { "q": "Does the site support TriQare's future SEO growth?", "a": "Yes — pages and metadata were structured to support city-by-city local search visibility as TriQare expands across India." },
+        { "q": "Does this project overlap with any of Teknoppy's other case studies?", "a": "No — TriQare sits in the healthtech/emergency-response category, distinct from the industries covered in Teknoppy's other published case studies, so there's no keyword or topic cannibalization between them." }
+      ]
+    },
+    {
+      "type": "byline",
+      "bg": "white",
+      "text": "Written by Sanal Edison, Digital Strategist at Teknoppy"
+    },
+    {
+      "type": "links",
+      "bg": "cream",
+      "h2": "Related Case Studies",
+      "items": [
+        { "label": "Abrus Krishna Finance", "text": "UI/UX Design case study for a KML-registered Kerala lending company", "href": "/case-studies/abrus-krishna-finance-ui-ux-design/" },
+        { "label": "Varma Ayurveda", "text": "UI/UX Design case study for a multilingual wellness retreat", "href": "/case-studies/varma-ayurveda-ui-ux-design/" },
+        { "label": "Mount Bell Global Studies", "text": "Web design for a Kerala overseas education consultancy", "href": "/case-studies/mount-bell-global-studies-web-design-development/" }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "h2": "Related Service",
+      "items": [
+        { "label": "Web Application Development Company Kochi", "text": "Teknoppy's matching service page", "href": "/web-application-development-company-kochi/" }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "cream",
+      "paragraphs": [
+        { "text": "Building a platform people trust in their most urgent moment takes more than good design — it takes the right foundation. Ready to build yours? Talk to Teknoppy: +91 6282249224" }
+      ],
+      "ctas": [
+        { "label": "Talk to Teknoppy", "href": "tel:+916282249224" },
+        { "label": "Contact Us", "href": "/contact-us/" }
+      ]
+    }
+  ],
+  "devNotes": {
+    "source": "triqare-web application-case-study .pdf",
+    "permalink": "/case-studies/triqare-web-application-design/",
+    "heroImage": "[Client logo: TriQare] Hero image: triqare.in homepage — desktop + mobile",
+    "beforeTeknoppyDisclaimer": "These are a reasonable structural inference based on TriQare being pre-launch, not confirmed client-stated facts — confirm against the actual project intake before publishing.",
+    "heldPlaceholders": [
+      "Project Details → Platform/Tech: [confirm exact platform used for the engagement] — this placeholder is rendered on the page exactly as the source doc supplies it. Replace before publishing."
+    ],
+    "visualShowcase": "Screenshots pending: full-page desktop + mobile mockups of the homepage, the \"Who We Are\" page, and the waitlist sign-up flow. Add once available.",
+    "results": "Post-launch performance data (organic traffic, keyword rankings, waitlist sign-up volume) will be added here once a measurement window has passed and figures are pulled from GA / Search Console / the waitlist CRM. Publishing this section without sourced numbers would weaken the case study rather than strengthen it.",
+    "clientTestimonial": "Testimonial pending — a direct quote from TriQare's team about working with Teknoppy, with full name and designation, will be added once collected. Note: the end-user reviews currently on triqare.in (Ravi Kumar, Nisha Nair) are about the TriQare app itself and shouldn't be reused here.",
+    "faqNote": "(Mark this block up with FAQPage schema when published.) — handled automatically by InnerPage.",
+    "urlNote": "Source doc: \"Link back to Teknoppy's matching service page: /web-application-development-company-kochi/ (update to the exact URL of Teknoppy's Web Application Development service page)\" — the built route matches.",
+    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)"
+  }
+}

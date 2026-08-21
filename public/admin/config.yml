@@ -1875,6 +1875,98 @@ collections:
         label: "WordPress Speed Optimization (Kochi)"
         file: "src/data/pages/wordpress-speed-optimization-kochi.json"
         fields: *inner_page_fields
+      - name: case_studies_hub
+        label: "Case Studies Hub (/case-study/)"
+        file: "src/data/pages/case-study.json"
+        fields: *inner_page_fields
+      - name: cs_abrus_krishna_wordpress
+        label: "Case Study — Abrus Krishna Finance (WordPress Development)"
+        file: "src/data/pages/case-studies/abrus-krishna-finance-wordpress-development.json"
+        fields: *inner_page_fields
+      - name: cs_abrus_krishna_ui_ux
+        label: "Case Study — Abrus Krishna Finance (UI/UX Design)"
+        file: "src/data/pages/case-studies/abrus-krishna-finance-ui-ux-design.json"
+        fields: *inner_page_fields
+      - name: cs_varma_ayurveda_wordpress
+        label: "Case Study — Varma Ayurveda (WordPress Development)"
+        file: "src/data/pages/case-studies/varma-ayurveda-wordpress-development.json"
+        fields: *inner_page_fields
+      - name: cs_varma_ayurveda_ui_ux
+        label: "Case Study — Varma Ayurveda (UI/UX Design)"
+        file: "src/data/pages/case-studies/varma-ayurveda-ui-ux-design.json"
+        fields: *inner_page_fields
+      - name: cs_general_tech_web_design
+        label: "Case Study — General Tech Services (Web Design)"
+        file: "src/data/pages/case-studies/general-tech-services-web-design.json"
+        fields: *inner_page_fields
+      - name: cs_general_tech_seo
+        label: "Case Study — General Tech Services (SEO Services)"
+        file: "src/data/pages/case-studies/general-tech-services-seo-services.json"
+        fields: *inner_page_fields
+      - name: cs_leema_engineering
+        label: "Case Study — Leema Engineering (GCC Web Design)"
+        file: "src/data/pages/case-studies/leema-engineering-web-design-gcc.json"
+        fields: *inner_page_fields
+      - name: cs_cochin_suraksha
+        label: "Case Study — Cochin Suraksha (Web Design & Development)"
+        file: "src/data/pages/case-studies/cochin-suraksha-web-design-development.json"
+        fields: *inner_page_fields
+      - name: cs_mount_bell
+        label: "Case Study — Mount Bell Global Studies (Web Design & Development)"
+        file: "src/data/pages/case-studies/mount-bell-global-studies-web-design-development.json"
+        fields: *inner_page_fields
+      - name: cs_lenaa
+        label: "Case Study — Lenaa (Personal Brand Website)"
+        file: "src/data/pages/case-studies/lenaa-personal-brand-website-case-study.json"
+        fields: *inner_page_fields
+      - name: cs_libra_group
+        label: "Case Study — Libra Group UAE (Web Application)"
+        file: "src/data/pages/case-studies/libra-group-uae-web-application-design.json"
+        fields: *inner_page_fields
+      - name: cs_triqare
+        label: "Case Study — TriQare (Web Application)"
+        file: "src/data/pages/case-studies/triqare-web-application-design.json"
+        fields: *inner_page_fields
+      - name: cs_getskillonline
+        label: "Case Study — GetSkill Online (Ecommerce Development)"
+        file: "src/data/pages/case-studies/getskillonline-ecommerce-website-development.json"
+        fields: *inner_page_fields
+      - name: cs_myplantstore
+        label: "Case Study — My PlantStore (Ecommerce Development)"
+        file: "src/data/pages/case-studies/myplantstore-ecommerce-website-development.json"
+        fields: *inner_page_fields
+      - name: cs_sun_and_moon_korean
+        label: "Case Study — Sun and Moon Korean (Ecommerce Content & SEO)"
+        file: "src/data/pages/case-studies/sun-and-moon-korean-ecommerce-website.json"
+        fields: *inner_page_fields
+      - name: cs_nuelments
+        label: "Case Study — Nuelments (Shopify Ecommerce)"
+        file: "src/data/pages/case-studies/nuelments-shopify-ecommerce.json"
+        fields: *inner_page_fields
+      - name: cs_modestsisters
+        label: "Case Study — Modestsisters (Shopify Ecommerce)"
+        file: "src/data/pages/case-studies/modestsisters-shopify-ecommerce.json"
+        fields: *inner_page_fields
+      - name: cs_apolo_mattress
+        label: "Case Study — Apolo Mattress (Shopify Ecommerce)"
+        file: "src/data/pages/case-studies/apolo-mattress-shopify-ecommerce.json"
+        fields: *inner_page_fields
+      - name: cs_kerala_dayz
+        label: "Case Study — Kerala Dayz (SEO Services)"
+        file: "src/data/pages/case-studies/kerala-dayz-seo-services.json"
+        fields: *inner_page_fields
+      - name: cs_creative_web_design_qatar
+        label: "Case Study — Creative Web Design Qatar (SEO & Content)"
+        file: "src/data/pages/case-studies/creative-web-design-qatar-seo-content.json"
+        fields: *inner_page_fields
+      - name: cs_direction_north
+        label: "Case Study — Direction North (Digital Marketing)"
+        file: "src/data/pages/case-studies/direction-north-digital-marketing.json"
+        fields: *inner_page_fields
+      - name: cs_olives_boutique_resort
+        label: "Case Study — Olives Boutique Resort (Digital Marketing)"
+        file: "src/data/pages/case-studies/olives-boutique-resort-digital-marketing.json"
+        fields: *inner_page_fields
 
   - name: settings
     label: "Site Settings"

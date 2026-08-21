@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "title": "Web Design & SEO Case Studies Kerala | Teknoppy",
+    "description": "Real client results from Teknoppy's web design, ecommerce, and SEO projects across Kerala, UAE, and Qatar, with verified numbers and timeframes for each."
+  },
+  "breadcrumb": [
+    { "name": "Home", "href": "/" },
+    { "name": "Case Studies", "href": "/case-study/" }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Case Studies",
+      "h1Lead": "Web Design & SEO",
+      "h1Accent": "Case Studies",
+      "h1Rest": "Kerala",
+      "body": [
+        { "html": "<a href=\"/\" class=\"text-primary hover:underline\">Teknoppy</a> has worked on website design, ecommerce, and SEO projects for clients across Kerala and <a href=\"/web-design-company-for-gcc-businesses/\" class=\"text-primary hover:underline\">the GCC</a>. The summaries below cover real projects with real numbers, not estimates or rounded-up claims. Each one names the industry, the starting problem, and the measurable result within a stated timeframe. For a visual look at the work itself, see our <a href=\"/portfolios/\" class=\"text-primary hover:underline\">Portfolio</a>." }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "columns": 2,
+      "itemHeading": "h2",
+      "badge": "Results by Project",
+      "items": [
+        { "title": "Ecommerce Store, Kochi", "text": "A Kochi-based retailer needed an online store that could actually be found in search, not just built and left to sit. The site launched with product pages structured for search from day one. Result: [X]% increase in organic traffic within [X] months, [X] keywords ranking in the top 10, and [X] enquiries per month through the site." },
+        { "title": "Local SEO Campaign, Kerala", "text": "A Kerala-based service business was invisible in local search results despite years of trading in the same location. Work covered a technical audit, Google Business Profile cleanup, and local content. Result: ranking moved from page [X] to position [X] for its main keyword within [X] months, with a [X]% increase in Google Business Profile calls." },
+        { "title": "Website Redesign, Qatar", "text": "A Qatar-based business was running on an outdated site with a high bounce rate and no clear path to enquiry. The redesign focused on load speed, mobile layout, and a shorter path to contact. Result: page load time dropped from [X] seconds to [X] seconds, and enquiry form submissions rose [X]% within [X] months." },
+        { "title": "Custom Booking System, UAE", "text": "A UAE-based business was managing bookings manually through phone calls and email, with no record of what was actually booked. Teknoppy built a custom booking system tied into their existing site and calendar. Result: [X]% of bookings now happen online, cutting manual admin time by roughly [X] hours a week." }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "badge": "Named Client Projects",
+      "h2": "Client Case Studies",
+      "intro": "Full write-ups for named client projects, grouped by the service that delivered them.",
+      "items": [
+        { "label": "Abrus Krishna Finance — WordPress Development", "text": "WordPress site for a KML-registered Kerala lending company", "href": "/case-studies/abrus-krishna-finance-wordpress-development/" },
+        { "label": "Abrus Krishna Finance — UI/UX Design", "text": "UI/UX design for a KML-registered Kerala lending company", "href": "/case-studies/abrus-krishna-finance-ui-ux-design/" },
+        { "label": "Varma Ayurveda — WordPress Development", "text": "Multilingual WordPress site for a German Ayurvedic retreat", "href": "/case-studies/varma-ayurveda-wordpress-development/" },
+        { "label": "Varma Ayurveda — UI/UX Design", "text": "UI/UX design case study for a multilingual wellness retreat", "href": "/case-studies/varma-ayurveda-ui-ux-design/" },
+        { "label": "General Tech Services — Web Design", "text": "UAE ISO 17025 calibration lab website redesign", "href": "/case-studies/general-tech-services-web-design/" },
+        { "label": "General Tech Services — SEO Services", "text": "An SEO strategy built for 15 calibration disciplines", "href": "/case-studies/general-tech-services-seo-services/" },
+        { "label": "Leema Engineering", "text": "Web design case study for a GCC industrial supplier", "href": "/case-studies/leema-engineering-web-design-gcc/" },
+        { "label": "Cochin Suraksha", "text": "Kochi fire & safety company website evolving into Civil & MEP", "href": "/case-studies/cochin-suraksha-web-design-development/" },
+        { "label": "Mount Bell Global Studies", "text": "Web design for a Kerala overseas education consultancy", "href": "/case-studies/mount-bell-global-studies-web-design-development/" },
+        { "label": "Lenaa", "text": "Personal brand website for an actor, author and TEDx speaker", "href": "/lenaa-personal-brand-website-case-study/" },
+        { "label": "Libra Group UAE", "text": "Web application case study for a Dubai facilities group", "href": "/case-studies/libra-group-uae-web-application-design/" },
+        { "label": "TriQare", "text": "Web application case study for a healthtech emergency SOS platform", "href": "/case-studies/triqare-web-application-design/" },
+        { "label": "GetSkill Online", "text": "UK ecommerce certification training platform", "href": "/case-studies/getskillonline-ecommerce-website-development/" },
+        { "label": "My PlantStore", "text": "Dubai ecommerce plant nursery website", "href": "/case-studies/myplantstore-ecommerce-website-development/" },
+        { "label": "Sun and Moon Korean", "text": "Mumbai kimchi and K-fashion ecommerce content", "href": "/case-studies/sun-and-moon-korean-ecommerce-website/" },
+        { "label": "Nuelments", "text": "Shopify store for an Indian D2C hair care brand", "href": "/case-studies/nuelments-shopify-ecommerce/" },
+        { "label": "Modestsisters", "text": "Shopify store for a UAE modest fashion brand", "href": "/case-studies/modestsisters-shopify-ecommerce/" },
+        { "label": "Apolo Mattress", "text": "Shopify store for a Kerala mattress manufacturer", "href": "/case-studies/apolo-mattress-shopify-ecommerce/" },
+        { "label": "Kerala Dayz", "text": "SEO strategy and GBP cleanup for a Kochi taxi and tour operator", "href": "/case-studies/kerala-dayz-seo-services/" },
+        { "label": "Creative Web Design Qatar", "text": "Ongoing SEO for a GCC web design agency", "href": "/case-studies/creative-web-design-qatar-seo-content/" },
+        { "label": "Direction North", "text": "Digital marketing for a retail display manufacturer", "href": "/case-studies/direction-north-digital-marketing/" },
+        { "label": "Olives Boutique Resort", "text": "Digital marketing for a Wayanad eco-resort", "href": "/case-studies/olives-boutique-resort-digital-marketing/" }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "soft",
+      "h2": "More Proof",
+      "paragraphs": [
+        { "html": "For the visual side of these projects, browse the <a href=\"/portfolios/\" class=\"text-primary font-semibold hover:underline\">Portfolio</a>. For more on who delivers this work and how, see <a href=\"/sanal-edison-digital-strategist/\" class=\"text-primary font-semibold hover:underline\">Leadership</a> and <a href=\"/certifications/\" class=\"text-primary font-semibold hover:underline\">Certifications</a>." }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "white",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        { "q": "Are these results typical for every project?", "a": "Results vary by industry, starting point, and competition. These summaries show real outcomes from specific projects, not a guaranteed baseline for every business." },
+        { "q": "Can I see the full details behind a result?", "a": "Reach out through Contact and we can walk through the specifics relevant to your industry and goals.", "aHtml": "Reach out through <a href=\"/contact-us/\" class=\"text-primary font-semibold hover:underline\">Contact</a> and we can walk through the specifics relevant to your industry and goals." },
+        { "q": "Does Teknoppy work on projects outside Kerala?", "a": "Yes. Alongside Kerala clients, the case studies above include work delivered for businesses in Qatar and the UAE." }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "cream",
+      "center": true,
+      "paragraphs": [
+        { "text": "Want results like these for your business? Contact Teknoppy →" }
+      ],
+      "ctas": [
+        { "label": "Contact Teknoppy", "href": "/contact-us/" }
+      ]
+    }
+  ],
+  "devNotes": {
+    "source": "CASE STUDY.pdf — Teknoppy | Case Studies Page — Final Copy (July 2026)",
+    "url": "/case-study/ — do not change, it is an existing indexed page.",
+    "primaryKeyword": "Web Design & SEO Case Studies Kerala",
+    "wordCount": "416 words (the copy doc's figure — the added Client Case Studies directory is not counted in it)",
+    "metaTitleLength": "47 chars",
+    "metaDescriptionLength": "153 chars",
+    "blocker": "DO NOT LAUNCH with any [X] placeholder still showing. Every number in the four summary blocks must be replaced with a real, verified figure first — this is the credibility anchor page for the whole site, for both human visitors and AI platforms.",
+    "heldPlaceholders": [
+      "Ecommerce Store, Kochi — [X]% increase in organic traffic within [X] months, [X] keywords ranking in the top 10, [X] enquiries per month",
+      "Local SEO Campaign, Kerala — page [X] to position [X] within [X] months, [X]% increase in Google Business Profile calls",
+      "Website Redesign, Qatar — load time [X] seconds to [X] seconds, enquiry submissions rose [X]% within [X] months",
+      "Custom Booking System, UAE — [X]% of bookings now online, [X] hours a week of manual admin saved"
+    ],
+    "copyNoteNotRendered": "(All bracketed figures are placeholders. Replace with real, verified numbers before publishing — never publish an estimated stat. Client names are omitted unless permission to use them is confirmed in writing.)",
+    "beforePublishing": [
+      "URL stays /case-study/ — do not change, it is an existing indexed page.",
+      "Replace all [X] placeholders with real, verified numbers. Confirm each figure with the account or project lead before publishing, not an estimate.",
+      "Get written permission before naming any client. If not available, keep the industry + location format shown (e.g. \"A Kochi-based retailer\"), consistently.",
+      "The Portfolio Hub's \"SEO Case Studies\" sub-page (/portfolios/seo-case-studies/) must stay a thin, visual preview only — it should link here for the full write-up, not duplicate it."
+    ],
+    "schema": [
+      "FAQPage schema on all 3 FAQ questions — auto-generated by InnerPage from the faq section.",
+      "Review or Rating schema only if a real, verifiable client rating exists — never add this schema with placeholder or estimated data. Not added.",
+      "BreadcrumbList schema: Home → Case Studies — auto-generated by InnerPage from the breadcrumb array."
+    ],
+    "onPageChecklist": [
+      "One H1 only — do not add a second H1.",
+      "Each case study block should visually separate from the next (card or divider) so results don't blur together when scanned quickly.",
+      "Meta title and meta description: use exactly as shown in the meta strip above.",
+      "Every number should carry its timeframe in the same sentence — a number without a timeframe is not checkable and won't get picked up by AI Overviews."
+    ],
+    "internalLinks": [
+      "Homepage (/) and GCC Pillar (/web-design-company-for-gcc-businesses/) — linked from the intro",
+      "Portfolio (/portfolios/) — appears twice, intro and More Proof",
+      "Leadership (/sanal-edison-digital-strategist/) and Certifications (/certifications/)",
+      "Contact Us (/contact-us/) — appears twice, FAQ and closing CTA"
+    ],
+    "doNotChangeWithoutSEO": [
+      "The primary keyword phrase (\"Web Design & SEO Case Studies Kerala\") and the H1 wording.",
+      "The role split with the Portfolio Hub's SEO Case Studies sub-page — this page owns the full numbers and narrative, that page stays a preview only.",
+      "Do not add unverified numbers to hit a word count or to make a result look more impressive — this is the page most likely to be cited by AI platforms, and a false stat here is worse than a modest real one."
+    ],
+    "addedSection": "The \"Client Case Studies\" directory is not in the copy doc. It was added so the 22 named client case-study pages supplied separately are reachable from this hub; every label and descriptor is taken verbatim from those docs' own headings and Related Case Studies lines."
+  }
+}

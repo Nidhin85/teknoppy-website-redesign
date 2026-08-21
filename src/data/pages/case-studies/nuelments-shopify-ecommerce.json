@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "title": "Nuelments Shopify Ecommerce — Case Study | Teknoppy",
+    "description": "How Teknoppy built nuelments.com on Shopify for an Indian D2C hair care brand, with certification trust badges, shoppable video, and combo bundling."
+  },
+  "breadcrumb": [
+    { "name": "Home", "href": "/" },
+    { "name": "Case Studies", "href": "/case-study/" },
+    { "name": "Nuelments — Shopify Ecommerce", "href": "/case-studies/nuelments-shopify-ecommerce/" }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Case Study",
+      "h1Lead": "Nuelments: A",
+      "h1Accent": "Shopify Store",
+      "h1Rest": "Built for a D2C Hair Care Brand"
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "Objective",
+      "paragraphs": [
+        { "text": "Nuelments is an Indian D2C hair care brand selling onion and biotin shampoo, conditioner, hair serum, biotin gummies, hair masks, and co-wash formulas, positioned around a mix of natural ingredients and dermatologically tested formulation. Teknoppy's goal was to build a Shopify store that could turn product claims into visible trust, give customers an easy path to higher-value combo purchases, and let video content double as a shopping surface rather than just marketing." }
+      ]
+    },
+    {
+      "type": "nap",
+      "bg": "cream",
+      "h2": "Project Details",
+      "rows": [
+        { "label": "Key Services", "value": "Shopify Development, Website Design, SEO" },
+        { "label": "Platform/Tech", "value": "Shopify" },
+        { "label": "Live Website", "value": "nuelments.com — Visit Website", "href": "https://nuelments.com" }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "h2": "Before Teknoppy",
+      "items": [
+        { "title": "No structured combo offering", "text": "Complementary products (shampoo + conditioner, etc.) likely weren't packaged into a dedicated bundle collection, missing an easy path to a higher-value purchase." },
+        { "title": "No visible trust certifications", "text": "Claims like cruelty-free, paraben-free, and dermatologically tested weren't surfaced as visual proof, leaving a new-to-market brand to rely on product copy alone for credibility." },
+        { "title": "No shoppable video experience", "text": "Product videos and demos likely existed separately from the storefront, with no direct path from watching to buying." },
+        { "title": "No visual efficacy proof", "text": "Without before/after imagery, claims about scalp and hair improvement had no visual evidence backing them up on the page." }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "h2": "With Teknoppy",
+      "items": [
+        { "title": "A dedicated Combo Offers collection (directly answers Problem 1)", "text": "Complementary products are bundled into a Combos collection, giving customers an easy, discounted path to a higher-value cart." },
+        { "title": "Six certification badges built into the storefront (directly answers Problem 2)", "text": "Non-Comedogenic, Made in India, Cruelty Free, FDA Approved, Paraben Free, Sulphate Free, and Dermatologically Tested badges are surfaced prominently, turning claims into visible trust signals." },
+        { "title": "A \"Shop the Look Instantly\" shoppable video section (directly answers Problem 3)", "text": "Customers can discover and buy products directly from video content, rather than video sitting disconnected from the storefront." },
+        { "title": "Before/after visual proof (directly answers Problem 4)", "text": "A dedicated before/after banner gives visual evidence for scalp and hair improvement claims, reinforcing product efficacy at a glance." },
+        { "title": "Wishlist and first-purchase discount built in", "text": "A wishlist feature and a \"FIRST05\" first-purchase discount code support repeat consideration and lower the barrier for first-time buyers." }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "paragraphs": [
+        { "lead": "Approach:", "text": "Discovery, design, and build details specific to this project — timeline and key decisions — should be pulled from the project intake and added here once confirmed." }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "soft",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "FAQ",
+      "items": [
+        { "q": "What was the main goal of the Nuelments Shopify project?", "a": "To build a store that turns hair care product claims into visible trust — through certification badges, shoppable video, and before/after proof — while making combo purchases easy." },
+        { "q": "What products does Nuelments sell?", "a": "Onion and biotin shampoo and conditioner, hair serum, biotin gummies, an anti-dandruff hair mask, and a hard-water co-wash, sold individually and as combo offers." },
+        { "q": "Did the project affect Nuelments' existing rankings?", "a": "The project was scoped to avoid keyword cannibalization across the site's product and collection pages — no overlapping targets were introduced." },
+        { "q": "What platform is Nuelments built on?", "a": "Shopify." }
+      ]
+    },
+    {
+      "type": "byline",
+      "bg": "white",
+      "text": "Written by Sanal Edison, Digital Strategist at Teknoppy"
+    },
+    {
+      "type": "links",
+      "bg": "cream",
+      "h2": "Related Case Studies",
+      "items": [
+        { "label": "My PlantStore", "text": "Dubai ecommerce plant nursery website", "href": "/case-studies/myplantstore-ecommerce-website-development/" },
+        { "label": "Sun and Moon Korean", "text": "Mumbai kimchi and K-fashion ecommerce content", "href": "/case-studies/sun-and-moon-korean-ecommerce-website/" },
+        { "label": "GetSkill Online", "text": "UK ecommerce certification training platform", "href": "/case-studies/getskillonline-ecommerce-website-development/" }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "h2": "Related Service",
+      "items": [
+        { "label": "Shopify Development Company Kochi", "text": "Teknoppy's matching service page", "href": "/shopify-development-company-kochi/" }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "cream",
+      "paragraphs": [
+        { "text": "Need a Shopify store that turns your product claims into visible customer trust? Talk to Teknoppy: +91 6282249224." }
+      ],
+      "ctas": [
+        { "label": "Talk to Teknoppy", "href": "tel:+916282249224" },
+        { "label": "Contact Us", "href": "/contact-us/" }
+      ]
+    }
+  ],
+  "devNotes": {
+    "source": "case study-Shopify-nuelments- Inner page_.pdf",
+    "permalink": "/case-studies/nuelments-shopify-ecommerce/",
+    "heroImage": "[Client logo: Nuelments] Hero image: nuelments.com homepage — desktop + mobile",
+    "beforeTeknoppyDisclaimer": "[These are a reasonable structural inference, not confirmed client-stated facts — confirm against the actual project intake before publishing]",
+    "visualShowcase": "Screenshots pending: full-page desktop + mobile captures of the homepage, the combo offers collection, and a product page. Add once available.",
+    "results": "Post-launch performance data (traffic, ranking movement, order volume) will be added here once a measurement window has passed and figures are pulled from GA / Search Console / Shopify analytics. Publishing this section without sourced numbers would weaken the case study rather than strengthen it.",
+    "clientTestimonial": "Testimonial pending — a direct quote with the client's full name and designation will be added once collected.",
+    "copyNote": "The source doc heading says \"Six certification badges\" while listing seven badges — kept verbatim; confirm with the client before publishing.",
+    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)"
+  }
+}

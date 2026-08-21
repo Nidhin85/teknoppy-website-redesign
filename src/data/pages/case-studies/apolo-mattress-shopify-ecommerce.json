@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "title": "Apolo Mattress Shopify Ecommerce — Case Study | Teknoppy",
+    "description": "How Teknoppy built apolomattress.com on Shopify for a Kerala mattress manufacturer, with product-fit guidance, surfaced Google reviews, and a purchase-hesitation-busting FAQ."
+  },
+  "breadcrumb": [
+    { "name": "Home", "href": "/" },
+    { "name": "Case Studies", "href": "/case-study/" },
+    { "name": "Apolo Mattress — Shopify Ecommerce", "href": "/case-studies/apolo-mattress-shopify-ecommerce/" }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Case Study",
+      "h1Lead": "Apolo Mattress: A Shopify Store Built to",
+      "h1Accent": "Answer Every Question",
+      "h1Rest": "Before Checkout"
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "Objective",
+      "paragraphs": [
+        { "text": "Apolo Mattress is a Kerala-based mattress manufacturer selling memory foam, latex, pocket spring, and foam mattresses, along with pillows and mattress protectors, backed by a 15-year warranty. Teknoppy's goal was to build a Shopify store that could help customers confidently choose between four different mattress types for a high-consideration, hard-to-return purchase, while surfacing the trust signals — reviews, warranty, delivery terms — that matter most before someone buys a mattress online." }
+      ]
+    },
+    {
+      "type": "nap",
+      "bg": "cream",
+      "h2": "Project Details",
+      "rows": [
+        { "label": "Key Services", "value": "Shopify Development, Website Design, SEO" },
+        { "label": "Platform/Tech", "value": "Shopify" },
+        { "label": "Live Website", "value": "apolomattress.com — Visit Website", "href": "https://apolomattress.com" }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "h2": "Before Teknoppy",
+      "items": [
+        { "title": "No product-fit guidance", "text": "With four different mattress types (memory foam, latex, pocket spring, foam), customers likely had no clear way to match their sleep needs — back pain, firmness preference, budget — to a specific product." },
+        { "title": "No visible social proof", "text": "Google reviews existed but likely weren't surfaced directly on the storefront, leaving new visitors to search elsewhere for reassurance before a high-value purchase." },
+        { "title": "No purchase-hesitation FAQ", "text": "Questions around warranty, returns, delivery timing, COD availability, and sizing likely weren't answered upfront, leaving customers to ask before committing to a mattress they can't easily return." }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "h2": "With Teknoppy",
+      "items": [
+        { "title": "Product-fit guidance built into the FAQ and product callouts (directly answers Problem 1)", "text": "A dedicated \"Which Apolo Mattress is best for back pain?\" FAQ answer, alongside per-product feature callouts (pressure relief, firm support, natural flexibility), helps customers match their sleep needs to the right product." },
+        { "title": "Google reviews surfaced directly on the homepage (directly answers Problem 2)", "text": "A dedicated reviews section pulls real customer reviews with star ratings and a link to view all Google reviews, building trust before a customer ever reaches a product page." },
+        { "title": "A comprehensive FAQ answering key purchase concerns (directly answers Problem 3)", "text": "Warranty terms, return/exchange policy, delivery timelines, COD availability, and size guidance (Single/Double/Queen/King) are all answered upfront, reducing pre-purchase hesitation for a hard-to-return item." },
+        { "title": "Trust badges surfaced site-wide", "text": "15-year warranty, free shipping, easy exchange & return, and premium material badges are shown prominently on the homepage." }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "paragraphs": [
+        { "lead": "Approach:", "text": "Discovery, design, and build details specific to this project — timeline and key decisions — should be pulled from the project intake and added here once confirmed." }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "soft",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "FAQ",
+      "items": [
+        { "q": "What was the main goal of the Apolo Mattress Shopify project?", "a": "To build a store that helps customers confidently choose the right mattress for their needs and answers the key questions — warranty, returns, delivery, sizing — before they buy." },
+        { "q": "What mattresses does Apolo Mattress sell?", "a": "Memory Hug (memory foam), Latexa (pure latex), Spring Fit (pocketed spring), and Dream Fit (foam) mattresses, along with pillows and mattress protectors." },
+        { "q": "Did the project affect Apolo Mattress's existing rankings?", "a": "The project was scoped to avoid keyword cannibalization across the site's product and collection pages — no overlapping targets were introduced." },
+        { "q": "What platform is Apolo Mattress built on?", "a": "Shopify." }
+      ]
+    },
+    {
+      "type": "byline",
+      "bg": "white",
+      "text": "Written by Sanal Edison, Digital Strategist at Teknoppy"
+    },
+    {
+      "type": "links",
+      "bg": "cream",
+      "h2": "Related Case Studies",
+      "items": [
+        { "label": "Nuelments", "text": "Shopify store for an Indian D2C hair care brand", "href": "/case-studies/nuelments-shopify-ecommerce/" },
+        { "label": "Modestsisters", "text": "Shopify store for a UAE modest fashion brand", "href": "/case-studies/modestsisters-shopify-ecommerce/" },
+        { "label": "My PlantStore", "text": "Dubai ecommerce plant nursery website", "href": "/case-studies/myplantstore-ecommerce-website-development/" }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "h2": "Related Service",
+      "items": [
+        { "label": "Shopify Development Company Kochi", "text": "Teknoppy's matching service page", "href": "/shopify-development-company-kochi/" }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "cream",
+      "paragraphs": [
+        { "text": "Need a Shopify store that answers every question before a customer reaches checkout? Talk to Teknoppy: +91 6282249224." }
+      ],
+      "ctas": [
+        { "label": "Talk to Teknoppy", "href": "tel:+916282249224" },
+        { "label": "Contact Us", "href": "/contact-us/" }
+      ]
+    }
+  ],
+  "devNotes": {
+    "source": "case-study -apolo mattress-Shopify- Inner page.pdf",
+    "permalink": "/case-studies/apolo-mattress-shopify-ecommerce/",
+    "heroImage": "[Client logo: Apolo Mattress] Hero image: apolomattress.com homepage — desktop + mobile",
+    "beforeTeknoppyDisclaimer": "[These are a reasonable structural inference, not confirmed client-stated facts — confirm against the actual project intake before publishing]",
+    "visualShowcase": "Screenshots pending: full-page desktop + mobile captures of the homepage, a product page, and the FAQ section. Add once available.",
+    "results": "Post-launch performance data (traffic, ranking movement, order volume) will be added here once a measurement window has passed and figures are pulled from GA / Search Console / Shopify analytics. Publishing this section without sourced numbers would weaken the case study rather than strengthen it.",
+    "clientTestimonial": "Testimonial pending — a direct quote with the client's full name and designation will be added once collected.",
+    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)"
+  }
+}

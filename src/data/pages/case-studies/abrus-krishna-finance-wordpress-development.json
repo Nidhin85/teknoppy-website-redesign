@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Abrus Krishna Finance WordPress Development — Case Study | Teknoppy",
+    "description": "How Teknoppy built abruskrishna.com on WordPress for a KML-registered Kerala gold loan and micro-finance company, with clear service separation and compliance-ready content."
+  },
+  "breadcrumb": [
+    { "name": "Home", "href": "/" },
+    { "name": "Case Studies", "href": "/case-study/" },
+    { "name": "Abrus Krishna Finance — WordPress Development", "href": "/case-studies/abrus-krishna-finance-wordpress-development/" }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Case Study",
+      "h1Lead": "Abrus Krishna Finance: A",
+      "h1Accent": "WordPress Site",
+      "h1Rest": "Built for a Regulated Lending Business"
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "Objective",
+      "paragraphs": [
+        { "text": "Abrus Krishna Finance is a Kerala Money-Lenders Act (KML) registered lending institution based in Guruvayoor, offering gold loans, doorstep gold loans, and a range of micro business, personal, home, and consumer goods loans since 2018. Teknoppy's goal was to build a WordPress site that could present eight distinct loan products clearly, keep regulatory trust (KML registration, transparent terms) visible throughout, and avoid the keyword overlap risk that comes with closely related loan products like gold loan and doorstep gold loan sitting on the same domain." }
+      ]
+    },
+    {
+      "type": "nap",
+      "bg": "cream",
+      "h2": "Project Details",
+      "rows": [
+        { "label": "Key Services", "value": "WordPress Development, Website Design, SEO" },
+        { "label": "Platform/Tech", "value": "WordPress (Elementor)" },
+        { "label": "Live Website", "value": "abruskrishna.com — Visit Website", "href": "https://abruskrishna.com" }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "h2": "Before Teknoppy",
+      "items": [
+        { "title": "No dedicated page per loan product", "text": "All eight loan types were likely bundled into one generic loans/services page, making it hard for a borrower to find the specific product they needed." },
+        { "title": "Compliance treated as an afterthought", "text": "No dedicated KML Registration & Compliance page or FAQ answers covering branch-visit requirements, foreclosure rules, or data confidentiality — regulatory trust wasn't built into the content." },
+        { "title": "Cannibalization risk between related products", "text": "Gold Loan and Doorstep Gold Loan, two closely related products competing for similar search terms, had no deliberate structure keeping them distinct." },
+        { "title": "No visible borrower process", "text": "The loan journey — contact/visit, document verification, approval, disbursement — wasn't laid out clearly, leaving first-time borrowers unsure what to expect before applying." }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "h2": "With Teknoppy",
+      "items": [
+        { "title": "Eight loan products, eight distinct pages (directly answers Problem 1)", "text": "Gold Loan, Gold Loan in Guruvayoor, Doorstep Gold Loan, Business Loan in Guruvayoor, Business & Micro Enterprise Loan, Micro Personal Loan, Micro Home Loan, Micro Finance, and Consumer Goods Loan each have their own dedicated page rather than being bundled into one generic services page." },
+        { "title": "Regulatory trust built into the structure (directly answers Problem 2)", "text": "KML registration, a dedicated KML Registration & Compliance page, and compliance-specific FAQ answers (branch-visit requirements, foreclosure rules, data confidentiality) are all first-class content, not an afterthought." },
+        { "title": "Cannibalization-aware page separation (directly answers Problem 3)", "text": "Gold Loan and Doorstep Gold Loan — two closely related products that could easily compete for the same search terms — are structured as clearly distinct pages targeting different intents, avoiding the internal competition a less careful build would create." },
+        { "title": "A four-step process made visible (directly answers Problem 4)", "text": "Contact/Visit → Document Verification → Approval → Disbursement is laid out clearly on the homepage, setting expectations for a first-time borrower before they apply." }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "paragraphs": [
+        { "lead": "Approach:", "text": "Discovery, design, and build details specific to this project — timeline and key decisions — should be pulled from the project intake and added here once confirmed." }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "soft",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "FAQ",
+      "items": [
+        { "q": "What was the main goal of the Abrus Krishna Finance website project?", "a": "To give a KML-registered lending company a WordPress site that presents eight distinct loan products clearly, keeps regulatory trust visible, and avoids keyword competition between closely related loan pages." },
+        { "q": "What loan products does Abrus Krishna Finance offer online?", "a": "Gold Loan, Doorstep Gold Loan, Business Loan, Micro Business/Enterprise Loan, Micro Personal Loan, Micro Home Loan, Micro Finance, and Consumer Goods Loan." },
+        { "q": "Did the project affect Abrus Krishna Finance's existing rankings?", "a": "The project was scoped to avoid keyword cannibalization — particularly between the Gold Loan and Doorstep Gold Loan pages — and no overlapping targets were introduced." },
+        { "q": "What platform was the site built on?", "a": "The site was built on WordPress using Elementor." }
+      ]
+    },
+    {
+      "type": "byline",
+      "bg": "white",
+      "text": "Written by Sanal Edison, Digital Strategist at Teknoppy"
+    },
+    {
+      "type": "links",
+      "bg": "cream",
+      "h2": "Related Case Studies",
+      "items": [
+        { "label": "General Tech Services", "text": "UAE ISO 17025 calibration lab website redesign", "href": "/case-studies/general-tech-services-web-design/" },
+        { "label": "GetSkill Online", "text": "UK ecommerce certification training platform", "href": "/case-studies/getskillonline-ecommerce-website-development/" },
+        { "label": "My PlantStore", "text": "Dubai ecommerce plant nursery website", "href": "/case-studies/myplantstore-ecommerce-website-development/" }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "h2": "Related Service",
+      "items": [
+        { "label": "WordPress Development Company Kochi", "text": "Teknoppy's matching service page", "href": "/wordpress-development-company-kochi/" }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "cream",
+      "paragraphs": [
+        { "text": "Need a WordPress site that keeps a regulated financial business compliant, trustworthy, and easy for customers to navigate? Talk to Teknoppy: +91 6282249224." }
+      ],
+      "ctas": [
+        { "label": "Talk to Teknoppy", "href": "tel:+916282249224" },
+        { "label": "Contact Us", "href": "/contact-us/" }
+      ]
+    }
+  ],
+  "devNotes": {
+    "source": "CASE STUDY - Wordpress development company kochi  - inner page_.pdf (identical copy also supplied as case-study-abrus-krishna-Wordpress development compay kochi- inner page_.pdf)",
+    "permalink": "/case-studies/abrus-krishna-finance-wordpress-development/",
+    "heroImage": "[Client logo: Abrus Krishna Finance] Hero image: abruskrishna.com homepage — desktop + mobile",
+    "beforeTeknoppyDisclaimer": "[These are a reasonable structural inference, not confirmed client-stated facts — confirm against the actual project intake before publishing]",
+    "visualShowcase": "Screenshots pending: full-page desktop + mobile captures of the homepage, a loan product page, and the FAQ section. Add once available.",
+    "results": "Post-launch performance data (traffic, ranking movement, enquiry volume) will be added here once a measurement window has passed and figures are pulled from GA / Search Console / CRM. Publishing this section without sourced numbers would weaken the case study rather than strengthen it.",
+    "clientTestimonial": "Testimonial pending — a direct quote with the client's full name and designation will be added once collected.",
+    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)"
+  }
+}

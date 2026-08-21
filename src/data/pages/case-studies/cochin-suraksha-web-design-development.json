@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "Cochin Suraksha Web Design & Development — Case Study | Teknoppy",
+    "description": "How Teknoppy built cochinsuraksha.com for a Kochi fire & safety company expanding into Civil & MEP, with a clear service structure and dedicated compliance content."
+  },
+  "breadcrumb": [
+    { "name": "Home", "href": "/" },
+    { "name": "Case Studies", "href": "/case-study/" },
+    { "name": "Cochin Suraksha — Web Design & Development", "href": "/case-studies/cochin-suraksha-web-design-development/" }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Case Study",
+      "h1Lead": "Cochin Suraksha: A Website Built for a",
+      "h1Accent": "Fire Safety Company",
+      "h1Rest": "Expanding into MEP"
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "Objective",
+      "paragraphs": [
+        { "text": "Cochin Suraksha is a Kochi-based fire and safety company, expert in the supply, installation, testing, and commissioning of fire protection systems across Kerala, now evolving into a Civil & MEP company. Teknoppy's goal was to build a website that could keep the established fire-safety business clear and trustworthy while introducing the newer Civil & MEP line without confusing visitors about what the company does." }
+      ]
+    },
+    {
+      "type": "nap",
+      "bg": "cream",
+      "h2": "Project Details",
+      "rows": [
+        { "label": "Key Services", "value": "Web Design and Development, SEO" },
+        { "label": "Live Website", "value": "cochinsuraksha.com — Visit Website", "href": "https://cochinsuraksha.com" }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "h2": "Before Teknoppy",
+      "items": [
+        { "title": "Fire safety and MEP services bundled together", "text": "With the business expanding from fire safety into Civil & MEP, the two lines likely sat without clear separation, risking confusion about what Cochin Suraksha actually does." },
+        { "title": "No dedicated pages per fire-safety service", "text": "Services like fire suppression, fire alarm systems, fire pumps, water mist systems, and kitchen hood systems were likely covered under one general services section rather than given individual pages." },
+        { "title": "Compliance and consultancy services underexposed", "text": "NOC (No Objection Certificate) consultancy and fire drawing services — a mandatory, trust-critical process for commercial and high-rise clients — weren't given dedicated visibility." }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "h2": "With Teknoppy",
+      "items": [
+        { "title": "Clear separation between Fire & Safety and Civil & MEP (directly answers Problem 1)", "text": "Distinct navigation and a dedicated Civil & MEP page position the newer business line clearly, without diluting the established fire-safety brand." },
+        { "title": "Seven dedicated fire-safety service pages (directly answers Problem 2)", "text": "Fire suppression, fire alarm systems, fire pumps supply and installation, fire fighting systems, water mist systems, kitchen hood systems, and fire extinguishers each have their own page rather than being bundled into one general services page." },
+        { "title": "Consultancy and compliance services made visible (directly answers Problem 3)", "text": "NOC and fire drawing consultancy services are presented as a distinct offering, building trust for commercial and high-rise clients navigating a mandatory compliance process." },
+        { "title": "Clients, gallery, and brands surfaced separately", "text": "Dedicated Our Clients, Gallery, and Brands pages give visitors third-party proof and project evidence beyond the service descriptions themselves." }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "paragraphs": [
+        { "lead": "Approach:", "text": "Discovery, design, and build details specific to this project — timeline and key decisions — should be pulled from the project intake and added here once confirmed." }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "soft",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "FAQ",
+      "items": [
+        { "q": "What was the main goal of the Cochin Suraksha website project?", "a": "To give a Kochi fire safety company a website that stays clear and trustworthy on its core business while introducing its newer Civil & MEP services without confusing visitors." },
+        { "q": "What services does Cochin Suraksha offer?", "a": "Fire suppression systems, fire alarm systems, fire pumps supply and installation, fire fighting systems, water mist systems, kitchen hood systems, fire extinguisher services, and Civil & MEP work." },
+        { "q": "Did the project affect Cochin Suraksha's existing rankings?", "a": "The project was scoped to avoid keyword cannibalization across the site's fire-safety and MEP service pages — no overlapping targets were introduced." },
+        { "q": "Does Cochin Suraksha handle fire safety compliance and NOC certification?", "a": "Yes — the company provides consultancy for obtaining and renewing No Objection Certificates from the Fire Department, along with fire drawing preparation for projects." }
+      ]
+    },
+    {
+      "type": "byline",
+      "bg": "white",
+      "text": "Written by Sanal Edison, Digital Strategist at Teknoppy"
+    },
+    {
+      "type": "links",
+      "bg": "cream",
+      "h2": "Related Case Studies",
+      "items": [
+        { "label": "General Tech Services", "text": "UAE ISO 17025 calibration lab website redesign", "href": "/case-studies/general-tech-services-web-design/" },
+        { "label": "Leema Engineering", "text": "Web design case study for a GCC industrial supplier", "href": "/case-studies/leema-engineering-web-design-gcc/" },
+        { "label": "Abrus Krishna Finance", "text": "WordPress site for a KML-registered Kerala lending company", "href": "/case-studies/abrus-krishna-finance-wordpress-development/" }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "h2": "Related Service",
+      "items": [
+        { "label": "Web Design Company Kochi", "text": "Teknoppy's matching service page", "href": "/web-design-company-kochi/" }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "cream",
+      "paragraphs": [
+        { "text": "Need a website that keeps your core business clear while your services grow? Talk to Teknoppy: +91 6282249224." }
+      ],
+      "ctas": [
+        { "label": "Talk to Teknoppy", "href": "tel:+916282249224" },
+        { "label": "Contact Us", "href": "/contact-us/" }
+      ]
+    }
+  ],
+  "devNotes": {
+    "source": "case-study-cochin suraksha-Web design company in kochi-inner page_.pdf",
+    "permalink": "/case-studies/cochin-suraksha-web-design-development/",
+    "heroImage": "[Client logo: Cochin Suraksha] Hero image: cochinsuraksha.com homepage — desktop + mobile",
+    "beforeTeknoppyDisclaimer": "[These are a reasonable structural inference, not confirmed client-stated facts — confirm against the actual project intake before publishing]",
+    "visualShowcase": "Screenshots pending: full-page desktop + mobile captures of the homepage, a fire-safety service page, and the Civil & MEP page. Add once available.",
+    "results": "Post-launch performance data (traffic, ranking movement, enquiry volume) will be added here once a measurement window has passed and figures are pulled from GA / Search Console / CRM. Publishing this section without sourced numbers would weaken the case study rather than strengthen it.",
+    "clientTestimonial": "Testimonial pending — a direct quote with the client's full name and designation will be added once collected.",
+    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)"
+  }
+}

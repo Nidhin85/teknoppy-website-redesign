@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "title": "Abrus Krishna Finance UI/UX Design — Case Study | Teknoppy",
+    "description": "How Teknoppy designed the UI/UX for abruskrishna.com, giving a KML-registered Kerala lending company a visually distinct, trust-first interface across eight loan products."
+  },
+  "breadcrumb": [
+    { "name": "Home", "href": "/" },
+    { "name": "Case Studies", "href": "/case-study/" },
+    { "name": "Abrus Krishna Finance — UI/UX Design", "href": "/case-studies/abrus-krishna-finance-ui-ux-design/" }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Case Study",
+      "h1Lead": "Abrus Krishna Finance: Designing a",
+      "h1Accent": "Trust-First UI",
+      "h1Rest": "for a Regulated Lending Business"
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "Objective",
+      "paragraphs": [
+        { "text": "Abrus Krishna Finance is a Kerala Money-Lenders Act (KML) registered lending institution based in Guruvayoor, offering gold loans, doorstep gold loans, and a range of micro business, personal, home, and consumer goods loans. Teknoppy's goal was to design a UI/UX that could help borrowers quickly tell eight distinct loan products apart, make regulatory trust visually prominent rather than buried in body text, and guide first-time borrowers through the loan process with confidence." },
+        { "html": "<em>Note: this case study is scoped to UI/UX design work specifically — see the separate <a href=\"/case-studies/abrus-krishna-finance-wordpress-development/\" class=\"text-primary font-semibold hover:underline\">WordPress Development case study</a> for this client for the full build.</em>" }
+      ]
+    },
+    {
+      "type": "nap",
+      "bg": "cream",
+      "h2": "Project Details",
+      "rows": [
+        { "label": "Key Services", "value": "UI/UX Design, Website Design, SEO" },
+        { "label": "Platform/Tech", "value": "WordPress (Elementor)" },
+        { "label": "Live Website", "value": "abruskrishna.com — Visit Website", "href": "https://abruskrishna.com" }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "h2": "Before Teknoppy",
+      "items": [
+        { "title": "No visual distinction between loan products", "text": "Without deliberate design, eight loan types risked visually blending together, making it hard for a borrower to quickly identify the right page for their need." },
+        { "title": "No visual prominence for compliance and trust signals", "text": "KML registration and regulatory information weren't given visual weight, despite being critical for a borrower deciding whether to trust a lender with gold or personal documents." },
+        { "title": "No visual guide through the borrower journey", "text": "The loan process wasn't presented as a clear visual flow, leaving first-time borrowers uncertain what to expect before applying." }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "h2": "With Teknoppy",
+      "items": [
+        { "title": "Distinct visual treatment per loan category (directly answers Problem 1)", "text": "Gold Loan, Business Loan, and Micro Finance product groups use a consistent but distinguishable page design, so a borrower can tell at a glance which page matches their need." },
+        { "title": "Trust and compliance made visually prominent (directly answers Problem 2)", "text": "KML registration and compliance information are treated as first-class visual elements on their own dedicated page, not buried in body copy." },
+        { "title": "A visual four-step process (directly answers Problem 3)", "text": "Contact/Visit → Document Verification → Approval → Disbursement is designed as a clear visual flow on the homepage, giving first-time borrowers a mental model before they apply." },
+        { "title": "A visual language suited to a regulated business", "text": "Typography, color, and layout choices reflect the seriousness of a regulated lending business rather than generic template styling." }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "paragraphs": [
+        { "lead": "Approach:", "text": "Discovery, wireframing, and visual design decisions specific to this project — timeline and key design choices — should be pulled from the project intake and added here once confirmed." }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "soft",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "FAQ",
+      "items": [
+        { "q": "What was the main UI/UX challenge for Abrus Krishna Finance?", "a": "Designing an interface that lets borrowers quickly distinguish between eight loan products while making regulatory trust visually clear for a first-time visitor." },
+        { "q": "How does the design build trust for a lending business?", "a": "KML registration and compliance details are given dedicated visual prominence rather than being left as plain body text, and the four-step loan process is laid out visually so borrowers know what to expect." },
+        { "q": "Is this the same project as Abrus Krishna Finance's WordPress development case study?", "a": "No — this case study covers UI/UX design work specifically. The WordPress development case study for this client covers the full site build." },
+        { "q": "Did this UI/UX work affect Abrus Krishna Finance's existing rankings?", "a": "This design work was scoped separately from the site's core content and development work, so it doesn't compete with the WordPress development case study or the site's loan product pages for the same search terms." }
+      ]
+    },
+    {
+      "type": "byline",
+      "bg": "white",
+      "text": "Written by Sanal Edison, Digital Strategist at Teknoppy"
+    },
+    {
+      "type": "links",
+      "bg": "cream",
+      "h2": "Related Case Studies",
+      "items": [
+        { "label": "Abrus Krishna Finance", "text": "WordPress Development case study for the full site build", "href": "/case-studies/abrus-krishna-finance-wordpress-development/" },
+        { "label": "Varma Ayurveda", "text": "UI/UX Design case study for a multilingual wellness retreat", "href": "/case-studies/varma-ayurveda-ui-ux-design/" },
+        { "label": "Mount Bell Global Studies", "text": "Web design for a Kerala overseas education consultancy", "href": "/case-studies/mount-bell-global-studies-web-design-development/" }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "h2": "Related Service",
+      "items": [
+        { "label": "UI/UX Design Company in Kochi", "text": "Teknoppy's matching service page", "href": "/ui-ux-design-company-in-kochi/" }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "cream",
+      "paragraphs": [
+        { "text": "Need a design that builds instant trust and makes complex options easy to navigate? Talk to Teknoppy: +91 6282249224." }
+      ],
+      "ctas": [
+        { "label": "Talk to Teknoppy", "href": "tel:+916282249224" },
+        { "label": "Contact Us", "href": "/contact-us/" }
+      ]
+    }
+  ],
+  "devNotes": {
+    "source": "abrus krishna-ui_ux design company in kochi -case-study-inner page_.pdf",
+    "permalink": "/case-studies/abrus-krishna-finance-ui-ux-design/",
+    "heroImage": "[Client logo: Abrus Krishna Finance] Hero image: abruskrishna.com homepage — desktop + mobile",
+    "beforeTeknoppyDisclaimer": "[These are a reasonable structural inference, not confirmed client-stated facts — confirm against the actual project intake before publishing]",
+    "visualShowcase": "Screenshots pending: full-page desktop + mobile mockups of the homepage, a loan product page, and the compliance page. Add once available.",
+    "results": "Post-launch performance data (traffic, ranking movement, enquiry volume) will be added here once a measurement window has passed and figures are pulled from GA / Search Console / CRM. Publishing this section without sourced numbers would weaken the case study rather than strengthen it.",
+    "clientTestimonial": "Testimonial pending — a direct quote with the client's full name and designation will be added once collected.",
+    "urlNote": "The doc's internal link reads /ui-ux-design-company-kochi/; the built route is /ui-ux-design-company-in-kochi/, so the link points there.",
+    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)"
+  }
+}
