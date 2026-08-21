@@ -199,13 +199,34 @@
       "h2": "Meet the Team",
       "items": [
         {
-          "name": "Sanal Kumar — Founder & SEO Strategy Lead",
+          "name": "Sanal Edison",
           "role": "Founder & SEO Strategy Lead",
           "contact": "sanal@teknoppy.com · +91 6282249224",
           "photo": "/sanal.png",
           "photoAlt": "Sanal Edison, Founder and Digital Strategist at Teknoppy",
           "bio": "Sanal has led 120+ SEO and digital projects since founding Teknoppy in 2018, working directly with clients across Kerala, India, and internationally.",
           "reviewed": "Reviewed: July 2026."
+        },
+        {
+          "name": "Niya K K",
+          "role": "SEO Lead",
+          "photo": "/team/niya-kk.webp",
+          "photoAlt": "Niya K K, SEO Lead at Teknoppy",
+          "bio": "Niya leads Teknoppy's SEO delivery team, setting the audit, keyword, and on-page priorities for each client account and reviewing the work before it ships."
+        },
+        {
+          "name": "Neha P",
+          "role": "SEO Analyst",
+          "photo": "/team/neha-p.webp",
+          "photoAlt": "Neha P, SEO Analyst at Teknoppy",
+          "bio": "Neha runs the analysis side of Teknoppy's SEO work, covering technical audits, keyword research, competitor benchmarking, and the monthly performance reporting clients receive."
+        },
+        {
+          "name": "Nithya Sibi",
+          "role": "Jr. SEO Executive",
+          "photo": "/team/nithya-sibi.webp",
+          "photoAlt": "Nithya Sibi, Jr. SEO Executive at Teknoppy",
+          "bio": "Nithya handles day-to-day SEO execution across client accounts, from on-page fixes and metadata through to rank tracking and ongoing site health checks."
         }
       ]
     },
@@ -237,6 +258,11 @@
     "urlDiscrepancy": "Other pages (Services hub, SEO Company Kerala) linked to /seo/. This doc specifies /seo-services/, so the page is built there and those links were updated to match.",
     "cannibalizationCheck": "This page does not target \"Kochi\" or \"Kerala\" as keywords, and does not use exact-match phrases reserved for child pages (Technical SEO, Local SEO, On-Page SEO, SEO Audit, Core Web Vitals Optimization, Website Speed Optimization, Ecommerce SEO, SEO Company Kochi, SEO Company Kerala). Child-page names are used only as anchor-linked service names; Kochi/Kerala appear only as service-area context.",
     "pendingPages": "The seven service links (/technical-seo/, /local-seo/, /on-page-seo/, /seo-audit/, /core-web-vitals-optimization/, /website-speed-optimization/, /ecommerce-seo/) are child pages that do not exist yet.",
-    "aggregateRating": "Doc lists AggregateRating in the schema stack. Withheld until verified ratings exist, consistent with the Certifications page rule."
+    "aggregateRating": "Doc lists AggregateRating in the schema stack. Withheld until verified ratings exist, consistent with the Certifications page rule.",
+    "dataNeededBeforeLaunch": [
+      "Photo files for the three SEO team members are not in the repo yet. The team block references /team/niya-kk.webp, /team/neha-p.webp, and /team/nithya-sibi.webp — save the portraits to public/team/ under exactly those names, or the cards render without an avatar.",
+      "The bios for Niya K K, Neha P, and Nithya Sibi describe the scope of each role only. They carry no years, project counts, or credentials, because none have been confirmed. Replace them with real bios before treating this block as an E-E-A-T signal, and never add proof points that have not been verified.",
+      "No contact line is set for the three SEO team members. Sanal's card is the only one with an email and phone. Supply work emails if each member should be individually contactable."
+    ]
   }
 }

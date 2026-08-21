@@ -5,6 +5,9 @@ import FooterCTA from '../components/FooterCTA.astro';
 import { ArrowRight, Zap, Rocket, Users, Calendar, LayoutGrid, Star, Phone, Mail } from 'lucide-react';
 import about from '../data/pages/about.json';
 
+const initials = (name: string) =>
+  name.split(/\s+/).filter(Boolean).map(w => w[0]).join('').slice(0, 2).toUpperCase();
+
 const title = "About Teknoppy — Web Design Agency Kerala | Our Story, Team & Mission";
 const description = "Teknoppy is a professional web design and digital agency headquartered in Kochi, Kerala. Founded in 2018, we have delivered 120+ high-performance websites for businesses across Kerala and beyond.";
 
@@ -187,43 +190,84 @@ const testimonials = [
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
         <div class="text-center max-w-3xl mx-auto mb-16">
           <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-sm">
-            • Our Team •
+            {about.team.badge}
           </div>
           <h2 class="text-4xl sm:text-5xl font-black text-neutral-900 leading-tight">
-            Meet the <span class="text-primary">Team</span>
+            {about.team.heading} <span class="text-primary">{about.team.headingAccent}</span>
           </h2>
         </div>
 
         <div class="max-w-4xl mx-auto">
+          <!-- Founder — featured card -->
           <div class="bg-white rounded-3xl border border-neutral-100 p-8 sm:p-10 lg:p-12 shadow-[0_12px_40px_-15px_rgba(0,0,0,0.05)] flex flex-col md:flex-row items-center md:items-start gap-8 lg:gap-12">
-            <!-- Founder Image -->
-            <div class="relative w-40 h-40 flex-shrink-0">
-              <div class="absolute inset-0 rounded-full border border-primary/20 scale-110"></div>
-              <div class="absolute inset-0 rounded-full border-2 border-primary/60 overflow-hidden shadow-lg">
-                <img src="/sanal.png" alt="Sanal Edison" class="w-full h-full object-cover" />
-              </div>
+            <!-- Founder Image — full portrait, falls back to the square headshot -->
+            <div class="relative w-52 sm:w-60 flex-shrink-0 aspect-[3/4] rounded-2xl overflow-hidden border border-neutral-100 bg-[#FAF7F4] shadow-md flex items-center justify-center">
+              <span class="absolute text-5xl font-black text-primary/15 select-none">{initials(about.team.founder.name)}</span>
+              <img
+                src={about.team.founder.photo}
+                alt={about.team.founder.photoAlt}
+                decoding="async"
+                data-fallback={about.team.founder.photoFallback}
+                onerror="if(this.dataset.fallback&&this.src.indexOf(this.dataset.fallback)===-1){this.src=this.dataset.fallback}else{this.remove()}"
+                class="relative w-full h-full object-contain"
+              />
             </div>
 
             <!-- Founder Content -->
             <div class="flex-1 text-center md:text-left">
-              <h3 class="text-2xl font-black text-neutral-900 mb-1">Sanal Edison</h3>
-              <p class="text-sm text-primary font-bold uppercase tracking-wider mb-3">Founder & Digital Strategist, Teknoppy</p>
+              <h3 class="text-2xl font-black text-neutral-900 mb-1">{about.team.founder.name}</h3>
+              <p class="text-sm text-primary font-bold uppercase tracking-wider mb-3">{about.team.founder.role}</p>
               <div class="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-3 sm:gap-6 mb-6">
-                <a href="mailto:sanal@teknoppy.com" class="inline-flex items-center gap-2 text-xs font-bold text-neutral-600 hover:text-primary transition-colors">
+                <a href={`mailto:${about.team.founder.email}`} class="inline-flex items-center gap-2 text-xs font-bold text-neutral-600 hover:text-primary transition-colors">
                   <Mail class="w-4 h-4 text-primary" />
-                  sanal@teknoppy.com
+                  {about.team.founder.email}
                 </a>
-                <a href="tel:+916282249224" class="inline-flex items-center gap-2 text-xs font-bold text-neutral-600 hover:text-primary transition-colors">
+                <a href={`tel:${about.team.founder.phone.replace(/\s+/g, '')}`} class="inline-flex items-center gap-2 text-xs font-bold text-neutral-600 hover:text-primary transition-colors">
                   <Phone class="w-4 h-4 text-primary" />
-                  +91 6282249224
+                  {about.team.founder.phone}
                 </a>
               </div>
               <div class="w-10 h-[3px] bg-primary/80 mb-6 rounded-full mx-auto md:mx-0"></div>
               <p class="text-neutral-500 text-sm leading-relaxed font-semibold">
-                Sanal has led 120+ web design and development projects across Kerala since founding Teknoppy in 2018. Specialising in SEO-first website architecture, conversion optimisation, and digital strategy, he personally oversees every project from discovery to launch — supported by an in-house Kochi team of UI/UX designers, WordPress developers, front-end developers, and SEO strategists.
+                {about.team.founder.bio}
               </p>
             </div>
           </div>
+
+          <!-- The rest of the team -->
+          {about.team.members?.length > 0 && (
+            <div class="mt-14">
+              {about.team.membersHeading && (
+                <h3 class="text-center text-xs font-black text-neutral-400 uppercase tracking-[0.2em] mb-8">
+                  {about.team.membersHeading}
+                </h3>
+              )}
+              <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {about.team.members.map((m: any) => (
+                  <div class="group bg-white rounded-3xl border border-neutral-100 overflow-hidden shadow-[0_12px_40px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col">
+                    <!-- Full portrait — object-contain so nothing is cropped -->
+                    <div class="relative w-full aspect-[3/4] bg-[#FAF7F4] border-b border-neutral-100 flex items-center justify-center overflow-hidden">
+                      <span class="absolute text-5xl font-black text-primary/15 select-none">{initials(m.name)}</span>
+                      <img
+                        src={m.photo}
+                        alt={m.photoAlt ?? m.name}
+                        loading="lazy"
+                        decoding="async"
+                        onerror="this.remove()"
+                        class="relative w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-500"
+                      />
+                    </div>
+                    <div class="p-7 flex flex-col flex-1">
+                      <h4 class="text-lg font-black text-neutral-900 leading-snug">{m.name}</h4>
+                      <p class="text-[11px] text-primary font-bold uppercase tracking-wider mt-1">{m.role}</p>
+                      <div class="w-8 h-[3px] bg-primary/80 rounded-full my-4"></div>
+                      <p class="text-neutral-500 text-xs leading-relaxed font-semibold">{m.bio}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </section>

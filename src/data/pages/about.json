@@ -1,4 +1,43 @@
 {
+  "team": {
+    "badge": "• Our Team •",
+    "heading": "Meet the",
+    "headingAccent": "Team",
+    "founder": {
+      "name": "Sanal Edison",
+      "role": "Founder & Digital Strategist, Teknoppy",
+      "email": "sanal@teknoppy.com",
+      "phone": "+91 6282249224",
+      "photo": "/team/sanal-edison.webp",
+      "photoFallback": "/sanal.png",
+      "photoAlt": "Sanal Edison, Founder and Digital Strategist at Teknoppy",
+      "bio": "Sanal has led 120+ web design and development projects across Kerala since founding Teknoppy in 2018. Specialising in SEO-first website architecture, conversion optimisation, and digital strategy, he personally oversees every project from discovery to launch — supported by an in-house Kochi team of UI/UX designers, WordPress developers, front-end developers, and SEO strategists."
+    },
+    "membersHeading": "The Team Behind the Work",
+    "members": [
+      {
+        "name": "Niya K K",
+        "role": "SEO Lead",
+        "photo": "/team/niya-kk.webp",
+        "photoAlt": "Niya K K, SEO Lead at Teknoppy",
+        "bio": "Niya leads Teknoppy's SEO delivery team, setting the audit, keyword, and on-page priorities for each client account and reviewing the work before it ships."
+      },
+      {
+        "name": "Neha P",
+        "role": "SEO Analyst",
+        "photo": "/team/neha-p.webp",
+        "photoAlt": "Neha P, SEO Analyst at Teknoppy",
+        "bio": "Neha runs the analysis side of Teknoppy's SEO work, covering technical audits, keyword research, competitor benchmarking, and the monthly performance reporting clients receive."
+      },
+      {
+        "name": "Nithya Sibi",
+        "role": "Jr. SEO Executive",
+        "photo": "/team/nithya-sibi.webp",
+        "photoAlt": "Nithya Sibi, Jr. SEO Executive at Teknoppy",
+        "bio": "Nithya handles day-to-day SEO execution across client accounts, from on-page fixes and metadata through to rank tracking and ongoing site health checks."
+      }
+    ]
+  },
   "faq": {
     "badge": "Have Questions?",
     "heading": "Frequently Asked Questions",
@@ -44,6 +83,12 @@
     "origin": "No About Us copy doc has been supplied. At the client's instruction, these six questions are reused verbatim from existing pages rather than newly written — each item records its `source` page.",
     "duplicateContentRisk": "Every question and answer here also appears on the page named in its `source`. The project's docs repeatedly require zero cannibalization, so this set should ideally be reworded for About Us, or replaced once an About Us copy doc exists. The visible copy is duplicated deliberately; see the schema note below for how that is handled.",
     "schemaDecision": "FAQPage schema is deliberately NOT emitted on /about-us/. Marking up the same Q&A entities on two URLs is what Google treats as duplicate FAQ markup, and the source pages (/services/, /contact-us/, /sanal-edison-digital-strategist/) already own that markup. The FAQ renders visibly for readers; the schema stays with the page that owns each question.",
-    "pending": "Supply an About Us copy doc and this page can be rebuilt like the rest — content in JSON, CMS-editable, with its own FAQ and FAQPage schema."
+    "pending": "Supply an About Us copy doc and this page can be rebuilt like the rest — content in JSON, CMS-editable, with its own FAQ and FAQPage schema.",
+    "teamSection": "The Meet the Team section was hardcoded in about-us.astro and showed only the founder. It now reads from `team` in this file, so members are CMS-editable. The founder keeps the featured card; the rest render as a grid beneath it.",
+    "teamDataNeeded": [
+      "Photo files for the three SEO team members are not in the repo yet. The cards reference /team/niya-kk.webp, /team/neha-p.webp, and /team/nithya-sibi.webp — save the portraits to public/team/ under exactly those names, or the cards fall back to an initial.",
+      "The member bios describe the scope of each role only. They carry no years, project counts, or credentials, because none have been confirmed. Replace them with real bios before treating this section as an E-E-A-T signal.",
+      "The same three members are listed in the team block on /seo-services/. Keep the two in sync, or move both to a shared team data file if the roster grows."
+    ]
   }
 }

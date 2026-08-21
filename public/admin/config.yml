@@ -1749,9 +1749,39 @@ collections:
               - { name: label, label: "Button label", widget: string }
               - { name: href, label: "Button URL", widget: string }
       - name: about_us_faq
-        label: "About Us — FAQ (/about-us/)"
+        label: "About Us (/about-us/)"
         file: "src/data/pages/about.json"
         fields:
+          - name: team
+            label: "Meet the Team"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: heading, label: "Heading", widget: string, hint: "First part of the heading, e.g. \"Meet the\"." }
+              - { name: headingAccent, label: "Heading (highlighted word)", widget: string, hint: "Rendered in the orange accent colour." }
+              - name: founder
+                label: "Founder — featured card"
+                widget: object
+                fields:
+                  - { name: name, label: "Name", widget: string }
+                  - { name: role, label: "Role", widget: string }
+                  - { name: email, label: "Email", widget: string }
+                  - { name: phone, label: "Phone", widget: string }
+                  - { name: photo, label: "Photo", widget: image, hint: "Full-length portrait. Falls back to the photo below if the file is missing." }
+                  - { name: photoFallback, label: "Fallback photo", widget: image, required: false, hint: "Used only if the main photo fails to load. The old square headshot lives here." }
+                  - { name: photoAlt, label: "Photo alt text", widget: string }
+                  - { name: bio, label: "Bio", widget: text }
+              - { name: membersHeading, label: "Sub-heading above the team grid", widget: string, required: false }
+              - name: members
+                label: "Team members"
+                widget: list
+                summary: "{{fields.name}} — {{fields.role}}"
+                fields:
+                  - { name: name, label: "Name", widget: string }
+                  - { name: role, label: "Role", widget: string }
+                  - { name: photo, label: "Photo", widget: image, hint: "Square portrait. Falls back to the person's initials if the file is missing." }
+                  - { name: photoAlt, label: "Photo alt text", widget: string }
+                  - { name: bio, label: "Bio", widget: text, hint: "Describe the role only. Never add years, project counts, or credentials that have not been confirmed." }
           - name: faq
             label: "FAQ"
             widget: object
