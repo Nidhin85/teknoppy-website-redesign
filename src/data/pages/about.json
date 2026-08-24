@@ -16,6 +16,13 @@
     "membersHeading": "The Team Behind the Work",
     "members": [
       {
+        "name": "Vijayakala",
+        "role": "Business Development & Client Relations",
+        "photo": "/team/vijayakala.webp",
+        "photoAlt": "Vijayakala, Business Development and Client Relations at Teknoppy",
+        "bio": "Vijayakala is the first point of contact for new enquiries and the ongoing link between clients and the delivery team, covering scoping, proposals, and account communication."
+      },
+      {
         "name": "Niya K K",
         "role": "SEO Lead",
         "photo": "/team/niya-kk.webp",
@@ -35,6 +42,27 @@
         "photo": "/team/nithya-sibi.webp",
         "photoAlt": "Nithya Sibi, Jr. SEO Executive at Teknoppy",
         "bio": "Nithya handles day-to-day SEO execution across client accounts, from on-page fixes and metadata through to rank tracking and ongoing site health checks."
+      },
+      {
+        "name": "Anjali Babu",
+        "role": "Jr. SEO Executive",
+        "photo": "/team/anjali-babu.webp",
+        "photoAlt": "Anjali Babu, Jr. SEO Executive at Teknoppy",
+        "bio": "Anjali works across on-page optimisation and content support, applying the keyword and structure decisions the SEO team sets for each client site."
+      },
+      {
+        "name": "Anjana Babu",
+        "role": "Jr. SEO Executive",
+        "photo": "/team/anjana-babu.webp",
+        "photoAlt": "Anjana Babu, Jr. SEO Executive at Teknoppy",
+        "bio": "Anjana supports technical and on-page SEO delivery, handling site checks, metadata, and the recurring optimisation tasks that keep client pages healthy."
+      },
+      {
+        "name": "Farsana A",
+        "role": "Jr. SEO Executive",
+        "photo": "/team/farsana-a.webp",
+        "photoAlt": "Farsana A, Jr. SEO Executive at Teknoppy",
+        "bio": "Farsana works on day-to-day SEO execution, covering on-page updates, listing and citation work, and tracking how client pages move in search."
       }
     ]
   },
@@ -86,9 +114,11 @@
     "pending": "Supply an About Us copy doc and this page can be rebuilt like the rest — content in JSON, CMS-editable, with its own FAQ and FAQPage schema.",
     "teamSection": "The Meet the Team section was hardcoded in about-us.astro and showed only the founder. It now reads from `team` in this file, so members are CMS-editable. The founder keeps the featured card; the rest render as a grid beneath it.",
     "teamDataNeeded": [
-      "Photo files for the three SEO team members are not in the repo yet. The cards reference /team/niya-kk.webp, /team/neha-p.webp, and /team/nithya-sibi.webp — save the portraits to public/team/ under exactly those names, or the cards fall back to an initial.",
+      "Portraits were converted from the PDFs and PNGs in the client's 'team photo' folder: PDF page 1 rasterised at 200dpi with pdftoppm, then resized to a uniform 1000x1333 (3:4) and encoded to WebP with sharp. Each image is padded rather than cropped, using its own sampled background colour, so no one is cut off and every card is the same shape.",
       "The member bios describe the scope of each role only. They carry no years, project counts, or credentials, because none have been confirmed. Replace them with real bios before treating this section as an E-E-A-T signal.",
-      "The same three members are listed in the team block on /seo-services/. Keep the two in sync, or move both to a shared team data file if the roster grows."
+      "Vijayakala's source file spells her role 'Business devolpment and client relations'; it is corrected to 'Business Development & Client Relations' here. No surname was supplied for her.",
+      "Anjali Babu and Anjana Babu are two different people with near-identical names and the same job title — check any edit to one has not been applied to the other.",
+      "The team block on /seo-services/ lists only the three SEO staff, which is correct for that page's scope. If the rosters should match, move both to a shared team data file."
     ]
   }
 }
