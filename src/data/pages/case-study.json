@@ -39,12 +39,16 @@
             {
               "label": "Abrus Krishna Finance — WordPress Development",
               "text": "WordPress site for a KML-registered Kerala lending company",
-              "href": "/case-studies/abrus-krishna-finance-wordpress-development/"
+              "href": "/case-studies/abrus-krishna-finance-wordpress-development/",
+              "image": "/case-studies/abruskrishna.jpg",
+              "imageAlt": "Abrus Krishna Finance — WordPress Development website homepage screenshot"
             },
             {
               "label": "Varma Ayurveda — WordPress Development",
               "text": "Multilingual WordPress site for a German Ayurvedic retreat",
-              "href": "/case-studies/varma-ayurveda-wordpress-development/"
+              "href": "/case-studies/varma-ayurveda-wordpress-development/",
+              "image": "/case-studies/varmaayurveda.jpg",
+              "imageAlt": "Varma Ayurveda — WordPress Development website homepage screenshot"
             }
           ]
         },
@@ -54,12 +58,16 @@
             {
               "label": "Abrus Krishna Finance — UI/UX Design",
               "text": "UI/UX design for a KML-registered Kerala lending company",
-              "href": "/case-studies/abrus-krishna-finance-ui-ux-design/"
+              "href": "/case-studies/abrus-krishna-finance-ui-ux-design/",
+              "image": "/case-studies/abruskrishna.jpg",
+              "imageAlt": "Abrus Krishna Finance — UI/UX Design website homepage screenshot"
             },
             {
               "label": "Varma Ayurveda — UI/UX Design",
               "text": "UI/UX design case study for a multilingual wellness retreat",
-              "href": "/case-studies/varma-ayurveda-ui-ux-design/"
+              "href": "/case-studies/varma-ayurveda-ui-ux-design/",
+              "image": "/case-studies/varmaayurveda.jpg",
+              "imageAlt": "Varma Ayurveda — UI/UX Design website homepage screenshot"
             }
           ]
         },
@@ -76,17 +84,23 @@
             {
               "label": "Leema Engineering",
               "text": "Web design case study for a GCC industrial supplier",
-              "href": "/case-studies/leema-engineering-web-design-gcc/"
+              "href": "/case-studies/leema-engineering-web-design-gcc/",
+              "image": "/case-studies/leemaeng.jpg",
+              "imageAlt": "Leema Engineering website homepage screenshot"
             },
             {
               "label": "Cochin Suraksha",
               "text": "Kochi fire & safety company website evolving into Civil & MEP",
-              "href": "/case-studies/cochin-suraksha-web-design-development/"
+              "href": "/case-studies/cochin-suraksha-web-design-development/",
+              "image": "/case-studies/cochinsuraksha.jpg",
+              "imageAlt": "Cochin Suraksha website homepage screenshot"
             },
             {
               "label": "Mount Bell Global Studies",
               "text": "Web design for a Kerala overseas education consultancy",
-              "href": "/case-studies/mount-bell-global-studies-web-design-development/"
+              "href": "/case-studies/mount-bell-global-studies-web-design-development/",
+              "image": "/case-studies/mountbell.jpg",
+              "imageAlt": "Mount Bell Global Studies website homepage screenshot"
             },
             {
               "label": "Lenaa",
@@ -103,12 +117,16 @@
             {
               "label": "Libra Group UAE",
               "text": "Web application case study for a Dubai facilities group",
-              "href": "/case-studies/libra-group-uae-web-application-design/"
+              "href": "/case-studies/libra-group-uae-web-application-design/",
+              "image": "/case-studies/libragroupuae.jpg",
+              "imageAlt": "Libra Group UAE website homepage screenshot"
             },
             {
               "label": "TriQare",
               "text": "Web application case study for a healthtech emergency SOS platform",
-              "href": "/case-studies/triqare-web-application-design/"
+              "href": "/case-studies/triqare-web-application-design/",
+              "image": "/case-studies/triqare.jpg",
+              "imageAlt": "TriQare website homepage screenshot"
             }
           ]
         },
@@ -118,17 +136,23 @@
             {
               "label": "GetSkill Online",
               "text": "UK ecommerce certification training platform",
-              "href": "/case-studies/getskillonline-ecommerce-website-development/"
+              "href": "/case-studies/getskillonline-ecommerce-website-development/",
+              "image": "/case-studies/getskillonline.jpg",
+              "imageAlt": "GetSkill Online website homepage screenshot"
             },
             {
               "label": "My PlantStore",
               "text": "Dubai ecommerce plant nursery website",
-              "href": "/case-studies/myplantstore-ecommerce-website-development/"
+              "href": "/case-studies/myplantstore-ecommerce-website-development/",
+              "image": "/case-studies/myplantstore.jpg",
+              "imageAlt": "My PlantStore website homepage screenshot"
             },
             {
               "label": "Sun and Moon Korean",
               "text": "Mumbai kimchi and K-fashion ecommerce content",
-              "href": "/case-studies/sun-and-moon-korean-ecommerce-website/"
+              "href": "/case-studies/sun-and-moon-korean-ecommerce-website/",
+              "image": "/case-studies/sunandmoonkorean.jpg",
+              "imageAlt": "Sun and Moon Korean website homepage screenshot"
             }
           ]
         },
@@ -164,7 +188,9 @@
             {
               "label": "Kerala Dayz",
               "text": "SEO strategy and GBP cleanup for a Kochi taxi and tour operator",
-              "href": "/case-studies/kerala-dayz-seo-services/"
+              "href": "/case-studies/kerala-dayz-seo-services/",
+              "image": "/case-studies/keraladayz.jpg",
+              "imageAlt": "Kerala Dayz website homepage screenshot"
             },
             {
               "label": "General Tech Services — SEO Services",
@@ -319,6 +345,7 @@
       "Do not add unverified numbers to hit a word count or to make a result look more impressive — this is the page most likely to be cited by AI platforms, and a false stat here is worse than a modest real one."
     ],
     "addedSection": "The \"Client Case Studies\" directory is not in the copy doc. It was added so the 22 named client case-study pages supplied separately are reachable from this hub; every label and descriptor is taken verbatim from those docs' own headings and Related Case Studies lines.",
-    "redesign2026_08_21": "Rebuilt to match the live teknoppy.com/case-study/ card grid: each card carries a website screenshot, an optional headline stat, the client name and a short blurb. Stat slots are empty pending verified figures — add \"stat\" to a card item and it appears above the client name. 15 of 22 cards show a 'Screenshot pending' placeholder because those client sites were unreachable at capture time. Named client work now leads the page; the four anonymised [X] summary blocks follow it. H1, meta and primary keyword unchanged, per the doc's do-not-change list."
+    "redesign2026_08_21": "Rebuilt to match the live teknoppy.com/case-study/ card grid: each card carries a website screenshot, an optional headline stat, the client name and a short blurb. Stat slots are empty pending verified figures — add \"stat\" to a card item and it appears above the client name. 15 of 22 cards show a 'Screenshot pending' placeholder because those client sites were unreachable at capture time. Named client work now leads the page; the four anonymised [X] summary blocks follow it. H1, meta and primary keyword unchanged, per the doc's do-not-change list.",
+    "screenshots": "20 of 22 cards now carry a homepage screenshot. Direction North and Olives Boutique Resort have no website in their source docs — both engagements are Instagram/Facebook only — so those two keep the placeholder tile."
   }
 }
