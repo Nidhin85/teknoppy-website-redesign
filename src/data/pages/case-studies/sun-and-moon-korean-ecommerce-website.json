@@ -4,9 +4,18 @@
     "description": "How Teknoppy shaped the content, SEO, and product experience for sunandmoonkorean.in, a Mumbai Korean kimchi and K-fashion ecommerce store."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Case Studies", "href": "/case-study/" },
-    { "name": "Sun and Moon Korean — Ecommerce Website", "href": "/case-studies/sun-and-moon-korean-ecommerce-website/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Case Studies",
+      "href": "/case-study/"
+    },
+    {
+      "name": "Sun and Moon Korean — Ecommerce Website",
+      "href": "/case-studies/sun-and-moon-korean-ecommerce-website/"
+    }
   ],
   "sections": [
     {
@@ -14,70 +23,170 @@
       "badge": "Case Study",
       "h1Lead": "Sun and Moon Korean: Bringing an",
       "h1Accent": "Authentic Kimchi Brand",
-      "h1Rest": "Online"
-    },
-    {
-      "type": "prose",
-      "bg": "white",
-      "h2": "Objective",
-      "paragraphs": [
-        { "text": "Sun and Moon Korean is a Mumbai (Worli) Korean restaurant and kimchi brand selling small-batch fermented kimchi and K-fashion online alongside its dine-in restaurant. Teknoppy's goal was to shape the ecommerce storefront's content, product presentation, and SEO so the site could sell an unfamiliar product category — authentic Korean kimchi — to an Indian audience, while connecting the online store to the restaurant's existing reputation and media coverage." }
+      "h1Rest": "Online",
+      "eyebrow": "Sun and Moon Korean",
+      "meta": [
+        {
+          "label": "Key Services",
+          "value": "Ecommerce Content & SEO, Product Page Strategy, Website Optimization"
+        },
+        {
+          "label": "Live Website",
+          "value": "sunandmoonkorean.in",
+          "href": "https://sunandmoonkorean.in"
+        }
       ]
     },
     {
-      "type": "nap",
+      "type": "statBand",
       "bg": "cream",
-      "h2": "Project Details",
-      "rows": [
-        { "label": "Key Services", "value": "Ecommerce Content & SEO, Product Page Strategy, Website Optimization" },
-        { "label": "Live Website", "value": "sunandmoonkorean.in — Visit Website", "href": "https://sunandmoonkorean.in" }
+      "badge": "Results",
+      "h2": "Sun and Moon Korean's Results",
+      "items": []
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "About Client",
+      "paragraphs": [
+        {
+          "text": "Sun and Moon Korean is a Mumbai (Worli) Korean restaurant and kimchi brand selling small-batch fermented kimchi and K-fashion online alongside its dine-in restaurant."
+        }
       ]
     },
     {
       "type": "prose",
       "bg": "white",
       "paragraphs": [
-        { "html": "<em>Note: this case study is scoped to content, SEO, and product experience work — not full site development.</em>" }
+        {
+          "html": "<em>Note: this case study is scoped to content, SEO, and product experience work — not full site development.</em>"
+        }
       ]
     },
     {
       "type": "cards",
+      "bg": "white",
+      "h2": "Challenges",
+      "items": [
+        {
+          "title": "No educational product content",
+          "text": "Kimchi varieties were listed without explanation, leaving first-time Indian buyers unsure what they were ordering or how it would taste."
+        },
+        {
+          "title": "Food and fashion blurred together",
+          "text": "Kimchi and K-fashion products sat in the same undifferentiated catalog, without a clear separation between the two shop experiences."
+        },
+        {
+          "title": "No visible trust signals",
+          "text": "Media coverage and customer reviews existed but weren't surfaced on the storefront, leaving an unfamiliar product category without third-party credibility at the point of purchase."
+        }
+      ],
+      "layout": "list"
+    },
+    {
+      "type": "prose",
       "bg": "soft",
-      "h2": "Before Teknoppy",
-      "items": [
-        { "title": "No educational product content", "text": "Kimchi varieties were listed without explanation, leaving first-time Indian buyers unsure what they were ordering or how it would taste." },
-        { "title": "Food and fashion blurred together", "text": "Kimchi and K-fashion products sat in the same undifferentiated catalog, without a clear separation between the two shop experiences." },
-        { "title": "No visible trust signals", "text": "Media coverage and customer reviews existed but weren't surfaced on the storefront, leaving an unfamiliar product category without third-party credibility at the point of purchase." }
+      "h2": "Campaign Objective",
+      "paragraphs": [
+        {
+          "text": "Teknoppy's goal was to shape the ecommerce storefront's content, product presentation, and SEO so the site could sell an unfamiliar product category — authentic Korean kimchi — to an Indian audience, while connecting the online store to the restaurant's existing reputation and media coverage."
+        }
       ]
     },
     {
       "type": "cards",
       "bg": "cream",
-      "h2": "With Teknoppy",
+      "h2": "A comprehensive range of services offered by Teknoppy and their outcomes",
       "items": [
-        { "title": "Educational product storytelling (directly answers Problem 1)", "text": "Each kimchi variety (Baechu, Oi, Pa, Baek, Yeolmu, Mu) carries its Korean name, phonetic English name, and a short flavor/benefit description, helping first-time buyers understand an unfamiliar product before they order." },
-        { "title": "Two clear shop categories (directly answers Problem 2)", "text": "Kimchi and K-fashion are separated into their own shop sections, so the site doesn't blur a food brand with a fashion catalog." },
-        { "title": "Trust signals from press and reviews (directly answers Problem 3)", "text": "Media coverage (Curly Tales, Pinkvilla Hallyutalk) and customer testimonials are surfaced on the homepage, giving an unfamiliar product category third-party credibility." }
-      ]
+        {
+          "title": "Educational product storytelling",
+          "text": "Each kimchi variety (Baechu, Oi, Pa, Baek, Yeolmu, Mu) carries its Korean name, phonetic English name, and a short flavor/benefit description, helping first-time buyers understand an unfamiliar product before they order."
+        },
+        {
+          "title": "Two clear shop categories",
+          "text": "Kimchi and K-fashion are separated into their own shop sections, so the site doesn't blur a food brand with a fashion catalog."
+        },
+        {
+          "title": "Trust signals from press and reviews",
+          "text": "Media coverage (Curly Tales, Pinkvilla Hallyutalk) and customer testimonials are surfaced on the homepage, giving an unfamiliar product category third-party credibility."
+        }
+      ],
+      "layout": "list"
     },
     {
       "type": "prose",
       "bg": "white",
       "paragraphs": [
-        { "lead": "Approach:", "text": "Discovery, content, and SEO work specific to this project — timeline and key decisions — should be pulled from the project intake and added here once confirmed." }
+        {
+          "lead": "Approach:",
+          "text": "Discovery, content, and SEO work specific to this project — timeline and key decisions — should be pulled from the project intake and added here once confirmed."
+        }
       ]
+    },
+    {
+      "type": "statBand",
+      "bg": "soft",
+      "badge": "Results",
+      "h2": "Sun and Moon Korean's Final Outcome After Teknoppy's Work",
+      "items": []
     },
     {
       "type": "faq",
-      "bg": "soft",
+      "bg": "white",
       "center": true,
       "badge": "Have Questions?",
       "h2": "FAQ",
       "items": [
-        { "q": "What was the main goal of the Sun and Moon Korean project?", "a": "To help a Mumbai Korean restaurant sell an unfamiliar product — authentic fermented kimchi — online, with content and SEO that educate first-time buyers and build trust." },
-        { "q": "What does Sun and Moon Korean sell online?", "a": "Small-batch fermented kimchi in five varieties, and Korean fashion (K-fashion), shipped from their Worli, Mumbai base." },
-        { "q": "Did the project affect Sun and Moon Korean's existing rankings?", "a": "The project was scoped to avoid keyword cannibalization against Sun and Moon Korean's existing product and category pages — no overlapping targets were introduced." },
-        { "q": "Does Sun and Moon Korean ship kimchi outside Mumbai?", "a": "The website lists Mumbai (Worli) as the base of operations; shipping coverage should be confirmed with the client before publishing." }
+        {
+          "q": "What was the main goal of the Sun and Moon Korean project?",
+          "a": "To help a Mumbai Korean restaurant sell an unfamiliar product — authentic fermented kimchi — online, with content and SEO that educate first-time buyers and build trust."
+        },
+        {
+          "q": "What does Sun and Moon Korean sell online?",
+          "a": "Small-batch fermented kimchi in five varieties, and Korean fashion (K-fashion), shipped from their Worli, Mumbai base."
+        },
+        {
+          "q": "Did the project affect Sun and Moon Korean's existing rankings?",
+          "a": "The project was scoped to avoid keyword cannibalization against Sun and Moon Korean's existing product and category pages — no overlapping targets were introduced."
+        },
+        {
+          "q": "Does Sun and Moon Korean ship kimchi outside Mumbai?",
+          "a": "The website lists Mumbai (Worli) as the base of operations; shipping coverage should be confirmed with the client before publishing."
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "cream",
+      "h2": "Other Case Studies",
+      "items": [
+        {
+          "label": "My PlantStore",
+          "text": "Dubai ecommerce plant nursery website",
+          "href": "/case-studies/myplantstore-ecommerce-website-development/"
+        },
+        {
+          "label": "General Tech Services",
+          "text": "UAE ISO 17025 calibration lab website redesign",
+          "href": "/case-studies/general-tech-services-web-design/"
+        },
+        {
+          "label": "Kaydenz",
+          "text": "Dubai Autodesk Authorized Training Center",
+          "href": "/case-study/"
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "h2": "Related Service",
+      "items": [
+        {
+          "label": "Ecommerce Website Development",
+          "text": "Teknoppy's matching service page",
+          "href": "/ecommerce-website-development-company-kochi/"
+        }
       ]
     },
     {
@@ -86,32 +195,22 @@
       "text": "Written by Sanal Edison, Digital Strategist at Teknoppy"
     },
     {
-      "type": "links",
-      "bg": "cream",
-      "h2": "Related Case Studies",
-      "items": [
-        { "label": "My PlantStore", "text": "Dubai ecommerce plant nursery website", "href": "/case-studies/myplantstore-ecommerce-website-development/" },
-        { "label": "General Tech Services", "text": "UAE ISO 17025 calibration lab website redesign", "href": "/case-studies/general-tech-services-web-design/" },
-        { "label": "Kaydenz", "text": "Dubai Autodesk Authorized Training Center", "href": "/case-study/" }
-      ]
-    },
-    {
-      "type": "links",
-      "bg": "white",
-      "h2": "Related Service",
-      "items": [
-        { "label": "Ecommerce Website Development", "text": "Teknoppy's matching service page", "href": "/ecommerce-website-development-company-kochi/" }
-      ]
-    },
-    {
       "type": "cta",
       "bg": "cream",
       "paragraphs": [
-        { "text": "Need content and SEO that help customers understand and trust a new product before they buy? Talk to Teknoppy: +91 6282249224." }
+        {
+          "text": "Need content and SEO that help customers understand and trust a new product before they buy? Talk to Teknoppy: +91 6282249224."
+        }
       ],
       "ctas": [
-        { "label": "Talk to Teknoppy", "href": "tel:+916282249224" },
-        { "label": "Contact Us", "href": "/contact-us/" }
+        {
+          "label": "Talk to Teknoppy",
+          "href": "tel:+916282249224"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/contact-us/"
+        }
       ]
     }
   ],
@@ -126,6 +225,7 @@
     "copyNote": "The \"With Teknoppy\" section lists six kimchi varieties while the FAQ says five — both kept verbatim from the source doc; confirm the correct figure before publishing.",
     "urlNote": "The doc's internal link reads /ecommerce-website-development/; the built route is /ecommerce-website-development-company-kochi/, so the link points there.",
     "pendingLinks": "\"Kaydenz\" has no case study page yet; it points at the Case Studies hub until that page is built.",
-    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)"
+    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)",
+    "redesign2026_08_21": "Rearranged to match the live teknoppy.com/amster-case-study/ layout: results band, About Client, Challenges, Campaign Objective, Introduction screenshot, services-and-outcomes, results band repeated, FAQ, Other Case Studies, CTA. The Objective paragraph is split at \"Teknoppy's goal was\" into About Client / Campaign Objective — wording unchanged, only divided. Project Details moved into the hero meta strip ('— Visit Website' link boilerplate dropped, the strip renders its own link). BOTH stat bands are empty and therefore render nothing at all: no verified figures exist for this project. Add items as [{value, label, source}] to src/data/pages/case-studies/sun-and-moon-korean-ecommerce-website.json and both bands appear automatically. Screenshot section omitted — the client site was unreachable when screenshots were captured."
   }
 }

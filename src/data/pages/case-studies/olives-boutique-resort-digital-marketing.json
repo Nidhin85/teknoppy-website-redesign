@@ -4,9 +4,18 @@
     "description": "How Teknoppy runs social media campaigns and community handling for Olives Boutique Resort, a Wayanad eco-resort, across Instagram and Facebook."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Case Studies", "href": "/case-study/" },
-    { "name": "Olives Boutique Resort — Digital Marketing", "href": "/case-studies/olives-boutique-resort-digital-marketing/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Case Studies",
+      "href": "/case-study/"
+    },
+    {
+      "name": "Olives Boutique Resort — Digital Marketing",
+      "href": "/case-studies/olives-boutique-resort-digital-marketing/"
+    }
   ],
   "sections": [
     {
@@ -14,71 +23,174 @@
       "badge": "Case Study",
       "h1Lead": "Olives Boutique Resort:",
       "h1Accent": "Digital Marketing",
-      "h1Rest": "for a Wayanad Eco-Resort"
-    },
-    {
-      "type": "prose",
-      "bg": "white",
-      "h2": "Objective",
-      "paragraphs": [
-        { "text": "Olives Boutique Resort is a Kalpetta, Wayanad eco-friendly resort run by owners Biju and Raji, known for home-cooked meals, mountain views, and personal hospitality across its honeymoon, family, and budget stay packages. Teknoppy's goal was to run social media campaigns and community handling across Instagram and Facebook that could turn the resort's real strengths — reviews consistently praising its food, views, and host warmth — into consistent, booking-driven content." }
+      "h1Rest": "for a Wayanad Eco-Resort",
+      "eyebrow": "Olives Boutique Resort",
+      "meta": [
+        {
+          "label": "Key Services",
+          "value": "Digital Marketing, Social Media Campaign Management, Social Media Handling"
+        },
+        {
+          "label": "Live Channels",
+          "value": "Instagram · Facebook",
+          "href": "https://www.instagram.com/olivesresortwayanad/"
+        }
       ]
     },
     {
-      "type": "nap",
+      "type": "statBand",
       "bg": "cream",
-      "h2": "Project Details",
-      "rows": [
-        { "label": "Key Services", "value": "Digital Marketing, Social Media Campaign Management, Social Media Handling" },
-        { "label": "Live Channels", "value": "Instagram · Facebook — Visit Profiles", "href": "https://www.instagram.com/olivesresortwayanad/" }
+      "badge": "Results",
+      "h2": "Olives Boutique Resort's Results",
+      "items": []
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "About Client",
+      "paragraphs": [
+        {
+          "text": "Olives Boutique Resort is a Kalpetta, Wayanad eco-friendly resort run by owners Biju and Raji, known for home-cooked meals, mountain views, and personal hospitality across its honeymoon, family, and budget stay packages."
+        }
       ]
     },
     {
       "type": "prose",
       "bg": "white",
       "paragraphs": [
-        { "html": "<em>Note: this case study is scoped to social media campaign running and handling — see the separate SEO/site restructure case study for this client for the website work.</em>" }
+        {
+          "html": "<em>Note: this case study is scoped to social media campaign running and handling — see the separate SEO/site restructure case study for this client for the website work.</em>"
+        }
       ]
     },
     {
       "type": "cards",
+      "bg": "white",
+      "h2": "Challenges",
+      "items": [
+        {
+          "title": "Inconsistent posting and engagement",
+          "text": "Without a structured content and campaign plan, activity on Instagram and Facebook was likely irregular, making it harder to build a consistent following."
+        },
+        {
+          "title": "No campaign link to existing packages",
+          "text": "Honeymoon, family, and budget stay packages already offered on the website weren't necessarily reflected in social content, missing a direct path from social engagement to booking."
+        },
+        {
+          "title": "No structured visual storytelling",
+          "text": "A boutique eco-resort with strong review themes (home-cooked meals, mountain views, host hospitality) needs a deliberate content strategy to turn those strengths into recurring social content, which wasn't yet in place."
+        }
+      ],
+      "layout": "list"
+    },
+    {
+      "type": "prose",
       "bg": "soft",
-      "h2": "Before Teknoppy",
-      "items": [
-        { "title": "Inconsistent posting and engagement", "text": "Without a structured content and campaign plan, activity on Instagram and Facebook was likely irregular, making it harder to build a consistent following." },
-        { "title": "No campaign link to existing packages", "text": "Honeymoon, family, and budget stay packages already offered on the website weren't necessarily reflected in social content, missing a direct path from social engagement to booking." },
-        { "title": "No structured visual storytelling", "text": "A boutique eco-resort with strong review themes (home-cooked meals, mountain views, host hospitality) needs a deliberate content strategy to turn those strengths into recurring social content, which wasn't yet in place." }
+      "h2": "Campaign Objective",
+      "paragraphs": [
+        {
+          "text": "Teknoppy's goal was to run social media campaigns and community handling across Instagram and Facebook that could turn the resort's real strengths — reviews consistently praising its food, views, and host warmth — into consistent, booking-driven content."
+        }
       ]
     },
     {
       "type": "cards",
       "bg": "cream",
-      "h2": "With Teknoppy",
+      "h2": "A comprehensive range of services offered by Teknoppy and their outcomes",
       "items": [
-        { "title": "A structured content and posting calendar (directly answers Problem 1)", "text": "Regular content across Instagram and Facebook keeps the resort's presence active and consistent rather than sporadic." },
-        { "title": "Campaigns aligned to existing packages (directly answers Problem 2)", "text": "Honeymoon, family, and budget package messaging is carried into social campaigns, connecting content directly to what visitors can book." },
-        { "title": "Visual storytelling built around the resort's real strengths (directly answers Problem 3)", "text": "The pool, mountain views, home-cooked meals, and the hosts' hospitality — recurring themes across guest reviews — are used as ongoing content pillars." },
-        { "title": "Community handling and review amplification", "text": "Guest comments and engagement are actively managed, and positive review themes are reflected back into social content, reinforcing the trust already built on platforms like Google and TripAdvisor." }
-      ]
+        {
+          "title": "A structured content and posting calendar",
+          "text": "Regular content across Instagram and Facebook keeps the resort's presence active and consistent rather than sporadic."
+        },
+        {
+          "title": "Campaigns aligned to existing packages",
+          "text": "Honeymoon, family, and budget package messaging is carried into social campaigns, connecting content directly to what visitors can book."
+        },
+        {
+          "title": "Visual storytelling built around the resort's real strengths",
+          "text": "The pool, mountain views, home-cooked meals, and the hosts' hospitality — recurring themes across guest reviews — are used as ongoing content pillars."
+        },
+        {
+          "title": "Community handling and review amplification",
+          "text": "Guest comments and engagement are actively managed, and positive review themes are reflected back into social content, reinforcing the trust already built on platforms like Google and TripAdvisor."
+        }
+      ],
+      "layout": "list"
     },
     {
       "type": "prose",
       "bg": "white",
       "paragraphs": [
-        { "lead": "Approach:", "text": "Discovery, content planning, and campaign specifics for this engagement — timeline and key decisions — should be pulled from the project intake and added here once confirmed." }
+        {
+          "lead": "Approach:",
+          "text": "Discovery, content planning, and campaign specifics for this engagement — timeline and key decisions — should be pulled from the project intake and added here once confirmed."
+        }
       ]
+    },
+    {
+      "type": "statBand",
+      "bg": "soft",
+      "badge": "Results",
+      "h2": "Olives Boutique Resort's Final Outcome After Teknoppy's Work",
+      "items": []
     },
     {
       "type": "faq",
-      "bg": "soft",
+      "bg": "white",
       "center": true,
       "badge": "Have Questions?",
       "h2": "FAQ",
       "items": [
-        { "q": "What was the main goal of the Olives Boutique Resort digital marketing engagement?", "a": "To run consistent social media campaigns and community handling that turn the resort's real strengths — its food, views, and hospitality — into content that drives bookings." },
-        { "q": "Which channels does this engagement cover?", "a": "Instagram (@olivesresortwayanad) and Facebook." },
-        { "q": "Does this case study cover Olives Boutique Resort's website or SEO work?", "a": "No — this case study covers social media campaign running and handling. The site restructure and SEO work for this client is covered separately." },
-        { "q": "Did this engagement affect Olives Boutique Resort's existing SEO rankings?", "a": "This social media work was scoped separately from the site's SEO and content strategy, so it doesn't compete with or affect the site restructure case study for this client." }
+        {
+          "q": "What was the main goal of the Olives Boutique Resort digital marketing engagement?",
+          "a": "To run consistent social media campaigns and community handling that turn the resort's real strengths — its food, views, and hospitality — into content that drives bookings."
+        },
+        {
+          "q": "Which channels does this engagement cover?",
+          "a": "Instagram (@olivesresortwayanad) and Facebook."
+        },
+        {
+          "q": "Does this case study cover Olives Boutique Resort's website or SEO work?",
+          "a": "No — this case study covers social media campaign running and handling. The site restructure and SEO work for this client is covered separately."
+        },
+        {
+          "q": "Did this engagement affect Olives Boutique Resort's existing SEO rankings?",
+          "a": "This social media work was scoped separately from the site's SEO and content strategy, so it doesn't compete with or affect the site restructure case study for this client."
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "cream",
+      "h2": "Other Case Studies",
+      "items": [
+        {
+          "label": "Secret Italia Tours",
+          "text": "Weekly SEO reporting for a small-group Europe tour operator",
+          "href": "/case-study/"
+        },
+        {
+          "label": "Sports Village Qatar",
+          "text": "Doha gym equipment supplier blog content",
+          "href": "/case-study/"
+        },
+        {
+          "label": "Roja Houseboats",
+          "text": "SEO and SERP work for an Alleppey houseboat operator",
+          "href": "/case-study/"
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "h2": "Related Service",
+      "items": [
+        {
+          "label": "Digital Marketing Company Kochi",
+          "text": "Teknoppy's matching service page",
+          "href": "/digital-marketing-company-kochi/"
+        }
       ]
     },
     {
@@ -87,32 +199,22 @@
       "text": "Written by Sanal Edison, Digital Strategist at Teknoppy"
     },
     {
-      "type": "links",
-      "bg": "cream",
-      "h2": "Related Case Studies",
-      "items": [
-        { "label": "Secret Italia Tours", "text": "Weekly SEO reporting for a small-group Europe tour operator", "href": "/case-study/" },
-        { "label": "Sports Village Qatar", "text": "Doha gym equipment supplier blog content", "href": "/case-study/" },
-        { "label": "Roja Houseboats", "text": "SEO and SERP work for an Alleppey houseboat operator", "href": "/case-study/" }
-      ]
-    },
-    {
-      "type": "links",
-      "bg": "white",
-      "h2": "Related Service",
-      "items": [
-        { "label": "Digital Marketing Company Kochi", "text": "Teknoppy's matching service page", "href": "/digital-marketing-company-kochi/" }
-      ]
-    },
-    {
       "type": "cta",
       "bg": "cream",
       "paragraphs": [
-        { "text": "Need social media campaigns that turn your best reviews into your next booking? Talk to Teknoppy: +91 6282249224." }
+        {
+          "text": "Need social media campaigns that turn your best reviews into your next booking? Talk to Teknoppy: +91 6282249224."
+        }
       ],
       "ctas": [
-        { "label": "Talk to Teknoppy", "href": "tel:+916282249224" },
-        { "label": "Contact Us", "href": "/contact-us/" }
+        {
+          "label": "Talk to Teknoppy",
+          "href": "tel:+916282249224"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/contact-us/"
+        }
       ]
     }
   ],
@@ -125,6 +227,7 @@
     "results": "Post-engagement performance data (follower growth, engagement rate, booking enquiries attributed to social) will be added here once figures are pulled from Meta Business Suite / Instagram Insights for the reporting period. Publishing this section without sourced numbers would weaken the case study rather than strengthen it.",
     "clientTestimonial": "Testimonial pending — a direct quote with the client's full name and designation will be added once collected.",
     "pendingLinks": "\"Secret Italia Tours\", \"Sports Village Qatar\" and \"Roja Houseboats\" have no case study pages yet; all three point at the Case Studies hub until those pages are built. The Facebook profile URL for the Live Channels row also needs confirming — only the Instagram handle is given in the source doc.",
-    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)"
+    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)",
+    "redesign2026_08_21": "Rearranged to match the live teknoppy.com/amster-case-study/ layout: results band, About Client, Challenges, Campaign Objective, Introduction screenshot, services-and-outcomes, results band repeated, FAQ, Other Case Studies, CTA. The Objective paragraph is split at \"Teknoppy's goal was\" into About Client / Campaign Objective — wording unchanged, only divided. Project Details moved into the hero meta strip ('— Visit Website' link boilerplate dropped, the strip renders its own link). BOTH stat bands are empty and therefore render nothing at all: no verified figures exist for this project. Add items as [{value, label, source}] to src/data/pages/case-studies/olives-boutique-resort-digital-marketing.json and both bands appear automatically. Screenshot section omitted — the client site was unreachable when screenshots were captured."
   }
 }

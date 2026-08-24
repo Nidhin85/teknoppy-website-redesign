@@ -4,9 +4,18 @@
     "description": "How Teknoppy built mountbell.com for a Kerala overseas education consultancy, with dedicated country pages, separated immigration services, and a two-office local presence."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Case Studies", "href": "/case-study/" },
-    { "name": "Mount Bell Global Studies — Web Design & Development", "href": "/case-studies/mount-bell-global-studies-web-design-development/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Case Studies",
+      "href": "/case-study/"
+    },
+    {
+      "name": "Mount Bell Global Studies — Web Design & Development",
+      "href": "/case-studies/mount-bell-global-studies-web-design-development/"
+    }
   ],
   "sections": [
     {
@@ -14,65 +23,169 @@
       "badge": "Case Study",
       "h1Lead": "Mount Bell Global Studies: A Website Built for a",
       "h1Accent": "13-Country",
-      "h1Rest": "Study Abroad Consultancy"
+      "h1Rest": "Study Abroad Consultancy",
+      "eyebrow": "Mount Bell Global Studies",
+      "meta": [
+        {
+          "label": "Key Services",
+          "value": "Web Design and Development, SEO"
+        },
+        {
+          "label": "Live Website",
+          "value": "mountbell.com",
+          "href": "https://mountbell.com"
+        }
+      ]
+    },
+    {
+      "type": "statBand",
+      "bg": "cream",
+      "badge": "Results",
+      "h2": "Mount Bell Global Studies' Results",
+      "items": []
     },
     {
       "type": "prose",
       "bg": "white",
-      "h2": "Objective",
+      "h2": "About Client",
       "paragraphs": [
-        { "text": "Mount Bell Global Studies is a Kerala-based Overseas Education Consultancy headquartered in Thrissur with a second office in Kochi, representing universities and colleges across 15+ countries. Teknoppy's goal was to build a website that could guide prospective students through a genuinely wide range of study destinations and services — from career counseling to visa support to migration — without the site feeling like an undifferentiated wall of options for a decision this significant." }
-      ]
-    },
-    {
-      "type": "nap",
-      "bg": "cream",
-      "h2": "Project Details",
-      "rows": [
-        { "label": "Key Services", "value": "Web Design and Development, SEO" },
-        { "label": "Live Website", "value": "mountbell.com — Visit Website", "href": "https://mountbell.com" }
+        {
+          "text": "Mount Bell Global Studies is a Kerala-based Overseas Education Consultancy headquartered in Thrissur with a second office in Kochi, representing universities and colleges across 15+ countries."
+        }
       ]
     },
     {
       "type": "cards",
       "bg": "white",
-      "h2": "Before Teknoppy",
+      "h2": "Challenges",
       "items": [
-        { "title": "No dedicated page per study destination", "text": "With destinations across 13+ countries, study options likely sat undifferentiated, making it hard for a prospective student to research region-specific requirements and options." },
-        { "title": "Immigration and study-abroad services blurred together", "text": "Without separate positioning, migration services could easily be confused with student study-abroad consultancy in the same navigation." },
-        { "title": "No visible dual-office presence", "text": "Kochi and Thrissur locations weren't both clearly surfaced, limiting local relevance for students researching from either city." },
-        { "title": "No trust-building content", "text": "Without testimonials or blog content, prospective students had little social proof or educational context to build confidence before committing to a major life decision." }
+        {
+          "title": "No dedicated page per study destination",
+          "text": "With destinations across 13+ countries, study options likely sat undifferentiated, making it hard for a prospective student to research region-specific requirements and options."
+        },
+        {
+          "title": "Immigration and study-abroad services blurred together",
+          "text": "Without separate positioning, migration services could easily be confused with student study-abroad consultancy in the same navigation."
+        },
+        {
+          "title": "No visible dual-office presence",
+          "text": "Kochi and Thrissur locations weren't both clearly surfaced, limiting local relevance for students researching from either city."
+        },
+        {
+          "title": "No trust-building content",
+          "text": "Without testimonials or blog content, prospective students had little social proof or educational context to build confidence before committing to a major life decision."
+        }
+      ],
+      "layout": "list"
+    },
+    {
+      "type": "prose",
+      "bg": "soft",
+      "h2": "Campaign Objective",
+      "paragraphs": [
+        {
+          "text": "Teknoppy's goal was to build a website that could guide prospective students through a genuinely wide range of study destinations and services — from career counseling to visa support to migration — without the site feeling like an undifferentiated wall of options for a decision this significant."
+        }
       ]
     },
     {
       "type": "cards",
       "bg": "cream",
-      "h2": "With Teknoppy",
+      "h2": "A comprehensive range of services offered by Teknoppy and their outcomes",
       "items": [
-        { "title": "Dedicated pages for 13 study destinations (directly answers Problem 1)", "text": "UK, Canada, Australia, New Zealand, Ireland, France, Germany, Dubai, Sweden, Netherlands, Finland, Latvia, and Malta each have their own page under Countries, rather than one generic destinations page." },
-        { "title": "Immigration kept distinct from study-abroad services (directly answers Problem 2)", "text": "Immigration sits as its own top-level navigation item, separate from country-specific study programs, so visitors researching migration aren't mixed in with student consultancy." },
-        { "title": "Both offices surfaced clearly (directly answers Problem 3)", "text": "Kochi and Thrissur addresses and phone numbers are both listed, giving students in either city a direct local contact point." },
-        { "title": "Testimonials and blog content build trust (directly answers Problem 4)", "text": "Named student testimonials and a blog of study-abroad guidance content give prospective students social proof and educational context for a major decision." }
-      ]
+        {
+          "title": "Dedicated pages for 13 study destinations",
+          "text": "UK, Canada, Australia, New Zealand, Ireland, France, Germany, Dubai, Sweden, Netherlands, Finland, Latvia, and Malta each have their own page under Countries, rather than one generic destinations page."
+        },
+        {
+          "title": "Immigration kept distinct from study-abroad services",
+          "text": "Immigration sits as its own top-level navigation item, separate from country-specific study programs, so visitors researching migration aren't mixed in with student consultancy."
+        },
+        {
+          "title": "Both offices surfaced clearly",
+          "text": "Kochi and Thrissur addresses and phone numbers are both listed, giving students in either city a direct local contact point."
+        },
+        {
+          "title": "Testimonials and blog content build trust",
+          "text": "Named student testimonials and a blog of study-abroad guidance content give prospective students social proof and educational context for a major decision."
+        }
+      ],
+      "layout": "list"
     },
     {
       "type": "prose",
       "bg": "white",
       "paragraphs": [
-        { "lead": "Approach:", "text": "Discovery, design, and build details specific to this project — timeline and key decisions — should be pulled from the project intake and added here once confirmed." }
+        {
+          "lead": "Approach:",
+          "text": "Discovery, design, and build details specific to this project — timeline and key decisions — should be pulled from the project intake and added here once confirmed."
+        }
       ]
+    },
+    {
+      "type": "statBand",
+      "bg": "soft",
+      "badge": "Results",
+      "h2": "Mount Bell Global Studies' Final Outcome After Teknoppy's Work",
+      "items": []
     },
     {
       "type": "faq",
-      "bg": "soft",
+      "bg": "white",
       "center": true,
       "badge": "Have Questions?",
       "h2": "FAQ",
       "items": [
-        { "q": "What was the main goal of the Mount Bell Global Studies website project?", "a": "To build a website that could guide prospective students through a wide range of study destinations and services without feeling overwhelming for a major life decision." },
-        { "q": "Which countries does Mount Bell Global Studies cover?", "a": "UK, Canada, Australia, New Zealand, Ireland, France, Germany, Dubai, Sweden, Netherlands, Finland, Latvia, and Malta, among others." },
-        { "q": "Did the project affect Mount Bell's existing rankings?", "a": "The project was scoped to avoid keyword cannibalization across the site's country and service pages — no overlapping targets were introduced." },
-        { "q": "Does Mount Bell Global Studies handle both study-abroad consultancy and immigration?", "a": "Yes — the site keeps Immigration as a distinct offering from its country-specific study-abroad consultancy services." }
+        {
+          "q": "What was the main goal of the Mount Bell Global Studies website project?",
+          "a": "To build a website that could guide prospective students through a wide range of study destinations and services without feeling overwhelming for a major life decision."
+        },
+        {
+          "q": "Which countries does Mount Bell Global Studies cover?",
+          "a": "UK, Canada, Australia, New Zealand, Ireland, France, Germany, Dubai, Sweden, Netherlands, Finland, Latvia, and Malta, among others."
+        },
+        {
+          "q": "Did the project affect Mount Bell's existing rankings?",
+          "a": "The project was scoped to avoid keyword cannibalization across the site's country and service pages — no overlapping targets were introduced."
+        },
+        {
+          "q": "Does Mount Bell Global Studies handle both study-abroad consultancy and immigration?",
+          "a": "Yes — the site keeps Immigration as a distinct offering from its country-specific study-abroad consultancy services."
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "cream",
+      "h2": "Other Case Studies",
+      "items": [
+        {
+          "label": "Cochin Suraksha",
+          "text": "Kochi fire & safety company website evolving into Civil & MEP",
+          "href": "/case-studies/cochin-suraksha-web-design-development/"
+        },
+        {
+          "label": "General Tech Services",
+          "text": "UAE ISO 17025 calibration lab website redesign",
+          "href": "/case-studies/general-tech-services-web-design/"
+        },
+        {
+          "label": "Abrus Krishna Finance",
+          "text": "WordPress site for a KML-registered Kerala lending company",
+          "href": "/case-studies/abrus-krishna-finance-wordpress-development/"
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "h2": "Related Service",
+      "items": [
+        {
+          "label": "Web Design Company Kochi",
+          "text": "Teknoppy's matching service page",
+          "href": "/web-design-company-kochi/"
+        }
       ]
     },
     {
@@ -81,32 +194,22 @@
       "text": "Written by Sanal Edison, Digital Strategist at Teknoppy"
     },
     {
-      "type": "links",
-      "bg": "cream",
-      "h2": "Related Case Studies",
-      "items": [
-        { "label": "Cochin Suraksha", "text": "Kochi fire & safety company website evolving into Civil & MEP", "href": "/case-studies/cochin-suraksha-web-design-development/" },
-        { "label": "General Tech Services", "text": "UAE ISO 17025 calibration lab website redesign", "href": "/case-studies/general-tech-services-web-design/" },
-        { "label": "Abrus Krishna Finance", "text": "WordPress site for a KML-registered Kerala lending company", "href": "/case-studies/abrus-krishna-finance-wordpress-development/" }
-      ]
-    },
-    {
-      "type": "links",
-      "bg": "white",
-      "h2": "Related Service",
-      "items": [
-        { "label": "Web Design Company Kochi", "text": "Teknoppy's matching service page", "href": "/web-design-company-kochi/" }
-      ]
-    },
-    {
       "type": "cta",
       "bg": "cream",
       "paragraphs": [
-        { "text": "Need a website that makes a wide range of options easy for visitors to navigate before a big decision? Talk to Teknoppy: +91 6282249224." }
+        {
+          "text": "Need a website that makes a wide range of options easy for visitors to navigate before a big decision? Talk to Teknoppy: +91 6282249224."
+        }
       ],
       "ctas": [
-        { "label": "Talk to Teknoppy", "href": "tel:+916282249224" },
-        { "label": "Contact Us", "href": "/contact-us/" }
+        {
+          "label": "Talk to Teknoppy",
+          "href": "tel:+916282249224"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/contact-us/"
+        }
       ]
     }
   ],
@@ -119,6 +222,7 @@
     "results": "Post-launch performance data (traffic, ranking movement, enquiry volume) will be added here once a measurement window has passed and figures are pulled from GA / Search Console / CRM. Publishing this section without sourced numbers would weaken the case study rather than strengthen it.",
     "clientTestimonial": "Testimonial pending — a direct quote with the client's full name and designation will be added once collected.",
     "copyNote": "The H1 says 13-country while the Objective says 15+ countries — both kept verbatim from the source doc; confirm the correct figure before publishing.",
-    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)"
+    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)",
+    "redesign2026_08_21": "Rearranged to match the live teknoppy.com/amster-case-study/ layout: results band, About Client, Challenges, Campaign Objective, Introduction screenshot, services-and-outcomes, results band repeated, FAQ, Other Case Studies, CTA. The Objective paragraph is split at \"Teknoppy's goal was\" into About Client / Campaign Objective — wording unchanged, only divided. Project Details moved into the hero meta strip ('— Visit Website' link boilerplate dropped, the strip renders its own link). BOTH stat bands are empty and therefore render nothing at all: no verified figures exist for this project. Add items as [{value, label, source}] to src/data/pages/case-studies/mount-bell-global-studies-web-design-development.json and both bands appear automatically. Screenshot section omitted — the client site was unreachable when screenshots were captured."
   }
 }

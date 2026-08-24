@@ -4,9 +4,18 @@
     "description": "How Teknoppy built varmaayurveda.com, a multilingual WordPress site for a German Ayurvedic wellness retreat offering authentic Panchakarma and Varma therapy."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Case Studies", "href": "/case-study/" },
-    { "name": "Varma Ayurveda — WordPress Development", "href": "/case-studies/varma-ayurveda-wordpress-development/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Case Studies",
+      "href": "/case-study/"
+    },
+    {
+      "name": "Varma Ayurveda — WordPress Development",
+      "href": "/case-studies/varma-ayurveda-wordpress-development/"
+    }
   ],
   "sections": [
     {
@@ -14,66 +23,173 @@
       "badge": "Case Study",
       "h1Lead": "Varma Ayurveda: A",
       "h1Accent": "Multilingual WordPress Site",
-      "h1Rest": "for an Ayurvedic Retreat"
+      "h1Rest": "for an Ayurvedic Retreat",
+      "eyebrow": "Varma Ayurveda",
+      "meta": [
+        {
+          "label": "Key Services",
+          "value": "WordPress Development, Website Design, SEO"
+        },
+        {
+          "label": "Platform/Tech",
+          "value": "WordPress (Elementor)"
+        },
+        {
+          "label": "Live Website",
+          "value": "varmaayurveda.com",
+          "href": "https://varmaayurveda.com"
+        }
+      ]
+    },
+    {
+      "type": "statBand",
+      "bg": "cream",
+      "badge": "Results",
+      "h2": "Varma Ayurveda's Results",
+      "items": []
     },
     {
       "type": "prose",
       "bg": "white",
-      "h2": "Objective",
+      "h2": "About Client",
       "paragraphs": [
-        { "text": "Varma Ayurveda is an Ayurvedic wellness retreat run by Dr. Dona George inside Hotel Stadt Breisach in Breisach am Rhein, Germany, offering authentic South Indian Panchakarma and Varma (Marma) therapy to a European audience. Teknoppy's goal was to build a WordPress site that could explain an unfamiliar healing tradition to German and wider European visitors in their own language, present a wide range of specialized treatments clearly, and support a full booking flow for a hotel-based retreat experience." }
-      ]
-    },
-    {
-      "type": "nap",
-      "bg": "cream",
-      "h2": "Project Details",
-      "rows": [
-        { "label": "Key Services", "value": "WordPress Development, Website Design, SEO" },
-        { "label": "Platform/Tech", "value": "WordPress (Elementor)" },
-        { "label": "Live Website", "value": "varmaayurveda.com — Visit Website", "href": "https://varmaayurveda.com" }
+        {
+          "text": "Varma Ayurveda is an Ayurvedic wellness retreat run by Dr. Dona George inside Hotel Stadt Breisach in Breisach am Rhein, Germany, offering authentic South Indian Panchakarma and Varma (Marma) therapy to a European audience."
+        }
       ]
     },
     {
       "type": "cards",
       "bg": "white",
-      "h2": "Before Teknoppy",
+      "h2": "Challenges",
       "items": [
-        { "title": "No genuine multilingual content", "text": "The retreat needed a website that could speak to a genuinely European audience — visitors researching a hotel-based Ayurvedic retreat in German, French, Italian, and Spanish — without falling back on machine-translated pages that flatten the meaning of specialized Sanskrit and Ayurvedic terminology. A generic or auto-translated site risked undermining exactly the kind of trust a first-time visitor needs before committing to an unfamiliar healing practice at a hotel they've never visited." },
-        { "title": "No organized treatment structure", "text": "Ten treatments, from Common Ayurveda to specialized Varma Chikitsa programs, likely sat without a clear retreat structure, making an unfamiliar therapy system hard for visitors to explore or compare." },
-        { "title": "No structured booking flow", "text": "Without a hotel-style booking form capturing room type, arrival/departure dates, guests, and treatment program together, enquiries likely required back-and-forth rather than a single clear step." },
-        { "title": "No content building trust in an unfamiliar practice", "text": "Without blog content explaining treatments like Varma therapy or a dedicated practitioner bio for Dr. Dona George, first-time visitors had little context or credibility signal before deciding to book." }
+        {
+          "title": "No genuine multilingual content",
+          "text": "The retreat needed a website that could speak to a genuinely European audience — visitors researching a hotel-based Ayurvedic retreat in German, French, Italian, and Spanish — without falling back on machine-translated pages that flatten the meaning of specialized Sanskrit and Ayurvedic terminology. A generic or auto-translated site risked undermining exactly the kind of trust a first-time visitor needs before committing to an unfamiliar healing practice at a hotel they've never visited."
+        },
+        {
+          "title": "No organized treatment structure",
+          "text": "Ten treatments, from Common Ayurveda to specialized Varma Chikitsa programs, likely sat without a clear retreat structure, making an unfamiliar therapy system hard for visitors to explore or compare."
+        },
+        {
+          "title": "No structured booking flow",
+          "text": "Without a hotel-style booking form capturing room type, arrival/departure dates, guests, and treatment program together, enquiries likely required back-and-forth rather than a single clear step."
+        },
+        {
+          "title": "No content building trust in an unfamiliar practice",
+          "text": "Without blog content explaining treatments like Varma therapy or a dedicated practitioner bio for Dr. Dona George, first-time visitors had little context or credibility signal before deciding to book."
+        }
+      ],
+      "layout": "list"
+    },
+    {
+      "type": "prose",
+      "bg": "soft",
+      "h2": "Campaign Objective",
+      "paragraphs": [
+        {
+          "text": "Teknoppy's goal was to build a WordPress site that could explain an unfamiliar healing tradition to German and wider European visitors in their own language, present a wide range of specialized treatments clearly, and support a full booking flow for a hotel-based retreat experience."
+        }
       ]
     },
     {
       "type": "cards",
       "bg": "cream",
-      "h2": "With Teknoppy",
+      "h2": "A comprehensive range of services offered by Teknoppy and their outcomes",
       "items": [
-        { "title": "Genuine multilingual support, not machine translation (directly answers Problem 1)", "text": "Spanish, German, French, and Italian language options are built into the site navigation as real, human-considered content paths, letting European visitors read about treatments in their own language without the flattened meaning auto-translation produces." },
-        { "title": "Ten treatments organized under one clear retreat structure (directly answers Problem 2)", "text": "From Common Ayurveda to specialized Varma Chikitsa programs (Vedana Mukthi, Soma Veda, Vatahara, Merudanda, Sodha Hara, Vishesha), each treatment has its own page under \"Your Retreat,\" making an unfamiliar therapy system easy to explore." },
-        { "title": "A full hotel-style booking flow (directly answers Problem 3)", "text": "The appointment form captures room type, arrival/departure dates, number of guests, and preferred treatment program in one place, matching the retreat's actual hotel-based delivery model." },
-        { "title": "Content that builds trust in an unfamiliar practice (directly answers Problem 4)", "text": "Blog content (e.g. explaining Varma therapy, addressing recurring back pain) and a dedicated practitioner bio for Dr. Dona George give first-time visitors context and credibility before they book." }
-      ]
+        {
+          "title": "Genuine multilingual support, not machine translation",
+          "text": "Spanish, German, French, and Italian language options are built into the site navigation as real, human-considered content paths, letting European visitors read about treatments in their own language without the flattened meaning auto-translation produces."
+        },
+        {
+          "title": "Ten treatments organized under one clear retreat structure",
+          "text": "From Common Ayurveda to specialized Varma Chikitsa programs (Vedana Mukthi, Soma Veda, Vatahara, Merudanda, Sodha Hara, Vishesha), each treatment has its own page under \"Your Retreat,\" making an unfamiliar therapy system easy to explore."
+        },
+        {
+          "title": "A full hotel-style booking flow",
+          "text": "The appointment form captures room type, arrival/departure dates, number of guests, and preferred treatment program in one place, matching the retreat's actual hotel-based delivery model."
+        },
+        {
+          "title": "Content that builds trust in an unfamiliar practice",
+          "text": "Blog content (e.g. explaining Varma therapy, addressing recurring back pain) and a dedicated practitioner bio for Dr. Dona George give first-time visitors context and credibility before they book."
+        }
+      ],
+      "layout": "list"
     },
     {
       "type": "prose",
       "bg": "white",
       "paragraphs": [
-        { "lead": "Approach:", "text": "Discovery, design, and build details specific to this project — timeline and key decisions — should be pulled from the project intake and added here once confirmed." }
+        {
+          "lead": "Approach:",
+          "text": "Discovery, design, and build details specific to this project — timeline and key decisions — should be pulled from the project intake and added here once confirmed."
+        }
       ]
+    },
+    {
+      "type": "statBand",
+      "bg": "soft",
+      "badge": "Results",
+      "h2": "Varma Ayurveda's Final Outcome After Teknoppy's Work",
+      "items": []
     },
     {
       "type": "faq",
-      "bg": "soft",
+      "bg": "white",
       "center": true,
       "badge": "Have Questions?",
       "h2": "FAQ",
       "items": [
-        { "q": "What was the main goal of the Varma Ayurveda website project?", "a": "To build a multilingual WordPress site that could explain authentic Ayurvedic and Varma therapy to a European audience and support direct retreat bookings at Hotel Stadt Breisach." },
-        { "q": "What treatments does Varma Ayurveda offer?", "a": "Common Ayurveda and a range of specialized Varma Chikitsa programs, including Panchakarma Rejuvenation, Panchakarma Purity, Detox and Glow, and several targeted Varma therapies for spine, joint, and neurological concerns." },
-        { "q": "Is the site available in languages other than English?", "a": "Yes — Spanish, German, French, and Italian language options are built into the site." },
-        { "q": "Did the project affect Varma Ayurveda's existing rankings?", "a": "The project was scoped to avoid keyword cannibalization across the site's treatment pages — no overlapping targets were introduced." }
+        {
+          "q": "What was the main goal of the Varma Ayurveda website project?",
+          "a": "To build a multilingual WordPress site that could explain authentic Ayurvedic and Varma therapy to a European audience and support direct retreat bookings at Hotel Stadt Breisach."
+        },
+        {
+          "q": "What treatments does Varma Ayurveda offer?",
+          "a": "Common Ayurveda and a range of specialized Varma Chikitsa programs, including Panchakarma Rejuvenation, Panchakarma Purity, Detox and Glow, and several targeted Varma therapies for spine, joint, and neurological concerns."
+        },
+        {
+          "q": "Is the site available in languages other than English?",
+          "a": "Yes — Spanish, German, French, and Italian language options are built into the site."
+        },
+        {
+          "q": "Did the project affect Varma Ayurveda's existing rankings?",
+          "a": "The project was scoped to avoid keyword cannibalization across the site's treatment pages — no overlapping targets were introduced."
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "cream",
+      "h2": "Other Case Studies",
+      "items": [
+        {
+          "label": "Abrus Krishna Finance",
+          "text": "WordPress site for a KML-registered Kerala lending company",
+          "href": "/case-studies/abrus-krishna-finance-wordpress-development/"
+        },
+        {
+          "label": "General Tech Services",
+          "text": "UAE ISO 17025 calibration lab website redesign",
+          "href": "/case-studies/general-tech-services-web-design/"
+        },
+        {
+          "label": "GetSkill Online",
+          "text": "UK ecommerce certification training platform",
+          "href": "/case-studies/getskillonline-ecommerce-website-development/"
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "h2": "Related Service",
+      "items": [
+        {
+          "label": "WordPress Development Company Kochi",
+          "text": "Teknoppy's matching service page",
+          "href": "/wordpress-development-company-kochi/"
+        }
       ]
     },
     {
@@ -82,32 +198,22 @@
       "text": "Written by Sanal Edison, Digital Strategist at Teknoppy"
     },
     {
-      "type": "links",
-      "bg": "cream",
-      "h2": "Related Case Studies",
-      "items": [
-        { "label": "Abrus Krishna Finance", "text": "WordPress site for a KML-registered Kerala lending company", "href": "/case-studies/abrus-krishna-finance-wordpress-development/" },
-        { "label": "General Tech Services", "text": "UAE ISO 17025 calibration lab website redesign", "href": "/case-studies/general-tech-services-web-design/" },
-        { "label": "GetSkill Online", "text": "UK ecommerce certification training platform", "href": "/case-studies/getskillonline-ecommerce-website-development/" }
-      ]
-    },
-    {
-      "type": "links",
-      "bg": "white",
-      "h2": "Related Service",
-      "items": [
-        { "label": "WordPress Development Company Kochi", "text": "Teknoppy's matching service page", "href": "/wordpress-development-company-kochi/" }
-      ]
-    },
-    {
       "type": "cta",
       "bg": "cream",
       "paragraphs": [
-        { "text": "Need a WordPress site that makes a specialized wellness practice easy to understand and easy to book — in more than one language? Talk to Teknoppy: +91 6282249224." }
+        {
+          "text": "Need a WordPress site that makes a specialized wellness practice easy to understand and easy to book — in more than one language? Talk to Teknoppy: +91 6282249224."
+        }
       ],
       "ctas": [
-        { "label": "Talk to Teknoppy", "href": "tel:+916282249224" },
-        { "label": "Contact Us", "href": "/contact-us/" }
+        {
+          "label": "Talk to Teknoppy",
+          "href": "tel:+916282249224"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/contact-us/"
+        }
       ]
     }
   ],
@@ -119,6 +225,7 @@
     "visualShowcase": "Screenshots pending: full-page desktop + mobile captures of the homepage, a treatment page, and the booking form. Add once available.",
     "results": "Post-launch performance data (traffic, ranking movement, booking enquiries) will be added here once a measurement window has passed and figures are pulled from GA / Search Console / booking records. Publishing this section without sourced numbers would weaken the case study rather than strengthen it.",
     "clientTestimonial": "Testimonial pending — a direct quote with the client's full name and designation will be added once collected.",
-    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)"
+    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)",
+    "redesign2026_08_21": "Rearranged to match the live teknoppy.com/amster-case-study/ layout: results band, About Client, Challenges, Campaign Objective, Introduction screenshot, services-and-outcomes, results band repeated, FAQ, Other Case Studies, CTA. The Objective paragraph is split at \"Teknoppy's goal was\" into About Client / Campaign Objective — wording unchanged, only divided. Project Details moved into the hero meta strip ('— Visit Website' link boilerplate dropped, the strip renders its own link). BOTH stat bands are empty and therefore render nothing at all: no verified figures exist for this project. Add items as [{value, label, source}] to src/data/pages/case-studies/varma-ayurveda-wordpress-development.json and both bands appear automatically. Screenshot section omitted — the client site was unreachable when screenshots were captured."
   }
 }

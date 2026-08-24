@@ -4,9 +4,18 @@
     "description": "How Teknoppy runs social media campaigns and community handling for Direction North, a Kerala retail display and visual merchandising manufacturer, across Instagram and Facebook."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Case Studies", "href": "/case-study/" },
-    { "name": "Direction North — Digital Marketing", "href": "/case-studies/direction-north-digital-marketing/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Case Studies",
+      "href": "/case-study/"
+    },
+    {
+      "name": "Direction North — Digital Marketing",
+      "href": "/case-studies/direction-north-digital-marketing/"
+    }
   ],
   "sections": [
     {
@@ -14,71 +23,174 @@
       "badge": "Case Study",
       "h1Lead": "Direction North:",
       "h1Accent": "Digital Marketing",
-      "h1Rest": "for a Retail Display Manufacturer"
-    },
-    {
-      "type": "prose",
-      "bg": "white",
-      "h2": "Objective",
-      "paragraphs": [
-        { "text": "Direction North is a Kerala-based retail display and visual merchandising manufacturer, producing floor displays, store transformations, exhibition builds, and premium retail branding for client brands. Teknoppy's goal was to run social media campaigns and community handling across Instagram and Facebook that could turn genuinely visual, project-based work into a consistent content presence — the kind of ongoing portfolio a B2B buyer evaluating display vendors actually wants to see." }
+      "h1Rest": "for a Retail Display Manufacturer",
+      "eyebrow": "Direction North",
+      "meta": [
+        {
+          "label": "Key Services",
+          "value": "Digital Marketing, Social Media Campaign Management, Social Media Handling"
+        },
+        {
+          "label": "Live Channels",
+          "value": "Instagram · Facebook",
+          "href": "https://www.instagram.com/directionnorthllp/"
+        }
       ]
     },
     {
-      "type": "nap",
+      "type": "statBand",
       "bg": "cream",
-      "h2": "Project Details",
-      "rows": [
-        { "label": "Key Services", "value": "Digital Marketing, Social Media Campaign Management, Social Media Handling" },
-        { "label": "Live Channels", "value": "Instagram · Facebook — Visit Profiles", "href": "https://www.instagram.com/directionnorthllp/" }
+      "badge": "Results",
+      "h2": "Direction North's Results",
+      "items": []
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "About Client",
+      "paragraphs": [
+        {
+          "text": "Direction North is a Kerala-based retail display and visual merchandising manufacturer, producing floor displays, store transformations, exhibition builds, and premium retail branding for client brands."
+        }
       ]
     },
     {
       "type": "prose",
       "bg": "white",
       "paragraphs": [
-        { "html": "<em>Note: this case study is scoped to social media campaign running and handling — see the separate website structure/SEO case study for this client for the website work.</em>" }
+        {
+          "html": "<em>Note: this case study is scoped to social media campaign running and handling — see the separate website structure/SEO case study for this client for the website work.</em>"
+        }
       ]
     },
     {
       "type": "cards",
+      "bg": "white",
+      "h2": "Challenges",
+      "items": [
+        {
+          "title": "No consistent showcase of completed work",
+          "text": "Retail display and store transformation projects are inherently visual, but without a content plan, that proof of work likely wasn't being shared consistently as an ongoing portfolio."
+        },
+        {
+          "title": "No visible brand-credibility signals",
+          "text": "Serving established retail brands is a strong trust signal for a B2B buyer, but without deliberate content, those brand associations likely weren't visible to prospects browsing the company's social channels."
+        },
+        {
+          "title": "Inconsistent posting across Instagram and Facebook",
+          "text": "Without a structured calendar, presence was likely sporadic, limiting visibility to a B2B audience actively researching display and merchandising vendors."
+        }
+      ],
+      "layout": "list"
+    },
+    {
+      "type": "prose",
       "bg": "soft",
-      "h2": "Before Teknoppy",
-      "items": [
-        { "title": "No consistent showcase of completed work", "text": "Retail display and store transformation projects are inherently visual, but without a content plan, that proof of work likely wasn't being shared consistently as an ongoing portfolio." },
-        { "title": "No visible brand-credibility signals", "text": "Serving established retail brands is a strong trust signal for a B2B buyer, but without deliberate content, those brand associations likely weren't visible to prospects browsing the company's social channels." },
-        { "title": "Inconsistent posting across Instagram and Facebook", "text": "Without a structured calendar, presence was likely sporadic, limiting visibility to a B2B audience actively researching display and merchandising vendors." }
+      "h2": "Campaign Objective",
+      "paragraphs": [
+        {
+          "text": "Teknoppy's goal was to run social media campaigns and community handling across Instagram and Facebook that could turn genuinely visual, project-based work into a consistent content presence — the kind of ongoing portfolio a B2B buyer evaluating display vendors actually wants to see."
+        }
       ]
     },
     {
       "type": "cards",
       "bg": "cream",
-      "h2": "With Teknoppy",
+      "h2": "A comprehensive range of services offered by Teknoppy and their outcomes",
       "items": [
-        { "title": "Project showcase content (directly answers Problem 1)", "text": "Installation photos, store transformation before/afters, and exhibition builds are shared as a structured content series, turning completed work into an ongoing visual portfolio." },
-        { "title": "Brand association surfaced through content (directly answers Problem 2)", "text": "Content highlights the caliber of brands and projects the company has delivered for, building credibility for prospective B2B buyers evaluating vendors." },
-        { "title": "A structured content calendar across Instagram and Facebook (directly answers Problem 3)", "text": "Consistent posting keeps the brand visible to retail and brand-marketing decision-makers researching display partners." },
-        { "title": "Community handling", "text": "Enquiries and engagement on both channels are actively managed, turning social interest into sales conversations." }
-      ]
+        {
+          "title": "Project showcase content",
+          "text": "Installation photos, store transformation before/afters, and exhibition builds are shared as a structured content series, turning completed work into an ongoing visual portfolio."
+        },
+        {
+          "title": "Brand association surfaced through content",
+          "text": "Content highlights the caliber of brands and projects the company has delivered for, building credibility for prospective B2B buyers evaluating vendors."
+        },
+        {
+          "title": "A structured content calendar across Instagram and Facebook",
+          "text": "Consistent posting keeps the brand visible to retail and brand-marketing decision-makers researching display partners."
+        },
+        {
+          "title": "Community handling",
+          "text": "Enquiries and engagement on both channels are actively managed, turning social interest into sales conversations."
+        }
+      ],
+      "layout": "list"
     },
     {
       "type": "prose",
       "bg": "white",
       "paragraphs": [
-        { "lead": "Approach:", "text": "Discovery, content planning, and campaign specifics for this engagement — timeline and key decisions — should be pulled from the project intake and added here once confirmed." }
+        {
+          "lead": "Approach:",
+          "text": "Discovery, content planning, and campaign specifics for this engagement — timeline and key decisions — should be pulled from the project intake and added here once confirmed."
+        }
       ]
+    },
+    {
+      "type": "statBand",
+      "bg": "soft",
+      "badge": "Results",
+      "h2": "Direction North's Final Outcome After Teknoppy's Work",
+      "items": []
     },
     {
       "type": "faq",
-      "bg": "soft",
+      "bg": "white",
       "center": true,
       "badge": "Have Questions?",
       "h2": "FAQ",
       "items": [
-        { "q": "What was the main goal of the Direction North digital marketing engagement?", "a": "To run consistent social media campaigns and community handling that turn project-based retail display work into an ongoing visual portfolio for B2B buyers." },
-        { "q": "Which channels does this engagement cover?", "a": "Instagram (@directionnorthllp) and Facebook." },
-        { "q": "Does this case study cover Direction North's website or SEO work?", "a": "No — this case study covers social media campaign running and handling. The website structure and SEO work for this client is covered separately." },
-        { "q": "Did this engagement affect Direction North's existing SEO rankings?", "a": "This social media work was scoped separately from the site's SEO and content strategy, so it doesn't compete with or affect the website structure case study for this client." }
+        {
+          "q": "What was the main goal of the Direction North digital marketing engagement?",
+          "a": "To run consistent social media campaigns and community handling that turn project-based retail display work into an ongoing visual portfolio for B2B buyers."
+        },
+        {
+          "q": "Which channels does this engagement cover?",
+          "a": "Instagram (@directionnorthllp) and Facebook."
+        },
+        {
+          "q": "Does this case study cover Direction North's website or SEO work?",
+          "a": "No — this case study covers social media campaign running and handling. The website structure and SEO work for this client is covered separately."
+        },
+        {
+          "q": "Did this engagement affect Direction North's existing SEO rankings?",
+          "a": "This social media work was scoped separately from the site's SEO and content strategy, so it doesn't compete with or affect the website structure case study for this client."
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "cream",
+      "h2": "Other Case Studies",
+      "items": [
+        {
+          "label": "Olives Boutique Resort",
+          "text": "Digital marketing for a Wayanad eco-resort",
+          "href": "/case-studies/olives-boutique-resort-digital-marketing/"
+        },
+        {
+          "label": "Teknoppy Instagram",
+          "text": "In-house social growth and lead-gen strategy",
+          "href": "/case-study/"
+        },
+        {
+          "label": "Sports Village Qatar",
+          "text": "Doha gym equipment supplier blog content",
+          "href": "/case-study/"
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "h2": "Related Service",
+      "items": [
+        {
+          "label": "Digital Marketing Company Kochi",
+          "text": "Teknoppy's matching service page",
+          "href": "/digital-marketing-company-kochi/"
+        }
       ]
     },
     {
@@ -87,32 +199,22 @@
       "text": "Written by Sanal Edison, Digital Strategist at Teknoppy"
     },
     {
-      "type": "links",
-      "bg": "cream",
-      "h2": "Related Case Studies",
-      "items": [
-        { "label": "Olives Boutique Resort", "text": "Digital marketing for a Wayanad eco-resort", "href": "/case-studies/olives-boutique-resort-digital-marketing/" },
-        { "label": "Teknoppy Instagram", "text": "In-house social growth and lead-gen strategy", "href": "/case-study/" },
-        { "label": "Sports Village Qatar", "text": "Doha gym equipment supplier blog content", "href": "/case-study/" }
-      ]
-    },
-    {
-      "type": "links",
-      "bg": "white",
-      "h2": "Related Service",
-      "items": [
-        { "label": "Digital Marketing Company Kochi", "text": "Teknoppy's matching service page", "href": "/digital-marketing-company-kochi/" }
-      ]
-    },
-    {
       "type": "cta",
       "bg": "cream",
       "paragraphs": [
-        { "text": "Need social media that turns your completed projects into your next enquiry? Talk to Teknoppy: +91 6282249224." }
+        {
+          "text": "Need social media that turns your completed projects into your next enquiry? Talk to Teknoppy: +91 6282249224."
+        }
       ],
       "ctas": [
-        { "label": "Talk to Teknoppy", "href": "tel:+916282249224" },
-        { "label": "Contact Us", "href": "/contact-us/" }
+        {
+          "label": "Talk to Teknoppy",
+          "href": "tel:+916282249224"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/contact-us/"
+        }
       ]
     }
   ],
@@ -125,6 +227,7 @@
     "results": "Post-engagement performance data (follower growth, engagement rate, enquiries attributed to social) will be added here once figures are pulled from Meta Business Suite / Instagram Insights for the reporting period. Publishing this section without sourced numbers would weaken the case study rather than strengthen it.",
     "clientTestimonial": "Testimonial pending — a direct quote with the client's full name and designation will be added once collected.",
     "pendingLinks": "\"Teknoppy Instagram\" and \"Sports Village Qatar\" have no case study pages yet; both point at the Case Studies hub until those pages are built. The Facebook profile URL for the Live Channels row also needs confirming — only the Instagram handle is given in the source doc.",
-    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)"
+    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)",
+    "redesign2026_08_21": "Rearranged to match the live teknoppy.com/amster-case-study/ layout: results band, About Client, Challenges, Campaign Objective, Introduction screenshot, services-and-outcomes, results band repeated, FAQ, Other Case Studies, CTA. The Objective paragraph is split at \"Teknoppy's goal was\" into About Client / Campaign Objective — wording unchanged, only divided. Project Details moved into the hero meta strip ('— Visit Website' link boilerplate dropped, the strip renders its own link). BOTH stat bands are empty and therefore render nothing at all: no verified figures exist for this project. Add items as [{value, label, source}] to src/data/pages/case-studies/direction-north-digital-marketing.json and both bands appear automatically. Screenshot section omitted — the client site was unreachable when screenshots were captured."
   }
 }

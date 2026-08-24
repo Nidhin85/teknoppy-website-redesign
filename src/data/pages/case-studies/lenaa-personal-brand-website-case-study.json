@@ -4,9 +4,18 @@
     "description": "See how Teknoppy built Lenaa's personal brand website — actor, author, TEDx speaker — with SEO-ready design. Call +91 6282249224 for a similar project."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Case Studies", "href": "/case-study/" },
-    { "name": "Lenaa — Personal Brand Website Design", "href": "/lenaa-personal-brand-website-case-study/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Case Studies",
+      "href": "/case-study/"
+    },
+    {
+      "name": "Lenaa — Personal Brand Website Design",
+      "href": "/lenaa-personal-brand-website-case-study/"
+    }
   ],
   "sections": [
     {
@@ -16,63 +25,192 @@
       "h1Accent": "Case Study:",
       "h1Rest": "Lenaa",
       "body": [
-        { "html": "<strong>Client: Lenaa</strong>" },
-        { "html": "Lenaa is a Malayalam cinema actor, bestselling author of <em>Women-O-Pause</em> and <em>The Autobiography of God</em>, a three-time TEDx speaker, and an entrepreneur based in Kerala. Her work spans film, publishing, public speaking, and wellness advocacy — but it lived across separate social profiles with no single site to point press, readers, or event organizers to. Teknoppy built lenaalife.com as one authoritative home for her acting, author, and speaker profile, structured for search visibility from day one." },
-        { "text": "The goal wasn't just a portfolio site. It was a page that could hold its own when someone searched her name, back up her books with a proper landing point, and give event organizers and press a clear, credible first impression — without asking her to manage yet another social account." }
+        {
+          "html": "Lenaa is a Malayalam cinema actor, bestselling author of <em>Women-O-Pause</em> and <em>The Autobiography of God</em>, a three-time TEDx speaker, and an entrepreneur based in Kerala. Her work spans film, publishing, public speaking, and wellness advocacy — but it lived across separate social profiles with no single site to point press, readers, or event organizers to. Teknoppy built lenaalife.com as one authoritative home for her acting, author, and speaker profile, structured for search visibility from day one."
+        }
+      ],
+      "eyebrow": "Lenaa",
+      "meta": [
+        {
+          "label": "Key Services",
+          "value": "Personal Brand Website Design, UI/UX Design, SEO"
+        },
+        {
+          "label": "Platform/Tech",
+          "value": "Astro"
+        },
+        {
+          "label": "Live Website",
+          "value": "lenaalife.com",
+          "href": "https://www.lenaalife.com/"
+        }
       ]
     },
     {
-      "type": "nap",
+      "type": "statBand",
       "bg": "cream",
-      "h2": "Project Details",
-      "rows": [
-        { "label": "Key Services", "value": "Personal Brand Website Design, UI/UX Design, SEO" },
-        { "label": "Platform/Tech", "value": "Astro" },
-        { "label": "Live Website", "value": "Visit Website →", "href": "https://www.lenaalife.com/" }
+      "badge": "Results",
+      "h2": "Lenaa's Results",
+      "items": []
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "About Client",
+      "paragraphs": [
+        {
+          "text": "Lenaa is a Malayalam cinema actor, bestselling author of Women-O-Pause and The Autobiography of God, a three-time TEDx speaker, and an entrepreneur based in Kerala."
+        }
       ]
     },
     {
       "type": "cards",
       "bg": "white",
-      "h2": "Before Teknoppy",
+      "h2": "Challenges",
       "items": [
-        { "title": "No central profile", "text": "Lenaa's acting, authorship, and speaking work was scattered across Instagram, Facebook, and press mentions, with no single page to send media or collaborators to." },
-        { "title": "Weak search visibility", "text": "Searches for her by name or book titles surfaced social posts and press coverage rather than an owned, controlling page." },
-        { "title": "No book or event funnel", "html": "<em>Women-O-Pause</em> and <em>The Autobiography of God</em> had no dedicated page to drive readers toward, and TEDx/speaking inquiries had no clear point of contact." },
-        { "title": "Inconsistent brand presentation", "text": "Different platforms showed different photos, bios, and priorities, so a journalist or reader got a different first impression depending on where they landed." }
+        {
+          "title": "No central profile",
+          "text": "Lenaa's acting, authorship, and speaking work was scattered across Instagram, Facebook, and press mentions, with no single page to send media or collaborators to."
+        },
+        {
+          "title": "Weak search visibility",
+          "text": "Searches for her by name or book titles surfaced social posts and press coverage rather than an owned, controlling page."
+        },
+        {
+          "title": "No book or event funnel",
+          "html": "<em>Women-O-Pause</em> and <em>The Autobiography of God</em> had no dedicated page to drive readers toward, and TEDx/speaking inquiries had no clear point of contact."
+        },
+        {
+          "title": "Inconsistent brand presentation",
+          "text": "Different platforms showed different photos, bios, and priorities, so a journalist or reader got a different first impression depending on where they landed."
+        }
+      ],
+      "layout": "list"
+    },
+    {
+      "type": "prose",
+      "bg": "soft",
+      "h2": "Campaign Objective",
+      "paragraphs": [
+        {
+          "text": "The goal wasn't just a portfolio site. It was a page that could hold its own when someone searched her name, back up her books with a proper landing point, and give event organizers and press a clear, credible first impression — without asking her to manage yet another social account."
+        }
       ]
+    },
+    {
+      "type": "figure",
+      "bg": "white",
+      "h2": "Introduction",
+      "src": "/case-studies/lenaalife.jpg",
+      "url": "lenaalife.com",
+      "alt": "Lenaa website homepage — lenaalife.com",
+      "caption": "lenaalife.com — homepage as it appears today."
     },
     {
       "type": "cards",
       "bg": "cream",
-      "h2": "With Teknoppy",
+      "h2": "A comprehensive range of services offered by Teknoppy and their outcomes",
       "items": [
-        { "title": "One authoritative profile", "text": "A single site consolidating her film work, books, and TEDx talks, built to be the definitive source when people search for her." },
-        { "title": "Search-ready structure", "text": "Pages built around her books and speaker positioning so this site, not scattered social mentions, is what shows up first." },
-        { "title": "Clear inquiry paths", "text": "Dedicated space for her books and a direct route for speaking and collaboration requests." },
-        { "title": "One consistent identity", "text": "A single bio, photo set, and narrative used site-wide, so every visitor gets the same polished first impression regardless of entry point." }
-      ]
+        {
+          "title": "One authoritative profile",
+          "text": "A single site consolidating her film work, books, and TEDx talks, built to be the definitive source when people search for her."
+        },
+        {
+          "title": "Search-ready structure",
+          "text": "Pages built around her books and speaker positioning so this site, not scattered social mentions, is what shows up first."
+        },
+        {
+          "title": "Clear inquiry paths",
+          "text": "Dedicated space for her books and a direct route for speaking and collaboration requests."
+        },
+        {
+          "title": "One consistent identity",
+          "text": "A single bio, photo set, and narrative used site-wide, so every visitor gets the same polished first impression regardless of entry point."
+        }
+      ],
+      "layout": "list"
     },
     {
       "type": "prose",
       "bg": "white",
       "paragraphs": [
-        { "lead": "Approach:", "text": "We started with discovery — mapping her existing audience touchpoints (books, TEDx talks, press mentions, and social following) to understand who actually lands on a page like this and what they're looking for. From there we designed a site architecture around three pillars — actor, author, speaker — instead of one flat \"about me\" page, so each audience segment has a clear path in. On-page SEO was built into every section from the first draft, not bolted on after launch: headings, image alt text, and internal structure were all written with her name and book titles in mind from day one." },
-        { "html": "Curious what this looks like for your own brand? <a href=\"/contact-us/\" class=\"text-primary font-semibold hover:underline\">See how we can help</a>." }
+        {
+          "lead": "Approach:",
+          "text": "We started with discovery — mapping her existing audience touchpoints (books, TEDx talks, press mentions, and social following) to understand who actually lands on a page like this and what they're looking for. From there we designed a site architecture around three pillars — actor, author, speaker — instead of one flat \"about me\" page, so each audience segment has a clear path in. On-page SEO was built into every section from the first draft, not bolted on after launch: headings, image alt text, and internal structure were all written with her name and book titles in mind from day one."
+        },
+        {
+          "html": "Curious what this looks like for your own brand? <a href=\"/contact-us/\" class=\"text-primary font-semibold hover:underline\">See how we can help</a>."
+        }
       ]
     },
     {
-      "type": "faq",
+      "type": "statBand",
       "bg": "soft",
+      "badge": "Results",
+      "h2": "Lenaa's Final Outcome After Teknoppy's Work",
+      "items": []
+    },
+    {
+      "type": "faq",
+      "bg": "white",
       "center": true,
       "badge": "Have Questions?",
       "h2": "FAQs",
       "items": [
-        { "q": "What platform was lenaalife.com built on?", "a": "Astro." },
-        { "q": "How long did the website design take?", "a": "The website was designed and delivered in about 1 month." },
-        { "q": "What services did Teknoppy provide for this project?", "a": "Personal brand website design, UI/UX design, and on-page SEO structured around Lenaa's acting, author, and speaking work — built as one connected site rather than three separate sections bolted together." },
-        { "q": "Does the site support her books and speaking engagements?", "a": "Yes — the site includes dedicated space for her books, Women-O-Pause and The Autobiography of God, and a direct path for TEDx and speaking inquiries, so readers and event organizers don't have to dig through social media to find either." },
-        { "q": "Who is the website built for?", "a": "Three audiences in particular: readers looking for her books, event organizers scouting a speaker, and press or collaborators researching her film work — each gets a clear entry point instead of one generic bio page." }
+        {
+          "q": "What platform was lenaalife.com built on?",
+          "a": "Astro."
+        },
+        {
+          "q": "How long did the website design take?",
+          "a": "The website was designed and delivered in about 1 month."
+        },
+        {
+          "q": "What services did Teknoppy provide for this project?",
+          "a": "Personal brand website design, UI/UX design, and on-page SEO structured around Lenaa's acting, author, and speaking work — built as one connected site rather than three separate sections bolted together."
+        },
+        {
+          "q": "Does the site support her books and speaking engagements?",
+          "a": "Yes — the site includes dedicated space for her books, Women-O-Pause and The Autobiography of God, and a direct path for TEDx and speaking inquiries, so readers and event organizers don't have to dig through social media to find either."
+        },
+        {
+          "q": "Who is the website built for?",
+          "a": "Three audiences in particular: readers looking for her books, event organizers scouting a speaker, and press or collaborators researching her film work — each gets a clear entry point instead of one generic bio page."
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "cream",
+      "h2": "Other Case Studies",
+      "items": [
+        {
+          "label": "Evosyz — Fintech Website Redesign",
+          "text": "different industry: fintech",
+          "href": "/case-study/"
+        },
+        {
+          "label": "Amster Immigration — Website Redesign & Lead Generation",
+          "text": "different industry: immigration consultancy",
+          "href": "/case-study/"
+        },
+        {
+          "label": "Greens Ayurveda — Website Design for Wellness",
+          "text": "different industry: wellness/Ayurveda",
+          "href": "/case-study/"
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "h2": "Related Service",
+      "items": [
+        {
+          "label": "Web Design Company in Kochi",
+          "text": "See our Web Design Company in Kochi service page for how we approach personal and business website design.",
+          "href": "/web-design-company-kochi/"
+        }
       ]
     },
     {
@@ -81,32 +219,22 @@
       "text": "Written by Sanal Edison, Digital Strategist at Teknoppy."
     },
     {
-      "type": "links",
-      "bg": "cream",
-      "h2": "Related Case Studies",
-      "items": [
-        { "label": "Evosyz — Fintech Website Redesign", "text": "different industry: fintech", "href": "/case-study/" },
-        { "label": "Amster Immigration — Website Redesign & Lead Generation", "text": "different industry: immigration consultancy", "href": "/case-study/" },
-        { "label": "Greens Ayurveda — Website Design for Wellness", "text": "different industry: wellness/Ayurveda", "href": "/case-study/" }
-      ]
-    },
-    {
-      "type": "links",
-      "bg": "white",
-      "h2": "Related Service",
-      "items": [
-        { "label": "Web Design Company in Kochi", "text": "See our Web Design Company in Kochi service page for how we approach personal and business website design.", "href": "/web-design-company-kochi/" }
-      ]
-    },
-    {
       "type": "cta",
       "bg": "cream",
       "paragraphs": [
-        { "text": "Want a personal brand website built the same way? Talk to Teknoppy — call +91 6282249224 to get started." }
+        {
+          "text": "Want a personal brand website built the same way? Talk to Teknoppy — call +91 6282249224 to get started."
+        }
       ],
       "ctas": [
-        { "label": "Talk to Teknoppy", "href": "tel:+916282249224" },
-        { "label": "Contact Us", "href": "/contact-us/" }
+        {
+          "label": "Talk to Teknoppy",
+          "href": "tel:+916282249224"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/contact-us/"
+        }
       ]
     }
   ],
@@ -121,6 +249,7 @@
     "clientTestimonial": "[TRUST SIGNAL NEEDED — add client photo, direct quote, full name, and designation; link matching video testimonial if one exists]",
     "faqNote": "(Mark up with FAQPage schema for AI Overview / ChatGPT / Perplexity visibility.) — handled automatically by InnerPage.",
     "pendingLinks": "\"Evosyz\", \"Amster Immigration\" and \"Greens Ayurveda\" have no case study pages yet; all three point at the Case Studies hub until those pages are built.",
-    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)"
+    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)",
+    "redesign2026_08_21": "Rearranged to match the live teknoppy.com/amster-case-study/ layout: results band, About Client, Challenges, Campaign Objective, Introduction screenshot, services-and-outcomes, results band repeated, FAQ, Other Case Studies, CTA. The Objective paragraph is split at \"Teknoppy's goal was\" into About Client / Campaign Objective — wording unchanged, only divided. Project Details moved into the hero meta strip ('— Visit Website' link boilerplate dropped, the strip renders its own link). BOTH stat bands are empty and therefore render nothing at all: no verified figures exist for this project. Add items as [{value, label, source}] to src/data/pages/case-studies/lenaa-personal-brand-website-case-study.json and both bands appear automatically."
   }
 }

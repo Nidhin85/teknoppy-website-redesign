@@ -4,9 +4,18 @@
     "description": "How Teknoppy built getskillonline.com, a UK online course platform selling certificate training across construction, healthcare, business, and more."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Case Studies", "href": "/case-study/" },
-    { "name": "GetSkill Online — Ecommerce Website Development", "href": "/case-studies/getskillonline-ecommerce-website-development/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Case Studies",
+      "href": "/case-study/"
+    },
+    {
+      "name": "GetSkill Online — Ecommerce Website Development",
+      "href": "/case-studies/getskillonline-ecommerce-website-development/"
+    }
   ],
   "sections": [
     {
@@ -14,70 +23,189 @@
       "badge": "Case Study",
       "h1Lead": "GetSkill Online: An",
       "h1Accent": "Ecommerce Platform",
-      "h1Rest": "for Online Certification Courses"
+      "h1Rest": "for Online Certification Courses",
+      "eyebrow": "GetSkill Online",
+      "meta": [
+        {
+          "label": "Key Services",
+          "value": "Ecommerce Website Development, Website Design, SEO"
+        },
+        {
+          "label": "Live Website",
+          "value": "getskillonline.com",
+          "href": "https://getskillonline.com"
+        }
+      ]
+    },
+    {
+      "type": "statBand",
+      "bg": "cream",
+      "badge": "Results",
+      "h2": "GetSkill Online's Results",
+      "items": []
     },
     {
       "type": "prose",
       "bg": "white",
-      "h2": "Objective",
+      "h2": "About Client",
       "paragraphs": [
-        { "text": "GetSkill Online (GETSKILLONLINE LTD, Blackburn, UK) sells certificate and diploma-style online courses across construction, health & social care, business, HR, beauty, and more, to learners across the UK. Teknoppy's goal was to build an ecommerce platform that could present a wide, cross-industry course catalog clearly, support course bundles alongside individual courses, and give learners the confidence to enroll in a skill they'd never trained in before." }
-      ]
-    },
-    {
-      "type": "nap",
-      "bg": "cream",
-      "h2": "Project Details",
-      "rows": [
-        { "label": "Key Services", "value": "Ecommerce Website Development, Website Design, SEO" },
-        { "label": "Live Website", "value": "getskillonline.com — Visit Website", "href": "https://getskillonline.com" }
+        {
+          "text": "GetSkill Online (GETSKILLONLINE LTD, Blackburn, UK) sells certificate and diploma-style online courses across construction, health & social care, business, HR, beauty, and more, to learners across the UK."
+        }
       ]
     },
     {
       "type": "cards",
       "bg": "white",
-      "h2": "Before Teknoppy",
+      "h2": "Challenges",
       "items": [
-        { "title": "No structure for a cross-industry catalog", "text": "Courses across construction, healthcare, business, HR, and beauty likely sat together without clear categorization, making it hard for learners to find courses relevant to their field." },
-        { "title": "No bundle purchasing option", "text": "Only single-course enrollment was available, with no lower-commitment or better-value bundle path for learners exploring a new field." },
-        { "title": "No visible trust signals", "text": "Without named student testimonials or a stated learner count, there was little to counter the natural hesitation of enrolling in a skill you've never trained in." },
-        { "title": "A single, high-friction enrollment path", "text": "With no WhatsApp enquiry option or lead form alongside direct enrollment, learners had one way in regardless of how ready they were to commit." },
-        { "title": "No visible registration or compliance signals", "text": "Without a displayed UK company registration/address or GDPR cookie consent controls, the platform gave learners little to verify legitimacy or compliance." }
+        {
+          "title": "No structure for a cross-industry catalog",
+          "text": "Courses across construction, healthcare, business, HR, and beauty likely sat together without clear categorization, making it hard for learners to find courses relevant to their field."
+        },
+        {
+          "title": "No bundle purchasing option",
+          "text": "Only single-course enrollment was available, with no lower-commitment or better-value bundle path for learners exploring a new field."
+        },
+        {
+          "title": "No visible trust signals",
+          "text": "Without named student testimonials or a stated learner count, there was little to counter the natural hesitation of enrolling in a skill you've never trained in."
+        },
+        {
+          "title": "A single, high-friction enrollment path",
+          "text": "With no WhatsApp enquiry option or lead form alongside direct enrollment, learners had one way in regardless of how ready they were to commit."
+        },
+        {
+          "title": "No visible registration or compliance signals",
+          "text": "Without a displayed UK company registration/address or GDPR cookie consent controls, the platform gave learners little to verify legitimacy or compliance."
+        }
+      ],
+      "layout": "list"
+    },
+    {
+      "type": "prose",
+      "bg": "soft",
+      "h2": "Campaign Objective",
+      "paragraphs": [
+        {
+          "text": "Teknoppy's goal was to build an ecommerce platform that could present a wide, cross-industry course catalog clearly, support course bundles alongside individual courses, and give learners the confidence to enroll in a skill they'd never trained in before."
+        }
       ]
     },
     {
       "type": "cards",
       "bg": "cream",
-      "h2": "With Teknoppy",
+      "h2": "A comprehensive range of services offered by Teknoppy and their outcomes",
       "items": [
-        { "title": "Wide category structure built for cross-industry courses (directly answers Problem 1)", "text": "Construction, Health & Social Care, Administration, AI Integration, Business, HR, Beauty, Animal Care, and Fast Track categories sit side by side, letting a single platform serve very different learner audiences without feeling scattered." },
-        { "title": "Bundle and single-course purchasing side by side (directly answers Problem 2)", "text": "Course bundles (e.g. Construction and Building Bundle, Health and Social Care Bundle) are sold alongside individual certificates, giving learners a lower-commitment entry point and a value option in the same catalog." },
-        { "title": "Testimonial-driven trust building (directly answers Problem 3)", "text": "Named, role-specific student testimonials (sales executives, HR assistants, nursing students, housewives changing careers) are surfaced prominently, addressing the core hesitation of enrolling in a skill you've never trained in." },
-        { "title": "Multiple low-friction enrollment paths (directly answers Problem 4)", "text": "WhatsApp enquiry links, a \"Get Started\" lead form, and direct course enrollment all sit on the same pages, meeting learners at whichever stage of decision-making they're at." },
-        { "title": "Registered business transparency and GDPR-ready cookie consent (directly answers Problem 5)", "text": "The company's UK registration number and Blackburn address are displayed in the footer, and a cookie preference banner with granular \"Necessary Only\" vs. \"Allow All\" controls keeps the platform compliant for UK/EU visitors." },
-        { "title": "Social proof at scale", "text": "A \"Join 7000+ Learners Across UK\" banner is repeated at key decision points on the homepage, reinforcing scale and credibility for a UK-wide audience considering online-only training." },
-        { "title": "A simplified 3-step enrollment path", "text": "\"Choose & Enroll → Learn & Practice → Complete & Get Certified\" breaks the buying decision into a clear, low-anxiety process for learners unfamiliar with online certification." }
-      ]
+        {
+          "title": "Wide category structure built for cross-industry courses",
+          "text": "Construction, Health & Social Care, Administration, AI Integration, Business, HR, Beauty, Animal Care, and Fast Track categories sit side by side, letting a single platform serve very different learner audiences without feeling scattered."
+        },
+        {
+          "title": "Bundle and single-course purchasing side by side",
+          "text": "Course bundles (e.g. Construction and Building Bundle, Health and Social Care Bundle) are sold alongside individual certificates, giving learners a lower-commitment entry point and a value option in the same catalog."
+        },
+        {
+          "title": "Testimonial-driven trust building",
+          "text": "Named, role-specific student testimonials (sales executives, HR assistants, nursing students, housewives changing careers) are surfaced prominently, addressing the core hesitation of enrolling in a skill you've never trained in."
+        },
+        {
+          "title": "Multiple low-friction enrollment paths",
+          "text": "WhatsApp enquiry links, a \"Get Started\" lead form, and direct course enrollment all sit on the same pages, meeting learners at whichever stage of decision-making they're at."
+        },
+        {
+          "title": "Registered business transparency and GDPR-ready cookie consent",
+          "text": "The company's UK registration number and Blackburn address are displayed in the footer, and a cookie preference banner with granular \"Necessary Only\" vs. \"Allow All\" controls keeps the platform compliant for UK/EU visitors."
+        },
+        {
+          "title": "Social proof at scale",
+          "text": "A \"Join 7000+ Learners Across UK\" banner is repeated at key decision points on the homepage, reinforcing scale and credibility for a UK-wide audience considering online-only training."
+        },
+        {
+          "title": "A simplified 3-step enrollment path",
+          "text": "\"Choose & Enroll → Learn & Practice → Complete & Get Certified\" breaks the buying decision into a clear, low-anxiety process for learners unfamiliar with online certification."
+        }
+      ],
+      "layout": "list"
     },
     {
       "type": "prose",
       "bg": "white",
       "paragraphs": [
-        { "lead": "Approach:", "text": "Discovery, design, and build details specific to this project — timeline and key decisions — should be pulled from the project intake and added here once confirmed." }
+        {
+          "lead": "Approach:",
+          "text": "Discovery, design, and build details specific to this project — timeline and key decisions — should be pulled from the project intake and added here once confirmed."
+        }
       ]
+    },
+    {
+      "type": "statBand",
+      "bg": "soft",
+      "badge": "Results",
+      "h2": "GetSkill Online's Final Outcome After Teknoppy's Work",
+      "items": []
     },
     {
       "type": "faq",
-      "bg": "soft",
+      "bg": "white",
       "center": true,
       "badge": "Have Questions?",
       "h2": "FAQ",
       "items": [
-        { "q": "What was the main goal of the GetSkill Online project?", "a": "To build an ecommerce platform that could sell certificate courses across very different industries — from construction to healthcare to beauty — in one clear, trustworthy catalog." },
-        { "q": "What kind of courses does GetSkill Online sell?", "a": "Certificate and diploma-style courses in construction, health & social care, business, HR, beauty, animal care, AI integration, and more, sold individually or as bundles." },
-        { "q": "Did the project affect GetSkill Online's existing rankings?", "a": "The project was scoped to avoid keyword cannibalization against GetSkill Online's existing category and course pages — no overlapping targets were introduced." },
-        { "q": "Does the platform support both individual courses and bundles?", "a": "Yes — bundles like the Construction and Building Bundle and Health and Social Care Bundle are sold alongside single-course enrollment, in the same catalog structure." },
-        { "q": "How does the platform address learner uncertainty about online certification?", "a": "Through a simplified 3-step process (Choose & Enroll, Learn & Practice, Complete & Get Certified), role-specific testimonials from real students, and visible business registration details — all aimed at reducing hesitation before enrollment." }
+        {
+          "q": "What was the main goal of the GetSkill Online project?",
+          "a": "To build an ecommerce platform that could sell certificate courses across very different industries — from construction to healthcare to beauty — in one clear, trustworthy catalog."
+        },
+        {
+          "q": "What kind of courses does GetSkill Online sell?",
+          "a": "Certificate and diploma-style courses in construction, health & social care, business, HR, beauty, animal care, AI integration, and more, sold individually or as bundles."
+        },
+        {
+          "q": "Did the project affect GetSkill Online's existing rankings?",
+          "a": "The project was scoped to avoid keyword cannibalization against GetSkill Online's existing category and course pages — no overlapping targets were introduced."
+        },
+        {
+          "q": "Does the platform support both individual courses and bundles?",
+          "a": "Yes — bundles like the Construction and Building Bundle and Health and Social Care Bundle are sold alongside single-course enrollment, in the same catalog structure."
+        },
+        {
+          "q": "How does the platform address learner uncertainty about online certification?",
+          "a": "Through a simplified 3-step process (Choose & Enroll, Learn & Practice, Complete & Get Certified), role-specific testimonials from real students, and visible business registration details — all aimed at reducing hesitation before enrollment."
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "cream",
+      "h2": "Other Case Studies",
+      "items": [
+        {
+          "label": "My PlantStore",
+          "text": "Dubai ecommerce plant nursery website",
+          "href": "/case-studies/myplantstore-ecommerce-website-development/"
+        },
+        {
+          "label": "General Tech Services",
+          "text": "UAE ISO 17025 calibration lab website redesign",
+          "href": "/case-studies/general-tech-services-web-design/"
+        },
+        {
+          "label": "Kaydenz",
+          "text": "Dubai Autodesk Authorized Training Center",
+          "href": "/case-study/"
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "h2": "Related Service",
+      "items": [
+        {
+          "label": "Ecommerce Website Development",
+          "text": "Teknoppy's matching service page",
+          "href": "/ecommerce-website-development-company-kochi/"
+        }
       ]
     },
     {
@@ -86,32 +214,22 @@
       "text": "Written by Sanal Edison, Digital Strategist at Teknoppy"
     },
     {
-      "type": "links",
-      "bg": "cream",
-      "h2": "Related Case Studies",
-      "items": [
-        { "label": "My PlantStore", "text": "Dubai ecommerce plant nursery website", "href": "/case-studies/myplantstore-ecommerce-website-development/" },
-        { "label": "General Tech Services", "text": "UAE ISO 17025 calibration lab website redesign", "href": "/case-studies/general-tech-services-web-design/" },
-        { "label": "Kaydenz", "text": "Dubai Autodesk Authorized Training Center", "href": "/case-study/" }
-      ]
-    },
-    {
-      "type": "links",
-      "bg": "white",
-      "h2": "Related Service",
-      "items": [
-        { "label": "Ecommerce Website Development", "text": "Teknoppy's matching service page", "href": "/ecommerce-website-development-company-kochi/" }
-      ]
-    },
-    {
       "type": "cta",
       "bg": "cream",
       "paragraphs": [
-        { "text": "Need an ecommerce platform that makes a wide, cross-category catalog easy to trust and easy to buy from? Talk to Teknoppy: +91 6282249224." }
+        {
+          "text": "Need an ecommerce platform that makes a wide, cross-category catalog easy to trust and easy to buy from? Talk to Teknoppy: +91 6282249224."
+        }
       ],
       "ctas": [
-        { "label": "Talk to Teknoppy", "href": "tel:+916282249224" },
-        { "label": "Contact Us", "href": "/contact-us/" }
+        {
+          "label": "Talk to Teknoppy",
+          "href": "tel:+916282249224"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/contact-us/"
+        }
       ]
     }
   ],
@@ -125,6 +243,7 @@
     "clientTestimonial": "Testimonial pending — a direct quote with the client's full name and designation will be added once collected.",
     "urlNote": "The doc's internal link reads /ecommerce-website-development/; the built route is /ecommerce-website-development-company-kochi/, so the link points there.",
     "pendingLinks": "\"Kaydenz\" has no case study page yet; it points at the Case Studies hub until that page is built.",
-    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)"
+    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)",
+    "redesign2026_08_21": "Rearranged to match the live teknoppy.com/amster-case-study/ layout: results band, About Client, Challenges, Campaign Objective, Introduction screenshot, services-and-outcomes, results band repeated, FAQ, Other Case Studies, CTA. The Objective paragraph is split at \"Teknoppy's goal was\" into About Client / Campaign Objective — wording unchanged, only divided. Project Details moved into the hero meta strip ('— Visit Website' link boilerplate dropped, the strip renders its own link). BOTH stat bands are empty and therefore render nothing at all: no verified figures exist for this project. Add items as [{value, label, source}] to src/data/pages/case-studies/getskillonline-ecommerce-website-development.json and both bands appear automatically. Screenshot section omitted — the client site was unreachable when screenshots were captured."
   }
 }

@@ -4,9 +4,18 @@
     "description": "How Teknoppy built modestsisters.co on Shopify for a UAE modest fashion brand, with structured clothing and accessories categories and clear shipping and pricing messaging."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Case Studies", "href": "/case-study/" },
-    { "name": "Modestsisters — Shopify Ecommerce", "href": "/case-studies/modestsisters-shopify-ecommerce/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Case Studies",
+      "href": "/case-study/"
+    },
+    {
+      "name": "Modestsisters — Shopify Ecommerce",
+      "href": "/case-studies/modestsisters-shopify-ecommerce/"
+    }
   ],
   "sections": [
     {
@@ -14,65 +23,178 @@
       "badge": "Case Study",
       "h1Lead": "Modestsisters: A",
       "h1Accent": "Shopify Store",
-      "h1Rest": "Built for a UAE Modest Fashion Brand"
+      "h1Rest": "Built for a UAE Modest Fashion Brand",
+      "eyebrow": "Modestsisters",
+      "meta": [
+        {
+          "label": "Key Services",
+          "value": "Shopify Development, Website Design, SEO"
+        },
+        {
+          "label": "Platform/Tech",
+          "value": "Shopify"
+        },
+        {
+          "label": "Live Website",
+          "value": "modestsisters.co",
+          "href": "https://modestsisters.co"
+        }
+      ]
+    },
+    {
+      "type": "statBand",
+      "bg": "cream",
+      "badge": "Results",
+      "h2": "Modestsisters' Results",
+      "items": []
     },
     {
       "type": "prose",
       "bg": "white",
-      "h2": "Objective",
+      "h2": "About Client",
       "paragraphs": [
-        { "text": "Modestsisters is a UAE-based modest fashion brand selling handcrafted abayas, coord-sets, dresses, and tops, alongside jewelry and sunglasses. Teknoppy's goal was to build a Shopify store that could organize a growing clothing and accessories catalog into a clear structure, surface shipping and pricing information upfront, and give the brand's \"effortless elegance and timeless luxury\" positioning a storefront to match." }
-      ]
-    },
-    {
-      "type": "nap",
-      "bg": "cream",
-      "h2": "Project Details",
-      "rows": [
-        { "label": "Key Services", "value": "Shopify Development, Website Design, SEO" },
-        { "label": "Platform/Tech", "value": "Shopify" },
-        { "label": "Live Website", "value": "modestsisters.co — Visit Website", "href": "https://modestsisters.co" }
+        {
+          "text": "Modestsisters is a UAE-based modest fashion brand selling handcrafted abayas, coord-sets, dresses, and tops, alongside jewelry and sunglasses."
+        }
       ]
     },
     {
       "type": "cards",
       "bg": "white",
-      "h2": "Before Teknoppy",
+      "h2": "Challenges",
       "items": [
-        { "title": "No structured category hierarchy", "text": "Abayas, coord-sets, dresses, and tops, alongside jewelry and sunglasses, likely sat without a clear Clothing vs. Accessories split, making it harder for shoppers to move between product types." },
-        { "title": "No visible shipping terms", "text": "Without shipping information surfaced upfront, UAE customers had to reach checkout or ask directly before knowing delivery terms." },
-        { "title": "No consistent discount visibility", "text": "Sale pricing likely wasn't shown consistently across listings, making it harder for shoppers to spot current offers while browsing." }
+        {
+          "title": "No structured category hierarchy",
+          "text": "Abayas, coord-sets, dresses, and tops, alongside jewelry and sunglasses, likely sat without a clear Clothing vs. Accessories split, making it harder for shoppers to move between product types."
+        },
+        {
+          "title": "No visible shipping terms",
+          "text": "Without shipping information surfaced upfront, UAE customers had to reach checkout or ask directly before knowing delivery terms."
+        },
+        {
+          "title": "No consistent discount visibility",
+          "text": "Sale pricing likely wasn't shown consistently across listings, making it harder for shoppers to spot current offers while browsing."
+        }
+      ],
+      "layout": "list"
+    },
+    {
+      "type": "prose",
+      "bg": "soft",
+      "h2": "Campaign Objective",
+      "paragraphs": [
+        {
+          "text": "Teknoppy's goal was to build a Shopify store that could organize a growing clothing and accessories catalog into a clear structure, surface shipping and pricing information upfront, and give the brand's \"effortless elegance and timeless luxury\" positioning a storefront to match."
+        }
       ]
+    },
+    {
+      "type": "figure",
+      "bg": "white",
+      "h2": "Introduction",
+      "src": "/case-studies/modestsisters.jpg",
+      "url": "modestsisters.co",
+      "alt": "Modestsisters website homepage — modestsisters.co",
+      "caption": "modestsisters.co — homepage as it appears today."
     },
     {
       "type": "cards",
       "bg": "cream",
-      "h2": "With Teknoppy",
+      "h2": "A comprehensive range of services offered by Teknoppy and their outcomes",
       "items": [
-        { "title": "Clothing and Accessories organized into structured categories (directly answers Problem 1)", "text": "Abayas, Coord-Sets, Dresses, and Tops sit under Clothing; Necklaces, Rings, and Bracelets sit under Accessories; Sunglasses stands as its own category — giving shoppers a clear path through a growing catalog." },
-        { "title": "Free shipping messaging surfaced site-wide (directly answers Problem 2)", "text": "A persistent banner (\"Free shipping within UAE on all orders\") sets delivery expectations before a customer ever reaches checkout." },
-        { "title": "Consistent sale pricing display (directly answers Problem 3)", "text": "Original and discounted prices are shown together across product listings, making current offers easy to spot while browsing." },
-        { "title": "A direct Instagram support channel", "text": "Order support and general enquiries route to the brand's Instagram, meeting modest-fashion shoppers on the platform where they already engage with the brand." }
-      ]
+        {
+          "title": "Clothing and Accessories organized into structured categories",
+          "text": "Abayas, Coord-Sets, Dresses, and Tops sit under Clothing; Necklaces, Rings, and Bracelets sit under Accessories; Sunglasses stands as its own category — giving shoppers a clear path through a growing catalog."
+        },
+        {
+          "title": "Free shipping messaging surfaced site-wide",
+          "text": "A persistent banner (\"Free shipping within UAE on all orders\") sets delivery expectations before a customer ever reaches checkout."
+        },
+        {
+          "title": "Consistent sale pricing display",
+          "text": "Original and discounted prices are shown together across product listings, making current offers easy to spot while browsing."
+        },
+        {
+          "title": "A direct Instagram support channel",
+          "text": "Order support and general enquiries route to the brand's Instagram, meeting modest-fashion shoppers on the platform where they already engage with the brand."
+        }
+      ],
+      "layout": "list"
     },
     {
       "type": "prose",
       "bg": "white",
       "paragraphs": [
-        { "lead": "Approach:", "text": "Discovery, design, and build details specific to this project — timeline and key decisions — should be pulled from the project intake and added here once confirmed." }
+        {
+          "lead": "Approach:",
+          "text": "Discovery, design, and build details specific to this project — timeline and key decisions — should be pulled from the project intake and added here once confirmed."
+        }
       ]
+    },
+    {
+      "type": "statBand",
+      "bg": "soft",
+      "badge": "Results",
+      "h2": "Modestsisters' Final Outcome After Teknoppy's Work",
+      "items": []
     },
     {
       "type": "faq",
-      "bg": "soft",
+      "bg": "white",
       "center": true,
       "badge": "Have Questions?",
       "h2": "FAQ",
       "items": [
-        { "q": "What was the main goal of the Modestsisters Shopify project?", "a": "To build a store that organizes a growing modest fashion catalog into a clear structure while surfacing shipping and pricing information upfront." },
-        { "q": "What does Modestsisters sell?", "a": "Abayas, coord-sets, dresses, and tops, alongside necklaces, rings, bracelets, and sunglasses, shipped within the UAE." },
-        { "q": "Did the project affect Modestsisters' existing rankings?", "a": "The project was scoped to avoid keyword cannibalization across the site's category and product pages — no overlapping targets were introduced." },
-        { "q": "What platform is Modestsisters built on?", "a": "Shopify." }
+        {
+          "q": "What was the main goal of the Modestsisters Shopify project?",
+          "a": "To build a store that organizes a growing modest fashion catalog into a clear structure while surfacing shipping and pricing information upfront."
+        },
+        {
+          "q": "What does Modestsisters sell?",
+          "a": "Abayas, coord-sets, dresses, and tops, alongside necklaces, rings, bracelets, and sunglasses, shipped within the UAE."
+        },
+        {
+          "q": "Did the project affect Modestsisters' existing rankings?",
+          "a": "The project was scoped to avoid keyword cannibalization across the site's category and product pages — no overlapping targets were introduced."
+        },
+        {
+          "q": "What platform is Modestsisters built on?",
+          "a": "Shopify."
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "cream",
+      "h2": "Other Case Studies",
+      "items": [
+        {
+          "label": "Nuelments",
+          "text": "Shopify store for an Indian D2C hair care brand",
+          "href": "/case-studies/nuelments-shopify-ecommerce/"
+        },
+        {
+          "label": "My PlantStore",
+          "text": "Dubai ecommerce plant nursery website",
+          "href": "/case-studies/myplantstore-ecommerce-website-development/"
+        },
+        {
+          "label": "Sun and Moon Korean",
+          "text": "Mumbai kimchi and K-fashion ecommerce content",
+          "href": "/case-studies/sun-and-moon-korean-ecommerce-website/"
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "h2": "Related Service",
+      "items": [
+        {
+          "label": "Shopify Development Company Kochi",
+          "text": "Teknoppy's matching service page",
+          "href": "/shopify-development-company-kochi/"
+        }
       ]
     },
     {
@@ -81,32 +203,22 @@
       "text": "Written by Sanal Edison, Digital Strategist at Teknoppy"
     },
     {
-      "type": "links",
-      "bg": "cream",
-      "h2": "Related Case Studies",
-      "items": [
-        { "label": "Nuelments", "text": "Shopify store for an Indian D2C hair care brand", "href": "/case-studies/nuelments-shopify-ecommerce/" },
-        { "label": "My PlantStore", "text": "Dubai ecommerce plant nursery website", "href": "/case-studies/myplantstore-ecommerce-website-development/" },
-        { "label": "Sun and Moon Korean", "text": "Mumbai kimchi and K-fashion ecommerce content", "href": "/case-studies/sun-and-moon-korean-ecommerce-website/" }
-      ]
-    },
-    {
-      "type": "links",
-      "bg": "white",
-      "h2": "Related Service",
-      "items": [
-        { "label": "Shopify Development Company Kochi", "text": "Teknoppy's matching service page", "href": "/shopify-development-company-kochi/" }
-      ]
-    },
-    {
       "type": "cta",
       "bg": "cream",
       "paragraphs": [
-        { "text": "Need a Shopify store that turns a growing catalog into an easy, elegant shopping experience? Talk to Teknoppy: +91 6282249224." }
+        {
+          "text": "Need a Shopify store that turns a growing catalog into an easy, elegant shopping experience? Talk to Teknoppy: +91 6282249224."
+        }
       ],
       "ctas": [
-        { "label": "Talk to Teknoppy", "href": "tel:+916282249224" },
-        { "label": "Contact Us", "href": "/contact-us/" }
+        {
+          "label": "Talk to Teknoppy",
+          "href": "tel:+916282249224"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/contact-us/"
+        }
       ]
     }
   ],
@@ -118,6 +230,7 @@
     "visualShowcase": "Screenshots pending: full-page desktop + mobile captures of the homepage, the Abayas collection, and a product page. Add once available.",
     "results": "Post-launch performance data (traffic, ranking movement, order volume) will be added here once a measurement window has passed and figures are pulled from GA / Search Console / Shopify analytics. Publishing this section without sourced numbers would weaken the case study rather than strengthen it.",
     "clientTestimonial": "Testimonial pending — a direct quote with the client's full name and designation will be added once collected.",
-    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)"
+    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)",
+    "redesign2026_08_21": "Rearranged to match the live teknoppy.com/amster-case-study/ layout: results band, About Client, Challenges, Campaign Objective, Introduction screenshot, services-and-outcomes, results band repeated, FAQ, Other Case Studies, CTA. The Objective paragraph is split at \"Teknoppy's goal was\" into About Client / Campaign Objective — wording unchanged, only divided. Project Details moved into the hero meta strip ('— Visit Website' link boilerplate dropped, the strip renders its own link). BOTH stat bands are empty and therefore render nothing at all: no verified figures exist for this project. Add items as [{value, label, source}] to src/data/pages/case-studies/modestsisters-shopify-ecommerce.json and both bands appear automatically."
   }
 }

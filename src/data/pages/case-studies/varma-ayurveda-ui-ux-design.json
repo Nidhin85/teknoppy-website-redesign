@@ -4,9 +4,18 @@
     "description": "How Teknoppy designed the UI/UX for varmaayurveda.com, guiding a European audience through an unfamiliar Ayurvedic retreat with calm, trust-building, multilingual-ready design."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Case Studies", "href": "/case-study/" },
-    { "name": "Varma Ayurveda — UI/UX Design", "href": "/case-studies/varma-ayurveda-ui-ux-design/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Case Studies",
+      "href": "/case-study/"
+    },
+    {
+      "name": "Varma Ayurveda — UI/UX Design",
+      "href": "/case-studies/varma-ayurveda-ui-ux-design/"
+    }
   ],
   "sections": [
     {
@@ -14,66 +23,173 @@
       "badge": "Case Study",
       "h1Lead": "Varma Ayurveda: Designing a",
       "h1Accent": "Calm, Trust-First UX",
-      "h1Rest": "for an Unfamiliar Healing Practice"
+      "h1Rest": "for an Unfamiliar Healing Practice",
+      "eyebrow": "Varma Ayurveda",
+      "meta": [
+        {
+          "label": "Key Services",
+          "value": "UI/UX Design, Website Design, SEO"
+        },
+        {
+          "label": "Platform/Tech",
+          "value": "WordPress (Elementor)"
+        },
+        {
+          "label": "Live Website",
+          "value": "varmaayurveda.com",
+          "href": "https://varmaayurveda.com"
+        }
+      ]
+    },
+    {
+      "type": "statBand",
+      "bg": "cream",
+      "badge": "Results",
+      "h2": "Varma Ayurveda's Results",
+      "items": []
     },
     {
       "type": "prose",
       "bg": "white",
-      "h2": "Objective",
+      "h2": "About Client",
       "paragraphs": [
-        { "text": "Varma Ayurveda is an Ayurvedic wellness retreat run by Dr. Dona George inside Hotel Stadt Breisach in Breisach am Rhein, Germany, offering authentic South Indian Panchakarma and Varma (Marma) therapy to a European audience. Teknoppy's goal was to design a UI/UX that could guide first-time visitors — many encountering Ayurveda and Varma therapy for the first time — through unfamiliar treatment information calmly and clearly, in a design language that would hold up across four languages and a hotel-based booking flow." },
-        { "html": "<em>Note: this case study is scoped to UI/UX design work specifically — see the separate <a href=\"/case-studies/varma-ayurveda-wordpress-development/\" class=\"text-primary font-semibold hover:underline\">WordPress Development case study</a> for this client for the full build.</em>" }
-      ]
-    },
-    {
-      "type": "nap",
-      "bg": "cream",
-      "h2": "Project Details",
-      "rows": [
-        { "label": "Key Services", "value": "UI/UX Design, Website Design, SEO" },
-        { "label": "Platform/Tech", "value": "WordPress (Elementor)" },
-        { "label": "Live Website", "value": "varmaayurveda.com — Visit Website", "href": "https://varmaayurveda.com" }
+        {
+          "text": "Varma Ayurveda is an Ayurvedic wellness retreat run by Dr. Dona George inside Hotel Stadt Breisach in Breisach am Rhein, Germany, offering authentic South Indian Panchakarma and Varma (Marma) therapy to a European audience."
+        },
+        {
+          "html": "<em>Note: this case study is scoped to UI/UX design work specifically — see the separate <a href=\"/case-studies/varma-ayurveda-wordpress-development/\" class=\"text-primary font-semibold hover:underline\">WordPress Development case study</a> for this client for the full build.</em>"
+        }
       ]
     },
     {
       "type": "cards",
       "bg": "white",
-      "h2": "Before Teknoppy",
+      "h2": "Challenges",
       "items": [
-        { "title": "No visual hierarchy for an unfamiliar decision", "text": "Treatments, philosophy, and booking likely competed for attention without a design system guiding first-time visitors step by step through an unfamiliar therapy." },
-        { "title": "No design system built for multilingual expansion", "text": "Layouts and UI components weren't planned around how German, French, and Italian text runs longer than English, risking broken buttons and cramped labels once translated." },
-        { "title": "No calm, wellness-appropriate visual language", "text": "Without a deliberate color palette, typography, and imagery style suited to a healing practice, the design risked feeling generic rather than reassuring to a visitor considering an unfamiliar treatment." }
+        {
+          "title": "No visual hierarchy for an unfamiliar decision",
+          "text": "Treatments, philosophy, and booking likely competed for attention without a design system guiding first-time visitors step by step through an unfamiliar therapy."
+        },
+        {
+          "title": "No design system built for multilingual expansion",
+          "text": "Layouts and UI components weren't planned around how German, French, and Italian text runs longer than English, risking broken buttons and cramped labels once translated."
+        },
+        {
+          "title": "No calm, wellness-appropriate visual language",
+          "text": "Without a deliberate color palette, typography, and imagery style suited to a healing practice, the design risked feeling generic rather than reassuring to a visitor considering an unfamiliar treatment."
+        }
+      ],
+      "layout": "list"
+    },
+    {
+      "type": "prose",
+      "bg": "soft",
+      "h2": "Campaign Objective",
+      "paragraphs": [
+        {
+          "text": "Teknoppy's goal was to design a UI/UX that could guide first-time visitors — many encountering Ayurveda and Varma therapy for the first time — through unfamiliar treatment information calmly and clearly, in a design language that would hold up across four languages and a hotel-based booking flow."
+        }
       ]
     },
     {
       "type": "cards",
       "bg": "cream",
-      "h2": "With Teknoppy",
+      "h2": "A comprehensive range of services offered by Teknoppy and their outcomes",
       "items": [
-        { "title": "A calm, trust-building visual design system (directly answers Problem 1 & 3)", "text": "Wellness-appropriate typography, imagery, and a restrained color palette guide visitors through unfamiliar treatment content step by step rather than overwhelming them, reinforcing the retreat's credibility before a visitor ever reads a word." },
-        { "title": "A design system built to flex across four languages (directly answers Problem 2)", "text": "UI components, buttons, and labels were designed with enough flexibility to hold their layout across Spanish, German, French, and Italian, where text length varies significantly from the English source." },
-        { "title": "Ten treatments organized under one visual structure", "text": "Common Ayurveda and specialized Varma Chikitsa programs are laid out under a consistent \"Your Retreat\" page pattern, so an unfamiliar therapy system feels navigable rather than dense." },
-        { "title": "A guided, low-friction booking flow", "text": "The appointment form's fields (room type, arrival/departure, guests, treatment program) are sequenced and styled to feel like a simple step, matching the retreat's hotel-based delivery model rather than a generic enquiry form." }
-      ]
+        {
+          "title": "A calm, trust-building visual design system",
+          "text": "Wellness-appropriate typography, imagery, and a restrained color palette guide visitors through unfamiliar treatment content step by step rather than overwhelming them, reinforcing the retreat's credibility before a visitor ever reads a word.",
+          "answers": "directly answers Problem 1 & 3"
+        },
+        {
+          "title": "A design system built to flex across four languages",
+          "text": "UI components, buttons, and labels were designed with enough flexibility to hold their layout across Spanish, German, French, and Italian, where text length varies significantly from the English source."
+        },
+        {
+          "title": "Ten treatments organized under one visual structure",
+          "text": "Common Ayurveda and specialized Varma Chikitsa programs are laid out under a consistent \"Your Retreat\" page pattern, so an unfamiliar therapy system feels navigable rather than dense."
+        },
+        {
+          "title": "A guided, low-friction booking flow",
+          "text": "The appointment form's fields (room type, arrival/departure, guests, treatment program) are sequenced and styled to feel like a simple step, matching the retreat's hotel-based delivery model rather than a generic enquiry form."
+        }
+      ],
+      "layout": "list"
     },
     {
       "type": "prose",
       "bg": "white",
       "paragraphs": [
-        { "lead": "Approach:", "text": "Discovery, wireframing, and visual design decisions specific to this project — timeline and key design choices — should be pulled from the project intake and added here once confirmed." }
+        {
+          "lead": "Approach:",
+          "text": "Discovery, wireframing, and visual design decisions specific to this project — timeline and key design choices — should be pulled from the project intake and added here once confirmed."
+        }
       ]
+    },
+    {
+      "type": "statBand",
+      "bg": "soft",
+      "badge": "Results",
+      "h2": "Varma Ayurveda's Final Outcome After Teknoppy's Work",
+      "items": []
     },
     {
       "type": "faq",
-      "bg": "soft",
+      "bg": "white",
       "center": true,
       "badge": "Have Questions?",
       "h2": "FAQ",
       "items": [
-        { "q": "What was the main UI/UX challenge for Varma Ayurveda?", "a": "Designing an interface calm and clear enough to guide a European audience through an unfamiliar healing practice, while holding up visually across four languages." },
-        { "q": "Is the design system built for multilingual content?", "a": "Yes — UI components were designed with flexibility for Spanish, German, French, and Italian text, which run longer than the English source." },
-        { "q": "Did the project affect Varma Ayurveda's existing rankings?", "a": "This UI/UX work was scoped separately from the site's core content and development work, so it doesn't compete with the WordPress development case study or the site's treatment pages for the same search terms." },
-        { "q": "Is this the same project as Varma Ayurveda's WordPress development case study?", "a": "No — this case study covers UI/UX design work specifically. The WordPress development case study for this client covers the full site build." }
+        {
+          "q": "What was the main UI/UX challenge for Varma Ayurveda?",
+          "a": "Designing an interface calm and clear enough to guide a European audience through an unfamiliar healing practice, while holding up visually across four languages."
+        },
+        {
+          "q": "Is the design system built for multilingual content?",
+          "a": "Yes — UI components were designed with flexibility for Spanish, German, French, and Italian text, which run longer than the English source."
+        },
+        {
+          "q": "Did the project affect Varma Ayurveda's existing rankings?",
+          "a": "This UI/UX work was scoped separately from the site's core content and development work, so it doesn't compete with the WordPress development case study or the site's treatment pages for the same search terms."
+        },
+        {
+          "q": "Is this the same project as Varma Ayurveda's WordPress development case study?",
+          "a": "No — this case study covers UI/UX design work specifically. The WordPress development case study for this client covers the full site build."
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "cream",
+      "h2": "Other Case Studies",
+      "items": [
+        {
+          "label": "Varma Ayurveda",
+          "text": "WordPress Development case study for the full site build",
+          "href": "/case-studies/varma-ayurveda-wordpress-development/"
+        },
+        {
+          "label": "Mount Bell Global Studies",
+          "text": "Web design for a Kerala overseas education consultancy",
+          "href": "/case-studies/mount-bell-global-studies-web-design-development/"
+        },
+        {
+          "label": "Cochin Suraksha",
+          "text": "Kochi fire & safety company website evolving into Civil & MEP",
+          "href": "/case-studies/cochin-suraksha-web-design-development/"
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "h2": "Related Service",
+      "items": [
+        {
+          "label": "UI/UX Design Company in Kochi",
+          "text": "Teknoppy's matching service page",
+          "href": "/ui-ux-design-company-in-kochi/"
+        }
       ]
     },
     {
@@ -82,32 +198,22 @@
       "text": "Written by Sanal Edison, Digital Strategist at Teknoppy"
     },
     {
-      "type": "links",
-      "bg": "cream",
-      "h2": "Related Case Studies",
-      "items": [
-        { "label": "Varma Ayurveda", "text": "WordPress Development case study for the full site build", "href": "/case-studies/varma-ayurveda-wordpress-development/" },
-        { "label": "Mount Bell Global Studies", "text": "Web design for a Kerala overseas education consultancy", "href": "/case-studies/mount-bell-global-studies-web-design-development/" },
-        { "label": "Cochin Suraksha", "text": "Kochi fire & safety company website evolving into Civil & MEP", "href": "/case-studies/cochin-suraksha-web-design-development/" }
-      ]
-    },
-    {
-      "type": "links",
-      "bg": "white",
-      "h2": "Related Service",
-      "items": [
-        { "label": "UI/UX Design Company in Kochi", "text": "Teknoppy's matching service page", "href": "/ui-ux-design-company-in-kochi/" }
-      ]
-    },
-    {
       "type": "cta",
       "bg": "cream",
       "paragraphs": [
-        { "text": "Need a design that helps visitors feel calm and confident about something unfamiliar? Talk to Teknoppy: +91 6282249224." }
+        {
+          "text": "Need a design that helps visitors feel calm and confident about something unfamiliar? Talk to Teknoppy: +91 6282249224."
+        }
       ],
       "ctas": [
-        { "label": "Talk to Teknoppy", "href": "tel:+916282249224" },
-        { "label": "Contact Us", "href": "/contact-us/" }
+        {
+          "label": "Talk to Teknoppy",
+          "href": "tel:+916282249224"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/contact-us/"
+        }
       ]
     }
   ],
@@ -120,6 +226,7 @@
     "results": "Post-launch performance data (traffic, ranking movement, booking enquiries) will be added here once a measurement window has passed and figures are pulled from GA / Search Console / booking records. Publishing this section without sourced numbers would weaken the case study rather than strengthen it.",
     "clientTestimonial": "Testimonial pending — a direct quote with the client's full name and designation will be added once collected.",
     "urlNote": "The doc's internal link reads /ui-ux-design-company-kochi/; the built route is /ui-ux-design-company-in-kochi/, so the link points there.",
-    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)"
+    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)",
+    "redesign2026_08_21": "Rearranged to match the live teknoppy.com/amster-case-study/ layout: results band, About Client, Challenges, Campaign Objective, Introduction screenshot, services-and-outcomes, results band repeated, FAQ, Other Case Studies, CTA. The Objective paragraph is split at \"Teknoppy's goal was\" into About Client / Campaign Objective — wording unchanged, only divided. Project Details moved into the hero meta strip ('— Visit Website' link boilerplate dropped, the strip renders its own link). BOTH stat bands are empty and therefore render nothing at all: no verified figures exist for this project. Add items as [{value, label, source}] to src/data/pages/case-studies/varma-ayurveda-ui-ux-design.json and both bands appear automatically. Screenshot section omitted — the client site was unreachable when screenshots were captured."
   }
 }

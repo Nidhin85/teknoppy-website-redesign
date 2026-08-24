@@ -4,9 +4,18 @@
     "description": "How Teknoppy built an SEO and GBP strategy for generaltech.ae, a UAE ISO 17025 calibration lab, with a 185-topic pillar structure and ongoing local optimization."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Case Studies", "href": "/case-study/" },
-    { "name": "General Tech Services — SEO Services", "href": "/case-studies/general-tech-services-seo-services/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Case Studies",
+      "href": "/case-study/"
+    },
+    {
+      "name": "General Tech Services — SEO Services",
+      "href": "/case-studies/general-tech-services-seo-services/"
+    }
   ],
   "sections": [
     {
@@ -14,65 +23,178 @@
       "badge": "Case Study",
       "h1Lead": "General Tech Services: An",
       "h1Accent": "SEO Strategy",
-      "h1Rest": "Built for 15 Calibration Disciplines"
+      "h1Rest": "Built for 15 Calibration Disciplines",
+      "eyebrow": "General Tech Services",
+      "meta": [
+        {
+          "label": "Key Services",
+          "value": "SEO Services, Local SEO / Google Business Profile Optimization, Content Strategy"
+        },
+        {
+          "label": "Live Website",
+          "value": "generaltech.ae",
+          "href": "https://generaltech.ae"
+        }
+      ]
+    },
+    {
+      "type": "statBand",
+      "bg": "cream",
+      "badge": "Results",
+      "h2": "General Tech Services' Results",
+      "items": []
     },
     {
       "type": "prose",
       "bg": "white",
-      "h2": "Objective",
+      "h2": "About Client",
       "paragraphs": [
-        { "text": "General Tech Services is an EIAC & ENAS accredited ISO 17025 calibration laboratory and authorized distributor of 50+ industrial brands, operating across the UAE since 1998. Teknoppy's goal was to build an SEO and local search strategy that could cover a genuinely wide service and product range — 15 calibration disciplines plus dozens of engineering services and product categories — without pages competing against each other, while strengthening the lab's Google Business Profile presence for local, service-based search." }
-      ]
-    },
-    {
-      "type": "nap",
-      "bg": "cream",
-      "h2": "Project Details",
-      "rows": [
-        { "label": "Key Services", "value": "SEO Services, Local SEO / Google Business Profile Optimization, Content Strategy" },
-        { "label": "Live Website", "value": "generaltech.ae — Visit Website", "href": "https://generaltech.ae" }
+        {
+          "text": "General Tech Services is an EIAC & ENAS accredited ISO 17025 calibration laboratory and authorized distributor of 50+ industrial brands, operating across the UAE since 1998."
+        }
       ]
     },
     {
       "type": "cards",
       "bg": "white",
-      "h2": "Before Teknoppy",
+      "h2": "Challenges",
       "items": [
-        { "title": "No structured content strategy", "text": "Only a handful of topics were covered, leaving most of the 15 calibration disciplines and dozens of services without dedicated content, and no plan in place to expand without risking overlap." },
-        { "title": "Incomplete Google Business Profile", "text": "Categories, service areas, and photos weren't fully built out, limiting local search visibility for a multi-service, multi-location business." },
-        { "title": "Generic service pages", "text": "Services like thermal imaging, servo motor repair, custom tool boxes, mass calibration, PAT testing, and automation were bundled into one broad \"services\" page rather than given dedicated coverage." },
-        { "title": "No consistent reporting", "text": "Performance wasn't tracked or delivered in a structured, recurring format, making it hard to see what was working month to month." }
+        {
+          "title": "No structured content strategy",
+          "text": "Only a handful of topics were covered, leaving most of the 15 calibration disciplines and dozens of services without dedicated content, and no plan in place to expand without risking overlap."
+        },
+        {
+          "title": "Incomplete Google Business Profile",
+          "text": "Categories, service areas, and photos weren't fully built out, limiting local search visibility for a multi-service, multi-location business."
+        },
+        {
+          "title": "Generic service pages",
+          "text": "Services like thermal imaging, servo motor repair, custom tool boxes, mass calibration, PAT testing, and automation were bundled into one broad \"services\" page rather than given dedicated coverage."
+        },
+        {
+          "title": "No consistent reporting",
+          "text": "Performance wasn't tracked or delivered in a structured, recurring format, making it hard to see what was working month to month."
+        }
+      ],
+      "layout": "list"
+    },
+    {
+      "type": "prose",
+      "bg": "soft",
+      "h2": "Campaign Objective",
+      "paragraphs": [
+        {
+          "text": "Teknoppy's goal was to build an SEO and local search strategy that could cover a genuinely wide service and product range — 15 calibration disciplines plus dozens of engineering services and product categories — without pages competing against each other, while strengthening the lab's Google Business Profile presence for local, service-based search."
+        }
       ]
+    },
+    {
+      "type": "figure",
+      "bg": "white",
+      "h2": "Introduction",
+      "src": "/case-studies/generaltech.jpg",
+      "url": "generaltech.ae",
+      "alt": "General Tech Services website homepage — generaltech.ae",
+      "caption": "generaltech.ae — homepage as it appears today."
     },
     {
       "type": "cards",
       "bg": "cream",
-      "h2": "With Teknoppy",
+      "h2": "A comprehensive range of services offered by Teknoppy and their outcomes",
       "items": [
-        { "title": "A 185-topic pillar content strategy (directly answers Problem 1)", "text": "A full 17-pillar, 185-topic structure covers the breadth of General Tech's actual service range, later extended with a standalone 58-topic, 6-month Product & Brand Comparison strategy (brand comparisons and product/equipment comparisons) without duplicating existing topics." },
-        { "title": "Google Business Profile built out systematically (directly answers Problem 2)", "text": "Categories, service areas, product strategy, and a photo brief were developed to strengthen local search presence for a multi-service, multi-location business." },
-        { "title": "Inner-page content across real service lines (directly answers Problem 3)", "text": "Dedicated content built for specific services including thermal imaging, servo motor repair, custom tool boxes, mass calibration, PAT testing, and automation services, rather than one generic \"services\" page trying to cover all of them." },
-        { "title": "Structured monthly reporting (directly answers Problem 4)", "text": "Ongoing performance is tracked and delivered in a consistent monthly SEO report format, alongside an original branded 31-page SEO roadmap and 6-month forward plan." }
-      ]
+        {
+          "title": "A 185-topic pillar content strategy",
+          "text": "A full 17-pillar, 185-topic structure covers the breadth of General Tech's actual service range, later extended with a standalone 58-topic, 6-month Product & Brand Comparison strategy (brand comparisons and product/equipment comparisons) without duplicating existing topics."
+        },
+        {
+          "title": "Google Business Profile built out systematically",
+          "text": "Categories, service areas, product strategy, and a photo brief were developed to strengthen local search presence for a multi-service, multi-location business."
+        },
+        {
+          "title": "Inner-page content across real service lines",
+          "text": "Dedicated content built for specific services including thermal imaging, servo motor repair, custom tool boxes, mass calibration, PAT testing, and automation services, rather than one generic \"services\" page trying to cover all of them."
+        },
+        {
+          "title": "Structured monthly reporting",
+          "text": "Ongoing performance is tracked and delivered in a consistent monthly SEO report format, alongside an original branded 31-page SEO roadmap and 6-month forward plan."
+        }
+      ],
+      "layout": "list"
     },
     {
       "type": "prose",
       "bg": "white",
       "paragraphs": [
-        { "lead": "Approach:", "text": "The engagement began with a full roadmap — a 31-page branded SEO plan and simplified 6-month forward plan — establishing scope across GBP optimization, pillar content, and inner-page builds. From there, content was built out discipline-by-discipline and service-by-service against the pillar structure, with a dedicated product/brand comparison strategy added later to extend coverage without creating overlap with existing pages." }
+        {
+          "lead": "Approach:",
+          "text": "The engagement began with a full roadmap — a 31-page branded SEO plan and simplified 6-month forward plan — establishing scope across GBP optimization, pillar content, and inner-page builds. From there, content was built out discipline-by-discipline and service-by-service against the pillar structure, with a dedicated product/brand comparison strategy added later to extend coverage without creating overlap with existing pages."
+        }
       ]
+    },
+    {
+      "type": "statBand",
+      "bg": "soft",
+      "badge": "Results",
+      "h2": "General Tech Services' Final Outcome After Teknoppy's Work",
+      "items": []
     },
     {
       "type": "faq",
-      "bg": "soft",
+      "bg": "white",
       "center": true,
       "badge": "Have Questions?",
       "h2": "FAQ",
       "items": [
-        { "q": "What was the main SEO challenge for General Tech Services?", "a": "Covering a genuinely wide range of services — 15 calibration disciplines, dozens of engineering services, and 50+ product brands — with content that doesn't compete against itself in search." },
-        { "q": "How is content organized across such a wide service range?", "a": "Through a 185-topic, 17-pillar structure, later extended with a separate 58-topic product and brand comparison strategy, keeping every topic distinct." },
-        { "q": "Does this case study cover the same work as General Tech's website design case study?", "a": "No — this case study covers ongoing SEO, content, and GBP work. The website design case study for this client covers a separate, one-time structural rebuild of the site itself." },
-        { "q": "Did the project affect General Tech's existing rankings?", "a": "The pillar and comparison strategies were built specifically to avoid keyword cannibalization against General Tech's existing pages — no overlapping targets were introduced." }
+        {
+          "q": "What was the main SEO challenge for General Tech Services?",
+          "a": "Covering a genuinely wide range of services — 15 calibration disciplines, dozens of engineering services, and 50+ product brands — with content that doesn't compete against itself in search."
+        },
+        {
+          "q": "How is content organized across such a wide service range?",
+          "a": "Through a 185-topic, 17-pillar structure, later extended with a separate 58-topic product and brand comparison strategy, keeping every topic distinct."
+        },
+        {
+          "q": "Does this case study cover the same work as General Tech's website design case study?",
+          "a": "No — this case study covers ongoing SEO, content, and GBP work. The website design case study for this client covers a separate, one-time structural rebuild of the site itself."
+        },
+        {
+          "q": "Did the project affect General Tech's existing rankings?",
+          "a": "The pillar and comparison strategies were built specifically to avoid keyword cannibalization against General Tech's existing pages — no overlapping targets were introduced."
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "cream",
+      "h2": "Other Case Studies",
+      "items": [
+        {
+          "label": "Kerala Dayz",
+          "text": "SEO strategy and GBP cleanup for a Kochi taxi and tour operator",
+          "href": "/case-studies/kerala-dayz-seo-services/"
+        },
+        {
+          "label": "Abrus Krishna Finance",
+          "text": "WordPress site for a KML-registered Kerala lending company",
+          "href": "/case-studies/abrus-krishna-finance-wordpress-development/"
+        },
+        {
+          "label": "Varma Ayurveda",
+          "text": "Multilingual WordPress site for a German Ayurvedic retreat",
+          "href": "/case-studies/varma-ayurveda-wordpress-development/"
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "h2": "Related Service",
+      "items": [
+        {
+          "label": "SEO Services",
+          "text": "Teknoppy's matching service page",
+          "href": "/seo-services/"
+        }
       ]
     },
     {
@@ -81,32 +203,22 @@
       "text": "Written by Sanal Edison, Digital Strategist at Teknoppy"
     },
     {
-      "type": "links",
-      "bg": "cream",
-      "h2": "Related Case Studies",
-      "items": [
-        { "label": "Kerala Dayz", "text": "SEO strategy and GBP cleanup for a Kochi taxi and tour operator", "href": "/case-studies/kerala-dayz-seo-services/" },
-        { "label": "Abrus Krishna Finance", "text": "WordPress site for a KML-registered Kerala lending company", "href": "/case-studies/abrus-krishna-finance-wordpress-development/" },
-        { "label": "Varma Ayurveda", "text": "Multilingual WordPress site for a German Ayurvedic retreat", "href": "/case-studies/varma-ayurveda-wordpress-development/" }
-      ]
-    },
-    {
-      "type": "links",
-      "bg": "white",
-      "h2": "Related Service",
-      "items": [
-        { "label": "SEO Services", "text": "Teknoppy's matching service page", "href": "/seo-services/" }
-      ]
-    },
-    {
       "type": "cta",
       "bg": "cream",
       "paragraphs": [
-        { "text": "Need an SEO strategy that covers a wide service range without your own pages competing with each other? Talk to Teknoppy: +91 6282249224." }
+        {
+          "text": "Need an SEO strategy that covers a wide service range without your own pages competing with each other? Talk to Teknoppy: +91 6282249224."
+        }
       ],
       "ctas": [
-        { "label": "Talk to Teknoppy", "href": "tel:+916282249224" },
-        { "label": "Contact Us", "href": "/contact-us/" }
+        {
+          "label": "Talk to Teknoppy",
+          "href": "tel:+916282249224"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/contact-us/"
+        }
       ]
     }
   ],
@@ -119,6 +231,7 @@
     "results": "Post-engagement performance data (organic traffic, ranking movement, GBP visibility) will be added here once figures are pulled from GA / Search Console / GBP Insights for the reporting period. Publishing this section without sourced numbers would weaken the case study rather than strengthen it.",
     "clientTestimonial": "Testimonial pending — a direct quote with the client's full name and designation will be added once collected.",
     "urlNote": "The doc's internal link reads /seo-agency-kochi/, which is not built. The link points at the built SEO pillar /seo-services/ — repoint to /seo-agency-kochi/ if that page lands.",
-    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)"
+    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)",
+    "redesign2026_08_21": "Rearranged to match the live teknoppy.com/amster-case-study/ layout: results band, About Client, Challenges, Campaign Objective, Introduction screenshot, services-and-outcomes, results band repeated, FAQ, Other Case Studies, CTA. The Objective paragraph is split at \"Teknoppy's goal was\" into About Client / Campaign Objective — wording unchanged, only divided. Project Details moved into the hero meta strip ('— Visit Website' link boilerplate dropped, the strip renders its own link). BOTH stat bands are empty and therefore render nothing at all: no verified figures exist for this project. Add items as [{value, label, source}] to src/data/pages/case-studies/general-tech-services-seo-services.json and both bands appear automatically."
   }
 }

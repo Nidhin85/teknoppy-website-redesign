@@ -4,9 +4,18 @@
     "description": "How Teknoppy runs ongoing SEO, backlink, blog, and Google Business Profile work for Creative Web Design Qatar, a Doha web design agency serving businesses across the GCC."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Case Studies", "href": "/case-study/" },
-    { "name": "Creative Web Design Qatar — SEO & Content", "href": "/case-studies/creative-web-design-qatar-seo-content/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Case Studies",
+      "href": "/case-study/"
+    },
+    {
+      "name": "Creative Web Design Qatar — SEO & Content",
+      "href": "/case-studies/creative-web-design-qatar-seo-content/"
+    }
   ],
   "sections": [
     {
@@ -14,71 +23,183 @@
       "badge": "Case Study",
       "h1Lead": "Creative Web Design Qatar:",
       "h1Accent": "Ongoing SEO",
-      "h1Rest": "for a GCC Web Design Agency"
-    },
-    {
-      "type": "prose",
-      "bg": "white",
-      "h2": "Objective",
-      "paragraphs": [
-        { "text": "Creative Web Design Qatar is a Doha-based web design agency operating since 2005, offering web design, hosting, SEO, ecommerce, and digital marketing to businesses across Qatar and the wider GCC — from corporate and retail clients to real estate, healthcare, education, and hospitality. Teknoppy's goal was to run ongoing SEO, content, and Google Business Profile work that could keep a web design agency's own site visible and competitive, in a category where the agency's search performance is itself part of its sales pitch." }
+      "h1Rest": "for a GCC Web Design Agency",
+      "eyebrow": "Creative Web Design Qatar",
+      "meta": [
+        {
+          "label": "Key Services",
+          "value": "SEO, Backlink Building, Blog Content, Google Business Profile Management"
+        },
+        {
+          "label": "Live Website",
+          "value": "webdesign.qa",
+          "href": "https://webdesign.qa"
+        }
       ]
     },
     {
-      "type": "nap",
+      "type": "statBand",
       "bg": "cream",
-      "h2": "Project Details",
-      "rows": [
-        { "label": "Key Services", "value": "SEO, Backlink Building, Blog Content, Google Business Profile Management" },
-        { "label": "Live Website", "value": "webdesign.qa — Visit Website", "href": "https://webdesign.qa" }
+      "badge": "Results",
+      "h2": "Creative Web Design Qatar's Results",
+      "items": []
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "About Client",
+      "paragraphs": [
+        {
+          "text": "Creative Web Design Qatar is a Doha-based web design agency operating since 2005, offering web design, hosting, SEO, ecommerce, and digital marketing to businesses across Qatar and the wider GCC — from corporate and retail clients to real estate, healthcare, education, and hospitality."
+        }
       ]
     },
     {
       "type": "prose",
       "bg": "white",
       "paragraphs": [
-        { "html": "<em>Note: this case study is scoped to ongoing SEO, content, and GBP work — not the website design/development itself. Confirm scope against the project intake before publishing.</em>" }
+        {
+          "html": "<em>Note: this case study is scoped to ongoing SEO, content, and GBP work — not the website design/development itself. Confirm scope against the project intake before publishing.</em>"
+        }
       ]
     },
     {
       "type": "cards",
+      "bg": "white",
+      "h2": "Challenges",
+      "items": [
+        {
+          "title": "No structured backlink program",
+          "text": "Domain authority and referral signals weren't being actively built through a consistent backlink strategy."
+        },
+        {
+          "title": "Irregular blog publishing",
+          "text": "Content wasn't being published on a consistent cadence, limiting fresh, indexable content for a competitive \"web design Qatar\" search space."
+        },
+        {
+          "title": "Google Business Profile under-maintained",
+          "text": "Listing details weren't being kept current, limiting local visibility for a Doha-based agency competing on local search terms."
+        }
+      ],
+      "layout": "list"
+    },
+    {
+      "type": "prose",
       "bg": "soft",
-      "h2": "Before Teknoppy",
-      "items": [
-        { "title": "No structured backlink program", "text": "Domain authority and referral signals weren't being actively built through a consistent backlink strategy." },
-        { "title": "Irregular blog publishing", "text": "Content wasn't being published on a consistent cadence, limiting fresh, indexable content for a competitive \"web design Qatar\" search space." },
-        { "title": "Google Business Profile under-maintained", "text": "Listing details weren't being kept current, limiting local visibility for a Doha-based agency competing on local search terms." }
+      "h2": "Campaign Objective",
+      "paragraphs": [
+        {
+          "text": "Teknoppy's goal was to run ongoing SEO, content, and Google Business Profile work that could keep a web design agency's own site visible and competitive, in a category where the agency's search performance is itself part of its sales pitch."
+        }
       ]
+    },
+    {
+      "type": "figure",
+      "bg": "white",
+      "h2": "Introduction",
+      "src": "/case-studies/webdesignqa.jpg",
+      "url": "webdesign.qa",
+      "alt": "Creative Web Design Qatar website homepage — webdesign.qa",
+      "caption": "webdesign.qa — homepage as it appears today."
     },
     {
       "type": "cards",
       "bg": "cream",
-      "h2": "With Teknoppy",
+      "h2": "A comprehensive range of services offered by Teknoppy and their outcomes",
       "items": [
-        { "title": "Ongoing backlink building (directly answers Problem 1)", "text": "A structured backlink program runs as part of weekly SEO work, building referral signals over time." },
-        { "title": "Consistent blog publishing (directly answers Problem 2)", "text": "Blog content is published on a regular weekly cadence, keeping the site's content fresh and indexable in a competitive search category." },
-        { "title": "Regular Google Business Profile updates (directly answers Problem 3)", "text": "GBP listing details are kept current as part of the same weekly cycle, supporting local search visibility in Doha." },
-        { "title": "Structured weekly reporting", "text": "Performance is tracked and delivered through a consistent weekly report format, keeping the agency informed of what's being done and why." }
-      ]
+        {
+          "title": "Ongoing backlink building",
+          "text": "A structured backlink program runs as part of weekly SEO work, building referral signals over time."
+        },
+        {
+          "title": "Consistent blog publishing",
+          "text": "Blog content is published on a regular weekly cadence, keeping the site's content fresh and indexable in a competitive search category."
+        },
+        {
+          "title": "Regular Google Business Profile updates",
+          "text": "GBP listing details are kept current as part of the same weekly cycle, supporting local search visibility in Doha."
+        },
+        {
+          "title": "Structured weekly reporting",
+          "text": "Performance is tracked and delivered through a consistent weekly report format, keeping the agency informed of what's being done and why."
+        }
+      ],
+      "layout": "list"
     },
     {
       "type": "prose",
       "bg": "white",
       "paragraphs": [
-        { "lead": "Approach:", "text": "Discovery and scope details specific to this engagement — timeline and key decisions — should be pulled from the project intake and added here once confirmed." }
+        {
+          "lead": "Approach:",
+          "text": "Discovery and scope details specific to this engagement — timeline and key decisions — should be pulled from the project intake and added here once confirmed."
+        }
       ]
+    },
+    {
+      "type": "statBand",
+      "bg": "soft",
+      "badge": "Results",
+      "h2": "Creative Web Design Qatar's Final Outcome After Teknoppy's Work",
+      "items": []
     },
     {
       "type": "faq",
-      "bg": "soft",
+      "bg": "white",
       "center": true,
       "badge": "Have Questions?",
       "h2": "FAQ",
       "items": [
-        { "q": "What was the main goal of the Creative Web Design Qatar engagement?", "a": "To run ongoing SEO, backlink, blog, and Google Business Profile work for a Doha web design agency competing in its own crowded local search category." },
-        { "q": "What does Creative Web Design Qatar offer?", "a": "Web design, hosting, domain registration, email hosting, SEO, ecommerce, and digital marketing services to businesses across Qatar and the wider GCC." },
-        { "q": "Did the engagement affect Creative Web Design Qatar's existing rankings?", "a": "The work was scoped to avoid keyword cannibalization across the agency's existing service pages — no overlapping targets were introduced." },
-        { "q": "Does this case study cover website design work for Creative Web Design Qatar?", "a": "No — this case study covers ongoing SEO, content, and GBP work. It does not cover website design or development for this client." }
+        {
+          "q": "What was the main goal of the Creative Web Design Qatar engagement?",
+          "a": "To run ongoing SEO, backlink, blog, and Google Business Profile work for a Doha web design agency competing in its own crowded local search category."
+        },
+        {
+          "q": "What does Creative Web Design Qatar offer?",
+          "a": "Web design, hosting, domain registration, email hosting, SEO, ecommerce, and digital marketing services to businesses across Qatar and the wider GCC."
+        },
+        {
+          "q": "Did the engagement affect Creative Web Design Qatar's existing rankings?",
+          "a": "The work was scoped to avoid keyword cannibalization across the agency's existing service pages — no overlapping targets were introduced."
+        },
+        {
+          "q": "Does this case study cover website design work for Creative Web Design Qatar?",
+          "a": "No — this case study covers ongoing SEO, content, and GBP work. It does not cover website design or development for this client."
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "cream",
+      "h2": "Other Case Studies",
+      "items": [
+        {
+          "label": "Leema Engineering",
+          "text": "Web design case study for a GCC industrial supplier",
+          "href": "/case-studies/leema-engineering-web-design-gcc/"
+        },
+        {
+          "label": "General Tech Services",
+          "text": "UAE ISO 17025 calibration lab website redesign",
+          "href": "/case-studies/general-tech-services-web-design/"
+        },
+        {
+          "label": "Sports Village Qatar",
+          "text": "Doha gym equipment supplier blog content",
+          "href": "/case-study/"
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "h2": "Related Service",
+      "items": [
+        {
+          "label": "Web Design Company for GCC Businesses",
+          "text": "Teknoppy's matching service page",
+          "href": "/web-design-company-for-gcc-businesses/"
+        }
       ]
     },
     {
@@ -87,32 +208,22 @@
       "text": "Written by Sanal Edison, Digital Strategist at Teknoppy"
     },
     {
-      "type": "links",
-      "bg": "cream",
-      "h2": "Related Case Studies",
-      "items": [
-        { "label": "Leema Engineering", "text": "Web design case study for a GCC industrial supplier", "href": "/case-studies/leema-engineering-web-design-gcc/" },
-        { "label": "General Tech Services", "text": "UAE ISO 17025 calibration lab website redesign", "href": "/case-studies/general-tech-services-web-design/" },
-        { "label": "Sports Village Qatar", "text": "Doha gym equipment supplier blog content", "href": "/case-study/" }
-      ]
-    },
-    {
-      "type": "links",
-      "bg": "white",
-      "h2": "Related Service",
-      "items": [
-        { "label": "Web Design Company for GCC Businesses", "text": "Teknoppy's matching service page", "href": "/web-design-company-for-gcc-businesses/" }
-      ]
-    },
-    {
       "type": "cta",
       "bg": "cream",
       "paragraphs": [
-        { "text": "Need ongoing SEO, content, and local visibility work that keeps you competitive in your own market? Talk to Teknoppy: +91 6282249224." }
+        {
+          "text": "Need ongoing SEO, content, and local visibility work that keeps you competitive in your own market? Talk to Teknoppy: +91 6282249224."
+        }
       ],
       "ctas": [
-        { "label": "Talk to Teknoppy", "href": "tel:+916282249224" },
-        { "label": "Contact Us", "href": "/contact-us/" }
+        {
+          "label": "Talk to Teknoppy",
+          "href": "tel:+916282249224"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/contact-us/"
+        }
       ]
     }
   ],
@@ -125,6 +236,7 @@
     "results": "Post-engagement performance data (organic traffic, ranking movement, GBP visibility) will be added here once figures are pulled from GA / Search Console / GBP Insights for the reporting period. Publishing this section without sourced numbers would weaken the case study rather than strengthen it.",
     "clientTestimonial": "Testimonial pending — a direct quote with the client's full name and designation will be added once collected.",
     "pendingLinks": "The related case study \"Sports Village Qatar — Doha gym equipment supplier blog content\" has no page yet; it points at the Case Studies hub until that page is built.",
-    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)"
+    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)",
+    "redesign2026_08_21": "Rearranged to match the live teknoppy.com/amster-case-study/ layout: results band, About Client, Challenges, Campaign Objective, Introduction screenshot, services-and-outcomes, results band repeated, FAQ, Other Case Studies, CTA. The Objective paragraph is split at \"Teknoppy's goal was\" into About Client / Campaign Objective — wording unchanged, only divided. Project Details moved into the hero meta strip ('— Visit Website' link boilerplate dropped, the strip renders its own link). BOTH stat bands are empty and therefore render nothing at all: no verified figures exist for this project. Add items as [{value, label, source}] to src/data/pages/case-studies/creative-web-design-qatar-seo-content.json and both bands appear automatically."
   }
 }

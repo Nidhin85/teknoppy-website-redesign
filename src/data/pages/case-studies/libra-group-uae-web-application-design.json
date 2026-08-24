@@ -4,9 +4,18 @@
     "description": "How Teknoppy built a single, trust-first web platform for Libra Group UAE — turning six service divisions and 20+ years of operations into one clear digital front door."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Case Studies", "href": "/case-study/" },
-    { "name": "Libra Group UAE — Web Application Design", "href": "/case-studies/libra-group-uae-web-application-design/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Case Studies",
+      "href": "/case-study/"
+    },
+    {
+      "name": "Libra Group UAE — Web Application Design",
+      "href": "/case-studies/libra-group-uae-web-application-design/"
+    }
   ],
   "sections": [
     {
@@ -14,65 +23,168 @@
       "badge": "Case Study",
       "h1Lead": "Libra Group UAE: One Website for",
       "h1Accent": "Six Service Lines",
-      "h1Rest": "and 20+ Years of Trust"
+      "h1Rest": "and 20+ Years of Trust",
+      "eyebrow": "Libra Group UAE",
+      "meta": [
+        {
+          "label": "Key Services",
+          "value": "Web Design, Content Strategy, SEO"
+        },
+        {
+          "label": "Platform/Tech",
+          "value": "WordPress (Elementor)"
+        },
+        {
+          "label": "Live Website",
+          "value": "libragroupuae.com",
+          "href": "https://libragroupuae.com"
+        }
+      ]
+    },
+    {
+      "type": "statBand",
+      "bg": "cream",
+      "badge": "Results",
+      "h2": "Libra Group UAE's Results",
+      "items": []
     },
     {
       "type": "prose",
       "bg": "white",
-      "h2": "Objective",
+      "h2": "About Client",
       "paragraphs": [
-        { "text": "Libra Group UAE has been operating in Dubai since 2001, and by the time Teknoppy came on board, that wasn't the problem — the website was. The company runs six distinct service lines — cleaning, SIRA-certified security, HVAC/MEP maintenance, lifeguard services, concierge, and interior fit-out — serving corporate and industrial clients across the UAE. That's a lot of ground for one homepage to cover without either overwhelming a visitor or burying the credentials that actually win B2B trust, like SIRA certification. Teknoppy's job was to turn two decades of operating history and six service divisions into a single site that a facilities manager or procurement lead could navigate in under a minute — and come away ready to request a quote." },
-        { "html": "<em>Note: this case study covers the web application/website work delivered for Libra Group UAE.</em>" }
-      ]
-    },
-    {
-      "type": "nap",
-      "bg": "cream",
-      "h2": "Project Details",
-      "rows": [
-        { "label": "Key Services", "value": "Web Design, Content Strategy, SEO" },
-        { "label": "Platform/Tech", "value": "WordPress (Elementor)" },
-        { "label": "Live Website", "value": "libragroupuae.com — Visit Website", "href": "https://libragroupuae.com" }
+        {
+          "text": "Libra Group UAE has been operating in Dubai since 2001, and by the time Teknoppy came on board, that wasn't the problem — the website was. The company runs six distinct service lines — cleaning, SIRA-certified security, HVAC/MEP maintenance, lifeguard services, concierge, and interior fit-out — serving corporate and industrial clients across the UAE. That's a lot of ground for one homepage to cover without either overwhelming a visitor or burying the credentials that actually win B2B trust, like SIRA certification."
+        },
+        {
+          "html": "<em>Note: this case study covers the web application/website work delivered for Libra Group UAE.</em>"
+        }
       ]
     },
     {
       "type": "cards",
       "bg": "white",
-      "h2": "Before Teknoppy",
+      "h2": "Challenges",
       "items": [
-        { "title": "Six services, one undifferentiated homepage", "text": "Cleaning, security, HVAC, MEP, lifeguard, and interiors are very different buying decisions with very different buyers. A corporate security lead and a residential cleaning customer shouldn't land on the same generic pitch." },
-        { "title": "SIRA certification buried instead of leading", "text": "For a security services buyer, certification is often the first filter, not a footnote. Left as plain text, it does none of the trust-building work it's capable of." },
-        { "title": "No repeatable next step for a B2B sales cycle", "text": "Facility management is a considered purchase with a procurement process behind it. Without a consistent \"Request a Quote\" path on every service page, each visit risked ending in a dead click instead of a lead." }
+        {
+          "title": "Six services, one undifferentiated homepage",
+          "text": "Cleaning, security, HVAC, MEP, lifeguard, and interiors are very different buying decisions with very different buyers. A corporate security lead and a residential cleaning customer shouldn't land on the same generic pitch."
+        },
+        {
+          "title": "SIRA certification buried instead of leading",
+          "text": "For a security services buyer, certification is often the first filter, not a footnote. Left as plain text, it does none of the trust-building work it's capable of."
+        },
+        {
+          "title": "No repeatable next step for a B2B sales cycle",
+          "text": "Facility management is a considered purchase with a procurement process behind it. Without a consistent \"Request a Quote\" path on every service page, each visit risked ending in a dead click instead of a lead."
+        }
+      ],
+      "layout": "list"
+    },
+    {
+      "type": "prose",
+      "bg": "soft",
+      "h2": "Campaign Objective",
+      "paragraphs": [
+        {
+          "text": "Teknoppy's job was to turn two decades of operating history and six service divisions into a single site that a facilities manager or procurement lead could navigate in under a minute — and come away ready to request a quote."
+        }
       ]
     },
     {
       "type": "cards",
       "bg": "cream",
-      "h2": "With Teknoppy",
+      "h2": "A comprehensive range of services offered by Teknoppy and their outcomes",
       "items": [
-        { "title": "A dedicated page per service line (directly answers Problem 1)", "text": "Security, Cleaning, Maintenance (with HVAC and MEP nested underneath), Life Guard, Concierge, and Libra Interiors each get their own page, so a visitor self-sorts into the right pitch instead of reading around one that isn't for them." },
-        { "title": "SIRA certification promoted to a first-class trust signal (directly answers Problem 2)", "text": "Certification and 24/7 availability are surfaced as standalone credibility markers on the Security Services page, positioned to do the job they're supposed to do: pre-qualify a cautious corporate buyer before they've read a single paragraph." },
-        { "title": "\"Request a Quote\" as a consistent thread through every page (directly answers Problem 3)", "text": "The same CTA appears in the hero and follows the visitor through every service page, so wherever someone enters the site, the next step is identical and obvious." },
-        { "title": "A single visual identity holding six businesses together", "text": "Interior fit-out, armed security, and janitorial services don't usually sit under one brand without feeling stitched together. The design treats them as one company with range, not six loosely related microsites." }
-      ]
+        {
+          "title": "A dedicated page per service line",
+          "text": "Security, Cleaning, Maintenance (with HVAC and MEP nested underneath), Life Guard, Concierge, and Libra Interiors each get their own page, so a visitor self-sorts into the right pitch instead of reading around one that isn't for them."
+        },
+        {
+          "title": "SIRA certification promoted to a first-class trust signal",
+          "text": "Certification and 24/7 availability are surfaced as standalone credibility markers on the Security Services page, positioned to do the job they're supposed to do: pre-qualify a cautious corporate buyer before they've read a single paragraph."
+        },
+        {
+          "title": "\"Request a Quote\" as a consistent thread through every page",
+          "text": "The same CTA appears in the hero and follows the visitor through every service page, so wherever someone enters the site, the next step is identical and obvious."
+        },
+        {
+          "title": "A single visual identity holding six businesses together",
+          "text": "Interior fit-out, armed security, and janitorial services don't usually sit under one brand without feeling stitched together. The design treats them as one company with range, not six loosely related microsites."
+        }
+      ],
+      "layout": "list"
     },
     {
       "type": "prose",
       "bg": "white",
       "paragraphs": [
-        { "lead": "Approach:", "text": "Discovery, wireframing, and copy/design decisions specific to this project — timeline and key choices — should be pulled from the project intake and added here once confirmed." }
+        {
+          "lead": "Approach:",
+          "text": "Discovery, wireframing, and copy/design decisions specific to this project — timeline and key choices — should be pulled from the project intake and added here once confirmed."
+        }
       ]
+    },
+    {
+      "type": "statBand",
+      "bg": "soft",
+      "badge": "Results",
+      "h2": "Libra Group UAE's Final Outcome After Teknoppy's Work",
+      "items": []
     },
     {
       "type": "faq",
-      "bg": "soft",
+      "bg": "white",
       "center": true,
       "badge": "Have Questions?",
       "h2": "FAQ",
       "items": [
-        { "q": "What was the main challenge in designing Libra Group UAE's website?", "a": "Representing six genuinely different service lines — from armed security to interior fit-out — on one site, without diluting the certifications and credentials that matter most to corporate buyers." },
-        { "q": "How does the site build trust for a B2B security and facilities company?", "a": "SIRA certification and other credentials are surfaced as dedicated trust elements rather than folded into general copy, and each service line has its own page so buyers land on content built for their specific need." },
-        { "q": "Does this project overlap with any of Teknoppy's other case studies?", "a": "No — Libra Group UAE sits in the facility management/security services category, distinct from every other industry in Teknoppy's published case studies, so there's no keyword or topic cannibalization between them." }
+        {
+          "q": "What was the main challenge in designing Libra Group UAE's website?",
+          "a": "Representing six genuinely different service lines — from armed security to interior fit-out — on one site, without diluting the certifications and credentials that matter most to corporate buyers."
+        },
+        {
+          "q": "How does the site build trust for a B2B security and facilities company?",
+          "a": "SIRA certification and other credentials are surfaced as dedicated trust elements rather than folded into general copy, and each service line has its own page so buyers land on content built for their specific need."
+        },
+        {
+          "q": "Does this project overlap with any of Teknoppy's other case studies?",
+          "a": "No — Libra Group UAE sits in the facility management/security services category, distinct from every other industry in Teknoppy's published case studies, so there's no keyword or topic cannibalization between them."
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "cream",
+      "h2": "Other Case Studies",
+      "items": [
+        {
+          "label": "TriQare",
+          "text": "Web Application case study for a healthtech emergency SOS platform",
+          "href": "/case-studies/triqare-web-application-design/"
+        },
+        {
+          "label": "Abrus Krishna Finance",
+          "text": "UI/UX Design case study for a KML-registered Kerala lending company",
+          "href": "/case-studies/abrus-krishna-finance-ui-ux-design/"
+        },
+        {
+          "label": "Mount Bell Global Studies",
+          "text": "Web design for a Kerala overseas education consultancy",
+          "href": "/case-studies/mount-bell-global-studies-web-design-development/"
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "h2": "Related Service",
+      "items": [
+        {
+          "label": "Web Application Development Company Kochi",
+          "text": "Teknoppy's matching service page",
+          "href": "/web-application-development-company-kochi/"
+        }
       ]
     },
     {
@@ -81,32 +193,22 @@
       "text": "Written by Sanal Edison, Digital Strategist at Teknoppy"
     },
     {
-      "type": "links",
-      "bg": "cream",
-      "h2": "Related Case Studies",
-      "items": [
-        { "label": "TriQare", "text": "Web Application case study for a healthtech emergency SOS platform", "href": "/case-studies/triqare-web-application-design/" },
-        { "label": "Abrus Krishna Finance", "text": "UI/UX Design case study for a KML-registered Kerala lending company", "href": "/case-studies/abrus-krishna-finance-ui-ux-design/" },
-        { "label": "Mount Bell Global Studies", "text": "Web design for a Kerala overseas education consultancy", "href": "/case-studies/mount-bell-global-studies-web-design-development/" }
-      ]
-    },
-    {
-      "type": "links",
-      "bg": "white",
-      "h2": "Related Service",
-      "items": [
-        { "label": "Web Application Development Company Kochi", "text": "Teknoppy's matching service page", "href": "/web-application-development-company-kochi/" }
-      ]
-    },
-    {
       "type": "cta",
       "bg": "cream",
       "paragraphs": [
-        { "text": "Six services, one brand, zero confusion for the people trying to hire you. Ready for a website that does that for your business? Talk to Teknoppy: +91 6282249224" }
+        {
+          "text": "Six services, one brand, zero confusion for the people trying to hire you. Ready for a website that does that for your business? Talk to Teknoppy: +91 6282249224"
+        }
       ],
       "ctas": [
-        { "label": "Talk to Teknoppy", "href": "tel:+916282249224" },
-        { "label": "Contact Us", "href": "/contact-us/" }
+        {
+          "label": "Talk to Teknoppy",
+          "href": "tel:+916282249224"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/contact-us/"
+        }
       ]
     }
   ],
@@ -120,6 +222,7 @@
     "clientTestimonial": "Testimonial pending — a direct quote from Libra Group UAE's team about working with Teknoppy, with full name and designation, will be added once collected.",
     "faqNote": "(Mark this block up with FAQPage schema when published.) — handled automatically by InnerPage.",
     "urlNote": "Source doc: \"Link back to Teknoppy's matching service page: /web-application-development-company-kochi/ (update to the exact URL of Teknoppy's Web Application Development service page)\" — the built route matches.",
-    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)"
+    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)",
+    "redesign2026_08_21": "Rearranged to match the live teknoppy.com/amster-case-study/ layout: results band, About Client, Challenges, Campaign Objective, Introduction screenshot, services-and-outcomes, results band repeated, FAQ, Other Case Studies, CTA. The Objective paragraph is split at \"Teknoppy's goal was\" into About Client / Campaign Objective — wording unchanged, only divided. Project Details moved into the hero meta strip ('— Visit Website' link boilerplate dropped, the strip renders its own link). BOTH stat bands are empty and therefore render nothing at all: no verified figures exist for this project. Add items as [{value, label, source}] to src/data/pages/case-studies/libra-group-uae-web-application-design.json and both bands appear automatically. Screenshot section omitted — the client site was unreachable when screenshots were captured."
   }
 }

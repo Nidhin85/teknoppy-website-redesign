@@ -4,9 +4,18 @@
     "description": "How Teknoppy redesigned generaltech.ae for a UAE ISO 17025 calibration lab — clearer accreditation trust signals, a separated service/product journey, and cross-linked equipment categories."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Case Studies", "href": "/case-study/" },
-    { "name": "General Tech Services — Web Design", "href": "/case-studies/general-tech-services-web-design/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Case Studies",
+      "href": "/case-study/"
+    },
+    {
+      "name": "General Tech Services — Web Design",
+      "href": "/case-studies/general-tech-services-web-design/"
+    }
   ],
   "sections": [
     {
@@ -14,64 +23,174 @@
       "badge": "Case Study",
       "h1Lead": "General Tech Services: Building a",
       "h1Accent": "Website Structure",
-      "h1Rest": "Worthy of an ISO 17025 Lab"
+      "h1Rest": "Worthy of an ISO 17025 Lab",
+      "eyebrow": "General Tech Services",
+      "meta": [
+        {
+          "label": "Key Services",
+          "value": "Web Design, Website Structure & Information Architecture, SEO"
+        },
+        {
+          "label": "Platform/Tech",
+          "value": "Astro"
+        },
+        {
+          "label": "Live Website",
+          "value": "generaltech.ae",
+          "href": "https://generaltech.ae"
+        }
+      ]
+    },
+    {
+      "type": "statBand",
+      "bg": "cream",
+      "badge": "Results",
+      "h2": "General Tech Services' Results",
+      "items": []
     },
     {
       "type": "prose",
       "bg": "white",
-      "h2": "Objective",
+      "h2": "About Client",
       "paragraphs": [
-        { "text": "General Tech Services is an EIAC & ENAS accredited ISO 17025 calibration laboratory and authorized distributor of 50+ industrial brands, operating out of Sharjah since 1998. With three distinct business lines — calibration, product supply, and engineering services — under one roof, the old site buried the lab's accreditation credibility and made it hard for visitors to tell whether they'd landed on a calibration provider or an equipment shop. Teknoppy's goal was to rebuild the site around a structure that puts accreditation trust front and center, cleanly separates the service and product journeys, and connects related categories and equipment so visitors — and search engines — can find their way through the full range of what General Tech Services offers." }
-      ]
-    },
-    {
-      "type": "nap",
-      "bg": "cream",
-      "h2": "Project Details",
-      "rows": [
-        { "label": "Key Services", "value": "Web Design, Website Structure & Information Architecture, SEO" },
-        { "label": "Platform/Tech", "value": "Astro" },
-        { "label": "Live Website", "value": "generaltech.ae — Visit Website", "href": "https://generaltech.ae" }
+        {
+          "text": "General Tech Services is an EIAC & ENAS accredited ISO 17025 calibration laboratory and authorized distributor of 50+ industrial brands, operating out of Sharjah since 1998. With three distinct business lines — calibration, product supply, and engineering services — under one roof, the old site buried the lab's accreditation credibility and made it hard for visitors to tell whether they'd landed on a calibration provider or an equipment shop."
+        }
       ]
     },
     {
       "type": "cards",
       "bg": "white",
-      "h2": "Before Teknoppy",
+      "h2": "Challenges",
       "items": [
-        { "title": "Accreditation buried, not led with", "text": "EIAC & ENAS ISO 17025 accreditation is General Tech's single strongest trust signal, but the old structure didn't put it in front of visitors early or consistently across the site." },
-        { "title": "Service and product journeys tangled together", "text": "Calibration services, engineering services, and the 50+ brand product catalogue competed for the same navigation space, making it unclear which path to take depending on what a visitor needed." },
-        { "title": "Categories and equipment left as dead ends", "text": "Product categories and calibration disciplines weren't cross-linked, so visitors researching one service (say, torque calibration) had no easy route to related equipment or adjacent disciplines." }
+        {
+          "title": "Accreditation buried, not led with",
+          "text": "EIAC & ENAS ISO 17025 accreditation is General Tech's single strongest trust signal, but the old structure didn't put it in front of visitors early or consistently across the site."
+        },
+        {
+          "title": "Service and product journeys tangled together",
+          "text": "Calibration services, engineering services, and the 50+ brand product catalogue competed for the same navigation space, making it unclear which path to take depending on what a visitor needed."
+        },
+        {
+          "title": "Categories and equipment left as dead ends",
+          "text": "Product categories and calibration disciplines weren't cross-linked, so visitors researching one service (say, torque calibration) had no easy route to related equipment or adjacent disciplines."
+        }
+      ],
+      "layout": "list"
+    },
+    {
+      "type": "prose",
+      "bg": "soft",
+      "h2": "Campaign Objective",
+      "paragraphs": [
+        {
+          "text": "Teknoppy's goal was to rebuild the site around a structure that puts accreditation trust front and center, cleanly separates the service and product journeys, and connects related categories and equipment so visitors — and search engines — can find their way through the full range of what General Tech Services offers."
+        }
       ]
+    },
+    {
+      "type": "figure",
+      "bg": "white",
+      "h2": "Introduction",
+      "src": "/case-studies/generaltech.jpg",
+      "url": "generaltech.ae",
+      "alt": "General Tech Services website homepage — generaltech.ae",
+      "caption": "generaltech.ae — homepage as it appears today."
     },
     {
       "type": "cards",
       "bg": "cream",
-      "h2": "With Teknoppy",
+      "h2": "A comprehensive range of services offered by Teknoppy and their outcomes",
       "items": [
-        { "title": "Accreditation-led structure (directly answers Problem 1)", "text": "EIAC & ENAS ISO 17025 accreditation, the 15-discipline scope, and 28+ years of operating history are now surfaced in the hero, the \"Why General Tech\" section, and repeated as trust anchors through the page." },
-        { "title": "Three clear journeys: Calibration, Products, Services (directly answers Problem 2)", "text": "Navigation and homepage sections now separate Calibration Capabilities, Product Supply, and Engineering Services into distinct, self-contained paths, each with its own entry point and CTA." },
-        { "title": "Cross-linked categories and disciplines (directly answers Problem 3)", "text": "Calibration disciplines, product categories, and related services now link to each other, so a visitor on a torque calibration page can move naturally into torque tools or adjacent disciplines instead of hitting a dead end." }
-      ]
+        {
+          "title": "Accreditation-led structure",
+          "text": "EIAC & ENAS ISO 17025 accreditation, the 15-discipline scope, and 28+ years of operating history are now surfaced in the hero, the \"Why General Tech\" section, and repeated as trust anchors through the page."
+        },
+        {
+          "title": "Three clear journeys: Calibration, Products, Services",
+          "text": "Navigation and homepage sections now separate Calibration Capabilities, Product Supply, and Engineering Services into distinct, self-contained paths, each with its own entry point and CTA."
+        },
+        {
+          "title": "Cross-linked categories and disciplines",
+          "text": "Calibration disciplines, product categories, and related services now link to each other, so a visitor on a torque calibration page can move naturally into torque tools or adjacent disciplines instead of hitting a dead end."
+        }
+      ],
+      "layout": "list"
     },
     {
       "type": "prose",
       "bg": "white",
       "paragraphs": [
-        { "lead": "Approach:", "text": "Discovery started with a full content and structure audit of the existing site against how visitors actually search for calibration and industrial supply services. From there, Teknoppy mapped a three-pillar architecture (Calibration / Products / Services) before touching design, then built the page templates in Astro to keep the accreditation and trust signals consistent across every service and product page." }
+        {
+          "lead": "Approach:",
+          "text": "Discovery started with a full content and structure audit of the existing site against how visitors actually search for calibration and industrial supply services. From there, Teknoppy mapped a three-pillar architecture (Calibration / Products / Services) before touching design, then built the page templates in Astro to keep the accreditation and trust signals consistent across every service and product page."
+        }
       ]
+    },
+    {
+      "type": "statBand",
+      "bg": "soft",
+      "badge": "Results",
+      "h2": "General Tech Services' Final Outcome After Teknoppy's Work",
+      "items": []
     },
     {
       "type": "faq",
-      "bg": "soft",
+      "bg": "white",
       "center": true,
       "badge": "Have Questions?",
       "h2": "FAQ",
       "items": [
-        { "q": "What was the main goal of the redesign?", "a": "To put General Tech's ISO 17025 accreditation front and center and give visitors three clear paths — Calibration, Products, and Services — instead of one tangled navigation." },
-        { "q": "What platform was the new site built on?", "a": "The site was rebuilt on Astro for performance and to support the three-pillar content structure." },
-        { "q": "Did the redesign affect General Tech's existing rankings?", "a": "The restructure was scoped to avoid keyword cannibalization against General Tech's existing service and product pages — no overlapping targets were introduced." },
-        { "q": "Does the new site cover all of General Tech's calibration disciplines?", "a": "Yes — all 15 accredited calibration disciplines are represented with their own dedicated pages, cross-linked to related products and services." }
+        {
+          "q": "What was the main goal of the redesign?",
+          "a": "To put General Tech's ISO 17025 accreditation front and center and give visitors three clear paths — Calibration, Products, and Services — instead of one tangled navigation."
+        },
+        {
+          "q": "What platform was the new site built on?",
+          "a": "The site was rebuilt on Astro for performance and to support the three-pillar content structure."
+        },
+        {
+          "q": "Did the redesign affect General Tech's existing rankings?",
+          "a": "The restructure was scoped to avoid keyword cannibalization against General Tech's existing service and product pages — no overlapping targets were introduced."
+        },
+        {
+          "q": "Does the new site cover all of General Tech's calibration disciplines?",
+          "a": "Yes — all 15 accredited calibration disciplines are represented with their own dedicated pages, cross-linked to related products and services."
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "cream",
+      "h2": "Other Case Studies",
+      "items": [
+        {
+          "label": "Kaydenz",
+          "text": "Dubai Autodesk Authorized Training Center",
+          "href": "/case-study/"
+        },
+        {
+          "label": "Panda Creations",
+          "text": "Dubai video production company",
+          "href": "/case-study/"
+        },
+        {
+          "label": "Leema Engineering Works",
+          "text": "Sharjah industrial supplier",
+          "href": "/case-studies/leema-engineering-web-design-gcc/"
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "h2": "Related Service",
+      "items": [
+        {
+          "label": "Web Design Company Kerala",
+          "text": "Teknoppy's matching service page",
+          "href": "/web-design-company-kerala/"
+        }
       ]
     },
     {
@@ -80,32 +199,22 @@
       "text": "Written by Sanal Edison, Digital Strategist at Teknoppy"
     },
     {
-      "type": "links",
-      "bg": "cream",
-      "h2": "Related Case Studies",
-      "items": [
-        { "label": "Kaydenz", "text": "Dubai Autodesk Authorized Training Center", "href": "/case-study/" },
-        { "label": "Panda Creations", "text": "Dubai video production company", "href": "/case-study/" },
-        { "label": "Leema Engineering Works", "text": "Sharjah industrial supplier", "href": "/case-studies/leema-engineering-web-design-gcc/" }
-      ]
-    },
-    {
-      "type": "links",
-      "bg": "white",
-      "h2": "Related Service",
-      "items": [
-        { "label": "Web Design Company Kerala", "text": "Teknoppy's matching service page", "href": "/web-design-company-kerala/" }
-      ]
-    },
-    {
       "type": "cta",
       "bg": "cream",
       "paragraphs": [
-        { "text": "Need a website structure that puts your accreditation, services, and products where visitors — and search engines — can actually find them? Talk to Teknoppy: +91 6282249224." }
+        {
+          "text": "Need a website structure that puts your accreditation, services, and products where visitors — and search engines — can actually find them? Talk to Teknoppy: +91 6282249224."
+        }
       ],
       "ctas": [
-        { "label": "Talk to Teknoppy", "href": "tel:+916282249224" },
-        { "label": "Contact Us", "href": "/contact-us/" }
+        {
+          "label": "Talk to Teknoppy",
+          "href": "tel:+916282249224"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/contact-us/"
+        }
       ]
     }
   ],
@@ -117,6 +226,7 @@
     "results": "Post-launch performance data (traffic, ranking movement, enquiry volume) will be added here once a measurement window has passed and figures are pulled from GA / Search Console / CRM. Publishing this section without sourced numbers would weaken the case study rather than strengthen it.",
     "clientTestimonial": "Testimonial pending — a direct quote with the client's full name and designation will be added once collected.",
     "pendingLinks": "\"Kaydenz\" and \"Panda Creations\" have no case study pages yet; both point at the Case Studies hub until those pages are built. The internal link target /web-design-company-kerala/ is also not built yet — it is kept exactly as the source doc specifies.",
-    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)"
+    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)",
+    "redesign2026_08_21": "Rearranged to match the live teknoppy.com/amster-case-study/ layout: results band, About Client, Challenges, Campaign Objective, Introduction screenshot, services-and-outcomes, results band repeated, FAQ, Other Case Studies, CTA. The Objective paragraph is split at \"Teknoppy's goal was\" into About Client / Campaign Objective — wording unchanged, only divided. Project Details moved into the hero meta strip ('— Visit Website' link boilerplate dropped, the strip renders its own link). BOTH stat bands are empty and therefore render nothing at all: no verified figures exist for this project. Add items as [{value, label, source}] to src/data/pages/case-studies/general-tech-services-web-design.json and both bands appear automatically."
   }
 }

@@ -4,9 +4,18 @@
     "description": "How Teknoppy built myplantstore.me, a full ecommerce plant nursery store for a Dubai garden business, with organized categories, product variants, and a smooth checkout journey."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Case Studies", "href": "/case-study/" },
-    { "name": "My PlantStore — Ecommerce Website Development", "href": "/case-studies/myplantstore-ecommerce-website-development/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Case Studies",
+      "href": "/case-study/"
+    },
+    {
+      "name": "My PlantStore — Ecommerce Website Development",
+      "href": "/case-studies/myplantstore-ecommerce-website-development/"
+    }
   ],
   "sections": [
     {
@@ -14,65 +23,171 @@
       "badge": "Case Study",
       "h1Lead": "My PlantStore: An",
       "h1Accent": "Ecommerce Storefront",
-      "h1Rest": "for a Growing Plant Nursery"
+      "h1Rest": "for a Growing Plant Nursery",
+      "eyebrow": "My PlantStore",
+      "meta": [
+        {
+          "label": "Key Services",
+          "value": "Ecommerce Website Development, Website Design, SEO"
+        },
+        {
+          "label": "Live Website",
+          "value": "myplantstore.me",
+          "href": "https://myplantstore.me"
+        }
+      ]
+    },
+    {
+      "type": "statBand",
+      "bg": "cream",
+      "badge": "Results",
+      "h2": "My PlantStore's Results",
+      "items": []
     },
     {
       "type": "prose",
       "bg": "white",
-      "h2": "Objective",
+      "h2": "About Client",
       "paragraphs": [
-        { "text": "My PlantStore, run by HIFAA Flowers & Ornamental Plants Trading Co. L.L.C in Dubai, sells indoor and outdoor plants, terrariums, artificial plants, pots, seeds, and flower bouquets to customers across the UAE. Teknoppy's goal was to build a full ecommerce storefront that could handle a wide, multi-category catalog — from live plants to grow kits to bouquets — while keeping browsing, product discovery, and checkout simple for customers ordering online." }
-      ]
-    },
-    {
-      "type": "nap",
-      "bg": "cream",
-      "h2": "Project Details",
-      "rows": [
-        { "label": "Key Services", "value": "Ecommerce Website Development, Website Design, SEO" },
-        { "label": "Live Website", "value": "myplantstore.me — Visit Website", "href": "https://myplantstore.me" }
+        {
+          "text": "My PlantStore, run by HIFAA Flowers & Ornamental Plants Trading Co. L.L.C in Dubai, sells indoor and outdoor plants, terrariums, artificial plants, pots, seeds, and flower bouquets to customers across the UAE."
+        }
       ]
     },
     {
       "type": "cards",
       "bg": "white",
-      "h2": "Before Teknoppy",
+      "h2": "Challenges",
       "items": [
-        { "title": "No dedicated online storefront", "text": "Sales ran through direct enquiries (calls, WhatsApp, social media) with no centralized site where customers could browse the full plant, pot, and supply range on their own." },
-        { "title": "No structured catalog", "text": "Without categories and subcategories, customers had no way to narrow down from \"plants\" to a specific type (e.g. hanging plants, succulents, terrariums) without asking directly." },
-        { "title": "No upfront delivery clarity", "text": "Delivery availability and free-delivery thresholds by emirate weren't visible anywhere, so customers had to ask before knowing if or how their order would ship." }
+        {
+          "title": "No dedicated online storefront",
+          "text": "Sales ran through direct enquiries (calls, WhatsApp, social media) with no centralized site where customers could browse the full plant, pot, and supply range on their own."
+        },
+        {
+          "title": "No structured catalog",
+          "text": "Without categories and subcategories, customers had no way to narrow down from \"plants\" to a specific type (e.g. hanging plants, succulents, terrariums) without asking directly."
+        },
+        {
+          "title": "No upfront delivery clarity",
+          "text": "Delivery availability and free-delivery thresholds by emirate weren't visible anywhere, so customers had to ask before knowing if or how their order would ship."
+        }
+      ],
+      "layout": "list"
+    },
+    {
+      "type": "prose",
+      "bg": "soft",
+      "h2": "Campaign Objective",
+      "paragraphs": [
+        {
+          "text": "Teknoppy's goal was to build a full ecommerce storefront that could handle a wide, multi-category catalog — from live plants to grow kits to bouquets — while keeping browsing, product discovery, and checkout simple for customers ordering online."
+        }
       ]
     },
     {
       "type": "cards",
       "bg": "cream",
-      "h2": "With Teknoppy",
+      "h2": "A comprehensive range of services offered by Teknoppy and their outcomes",
       "items": [
-        { "title": "Deep category structure (directly answers Problem 2)", "text": "Eight main categories (Indoor Plants, Outdoor Plants, Home & Garden Supply, Terrariums, Artificial Plants, Pots, Seeds & Grow Kits, Flower Bouquets), each broken into subcategories so customers can move from broad browsing straight to specific plant types." },
-        { "title": "A centralized storefront (directly answers Problem 1)", "text": "Full account, wishlist, and cart infrastructure replace enquiry-based ordering, so customers can browse and buy independently, with WhatsApp still available for those who prefer to chat." },
-        { "title": "Location-based delivery messaging (directly answers Problem 3)", "text": "Free delivery thresholds by emirate (Dubai/Sharjah/Ajman vs. Fujairah/RAK) are surfaced site-wide, setting clear expectations before checkout." },
-        { "title": "Product variant and discount handling", "text": "Product cards show live discount percentages and \"From\" pricing where variants exist, so customers see accurate pricing at a glance while browsing." },
-        { "title": "Merchandising built for a live catalog", "text": "Featured Plants and New Arrivals sections give the nursery a way to rotate stock and promotions without needing a developer for every update." }
-      ]
+        {
+          "title": "Deep category structure",
+          "text": "Eight main categories (Indoor Plants, Outdoor Plants, Home & Garden Supply, Terrariums, Artificial Plants, Pots, Seeds & Grow Kits, Flower Bouquets), each broken into subcategories so customers can move from broad browsing straight to specific plant types.",
+          "answers": "directly answers Problem 2"
+        },
+        {
+          "title": "A centralized storefront",
+          "text": "Full account, wishlist, and cart infrastructure replace enquiry-based ordering, so customers can browse and buy independently, with WhatsApp still available for those who prefer to chat.",
+          "answers": "directly answers Problem 1"
+        },
+        {
+          "title": "Location-based delivery messaging",
+          "text": "Free delivery thresholds by emirate (Dubai/Sharjah/Ajman vs. Fujairah/RAK) are surfaced site-wide, setting clear expectations before checkout."
+        },
+        {
+          "title": "Product variant and discount handling",
+          "text": "Product cards show live discount percentages and \"From\" pricing where variants exist, so customers see accurate pricing at a glance while browsing."
+        },
+        {
+          "title": "Merchandising built for a live catalog",
+          "text": "Featured Plants and New Arrivals sections give the nursery a way to rotate stock and promotions without needing a developer for every update."
+        }
+      ],
+      "layout": "list"
     },
     {
       "type": "prose",
       "bg": "white",
       "paragraphs": [
-        { "lead": "Approach:", "text": "Discovery, design, and build details specific to this project — timeline, platform, and key decisions — should be pulled from the project intake and added here once confirmed." }
+        {
+          "lead": "Approach:",
+          "text": "Discovery, design, and build details specific to this project — timeline, platform, and key decisions — should be pulled from the project intake and added here once confirmed."
+        }
       ]
+    },
+    {
+      "type": "statBand",
+      "bg": "soft",
+      "badge": "Results",
+      "h2": "My PlantStore's Final Outcome After Teknoppy's Work",
+      "items": []
     },
     {
       "type": "faq",
-      "bg": "soft",
+      "bg": "white",
       "center": true,
       "badge": "Have Questions?",
       "h2": "FAQ",
       "items": [
-        { "q": "What was the main goal of the My PlantStore website project?", "a": "To give a growing plant nursery business a full ecommerce storefront that could organize a wide product catalog — live plants, supplies, pots, and gifts — into an easy browsing and checkout experience." },
-        { "q": "What kind of products does My PlantStore sell online?", "a": "Indoor and outdoor plants, terrariums, artificial plants, pots, seeds and grow kits, and flower bouquets, with delivery across Dubai and the wider UAE." },
-        { "q": "Can customers order without going through the standard checkout?", "a": "Yes — a WhatsApp ordering option sits alongside the cart and checkout flow for customers who prefer to order or ask questions directly." },
-        { "q": "Did the project affect My PlantStore's existing rankings?", "a": "The project was scoped to avoid keyword cannibalization against My PlantStore's existing category and product pages — no overlapping targets were introduced." }
+        {
+          "q": "What was the main goal of the My PlantStore website project?",
+          "a": "To give a growing plant nursery business a full ecommerce storefront that could organize a wide product catalog — live plants, supplies, pots, and gifts — into an easy browsing and checkout experience."
+        },
+        {
+          "q": "What kind of products does My PlantStore sell online?",
+          "a": "Indoor and outdoor plants, terrariums, artificial plants, pots, seeds and grow kits, and flower bouquets, with delivery across Dubai and the wider UAE."
+        },
+        {
+          "q": "Can customers order without going through the standard checkout?",
+          "a": "Yes — a WhatsApp ordering option sits alongside the cart and checkout flow for customers who prefer to order or ask questions directly."
+        },
+        {
+          "q": "Did the project affect My PlantStore's existing rankings?",
+          "a": "The project was scoped to avoid keyword cannibalization against My PlantStore's existing category and product pages — no overlapping targets were introduced."
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "cream",
+      "h2": "Other Case Studies",
+      "items": [
+        {
+          "label": "General Tech Services",
+          "text": "UAE ISO 17025 calibration lab website redesign",
+          "href": "/case-studies/general-tech-services-web-design/"
+        },
+        {
+          "label": "Kaydenz",
+          "text": "Dubai Autodesk Authorized Training Center",
+          "href": "/case-study/"
+        },
+        {
+          "label": "Panda Creations",
+          "text": "Dubai video production company",
+          "href": "/case-study/"
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "h2": "Related Service",
+      "items": [
+        {
+          "label": "Ecommerce Website Development",
+          "text": "Teknoppy's matching service page",
+          "href": "/ecommerce-website-development-company-kochi/"
+        }
       ]
     },
     {
@@ -81,32 +196,22 @@
       "text": "Written by Sanal Edison, Digital Strategist at Teknoppy"
     },
     {
-      "type": "links",
-      "bg": "cream",
-      "h2": "Related Case Studies",
-      "items": [
-        { "label": "General Tech Services", "text": "UAE ISO 17025 calibration lab website redesign", "href": "/case-studies/general-tech-services-web-design/" },
-        { "label": "Kaydenz", "text": "Dubai Autodesk Authorized Training Center", "href": "/case-study/" },
-        { "label": "Panda Creations", "text": "Dubai video production company", "href": "/case-study/" }
-      ]
-    },
-    {
-      "type": "links",
-      "bg": "white",
-      "h2": "Related Service",
-      "items": [
-        { "label": "Ecommerce Website Development", "text": "Teknoppy's matching service page", "href": "/ecommerce-website-development-company-kochi/" }
-      ]
-    },
-    {
       "type": "cta",
       "bg": "cream",
       "paragraphs": [
-        { "text": "Need an ecommerce store that makes a wide product catalog easy to browse and easy to buy from? Talk to Teknoppy: +91 6282249224." }
+        {
+          "text": "Need an ecommerce store that makes a wide product catalog easy to browse and easy to buy from? Talk to Teknoppy: +91 6282249224."
+        }
       ],
       "ctas": [
-        { "label": "Talk to Teknoppy", "href": "tel:+916282249224" },
-        { "label": "Contact Us", "href": "/contact-us/" }
+        {
+          "label": "Talk to Teknoppy",
+          "href": "tel:+916282249224"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/contact-us/"
+        }
       ]
     }
   ],
@@ -120,6 +225,7 @@
     "clientTestimonial": "Testimonial pending — a direct quote with the client's full name and designation will be added once collected.",
     "urlNote": "The doc's internal link reads /ecommerce-website-development/; the built route is /ecommerce-website-development-company-kochi/, so the link points there.",
     "pendingLinks": "\"Kaydenz\" and \"Panda Creations\" have no case study pages yet; both point at the Case Studies hub until those pages are built.",
-    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)"
+    "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)",
+    "redesign2026_08_21": "Rearranged to match the live teknoppy.com/amster-case-study/ layout: results band, About Client, Challenges, Campaign Objective, Introduction screenshot, services-and-outcomes, results band repeated, FAQ, Other Case Studies, CTA. The Objective paragraph is split at \"Teknoppy's goal was\" into About Client / Campaign Objective — wording unchanged, only divided. Project Details moved into the hero meta strip ('— Visit Website' link boilerplate dropped, the strip renders its own link). BOTH stat bands are empty and therefore render nothing at all: no verified figures exist for this project. Add items as [{value, label, source}] to src/data/pages/case-studies/myplantstore-ecommerce-website-development.json and both bands appear automatically. Screenshot section omitted — the client site was unreachable when screenshots were captured."
   }
 }
