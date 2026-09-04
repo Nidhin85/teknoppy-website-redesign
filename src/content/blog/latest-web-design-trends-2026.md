@@ -4,7 +4,7 @@ excerpt: "Your website is either working for you or against you. In 2026, there 
 category: "Design Trends"
 date: 2026-07-03
 readTime: "8 min read"
-cover: "/blog/blog1.png"
+cover: "/blog/blog1.webp"
 draft: false
 ---
 

@@ -4,7 +4,7 @@ excerpt: "Building a website without SEO is like building a road without a desti
 category: "SEO & Design"
 date: 2026-07-02
 readTime: "5 min read"
-cover: "/blog_thumbnail_seo.png"
+cover: "/blog_thumbnail_seo.webp"
 draft: false
 ---
 

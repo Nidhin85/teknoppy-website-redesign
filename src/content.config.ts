@@ -15,7 +15,7 @@ const blog = defineCollection({
     // The blog hub doc requires every post preview to carry a named author.
     author: z.string().default('Teknoppy SEO and Content Team'),
     readTime: z.string().default('5 min read'),
-    cover: z.string().default('/blog/blog1.png'),
+    cover: z.string().default('/blog/blog1.webp'),
     draft: z.boolean().default(false),
   }),
 });

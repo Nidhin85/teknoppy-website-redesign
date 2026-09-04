@@ -4,7 +4,7 @@ excerpt: "Platform choice, payment integration, and first-sale strategy for Kera
 category: "Ecommerce"
 date: 2026-06-02
 readTime: "7 min read"
-cover: "/blog_thumbnail_ecommerce.png"
+cover: "/blog_thumbnail_ecommerce.webp"
 draft: false
 ---
 

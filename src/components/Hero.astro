@@ -151,9 +151,17 @@ import home from "../data/home.json";
       <div
         class="w-full max-w-[750px] z-10 scale-160 xl:-translate-y-15 origin-center"
       >
+        <!-- The container is `hidden xl:flex`, so lazy loading keeps this 145 KB off
+             every phone and tablet visit entirely; on xl it is in the viewport at
+             layout time and fetches straight away. -->
         <img
-          src="/mockup.png"
+          src="/mockup.webp"
           alt="Teknoppy Performance Dashboard Mockups"
+          width="1400"
+          height="933"
+          loading="lazy"
+          decoding="async"
+          fetchpriority="high"
           class="w-full h-auto object-contain"
         />
       </div>
@@ -294,11 +302,11 @@ import home from "../data/home.json";
 
 <style>
   .hero-bg {
-    background-image: url("/mobileherobg2.png");
+    background-image: url("/mobileherobg2.webp");
   }
   @media (min-width: 768px) {
     .hero-bg {
-      background-image: url("/tekenoppyherobg.png");
+      background-image: url("/tekenoppyherobg.webp");
     }
   }
 

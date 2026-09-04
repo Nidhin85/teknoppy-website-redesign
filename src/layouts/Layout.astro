@@ -50,10 +50,21 @@ const ogImageURL = new URL(image, Astro.site || 'https://teknoppy.com');
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={ogImageURL} />
 
-    <!-- Fonts: Geist (via unpkg or similar) and Inter -->
+    <!-- Inter, loaded without blocking first paint: the stylesheet is fetched at high
+         priority as a preload, then swapped in. display=swap means text is painted in
+         the fallback stack immediately rather than waiting on the webfont. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    </noscript>
     
     <!-- Slot for additional head elements like Schema.org scripts -->
     <slot name="head" />

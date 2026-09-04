@@ -4,7 +4,7 @@ excerpt: "How AI is reshaping organic search and what Kerala businesses must do 
 category: "SEO"
 date: 2026-05-20
 readTime: "6 min read"
-cover: "/blog_thumbnail_seo.png"
+cover: "/blog_thumbnail_seo.webp"
 draft: false
 ---
 

@@ -4,7 +4,7 @@ excerpt: "Key questions, red flags, and what separates a results-driven studio f
 category: "Web Design"
 date: 2026-05-08
 readTime: "5 min read"
-cover: "/blog/blog1.png"
+cover: "/blog/blog1.webp"
 draft: false
 ---
 

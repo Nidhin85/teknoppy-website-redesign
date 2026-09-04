@@ -4,7 +4,7 @@ excerpt: "With the retail sector expanding online, building a custom ecommerce s
 category: "Ecommerce"
 date: 2026-06-15
 readTime: "6 min read"
-cover: "/blog_thumbnail_ecommerce.png"
+cover: "/blog_thumbnail_ecommerce.webp"
 draft: false
 ---
 
