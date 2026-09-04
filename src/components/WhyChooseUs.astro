@@ -14,7 +14,9 @@ const icons = [SearchCheck, LineChart, BadgeDollarSign, MapPin, Rocket, LifeBuoy
     <div class="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-[url('/tekenoppyadvantage.png')] opacity-75"></div>
   </div>
   <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
+    <!-- gap applies between all 12 tracks, so lg:gap-24 alone spent 11x96px on gutters
+         and forced the row wider than the container below ~1164px. -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 xl:gap-24 items-start">
       
       <!-- Left Sticky Column -->
       <div class="lg:col-span-5 lg:sticky lg:top-32 space-y-8">
@@ -46,7 +48,7 @@ const icons = [SearchCheck, LineChart, BadgeDollarSign, MapPin, Rocket, LifeBuoy
           </div>
           <div>
             <p class="text-[10px] font-bold text-neutral-400 uppercase tracking-wider">Trusted Partner</p>
-            <p class="text-sm font-semibold text-neutral-900 leading-tight">120+ Brands Across Kerala</p>
+            <p class="text-sm font-semibold text-neutral-900 leading-tight">100+ Brands Across Kerala</p>
           </div>
         </div>
       </div>

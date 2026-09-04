@@ -31,6 +31,7 @@ const links = [
   { name: 'Services', href: '/services/', hasDropdown: true },
   { name: 'About Us', href: '/about-us/' },
   { name: 'Portfolio', href: '/portfolios/' },
+  { name: 'Case Studies', href: '/case-study/' },
   { name: 'Blog', href: '/blog/' },
   { name: 'Contact', href: '/contact-us/' },
 ];
@@ -53,13 +54,13 @@ const links = [
     </a>
 
     <!-- Desktop Nav -->
-    <nav class="hidden md:flex items-center gap-8">
+    <nav class="hidden lg:flex items-center gap-5 xl:gap-8">
       {links.map(link => (
         link.hasDropdown ? (
           <div class="relative group">
             <a
               href={link.href}
-              class={`relative py-1 text-[15px] font-bold transition-all duration-300 flex items-center gap-1 group-hover:text-primary ${
+              class={`relative py-1 text-[14px] xl:text-[15px] font-bold whitespace-nowrap transition-all duration-300 flex items-center gap-1 group-hover:text-primary ${
                 servicesActive ? 'text-primary' : 'text-neutral-700'
               }`}
             >
@@ -100,7 +101,7 @@ const links = [
         ) : (
           <a
             href={link.href}
-            class={`relative py-1 text-[15px] font-bold transition-all duration-300 flex items-center gap-1 ${
+            class={`relative py-1 text-[14px] xl:text-[15px] font-bold whitespace-nowrap transition-all duration-300 flex items-center gap-1 ${
               isActive(link.href)
                 ? 'text-primary'
                 : 'text-neutral-700 hover:text-primary'
@@ -117,30 +118,40 @@ const links = [
 
     <!-- Right CTA -->
     <div class="flex items-center gap-4 relative z-50">
-      <a href="#contact" class="hidden md:inline-flex items-center gap-2 px-6 py-2.5 text-sm font-bold text-white bg-primary hover:bg-primary/95 transition-all duration-300 rounded-full shadow-md shadow-primary/20 hover:-translate-y-0.5 group">
+      <a href="#contact" class="hidden lg:inline-flex items-center gap-2 px-5 xl:px-6 py-2.5 text-sm font-bold whitespace-nowrap text-white bg-primary hover:bg-primary/95 transition-all duration-300 rounded-full shadow-md shadow-primary/20 hover:-translate-y-0.5 group">
         <span>Get Free Quote</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-1 transition-transform duration-300"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </a>
       
       <!-- Mobile Menu Toggle Button -->
-      <button id="mobile-menu-btn" class="p-2 text-black hover:text-primary transition-colors focus:outline-none md:hidden" aria-label="Toggle Menu">
+      <button id="mobile-menu-btn" class="p-2 text-black hover:text-primary transition-colors focus:outline-none lg:hidden" aria-label="Toggle Menu" aria-controls="mobile-menu" aria-expanded="false">
         <svg id="menu-icon-open" class="block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
         <svg id="menu-icon-close" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
       </button>
     </div>
   </div>
- 
-  <!-- Mobile Dropdown Menu -->
-  <div id="mobile-menu" class="fixed inset-0 top-[75px] bg-white z-40 transform translate-x-full transition-transform duration-300 md:hidden flex flex-col justify-between p-8 border-t border-border">
-    <nav class="flex flex-col gap-5">
+</header>
+
+<!-- Mobile Dropdown Menu.
+     Deliberately a sibling of <header>, not a child. The header picks up
+     backdrop-blur-md on scroll, and an ancestor with a backdrop-filter becomes the
+     containing block for its position:fixed descendants — which collapsed this panel
+     into the header's own box and let the page show through behind it. Inner pages
+     never hit it because forceSolidBg skips the scroll handler entirely. -->
+<div
+  id="mobile-menu"
+  class="fixed inset-0 top-[75px] bg-white z-40 transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col border-t border-border"
+  aria-hidden="true"
+>
+  <nav class="flex-1 min-h-0 overflow-y-auto overscroll-contain flex flex-col gap-3 px-8 pt-6 pb-6">
       {links.map((link, idx) => (
         link.hasDropdown ? (
           <div
             class="mobile-link opacity-0 transform translate-y-4 transition-all duration-300 border-b border-border/40 pb-3"
             style={`transition-delay: ${idx * 50}ms`}
           >
-            <span class="block text-2xl font-bold text-neutral-900 py-2">{link.name}</span>
-            <div class="flex flex-col gap-3 pl-4 pt-1">
+            <span class="block text-2xl font-bold text-neutral-900 py-1.5">{link.name}</span>
+            <div class="flex flex-col gap-2.5 pl-4 pt-1">
               {services.map(svc => (
                 <a href={svc.href} class="mobile-sublink text-base font-semibold text-neutral-500 hover:text-primary transition-colors flex items-center gap-2.5">
                   <span class="w-1.5 h-1.5 rounded-full bg-primary/60 flex-shrink-0"></span>
@@ -152,22 +163,21 @@ const links = [
         ) : (
           <a
             href={link.href}
-            class="mobile-link text-2xl font-bold text-neutral-900 hover:text-primary transition-colors duration-300 py-2 border-b border-border/40 opacity-0 transform translate-y-4"
+            class="mobile-link text-2xl font-bold text-neutral-900 hover:text-primary transition-colors duration-300 py-1.5 border-b border-border/40 opacity-0 transform translate-y-4"
             style={`transition-delay: ${idx * 50}ms`}
           >
             {link.name}
           </a>
         )
       ))}
-    </nav>
-    <div class="mt-auto pt-8 border-t border-border/60 opacity-0 transform translate-y-4 transition-all duration-300 delay-300 mobile-cta">
-      <a href="#contact" class="flex items-center justify-center gap-2 w-full py-4 text-base font-bold text-white bg-primary hover:bg-primary/95 transition-colors duration-300 rounded-full">
-        <span>Get Free Quote</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-      </a>
-    </div>
+  </nav>
+  <div class="shrink-0 px-8 pt-5 pb-[calc(2rem+env(safe-area-inset-bottom))] border-t border-border/60 bg-white opacity-0 transform translate-y-4 transition-all duration-300 delay-300 mobile-cta">
+    <a href="#contact" class="flex items-center justify-center gap-2 w-full py-4 text-base font-bold text-white bg-primary hover:bg-primary/95 transition-colors duration-300 rounded-full">
+      <span>Get Free Quote</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
   </div>
-</header>
+</div>
 
 <script>
   // Select header elements
@@ -178,22 +188,28 @@ const links = [
   const menuIconClose = document.getElementById('menu-icon-close');
   const mobileLinks = document.querySelectorAll('.mobile-link');
   const mobileCta = document.querySelector('.mobile-cta');
+  const bottomBar = document.getElementById('mobile-bottom-bar');
 
   // Sticky header handling
   const forceSolid = header?.dataset.forceSolid === 'true';
-  window.addEventListener('scroll', () => {
-    if (forceSolid) return;
+  const SOLID = ['py-3', 'bg-white/95', 'backdrop-blur-md', 'border-neutral-200/50', 'shadow-md', 'shadow-black/[0.03]'];
+  const TRANSPARENT = ['pt-9', 'pb-4', 'bg-transparent', 'border-transparent'];
+
+  function applyScrollState() {
+    if (forceSolid || isMenuOpen) return;
     if (window.scrollY > 20) {
-      header?.classList.add('py-3', 'bg-white/95', 'backdrop-blur-md', 'border-neutral-200/50', 'shadow-md', 'shadow-black/[0.03]');
-      header?.classList.remove('pt-9', 'pb-4', 'bg-transparent', 'border-transparent');
+      header?.classList.add(...SOLID);
+      header?.classList.remove(...TRANSPARENT);
     } else {
-      header?.classList.add('pt-9', 'pb-4', 'bg-transparent', 'border-transparent');
-      header?.classList.remove('py-3', 'bg-white/95', 'backdrop-blur-md', 'border-neutral-200/50', 'shadow-md', 'shadow-black/[0.03]');
+      header?.classList.add(...TRANSPARENT);
+      header?.classList.remove(...SOLID);
     }
-  });
+  }
+  window.addEventListener('scroll', applyScrollState);
 
   // Mobile menu toggle
   let isMenuOpen = false;
+  let lockedScrollY = 0;
 
   function toggleMenu() {
     isMenuOpen = !isMenuOpen;
@@ -201,9 +217,32 @@ const links = [
     if (isMenuOpen) {
       // Open Menu
       mobileMenu?.classList.remove('translate-x-full');
+      mobileMenu?.setAttribute('aria-hidden', 'false');
+      mobileMenuBtn?.setAttribute('aria-expanded', 'true');
       menuIconOpen?.classList.replace('block', 'hidden');
       menuIconClose?.classList.replace('hidden', 'block');
-      document.body.classList.add('overflow-hidden');
+
+      // The panel is offset by the header's compact height, so pin the header solid
+      // while it is open rather than letting it sit tall and transparent over the links.
+      if (!forceSolid) {
+        header?.classList.add(...SOLID);
+        header?.classList.remove(...TRANSPARENT);
+      }
+      if (header) header.style.backgroundColor = '#ffffff';
+
+      // iOS Safari ignores overflow:hidden on <body>, so lock by fixing the body at
+      // the current offset and restoring it on close.
+      if (bottomBar) {
+        bottomBar.style.opacity = '0';
+        bottomBar.style.pointerEvents = 'none';
+      }
+
+      lockedScrollY = window.scrollY;
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${lockedScrollY}px`;
+      document.body.style.left = '0';
+      document.body.style.right = '0';
+      document.body.style.width = '100%';
 
       // Animate items in
       mobileLinks.forEach((link) => {
@@ -215,9 +254,24 @@ const links = [
     } else {
       // Close Menu
       mobileMenu?.classList.add('translate-x-full');
+      mobileMenu?.setAttribute('aria-hidden', 'true');
+      mobileMenuBtn?.setAttribute('aria-expanded', 'false');
       menuIconOpen?.classList.replace('hidden', 'block');
       menuIconClose?.classList.replace('block', 'hidden');
-      document.body.classList.remove('overflow-hidden');
+
+      if (bottomBar) {
+        bottomBar.style.opacity = '';
+        bottomBar.style.pointerEvents = '';
+      }
+      if (header) header.style.backgroundColor = '';
+
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
+      document.body.style.width = '';
+      window.scrollTo(0, lockedScrollY);
+      applyScrollState();
 
       // Reset item animations
       mobileLinks.forEach((link) => {
@@ -243,5 +297,14 @@ const links = [
     link.addEventListener('click', () => {
       if (isMenuOpen) toggleMenu();
     });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isMenuOpen) toggleMenu();
+  });
+
+  // Leaving mobile widths with the menu open would otherwise strand the body lock.
+  window.matchMedia('(min-width: 1024px)').addEventListener('change', (e) => {
+    if (e.matches && isMenuOpen) toggleMenu();
   });
 </script>
