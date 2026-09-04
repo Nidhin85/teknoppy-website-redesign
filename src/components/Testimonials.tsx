@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Play } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Play, X } from 'lucide-react';
 
 const defaultTestimonials = [
   {
@@ -47,14 +47,25 @@ const clientLogos = [
   '/client logos/olive.jpg'
 ];
 
-export default function Testimonials({ testimonials = defaultTestimonials }: { testimonials?: typeof defaultTestimonials } = {}) {
-  const previewImages = ['/testimonial_video_preview.png', '/testimonial_video_preview_2.png', '/testimonial_video_preview_3.png'];
-  const videoTestimonials = testimonials.map((t, i) => ({
-    name: t.name,
-    initial: t.name.charAt(0),
-    company: t.role,
-    image: previewImages[i % previewImages.length],
-  }));
+type VideoTestimonial = {
+  youtubeId: string;
+  name?: string;
+  role?: string;
+  thumb: string;
+  isShort?: boolean;
+};
+
+export default function Testimonials({
+  testimonials = defaultTestimonials,
+  videos = [],
+}: {
+  testimonials?: typeof defaultTestimonials;
+  videos?: VideoTestimonial[];
+} = {}) {
+  // Real client videos, supplied by the client. The panel used to rotate a stock
+  // image behind a play button that did nothing.
+  const videoTestimonials = videos;
+  const [playingId, setPlayingId] = useState<string | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(1);
 
@@ -69,11 +80,12 @@ export default function Testimonials({ testimonials = defaultTestimonials }: { t
   };
 
   useEffect(() => {
+    if (playingId) return;                 // don't rotate out from under a playing video
     const timer = setInterval(() => {
       nextSlide();
     }, 4000);
     return () => clearInterval(timer);
-  }, [currentIndex]);
+  }, [currentIndex, playingId]);
 
   const variants = {
     enter: (direction: number) => ({
@@ -125,7 +137,9 @@ export default function Testimonials({ testimonials = defaultTestimonials }: { t
   };
 
   const current = testimonials[currentIndex];
-  const currentVideo = videoTestimonials[currentIndex];
+  const currentVideo = videoTestimonials.length
+    ? videoTestimonials[currentIndex % videoTestimonials.length]
+    : null;
 
   return (
     <section className="py-24 md:py-32 bg-cream relative overflow-hidden" id="testimonials">
@@ -226,50 +240,74 @@ export default function Testimonials({ testimonials = defaultTestimonials }: { t
             className="lg:col-span-4 relative rounded-xl overflow-visible min-h-[440px] md:min-h-[460px]" 
             style={{ perspective: "1500px" }}
           >
-            <AnimatePresence initial={false} custom={direction}>
-              <motion.div
-                key={currentIndex}
-                custom={direction}
-                variants={video3DVariants}
-                initial="enter"
-                animate="center"
-                exit="exit"
-                className="absolute inset-0 w-full h-full rounded-xl overflow-hidden shadow-sm border border-neutral-100 bg-neutral-900"
-                style={{ transformStyle: "preserve-3d", backfaceVisibility: "hidden" }}
-              >
-                <img 
-                  src={currentVideo.image} 
-                  alt={currentVideo.name} 
-                  className="w-full h-full object-cover opacity-85 absolute inset-0"
+            {playingId ? (
+              <div className="absolute inset-0 w-full h-full rounded-xl overflow-hidden shadow-sm border border-neutral-100 bg-black">
+                <iframe
+                  src={`https://www.youtube-nocookie.com/embed/${playingId}?autoplay=1&rel=0&modestbranding=1`}
+                  title="Client video testimonial"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
                 />
-                {/* Dark overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+                <button
+                  onClick={() => setPlayingId(null)}
+                  aria-label="Close video"
+                  className="absolute top-3 right-3 z-20 w-8 h-8 rounded-full bg-black/60 text-white border border-white/20 flex items-center justify-center hover:bg-black/80 transition-colors"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
+            ) : currentVideo ? (
+              <AnimatePresence initial={false} custom={direction}>
+                <motion.div
+                  key={currentIndex}
+                  custom={direction}
+                  variants={video3DVariants}
+                  initial="enter"
+                  animate="center"
+                  exit="exit"
+                  className="absolute inset-0 w-full h-full rounded-xl overflow-hidden shadow-sm border border-neutral-100 bg-neutral-900"
+                  style={{ transformStyle: "preserve-3d", backfaceVisibility: "hidden" }}
+                >
+                  <img
+                    src={currentVideo.thumb}
+                    alt={currentVideo.name ? `${currentVideo.name} — video testimonial for Teknoppy` : "Client video testimonial for Teknoppy"}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover opacity-85 absolute inset-0"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
 
-                {/* Play Button Overlay */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="absolute w-28 h-28 rounded-full bg-[#F9AE42]/30 blur-xl pointer-events-none animate-pulse"></div>
-                  <button 
-                    className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 shadow-xl relative z-10"
-                    aria-label="Play video testimonial"
-                  >
-                    <Play className="w-6 h-6 fill-white text-white translate-x-0.5" />
-                  </button>
-                </div>
-
-                {/* Video Label Overlay */}
-                <div className="absolute bottom-6 left-6 right-6">
-                  <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-full bg-primary border border-primary/10 flex items-center justify-center text-xs font-bold text-white">
-                      {currentVideo.initial}
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-white text-sm">{currentVideo.name}</h4>
-                      <p className="text-[10px] text-white/70 font-medium">{currentVideo.company}</p>
-                    </div>
+                  {/* Play — loads the YouTube iframe only on click */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="absolute w-28 h-28 rounded-full bg-[#F9AE42]/30 blur-xl pointer-events-none animate-pulse"></div>
+                    <button
+                      onClick={() => setPlayingId(currentVideo.youtubeId)}
+                      className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 shadow-xl relative z-10"
+                      aria-label={currentVideo.name ? `Play video testimonial from ${currentVideo.name}` : "Play client video testimonial"}
+                    >
+                      <Play className="w-6 h-6 fill-white text-white translate-x-0.5" />
+                    </button>
                   </div>
-                </div>
-              </motion.div>
-            </AnimatePresence>
+
+                  {(currentVideo.name || currentVideo.role) && (
+                    <div className="absolute bottom-6 left-6 right-6">
+                      <div className="flex items-center gap-2">
+                        {currentVideo.name && (
+                          <div className="w-8 h-8 rounded-full bg-primary border border-primary/10 flex items-center justify-center text-xs font-bold text-white">
+                            {currentVideo.name.charAt(0)}
+                          </div>
+                        )}
+                        <div>
+                          {currentVideo.name && <h4 className="font-bold text-white text-sm">{currentVideo.name}</h4>}
+                          {currentVideo.role && <p className="text-[10px] text-white/70 font-medium">{currentVideo.role}</p>}
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </motion.div>
+              </AnimatePresence>
+            ) : null}
           </div>
 
           {/* Column 3: 3x3 Client Logos Grid */}
