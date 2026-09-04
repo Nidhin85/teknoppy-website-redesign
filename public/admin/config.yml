@@ -1571,6 +1571,8 @@ collections:
             widget: object
             fields:
               - { name: intro, label: "Intro", widget: text }
+              - { name: otherHeading, label: "\"Other topics\" heading (category pages)", widget: string }
+              - { name: emptyText, label: "Empty-category message", widget: text, hint: "Shown on a category page that has no published posts yet." }
               - name: items
                 label: "Category cards"
                 widget: list
@@ -1578,6 +1580,20 @@ collections:
                   - { name: title, label: "Title", widget: string }
                   - { name: text, label: "Description", widget: text }
                   - { name: href, label: "URL", widget: string }
+                  - { name: slug, label: "Slug", widget: string, hint: "Must match the last segment of the URL and the file in src/pages/blog/." }
+                  - { name: match, label: "Post categories in this hub", widget: list, field: { name: category, label: "Category", widget: string }, hint: "A post appears here when its category matches one of these (case and punctuation are ignored)." }
+                  - name: meta
+                    label: "Meta / SEO (category page)"
+                    widget: object
+                    fields:
+                      - { name: title, label: "Meta title", widget: string }
+                      - { name: description, label: "Meta description", widget: text }
+                  - name: service
+                    label: "Related service"
+                    widget: object
+                    fields:
+                      - { name: label, label: "Label", widget: string }
+                      - { name: href, label: "URL", widget: string }
           - name: latest
             label: "Latest From The Blog"
             widget: object
