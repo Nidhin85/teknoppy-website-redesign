@@ -1,0 +1,9 @@
+# Teknoppy — https://teknoppy.com
+User-agent: *
+Allow: /
+
+# CMS and serverless endpoints are not content
+Disallow: /admin/
+Disallow: /api/
+
+Sitemap: https://teknoppy.com/sitemap-index.xml

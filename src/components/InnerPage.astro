@@ -48,7 +48,11 @@ const hero = sections.find((s: any) => s.type === 'hero');
 const body = sections.filter((s: any) =>
   s.type !== 'hero' &&
   // A stat band with no verified figures renders nothing at all — heading included.
-  !(s.type === 'statBand' && !(s.items ?? []).length)
+  !(s.type === 'statBand' && !(s.items ?? []).length) &&
+  // `draft: true` holds finished copy back from the live page — used where the
+  // source doc supplies the wording but the figures in it are still unverified.
+  // The copy stays in the JSON verbatim; flip the flag to publish.
+  s.draft !== true
 );
 
 const faqSection = sections.find((s: any) => s.type === 'faq');

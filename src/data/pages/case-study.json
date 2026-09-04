@@ -227,6 +227,7 @@
     },
     {
       "type": "cards",
+      "draft": true,
       "bg": "white",
       "columns": 2,
       "itemHeading": "h2",
@@ -346,6 +347,7 @@
     ],
     "addedSection": "The \"Client Case Studies\" directory is not in the copy doc. It was added so the 22 named client case-study pages supplied separately are reachable from this hub; every label and descriptor is taken verbatim from those docs' own headings and Related Case Studies lines.",
     "redesign2026_08_21": "Rebuilt to match the live teknoppy.com/case-study/ card grid: each card carries a website screenshot, an optional headline stat, the client name and a short blurb. Stat slots are empty pending verified figures — add \"stat\" to a card item and it appears above the client name. 15 of 22 cards show a 'Screenshot pending' placeholder because those client sites were unreachable at capture time. Named client work now leads the page; the four anonymised [X] summary blocks follow it. H1, meta and primary keyword unchanged, per the doc's do-not-change list.",
-    "screenshots": "20 of 22 cards now carry a homepage screenshot. Direction North and Olives Boutique Resort have no website in their source docs — both engagements are Instagram/Facebook only — so those two keep the placeholder tile."
+    "screenshots": "20 of 22 cards now carry a homepage screenshot. Direction North and Olives Boutique Resort have no website in their source docs — both engagements are Instagram/Facebook only — so those two keep the placeholder tile.",
+    "draftedSections": "The 'Results by Project Type' cards section is marked draft:true so it does not render. Its four anonymised summaries still contain [X] placeholders and the source doc says in bold: DO NOT LAUNCH with any [X] showing. Copy is preserved verbatim. Once the account lead supplies verified figures, replace the [X] values and remove \"draft\": true to publish it."
   }
 }

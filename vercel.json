@@ -2,5 +2,492 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "astro",
   "buildCommand": "npm run build",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/blog/ecommerce",
+      "destination": "/blog/",
+      "permanent": false
+    },
+    {
+      "source": "/blog/ecommerce/",
+      "destination": "/blog/",
+      "permanent": false
+    },
+    {
+      "source": "/blog/kerala-business",
+      "destination": "/blog/",
+      "permanent": false
+    },
+    {
+      "source": "/blog/kerala-business/",
+      "destination": "/blog/",
+      "permanent": false
+    },
+    {
+      "source": "/blog/seo",
+      "destination": "/blog/",
+      "permanent": false
+    },
+    {
+      "source": "/blog/seo/",
+      "destination": "/blog/",
+      "permanent": false
+    },
+    {
+      "source": "/blog/web-application",
+      "destination": "/blog/",
+      "permanent": false
+    },
+    {
+      "source": "/blog/web-application/",
+      "destination": "/blog/",
+      "permanent": false
+    },
+    {
+      "source": "/blog/web-design",
+      "destination": "/blog/",
+      "permanent": false
+    },
+    {
+      "source": "/blog/web-design/",
+      "destination": "/blog/",
+      "permanent": false
+    },
+    {
+      "source": "/blog/wordpress",
+      "destination": "/blog/",
+      "permanent": false
+    },
+    {
+      "source": "/blog/wordpress/",
+      "destination": "/blog/",
+      "permanent": false
+    },
+    {
+      "source": "/book-a-consultation",
+      "destination": "/contact-us/",
+      "permanent": false
+    },
+    {
+      "source": "/book-a-consultation/",
+      "destination": "/contact-us/",
+      "permanent": false
+    },
+    {
+      "source": "/request-a-quote",
+      "destination": "/contact-us/",
+      "permanent": false
+    },
+    {
+      "source": "/request-a-quote/",
+      "destination": "/contact-us/",
+      "permanent": false
+    },
+    {
+      "source": "/free-website-audit-kerala",
+      "destination": "/contact-us/",
+      "permanent": false
+    },
+    {
+      "source": "/free-website-audit-kerala/",
+      "destination": "/contact-us/",
+      "permanent": false
+    },
+    {
+      "source": "/website-cost-calculator-kerala",
+      "destination": "/contact-us/",
+      "permanent": false
+    },
+    {
+      "source": "/website-cost-calculator-kerala/",
+      "destination": "/contact-us/",
+      "permanent": false
+    },
+    {
+      "source": "/web-design-pricing-kerala",
+      "destination": "/web-design-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/web-design-pricing-kerala/",
+      "destination": "/web-design-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/clients",
+      "destination": "/portfolios/",
+      "permanent": false
+    },
+    {
+      "source": "/clients/",
+      "destination": "/portfolios/",
+      "permanent": false
+    },
+    {
+      "source": "/portfolios/ecommerce-projects",
+      "destination": "/portfolios/",
+      "permanent": false
+    },
+    {
+      "source": "/portfolios/ecommerce-projects/",
+      "destination": "/portfolios/",
+      "permanent": false
+    },
+    {
+      "source": "/portfolios/seo-case-studies",
+      "destination": "/portfolios/",
+      "permanent": false
+    },
+    {
+      "source": "/portfolios/seo-case-studies/",
+      "destination": "/portfolios/",
+      "permanent": false
+    },
+    {
+      "source": "/portfolios/web-application-projects",
+      "destination": "/portfolios/",
+      "permanent": false
+    },
+    {
+      "source": "/portfolios/web-application-projects/",
+      "destination": "/portfolios/",
+      "permanent": false
+    },
+    {
+      "source": "/portfolios/website-projects",
+      "destination": "/portfolios/",
+      "permanent": false
+    },
+    {
+      "source": "/portfolios/website-projects/",
+      "destination": "/portfolios/",
+      "permanent": false
+    },
+    {
+      "source": "/portfolios/wordpress-projects",
+      "destination": "/portfolios/",
+      "permanent": false
+    },
+    {
+      "source": "/portfolios/wordpress-projects/",
+      "destination": "/portfolios/",
+      "permanent": false
+    },
+    {
+      "source": "/seo-company-kochi",
+      "destination": "/seo-services/",
+      "permanent": false
+    },
+    {
+      "source": "/seo-company-kochi/",
+      "destination": "/seo-services/",
+      "permanent": false
+    },
+    {
+      "source": "/seo-audit-services-kochi",
+      "destination": "/seo-services/",
+      "permanent": false
+    },
+    {
+      "source": "/seo-audit-services-kochi/",
+      "destination": "/seo-services/",
+      "permanent": false
+    },
+    {
+      "source": "/seo-audit",
+      "destination": "/seo-services/",
+      "permanent": false
+    },
+    {
+      "source": "/seo-audit/",
+      "destination": "/seo-services/",
+      "permanent": false
+    },
+    {
+      "source": "/on-page-seo-services-kochi",
+      "destination": "/seo-services/",
+      "permanent": false
+    },
+    {
+      "source": "/on-page-seo-services-kochi/",
+      "destination": "/seo-services/",
+      "permanent": false
+    },
+    {
+      "source": "/on-page-seo",
+      "destination": "/seo-services/",
+      "permanent": false
+    },
+    {
+      "source": "/on-page-seo/",
+      "destination": "/seo-services/",
+      "permanent": false
+    },
+    {
+      "source": "/technical-seo-services-kochi",
+      "destination": "/seo-services/",
+      "permanent": false
+    },
+    {
+      "source": "/technical-seo-services-kochi/",
+      "destination": "/seo-services/",
+      "permanent": false
+    },
+    {
+      "source": "/technical-seo",
+      "destination": "/seo-services/",
+      "permanent": false
+    },
+    {
+      "source": "/technical-seo/",
+      "destination": "/seo-services/",
+      "permanent": false
+    },
+    {
+      "source": "/core-web-vitals-optimization-kochi",
+      "destination": "/website-speed-optimization-services-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/core-web-vitals-optimization-kochi/",
+      "destination": "/website-speed-optimization-services-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/core-web-vitals-optimization",
+      "destination": "/website-speed-optimization-services-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/core-web-vitals-optimization/",
+      "destination": "/website-speed-optimization-services-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/website-speed-optimization-kochi",
+      "destination": "/website-speed-optimization-services-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/website-speed-optimization-kochi/",
+      "destination": "/website-speed-optimization-services-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/google-ads-company-kochi",
+      "destination": "/digital-marketing-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/google-ads-company-kochi/",
+      "destination": "/digital-marketing-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/social-media-marketing-company-kochi",
+      "destination": "/digital-marketing-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/social-media-marketing-company-kochi/",
+      "destination": "/digital-marketing-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/email-marketing-company-kochi",
+      "destination": "/digital-marketing-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/email-marketing-company-kochi/",
+      "destination": "/digital-marketing-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/content-marketing-agency-kochi",
+      "destination": "/digital-marketing-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/content-marketing-agency-kochi/",
+      "destination": "/digital-marketing-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/branding-agency-kochi",
+      "destination": "/digital-marketing-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/branding-agency-kochi/",
+      "destination": "/digital-marketing-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/web-design-company-kerala",
+      "destination": "/web-design-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/web-design-company-kerala/",
+      "destination": "/web-design-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/responsive-web-design-kochi",
+      "destination": "/web-design-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/responsive-web-design-kochi/",
+      "destination": "/web-design-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/seo-friendly-website-development-kochi",
+      "destination": "/web-design-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/seo-friendly-website-development-kochi/",
+      "destination": "/web-design-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/website-redesign-services-kochi",
+      "destination": "/web-design-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/website-redesign-services-kochi/",
+      "destination": "/web-design-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/cms-website-development-kochi",
+      "destination": "/wordpress-development-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/cms-website-development-kochi/",
+      "destination": "/wordpress-development-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/website-maintenance-services-kochi",
+      "destination": "/wordpress-maintenance-services-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/website-maintenance-services-kochi/",
+      "destination": "/wordpress-maintenance-services-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/web-design-company-qatar",
+      "destination": "/web-design-company-for-gcc-businesses/",
+      "permanent": false
+    },
+    {
+      "source": "/web-design-company-qatar/",
+      "destination": "/web-design-company-for-gcc-businesses/",
+      "permanent": false
+    },
+    {
+      "source": "/web-design-for-manufacturing-companies-kerala",
+      "destination": "/web-design-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/web-design-for-manufacturing-companies-kerala/",
+      "destination": "/web-design-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/web-design-for-professional-services-kerala",
+      "destination": "/web-design-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/web-design-for-professional-services-kerala/",
+      "destination": "/web-design-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/web-design-for-real-estate-kerala",
+      "destination": "/web-design-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/web-design-for-real-estate-kerala/",
+      "destination": "/web-design-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/web-design-for-startups-kerala",
+      "destination": "/web-design-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/web-design-for-startups-kerala/",
+      "destination": "/web-design-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/web-design-for-tourism-businesses-kerala",
+      "destination": "/web-design-company-kochi/",
+      "permanent": false
+    },
+    {
+      "source": "/web-design-for-tourism-businesses-kerala/",
+      "destination": "/web-design-company-kochi/",
+      "permanent": false
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    },
+    {
+      "source": "/admin/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/_astro/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
 }

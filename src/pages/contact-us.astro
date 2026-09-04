@@ -132,7 +132,12 @@ const labelClass = "block text-[11px] font-black text-neutral-700 uppercase trac
               <h2 class="text-2xl sm:text-3xl font-black text-neutral-900 leading-tight">{page.form.heading}</h2>
             </div>
 
-            <form id="contact-form-el" data-endpoint={formEndpoint} data-success={page.form.successMessage} data-error={page.form.errorMessage} novalidate class="space-y-5">
+            <form id="contact-form-el" data-endpoint={formEndpoint} data-success={page.form.successMessage} data-error={page.form.errorMessage} data-source="Contact page" novalidate class="space-y-5">
+              <!-- Honeypot: real people never see or fill this. Bots do. -->
+              <div class="absolute -left-[9999px] w-px h-px overflow-hidden" aria-hidden="true">
+                <label>Company website<input type="text" name="company_website" tabindex="-1" autocomplete="off" /></label>
+              </div>
+
               <div>
                 <label for="cf-name" class={labelClass}>Name</label>
                 <input id="cf-name" name="name" type="text" required autocomplete="name" class={fieldClass} placeholder="Your full name" />
@@ -335,6 +340,9 @@ const labelClass = "block text-[11px] font-black text-neutral-700 uppercase trac
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
+      // Silently drop bot submissions that filled the honeypot.
+      if ((form.elements.namedItem('company_website') as HTMLInputElement)?.value) return;
+
       // Client-side validation before anything is sent.
       let ok = form.checkValidity();
       emailErr.classList.toggle('hidden', validEmail(emailEl.value));
@@ -363,7 +371,10 @@ const labelClass = "block text-[11px] font-black text-neutral-700 uppercase trac
         const res = await fetch(endpoint, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify(Object.fromEntries(new FormData(form)))
+          body: JSON.stringify({
+            ...Object.fromEntries(new FormData(form)),
+            source: form.dataset.source || 'Website'
+          })
         });
         if (!res.ok) throw new Error(String(res.status));
         show(form.dataset.success || '', true);
