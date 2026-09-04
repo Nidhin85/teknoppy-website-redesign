@@ -12,7 +12,8 @@ const projects = [
     title: "A Website Built for a Fire Safety Company Expanding into MEP",
     industry: "Fire Safety, Civil & MEP",
     href: "/case-studies/cochin-suraksha-web-design-development/",
-    image: "/case-studies/cochinsuraksha.jpg",
+    imageDesktop: "/case-studies/cochinsuraksha-desktop.webp",
+    imageMobile: "/case-studies/cochinsuraksha-mobile.webp",
     imageAlt: "Cochin Suraksha website homepage screenshot — web design and development project by Teknoppy, Kochi",
     summary: "A Kochi fire and safety company — supply, installation, testing and commissioning of fire protection systems across Kerala — evolving into a Civil & MEP contractor, and needing a site that carried both identities at once.",
     services: "Web Design & Development, SEO",
@@ -26,7 +27,8 @@ const projects = [
     title: "A Trust-First Pre-Launch Platform for a One-Tap Emergency SOS App",
     industry: "Healthtech",
     href: "/case-studies/triqare-web-application-design/",
-    image: "/case-studies/triqare.jpg",
+    imageDesktop: "/case-studies/triqare-desktop.webp",
+    imageMobile: "/case-studies/triqare-mobile.webp",
     imageAlt: "TriQare website homepage screenshot — healthtech web application design project by Teknoppy",
     summary: "A Mumbai-registered healthtech startup building India's first one-tap emergency ambulance SOS app, where the pre-launch site had to establish medical credibility before a single user had downloaded anything.",
     services: "Web Design, Content Strategy, SEO",
@@ -40,7 +42,8 @@ const projects = [
     title: "A Shopify Store Built to Answer Every Question Before Checkout",
     industry: "Ecommerce, Manufacturing",
     href: "/case-studies/apolo-mattress-shopify-ecommerce/",
-    image: "/case-studies/apolomattress.jpg",
+    imageDesktop: "/case-studies/apolomattress-desktop.webp",
+    imageMobile: "/case-studies/apolomattress-mobile.webp",
     imageAlt: "Apolo Mattress Shopify store homepage screenshot — ecommerce website project by Teknoppy, Kerala",
     summary: "A Kerala mattress manufacturer selling memory foam, latex and pocket spring ranges backed by a 15-year warranty — a considered purchase where every unanswered question costs a sale.",
     services: "Shopify Development, Website Design, SEO",
@@ -96,10 +99,10 @@ const projects = [
               
               <div class="aspect-[16/10] bg-[#FFF8EF] relative overflow-hidden">
                 <img
-                  src={project.image}
+                  src={project.imageDesktop}
                   alt={project.imageAlt}
-                  width="1440"
-                  height="900"
+                  width="1600"
+                  height="1000"
                   loading="lazy"
                   decoding="async"
                   class="w-full h-full object-cover object-top group-hover:scale-102 transition-transform duration-700"
@@ -111,9 +114,11 @@ const projects = [
             <div class={`absolute -bottom-10 ${index % 2 !== 0 ? '-left-10' : '-right-10'} w-[35%] aspect-[9/19] bg-white rounded-2xl shadow-2xl border-4 border-neutral-900 overflow-hidden transform group-hover:-translate-y-8 ${index % 2 !== 0 ? 'group-hover:translate-x-4 rotate-6' : 'group-hover:-translate-x-4 -rotate-6'} transition-all duration-700 hidden md:block z-30`}>
                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[40%] h-4 bg-neutral-900 rounded-b-xl z-10"></div>
                <img
-                 src={project.image}
+                 src={project.imageMobile}
                  alt=""
                  aria-hidden="true"
+                 width="430"
+                 height="932"
                  loading="lazy"
                  decoding="async"
                  class="w-full h-full object-cover object-top bg-[#FFF8EF]"
