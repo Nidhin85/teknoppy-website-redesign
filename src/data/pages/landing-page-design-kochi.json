@@ -23,7 +23,7 @@
         { "label": "Book a Consultation", "href": "/book-a-consultation/" },
         { "label": "Request a Quote", "href": "/request-a-quote/" }
       ],
-      "trustline": "150+ Websites Delivered · 9+ Years in Kochi · Clients Across Kerala, UAE and Qatar"
+      "trustline": "120+ Websites Delivered · In Kochi Since 2018 · Clients Across Kerala, UAE and Qatar"
     },
     {
       "type": "cards",
@@ -219,6 +219,6 @@
     ],
     "schema": "Service + LocalBusiness + FAQPage + BreadcrumbList",
     "internalLinks": "parent pillar, 3 sibling pages, 1 industry page, 2 lead-gen pages",
-    "statsConflict": "Trust strip here reads 150+ Websites Delivered · 9+ Years in Kochi. Other sources say 150+/8 Years (Digital Marketing Kerala, homepage) and 120+/established 2018 (UAE page, site.json). Third variant of the same claim — still unresolved."
+    "statsConflict": "RESOLVED 4 Sep 2026. Every page now uses the single canonical set recorded in src/data/site.json → stats: 120+ projects, 100+ clients, established 2018 (8 years). The earlier 150+/9+ Years/5-Star Google variants were unverified and have been removed sitewide."
   }
 }

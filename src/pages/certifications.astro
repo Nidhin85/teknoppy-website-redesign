@@ -1,4 +1,5 @@
 ---
+import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import FooterCTA from '../components/FooterCTA.astro';
@@ -10,7 +11,15 @@ import page from '../data/pages/certifications.json';
 // Each block therefore renders only once real data exists in the JSON.
 const certifications = (page.certifications.items ?? []).filter((c: any) => c.name);
 const ratings = (page.ratings.items ?? []).filter((r: any) => r.rating);
-const testimonials = (page.testimonials.items ?? []).filter((t: any) => t.quote);
+// Featured testimonials come from src/content/testimonials — the same five real,
+// named clients quoted across the rest of the site. The JSON array stays supported
+// so an editor can override the selection from the CMS.
+const jsonTestimonials = (page.testimonials.items ?? []).filter((t: any) => t.quote);
+const testimonials = jsonTestimonials.length
+  ? jsonTestimonials
+  : (await getCollection('testimonials'))
+      .sort((a, b) => a.data.order - b.data.order)
+      .map((t) => ({ quote: t.data.quote, name: t.data.name, company: t.data.role }));
 
 const sameAs = [
   ...ratings.map((r: any) => r.url),
@@ -96,18 +105,23 @@ const schemas: any[] = [
           <p class="text-base sm:text-lg text-neutral-300 max-w-3xl font-medium leading-relaxed">
             {page.hero.intro}
           </p>
-          <p class="text-xs sm:text-sm text-neutral-400 font-semibold italic mt-8">{page.hero.verifiedLine}</p>
+          {page.hero.verifiedLine && (
+            <p class="text-xs sm:text-sm text-neutral-400 font-semibold italic mt-8">{page.hero.verifiedLine}</p>
+          )}
         </div>
       </div>
     </section>
 
     <!-- PLATFORM CERTIFICATIONS -->
+    <!-- Heading and intro promise verifiable badges, so the whole section is held
+         back until at least one real certification exists in the JSON. -->
+    {certifications.length > 0 && (
     <section class="py-16 sm:py-20 bg-white border-t border-neutral-100">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
         <h2 class="text-3xl sm:text-4xl md:text-[42px] font-black text-neutral-900 leading-tight mb-6">{page.certifications.heading}</h2>
         <p class="max-w-4xl text-neutral-600 text-sm sm:text-base leading-relaxed font-medium">{page.certifications.intro}</p>
 
-        {certifications.length > 0 && (
+        {(
           <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
             {certifications.map((cert: any) => (
               <a
@@ -131,14 +145,18 @@ const schemas: any[] = [
         )}
       </div>
     </section>
+    )}
 
     <!-- CLIENT REVIEWS AND RATINGS -->
+    <!-- Same rule: no live platform rating, no section. Never publish an
+         estimated or placeholder score. -->
+    {ratings.length > 0 && (
     <section class="py-16 sm:py-20 bg-[#FFF8EF]/30 border-t border-neutral-100">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
         <h2 class="text-3xl sm:text-4xl md:text-[42px] font-black text-neutral-900 leading-tight mb-6">{page.ratings.heading}</h2>
         <p class="max-w-4xl text-neutral-600 text-sm sm:text-base leading-relaxed font-medium">{page.ratings.intro}</p>
 
-        {ratings.length > 0 && (
+        {(
           <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
             {ratings.map((r: any) => (
               <a
@@ -163,8 +181,10 @@ const schemas: any[] = [
         )}
       </div>
     </section>
+    )}
 
     <!-- FEATURED TESTIMONIALS -->
+    {testimonials.length > 0 && (
     <section class="py-16 sm:py-20 bg-white border-t border-neutral-100">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
         <h2 class="text-3xl sm:text-4xl md:text-[42px] font-black text-neutral-900 leading-tight mb-6">{page.testimonials.heading}</h2>
@@ -187,6 +207,7 @@ const schemas: any[] = [
         )}
       </div>
     </section>
+    )}
 
     <!-- WHY THIS MATTERS -->
     <section class="py-16 sm:py-20 bg-neutral-50/50 border-t border-neutral-100">

@@ -31,10 +31,6 @@
           "value": "Web Design, Content Strategy, SEO"
         },
         {
-          "label": "Platform/Tech",
-          "value": "[confirm exact platform used for the engagement]"
-        },
-        {
           "label": "Live Website",
           "value": "triqare.in",
           "href": "https://triqare.in"
@@ -231,7 +227,7 @@
     "heroImage": "[Client logo: TriQare] Hero image: triqare.in homepage — desktop + mobile",
     "beforeTeknoppyDisclaimer": "These are a reasonable structural inference based on TriQare being pre-launch, not confirmed client-stated facts — confirm against the actual project intake before publishing.",
     "heldPlaceholders": [
-      "Project Details → Platform/Tech: [confirm exact platform used for the engagement] — this placeholder is rendered on the page exactly as the source doc supplies it. Replace before publishing."
+      "Project Details → Platform/Tech: the source doc supplies only \"[confirm exact platform used for the engagement]\". The row is omitted from the hero meta rather than shipping the bracketed placeholder. Add a { \"label\": \"Platform/Tech\", \"value\": \"...\" } entry back to sections[0].meta once the platform is confirmed."
     ],
     "visualShowcase": "Screenshots pending: full-page desktop + mobile mockups of the homepage, the \"Who We Are\" page, and the waitlist sign-up flow. Add once available.",
     "results": "Post-launch performance data (organic traffic, keyword rankings, waitlist sign-up volume) will be added here once a measurement window has passed and figures are pulled from GA / Search Console / the waitlist CRM. Publishing this section without sourced numbers would weaken the case study rather than strengthen it.",

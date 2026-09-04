@@ -42,6 +42,9 @@ const testimonials = defineCollection({
     role: z.string(),
     quote: z.string(),
     initials: z.string().default(''),
+    // Client portrait, as on the live teknoppy.com testimonial card. Optional —
+    // the card falls back to the initials avatar when a client has no photo.
+    photo: z.string().optional(),
     order: z.number().default(0),
   }),
 });

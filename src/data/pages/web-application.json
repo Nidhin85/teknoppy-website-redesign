@@ -8,7 +8,7 @@
     "headingPre": "Web",
     "headingHighlight": "Application",
     "headingPost": "Development Company Kochi",
-    "subheadline": "Enterprise-Grade Custom Applications for Kerala Businesses. Scalable · Secure · Professional — Custom Web Application Development Solutions | 100+ Projects | Since 2018.",
+    "subheadline": "Enterprise-Grade Custom Applications for Kerala Businesses. Scalable · Secure · Professional — Custom Web Application Development Solutions | 120+ Projects | Since 2018.",
     "body": "Web Application Development Company Kochi is a professional application development agency delivering custom, scalable, web application development solutions for businesses across Kerala, India, and the GCC region. Since 2018, we have completed 100+ web application development projects — from startup MVPs to large-scale enterprise systems — helping Kerala businesses build powerful digital platforms that drive growth and operational efficiency.",
     "ctaPrimary": { "label": "Book a Free Consultation", "href": "#contact" },
     "ctaSecondary": { "label": "Explore Our Services", "href": "#services" },
@@ -152,6 +152,8 @@
     ]
   },
   "caseStudies": {
+    "draft": true,
+    "draftReason": "Held back 4 Sep 2026. Every block here is an anonymised client (\"Founder, E-Commerce Marketplace, Kochi\") carrying unverified figures \u2014 400% transaction growth, Rs. 10Cr \u2192 45Cr, 99.99% uptime, HIPAA/SOC 2. The sitewide rule is never to publish an unverifiable stat. Copy is preserved verbatim; once the account lead confirms the figures and the clients agree to be named, remove \"draft\": true to publish.",
     "headingPre": "Our Web Application Development",
     "headingHighlight": "Case Studies",
     "headingPost": "— Proven Results",
@@ -225,6 +227,8 @@
     ]
   },
   "testimonials": {
+    "draft": true,
+    "draftReason": "Held back 4 Sep 2026. All four quotes are attributed to bare job titles (\"CTO \u2014 SaaS Company, Bangalore\") with no named client, unlike the five real, named testimonials in src/content/testimonials/. Remove \"draft\": true once each quote is tied to a named, consenting client.",
     "headingPre": "What Our",
     "headingHighlight": "Clients Say",
     "headingPost": "About Teknoppy",
@@ -253,6 +257,8 @@
     ]
   },
   "projects": {
+    "draft": true,
+    "draftReason": "Held back 4 Sep 2026 for the same reason as caseStudies \u2014 the three items are the same anonymised engagements restated as project cards, carrying the same unverified figures (+400% transactions, 99.99% uptime, 200+ facilities, Rs. 1Cr+ revenue). Publish together with caseStudies once the figures are confirmed and the clients can be named.",
     "headingPre": "Featured Projects —",
     "headingHighlight": "Real Applications",
     "headingPost": "We Have Built",

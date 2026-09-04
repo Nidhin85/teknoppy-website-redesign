@@ -322,7 +322,7 @@ const breadcrumbSchema = page.breadcrumb && {
                           <img src={item.image} alt={item.imageAlt ?? item.label} width="640" height="400" loading="lazy" decoding="async" class="w-full h-full object-cover object-top group-hover:scale-[1.03] transition-transform duration-500" />
                         </span>
                       : <span class="block aspect-[16/10] bg-gradient-to-br from-neutral-50 to-neutral-100 border-b border-neutral-100 flex items-center justify-center">
-                          <span class="text-[10px] font-black text-neutral-300 uppercase tracking-[0.18em]">Screenshot pending</span>
+                          <span class="text-[10px] font-black text-neutral-300 uppercase tracking-[0.18em]">{item.imageFallback ?? 'Screenshot pending'}</span>
                         </span>}
                     <span class="flex flex-col flex-grow p-5">
                       {item.stat && <span class="block text-2xl font-black text-primary leading-none mb-2 tracking-tight">{item.stat}</span>}

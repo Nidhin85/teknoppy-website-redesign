@@ -7,31 +7,36 @@ const defaultTestimonials = [
     name: "Biju Thomas",
     role: "CEO, Olives Resort, Wayanad",
     content: "We now rank at the top of Google for our keywords and get many direct booking calls due to better visibility. Thank you Teknoppy for all the support.",
-    initials: "BT"
+    initials: "BT",
+    photo: "/testimonials/biju-thomas.webp"
   },
   {
     name: "Vivek Menon",
     role: "CTO, Evosyz, Kochi",
     content: "Being in the Fintech space, we needed a reliable partner. Teknoppy created an appealing website that represents our brand perfectly.",
-    initials: "VM"
+    initials: "VM",
+    photo: "/testimonials/vivek-menon-portrait.webp"
   },
   {
     name: "Shainesh Prakashan",
     role: "CEO, Exacore IT, Infopark Kochi",
     content: "Teknoppy was very intuitive in understanding our requirements. They made great digital collateral and now we are getting good outreach to the market.",
-    initials: "SP"
+    initials: "SP",
+    photo: "/testimonials/shainesh-prakashan.webp"
   },
   {
     name: "Dr. Asghar",
     role: "CEO, Greens Ayurveda, Calicut",
     content: "Mr. Sanal is exceptionally supportive and customer-friendly. I have worked with many IT teams, but I am 100% happy with Teknoppy. No doubt, I recommend them with 100% satisfaction.",
-    initials: "DA"
+    initials: "DA",
+    photo: "/testimonials/dr-asghar.webp"
   },
   {
     name: "Rincy",
     role: "Astrologer & Psychic Healer, Australia",
     content: "Thank you Teknoppy for a wonderful mobile app for my tarot channel. All functions work great and I am getting many subscribers.",
-    initials: "R"
+    initials: "R",
+    photo: "/testimonials/rincy.webp"
   }
 ];
 
@@ -59,12 +64,20 @@ export default function Testimonials({
   testimonials = defaultTestimonials,
   videos = [],
 }: {
-  testimonials?: typeof defaultTestimonials;
+  testimonials?: { name: string; role: string; content: string; initials: string; photo?: string }[];
   videos?: VideoTestimonial[];
 } = {}) {
   // Real client videos, supplied by the client. The panel used to rotate a stock
   // image behind a play button that did nothing.
   const videoTestimonials = videos;
+  // The slides are absolutely stacked so the card never changes height mid-rotation.
+  // An invisible copy of the longest quote reserves exactly the space that quote
+  // needs — at any breakpoint — instead of a hand-tuned fixed height that leaves a
+  // hole under the short ones.
+  const longestQuote = testimonials.reduce(
+    (a, b) => (b.content.length > a.length ? b.content : a),
+    testimonials[0]?.content ?? ''
+  );
   const [playingId, setPlayingId] = useState<string | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(1);
@@ -162,11 +175,11 @@ export default function Testimonials({
               What Our Clients Say About <span className="text-primary">Teknoppy</span> — Web Design Agency Kerala
             </h2>
             <p className="text-neutral-600 text-sm md:text-base leading-relaxed">
-              Hundreds of businesses across Kerala have trusted our website design Kerala expertise to build their online presence — here is what some of them have to say about working with Teknoppy web design agency.
+              Businesses across Kerala and the GCC have trusted our website design Kerala expertise to build their online presence — here is what some of them have to say about working with Teknoppy web design agency.
             </p>
           </div>
           <div className="text-2xl md:text-3xl font-bold text-neutral-950 tracking-tight shrink-0">
-            150+ global clients
+            120+ projects delivered
           </div>
         </div>
 
@@ -175,17 +188,45 @@ export default function Testimonials({
           
           {/* Column 1: Testimonial Card */}
           <div 
-            className="lg:col-span-4 relative flex flex-col justify-between bg-white rounded-xl p-8 border border-neutral-100 shadow-sm min-h-[440px] md:min-h-[460px] overflow-visible"
+            className="lg:col-span-4 relative flex flex-col justify-between bg-white rounded-xl px-6 pb-7 pt-14 sm:p-8 sm:pt-16 border border-neutral-100 shadow-sm lg:min-h-[460px] overflow-visible"
           >
             {/* Stacked Cards Effect behind the main card */}
             <div className="absolute inset-0 bg-[#FFF8EF] rounded-xl -translate-y-4 scale-[0.94] border border-neutral-100 -z-20"></div>
             <div className="absolute inset-0 bg-[#F9AE42]/5 rounded-xl -translate-y-2 scale-[0.97] border border-neutral-100 -z-10"></div>
 
+            {/* Client portrait — overlaps the card's top-left corner, as on the
+                live site. Falls back to the initials avatar when a client has
+                no photo on file. */}
+            <div className="absolute -top-8 left-6 sm:left-8 z-10">
+              <AnimatePresence initial={false} mode="wait">
+                <motion.div
+                  key={`avatar-${currentIndex}`}
+                  initial={{ opacity: 0, scale: 0.88 }}
+                  animate={{ opacity: 1, scale: 1, transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] } }}
+                  exit={{ opacity: 0, scale: 0.88, transition: { duration: 0.4, ease: [0.7, 0, 0.84, 0] } }}
+                  className="w-[72px] h-[72px] sm:w-20 sm:h-20 rounded-full bg-white p-1 shadow-[0_10px_28px_-10px_rgba(0,0,0,0.25)] ring-2 ring-primary/70"
+                >
+                  {current.photo ? (
+                    <img
+                      src={current.photo}
+                      alt={`${current.name} — ${current.role}`}
+                      width="80"
+                      height="80"
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full rounded-full object-cover object-top"
+                    />
+                  ) : (
+                    <span className="w-full h-full rounded-full bg-primary/10 flex items-center justify-center text-base font-black text-primary">
+                      {current.initials}
+                    </span>
+                  )}
+                </motion.div>
+              </AnimatePresence>
+            </div>
+
             {/* Top Row: Quote Mark & Controls */}
-            <div className="flex justify-between items-center mb-8">
-              <span className="text-6xl font-serif font-black text-primary/20 select-none leading-none">
-                “
-              </span>
+            <div className="flex justify-end items-center mb-6">
               <div className="flex gap-1.5 bg-neutral-50 border border-neutral-100 p-1 rounded-full">
                 <button 
                   onClick={prevSlide}
@@ -205,7 +246,10 @@ export default function Testimonials({
             </div>
 
             {/* Middle: Testimonial Text with slide transition */}
-            <div className="flex-grow relative h-48 md:h-52 overflow-hidden mb-8">
+            <div className="flex-grow relative mb-6">
+              <p aria-hidden="true" className="invisible select-none text-sm md:text-base leading-relaxed font-medium italic">
+                "{longestQuote}"
+              </p>
               <AnimatePresence initial={false} custom={direction} mode="wait">
                 <motion.div
                   key={currentIndex}
@@ -214,7 +258,7 @@ export default function Testimonials({
                   initial="enter"
                   animate="center"
                   exit="exit"
-                  className="absolute inset-0 w-full h-full flex flex-col justify-start"
+                  className="absolute inset-0 w-full h-full flex flex-col justify-center"
                 >
                   <p className="text-neutral-700 text-sm md:text-base leading-relaxed font-medium italic">
                     "{current.content}"
@@ -223,15 +267,20 @@ export default function Testimonials({
               </AnimatePresence>
             </div>
 
-            {/* Bottom: Client Profile */}
-            <div className="flex items-center gap-3 pt-6 border-t border-neutral-100">
-              <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-sm font-bold text-primary flex-shrink-0">
-                {current.initials}
-              </div>
-              <div>
-                <h4 className="font-bold text-neutral-900 text-sm">{current.name}</h4>
-                <p className="text-xs text-neutral-500 font-medium">{current.role}</p>
-              </div>
+            {/* Bottom: Client Profile — animated on the same key and timing as the
+                quote and the portrait, so the name never runs ahead of the words. */}
+            <div className="pt-5 border-t border-neutral-100 h-[62px]">
+              <AnimatePresence initial={false} mode="wait">
+                <motion.div
+                  key={`profile-${currentIndex}`}
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] } }}
+                  exit={{ opacity: 0, y: -8, transition: { duration: 0.4, ease: [0.7, 0, 0.84, 0] } }}
+                >
+                  <h4 className="font-bold text-neutral-900 text-base leading-snug">{current.name}</h4>
+                  <p className="text-xs text-primary font-semibold mt-0.5">{current.role}</p>
+                </motion.div>
+              </AnimatePresence>
             </div>
           </div>
 

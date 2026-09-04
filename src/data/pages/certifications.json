@@ -1,14 +1,14 @@
 {
   "meta": {
     "title": "Teknoppy Certifications & Client Reviews | Kochi",
-    "description": "See Teknoppy's certifications, verified client reviews, and ratings from Google, Clutch, and Trustpilot — real trust signals from our Kochi team."
+    "description": "Teknoppy's trust and proof page — how we evidence our work in Kochi, and the real, named client testimonials behind it. Certification badges and platform ratings are published here only once independently verifiable."
   },
   "hero": {
     "badge": "Trust & Proof",
     "h1Lead": "Teknoppy Certifications and",
     "h1Accent": "Client Reviews",
-    "intro": "This page brings together our platform certifications, verified client reviews, and real client testimonials in one place, so you can check our credibility independently before choosing to work with us. We believe trust should be provable, not just claimed, which is why every badge and rating shown here links back to its original, verifiable source rather than being described in our own words alone.",
-    "verifiedLine": "Verified and updated July 2026"
+    "intro": "This page is where we put our credibility on the record. Our standard is simple: trust should be provable, not just claimed — so a certification badge or platform rating appears here only when it is current and links back to its own official verification page, never as an unlinked logo or a figure we have written ourselves. Until a badge or score meets that bar it is not shown at all, which is why you will see real, named client testimonials below rather than a wall of icons.",
+    "verifiedLine": ""
   },
   "certifications": {
     "heading": "Platform Certifications",
@@ -80,6 +80,8 @@
       "Remove any certification immediately once it expires or lapses — never leave an invalid badge live.",
       "Refresh review counts and ratings periodically so the figures shown always match the live platform data.",
       "Never add a testimonial without the client's permission, and never write one on a client's behalf."
-    ]
+    ],
+    "heroIntroRewrite2026_09_04": "4 Sep 2026: the previous hero intro (kept below as heroIntroOriginal) promised certifications and platform reviews that do not exist in this file yet, so the page opened with three headings and nothing under them. Restore heroIntroOriginal, and set verifiedLine to the real review date, once certifications.items and ratings.items are populated.",
+    "heroIntroOriginal": "This page brings together our platform certifications, verified client reviews, and real client testimonials in one place, so you can check our credibility independently before choosing to work with us. We believe trust should be provable, not just claimed, which is why every badge and rating shown here links back to its original, verifiable source rather than being described in our own words alone."
   }
 }

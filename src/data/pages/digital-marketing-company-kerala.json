@@ -41,7 +41,7 @@
       ],
       "stats": [
         {
-          "value": "150+",
+          "value": "120+",
           "label": "Websites Delivered"
         },
         {
@@ -53,8 +53,8 @@
           "label": "of Experience"
         },
         {
-          "value": "5-Star",
-          "label": "Google Rated"
+          "value": "2018",
+          "label": "Established in Kochi"
         }
       ]
     },
@@ -354,6 +354,6 @@
     ],
     "imageAltText": "Combine \"Digital Marketing Company Kerala\" with the actual image subject, e.g. a Kerala client project screenshot or team photo.",
     "authorLine": "Named Teknoppy team member, with \"Reviewed: [Month Year]\"",
-    "statsConflict": "This source file states 150+ / 8 Years; the UAE location page states 120+ / established 2018. Figures rendered as written in this source."
+    "statsConflict": "RESOLVED 4 Sep 2026. Normalised to the canonical set in src/data/site.json → stats: 120+ projects, 100+ clients, established 2018 (8 years). The source doc's 150+ figure and the unverified 5-Star Google Rated stat were dropped."
   }
 }

@@ -877,6 +877,8 @@ collections:
             label: "Case Studies"
             widget: object
             fields:
+              - { name: draft, label: "Hold back from the live page", widget: boolean, default: true, required: false, hint: "On = written but not published. These blocks are anonymised clients with unverified figures — leave this on until the numbers are confirmed and the clients agree to be named." }
+              - { name: draftReason, label: "Why it is held back", widget: text, required: false }
               - { name: headingPre, label: "Heading — before highlight", widget: string }
               - { name: headingHighlight, label: "Heading — highlight", widget: string }
               - { name: headingPost, label: "Heading — after highlight", widget: string }
@@ -905,6 +907,8 @@ collections:
             label: "Testimonials"
             widget: object
             fields:
+              - { name: draft, label: "Hold back from the live page", widget: boolean, default: true, required: false, hint: "On = written but not published. These quotes carry no named client — leave this on until each is tied to a named, consenting client." }
+              - { name: draftReason, label: "Why it is held back", widget: text, required: false }
               - { name: headingPre, label: "Heading — before highlight", widget: string }
               - { name: headingHighlight, label: "Heading — highlight", widget: string }
               - { name: headingPost, label: "Heading — after highlight", widget: string }
@@ -920,6 +924,8 @@ collections:
             label: "Featured Projects"
             widget: object
             fields:
+              - { name: draft, label: "Hold back from the live page", widget: boolean, default: true, required: false, hint: "On = written but not published. Same three engagements as the case studies, with the same unverified figures — publish them together." }
+              - { name: draftReason, label: "Why it is held back", widget: text, required: false }
               - { name: headingPre, label: "Heading — before highlight", widget: string }
               - { name: headingHighlight, label: "Heading — highlight", widget: string }
               - { name: headingPost, label: "Heading — after highlight", widget: string }
@@ -1258,6 +1264,7 @@ collections:
       - { name: role, label: "Role / Company", widget: string }
       - { name: quote, label: "Quote", widget: text }
       - { name: initials, label: "Initials", widget: string, hint: "e.g. BT" }
+      - { name: photo, label: "Client photo", widget: image, required: false, hint: "Square portrait shown on the homepage testimonial card. Leave empty to fall back to the initials avatar." }
       - { name: order, label: "Order", widget: number, default: 0, value_type: int }
 
   - name: inner_pages

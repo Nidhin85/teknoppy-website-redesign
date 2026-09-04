@@ -90,7 +90,7 @@
       "reCAPTCHA v3 site key — invisible spam protection not implemented.",
       "Analytics — no GA4/GTM on the site, so form, phone-click and WhatsApp-click conversion events cannot be tracked yet.",
       "Real office/team photo near the contact block.",
-      "Confirmed certification badges (Google Partner etc.) for the trust badge row.",
+      "Confirmed, independently verifiable certification badges for the trust badge row. The unverified \u201cGoogle Partner\u201d claim was removed from the hero and from seo-services.json on 4 Sep 2026 \u2014 do not reinstate any badge without a working verification URL.",
       "Organization schema sameAs — LinkedIn / social / Google Business Profile URLs are still \"#\" in site.json."
     ]
   }

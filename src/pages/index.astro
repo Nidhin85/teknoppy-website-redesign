@@ -58,7 +58,7 @@ const websiteSchema = {
 
 const testimonials = (await getCollection('testimonials'))
   .sort((a, b) => a.data.order - b.data.order)
-  .map((e) => ({ name: e.data.name, role: e.data.role, content: e.data.quote, initials: e.data.initials }));
+  .map((e) => ({ name: e.data.name, role: e.data.role, content: e.data.quote, initials: e.data.initials, photo: e.data.photo }));
 ---
 
 <Layout title={title} description={description}>

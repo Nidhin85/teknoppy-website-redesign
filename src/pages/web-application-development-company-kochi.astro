@@ -388,6 +388,9 @@ const faqSchema = {
     </section>
 
     <!-- CASE STUDIES SECTION (PORTFOLIO STYLE) -->
+    <!-- `draft: true` in web-application.json holds finished copy back from the
+         live page — used where the figures are not yet verified. -->
+    {page.caseStudies.draft !== true && (
     <section class="py-24 bg-white border-t border-neutral-100">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
         <div class="max-w-3xl mb-20">
@@ -474,8 +477,10 @@ const faqSchema = {
         </div>
       </div>
     </section>
+    )}
 
     <!-- CLIENT TESTIMONIALS SECTION -->
+    {page.testimonials.draft !== true && (
     <section class="py-20 bg-neutral-50/50 border-t border-neutral-100">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
         <div class="text-center max-w-3xl mx-auto mb-16">
@@ -514,8 +519,10 @@ const faqSchema = {
         </div>
       </div>
     </section>
+    )}
 
     <!-- FEATURED PROJECTS LIST -->
+    {page.projects.draft !== true && (
     <section class="py-20 bg-white border-t border-neutral-100">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
         <div class="max-w-3xl mb-16">
@@ -552,6 +559,7 @@ const faqSchema = {
         </div>
       </div>
     </section>
+    )}
 
     <!-- FAQS SECTION -->
     <section class="py-20 bg-neutral-50/50 border-t border-neutral-100">

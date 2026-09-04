@@ -3,9 +3,9 @@
     {
       "youtubeId": "E7HfgGOHjYE",
       "name": "Vivek Menon",
-      "role": "Chief Technology Officer, Evosys Technology",
+      "role": "CTO, Evosyz, Kochi",
       "thumb": "/testimonials/vivek-menon.webp",
-      "nameSource": "On-screen lower third in the video itself."
+      "nameSource": "On-screen lower third in the video itself. The lower third reads “Evosys Technology”; the company is spelled “Evosyz” everywhere else on the site (portfolio entry, text testimonial, GCC case study), so the site-wide spelling is used here. Confirm the legal spelling with the client and correct all of them together if the video is right."
     },
     {
       "youtubeId": "-N_zd4eCPPM",
@@ -20,7 +20,16 @@
       "role": "Client testimonial",
       "thumb": "/testimonials/client-3.webp",
       "nameSource": "Not yet identified — no caption in the video thumbnail and the YouTube title is generic."
-    },
+    }
+  ],
+  "devNotes": {
+    "origin": "Four YouTube URLs supplied by the client on 4 Sep 2026 to replace the dummy video panel, which showed a rotating stock image (/testimonial_video_preview*.png) behind a play button with no click handler.",
+    "identification": "Only Vivek Menon could be verified — his name and title are burnt into the video as a lower third and match the existing text testimonial in src/content/testimonials/vivek-menon.md. The other two are unlabelled: both YouTube titles are the generic 'Our Valued Customers Have to Say About Our Exceptional Services'. Their cards render with no name rather than an invented one — add the real names to `name` once the client confirms who is speaking.",
+    "embed": "Facade pattern — the card shows a self-hosted WebP thumbnail and only loads the YouTube iframe on click, so no request reaches Google until a visitor chooses to play. Uses youtube-nocookie.com.",
+    "reelCaveat": "Ncw3JZmIAoI is a YouTube Short and reads as a brand reel, not a client speaking. Moved out of `videos` into `unusedVideos` on 4 Sep 2026 so it no longer occupies a client-testimonial slot. Move it back only if it is re-cut as a client testimonial.",
+    "textTestimonialsKept": "The five text testimonials in src/content/testimonials/ are real, named clients (Olives Resort, Evosyz, Exacore IT, Greens Ayurveda, Rincy) and were left in place — only the fake video panel was replaced."
+  },
+  "unusedVideos": [
     {
       "youtubeId": "Ncw3JZmIAoI",
       "name": "",
@@ -29,12 +38,5 @@
       "isShort": true,
       "nameSource": "A YouTube Short titled \"Teknoppy Reel\" — supplied with the testimonials, but it reads as a brand reel rather than a client speaking."
     }
-  ],
-  "devNotes": {
-    "origin": "Four YouTube URLs supplied by the client on 4 Sep 2026 to replace the dummy video panel, which showed a rotating stock image (/testimonial_video_preview*.png) behind a play button with no click handler.",
-    "identification": "Only Vivek Menon could be verified — his name and title are burnt into the video as a lower third, and match the existing text testimonial in src/content/testimonials/vivek-menon.md. The other three are unlabelled: all three YouTube titles are the generic 'Our Valued Customers Have to Say About Our Exceptional Services'. Add the names when confirmed; cards render without a name until then.",
-    "embed": "Facade pattern — the card shows a self-hosted WebP thumbnail and only loads the YouTube iframe on click, so no request reaches Google until a visitor chooses to play. Uses youtube-nocookie.com.",
-    "reelCaveat": "Ncw3JZmIAoI is a Short and looks like a brand reel, not a client testimonial. Kept because it was supplied, but consider dropping it from a testimonial slot.",
-    "textTestimonialsKept": "The five text testimonials in src/content/testimonials/ are real, named clients (Olives Resort, Evosyz, Exacore IT, Greens Ayurveda, Rincy) and were left in place — only the fake video panel was replaced."
-  }
+  ]
 }
