@@ -12,6 +12,23 @@
 
   --font-sans: "Geist", "Inter", sans-serif;
 
+  /* Type scale, tuned up from Tailwind's defaults. The old bottom of the scale
+     (12px/14px body copy) read as too small on phones, where most of this site's
+     traffic lands. Every step from xs through xl gains roughly a pixel and a
+     looser default line-height; 2xl and above are left alone so mobile headings
+     keep their current size. Overriding the tokens here means the whole site
+     picks it up — no page-by-page class edits. */
+  --text-xs: 0.8125rem;               /* 13px, was 12px */
+  --text-xs--line-height: 1.55;
+  --text-sm: 0.9375rem;               /* 15px, was 14px */
+  --text-sm--line-height: 1.6;
+  --text-base: 1.0625rem;             /* 17px, was 16px */
+  --text-base--line-height: 1.7;
+  --text-lg: 1.1875rem;               /* 19px, was 18px */
+  --text-lg--line-height: 1.65;
+  --text-xl: 1.3125rem;               /* 21px, was 20px */
+  --text-xl--line-height: 1.55;
+
   --animate-float: float 6s ease-in-out infinite;
   --animate-lift: lift 0.3s ease-out forwards;
 

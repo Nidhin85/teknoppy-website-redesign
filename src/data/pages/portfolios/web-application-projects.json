@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "title": "Web Application Projects Kerala & UAE | Teknoppy Portfolio",
+    "description": "Custom web applications, portals and dashboards built by Teknoppy for businesses whose workflow did not fit off-the-shelf software."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Portfolio",
+      "href": "/portfolios/"
+    },
+    {
+      "name": "Web Application Projects",
+      "href": "/portfolios/web-application-projects/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Web Application Projects",
+      "h1Lead": "Web Application",
+      "h1Accent": "Projects",
+      "body": [
+        {
+          "html": "Booking systems, customer portals and dashboards <a href=\"/\" class=\"text-primary hover:underline\">Teknoppy</a> has built for businesses running processes that off-the-shelf software could not handle. Each was shaped around a workflow the client already had, rather than asking their team to adopt a new one — which is usually the reason the off-the-shelf tool failed in the first place."
+        }
+      ]
+    },
+    {
+      "type": "linkGroups",
+      "bg": "cream",
+      "badge": "Named Client Projects",
+      "h2": "Web Application Case Studies",
+      "intro": "Full write-ups for the applications below, covering the brief, the build and the outcome.",
+      "groups": [
+        {
+          "title": "Web Application",
+          "items": [
+            {
+              "label": "Libra Group UAE",
+              "text": "Web application case study for a Dubai facilities group",
+              "href": "/case-studies/libra-group-uae-web-application-design/",
+              "image": "/case-studies/libragroupuae.webp",
+              "imageAlt": "Libra Group UAE website homepage screenshot"
+            },
+            {
+              "label": "TriQare",
+              "text": "Web application case study for a healthtech emergency SOS platform",
+              "href": "/case-studies/triqare-web-application-design/",
+              "image": "/case-studies/triqare.webp",
+              "imageAlt": "TriQare website homepage screenshot"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "layout": "list",
+      "h2": "Application Services Behind This Work",
+      "intro": "The services these builds draw on, each with its own page.",
+      "items": [
+        {
+          "title": "Web Application Development",
+          "text": "Custom applications built around an existing business process — portals, booking systems and internal tools.",
+          "linkText": "Web Application Development →",
+          "href": "/web-application-development-company-kochi/"
+        },
+        {
+          "title": "Dashboard UI Design",
+          "text": "Interfaces for data-heavy screens, where the job is making a dense view readable rather than decorating it.",
+          "linkText": "Dashboard UI Design →",
+          "href": "/dashboard-ui-design-kochi/"
+        },
+        {
+          "title": "Web App UI Design",
+          "text": "Interface and interaction design for application screens, done before development starts.",
+          "linkText": "Web App UI Design →",
+          "href": "/web-app-ui-design-kochi/"
+        },
+        {
+          "title": "Marketplace Development",
+          "text": "Multi-vendor platforms with seller onboarding, listings management and split payments.",
+          "linkText": "Marketplace Development →",
+          "href": "/marketplace-development-company-kochi/"
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "soft",
+      "h2": "About These Applications",
+      "paragraphs": [
+        {
+          "html": "Both projects above began with <a href=\"/ux-audit-services-kochi/\" class=\"text-primary font-semibold hover:underline\">a UX audit</a> of how the work was being done before any screens were designed. <a href=\"/web-app-ui-design-kochi/\" class=\"text-primary font-semibold hover:underline\">Interface design</a> came next, and development only after the flow was agreed — the order matters most on applications, where a wrong assumption is expensive to unpick later."
+        },
+        {
+          "html": "Adoption and performance figures for these applications are documented on <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">Case Studies</a>. For the wider portfolio, see <a href=\"/portfolios/\" class=\"text-primary font-semibold hover:underline\">all project categories</a>."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "white",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "What counts as a web application rather than a website?",
+          "a": "A website presents information; an application does work. The projects above handle live requests, user accounts and operational data rather than published pages."
+        },
+        {
+          "q": "Will you work around our existing process?",
+          "a": "Yes. Both applications above were built around a workflow the client already ran, which is why they were commissioned instead of an off-the-shelf tool."
+        },
+        {
+          "q": "Do you design the interface as well as build it?",
+          "a": "Yes. Interface and dashboard design are done in-house before development begins.",
+          "aHtml": "Yes. <a href=\"/web-app-ui-design-kochi/\" class=\"text-primary font-semibold hover:underline\">Interface</a> and <a href=\"/dashboard-ui-design-kochi/\" class=\"text-primary font-semibold hover:underline\">dashboard design</a> are done in-house before development begins."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "cream",
+      "h2": "Have a project like this in mind?",
+      "ctas": [
+        {
+          "label": "Contact Teknoppy →",
+          "href": "/contact-us/"
+        }
+      ]
+    }
+  ],
+  "devNotes": {
+    "origin": "Created 2026-09-04. The portfolio hub (/portfolios/) had linked to this URL since launch but the page did not exist, so all five category links 404'd.",
+    "cardSource": "The project cards are copied from the matching group(s) in src/data/pages/case-study.json so the two directories cannot drift. Add a new case study to that file first, then mirror it here.",
+    "roleSplit": "Portfolio pages stay visual and project-based; ranking, traffic and revenue figures belong on /case-study/ and its sub-pages. Do not restate results here — that is the duplicate-content risk the hub's devNotes call out."
+  },
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Web Application Projects Kerala & UAE | Teknoppy Portfolio",
+    "description": "Custom web applications, portals and dashboards built by Teknoppy for businesses whose workflow did not fit off-the-shelf software.",
+    "url": "https://teknoppy.com/portfolios/web-application-projects/",
+    "isPartOf": {
+      "@type": "CollectionPage",
+      "name": "Web Design Portfolio Kerala | Teknoppy Projects",
+      "url": "https://teknoppy.com/portfolios/"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Libra Group UAE",
+          "url": "https://teknoppy.com/case-studies/libra-group-uae-web-application-design/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "TriQare",
+          "url": "https://teknoppy.com/case-studies/triqare-web-application-design/"
+        }
+      ]
+    }
+  }
+}

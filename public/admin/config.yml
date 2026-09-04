@@ -1808,6 +1808,26 @@ collections:
         label: "Portfolio Hub (/portfolios/)"
         file: "src/data/pages/portfolios.json"
         fields: *inner_page_fields
+      - name: website_projects
+        label: "Portfolio — Website Projects (/portfolios/website-projects/)"
+        file: "src/data/pages/portfolios/website-projects.json"
+        fields: *inner_page_fields
+      - name: wordpress_projects
+        label: "Portfolio — WordPress Projects (/portfolios/wordpress-projects/)"
+        file: "src/data/pages/portfolios/wordpress-projects.json"
+        fields: *inner_page_fields
+      - name: ecommerce_projects
+        label: "Portfolio — Ecommerce Projects (/portfolios/ecommerce-projects/)"
+        file: "src/data/pages/portfolios/ecommerce-projects.json"
+        fields: *inner_page_fields
+      - name: web_application_projects
+        label: "Portfolio — Web Application Projects (/portfolios/web-application-projects/)"
+        file: "src/data/pages/portfolios/web-application-projects.json"
+        fields: *inner_page_fields
+      - name: seo_case_studies
+        label: "Portfolio — SEO Case Studies (/portfolios/seo-case-studies/)"
+        file: "src/data/pages/portfolios/seo-case-studies.json"
+        fields: *inner_page_fields
       - name: seo_company_kerala
         label: "SEO Company Kerala"
         file: "src/data/pages/seo-company-kerala.json"

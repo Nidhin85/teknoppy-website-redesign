@@ -16,34 +16,118 @@
       {
         "title": "Web Design Tips and Guides Kerala",
         "text": "Practical web design tips and guides for Kerala businesses, covering layout, mobile usability, and what actually makes a website convert visitors into enquiries.",
-        "href": "/blog/web-design/"
+        "href": "/blog/web-design/",
+        "slug": "web-design",
+        "match": [
+          "Web Design",
+          "Design Trends",
+          "UI/UX",
+          "SEO & Design"
+        ],
+        "meta": {
+          "title": "Web Design Tips and Guides for Kerala Businesses | Teknoppy",
+          "description": "Practical web design tips and guides for Kerala businesses, covering layout, mobile usability, and what actually makes a website convert visitors into enquir"
+        },
+        "service": {
+          "label": "Web Design Company in Kochi",
+          "href": "/web-design-company-kochi/"
+        }
       },
       {
         "title": "WordPress Tips and Tutorials Kerala",
         "text": "Step by step WordPress tips and tutorials for Kerala businesses, from choosing the right theme to keeping your site fast, secure, and easy to manage yourself.",
-        "href": "/blog/wordpress/"
+        "href": "/blog/wordpress/",
+        "slug": "wordpress",
+        "match": [
+          "WordPress"
+        ],
+        "meta": {
+          "title": "WordPress Tips and Tutorials for Kerala Businesses | Teknoppy",
+          "description": "Step by step WordPress tips and tutorials for Kerala businesses, from choosing the right theme to keeping your site fast, secure, and easy to manage yourself"
+        },
+        "service": {
+          "label": "WordPress Development Company in Kochi",
+          "href": "/wordpress-development-company-kochi/"
+        }
       },
       {
         "title": "Ecommerce Website Tips Kerala",
         "text": "Ecommerce website tips for Kerala businesses selling online, covering product pages, checkout flow, and the small changes that turn browsers into buyers.",
-        "href": "/blog/ecommerce/"
+        "href": "/blog/ecommerce/",
+        "slug": "ecommerce",
+        "match": [
+          "Ecommerce",
+          "E-commerce"
+        ],
+        "meta": {
+          "title": "Ecommerce Website Tips for Kerala Businesses | Teknoppy",
+          "description": "Ecommerce website tips for Kerala businesses selling online, covering product pages, checkout flow, and the small changes that turn browsers into buyers."
+        },
+        "service": {
+          "label": "Ecommerce Website Development in Kochi",
+          "href": "/ecommerce-website-development-company-kochi/"
+        }
       },
       {
         "title": "Web Application Development Guides Kerala",
         "text": "Web application development guides for Kerala businesses building custom tools, from CRMs to booking systems, explained in plain, non technical language.",
-        "href": "/blog/web-application/"
+        "href": "/blog/web-application/",
+        "slug": "web-application",
+        "match": [
+          "Web Application",
+          "Web Applications"
+        ],
+        "meta": {
+          "title": "Web Application Development Guides Kerala | Teknoppy",
+          "description": "Web application development guides for Kerala businesses building custom tools, from CRMs to booking systems, explained in plain, non technical language."
+        },
+        "service": {
+          "label": "Web Application Development in Kochi",
+          "href": "/web-application-development-company-kochi/"
+        }
       },
       {
         "title": "SEO Tips and Strategies for Kerala Businesses",
         "text": "SEO tips and strategies for Kerala businesses, focused on the technical, local, and content moves that genuinely move rankings, not just theory.",
-        "href": "/blog/seo/"
+        "href": "/blog/seo/",
+        "slug": "seo",
+        "match": [
+          "SEO",
+          "SEO & Design",
+          "Local SEO",
+          "Technical SEO"
+        ],
+        "meta": {
+          "title": "SEO Tips and Strategies for Kerala Businesses | Teknoppy",
+          "description": "SEO tips and strategies for Kerala businesses, focused on the technical, local, and content moves that genuinely move rankings, not just theory."
+        },
+        "service": {
+          "label": "SEO Services",
+          "href": "/seo-services/"
+        }
       },
       {
         "title": "Kerala Business Growth and Digital Tips",
         "text": "Kerala business growth and digital tips covering marketing, branding, and how to use your website as a genuine sales tool rather than a digital brochure.",
-        "href": "/blog/kerala-business/"
+        "href": "/blog/kerala-business/",
+        "slug": "kerala-business",
+        "match": [
+          "Kerala Business",
+          "Business Growth",
+          "Digital Marketing"
+        ],
+        "meta": {
+          "title": "Kerala Business Growth and Digital Tips | Teknoppy",
+          "description": "Kerala business growth and digital tips covering marketing, branding, and how to use your website as a genuine sales tool rather than a digital brochure."
+        },
+        "service": {
+          "label": "Digital Marketing Company in Kerala",
+          "href": "/digital-marketing-company-kerala/"
+        }
       }
-    ]
+    ],
+    "otherHeading": "Other topics on the blog",
+    "emptyText": "We are publishing into this category next. In the meantime, browse the latest articles across every topic, or talk to us directly about your project."
   },
   "latest": {
     "heading": "Latest From The Blog",

@@ -1,0 +1,229 @@
+{
+  "meta": {
+    "title": "SEO & Digital Marketing Case Studies Kerala | Teknoppy Portfolio",
+    "description": "Teknoppy SEO and digital marketing case studies for clients in Kerala, Qatar and the UAE, with ranking and traffic results documented in full."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Portfolio",
+      "href": "/portfolios/"
+    },
+    {
+      "name": "SEO Case Studies",
+      "href": "/portfolios/seo-case-studies/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "SEO Case Studies",
+      "h1Lead": "SEO & Digital Marketing",
+      "h1Accent": "Case Studies",
+      "body": [
+        {
+          "html": "Search and digital marketing engagements <a href=\"/\" class=\"text-primary hover:underline\">Teknoppy</a> has run for clients in Kerala, Qatar and the UAE. Unlike the rest of this portfolio, these projects are judged on numbers rather than screens, so each card leads straight to the full write-up with its rankings, traffic and enquiry figures."
+        }
+      ]
+    },
+    {
+      "type": "linkGroups",
+      "bg": "cream",
+      "badge": "Named Client Projects",
+      "h2": "Search & Marketing Case Studies",
+      "intro": "Each engagement links to a full write-up with the results behind it.",
+      "groups": [
+        {
+          "title": "SEO",
+          "items": [
+            {
+              "label": "Kerala Dayz",
+              "text": "SEO strategy and GBP cleanup for a Kochi taxi and tour operator",
+              "href": "/case-studies/kerala-dayz-seo-services/",
+              "image": "/case-studies/keraladayz.webp",
+              "imageAlt": "Kerala Dayz website homepage screenshot"
+            },
+            {
+              "label": "General Tech Services — SEO Services",
+              "text": "An SEO strategy built for 15 calibration disciplines",
+              "href": "/case-studies/general-tech-services-seo-services/",
+              "image": "/case-studies/generaltech.webp",
+              "imageAlt": "General Tech Services — SEO Services website homepage screenshot"
+            },
+            {
+              "label": "Creative Web Design Qatar",
+              "text": "Ongoing SEO for a GCC web design agency",
+              "href": "/case-studies/creative-web-design-qatar-seo-content/",
+              "image": "/case-studies/webdesignqa.webp",
+              "imageAlt": "Creative Web Design Qatar website homepage screenshot"
+            }
+          ]
+        },
+        {
+          "title": "Digital Marketing",
+          "items": [
+            {
+              "label": "Direction North",
+              "imageFallback": "Social-first engagement",
+              "text": "Digital marketing for a retail display manufacturer",
+              "href": "/case-studies/direction-north-digital-marketing/"
+            },
+            {
+              "label": "Olives Boutique Resort",
+              "imageFallback": "Social-first engagement",
+              "text": "Digital marketing for a Wayanad eco-resort",
+              "href": "/case-studies/olives-boutique-resort-digital-marketing/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "layout": "list",
+      "h2": "Search Services Behind This Work",
+      "intro": "The services these engagements draw on, each with its own page.",
+      "items": [
+        {
+          "title": "SEO Services",
+          "text": "Technical, on-page and content SEO on live sites, reported against rankings and organic traffic.",
+          "linkText": "SEO Services →",
+          "href": "/seo-services/"
+        },
+        {
+          "title": "Local SEO",
+          "text": "Google Business Profile work, local landing pages and citation cleanup for businesses selling in a defined area.",
+          "linkText": "Local SEO Services →",
+          "href": "/local-seo-services-kochi/"
+        },
+        {
+          "title": "Ecommerce SEO",
+          "text": "Category and product-page search work on live stores.",
+          "linkText": "Ecommerce SEO Services →",
+          "href": "/ecommerce-seo-services-kochi/"
+        },
+        {
+          "title": "Digital Marketing",
+          "text": "Social, content and paid campaigns run alongside search rather than in place of it.",
+          "linkText": "Digital Marketing →",
+          "href": "/digital-marketing-company-kochi/"
+        },
+        {
+          "title": "Website Speed Optimization",
+          "text": "Core Web Vitals work, usually the first fix on a site whose rankings are held back by performance.",
+          "linkText": "Website Speed Optimization →",
+          "href": "/website-speed-optimization-services-kochi/"
+        },
+        {
+          "title": "UX Audit",
+          "text": "Where traffic arrives but does not convert, an audit of the pages it lands on.",
+          "linkText": "UX Audit Services →",
+          "href": "/ux-audit-services-kochi/"
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "soft",
+      "h2": "About These Engagements",
+      "paragraphs": [
+        {
+          "html": "Most of these began as <a href=\"/seo-company-kerala/\" class=\"text-primary font-semibold hover:underline\">SEO engagements</a> on a site someone else had built, which usually means the first month is technical cleanup rather than content. Where the business sells in a defined area, <a href=\"/local-seo-services-kochi/\" class=\"text-primary font-semibold hover:underline\">local SEO</a> and Google Business Profile work carried more weight than national rankings."
+        },
+        {
+          "html": "Full numbers for every engagement are on <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">Case Studies</a>. For design and build work, see <a href=\"/portfolios/\" class=\"text-primary font-semibold hover:underline\">the rest of the portfolio</a>."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "white",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Do these case studies include real numbers?",
+          "a": "Yes. Each engagement above links to a full write-up with its ranking, traffic and enquiry figures.",
+          "aHtml": "Yes. Each engagement above links to a full write-up on <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">Case Studies</a> with its ranking, traffic and enquiry figures."
+        },
+        {
+          "q": "Do you do SEO on sites you didn't build?",
+          "a": "Yes. Most of the engagements above started on an existing site built by someone else."
+        },
+        {
+          "q": "Is digital marketing run separately from SEO?",
+          "a": "They are separate services but usually run together — the social and campaign work above sat alongside search on the same accounts.",
+          "aHtml": "They are separate services but usually run together — the <a href=\"/digital-marketing-company-kerala/\" class=\"text-primary font-semibold hover:underline\">digital marketing</a> work above sat alongside search on the same accounts."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "cream",
+      "h2": "Have a project like this in mind?",
+      "ctas": [
+        {
+          "label": "Contact Teknoppy →",
+          "href": "/contact-us/"
+        }
+      ]
+    }
+  ],
+  "devNotes": {
+    "origin": "Created 2026-09-04. The portfolio hub (/portfolios/) had linked to this URL since launch but the page did not exist, so all five category links 404'd.",
+    "cardSource": "The project cards are copied from the matching group(s) in src/data/pages/case-study.json so the two directories cannot drift. Add a new case study to that file first, then mirror it here.",
+    "roleSplit": "Portfolio pages stay visual and project-based; ranking, traffic and revenue figures belong on /case-study/ and its sub-pages. Do not restate results here — that is the duplicate-content risk the hub's devNotes call out."
+  },
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "SEO & Digital Marketing Case Studies Kerala | Teknoppy Portfolio",
+    "description": "Teknoppy SEO and digital marketing case studies for clients in Kerala, Qatar and the UAE, with ranking and traffic results documented in full.",
+    "url": "https://teknoppy.com/portfolios/seo-case-studies/",
+    "isPartOf": {
+      "@type": "CollectionPage",
+      "name": "Web Design Portfolio Kerala | Teknoppy Projects",
+      "url": "https://teknoppy.com/portfolios/"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Kerala Dayz",
+          "url": "https://teknoppy.com/case-studies/kerala-dayz-seo-services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "General Tech Services — SEO Services",
+          "url": "https://teknoppy.com/case-studies/general-tech-services-seo-services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Creative Web Design Qatar",
+          "url": "https://teknoppy.com/case-studies/creative-web-design-qatar-seo-content/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Direction North",
+          "url": "https://teknoppy.com/case-studies/direction-north-digital-marketing/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Olives Boutique Resort",
+          "url": "https://teknoppy.com/case-studies/olives-boutique-resort-digital-marketing/"
+        }
+      ]
+    }
+  }
+}

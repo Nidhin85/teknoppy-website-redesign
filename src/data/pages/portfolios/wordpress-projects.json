@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "title": "WordPress Projects Kerala | Teknoppy Portfolio",
+    "description": "Custom WordPress builds and platform migrations by Teknoppy, including multilingual sites and moves off outdated platforms without losing search rankings."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Portfolio",
+      "href": "/portfolios/"
+    },
+    {
+      "name": "WordPress Projects",
+      "href": "/portfolios/wordpress-projects/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "WordPress Projects",
+      "h1Lead": "WordPress",
+      "h1Accent": "Projects",
+      "body": [
+        {
+          "html": "Custom WordPress builds and migrations from <a href=\"/\" class=\"text-primary hover:underline\">Teknoppy</a> — including sites moved off outdated platforms without losing existing rankings, traffic or years of published content. None of these are off-the-shelf themes: each was built so the client's own team could publish to it without calling a developer, which matters more a year after launch than it does at handover."
+        }
+      ]
+    },
+    {
+      "type": "linkGroups",
+      "bg": "cream",
+      "badge": "Named Client Projects",
+      "h2": "WordPress Case Studies",
+      "intro": "Full write-ups for the WordPress builds below, covering the brief, the build and the outcome.",
+      "groups": [
+        {
+          "title": "WordPress Development",
+          "items": [
+            {
+              "label": "Abrus Krishna Finance — WordPress Development",
+              "text": "WordPress site for a KML-registered Kerala lending company",
+              "href": "/case-studies/abrus-krishna-finance-wordpress-development/",
+              "image": "/case-studies/abruskrishna.webp",
+              "imageAlt": "Abrus Krishna Finance — WordPress Development website homepage screenshot"
+            },
+            {
+              "label": "Varma Ayurveda — WordPress Development",
+              "text": "Multilingual WordPress site for a German Ayurvedic retreat",
+              "href": "/case-studies/varma-ayurveda-wordpress-development/",
+              "image": "/case-studies/varmaayurveda.webp",
+              "imageAlt": "Varma Ayurveda — WordPress Development website homepage screenshot"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "layout": "list",
+      "h2": "WordPress Services Behind This Work",
+      "intro": "The services these builds draw on, each with its own page.",
+      "items": [
+        {
+          "title": "Custom WordPress Development",
+          "text": "Bespoke themes and functionality built to the brief, rather than a purchased theme bent into shape.",
+          "linkText": "Custom WordPress Development →",
+          "href": "/custom-wordpress-development-kochi/"
+        },
+        {
+          "title": "WordPress Migration",
+          "text": "Moves off Wix, Blogger, static HTML and outdated WordPress installs, with redirects mapped so existing rankings survive the switch.",
+          "linkText": "WordPress Migration Services →",
+          "href": "/wordpress-migration-services-kochi/"
+        },
+        {
+          "title": "WordPress Speed Optimization",
+          "text": "Core Web Vitals work on existing WordPress sites — image weight, render-blocking assets, caching and hosting configuration.",
+          "linkText": "WordPress Speed Optimization →",
+          "href": "/wordpress-speed-optimization-kochi/"
+        },
+        {
+          "title": "WordPress Maintenance",
+          "text": "Ongoing updates, backups, uptime monitoring and security patching after launch.",
+          "linkText": "WordPress Maintenance Services →",
+          "href": "/wordpress-maintenance-services-kochi/"
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "soft",
+      "h2": "About These Builds",
+      "paragraphs": [
+        {
+          "html": "Both projects above were delivered as full <a href=\"/wordpress-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">WordPress development</a> engagements, with <a href=\"/ui-ux-design-company-in-kochi/\" class=\"text-primary font-semibold hover:underline\">UI/UX design</a> done before a line of theme code was written. Where a client already had a WordPress site, the work started as <a href=\"/wordpress-web-design-kochi/\" class=\"text-primary font-semibold hover:underline\">WordPress web design</a> on the existing install instead of a rebuild."
+        },
+        {
+          "html": "Rankings and traffic figures for these builds are documented on <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">Case Studies</a>. For the wider portfolio, see <a href=\"/portfolios/\" class=\"text-primary font-semibold hover:underline\">all project categories</a>."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "white",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Can Teknoppy move my existing site to WordPress without losing rankings?",
+          "a": "Yes. Migrations are planned around a redirect map so existing URLs, rankings and traffic carry across.",
+          "aHtml": "Yes. Migrations are planned around a redirect map so existing URLs, rankings and traffic carry across — see <a href=\"/wordpress-migration-services-kochi/\" class=\"text-primary font-semibold hover:underline\">WordPress Migration Services</a>."
+        },
+        {
+          "q": "Do you build custom themes or use pre-made ones?",
+          "a": "Custom. Each build above uses a theme written for that client, so the site's structure matches their content rather than the other way round."
+        },
+        {
+          "q": "Can my team update the site after launch?",
+          "a": "Yes. Every WordPress build here hands over an editing setup the client's own team uses without developer help, and ongoing maintenance is available separately.",
+          "aHtml": "Yes. Every WordPress build here hands over an editing setup the client's own team uses without developer help, and <a href=\"/wordpress-maintenance-services-kochi/\" class=\"text-primary font-semibold hover:underline\">ongoing maintenance</a> is available separately."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "cream",
+      "h2": "Have a project like this in mind?",
+      "ctas": [
+        {
+          "label": "Contact Teknoppy →",
+          "href": "/contact-us/"
+        }
+      ]
+    }
+  ],
+  "devNotes": {
+    "origin": "Created 2026-09-04. The portfolio hub (/portfolios/) had linked to this URL since launch but the page did not exist, so all five category links 404'd.",
+    "cardSource": "The project cards are copied from the matching group(s) in src/data/pages/case-study.json so the two directories cannot drift. Add a new case study to that file first, then mirror it here.",
+    "roleSplit": "Portfolio pages stay visual and project-based; ranking, traffic and revenue figures belong on /case-study/ and its sub-pages. Do not restate results here — that is the duplicate-content risk the hub's devNotes call out."
+  },
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "WordPress Projects Kerala | Teknoppy Portfolio",
+    "description": "Custom WordPress builds and platform migrations by Teknoppy, including multilingual sites and moves off outdated platforms without losing search rankings.",
+    "url": "https://teknoppy.com/portfolios/wordpress-projects/",
+    "isPartOf": {
+      "@type": "CollectionPage",
+      "name": "Web Design Portfolio Kerala | Teknoppy Projects",
+      "url": "https://teknoppy.com/portfolios/"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Abrus Krishna Finance — WordPress Development",
+          "url": "https://teknoppy.com/case-studies/abrus-krishna-finance-wordpress-development/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Varma Ayurveda — WordPress Development",
+          "url": "https://teknoppy.com/case-studies/varma-ayurveda-wordpress-development/"
+        }
+      ]
+    }
+  }
+}

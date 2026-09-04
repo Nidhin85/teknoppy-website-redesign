@@ -106,7 +106,7 @@ const isCurrent = (href: string) => pathname === href || pathname === href.repla
       <div class="lg:col-span-8 grid gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
         {footer.columns.map((col) => (
           <nav class="space-y-4" aria-label={col.heading}>
-            <h2 class="text-[10px] font-black text-primary uppercase tracking-[0.15em]">{col.heading}</h2>
+            <h2 class="text-[12px] font-black text-primary uppercase tracking-[0.15em]">{col.heading}</h2>
             <ul class="space-y-2.5">
               {col.links.map((link) => (
                 <li>
@@ -129,7 +129,7 @@ const isCurrent = (href: string) => pathname === href || pathname === href.repla
 
     <!-- SERVICE AREA STRIP -->
     <div class="border-t border-white/10 py-8 flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-8">
-      <span class="text-[10px] font-black text-neutral-500 uppercase tracking-[0.15em] flex-shrink-0">Areas We Serve</span>
+      <span class="text-[12px] font-black text-neutral-500 uppercase tracking-[0.15em] flex-shrink-0">Areas We Serve</span>
       <p class="text-sm text-neutral-400 font-medium leading-relaxed">{footer.serviceAreas}</p>
     </div>
 

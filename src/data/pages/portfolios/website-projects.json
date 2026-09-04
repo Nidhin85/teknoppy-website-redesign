@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "title": "Website Design Projects Kerala & GCC | Teknoppy Portfolio",
+    "description": "Business and corporate website projects built by Teknoppy for clients in Kerala, the UAE and Qatar, each linked to a full case study."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Portfolio",
+      "href": "/portfolios/"
+    },
+    {
+      "name": "Website Projects",
+      "href": "/portfolios/website-projects/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Website Projects",
+      "h1Lead": "Website Design",
+      "h1Accent": "Projects",
+      "body": [
+        {
+          "html": "Business and corporate websites <a href=\"/\" class=\"text-primary hover:underline\">Teknoppy</a> has designed and built, from single-page sites through to multi-department platforms with dozens of pages and several content types. Each one was structured around the client's actual sales process rather than a template, which is why an industrial supplier's site and a personal brand site here look nothing alike. The projects below span Kerala and <a href=\"/web-design-company-for-gcc-businesses/\" class=\"text-primary hover:underline\">the GCC</a> — follow any card for the full write-up and the results behind it."
+        }
+      ]
+    },
+    {
+      "type": "linkGroups",
+      "bg": "cream",
+      "badge": "Named Client Projects",
+      "h2": "Website Case Studies",
+      "intro": "Every project below has a full write-up covering the brief, the build and the outcome.",
+      "groups": [
+        {
+          "title": "Web Design & Development",
+          "items": [
+            {
+              "label": "General Tech Services — Web Design",
+              "text": "UAE ISO 17025 calibration lab website redesign",
+              "href": "/case-studies/general-tech-services-web-design/",
+              "image": "/case-studies/generaltech.webp",
+              "imageAlt": "General Tech Services — Web Design website homepage screenshot"
+            },
+            {
+              "label": "Leema Engineering",
+              "text": "Web design case study for a GCC industrial supplier",
+              "href": "/case-studies/leema-engineering-web-design-gcc/",
+              "image": "/case-studies/leemaeng.webp",
+              "imageAlt": "Leema Engineering website homepage screenshot"
+            },
+            {
+              "label": "Cochin Suraksha",
+              "text": "Kochi fire & safety company website evolving into Civil & MEP",
+              "href": "/case-studies/cochin-suraksha-web-design-development/",
+              "image": "/case-studies/cochinsuraksha.webp",
+              "imageAlt": "Cochin Suraksha website homepage screenshot"
+            },
+            {
+              "label": "Mount Bell Global Studies",
+              "text": "Web design for a Kerala overseas education consultancy",
+              "href": "/case-studies/mount-bell-global-studies-web-design-development/",
+              "image": "/case-studies/mountbell.webp",
+              "imageAlt": "Mount Bell Global Studies website homepage screenshot"
+            },
+            {
+              "label": "Lenaa",
+              "text": "Personal brand website for an actor, author and TEDx speaker",
+              "href": "/lenaa-personal-brand-website-case-study/",
+              "image": "/case-studies/lenaalife.webp",
+              "imageAlt": "Lenaa website homepage screenshot"
+            }
+          ]
+        },
+        {
+          "title": "UI/UX Design",
+          "items": [
+            {
+              "label": "Abrus Krishna Finance — UI/UX Design",
+              "text": "UI/UX design for a KML-registered Kerala lending company",
+              "href": "/case-studies/abrus-krishna-finance-ui-ux-design/",
+              "image": "/case-studies/abruskrishna.webp",
+              "imageAlt": "Abrus Krishna Finance — UI/UX Design website homepage screenshot"
+            },
+            {
+              "label": "Varma Ayurveda — UI/UX Design",
+              "text": "UI/UX design case study for a multilingual wellness retreat",
+              "href": "/case-studies/varma-ayurveda-ui-ux-design/",
+              "image": "/case-studies/varmaayurveda.webp",
+              "imageAlt": "Varma Ayurveda — UI/UX Design website homepage screenshot"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "projects",
+      "bg": "white",
+      "h2": "More Website Work",
+      "intro": "Further website projects delivered for Kerala clients."
+    },
+    {
+      "type": "prose",
+      "bg": "soft",
+      "h2": "How These Projects Were Built",
+      "paragraphs": [
+        {
+          "html": "Design and build on every project here was led by the same senior team, not rotated between freelancers. Most started as a <a href=\"/web-design-company-kochi/\" class=\"text-primary font-semibold hover:underline\">web design</a> engagement and grew — <a href=\"/corporate-website-development-kochi/\" class=\"text-primary font-semibold hover:underline\">corporate site builds</a>, <a href=\"/business-website-development-kochi/\" class=\"text-primary font-semibold hover:underline\">business websites</a> and <a href=\"/ui-ux-design-company-in-kochi/\" class=\"text-primary font-semibold hover:underline\">UI/UX design</a> often run together on the same brief."
+        },
+        {
+          "html": "Results, rankings and traffic figures for these projects live on the <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">Case Studies</a> page, so this portfolio stays focused on the work itself. For more on the people delivering it, see <a href=\"/sanal-edison-digital-strategist/\" class=\"text-primary font-semibold hover:underline\">Leadership</a> and <a href=\"/certifications/\" class=\"text-primary font-semibold hover:underline\">Certifications</a>."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "white",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "What kinds of websites has Teknoppy built?",
+          "a": "Corporate sites, industrial and manufacturing sites, education and consultancy sites, personal brand sites, and multi-department platforms. Browse the projects above for live examples close to your own industry."
+        },
+        {
+          "q": "Do you work with clients outside Kerala?",
+          "a": "Yes. Alongside Kerala clients, several projects here were delivered for businesses in the UAE and Qatar.",
+          "aHtml": "Yes. Alongside Kerala clients, several projects here were delivered for businesses in the UAE and Qatar — see <a href=\"/web-design-company-for-gcc-businesses/\" class=\"text-primary font-semibold hover:underline\">Web Design for GCC Businesses</a>."
+        },
+        {
+          "q": "Where can I see the results of these projects?",
+          "a": "This page shows the design work. Ranking, traffic and enquiry figures are documented separately on Case Studies.",
+          "aHtml": "This page shows the design work. Ranking, traffic and enquiry figures are documented separately on <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">Case Studies</a>."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "cream",
+      "h2": "Have a project like this in mind?",
+      "ctas": [
+        {
+          "label": "Contact Teknoppy →",
+          "href": "/contact-us/"
+        }
+      ]
+    }
+  ],
+  "devNotes": {
+    "origin": "Created 2026-09-04. The portfolio hub (/portfolios/) had linked to this URL since launch but the page did not exist, so all five category links 404'd.",
+    "cardSource": "The project cards are copied from the matching group(s) in src/data/pages/case-study.json so the two directories cannot drift. Add a new case study to that file first, then mirror it here.",
+    "roleSplit": "Portfolio pages stay visual and project-based; ranking, traffic and revenue figures belong on /case-study/ and its sub-pages. Do not restate results here — that is the duplicate-content risk the hub's devNotes call out."
+  },
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Website Design Projects Kerala & GCC | Teknoppy Portfolio",
+    "description": "Business and corporate website projects built by Teknoppy for clients in Kerala, the UAE and Qatar, each linked to a full case study.",
+    "url": "https://teknoppy.com/portfolios/website-projects/",
+    "isPartOf": {
+      "@type": "CollectionPage",
+      "name": "Web Design Portfolio Kerala | Teknoppy Projects",
+      "url": "https://teknoppy.com/portfolios/"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "General Tech Services — Web Design",
+          "url": "https://teknoppy.com/case-studies/general-tech-services-web-design/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Leema Engineering",
+          "url": "https://teknoppy.com/case-studies/leema-engineering-web-design-gcc/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cochin Suraksha",
+          "url": "https://teknoppy.com/case-studies/cochin-suraksha-web-design-development/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Mount Bell Global Studies",
+          "url": "https://teknoppy.com/case-studies/mount-bell-global-studies-web-design-development/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Lenaa",
+          "url": "https://teknoppy.com/lenaa-personal-brand-website-case-study/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Abrus Krishna Finance — UI/UX Design",
+          "url": "https://teknoppy.com/case-studies/abrus-krishna-finance-ui-ux-design/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Varma Ayurveda — UI/UX Design",
+          "url": "https://teknoppy.com/case-studies/varma-ayurveda-ui-ux-design/"
+        }
+      ]
+    }
+  }
+}

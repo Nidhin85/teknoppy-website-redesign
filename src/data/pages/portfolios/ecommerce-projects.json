@@ -1,0 +1,243 @@
+{
+  "meta": {
+    "title": "Ecommerce & Shopify Projects Kerala & GCC | Teknoppy Portfolio",
+    "description": "WooCommerce and Shopify stores built by Teknoppy for retailers in Kerala, the UAE, the UK and India, each linked to a full case study."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Portfolio",
+      "href": "/portfolios/"
+    },
+    {
+      "name": "Ecommerce Projects",
+      "href": "/portfolios/ecommerce-projects/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Ecommerce Projects",
+      "h1Lead": "Ecommerce & Shopify",
+      "h1Accent": "Projects",
+      "body": [
+        {
+          "html": "Online stores <a href=\"/\" class=\"text-primary hover:underline\">Teknoppy</a> has built on WooCommerce and Shopify for retailers in Kerala, the UAE, the UK and India — covering product catalogues, payment setup, checkout design and post-launch conversion tracking. A store is judged on what happens after launch, not at it, so each build here was set up to be measured from day one."
+        }
+      ]
+    },
+    {
+      "type": "linkGroups",
+      "bg": "cream",
+      "badge": "Named Client Projects",
+      "h2": "Ecommerce Case Studies",
+      "intro": "Stores grouped by the platform they were built on. Each links to a full write-up.",
+      "groups": [
+        {
+          "title": "Ecommerce Development",
+          "items": [
+            {
+              "label": "GetSkill Online",
+              "text": "UK ecommerce certification training platform",
+              "href": "/case-studies/getskillonline-ecommerce-website-development/",
+              "image": "/case-studies/getskillonline.webp",
+              "imageAlt": "GetSkill Online website homepage screenshot"
+            },
+            {
+              "label": "My PlantStore",
+              "text": "Dubai ecommerce plant nursery website",
+              "href": "/case-studies/myplantstore-ecommerce-website-development/",
+              "image": "/case-studies/myplantstore.webp",
+              "imageAlt": "My PlantStore website homepage screenshot"
+            },
+            {
+              "label": "Sun and Moon Korean",
+              "text": "Mumbai kimchi and K-fashion ecommerce content",
+              "href": "/case-studies/sun-and-moon-korean-ecommerce-website/",
+              "image": "/case-studies/sunandmoonkorean.webp",
+              "imageAlt": "Sun and Moon Korean website homepage screenshot"
+            }
+          ]
+        },
+        {
+          "title": "Shopify",
+          "items": [
+            {
+              "label": "Nuelments",
+              "text": "Shopify store for an Indian D2C hair care brand",
+              "href": "/case-studies/nuelments-shopify-ecommerce/",
+              "image": "/case-studies/nuelments.webp",
+              "imageAlt": "Nuelments website homepage screenshot"
+            },
+            {
+              "label": "Modestsisters",
+              "text": "Shopify store for a UAE modest fashion brand",
+              "href": "/case-studies/modestsisters-shopify-ecommerce/",
+              "image": "/case-studies/modestsisters.webp",
+              "imageAlt": "Modestsisters website homepage screenshot"
+            },
+            {
+              "label": "Apolo Mattress",
+              "text": "Shopify store for a Kerala mattress manufacturer",
+              "href": "/case-studies/apolo-mattress-shopify-ecommerce/",
+              "image": "/case-studies/apolomattress.webp",
+              "imageAlt": "Apolo Mattress website homepage screenshot"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "layout": "list",
+      "h2": "Ecommerce Services Behind This Work",
+      "intro": "The services these stores draw on, each with its own page.",
+      "items": [
+        {
+          "title": "Ecommerce Website Development",
+          "text": "Full store builds — catalogue structure, product templates, checkout and post-launch tracking.",
+          "linkText": "Ecommerce Website Development →",
+          "href": "/ecommerce-website-development-company-kochi/"
+        },
+        {
+          "title": "Shopify Development",
+          "text": "Shopify store setup, theme customisation and app configuration for D2C and retail brands.",
+          "linkText": "Shopify Development →",
+          "href": "/shopify-development-company-kochi/"
+        },
+        {
+          "title": "WooCommerce Development",
+          "text": "WooCommerce stores on WordPress, for clients who want the catalogue and the content site on one platform.",
+          "linkText": "WooCommerce Development →",
+          "href": "/woocommerce-development-company-kochi/"
+        },
+        {
+          "title": "Payment Gateway Integration",
+          "text": "Domestic and international gateway setup, including multi-currency checkout for GCC and overseas customers.",
+          "linkText": "Payment Gateway Integration →",
+          "href": "/payment-gateway-integration-kochi/"
+        },
+        {
+          "title": "Custom Ecommerce Development",
+          "text": "Stores whose catalogue, pricing or fulfilment rules do not fit a standard platform without custom work.",
+          "linkText": "Custom Ecommerce Development →",
+          "href": "/custom-ecommerce-development-kochi/"
+        },
+        {
+          "title": "Ecommerce SEO",
+          "text": "Category and product-page search work on live stores, run after launch rather than bolted on later.",
+          "linkText": "Ecommerce SEO Services →",
+          "href": "/ecommerce-seo-services-kochi/"
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "soft",
+      "h2": "About These Stores",
+      "paragraphs": [
+        {
+          "html": "Platform choice on these projects followed the catalogue, not a preference — Shopify where the client wanted a hosted store and fast setup, <a href=\"/woocommerce-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">WooCommerce</a> where the store had to sit alongside a large content site. Several also run <a href=\"/ecommerce-seo-services-kochi/\" class=\"text-primary font-semibold hover:underline\">ecommerce SEO</a> after launch."
+        },
+        {
+          "html": "Conversion, traffic and revenue figures for these stores are documented on <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">Case Studies</a>. For the wider portfolio, see <a href=\"/portfolios/\" class=\"text-primary font-semibold hover:underline\">all project categories</a>."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "white",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Do you build on Shopify or WooCommerce?",
+          "a": "Both. The projects above include three Shopify stores and three built on other ecommerce stacks — the platform is chosen to fit the catalogue and the client's team, not the other way round."
+        },
+        {
+          "q": "Have you built stores that sell outside India?",
+          "a": "Yes. The stores above include a UK training platform, a Dubai nursery and a UAE fashion brand, with multi-currency checkout and international payment gateways configured accordingly."
+        },
+        {
+          "q": "Where can I see conversion results from these stores?",
+          "a": "This page shows the store builds. Conversion and revenue figures are documented separately on Case Studies.",
+          "aHtml": "This page shows the store builds. Conversion and revenue figures are documented separately on <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">Case Studies</a>."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "cream",
+      "h2": "Have a project like this in mind?",
+      "ctas": [
+        {
+          "label": "Contact Teknoppy →",
+          "href": "/contact-us/"
+        }
+      ]
+    }
+  ],
+  "devNotes": {
+    "origin": "Created 2026-09-04. The portfolio hub (/portfolios/) had linked to this URL since launch but the page did not exist, so all five category links 404'd.",
+    "cardSource": "The project cards are copied from the matching group(s) in src/data/pages/case-study.json so the two directories cannot drift. Add a new case study to that file first, then mirror it here.",
+    "roleSplit": "Portfolio pages stay visual and project-based; ranking, traffic and revenue figures belong on /case-study/ and its sub-pages. Do not restate results here — that is the duplicate-content risk the hub's devNotes call out."
+  },
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Ecommerce & Shopify Projects Kerala & GCC | Teknoppy Portfolio",
+    "description": "WooCommerce and Shopify stores built by Teknoppy for retailers in Kerala, the UAE, the UK and India, each linked to a full case study.",
+    "url": "https://teknoppy.com/portfolios/ecommerce-projects/",
+    "isPartOf": {
+      "@type": "CollectionPage",
+      "name": "Web Design Portfolio Kerala | Teknoppy Projects",
+      "url": "https://teknoppy.com/portfolios/"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "GetSkill Online",
+          "url": "https://teknoppy.com/case-studies/getskillonline-ecommerce-website-development/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "My PlantStore",
+          "url": "https://teknoppy.com/case-studies/myplantstore-ecommerce-website-development/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Sun and Moon Korean",
+          "url": "https://teknoppy.com/case-studies/sun-and-moon-korean-ecommerce-website/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Nuelments",
+          "url": "https://teknoppy.com/case-studies/nuelments-shopify-ecommerce/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Modestsisters",
+          "url": "https://teknoppy.com/case-studies/modestsisters-shopify-ecommerce/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Apolo Mattress",
+          "url": "https://teknoppy.com/case-studies/apolo-mattress-shopify-ecommerce/"
+        }
+      ]
+    }
+  }
+}

@@ -1,6 +1,13 @@
 {
   "videos": [
     {
+      "youtubeId": "ocV7KcfU9vs",
+      "name": "Lenaa",
+      "role": "Actor, Author & TEDx Speaker, Kerala",
+      "thumb": "/testimonials/lenaa.webp",
+      "nameSource": "Identified by the client on 4 Sep 2026. Lenaa is the subject of the Lenaa personal brand website case study (/lenaa-personal-brand-website-case-study/); role wording follows that page's description of her as a Malayalam cinema actor, bestselling author and three-time TEDx speaker."
+    },
+    {
       "youtubeId": "E7HfgGOHjYE",
       "name": "Vivek Menon",
       "role": "CTO, Evosyz, Kochi",
@@ -13,21 +20,15 @@
       "role": "Client testimonial",
       "thumb": "/testimonials/client-1.webp",
       "nameSource": "Not yet identified — no caption in the video thumbnail and the YouTube title is generic."
-    },
-    {
-      "youtubeId": "ocV7KcfU9vs",
-      "name": "",
-      "role": "Client testimonial",
-      "thumb": "/testimonials/client-3.webp",
-      "nameSource": "Not yet identified — no caption in the video thumbnail and the YouTube title is generic."
     }
   ],
   "devNotes": {
     "origin": "Four YouTube URLs supplied by the client on 4 Sep 2026 to replace the dummy video panel, which showed a rotating stock image (/testimonial_video_preview*.png) behind a play button with no click handler.",
-    "identification": "Only Vivek Menon could be verified — his name and title are burnt into the video as a lower third and match the existing text testimonial in src/content/testimonials/vivek-menon.md. The other two are unlabelled: both YouTube titles are the generic 'Our Valued Customers Have to Say About Our Exceptional Services'. Their cards render with no name rather than an invented one — add the real names to `name` once the client confirms who is speaking.",
+    "identification": "Vivek Menon's name and title are burnt into his video as a lower third and match the existing text testimonial in src/content/testimonials/vivek-menon.md. Lenaa was identified by the client on 4 Sep 2026 and now leads the panel at the client's request. The remaining video (-N_zd4eCPPM) is still unlabelled — its YouTube title is the generic 'Our Valued Customers Have to Say About Our Exceptional Services'. It renders with no name rather than an invented one — add the real name to `name` once the client confirms who is speaking.",
     "embed": "Facade pattern — the card shows a self-hosted WebP thumbnail and only loads the YouTube iframe on click, so no request reaches Google until a visitor chooses to play. Uses youtube-nocookie.com.",
     "reelCaveat": "Ncw3JZmIAoI is a YouTube Short and reads as a brand reel, not a client speaking. Moved out of `videos` into `unusedVideos` on 4 Sep 2026 so it no longer occupies a client-testimonial slot. Move it back only if it is re-cut as a client testimonial.",
-    "textTestimonialsKept": "The five text testimonials in src/content/testimonials/ are real, named clients (Olives Resort, Evosyz, Exacore IT, Greens Ayurveda, Rincy) and were left in place — only the fake video panel was replaced."
+    "textTestimonialsKept": "The five text testimonials in src/content/testimonials/ are real, named clients (Olives Resort, Evosyz, Exacore IT, Greens Ayurveda, Rincy) and were left in place — only the fake video panel was replaced.",
+    "order": "Panel order is the array order in `videos`, not a sort key. Lenaa first, then Vivek Menon, then the unidentified client — set by the client on 4 Sep 2026."
   },
   "unusedVideos": [
     {

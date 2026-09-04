@@ -5,66 +5,6 @@
   "outputDirectory": "dist",
   "redirects": [
     {
-      "source": "/blog/ecommerce",
-      "destination": "/blog/",
-      "permanent": false
-    },
-    {
-      "source": "/blog/ecommerce/",
-      "destination": "/blog/",
-      "permanent": false
-    },
-    {
-      "source": "/blog/kerala-business",
-      "destination": "/blog/",
-      "permanent": false
-    },
-    {
-      "source": "/blog/kerala-business/",
-      "destination": "/blog/",
-      "permanent": false
-    },
-    {
-      "source": "/blog/seo",
-      "destination": "/blog/",
-      "permanent": false
-    },
-    {
-      "source": "/blog/seo/",
-      "destination": "/blog/",
-      "permanent": false
-    },
-    {
-      "source": "/blog/web-application",
-      "destination": "/blog/",
-      "permanent": false
-    },
-    {
-      "source": "/blog/web-application/",
-      "destination": "/blog/",
-      "permanent": false
-    },
-    {
-      "source": "/blog/web-design",
-      "destination": "/blog/",
-      "permanent": false
-    },
-    {
-      "source": "/blog/web-design/",
-      "destination": "/blog/",
-      "permanent": false
-    },
-    {
-      "source": "/blog/wordpress",
-      "destination": "/blog/",
-      "permanent": false
-    },
-    {
-      "source": "/blog/wordpress/",
-      "destination": "/blog/",
-      "permanent": false
-    },
-    {
       "source": "/book-a-consultation",
       "destination": "/contact-us/",
       "permanent": false

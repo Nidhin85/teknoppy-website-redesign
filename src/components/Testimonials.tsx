@@ -349,7 +349,7 @@ export default function Testimonials({
                         )}
                         <div>
                           {currentVideo.name && <h4 className="font-bold text-white text-sm">{currentVideo.name}</h4>}
-                          {currentVideo.role && <p className="text-[10px] text-white/70 font-medium">{currentVideo.role}</p>}
+                          {currentVideo.role && <p className="text-[12px] text-white/70 font-medium">{currentVideo.role}</p>}
                         </div>
                       </div>
                     </div>
