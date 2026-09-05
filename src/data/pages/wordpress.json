@@ -10,13 +10,31 @@
       "after": "Development Company Kochi"
     },
     "body": "Custom · Mobile-First · SEO-Ready WordPress Solutions for Kerala Businesses Since 2018. We build WordPress platforms that rank, convert, and scale.",
-    "ctaPrimary": { "label": "Book a Free Audit", "href": "#contact" },
-    "ctaSecondary": { "label": "Explore Our Services", "href": "#services" },
+    "ctaPrimary": {
+      "label": "Book a Free Audit",
+      "href": "#contact"
+    },
+    "ctaSecondary": {
+      "label": "Explore Our Services",
+      "href": "#services"
+    },
     "statCards": [
-      { "value": "120+", "label": "WordPress Projects" },
-      { "value": "2018", "label": "Established" },
-      { "value": "Page 1", "label": "Google Results" },
-      { "value": "Kerala", "label": "Wide Coverage" }
+      {
+        "value": "120+",
+        "label": "WordPress Projects"
+      },
+      {
+        "value": "2018",
+        "label": "Established"
+      },
+      {
+        "value": "Page 1",
+        "label": "Google Results"
+      },
+      {
+        "value": "Kerala",
+        "label": "Wide Coverage"
+      }
     ]
   },
   "introBand": {
@@ -151,12 +169,30 @@
       "price": "Estimated Investment"
     },
     "rows": [
-      { "type": "Basic WordPress Website (5–8 pages)", "price": "Rs. 40,000 – 80,000" },
-      { "type": "Professional Multi-Page WordPress (10–20 pages)", "price": "Rs. 80,000 – 1,80,000" },
-      { "type": "Corporate WordPress with CMS (20–40 pages)", "price": "Rs. 1,80,000 – 4,00,000" },
-      { "type": "WooCommerce Store (15–30 products)", "price": "Rs. 1,00,000 – 2,50,000" },
-      { "type": "WordPress Migration (from other platforms)", "price": "Rs. 30,000 – 1,20,000" },
-      { "type": "WordPress Maintenance Plans (monthly)", "price": "Rs. 5,000 – 15,000 / mo" }
+      {
+        "type": "Basic WordPress Website (5–8 pages)",
+        "price": "Rs. 40,000 – 80,000"
+      },
+      {
+        "type": "Professional Multi-Page WordPress (10–20 pages)",
+        "price": "Rs. 80,000 – 1,80,000"
+      },
+      {
+        "type": "Corporate WordPress with CMS (20–40 pages)",
+        "price": "Rs. 1,80,000 – 4,00,000"
+      },
+      {
+        "type": "WooCommerce Store (15–30 products)",
+        "price": "Rs. 1,00,000 – 2,50,000"
+      },
+      {
+        "type": "WordPress Migration (from other platforms)",
+        "price": "Rs. 30,000 – 1,20,000"
+      },
+      {
+        "type": "WordPress Maintenance Plans (monthly)",
+        "price": "Rs. 5,000 – 15,000 / mo"
+      }
     ],
     "footnote": "Final pricing depends on pages, custom functionality, content needs, integration complexity, and timeline. Every project receives a written quote before work begins."
   },
@@ -168,14 +204,38 @@
     },
     "intro": "A hospital website serves completely different user intent than a restaurant website — and we design for that specific intent every time.",
     "items": [
-      { "name": "Startups & New Business", "desc": "Credibility-building WordPress launch sites converting early-stage visitors into qualified leads." },
-      { "name": "Hospitals & Healthcare", "desc": "Trust-first WordPress sites with appointment booking, doctor profiles, and structured health content." },
-      { "name": "Real Estate Agencies", "desc": "Property listing WordPress platforms with search filters, maps, enquiry forms, and agent profiles." },
-      { "name": "Restaurants & Food", "desc": "Mobile-first WordPress sites with menu integration, reservations, and Google Maps connectivity." },
-      { "name": "Schools & Education", "desc": "Structured WordPress sites with admission forms, faculty pages, course listings, and parent portals." },
-      { "name": "Tourism & Travel", "desc": "Visually rich conversion-focused WordPress sites with package listings and booking enquiry systems." },
-      { "name": "Professional Services", "desc": "High-authority WordPress sites for law firms, consultants, CAs, and financial advisors." },
-      { "name": "Manufacturing & B2B", "desc": "Corporate-grade WordPress B2B sites with product catalogues and enquiry architecture." }
+      {
+        "name": "Startups & New Business",
+        "desc": "Credibility-building WordPress launch sites converting early-stage visitors into qualified leads."
+      },
+      {
+        "name": "Hospitals & Healthcare",
+        "desc": "Trust-first WordPress sites with appointment booking, doctor profiles, and structured health content."
+      },
+      {
+        "name": "Real Estate Agencies",
+        "desc": "Property listing WordPress platforms with search filters, maps, enquiry forms, and agent profiles."
+      },
+      {
+        "name": "Restaurants & Food",
+        "desc": "Mobile-first WordPress sites with menu integration, reservations, and Google Maps connectivity."
+      },
+      {
+        "name": "Schools & Education",
+        "desc": "Structured WordPress sites with admission forms, faculty pages, course listings, and parent portals."
+      },
+      {
+        "name": "Tourism & Travel",
+        "desc": "Visually rich conversion-focused WordPress sites with package listings and booking enquiry systems."
+      },
+      {
+        "name": "Professional Services",
+        "desc": "High-authority WordPress sites for law firms, consultants, CAs, and financial advisors."
+      },
+      {
+        "name": "Manufacturing & B2B",
+        "desc": "Corporate-grade WordPress B2B sites with product catalogues and enquiry architecture."
+      }
     ]
   },
   "caseStudies": {
@@ -207,7 +267,10 @@
         ],
         "quote": "Being in the Fintech space, we needed a reliable WordPress partner. Teknoppy created an appealing WordPress website that represents our brand perfectly.",
         "author": "— Vivek Menon, CTO, Evosyz",
-        "accent": "blue"
+        "accent": "blue",
+        "image": "/case-studies/evosyz.webp",
+        "site": "evosyz.com",
+        "imageAlt": "Evosyz fintech website homepage — evosyz.com"
       },
       {
         "label": "Case Study 02",
@@ -229,7 +292,10 @@
         ],
         "quote": "Mr. Sanal is exceptionally supportive and customer-friendly. I have worked with many IT teams, but I am 100% happy with Teknoppy. No doubt, I recommend them with 100% satisfaction.",
         "author": "— Dr. Asghar, CEO, Greens Ayurveda",
-        "accent": "emerald"
+        "accent": "emerald",
+        "image": "/case-studies/greensayurveda.webp",
+        "site": "greensayurveda.com",
+        "imageAlt": "Greens Ayurveda website homepage — greensayurveda.com"
       }
     ]
   },

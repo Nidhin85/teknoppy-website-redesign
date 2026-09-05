@@ -11,7 +11,7 @@ const icons = [SearchCheck, LineChart, BadgeDollarSign, MapPin, Rocket, LifeBuoy
 <section class="py-24 md:py-32 bg-cream relative">
   <!-- Dynamic background container to prevent overflow issues -->
   <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
-    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-[url('/tekenoppyadvantage.webp')] opacity-75"></div>
+    <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/tekenoppyadvantage.webp')] opacity-75"></div>
   </div>
   <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
     <!-- gap applies between all 12 tracks, so lg:gap-24 alone spent 11x96px on gutters
@@ -41,7 +41,7 @@ const icons = [SearchCheck, LineChart, BadgeDollarSign, MapPin, Rocket, LifeBuoy
               '/client logos/al-coffee-1.jpg',
               '/client logos/amster.jpg'
             ].map((src) => (
-               <div class="w-9 h-9 rounded-full border-2 border-white bg-white flex items-center justify-center overflow-hidden shadow-sm">
+               <div class="logo-plate w-9 h-9 rounded-full border-2 border-white bg-white flex items-center justify-center overflow-hidden shadow-sm">
                  <img src={src} alt="Client partner logo" class="w-full h-full object-contain p-1.5 grayscale mix-blend-multiply" />
                </div>
             ))}

@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "title": "Our Clients | Businesses Teknoppy Works With in Kerala & the GCC",
+    "description": "The businesses Teknoppy designs, builds, and markets for — consultancies, resorts, manufacturers, clinics, and retailers across Kerala, the UAE, and Qatar."
+  },
+  "breadcrumb": [
+    { "name": "Home", "href": "/" },
+    { "name": "Clients", "href": "/clients/" }
+  ],
+  "hero": {
+    "badge": "Our Clients",
+    "h1Lead": "The businesses we",
+    "h1Accent": "build for",
+    "body": [
+      "Teknoppy has worked with overseas education consultancies, resorts, steel and manufacturing firms, Ayurveda clinics, fintech companies, and D2C retailers — most of them in Kerala, a growing number of them in the UAE and Qatar.",
+      "Some came for a website and stayed for SEO. Some came for SEO and rebuilt the website. The logos below are the ones we are able to name publicly."
+    ]
+  },
+  "wall": {
+    "heading": "Brands who trust Teknoppy",
+    "intro": "Design, development, and search sit inside one in-house team in Kochi, so these clients deal with the same people from the first call to the sixth month of maintenance."
+  },
+  "sectors": {
+    "heading": "Sectors we work in",
+    "intro": "The work concentrates in a handful of industries, which is why we already know the questions your customers ask before they enquire.",
+    "items": [
+      { "title": "Overseas education & immigration", "text": "Consultancies whose enquiry forms have to qualify a lead before a counsellor ever picks up the phone." },
+      { "title": "Hospitality & tourism", "text": "Resorts and travel operators who need direct bookings rather than commission-heavy portal traffic." },
+      { "title": "Healthcare & Ayurveda", "text": "Clinics and wellness centres selling treatment programmes to patients in India and abroad." },
+      { "title": "Manufacturing & B2B", "text": "Steel, engineering, and trading firms who need product catalogues buyers can actually navigate." },
+      { "title": "Fintech & professional services", "text": "Regulated businesses where the site has to establish credibility before it asks for anything." },
+      { "title": "Retail & D2C ecommerce", "text": "Shopify and WooCommerce stores where the checkout, not the homepage, decides the month." }
+    ]
+  },
+  "testimonials": {
+    "heading": "In their words",
+    "intro": "Named clients, real quotes. Nothing here is stock copy."
+  },
+  "projects": {
+    "heading": "A few of the projects behind these logos",
+    "intro": "Each one is written up in more detail on the portfolio and case study pages."
+  },
+  "links": {
+    "heading": "Look closer at the work",
+    "items": [
+      { "label": "Portfolio", "href": "/portfolios/", "text": "Projects grouped by category — web design, ecommerce, WordPress, web apps, and UI/UX." },
+      { "label": "Case Studies", "href": "/case-study/", "text": "The full write-ups: what the brief was, what we changed, and what happened next." },
+      { "label": "Certifications & Reviews", "href": "/certifications/", "text": "Where to verify Teknoppy independently." },
+      { "label": "About Teknoppy", "href": "/about-us/", "text": "Who is actually doing the work, and how the team is put together." }
+    ]
+  },
+  "faq": {
+    "heading": "Questions we get about our client list",
+    "items": [
+      {
+        "q": "Do you only work with businesses in Kochi?",
+        "a": "No. Kochi is where the team sits, but the client list runs across Kerala — Calicut, Wayanad, Thrissur, Trivandrum — and into the UAE and Qatar. Most projects run remotely with calls and shared documents; local clients usually meet us at the Vyttila office at least once."
+      },
+      {
+        "q": "Why are some clients not named?",
+        "a": "A few clients ask us not to publish their name, and some projects are internal tools that were never meant to be public. We list only the logos we have permission to show, and the case studies that name a client are ones the client signed off on."
+      },
+      {
+        "q": "Can I speak to one of your clients before I sign?",
+        "a": "Yes. Tell us which industry you are in and we will put you in touch with a client in something close to it, subject to their agreement. Several of the testimonials on this site came from clients who offered the introduction themselves."
+      },
+      {
+        "q": "Do you take on small businesses, or only established brands?",
+        "a": "Both. The list includes single-location clinics and consultancies alongside multi-branch manufacturers. What matters more than size is whether the site has a job to do — enquiries, bookings, or orders — that we can measure."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Want your logo on this page?",
+    "text": "Tell us what the website has to achieve and we will tell you honestly whether we are the right team for it.",
+    "primary": { "label": "Start a project", "href": "/contact-us/" },
+    "secondary": { "label": "See the case studies", "href": "/case-study/" }
+  }
+}

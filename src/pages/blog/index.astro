@@ -55,11 +55,11 @@ const schemas = [
 <Layout title={page.meta.title} description={page.meta.description}>
   <Header forceSolidBg={true} />
 
-  <main class="overflow-hidden bg-[#FFF8EF]/20">
+  <main class="overflow-hidden bg-cream/20">
     <!-- DARK HERO SECTION -->
-    <section class="relative pt-32 pb-24 md:pt-36 md:pb-28 overflow-hidden bg-neutral-950 text-white border-b border-white/5">
+    <section class="relative pt-32 pb-24 md:pt-36 md:pb-28 overflow-hidden theme-keep-light bg-neutral-950 text-white border-b border-white/5">
       <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
-        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-[url('/herodarkwebdesign.webp')]"></div>
+        <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/herodarkwebdesign.webp')]"></div>
       </div>
 
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10 flex flex-col items-center text-center">
@@ -109,7 +109,7 @@ const schemas = [
     </section>
 
     <!-- LATEST FROM THE BLOG — auto-pulled -->
-    <section class="py-16 sm:py-20 bg-[#FFF8EF]/30 border-t border-neutral-100 relative overflow-hidden">
+    <section class="py-16 sm:py-20 bg-cream/30 border-t border-neutral-100 relative overflow-hidden">
       <div class="absolute top-0 left-0 w-80 h-80 bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
 
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
@@ -197,7 +197,7 @@ const schemas = [
     </section>
 
     <!-- CTA -->
-    <section class="py-16 sm:py-20 bg-[#FFF8EF]/30 border-t border-neutral-100">
+    <section class="py-16 sm:py-20 bg-cream/30 border-t border-neutral-100">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
         <div class="max-w-4xl mx-auto text-center">
           <p class="text-neutral-700 font-medium text-base sm:text-lg leading-relaxed mb-8">{page.cta.text}</p>

@@ -1,0 +1,22 @@
+{
+  "_note": "Single source of truth for the client logo wall. Consumed by Clients.astro (homepage strip), Testimonials.tsx (3x3 grid) and the /clients/ page. Only add a row once the logo file exists in public/client logos/.",
+  "logos": [
+    { "name": "Abroad Career Consultancy", "src": "/client logos/Abroad-career-1.jpg" },
+    { "name": "Liberty Career Abu Dhabi", "src": "/client logos/abu-dhabi.jpg" },
+    { "name": "Al Coffee", "src": "/client logos/al-coffee-1.jpg" },
+    { "name": "Amster", "src": "/client logos/amster.jpg" },
+    { "name": "AR Data", "src": "/client logos/ar.jpg" },
+    { "name": "First Class Consultancy Services", "src": "/client logos/first-class.jpg" },
+    { "name": "Kewsa", "src": "/client logos/kewsa.jpg" },
+    { "name": "Laughing Waters", "src": "/client logos/laughing-waters.jpg" },
+    { "name": "Metal Center", "src": "/client logos/metal-center.jpg" },
+    { "name": "Olives Resort", "src": "/client logos/olive.jpg" },
+    { "name": "Qrystal", "src": "/client logos/qrystal.jpg" },
+    { "name": "Rakshak", "src": "/client logos/rakshak.jpg" },
+    { "name": "Simov", "src": "/client logos/simov-1.jpg" },
+    { "name": "Studim Assist", "src": "/client logos/studim-assist.jpg" },
+    { "name": "Vinhar", "src": "/client logos/vinhar.jpg" },
+    { "name": "Web Design Cochin", "src": "/client logos/web-design-cochin.jpg" },
+    { "name": "Westn", "src": "/client logos/westn.jpg" }
+  ]
+}

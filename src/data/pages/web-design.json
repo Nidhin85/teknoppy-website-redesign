@@ -9,13 +9,31 @@
     "headingAccent": "Company",
     "headingRest": "in Kochi",
     "body": "Custom · Mobile-First · SEO-Ready Websites for Kerala Businesses Since 2018. We build digital platforms that rank, convert, and scale.",
-    "ctaPrimary": { "label": "Book a Free Audit", "href": "#contact" },
-    "ctaSecondary": { "label": "Explore Our Services", "href": "#services" },
+    "ctaPrimary": {
+      "label": "Book a Free Audit",
+      "href": "#contact"
+    },
+    "ctaSecondary": {
+      "label": "Explore Our Services",
+      "href": "#services"
+    },
     "stats": [
-      { "value": "120+", "label": "Website Projects" },
-      { "value": "2018", "label": "Established" },
-      { "value": "Page 1", "label": "Google Results" },
-      { "value": "Kerala", "label": "Wide Coverage" }
+      {
+        "value": "120+",
+        "label": "Website Projects"
+      },
+      {
+        "value": "2018",
+        "label": "Established"
+      },
+      {
+        "value": "Page 1",
+        "label": "Google Results"
+      },
+      {
+        "value": "Kerala",
+        "label": "Wide Coverage"
+      }
     ]
   },
   "whyTeknoppy": {
@@ -133,12 +151,30 @@
     "intro": "Transparent pricing is central to how Teknoppy builds client trust. Below is a realistic guide to website design costs in Kochi by project type. Every project receives a written quote before work begins.",
     "footnote": "Final pricing depends on pages, custom functionality, content needs, integration complexity, and timeline. For a full breakdown visit the Web Design Pricing Kerala page or use the Website Cost Calculator.",
     "rows": [
-      { "type": "Basic Business Website (5–8 pages)", "price": "Rs. 25,000 – 50,000" },
-      { "type": "Professional Multi-Page Website (10–20 pages)", "price": "Rs. 50,000 – 1,20,000" },
-      { "type": "Corporate Website with CMS (20–40 pages)", "price": "Rs. 1,20,000 – 3,00,000" },
-      { "type": "Landing Page (1–3 pages, conversion-focused)", "price": "Rs. 15,000 – 40,000" },
-      { "type": "Website Redesign (existing site overhaul)", "price": "Rs. 30,000 – 1,50,000" },
-      { "type": "Ongoing Monthly Maintenance", "price": "Rs. 3,000 – 10,000 / mo" }
+      {
+        "type": "Basic Business Website (5–8 pages)",
+        "price": "Rs. 25,000 – 50,000"
+      },
+      {
+        "type": "Professional Multi-Page Website (10–20 pages)",
+        "price": "Rs. 50,000 – 1,20,000"
+      },
+      {
+        "type": "Corporate Website with CMS (20–40 pages)",
+        "price": "Rs. 1,20,000 – 3,00,000"
+      },
+      {
+        "type": "Landing Page (1–3 pages, conversion-focused)",
+        "price": "Rs. 15,000 – 40,000"
+      },
+      {
+        "type": "Website Redesign (existing site overhaul)",
+        "price": "Rs. 30,000 – 1,50,000"
+      },
+      {
+        "type": "Ongoing Monthly Maintenance",
+        "price": "Rs. 3,000 – 10,000 / mo"
+      }
     ]
   },
   "industries": {
@@ -147,15 +183,42 @@
     "headingRest": "Websites For in Kochi & Kerala",
     "intro": "A hospital website serves completely different user intent than a restaurant website — and we design for that specific intent every time.",
     "items": [
-      { "name": "Startups & New Business", "desc": "Credibility-building launch websites that convert early-stage visitors into qualified leads." },
-      { "name": "Hospitals & Healthcare", "desc": "Trust-first sites with appointment booking, doctor profiles, and structured health content." },
-      { "name": "Real Estate Agencies", "desc": "Property listings with search filters, maps, enquiry forms, and agent profiles." },
-      { "name": "Restaurants & Food", "desc": "Mobile-first sites with menu integration, reservations, and Google Maps connectivity." },
-      { "name": "Schools & Education", "desc": "Structured sites with admission forms, faculty pages, and parent information portals." },
-      { "name": "Tourism & Travel", "desc": "Visually rich, conversion-focused sites with package listings and booking enquiry systems." },
-      { "name": "Professional Services", "desc": "High-authority sites for law firms, consultants, CAs, and financial advisors." },
-      { "name": "Manufacturing & B2B", "desc": "Corporate-grade B2B sites with product catalogues and enquiry architecture." },
-      { "name": "Multilingual Websites", "desc": "Bilingual builds for Malayalam-speaking and international audiences alike." }
+      {
+        "name": "Startups & New Business",
+        "desc": "Credibility-building launch websites that convert early-stage visitors into qualified leads."
+      },
+      {
+        "name": "Hospitals & Healthcare",
+        "desc": "Trust-first sites with appointment booking, doctor profiles, and structured health content."
+      },
+      {
+        "name": "Real Estate Agencies",
+        "desc": "Property listings with search filters, maps, enquiry forms, and agent profiles."
+      },
+      {
+        "name": "Restaurants & Food",
+        "desc": "Mobile-first sites with menu integration, reservations, and Google Maps connectivity."
+      },
+      {
+        "name": "Schools & Education",
+        "desc": "Structured sites with admission forms, faculty pages, and parent information portals."
+      },
+      {
+        "name": "Tourism & Travel",
+        "desc": "Visually rich, conversion-focused sites with package listings and booking enquiry systems."
+      },
+      {
+        "name": "Professional Services",
+        "desc": "High-authority sites for law firms, consultants, CAs, and financial advisors."
+      },
+      {
+        "name": "Manufacturing & B2B",
+        "desc": "Corporate-grade B2B sites with product catalogues and enquiry architecture."
+      },
+      {
+        "name": "Multilingual Websites",
+        "desc": "Bilingual builds for Malayalam-speaking and international audiences alike."
+      }
     ]
   },
   "caseStudies": {
@@ -184,7 +247,10 @@
         ],
         "quote": "Being in the Fintech space, we needed a reliable partner. Teknoppy has done a great job creating an appealing website that represents our brand perfectly.",
         "author": "— Vivek Menon, CTO, Evosyz",
-        "accent": "blue"
+        "accent": "blue",
+        "image": "/case-studies/evosyz.webp",
+        "site": "evosyz.com",
+        "imageAlt": "Evosyz fintech website homepage — evosyz.com"
       },
       {
         "label": "Healthcare & Wellness",
@@ -205,7 +271,10 @@
         ],
         "quote": "I have worked with many IT teams, but I am 100% happy with Teknoppy. Mr. Sanal is exceptionally supportive and customer-friendly.",
         "author": "— Dr. Asghar, CEO, Greens Ayurveda",
-        "accent": "emerald"
+        "accent": "emerald",
+        "image": "/case-studies/greensayurveda.webp",
+        "site": "greensayurveda.com",
+        "imageAlt": "Greens Ayurveda website homepage — greensayurveda.com"
       }
     ]
   },

@@ -86,12 +86,12 @@ const labelClass = "block text-[13px] font-black text-neutral-700 uppercase trac
 <Layout title={page.meta.title} description={page.meta.description}>
   <Header forceSolidBg={true} />
 
-  <main class="overflow-hidden bg-[#FFF8EF]/40">
+  <main class="overflow-hidden bg-cream/40">
     <!-- COMPACT HERO — H1 and the one-business-day promise stay above the fold,
          but the hero no longer fills the screen; the form starts right beneath it. -->
-    <section class="relative pt-32 pb-20 md:pt-36 md:pb-24 overflow-hidden bg-neutral-950 text-white">
+    <section class="relative pt-32 pb-20 md:pt-36 md:pb-24 overflow-hidden theme-keep-light bg-neutral-950 text-white">
       <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
-        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-[url('/herodarkwebdesign.webp')]"></div>
+        <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/herodarkwebdesign.webp')]"></div>
       </div>
       <div class="absolute -bottom-24 -right-24 w-[420px] h-[420px] rounded-full bg-primary/15 blur-[120px] pointer-events-none"></div>
 
@@ -190,7 +190,7 @@ const labelClass = "block text-[13px] font-black text-neutral-700 uppercase trac
 
           <!-- CONTACT RAIL — dark card echoing the hero, sticky alongside the form -->
           <aside class="lg:col-span-5 lg:sticky lg:top-28 space-y-6">
-            <div class="bg-neutral-950 text-white rounded-[2rem] p-6 sm:p-8 shadow-[0_24px_60px_-30px_rgba(0,0,0,0.4)] relative overflow-hidden">
+            <div class="theme-keep-light bg-neutral-950 text-white rounded-[2rem] p-6 sm:p-8 shadow-[0_24px_60px_-30px_rgba(0,0,0,0.4)] relative overflow-hidden">
               <div class="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-primary/20 blur-[80px] pointer-events-none"></div>
 
               <h2 class="text-xl font-black text-white mb-6 relative z-10">{page.reachUs.heading}</h2>
@@ -248,13 +248,13 @@ const labelClass = "block text-[13px] font-black text-neutral-700 uppercase trac
     <section class="py-16 sm:py-20 bg-white border-t border-neutral-100">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
         <div class="grid lg:grid-cols-2 gap-6 lg:gap-8">
-          <div class="relative overflow-hidden bg-[#FFF8EF]/60 rounded-[2rem] border border-neutral-100 p-7 sm:p-9">
+          <div class="relative overflow-hidden bg-cream/60 rounded-[2rem] border border-neutral-100 p-7 sm:p-9">
             <div class="absolute left-0 top-0 bottom-0 w-[4px] bg-gradient-to-b from-primary via-[#F58439] to-[#FFE2D1]"></div>
             <h2 class="text-2xl sm:text-3xl font-black text-neutral-900 leading-tight mb-4">{page.whereWeWork.heading}</h2>
             <p class="text-neutral-600 text-sm sm:text-base leading-relaxed font-medium" set:html={page.whereWeWork.html} />
           </div>
 
-          <div class="relative overflow-hidden bg-[#FFF8EF]/60 rounded-[2rem] border border-neutral-100 p-7 sm:p-9">
+          <div class="relative overflow-hidden bg-cream/60 rounded-[2rem] border border-neutral-100 p-7 sm:p-9">
             <div class="absolute left-0 top-0 bottom-0 w-[4px] bg-gradient-to-b from-primary via-[#F58439] to-[#FFE2D1]"></div>
             <h2 class="text-2xl sm:text-3xl font-black text-neutral-900 leading-tight mb-4">{page.afterSubmit.heading}</h2>
             <div class="space-y-4">
@@ -270,7 +270,7 @@ const labelClass = "block text-[13px] font-black text-neutral-700 uppercase trac
     </section>
 
     <!-- FAQ — two columns on desktop so six questions read without a long scroll -->
-    <section class="py-16 sm:py-20 bg-[#FFF8EF]/40 border-t border-neutral-100">
+    <section class="py-16 sm:py-20 bg-cream/40 border-t border-neutral-100">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
         <h2 class="text-3xl sm:text-4xl md:text-[42px] font-black text-neutral-900 leading-tight mb-10 text-center">{page.faq.heading}</h2>
 
@@ -297,7 +297,7 @@ const labelClass = "block text-[13px] font-black text-neutral-700 uppercase trac
     </section>
 
     <!-- CLOSING CTA — full-bleed brand band -->
-    <section class="py-14 sm:py-16 bg-primary relative overflow-hidden">
+    <section class="theme-keep-light py-14 sm:py-16 bg-primary relative overflow-hidden">
       <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.15),transparent_45%)] pointer-events-none"></div>
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">

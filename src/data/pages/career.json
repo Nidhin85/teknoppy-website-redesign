@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "title": "Careers at Teknoppy | Digital Marketing & Web Jobs in Kochi",
+    "description": "Open roles at Teknoppy, a web design and digital marketing company in Kochi — performance marketing, SEO, content, video, and sales. See the openings and how we hire."
+  },
+  "breadcrumb": [
+    { "name": "Home", "href": "/" },
+    { "name": "Careers", "href": "/career/" }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Careers",
+      "h1Lead": "Build your career at",
+      "h1Accent": "Teknoppy",
+      "subhead": "Web design, development, SEO, and performance marketing — under one roof in Kochi.",
+      "body": [
+        "Teknoppy is a digital agency in Vyttila, Kochi. Designers, developers, SEO analysts, and marketers sit in the same office and work on the same client accounts, which means you see a project from the first wireframe to the traffic report.",
+        "We hire for craft and for curiosity. If you are early in your career, you will be given real client work with someone senior reviewing it — not filing and coffee runs."
+      ]
+    },
+    {
+      "type": "bullets",
+      "bg": "cream",
+      "h2": "Why work here",
+      "items": [
+        { "text": "In-house team, not a reseller — you work on the actual build, not a brief passed to a subcontractor." },
+        { "text": "Client-facing from early on, with a senior colleague in the room until you are ready to lead the call." },
+        { "text": "Kerala and GCC accounts across education, hospitality, healthcare, manufacturing, fintech, and D2C retail." },
+        { "text": "Office at Vyttila, a short walk from Thykoodam Metro station." },
+        { "text": "Interns are hired to be kept — successful interns are offered full-time roles at the end of the programme." }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "layout": "list",
+      "h2": "Current openings",
+      "intro": "All roles are based in Kochi unless stated otherwise. Apply by email with your CV and, where relevant, a portfolio or work samples.",
+      "items": [
+        {
+          "title": "Performance Marketer",
+          "answers": "Kochi · 1+ year",
+          "text": "Run Meta and Google Ads campaigns for lead generation across client accounts: daily optimisation, bid strategy and budget management, keyword and competitor research, and cost-per-lead reduction. You will speak to clients directly about lead quality. We are looking for at least a year of hands-on Meta and Google campaign management, agency experience preferred, and the ability to guide juniors and hold a deadline."
+        },
+        {
+          "title": "Senior SEO Analyst",
+          "answers": "Kochi · 2+ years",
+          "text": "Own on-page and off-page SEO for WordPress, HTML, and PHP sites. Monitor Search Console and Analytics, manage keyword and blog rankings, brief content writers on topics, and coordinate with junior staff. Minimum two years in a digital marketing agency."
+        },
+        {
+          "title": "Junior Content Writer",
+          "answers": "Kochi · 6 months or fresher",
+          "text": "Write and edit social media content, research trending Reels formats, and produce ad copy, descriptions, and video scripts. Strong written English and Malayalam required. Six months of content writing experience preferred, but freshers with a genuine feel for social media are welcome to apply."
+        },
+        {
+          "title": "Video Anchor",
+          "answers": "Kochi · Per-shoot",
+          "text": "Be the face of the brand on YouTube and Instagram Reels, delivering engaging, authentic pieces to camera. We are looking for a proven social media content creator with an active Instagram or YouTube presence and a strong on-camera presence. Shoots take place at a studio within Ernakulam city limits. Paid per day of video shot."
+        },
+        {
+          "title": "Reels Videographer & Editor",
+          "answers": "Freelance · ₹15,000–₹25,000/month",
+          "text": "Shoot and edit Reels for client social campaigns, and coordinate shooting logistics and equipment. Freelance engagement. Send a video portfolio along with your application."
+        },
+        {
+          "title": "Telesales Executive",
+          "answers": "Kochi · 1–2 years",
+          "text": "Filter and qualify inbound leads, call prospects to understand requirements, present our services, send proposals, and follow up. You will maintain the sales pipeline and arrange client meetings, and should be willing to travel for meetings and closures. One to two years of telesales experience required."
+        },
+        {
+          "title": "Digital Marketing Intern",
+          "answers": "Kochi · 3-month contract",
+          "text": "Work alongside the digital marketing team across SEO, social media marketing, and account management. Three-month contract, open to recent graduates and freshers. Interns receive an experience letter, a stipend based on performance, and — on successful completion — an offer of a full-time on-roll position."
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "bg": "cream",
+      "h2": "How we hire",
+      "intro": "Four stages, and you hear back from us at every one of them.",
+      "items": [
+        { "title": "Application", "text": "Send your CV and work samples. Our team screens every application and replies either way." },
+        { "title": "Work sample", "text": "For most roles, a short skills-based take-home task — a campaign plan, an audit, a writing sample, or an edit." },
+        { "title": "Interviews", "text": "Meet the hiring manager and the people you would work with, for a technical and competency conversation." },
+        { "title": "Feedback", "text": "You get specific feedback on the outcome, whether or not we make an offer." }
+      ]
+    },
+    {
+      "type": "nap",
+      "bg": "white",
+      "h2": "How to apply",
+      "intro": "Email your CV with the role name in the subject line. Portfolios, links, and work samples help — send them with the first email rather than waiting to be asked.",
+      "rows": [
+        { "label": "Email", "value": "sanal@teknoppy.com", "href": "mailto:sanal@teknoppy.com?subject=Application%20%E2%80%94%20%5Brole%20name%5D" },
+        { "label": "Phone", "value": "+91 6282249224", "href": "tel:+916282249224" },
+        { "label": "Office", "value": "Kaithakal Building, Near Thykoodam Metro, Vyttila PO, Kochi, Kerala 682019" }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "cream",
+      "h2": "Get to know us before you apply",
+      "items": [
+        { "label": "About Teknoppy", "href": "/about-us/", "text": "How the team is put together and how we work." },
+        { "label": "Our clients", "href": "/clients/", "text": "The businesses you would be working on." },
+        { "label": "Case studies", "href": "/case-study/", "text": "Real projects, written up end to end." },
+        { "label": "Blog", "href": "/blog/", "text": "How we think about design, WordPress, and SEO." }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "white",
+      "center": true,
+      "h2": "Careers FAQ",
+      "items": [
+        {
+          "q": "Do you hire freshers?",
+          "a": "Yes. The Digital Marketing Intern role is aimed at recent graduates, and the Junior Content Writer role is open to freshers with a genuine feel for social media. Interns who do well are offered full-time on-roll positions at the end of the three months."
+        },
+        {
+          "q": "Are these roles remote or in-office?",
+          "a": "The listed roles are based at our Vyttila office in Kochi, apart from the Reels Videographer & Editor, which is a freelance engagement, and the Video Anchor role, which is paid per shoot at a studio within Ernakulam city limits."
+        },
+        {
+          "q": "What should I send with my application?",
+          "a": "Your CV, plus evidence of the work: campaign results and account access screenshots for marketing roles, ranking and traffic examples for SEO, published pieces for writing, and a showreel or portfolio for video."
+        },
+        {
+          "q": "I do not see a role that fits me. Can I still apply?",
+          "a": "Yes. Email us with the kind of work you want to do and samples of what you have already done. We keep good applications on file and get in touch when a matching role opens."
+        },
+        {
+          "q": "How long does the process take?",
+          "a": "Usually two to three weeks from application to offer, depending on how quickly the work sample comes back and how the interview calendar lines up."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "cream",
+      "h2": "Ready to apply?",
+      "paragraphs": [
+        "Send your CV and work samples to sanal@teknoppy.com with the role name in the subject line, or call the office if you want to ask about a role before you apply."
+      ],
+      "ctas": [
+        { "label": "Email your application", "href": "mailto:sanal@teknoppy.com?subject=Application%20%E2%80%94%20%5Brole%20name%5D" },
+        { "label": "Talk to us first", "href": "/contact-us/" }
+      ]
+    }
+  ],
+  "devNotes": {
+    "source": "Ported from https://teknoppy.com/career/ (old site), captured 2026-09-05.",
+    "changesFromSource": [
+      "Dropped the 'Business Development Executive' and 'Graphic Designer' listings: both carried a 30th September 2023 deadline and directed applicants to careers@innpactsolutions.com, which is not a Teknoppy address. Restore them only with a current deadline and the correct email.",
+      "Removed the '(Female)' qualifier from the Video Anchor, Junior Content Writer, and Telesales Executive titles. Gender-restricted job advertisements are unlawful under the Equal Remuneration Act and are also flagged by job aggregators, which suppresses reach.",
+      "Left the Reels Videographer pay band (Rs 15,000-25,000) in place as published; confirm it is still current before launch."
+    ],
+    "beforePublishing": [
+      "Confirm every listed role is still open and the experience requirements are current.",
+      "Decide whether applications should go to sanal@teknoppy.com or a dedicated careers@teknoppy.com inbox, then update the nap block and both CTA mailto links.",
+      "JobPosting schema is deliberately not emitted: Google requires an accurate datePosted and validThrough per role, and neither is known. Add per-role dates to this JSON first, then wire the schema."
+    ],
+    "schemaEmitted": ["FAQPage (5 questions)", "BreadcrumbList: Home -> Careers"]
+  }
+}

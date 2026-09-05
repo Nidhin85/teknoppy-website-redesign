@@ -10,13 +10,31 @@
     "headingRest": "Company in Kochi",
     "subheadline": "Custom · Secure · SEO-Ready Online Stores for Kerala Businesses Since 2018. We build online stores that rank and sell — at home in India and across the world.",
     "body": "Ecommerce Website Development Company in Kochi — Teknoppy builds custom, mobile-first, conversion-focused online stores that help Kerala businesses sell more, both at home in India and to customers around the world. Since 2018, we have delivered 120+ website and ecommerce projects, from compact single-brand stores to large multi-vendor marketplaces, helping Kerala brands sell online with confidence.",
-    "ctaPrimary": { "label": "Get a Free Quote", "href": "#contact" },
-    "ctaSecondary": { "label": "Explore Our Services", "href": "#services" },
+    "ctaPrimary": {
+      "label": "Get a Free Quote",
+      "href": "#contact"
+    },
+    "ctaSecondary": {
+      "label": "Explore Our Services",
+      "href": "#services"
+    },
     "stats": [
-      { "value": "120+", "label": "Projects Delivered" },
-      { "value": "2018", "label": "Established" },
-      { "value": "Page 1", "label": "Google Results" },
-      { "value": "Kerala + Global", "label": "Wide Coverage" }
+      {
+        "value": "120+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "2018",
+        "label": "Established"
+      },
+      {
+        "value": "Page 1",
+        "label": "Google Results"
+      },
+      {
+        "value": "Kerala + Global",
+        "label": "Wide Coverage"
+      }
     ]
   },
   "introBand": "Every business today needs more than a shopping cart. It needs a fast, secure, search-optimised platform that turns visitors into paying customers and handles payments, stock, and shipping without friction. As a dedicated ecommerce development company in Kochi, Teknoppy combines clean store design with secure payment integration, Product schema markup, and Core Web Vitals optimisation — so your store does not just look great, it ranks and sells. Our clients include startups, retailers, Ayurveda and export brands, manufacturers, and established enterprises across Kochi, Thrissur, Calicut, Trivandrum, and the wider Kerala market.",
@@ -127,12 +145,30 @@
     "intro": "Transparent pricing is central to how Teknoppy builds client trust. Below is a realistic guide to ecommerce website development costs in Kochi by store type. Every project receives a written quote before work begins.",
     "footnote": "Final pricing depends on product count, custom functionality, integrations, and timeline. Prices are in Indian Rupees; international clients can request a quote in their currency.",
     "rows": [
-      { "type": "Starter Online Store (up to 50 products)", "price": "Rs. 45,000 – 90,000" },
-      { "type": "Professional Ecommerce Store (WooCommerce / Shopify)", "price": "Rs. 90,000 – 2,00,000" },
-      { "type": "Custom Ecommerce / B2B Portal", "price": "Rs. 2,00,000 – 6,00,000" },
-      { "type": "Multi-Vendor Marketplace", "price": "Rs. 3,00,000 – 8,00,000+" },
-      { "type": "Ecommerce Redesign / Migration", "price": "Rs. 50,000 – 2,00,000" },
-      { "type": "Ongoing Monthly Maintenance", "price": "Rs. 5,000 – 15,000 / mo" }
+      {
+        "type": "Starter Online Store (up to 50 products)",
+        "price": "Rs. 45,000 – 90,000"
+      },
+      {
+        "type": "Professional Ecommerce Store (WooCommerce / Shopify)",
+        "price": "Rs. 90,000 – 2,00,000"
+      },
+      {
+        "type": "Custom Ecommerce / B2B Portal",
+        "price": "Rs. 2,00,000 – 6,00,000"
+      },
+      {
+        "type": "Multi-Vendor Marketplace",
+        "price": "Rs. 3,00,000 – 8,00,000+"
+      },
+      {
+        "type": "Ecommerce Redesign / Migration",
+        "price": "Rs. 50,000 – 2,00,000"
+      },
+      {
+        "type": "Ongoing Monthly Maintenance",
+        "price": "Rs. 5,000 – 15,000 / mo"
+      }
     ]
   },
   "industries": {
@@ -141,12 +177,30 @@
     "headingRest": "Ecommerce Websites For in Kochi & Kerala",
     "intro": "A fashion store serves completely different user intent than a spice exporter — and we design for that specific intent every time.",
     "items": [
-      { "name": "Fashion & Lifestyle", "desc": "Visual product pages, size guides, and fast mobile checkout." },
-      { "name": "Ayurveda, Wellness & Export", "desc": "Multilingual, multi-currency stores built to convert international buyers." },
-      { "name": "Groceries & FMCG", "desc": "Bulk ordering, delivery zones, and repeat-purchase flows." },
-      { "name": "Electronics & Gadgets", "desc": "Detailed specifications, comparison tools, and secure payments." },
-      { "name": "Manufacturing & B2B", "desc": "Catalogue stores with enquiry-to-order and custom pricing." },
-      { "name": "Handicrafts & Local Brands", "desc": "Storytelling pages that sell Kerala products to India and the world." }
+      {
+        "name": "Fashion & Lifestyle",
+        "desc": "Visual product pages, size guides, and fast mobile checkout."
+      },
+      {
+        "name": "Ayurveda, Wellness & Export",
+        "desc": "Multilingual, multi-currency stores built to convert international buyers."
+      },
+      {
+        "name": "Groceries & FMCG",
+        "desc": "Bulk ordering, delivery zones, and repeat-purchase flows."
+      },
+      {
+        "name": "Electronics & Gadgets",
+        "desc": "Detailed specifications, comparison tools, and secure payments."
+      },
+      {
+        "name": "Manufacturing & B2B",
+        "desc": "Catalogue stores with enquiry-to-order and custom pricing."
+      },
+      {
+        "name": "Handicrafts & Local Brands",
+        "desc": "Storytelling pages that sell Kerala products to India and the world."
+      }
     ]
   },
   "caseStudies": {
@@ -154,48 +208,86 @@
     "headingLead": "Our Ecommerce",
     "headingAccent": "Case Studies",
     "headingRest": "— Proven Results.",
-    "intro": "See how Teknoppy matches the right platform to your products and builds stores engineered to rank and sell from day one.",
+    "intro": "Real ecommerce stores we have designed, built and launched. Each one links through to the full case study with the challenge, the build and the live site.",
     "blocks": [
       {
-        "label": "Platform Fit",
-        "metric": "3+",
-        "metricSub": "Platforms Supported",
-        "eyebrow": "Ecommerce Platforms",
-        "title": "Ecommerce Platforms We Build On",
-        "intro": "Different businesses need different platforms, and as an experienced ecommerce development company in Kochi we recommend the right one instead of pushing a single solution. WooCommerce is best for control, content-led SEO, and no monthly platform fees — ideal for WordPress ecommerce development. Shopify suits brands wanting a hosted, low-maintenance store with predictable costs. Magento handles large catalogues and complex pricing, while a custom build is right for unique workflows or custom ecommerce store development in Kochi. Whether you sell B2C or run a B2B ecommerce store, we match the platform to your products, budget, and growth plan.",
+        "eyebrow": "Nuelments",
+        "tag": "Shopify · D2C Hair Care · India",
+        "title": "A Shopify Store Built for a D2C Hair Care Brand",
+        "intro": "Nuelments is an Indian D2C hair care brand selling onion and biotin shampoo, serums, gummies and masks. The goal was a Shopify store that turns product claims into visible trust, gives customers an easy path to higher-value combo purchases, and lets video content double as a shopping surface.",
+        "image": "/case-studies/nuelments.webp",
+        "imageAlt": "Nuelments Shopify store homepage screenshot",
+        "href": "/case-studies/nuelments-shopify-ecommerce/",
+        "site": "nuelments.com",
+        "approachLabel": "The Challenge",
         "approach": [
-          "WooCommerce — control, content-led SEO, no platform fees",
-          "Shopify — hosted, low-maintenance, predictable costs",
-          "Magento — large catalogues and complex pricing",
-          "Custom build — unique workflows and B2B"
+          "No structured combo offering",
+          "No visible trust certifications",
+          "No shoppable video experience",
+          "No visual efficacy proof"
         ],
+        "resultsLabel": "What We Built",
         "results": [
-          "Right-fit platform for your products and budget",
-          "Secure, tested checkout for India and abroad",
-          "A store built to rank and sell from launch"
+          "A dedicated Combo Offers collection",
+          "Six certification badges built into the storefront",
+          "A “Shop the Look Instantly” shoppable video section",
+          "Wishlist and first-purchase discount"
         ],
         "accent": "blue"
       },
       {
-        "label": "Conversion First",
-        "metric": "70%+",
-        "metricSub": "Kerala Traffic Is Mobile",
-        "eyebrow": "Built for Selling",
-        "title": "Built for Real Selling",
-        "intro": "Every store is built mobile-first with clean code, Product schema, optimised metadata, and Core Web Vitals tuning, so it is ready to rank from launch. Over 70% of Kerala web traffic comes from mobile, so this is standard.",
+        "eyebrow": "My PlantStore",
+        "tag": "Custom Ecommerce · Plant Nursery · Dubai",
+        "title": "An Ecommerce Storefront for a Growing Plant Nursery",
+        "intro": "My PlantStore sells indoor and outdoor plants, terrariums, pots, seeds and bouquets across the UAE. We built a full storefront able to carry a wide, multi-category catalogue while keeping browsing, product discovery and checkout simple.",
+        "image": "/case-studies/myplantstore.webp",
+        "imageAlt": "My PlantStore ecommerce website homepage screenshot",
+        "href": "/case-studies/myplantstore-ecommerce-website-development/",
+        "site": "myplantstore.me",
+        "approachLabel": "The Challenge",
         "approach": [
-          "Mobile-first, fast product pages",
-          "Secure gateway setup for UPI, cards, PayPal, Stripe",
-          "Product & Offer schema for rich results"
+          "No dedicated online storefront",
+          "No structured catalog",
+          "No upfront delivery clarity"
         ],
+        "resultsLabel": "What We Built",
         "results": [
-          "Lower abandoned carts",
-          "Faster load and better Core Web Vitals",
-          "Ready to rank and sell from launch"
+          "Eight categories, each split into subcategories",
+          "Account, wishlist and cart replacing enquiry-only ordering",
+          "Delivery thresholds shown by emirate",
+          "Variant and live discount pricing on product cards"
         ],
         "accent": "emerald"
+      },
+      {
+        "eyebrow": "Apolo Mattress",
+        "tag": "Shopify · Manufacturer · Kerala",
+        "title": "A Shopify Store Built to Answer Every Question Before Checkout",
+        "intro": "Apolo Mattress is a Kerala manufacturer selling memory foam, latex, pocket spring and foam mattresses. A mattress is a high-consideration, hard-to-return purchase, so the store had to help customers choose between four types and surface the trust signals that matter before they buy.",
+        "image": "/case-studies/apolomattress.webp",
+        "imageAlt": "Apolo Mattress Shopify store homepage screenshot",
+        "href": "/case-studies/apolo-mattress-shopify-ecommerce/",
+        "site": "apolomattress.com",
+        "approachLabel": "The Challenge",
+        "approach": [
+          "No product-fit guidance",
+          "No visible social proof",
+          "No purchase-hesitation FAQ"
+        ],
+        "resultsLabel": "What We Built",
+        "results": [
+          "Product-fit guidance in the FAQ and product callouts",
+          "Google reviews surfaced on the homepage",
+          "Warranty, returns, delivery and sizing answered upfront",
+          "Trust badges shown site-wide"
+        ],
+        "accent": "blue"
       }
-    ]
+    ],
+    "viewAll": {
+      "label": "View all ecommerce case studies",
+      "href": "/portfolios/ecommerce-projects/"
+    }
   },
   "testimonials": {
     "badge": "Testimonials",
@@ -228,28 +320,34 @@
   },
   "projects": {
     "badge": "Our Portfolio",
-    "headingLead": "Featured Projects —",
-    "headingAccent": "Real Stores",
+    "headingLead": "More Ecommerce",
+    "headingAccent": "Stores",
     "headingRest": "We Have Built.",
-    "intro": "Genuine online-store builds.",
+    "intro": "Genuine online-store builds, each with a full case study.",
     "items": [
       {
-        "name": "Evosyz",
-        "loc": "KOCHI · FINTECH",
-        "desc": "On-page SEO and conversion optimisation for a regulated fintech brand with WhatsApp integration.",
-        "result": "Stronger search visibility for fintech keywords in Kochi and increased franchise and partnership enquiries."
+        "name": "GetSkill Online",
+        "loc": "UK · CERTIFICATION",
+        "desc": "An ecommerce platform selling online certification courses, with the catalogue, checkout and SEO built around course discovery.",
+        "result": "Ecommerce Website Development, Website Design, SEO",
+        "href": "/case-studies/getskillonline-ecommerce-website-development/",
+        "site": "getskillonline.com"
       },
       {
-        "name": "Greens Ayurveda",
-        "loc": "AZHIYUR, CALICUT · AYURVEDA",
-        "desc": "Local and organic SEO with schema and a structured enquiry flow for Ayurvedic-treatment keywords.",
-        "result": "A significant rise in international enquiries and steady organic growth for wellness keywords."
+        "name": "Modestsisters",
+        "loc": "UAE · MODEST FASHION",
+        "desc": "A Shopify store for a UAE modest fashion brand, designed around collection browsing and a clean, mobile-first checkout.",
+        "result": "Shopify Development, Website Design, SEO",
+        "href": "/case-studies/modestsisters-shopify-ecommerce/",
+        "site": "modestsisters.co"
       },
       {
-        "name": "Olives Resort",
-        "loc": "WAYANAD · HOSPITALITY",
-        "desc": "Conversion-focused website paired with local and organic SEO for resort keywords.",
-        "result": "Top Google rankings for core resort keywords and a measurable increase in direct booking calls (confirmed by CEO Biju Thomas)."
+        "name": "Sun and Moon Korean",
+        "loc": "MUMBAI · FOOD & K-FASHION",
+        "desc": "Ecommerce content and product-page strategy bringing an authentic kimchi and K-fashion brand online.",
+        "result": "Ecommerce Content & SEO, Product Page Strategy, Website Optimization",
+        "href": "/case-studies/sun-and-moon-korean-ecommerce-website/",
+        "site": "sunandmoonkorean.in"
       }
     ]
   },

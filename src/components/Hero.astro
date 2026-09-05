@@ -87,7 +87,7 @@ import home from "../data/home.json";
           class="inline-block bg-primary text-white px-2 py-0.5 rounded-lg shadow-sm"
           >{home.hero.subheadline.a2}</span
         > {home.hero.subheadline.mid2} <span
-          class="inline-block bg-[#FFF8EF] border border-primary/20 text-primary px-2 py-0.5 rounded-lg shadow-sm"
+          class="inline-block bg-cream border border-primary/20 text-primary px-2 py-0.5 rounded-lg shadow-sm"
           >{home.hero.subheadline.a3}</span
         > {home.hero.subheadline.post}
       </h2>
@@ -111,7 +111,7 @@ import home from "../data/home.json";
         </a>
         <a
           href={home.hero.secondaryCta.href}
-          class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-neutral-700 bg-white border border-neutral-200 rounded-full hover:border-primary/50 hover:bg-[#FFF8EF] transition-all duration-300 shadow-sm whitespace-nowrap"
+          class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-neutral-700 bg-white border border-neutral-200 rounded-full hover:border-primary/50 hover:bg-cream transition-all duration-300 shadow-sm whitespace-nowrap"
         >
           <span
             class="flex items-center justify-center w-6 h-6 rounded-full border border-neutral-300 text-primary"
@@ -307,6 +307,28 @@ import home from "../data/home.json";
   @media (min-width: 768px) {
     .hero-bg {
       background-image: url("/tekenoppyherobg.webp");
+    }
+  }
+
+  /* The hero plate is a light photograph and the image sits on the <section>
+     itself, which has content — so it is darkened with a scrim layered into the
+     background stack rather than a filter, which would dim the copy too. */
+  @media (prefers-color-scheme: dark) {
+    .hero-bg {
+      background-image: linear-gradient(
+          rgba(16, 19, 24, 0.93),
+          rgba(16, 19, 24, 0.93)
+        ),
+        url("/mobileherobg2.webp");
+    }
+    @media (min-width: 768px) {
+      .hero-bg {
+        background-image: linear-gradient(
+            rgba(16, 19, 24, 0.93),
+            rgba(16, 19, 24, 0.93)
+          ),
+          url("/tekenoppyherobg.webp");
+      }
     }
   }
 

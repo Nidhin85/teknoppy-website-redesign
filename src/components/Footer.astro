@@ -35,7 +35,7 @@ const pathname = Astro.url.pathname;
 const isCurrent = (href: string) => pathname === href || pathname === href.replace(/\/$/, '');
 ---
 
-<footer class="bg-neutral-950 text-white relative overflow-hidden">
+<footer class="theme-keep-light bg-neutral-950 text-white relative overflow-hidden">
   <!-- Subtle grid + warm glow, matching the dark hero treatment -->
   <div class="absolute inset-0 pointer-events-none bg-[linear-gradient(to_right,rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.025)_1px,transparent_1px)] bg-[size:56px_56px]"></div>
   <div class="absolute -top-32 -left-24 w-[420px] h-[420px] rounded-full bg-primary/10 blur-[120px] pointer-events-none"></div>

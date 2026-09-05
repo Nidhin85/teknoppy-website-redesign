@@ -64,11 +64,11 @@ const schemas = [
 <Layout title={cat.meta.title} description={cat.meta.description}>
   <Header forceSolidBg={true} />
 
-  <main class="overflow-hidden bg-[#FFF8EF]/20">
+  <main class="overflow-hidden bg-cream/20">
     <!-- DARK HERO -->
-    <section class="relative pt-32 pb-20 md:pt-36 md:pb-24 overflow-hidden bg-neutral-950 text-white border-b border-white/5">
+    <section class="relative pt-32 pb-20 md:pt-36 md:pb-24 overflow-hidden theme-keep-light bg-neutral-950 text-white border-b border-white/5">
       <div class="absolute inset-0 opacity-[0.18]">
-        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-[url('/herodarkwebdesign.webp')]"></div>
+        <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/herodarkwebdesign.webp')]"></div>
       </div>
 
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10 flex flex-col items-center text-center">
@@ -155,7 +155,7 @@ const schemas = [
             </div>
           </>
         ) : (
-          <div class="max-w-2xl mx-auto text-center bg-[#FFF8EF]/50 border border-neutral-100 rounded-3xl p-10">
+          <div class="max-w-2xl mx-auto text-center bg-cream/50 border border-neutral-100 rounded-3xl p-10">
             <h2 class="text-2xl font-black text-neutral-900 mb-4">No articles here yet</h2>
             <p class="text-neutral-600 font-medium leading-relaxed mb-8">{page.categories.emptyText}</p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -173,7 +173,7 @@ const schemas = [
     </section>
 
     <!-- RELATED SERVICE -->
-    <section class="py-14 sm:py-16 bg-[#FFF8EF]/30 border-t border-neutral-100">
+    <section class="py-14 sm:py-16 bg-cream/30 border-t border-neutral-100">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
         <div class="rounded-3xl border border-neutral-100 bg-white p-8 sm:p-10 shadow-[0_12px_30px_-15px_rgba(0,0,0,0.05)] flex flex-col sm:flex-row sm:items-center gap-6 justify-between">
           <div>

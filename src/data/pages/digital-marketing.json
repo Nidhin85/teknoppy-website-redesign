@@ -21,10 +21,22 @@
       "href": "#services"
     },
     "statCards": [
-      { "value": "120+", "label": "Projects Delivered" },
-      { "value": "2018", "label": "Established" },
-      { "value": "Multi-Channel", "label": "SEO · Ads · Social" },
-      { "value": "Kerala", "label": "Wide Coverage" }
+      {
+        "value": "120+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "2018",
+        "label": "Established"
+      },
+      {
+        "value": "Multi-Channel",
+        "label": "SEO · Ads · Social"
+      },
+      {
+        "value": "Kerala",
+        "label": "Wide Coverage"
+      }
     ]
   },
   "whyTeknoppy": {
@@ -152,13 +164,34 @@
     "intro": "Transparent pricing is central to how Teknoppy builds client trust. Below is a realistic guide to digital marketing costs in Kochi by service type. Every engagement receives a written quote before work begins.",
     "footnote": "Final pricing depends on competition, channels, content volume, and ad budget. We offer an affordable digital marketing company in Kochi option for smaller teams and scale up for larger, multi-channel programmes.",
     "rows": [
-      { "type": "Local / Small-Business SEO", "price": "Rs. 15,000 – 35,000 / mo" },
-      { "type": "Competitive / Ecommerce SEO", "price": "Rs. 35,000 – 75,000 / mo" },
-      { "type": "Social Media Marketing (organic + creative)", "price": "Rs. 12,000 – 40,000 / mo" },
-      { "type": "Google Ads / PPC Management", "price": "Rs. 10,000 – 30,000 / mo + ad spend" },
-      { "type": "Content Marketing (blogs + on-page)", "price": "Rs. 15,000 – 50,000 / mo" },
-      { "type": "Full-Funnel Growth Package (multi-channel)", "price": "Rs. 50,000 – 1,50,000 / mo" },
-      { "type": "Branding / Strategy (one-time)", "price": "Rs. 25,000 – 1,00,000" }
+      {
+        "type": "Local / Small-Business SEO",
+        "price": "Rs. 15,000 – 35,000 / mo"
+      },
+      {
+        "type": "Competitive / Ecommerce SEO",
+        "price": "Rs. 35,000 – 75,000 / mo"
+      },
+      {
+        "type": "Social Media Marketing (organic + creative)",
+        "price": "Rs. 12,000 – 40,000 / mo"
+      },
+      {
+        "type": "Google Ads / PPC Management",
+        "price": "Rs. 10,000 – 30,000 / mo + ad spend"
+      },
+      {
+        "type": "Content Marketing (blogs + on-page)",
+        "price": "Rs. 15,000 – 50,000 / mo"
+      },
+      {
+        "type": "Full-Funnel Growth Package (multi-channel)",
+        "price": "Rs. 50,000 – 1,50,000 / mo"
+      },
+      {
+        "type": "Branding / Strategy (one-time)",
+        "price": "Rs. 25,000 – 1,00,000"
+      }
     ]
   },
   "industries": {
@@ -170,14 +203,38 @@
     },
     "intro": "A hospital, a resort, and a manufacturer each need a different strategy. We plan our digital marketing services for Kochi businesses around that specific intent every time.",
     "items": [
-      { "name": "Startups & New Business", "desc": "A popular digital marketing company for startups in Kochi — go-to-market campaigns and lead funnels that prove traction on a lean budget." },
-      { "name": "Hospitals & Healthcare", "desc": "Local SEO, reputation, and appointment-focused campaigns that reach patients while staying trust-first." },
-      { "name": "Real Estate", "desc": "High-intent Google and Meta lead-gen for property enquiries, with landing pages and qualification built in." },
-      { "name": "Restaurants & Food", "desc": "Local SEO, Google Business Profile, and social that drive footfall, reservations, and online orders." },
-      { "name": "Schools & Education", "desc": "Admission-season campaigns across search, social, and content that fill enquiry forms with qualified parents." },
-      { "name": "Tourism & Travel", "desc": "Visual, conversion-focused campaigns and SEO for packages and resorts — domestic and international demand." },
-      { "name": "Professional Services", "desc": "Authority content and local SEO for law firms, consultants, CAs, and advisors who win clients on trust." },
-      { "name": "Small Businesses & SMEs", "desc": "Digital marketing for small businesses Kochi that keeps costs sensible while still delivering steady growth." }
+      {
+        "name": "Startups & New Business",
+        "desc": "A popular digital marketing company for startups in Kochi — go-to-market campaigns and lead funnels that prove traction on a lean budget."
+      },
+      {
+        "name": "Hospitals & Healthcare",
+        "desc": "Local SEO, reputation, and appointment-focused campaigns that reach patients while staying trust-first."
+      },
+      {
+        "name": "Real Estate",
+        "desc": "High-intent Google and Meta lead-gen for property enquiries, with landing pages and qualification built in."
+      },
+      {
+        "name": "Restaurants & Food",
+        "desc": "Local SEO, Google Business Profile, and social that drive footfall, reservations, and online orders."
+      },
+      {
+        "name": "Schools & Education",
+        "desc": "Admission-season campaigns across search, social, and content that fill enquiry forms with qualified parents."
+      },
+      {
+        "name": "Tourism & Travel",
+        "desc": "Visual, conversion-focused campaigns and SEO for packages and resorts — domestic and international demand."
+      },
+      {
+        "name": "Professional Services",
+        "desc": "Authority content and local SEO for law firms, consultants, CAs, and advisors who win clients on trust."
+      },
+      {
+        "name": "Small Businesses & SMEs",
+        "desc": "Digital marketing for small businesses Kochi that keeps costs sensible while still delivering steady growth."
+      }
     ]
   },
   "caseStudies": {
@@ -206,7 +263,10 @@
         ],
         "quote": "We now rank at the top of Google for our keywords and get many direct booking calls due to better visibility. Thank you Teknoppy for all the support.",
         "author": "— Biju Thomas, CEO, Olives Resort, Wayanad",
-        "accent": "blue"
+        "accent": "blue",
+        "image": "/case-studies/olivesresort.webp",
+        "site": "olivesresort.in",
+        "imageAlt": "Olives Boutique Resort Wayanad website homepage — olivesresort.in"
       },
       {
         "label": "Healthcare & Wellness",
@@ -225,7 +285,10 @@
         ],
         "quote": "Mr. Sanal is exceptionally supportive and customer-friendly. I have worked with many IT teams, but I am 100% happy with Teknoppy. No doubt, I recommend them with 100% satisfaction.",
         "author": "— Dr. Asghar, CEO, Greens Ayurveda, Calicut",
-        "accent": "emerald"
+        "accent": "emerald",
+        "image": "/case-studies/greensayurveda.webp",
+        "site": "greensayurveda.com",
+        "imageAlt": "Greens Ayurveda website homepage — greensayurveda.com"
       }
     ]
   },

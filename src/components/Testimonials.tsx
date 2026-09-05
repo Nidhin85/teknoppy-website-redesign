@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Play, X } from 'lucide-react';
+import { ArrowRight, ChevronLeft, ChevronRight, Play, X } from 'lucide-react';
+import clients from '../data/clients.json';
 
 const defaultTestimonials = [
   {
@@ -40,17 +41,8 @@ const defaultTestimonials = [
   }
 ];
 
-const clientLogos = [
-  '/client logos/Abroad-career-1.jpg',
-  '/client logos/abu-dhabi.jpg',
-  '/client logos/al-coffee-1.jpg',
-  '/client logos/amster.jpg',
-  '/client logos/ar.jpg',
-  '/client logos/first-class.jpg',
-  '/client logos/kewsa.jpg',
-  '/client logos/metal-center.jpg',
-  '/client logos/olive.jpg'
-];
+// The grid shows the first nine of the shared roster; /clients/ shows all of them.
+const clientLogos = clients.logos.slice(0, 9);
 
 type VideoTestimonial = {
   youtubeId: string;
@@ -191,7 +183,7 @@ export default function Testimonials({
             className="lg:col-span-4 relative flex flex-col justify-between bg-white rounded-xl px-6 pb-7 pt-14 sm:p-8 sm:pt-16 border border-neutral-100 shadow-sm lg:min-h-[460px] overflow-visible"
           >
             {/* Stacked Cards Effect behind the main card */}
-            <div className="absolute inset-0 bg-[#FFF8EF] rounded-xl -translate-y-4 scale-[0.94] border border-neutral-100 -z-20"></div>
+            <div className="absolute inset-0 bg-cream rounded-xl -translate-y-4 scale-[0.94] border border-neutral-100 -z-20"></div>
             <div className="absolute inset-0 bg-[#F9AE42]/5 rounded-xl -translate-y-2 scale-[0.97] border border-neutral-100 -z-10"></div>
 
             {/* Client portrait — overlaps the card's top-left corner, as on the
@@ -361,18 +353,29 @@ export default function Testimonials({
 
           {/* Column 3: 3x3 Client Logos Grid */}
           <div className="lg:col-span-4 bg-white border border-neutral-100 rounded-xl overflow-hidden shadow-sm grid grid-cols-3 divide-x divide-y divide-neutral-100">
-            {clientLogos.map((src, i) => (
+            {clientLogos.map((logo) => (
               <div 
-                key={i} 
-                className="aspect-square flex items-center justify-center p-6 bg-white hover:bg-neutral-50/50 transition-colors duration-300 border-neutral-100"
+                key={logo.src} 
+                className="logo-plate aspect-square flex items-center justify-center p-6 bg-white hover:bg-neutral-50/50 transition-colors duration-300 border-neutral-100"
               >
                 <img 
-                  src={src} 
-                  alt="Client brand logo" 
-                  className="max-h-full max-w-full object-contain grayscale mix-blend-multiply opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+                  src={logo.src} 
+                  alt={`${logo.name} logo`} 
+                  className="max-h-full max-w-full object-contain mix-blend-multiply hover:scale-105 transition-transform duration-300"
                 />
               </div>
             ))}
+          </div>
+
+          {/* The grid is a teaser — the full roster lives on /clients/ */}
+          <div className="md:col-span-2 lg:col-span-12 flex justify-center pt-2">
+            <a
+              href="/clients/"
+              className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-bold text-neutral-900 bg-white border border-neutral-200 rounded-full hover:border-primary hover:text-primary hover:-translate-y-0.5 transition-all duration-300"
+            >
+              View all clients
+              <ArrowRight className="w-4 h-4" />
+            </a>
           </div>
 
         </div>

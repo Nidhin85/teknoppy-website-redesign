@@ -63,11 +63,11 @@ const schemas: any[] = [
 <Layout title={page.meta.title} description={page.meta.description}>
   <Header forceSolidBg={true} />
 
-  <main class="overflow-hidden bg-[#FFF8EF]/20">
+  <main class="overflow-hidden bg-cream/20">
     <!-- HERO — photo and name stack above the intro on mobile -->
-    <section class="relative pt-32 pb-20 md:pt-36 md:pb-24 overflow-hidden bg-neutral-950 text-white border-b border-white/5">
+    <section class="relative pt-32 pb-20 md:pt-36 md:pb-24 overflow-hidden theme-keep-light bg-neutral-950 text-white border-b border-white/5">
       <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
-        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-[url('/herodarkwebdesign.webp')]"></div>
+        <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/herodarkwebdesign.webp')]"></div>
       </div>
 
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
@@ -101,7 +101,7 @@ const schemas: any[] = [
 
     <!-- BACKGROUND / LEADS / PHILOSOPHY -->
     {page.sections.map((s: any, i: number) => (
-      <section class={`py-16 sm:py-20 border-t border-neutral-100 ${i % 2 === 0 ? 'bg-white' : 'bg-[#FFF8EF]/30'}`}>
+      <section class={`py-16 sm:py-20 border-t border-neutral-100 ${i % 2 === 0 ? 'bg-white' : 'bg-cream/30'}`}>
         <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
           <h2 class="text-3xl sm:text-4xl md:text-[42px] font-black text-neutral-900 leading-tight mb-6">{s.heading}</h2>
           <p class="max-w-4xl text-neutral-600 text-sm sm:text-base leading-relaxed font-medium">{s.text}</p>
@@ -155,7 +155,7 @@ const schemas: any[] = [
     </section>
 
     <!-- CTA -->
-    <section class="py-16 sm:py-20 bg-[#FFF8EF]/30 border-t border-neutral-100">
+    <section class="py-16 sm:py-20 bg-cream/30 border-t border-neutral-100">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
         <div class="max-w-4xl mx-auto text-center">
           <p class="text-neutral-700 font-medium text-base sm:text-lg leading-relaxed mb-8">{page.cta.text}</p>

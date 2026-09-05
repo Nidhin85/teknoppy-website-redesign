@@ -55,16 +55,6 @@
       "permanent": false
     },
     {
-      "source": "/clients",
-      "destination": "/portfolios/",
-      "permanent": false
-    },
-    {
-      "source": "/clients/",
-      "destination": "/portfolios/",
-      "permanent": false
-    },
-    {
       "source": "/seo-company-kochi",
       "destination": "/seo-services/",
       "permanent": false
