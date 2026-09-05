@@ -2,10 +2,10 @@
   "videos": [
     {
       "youtubeId": "ocV7KcfU9vs",
-      "name": "",
-      "role": "Client testimonial",
-      "thumb": "/testimonials/client-2.webp",
-      "nameSource": "Not identified. This was labelled 'Lenaa' from 4 Sep 2026; the client corrected that on 5 Sep 2026 — the speaker is not Lenaa. The thumbnail is a frame from this video (short silver hair, red top) and does not match Lenaa, who appears on her own site lenaalife.com and in the Lenaa case study. Renders with no name rather than a wrong one; add the real name once the client confirms who is speaking."
+      "name": "Lenaa",
+      "role": "Actor, Author & TEDx Speaker, Kerala",
+      "thumb": "/testimonials/lenaa.webp",
+      "nameSource": "Identified by the client on 4 Sep 2026. Lenaa is the subject of the Lenaa personal brand website case study (/lenaa-personal-brand-website-case-study/); role wording follows that page's description of her as a Malayalam cinema actor, bestselling author and three-time TEDx speaker."
     },
     {
       "youtubeId": "E7HfgGOHjYE",
@@ -24,12 +24,12 @@
   ],
   "devNotes": {
     "origin": "Four YouTube URLs supplied by the client on 4 Sep 2026 to replace the dummy video panel, which showed a rotating stock image (/testimonial_video_preview*.png) behind a play button with no click handler.",
-    "identification": "Vivek Menon's name and title are burnt into his video as a lower third and match the existing text testimonial in src/content/testimonials/vivek-menon.md. The other two videos (ocV7KcfU9vs and -N_zd4eCPPM) are unidentified — all three share the generic YouTube title 'Our Valued Customers Have to Say About Our Exceptional Services', so the title identifies nobody. Both render with no name rather than an invented one; add real names once the client confirms who is speaking.",
+    "identification": "Vivek Menon's name and title are burnt into his video as a lower third and match the existing text testimonial in src/content/testimonials/vivek-menon.md. Lenaa was identified by the client on 4 Sep 2026 and now leads the panel at the client's request. The remaining video (-N_zd4eCPPM) is still unlabelled — its YouTube title is the generic 'Our Valued Customers Have to Say About Our Exceptional Services'. It renders with no name rather than an invented one — add the real name to `name` once the client confirms who is speaking.",
     "embed": "Facade pattern — the card shows a self-hosted WebP thumbnail and only loads the YouTube iframe on click, so no request reaches Google until a visitor chooses to play. Uses youtube-nocookie.com.",
     "reelCaveat": "Ncw3JZmIAoI is a YouTube Short and reads as a brand reel, not a client speaking. Moved out of `videos` into `unusedVideos` on 4 Sep 2026 so it no longer occupies a client-testimonial slot. Move it back only if it is re-cut as a client testimonial.",
     "textTestimonialsKept": "The five text testimonials in src/content/testimonials/ are real, named clients (Olives Resort, Evosyz, Exacore IT, Greens Ayurveda, Rincy) and were left in place — only the fake video panel was replaced.",
-    "order": "Panel order is the array order in `videos`, not a sort key. The 4 Sep 2026 request to lead with Lenaa rested on an attribution that turned out to be wrong; the order is unchanged pending a fresh instruction.",
-    "misattributionCorrected": "5 Sep 2026 — ocV7KcfU9vs was published as 'Lenaa, Actor, Author & TEDx Speaker, Kerala'. The client confirmed it is not her. Name and role cleared and the thumbnail renamed lenaa.webp -> client-2.webp so no filename asserts an identity. Lenaa is a real client, but her work is the personal-brand website case study (/lenaa-personal-brand-website-case-study/), not this video."
+    "order": "Panel order is the array order in `videos`, not a sort key. Lenaa first, then Vivek Menon, then the unidentified client — set by the client on 4 Sep 2026.",
+    "lenaaConfirmed": "5 Sep 2026 — the Lenaa attribution on ocV7KcfU9vs was questioned and briefly removed, on the reasoning that the video thumbnail did not resemble the photography on lenaalife.com. The client confirmed the attribution is correct and asked for the name and the leading position to stand. The client is the authority on who is in their own client's video; do not un-name this entry again on the basis of photo comparison."
   },
   "unusedVideos": [
     {
