@@ -6,16 +6,27 @@
  *
  * Required env vars (Vercel → Project → Settings → Environment Variables):
  *   RESEND_API_KEY   - from resend.com (free tier is enough for form volume)
- *   CONTACT_TO       - optional; defaults to sanal@teknoppy.com
+ *   CONTACT_TO       - optional; defaults to sales@teknoppy.com
+ *   CONTACT_CC       - optional; defaults to sanal@teknoppy.com. Comma-separate
+ *                      for several addresses; set to "none" to send no copy.
  *   CONTACT_FROM     - optional; defaults to onboarding@resend.dev, which works
  *                      immediately without domain verification. Switch this to
  *                      something like website@teknoppy.com once the teknoppy.com
  *                      domain is verified in Resend, so replies thread properly.
  *
- * Then set PUBLIC_CONTACT_ENDPOINT=/api/contact so the forms start posting here.
- * Until that variable is set, both forms tell visitors to phone or email instead
- * of silently swallowing the enquiry.
+ * The forms post here by default. PUBLIC_CONTACT_ENDPOINT only needs setting to
+ * point them somewhere else (a different route or an external form service).
  */
+
+/** "a@x.com, b@y.com" -> ['a@x.com','b@y.com']. "none"/empty -> []. */
+const addresses = (value, fallback) => {
+  const raw = String(value ?? '').trim() || fallback;
+  if (raw.toLowerCase() === 'none') return [];
+  return raw
+    .split(',')
+    .map((a) => a.trim())
+    .filter(Boolean);
+};
 
 const MAX_FIELD = 5000;
 
@@ -90,6 +101,20 @@ export default async function handler(req, res) {
       <div style="white-space:pre-wrap;font-size:14px;line-height:1.6;color:#111">${esc(message)}</div>
     </div>`;
 
+  // sales@ is the inbox of record; sanal@ is copied on every enquiry.
+  const to = addresses(process.env.CONTACT_TO, 'sales@teknoppy.com');
+  const cc = addresses(process.env.CONTACT_CC, 'sanal@teknoppy.com');
+
+  const payload = {
+    from: process.env.CONTACT_FROM || 'Teknoppy Website <onboarding@resend.dev>',
+    to: to.length ? to : ['sales@teknoppy.com'],
+    reply_to: email,
+    subject: `New enquiry — ${name}${service ? ` (${service})` : ''}`,
+    html
+  };
+  // Resend rejects an empty cc array — only include the key when there is one.
+  if (cc.length) payload.cc = cc;
+
   try {
     const r = await fetch('https://api.resend.com/emails', {
       method: 'POST',
@@ -97,13 +122,7 @@ export default async function handler(req, res) {
         Authorization: `Bearer ${API_KEY}`,
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({
-        from: process.env.CONTACT_FROM || 'Teknoppy Website <onboarding@resend.dev>',
-        to: [process.env.CONTACT_TO || 'sanal@teknoppy.com'],
-        reply_to: email,
-        subject: `New enquiry — ${name}${service ? ` (${service})` : ''}`,
-        html
-      })
+      body: JSON.stringify(payload)
     });
 
     if (!r.ok) {

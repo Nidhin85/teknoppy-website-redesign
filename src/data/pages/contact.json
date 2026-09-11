@@ -12,16 +12,34 @@
   "reachUs": {
     "heading": "Reach Us Directly",
     "items": [
-      { "label": "Phone", "value": "+91 6282249224", "href": "tel:+916282249224", "icon": "phone" },
-      { "label": "Email", "value": "sanal@teknoppy.com", "href": "mailto:sanal@teknoppy.com", "icon": "mail" },
-      { "label": "Office", "value": "Vyttila, Kochi, Kerala, India", "icon": "map" },
-      { "label": "Hours", "value": "Monday–Saturday, 10 AM–6 PM IST", "icon": "clock" }
+      {
+        "label": "Phone",
+        "value": "+91 6282249224",
+        "href": "tel:+916282249224",
+        "icon": "phone"
+      },
+      {
+        "label": "Email",
+        "value": "sales@teknoppy.com",
+        "href": "mailto:sales@teknoppy.com",
+        "icon": "mail"
+      },
+      {
+        "label": "Office",
+        "value": "Second Floor, Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam, Kochi, Kerala 682019",
+        "icon": "map"
+      },
+      {
+        "label": "Hours",
+        "value": "Monday–Saturday, 10 AM–6 PM IST",
+        "icon": "clock"
+      }
     ],
     "whatsappLabel": "Chat on WhatsApp"
   },
   "map": {
     "title": "Teknoppy office, Vyttila, Kochi",
-    "query": "Teknoppy, Vyttila, Kochi, Kerala, India"
+    "query": "Second Floor, Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam, Kochi, Kerala 682019"
   },
   "form": {
     "heading": "Send Us the Details",
@@ -34,7 +52,7 @@
       "Other"
     ],
     "successMessage": "Thanks — your message is with us. A Teknoppy strategist will reply within one business day.",
-    "errorMessage": "Something went wrong sending your message. Please call +91 6282249224 or email sanal@teknoppy.com and we'll pick it up straight away."
+    "errorMessage": "Something went wrong sending your message. Please call +91 6282249224 or email sales@teknoppy.com and we'll pick it up straight away."
   },
   "whereWeWork": {
     "heading": "Where We Work",
@@ -43,8 +61,12 @@
   "afterSubmit": {
     "heading": "What Happens After You Submit",
     "paragraphs": [
-      { "text": "Tell us what you need — a new website, an SEO audit, ongoing marketing — and roughly what you're working with. That's enough for us to reply with next steps instead of another form to fill out. If it's a good fit, we'll set up a short call to scope the work properly before any quote goes out." },
-      { "html": "Not ready for a call yet? Start with a <a href=\"/free-website-audit-kerala/\" class=\"text-primary font-semibold hover:underline\">free website audit</a> or <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">book a consultation</a> directly." }
+      {
+        "text": "Tell us what you need — a new website, an SEO audit, ongoing marketing — and roughly what you're working with. That's enough for us to reply with next steps instead of another form to fill out. If it's a good fit, we'll set up a short call to scope the work properly before any quote goes out."
+      },
+      {
+        "html": "Not ready for a call yet? Start with a <a href=\"/free-website-audit-kerala/\" class=\"text-primary font-semibold hover:underline\">free website audit</a> or <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">book a consultation</a> directly."
+      }
     ]
   },
   "faq": {
@@ -78,19 +100,25 @@
     "footnoteHtml": "See our <a href=\"/certifications/\" class=\"text-primary font-semibold hover:underline\">certifications and client reviews →</a> before you reach out, if you'd like proof first."
   },
   "closingCtas": [
-    { "label": "Get Started →", "href": "#contact-form" },
-    { "label": "View Our Services →", "href": "/services/" }
+    {
+      "label": "Get Started →",
+      "href": "#contact-form"
+    },
+    {
+      "label": "View Our Services →",
+      "href": "/services/"
+    }
   ],
   "devNotes": {
     "source": "CONTACT.pdf — Teknoppy Contact Us Page, Final Page Copy & Build Instructions",
-    "napConflict": "This doc states the office as \"Vyttila, Kochi, Kerala, India\" and also requires the NAP to be character-for-character identical to the Google Business Profile and the site footer. The footer and site.json use the fuller \"Kaithakal Building, Near Thykoodam Metro, Vyttila PO, Kochi, Kerala 682019\". Page copy renders as this doc states; the two must be reconciled against the live GBP listing before launch.",
+    "napConflict": "RESOLVED 11 Sep 2026. The client supplied the authoritative Google Business Profile address: \"Second Floor, Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam, Kochi, Kerala 682019\". That exact string is now used site-wide — site.json, the LocalBusiness JSON-LD in FooterCTA/index/contact-us, this page's Office row and the map query. The doc's shorter \"Vyttila, Kochi, Kerala, India\" is superseded, because the doc itself requires the NAP to match GBP character-for-character.",
     "brandColourConflict": "Designer notes specify orange #FF8C00. The site's brand token is #F05A2C and public/logo.svg uses #D84315. Buttons use the existing site token — three different oranges are in play and need a decision.",
     "requiresClientInput": [
-      "Form endpoint — submissions are not delivered anywhere until PUBLIC_CONTACT_ENDPOINT is set. No CRM/inbox routing, no auto-email to the enquirer.",
+      "Resend: RESEND_API_KEY is set in the local .env but NOT in Vercel, so the live form returns 500 \"Contact form is not configured\". Add RESEND_API_KEY in Vercel and redeploy. Enquiries go to sales@teknoppy.com with sanal@teknoppy.com on CC. Separately, the Resend account still has no verified domain, so it is in testing mode and mail to those addresses is rejected (403) — verify teknoppy.com at resend.com/domains and set CONTACT_FROM to an address on it. Still no CRM routing and no auto-reply to the enquirer.",
       "reCAPTCHA v3 site key — invisible spam protection not implemented.",
       "Analytics — no GA4/GTM on the site, so form, phone-click and WhatsApp-click conversion events cannot be tracked yet.",
       "Real office/team photo near the contact block.",
-      "Confirmed, independently verifiable certification badges for the trust badge row. The unverified \u201cGoogle Partner\u201d claim was removed from the hero and from seo-services.json on 4 Sep 2026 \u2014 do not reinstate any badge without a working verification URL.",
+      "Confirmed, independently verifiable certification badges for the trust badge row. The unverified “Google Partner” claim was removed from the hero and from seo-services.json on 4 Sep 2026 — do not reinstate any badge without a working verification URL.",
       "Organization schema sameAs — LinkedIn / social / Google Business Profile URLs are still \"#\" in site.json."
     ]
   }

@@ -3,9 +3,10 @@ import { Phone, Mail, MapPin, Zap } from 'lucide-react';
 import site from '../data/site.json';
 import Footer from './Footer.astro';
 
-// Shared with the contact page. When it is unset the form says so plainly
-// rather than showing a success message for a message nobody received.
-const formEndpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT ?? '';
+// Shared with the contact page. Defaults to the /api/contact handler that ships
+// with the site; PUBLIC_CONTACT_ENDPOINT only needs setting to point the form
+// somewhere else.
+const formEndpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT || '/api/contact';
 
 const businessInfo = {
   name: site.businessName,
@@ -25,7 +26,7 @@ const schema = {
   "url": "https://teknoppy.com/",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Kaithakal Building, Near Thykoodam Metro, Vyttila PO",
+    "streetAddress": "Second Floor, Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam",
     "addressLocality": "Kochi",
     "addressRegion": "Kerala",
     "postalCode": "682019",
@@ -240,7 +241,7 @@ const schema = {
       const endpoint = form.dataset.endpoint;
       if (!endpoint) {
         show(
-          'This form is not connected to our inbox yet. Please call +91 6282249224 or email sanal@teknoppy.com and we will pick it up straight away.',
+          'This form is not connected to our inbox yet. Please call +91 6282249224 or email sales@teknoppy.com and we will pick it up straight away.',
           false
         );
         return;
@@ -264,7 +265,7 @@ const schema = {
         show('Thanks — your message is with us. A Teknoppy strategist will reply within one business day.', true);
       } catch {
         show(
-          "Something went wrong sending your message. Please call +91 6282249224 or email sanal@teknoppy.com and we'll pick it up straight away.",
+          "Something went wrong sending your message. Please call +91 6282249224 or email sales@teknoppy.com and we'll pick it up straight away.",
           false
         );
       } finally {

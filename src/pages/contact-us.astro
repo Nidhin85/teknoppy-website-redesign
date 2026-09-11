@@ -8,10 +8,10 @@ import page from '../data/pages/contact.json';
 
 const icons: Record<string, any> = { phone: Phone, mail: Mail, map: MapPin, clock: Clock };
 
-// Submissions POST here. Until it is set the form reports a failure and points
-// at phone/email rather than showing a success message for a message that was
-// never delivered.
-const formEndpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT ?? '';
+// Submissions POST here. Defaults to the /api/contact handler that ships with
+// the site; PUBLIC_CONTACT_ENDPOINT only needs setting to point the form
+// somewhere else.
+const formEndpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT || '/api/contact';
 
 const sameAs = [site.social.linkedin, site.social.instagram, site.social.twitter].filter(
   (u) => u && u !== '#'
@@ -46,7 +46,7 @@ const schemas = [
     "url": "https://teknoppy.com/contact-us/",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Kaithakal Building, Near Thykoodam Metro, Vyttila PO",
+      "streetAddress": "Second Floor, Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam",
       "addressLocality": "Kochi",
       "addressRegion": "Kerala",
       "postalCode": "682019",
@@ -364,7 +364,7 @@ const labelClass = "block text-[13px] font-black text-neutral-700 uppercase trac
       // success message for a message that was never delivered.
       if (!endpoint) {
         show(
-          'This form is not connected to our inbox yet. Please call +91 6282249224 or email sanal@teknoppy.com and we will pick it up straight away.',
+          'This form is not connected to our inbox yet. Please call +91 6282249224 or email sales@teknoppy.com and we will pick it up straight away.',
           false
         );
         return;

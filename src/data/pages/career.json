@@ -93,9 +93,9 @@
       "h2": "How to apply",
       "intro": "Email your CV with the role name in the subject line. Portfolios, links, and work samples help — send them with the first email rather than waiting to be asked.",
       "rows": [
-        { "label": "Email", "value": "sanal@teknoppy.com", "href": "mailto:sanal@teknoppy.com?subject=Application%20%E2%80%94%20%5Brole%20name%5D" },
+        { "label": "Email", "value": "sales@teknoppy.com", "href": "mailto:sales@teknoppy.com?subject=Application%20%E2%80%94%20%5Brole%20name%5D" },
         { "label": "Phone", "value": "+91 6282249224", "href": "tel:+916282249224" },
-        { "label": "Office", "value": "Kaithakal Building, Near Thykoodam Metro, Vyttila PO, Kochi, Kerala 682019" }
+        { "label": "Office", "value": "Second Floor, Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam, Kochi, Kerala 682019" }
       ]
     },
     {
@@ -142,10 +142,10 @@
       "bg": "cream",
       "h2": "Ready to apply?",
       "paragraphs": [
-        "Send your CV and work samples to sanal@teknoppy.com with the role name in the subject line, or call the office if you want to ask about a role before you apply."
+        "Send your CV and work samples to sales@teknoppy.com with the role name in the subject line, or call the office if you want to ask about a role before you apply."
       ],
       "ctas": [
-        { "label": "Email your application", "href": "mailto:sanal@teknoppy.com?subject=Application%20%E2%80%94%20%5Brole%20name%5D" },
+        { "label": "Email your application", "href": "mailto:sales@teknoppy.com?subject=Application%20%E2%80%94%20%5Brole%20name%5D" },
         { "label": "Talk to us first", "href": "/contact-us/" }
       ]
     }
@@ -159,7 +159,7 @@
     ],
     "beforePublishing": [
       "Confirm every listed role is still open and the experience requirements are current.",
-      "Decide whether applications should go to sanal@teknoppy.com or a dedicated careers@teknoppy.com inbox, then update the nap block and both CTA mailto links.",
+      "Decide whether applications should go to sales@teknoppy.com or a dedicated careers@teknoppy.com inbox, then update the nap block and both CTA mailto links.",
       "JobPosting schema is deliberately not emitted: Google requires an accurate datePosted and validThrough per role, and neither is known. Add per-role dates to this JSON first, then wire the schema."
     ],
     "schemaEmitted": ["FAQPage (5 questions)", "BreadcrumbList: Home -> Careers"]
