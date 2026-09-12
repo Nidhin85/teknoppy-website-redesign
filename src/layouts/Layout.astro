@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import site from '../data/site.json';
+import WhatsAppFab from '../components/WhatsAppFab.astro';
 
 interface Props {
   title: string;
@@ -75,6 +76,9 @@ const ogImageURL = new URL(image, Astro.site || 'https://teknoppy.com');
   </head>
   <body id="top" class="min-h-screen flex flex-col relative pb-20 md:pb-0">
     <slot />
+
+    <!-- Floating WhatsApp button (tablet + desktop; the bar below covers phones) -->
+    <WhatsAppFab />
 
     <!-- Premium Floating Bottom CTA Bar (Mobile Only) -->
     <div id="mobile-bottom-bar" class="fixed bottom-5 left-4 right-4 z-50 bg-white/90 backdrop-blur-md border border-neutral-100 rounded-full px-3 py-2.5 flex justify-between items-center gap-3 md:hidden shadow-[0_12px_30px_-5px_rgba(0,0,0,0.15)] max-w-sm mx-auto transition-all duration-300 ease-out transform">
