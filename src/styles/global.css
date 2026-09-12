@@ -11,7 +11,7 @@
   --color-border: #ECECEC;
 
   /* Page tints. These were hardcoded as bg-[#FFF8EF] / bg-[#FAFAFA] / bg-[#FFF9F6]
-     in ~120 places; naming them is what lets the dark theme swap them centrally. */
+     in ~120 places; naming them keeps the alternating section grounds in one spot. */
   --color-soft: #FAFAFA;
   --color-warm: #FFF9F6;
 
@@ -73,118 +73,12 @@
 }
 
 
-/* ---------------------------------------------------------------------------
-   DARK THEME
+/* The site is light-only. There is deliberately no `prefers-color-scheme: dark`
+   palette override here: the design ships one theme, and sections that are dark
+   (the heroes, the footer, the black mockups) are dark by design rather than by
+   the OS setting.
 
-   Every Tailwind colour utility compiles to `var(--color-*)`, so re-declaring
-   the palette here re-themes all ~2,280 colour classes at once — no `dark:`
-   variants and no per-page edits.
-
-   The neutral ramp is inverted: what was the lightest surface becomes the
-   darkest, and what was the darkest ink becomes the lightest. Two deliberate
-   exceptions:
-
-     - `--color-neutral-950` is left alone. It is the ground for the hero and
-       footer, which are dark *by design*; inverting it would turn them white.
-     - Brand colours (primary, secondary, WhatsApp green, the browser-chrome
-       dots) are identity, not theme, and never move.
-
-   Triggered purely by the OS setting, so there is no flash of the wrong theme
-   on first paint and nothing to hydrate.
-   --------------------------------------------------------------------------- */
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-
-    /* Surfaces, lightest-feeling to darkest */
-    --color-background: #101318;   /* page ground */
-    --color-white: #171b22;        /* cards, panels, anything that was white */
-    --color-cream: #1e222b;        /* the warm alternating sections */
-    --color-warm: #1c2028;
-    --color-soft: #151920;
-
-    /* Ink */
-    --color-black: #EEF2F7;
-    --color-muted: #98A1B0;
-    --color-border: #282D36;
-
-    --color-neutral-50:  #151920;
-    --color-neutral-100: #262B34;  /* mostly borders — must read against #171b22 */
-    --color-neutral-200: #323844;
-    --color-neutral-300: #434A58;
-    --color-neutral-400: #7D8593;  /* meta text: dates, labels */
-    --color-neutral-500: #9AA2B1;
-    --color-neutral-600: #B6BDC9;  /* body copy */
-    --color-neutral-700: #CED4DE;
-    --color-neutral-800: #E2E7EE;
-    --color-neutral-850: #EDF1F6;
-    --color-neutral-900: #F3F6FA;  /* headings */
-    /* --color-neutral-950 intentionally NOT overridden — see note above. */
-  }
-
-  /* Sections whose ground is fixed by design rather than by the theme — the dark
-     heroes and footer, the black case-study mockups, and the orange CTA bands.
-     Their contents are drawn against that fixed ground, so inverting the palette
-     underneath them would wreck the contrast. Inside these, the original
-     light-theme ramp is restored and they render exactly as they always have. */
-  .theme-keep-light {
-    --color-white: #fff;
-    --color-black: #111;
-    --color-border: #ECECEC;
-    --color-muted: #6B7280;
-    --color-cream: #FFF8EF;
-    --color-soft: #FAFAFA;
-    --color-warm: #FFF9F6;
-    --color-neutral-50:  oklch(98.5% 0 0);
-    --color-neutral-100: oklch(97% 0 0);
-    --color-neutral-200: oklch(92.2% 0 0);
-    --color-neutral-300: oklch(87% 0 0);
-    --color-neutral-400: oklch(70.8% 0 0);
-    --color-neutral-500: oklch(55.6% 0 0);
-    --color-neutral-600: oklch(43.9% 0 0);
-    --color-neutral-700: oklch(37.1% 0 0);
-    --color-neutral-800: oklch(26.9% 0 0);
-    --color-neutral-850: oklch(23.5% 0 0);
-    --color-neutral-900: oklch(20.5% 0 0);
-  }
-
-  /* `text-white` is never a themed colour — it is only ever used as ink on a
-     ground that is dark or brand-orange by design (buttons, badges, table heads,
-     the heroes). Those grounds do not move in dark mode, so the ink must not
-     either. The surface utilities (bg-white, border-white/10) keep following the
-     token; only the ink is pinned. Same reasoning for the four placeholders that
-     sit inside brand-coloured form fields. */
-  .text-white {
-    color: #fff;
-  }
-  .fill-white {
-    fill: #fff;
-  }
-  .placeholder-white::placeholder {
-    color: #fff;
-  }
-
-  /* Client logos are dark artwork on transparent/white backgrounds, and
-     mix-blend-multiply erases them against a dark ground. Keep them on their own
-     light plate so the brands stay legible and on-colour. */
-  .logo-plate {
-    background-color: #F4F6F8;
-    border-radius: 0.75rem;
-  }
-
-  /* Soft ambient shadows vanish on dark; a hairline keeps card edges readable. */
-  .theme-card-edge {
-    border-color: var(--color-neutral-200);
-  }
-
-  /* Decorative section backgrounds are light photographic plates. Left alone they
-     stay bright under the now-light body text. These are always empty, absolutely
-     positioned layers, so a filter touches nothing but the artwork itself.
-     Inside a statically-dark section the plate is already dark — leave it. */
-  .theme-dim-bg {
-    filter: brightness(0.22) saturate(0.75);
-  }
-  .theme-keep-light .theme-dim-bg {
-    filter: none;
-  }
-}
+   The markup still carries the class names `theme-keep-light`, `theme-dim-bg`,
+   `theme-card-edge` and `logo-plate` in ~60 files. They were the hooks the dark
+   palette used and are now inert — they style nothing. Left in place so the diff
+   stays small; safe to strip whenever those files are next touched. */

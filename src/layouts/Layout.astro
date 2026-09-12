@@ -24,12 +24,10 @@ const ogImageURL = new URL(image, Astro.site || 'https://teknoppy.com');
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-    <!-- The site themes itself from the OS setting alone (see global.css). Declaring
-         both schemes lets the browser paint form controls, scrollbars and the
-         address bar to match, and stops the white flash before CSS applies. -->
-    <meta name="color-scheme" content="light dark" />
-    <meta name="theme-color" content="#FCFCFC" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#101318" media="(prefers-color-scheme: dark)" />
+    <!-- The site is light-only. Declaring the single scheme keeps form controls,
+         scrollbars and the address bar light even when the OS is set to dark. -->
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#FCFCFC" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonicalURL} />
     
