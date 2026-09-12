@@ -180,18 +180,24 @@ const faqSchema = {
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {page.services.cards.map((svc, i) => {
             const IconComp = serviceIcons[i];
+            const Card = svc.href ? 'a' : 'div';
             return (
-              <div class="relative overflow-hidden bg-white rounded-3xl border border-neutral-100 p-6 sm:p-7 shadow-[0_12px_30px_-15px_rgba(0,0,0,0.03)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.06)] transition-all duration-300 flex flex-col">
+              <Card href={svc.href} class="group relative overflow-hidden bg-white rounded-3xl border border-neutral-100 p-6 sm:p-7 shadow-[0_12px_30px_-15px_rgba(0,0,0,0.03)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.06)] transition-all duration-300 flex flex-col">
                 <!-- Left Gradient Stroke -->
                 <div class="absolute left-0 top-0 bottom-0 w-[4px] bg-gradient-to-b from-primary via-[#F58439] to-[#FFE2D1]"></div>
                 <div class="flex items-center gap-4">
                   <div class="w-14 h-14 bg-primary/5 text-primary rounded-2xl flex items-center justify-center flex-shrink-0 border border-primary/10 shadow-inner">
                     <IconComp class="w-6 h-6" />
                   </div>
-                  <h3 class="text-base sm:text-[18px] font-black text-neutral-850 leading-snug">{svc.title}</h3>
+                  <h3 class:list={["text-base sm:text-[18px] font-black text-neutral-850 leading-snug", svc.href && "group-hover:text-primary transition-colors duration-300"]}>{svc.title}</h3>
                 </div>
                 <p class="text-neutral-500 text-xs leading-relaxed mt-4 font-semibold">{svc.desc}</p>
-              </div>
+                {svc.href && (
+                  <span class="inline-flex items-center gap-1.5 mt-5 text-xs font-bold text-primary">
+                    Learn more <ArrowRight class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+                  </span>
+                )}
+              </Card>
             );
           })}
         </div>
