@@ -1,0 +1,228 @@
+{
+  "meta": {
+    "title": "Responsive Web Design Services Kochi | Teknoppy",
+    "description": "Get a responsive web design that adapts flawlessly to mobile, tablet, and desktop. Teknoppy builds mobile-first websites in Kochi. Call +91 6282249224."
+  },
+  "breadcrumb": [
+    { "name": "Home", "href": "/" },
+    { "name": "Website Design & Development", "href": "/web-design-company-kochi/" },
+    { "name": "Responsive Web Design", "href": "/responsive-web-design-kochi/" }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Website Design & Development",
+      "h1Lead": "Responsive Web Design Services",
+      "h1Accent": "Kochi",
+      "subhead": "One Website, Every Screen, Zero Compromise",
+      "body": [
+        {
+          "text": "Teknoppy delivers responsive web design services in Kochi that automatically adapt to phones, tablets, and desktops from a single codebase. Instead of maintaining separate mobile and desktop sites, your business gets one responsive website that resizes, reflows, and reorders itself so every visitor gets a complete, working experience regardless of the device they use."
+        }
+      ],
+      "ctas": [
+        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
+        { "label": "Request a Quote", "href": "/request-a-quote/" }
+      ],
+      "stats": [
+        { "value": "120+", "label": "Websites Delivered Since 2018" },
+        { "value": "70%+", "label": "Of Kerala Web Traffic Is Mobile-First" },
+        { "value": "CWV", "label": "Built In From Development Stage" }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "columns": 2,
+      "badge": "What's Included",
+      "h2": "What Our Responsive Web Design Services Include",
+      "intro": "Every responsive web design project at Teknoppy is built around four core technical practices that separate a genuinely responsive website from a template that only looks adjusted.",
+      "items": [
+        {
+          "title": "Fluid Grid Layouts",
+          "text": "Every page is built on a flexible, percentage-based grid instead of a fixed pixel width, so sections resize proportionally at each breakpoint instead of overlapping or breaking. This fluid-grid approach is the structural foundation of genuine responsive website design, not a simple mobile toggle bolted onto a desktop template."
+        },
+        {
+          "title": "Mobile-First Website Design",
+          "text": "Teknoppy designs for the smallest screen first, then scales the layout up to tablet and desktop. This mobile-first website design approach forces every page to earn its place, since content that doesn't matter on a phone gets cut early instead of cluttering the final build."
+        },
+        {
+          "title": "Adaptive Image and Media Delivery",
+          "text": "Images and video are served at the resolution each device actually needs, so a mobile visitor on a slower connection isn't downloading a full desktop-sized hero image. Adaptive media delivery keeps a responsive website fast on the devices where speed affects conversions the most."
+        },
+        {
+          "title": "Cross-Device and Cross-Browser Testing",
+          "text": "Every responsive web design project is tested on real phones, tablets, and desktop browsers, not just resized inside a desktop browser window. Cross-device website design that hasn't been checked on actual hardware is a guess, not a guarantee."
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "bg": "white",
+      "badge": "How We Work",
+      "h2": "Our Responsive Web Design Process",
+      "items": [
+        {
+          "title": "Content and device audit.",
+          "text": "We review how your current site behaves across devices, or plan the content structure from scratch for a new build, and flag exactly where layouts currently break."
+        },
+        {
+          "title": "Mobile-first wireframing.",
+          "text": "Core user journeys are wireframed for the smallest screen first, then expanded outward for tablet and desktop breakpoints."
+        },
+        {
+          "title": "Fluid grid development.",
+          "text": "The build uses percentage-based, flexible grid layouts rather than fixed-width templates, so the design flexes instead of snapping between breakpoints."
+        },
+        {
+          "title": "Device and speed testing.",
+          "text": "The finished responsive website is tested on real devices and checked against Core Web Vitals for load speed and layout stability before launch."
+        },
+        {
+          "title": "Post-launch monitoring.",
+          "text": "After launch, we track mobile usability reports in Google Search Console for a defined period to catch any device-specific issues early."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "soft",
+      "columns": 2,
+      "badge": "The Teknoppy Advantage",
+      "h2": "Why Choose Teknoppy for Responsive Web Design in Kochi",
+      "items": [
+        {
+          "title": "Mobile-First by Default, Not by Request",
+          "text": "Every project starts on the smallest screen, not the largest one. Clients don't need to specifically request mobile optimization; it is the starting point of the responsive web design process, not an afterthought added before launch."
+        },
+        {
+          "title": "Built on Clean, Lightweight Code",
+          "text": "Bloated frameworks are one of the most common reasons a supposedly responsive website still feels slow on mobile, so Teknoppy keeps the codebase lean by default."
+        },
+        {
+          "title": "Tested on Real Devices, Not Just Emulators",
+          "text": "Resizing a desktop browser window misses real issues like touch-target spacing and actual mobile network speeds. Every responsive website design project is verified on physical devices before it ships to the client."
+        },
+        {
+          "title": "Kochi-Based Team, Direct Access",
+          "text": "Clients work directly with the people building their site, with no account-manager layer in between. That matters when a layout issue on a responsive website needs a same-day fix rather than a ticket sitting in a queue."
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "bg": "white",
+      "h2": "Who Needs Responsive Web Design",
+      "intro": "Any business whose visitors browse on more than one type of device needs responsive web design, which today describes almost every business online. It matters most for:",
+      "items": [
+        { "text": "Businesses drawing a large share of traffic from mobile search, where a broken mobile layout directly costs enquiries and sales" },
+        { "text": "Companies running an older, desktop-only website that never had responsive web design applied, and now looks squeezed, cut off, or hard to tap on phones and tablets" },
+        { "text": "New websites being built from the ground up, where responsive design should be the default starting point, not an optional add-on" }
+      ],
+      "outro": [
+        {
+          "html": "If your business sits in a specific sector, responsive design matters most for real estate and tourism websites, both of which see an especially high share of mobile visitors. Either way, the work sits under our <a href=\"/web-design-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Website Design and Development</a> service."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "cream",
+      "h2": "Responsive Web Design Projects We've Delivered",
+      "paragraphs": [
+        {
+          "html": "More completed work is available in our <a href=\"/portfolios/website-projects/\" class=\"text-primary font-semibold hover:underline\">website design project portfolio</a>."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "Responsive Web Design Pricing",
+      "paragraphs": [
+        {
+          "html": "Pricing for responsive web design depends on the number of pages, custom features required, and whether it's a new build or a redesign of an existing site. For a figure set against your own page count and feature list, <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">request a quote</a>."
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "soft",
+      "h2": "Related Services",
+      "intro": "This page is part of our Website Design and Development services.",
+      "items": [
+        { "label": "Website Design and Development", "href": "/web-design-company-kochi/", "text": "the parent service this page sits under." },
+        { "label": "Landing Page Design", "href": "/landing-page-design-kochi/", "text": "for a single campaign page rather than a full responsive site." },
+        { "label": "WordPress Development Company", "href": "/wordpress-development-company-kochi/", "text": "CMS website development, for sites your team needs to update itself." },
+        { "label": "WordPress Maintenance Services", "href": "/wordpress-maintenance-services-kochi/", "text": "ongoing website maintenance after launch." },
+        { "label": "Website Speed Optimization", "href": "/website-speed-optimization-services-kochi/", "text": "Core Web Vitals and load speed work on an existing site." }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "white",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions — Responsive Web Design Services Kochi",
+      "items": [
+        {
+          "q": "What is responsive web design?",
+          "a": "Responsive web design is a development approach where a single website automatically adjusts its layout, images, and navigation to fit any screen size, from phone to tablet to desktop, instead of requiring separate mobile and desktop versions of the same site."
+        },
+        {
+          "q": "Is a responsive website the same thing as a mobile app?",
+          "a": "No. A responsive website runs inside a browser and adapts to screen size, while a mobile app is a separate installed program. Most businesses only need a responsive website rather than an installed app."
+        },
+        {
+          "q": "Does responsive design affect SEO rankings?",
+          "a": "Yes. Google primarily uses mobile-first indexing, which means it evaluates the mobile version of a site to determine rankings. A responsive website design keeps a single version of every page to index, avoiding the duplicate-content issues that separate mobile sites can create."
+        },
+        {
+          "q": "How long does a responsive website take to build?",
+          "a": "Timelines vary with page count and feature complexity, but most responsive business websites take a few weeks from wireframe approval to launch. An exact timeline is confirmed during the initial consultation."
+        },
+        {
+          "q": "Can an existing website be made responsive without a full rebuild?",
+          "a": "Sometimes, if the underlying code allows it, but a site built on a fixed-width, desktop-only template usually needs a proper rebuild to become genuinely responsive. This is assessed during the initial device audit."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "cream",
+      "h2": "Ready to Start Your Responsive Web Design Project?",
+      "paragraphs": [
+        {
+          "text": "A website that only works properly on desktop is turning away the majority of visitors who arrive on a phone. Teknoppy builds responsive web design in Kochi that performs equally well on every device your customers actually use, so no enquiry is lost to a layout that didn't load right."
+        }
+      ],
+      "ctas": [
+        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
+        { "label": "Request a Quote", "href": "/request-a-quote/" }
+      ]
+    },
+    {
+      "type": "byline",
+      "bg": "white",
+      "text": "Teknoppy · Vyttila, Kochi, Kerala · +91 6282249224 · sales@teknoppy.com"
+    }
+  ],
+  "devNotes": {
+    "source": "Website Design&Development pillar page - Responsive Web Design Kochi Inner Page.pdf",
+    "primaryKeyword": "Responsive Web Design Services Kochi",
+    "wordCount": "1,209 words",
+    "keywordDensity": "1.82% (22 occurrences, target 1.8–2.0%) — body copy is verbatim from the doc, so the density holds.",
+    "metaTitleLength": "47 characters",
+    "metaDescriptionLength": "150 characters",
+    "schema": "Service + LocalBusiness + FAQPage + BreadcrumbList",
+    "heldPlaceholders": [
+      "Why Choose Teknoppy → Built on Clean, Lightweight Code — [ORIGINAL EXAMPLE NEEDED: a specific case where lightweight code measurably improved mobile load time on a client's responsive website]. The card publishes the doc's supporting sentence only; add the example above it once a verified one exists.",
+      "Responsive Web Design Projects We've Delivered — [PROJECT REFERENCE NEEDED: a real client project where a responsive rebuild measurably improved mobile bounce rate, load time, or mobile enquiries, with the actual figures]. No case study in src/data/pages/case-studies/ currently carries verified mobile or load-time numbers, so the section publishes the portfolio link alone."
+    ],
+    "unverifiedStat": "The hero's '70%+ of Kerala web traffic is mobile-first' tile comes from the source doc and matches the claim already made on the Website Design pillar (services card, 'Responsive Web Design'). It is an external market figure with no citation on either page — source it or drop it from both before launch.",
+    "emailNote": "The doc's footer gives sanal@teknoppy.com. The byline uses sales@teknoppy.com, the canonical address in src/data/site.json, matching every other inner page.",
+    "linkNote": "The doc asks for links to a real estate web design page, a tourism web design page, a website design pricing page, a website cost calculator, website redesign services, website maintenance, CMS website development, and mobile app development. None of those pages are built — each slug either has no route or bounces through a placeholder redirect to a different service, which is the pattern removed from Local SEO in 184e2cb. So: the sector sentence in 'Who Needs' names real estate and tourism as plain text and links the pillar instead; the pricing paragraph's second sentence links Request a Quote in place of 'visit our website design pricing in Kerala page, or use the website cost calculator for an instant estimate'; the mobile-app FAQ drops 'see our mobile app development page if you specifically need an installed app'; and Related Services carries the live CMS and maintenance equivalents (WordPress Development, WordPress Maintenance) plus Website Speed Optimization in place of the doc's Website Redesign Services. Restore the doc's original wording and links once those pages exist.",
+    "redirectRemoved": "vercel.json redirected /responsive-web-design-kochi/ → /web-design-company-kochi/ while the page was unbuilt. That redirect is removed, or it would shadow this page.",
+    "inboundLinks": "Already linked from landing-page-design-kochi.json (Related Services), website-ui-design-kochi.json (Who Needs outro), the Website Design pillar services card, and the footer's Specialist Builds column."
+  }
+}
