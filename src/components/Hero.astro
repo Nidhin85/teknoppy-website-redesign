@@ -62,11 +62,11 @@ import home from "../data/home.json";
   >
     <!-- Content (Left Column) -->
     <div
-      class="xl:col-span-5 flex flex-col items-center text-center xl:items-start xl:text-left pt-8 xl:pt-16"
+      class="hero-copy xl:col-span-5 flex flex-col items-center text-center xl:items-start xl:text-left pt-8 xl:pt-16"
     >
       <!-- Headline (H1) -->
       <h1
-        class="text-4xl sm:text-5xl lg:text-[48px] xl:text-[54px] font-black leading-[1.15] tracking-tight text-neutral-900 mb-5"
+        class="hero-h1 text-4xl sm:text-5xl lg:text-[48px] xl:text-[54px] font-black leading-[1.15] tracking-tight text-neutral-900 mb-5"
       >
         <span class="block"
           >{home.hero.h1Lead} <span
@@ -78,7 +78,7 @@ import home from "../data/home.json";
 
       <!-- H2 — AEO Subheadline (keeps the signature pill motif) -->
       <h2
-        class="text-lg sm:text-xl lg:text-[22px] font-bold leading-snug tracking-tight text-neutral-800 mb-6 max-w-xl mx-auto xl:mx-0"
+        class="hero-h2 text-lg sm:text-xl lg:text-[22px] font-bold leading-snug tracking-tight text-neutral-800 mb-6 max-w-xl mx-auto xl:mx-0"
       >
         {home.hero.subheadline.pre} <span
           class="inline-block bg-[#F9AE42]/20 text-primary px-2 py-0.5 rounded-lg shadow-sm"
@@ -93,14 +93,37 @@ import home from "../data/home.json";
       </h2>
 
       <p
-        class="text-base lg:text-lg text-neutral-600 mb-8 max-w-lg mx-auto xl:mx-0 leading-relaxed font-medium"
+        class="hero-body text-base lg:text-lg text-neutral-600 mb-8 max-w-lg mx-auto xl:mx-0 leading-relaxed font-medium"
       >
-        {home.hero.body}
+        {home.hero.body}<span id="hero-body-more">{" "}{home.hero.bodyMore}</span>{" "}<button
+          type="button"
+          id="hero-body-toggle"
+          class="hero-body-toggle inline-flex items-baseline gap-1 font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary transition-colors cursor-pointer"
+          aria-expanded="true"
+          aria-controls="hero-body-more"
+          data-more={home.hero.readMoreLabel}
+          data-less={home.hero.readLessLabel}
+          hidden
+        >
+          <span class="hero-toggle-label">{home.hero.readLessLabel}</span>
+          <svg
+            class="hero-toggle-chevron w-3.5 h-3.5 self-center transition-transform duration-200"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="m6 9 6 6 6-6"></path>
+          </svg>
+        </button>
       </p>
 
       <!-- Primary Action Area -->
       <div
-        class="flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto mb-2"
+        class="hero-ctas flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto mb-2"
       >
         <a
           href={home.hero.primaryCta.href}
@@ -124,7 +147,7 @@ import home from "../data/home.json";
 
       <!-- Trust Bar -->
       <div
-        class="mt-4 pt-5 border-t border-neutral-100/60 w-full grid grid-cols-2 sm:grid-cols-4 gap-y-4 gap-x-3 max-w-lg mx-auto xl:mx-0"
+        class="hero-trust mt-4 pt-5 border-t border-neutral-100/60 w-full grid grid-cols-2 sm:grid-cols-4 gap-y-4 gap-x-3 max-w-lg mx-auto xl:mx-0"
       >
         {home.hero.trustBar.map((stat) => (
           <div class="flex flex-col items-center xl:items-start">
@@ -149,7 +172,7 @@ import home from "../data/home.json";
 
       <!-- Mockup Device Image Container -->
       <div
-        class="w-full max-w-[750px] z-10 scale-160 xl:-translate-y-15 origin-center"
+        class="hero-mockup w-full max-w-[750px] z-10 scale-160 xl:-translate-y-15 origin-center"
       >
         <!-- The container is `hidden xl:flex`, so lazy loading keeps this 145 KB off
              every phone and tablet visit entirely; on xl it is in the viewport at
@@ -300,6 +323,40 @@ import home from "../data/home.json";
   </div>
 </section>
 
+<script is:inline>
+  /* The back half of the hero paragraph is keyword-rich but long, and it was the
+     single biggest block of copy above the fold. Collapsing it behind a toggle
+     keeps the text in the DOM for crawlers while letting the CTAs and trust bar
+     sit higher on the page.
+
+     Deliberately inline (not a module) so it runs synchronously during parse:
+     the collapse happens before the first paint, with no flash of the full
+     paragraph. The markup therefore ships expanded with the button hidden —
+     that way a visitor without JS reads the whole paragraph and never sees a
+     toggle that cannot do anything. */
+  (function () {
+    var more = document.getElementById("hero-body-more");
+    var btn = document.getElementById("hero-body-toggle");
+    if (!more || !btn) return;
+
+    var label = btn.querySelector(".hero-toggle-label");
+
+    function setOpen(open) {
+      more.hidden = !open;
+      btn.setAttribute("aria-expanded", String(open));
+      btn.classList.toggle("is-open", open);
+      label.textContent = open ? btn.dataset.less : btn.dataset.more;
+    }
+
+    setOpen(false);
+    btn.hidden = false;
+
+    btn.addEventListener("click", function () {
+      setOpen(btn.getAttribute("aria-expanded") !== "true");
+    });
+  })();
+</script>
+
 <style>
   .hero-bg {
     background-image: url("/mobileherobg2.webp");
@@ -310,26 +367,89 @@ import home from "../data/home.json";
     }
   }
 
-  /* The hero plate is a light photograph and the image sits on the <section>
-     itself, which has content — so it is darkened with a scrim layered into the
-     background stack rather than a filter, which would dim the copy too. */
-  @media (prefers-color-scheme: dark) {
+  /* --- Fluid hero, sized to the window that is actually there ---------------
+     The hero is composed for a tall monitor. At its design size it runs 918px
+     from the top of the page to the bottom of the trust bar, but the laptops
+     most desktop visitors use leave a browser 760-860px of viewport once the
+     tab strip, address bar and bookmarks bar are taken out. That put the CTAs
+     on the fold and the trust stats underneath it.
+
+     Rather than add breakpoints that snap, the whole copy column hangs off one
+     fluid knob: its font-size. Every dimension below is expressed in em, so
+     type, gaps and measure all scale as a single unit — which also means the
+     line breaks stay exactly where they are at any size. The knob tops out at
+     16px, so anything taller than ~955px renders identically to before; it
+     bottoms out at 12.2px so a 720px window still clears the fixed header.
+
+     These rules are unlayered, so they override the Tailwind utilities in the
+     markup without needing extra specificity. */
+  @media (min-width: 1280px) {
+    .hero-copy {
+      font-size: clamp(12.2px, calc(1.743vh - 0.7px), 16px);
+      padding-top: 4em; /* 64px at full scale */
+    }
+
+    /* Matched to the copy column's scale so the block stays centred as it
+       shrinks, and the H1 keeps clearing the 105px fixed header. */
     .hero-bg {
-      background-image: linear-gradient(
-          rgba(16, 19, 24, 0.93),
-          rgba(16, 19, 24, 0.93)
-        ),
-        url("/mobileherobg2.webp");
+      padding-top: clamp(73px, calc(10.458vh - 4.2px), 96px);
+      padding-bottom: clamp(85px, calc(12.201vh - 4.9px), 112px);
     }
-    @media (min-width: 768px) {
-      .hero-bg {
-        background-image: linear-gradient(
-            rgba(16, 19, 24, 0.93),
-            rgba(16, 19, 24, 0.93)
-          ),
-          url("/tekenoppyherobg.webp");
-      }
+
+    .hero-h1 {
+      font-size: 3.375em; /* 54px */
+      margin-bottom: 0.37em; /* 20px */
     }
+    .hero-h1 :global(span span) {
+      padding-inline: 0.296em; /* 16px */
+      padding-block: 0.037em; /* 2px */
+      margin-top: 0.074em; /* 4px */
+    }
+
+    .hero-h2 {
+      font-size: 1.375em; /* 22px */
+      margin-bottom: 1.091em; /* 24px */
+      max-width: 26.182em; /* 576px */
+    }
+    .hero-h2 :global(span) {
+      padding-inline: 0.364em; /* 8px */
+      padding-block: 0.091em; /* 2px */
+    }
+
+    .hero-body {
+      font-size: 1.1875em; /* 19px */
+      margin-bottom: 1.684em; /* 32px */
+      max-width: 26.947em; /* 512px */
+    }
+
+    .hero-ctas {
+      gap: 0.75em; /* 12px */
+      margin-bottom: 0.5em; /* 8px */
+    }
+    .hero-ctas :global(> a) {
+      font-size: 1.0625em; /* 17px */
+      padding-block: 0.941em; /* 16px */
+      padding-inline: 1.882em; /* 32px */
+    }
+
+    .hero-trust {
+      margin-top: 1em; /* 16px */
+      padding-top: 1.25em; /* 20px */
+      max-width: 32em; /* 512px */
+      row-gap: 1em; /* 16px */
+      column-gap: 0.75em; /* 12px */
+    }
+    .hero-trust :global(span:first-child) {
+      font-size: 1.5em; /* 24px */
+    }
+    .hero-trust :global(span:last-child) {
+      font-size: 0.8125em; /* 13px */
+      margin-top: 0.462em; /* 6px */
+    }
+  }
+
+  .hero-body-toggle.is-open .hero-toggle-chevron {
+    transform: rotate(180deg);
   }
 
   /* Custom Floating Callout Animations */

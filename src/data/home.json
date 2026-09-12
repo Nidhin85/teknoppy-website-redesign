@@ -11,7 +11,10 @@
       "a3": "Grow",
       "post": "Your Business"
     },
-    "body": "Teknoppy is a professional Web Design Company in Kerala helping businesses across the state establish a powerful digital presence. From responsive website design Kerala businesses trust to full-scale web development Kerala enterprises rely on — we build websites that do more than look good. We build websites that work.",
+    "body": "Teknoppy is a professional Web Design Company in Kerala helping businesses across the state establish a powerful digital presence.",
+    "bodyMore": "From responsive website design Kerala businesses trust to full-scale web development Kerala enterprises rely on — we build websites that do more than look good. We build websites that work.",
+    "readMoreLabel": "Read more",
+    "readLessLabel": "Read less",
     "primaryCta": { "label": "Book a Free Consultation", "href": "#contact" },
     "secondaryCta": { "label": "View Our Portfolio", "href": "#portfolio" },
     "trustBar": [
