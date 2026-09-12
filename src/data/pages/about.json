@@ -63,6 +63,20 @@
         "photo": "/team/farsana-a.webp",
         "photoAlt": "Farsana A, Jr. SEO Executive at Teknoppy",
         "bio": "Farsana works on day-to-day SEO execution, covering on-page updates, listing and citation work, and tracking how client pages move in search."
+      },
+      {
+        "name": "Nandana",
+        "role": "Web Developer",
+        "photo": "/team/nandana.webp",
+        "photoAlt": "Nandana, Web Developer at Teknoppy",
+        "bio": "Nandana builds the client sites Teknoppy ships, turning approved designs into working front-end and WordPress builds and handling fixes and updates after launch."
+      },
+      {
+        "name": "Adithya K",
+        "role": "Social Media Content Strategist",
+        "photo": "/team/adithya-k.webp",
+        "photoAlt": "Adithya K, Social Media Content Strategist at Teknoppy",
+        "bio": "Adithya plans and writes the social content Teknoppy runs for client accounts, covering the content calendar, post copy, and the campaign themes each brand goes out with."
       }
     ]
   },
@@ -115,6 +129,7 @@
     "teamSection": "The Meet the Team section was hardcoded in about-us.astro and showed only the founder. It now reads from `team` in this file, so members are CMS-editable. The founder keeps the featured card; the rest render as a grid beneath it.",
     "teamDataNeeded": [
       "Portraits were converted from the PDFs and PNGs in the client's 'team photo' folder: PDF page 1 rasterised at 200dpi with pdftoppm, then resized to a uniform 1000x1333 (3:4) and encoded to WebP with sharp. Each image is padded rather than cropped, using its own sampled background colour, so no one is cut off and every card is the same shape.",
+      "Nandana's and Adithya K's portraits came later, as single-page PDFs of a square (approx 1086px) full-body shot. The embedded image was pulled with pdfimages, then cropped to 3:4 and resized to 700x933 to match the framing the rest of the set settled on (head about 19% down the frame, cut at mid-thigh). These two are cropped, not padded, because padding a square source to 3:4 leaves the bare background bars visible on anjali-babu.webp.",
       "The member bios describe the scope of each role only. They carry no years, project counts, or credentials, because none have been confirmed. Replace them with real bios before treating this section as an E-E-A-T signal.",
       "Vijayakala's source file spells her role 'Business devolpment and client relations'; it is corrected to 'Business Development & Client Relations' here. No surname was supplied for her.",
       "Anjali Babu and Anjana Babu are two different people with near-identical names and the same job title — check any edit to one has not been applied to the other.",
