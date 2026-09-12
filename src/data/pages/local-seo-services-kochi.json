@@ -72,7 +72,7 @@
         { "text": "Struggling with inconsistent business listings across directories, confusing both customers and search engines" }
       ],
       "outro": [
-        { "html": "If your business needs broader organic visibility beyond local search, see <a href=\"/technical-seo-services-kochi/\" class=\"text-primary font-semibold hover:underline\">Technical SEO Services</a> or the full <a href=\"/seo-services/\" class=\"text-primary font-semibold hover:underline\">SEO Services</a> pillar." },
+        { "html": "If your business needs broader organic visibility beyond local search, see Technical SEO Services or the full <a href=\"/seo-services/\" class=\"text-primary font-semibold hover:underline\">SEO Services</a> pillar." },
         { "text": "Businesses with multiple branches or service areas across Kerala often need local SEO structured differently for each location — a single generic profile rarely ranks well for more than one area at once, which is why service-area strategy matters as much as the technical setup itself." }
       ]
     },
@@ -98,9 +98,9 @@
       "h2": "Related Services",
       "items": [
         { "label": "SEO Services", "href": "/seo-services/", "text": "our full SEO services pillar" },
-        { "label": "Technical SEO Services", "href": "/technical-seo-services-kochi/" },
-        { "label": "On-Page SEO Services", "href": "/on-page-seo-services-kochi/" },
-        { "label": "SEO Audit Services", "href": "/seo-audit-services-kochi/" }
+        { "label": "SEO Company Kerala", "href": "/seo-company-kerala/", "text": "statewide SEO for businesses across Kerala" },
+        { "label": "E-commerce SEO Services", "href": "/ecommerce-seo-services-kochi/", "text": "product and category SEO for online stores" },
+        { "label": "Website Speed Optimization", "href": "/website-speed-optimization-services-kochi/", "text": "page speed and Core Web Vitals work that supports rankings" }
       ]
     },
     {
@@ -145,6 +145,7 @@
       "Local SEO Projects We've Delivered — [STAT NEEDED: add 2–3 verified figures — e.g. map-pack position improvement, review count growth, or direct enquiry increase tied to local SEO work.]"
     ],
     "schema": "Service + LocalBusiness + FAQPage + BreadcrumbList",
-    "urlNote": "The SEO Services pillar linked this as /local-seo/. This doc specifies /local-seo-services-kochi/, so the page is built there and the pillar link was repointed."
+    "urlNote": "The SEO Services pillar linked this as /local-seo/. This doc specifies /local-seo-services-kochi/, so the page is built there and the pillar link was repointed.",
+    "linkNote": "Related Services originally listed Technical SEO, On-Page SEO and SEO Audit, and the Who Needs outro linked Technical SEO. None of those three pages exist yet, so each of those links bounced through a placeholder redirect to /seo-services/ — the page named a service and delivered a different one. They now point at live SEO-cluster pages, and the Technical SEO mention is plain text. Restore the original four links once copy arrives for /technical-seo-services-kochi/, /on-page-seo-services-kochi/ and /seo-audit-services-kochi/ and those pages are built."
   }
 }
