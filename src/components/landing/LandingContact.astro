@@ -1,0 +1,96 @@
+---
+// Lead form — posts to /api/contact (see landing.js), which emails sales@.
+import { site, tel, WA, PHONE, CLIP, MAIL } from './shared';
+
+interface Props {
+  sub: string;
+  points: string[];
+  formTitle: string;
+  submitLabel: string;
+  /** Subject-line context in the enquiry email, e.g. "Google Ads LP — Shopify (English)" */
+  source: string;
+  service: string;
+  wa: string;
+  ml?: string;
+}
+
+const { sub, points, formTitle, submitLabel, source, service, wa, ml } = Astro.props;
+const formEndpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT || '/api/contact';
+---
+
+<!-- ══════════ CONTACT FORM ══════════ -->
+<section class="contact" id="contact">
+  <div class="wrap contact__inner">
+    <div class="contact__copy">
+      <h2 class="sec-title contact__h">Get In Touch</h2>
+      <p class:list={['contact__sub', ml]}>{sub}</p>
+      <ul class="contact__points">
+        {points.map((p) => <li>{p}</li>)}
+      </ul>
+      <ul class="contact__meta">
+        <li><a href={tel}><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d={PHONE}/></svg>+91 62822 49224</a></li>
+        <li><a href={`mailto:${site.email}`}><svg viewBox="0 0 24 24" aria-hidden="true" set:html={MAIL} />{site.email}</a></li>
+      </ul>
+    </div>
+
+    <div class="form-card">
+      <h3 class="form-card__h">{formTitle}</h3>
+      <p class="form-card__p">Tell us about your business — we'll get back to you fast.</p>
+      <span class="form-card__line" aria-hidden="true"></span>
+
+      <form id="leadForm" class="lead-form" novalidate data-endpoint={formEndpoint} data-source={source} data-service={service}>
+        <div class="hp" aria-hidden="true">
+          <label>Company website<input type="text" name="company_website" tabindex="-1" autocomplete="off"></label>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <svg class="field__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <input type="text" id="lf-name" name="name" placeholder="Your Name" autocomplete="name" required>
+            <small class="field__err"></small>
+          </div>
+          <div class="field">
+            <svg class="field__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <input type="email" id="lf-email" name="email" placeholder="Email Address" autocomplete="email" inputmode="email" required>
+            <small class="field__err"></small>
+          </div>
+        </div>
+
+        <div class="field">
+          <svg class="field__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <input type="tel" id="lf-phone" name="phone" placeholder="Phone / WhatsApp Number" autocomplete="tel" inputmode="tel" required>
+          <small class="field__err"></small>
+        </div>
+
+        <div class="field">
+          <svg class="field__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg>
+          <input type="text" id="lf-company" name="company" placeholder="Company Name &amp; Website (optional)" autocomplete="organization">
+        </div>
+
+        <div class="field field--area">
+          <svg class="field__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <textarea id="lf-msg" name="message" rows="4" placeholder="How can we help you?"></textarea>
+        </div>
+
+        <p class="lead-form__fail" id="formFail" role="alert" hidden>
+          Sorry, your details didn't go through. Please <a href={wa}>message us on WhatsApp</a> or call <a href={tel}>+91 62822 49224</a>.
+        </p>
+
+        <button type="submit" class="btn btn--primary lead-form__btn" id="lfSubmit">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d={CLIP}/></svg>
+          <span>{submitLabel}</span>
+        </button>
+        <p class="lead-form__note">We reply on WhatsApp within 24 hours. Your details stay private.</p>
+      </form>
+
+      <div class="form-done" id="formDone" hidden>
+        <span class="form-done__tick" aria-hidden="true"></span>
+        <h4>Thank you!</h4>
+        <p>We've got your details and will reach out on WhatsApp shortly.</p>
+        <a href={wa} class="btn btn--wa">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d={WA}/></svg>
+          Message us now
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+---
+import { WA } from './shared';
+
+interface Props {
+  /** [question, answer] pairs */
+  items: string[][];
+  wa: string;
+  ml?: string;
+}
+
+const { items, wa, ml } = Astro.props;
+---
+
+<!-- ══════════ FAQ ══════════ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <h2 class="sec-title">Frequently Asked Questions</h2>
+    <div class="faq__cols">
+      {items.map(([q, a]) => (
+        <details class="qa"><summary class={ml}>{q}</summary><p class={ml}>{a}</p></details>
+      ))}
+    </div>
+    <div class="center">
+      <a href={wa} class="btn btn--outline btn--sm">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d={WA}/></svg>
+        Still Have Questions? Chat with Us
+      </a>
+    </div>
+  </div>
+</section>

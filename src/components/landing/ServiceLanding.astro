@@ -1,0 +1,300 @@
+---
+/**
+ * Google Ads landing page for a build service (website development, Shopify).
+ * All wording comes from a content file in ./content/ — one object per language —
+ * so the English and Malayalam pages share every line of markup.
+ *
+ * No pricing section by design: visitors ask for a written quote instead.
+ * Only claims already verified on the main site belong in the content files.
+ */
+import LandingPage from './LandingPage.astro';
+import LandingTestimonials from './LandingTestimonials.astro';
+import LandingReviews from './LandingReviews.astro';
+import LandingFaq from './LandingFaq.astro';
+import LandingExpert from './LandingExpert.astro';
+import LandingContact from './LandingContact.astro';
+import LandingFinal from './LandingFinal.astro';
+import { tel, waLink, WA, PHONE, CLIP, G, ICONS } from './shared';
+import type { ServiceCopy } from './content/types';
+
+interface Props {
+  lang: 'en' | 'ml';
+  copy: ServiceCopy;
+  /** Hero illustration: a browser + phone mockup, or a shopping bag + sales bars. */
+  art: 'web' | 'shop';
+}
+
+const { lang, copy: c, art } = Astro.props;
+const ml = lang === 'en' ? undefined : 'ml';
+const wa = waLink(c.waText);
+---
+
+<LandingPage lang={lang} title={c.title} description={c.description} waText={c.waText} nav={c.nav} footerBlurb={c.footerBlurb}>
+<Fragment slot="actionbar-label">{c.actionLabel}</Fragment>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero">
+  <span class="blob blob--1" aria-hidden="true"></span>
+  <span class="blob blob--2" aria-hidden="true"></span>
+  <div class="wrap hero__inner">
+    <div class="hero__copy">
+      <span class="pill">{c.pill}</span>
+      <h1 class:list={['hero__title', ml]}>{c.heroTitle}</h1>
+      <p class="hero__lead" set:html={c.heroLead} />
+
+      <ul class="flags flags--chips">
+        {c.chips.map((chip) => <li>{chip}</li>)}
+      </ul>
+
+      <ul class="ticks">
+        {c.ticks.map((tick) => <li>{tick}</li>)}
+      </ul>
+
+      <div class="hero__cta">
+        <a href={wa} class="btn btn--wa">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d={WA}/></svg>
+          WhatsApp Now
+        </a>
+        <a href="#contact" class="btn btn--primary">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d={CLIP}/></svg>
+          {c.heroCta}
+        </a>
+        <a href={tel} class="btn btn--ghost">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d={PHONE}/></svg>
+          Schedule a Call
+        </a>
+      </div>
+
+      <div class="rating">
+        <svg class="g-ico" viewBox="0 0 24 24" aria-hidden="true" set:html={G} />
+        <b>4.9/5</b>
+        <span class="stars">★★★★★</span>
+        <span class="rating__by">| Rated by <b>100+</b> Clients</span>
+      </div>
+    </div>
+
+    <div class="hero__art" aria-hidden="true">
+      <svg viewBox="0 0 460 470" class="art">
+        <defs>
+          <linearGradient id="gOr" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0" stop-color="#F05A22"/><stop offset="1" stop-color="#FF8A3D"/>
+          </linearGradient>
+          <linearGradient id="gOr2" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#FF8A3D"/><stop offset="1" stop-color="#EA4E14"/>
+          </linearGradient>
+        </defs>
+        <g fill="#F26522" opacity=".28">
+          <circle cx="386" cy="42" r="4"/><circle cx="408" cy="42" r="4"/><circle cx="430" cy="42" r="4"/>
+          <circle cx="386" cy="64" r="4"/><circle cx="408" cy="64" r="4"/><circle cx="430" cy="64" r="4"/>
+          <circle cx="386" cy="86" r="4"/><circle cx="408" cy="86" r="4"/><circle cx="430" cy="86" r="4"/>
+        </g>
+        {art === 'web' ? (
+          <>
+            <rect x="30" y="60" width="330" height="240" rx="16" fill="#fff" stroke="#2B2B2B" stroke-width="10"/>
+            <path d="M30 108h330" stroke="#2B2B2B" stroke-width="10"/>
+            <circle cx="62" cy="84" r="8" fill="#F26522"/><circle cx="88" cy="84" r="8" fill="#FFC700"/><circle cx="114" cy="84" r="8" fill="#2FA85A"/>
+            <rect x="60" y="134" width="140" height="18" rx="9" fill="url(#gOr)"/>
+            <rect x="60" y="164" width="104" height="12" rx="6" fill="#F6C7AC"/>
+            <rect x="60" y="186" width="124" height="12" rx="6" fill="#F6C7AC"/>
+            <rect x="60" y="220" width="88" height="34" rx="9" fill="url(#gOr)"/>
+            <rect x="218" y="134" width="112" height="120" rx="10" fill="#FFE9DC"/>
+            <path d="M230 240l28-36 20 24 14-16 26 28z" fill="url(#gOr2)"/>
+            <circle cx="300" cy="162" r="11" fill="#FFC700"/>
+            <rect x="300" y="178" width="124" height="214" rx="18" fill="#fff" stroke="#2B2B2B" stroke-width="9"/>
+            <rect x="322" y="208" width="80" height="12" rx="6" fill="url(#gOr)"/>
+            <rect x="322" y="230" width="62" height="9" rx="4.5" fill="#F6C7AC"/>
+            <rect x="322" y="248" width="72" height="9" rx="4.5" fill="#F6C7AC"/>
+            <rect x="322" y="270" width="80" height="60" rx="8" fill="#FFE9DC"/>
+            <rect x="322" y="344" width="52" height="24" rx="7" fill="url(#gOr)"/>
+            <text x="30" y="378" class="art__t">DESIGN</text>
+            <text x="30" y="416" class="art__t">BUILD</text>
+            <text x="30" y="454" class="art__t">LAUNCH</text>
+          </>
+        ) : (
+          <>
+            <rect x="243" y="240" width="54" height="92"  rx="4" fill="url(#gOr)"/>
+            <rect x="307" y="188" width="54" height="144" rx="4" fill="url(#gOr)"/>
+            <rect x="371" y="126" width="54" height="206" rx="4" fill="url(#gOr)"/>
+            <path d="M105 150v-26a40 40 0 0 1 80 0v26" fill="none" stroke="#2B2B2B" stroke-width="12" stroke-linecap="round"/>
+            <path d="M54 150h182l-16 190H70z" fill="url(#gOr2)"/>
+            <circle cx="105" cy="178" r="7" fill="#fff"/><circle cx="185" cy="178" r="7" fill="#fff"/>
+            <circle cx="145" cy="258" r="40" fill="#fff"/>
+            <path d="M126 259l13 13 26-28" fill="none" stroke="#2FA85A" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="60" y="378" class="art__t">SET UP</text>
+            <text x="60" y="416" class="art__t">SELL</text>
+            <text x="60" y="454" class="art__t">GROW</text>
+          </>
+        )}
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ STATS ══════════ -->
+<section class="stats">
+  <div class="wrap">
+    <h3 class="stats__title">{c.statsTitle}</h3>
+    <div class="stats__grid">
+      {c.stats.map((s) => (
+        <div class:list={['stat', s.wide && 'stat--wide']}>
+          <svg class="stat__ic" viewBox="0 0 24 24" aria-hidden="true" set:html={ICONS[s.icon]} />
+          {s.value && <b>{s.value}</b>}
+          <span set:html={s.label} />
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ORANGE BAND ══════════ -->
+<section class="band">
+  <div class="wrap band__inner">
+    <div class="band__globe" aria-hidden="true">
+      <svg viewBox="0 0 24 24" set:html={ICONS[c.bandIcon]} />
+    </div>
+    <div class="band__copy">
+      <h2 class={ml} set:html={c.bandTitle} />
+      <p class={ml}>{c.bandText}</p>
+    </div>
+    <ul class="band__list">
+      {c.bandList.map(([icon, text]) => (
+        <li>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" set:html={ICONS[icon]} />
+          {text}
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════ WORK ══════════ -->
+<section class="portfolio" id="work">
+  <div class="wrap">
+    <h2 class="sec-title">{c.workTitle}</h2>
+    <p class:list={['sec-sub', ml]}>{c.workSub}</p>
+    <ul class="work-grid" style={`--cols:${c.work.length}`}>
+      {c.work.map((w) => (
+        <li class="work">
+          <img class="work__img" src={w.img} alt={`${w.name} — built by Teknoppy`} width="640" height="400" loading="lazy" decoding="async">
+          <div class="work__body">
+            <span class="work__tag">{w.type}</span>
+            <h3 class="work__name">{w.name}</h3>
+            <p class="work__place">{w.place}</p>
+            <p class="work__text">{w.text}</p>
+            <a class="work__link" href={w.href} target="_blank" rel="noopener">View Case Study →</a>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<LandingTestimonials sub={c.testiSub} cta={c.testiCta} wa={wa} ml={ml} />
+
+<!-- ══════════ PROBLEMS ══════════ -->
+<section class="problems">
+  <div class="wrap">
+    <h2 class:list={['sec-title', ml]} set:html={c.problemsTitle} />
+    <ul class="problem-list">
+      {c.problems.map(([lead, rest]) => (
+        <li class="problem">
+          <span class="problem__x" aria-hidden="true"></span>
+          <span class:list={['problem__t', ml]}><b>{lead}</b>{rest}</span>
+        </li>
+      ))}
+    </ul>
+    <p class:list={['problems__solve', ml]} set:html={c.solve} />
+    <div class="center">
+      <a href="#contact" class="btn btn--primary">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d={CLIP}/></svg>
+        {c.heroCta}
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ WHY CHOOSE ══════════ -->
+<section class="why" id="services">
+  <div class="wrap">
+    <div class="why__card">
+      <h2 class="sec-title">Why Businesses<br class="br-m">Choose Teknoppy</h2>
+      <ul class="why__list">
+        {c.why.map(([icon, text]) => (
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true" set:html={ICONS[icon]} />
+            <span set:html={text} />
+          </li>
+        ))}
+      </ul>
+      <div class="center">
+        <a href={wa} class="btn btn--primary">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d={WA}/></svg>
+          {c.whyCta}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PROCESS ══════════ -->
+<section class="process" id="process">
+  <div class="wrap">
+    <h2 class="sec-title">{c.processTitle}</h2>
+    <ol class="steps">
+      {c.process.map(([icon, label], i) => (
+        <li class="step"><span class="step__n">{String(i + 1).padStart(2, '0')}</span>
+          <svg class="step__ic" viewBox="0 0 24 24" aria-hidden="true" set:html={ICONS[icon]} />
+          <span class="step__t">{label}</span></li>
+      ))}
+    </ol>
+    <div class="center">
+      <a href={tel} class="btn btn--outline">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d={PHONE}/></svg>
+        Book Your Free Strategy Call
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ WHAT'S INCLUDED ══════════ -->
+<section class="included">
+  <div class="wrap">
+    <h2 class="sec-title" set:html={c.includedTitle} />
+    <ul class="inc-grid">
+      {c.included.map(([icon, label]) => (
+        <li><svg viewBox="0 0 24 24" aria-hidden="true" set:html={ICONS[icon]} /><span>{label}</span></li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<LandingReviews />
+
+<!-- ══════════ TRUST ══════════ -->
+<section class="trust">
+  <div class="wrap">
+    <h2 class="sec-title">Why You Can Trust Us</h2>
+    <ul class="trust__list">
+      {c.trust.map((t) => <li>{t}</li>)}
+    </ul>
+  </div>
+</section>
+
+<LandingFaq items={c.faq} wa={wa} ml={ml} />
+
+<LandingExpert title={c.expertTitle} sub={c.expertSub} wa={wa} ml={ml} />
+
+<LandingContact
+  sub={c.contactSub}
+  points={c.contactPoints}
+  formTitle={c.formTitle}
+  submitLabel="Get My Free Consultation"
+  source={c.source}
+  service={c.service}
+  wa={wa}
+  ml={ml}
+/>
+
+<LandingFinal title={c.finalTitle} text={c.finalText} pills={c.pills} formCta="Book Free Consultation" wa={wa} ml={ml} />
+
+</LandingPage>

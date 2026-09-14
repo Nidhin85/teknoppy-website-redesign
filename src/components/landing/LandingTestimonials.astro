@@ -1,0 +1,51 @@
+---
+// Client video testimonials — YouTube thumbnail facades, player loads on tap.
+import { WA } from './shared';
+
+interface Props {
+  sub: string;
+  cta: string;
+  wa: string;
+  ml?: string;
+}
+
+const { sub, cta, wa, ml } = Astro.props;
+
+const videos = [
+  ['Ncw3JZmIAoI', 'Teknoppy client reel', 'maxresdefault'],
+  ['E7HfgGOHjYE', 'What our valued customers say about our services', 'maxresdefault'],
+  ['ocV7KcfU9vs', 'Client testimonial — Teknoppy', 'maxresdefault'],
+  ['-N_zd4eCPPM', 'Client testimonial — Teknoppy', 'hqdefault']
+];
+---
+
+<!-- ══════════ TESTIMONIALS ══════════ -->
+<section class="testimonials">
+  <div class="wrap">
+    <h2 class="sec-title">Hear It From Our Clients</h2>
+    <p class:list={['sec-sub', ml]}>{sub}</p>
+
+    <div class="carousel" data-carousel>
+      <div class="carousel__track" data-track>
+        {videos.map(([id, title, thumb]) => (
+          <article class="vcard" data-yt={id} data-title={title}>
+            <img class="vcard__thumb" src={`https://i.ytimg.com/vi/${id}/${thumb}.jpg`}
+                 onerror={`this.onerror=null;this.src='https://i.ytimg.com/vi/${id}/hqdefault.jpg'`}
+                 alt={title} loading="lazy" decoding="async" width="480" height="360">
+            <button class="vcard__play" type="button" aria-label={`Play video: ${title}`}></button>
+          </article>
+        ))}
+      </div>
+      <button class="cnav cnav--prev" data-prev aria-label="Previous">‹</button>
+      <button class="cnav cnav--next" data-next aria-label="Next">›</button>
+      <div class="dots" data-dots></div>
+    </div>
+
+    <div class="center">
+      <a href={wa} class="btn btn--outline">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d={WA}/></svg>
+        {cta}
+      </a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,159 @@
+---
+/**
+ * Shell for the Google Ads landing pages in src/pages/lp/ — head, header, footer,
+ * mobile action bar and the page script. Each landing page supplies its sections
+ * through the default slot, using the shared components in this folder.
+ *
+ * Standalone on purpose (no site Layout, no Tailwind, CSS and JS inlined) so a
+ * page is one HTML request plus fonts — it is the paid-traffic entry point and
+ * every millisecond counts toward Quality Score.
+ *
+ * Conversion tracking is off until these are set in Vercel (then redeploy):
+ *   PUBLIC_GOOGLE_ADS_ID              AW-XXXXXXXXXX
+ *   PUBLIC_GOOGLE_ADS_LEAD_LABEL      conversion label for a sent form
+ *   PUBLIC_GOOGLE_ADS_WHATSAPP_LABEL  optional — WhatsApp link clicks
+ *   PUBLIC_GOOGLE_ADS_CALL_LABEL      optional — tel: link clicks
+ */
+import css from './landing.css?raw';
+import js from './landing.js?raw';
+import { site, tel, waLink, WA, PHONE, CLIP, MAIL } from './shared';
+
+interface Props {
+  lang: 'en' | 'ml';
+  title: string;
+  description: string;
+  /** Prefilled WhatsApp message for the action bar and floating button. */
+  waText: string;
+  /** In-page nav links, [href, label]. "Contact" is always appended. */
+  nav: [string, string][];
+  footerBlurb: string;
+}
+
+const { lang, title, description, waText, nav, footerBlurb } = Astro.props;
+
+const adsId = import.meta.env.PUBLIC_GOOGLE_ADS_ID || '';
+const adsLead = import.meta.env.PUBLIC_GOOGLE_ADS_LEAD_LABEL || '';
+const adsWa = import.meta.env.PUBLIC_GOOGLE_ADS_WHATSAPP_LABEL || '';
+const adsCall = import.meta.env.PUBLIC_GOOGLE_ADS_CALL_LABEL || '';
+
+const wa = waLink(waText);
+const canonical = new URL(Astro.url.pathname, Astro.site || 'https://teknoppy.com');
+const ogImage = new URL('/og-image.png', Astro.site || 'https://teknoppy.com');
+
+// Only the Latin face is needed on English pages — skip ~100KB of Malayalam glyphs.
+// Malayalam loads with display=optional: if it isn't ready almost immediately the
+// system face is kept (Android ships Noto Sans Malayalam), so the hero never
+// reflows when the webfont lands.
+const fonts = [
+  'https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap',
+  ...(lang === 'en' ? [] : ['https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;600;700;800&display=optional'])
+];
+---
+
+<!doctype html>
+<html lang={lang}>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F26522">
+<meta name="color-scheme" content="light">
+<!-- Paid-traffic page: keep it out of organic search so it doesn't compete with
+     the service pages and organic visits don't muddy the Ads conversion data. -->
+<meta name="robots" content="noindex, follow">
+<title>{title}</title>
+<meta name="description" content={description}>
+<link rel="canonical" href={canonical}>
+<meta property="og:type" content="website">
+<meta property="og:url" content={canonical}>
+<meta property="og:title" content={title}>
+<meta property="og:description" content={description}>
+<meta property="og:image" content={ogImage}>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preload" as="image" href="/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- non-blocking font load: text paints in the fallback stack immediately -->
+{fonts.map((href) => <link rel="stylesheet" href={href} media="print" onload="this.media='all'">)}
+<!-- set:html, not an expression: Astro hoists expression children out of <noscript>,
+     which turns these fallbacks into render-blocking stylesheets for everyone. -->
+<noscript set:html={fonts.map((href) => `<link rel="stylesheet" href="${href.replace(/&/g, '&amp;')}">`).join('')} />
+
+{adsId && (
+  <>
+    <script async src={`https://www.googletagmanager.com/gtag/js?id=${adsId}`}></script>
+    <script is:inline define:vars={{ adsId }}>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { window.dataLayer.push(arguments); };
+      window.gtag('js', new Date());
+      window.gtag('config', adsId);
+    </script>
+  </>
+)}
+
+<style is:inline set:html={css}></style>
+</head>
+<body data-ads-id={adsId} data-ads-lead={adsLead} data-ads-wa={adsWa} data-ads-call={adsCall}>
+
+<!-- ══════════ HEADER ══════════ -->
+<header class="header">
+  <div class="wrap header__inner">
+    <a href="#" class="logo" aria-label="Teknoppy — Digital Growth Partner">
+      <img class="logo__svg" src="/logo.svg" alt="Teknoppy" width="220" height="62" fetchpriority="high">
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="nav">
+      {nav.map(([href, label]) => <a href={href}>{label}</a>)}
+      <a href="#contact" class="nav__cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<slot />
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <img class="footer__logo" src="/logo-dark.svg" alt="Teknoppy" width="220" height="62" loading="lazy">
+      <p>{footerBlurb}</p>
+      <ul class="social">
+        <li><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M13 22v-9h3l1-4h-4V7c0-1 .3-1.7 1.8-1.7H17V1.8C16.6 1.7 15.4 1.6 14 1.6c-2.9 0-4.9 1.8-4.9 5V9H6v4h3.1v9z"/></svg></a></li>
+        <li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2c2.7 0 3 0 4.1.1 1.1 0 1.8.2 2.4.5.6.2 1.1.6 1.6 1.1s.8 1 1.1 1.6c.2.6.4 1.3.5 2.4C21.9 9 22 9.3 22 12s0 3-.1 4.1c0 1.1-.2 1.8-.5 2.4-.2.6-.6 1.1-1.1 1.6s-1 .8-1.6 1.1c-.6.2-1.3.4-2.4.5-1.1 0-1.4.1-4.1.1s-3 0-4.1-.1c-1.1 0-1.8-.2-2.4-.5-.6-.2-1.1-.6-1.6-1.1s-.8-1-1.1-1.6c-.2-.6-.4-1.3-.5-2.4C2 15 2 14.7 2 12s0-3 .1-4.1c0-1.1.2-1.8.5-2.4.2-.6.6-1.1 1.1-1.6S4.7 3.1 5.3 2.9c.6-.2 1.3-.4 2.4-.5C9 2 9.3 2 12 2m0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10m0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4M18.4 6.8a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0"/></svg></a></li>
+        <li><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M6.9 21H3.4V9.3h3.5zM5.1 7.7a2 2 0 1 1 0-4.1 2 2 0 0 1 0 4.1M21 21h-3.5v-5.7c0-1.4 0-3.1-1.9-3.1s-2.2 1.5-2.2 3v5.8h-3.5V9.3h3.3v1.6h.1a3.7 3.7 0 0 1 3.3-1.8c3.5 0 4.2 2.3 4.2 5.3z"/></svg></a></li>
+        <li><a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M23 12s0-3.7-.5-5.5a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.5a2.9 2.9 0 0 0-2 2C1 8.3 1 12 1 12s0 3.7.5 5.5a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.5a2.9 2.9 0 0 0 2-2C23 15.7 23 12 23 12M9.8 15.5v-7l6 3.5z"/></svg></a></li>
+      </ul>
+    </div>
+    <ul class="footer__contact">
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7m0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5"/></svg>Kerala, India</li>
+      <li><a href={`mailto:${site.email}`}><svg viewBox="0 0 24 24" aria-hidden="true" set:html={MAIL} />{site.email}</a></li>
+      <li><a href={tel}><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d={PHONE}/></svg>+91 62822 49224</a></li>
+    </ul>
+  </div>
+  <p class="footer__copy">© 2026 TEKNOPPY. All Rights Reserved.</p>
+</footer>
+
+<!-- ══════════ STICKY MOBILE ACTION BAR ══════════ -->
+<nav class="actionbar" aria-label="Quick actions">
+  <a href={wa} class="actionbar__btn actionbar__btn--wa">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d={WA}/></svg>
+    WhatsApp
+  </a>
+  <a href="#contact" class="actionbar__btn actionbar__btn--audit">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d={CLIP}/></svg>
+    <slot name="actionbar-label">Free Audit</slot>
+  </a>
+  <a href={tel} class="actionbar__btn actionbar__btn--call">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d={PHONE}/></svg>
+    Call Us
+  </a>
+</nav>
+
+<a href={wa} class="fab" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d={WA}/></svg>
+</a>
+
+<script is:inline set:html={js}></script>
+</body>
+</html>

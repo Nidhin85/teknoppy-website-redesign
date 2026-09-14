@@ -1,0 +1,46 @@
+---
+// Google reviews carousel — the same verified reviews on every landing page.
+import { G } from './shared';
+
+const reviews = [
+  ['BT', 'Biju Thomas', 'CEO, Olives Resort, Wayanad', 'We now rank at the top of Google for our keywords and get many direct booking calls due to better visibility. Thank you Teknoppy for all the support.'],
+  ['DA', 'Dr. Asghar', 'CEO, Greens Ayurveda, Calicut', 'Mr. Sanal is exceptionally supportive and customer-friendly. I have worked with many IT teams, but I am 100% happy with Teknoppy. No doubt, I recommend them with 100% satisfaction.'],
+  ['SP', 'Shainesh Prakashan', 'CEO, Exacore IT, Infopark Kochi', 'Teknoppy was very intuitive in understanding our requirements. They made great digital collateral and now we are getting good outreach to the market.'],
+  ['VM', 'Vivek Menon', 'CTO, Evosyz, Kochi', 'Being in the Fintech space, we needed a reliable partner. Teknoppy created an appealing website that represents our brand perfectly.'],
+  ['R', 'Rincy', 'Astrologer & Psychic Healer, Australia', 'Thank you Teknoppy for a wonderful mobile app for my tarot channel. All functions work great and I am getting many subscribers.']
+];
+---
+
+<!-- ══════════ GOOGLE REVIEWS ══════════ -->
+<section class="reviews">
+  <div class="wrap">
+    <h2 class="sec-title">Google Reviews</h2>
+    <p class="reviews__score">
+      <svg class="g-ico" viewBox="0 0 24 24" aria-hidden="true" set:html={G} />
+      <b>4.9/5</b><span class="stars">★★★★★</span>
+    </p>
+
+    <div class="carousel carousel--reviews" data-carousel>
+      <div class="carousel__track" data-track>
+        {reviews.map(([initials, name, role, text]) => (
+          <article class="review">
+            <span class="stars">★★★★★</span>
+            <p>{text}</p>
+            <div class="review__who">
+              <span class="review__av">{initials}</span>
+              <span class="review__id"><b>{name}</b><i>{role}</i></span>
+            </div>
+          </article>
+        ))}
+      </div>
+      <div class="dots" data-dots></div>
+    </div>
+
+    <div class="center">
+      <a href="https://share.google/aBHUgwgV4Eb1CEfKZ" target="_blank" rel="noopener" class="btn btn--outline">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2l3 6 6 .9-4.4 4.2 1.1 6L12 16.3 6.3 19.1l1.1-6L3 8.9 9 8z"/></svg>
+        Read More Reviews
+      </a>
+    </div>
+  </div>
+</section>

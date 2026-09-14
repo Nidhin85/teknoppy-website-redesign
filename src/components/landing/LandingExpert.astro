@@ -1,0 +1,40 @@
+---
+// "Speak with Our Experts" card — Vijayakala, Client Relation Manager.
+import { tel, WA, PHONE } from './shared';
+
+interface Props {
+  title: string;
+  sub: string;
+  wa: string;
+  ml?: string;
+}
+
+const { title, sub, wa, ml } = Astro.props;
+---
+
+<!-- ══════════ SPEAK WITH OUR EXPERTS ══════════ -->
+<section class="expert" id="expert">
+  <div class="wrap">
+    <h2 class:list={['sec-title', ml]}>{title}</h2>
+    <p class:list={['sec-sub', ml]}>{sub}</p>
+    <div class="expert__card">
+      <img class="expert__photo" src="/team/vijayakala-expert.webp" alt="Vijayakala, Client Relation Manager at Teknoppy"
+           width="600" height="600" loading="lazy" decoding="async">
+      <div class="expert__info">
+        <span class="expert__online">Online Now</span>
+        <h3 class="expert__name">Vijayakala</h3>
+        <p class="expert__role">Client Relation Manager</p>
+      </div>
+      <div class="expert__cta">
+        <a href={wa} class="btn btn--wa">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d={WA}/></svg>
+          Chat Now
+        </a>
+        <a href={tel} class="btn btn--ghost">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d={PHONE}/></svg>
+          Call Now
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
