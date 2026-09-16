@@ -244,6 +244,7 @@ collections:
                 fields:
                   - { name: name, label: "Name", widget: string }
                   - { name: desc, label: "Description", widget: text }
+                  - { name: href, label: "Links to (optional, e.g. /web-design-for-startups-kerala/)", widget: string, required: false }
 
           - name: caseStudies
             label: "Case Studies"
@@ -1434,6 +1435,7 @@ collections:
                   - { name: intro, label: "Intro", widget: text, required: false }
                   - { name: columns, label: "Columns", widget: number, required: false, value_type: int }
                   - { name: itemHeading, label: "Card heading level", widget: select, options: ["h2", "h3"], required: false }
+                  - { name: layout, label: "Layout (list = full-width numbered rows; leave blank for a card grid)", widget: select, options: ["list"], required: false }
                   - name: items
                     label: "Cards"
                     widget: list
@@ -1483,6 +1485,7 @@ collections:
                 widget: object
                 fields:
                   - { name: bg, label: "Background", widget: select, options: ["white", "cream", "soft", "warm"], required: false }
+                  - { name: badge, label: "Badge", widget: string, required: false }
                   - { name: h2, label: "Heading (H2)", widget: string, required: false }
                   - { name: intro, label: "Intro", widget: text, required: false }
                   - name: items
@@ -1551,6 +1554,133 @@ collections:
                 fields:
                   - { name: bg, label: "Background", widget: select, options: ["white", "cream", "soft", "warm"], required: false }
                   - { name: text, label: "Text", widget: text }
+              - name: pricing
+                label: "Pricing table"
+                widget: object
+                fields:
+                  - { name: bg, label: "Background", widget: select, options: ["white", "cream", "soft", "warm"], required: false }
+                  - { name: badge, label: "Badge", widget: string, required: false }
+                  - { name: h2, label: "Heading (H2)", widget: string, required: false }
+                  - { name: intro, label: "Intro", widget: text, required: false }
+                  - { name: columns, label: "Column headings", widget: list, required: false, hint: "Two or three, e.g. Tier / Estimated Investment." }
+                  - name: rows
+                    label: "Rows"
+                    widget: list
+                    fields:
+                      - { name: service, label: "Tier / service", widget: text }
+                      - { name: price, label: "Price", widget: string }
+                      - { name: timeline, label: "Timeline", widget: string, required: false }
+                  - { name: note, label: "Footnote (HTML allowed)", widget: text, required: false }
+              - name: form
+                label: "Lead form"
+                widget: object
+                hint: "Submits to PUBLIC_CONTACT_ENDPOINT. Fields the contact API has no column for are appended to the enquiry email automatically."
+                fields:
+                  - { name: bg, label: "Background", widget: select, options: ["white", "cream", "soft", "warm"], required: false }
+                  - { name: id, label: "Anchor id", widget: string, hint: "Buttons on the page link to #this." }
+                  - { name: badge, label: "Badge", widget: string, required: false }
+                  - { name: h2, label: "Heading (H2)", widget: string, required: false }
+                  - { name: intro, label: "Intro", widget: text, required: false }
+                  - name: form
+                    label: "Form"
+                    widget: object
+                    fields:
+                      - { name: heading, label: "Form card heading", widget: string, required: false }
+                      - { name: submitLabel, label: "Submit button label", widget: string }
+                      - { name: source, label: "Source (shown in the enquiry email)", widget: string }
+                      - { name: summary, label: "Summary line (opens the enquiry email)", widget: string, required: false }
+                      - { name: successMessage, label: "Success message", widget: text }
+                      - { name: errorMessage, label: "Error message", widget: text }
+                      - { name: note, label: "Note under the button", widget: text, required: false }
+                      - name: fields
+                        label: "Fields"
+                        widget: list
+                        fields:
+                          - { name: name, label: "Field name", widget: string, hint: "name, email, phone, company, service and message reach the enquiry email as their own row; anything else is appended to the body." }
+                          - { name: label, label: "Label", widget: string }
+                          - { name: type, label: "Type", widget: select, options: ["text", "email", "tel", "url", "date", "select", "textarea"], required: false }
+                          - { name: required, label: "Required", widget: boolean, required: false, default: false }
+                          - { name: placeholder, label: "Placeholder", widget: string, required: false }
+                          - { name: hint, label: "Hint under the field", widget: string, required: false }
+                          - { name: autocomplete, label: "Autocomplete token", widget: string, required: false }
+                          - { name: rows, label: "Rows (textarea)", widget: number, required: false, value_type: int }
+                          - { name: width, label: "Width", widget: select, options: ["half", "full"], required: false }
+                          - { name: options, label: "Options (select)", widget: list, required: false }
+                  - name: aside
+                    label: "Trust rail beside the form"
+                    widget: object
+                    required: false
+                    fields:
+                      - { name: heading, label: "Heading", widget: string, required: false }
+                      - name: items
+                        label: "Items"
+                        widget: list
+                        fields:
+                          - { name: title, label: "Title", widget: string }
+                          - { name: text, label: "Text", widget: text, required: false }
+                      - { name: phone, label: "Phone", widget: string, required: false }
+                      - { name: phoneLabel, label: "Phone link label", widget: string, required: false }
+                      - { name: footnote, label: "Footnote", widget: text, required: false }
+              - name: calculator
+                label: "Website cost calculator"
+                widget: object
+                hint: "Every band here must match a pricing table published on a pillar page — the page copy promises the range shown is the range quoted."
+                fields:
+                  - { name: bg, label: "Background", widget: select, options: ["white", "cream", "soft", "warm"], required: false }
+                  - { name: id, label: "Anchor id", widget: string }
+                  - { name: badge, label: "Badge", widget: string, required: false }
+                  - { name: h2, label: "Heading (H2)", widget: string, required: false }
+                  - { name: intro, label: "Intro", widget: text, required: false }
+                  - name: calculator
+                    label: "Calculator"
+                    widget: object
+                    fields:
+                      - { name: stepLabels, label: "Step labels (three)", widget: list, required: false }
+                      - name: types
+                        label: "Website types"
+                        widget: list
+                        fields:
+                          - { name: id, label: "Id", widget: string }
+                          - { name: label, label: "Label", widget: string }
+                          - { name: blurb, label: "Blurb", widget: text, required: false }
+                          - name: tiers
+                            label: "Scope tiers"
+                            widget: list
+                            fields:
+                              - { name: id, label: "Id", widget: string }
+                              - { name: label, label: "Label", widget: string }
+                              - { name: detail, label: "Detail", widget: string, required: false }
+                              - { name: min, label: "Low band (rupees, digits only)", widget: number, value_type: int }
+                              - { name: max, label: "High band (rupees, digits only)", widget: number, value_type: int }
+                              - { name: openEnded, label: "Show a + after the high band", widget: boolean, required: false, default: false }
+                      - name: addons
+                        label: "Add-ons"
+                        widget: list
+                        required: false
+                        fields:
+                          - { name: id, label: "Id", widget: string }
+                          - { name: label, label: "Label", widget: string }
+                          - { name: text, label: "Text shown when it has no price", widget: string, required: false }
+                          - { name: min, label: "Low band (leave empty to show 'Quoted separately')", widget: number, required: false, value_type: int }
+                          - { name: max, label: "High band (leave empty to show 'Quoted separately')", widget: number, required: false, value_type: int }
+                      - { name: included, label: "Included by default", widget: list, required: false }
+                      - name: quote
+                        label: "Quote button"
+                        widget: object
+                        required: false
+                        fields:
+                          - { name: label, label: "Label", widget: string }
+                          - { name: href, label: "URL", widget: string }
+                      - name: call
+                        label: "Call link"
+                        widget: object
+                        required: false
+                        fields:
+                          - { name: label, label: "Label", widget: string }
+                          - { name: href, label: "URL", widget: string }
+                      - { name: emailSubject, label: "Subject for 'email myself this estimate'", widget: string, required: false }
+                      - { name: note, label: "Note", widget: text, required: false }
+                      - { name: complexNote, label: "Second note", widget: text, required: false }
       - name: contact_us
         label: "Contact Us (/contact-us/)"
         file: "src/data/pages/contact.json"
@@ -2126,6 +2256,42 @@ collections:
         label: "Case Study — Olives Boutique Resort (Digital Marketing)"
         file: "src/data/pages/case-studies/olives-boutique-resort-digital-marketing.json"
         fields: *inner_page_fields
+      - name: ind_startups
+        label: "Industry — Web Design for Startups Kerala"
+        file: "src/data/pages/web-design-for-startups-kerala.json"
+        fields: *inner_page_fields
+      - name: ind_schools
+        label: "Industry — School Website Design Kerala"
+        file: "src/data/pages/web-design-for-schools-kerala.json"
+        fields: *inner_page_fields
+      - name: ind_hospitals
+        label: "Industry — Hospital Website Design Kerala"
+        file: "src/data/pages/web-design-for-hospitals-kerala.json"
+        fields: *inner_page_fields
+      - name: ind_clinics
+        label: "Industry — Clinic Website Design Kerala"
+        file: "src/data/pages/web-design-for-clinics-kerala.json"
+        fields: *inner_page_fields
+      - name: ind_restaurants
+        label: "Industry — Restaurant Website Design Kerala"
+        file: "src/data/pages/web-design-for-restaurants-kerala.json"
+        fields: *inner_page_fields
+      - name: ind_real_estate
+        label: "Industry — Real Estate Website Design Kerala"
+        file: "src/data/pages/web-design-for-real-estate-kerala.json"
+        fields: *inner_page_fields
+      - name: ind_manufacturing
+        label: "Industry — Manufacturing Company Website Design Kerala"
+        file: "src/data/pages/web-design-for-manufacturing-companies-kerala.json"
+        fields: *inner_page_fields
+      - name: ind_tourism
+        label: "Industry — Tourism Website Design Kerala"
+        file: "src/data/pages/web-design-for-tourism-businesses-kerala.json"
+        fields: *inner_page_fields
+      - name: ind_professional_services
+        label: "Industry — Professional Services Website Design Kerala"
+        file: "src/data/pages/web-design-for-professional-services-kerala.json"
+        fields: *inner_page_fields
       - name: wa_saas
         label: "Web App — SaaS Development Company Kochi (/saas-development-company-kochi/)"
         file: "src/data/pages/saas-development-company-kochi.json"
@@ -2173,6 +2339,26 @@ collections:
       - name: wa_api_integration
         label: "Web App — API Integration Services Kochi (/api-integration-services-kochi/)"
         file: "src/data/pages/api-integration-services-kochi.json"
+        fields: *inner_page_fields
+      - name: lg_request_a_quote
+        label: "Lead-Gen — Get a Web Design Quote (/request-a-quote/)"
+        file: "src/data/pages/request-a-quote.json"
+        fields: *inner_page_fields
+      - name: lg_book_a_consultation
+        label: "Lead-Gen — Book Web Design Consultation Kerala (/book-a-consultation/)"
+        file: "src/data/pages/book-a-consultation.json"
+        fields: *inner_page_fields
+      - name: lg_free_website_audit
+        label: "Lead-Gen — Free Website Audit Kerala (/free-website-audit-kerala/)"
+        file: "src/data/pages/free-website-audit-kerala.json"
+        fields: *inner_page_fields
+      - name: lg_website_cost_calculator
+        label: "Lead-Gen — Website Cost Calculator Kerala (/website-cost-calculator-kerala/)"
+        file: "src/data/pages/website-cost-calculator-kerala.json"
+        fields: *inner_page_fields
+      - name: lg_web_design_pricing
+        label: "Lead-Gen — Website Design Cost in Kerala (/web-design-pricing-kerala/)"
+        file: "src/data/pages/web-design-pricing-kerala.json"
         fields: *inner_page_fields
 
   - name: settings
