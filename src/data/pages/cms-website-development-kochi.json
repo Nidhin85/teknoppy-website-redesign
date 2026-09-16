@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "title": "CMS Website Development Kochi | Teknoppy",
+    "description": "Custom CMS website development in Kochi — full content control, easy publishing, and secure admin access. Book a free consultation with Teknoppy."
+  },
+  "breadcrumb": [
+    { "name": "Home", "href": "/" },
+    { "name": "Website Design & Development", "href": "/web-design-company-kochi/" },
+    { "name": "CMS Website Development", "href": "/cms-website-development-kochi/" }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Website Design & Development",
+      "h1Lead": "CMS Website",
+      "h1Accent": "Development",
+      "body": [
+        {
+          "text": "Most business websites in Kochi run into the same wall six months after launch: nobody in the company can update them without calling the original developer. CMS Website Development solves this by building your site on a proper content management system from day one, so your own staff can publish pages, swap images, and edit pricing or offers without touching a single line of code. It's built for businesses that plan to keep their website current, not just launch it once and leave it static."
+        }
+      ],
+      "ctas": [
+        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
+        { "label": "Request a Quote", "href": "/request-a-quote/" }
+      ],
+      "trustline": "120+ Websites Delivered · In Kochi Since 2018 · Clients Across Kerala, UAE and Qatar"
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "columns": 2,
+      "badge": "What's Included",
+      "h2": "What This Service Includes",
+      "items": [
+        {
+          "title": "Custom CMS Development",
+          "text": "We don't hand you a generic out-of-the-box template. We build the admin structure, page types, and content fields around how your specific team actually works, so managing the site feels natural rather than fighting the software."
+        },
+        {
+          "title": "Content Management System Website",
+          "text": "A properly built CMS gives every page, image, and content block a clean, editable field in the dashboard. Updates that used to take a developer a full day now take your own staff a few minutes."
+        },
+        {
+          "title": "CMS Integration Services",
+          "text": "Your content platform connects to the tools your business already depends on, whether that's a CRM, an email marketing platform, a booking system, or an inventory feed, so your content and your business data stay in sync instead of living in two disconnected places."
+        },
+        {
+          "title": "Headless CMS Development",
+          "text": "For businesses running a website alongside an app, a customer portal, or multiple regional sites, headless CMS development lets a single content source power every channel from one dashboard, cutting duplicate work across your team."
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "bg": "white",
+      "badge": "How We Work",
+      "h2": "Our Process",
+      "items": [
+        {
+          "title": "Content Audit.",
+          "text": "We map what content already exists, what's missing, and how your team wants to manage it day to day once the site is live."
+        },
+        {
+          "title": "CMS Selection.",
+          "text": "We recommend the platform that actually fits your scale and budget, whether that's WordPress, Drupal, or a fully custom-built system, based on your real content needs rather than a default agency choice."
+        },
+        {
+          "title": "Structure & Build.",
+          "text": "We build the page templates, content fields, and staff permission levels around your existing workflow, not the other way around."
+        },
+        {
+          "title": "Migration & Integration.",
+          "text": "Existing content is migrated in, and any third-party integrations are tested, so nothing breaks and no SEO value is lost in the move."
+        },
+        {
+          "title": "Handover Training.",
+          "text": "Your team walks through the live admin panel with us directly, so launch day isn't the first time anyone has seen the dashboard."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "soft",
+      "columns": 2,
+      "badge": "The Teknoppy Advantage",
+      "h2": "Why Choose Teknoppy for CMS Website Development in Kochi",
+      "items": [
+        {
+          "title": "Platform-Neutral Recommendations",
+          "text": "We've built on WordPress, Drupal, and fully custom systems, and we recommend whichever one your team can realistically manage long-term, not whichever is easiest for us to ship."
+        },
+        {
+          "title": "Built for Non-Technical Teams",
+          "text": "Every CMS we deliver is tested with the people who will actually use it day to day, marketing staff, front-desk teams, or founders themselves, not just handed off to a technical department that doesn't exist at most small and mid-sized businesses."
+        },
+        {
+          "title": "Local Handover, Not Just Documentation",
+          "text": "CMS admin panel training happens in person or on a live call with your Kochi-based team, backed by a recorded walkthrough your staff can revisit anytime someone new joins."
+        },
+        {
+          "title": "Post-Launch Support",
+          "text": "CMS updates, security patches, and small structural changes are available through ongoing plans, so the site doesn't stall out a few months after going live — the single most common failure point we see on client sites that come to us for a rebuild."
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "bg": "white",
+      "h2": "Who Needs CMS Website Development",
+      "intro": "Any business that's outgrown a static, developer-dependent website will feel this immediately.",
+      "items": [
+        { "text": "Businesses whose current website can only be updated by calling a developer and waiting days for a simple text change." },
+        { "text": "Teams that publish content often, offers, service updates, blog posts, or announcements, and need the ability to do it themselves without a support ticket." },
+        { "text": "Growing companies where multiple staff members need their own login and their own content permissions, rather than one shared password held by a single person." }
+      ],
+      "outro": [
+        {
+          "html": "This service pairs naturally with businesses in fast-moving sectors such as <a href=\"/web-design-for-startups-kerala/\" class=\"text-primary font-semibold hover:underline\">startups</a> and <a href=\"/web-design-for-real-estate-kerala/\" class=\"text-primary font-semibold hover:underline\">real estate agencies</a>, where listings, pricing, and offers change constantly and waiting on a developer costs real business."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "cream",
+      "h2": "CMS Website Development Projects We've Delivered",
+      "paragraphs": [
+        {
+          "text": "A regional retail client of ours moved from a static, developer-dependent site to a custom CMS build, cutting their average content update turnaround from five working days down to same-day, handled entirely by their own marketing staff."
+        },
+        {
+          "text": "A services-sector client had their booking form and CRM integrated directly into their new CMS, removing a manual data-entry step from every single enquiry that came through the site."
+        },
+        {
+          "html": "More examples of this work are available on our <a href=\"/portfolios/website-projects/\" class=\"text-primary font-semibold hover:underline\">website projects portfolio</a>."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "CMS Website Development Pricing",
+      "paragraphs": [
+        {
+          "html": "Pricing for a CMS build depends on the platform you choose, your content volume, and how many third-party integrations are involved. Most CMS projects we deliver in Kochi fall within the mid-range of our standard website development packages. Full details are available on our <a href=\"/web-design-pricing-kerala/\" class=\"text-primary font-semibold hover:underline\">website design pricing</a> page, or you can get a fast estimate through our <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">website cost calculator</a>."
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "soft",
+      "h2": "Related Services",
+      "items": [
+        { "label": "Website Design and Development", "href": "/web-design-company-kochi/", "text": "the parent pillar this page sits under." },
+        { "label": "Website Redesign Services", "href": "/website-redesign-services-kochi/", "text": "for businesses upgrading an existing site into a proper CMS." },
+        { "label": "Website Maintenance Services", "href": "/website-maintenance-services-kochi/", "text": "for ongoing support after launch." },
+        { "label": "Custom WordPress Development", "href": "/custom-wordpress-development-kochi/", "text": "for businesses who already know WordPress is their platform of choice." }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "white",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Do I need to know how to code to update my website?",
+          "a": "No. A CMS website is built specifically so non-technical staff can edit pages, swap images, and publish updates through a simple dashboard, with no coding knowledge required at any point."
+        },
+        {
+          "q": "Which CMS platform is right for my business?",
+          "a": "It depends on your content volume and team size. WordPress suits most small and mid-sized businesses, while a custom or headless setup suits businesses managing content across a website, an app, and other channels at the same time."
+        },
+        {
+          "q": "Can you move my existing website onto a CMS?",
+          "a": "Yes. We audit your current content, map it into the new structure, and migrate pages, images, and metadata across without losing the SEO value your site has already built."
+        },
+        {
+          "q": "How long does admin training actually take?",
+          "a": "Most teams are comfortable publishing and editing content after a single guided session, which we record so new staff can catch up later without needing another live walkthrough."
+        },
+        {
+          "q": "Will the CMS work with the tools I already use?",
+          "a": "In most cases, yes. CRMs, booking systems, and email marketing platforms can typically be connected directly into the CMS dashboard during the integration stage of the build."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "cream",
+      "h2": "Ready to Start Your CMS Website Development Project?",
+      "paragraphs": [
+        { "text": "A website only your developer can update was never really yours to run day to day. Let's build one your own team controls from launch onward." }
+      ],
+      "ctas": [
+        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
+        { "label": "Request a Quote", "href": "/request-a-quote/" }
+      ]
+    },
+    {
+      "type": "byline",
+      "bg": "white",
+      "text": "Teknoppy · Kochi, Kerala · +91 6282249224 · sales@teknoppy.com"
+    }
+  ],
+  "devNotes": {
+    "source": "Website Design&Development pillar page -CMS Website Development inner page.pdf",
+    "primaryKeyword": "CMS Website Development",
+    "wordCount": "~1,180 words",
+    "keywordDensity": "~1.9% combined (never exceeding 2.0%)",
+    "schema": "Service + LocalBusiness + FAQPage + BreadcrumbList",
+    "internalLinks": "Parent pillar (Website Design & Development), 2 sibling pages (Website Redesign Services, Website Maintenance Services), Custom WordPress Development (cross-pillar), 1 industry page (Real Estate Agencies), Website Projects Portfolio, Website Design Pricing / Cost Calculator",
+    "imageAltText": "\"CMS website development dashboard Kochi,\" \"custom CMS admin panel training session\"",
+    "statsConflict": "Doc supplied '10+ Years Building for Kerala Businesses · 150+ Websites Delivered · Clients Across India, UAE, Qatar, Singapore, and Tanzania'. Replaced with the canonical trustline from src/data/site.json, per its _statsNote: 'Every page must use these — do not introduce a page-local variant.' Same resolution as the Website Redesign and Landing Page docs.",
+    "bylineEmail": "Doc supplied sanal@teknoppy.com. Replaced with sales@teknoppy.com, the address used on all other byline and contact instances sitewide.",
+    "openItems": [
+      "Doc author line reads 'Sanal Kumar, Founder & Lead Web Designer' — site.json records the founder as 'Sanal Edison'. Name discrepancy left unresolved for the content owner; the standard NAP byline is used instead, matching sibling pages.",
+      "Body copy is transcribed verbatim from the source PDF. Only the trustline and byline follow the sitewide canon."
+    ]
+  }
+}
