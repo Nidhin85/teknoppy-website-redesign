@@ -241,9 +241,9 @@
     "url": "teknoppy.com/ui-ux-design-company-in-kochi/",
     "wordCount": "2,168 · primary density 0.88% · 40/40 secondary keywords · SEO score 98/100",
     "schemaStack": "Organization · LocalBusiness · Service · FAQPage · BreadcrumbList · AggregateRating · Person",
-    "urlDiscrepancy": "The Services hub linked to /ui-ux-design-company-in-kochi/. This doc specifies /ui-ux-design-company-in-kochi/, so the page is built there and the hub link was updated to match.",
+    "urlDiscrepancy": "The site structure doc lists this pillar as /ui-ux-design-company-kochi/; the repo route is /ui-ux-design-company-in-kochi/, which is what this doc's own SEO spec specifies. The \"in\" form is canonical.",
     "cannibalizationCheck": "Child-page phrases (\"Website UI Design,\" \"Dashboard UI Design,\" \"Web App UI Design,\" \"UX Audit\") are used only as anchor-linked service names, not repeated as full exact-match keywords, so this pillar and its future child pages target different queries.",
-    "pendingPages": "Four child pages linked from the services grid do not exist yet: /website-ui-design-kochi/, /dashboard-ui-design-kochi/, /web-app-ui-design-kochi/, /ux-audit-kochi/.",
+    "childPages": "All four child pages linked from the services grid are built: /website-ui-design-kochi/, /dashboard-ui-design-kochi/, /web-app-ui-design-kochi/, /ux-audit-services-kochi/. The doc writes the last one as /ux-audit-kochi/; its own source doc specifies /ux-audit-services-kochi/, so the services-grid link points there.",
     "aggregateRating": "Doc lists AggregateRating in the schema stack. Withheld until verified ratings exist."
   }
 }

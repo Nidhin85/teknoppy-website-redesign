@@ -5,56 +5,6 @@
   "outputDirectory": "dist",
   "redirects": [
     {
-      "source": "/book-a-consultation",
-      "destination": "/contact-us/",
-      "permanent": false
-    },
-    {
-      "source": "/book-a-consultation/",
-      "destination": "/contact-us/",
-      "permanent": false
-    },
-    {
-      "source": "/request-a-quote",
-      "destination": "/contact-us/",
-      "permanent": false
-    },
-    {
-      "source": "/request-a-quote/",
-      "destination": "/contact-us/",
-      "permanent": false
-    },
-    {
-      "source": "/free-website-audit-kerala",
-      "destination": "/contact-us/",
-      "permanent": false
-    },
-    {
-      "source": "/free-website-audit-kerala/",
-      "destination": "/contact-us/",
-      "permanent": false
-    },
-    {
-      "source": "/website-cost-calculator-kerala",
-      "destination": "/contact-us/",
-      "permanent": false
-    },
-    {
-      "source": "/website-cost-calculator-kerala/",
-      "destination": "/contact-us/",
-      "permanent": false
-    },
-    {
-      "source": "/web-design-pricing-kerala",
-      "destination": "/web-design-company-kochi/",
-      "permanent": false
-    },
-    {
-      "source": "/web-design-pricing-kerala/",
-      "destination": "/web-design-company-kochi/",
-      "permanent": false
-    },
-    {
       "source": "/seo-company-kochi",
       "destination": "/seo-services/",
       "permanent": false
@@ -65,83 +15,43 @@
       "permanent": false
     },
     {
-      "source": "/seo-audit-services-kochi",
-      "destination": "/seo-services/",
-      "permanent": false
-    },
-    {
-      "source": "/seo-audit-services-kochi/",
-      "destination": "/seo-services/",
-      "permanent": false
-    },
-    {
       "source": "/seo-audit",
-      "destination": "/seo-services/",
+      "destination": "/seo-audit-services-kochi/",
       "permanent": false
     },
     {
       "source": "/seo-audit/",
-      "destination": "/seo-services/",
-      "permanent": false
-    },
-    {
-      "source": "/on-page-seo-services-kochi",
-      "destination": "/seo-services/",
-      "permanent": false
-    },
-    {
-      "source": "/on-page-seo-services-kochi/",
-      "destination": "/seo-services/",
+      "destination": "/seo-audit-services-kochi/",
       "permanent": false
     },
     {
       "source": "/on-page-seo",
-      "destination": "/seo-services/",
+      "destination": "/on-page-seo-services-kochi/",
       "permanent": false
     },
     {
       "source": "/on-page-seo/",
-      "destination": "/seo-services/",
-      "permanent": false
-    },
-    {
-      "source": "/technical-seo-services-kochi",
-      "destination": "/seo-services/",
-      "permanent": false
-    },
-    {
-      "source": "/technical-seo-services-kochi/",
-      "destination": "/seo-services/",
+      "destination": "/on-page-seo-services-kochi/",
       "permanent": false
     },
     {
       "source": "/technical-seo",
-      "destination": "/seo-services/",
+      "destination": "/technical-seo-services-kochi/",
       "permanent": false
     },
     {
       "source": "/technical-seo/",
-      "destination": "/seo-services/",
-      "permanent": false
-    },
-    {
-      "source": "/core-web-vitals-optimization-kochi",
-      "destination": "/seo-services/",
-      "permanent": false
-    },
-    {
-      "source": "/core-web-vitals-optimization-kochi/",
-      "destination": "/seo-services/",
+      "destination": "/technical-seo-services-kochi/",
       "permanent": false
     },
     {
       "source": "/core-web-vitals-optimization",
-      "destination": "/seo-services/",
+      "destination": "/core-web-vitals-optimization-kochi/",
       "permanent": false
     },
     {
       "source": "/core-web-vitals-optimization/",
-      "destination": "/seo-services/",
+      "destination": "/core-web-vitals-optimization-kochi/",
       "permanent": false
     },
     {
@@ -171,56 +81,6 @@
     },
     {
       "source": "/web-design-company-kerala/",
-      "destination": "/web-design-company-kochi/",
-      "permanent": false
-    },
-    {
-      "source": "/web-design-for-manufacturing-companies-kerala",
-      "destination": "/web-design-company-kochi/",
-      "permanent": false
-    },
-    {
-      "source": "/web-design-for-manufacturing-companies-kerala/",
-      "destination": "/web-design-company-kochi/",
-      "permanent": false
-    },
-    {
-      "source": "/web-design-for-professional-services-kerala",
-      "destination": "/web-design-company-kochi/",
-      "permanent": false
-    },
-    {
-      "source": "/web-design-for-professional-services-kerala/",
-      "destination": "/web-design-company-kochi/",
-      "permanent": false
-    },
-    {
-      "source": "/web-design-for-real-estate-kerala",
-      "destination": "/web-design-company-kochi/",
-      "permanent": false
-    },
-    {
-      "source": "/web-design-for-real-estate-kerala/",
-      "destination": "/web-design-company-kochi/",
-      "permanent": false
-    },
-    {
-      "source": "/web-design-for-startups-kerala",
-      "destination": "/web-design-company-kochi/",
-      "permanent": false
-    },
-    {
-      "source": "/web-design-for-startups-kerala/",
-      "destination": "/web-design-company-kochi/",
-      "permanent": false
-    },
-    {
-      "source": "/web-design-for-tourism-businesses-kerala",
-      "destination": "/web-design-company-kochi/",
-      "permanent": false
-    },
-    {
-      "source": "/web-design-for-tourism-businesses-kerala/",
       "destination": "/web-design-company-kochi/",
       "permanent": false
     }

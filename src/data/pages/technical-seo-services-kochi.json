@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Technical SEO Services Kochi | Teknoppy",
+    "description": "Need Technical SEO Services Kochi businesses trust? Teknoppy fixes crawl errors, indexing, and site health issues. Book a free consultation."
+  },
+  "breadcrumb": [
+    { "name": "Home", "href": "/" },
+    { "name": "SEO Services", "href": "/seo-services/" },
+    { "name": "Technical SEO Services Kochi", "href": "/technical-seo-services-kochi/" }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "SEO Services",
+      "h1Lead": "Technical SEO Services",
+      "h1Accent": "Kochi",
+      "subhead": "Fix What's Blocking Google Before Content and Links Can Do Their Job",
+      "body": [
+        { "html": "<strong>Technical SEO Services Kochi</strong> — that's what businesses search for once content and backlinks aren't moving rankings the way they should. Teknoppy's technical SEO work clears the underlying issues stopping Google from crawling, indexing, and understanding a site properly, since no amount of content fixes a site Google can't even read correctly." },
+        { "html": "Choosing the right <strong>Technical SEO Services Kochi</strong> provider matters because technical problems are often invisible to a business owner but obvious to search engines — a site can look fine to a visitor while quietly losing rankings to crawl errors, duplicate content, or broken indexing nobody's checking." }
+      ],
+      "ctas": [
+        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
+        { "label": "Request a Quote", "href": "/request-a-quote/" }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "columns": 2,
+      "badge": "What's Included",
+      "h2": "What Our Technical SEO Includes",
+      "items": [
+        { "title": "Full Technical SEO Audit", "html": "Every engagement starts with a <strong>technical SEO audit Kochi</strong> covering crawl errors, indexing issues, and site health — the same diagnostic depth as a standalone audit, applied as the foundation of ongoing technical work." },
+        { "title": "Crawlability & Indexing Fixes", "html": "<strong>Website crawlability optimization</strong> ensures search engines can actually reach and process every important page, while <strong>index coverage optimization Kochi</strong> fixes pages that are indexed incorrectly or missing entirely." },
+        { "title": "Sitemap, Robots & Canonical Setup", "html": "<strong>XML sitemap optimization services</strong> keep Google's crawl path accurate, <strong>robots.txt optimization Kochi</strong> prevents important pages from being accidentally blocked, and <strong>canonical URL optimization</strong> resolves duplicate-content confusion at the URL level." },
+        { "title": "Site Architecture & Structured Data", "html": "<strong>Site architecture SEO services</strong> improve how pages link to each other for both users and crawlers, while <strong>structured data implementation services</strong> help search engines and AI systems understand exactly what each page is about." }
+      ]
+    },
+    {
+      "type": "steps",
+      "bg": "white",
+      "badge": "How We Work",
+      "h2": "Our Technical SEO Process",
+      "items": [
+        { "title": "Technical Audit —", "text": "A full crawl of the site identifies indexing errors, crawl issues, duplicate content, and structural problems." },
+        { "title": "Priority Roadmap —", "text": "Issues are ranked by actual ranking impact, not just volume of errors flagged, so the highest-impact fixes happen first." },
+        { "title": "Implementation —", "text": "Fixes are applied directly to code, sitemaps, and configuration — not just documented in a report and handed back to you." },
+        { "title": "Duplicate Content Resolution —", "text": "Any duplicate content fix SEO work addresses competing or thin pages diluting your site's authority." },
+        { "title": "Verification & Monitoring —", "text": "Fixes are confirmed in Google Search Console, with ongoing monitoring to catch new technical issues early." }
+      ]
+    },
+    {
+      "type": "bullets",
+      "bg": "soft",
+      "h2": "Why Choose Teknoppy for Technical SEO in Kochi",
+      "items": [
+        { "html": "<strong>We fix root causes, not symptoms.</strong> A ranking drop is often a technical issue underneath — we diagnose the actual cause rather than treating surface-level metrics." },
+        { "html": "<strong>Mobile technical SEO services</strong> built in as standard, since most search traffic and Google's own indexing are mobile-first." },
+        { "html": "<strong>Structured data implementation</strong> that supports both traditional SEO and AI answer engines like AI Overviews, ChatGPT, and Perplexity — increasingly part of what \"technical SEO\" means in 2026." },
+        { "html": "<strong>Direct access to the team doing the work.</strong> Technical issues need fast, precise communication — you're not routed through account managers translating between you and a developer." }
+      ]
+    },
+    {
+      "type": "bullets",
+      "bg": "white",
+      "h2": "Who Needs Technical SEO Services",
+      "intro": "This service fits businesses that are:",
+      "items": [
+        { "text": "Seeing rankings stall or drop despite consistent content and link-building effort" },
+        { "text": "Running a site with crawl errors, duplicate content, or indexing problems flagged in Search Console but never fixed" },
+        { "text": "Planning a site migration, redesign, or platform change where technical SEO needs to be protected through the transition" }
+      ],
+      "outro": [
+        { "html": "If you need a one-time diagnostic rather than ongoing technical work, see <a href=\"/seo-audit-services-kochi/\" class=\"text-primary font-semibold hover:underline\">SEO Audit Services</a>. If your issue is specifically page speed, our <a href=\"/website-speed-optimization-services-kochi/\" class=\"text-primary font-semibold hover:underline\">Website Speed Optimization</a> page covers that in depth." }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "cream",
+      "h2": "Technical SEO Projects We've Delivered",
+      "paragraphs": [
+        { "html": "Teknoppy has resolved technical SEO issues for businesses across Kochi and Kerala — fixing crawl errors, duplicate content, and indexing problems that were quietly capping their ranking potential. See our full approach on the <a href=\"/seo-services/\" class=\"text-primary font-semibold hover:underline\">SEO Services</a> page." }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "Technical SEO Pricing",
+      "paragraphs": [
+        { "html": "Technical SEO work is typically scoped as part of a broader SEO engagement, though standalone technical fixes are available depending on site size and issue complexity. See our <a href=\"/seo-services/\" class=\"text-primary font-semibold hover:underline\">SEO Services investment guide</a> or <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a> for a tailored estimate." }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "soft",
+      "h2": "Related Services",
+      "items": [
+        { "label": "SEO Services", "href": "/seo-services/", "text": "our full SEO services pillar" },
+        { "label": "On-Page SEO Services", "href": "/on-page-seo-services-kochi/", "text": "titles, structure, and content optimization page by page" },
+        { "label": "SEO Audit Services", "href": "/seo-audit-services-kochi/", "text": "a one-time prioritized diagnostic of what's holding rankings back" },
+        { "label": "Core Web Vitals Optimization", "href": "/core-web-vitals-optimization-kochi/", "text": "fixing the LCP, INP, and CLS metrics Google scores" }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "white",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions — Technical SEO Services Kochi",
+      "items": [
+        { "q": "How is technical SEO different from on-page SEO?", "a": "Technical SEO focuses on how search engines crawl, index, and understand your site — sitemaps, structured data, site architecture. On-page SEO focuses on individual page content, titles, and headings. Both matter, but technical issues have to be fixed first for on-page work to fully count." },
+        { "q": "How do I know if my site has technical SEO problems?", "a": "Common signs include stalled rankings despite good content, pages missing from Google Search Console's index, duplicate content warnings, or slow crawl activity. A technical SEO audit Kochi identifies these clearly rather than leaving it to guesswork." },
+        { "q": "Will technical SEO fixes affect my current rankings?", "a": "Done correctly, technical fixes protect and improve rankings rather than risk them. Canonical and redirect changes are handled carefully and monitored closely to avoid unintended ranking drops during implementation." },
+        { "q": "Do you fix duplicate content issues?", "a": "Yes. Duplicate content fix SEO work identifies competing or near-identical pages and resolves them through canonicalization, consolidation, or redirects, depending on what's causing the duplication." },
+        { "q": "Is structured data part of technical SEO?", "a": "Yes. Structured data implementation services are a core part of our technical work, helping both traditional search engines and AI answer engines understand your content accurately." },
+        { "q": "How long does a technical SEO project take?", "a": "Initial fixes are typically completed within 2–4 weeks of the audit, though technical SEO is best maintained as an ongoing part of ranking work rather than a one-time project." }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "cream",
+      "h2": "Ready to Start Your Technical SEO Project?",
+      "paragraphs": [
+        { "text": "If content and links aren't moving your rankings, a technical issue is often the real blocker. Teknoppy's Technical SEO Services Kochi team finds and fixes what's actually holding your site back from Google." }
+      ],
+      "ctas": [
+        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
+        { "label": "Request a Quote", "href": "/request-a-quote/" }
+      ]
+    },
+    {
+      "type": "byline",
+      "bg": "white",
+      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Author: Sanal Edison, Digital Strategist · Reviewed: August 2026"
+    }
+  ],
+  "devNotes": {
+    "source": "Pillar page SEO Services - technical seo services kochi innerpage.pdf",
+    "primaryKeyword": "Technical SEO Services Kochi",
+    "metaTitleLength": "39 characters",
+    "metaDescriptionLength": "140 characters",
+    "heldPlaceholders": [
+      "Technical SEO Projects We've Delivered — [STAT NEEDED: add 2–3 verified figures — e.g. indexed pages recovered, crawl errors resolved, or a ranking improvement tied to technical fixes.]"
+    ],
+    "schema": "Service + LocalBusiness + FAQPage + BreadcrumbList",
+    "urlNote": "The SEO Services pillar linked this as /technical-seo/. This doc specifies /technical-seo-services-kochi/, so the page is built there and the pillar link was repointed. The short /technical-seo/ path now redirects here instead of bouncing to the pillar."
+  }
+}

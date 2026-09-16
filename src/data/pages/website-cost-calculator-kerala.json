@@ -1,0 +1,466 @@
+{
+  "meta": {
+    "title": "Website Cost Calculator Kerala | Teknoppy",
+    "description": "Get an instant website price estimate with Teknoppy's Website Cost Calculator Kerala. No sign-up, no obligation. Call +91 6282249224 for a detailed quote."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Website Cost Calculator Kerala",
+      "href": "/website-cost-calculator-kerala/"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Teknoppy",
+      "telephone": "+91 6282249224",
+      "email": "sales@teknoppy.com",
+      "url": "https://teknoppy.com/website-cost-calculator-kerala/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Second Floor, Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam",
+        "addressLocality": "Kochi",
+        "addressRegion": "Kerala",
+        "postalCode": "682019",
+        "addressCountry": "IN"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Kerala"
+      },
+      "@id": "https://teknoppy.com/#localbusiness"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Website Design and Development, Kerala",
+      "description": "Website design and development by Teknoppy, priced by website type, page count and add-ons. Estimate your range with the Website Cost Calculator Kerala.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Teknoppy"
+      },
+      "url": "https://teknoppy.com/website-cost-calculator-kerala/",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "lowPrice": "15000",
+        "highPrice": "4000000",
+        "offerCount": "19",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@id": "https://teknoppy.com/#localbusiness"
+        }
+      }
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Instant Estimate",
+      "h1Lead": "Website Cost Calculator",
+      "h1Accent": "Kerala",
+      "subhead": "Get a real price range for your website in under a minute.",
+      "body": [
+        {
+          "text": "Teknoppy's Website Cost Calculator Kerala tool gives an instant, honest estimate based on the type of website you need, the number of pages, and the features you want. No sales call required to get a number, no vague starting from pricing. Pick your options and see your estimated range immediately."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Start Your Website Cost Calculator",
+          "href": "#calculator"
+        },
+        {
+          "label": "Call +91 6282249224",
+          "href": "tel:+916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "22+",
+          "label": "Live client sites"
+        },
+        {
+          "value": "9",
+          "label": "Service pillars in-house"
+        }
+      ],
+      "trustline": "Pricing bands published, never hidden."
+    },
+    {
+      "type": "calculator",
+      "id": "calculator",
+      "bg": "cream",
+      "badge": "Three Quick Steps",
+      "h2": "Calculate Your Website Cost",
+      "intro": "Using the Website Cost Calculator Kerala tool takes three quick steps, tied directly to the same pricing bands used across Teknoppy's service pages, never a second, conflicting price list. See your estimated price range instantly, with a breakdown of what moves the number up or down. No email required to see your estimate.",
+      "calculator": {
+        "stepLabels": [
+          "Choose your website type",
+          "Select the number of pages",
+          "Add-ons like SEO setup, content writing, or payment gateway"
+        ],
+        "types": [
+          {
+            "id": "business",
+            "label": "Brochure / business site",
+            "blurb": "A brochure or business website, from a single landing page to a full corporate site.",
+            "tiers": [
+              {
+                "id": "b-landing",
+                "label": "Landing page",
+                "detail": "1–3 pages, conversion-focused",
+                "min": 15000,
+                "max": 40000
+              },
+              {
+                "id": "b-basic",
+                "label": "Basic business website",
+                "detail": "5–8 pages",
+                "min": 25000,
+                "max": 50000
+              },
+              {
+                "id": "b-pro",
+                "label": "Professional multi-page website",
+                "detail": "10–20 pages",
+                "min": 50000,
+                "max": 120000
+              },
+              {
+                "id": "b-corp",
+                "label": "Corporate website with CMS",
+                "detail": "20–40 pages",
+                "min": 120000,
+                "max": 300000
+              },
+              {
+                "id": "b-redesign",
+                "label": "Website redesign",
+                "detail": "Existing site overhaul",
+                "min": 30000,
+                "max": 150000
+              }
+            ]
+          },
+          {
+            "id": "wordpress",
+            "label": "WordPress",
+            "blurb": "A WordPress build, WooCommerce store, or a migration onto WordPress.",
+            "tiers": [
+              {
+                "id": "w-basic",
+                "label": "Basic WordPress website",
+                "detail": "5–8 pages",
+                "min": 40000,
+                "max": 80000
+              },
+              {
+                "id": "w-pro",
+                "label": "Professional multi-page WordPress",
+                "detail": "10–20 pages",
+                "min": 80000,
+                "max": 180000
+              },
+              {
+                "id": "w-corp",
+                "label": "Corporate WordPress with CMS",
+                "detail": "20–40 pages",
+                "min": 180000,
+                "max": 400000
+              },
+              {
+                "id": "w-woo",
+                "label": "WooCommerce store",
+                "detail": "15–30 products",
+                "min": 100000,
+                "max": 250000
+              },
+              {
+                "id": "w-migrate",
+                "label": "WordPress migration",
+                "detail": "From another platform",
+                "min": 30000,
+                "max": 120000
+              }
+            ]
+          },
+          {
+            "id": "ecommerce",
+            "label": "Ecommerce",
+            "blurb": "An online store on WooCommerce or Shopify, a B2B portal, or a marketplace.",
+            "tiers": [
+              {
+                "id": "e-starter",
+                "label": "Starter online store",
+                "detail": "Up to 50 products",
+                "min": 45000,
+                "max": 90000
+              },
+              {
+                "id": "e-pro",
+                "label": "Professional ecommerce store",
+                "detail": "WooCommerce or Shopify",
+                "min": 90000,
+                "max": 200000
+              },
+              {
+                "id": "e-custom",
+                "label": "Custom ecommerce / B2B portal",
+                "min": 200000,
+                "max": 600000
+              },
+              {
+                "id": "e-marketplace",
+                "label": "Multi-vendor marketplace",
+                "min": 300000,
+                "max": 800000,
+                "openEnded": true
+              },
+              {
+                "id": "e-redesign",
+                "label": "Ecommerce redesign / migration",
+                "min": 50000,
+                "max": 200000
+              }
+            ]
+          },
+          {
+            "id": "webapp",
+            "label": "Web application",
+            "blurb": "A custom web application, dashboard, or internal platform.",
+            "tiers": [
+              {
+                "id": "a-mvp",
+                "label": "MVP / startup application",
+                "min": 300000,
+                "max": 800000
+              },
+              {
+                "id": "a-standard",
+                "label": "Standard web application",
+                "min": 800000,
+                "max": 1500000
+              },
+              {
+                "id": "a-enterprise",
+                "label": "Enterprise application",
+                "min": 1500000,
+                "max": 4000000,
+                "openEnded": true
+              }
+            ]
+          }
+        ],
+        "addons": [
+          {
+            "id": "seo-setup",
+            "label": "SEO setup",
+            "text": "Priced in your written quote.",
+            "min": null,
+            "max": null
+          },
+          {
+            "id": "content-writing",
+            "label": "Content writing",
+            "text": "Priced in your written quote.",
+            "min": null,
+            "max": null
+          },
+          {
+            "id": "payment-gateway",
+            "label": "Payment gateway integration",
+            "text": "Priced in your written quote.",
+            "min": null,
+            "max": null
+          }
+        ],
+        "included": [
+          "Mobile responsiveness, included by default, never sold as an upsell",
+          "Basic on-page SEO, included by default, never sold as an upsell"
+        ],
+        "quote": {
+          "label": "Request an itemised quote",
+          "href": "/request-a-quote/"
+        },
+        "call": {
+          "label": "Call +91 6282249224",
+          "href": "tel:+916282249224"
+        },
+        "emailSubject": "My Teknoppy website cost estimate",
+        "note": "Development cost only; hosting and maintenance are shown separately in a full quote.",
+        "complexNote": "Complex projects are flagged and routed to a direct quote instead of a guess."
+      }
+    },
+    {
+      "type": "bullets",
+      "badge": "What You Get",
+      "h2": "What You Will Receive",
+      "items": [
+        {
+          "text": "Your Website Cost Calculator Kerala estimate shows an instant price range based on your selections, not a single misleading number, plus a breakdown of exactly which choices moved it."
+        },
+        {
+          "html": "You can email yourself the Website Cost Calculator Kerala estimate or <a href=\"/request-a-quote/\" class=\"text-primary font-bold hover:underline\">request a formal, itemised quote</a> from the Teknoppy team."
+        },
+        {
+          "text": "There is no obligatory sign-up and no spam call before you have even seen a number."
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "bg": "soft",
+      "badge": "Why Teknoppy",
+      "h2": "Why Businesses Trust Teknoppy's Website Cost Calculator",
+      "items": [
+        {
+          "text": "This Website Cost Calculator Kerala tool is calibrated against the actual price bands Teknoppy quotes on live projects across our Website Design, WordPress, Ecommerce, and Web Application services, not arbitrary numbers picked to look competitive."
+        },
+        {
+          "text": "The range you see is the range you get quoted; we do not publish low numbers to get you on a call and raise them later."
+        },
+        {
+          "text": "Every add-on shows its own cost impact instead of folding it into one opaque total."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "warm",
+      "badge": "A Real Example",
+      "h2": "What A Real Estimate Looks Like",
+      "paragraphs": [
+        {
+          "text": "A small business owner in Kochi recently used the Website Cost Calculator Kerala tool for a six-page business site with SEO setup and content writing included."
+        },
+        {
+          "text": "The estimate came back with a clear range and a line-item breakdown, base cost, per-page cost, and add-on costs shown separately, with a note that the price would only shift if extra features were added later, never silently."
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "badge": "Related Services",
+      "h2": "Explore Our Services",
+      "items": [
+        {
+          "label": "Website Design and Development",
+          "text": "Our core service and what a typical project includes.",
+          "href": "/web-design-company-kochi/"
+        },
+        {
+          "label": "WordPress Development",
+          "text": "For WordPress-based estimates.",
+          "href": "/wordpress-development-company-kochi/"
+        },
+        {
+          "label": "Ecommerce Development",
+          "text": "For store-based estimates.",
+          "href": "/ecommerce-website-development-company-kochi/"
+        },
+        {
+          "label": "Web Application Development",
+          "text": "For custom app estimates.",
+          "href": "/web-application-development-company-kochi/"
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "badge": "How Pricing Works",
+      "h2": "How Our Pricing Works",
+      "items": [
+        {
+          "html": "The Website Cost Calculator Kerala tool's pricing is built on website type, page count, and add-ons like SEO setup, content writing, or payment gateway integration, the same cost drivers published on our <a href=\"/web-design-company-kochi/\" class=\"text-primary font-bold hover:underline\">Website Design and Development</a> page."
+        },
+        {
+          "text": "Mobile responsiveness and basic on-page SEO are included by default, never sold as an upsell."
+        },
+        {
+          "text": "Custom design, multilingual content, and third-party integrations are what typically move a project toward the higher end of its range."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "soft",
+      "layout": "list",
+      "badge": "Before You Start",
+      "h2": "Before You Calculate",
+      "items": [
+        {
+          "title": "Is the Website Cost Calculator Kerala estimate binding?",
+          "text": "No, it is a range based on your selections; a final quote confirms the exact number."
+        },
+        {
+          "title": "Do I have to give my email to see a price?",
+          "text": "No, the calculator shows your estimate immediately."
+        },
+        {
+          "title": "What if my project does not fit the standard options?",
+          "text": "Complex projects are flagged and routed to a direct quote instead of a guess."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "cream",
+      "badge": "FAQ",
+      "h2": "Frequently Asked Questions",
+      "center": true,
+      "items": [
+        {
+          "q": "How accurate is the Website Cost Calculator Kerala estimate?",
+          "a": "It reflects the same pricing bands Teknoppy quotes on real projects, accurate for standard scopes."
+        },
+        {
+          "q": "Does the Website Cost Calculator Kerala tool include hosting and domain costs?",
+          "a": "No, it estimates development cost only; hosting and maintenance are shown separately in a full quote."
+        },
+        {
+          "q": "Can I use this for an ecommerce website?",
+          "a": "Yes, selecting Ecommerce adjusts the calculator for product catalog size and payment gateway integration."
+        },
+        {
+          "q": "Is the Website Cost Calculator Kerala tool really free?",
+          "a": "Yes, with no charge and no obligation to proceed afterward."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "h2": "Calculate Your Website Cost in Kerala Today",
+      "paragraphs": [
+        {
+          "text": "See a real number, not a sales pitch. Start your Website Cost Calculator Kerala estimate now."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Start Your Website Cost Calculator",
+          "href": "#calculator"
+        },
+        {
+          "label": "Request an Itemised Quote",
+          "href": "/request-a-quote/"
+        }
+      ]
+    }
+  ],
+  "devNotes": {
+    "source": "Leadgen pillar page-website cost calculator inner page.pdf (Google Drive, teknoppybusiness@gmail.com)",
+    "keyword": "Website Cost Calculator Kerala — 13 occurrences, density band 1.8–2.0% per the source doc.",
+    "notRendered": "The doc's header block (word count, density, schema list) and its closing cannibalization check are build instructions, not page copy.",
+    "pricingProvenance": "Every band in calculator.types[] is copied from a pricing table already published on a pillar page — web-design.json (business tiers), wordpress.json, ecommerce.json and web-application.json. The page copy promises 'the range you see is the range you get quoted', so nothing here may be computed from an unpublished rate. When a pillar's table changes, change it here too.",
+    "addonPricing": "NEEDS CLIENT: no add-on rate is published anywhere on the site, so SEO setup, content writing and payment gateway integration render as 'Priced in your written quote' rather than an invented figure. Fill in min/max on calculator.addons[] and the calculator will add them to the range and show them as their own line in the breakdown — which is what the doc's 'base cost, per-page cost, and add-on costs shown separately' asks for.",
+    "perPageCost": "The published bands are per page-range (5–8, 10–20, 20–40), not per page, so page count is a band selector rather than a multiplier. A true per-page line item needs a published per-page rate.",
+    "emailEstimate": "'Email myself this estimate' is a prefilled mailto: link carrying the breakdown, so no address is collected before a number is shown — the doc promises 'No email required to see your estimate.'",
+    "schemaNote": "The doc specifies Product schema. Emitted with an AggregateOffer whose lowPrice/highPrice are the lowest and highest published bands (Rs. 15,000 landing page → Rs. 40,00,000 enterprise application), so Product's required offer field carries real figures rather than an invented one."
+  }
+}

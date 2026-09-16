@@ -62,11 +62,11 @@
       "h2": "Our SEO Services",
       "intro": "Teknoppy's SEO services cover the full stack, each backed by a dedicated specialist and a written scope before work begins.",
       "items": [
-        { "title": "Technical SEO", "text": "Site health, crawlability, and indexing fixes that clear the path for everything else to work.", "linkText": "Technical SEO →", "href": "/technical-seo/" },
+        { "title": "Technical SEO", "text": "Site health, crawlability, and indexing fixes that clear the path for everything else to work.", "linkText": "Technical SEO →", "href": "/technical-seo-services-kochi/" },
         { "title": "Local SEO", "text": "Local search visibility services for businesses that depend on nearby customers finding them first.", "linkText": "Local SEO →", "href": "/local-seo-services-kochi/" },
-        { "title": "On-Page SEO", "text": "On-page optimization services covering titles, structure, and schema and structured data implementation.", "linkText": "On-Page SEO →", "href": "/on-page-seo/" },
-        { "title": "SEO Audit", "text": "A full SEO site architecture planning review that flags exactly what is holding a site back.", "linkText": "SEO Audit →", "href": "/seo-audit/" },
-        { "title": "Core Web Vitals Optimization", "text": "Fixing the technical metrics Google uses to judge page experience.", "linkText": "Core Web Vitals Optimization →", "href": "/core-web-vitals-optimization/" },
+        { "title": "On-Page SEO", "text": "On-page optimization services covering titles, structure, and schema and structured data implementation.", "linkText": "On-Page SEO →", "href": "/on-page-seo-services-kochi/" },
+        { "title": "SEO Audit", "text": "A full SEO site architecture planning review that flags exactly what is holding a site back.", "linkText": "SEO Audit →", "href": "/seo-audit-services-kochi/" },
+        { "title": "Core Web Vitals Optimization", "text": "Fixing the technical metrics Google uses to judge page experience.", "linkText": "Core Web Vitals Optimization →", "href": "/core-web-vitals-optimization-kochi/" },
         { "title": "Website Speed Optimization", "text": "Faster load times, which support rankings, conversions, and Core Web Vitals.", "linkText": "Website Speed Optimization →", "href": "/website-speed-optimization-services-kochi/" },
         { "title": "Ecommerce SEO", "text": "Ecommerce SEO strategy for product pages, category structure, and search-driven revenue.", "linkText": "Ecommerce SEO →", "href": "/ecommerce-seo-services-kochi/" }
       ]
@@ -257,7 +257,7 @@
     "schemaStack": "Organization · Service · FAQPage · BreadcrumbList · AggregateRating · Person",
     "urlDiscrepancy": "Other pages (Services hub, SEO Company Kerala) linked to /seo/. This doc specifies /seo-services/, so the page is built there and those links were updated to match.",
     "cannibalizationCheck": "This page does not target \"Kochi\" or \"Kerala\" as keywords, and does not use exact-match phrases reserved for child pages (Technical SEO, Local SEO, On-Page SEO, SEO Audit, Core Web Vitals Optimization, Website Speed Optimization, Ecommerce SEO, SEO Company Kochi, SEO Company Kerala). Child-page names are used only as anchor-linked service names; Kochi/Kerala appear only as service-area context.",
-    "pendingPages": "The seven service links (/technical-seo/, /local-seo/, /on-page-seo/, /seo-audit/, /core-web-vitals-optimization/, /website-speed-optimization/, /ecommerce-seo/) are child pages that do not exist yet.",
+    "childPages": "All seven child pages are now built. Each doc specified a longer permalink than the pillar copy used, so every link here was repointed: /technical-seo/ \u2192 /technical-seo-services-kochi/, /local-seo/ \u2192 /local-seo-services-kochi/, /on-page-seo/ \u2192 /on-page-seo-services-kochi/, /seo-audit/ \u2192 /seo-audit-services-kochi/, /core-web-vitals-optimization/ \u2192 /core-web-vitals-optimization-kochi/, /website-speed-optimization/ \u2192 /website-speed-optimization-services-kochi/, /ecommerce-seo/ \u2192 /ecommerce-seo-services-kochi/. The short paths are kept as redirects in vercel.json in case the doc URLs were published anywhere.",
     "aggregateRating": "Doc lists AggregateRating in the schema stack. Withheld until verified ratings exist, consistent with the Certifications page rule.",
     "dataNeededBeforeLaunch": [
       "Photo files for the three SEO team members are not in the repo yet. The team block references /team/niya-kk.webp, /team/neha-p.webp, and /team/nithya-sibi.webp — save the portraits to public/team/ under exactly those names, or the cards render without an avatar.",

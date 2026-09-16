@@ -1,0 +1,346 @@
+{
+  "meta": {
+    "title": "Book Web Design Consultation Kerala | Teknoppy",
+    "description": "Book a free web design consultation with Teknoppy in Kochi, Kerala. 30 minutes, no obligation, real answers. Call +91 6282249224 or pick a time online."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Book Web Design Consultation Kerala",
+      "href": "/book-a-consultation/"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Teknoppy",
+      "telephone": "+91 6282249224",
+      "email": "sales@teknoppy.com",
+      "url": "https://teknoppy.com/book-a-consultation/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Second Floor, Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam",
+        "addressLocality": "Kochi",
+        "addressRegion": "Kerala",
+        "postalCode": "682019",
+        "addressCountry": "IN"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Kerala"
+      },
+      "@id": "https://teknoppy.com/#localbusiness"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Book Web Design Consultation Kerala",
+      "serviceType": "Web Design Consultation",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Kerala"
+      },
+      "url": "https://teknoppy.com/book-a-consultation/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Free Consultation",
+      "h1Lead": "Book Web Design Consultation",
+      "h1Accent": "Kerala",
+      "subhead": "30 minutes to talk through your project, no sales script.",
+      "body": [
+        {
+          "text": "Book a web design consultation with Teknoppy to talk through your project with someone who will actually work on it, not a sales rep reading from a script. In 30 minutes, you will walk away knowing what your website needs, roughly what it will cost, and whether Teknoppy is the right fit, with zero obligation either way."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Pick a Time for Your Consultation",
+          "href": "#pick-a-time"
+        },
+        {
+          "label": "Call +91 6282249224",
+          "href": "tel:+916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "22+",
+          "label": "Live client sites"
+        },
+        {
+          "value": "9",
+          "label": "Service pillars in-house"
+        },
+        {
+          "value": "30 Min",
+          "label": "Real answers, no pressure"
+        }
+      ],
+      "trustline": "30 minute calls, real answers, no pressure."
+    },
+    {
+      "type": "form",
+      "id": "pick-a-time",
+      "bg": "cream",
+      "badge": "Pick a Time",
+      "h2": "Pick a Time for Your Consultation",
+      "intro": "The call happens over phone or video, your choice, and either way it stays a proper web design consultation, not a rushed five minute chat. If you would rather talk before booking, call or WhatsApp us directly and we will set it up manually.",
+      "form": {
+        "heading": "Book Your Web Design Consultation",
+        "submitLabel": "Book My Consultation",
+        "source": "Book Web Design Consultation Kerala",
+        "summary": "Web design consultation booking request.",
+        "successMessage": "Thanks — your consultation request is with us. We will confirm your slot by phone or email, usually the same working day.",
+        "errorMessage": "Something went wrong sending your request. Please call +91 6282249224 or email sales@teknoppy.com and we'll pick it up straight away.",
+        "note": "Booking a web design consultation does not commit you to hiring Teknoppy.",
+        "fields": [
+          {
+            "name": "name",
+            "label": "Name",
+            "type": "text",
+            "required": true,
+            "placeholder": "Your full name",
+            "autocomplete": "name",
+            "width": "half"
+          },
+          {
+            "name": "company",
+            "label": "Business",
+            "type": "text",
+            "required": false,
+            "placeholder": "Your business name",
+            "autocomplete": "organization",
+            "width": "half"
+          },
+          {
+            "name": "email",
+            "label": "Email",
+            "type": "email",
+            "required": true,
+            "placeholder": "name@company.com",
+            "autocomplete": "email",
+            "width": "half"
+          },
+          {
+            "name": "phone",
+            "label": "Phone",
+            "type": "tel",
+            "required": true,
+            "placeholder": "+91 00000 00000",
+            "autocomplete": "tel",
+            "width": "half"
+          },
+          {
+            "name": "preferred_date",
+            "label": "Preferred date",
+            "type": "date",
+            "required": true,
+            "width": "half"
+          },
+          {
+            "name": "preferred_time",
+            "label": "Preferred time",
+            "type": "select",
+            "required": true,
+            "placeholder": "Select a slot",
+            "options": [
+              "Morning, 10 am – 1 pm",
+              "Afternoon, 2 pm – 5 pm",
+              "Evening, 5 pm – 7 pm"
+            ],
+            "width": "half"
+          },
+          {
+            "name": "call_on",
+            "label": "Phone or video",
+            "type": "select",
+            "required": true,
+            "placeholder": "Your choice",
+            "options": [
+              "Phone call",
+              "Video call",
+              "WhatsApp call"
+            ],
+            "width": "half"
+          },
+          {
+            "name": "service",
+            "label": "What you want to cover",
+            "type": "select",
+            "required": false,
+            "placeholder": "Optional",
+            "options": [
+              "A new website",
+              "A redesign or improvements",
+              "Ecommerce or online store",
+              "A web application",
+              "Not sure yet"
+            ],
+            "width": "half"
+          },
+          {
+            "name": "message",
+            "label": "Anything we should know beforehand",
+            "type": "textarea",
+            "required": false,
+            "rows": 4,
+            "placeholder": "Your goals for the site, and what is not working with what you have now, if anything.",
+            "hint": "No preparation needed, though a rough idea of your budget and goals helps the call move faster."
+          }
+        ]
+      },
+      "aside": {
+        "heading": "Before You Book",
+        "items": [
+          {
+            "title": "Will I be pressured to sign a contract on the call?",
+            "text": "No, it is a planning conversation."
+          },
+          {
+            "title": "Do I need to prepare anything beforehand?",
+            "text": "No, though a rough idea of your budget and goals helps the call move faster."
+          }
+        ],
+        "phone": "+91 6282249224",
+        "phoneLabel": "Rather set it up by phone? Call +91 6282249224"
+      }
+    },
+    {
+      "type": "bullets",
+      "badge": "On The Call",
+      "h2": "What To Expect On The Call",
+      "items": [
+        {
+          "text": "A conversation about your business, your goals for the site, and what is not working with what you have now, if anything."
+        },
+        {
+          "text": "Straight answers on platform choice, rough scope, and what a realistic budget range looks like for your project."
+        },
+        {
+          "text": "No pressure to decide on the call, and a short recap sent by email afterward so you are not relying on memory for what was discussed."
+        },
+        {
+          "text": "Booking a web design consultation does not commit you to hiring Teknoppy."
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "bg": "soft",
+      "badge": "Why Teknoppy",
+      "h2": "Why Businesses Trust Teknoppy's Consultation Calls",
+      "items": [
+        {
+          "text": "Every web design consultation is run by the same people who will design and develop your project, not a sales layer that hands you off afterward."
+        },
+        {
+          "text": "The call is a working conversation, not a scripted pitch ending in a hard close."
+        },
+        {
+          "text": "If Teknoppy is not the right fit for what you need, we will say so."
+        },
+        {
+          "html": "Nothing said on the call contradicts what is published on our <a href=\"/web-design-pricing-kerala/\" class=\"text-primary font-bold hover:underline\">pricing page</a>."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "warm",
+      "badge": "A Real Example",
+      "h2": "What A Real Consultation Covers",
+      "paragraphs": [
+        {
+          "text": "A Kochi based clinic recently booked a web design consultation unsure whether they needed a full site or just a booking page."
+        },
+        {
+          "text": "The thirty minute web design consultation covered patient booking flow, whether WordPress or a custom build made sense, and a realistic budget range, ending with a clear recommendation and a same week follow up quote, not a pushed decision on the call itself."
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "badge": "Related Services",
+      "h2": "Explore Our Services",
+      "items": [
+        {
+          "label": "Website Design and Development",
+          "text": "Our core service and useful background before your call.",
+          "href": "/web-design-company-kochi/"
+        },
+        {
+          "label": "Website Design Cost in Kerala",
+          "text": "Published pricing tiers to review beforehand.",
+          "href": "/web-design-pricing-kerala/"
+        },
+        {
+          "label": "Get a Web Design Quote",
+          "text": "To skip the call and request a written quote instead.",
+          "href": "/request-a-quote/"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "cream",
+      "badge": "FAQ",
+      "h2": "Frequently Asked Questions",
+      "center": true,
+      "items": [
+        {
+          "q": "How long is the web design consultation?",
+          "a": "Thirty minutes, over phone or video call, whichever you prefer."
+        },
+        {
+          "q": "Is the consultation really free?",
+          "a": "Yes, there is no charge and no obligation to proceed with Teknoppy afterward."
+        },
+        {
+          "q": "Can I book a consultation if I already have a website?",
+          "a": "Yes, consultations cover redesigns and improvements as well as new builds."
+        },
+        {
+          "q": "Do I get a quote during the call?",
+          "a": "You will get a realistic budget range on the call. A formal written quote is a separate, optional step afterward."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "h2": "Book Your Web Design Consultation With Teknoppy",
+      "paragraphs": [
+        {
+          "text": "No pressure, no obligation. Pick a time for your consultation now."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Pick a Time for Your Consultation",
+          "href": "#pick-a-time"
+        },
+        {
+          "label": "Call +91 6282249224",
+          "href": "tel:+916282249224"
+        }
+      ]
+    }
+  ],
+  "devNotes": {
+    "source": "Leadgen pillar page-book a consultation inner page.pdf (Google Drive, teknoppybusiness@gmail.com)",
+    "keyword": "web design consultation — 11 occurrences, density band 1.8–2.0% per the source doc.",
+    "notRendered": "The doc's header block (word count, density, schema list) and its closing cannibalization check are build instructions, not page copy.",
+    "heldCopy": "NEEDS CLIENT — no booking calendar exists. Two sentences from the doc's 'Book Your Web Design Consultation' paragraph are held back because they describe a live calendar the site does not have: 'Booking a web design consultation with Teknoppy takes one step, pick a slot from the calendar that works for you.' and 'No form to fill out first, no waiting for a callback.' Rendering them above a form would contradict the form. In their place the section asks for a preferred date, time slot and call type, and the request is confirmed manually. Once a Calendly / Cal.com embed is chosen and added, restore both sentences and drop the date and time fields.",
+    "formNote": "Preferred date, time slot and call type are folded into the enquiry email by InnerPage's lead-form script, since api/contact.js has no column for them.",
+    "operationalClaims": "The page promises a 30-minute call over phone or video, run by the people who would do the work, plus a short email recap afterward. Confirmed with the client as deliverable before launch."
+  }
+}

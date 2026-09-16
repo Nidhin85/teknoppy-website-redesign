@@ -1,0 +1,323 @@
+{
+  "meta": {
+    "title": "Free Website Audit Kerala | Teknoppy",
+    "description": "Get a free website audit in Kerala from Teknoppy. Real SEO, speed & UX review, no bots, no obligation. Request yours today — call +91 6282249224."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Free Website Audit Kerala",
+      "href": "/free-website-audit-kerala/"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Teknoppy",
+      "telephone": "+91 6282249224",
+      "email": "sales@teknoppy.com",
+      "url": "https://teknoppy.com/free-website-audit-kerala/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Second Floor, Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam",
+        "addressLocality": "Kochi",
+        "addressRegion": "Kerala",
+        "postalCode": "682019",
+        "addressCountry": "IN"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Kerala"
+      },
+      "@id": "https://teknoppy.com/#localbusiness"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Free Website Audit Kerala",
+      "serviceType": "Website Audit",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Kerala"
+      },
+      "url": "https://teknoppy.com/free-website-audit-kerala/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Free Website Audit",
+      "h1Lead": "Free Website Audit",
+      "h1Accent": "Kerala",
+      "subhead": "Find out exactly what is holding your website back, at no cost.",
+      "body": [
+        {
+          "text": "Teknoppy's Free Website Audit Kerala service gives you a real, human-reviewed report on your site's SEO, speed, mobile experience, and technical health. A Teknoppy strategist checks your site manually and sends you a clear list of what is working and what is not, usually within three business days. Request your Free Website Audit Kerala report today, no card, no obligation."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Request Your Free Audit",
+          "href": "#request-audit"
+        },
+        {
+          "label": "Call +91 6282249224",
+          "href": "tel:+916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "22+",
+          "label": "Live client sites"
+        },
+        {
+          "value": "9",
+          "label": "Service pillars in-house"
+        },
+        {
+          "value": "3 Days",
+          "label": "Report turnaround"
+        }
+      ],
+      "trustline": "Kochi-based team, three-day turnaround."
+    },
+    {
+      "type": "form",
+      "id": "request-audit",
+      "bg": "cream",
+      "badge": "Request Your Audit",
+      "h2": "Request Your Free Website Audit Kerala Report",
+      "intro": "Send your website URL, name, email, and phone number. It takes under a minute.",
+      "form": {
+        "heading": "Send your website URL",
+        "submitLabel": "Request My Free Website Audit",
+        "source": "Free Website Audit Kerala",
+        "summary": "Free Website Audit Kerala request.",
+        "successMessage": "Thanks — your Free Website Audit Kerala request is with us. A Teknoppy strategist will send your report within three business days.",
+        "errorMessage": "Something went wrong sending your request. Please call +91 6282249224 or email sales@teknoppy.com and we'll pick it up straight away.",
+        "note": "We only need your public URL — no admin access, no card details.",
+        "fields": [
+          {
+            "name": "website",
+            "label": "Website URL",
+            "type": "url",
+            "required": true,
+            "placeholder": "https://yourbusiness.com",
+            "autocomplete": "url"
+          },
+          {
+            "name": "name",
+            "label": "Name",
+            "type": "text",
+            "required": true,
+            "placeholder": "Your full name",
+            "autocomplete": "name",
+            "width": "half"
+          },
+          {
+            "name": "email",
+            "label": "Email",
+            "type": "email",
+            "required": true,
+            "placeholder": "name@company.com",
+            "autocomplete": "email",
+            "width": "half"
+          },
+          {
+            "name": "phone",
+            "label": "Phone",
+            "type": "tel",
+            "required": true,
+            "placeholder": "+91 00000 00000",
+            "autocomplete": "tel",
+            "width": "half"
+          },
+          {
+            "name": "company",
+            "label": "Business name",
+            "type": "text",
+            "required": false,
+            "placeholder": "Your business",
+            "autocomplete": "organization",
+            "width": "half"
+          }
+        ]
+      },
+      "aside": {
+        "heading": "Before You Request Your Free Audit",
+        "items": [
+          {
+            "title": "Is it really free?",
+            "text": "Yes, no card required and no hidden fee."
+          },
+          {
+            "title": "Will I get spammed afterward?",
+            "text": "No, you get your report and one follow-up, then it is your call."
+          },
+          {
+            "title": "Do you need admin access to my site?",
+            "text": "No, only your public URL."
+          }
+        ],
+        "phone": "+91 6282249224",
+        "phoneLabel": "Prefer to talk first? Call +91 6282249224"
+      }
+    },
+    {
+      "type": "bullets",
+      "badge": "What Is Included",
+      "h2": "What Is Included In Your Free Website Audit",
+      "items": [
+        {
+          "text": "This is not an automated scan you could run yourself."
+        },
+        {
+          "text": "Every Free Website Audit Kerala businesses request from Teknoppy is manually reviewed by our in-house SEO and web team, covering on-page SEO, technical SEO, Core Web Vitals and speed, mobile experience, local SEO signals, and content gaps against your top competitors."
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "bg": "soft",
+      "badge": "What You Get",
+      "h2": "What You Will Receive",
+      "items": [
+        {
+          "text": "Your Free Website Audit Kerala report gives you a written summary explaining the five to eight issues with the biggest impact on your rankings and traffic, ranked by priority, plus a short call or WhatsApp follow-up to walk through the findings."
+        },
+        {
+          "text": "Delivery lands within three business days."
+        },
+        {
+          "text": "There is no obligation to hire us after your Free Website Audit Kerala report arrives."
+        },
+        {
+          "text": "Some businesses fix the issues themselves; others ask Teknoppy to handle it."
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "badge": "Why Teknoppy",
+      "h2": "Why Businesses Trust Teknoppy's Free Website Audit",
+      "items": [
+        {
+          "text": "Your Free Website Audit Kerala report is reviewed by the same team that designs, builds, and runs SEO for client websites across Kerala, Kochi, and the GCC, so recommendations come from people who have implemented these fixes before, not a generic checklist."
+        },
+        {
+          "text": "Findings are written in plain language, prioritised by impact, not a jargon-heavy document meant to scare you into a contract."
+        },
+        {
+          "text": "Every audit follows the same technical, on-page, and local SEO checklist used before starting any paid SEO engagement."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "warm",
+      "badge": "A Real Example",
+      "h2": "What A Real Website Audit Report Looks Like",
+      "paragraphs": [
+        {
+          "text": "A recent Free Website Audit Kerala request from a Kochi-based service business flagged missing alt text across product images, a homepage title tag missing the core service keyword, and a mobile loading time above four seconds."
+        },
+        {
+          "text": "Each finding came with a plain explanation of the fix and its expected impact, not just a red flag with no context."
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "badge": "Related Services",
+      "h2": "Explore Our Services",
+      "intro": "Once your Free Website Audit Kerala report is ready, see our <a href=\"/web-design-pricing-kerala/\" class=\"text-primary font-bold hover:underline\">Website Design Pricing Kerala</a> page for service cost ranges.",
+      "introHtml": true,
+      "items": [
+        {
+          "label": "SEO Services",
+          "text": "Our full methodology from on-page to off-page.",
+          "href": "/seo-services/"
+        },
+        {
+          "label": "SEO Audit Services Kochi",
+          "text": "The paid, deeper version of this audit for ongoing SEO clients.",
+          "href": "/seo-audit-services-kochi/"
+        },
+        {
+          "label": "Technical SEO Services Kochi",
+          "text": "For crawl and indexing fixes.",
+          "href": "/technical-seo-services-kochi/"
+        },
+        {
+          "label": "Website Speed Optimization Services Kochi",
+          "text": "For Core Web Vitals issues.",
+          "href": "/website-speed-optimization-services-kochi/"
+        },
+        {
+          "label": "Local SEO Services Kochi",
+          "text": "For Google Business Profile and local ranking fixes.",
+          "href": "/local-seo-services-kochi/"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "cream",
+      "badge": "FAQ",
+      "h2": "Frequently Asked Questions",
+      "center": true,
+      "items": [
+        {
+          "q": "How long does the Free Website Audit Kerala take?",
+          "a": "Most reports arrive within three business days of submitting your URL."
+        },
+        {
+          "q": "Is it automated or manually reviewed?",
+          "a": "Manually reviewed by a Teknoppy strategist, not a single automated scanner."
+        },
+        {
+          "q": "Do I have to sign up for SEO services afterward?",
+          "a": "No, the report is yours to keep and act on however you choose."
+        },
+        {
+          "q": "What is the difference between this and your paid SEO audit?",
+          "a": "This free audit covers the highest-impact issues in one report. The paid SEO Audit Services Kochi goes deeper, with keyword-level analysis and a phased action plan."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "h2": "Get Your Free Website Audit Kerala Today",
+      "paragraphs": [
+        {
+          "text": "Kerala businesses trust Teknoppy to find what is really wrong with their website, and fix it. Request your Free Website Audit Kerala report now."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Request Your Free Website Audit Kerala Report",
+          "href": "#request-audit"
+        },
+        {
+          "label": "Call +91 6282249224",
+          "href": "tel:+916282249224"
+        }
+      ]
+    }
+  ],
+  "devNotes": {
+    "source": "Leadgen pillar page - free website audit inner page.pdf (Google Drive, teknoppybusiness@gmail.com)",
+    "keyword": "Free Website Audit Kerala — 13 occurrences, density band 1.8–2.0% per the source doc.",
+    "notRendered": "The doc's header block (word count, density, schema list) and its closing cannibalization check are build instructions, not page copy.",
+    "linkNote": "The doc's 'Explore Our Services' list names SEO Audit Services Kochi and Technical SEO Services Kochi. Both pages are now built, so the two cards point at /seo-audit-services-kochi/ and /technical-seo-services-kochi/ instead of bouncing to the parent hub.",
+    "operationalClaims": "The page promises a manually reviewed report within three business days and one follow-up contact. Confirmed with the client as deliverable before launch.",
+    "formNote": "Submits to PUBLIC_CONTACT_ENDPOINT (defaults to /api/contact). The website URL and business name are folded into the email body by InnerPage's lead-form script, since api/contact.js has no column for them."
+  }
+}

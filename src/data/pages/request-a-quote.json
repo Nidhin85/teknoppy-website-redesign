@@ -1,0 +1,324 @@
+{
+  "meta": {
+    "title": "Get a Web Design Quote - Teknoppy | Kochi, Kerala",
+    "description": "Request a free web design quote from Teknoppy in Kochi, Kerala. No obligation, real pricing based on your project. Call +91 6282249224 or fill the form."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Get a Web Design Quote",
+      "href": "/request-a-quote/"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Teknoppy",
+      "telephone": "+91 6282249224",
+      "email": "sales@teknoppy.com",
+      "url": "https://teknoppy.com/request-a-quote/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Second Floor, Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam",
+        "addressLocality": "Kochi",
+        "addressRegion": "Kerala",
+        "postalCode": "682019",
+        "addressCountry": "IN"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Kerala"
+      },
+      "@id": "https://teknoppy.com/#localbusiness"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Get a Web Design Quote",
+      "serviceType": "Web Design",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Kerala"
+      },
+      "url": "https://teknoppy.com/request-a-quote/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Free Written Quote",
+      "h1Lead": "Get a Web Design",
+      "h1Accent": "Quote",
+      "subhead": "Tell us about your project. Get a real number back, not a sales pitch.",
+      "body": [
+        {
+          "text": "To get a web design quote from Teknoppy, share a few details about your project, business type, the kind of website you need, your rough budget, and your timeline, and our team responds with a written estimate, not a generic price range. No pushy follow-up calls, no obligation to proceed."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Request Your Web Design Quote",
+          "href": "#request-quote"
+        },
+        {
+          "label": "Call +91 6282249224",
+          "href": "tel:+916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "22+",
+          "label": "Live client sites"
+        },
+        {
+          "value": "9",
+          "label": "Service pillars in-house"
+        },
+        {
+          "value": "1 Day",
+          "label": "Typical quote turnaround"
+        }
+      ],
+      "trustline": "Written quotes, real numbers, no bait pricing."
+    },
+    {
+      "type": "form",
+      "id": "request-quote",
+      "bg": "cream",
+      "badge": "One Short Form",
+      "h2": "How To Get Your Web Design Quote",
+      "intro": "Getting a web design quote from Teknoppy takes one short form, your name, business, the service you need, business website, WordPress, ecommerce, or web application, your rough budget range, and your timeline.",
+      "form": {
+        "heading": "Request Your Web Design Quote",
+        "submitLabel": "Request My Web Design Quote",
+        "source": "Get a Web Design Quote",
+        "summary": "Web design quote request.",
+        "successMessage": "Thanks — your quote request is with us. Most quotes go out within one business day, usually sooner.",
+        "errorMessage": "Something went wrong sending your request. Please call +91 6282249224 or email sales@teknoppy.com and we'll pick it up straight away.",
+        "note": "That is it, no lengthy questionnaire before you even get a response. We do not ask for card details, and we do not require a call before you get a quote in writing.",
+        "fields": [
+          {
+            "name": "name",
+            "label": "Name",
+            "type": "text",
+            "required": true,
+            "placeholder": "Your full name",
+            "autocomplete": "name",
+            "width": "half"
+          },
+          {
+            "name": "company",
+            "label": "Business",
+            "type": "text",
+            "required": true,
+            "placeholder": "Your business name",
+            "autocomplete": "organization",
+            "width": "half"
+          },
+          {
+            "name": "email",
+            "label": "Email",
+            "type": "email",
+            "required": true,
+            "placeholder": "name@company.com",
+            "autocomplete": "email",
+            "width": "half"
+          },
+          {
+            "name": "phone",
+            "label": "Phone",
+            "type": "tel",
+            "required": true,
+            "placeholder": "+91 00000 00000",
+            "autocomplete": "tel",
+            "width": "half"
+          },
+          {
+            "name": "service",
+            "label": "The service you need",
+            "type": "select",
+            "required": true,
+            "placeholder": "Select a service",
+            "options": [
+              "Business website",
+              "WordPress",
+              "Ecommerce",
+              "Web application"
+            ],
+            "width": "half"
+          },
+          {
+            "name": "timeline",
+            "label": "Your timeline",
+            "type": "text",
+            "required": true,
+            "placeholder": "e.g. launch in 6 weeks",
+            "width": "half"
+          },
+          {
+            "name": "budget",
+            "label": "Your rough budget range",
+            "type": "text",
+            "required": true,
+            "placeholder": "A rough range is fine",
+            "hint": "A rough idea of business type and budget is enough to start."
+          },
+          {
+            "name": "message",
+            "label": "Anything else about the project",
+            "type": "textarea",
+            "required": false,
+            "rows": 4,
+            "placeholder": "Your current site if you have one, the pages you need, anything that matters."
+          }
+        ]
+      },
+      "aside": {
+        "heading": "Before You Request a Quote",
+        "items": [
+          {
+            "title": "Will I be pressured to sign up after I get my web design quote?",
+            "text": "No, it is yours to act on whenever you are ready, including never."
+          },
+          {
+            "title": "Do I need to know exactly what I want first?",
+            "text": "No, a rough idea of business type and budget is enough to start."
+          }
+        ],
+        "phone": "+91 6282249224",
+        "phoneLabel": "Prefer to talk it through? Call +91 6282249224"
+      }
+    },
+    {
+      "type": "bullets",
+      "badge": "What You Get",
+      "h2": "What You Will Receive",
+      "items": [
+        {
+          "text": "A written quote with a specific price range tied to your actual project details, not a copy pasted range."
+        },
+        {
+          "text": "A response within one business day, usually sooner."
+        },
+        {
+          "text": "No obligation to proceed, you keep the quote and decide on your own timeline."
+        },
+        {
+          "text": "Getting a web design quote from Teknoppy does not commit you to anything."
+        },
+        {
+          "text": "Some businesses request quotes from three or four agencies before deciding; we would rather earn the work on the quote itself than pressure a decision."
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "bg": "soft",
+      "badge": "Why Teknoppy",
+      "h2": "Why Businesses Trust Teknoppy's Quote Process",
+      "items": [
+        {
+          "html": "Every web design quote is prepared by the same team that will actually design and develop your site, across our <a href=\"/web-design-company-kochi/\" class=\"text-primary font-bold hover:underline\">Website Design</a>, <a href=\"/wordpress-development-company-kochi/\" class=\"text-primary font-bold hover:underline\">WordPress</a>, <a href=\"/ecommerce-website-development-company-kochi/\" class=\"text-primary font-bold hover:underline\">Ecommerce</a>, and <a href=\"/web-application-development-company-kochi/\" class=\"text-primary font-bold hover:underline\">Web Application</a> services, not a sales rep estimating blind."
+        },
+        {
+          "text": "The number in your quote is the number we will invoice, barring scope changes you approve along the way."
+        },
+        {
+          "text": "You get a written quote, not a verbal figure that shifts in the next conversation."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "warm",
+      "badge": "A Real Example",
+      "h2": "What A Real Quote Looks Like",
+      "paragraphs": [
+        {
+          "text": "A Kochi based retail business recently requested a web design quote for a six page site with WooCommerce integration and a bilingual layout."
+        },
+        {
+          "text": "The quote came back within a day, broken into base site cost, ecommerce setup, and bilingual content cost as separate line items, so the business could see exactly what each part cost before deciding what to keep and what to trim from the first draft of the scope."
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "badge": "Related Services",
+      "h2": "Explore Our Services",
+      "items": [
+        {
+          "label": "Website Design and Development",
+          "text": "Our core service and what most quotes are built around.",
+          "href": "/web-design-company-kochi/"
+        },
+        {
+          "label": "Website Design Cost in Kerala",
+          "text": "Our published pricing tiers, useful if you want a ballpark before submitting details.",
+          "href": "/web-design-pricing-kerala/"
+        },
+        {
+          "label": "Website Cost Calculator Kerala",
+          "text": "For an instant self-serve estimate first, handy if you are still comparing options.",
+          "href": "/website-cost-calculator-kerala/"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "cream",
+      "badge": "FAQ",
+      "h2": "Frequently Asked Questions",
+      "center": true,
+      "items": [
+        {
+          "q": "How long does it take to get a web design quote from Teknoppy?",
+          "a": "Most quotes go out within one business day of submitting the form, and more complex projects like custom web applications may take slightly longer to scope properly."
+        },
+        {
+          "q": "Is the quote free and non-binding?",
+          "a": "Yes, there is no charge to request a quote and no obligation to proceed once you receive it."
+        },
+        {
+          "q": "How is this different from the Website Cost Calculator?",
+          "a": "The calculator gives an instant, self-serve estimated range. Requesting a quote gets you a specific written number based on your actual project.",
+          "aHtml": "The <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-bold hover:underline\">calculator</a> gives an instant, self-serve estimated range. Requesting a quote gets you a specific written number based on your actual project."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "h2": "Get Your Web Design Quote From Teknoppy Today",
+      "paragraphs": [
+        {
+          "text": "No pressure, no obligation. Request your web design quote now."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Request Your Web Design Quote",
+          "href": "#request-quote"
+        },
+        {
+          "label": "Book a Consultation Instead",
+          "href": "/book-a-consultation/"
+        }
+      ]
+    }
+  ],
+  "devNotes": {
+    "source": "Leadgen pillar page -request a quote inner page.pdf (Google Drive, teknoppybusiness@gmail.com)",
+    "keyword": "web design quote — 12 occurrences, density band 1.8–2.0% per the source doc.",
+    "notRendered": "The doc's header block (word count, density, schema list) and its closing cannibalization check are build instructions, not page copy.",
+    "h1Note": "The doc's H1 reads 'Get a Web Design Quote - Teknoppy'. The brand suffix is kept in the meta title and dropped from the visible H1, which is how every other page on the site is set up.",
+    "formNote": "Budget and timeline are free-text rather than dropdowns: no budget bands are published anywhere on the site, so offering a fixed set would invent them. Both fields, plus the business name, are folded into the enquiry email by InnerPage's lead-form script.",
+    "operationalClaims": "The page promises a written quote within one business day. Confirmed with the client as deliverable before launch."
+  }
+}
