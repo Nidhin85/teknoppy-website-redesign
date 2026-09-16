@@ -134,7 +134,7 @@
       ],
       "outro": [
         {
-          "html": "If your need is a broader custom software category rather than SaaS specifically, see <a href=\"/web-application-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Software Development</a>. For the full range of web application types, see the <a href=\"/web-application-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Web Application Development</a> pillar."
+          "html": "If your need is a broader custom software category rather than SaaS specifically, see <a href=\"/software-development-agency-kochi/\" class=\"text-primary font-semibold hover:underline\">Software Development</a>. For the full range of web application types, see the <a href=\"/web-application-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Web Application Development</a> pillar."
         },
         {
           "text": "Many founders underestimate how much of a SaaS product's long-term cost sits in architecture decisions made in the first few weeks — database design, tenant isolation, and how billing ties into the core application all become significantly harder to change once real customers and their data are on the platform."
@@ -173,7 +173,7 @@
         },
         {
           "label": "Software Development",
-          "href": "/web-application-development-company-kochi/"
+          "href": "/software-development-agency-kochi/"
         },
         {
           "label": "API Integration Services",
@@ -253,6 +253,6 @@
       "Projects We've Delivered — [STAT NEEDED: add 2-3 verified figures — e.g. number of SaaS products launched, user capacity handled, or a specific scaling outcome achieved for a client.] Held out of the rendered copy until the account lead supplies verified figures."
     ],
     "bylineEmail": "Doc supplied sanal@teknoppy.com. Replaced with sales@teknoppy.com, the address used sitewide.",
-    "linkNote": "Doc links 'Software Development' to a page that does not exist yet. Pointed at the Web Application Development pillar (nearest live page in the same cluster) until /software-development/ is built — restore the original target then."
+    "linkNote": "Doc's 'Software Development' link now resolves to the real page at /software-development-agency-kochi/ (built 2026-09-16). The earlier placeholder pointing at the Web Application Development pillar has been removed."
   }
 }

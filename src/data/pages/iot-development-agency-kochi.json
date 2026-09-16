@@ -134,7 +134,7 @@
       ],
       "outro": [
         {
-          "html": "If your need is software application development without a hardware component, see <a href=\"/saas-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">SaaS Development</a> or <a href=\"/web-application-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Software Development</a>. For general system-to-system integration, see <a href=\"/api-integration-services-kochi/\" class=\"text-primary font-semibold hover:underline\">API Integration Services</a>."
+          "html": "If your need is software application development without a hardware component, see <a href=\"/saas-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">SaaS Development</a> or <a href=\"/software-development-agency-kochi/\" class=\"text-primary font-semibold hover:underline\">Software Development</a>. For general system-to-system integration, see <a href=\"/api-integration-services-kochi/\" class=\"text-primary font-semibold hover:underline\">API Integration Services</a>."
         },
         {
           "text": "Businesses often underestimate how much of an IoT project's success depends on the software layer rather than the hardware itself — sensors and devices are widely available, but turning their raw data into something a team can actually monitor and act on requires deliberate platform design, not just a connection between device and database."
@@ -181,7 +181,7 @@
         },
         {
           "label": "Software Development",
-          "href": "/web-application-development-company-kochi/"
+          "href": "/software-development-agency-kochi/"
         }
       ]
     },
@@ -253,6 +253,6 @@
       "Projects We've Delivered — [STAT NEEDED: add 2-3 verified figures — e.g. devices connected, monitoring response time improvement, or a specific operational outcome achieved for a client.] Held out of the rendered copy until the account lead supplies verified figures."
     ],
     "bylineEmail": "Doc supplied sanal@teknoppy.com. Replaced with sales@teknoppy.com, the address used sitewide.",
-    "linkNote": "Doc links 'Software Development' to a page that does not exist yet. Pointed at the Web Application Development pillar (nearest live page in the same cluster) until /software-development/ is built — restore the original target then."
+    "linkNote": "Doc's 'Software Development' link now resolves to the real page at /software-development-agency-kochi/ (built 2026-09-16). The earlier placeholder pointing at the Web Application Development pillar has been removed."
   }
 }
