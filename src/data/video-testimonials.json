@@ -1,12 +1,12 @@
 {
   "videos": [
     {
-      "youtubeId": "Ncw3JZmIAoI",
+      "youtubeId": "T6Vzf4ZhCYk",
       "name": "Lenaa",
       "role": "Actor, Author & TEDx Speaker, Kerala",
       "thumb": "/testimonials/lenaa.webp",
       "isShort": true,
-      "nameSource": "Identified by the client on 5 Sep 2026, who supplied youtube.com/shorts/Ncw3JZmIAoI as Lenaa's video. She is the subject of the Lenaa personal brand website case study (/lenaa-personal-brand-website-case-study/); role wording follows that page. Thumbnail is cropped from the Short past its pillarbox bars, so it is portrait (404x720) rather than the 16:9 the other cards use."
+      "nameSource": "Identified by the client on 5 Sep 2026. The client replaced the video on 16 Sep 2026 with youtube.com/shorts/T6Vzf4ZhCYk (“Lena Shares Her Teknoppy Experience”), which supersedes the earlier Short Ncw3JZmIAoI. She is the subject of the Lenaa personal brand website case study (/lenaa-personal-brand-website-case-study/); role wording follows that page. Thumbnail is cropped from the Short past its pillarbox bars, so it is portrait (404x720) rather than the 16:9 the other cards use — both Shorts are the same shoot and same outfit, so the existing crop still matches the new video."
     },
     {
       "youtubeId": "E7HfgGOHjYE",
@@ -20,7 +20,7 @@
       "name": "",
       "role": "Client testimonial",
       "thumb": "/testimonials/client-2.webp",
-      "nameSource": "Not identified. Carried the name 'Lenaa' from 4 Sep 2026 until 5 Sep 2026, when the client supplied the real Lenaa video (Ncw3JZmIAoI, a Short) and this one was left without an identity. Renders with no name rather than a wrong one — add the real name once the client says who is speaking."
+      "nameSource": "Not identified. Carried the name 'Lenaa' from 4 Sep 2026 until 5 Sep 2026, when the client supplied the real Lenaa video (a Short, since replaced by T6Vzf4ZhCYk) and this one was left without an identity. Renders with no name rather than a wrong one — add the real name once the client says who is speaking."
     },
     {
       "youtubeId": "-N_zd4eCPPM",
@@ -32,11 +32,11 @@
   ],
   "devNotes": {
     "origin": "Four YouTube URLs supplied by the client on 4 Sep 2026 to replace the dummy video panel, which showed a rotating stock image (/testimonial_video_preview*.png) behind a play button with no click handler.",
-    "identification": "Lenaa was identified by the client on 5 Sep 2026 as the speaker in the Short Ncw3JZmIAoI, and leads the panel at the client's request. Vivek Menon's name and title are burnt into his video as a lower third and match src/content/testimonials/vivek-menon.md. The remaining two (ocV7KcfU9vs and -N_zd4eCPPM) are unidentified — all three of the landscape videos share the generic YouTube title 'Our Valued Customers Have to Say About Our Exceptional Services', so the title identifies nobody. They render with no name rather than an invented one.",
+    "identification": "Lenaa was identified by the client on 5 Sep 2026 as the speaker in a Short (Ncw3JZmIAoI, replaced on 16 Sep 2026 by T6Vzf4ZhCYk), and leads the panel at the client's request. Vivek Menon's name and title are burnt into his video as a lower third and match src/content/testimonials/vivek-menon.md. The remaining two (ocV7KcfU9vs and -N_zd4eCPPM) are unidentified — all three of the landscape videos share the generic YouTube title 'Our Valued Customers Have to Say About Our Exceptional Services', so the title identifies nobody. They render with no name rather than an invented one.",
     "embed": "Facade pattern — the card shows a self-hosted WebP thumbnail and only loads the YouTube iframe on click, so no request reaches Google until a visitor chooses to play. Uses youtube-nocookie.com.",
     "textTestimonialsKept": "The five text testimonials in src/content/testimonials/ are real, named clients (Olives Resort, Evosyz, Exacore IT, Greens Ayurveda, Rincy) and were left in place — only the fake video panel was replaced.",
     "order": "Panel order is the array order in `videos`, not a sort key. Lenaa first, then Vivek Menon, then the unidentified client — set by the client on 4 Sep 2026.",
-    "lenaaHistory": "The Lenaa attribution moved twice. On 4 Sep 2026 it was put on ocV7KcfU9vs (a landscape video of a woman in a red top) and Ncw3JZmIAoI was filed under unusedVideos as a brand reel. On 5 Sep 2026 the client confirmed Ncw3JZmIAoI is actually Lenaa's testimonial, so the Short moved into the panel with her name and ocV7KcfU9vs was left unnamed. Thumbnails were swapped to match: the old lenaa.webp (red top) became client-2.webp, and lenaa.webp is now cropped from the Short.",
-    "shorts": "Ncw3JZmIAoI is a 9:16 Short. `isShort` is carried on the entry but the component does not branch on it — the portrait thumbnail fills the card under object-cover, and the youtube-nocookie embed letterboxes the portrait video inside the 16:9 iframe on play."
+    "lenaaHistory": "The Lenaa attribution moved twice. On 4 Sep 2026 it was put on ocV7KcfU9vs (a landscape video of a woman in a red top) and Ncw3JZmIAoI was filed under unusedVideos as a brand reel. On 5 Sep 2026 the client confirmed Ncw3JZmIAoI is actually Lenaa's testimonial, so the Short moved into the panel with her name and ocV7KcfU9vs was left unnamed. Thumbnails were swapped to match: the old lenaa.webp (red top) became client-2.webp, and lenaa.webp is now cropped from the Short. On 16 Sep 2026 the client sent a newer cut of the same Short, T6Vzf4ZhCYk, which replaced Ncw3JZmIAoI on the card and in the landing-page carousel; lenaa.webp was left alone because the new Short is the same shoot and the crop still matches.",
+    "shorts": "T6Vzf4ZhCYk is a 9:16 Short. `isShort` is carried on the entry but the component does not branch on it — the portrait thumbnail fills the card under object-cover, and the youtube-nocookie embed letterboxes the portrait video inside the 16:9 iframe on play."
   }
 }
