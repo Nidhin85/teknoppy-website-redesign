@@ -2110,6 +2110,54 @@ collections:
         label: "Case Study — Olives Boutique Resort (Digital Marketing)"
         file: "src/data/pages/case-studies/olives-boutique-resort-digital-marketing.json"
         fields: *inner_page_fields
+      - name: wa_saas
+        label: "Web App — SaaS Development Company Kochi (/saas-development-company-kochi/)"
+        file: "src/data/pages/saas-development-company-kochi.json"
+        fields: *inner_page_fields
+      - name: wa_crm
+        label: "Web App — CRM Development Company Kochi (/crm-company-kochi/)"
+        file: "src/data/pages/crm-company-kochi.json"
+        fields: *inner_page_fields
+      - name: wa_erp
+        label: "Web App — ERP Development Company Kochi (/erp-development-company-kochi/)"
+        file: "src/data/pages/erp-development-company-kochi.json"
+        fields: *inner_page_fields
+      - name: wa_hrm
+        label: "Web App — HRM Software Company Kochi (/hrm-company-kochi/)"
+        file: "src/data/pages/hrm-company-kochi.json"
+        fields: *inner_page_fields
+      - name: wa_iot
+        label: "Web App — IoT Development Company Kochi (/iot-development-agency-kochi/)"
+        file: "src/data/pages/iot-development-agency-kochi.json"
+        fields: *inner_page_fields
+      - name: wa_inventory
+        label: "Web App — Inventory Management Software Kochi (/inventory-management-software-kochi/)"
+        file: "src/data/pages/inventory-management-software-kochi.json"
+        fields: *inner_page_fields
+      - name: wa_booking
+        label: "Web App — Booking System Development Kochi (/booking-system-development-kochi/)"
+        file: "src/data/pages/booking-system-development-kochi.json"
+        fields: *inner_page_fields
+      - name: wa_customer_portal
+        label: "Web App — Customer Portal Development Kochi (/customer-portal-development-kochi/)"
+        file: "src/data/pages/customer-portal-development-kochi.json"
+        fields: *inner_page_fields
+      - name: wa_vendor_portal
+        label: "Web App — Vendor Portal Development Kochi (/vendor-portal-development-kochi/)"
+        file: "src/data/pages/vendor-portal-development-kochi.json"
+        fields: *inner_page_fields
+      - name: wa_lms
+        label: "Web App — LMS Development Company Kochi (/lms-development-company-kochi/)"
+        file: "src/data/pages/lms-development-company-kochi.json"
+        fields: *inner_page_fields
+      - name: wa_dashboard
+        label: "Web App — Dashboard Development Kochi (/dashboard-development-services-kochi/)"
+        file: "src/data/pages/dashboard-development-services-kochi.json"
+        fields: *inner_page_fields
+      - name: wa_api_integration
+        label: "Web App — API Integration Services Kochi (/api-integration-services-kochi/)"
+        file: "src/data/pages/api-integration-services-kochi.json"
+        fields: *inner_page_fields
 
   - name: settings
     label: "Site Settings"
