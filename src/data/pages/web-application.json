@@ -81,7 +81,75 @@
       },
       {
         "title": "Web Application Development for SaaS",
-        "desc": "Multi-tenant architecture, subscription management, API integrations, cloud deployment."
+        "desc": "Multi-tenant architecture, subscription management, API integrations, cloud deployment.",
+        "href": "/saas-development-company-kochi/"
+      }
+    ]
+  },
+  "subServices": {
+    "badge": "Application Types",
+    "heading": "Web Application Services We Build in Kochi",
+    "intro": "Each application type below has its own page covering scope, process, pricing factors, and the questions clients ask most.",
+    "items": [
+      {
+        "title": "SaaS Development",
+        "desc": "Multi-tenant subscription platforms, billing and MVP builds.",
+        "href": "/saas-development-company-kochi/"
+      },
+      {
+        "title": "CRM Development",
+        "desc": "Sales pipelines, lead management and automation your team adopts.",
+        "href": "/crm-company-kochi/"
+      },
+      {
+        "title": "ERP Development",
+        "desc": "Finance, inventory and operations connected in one system.",
+        "href": "/erp-development-company-kochi/"
+      },
+      {
+        "title": "HRM Software",
+        "desc": "Payroll, attendance, leave and employee self-service.",
+        "href": "/hrm-company-kochi/"
+      },
+      {
+        "title": "IoT Development",
+        "desc": "Sensors and equipment connected to real-time monitoring platforms.",
+        "href": "/iot-development-agency-kochi/"
+      },
+      {
+        "title": "Inventory Management Software",
+        "desc": "Real-time, barcode-enabled stock tracking across locations.",
+        "href": "/inventory-management-software-kochi/"
+      },
+      {
+        "title": "Booking System Development",
+        "desc": "Real-time availability, confirmations and booking payments.",
+        "href": "/booking-system-development-kochi/"
+      },
+      {
+        "title": "Customer Portal Development",
+        "desc": "Self-service account, order and support access for customers.",
+        "href": "/customer-portal-development-kochi/"
+      },
+      {
+        "title": "Vendor Portal Development",
+        "desc": "Purchase orders, invoicing and supplier performance tracking.",
+        "href": "/vendor-portal-development-kochi/"
+      },
+      {
+        "title": "LMS Development",
+        "desc": "Course delivery, assessments and certification tracking.",
+        "href": "/lms-development-company-kochi/"
+      },
+      {
+        "title": "Dashboard Development",
+        "desc": "Multi-source reporting and KPI dashboards for decisions.",
+        "href": "/dashboard-development-services-kochi/"
+      },
+      {
+        "title": "API Integration Services",
+        "desc": "Custom APIs, third-party and legacy system connections.",
+        "href": "/api-integration-services-kochi/"
       }
     ]
   },

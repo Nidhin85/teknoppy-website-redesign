@@ -1020,6 +1020,22 @@ collections:
                 fields:
                   - { name: q, label: "Question", widget: string }
                   - { name: a, label: "Answer", widget: text }
+          - name: subServices
+            label: "Application Types Directory"
+            widget: object
+            required: false
+            hint: "Links every web application sub-page built under this pillar. Removing an item orphans that page."
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: heading, label: "Heading", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: items
+                label: "Application types"
+                widget: list
+                fields:
+                  - { name: title, label: "Title", widget: string }
+                  - { name: desc, label: "Description", widget: string }
+                  - { name: href, label: "Link", widget: string }
 # Decap/Netlify CMS "files" collection entry for the Digital Marketing (Kochi) pillar page.
 # Paste this entry under a `files:` list of a collection in your CMS config (config.yml).
 # The entry itself is indented with 6 leading spaces so it drops straight into:
