@@ -2,6 +2,12 @@
 import { ChevronDown } from 'lucide-react';
 import home from "../data/home.json";
 
+interface Props {
+  includeSchema?: boolean;
+}
+
+const { includeSchema = false } = Astro.props;
+
 const faqs = home.faq.items;
 
 const schema = {
@@ -54,7 +60,7 @@ const schema = {
   </div>
 
   <!-- FAQ Schema -->
-  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  {includeSchema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
 </section>
 
 <style>
