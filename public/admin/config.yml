@@ -628,6 +628,53 @@ collections:
                 fields:
                   - { name: q, label: Question, widget: string }
                   - { name: a, label: Answer, widget: text }
+
+          - name: blog
+            label: "Latest Blog Posts"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingLead, label: "Heading — lead", widget: string }
+              - { name: headingAccent, label: "Heading — accent", widget: string }
+              - { name: headingRest, label: "Heading — rest", widget: string }
+              - name: items
+                label: "Posts (by blog post slug/filename)"
+                widget: list
+                fields:
+                  - { name: slug, label: "Post slug", widget: string }
+              - name: allLink
+                label: "View all posts link"
+                widget: object
+                fields:
+                  - { name: label, label: "Label", widget: string }
+                  - { name: href, label: "Link", widget: string }
+
+          - name: author
+            label: "Meet Abilash KR (author / E-E-A-T block)"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingLead, label: "Heading — lead", widget: string }
+              - { name: headingAccent, label: "Heading — accent", widget: string }
+              - { name: name, label: "Name", widget: string }
+              - { name: role, label: "Role", widget: string }
+              - { name: email, label: "Email", widget: string }
+              - { name: phone, label: "Phone", widget: string }
+              - { name: bio, label: "Bio", widget: text }
+              - { name: reviewed, label: "Reviewed line", widget: string }
+              - { name: profileHref, label: "Profile link", widget: string }
+
+          - name: devNotes
+            label: "Developer notes (never rendered on the page)"
+            widget: object
+            collapsed: true
+            required: false
+            fields:
+              - { name: sourceDoc, label: "Source document", widget: string, required: false }
+              - { name: blogNote, label: "Blog post substitutions", widget: text, required: false }
+              - { name: linkNote, label: "Link substitutions", widget: text, required: false }
+              - { name: authorNote, label: "Author byline notes", widget: text, required: false }
+              - { name: schemaNote, label: "Schema stack", widget: text, required: false }
 # CMS "files" entry for the Ecommerce (Kochi) pillar page.
 # Paste this single item into the `files:` list of a Decap/Sveltia CMS
 # collection in public/admin/config.yml. It is indented to sit directly
@@ -704,6 +751,31 @@ collections:
                   - { name: title, label: "Title", widget: string }
                   - { name: desc, label: "Description", widget: text }
                   - { name: href, label: "Link (optional)", widget: string, required: false }
+          - name: platforms
+            label: "Ecommerce Platforms We Build On"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingLead, label: "Heading — lead", widget: string }
+              - { name: headingAccent, label: "Heading — accent", widget: string }
+              - { name: headingRest, label: "Heading — rest", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: items
+                label: "Platforms (icons are zipped by position in the page template)"
+                widget: list
+                fields:
+                  - { name: name, label: "Platform name", widget: string }
+                  - { name: tag, label: "Tag line (under the name)", widget: string }
+                  - { name: desc, label: "Description", widget: text }
+                  - { name: bestFor, label: "Best for", widget: string }
+                  - { name: href, label: "Link", widget: string }
+              - { name: footnote, label: "Footnote", widget: text }
+              - name: footnoteLink
+                label: "Footnote link"
+                widget: object
+                fields:
+                  - { name: label, label: "Label", widget: string }
+                  - { name: href, label: "Link", widget: string }
           - name: process
             label: "Process"
             widget: object
@@ -810,6 +882,26 @@ collections:
                   - { name: loc, label: "Location tag", widget: string }
                   - { name: desc, label: "Description", widget: text }
                   - { name: result, label: "Result", widget: text }
+          - name: blog
+            label: "Latest Blog Posts — Ecommerce & Digital Insights"
+            widget: object
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingLead, label: "Heading — lead", widget: string }
+              - { name: headingAccent, label: "Heading — accent", widget: string }
+              - { name: headingRest, label: "Heading — rest", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: items
+                label: "Posts (by blog post slug/filename)"
+                widget: list
+                fields:
+                  - { name: slug, label: "Post slug", widget: string }
+              - name: allLink
+                label: "View all posts link"
+                widget: object
+                fields:
+                  - { name: label, label: "Label", widget: string }
+                  - { name: href, label: "Link", widget: string }
           - name: faqs
             label: "FAQs"
             widget: object
@@ -943,6 +1035,54 @@ collections:
                 fields:
                   - { name: name, label: "Name", widget: string }
                   - { name: desc, label: "Description", widget: text }
+                  - { name: href, label: "Link (optional)", widget: string, required: false }
+          - name: featuredCaseStudies
+            label: "Case Study — Proven Results (published, named clients)"
+            widget: object
+            required: false
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingPre, label: "Heading — before highlight", widget: string }
+              - { name: headingHighlight, label: "Heading — highlight", widget: string }
+              - { name: headingPost, label: "Heading — after highlight", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - name: items
+                label: "Case studies"
+                widget: list
+                hint: "Named clients only, each linking to its own live case-study page. Anonymised clients and unverified figures belong in the held-back 'Case Studies' block below."
+                fields:
+                  - { name: client, label: "Client", widget: string }
+                  - { name: sector, label: "Sector / location", widget: string }
+                  - { name: title, label: "Title", widget: string }
+                  - { name: text, label: "Summary", widget: text }
+                  - { name: stack, label: "Scope / stack", widget: string }
+                  - { name: href, label: "Link to the case study", widget: string }
+              - name: viewAll
+                label: "View-all link"
+                widget: object
+                required: false
+                fields:
+                  - { name: label, label: "Label", widget: string }
+                  - { name: href, label: "Link", widget: string }
+          - name: blog
+            label: "Latest Blog Posts (section chrome only)"
+            widget: object
+            required: false
+            hint: "The post cards are pulled live from the Blog collection at build time — only the wording around them is edited here."
+            fields:
+              - { name: badge, label: "Badge", widget: string }
+              - { name: headingPre, label: "Heading — before highlight", widget: string }
+              - { name: headingHighlight, label: "Heading — highlight", widget: string }
+              - { name: headingPost, label: "Heading — after highlight", widget: string }
+              - { name: intro, label: "Intro", widget: text }
+              - { name: fallbackNote, label: "Note shown when no Web Application post is published yet", widget: text }
+              - name: viewAll
+                label: "View-all link"
+                widget: object
+                required: false
+                fields:
+                  - { name: label, label: "Label", widget: string }
+                  - { name: href, label: "Link", widget: string }
           - name: caseStudies
             label: "Case Studies"
             widget: object
@@ -1047,6 +1187,16 @@ collections:
 #     files:
 # <-- (paste here) -->
 #
+          - name: devNotes
+            label: "Developer notes (not rendered)"
+            widget: object
+            required: false
+            collapsed: true
+            hint: "Build notes and link-swap records. Never rendered on the page — but it is deleted on save unless it stays declared here."
+            fields:
+              - { name: cardLinkNote, label: "Service / industry card links", widget: text, required: false }
+              - { name: featuredCaseStudiesNote, label: "Case study section", widget: text, required: false }
+              - { name: blogNote, label: "Blog section", widget: text, required: false }
       - name: digital_marketing
         label: "Digital Marketing (Kochi) Page"
         file: "src/data/pages/digital-marketing.json"
@@ -1502,6 +1652,27 @@ collections:
                   - { name: bg, label: "Background", widget: select, options: ["white", "cream", "soft", "warm"], required: false }
                   - { name: h2, label: "Heading (H2)", widget: string, required: false }
                   - { name: intro, label: "Intro", widget: text, required: false }
+              - name: posts
+                label: "Latest posts / insights"
+                widget: object
+                fields:
+                  - { name: bg, label: "Background", widget: select, options: ["white", "cream", "soft", "warm"], required: false }
+                  - { name: badge, label: "Badge", widget: string, required: false }
+                  - { name: h2, label: "Heading (H2)", widget: string, required: false }
+                  - name: items
+                    label: "Posts"
+                    widget: list
+                    fields:
+                      - { name: title, label: "Title", widget: string }
+                      - { name: text, label: "Teaser", widget: text, required: false }
+                      - { name: href, label: "URL", widget: string }
+                  - name: viewAll
+                    label: "View-all link"
+                    widget: object
+                    required: false
+                    fields:
+                      - { name: label, label: "Label", widget: string }
+                      - { name: href, label: "URL", widget: string }
               - name: faq
                 label: "FAQ"
                 widget: object
@@ -2147,6 +2318,10 @@ collections:
       - name: custom_ecommerce_development_kochi
         label: "Custom Ecommerce Development (Kochi)"
         file: "src/data/pages/custom-ecommerce-development-kochi.json"
+        fields: *inner_page_fields
+      - name: ecommerce_redesign_migration_kochi
+        label: "Ecommerce Redesign & Migration (Kochi)"
+        file: "src/data/pages/ecommerce-redesign-migration-kochi.json"
         fields: *inner_page_fields
       - name: wordpress_web_design_kochi
         label: "WordPress Web Design (Kochi)"

@@ -38,7 +38,7 @@ if (!key) {
 const to = process.env.CONTACT_TO || 'sales@teknoppy.com';
 const ccRaw = process.env.CONTACT_CC || 'sanal@teknoppy.com';
 const cc = ccRaw.toLowerCase() === 'none' ? '' : ccRaw;
-const from = process.env.CONTACT_FROM || 'Teknoppy Website <onboarding@resend.dev>';
+const from = process.env.CONTACT_FROM || 'Teknoppy Website <website@teknoppy.com>';
 const recipients = cc ? `${to} and ${cc}` : to;
 
 console.log('Sending a test enquiry through api/contact.js');
@@ -46,9 +46,11 @@ console.log(`  from : ${from}`);
 console.log(`  to   : ${to}`);
 console.log(`  cc   : ${cc || '(none)'}\n`);
 
-// Resend refuses non-account recipients until a domain is verified. Catch that
-// specific 403 and explain it, rather than leaving a bare "could not send".
-const unverified = from.includes('@resend.dev');
+// teknoppy.com is verified in Resend, so a sender on that domain reaches any
+// recipient. The shared onboarding@resend.dev sandbox sender does not — it is
+// rejected with a 403 for anything but the account owner's own address, which
+// is exactly what made the live form fail. Flag it if CONTACT_FROM regresses.
+const sandboxSender = from.includes('@resend.dev');
 
 const { default: handler } = await import('../api/contact.js');
 
@@ -80,23 +82,23 @@ const res = {
       console.log(`  Check ${recipients} — it should arrive within a minute.`);
       console.log('  Not there? Check spam, then https://resend.com → Emails for');
       console.log('  the delivery log. An unverified sender domain is the usual cause.');
-      if (unverified) {
-        console.log('\n  Note: still sending from onboarding@resend.dev, which only');
-        console.log('  reaches your own Resend account address. Verify teknoppy.com at');
-        console.log('  https://resend.com/domains before trusting this in production.');
+      if (sandboxSender) {
+        console.log('\n  Warning: sending from a @resend.dev sandbox address, which only');
+        console.log('  reaches your own Resend account. Set CONTACT_FROM to an address on');
+        console.log('  the verified teknoppy.com domain before trusting this in production.');
       }
     } else {
       console.error(`✗ Failed (HTTP ${status}): ${payload.error || JSON.stringify(payload)}`);
-      if (unverified) {
+      if (sandboxSender) {
         console.error(`
-  Most likely cause: the Resend account has no verified domain, so it is in
-  testing mode and can only email your own account address. Sending to
-  ${recipients} needs two things:
+  Most likely cause: CONTACT_FROM is a @resend.dev sandbox address, which can
+  only email your own Resend account — sending to ${recipients} is refused
+  with a 403. teknoppy.com is already verified, so point CONTACT_FROM at it:
 
-    1. Verify teknoppy.com at https://resend.com/domains (add the DKIM, SPF
-       and MX records it gives you to your DNS; usually live in ~15 minutes).
-    2. Set CONTACT_FROM to an address on that domain, e.g.
-       CONTACT_FROM="Teknoppy Website <website@teknoppy.com>"
+    CONTACT_FROM="Teknoppy Website <website@teknoppy.com>"
+
+  Set it in .env for local runs and in Vercel → Settings → Environment
+  Variables (Production) for the live form, then redeploy.
 
   See the exact error from Resend logged above.`);
       } else {

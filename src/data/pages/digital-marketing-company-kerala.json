@@ -176,6 +176,32 @@
       ]
     },
     {
+      "type": "posts",
+      "bg": "cream",
+      "h2": "Latest Insights — Digital Marketing in Kerala",
+      "items": [
+        {
+          "title": "Beyond Rankings: How Top SEO Companies Are Redefining Digital Success in the AI-First Era",
+          "text": "How AI is reshaping organic search and what Kerala businesses must do differently in 2026.",
+          "href": "/blog/seo-ai-first-era/"
+        },
+        {
+          "title": "Why SEO-Friendly Website Design is Critical for Kerala Businesses",
+          "text": "How integrated search strategy drives organic traffic and client enquiries for Kerala brands.",
+          "href": "/blog/seo-friendly-website-design-kerala/"
+        },
+        {
+          "title": "How to Build a High-Converting Ecommerce Website in Kerala",
+          "text": "Fast page speeds, local gateway integrations, and conversion-optimized checkouts for Kerala retail.",
+          "href": "/blog/high-converting-ecommerce-website-kerala/"
+        }
+      ],
+      "viewAll": {
+        "label": "View all posts",
+        "href": "/blog/"
+      }
+    },
+    {
       "type": "faq",
       "bg": "white",
       "center": true,
@@ -354,6 +380,7 @@
     ],
     "imageAltText": "Combine \"Digital Marketing Company Kerala\" with the actual image subject, e.g. a Kerala client project screenshot or team photo.",
     "authorLine": "Named Teknoppy team member, with \"Reviewed: [Month Year]\"",
-    "statsConflict": "RESOLVED 4 Sep 2026. Normalised to the canonical set in src/data/site.json → stats: 120+ projects, 100+ clients, established 2018 (8 years). The source doc's 150+ figure and the unverified 5-Star Google Rated stat were dropped."
+    "statsConflict": "RESOLVED 4 Sep 2026. Normalised to the canonical set in src/data/site.json → stats: 120+ projects, 100+ clients, established 2018 (8 years). The source doc's 150+ figure and the unverified 5-Star Google Rated stat were dropped.",
+    "insightsNote": "The \"Latest Insights — Digital Marketing in Kerala\" posts block was reported missing (2026-09-19) and added then. The source PDF was not reachable from this account, so the three teasers are NOT verbatim source copy: each title is the blog post's own title verbatim and each teaser is trimmed from that post's own excerpt, following the same in-house pattern as seo-services.json. If the source doc specifies its own teaser copy, swap it in."
   }
 }

@@ -42,8 +42,8 @@
   ],
   "whyTeknoppy": {
     "badge": "Trusted Partners",
-    "headingLead": "Why Kochi's Best Brands",
-    "headingAccent": "Choose Teknoppy",
+    "headingLead": "Why Teknoppy Is the Trusted",
+    "headingAccent": "Web Design Company in Kochi",
     "intro": "We strip away generic templates to engineer custom-built high-performance web platforms designed to rank, scale, and convert visitors into clients.",
     "cards": [
       {
@@ -107,11 +107,13 @@
       },
       {
         "title": "SEO-Friendly Website Development",
-        "desc": "Clean semantic HTML, schema markup, optimised heading hierarchy, fast load times, and correct URL architecture — ready to rank from day one."
+        "desc": "Clean semantic HTML, schema markup, optimised heading hierarchy, fast load times, and correct URL architecture — ready to rank from day one.",
+        "href": "/seo-friendly-website-development-kochi/"
       },
       {
         "title": "CMS Website Development",
-        "desc": "Custom WordPress implementations giving your team full control to update pages, publish blogs, and manage products without touching any code."
+        "desc": "Custom WordPress implementations giving your team full control to update pages, publish blogs, and manage products without touching any code.",
+        "href": "/cms-website-development-kochi/"
       }
     ]
   },

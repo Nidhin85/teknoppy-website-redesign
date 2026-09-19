@@ -61,7 +61,7 @@ Variables** (Production), add:
 | Variable         | Required | Default                                  |
 | :--------------- | :------- | :--------------------------------------- |
 | `RESEND_API_KEY` | **yes**  | —                                        |
-| `CONTACT_FROM`   | **yes**  | `onboarding@resend.dev` (testing only)   |
+| `CONTACT_FROM`   | no       | `website@teknoppy.com` (verified domain) |
 | `CONTACT_TO`     | no       | `sales@teknoppy.com`                     |
 | `CONTACT_CC`     | no       | `sanal@teknoppy.com` (`none` to disable) |
 
@@ -71,26 +71,20 @@ Without `RESEND_API_KEY` the endpoint returns 500 and the forms show their
 "please call or email us" fallback. `CONTACT_TO` and `CONTACT_CC` accept
 comma-separated lists.
 
-### Verifying the domain is not optional
+### The sender must be on a verified domain
 
-A Resend account with no verified domain is in **testing mode**: it can only
-send to the account holder's own address, and any enquiry addressed to
-sales@teknoppy.com is rejected with a 403. The form cannot work in production
-until teknoppy.com is verified.
+**teknoppy.com is verified in Resend** (DKIM, SPF and MX in place), so the
+default sender `Teknoppy Website <website@teknoppy.com>` delivers to any
+recipient. Only override `CONTACT_FROM` with another address on that domain.
 
-1. Go to [resend.com/domains](https://resend.com/domains) → **Add Domain** →
-   `teknoppy.com`.
-2. Add the DKIM, SPF and MX records it generates to teknoppy.com's DNS,
-   copy-pasted exactly. (The MX record is what receives bounce and complaint
-   feedback.) Verification usually completes within ~15 minutes, though DNS can
-   take up to 72 hours to propagate.
-3. Set `CONTACT_FROM` to an address on the verified domain — for example
-   `Teknoppy Website <website@teknoppy.com>` — in both `.env` and Vercel.
+Do not point it at Resend's shared `onboarding@resend.dev` sandbox sender. That
+address can only email the Resend account holder's own address; an enquiry to
+sales@teknoppy.com comes back **403**, the endpoint returns 502, and the form
+tells the visitor it could not send. That misconfiguration is what broke the
+live form before — it looked like "the form is not connected" from the browser,
+while the real failure was the sender address.
 
-Leaving `CONTACT_FROM` on the shared `onboarding@resend.dev` sender is fine for
-a quick test to your own address, but it is unauthenticated for teknoppy.com,
-cannot reach the real inboxes, and is spam-prone. Adding a DMARC record at
-`_dmarc.teknoppy.com` afterwards is recommended.
+Adding a DMARC record at `_dmarc.teknoppy.com` is recommended.
 
 ### Testing it
 

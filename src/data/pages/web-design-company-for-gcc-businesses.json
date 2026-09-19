@@ -56,10 +56,10 @@
       "intro": "As a full-stack web design company for GCC businesses, Teknoppy provides a complete service line, each backed by a dedicated team and transparent scope.",
       "items": [
         { "title": "Corporate & Business Websites", "text": "Custom corporate website design for Gulf companies built around your brand and sales goals.", "linkText": "Web Design Company UAE →", "href": "/web-design-company-uae/" },
-        { "title": "Ecommerce Development", "text": "Ecommerce website development for GCC businesses, including Shopify and WooCommerce with Tabby/Tamara-ready checkout." },
-        { "title": "Website Redesign", "text": "Website redesign services for GCC companies moving on from outdated or slow sites." },
-        { "title": "WordPress & Custom Development", "text": "WordPress development company for GCC clients and fully custom-coded builds for complex requirements." },
-        { "title": "Landing Pages & Web Apps", "text": "Landing page design for GCC startups and web application development for GCC businesses, including portals and booking systems." },
+        { "title": "Ecommerce Development", "html": "Ecommerce website development for GCC businesses, including <a href=\"/shopify-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Shopify</a> and <a href=\"/woocommerce-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">WooCommerce</a> with Tabby/Tamara-ready checkout.", "linkText": "Ecommerce Website Development →", "href": "/ecommerce-website-development-company-kochi/" },
+        { "title": "Website Redesign", "text": "Website redesign services for GCC companies moving on from outdated or slow sites.", "linkText": "Website Redesign Services →", "href": "/website-redesign-services-kochi/" },
+        { "title": "WordPress & Custom Development", "html": "WordPress development company for GCC clients and <a href=\"/custom-wordpress-development-kochi/\" class=\"text-primary font-semibold hover:underline\">fully custom-coded builds</a> for complex requirements.", "linkText": "WordPress Development →", "href": "/wordpress-development-company-kochi/" },
+        { "title": "Landing Pages & Web Apps", "html": "<a href=\"/landing-page-design-kochi/\" class=\"text-primary font-semibold hover:underline\">Landing page design</a> for GCC startups and web application development for GCC businesses, including portals and booking systems.", "linkText": "Web Application Development →", "href": "/web-application-development-company-kochi/" },
         { "title": "Country-Specific Delivery", "html": "Dedicated teams and support windows for businesses in the UAE and Qatar. → <a href=\"/web-design-company-uae/\" class=\"text-primary font-semibold hover:underline\">/web-design-company-uae/</a> · <a href=\"/web-design-company-qatar/\" class=\"text-primary font-semibold hover:underline\">/web-design-company-qatar/</a>" }
       ]
     },

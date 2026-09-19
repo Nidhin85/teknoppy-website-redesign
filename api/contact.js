@@ -9,10 +9,13 @@
  *   CONTACT_TO       - optional; defaults to sales@teknoppy.com
  *   CONTACT_CC       - optional; defaults to sanal@teknoppy.com. Comma-separate
  *                      for several addresses; set to "none" to send no copy.
- *   CONTACT_FROM     - optional; defaults to onboarding@resend.dev, which works
- *                      immediately without domain verification. Switch this to
- *                      something like website@teknoppy.com once the teknoppy.com
- *                      domain is verified in Resend, so replies thread properly.
+ *   CONTACT_FROM     - optional; defaults to website@teknoppy.com, an address
+ *                      on the teknoppy.com domain that is verified in Resend,
+ *                      so it can deliver to any recipient. Never fall back to
+ *                      the shared onboarding@resend.dev sender: it only reaches
+ *                      the Resend account owner's own address and is rejected
+ *                      with a 403 for sales@/sanal@, which the browser shows as
+ *                      the form's "could not send" message.
  *
  * The forms post here by default. PUBLIC_CONTACT_ENDPOINT only needs setting to
  * point them somewhere else (a different route or an external form service).
@@ -106,7 +109,7 @@ export default async function handler(req, res) {
   const cc = addresses(process.env.CONTACT_CC, 'sanal@teknoppy.com');
 
   const payload = {
-    from: process.env.CONTACT_FROM || 'Teknoppy Website <onboarding@resend.dev>',
+    from: process.env.CONTACT_FROM || 'Teknoppy Website <website@teknoppy.com>',
     to: to.length ? to : ['sales@teknoppy.com'],
     reply_to: email,
     subject: `New enquiry — ${name}${service ? ` (${service})` : ''}`,

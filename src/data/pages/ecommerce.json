@@ -100,9 +100,52 @@
       },
       {
         "title": "Ecommerce Redesign & Migration",
-        "desc": "A complete overhaul or platform move that preserves your existing Google ranking history and SEO equity."
+        "desc": "A complete overhaul or platform move that preserves your existing Google ranking history and SEO equity.",
+        "href": "/ecommerce-redesign-migration-kochi/"
       }
     ]
+  },
+  "platforms": {
+    "badge": "Platform Expertise",
+    "headingLead": "Ecommerce",
+    "headingAccent": "Platforms",
+    "headingRest": "We Build On",
+    "intro": "There is no single best ecommerce platform — only the right one for your catalogue, your team and the way you plan to sell. Teknoppy builds and supports stores on the four foundations below, and recommends one only after reviewing your products, budget and growth plans.",
+    "items": [
+      {
+        "name": "WooCommerce",
+        "tag": "WordPress · Open Source",
+        "desc": "Your store runs on WordPress, so you own the code, the content and the customer data outright — with deep control over SEO and no per-sale platform fee.",
+        "bestFor": "Content-led brands that want ownership and search depth",
+        "href": "/woocommerce-development-company-kochi/"
+      },
+      {
+        "name": "Shopify",
+        "tag": "Hosted · Subscription",
+        "desc": "Hosting, security patches and platform updates are handled for you, so the store stays online and current without a separate maintenance retainer for the platform itself.",
+        "bestFor": "Brands that want to launch quickly with predictable running costs",
+        "href": "/shopify-development-company-kochi/"
+      },
+      {
+        "name": "Custom & Headless",
+        "tag": "Bespoke · API-First",
+        "desc": "A storefront written around your own workflows, or decoupled from the backend so a single product catalogue can serve a website, an app and other sales channels at once.",
+        "bestFor": "Large catalogues, B2B pricing rules and multi-channel selling",
+        "href": "/custom-ecommerce-development-kochi/"
+      },
+      {
+        "name": "Multi-Vendor Marketplace",
+        "tag": "Many Sellers · One Platform",
+        "desc": "Seller onboarding, vendor dashboards, commission handling and automated order routing, built so multiple sellers can list and fulfil side by side under your brand.",
+        "bestFor": "Platforms where you host sellers rather than sell yourself",
+        "href": "/marketplace-development-company-kochi/"
+      }
+    ],
+    "footnote": "Already selling on a platform that is holding you back? We move stores between all four — products, customer accounts, order history and existing Google rankings intact.",
+    "footnoteLink": {
+      "label": "Explore Ecommerce Redesign & Migration",
+      "href": "/ecommerce-redesign-migration-kochi/"
+    }
   },
   "process": {
     "badge": "• Our Process •",
@@ -355,6 +398,28 @@
         "site": "sunandmoonkorean.in"
       }
     ]
+  },
+  "blog": {
+    "badge": "Insights",
+    "headingLead": "Latest Blog Posts —",
+    "headingAccent": "Ecommerce",
+    "headingRest": "& Digital Insights",
+    "intro": "Practical guides on choosing a platform, building a store that converts, and staying visible in search.",
+    "items": [
+      {
+        "slug": "high-converting-ecommerce-website-kerala"
+      },
+      {
+        "slug": "start-selling-online-kerala"
+      },
+      {
+        "slug": "seo-ai-first-era"
+      }
+    ],
+    "allLink": {
+      "label": "View all posts",
+      "href": "/blog/"
+    }
   },
   "faqs": {
     "badge": "Support & FAQs",

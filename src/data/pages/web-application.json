@@ -57,27 +57,33 @@
     "cards": [
       {
         "title": "Custom Web Application Development",
-        "desc": "Build powerful, scalable applications from scratch using modern web application development frameworks."
+        "desc": "Build powerful, scalable applications from scratch using modern web application development frameworks.",
+        "href": "/software-development-agency-kochi/"
       },
       {
         "title": "Web Application Development for Startups Kochi",
-        "desc": "MVP development, rapid prototyping, lean web application development approach."
+        "desc": "MVP development, rapid prototyping, lean web application development approach.",
+        "href": "/web-design-for-startups-kerala/"
       },
       {
         "title": "Enterprise Web Application Development",
-        "desc": "Large-scale systems, complex workflows, enterprise-grade security and performance."
+        "desc": "Large-scale systems, complex workflows, enterprise-grade security and performance.",
+        "href": "/erp-development-company-kochi/"
       },
       {
         "title": "Web Application Development for E-Commerce",
-        "desc": "Shopping carts, payment integration, inventory management, analytics dashboards."
+        "desc": "Shopping carts, payment integration, inventory management, analytics dashboards.",
+        "href": "/custom-ecommerce-development-kochi/"
       },
       {
         "title": "Web Application Development for Healthcare",
-        "desc": "Patient management, telemedicine, HIPAA-compliant secure web application development."
+        "desc": "Patient management, telemedicine, HIPAA-compliant secure web application development.",
+        "href": "/web-design-for-hospitals-kerala/"
       },
       {
         "title": "Web Application Development for Fintech",
-        "desc": "Payment processing, digital wallets, investment platforms, bank-grade security."
+        "desc": "Payment processing, digital wallets, investment platforms, bank-grade security.",
+        "href": "/payment-gateway-integration-kochi/"
       },
       {
         "title": "Web Application Development for SaaS",
@@ -211,13 +217,48 @@
     "headingPost": "We Build Web Applications For",
     "intro": "An e-commerce platform demands completely different architecture than a healthcare system — and we build for that specific domain every time.",
     "items": [
-      { "name": "E-Commerce Platforms", "desc": "Shopping carts, payment integration, inventory management, and analytics dashboards." },
-      { "name": "Healthcare Systems", "desc": "Patient management, telemedicine, and HIPAA-compliant secure development." },
-      { "name": "Fintech Applications", "desc": "Payment processing, digital wallets, investment platforms, and bank-grade security." },
-      { "name": "SaaS Products", "desc": "Multi-tenant architecture, subscription management, API integrations, and cloud deployment." },
-      { "name": "Enterprise Systems", "desc": "CRM, ERP, HRM, and large-scale workflow automation platforms." },
-      { "name": "Startup MVPs", "desc": "Rapid prototyping and lean builds that validate and scale fast." }
+      { "name": "E-Commerce Platforms", "desc": "Shopping carts, payment integration, inventory management, and analytics dashboards.", "href": "/custom-ecommerce-development-kochi/" },
+      { "name": "Healthcare Systems", "desc": "Patient management, telemedicine, and HIPAA-compliant secure development.", "href": "/web-design-for-hospitals-kerala/" },
+      { "name": "Fintech Applications", "desc": "Payment processing, digital wallets, investment platforms, and bank-grade security.", "href": "/payment-gateway-integration-kochi/" },
+      { "name": "SaaS Products", "desc": "Multi-tenant architecture, subscription management, API integrations, and cloud deployment.", "href": "/saas-development-company-kochi/" },
+      { "name": "Enterprise Systems", "desc": "CRM, ERP, HRM, and large-scale workflow automation platforms.", "href": "/erp-development-company-kochi/" },
+      { "name": "Startup MVPs", "desc": "Rapid prototyping and lean builds that validate and scale fast.", "href": "/web-design-for-startups-kerala/" }
     ]
+  },
+  "featuredCaseStudies": {
+    "badge": "Success Stories",
+    "headingPre": "Our Web Application",
+    "headingHighlight": "Case Study",
+    "headingPost": "— Proven Results",
+    "intro": "Two published, named client builds from this pillar. Each card links to the full case study covering the brief, the approach, and what shipped.",
+    "items": [
+      {
+        "client": "Libra Group UAE",
+        "sector": "Enterprise · Dubai, UAE",
+        "title": "One Website for Six Service Lines",
+        "text": "Operating in Dubai since 2001 across six distinct service lines — cleaning, SIRA-certified security, HVAC/MEP maintenance, lifeguard services, concierge, and interior fit-out. We built one platform that covers all six without burying the credentials that win B2B trust.",
+        "stack": "WordPress (Elementor) · Web Design, Content Strategy, SEO",
+        "href": "/case-studies/libra-group-uae-web-application-design/"
+      },
+      {
+        "client": "TriQare",
+        "sector": "Healthtech · Mumbai, India",
+        "title": "A Trust-First Pre-Launch Platform",
+        "text": "A healthtech startup building India's first one-tap emergency ambulance SOS app. Ahead of launch, TriQare needed a platform that converts cold visitors into qualified waitlist sign-ups for a service they cannot use yet, while carrying life-and-death credibility.",
+        "stack": "Pre-launch web platform · Web Design, Content Strategy, SEO",
+        "href": "/case-studies/triqare-web-application-design/"
+      }
+    ],
+    "viewAll": { "label": "View all case studies", "href": "/case-study/" }
+  },
+  "blog": {
+    "badge": "Insights",
+    "headingPre": "Latest Blog Posts —",
+    "headingHighlight": "Web Application Development",
+    "headingPost": "Insights",
+    "intro": "Guides and practical notes from the team building web applications in Kochi.",
+    "viewAll": { "label": "Read the Web Application blog", "href": "/blog/web-application/" },
+    "fallbackNote": "No Web Application posts are published yet, so the latest articles from across the blog are shown instead."
   },
   "caseStudies": {
     "draft": true,
@@ -378,5 +419,10 @@
         "a": "Secure web application development is standard. We implement encryption, authentication, OWASP standards, regular security testing, and compliance (GDPR, HIPAA, PCI-DSS)."
       }
     ]
+  },
+  "devNotes": {
+    "cardLinkNote": "2026-09-19. Six of the seven service cards and all six industry cards had no href, so they rendered as dead-end <div>s — the same orphan shape as the 2026-09-12 'inner pages not working' report, not a broken route. The pillar doc predates the twelve Web Application children and never specified a page for Custom / Startups / Enterprise / E-Commerce / Healthcare / Fintech, and no source doc exists for them, so each card now points at the nearest live page in the same cluster rather than at invented copy: Custom -> /software-development-agency-kochi/, Startups -> /web-design-for-startups-kerala/, Enterprise -> /erp-development-company-kochi/, E-Commerce -> /custom-ecommerce-development-kochi/, Healthcare -> /web-design-for-hospitals-kerala/, Fintech -> /payment-gateway-integration-kochi/. Repoint any card at its own page if the client supplies that copy later.",
+    "featuredCaseStudiesNote": "Added 2026-09-19 to satisfy the 'Case Study — Proven Results' section without publishing the held-back 'caseStudies' block, whose anonymised clients and figures (400% transactions, Rs. 10Cr -> 45Cr, 99.99% uptime, HIPAA/SOC 2) are still unverified. The two entries here are named clients with their own live case-study pages and carry no statistics.",
+    "blogNote": "The 'Latest Blog Posts' cards are read from the blog content collection at build time, filtered by the /blog/web-application/ hub's own match[] list. No Web Application post is published yet, so the section falls back to the three newest posts sitewide and renders blog.fallbackNote saying so; it becomes topical automatically once the first web-app post lands."
   }
 }

@@ -94,7 +94,8 @@
       },
       {
         "title": "WordPress Website Design Kochi",
-        "desc": "Complete website design covering responsive layouts, mobile-first design, and pixel-perfect mockups ensuring your WordPress site looks stunning on all devices."
+        "desc": "Complete website design covering responsive layouts, mobile-first design, and pixel-perfect mockups ensuring your WordPress site looks stunning on all devices.",
+        "href": "/wordpress-web-design-kochi/"
       },
       {
         "title": "WooCommerce Development Kochi",
@@ -118,7 +119,8 @@
       },
       {
         "title": "WordPress Security & Updates Kochi",
-        "desc": "SSL certificates, daily backups, malware scanning, security hardening, and automated WordPress core plugin updates protecting your site 24/7."
+        "desc": "SSL certificates, daily backups, malware scanning, security hardening, and automated WordPress core plugin updates protecting your site 24/7.",
+        "href": "/wordpress-maintenance-services-kochi/"
       }
     ]
   },
@@ -436,5 +438,45 @@
         "a": "Yes. Monthly WordPress maintenance plans from Rs. 5,000 per month cover updates, security monitoring, speed checks, content edits, and technical fixes."
       }
     ]
+  },
+  "blog": {
+    "badge": "Insights",
+    "headingLead": "Latest Blog Posts —",
+    "headingAccent": "WordPress Development",
+    "headingRest": "& Digital Insights",
+    "items": [
+      {
+        "slug": "choose-right-web-design-company-kerala"
+      },
+      {
+        "slug": "latest-web-design-trends-2026"
+      },
+      {
+        "slug": "start-selling-online-kerala"
+      }
+    ],
+    "allLink": {
+      "label": "View all posts",
+      "href": "/blog/"
+    }
+  },
+  "author": {
+    "badge": "Expertise & Authorship",
+    "headingLead": "Meet",
+    "headingAccent": "Abilash KR",
+    "name": "Abilash KR",
+    "role": "Senior WordPress Developer, Teknoppy",
+    "email": "sales@teknoppy.com",
+    "phone": "+91 6282249224",
+    "bio": "Abilash KR is an AWS-certified senior developer with 15+ years of WordPress expertise spanning custom theme development, plugin architecture, WooCommerce e-commerce, and enterprise WordPress solutions. He personally oversees all technical WordPress development ensuring security, performance, and scalability. Supported by Teknoppy’s in-house WordPress team of developers, designers, and SEO strategists.",
+    "reviewed": "Reviewed: June 2026",
+    "profileHref": "/about-us/"
+  },
+  "devNotes": {
+    "sourceDoc": "WordPress Development — Pillar: WordPress Development Company in Kochi.pdf (Drive 1ZfxJaJJ4wgMdc30Fc5OHq2kWy46LDxHw)",
+    "blogNote": "The doc names three WordPress-specific posts that do not exist in the blog collection — /wordpress-development-company-kerala-guide, /wordpress-website-design-best-practices and /shopify-wordpress-migration-guide. The three closest live posts stand in for them; swap items[].slug back to the doc titles once those posts are written.",
+    "linkNote": "services.cards ‘WordPress Website Design Kochi’ and ‘WordPress Security & Updates Kochi’ have no content-map row and no source doc, so no page was ever planned for them. They were orphan <div>s (reported as ‘pages fail to load’) and now point at the nearest live page in the same cluster: /wordpress-web-design-kochi/ and /wordpress-maintenance-services-kochi/. Repoint them at their own pages if the client commissions the copy.",
+    "authorNote": "Author block copy is verbatim from the doc. The doc byline email is sanal@teknoppy.com; site canon (site.json) sales@teknoppy.com is used instead. profileHref goes to /about-us/ — there is no standalone Abilash KR profile page; the client bug report spells the name ‘Abilal KR’, the doc and whyTeknoppy card 02 both spell it ‘Abilash KR’.",
+    "schemaNote": "Doc schema stack: LocalBusiness · Organisation · Service · FAQPage · BreadcrumbList · AggregateRating · Person. LocalBusiness/Organisation come from FooterCTA + Layout; FAQPage and Person are emitted by this page. AggregateRating is omitted on purpose — it needs a real review count from the client’s Google Business Profile."
   }
 }

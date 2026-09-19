@@ -2,8 +2,25 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import FooterCTA from '../components/FooterCTA.astro';
-import { ArrowRight, Play, Globe2, Smile, Award, Star, CheckCircle, Clock, Heart, Shield, Check, HelpCircle, User, Zap, Rocket, Activity, Home, Utensils, GraduationCap, Compass, Briefcase, Factory, Languages, MonitorSmartphone, Building2, Edit, ShieldCheck, Search, Layers, Network, Code, Gauge, LayoutGrid, Calendar, TrendingUp } from 'lucide-react';
+import { ArrowRight, Play, Mail, Phone, Globe2, Smile, Award, Star, CheckCircle, Clock, Heart, Shield, Check, HelpCircle, User, Zap, Rocket, Activity, Home, Utensils, GraduationCap, Compass, Briefcase, Factory, Languages, MonitorSmartphone, Building2, Edit, ShieldCheck, Search, Layers, Network, Code, Gauge, LayoutGrid, Calendar, TrendingUp } from 'lucide-react';
 import page from '../data/pages/wordpress.json';
+import { getCollection } from 'astro:content';
+
+// The source doc names three WordPress posts that are not written yet; the three
+// closest live posts stand in for them (see devNotes.blogNote). Resolving by slug
+// keeps titles, dates and read times CMS-driven.
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const blogPosts = page.blog.items
+  .map(item => allPosts.find(post => post.id === item.slug))
+  .filter(Boolean)
+  .map(post => ({
+    title: post!.data.title,
+    excerpt: post!.data.excerpt,
+    category: post!.data.category,
+    readTime: post!.data.readTime,
+    date: post!.data.date.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' }),
+    href: `/blog/${post!.id}/`
+  }));
 
 const title = page.meta.title;
 const description = page.meta.description;
@@ -46,6 +63,18 @@ const faqSchema = {
       "text": faq.a
     }
   }))
+};
+
+// E-E-A-T: the doc credits Abilash KR as the page’s technical author.
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": page.author.name,
+  "jobTitle": page.author.role,
+  "email": page.author.email,
+  "telephone": page.author.phone,
+  "description": page.author.bio,
+  "worksFor": { "@type": "Organization", "name": "Teknoppy", "url": "https://teknoppy.com/" }
 };
 ---
 
@@ -521,6 +550,47 @@ const faqSchema = {
       </div>
     </section>
 
+    <!-- LATEST BLOG POSTS -->
+    <section class="py-20 bg-white border-t border-neutral-100">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <div class="max-w-3xl mb-14">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            {page.blog.badge}
+          </div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+            {page.blog.headingLead} <span class="text-primary">{page.blog.headingAccent}</span> {page.blog.headingRest}
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+          {blogPosts.map(post => (
+            <a href={post.href} class="group bg-white rounded-3xl border border-neutral-200/60 p-6 shadow-sm hover:border-primary/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col">
+              <div class="flex items-center gap-2 mb-4">
+                <span class="text-[11px] font-black text-primary bg-primary/5 px-2 py-0.5 rounded-full uppercase tracking-wider">{post.category}</span>
+                <span class="text-[11px] font-bold text-neutral-400">{post.readTime}</span>
+              </div>
+              <h3 class="text-base font-bold text-neutral-900 leading-snug mb-3 group-hover:text-primary transition-colors">{post.title}</h3>
+              <p class="text-neutral-600 text-xs leading-relaxed font-semibold mb-5">{post.excerpt}</p>
+              <div class="mt-auto flex items-center justify-between">
+                <span class="inline-flex items-center gap-1.5 text-xs font-bold text-primary">
+                  Read article
+                  <ArrowRight class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+                </span>
+                <span class="text-[11px] font-bold text-neutral-400">{post.date}</span>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <div class="mt-12">
+          <a href={page.blog.allLink.href} class="inline-flex items-center gap-2 text-sm font-bold text-primary hover:underline">
+            {page.blog.allLink.label}
+            <ArrowRight class="w-4 h-4" />
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- FAQS SECTION -->
     <section class="py-20 bg-neutral-50/50 border-t border-neutral-100">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
@@ -559,6 +629,54 @@ const faqSchema = {
 
       <!-- FAQ Schema -->
       <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    </section>
+    <!-- MEET ABILASH KR (E-E-A-T AUTHOR BLOCK) -->
+    <section class="py-20 bg-cream/30 border-t border-neutral-100">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <div class="max-w-3xl mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            {page.author.badge}
+          </div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+            {page.author.headingLead} <span class="text-primary">{page.author.headingAccent}</span>
+          </h2>
+        </div>
+
+        <div class="max-w-4xl bg-white rounded-3xl border border-neutral-200/60 p-8 shadow-sm">
+          <div class="flex flex-col sm:flex-row sm:items-center gap-5 mb-6">
+            <div class="w-14 h-14 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary flex-shrink-0">
+              <User class="w-6 h-6" />
+            </div>
+            <div>
+              <h3 class="text-xl font-black text-neutral-900">{page.author.name}</h3>
+              <p class="text-sm font-bold text-primary">{page.author.role}</p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-x-5 gap-y-2 mb-6">
+            <a href={`mailto:${page.author.email}`} class="inline-flex items-center gap-1.5 text-xs font-bold text-neutral-600 hover:text-primary transition-colors">
+              <Mail class="w-3.5 h-3.5" />
+              {page.author.email}
+            </a>
+            <a href={`tel:${page.author.phone.replace(/\s/g, '')}`} class="inline-flex items-center gap-1.5 text-xs font-bold text-neutral-600 hover:text-primary transition-colors">
+              <Phone class="w-3.5 h-3.5" />
+              {page.author.phone}
+            </a>
+          </div>
+
+          <p class="text-neutral-600 text-sm leading-relaxed font-medium mb-6">{page.author.bio}</p>
+
+          <div class="flex flex-wrap items-center justify-between gap-4 pt-5 border-t border-neutral-100">
+            <a href={page.author.profileHref} class="inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:underline">
+              More about our team
+              <ArrowRight class="w-3.5 h-3.5" />
+            </a>
+            <span class="text-xs text-neutral-400 font-semibold italic">{page.author.reviewed}</span>
+          </div>
+        </div>
+      </div>
+
+      <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
     </section>
   </main>
 

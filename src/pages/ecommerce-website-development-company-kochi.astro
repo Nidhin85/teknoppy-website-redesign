@@ -2,8 +2,28 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import FooterCTA from '../components/FooterCTA.astro';
-import { ArrowRight, Play, Globe2, Smile, Award, Star, CheckCircle, Clock, Heart, Shield, Check, HelpCircle, User, Zap, Rocket, Activity, Home, Utensils, GraduationCap, Compass, Briefcase, Factory, Languages, MonitorSmartphone, Building2, Edit, ShieldCheck, Search, Layers, Network, Code, Gauge, LayoutGrid, Calendar, TrendingUp } from 'lucide-react';
+import { ArrowRight, Play, ShoppingCart, ShoppingBag, Braces, Store, Globe2, Smile, Award, Star, CheckCircle, Clock, Heart, Shield, Check, HelpCircle, User, Zap, Rocket, Activity, Home, Utensils, GraduationCap, Compass, Briefcase, Factory, Languages, MonitorSmartphone, Building2, Edit, ShieldCheck, Search, Layers, Network, Code, Gauge, LayoutGrid, Calendar, TrendingUp } from 'lucide-react';
 import page from '../data/pages/ecommerce.json';
+import { getCollection } from 'astro:content';
+
+// The blog block names its posts by slug so editors curate them in the CMS.
+// Missing slugs are dropped and topped up with the newest remaining posts, so
+// the three-column grid never renders short of a full row.
+const allPosts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const picked = page.blog.items
+  .map(item => allPosts.find(post => post.id === item.slug))
+  .filter(Boolean);
+const blogPosts = [...picked, ...allPosts.filter(post => !picked.includes(post))]
+  .slice(0, 3)
+  .map(post => ({
+    title: post.data.title,
+    excerpt: post.data.excerpt,
+    category: post.data.category,
+    readTime: post.data.readTime,
+    date: post.data.date.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' }),
+    href: `/blog/${post.id}/`
+  }));
 
 const title = page.meta.title;
 const description = page.meta.description;
@@ -11,6 +31,7 @@ const description = page.meta.description;
 // Icons stay hardcoded here, zipped by index with the JSON lists.
 const heroStatIcons = [Rocket, Calendar, TrendingUp, Globe2];
 const serviceIcons = [Code, Layers, Rocket, Network, Shield, Edit];
+const platformIcons = [ShoppingCart, ShoppingBag, Braces, Store];
 const processIcons = [Search, Network, LayoutGrid, Code, Gauge, Rocket];
 const industryIcons = [Heart, Activity, Utensils, MonitorSmartphone, Factory, Award];
 
@@ -200,6 +221,58 @@ const faqSchema = {
               </Card>
             );
           })}
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ECOMMERCE PLATFORMS WE BUILD ON -->
+    <section id="platforms" class="py-20 bg-cream/30 border-t border-neutral-100 relative">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
+        <div class="max-w-3xl mb-14">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            {page.platforms.badge}
+          </div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+            {page.platforms.headingLead} <span class="text-primary">{page.platforms.headingAccent}</span> {page.platforms.headingRest}
+          </h2>
+          <p class="text-neutral-500 font-medium mt-3 text-base sm:text-lg">
+            {page.platforms.intro}
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {page.platforms.items.map((plat, i) => {
+            const IconComp = platformIcons[i];
+            return (
+              <a href={plat.href} class="group relative overflow-hidden bg-white rounded-3xl border border-neutral-100 p-6 sm:p-7 shadow-[0_12px_30px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col">
+                <div class="absolute left-0 top-0 bottom-0 w-[4px] bg-gradient-to-b from-primary via-[#F58439] to-[#FFE2D1]"></div>
+                <div class="w-14 h-14 bg-primary/5 text-primary rounded-2xl flex items-center justify-center flex-shrink-0 border border-primary/10 shadow-inner mb-5">
+                  <IconComp class="w-6 h-6" />
+                </div>
+                <h3 class="text-base sm:text-[18px] font-black text-neutral-850 leading-snug group-hover:text-primary transition-colors duration-300">{plat.name}</h3>
+                <span class="block text-[11px] font-black text-neutral-400 uppercase tracking-wider mt-1.5">{plat.tag}</span>
+                <p class="text-neutral-500 text-xs leading-relaxed mt-4 font-semibold flex-1">{plat.desc}</p>
+                <div class="mt-5 pt-4 border-t border-neutral-100">
+                  <span class="block text-[11px] font-black text-neutral-800 uppercase tracking-wider mb-1">Best for</span>
+                  <p class="text-neutral-500 text-xs font-semibold leading-relaxed">{plat.bestFor}</p>
+                </div>
+                <span class="inline-flex items-center gap-1.5 mt-5 text-xs font-bold text-primary">
+                  Learn more <ArrowRight class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+                </span>
+              </a>
+            );
+          })}
+        </div>
+
+        <div class="mt-10 bg-white rounded-3xl border border-neutral-200/60 p-6 sm:p-7 shadow-sm flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+          <p class="text-neutral-600 text-sm leading-relaxed font-semibold flex-1">
+            {page.platforms.footnote}
+          </p>
+          <a href={page.platforms.footnoteLink.href} class="inline-flex items-center justify-center gap-2 text-xs font-black text-primary uppercase tracking-wider hover:underline whitespace-nowrap flex-shrink-0">
+            {page.platforms.footnoteLink.label}
+            <ArrowRight class="w-3.5 h-3.5" />
+          </a>
         </div>
       </div>
     </section>
@@ -512,6 +585,51 @@ const faqSchema = {
               </a>
             </div>
           ))}
+        </div>
+      </div>
+    </section>
+
+
+    <!-- LATEST BLOG POSTS — ECOMMERCE & DIGITAL INSIGHTS -->
+    <section class="py-20 bg-cream/30 border-t border-neutral-100">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <div class="max-w-3xl mb-14">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            {page.blog.badge}
+          </div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+            {page.blog.headingLead} <span class="text-primary">{page.blog.headingAccent}</span> {page.blog.headingRest}
+          </h2>
+          <p class="text-neutral-500 font-medium mt-3 text-base">
+            {page.blog.intro}
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          {blogPosts.map(post => (
+            <a href={post.href} class="group bg-white rounded-3xl border border-neutral-200/60 p-6 shadow-sm hover:border-primary/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col">
+              <div class="flex items-center gap-2 mb-4">
+                <span class="text-[11px] font-black text-primary bg-primary/5 px-2 py-0.5 rounded-full uppercase tracking-wider">{post.category}</span>
+                <span class="text-[11px] font-bold text-neutral-400">{post.readTime}</span>
+              </div>
+              <h3 class="text-base font-bold text-neutral-900 leading-snug mb-3 group-hover:text-primary transition-colors">{post.title}</h3>
+              <p class="text-neutral-600 text-xs leading-relaxed font-semibold mb-5">{post.excerpt}</p>
+              <div class="mt-auto flex items-center justify-between">
+                <span class="inline-flex items-center gap-1.5 text-xs font-bold text-primary">
+                  Read article
+                  <ArrowRight class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+                </span>
+                <span class="text-[11px] font-bold text-neutral-400">{post.date}</span>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <div class="mt-12">
+          <a href={page.blog.allLink.href} class="inline-flex items-center gap-2 text-sm font-bold text-primary hover:underline">
+            {page.blog.allLink.label}
+            <ArrowRight class="w-4 h-4" />
+          </a>
         </div>
       </div>
     </section>
