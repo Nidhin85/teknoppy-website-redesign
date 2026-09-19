@@ -1,0 +1,683 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import CaseStudyStickyNav from './CaseStudyStickyNav';
+import CaseStudyFAQ from './CaseStudyFAQ';
+import { 
+  Shield, 
+  MapPin, 
+  CheckCircle2, 
+  ExternalLink, 
+  Lock, 
+  ArrowRight, 
+  Sparkles,
+  Layers,
+  ChevronRight,
+  FileText,
+  Phone
+} from 'lucide-react';
+
+export interface ChallengeItem {
+  number: number;
+  title: string;
+  description: string;
+}
+
+export interface ApproachPillar {
+  title: string;
+  paragraphs: string[];
+}
+
+export interface DeliverableItem {
+  title: string;
+  description: string;
+}
+
+export interface CaseStudyProps {
+  metaTitle: string;
+  metaDescription: string;
+  canonicalURL: string;
+  heroImage: string;
+  heroImageAlt: string;
+  schemaType?: string;
+  schemaAbout?: {
+    type: string;
+    name: string;
+    address?: {
+      locality: string;
+      region: string;
+      country: string;
+    };
+  };
+
+  clientName: string;
+  categoryTag: string;
+  tagBadge?: string;
+
+  title: string;
+  storyLead: string;
+  industry: string;
+  location: string;
+  services: string;
+  platform?: string;
+  liveWebsite: string;
+  liveWebsiteUrl: string;
+  heroHighlights?: string[];
+
+  atAGlance: string[];
+
+  aboutHeading: string;
+  aboutParagraphs: string[];
+
+  challengeLead: string;
+  challenges: ChallengeItem[];
+
+  objectiveLead: string;
+  objectives: string[];
+
+  approachLead?: string;
+  approachPillars: ApproachPillar[];
+
+  deliverables: DeliverableItem[];
+
+  whyMattersHeading: string;
+  whyMattersParagraphs: string[];
+  whyMattersCalloutHtml: string;
+
+  faqs: { question: string; answer: string }[];
+
+  authorName?: string;
+  authorRole?: string;
+  ctaHeadline: string;
+  ctaPhoneText?: string;
+  ctaPhoneTel?: string;
+  ctaTagline?: string;
+}
+
+const {
+  metaTitle,
+  metaDescription,
+  canonicalURL,
+  heroImage,
+  heroImageAlt,
+  schemaType = 'TechArticle',
+  schemaAbout,
+  clientName,
+  categoryTag,
+  tagBadge = 'Teknoppy Case Study',
+  title,
+  storyLead,
+  industry,
+  location,
+  services,
+  platform,
+  liveWebsite,
+  liveWebsiteUrl,
+  heroHighlights = [],
+  atAGlance,
+  aboutHeading,
+  aboutParagraphs,
+  challengeLead,
+  challenges,
+  objectiveLead,
+  objectives,
+  approachLead,
+  approachPillars,
+  deliverables,
+  whyMattersHeading,
+  whyMattersParagraphs,
+  whyMattersCalloutHtml,
+  faqs,
+  authorName = 'Sanal Edison',
+  authorRole = 'Digital Strategist at Teknoppy',
+  ctaHeadline,
+  ctaPhoneText = 'Talk to Teknoppy | +91 6282249224',
+  ctaPhoneTel = '+916282249224',
+  ctaTagline = 'TEKNOPPY.COM • KOCHI, KERALA'
+} = Astro.props as CaseStudyProps;
+
+// Build Structured Data for Article & FAQ
+const schemaArticle = {
+  "@context": "https://schema.org",
+  "@type": schemaType,
+  "headline": title,
+  "description": metaDescription,
+  "image": `https://teknoppy.com${heroImage}`,
+  "author": {
+    "@type": "Person",
+    "name": authorName,
+    "jobTitle": authorRole,
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Teknoppy"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Teknoppy",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://teknoppy.com/logo.svg"
+    }
+  },
+  "mainEntityOfPage": canonicalURL,
+  ...(schemaAbout ? {
+    "about": {
+      "@type": schemaAbout.type,
+      "name": schemaAbout.name,
+      ...(schemaAbout.address ? {
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": schemaAbout.address.locality,
+          "addressRegion": schemaAbout.address.region,
+          "addressCountry": schemaAbout.address.country
+        }
+      } : {})
+    }
+  } : {})
+};
+
+const schemaFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(item => ({
+    "@type": "Question",
+    "name": item.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.answer
+    }
+  }))
+};
+---
+
+<Layout title={metaTitle} description={metaDescription} image={heroImage}>
+  <Fragment slot="head">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    
+    <script type="application/ld+json" set:html={JSON.stringify(schemaArticle)} />
+    <script type="application/ld+json" set:html={JSON.stringify(schemaFAQ)} />
+  </Fragment>
+
+  <Header forceSolidBg={true} />
+
+  <main class="bg-[#05070B] text-slate-100 selection:bg-indigo-500/30 selection:text-indigo-200 overflow-x-hidden pt-20 lg:pt-24 font-sans">
+    
+    {/* =========================================================================
+        01. HERO SECTION
+        ========================================================================= */}
+    <section id="project-hero" class="relative pt-12 pb-16 md:pt-18 md:pb-24 overflow-hidden border-b border-white/[0.08]">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(99,102,241,0.18),transparent_50%),radial-gradient(circle_at_80%_80%,rgba(56,189,248,0.12),transparent_50%)] pointer-events-none"></div>
+      <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.025)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8">
+        
+        {/* Breadcrumb & Marker */}
+        <div class="reveal-on-scroll flex flex-wrap items-center justify-between gap-4">
+          <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-slate-400">
+            <a href="/" class="hover:text-indigo-400 transition-colors">Home</a>
+            <span>/</span>
+            <a href="/case-study/" class="hover:text-indigo-400 transition-colors">Case Studies</a>
+            <span>/</span>
+            <span class="text-white font-medium">{clientName}</span>
+          </div>
+
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-xs font-bold uppercase tracking-wider shadow-sm backdrop-blur-md">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+            </span>
+            {tagBadge}
+          </div>
+        </div>
+
+        {/* Hero Title & Story Lead */}
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-end">
+          <div class="lg:col-span-8 space-y-6">
+            <div class="reveal-on-scroll reveal-delay-1 inline-block px-3 py-1 rounded-md bg-indigo-500/15 border border-indigo-500/30 text-indigo-300 text-xs sm:text-sm font-bold tracking-wide uppercase">
+              {categoryTag}
+            </div>
+
+            <h1 class="reveal-on-scroll reveal-delay-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12]">
+              {title}
+            </h1>
+
+            <p class="reveal-on-scroll reveal-delay-3 text-base sm:text-lg text-slate-300 font-normal leading-[1.6] max-w-3xl">
+              {storyLead}
+            </p>
+          </div>
+
+          {/* Project Metadata Card */}
+          <div class="reveal-on-scroll reveal-delay-3 lg:col-span-4 bg-[#0D1424]/90 rounded-2xl p-6 sm:p-7 border border-white/[0.1] shadow-2xl space-y-5 backdrop-blur-xl">
+            <div class="flex items-center justify-between border-b border-white/[0.08] pb-4">
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Client</span>
+              <span class="text-sm font-bold text-white">{clientName}</span>
+            </div>
+
+            <div class="space-y-3.5 text-xs sm:text-sm">
+              <div class="flex justify-between gap-4">
+                <span class="text-slate-400">Industry</span>
+                <span class="font-semibold text-right text-slate-200">{industry}</span>
+              </div>
+              <div class="flex justify-between gap-4">
+                <span class="text-slate-400">Location</span>
+                <span class="font-semibold text-right text-slate-200">{location}</span>
+              </div>
+              {platform && (
+                <div class="flex justify-between gap-4">
+                  <span class="text-slate-400">Platform</span>
+                  <span class="font-semibold text-right text-slate-200">{platform}</span>
+                </div>
+              )}
+              <div class="flex justify-between gap-4">
+                <span class="text-slate-400">Services</span>
+                <span class="font-semibold text-right text-slate-200">{services}</span>
+              </div>
+              <div class="flex justify-between gap-4 pt-2 border-t border-white/[0.08]">
+                <span class="text-slate-400">Live Website</span>
+                <a 
+                  href={liveWebsiteUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="font-bold text-indigo-400 hover:text-indigo-300 hover:underline flex items-center gap-1"
+                >
+                  {liveWebsite} <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Hero Showcase Visual Device Mockup */}
+        <div class="reveal-on-scroll relative rounded-3xl overflow-hidden border border-white/[0.12] bg-[#070A12] shadow-2xl">
+          <div class="px-5 py-3.5 bg-[#0A0F1C] border-b border-white/[0.08] flex items-center justify-between gap-4 backdrop-blur-md">
+            <div class="flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
+              <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
+              <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+            </div>
+
+            <div class="flex items-center gap-2 px-4 py-1 rounded-full bg-white/[0.05] text-[11px] text-slate-400 font-mono border border-white/[0.08] max-w-sm w-full justify-center">
+              <Lock className="w-3 h-3 text-emerald-400" />
+              <span>https://{liveWebsite}</span>
+            </div>
+
+            <div class="text-[11px] text-slate-400 font-semibold hidden sm:block font-mono">
+              {platform || 'Production Build'}
+            </div>
+          </div>
+
+          <div class="relative group">
+            <img 
+              src={heroImage} 
+              alt={heroImageAlt} 
+              class="w-full h-auto max-h-[640px] object-cover object-top"
+              loading="eager"
+            />
+            
+            {heroHighlights.length > 0 && (
+              <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#05070B] via-[#05070B]/80 to-transparent p-6 sm:p-10 pt-16 flex flex-wrap items-center justify-between gap-4">
+                <div class="flex flex-wrap items-center gap-3">
+                  {heroHighlights.map(h => (
+                    <span class="px-3.5 py-1.5 rounded-full text-xs font-bold bg-white/10 text-white backdrop-blur-md border border-white/20">
+                      {h}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    {/* =========================================================================
+        STICKY SUB-NAVIGATION
+        ========================================================================= */}
+    <CaseStudyStickyNav clientName={clientName} client:load />
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 space-y-24 md:space-y-32">
+
+      {/* =========================================================================
+          02. AT A GLANCE
+          ========================================================================= */}
+      <section id="overview" class="reveal-on-scroll relative rounded-3xl p-8 sm:p-10 md:p-12 bg-gradient-to-br from-[#121929] via-[#0E1526] to-[#0A0E1A] border border-indigo-500/20 shadow-2xl overflow-hidden">
+        <div class="absolute -right-20 -top-20 w-80 h-80 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 space-y-8">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-indigo-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 shadow-inner">
+              <Sparkles className="w-5 h-5" />
+            </div>
+            <div>
+              <span class="text-xs font-mono font-bold uppercase tracking-wider text-indigo-400">Executive Summary</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">AT A GLANCE</h2>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 pt-2">
+            {atAGlance.map((point) => (
+              <div class="flex items-start gap-3.5 p-4 sm:p-5 rounded-2xl bg-white/[0.03] border border-white/[0.08] hover:border-indigo-500/30 transition-colors">
+                <CheckCircle2 className="w-5 h-5 text-indigo-400 shrink-0 mt-0.5" />
+                <span class="text-sm sm:text-base text-slate-200 font-medium leading-relaxed">{point}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================================
+          03. ABOUT SECTION
+          ========================================================================= */}
+      <section id="about" class="reveal-on-scroll space-y-8 max-w-4xl">
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-mono font-bold uppercase tracking-widest text-indigo-400">Background</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>
+            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">{clientName}</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
+            {aboutHeading}
+          </h2>
+        </div>
+
+        <div class="space-y-6 text-base sm:text-lg text-slate-300 font-normal leading-relaxed">
+          {aboutParagraphs.map(p => (
+            <p>{p}</p>
+          ))}
+        </div>
+      </section>
+
+      {/* =========================================================================
+          04. THE CHALLENGE
+          ========================================================================= */}
+      <section id="challenges" class="reveal-on-scroll space-y-10">
+        <div class="space-y-3 max-w-3xl">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-mono font-bold uppercase tracking-widest text-amber-400">Analysis</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Starting Obstacles</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">The Challenge</h2>
+          <p class="text-base sm:text-lg text-slate-300">
+            {challengeLead}
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {challenges.map((item) => (
+            <div class="relative p-6 sm:p-7 rounded-2xl bg-[#0C1220]/90 border border-white/[0.08] hover:border-amber-500/40 transition-all duration-300 space-y-4">
+              <div class="w-9 h-9 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-400 font-mono font-bold text-sm">
+                {item.number}
+              </div>
+              <h3 class="text-lg font-bold text-white tracking-tight leading-snug">
+                {item.title}
+              </h3>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                {item.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* =========================================================================
+          05. PROJECT OBJECTIVE
+          ========================================================================= */}
+      <section id="objectives" class="reveal-on-scroll space-y-8 max-w-4xl">
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-mono font-bold uppercase tracking-widest text-indigo-400">Goals</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>
+            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Mandate</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Project Objective</h2>
+          <p class="text-base sm:text-lg text-slate-300 font-normal leading-relaxed">
+            {objectiveLead}
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          {objectives.map((obj, i) => (
+            <div class="flex items-start gap-4 p-5 rounded-2xl bg-[#0C1220]/80 border border-white/[0.08] hover:border-indigo-500/30 transition-colors">
+              <div class="w-6 h-6 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">
+                ✓
+              </div>
+              <p class="text-sm sm:text-base text-slate-200 leading-relaxed font-medium">
+                {obj}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* =========================================================================
+          06. OUR APPROACH
+          ========================================================================= */}
+      <section id="approach" class="reveal-on-scroll space-y-12">
+        <div class="space-y-3 max-w-3xl">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-mono font-bold uppercase tracking-widest text-indigo-400">Execution</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>
+            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Strategic Framework</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Our Approach</h2>
+          {approachLead && (
+            <p class="text-base sm:text-lg text-slate-300">{approachLead}</p>
+          )}
+        </div>
+
+        <div class="space-y-8">
+          {approachPillars.map((pillar, pIdx) => (
+            <div class="p-7 sm:p-9 rounded-3xl bg-[#0D1424]/90 border border-white/[0.08] hover:border-indigo-500/30 transition-all duration-300 space-y-4">
+              <div class="flex items-center gap-3">
+                <span class="text-xs font-mono font-bold uppercase tracking-wider text-indigo-400 px-2.5 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20">
+                  Pillar 0{pIdx + 1}
+                </span>
+                <h3 class="text-xl sm:text-2xl font-bold text-white tracking-tight">
+                  {pillar.title}
+                </h3>
+              </div>
+              <div class="space-y-4 text-sm sm:text-base text-slate-300 font-normal leading-relaxed pt-1">
+                {pillar.paragraphs.map(text => (
+                  <p>{text}</p>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* =========================================================================
+          07. WHAT WE DELIVERED
+          ========================================================================= */}
+      <section id="deliverables" class="reveal-on-scroll space-y-10">
+        <div class="space-y-3 max-w-3xl">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-mono font-bold uppercase tracking-widest text-emerald-400">Results</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Final Scope</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">What We Delivered</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {deliverables.map((item) => (
+            <div class="p-6 sm:p-8 rounded-2xl bg-[#0C1220]/90 border border-white/[0.08] hover:border-emerald-500/30 transition-all space-y-3">
+              <div class="flex items-center gap-2.5 text-emerald-400">
+                <CheckCircle2 className="w-5 h-5 shrink-0" />
+                <h3 class="text-lg font-bold text-white tracking-tight">{item.title}</h3>
+              </div>
+              <p class="text-sm sm:text-base text-slate-300 leading-relaxed pl-7">
+                {item.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* =========================================================================
+          08. WHY THIS STRUCTURE / DESIGN MATTERS
+          ========================================================================= */}
+      <section id="strategy" class="reveal-on-scroll space-y-8 max-w-4xl">
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-mono font-bold uppercase tracking-widest text-indigo-400">Impact</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>
+            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Strategic Reasoning</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
+            {whyMattersHeading}
+          </h2>
+        </div>
+
+        <div class="space-y-6 text-base sm:text-lg text-slate-300 font-normal leading-relaxed">
+          {whyMattersParagraphs.map(p => (
+            <p>{p}</p>
+          ))}
+        </div>
+
+        {/* Highlight Callout Box */}
+        <div class="p-6 sm:p-8 rounded-2xl bg-[#090D17] border border-indigo-500/30 text-slate-200 leading-relaxed text-sm sm:text-base shadow-xl">
+          <Fragment set:html={whyMattersCalloutHtml} />
+        </div>
+      </section>
+
+      {/* =========================================================================
+          09. FREQUENTLY ASKED QUESTIONS
+          ========================================================================= */}
+      <section id="faq" class="reveal-on-scroll space-y-10 max-w-4xl">
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-mono font-bold uppercase tracking-widest text-indigo-400">Direct Answers</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>
+            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Due Diligence FAQ</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Frequently Asked Questions
+          </h2>
+        </div>
+
+        <CaseStudyFAQ faqs={faqs} client:visible />
+      </section>
+
+    </div>
+
+    {/* =========================================================================
+        10. AUTHOR & CONSULTATION CTA
+        ========================================================================= */}
+    <section id="contact" class="relative overflow-hidden">
+      <div id="contact-cta"></div>
+      {/* Author note */}
+      <div class="bg-[#080C16] border-t border-white/[0.08] py-6 px-4 text-center">
+        <p class="text-xs sm:text-sm text-slate-400 italic">
+          Written by <strong class="text-white font-semibold">{authorName}</strong>, {authorRole}.
+        </p>
+      </div>
+
+      {/* Bold Yellow Consultation CTA Banner */}
+      <div class="bg-[#F59E0B] text-neutral-950 py-16 sm:py-20 px-4 sm:px-6 lg:px-8 text-center relative">
+        <div class="max-w-4xl mx-auto space-y-8">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-neutral-950">
+            {ctaHeadline}
+          </h2>
+
+          <div class="pt-2">
+            <a
+              href={`tel:${ctaPhoneTel}`}
+              class="inline-flex items-center justify-center gap-3 px-8 sm:px-10 py-4 sm:py-5 rounded-full bg-white text-neutral-950 hover:bg-neutral-900 hover:text-white font-black text-base sm:text-lg tracking-wide shadow-2xl hover:scale-105 transition-all duration-300"
+            >
+              <Phone className="w-5 h-5 text-amber-500" />
+              <span>{ctaPhoneText}</span>
+            </a>
+          </div>
+
+          <p class="text-[11px] sm:text-xs font-mono font-bold uppercase tracking-widest text-neutral-900/80 pt-4">
+            {ctaTagline}
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+</Layout>
+
+<script>
+  if (typeof window !== 'undefined') {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
+
+    document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+  }
+</script>
+
+<style is:global>
+  /* Native Smooth Scroll & Subnav Anchor Offset */
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 8.5rem;
+  }
+
+  /* Global font family and typography tightening */
+  body, main {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    letter-spacing: -0.011em;
+  }
+  p {
+    letter-spacing: -0.011em;
+  }
+
+  /* Utility to hide scrollbar for horizontal pills */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Smooth, natural scroll reveals */
+  .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.55s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1);
+    will-change: opacity, transform;
+  }
+  .reveal-on-scroll.is-revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal-delay-1 { transition-delay: 0.08s; }
+  .reveal-delay-2 { transition-delay: 0.16s; }
+  .reveal-delay-3 { transition-delay: 0.24s; }
+
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto !important;
+    }
+    .reveal-on-scroll {
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
+    }
+    *, ::before, ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+</style>

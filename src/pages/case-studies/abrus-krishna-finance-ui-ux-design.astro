@@ -1,17 +1,212 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
-import FooterCTA from '../../components/FooterCTA.astro';
-import InnerPage from '../../components/InnerPage.astro';
-import page from '../../data/pages/case-studies/abrus-krishna-finance-ui-ux-design.json';
+import CaseStudyTemplate, { type CaseStudyProps } from '../../components/case-study/CaseStudyTemplate.astro';
+
+const props: CaseStudyProps = {
+  metaTitle: "Abrus Krishna Finance: A Trust-First UI/UX Design for a Regulated Gold Loan Company | Teknoppy",
+  metaDescription: "How Teknoppy crafted a trust-first UI/UX design for Abrus Krishna Finance: 9 distinct loan products, prominent KML compliance, a 4-step borrower journey, and mobile-first financial interface.",
+  canonicalURL: "https://teknoppy.com/case-studies/abrus-krishna-finance-ui-ux-design/",
+  heroImage: "/case-studies/abruskrishna.webp",
+  heroImageAlt: "Abrus Krishna Finance Trust-First UI/UX Design Case Study",
+  schemaType: "TechArticle",
+  schemaAbout: {
+    type: "FinancialService",
+    name: "Abrus Krishna Finance",
+    address: {
+      locality: "Guruvayoor",
+      region: "Kerala",
+      country: "India"
+    }
+  },
+
+  clientName: "Abrus Krishna Finance",
+  categoryTag: "Fintech Trust Interface & Regulated Lending UI/UX",
+  tagBadge: "UI/UX Design Case Study",
+
+  title: "Abrus Krishna Finance: A Trust-First UI/UX Design for a Regulated Gold Loan Company",
+  storyLead: "How Teknoppy designed a trust-first visual system for abruskrishna.com on WordPress (Elementor) that visually separates nine loan products, gives KML compliance first-class prominence, and maps out a transparent four-step borrower journey.",
+  industry: "Gold Loans & Micro-Finance (KML-Registered Lending)",
+  location: "Guruvayoor, Thrissur District, Kerala",
+  services: "UI/UX Design, Website Design, SEO",
+  platform: "WordPress (Elementor)",
+  liveWebsite: "abruskrishna.com",
+  liveWebsiteUrl: "https://abruskrishna.com",
+  heroHighlights: [
+    "9 Distinct Loan Interfaces",
+    "KML Compliance Prominence",
+    "4-Step Borrower Flow",
+    "Mobile-First Financial UI"
+  ],
+
+  atAGlance: [
+    "Nine loan products, each visually distinguishable at a glance, not just separated by text",
+    "KML compliance given first-class visual prominence instead of sitting as plain body copy",
+    "Four-step borrower journey shown as a visual flow, not a paragraph to read through",
+    "A visual language built for a regulated lender — not a generic template look",
+    "Designed mobile-first, since most first-time borrowers research and enquire from a phone"
+  ],
+
+  aboutHeading: "About Abrus Krishna Finance",
+  aboutParagraphs: [
+    "Abrus Krishna Finance is a Kerala Money-Lenders Act (KML) registered lending institution based in Guruvayoor, Thrissur district, offering gold loans, doorstep gold loans, and a range of micro business, personal, home, and consumer goods loans across nine dedicated product pages.",
+    "Design work for a regulated lender carries a different weight than design for most local businesses. A borrower isn't just deciding whether they like how a page looks — they're deciding, often in seconds, whether an unfamiliar business can be trusted with gold or personal documents. That decision happens visually before it happens on the page's content, which is what made this UI/UX brief distinct from a typical redesign.",
+    "This case study covers UI/UX design work specifically. For the full site build — content, structure, and development — see the separate WordPress Development case study for this client."
+  ],
+
+  challengeLead: "Content and structure alone don't build trust for a regulated lender — how the page actually looks and feels matters just as much to a first-time borrower deciding whether to hand over gold or personal documents.",
+  challenges: [
+    {
+      number: 1,
+      title: "No visual distinction between loan products",
+      description: "Without deliberate design, nine loan types risked visually blending together, making it hard for a borrower to quickly identify the right page for their need at a glance, before reading a single word of copy."
+    },
+    {
+      number: 2,
+      title: "No visual prominence for compliance and trust signals",
+      description: "KML registration and regulatory information weren't given any visual weight, despite being exactly what a cautious borrower looks for first when deciding whether to trust a lender with gold or personal documents."
+    },
+    {
+      number: 3,
+      title: "No visual guide through the borrower journey",
+      description: "The loan process wasn't presented as a clear visual flow, leaving first-time borrowers uncertain what to expect — or how long it would take — before they ever applied."
+    },
+    {
+      number: 4,
+      title: "Generic, templated visual language",
+      description: "Typography, color, and layout didn't read as a serious, regulated financial business — the kind of visual restraint and clarity a lender needs to look credible was missing, replaced by generic template styling that could belong to any small business site."
+    },
+    {
+      number: 5,
+      title: "Not designed mobile-first",
+      description: "Most first-time borrowers researching a local gold loan branch do it from a phone, often while nearby or between errands. A design that treats mobile as an afterthought loses exactly the borrower it needs to convert."
+    }
+  ],
+
+  objectiveLead: "Teknoppy's brief was to design a UI/UX that could:",
+  objectives: [
+    "Let borrowers quickly tell nine distinct loan products apart, by sight, not just by heading text",
+    "Make regulatory trust visually prominent rather than buried in body copy",
+    "Guide first-time borrowers through the loan process with a clear visual flow",
+    "Establish a visual language that reads as a serious, regulated lending business",
+    "Work mobile-first, since most borrowers would encounter the site on a phone first"
+  ],
+
+  approachLead: "How Teknoppy crafted a trust-first visual system, distinct product styling, and mobile ergonomics:",
+  approachPillars: [
+    {
+      title: "Distinct visual treatment per loan category",
+      paragraphs: [
+        "Rather than styling all nine loan pages identically, Gold Loan, Business Loan, and Micro Finance product groups were given a consistent but visually distinguishable treatment — shared layout patterns so the site still feels like one brand, but different enough per category that a borrower scanning the menu can tell at a glance which group matches their need, before reading a single line of copy."
+      ]
+    },
+    {
+      title: "Trust and compliance made visually prominent",
+      paragraphs: [
+        "KML registration and compliance information were treated as first-class visual elements — given their own dedicated page with clear visual hierarchy, rather than sitting as a paragraph competing with everything else on the page. For a regulated lender, what a borrower notices first often decides whether they read any further at all."
+      ]
+    },
+    {
+      title: "A visual four-step process",
+      paragraphs: [
+        "Contact/Visit → Document Verification → Approval → Disbursement was designed as a clear visual flow on the homepage rather than a block of text, giving first-time borrowers an immediate mental model of what to expect before they ever pick up the phone."
+      ]
+    },
+    {
+      title: "A visual language suited to a regulated business",
+      paragraphs: [
+        "Typography, color, and layout choices were made to reflect the seriousness of a regulated lending business rather than generic template styling. Restraint matters here — a financial brand that looks overly promotional or visually noisy undermines the same trust the content is trying to build."
+      ]
+    },
+    {
+      title: "Designed mobile-first, not adapted afterward",
+      paragraphs: [
+        "Because most first-time borrowers encounter a local lender through a phone search rather than a desktop visit, layout, tap targets, and visual hierarchy were designed for mobile first, then scaled up — not the reverse. This also matters for how Google evaluates the site: mobile usability has been part of core ranking signals for years, and a design that's merely \"responsive\" rather than mobile-first often shows the gap in exactly the moments that matter, like filling out a loan enquiry on a small screen."
+      ]
+    },
+    {
+      title: "Color and iconography chosen to match the business, not a template default",
+      paragraphs: [
+        "A gold loan business carries an obvious visual association most template designs ignore in favour of generic blue-and-white corporate styling. Warmer, restrained gold and neutral tones were used deliberately — consistent enough to feel intentional rather than decorative, and paired with simple, literal iconography for each loan category rather than abstract stock-style icons that force a borrower to guess what a symbol means. Small decisions like this add up to a site that feels like it was built specifically for a gold loan company, not adapted from a generic business template."
+      ]
+    }
+  ],
+
+  deliverables: [
+    {
+      title: "Distinct visual treatment per loan category.",
+      description: "Gold Loan, Business Loan, and Micro Finance product groups use a consistent but visually distinguishable design, so a borrower can tell at a glance which page matches their need."
+    },
+    {
+      title: "Trust and compliance made visually prominent.",
+      description: "KML registration and compliance information are treated as first-class visual elements on their own dedicated page, not buried in body copy."
+    },
+    {
+      title: "A visual four-step process.",
+      description: "Contact/Visit → Document Verification → Approval → Disbursement is designed as a clear visual flow on the homepage, giving first-time borrowers a mental model before they apply."
+    },
+    {
+      title: "A visual language suited to a regulated business.",
+      description: "Typography, color, and layout choices reflect the seriousness of a regulated lending business rather than generic template styling."
+    },
+    {
+      title: "A mobile-first layout.",
+      description: "Tap targets, spacing, and visual hierarchy were built for how a first-time borrower actually browses — on a phone, often quickly — rather than adapted from a desktop design after the fact."
+    },
+    {
+      title: "A color and iconography system matched to the business.",
+      description: "Restrained gold and neutral tones paired with literal, easy-to-read iconography per loan category, replacing generic template styling with a visual identity that reads as purpose-built."
+    }
+  ],
+
+  whyMattersHeading: "Why Visual Design Matters for a Regulated Lender's E-E-A-T",
+  whyMattersParagraphs: [
+    "E-E-A-T isn't only a content property — it's a page-quality property, and visual design is part of how a page communicates quality. A cautious borrower deciding whether to trust a lender with their gold or personal documents forms that judgment within seconds, often before reading a single sentence. Cluttered layouts, inconsistent styling, or a generic template look undercut even the most accurate compliance content sitting right below it.",
+    "This matters for search engines too, not just human visitors. Google's page experience signals — mobile usability, visual stability, clear navigation — sit alongside content quality in how a YMYL page like a lending site gets evaluated. A borrower-friendly visual hierarchy and a mobile-first layout aren't just design preferences; they're part of the same trust signal that well-structured compliance content builds on the content side.",
+    "There's also a semantic and entity dimension to visual consistency that's easy to overlook. When the same color, iconography, and layout pattern repeat consistently for \"Gold Loan\" across every touchpoint — the homepage, the product page, the compliance page — it reinforces Gold Loan as a single, coherent entity in a way that inconsistent styling undermines, even if the text content is identical. Visual consistency and content consistency are doing the same entity-building work from two different directions."
+  ],
+  whyMattersCalloutHtml: `By giving nine loan products distinct visual identity and by making compliance and process information impossible to miss, the Abrus Krishna Finance interface is designed to earn a first-time borrower's trust in the first few seconds, not just eventually through the copy. See the <a href="/case-studies/abrus-krishna-finance/" class="font-bold text-indigo-400 hover:text-indigo-300 underline">full WordPress development case study</a> for this client, or browse <a href="/case-study/" class="font-bold text-indigo-400 hover:text-indigo-300 underline">Teknoppy's full case study library</a>.`,
+
+  faqs: [
+    {
+      question: "What was the main UI/UX challenge for Abrus Krishna Finance?",
+      answer: "Designing an interface that lets borrowers quickly distinguish between nine loan products while making regulatory trust visually clear for a first-time visitor, on both mobile and desktop."
+    },
+    {
+      question: "How does the design build trust for a lending business?",
+      answer: "KML registration and compliance details are given dedicated visual prominence rather than being left as plain body text, and the four-step loan process is laid out visually so borrowers know what to expect before applying."
+    },
+    {
+      question: "Is this the same project as Abrus Krishna Finance's WordPress development case study?",
+      answer: "No — this case study covers UI/UX design work specifically. The WordPress development case study for this client covers the full site build, including content structure and page architecture."
+    },
+    {
+      question: "Why was the site designed mobile-first?",
+      answer: "Most first-time borrowers researching a local gold loan branch do it from a phone. Designing mobile-first — rather than adapting a desktop layout afterward — keeps tap targets, spacing, and visual hierarchy built for how borrowers actually browse."
+    },
+    {
+      question: "How are the nine loan products visually differentiated?",
+      answer: "Gold Loan, Business Loan, and Micro Finance product groups share a consistent design system but use distinguishable visual treatment, so a borrower can identify the right category at a glance rather than reading through headings one by one."
+    },
+    {
+      question: "Does visual design actually affect SEO for a lending website?",
+      answer: "Yes — mobile usability and page experience are part of how Google evaluates YMYL pages like lending sites, alongside content quality. A clear, mobile-first visual hierarchy supports the same trust signals that well-structured compliance content builds."
+    },
+    {
+      question: "Does the UI/UX design work with the existing WordPress build?",
+      answer: "Yes — the design was built to work within the site's WordPress and Elementor setup, so the visual system (color, typography, iconography, layout) applies directly to the existing pages and structure rather than requiring a separate rebuild."
+    },
+    {
+      question: "Why does color and iconography matter for a lending website?",
+      answer: "Consistent color and iconography reinforce each loan product as a recognisable, coherent entity across the site, and replace generic template styling with a visual identity that reads as purpose-built for a gold loan business rather than borrowed from a template."
+    }
+  ],
+
+  authorName: "Sanal Edison",
+  authorRole: "Digital Strategist at Teknoppy",
+  ctaHeadline: "Need a design that builds instant trust and makes complex options easy to navigate?",
+  ctaPhoneText: "Talk to Teknoppy | +91 6282249224",
+  ctaPhoneTel: "+916282249224",
+  ctaTagline: "TEKNOPPY.COM • KOCHI, KERALA"
+};
 ---
 
-<Layout title={page.meta.title} description={page.meta.description}>
-  <Header forceSolidBg={true} />
-
-  <main class="overflow-hidden bg-cream/20">
-    <InnerPage page={page} />
-  </main>
-
-  <FooterCTA />
-</Layout>
+<CaseStudyTemplate {...props} />
