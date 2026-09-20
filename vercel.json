@@ -83,6 +83,46 @@
       "source": "/web-design-company-kerala/",
       "destination": "/web-design-company-kochi/",
       "permanent": false
+    },
+    {
+      "source": "/case-studies/leema-engineering",
+      "destination": "/case-studies/leema-engineering-web-design-gcc/",
+      "permanent": false
+    },
+    {
+      "source": "/case-studies/leema-engineering/",
+      "destination": "/case-studies/leema-engineering-web-design-gcc/",
+      "permanent": false
+    },
+    {
+      "source": "/case-studies/varma-ayurveda",
+      "destination": "/case-studies/varma-ayurveda-wordpress-development/",
+      "permanent": false
+    },
+    {
+      "source": "/case-studies/varma-ayurveda/",
+      "destination": "/case-studies/varma-ayurveda-wordpress-development/",
+      "permanent": false
+    },
+    {
+      "source": "/case-studies/varma-ayurveda-uiux",
+      "destination": "/case-studies/varma-ayurveda-ui-ux-design/",
+      "permanent": false
+    },
+    {
+      "source": "/case-studies/varma-ayurveda-uiux/",
+      "destination": "/case-studies/varma-ayurveda-ui-ux-design/",
+      "permanent": false
+    },
+    {
+      "source": "/case-studies/abrus-krishna-finance-uiux",
+      "destination": "/case-studies/abrus-krishna-finance-ui-ux-design/",
+      "permanent": false
+    },
+    {
+      "source": "/case-studies/abrus-krishna-finance-uiux/",
+      "destination": "/case-studies/abrus-krishna-finance-ui-ux-design/",
+      "permanent": false
     }
   ],
   "headers": [
