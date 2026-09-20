@@ -1,17 +1,412 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
-import FooterCTA from '../components/FooterCTA.astro';
-import InnerPage from '../components/InnerPage.astro';
-import page from '../data/pages/case-study.json';
+import Footer from '../components/Footer.astro';
+import CaseStudiesExplorer from '../components/case-study/CaseStudiesExplorer';
+import { caseStudiesList, caseStudyFAQs } from '../data/caseStudiesData';
+import site from '../data/site.json';
+import { 
+  Sparkles, 
+  CheckCircle2, 
+  HelpCircle, 
+  ArrowRight, 
+  Phone, 
+  MessageCircle,
+  Mail,
+  TrendingUp,
+  ShieldCheck,
+  Zap,
+  Globe2
+} from 'lucide-react';
+
+const metaTitle = "Web Design & SEO Case Studies Kerala | Teknoppy";
+const metaDescription = "Real client results from Teknoppy's web design, ecommerce, and SEO projects across Kerala, UAE, and Qatar, with verified numbers and timeframes for each.";
+const canonicalURL = "https://teknoppy.com/case-study/";
+
+// Schema.org Structured Data
+const schemaCollection = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": metaTitle,
+  "description": metaDescription,
+  "url": canonicalURL,
+  "publisher": {
+    "@type": "Organization",
+    "name": "Teknoppy",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://teknoppy.com/logo.svg"
+    }
+  },
+  "hasPart": caseStudiesList.map(item => ({
+    "@type": "CreativeWork",
+    "name": item.title,
+    "description": item.description,
+    "url": `https://teknoppy.com${item.href}`
+  }))
+};
+
+const schemaFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": caseStudyFAQs.map(item => ({
+    "@type": "Question",
+    "name": item.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.a
+    }
+  }))
+};
 ---
 
-<Layout title={page.meta.title} description={page.meta.description}>
+<Layout title={metaTitle} description={metaDescription} image="/case-studies/abruskrishna.webp">
+  <Fragment slot="head">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <script type="application/ld+json" set:html={JSON.stringify(schemaCollection)} />
+    <script type="application/ld+json" set:html={JSON.stringify(schemaFAQ)} />
+  </Fragment>
+
+  <!-- Global Header with solid background -->
   <Header forceSolidBg={true} />
 
-  <main class="overflow-hidden bg-cream/20">
-    <InnerPage page={page} />
+  <main class="bg-[#05070B] text-slate-100 selection:bg-indigo-500/30 selection:text-indigo-200 overflow-x-hidden pt-20 lg:pt-24 font-sans">
+    
+    <!-- =========================================================================
+        SECTION 01: MODERN EDITORIAL HERO (NO BREADCRUMB)
+        ========================================================================= -->
+    <section class="relative pt-14 pb-16 md:pt-22 md:pb-26 overflow-hidden border-b border-white/[0.08]">
+      
+      {/* Layered Atmospheric Ambient Lighting */}
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(99,102,241,0.18),transparent_50%),radial-gradient(circle_at_80%_80%,rgba(56,189,248,0.12),transparent_50%)] pointer-events-none"></div>
+      <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.025)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8">
+        
+        {/* Eyebrow Label (NO BREADCRUMB) */}
+        <div class="reveal-on-scroll">
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-xs font-bold uppercase tracking-wider shadow-sm backdrop-blur-md">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+            </span>
+            Our Work / Case Studies
+          </div>
+        </div>
+
+        {/* Hero Headline & Subtitle */}
+        <div class="max-w-5xl space-y-6">
+          <h1 class="reveal-on-scroll reveal-delay-1 text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.08]">
+            Digital Experiences, Websites and <span class="bg-gradient-to-r from-white via-indigo-100 to-indigo-400 bg-clip-text text-transparent">Growth Systems.</span>
+          </h1>
+
+          <p class="reveal-on-scroll reveal-delay-2 text-base sm:text-[17px] text-slate-300 font-normal leading-[1.6] max-w-3xl">
+            Real client results from Teknoppy's web design, ecommerce, web application, and SEO projects across Kerala, the UAE, Qatar, and the UK. Every project below represents verified engineering, measurable commercial deliverables, and authentic client partnerships.
+          </p>
+
+          {/* Quick Metric Chips */}
+          <div class="reveal-on-scroll reveal-delay-3 flex flex-wrap items-center gap-3 pt-3">
+            <div class="px-4 py-2 rounded-full bg-[#0E1526] border border-white/[0.1] shadow-lg flex items-center gap-2 text-xs font-bold text-slate-200">
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+              <span>22 Verified Client Case Studies</span>
+            </div>
+            <div class="px-4 py-2 rounded-full bg-[#0E1526] border border-white/[0.1] shadow-lg flex items-center gap-2 text-xs font-bold text-slate-200">
+              <Sparkles className="w-4 h-4 text-indigo-400" />
+              <span>8 Specialized Service Disciplines</span>
+            </div>
+            <div class="px-4 py-2 rounded-full bg-[#0E1526] border border-white/[0.1] shadow-lg flex items-center gap-2 text-xs font-bold text-slate-200">
+              <Globe2 className="w-4 h-4 text-sky-400" />
+              <span>Kerala • UAE • Qatar • UK • Germany</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+        SECTION 02: INTERACTIVE FILTER SYSTEM & ALL 22 CASE STUDIES
+        ========================================================================= -->
+    <div class="reveal-on-scroll">
+      <CaseStudiesExplorer client:load />
+    </div>
+
+    <!-- =========================================================================
+        SECTION 03: HOW TEKNOPPY ARCHITECTS COMMERCIAL VALUE
+        ========================================================================= -->
+    <section class="py-24 md:py-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
+      <div class="rounded-3xl sm:rounded-4xl bg-gradient-to-b from-[#0F172A] to-[#0A0E1A] text-white p-8 sm:p-12 lg:p-16 border border-white/[0.1] shadow-2xl space-y-12 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-3xl space-y-4 relative z-10">
+          <span class="text-xs font-bold uppercase tracking-widest text-indigo-400">
+            Engineering & Strategy Standards
+          </span>
+          <h2 class="text-3xl sm:text-5xl text-white font-extrabold tracking-tight leading-tight">
+            How Teknoppy Architects Commercial Value
+          </h2>
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+            Every case study in our library began with a distinct operational challenge: unorganized products, poor search visibility, outdated branding, or high checkout friction.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10 pt-4 border-t border-white/[0.08]">
+          <div class="space-y-3">
+            <div class="w-11 h-11 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
+              <Zap className="w-5 h-5" />
+            </div>
+            <h3 class="text-lg font-bold text-white">Search Intent From Day One</h3>
+            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+              We design website architecture around actual borrower and customer queries rather than internal org charts, ensuring immediate crawlability and long-term organic rankings.
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <div class="w-11 h-11 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-sky-400">
+              <ShieldCheck className="w-5 h-5" />
+            </div>
+            <h3 class="text-lg font-bold text-white">Institutional Trust & Compliance</h3>
+            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+              From regulated finance under the Kerala Money-Lenders Act to international ISO calibration standards in the UAE, compliance signals are engineered into core page layouts.
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <div class="w-11 h-11 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-emerald-400">
+              <TrendingUp className="w-5 h-5" />
+            </div>
+            <h3 class="text-lg font-bold text-white">Conversion-Focused Performance</h3>
+            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+              Fast load times, responsive mobile-first views, and clear inquiry paths that shorten the distance between first discovery and commercial engagement.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+        SECTION 04: FREQUENTLY ASKED QUESTIONS (DARK GLASS ACCORDION)
+        ========================================================================= -->
+    <section class="py-24 md:py-32 bg-[#070A12] border-y border-white/[0.08] reveal-on-scroll">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        
+        <div class="text-center space-y-4">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/[0.05] border border-white/[0.08] text-indigo-400 text-xs font-bold uppercase tracking-wider">
+            Case Study Inquiries
+          </div>
+          <h2 class="text-3xl sm:text-5xl text-white font-extrabold tracking-tight leading-tight">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto">
+            Clear, straightforward answers regarding our case studies, verified outcomes, and regional coverage.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          {caseStudyFAQs.map((faq, idx) => (
+            <div key={idx} class="p-6 sm:p-7 rounded-2xl bg-[#0E1526]/80 border border-white/[0.08] hover:border-white/15 transition-colors space-y-2.5">
+              <h3 class="text-base sm:text-lg font-bold text-white flex items-center gap-3">
+                <HelpCircle className="w-5 h-5 text-indigo-400 flex-shrink-0" />
+                <span>{faq.q}</span>
+              </h3>
+              <p class="text-sm text-slate-300 leading-relaxed pl-8">
+                {faq.a}
+              </p>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+        SECTION 05: NEW LUXURY DARK CTA (REPLACING OLD ORANGE BLOCK)
+        ========================================================================= -->
+    <section class="py-24 md:py-32 bg-gradient-to-b from-[#0B101E] to-[#05070B] text-white relative overflow-hidden border-t border-white/[0.08] reveal-on-scroll">
+      {/* Ambient background lighting */}
+      <div class="absolute top-0 left-1/4 w-[600px] h-[600px] bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-cyan-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          {/* Left Column: Heading, Proposition & Action CTAs */}
+          <div class="lg:col-span-7 space-y-8">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/30 text-xs font-bold uppercase tracking-wider backdrop-blur-md">
+              <Zap className="w-3.5 h-3.5 text-indigo-400" />
+              Let's Build Something Great
+            </div>
+
+            <h2 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-white">
+              Ready to Work with the Leading <span class="bg-gradient-to-r from-white via-indigo-100 to-indigo-400 bg-clip-text text-transparent">Digital Agency in Kerala?</span>
+            </h2>
+
+            <p class="text-slate-300 text-base sm:text-lg leading-relaxed font-normal max-w-2xl">
+              Whether you are launching a new business website, rebuilding an outdated web portal, or scaling custom web development and SEO infrastructure — Teknoppy is ready to deliver. Start with a free website audit and see exactly where your current online presence stands, or request a clear, no-obligation proposal within 24 hours.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <a 
+                href={`tel:${site.phoneLink}`} 
+                class="inline-flex items-center gap-2.5 px-7 py-4 rounded-xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white text-sm font-bold shadow-xl shadow-indigo-600/30 hover:shadow-indigo-500/50 hover:-translate-y-0.5 transition-all"
+              >
+                <Phone className="w-4 h-4" />
+                <span>Call Us | {site.phone}</span>
+              </a>
+
+              <a 
+                href={`https://wa.me/${site.whatsapp}?text=${encodeURIComponent(site.whatsappMessage)}`} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2.5 px-7 py-4 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-white text-sm font-bold shadow-lg transition-all hover:-translate-y-0.5"
+              >
+                <MessageCircle className="w-4 h-4" />
+                <span>WhatsApp Consultation</span>
+              </a>
+
+              <a 
+                href="/contact-us/" 
+                class="inline-flex items-center gap-2 px-6 py-4 rounded-xl bg-[#0E1526] hover:bg-[#152038] text-slate-300 hover:text-white border border-white/[0.1] text-sm font-semibold transition-all"
+              >
+                <span>Request Free Quote</span>
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+
+          {/* Right Column: Luxury Glass Consultation Panel with Sanal Edison */}
+          <div class="lg:col-span-5">
+            <div class="rounded-3xl bg-[#0D1424]/90 border border-white/[0.1] p-8 sm:p-10 shadow-2xl space-y-6 relative overflow-hidden backdrop-blur-xl">
+              <div class="flex items-center gap-5">
+                <div class="relative w-20 h-20 rounded-2xl overflow-hidden border-2 border-indigo-500/40 shadow-lg flex-shrink-0">
+                  <img 
+                    src="/team/sanal-edison.webp" 
+                    onerror="this.onerror=null;this.src='/sanal.png';"
+                    alt="Sanal Edison — Digital Strategist" 
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="space-y-1">
+                  <h3 class="text-xl font-bold text-white">Sanal Edison</h3>
+                  <p class="text-xs font-bold uppercase tracking-wider text-indigo-400">Digital Strategist</p>
+                  <p class="text-xs text-slate-400">Teknoppy Leadership</p>
+                </div>
+              </div>
+
+              <p class="text-sm text-slate-300 leading-relaxed">
+                &ldquo;Communicate directly with our strategists to engineer high-converting digital solutions built specifically for your industry.&rdquo;
+              </p>
+
+              <div class="space-y-3 pt-2 border-t border-white/[0.08]">
+                <a 
+                  href={`tel:${site.phoneLink}`}
+                  class="flex items-center gap-3 p-3 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] border border-white/[0.06] text-sm text-slate-200 hover:text-white transition-colors"
+                >
+                  <Phone className="w-4 h-4 text-indigo-400" />
+                  <span class="font-mono font-medium">{site.phone}</span>
+                </a>
+
+                <a 
+                  href={`mailto:${site.email}`}
+                  class="flex items-center gap-3 p-3 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] border border-white/[0.06] text-sm text-slate-200 hover:text-white transition-colors"
+                >
+                  <Mail className="w-4 h-4 text-indigo-400" />
+                  <span class="font-mono font-medium">{site.email}</span>
+                </a>
+              </div>
+
+              <div class="text-[11px] text-slate-500 font-mono text-center pt-2">
+                KOCHI, KERALA • DUBAI, UAE • DOHA, QATAR
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <FooterCTA />
+  <!-- Official Dark Site Master Footer -->
+  <Footer />
 </Layout>
+
+<script>
+  // Fast & Polish Scroll Reveal Observer
+  if (typeof window !== 'undefined') {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
+
+    document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+  }
+</script>
+
+<style is:global>
+  /* Native Smooth Scroll & Anchor Offset */
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+  }
+
+  /* Global font family and typography tightening for case study portal */
+  body, main {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    letter-spacing: -0.011em;
+  }
+  p {
+    letter-spacing: -0.011em;
+  }
+
+  /* Utility to hide scrollbar for horizontal pills */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Smooth, natural scroll reveals */
+  .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.55s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1);
+    will-change: opacity, transform;
+  }
+  .reveal-on-scroll.is-revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal-delay-1 { transition-delay: 0.08s; }
+  .reveal-delay-2 { transition-delay: 0.16s; }
+  .reveal-delay-3 { transition-delay: 0.24s; }
+
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto !important;
+    }
+    .reveal-on-scroll {
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
+    }
+    *, ::before, ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+</style>

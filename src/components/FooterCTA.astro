@@ -8,6 +8,12 @@ import Footer from './Footer.astro';
 // somewhere else.
 const formEndpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT || '/api/contact';
 
+interface Props {
+  includeSchema?: boolean;
+}
+
+const { includeSchema = true } = Astro.props;
+
 const businessInfo = {
   name: site.businessName,
   address: site.address,
@@ -199,7 +205,7 @@ const schema = {
   </div>
 
   <!-- LocalBusiness Schema -->
-  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  {includeSchema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
 </section>
 
 <Footer />
