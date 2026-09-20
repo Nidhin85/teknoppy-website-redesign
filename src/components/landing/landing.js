@@ -116,17 +116,19 @@ document.querySelectorAll('.vcard[data-yt]').forEach(card => {
   card.querySelector('.vcard__play')?.addEventListener('click', e => { e.stopPropagation(); play(); });
 });
 
-/* ══════════ Google Ads conversions ══════════ */
-const ads = document.body.dataset;
-const convert = label => {
-  if (!ads.adsId || !label || typeof window.gtag !== 'function') return;
-  window.gtag('event', 'conversion', { send_to: `${ads.adsId}/${label}` });
+/* ══════════ Conversions → Google Tag Manager ══════════ */
+// The page only reports what happened; the Google Ads conversion ID and labels
+// live in GTM, so there is no second tag here to double-count them. The push
+// works whether or not GTM has loaded yet — it replays the queued events.
+const trackEvent = (event, detail) => {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event, ...detail });
 };
 document.addEventListener('click', e => {
   const a = e.target.closest?.('a[href]');
   if (!a) return;
-  if (a.href.startsWith('https://wa.me/')) convert(ads.adsWa);
-  else if (a.href.startsWith('tel:')) convert(ads.adsCall);
+  if (a.href.startsWith('https://wa.me/')) trackEvent('whatsapp_click');
+  else if (a.href.startsWith('tel:')) trackEvent('call_click');
 });
 
 // Remember where the visitor came from, so the enquiry email names the campaign.
@@ -210,7 +212,7 @@ const attribution = (() => {
         body: JSON.stringify(payload)
       });
       if (!res.ok) throw new Error(String(res.status));
-      convert(ads.adsLead);
+      trackEvent('lead_submit', { lead_service: payload.service, lead_source: payload.source });
       form.hidden = true;
       done.hidden = false;
       done.scrollIntoView({ block: 'center', behavior: 'smooth' });
