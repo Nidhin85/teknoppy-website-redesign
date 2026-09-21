@@ -106,7 +106,9 @@
       },
       {
         "title": "Branding & Creative",
-        "desc": "As a branding agency in Kochi, we craft identity, messaging, and ad creative that make your business look credible across every channel and lift campaign performance."
+        "desc": "As a branding agency in Kochi, we craft identity, messaging, and ad creative that make your business look credible across every channel and lift campaign performance.",
+        "href": "#contact",
+        "linkLabel": "Enquire about this service"
       },
       {
         "title": "Landing Pages & CRO",
@@ -115,7 +117,9 @@
       },
       {
         "title": "Analytics & Performance",
-        "desc": "As a performance marketing agency Kochi brands rely on, we set up GA4, Search Console, and call tracking so every channel is measured and every report tells the truth."
+        "desc": "As a performance marketing agency Kochi brands rely on, we set up GA4, Search Console, and call tracking so every channel is measured and every report tells the truth.",
+        "href": "#contact",
+        "linkLabel": "Enquire about this service"
       }
     ]
   },
@@ -352,6 +356,35 @@
         "result": "Stronger search visibility for fintech keywords in Kochi and increased franchise and partnership enquiries."
       }
     ]
+  },
+  "insights": {
+    "badge": "From the Blog",
+    "heading": {
+      "lead": "Latest Insights —",
+      "highlight": "Digital Marketing",
+      "tail": "in Kerala"
+    },
+    "items": [
+      {
+        "title": "Beyond Rankings: How Top SEO Companies Are Redefining Digital Success in the AI-First Era",
+        "text": "How AI is reshaping organic search and what Kerala businesses must do differently in 2026.",
+        "href": "/blog/seo-ai-first-era/"
+      },
+      {
+        "title": "Why SEO-Friendly Website Design is Critical for Kerala Businesses",
+        "text": "How integrated search strategy drives organic traffic and client enquiries for Kerala brands.",
+        "href": "/blog/seo-friendly-website-design-kerala/"
+      },
+      {
+        "title": "How to Build a High-Converting Ecommerce Website in Kerala",
+        "text": "Fast page speeds, local gateway integrations, and conversion-optimized checkouts for Kerala retail.",
+        "href": "/blog/high-converting-ecommerce-website-kerala/"
+      }
+    ],
+    "viewAll": {
+      "label": "View all posts",
+      "href": "/blog/"
+    }
   },
   "faqs": {
     "badge": "Support & FAQs",

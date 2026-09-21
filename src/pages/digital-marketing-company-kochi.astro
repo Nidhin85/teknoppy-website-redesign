@@ -190,7 +190,7 @@ const faqSchema = {
                 <p class="text-neutral-500 text-xs leading-relaxed mt-4 font-semibold">{svc.desc}</p>
                 {svc.href && (
                   <span class="inline-flex items-center gap-1.5 mt-5 text-xs font-bold text-primary">
-                    Learn more <ArrowRight class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+                    {svc.linkLabel ?? 'Learn more'} <ArrowRight class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
                   </span>
                 )}
               </Card>
@@ -505,6 +505,33 @@ const faqSchema = {
               </a>
             </div>
           ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- LATEST INSIGHTS SECTION -->
+    <section class="py-20 bg-cream/30 border-t border-neutral-100">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <div class="max-w-3xl mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+            {page.insights.badge}
+          </div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+            {page.insights.heading.lead} <span class="text-primary">{page.insights.heading.highlight}</span> {page.insights.heading.tail}
+          </h2>
+        </div>
+
+        <div class="max-w-4xl divide-y divide-neutral-100">
+          {page.insights.items.map(post => (
+            <a href={post.href} class="group block py-5 first:pt-0">
+              <h3 class="text-base sm:text-lg font-black text-neutral-900 group-hover:text-primary transition-colors leading-snug">{post.title}</h3>
+              <p class="text-neutral-600 text-sm leading-relaxed font-medium mt-2">{post.text}</p>
+            </a>
+          ))}
+          <a href={page.insights.viewAll.href} class="inline-flex items-center gap-1.5 text-xs font-black text-primary uppercase tracking-wider pt-5 hover:underline">
+            {page.insights.viewAll.label}
+            <ArrowRight class="w-3.5 h-3.5" />
+          </a>
         </div>
       </div>
     </section>

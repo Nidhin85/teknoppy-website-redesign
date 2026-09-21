@@ -1282,6 +1282,7 @@ collections:
                   - { label: Title, name: title, widget: string }
                   - { label: Description, name: desc, widget: text }
                   - { label: "Link (optional)", name: href, widget: string, required: false }
+                  - { label: "Link label (optional, default: Learn more)", name: linkLabel, widget: string, required: false }
 
           - label: Process
             name: process
@@ -1424,6 +1425,32 @@ collections:
                   - { label: Location, name: loc, widget: string }
                   - { label: Description, name: desc, widget: text }
                   - { label: Result, name: result, widget: text }
+
+          - label: Latest Insights
+            name: insights
+            widget: object
+            fields:
+              - { label: Badge, name: badge, widget: string }
+              - label: Heading
+                name: heading
+                widget: object
+                fields:
+                  - { label: Lead, name: lead, widget: string, required: false }
+                  - { label: Highlight, name: highlight, widget: string }
+                  - { label: Tail, name: tail, widget: string, required: false }
+              - label: Posts
+                name: items
+                widget: list
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Teaser, name: text, widget: text }
+                  - { label: Link, name: href, widget: string }
+              - label: "View all link"
+                name: viewAll
+                widget: object
+                fields:
+                  - { label: Label, name: label, widget: string }
+                  - { label: Link, name: href, widget: string }
 
           - label: FAQs
             name: faqs
