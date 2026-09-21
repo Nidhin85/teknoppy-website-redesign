@@ -11,11 +11,17 @@ interface Props {
 
 const { sub, cta, wa, ml } = Astro.props;
 
+// `thumb` is a YouTube thumbnail name, or a local path starting with "/".
+// Lenaa's testimonial is a 9:16 Short, and YouTube builds its 16:9 thumbnail by
+// padding the portrait frame with darkened, mirrored copies of itself — it reads
+// as a rendering fault next to the three landscape cards. Use the same hand
+// cropped still the homepage uses (public/testimonials/lenaa.webp) and pull the
+// focal point up, or a centre crop of a 404x720 portrait lands on her necklace.
 const videos = [
-  ['T6Vzf4ZhCYk', 'Lena shares her Teknoppy experience', 'maxresdefault'],
-  ['E7HfgGOHjYE', 'What our valued customers say about our services', 'maxresdefault'],
-  ['ocV7KcfU9vs', 'Client testimonial — Teknoppy', 'maxresdefault'],
-  ['-N_zd4eCPPM', 'Client testimonial — Teknoppy', 'hqdefault']
+  { id: 'T6Vzf4ZhCYk', title: 'Lena shares her Teknoppy experience', thumb: '/testimonials/lenaa.webp', pos: 'center 22%', w: 404, h: 720 },
+  { id: 'E7HfgGOHjYE', title: 'What our valued customers say about our services', thumb: 'maxresdefault' },
+  { id: 'ocV7KcfU9vs', title: 'Client testimonial — Teknoppy', thumb: 'maxresdefault' },
+  { id: '-N_zd4eCPPM', title: 'Client testimonial — Teknoppy', thumb: 'hqdefault' }
 ];
 ---
 
@@ -27,14 +33,18 @@ const videos = [
 
     <div class="carousel" data-carousel>
       <div class="carousel__track" data-track>
-        {videos.map(([id, title, thumb]) => (
-          <article class="vcard" data-yt={id} data-title={title}>
-            <img class="vcard__thumb" src={`https://i.ytimg.com/vi/${id}/${thumb}.jpg`}
-                 onerror={`this.onerror=null;this.src='https://i.ytimg.com/vi/${id}/hqdefault.jpg'`}
-                 alt={title} loading="lazy" decoding="async" width="480" height="360">
-            <button class="vcard__play" type="button" aria-label={`Play video: ${title}`}></button>
-          </article>
-        ))}
+        {videos.map(({ id, title, thumb, pos, w, h }) => {
+          const local = thumb.startsWith('/');
+          return (
+            <article class="vcard" data-yt={id} data-title={title}>
+              <img class="vcard__thumb" src={local ? thumb : `https://i.ytimg.com/vi/${id}/${thumb}.jpg`}
+                   style={pos ? `object-position:${pos}` : undefined}
+                   onerror={local ? undefined : `this.onerror=null;this.src='https://i.ytimg.com/vi/${id}/hqdefault.jpg'`}
+                   alt={title} loading="lazy" decoding="async" width={w ?? 480} height={h ?? 360}>
+              <button class="vcard__play" type="button" aria-label={`Play video: ${title}`}></button>
+            </article>
+          );
+        })}
       </div>
       <button class="cnav cnav--prev" data-prev aria-label="Previous">‹</button>
       <button class="cnav cnav--next" data-next aria-label="Next">›</button>
