@@ -19,6 +19,22 @@ import page from '../data/pages/clients.json';
 
 const logos = clients.logos;
 
+// Targeted enlargement styles for specific clients whose logos have internal padding or need visual prominence
+const enlargedLogoConfigs: Record<string, { imgClass: string }> = {
+  'Laughing Waters': {
+    imgClass: 'max-h-[80px] sm:max-h-[88px] xl:max-h-[92px] scale-[1.35] sm:scale-[1.42] xl:scale-[1.48]'
+  },
+  'Abrus Krishna Finance': {
+    imgClass: 'max-h-[80px] sm:max-h-[88px] xl:max-h-[94px] scale-[1.55] sm:scale-[1.65] xl:scale-[1.75]'
+  },
+  'Alankar Avenue': {
+    imgClass: 'max-h-[80px] sm:max-h-[88px] xl:max-h-[94px] scale-[1.70] sm:scale-[1.80] xl:scale-[1.90]'
+  },
+  'Kerala Dayz': {
+    imgClass: 'max-h-[78px] sm:max-h-[86px] xl:max-h-[90px] scale-[1.45] sm:scale-[1.52] xl:scale-[1.60]'
+  }
+};
+
 const testimonials = (await getCollection('testimonials'))
   .sort((a, b) => a.data.order - b.data.order)
   .map((t) => t.data);
@@ -107,22 +123,28 @@ const schemas = [
         </div>
 
         <ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 border-t border-l border-neutral-100 rounded-3xl overflow-hidden bg-white shadow-[0_12px_30px_-18px_rgba(0,0,0,0.08)]">
-          {logos.map((logo) => (
-            <li class="aspect-[4/3] border-r border-b border-neutral-100 flex flex-col items-center justify-center gap-3 p-5 sm:p-6 hover:bg-neutral-50/60 transition-colors duration-300">
-              <span class="logo-plate flex items-center justify-center w-full flex-grow px-3 py-2">
-                <img
-                  src={logo.src}
-                  alt={`${logo.name} logo`}
-                  width="200"
-                  height="120"
-                  loading="lazy"
-                  decoding="async"
-                  class="max-h-[52px] max-w-full object-contain mix-blend-multiply"
-                />
-              </span>
-              <span class="text-[11px] font-bold text-neutral-400 uppercase tracking-wider text-center leading-tight">{logo.name}</span>
-            </li>
-          ))}
+          {logos.map((logo) => {
+            const enlarged = enlargedLogoConfigs[logo.name];
+            const imgClass = enlarged
+              ? `${enlarged.imgClass} max-w-full object-contain mix-blend-multiply transition-transform duration-300`
+              : 'max-h-[52px] max-w-full object-contain mix-blend-multiply transition-transform duration-300';
+            return (
+              <li class="aspect-[4/3] border-r border-b border-neutral-100 flex flex-col items-center justify-center gap-3 p-5 sm:p-6 hover:bg-neutral-50/60 transition-colors duration-300">
+                <span class="logo-plate flex items-center justify-center w-full flex-grow px-3 py-2">
+                  <img
+                    src={logo.src}
+                    alt={`${logo.name} logo`}
+                    width="200"
+                    height="120"
+                    loading="lazy"
+                    decoding="async"
+                    class={imgClass}
+                  />
+                </span>
+                <span class="text-[11px] font-bold text-neutral-400 uppercase tracking-wider text-center leading-tight">{logo.name}</span>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </section>

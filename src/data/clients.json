@@ -1,48 +1,129 @@
 {
   "_note": "Single source of truth for the client logo wall. Consumed by Clients.astro (homepage strip), Testimonials.tsx (3x3 grid) and the /clients/ page. Only add a row once the logo file exists in public/client logos/. The first 9 rows are the ones Testimonials.tsx shows, so order matters. Logos must read on a light plate: the wall renders them with mix-blend-multiply, so a white-on-transparent or dark-block logo will disappear or show as a solid rectangle.",
   "logos": [
-    { "name": "Abroad Career Consultancy", "src": "/client logos/Abroad-career-1.jpg" },
-    { "name": "Liberty Career Abu Dhabi", "src": "/client logos/abu-dhabi.jpg" },
-    { "name": "Al Coffee", "src": "/client logos/al-coffee-1.jpg" },
-    { "name": "Amster", "src": "/client logos/amster.jpg" },
-    { "name": "AR Data", "src": "/client logos/ar.jpg" },
-    { "name": "First Class Consultancy Services", "src": "/client logos/first-class.jpg" },
-    { "name": "Kewsa", "src": "/client logos/kewsa.jpg" },
-    { "name": "Laughing Waters", "src": "/client logos/laughing-waters.jpg" },
-    { "name": "Metal Center", "src": "/client logos/metal-center.jpg" },
-    { "name": "Olives Resort", "src": "/client logos/olive.jpg" },
-    { "name": "Qrystal", "src": "/client logos/qrystal.jpg" },
-    { "name": "Rakshak", "src": "/client logos/rakshak.jpg" },
-    { "name": "Simov", "src": "/client logos/simov-1.jpg" },
-    { "name": "Studim Assist", "src": "/client logos/studim-assist.jpg" },
-    { "name": "Vinhar", "src": "/client logos/vinhar.jpg" },
-    { "name": "Web Design Cochin", "src": "/client logos/web-design-cochin.jpg" },
-    { "name": "WestN Resorts", "src": "/client logos/westn.jpg" },
-    { "name": "Abrus Krishna Finance", "src": "/client logos/abrus-krishna-finance.jpg" },
-    { "name": "Alankar Avenue", "src": "/client logos/alankar-avenue.png" },
-    { "name": "Cochin Suraksha", "src": "/client logos/cochin-suraksha.webp" },
-    { "name": "Creative Qatar", "src": "/client logos/creative-qatar.png" },
-    { "name": "Dream Abroad", "src": "/client logos/dream-abroad.png" },
-    { "name": "East Town Hotel", "src": "/client logos/east-town-hotel.webp" },
-    { "name": "Edamanasserry Spine Hospital", "src": "/client logos/edamanasserry-spine-hospital.jpg" },
-    { "name": "EduCareer", "src": "/client logos/educareer.webp" },
-    { "name": "Elite Palazzo", "src": "/client logos/elite-palazzo.png" },
-    { "name": "Expert Rangers", "src": "/client logos/expert-rangers.png" },
-    { "name": "FinFit", "src": "/client logos/finfit.webp" },
-    { "name": "General Tech Services", "src": "/client logos/general-tech-services.jpg" },
-    { "name": "GoGeo", "src": "/client logos/gogeo.webp" },
-    { "name": "Gurukul Pacioly", "src": "/client logos/gurukul-pacioly.png" },
-    { "name": "Heralds International", "src": "/client logos/heralds-international.png" },
-    { "name": "Kerala Dayz", "src": "/client logos/kerala-dayz.png" },
-    { "name": "Khaleej Tours", "src": "/client logos/khaleej-tours.png" },
-    { "name": "Leema Engineering", "src": "/client logos/leema-engineering.png" },
-    { "name": "Mountbell", "src": "/client logos/mountbell.webp" },
-    { "name": "Orange Qatar", "src": "/client logos/orange-qatar.png" },
-    { "name": "Shaapp Food", "src": "/client logos/shaapp-food.png" },
-    { "name": "Speakeazy English Academy", "src": "/client logos/speakeazy-english-academy.webp" },
-    { "name": "Vacation Kerala", "src": "/client logos/vacation-kerala.png" },
-    { "name": "Varma Ayurveda", "src": "/client logos/varma-ayurveda.png" },
-    { "name": "Enco", "src": "/client logos/enco.jpg" },
-    { "name": "Westin Hotels & Resorts", "src": "/client logos/westin-hotels.jpg" }
+    {
+      "name": "Al Coffee",
+      "src": "/client logos/al-coffee-1.jpg"
+    },
+    {
+      "name": "Amster",
+      "src": "/client logos/amster.jpg"
+    },
+    {
+      "name": "Laughing Waters",
+      "src": "/client logos/laughing-waters.jpg"
+    },
+    {
+      "name": "Olives Resort",
+      "src": "/client logos/olive.jpg"
+    },
+    {
+      "name": "WestN Resorts",
+      "src": "/client logos/westn.jpg"
+    },
+    {
+      "name": "Abrus Krishna Finance",
+      "src": "/client logos/abrus-krishna-finance.jpg"
+    },
+    {
+      "name": "Alankar Avenue",
+      "src": "/client logos/alankar-avenue.png"
+    },
+    {
+      "name": "Cochin Suraksha",
+      "src": "/client logos/cochin-suraksha.webp"
+    },
+    {
+      "name": "Creative Qatar",
+      "src": "/client logos/creative-qatar.png"
+    },
+    {
+      "name": "Dream Abroad",
+      "src": "/client logos/dream-abroad.png"
+    },
+    {
+      "name": "East Town Hotel",
+      "src": "/client logos/east-town-hotel.webp"
+    },
+    {
+      "name": "Edamanasserry Spine Hospital",
+      "src": "/client logos/edamanasserry-spine-hospital.jpg"
+    },
+    {
+      "name": "EduCareer",
+      "src": "/client logos/educareer.webp"
+    },
+    {
+      "name": "Elite Palazzo",
+      "src": "/client logos/elite-palazzo.png"
+    },
+    {
+      "name": "Expert Rangers",
+      "src": "/client logos/expert-rangers.png"
+    },
+    {
+      "name": "FinFit",
+      "src": "/client logos/finfit.webp"
+    },
+    {
+      "name": "General Tech Services",
+      "src": "/client logos/general-tech-services.jpg"
+    },
+    {
+      "name": "GoGeo",
+      "src": "/client logos/gogeo.webp"
+    },
+    {
+      "name": "Gurukul Pacioly",
+      "src": "/client logos/gurukul-pacioly.png"
+    },
+    {
+      "name": "Heralds International",
+      "src": "/client logos/heralds-international.png"
+    },
+    {
+      "name": "Kerala Dayz",
+      "src": "/client logos/kerala-dayz.png"
+    },
+    {
+      "name": "Khaleej Tours",
+      "src": "/client logos/khaleej-tours.png"
+    },
+    {
+      "name": "Leema Engineering",
+      "src": "/client logos/leema-engineering.png"
+    },
+    {
+      "name": "Mountbell",
+      "src": "/client logos/mountbell.webp"
+    },
+    {
+      "name": "Orange Qatar",
+      "src": "/client logos/orange-qatar.png"
+    },
+    {
+      "name": "Shaapp Food",
+      "src": "/client logos/shaapp-food.png"
+    },
+    {
+      "name": "Speakeazy English Academy",
+      "src": "/client logos/speakeazy-english-academy.webp"
+    },
+    {
+      "name": "Vacation Kerala",
+      "src": "/client logos/vacation-kerala.png"
+    },
+    {
+      "name": "Varma Ayurveda",
+      "src": "/client logos/varma-ayurveda.png"
+    },
+    {
+      "name": "Enco",
+      "src": "/client logos/enco.jpg"
+    },
+    {
+      "name": "Westin Hotels & Resorts",
+      "src": "/client logos/westin-hotels.jpg"
+    }
   ]
 }
