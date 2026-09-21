@@ -80,14 +80,17 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.fetchPriority="
 <!-- non-blocking font load: text paints in the fallback stack immediately -->
 {fonts.map((href) => <link rel="stylesheet" href={href} media="print" onload="this.media='all'">)}
 <!-- set:html, not an expression: Astro hoists expression children out of <noscript>,
-     which turns these fallbacks into render-blocking stylesheets for everyone. -->
-<noscript set:html={fonts.map((href) => `<link rel="stylesheet" href="${href.replace(/&/g, '&amp;')}">`).join('')} />
+     which turns these fallbacks into render-blocking stylesheets for everyone.
+     Close the tag explicitly too: <noscript /> is not void, and self-closing it
+     makes every later sibling — the <style> below included — parse as noscript
+     text, leaving the page completely unstyled. -->
+<noscript set:html={fonts.map((href) => `<link rel="stylesheet" href="${href.replace(/&/g, '&amp;')}">`).join('')}></noscript>
 
 <style is:inline set:html={css}></style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript set:html={`<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHX2WJ39" height="0" width="0" style="display:none;visibility:hidden"></iframe>`} />
+<noscript set:html={`<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHX2WJ39" height="0" width="0" style="display:none;visibility:hidden"></iframe>`}></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <!-- ══════════ HEADER ══════════ -->
