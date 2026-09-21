@@ -253,8 +253,8 @@ export const CaseStudiesExplorer: React.FC = () => {
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3.5 sm:gap-5">
             
             {/* Desktop & Tablet: Full wrapping grid of all 9 pills. Mobile: Smooth touch horizontal scroll rail. */}
-            <div className="w-full lg:flex-1 overflow-hidden">
-              <div className="flex items-center gap-2 sm:gap-2.5 overflow-x-auto no-scrollbar flex-nowrap sm:flex-wrap py-1 -mx-4 px-4 sm:mx-0 sm:px-0">
+            <div className="w-full lg:flex-1 min-w-0">
+              <div className="flex items-center gap-2 sm:gap-2.5 overflow-x-auto no-scrollbar sm:overflow-x-visible flex-nowrap sm:flex-wrap py-1">
                 <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-slate-400 mr-1 flex-shrink-0">
                   <Filter className="w-3.5 h-3.5 text-indigo-400" />
                   Categories:

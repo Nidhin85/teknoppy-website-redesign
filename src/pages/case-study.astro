@@ -460,4 +460,10 @@ const schemaFAQ = {
       scroll-behavior: auto !important;
     }
   }
+
+  /* Filter pills: allow horizontal pan on touch without consuming button taps */
+  #filters .overflow-x-auto {
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+  }
 </style>
