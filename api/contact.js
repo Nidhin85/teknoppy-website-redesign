@@ -47,12 +47,6 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const API_KEY = process.env.RESEND_API_KEY;
-  if (!API_KEY) {
-    console.error('[contact] RESEND_API_KEY is not set');
-    return res.status(500).json({ error: 'Contact form is not configured' });
-  }
-
   let body = req.body;
   if (typeof body === 'string') {
     try {
@@ -78,6 +72,16 @@ export default async function handler(req, res) {
   }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return res.status(400).json({ error: 'Please enter a valid email address' });
+  }
+
+  const API_KEY = process.env.RESEND_API_KEY;
+  if (!API_KEY) {
+    if (process.env.NODE_ENV !== 'production') {
+      console.warn('[contact] RESEND_API_KEY is not set in dev. Form submission accepted locally.');
+      return res.status(200).json({ ok: true, dev: true });
+    }
+    console.error('[contact] RESEND_API_KEY is not set');
+    return res.status(500).json({ error: 'Contact form is not configured' });
   }
 
   const rows = [

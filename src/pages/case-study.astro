@@ -73,7 +73,7 @@ const schemaFAQ = {
   <!-- Global Header with solid background -->
   <Header forceSolidBg={true} />
 
-  <main class="bg-[#05070B] text-slate-100 selection:bg-indigo-500/30 selection:text-indigo-200 overflow-x-hidden pt-20 lg:pt-24 font-sans">
+  <main class="bg-[#05070B] text-slate-100 selection:bg-indigo-500/30 selection:text-indigo-200 overflow-x-clip pt-20 lg:pt-24 pb-20 sm:pb-28 font-sans">
     
     <!-- =========================================================================
         SECTION 01: MODERN EDITORIAL HERO (NO BREADCRUMB)
@@ -87,7 +87,7 @@ const schemaFAQ = {
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8">
         
         {/* Eyebrow Label (NO BREADCRUMB) */}
-        <div class="reveal-on-scroll">
+        <div class="hero-fade-in">
           <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-xs font-bold uppercase tracking-wider shadow-sm backdrop-blur-md">
             <span class="relative flex h-2 w-2">
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
@@ -99,16 +99,16 @@ const schemaFAQ = {
 
         {/* Hero Headline & Subtitle */}
         <div class="max-w-5xl space-y-6">
-          <h1 class="reveal-on-scroll reveal-delay-1 text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.08]">
+          <h1 class="hero-fade-in hero-delay-1 text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.08]">
             Digital Experiences, Websites and <span class="bg-gradient-to-r from-white via-indigo-100 to-indigo-400 bg-clip-text text-transparent">Growth Systems.</span>
           </h1>
 
-          <p class="reveal-on-scroll reveal-delay-2 text-base sm:text-[17px] text-slate-300 font-normal leading-[1.6] max-w-3xl">
+          <p class="hero-fade-in hero-delay-2 text-base sm:text-[17px] text-slate-300 font-normal leading-[1.6] max-w-3xl">
             Real client results from Teknoppy's web design, ecommerce, web application, and SEO projects across Kerala, the UAE, Qatar, and the UK. Every project below represents verified engineering, measurable commercial deliverables, and authentic client partnerships.
           </p>
 
           {/* Quick Metric Chips */}
-          <div class="reveal-on-scroll reveal-delay-3 flex flex-wrap items-center gap-3 pt-3">
+          <div class="hero-fade-in hero-delay-3 flex flex-wrap items-center gap-3 pt-3">
             <div class="px-4 py-2 rounded-full bg-[#0E1526] border border-white/[0.1] shadow-lg flex items-center gap-2 text-xs font-bold text-slate-200">
               <CheckCircle2 className="w-4 h-4 text-emerald-400" />
               <span>22 Verified Client Case Studies</span>
@@ -130,9 +130,9 @@ const schemaFAQ = {
     <!-- =========================================================================
         SECTION 02: INTERACTIVE FILTER SYSTEM & ALL 22 CASE STUDIES
         ========================================================================= -->
-    <div class="reveal-on-scroll">
+    <section id="case-studies-section" class="relative w-full">
       <CaseStudiesExplorer client:load />
-    </div>
+    </section>
 
     <!-- =========================================================================
         SECTION 03: HOW TEKNOPPY ARCHITECTS COMMERCIAL VALUE
@@ -337,18 +337,49 @@ const schemaFAQ = {
 </Layout>
 
 <script>
-  // Fast & Polish Scroll Reveal Observer
+  // Robust & Fluid Scroll Reveal Observer
   if (typeof window !== 'undefined') {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-revealed');
-          observer.unobserve(entry.target);
+    const initScrollReveals = () => {
+      const elements = document.querySelectorAll('.reveal-on-scroll:not(.is-revealed)');
+      if (!elements.length) return;
+
+      if (!('IntersectionObserver' in window)) {
+        elements.forEach(el => el.classList.add('is-revealed'));
+        return;
+      }
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.02, rootMargin: '0px 0px 80px 0px' });
+
+      elements.forEach(el => {
+        // Immediately reveal elements that are already within or near the viewport
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight + 80) {
+          el.classList.add('is-revealed');
+        } else {
+          observer.observe(el);
         }
       });
-    }, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
+    };
 
-    document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initScrollReveals);
+    } else {
+      initScrollReveals();
+    }
+
+    // Safety fallback: ensure any lagging elements reveal cleanly
+    setTimeout(() => {
+      document.querySelectorAll('.reveal-on-scroll:not(.is-revealed)').forEach(el => {
+        el.classList.add('is-revealed');
+      });
+    }, 1200);
   }
 </script>
 
@@ -377,12 +408,30 @@ const schemaFAQ = {
     scrollbar-width: none;
   }
 
-  /* Smooth, natural scroll reveals */
+  /* Hero instant keyframe animations (never trapped at opacity 0) */
+  @keyframes heroFadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero-fade-in {
+    animation: heroFadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .hero-delay-1 { animation-delay: 0.08s; }
+  .hero-delay-2 { animation-delay: 0.16s; }
+  .hero-delay-3 { animation-delay: 0.24s; }
+
+  /* Smooth, natural scroll reveals for lower editorial sections */
   .reveal-on-scroll {
     opacity: 0;
-    transform: translateY(18px);
-    transition: opacity 0.55s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1);
-    will-change: opacity, transform;
+    transform: translateY(16px);
+    transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   }
   .reveal-on-scroll.is-revealed {
     opacity: 1;
@@ -397,7 +446,9 @@ const schemaFAQ = {
     html {
       scroll-behavior: auto !important;
     }
+    .hero-fade-in,
     .reveal-on-scroll {
+      animation: none !important;
       opacity: 1 !important;
       transform: none !important;
       transition: none !important;
@@ -408,5 +459,11 @@ const schemaFAQ = {
       transition-duration: 0.01ms !important;
       scroll-behavior: auto !important;
     }
+  }
+
+  /* Filter pills: allow horizontal pan on touch without consuming button taps */
+  #filters .overflow-x-auto {
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
   }
 </style>

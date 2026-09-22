@@ -24,7 +24,17 @@ import {
 } from 'lucide-react';
 
 export const CaseStudiesExplorer: React.FC = () => {
-  const [activeCategory, setActiveCategory] = useState<string>('all');
+  const [activeCategory, setActiveCategory] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const catParam = params.get('category');
+      if (catParam) {
+        const found = filterCategories.find(c => c.slug === catParam || c.id === catParam);
+        if (found) return found.id;
+      }
+    }
+    return 'all';
+  });
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [lightboxItem, setLightboxItem] = useState<CaseStudyItem | null>(null);
   const [isZoomed, setIsZoomed] = useState<boolean>(false);
@@ -232,19 +242,19 @@ export const CaseStudiesExplorer: React.FC = () => {
   }, [lightboxItem, closeLightbox, navigateLightbox]);
 
   return (
-    <div className="w-full space-y-16 md:space-y-24">
+    <div className="w-full space-y-12 sm:space-y-16 md:space-y-24">
       
       {/* =========================================================================
-          FILTER SECTION — MAJOR REDESIGN (FLEX-WRAP DESKTOP + HORIZONTAL MOBILE)
+          FILTER SECTION — RESPONSIVE (FLEX-WRAP DESKTOP + HORIZONTAL MOBILE)
           ========================================================================= */}
-      <div id="filters" className="sticky top-[60px] lg:top-[74px] z-30 py-5 bg-[#05070B]/95 backdrop-blur-2xl border-y border-white/[0.08] shadow-[0_20px_40px_rgba(0,0,0,0.8)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+      <div id="filters" className="sticky top-[72px] lg:top-[76px] z-30 py-3.5 sm:py-5 bg-[#05070B]/95 backdrop-blur-2xl border-y border-white/[0.08] shadow-[0_20px_40px_rgba(0,0,0,0.8)]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3 sm:space-y-4">
           
-          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-5">
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3.5 sm:gap-5">
             
-            {/* Desktop & Tablet: Full wrapping grid of all 9 pills. Mobile: Smooth scroll rail. */}
-            <div className="w-full lg:flex-1">
-              <div className="flex flex-wrap items-center gap-2 sm:gap-2.5">
+            {/* Desktop & Tablet: Full wrapping grid of all 9 pills. Mobile: Smooth touch horizontal scroll rail. */}
+            <div className="w-full lg:flex-1 min-w-0">
+              <div className="flex items-center gap-2 sm:gap-2.5 overflow-x-auto no-scrollbar sm:overflow-x-visible flex-nowrap sm:flex-wrap py-1">
                 <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-slate-400 mr-1 flex-shrink-0">
                   <Filter className="w-3.5 h-3.5 text-indigo-400" />
                   Categories:
@@ -259,14 +269,14 @@ export const CaseStudiesExplorer: React.FC = () => {
                       key={cat.id}
                       type="button"
                       onClick={() => handleSelectCategory(cat.id)}
-                      className={`group relative flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-full text-xs font-bold tracking-wide transition-all duration-300 cursor-pointer ${
+                      className={`group relative flex-shrink-0 flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-full text-xs font-bold tracking-wide transition-all duration-300 cursor-pointer ${
                         isActive
                           ? 'bg-gradient-to-r from-indigo-600 via-indigo-500 to-violet-600 text-white shadow-[0_0_20px_rgba(99,102,241,0.4)] border border-indigo-400/40 ring-2 ring-indigo-500/20'
                           : 'bg-[#0E1526]/80 text-slate-300 hover:text-white hover:bg-[#162038] border border-white/[0.08] hover:border-white/20'
                       }`}
                       aria-pressed={isActive}
                     >
-                      <span>{cat.label}</span>
+                      <span className="whitespace-nowrap">{cat.label}</span>
                       <span 
                         className={`inline-flex items-center justify-center min-w-[20px] h-5 px-1.5 rounded-full text-[11px] font-extrabold transition-colors ${
                           isActive 
@@ -345,7 +355,7 @@ export const CaseStudiesExplorer: React.FC = () => {
       </div>
 
       {/* Main Content Area */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20 md:space-y-28">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 md:space-y-24 pb-16 sm:pb-24">
         
         {/* =========================================================================
             FEATURED PROJECT SPOTLIGHT (ABRUS KRISHNA FINANCE)
@@ -519,7 +529,7 @@ export const CaseStudiesExplorer: React.FC = () => {
                   {group.projects.map((project) => (
                     <article
                       key={project.id}
-                      className="group relative flex flex-col bg-[#0C1220]/90 border border-white/[0.08] hover:border-indigo-500/50 rounded-2xl sm:rounded-3xl p-5 sm:p-6 transition-all duration-400 ease-out hover:scale-[1.025] hover:-translate-y-2 hover:shadow-[0_25px_60px_-15px_rgba(99,102,241,0.35)] justify-between cursor-pointer"
+                      className="group relative flex flex-col bg-[#0C1220]/90 border border-white/[0.08] hover:border-indigo-500/50 rounded-2xl sm:rounded-3xl p-5 sm:p-6 transition-all duration-300 ease-out md:hover:scale-[1.02] md:hover:-translate-y-1.5 md:hover:shadow-[0_25px_60px_-15px_rgba(99,102,241,0.35)] justify-between cursor-pointer"
                     >
                       {/* Top: Large Device Mockup Container */}
                       <div className="space-y-4">
@@ -652,7 +662,7 @@ export const CaseStudiesExplorer: React.FC = () => {
                 {filteredProjects.map((project) => (
                   <article
                     key={project.id}
-                    className="group relative flex flex-col bg-[#0C1220]/90 border border-white/[0.08] hover:border-indigo-500/50 rounded-2xl sm:rounded-3xl p-5 sm:p-6 transition-all duration-400 ease-out hover:scale-[1.025] hover:-translate-y-2 hover:shadow-[0_25px_60px_-15px_rgba(99,102,241,0.35)] justify-between cursor-pointer"
+                    className="group relative flex flex-col bg-[#0C1220]/90 border border-white/[0.08] hover:border-indigo-500/50 rounded-2xl sm:rounded-3xl p-5 sm:p-6 transition-all duration-300 ease-out md:hover:scale-[1.02] md:hover:-translate-y-1.5 md:hover:shadow-[0_25px_60px_-15px_rgba(99,102,241,0.35)] justify-between cursor-pointer"
                   >
                     <div className="space-y-4">
                       

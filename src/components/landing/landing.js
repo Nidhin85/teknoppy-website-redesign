@@ -212,10 +212,18 @@ const attribution = (() => {
         body: JSON.stringify(payload)
       });
       if (!res.ok) throw new Error(String(res.status));
-      trackEvent('lead_submit', { lead_service: payload.service, lead_source: payload.source });
-      form.hidden = true;
-      done.hidden = false;
-      done.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      trackEvent('lead_submit', {
+        lead_service: payload.service,
+        lead_source: payload.source
+      });
+      const redirectUrl = form.dataset.redirect;
+      if (redirectUrl) {
+        window.location.href = redirectUrl;
+      } else {
+        form.hidden = true;
+        done.hidden = false;
+        done.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      }
     } catch (_) {
       fail.hidden = false;
       btn.disabled = false;
