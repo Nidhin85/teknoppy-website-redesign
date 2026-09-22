@@ -211,9 +211,14 @@ const attribution = (() => {
       });
       if (!res.ok) throw new Error(String(res.status));
       convert(ads.adsLead);
-      form.hidden = true;
-      done.hidden = false;
-      done.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      const redirectUrl = form.dataset.redirect;
+      if (redirectUrl) {
+        window.location.href = redirectUrl;
+      } else {
+        form.hidden = true;
+        done.hidden = false;
+        done.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      }
     } catch (_) {
       fail.hidden = false;
       btn.disabled = false;
