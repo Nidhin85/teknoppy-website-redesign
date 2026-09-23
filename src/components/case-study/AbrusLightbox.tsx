@@ -69,14 +69,14 @@ export const AbrusLightbox: React.FC<AbrusLightboxProps> = ({ items }) => {
 
   return (
     <div className="w-full">
-      {/* Gallery Grid */}
+      {/* Gallery Grid in Standardized White Theme */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8 items-stretch">
         {items.map((item, idx) => {
           const isLarge = idx === 0;
           return (
             <div
               key={item.id}
-              className={`group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-[#0C1220]/90 shadow-lg hover:border-indigo-500/50 hover:shadow-[0_20px_50px_-10px_rgba(99,102,241,0.25)] transition-all duration-300 cursor-pointer ${
+              className={`group flex flex-col justify-between overflow-hidden rounded-2xl border border-neutral-200/80 bg-white shadow-xs hover:border-[#0066CC]/50 hover:shadow-md transition-all duration-300 cursor-pointer ${
                 isLarge ? 'md:col-span-12 lg:col-span-8' : 'md:col-span-6 lg:col-span-4'
               }`}
               onClick={() => openLightbox(idx)}
@@ -90,34 +90,38 @@ export const AbrusLightbox: React.FC<AbrusLightboxProps> = ({ items }) => {
               }}
               aria-label={`View ${item.title} image in full screen`}
             >
-              <div className={`w-full overflow-hidden bg-neutral-900 ${isLarge ? 'h-[380px] sm:h-[480px] lg:h-[540px]' : 'h-[280px] sm:h-[340px]'}`}>
+              {/* Image Frame - 100% full screenshot visibility with object-contain */}
+              <div className={`relative w-full bg-[#F8FAFC] border-b border-neutral-100 flex items-center justify-center p-4 sm:p-6 overflow-hidden ${
+                isLarge ? 'h-[360px] sm:h-[440px] lg:h-[480px]' : 'h-[260px] sm:h-[320px]'
+              }`}>
                 <img
                   src={item.src}
                   alt={item.title}
                   loading="lazy"
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
+                  className="max-w-full max-h-full object-contain drop-shadow-sm group-hover:scale-[1.02] transition-transform duration-500 ease-out"
                 />
-              </div>
 
-              {/* Hover overlay with badge */}
-              <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-between p-5 sm:p-7 pointer-events-none">
-                <div className="flex justify-between items-center">
-                  <span className="px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-white/20 backdrop-blur-md text-white border border-white/20">
+                {/* Floating Category Tag */}
+                <div className="absolute top-4 left-4 z-10">
+                  <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-white/95 text-[#0066CC] border border-blue-200/80 shadow-xs backdrop-blur-md">
                     {item.category}
                   </span>
-                  <div className="w-9 h-9 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all duration-300">
-                    <Maximize2 className="w-4 h-4" />
-                  </div>
                 </div>
 
-                <div>
-                  <h3 className="text-white text-lg sm:text-xl font-bold tracking-tight mb-1">
-                    {item.title}
-                  </h3>
-                  <p className="text-neutral-300 text-xs sm:text-sm line-clamp-2">
-                    {item.caption}
-                  </p>
+                {/* Expand Hover Icon */}
+                <div className="absolute bottom-4 right-4 z-10 w-9 h-9 rounded-full bg-white/95 text-neutral-700 border border-neutral-200/80 flex items-center justify-center shadow-sm opacity-0 group-hover:opacity-100 group-hover:scale-100 scale-90 group-hover:text-[#0066CC] transition-all duration-300">
+                  <Maximize2 className="w-4 h-4" />
                 </div>
+              </div>
+
+              {/* Card Meta & Caption */}
+              <div className="p-5 sm:p-6 space-y-2 bg-white">
+                <h3 className="text-neutral-900 text-base sm:text-lg font-bold tracking-tight group-hover:text-[#0066CC] transition-colors">
+                  {item.title}
+                </h3>
+                <p className="text-neutral-600 text-xs sm:text-sm leading-relaxed line-clamp-2">
+                  {item.caption}
+                </p>
               </div>
             </div>
           );
@@ -138,10 +142,10 @@ export const AbrusLightbox: React.FC<AbrusLightboxProps> = ({ items }) => {
           {/* Top control bar */}
           <div className="absolute top-4 left-4 right-4 sm:top-6 sm:left-6 sm:right-6 flex items-center justify-between z-20 pointer-events-auto">
             <div className="flex items-center gap-3">
-              <span className="px-3 py-1 rounded-full bg-white/10 text-white text-xs font-medium tracking-wide backdrop-blur-md border border-white/15">
+              <span className="px-3 py-1 rounded-full bg-white/10 text-white text-xs font-semibold tracking-wide backdrop-blur-md border border-white/15">
                 {activeIdx! + 1} / {items.length}
               </span>
-              <span className="hidden sm:inline-block text-neutral-300 text-sm font-medium">
+              <span className="hidden sm:inline-block text-neutral-200 text-sm font-medium">
                 {currentItem.title}
               </span>
             </div>
@@ -194,7 +198,7 @@ export const AbrusLightbox: React.FC<AbrusLightboxProps> = ({ items }) => {
             </>
           )}
 
-          {/* Image Container */}
+          {/* Image Container with 100% object-contain */}
           <div className="relative max-w-5xl max-h-[82vh] w-full flex flex-col items-center justify-center overflow-auto rounded-xl p-2">
             <img
               src={currentItem.src}
@@ -205,7 +209,7 @@ export const AbrusLightbox: React.FC<AbrusLightboxProps> = ({ items }) => {
               onClick={() => setIsZoomed(!isZoomed)}
             />
             {currentItem.caption && (
-              <p className="mt-3 text-center text-xs sm:text-sm text-neutral-300 max-w-2xl px-4 py-1.5 rounded-full bg-white/5 backdrop-blur-sm border border-white/10">
+              <p className="mt-3 text-center text-xs sm:text-sm text-neutral-200 max-w-2xl px-4 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/15">
                 {currentItem.caption}
               </p>
             )}
@@ -215,4 +219,5 @@ export const AbrusLightbox: React.FC<AbrusLightboxProps> = ({ items }) => {
     </div>
   );
 };
+
 export default AbrusLightbox;

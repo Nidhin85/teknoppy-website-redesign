@@ -1,12 +1,9 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import AbrusStickyNav from '../../components/case-study/AbrusStickyNav';
+import CaseStudyTemplate from '../../components/case-study/CaseStudyTemplate.astro';
 import AbrusInteractiveIA from '../../components/case-study/AbrusInteractiveIA';
 import AbrusLightbox, { type GalleryItem } from '../../components/case-study/AbrusLightbox';
-import AbrusFAQ, { faqsData } from '../../components/case-study/AbrusFAQ';
-import site from '../../data/site.json';
+import CaseStudyFAQ from '../../components/case-study/CaseStudyFAQ';
+import { faqsData } from '../../components/case-study/AbrusFAQ';
 import { 
   Shield, 
   Clock, 
@@ -14,27 +11,31 @@ import {
   Search, 
   CheckCircle2, 
   Layers, 
-  ChevronRight, 
   FileText, 
   Building2, 
   Sparkles,
-  Phone, 
-  MessageCircle,
-  Mail,
-  ExternalLink,
-  Lock,
-  Coins,
-  ArrowRight,
-  TrendingUp,
-  Zap,
-  Globe2
+  Coins
 } from 'lucide-react';
 
 const pageTitle = "Abrus Krishna Finance: WordPress Website Design for a KML-Registered Gold Loan Company in Guruvayoor | Teknoppy Case Study";
 const pageDescription = "How Teknoppy built abruskrishna.com on WordPress for a KML-registered Kerala gold loan and micro-finance company in Guruvayoor: 9 dedicated loan pages, regulatory trust integration, local search strategy, and deliberate product separation.";
 const canonicalURL = "https://teknoppy.com/case-studies/abrus-krishna-finance/";
 
-// Gallery data for Lightbox
+// Sub-navigation anchors
+const abrusNavItems = [
+  { id: 'overview', label: 'Overview' },
+  { id: 'challenges', label: 'Challenges' },
+  { id: 'objectives', label: 'Objectives' },
+  { id: 'strategy', label: 'Strategy' },
+  { id: 'architecture', label: 'Architecture' },
+  { id: 'comparison', label: 'Product Focus' },
+  { id: 'journey', label: 'Borrower Journey' },
+  { id: 'compliance', label: 'Compliance' },
+  { id: 'gallery', label: 'Showcase' },
+  { id: 'faq', label: 'FAQ' },
+];
+
+// Gallery data for Lightbox (100% full screenshot visibility)
 const galleryItems: GalleryItem[] = [
   {
     id: 'hero-ui',
@@ -59,1359 +60,939 @@ const galleryItems: GalleryItem[] = [
   }
 ];
 
-// Structured Data for Article & FAQ
-const schemaArticle = {
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "Abrus Krishna Finance: WordPress Website Design for a KML-Registered Gold Loan Company in Guruvayoor",
-  "description": pageDescription,
-  "image": "https://teknoppy.com/case-studies/abruskrishna.webp",
-  "author": {
-    "@type": "Person",
-    "name": "Sanal Edison",
-    "jobTitle": "Digital Strategist",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Teknoppy"
-    }
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Teknoppy",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://teknoppy.com/logo.svg"
-    }
-  },
-  "mainEntityOfPage": canonicalURL,
-  "about": {
-    "@type": "FinancialService",
-    "name": "Abrus Krishna Finance",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Guruvayoor",
-      "addressRegion": "Kerala",
-      "addressCountry": "India"
-    }
+// Schema About entity
+const schemaAbout = {
+  type: "FinancialService",
+  name: "Abrus Krishna Finance",
+  address: {
+    locality: "Guruvayoor",
+    region: "Kerala",
+    country: "India"
   }
-};
-
-const schemaFAQ = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": faqsData.map(item => ({
-    "@type": "Question",
-    "name": item.question,
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": item.answer
-    }
-  }))
 };
 ---
 
-<Layout title={pageTitle} description={pageDescription} image="/case-studies/abruskrishna.webp">
-  <Fragment slot="head">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-    
-    <script type="application/ld+json" set:html={JSON.stringify(schemaArticle)} />
-    <script type="application/ld+json" set:html={JSON.stringify(schemaFAQ)} />
-  </Fragment>
+<CaseStudyTemplate
+  metaTitle={pageTitle}
+  metaDescription={pageDescription}
+  canonicalURL={canonicalURL}
+  heroImage="/case-studies/abruskrishna.webp"
+  heroImageAlt="Abrus Krishna Finance WordPress Website Design Showcase by Teknoppy"
+  schemaType="TechArticle"
+  schemaAbout={schemaAbout}
+  clientName="Abrus Krishna Finance"
+  categoryTag="Fintech & Microfinance / WordPress Engineering"
+  tagBadge="Teknoppy Flagship Case Study"
+  title="WordPress Website Design for a KML-Registered Gold Loan Company in Guruvayoor"
+  storyLead="How Teknoppy architected abruskrishna.com around search intent, regulatory trust under the Kerala Money-Lenders Act, 1958, and deliberate separation between nine distinct loan products."
+  industry="Gold Loans & Micro-Finance (KML-Registered Lending)"
+  location="Guruvayoor, Thrissur District, Kerala"
+  services="Website Design, WordPress Development, Information Architecture, SEO"
+  platform="WordPress (Elementor Pro)"
+  liveWebsite="abruskrishna.com"
+  liveWebsiteUrl="https://abruskrishna.com"
+  heroHighlights={[
+    "9 Dedicated Search-Intent Pages",
+    "15–30 Min In-Branch Approval",
+    "KML Regulatory Compliance Core"
+  ]}
+  navItems={abrusNavItems}
+  faqs={faqsData}
+  ctaHeadline="Need a website for your gold loan, micro-finance, or lending business that separates your products clearly and builds regulatory trust into every page?"
+>
 
-  <!-- Global Header with solid background -->
-  <Header forceSolidBg={true} />
-
-  <main class="bg-[#05070B] text-slate-100 selection:bg-indigo-500/30 selection:text-indigo-200 overflow-x-hidden pt-20 lg:pt-24 font-sans">
-    
-    <!-- =========================================================================
-        01. HERO SECTION (DARK INK & INDIGO DESIGN SYSTEM)
-        ========================================================================= -->
-    <section id="project-hero" class="relative pt-12 pb-16 md:pt-18 md:pb-24 overflow-hidden border-b border-white/[0.08]">
-      {/* Atmospheric Ambient Lighting */}
-      <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(99,102,241,0.18),transparent_50%),radial-gradient(circle_at_80%_80%,rgba(56,189,248,0.12),transparent_50%)] pointer-events-none"></div>
-      <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.025)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none"></div>
-
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8">
-        
-        {/* Breadcrumb & Case Study Marker */}
-        <div class="reveal-on-scroll flex flex-wrap items-center justify-between gap-4">
-          <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-slate-400">
-            <a href="/" class="hover:text-indigo-400 transition-colors">Home</a>
-            <span>/</span>
-            <a href="/case-study/" class="hover:text-indigo-400 transition-colors">Case Studies</a>
-            <span>/</span>
-            <span class="text-white font-medium">Abrus Krishna Finance</span>
-          </div>
-
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-xs font-bold uppercase tracking-wider shadow-sm backdrop-blur-md">
-            <span class="relative flex h-2 w-2">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
-            </span>
-            Teknoppy Flagship Case Study
-          </div>
+  {/* =========================================================================
+      01. PROJECT OVERVIEW & INSTITUTIONAL CONTEXT
+      ========================================================================= */}
+  <section id="overview" class="reveal-on-scroll scroll-mt-28">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+      
+      {/* Left Column: Section Marker & Editorial Callout */}
+      <div class="lg:col-span-5 space-y-6 lg:sticky lg:top-28">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200/70 text-[#0066CC] text-xs font-bold uppercase tracking-wider">
+          <Building2 className="w-3.5 h-3.5 text-[#0066CC]" />
+          Institutional Context
         </div>
 
-        {/* Hero Title & Story Lead */}
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-end">
-          <div class="lg:col-span-8 space-y-6">
-            <div class="reveal-on-scroll reveal-delay-1 inline-block px-3 py-1 rounded-md bg-indigo-500/15 border border-indigo-500/30 text-indigo-300 text-xs sm:text-sm font-bold tracking-wide uppercase">
-              Financial Services & Gold Loan Architecture
-            </div>
+        <h2 class="text-2xl sm:text-4xl lg:text-5xl text-neutral-900 font-extrabold tracking-tight leading-tight">
+          A website that carries the trust built by the physical branch since 2018.
+        </h2>
 
-            <h1 class="reveal-on-scroll reveal-delay-2 text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.08]">
-              WordPress Website Design for a <span class="bg-gradient-to-r from-white via-indigo-100 to-indigo-400 bg-clip-text text-transparent">KML-Registered</span> Gold Loan Company in Guruvayoor
-            </h1>
-
-            <p class="reveal-on-scroll reveal-delay-3 text-base sm:text-lg text-slate-300 font-normal leading-[1.6] max-w-3xl">
-              How Teknoppy architected <strong class="font-semibold text-white">abruskrishna.com</strong> around search intent, regulatory trust under the Kerala Money-Lenders Act, 1958, and deliberate separation between nine distinct loan products.
-            </p>
-          </div>
-
-          {/* Project Metadata Card */}
-          <div class="reveal-on-scroll reveal-delay-3 lg:col-span-4 bg-[#0D1424]/90 rounded-2xl p-6 sm:p-7 border border-white/[0.1] shadow-2xl space-y-5 backdrop-blur-xl">
-            <div class="flex items-center justify-between border-b border-white/[0.08] pb-4">
-              <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Client</span>
-              <span class="text-sm font-bold text-white">Abrus Krishna Finance</span>
-            </div>
-
-            <div class="space-y-3.5 text-xs sm:text-sm">
-              <div class="flex justify-between gap-4">
-                <span class="text-slate-400">Industry</span>
-                <span class="font-semibold text-right text-slate-200">Gold Loans & Micro-Finance (KML-Registered Lending)</span>
-              </div>
-              <div class="flex justify-between gap-4">
-                <span class="text-slate-400">Location</span>
-                <span class="font-semibold text-right text-slate-200">Guruvayoor, Thrissur District, Kerala</span>
-              </div>
-              <div class="flex justify-between gap-4">
-                <span class="text-slate-400">Platform</span>
-                <span class="font-semibold text-right text-slate-200">WordPress (Elementor)</span>
-              </div>
-              <div class="flex justify-between gap-4">
-                <span class="text-slate-400">Services</span>
-                <span class="font-semibold text-right text-slate-200">Website Design, WordPress Development, Information Architecture, SEO</span>
-              </div>
-              <div class="flex justify-between gap-4 pt-2 border-t border-white/[0.08]">
-                <span class="text-slate-400">Live URL</span>
-                <a 
-                  href="https://abruskrishna.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  class="font-bold text-indigo-400 hover:text-indigo-300 hover:underline flex items-center gap-1"
-                >
-                  abruskrishna.com <ExternalLink className="w-3.5 h-3.5" />
-                </a>
-              </div>
-            </div>
-          </div>
+        <div class="p-6 rounded-2xl bg-[#F8FAFC] border border-neutral-200/80 shadow-xs space-y-3">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#0066CC]">Key Characteristic</span>
+          <p class="text-sm text-neutral-600 leading-relaxed font-normal">
+            As a secured, collateral-backed lender operating under a state licensing framework, Abrus Krishna Finance carries obligations most local businesses don't: interest rates, foreclosure terms, KYC verification, and customer data handling all sit under statutory KML regulation.
+          </p>
         </div>
-
-        {/* Hero Showcase Visual Device Mockup */}
-        <div class="reveal-on-scroll relative rounded-3xl overflow-hidden border border-white/[0.12] bg-[#070A12] shadow-2xl">
-          {/* Browser Bar */}
-          <div class="px-5 py-3.5 bg-[#0A0F1C] border-b border-white/[0.08] flex items-center justify-between gap-4 backdrop-blur-md">
-            <div class="flex items-center gap-2">
-              <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
-              <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
-              <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
-            </div>
-
-            <div class="flex items-center gap-2 px-4 py-1 rounded-full bg-white/[0.05] text-[11px] text-slate-400 font-mono border border-white/[0.08] max-w-sm w-full justify-center">
-              <Lock className="w-3 h-3 text-emerald-400" />
-              <span>https://abruskrishna.com</span>
-            </div>
-
-            <div class="text-[11px] text-slate-400 font-semibold hidden sm:block font-mono">
-              WordPress • Elementor
-            </div>
-          </div>
-
-          {/* Hero Image */}
-          <div class="relative group">
-            <img 
-              src="/case-studies/abruskrishna.webp" 
-              alt="Abrus Krishna Finance WordPress Website Design Showcase" 
-              class="w-full h-auto max-h-[640px] object-cover object-top"
-              loading="eager"
-            />
-            
-            {/* Floating Highlights Strip */}
-            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#05070B] via-[#05070B]/80 to-transparent p-6 sm:p-10 pt-16 flex flex-wrap items-center justify-between gap-4">
-              <div class="flex flex-wrap items-center gap-3">
-                <span class="px-3.5 py-1.5 rounded-full text-xs font-bold bg-white/10 text-white backdrop-blur-md border border-white/20">
-                  9 Dedicated Search-Intent Pages
-                </span>
-                <span class="px-3.5 py-1.5 rounded-full text-xs font-bold bg-white/10 text-white backdrop-blur-md border border-white/20">
-                  15–30 Minute In-Branch Approval
-                </span>
-                <span class="px-3.5 py-1.5 rounded-full text-xs font-bold bg-white/10 text-white backdrop-blur-md border border-white/20">
-                  KML Regulatory Compliance Core
-                </span>
-              </div>
-
-              <a 
-                href="#overview" 
-                class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white text-xs font-bold transition-all shadow-lg hover:shadow-indigo-500/30"
-              >
-                Read Architectural Analysis
-                <ArrowRight className="w-3.5 h-3.5" />
-              </a>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </section>
 
-    <!-- =========================================================================
-        02. STICKY SUBNAVIGATION & PROGRESS BAR
-        ========================================================================= -->
-    <AbrusStickyNav client:load />
+      {/* Right Column: Narrative Body & At a Glance */}
+      <div class="lg:col-span-7 space-y-8 text-neutral-600 text-base sm:text-lg leading-relaxed">
+        <div class="space-y-5">
+          <h3 class="text-2xl sm:text-3xl font-bold text-neutral-900 tracking-tight">
+            About Abrus Krishna Finance
+          </h3>
+          
+          <p>
+            Abrus Krishna Finance is a <strong class="text-neutral-900 font-semibold">Kerala Money-Lenders Act, 1958 (KML) registered lending institution</strong> headquartered near Thaikad, Guruvayoor. Operating in the financial sector since 2018, the company provides gold loans, doorstep gold loans, and a range of micro business, personal, home, and consumer goods loans to individuals, families, and small business owners across the region, working through KML-compliant agreements and authorised partner shops.
+          </p>
 
-    <!-- =========================================================================
-        03. PROJECT OVERVIEW & CONTEXT
-        ========================================================================= -->
-    <section id="overview" class="py-20 md:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-        
-        {/* Left Column: Section Marker & Dark Editorial Callout */}
-        <div class="lg:col-span-5 space-y-6 lg:sticky lg:top-28">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.05] border border-white/[0.08] text-indigo-400 text-xs font-bold uppercase tracking-wider">
-            <Building2 className="w-3.5 h-3.5 text-indigo-400" />
-            Institutional Context
-          </div>
+          <p>
+            Every borrower has reason to check a lender's legitimacy before pledging gold jewelry or signing an agreement. That combination — <strong class="text-neutral-900 font-semibold">nine distinct loan pages, a regulated operating environment, and a customer base that includes many first-time borrowers</strong> — made this brief unusually specific.
+          </p>
 
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl text-white font-extrabold tracking-tight leading-tight">
-            A website that carries the trust built by the physical branch since 2018.
-          </h2>
-
-          <div class="p-6 rounded-2xl bg-[#0D1424]/90 border border-white/[0.08] shadow-xl space-y-3">
-            <span class="text-xs font-bold uppercase tracking-widest text-indigo-400">Key Characteristic</span>
-            <p class="text-sm text-slate-300 leading-relaxed font-normal">
-              As a secured, collateral-backed lender operating under a state licensing framework, Abrus Krishna Finance carries obligations most local businesses don't: interest rates, foreclosure terms, KYC verification, and customer data handling all sit under statutory KML regulation.
-            </p>
-          </div>
+          <p>
+            It wasn't a generic &ldquo;get us online&rdquo; project; it was a request for a website that could carry the exact same trust the physical branch had built since 2018.
+          </p>
         </div>
 
-        {/* Right Column: Narrative Body & At a Glance */}
-        <div class="lg:col-span-7 space-y-8 text-slate-300 text-base sm:text-lg leading-relaxed">
-          <div class="space-y-5">
-            <h3 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">
-              About Abrus Krishna Finance
-            </h3>
-            
-            <p>
-              Abrus Krishna Finance is a <strong class="text-white font-semibold">Kerala Money-Lenders Act, 1958 (KML) registered lending institution</strong> headquartered near Thaikad, Guruvayoor. Operating in the financial sector since 2018, the company provides gold loans, doorstep gold loans, and a range of micro business, personal, home, and consumer goods loans to individuals, families, and small business owners across the region, working through KML-compliant agreements and authorised partner shops.
-            </p>
+        {/* Key Facts / At a Glance */}
+        <div class="pt-4">
+          <h4 class="text-xs font-mono font-bold uppercase tracking-widest text-neutral-500 mb-4">
+            Project Snapshot • At a Glance
+          </h4>
 
-            <p>
-              Every borrower has reason to check a lender's legitimacy before pledging gold jewelry or signing an agreement. That combination — <strong class="text-white font-semibold">nine distinct loan pages, a regulated operating environment, and a customer base that includes many first-time borrowers</strong> — made this brief unusually specific.
-            </p>
-
-            <p>
-              It wasn't a generic &ldquo;get us online&rdquo; project; it was a request for a website that could carry the exact same trust the physical branch had built since 2018.
-            </p>
-          </div>
-
-          {/* Key Facts / At a Glance */}
-          <div class="pt-6">
-            <h4 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4">
-              Project Snapshot • At a Glance
-            </h4>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-              {[
-                { title: "9 Dedicated Loan Pages", desc: "Each built around its own distinct search intent without generic bundling." },
-                { title: "KML Compliance as a First-Class Page", desc: "Positioned prominently as core trust content rather than a hidden footer disclaimer." },
-                { title: "Gold Loan vs Doorstep Gold Loan Separation", desc: "Kept deliberately distinct to prevent internal search keyword competition." },
-                { title: "15–30 Minute Approval Process", desc: "Realistic, rapid approval timing laid out upfront on the homepage." },
-                { title: "Dual Spelling Local Strategy", desc: "Covering both 'Guruvayoor' and 'Guruvayur' natural search queries." }
-              ].map((item, i) => (
-                <div key={i} class={`p-4 rounded-xl border border-white/[0.08] bg-[#0C1220]/90 shadow-sm ${i === 4 ? 'sm:col-span-2' : ''}`}>
-                  <div class="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
-                    <div>
-                      <h5 class="text-sm font-bold text-white mb-1">{item.title}</h5>
-                      <p class="text-xs text-slate-400 leading-normal">{item.desc}</p>
-                    </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+            {[
+              { title: "9 Dedicated Loan Pages", desc: "Each built around its own distinct search intent without generic bundling." },
+              { title: "KML Compliance as a First-Class Page", desc: "Positioned prominently as core trust content rather than a hidden footer disclaimer." },
+              { title: "Gold Loan vs Doorstep Gold Loan Separation", desc: "Kept deliberately distinct to prevent internal search keyword competition." },
+              { title: "15–30 Minute Approval Process", desc: "Realistic, rapid approval timing laid out upfront on the homepage." },
+              { title: "Dual Spelling Local Strategy", desc: "Covering both 'Guruvayoor' and 'Guruvayur' natural search queries." }
+            ].map((item, i) => (
+              <div key={i} class={`p-4 sm:p-5 rounded-2xl border border-neutral-200/80 bg-white shadow-xs hover:border-[#0066CC]/40 transition-colors ${i === 4 ? 'sm:col-span-2' : ''}`}>
+                <div class="flex items-start gap-3.5">
+                  <CheckCircle2 className="w-5 h-5 text-[#0066CC] shrink-0 mt-0.5" />
+                  <div>
+                    <h5 class="text-sm sm:text-base font-bold text-neutral-900 mb-1">{item.title}</h5>
+                    <p class="text-xs sm:text-sm text-neutral-600 leading-normal">{item.desc}</p>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
-
       </div>
-    </section>
 
-    <!-- =========================================================================
-        04. THE CHALLENGE (5-CARD DIAGNOSTIC GRID)
-        ========================================================================= -->
-    <section id="challenges" class="py-20 md:py-28 bg-[#070A12] text-white relative overflow-hidden border-y border-white/[0.08] reveal-on-scroll">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-12">
-        <div class="max-w-3xl space-y-4">
-          <span class="text-xs font-bold uppercase tracking-widest text-indigo-400">
-            Diagnostic Assessment
-          </span>
-          <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
-            The Challenges Before Redesign
-          </h2>
-          <p class="text-slate-400 text-base sm:text-lg leading-relaxed">
-            Before the redesign, Abrus Krishna Finance's online presence did not reflect the breadth or the trustworthiness of the business. Five core structural obstacles stood in the way of borrower trust and search visibility.
+    </div>
+  </section>
+
+  {/* =========================================================================
+      02. THE CHALLENGE (5-CARD DIAGNOSTIC GRID)
+      ========================================================================= */}
+  <section id="challenges" class="reveal-on-scroll scroll-mt-28 relative rounded-3xl p-8 sm:p-10 md:p-12 bg-[#F8FAFC] border border-neutral-200/80 shadow-xs space-y-10">
+    <div class="max-w-3xl space-y-4">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-[#0066CC] border border-blue-200/70 text-xs font-bold uppercase tracking-wider">
+        Diagnostic Assessment
+      </div>
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight leading-tight">
+        The Challenges Before Redesign
+      </h2>
+      <p class="text-neutral-600 text-base sm:text-lg leading-relaxed">
+        Before the redesign, Abrus Krishna Finance's online presence did not reflect the breadth or the trustworthiness of the business. Five core structural obstacles stood in the way of borrower trust and search visibility.
+      </p>
+    </div>
+
+    {/* 5 Challenges Grid */}
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+      
+      {/* Card 1 */}
+      <div class="p-6 sm:p-7 rounded-2xl bg-white border border-neutral-200/80 hover:border-[#0066CC]/40 hover:shadow-md transition-all flex flex-col justify-between group shadow-xs">
+        <div class="space-y-4">
+          <div class="flex items-center justify-between border-b border-neutral-100 pb-3">
+            <span class="font-mono text-xs text-[#0066CC] font-bold">CHALLENGE 01</span>
+            <Layers className="w-5 h-5 text-[#0066CC]" />
+          </div>
+          <h3 class="text-lg sm:text-xl font-bold text-neutral-900 tracking-tight leading-snug group-hover:text-[#0066CC] transition-colors">
+            Nine loan products, no clear separation
+          </h3>
+          <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+            Gold Loan, Gold Loan in Guruvayoor, Doorstep Gold Loan, Business Loan in Guruvayoor, Business & Micro Enterprise Loan, Micro Personal Loan, Micro Home Loan, Micro Finance, and Consumer Goods Loan needed to exist as their own pages instead of being bundled into one generic loans/services page. A borrower searching for one specific product had no direct path to the information relevant to them.
           </p>
         </div>
-
-        {/* 5 Challenges Grid */}
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
-          
-          {/* Card 1 */}
-          <div class="p-7 rounded-2xl bg-[#0C1220]/90 border border-white/[0.08] hover:border-indigo-500/40 transition-all flex flex-col justify-between group shadow-lg">
-            <div class="space-y-4">
-              <div class="flex items-center justify-between border-b border-white/[0.06] pb-4">
-                <span class="font-mono text-xs text-indigo-400 font-bold">CHALLENGE 01</span>
-                <Layers className="w-5 h-5 text-indigo-400" />
-              </div>
-              <h3 class="text-xl font-bold text-white tracking-tight leading-snug group-hover:text-indigo-300 transition-colors">
-                Nine loan products, no clear separation
-              </h3>
-              <p class="text-sm text-slate-400 leading-relaxed">
-                Gold Loan, Gold Loan in Guruvayoor, Doorstep Gold Loan, Business Loan in Guruvayoor, Business & Micro Enterprise Loan, Micro Personal Loan, Micro Home Loan, Micro Finance, and Consumer Goods Loan needed to exist as their own pages instead of being bundled into one generic loans/services page. A borrower searching for one specific product had no direct path to the information relevant to them.
-              </p>
-            </div>
-            <div class="mt-6 pt-4 border-t border-white/[0.06] text-[11px] font-mono text-slate-500">
-              Impact: High bounce rate & lost specific search intent
-            </div>
-          </div>
-
-          {/* Card 2 */}
-          <div class="p-7 rounded-2xl bg-[#0C1220]/90 border border-white/[0.08] hover:border-indigo-500/40 transition-all flex flex-col justify-between group shadow-lg">
-            <div class="space-y-4">
-              <div class="flex items-center justify-between border-b border-white/[0.06] pb-4">
-                <span class="font-mono text-xs text-indigo-400 font-bold">CHALLENGE 02</span>
-                <Shield className="w-5 h-5 text-sky-400" />
-              </div>
-              <h3 class="text-xl font-bold text-white tracking-tight leading-snug group-hover:text-indigo-300 transition-colors">
-                Compliance and trust signals were missing
-              </h3>
-              <p class="text-sm text-slate-400 leading-relaxed">
-                There was no dedicated KML Registration & Compliance page, and no FAQ content addressing the questions a first-time borrower actually has: whether a branch visit is mandatory, how foreclosure works, how repayments are collected, and how personal and financial data is protected. For a regulated lender, this content is the foundation of borrower trust.
-              </p>
-            </div>
-            <div class="mt-6 pt-4 border-t border-white/[0.06] text-[11px] font-mono text-slate-500">
-              Impact: Hesitation among first-time borrowers
-            </div>
-          </div>
-
-          {/* Card 3 */}
-          <div class="p-7 rounded-2xl bg-[#0C1220]/90 border border-white/[0.08] hover:border-indigo-500/40 transition-all flex flex-col justify-between group shadow-lg">
-            <div class="space-y-4">
-              <div class="flex items-center justify-between border-b border-white/[0.06] pb-4">
-                <span class="font-mono text-xs text-indigo-400 font-bold">CHALLENGE 03</span>
-                <Coins className="w-5 h-5 text-amber-400" />
-              </div>
-              <h3 class="text-xl font-bold text-white tracking-tight leading-snug group-hover:text-indigo-300 transition-colors">
-                Gold Loan and Doorstep Gold Loan needed clear separation
-              </h3>
-              <p class="text-sm text-slate-400 leading-relaxed">
-                These two products are closely related and searched for in similar ways. Without a deliberate content structure, the two pages would end up targeting the same terms and competing with each other instead of each ranking for its own distinct intent — one branch-based, one home-collection.
-              </p>
-            </div>
-            <div class="mt-6 pt-4 border-t border-white/[0.06] text-[11px] font-mono text-slate-500">
-              Impact: Internal search competition & keyword overlap
-            </div>
-          </div>
-
-          {/* Card 4 */}
-          <div class="p-7 rounded-2xl bg-[#0C1220]/90 border border-white/[0.08] hover:border-indigo-500/40 transition-all flex flex-col justify-between group shadow-lg">
-            <div class="space-y-4">
-              <div class="flex items-center justify-between border-b border-white/[0.06] pb-4">
-                <span class="font-mono text-xs text-indigo-400 font-bold">CHALLENGE 04</span>
-                <Clock className="w-5 h-5 text-emerald-400" />
-              </div>
-              <h3 class="text-xl font-bold text-white tracking-tight leading-snug group-hover:text-indigo-300 transition-colors">
-                No visible borrower journey
-              </h3>
-              <p class="text-sm text-slate-400 leading-relaxed">
-                The steps between a customer's first enquiry and receiving their loan — contact/visit, document verification, approval, disbursement — weren't laid out anywhere. First-time borrowers had no way to know what to expect, including how fast the process actually moves.
-              </p>
-            </div>
-            <div class="mt-6 pt-4 border-t border-white/[0.06] text-[11px] font-mono text-slate-500">
-              Impact: Customer drop-off before initial contact
-            </div>
-          </div>
-
-          {/* Card 5 */}
-          <div class="p-7 rounded-2xl bg-[#0C1220]/90 border border-white/[0.08] hover:border-indigo-500/40 transition-all flex flex-col justify-between group shadow-lg md:col-span-2 lg:col-span-2">
-            <div class="space-y-4">
-              <div class="flex items-center justify-between border-b border-white/[0.06] pb-4">
-                <span class="font-mono text-xs text-indigo-400 font-bold">CHALLENGE 05</span>
-                <MapPin className="w-5 h-5 text-indigo-400" />
-              </div>
-              <h3 class="text-xl font-bold text-white tracking-tight leading-snug group-hover:text-indigo-300 transition-colors">
-                Local search intent was underused
-              </h3>
-              <p class="text-sm text-slate-400 leading-relaxed">
-                Guruvayoor-specific searches — <em class="text-slate-200">"gold loan Guruvayoor,"</em> <em class="text-slate-200">"business loan Guruvayoor"</em> — weren't reflected in the site's structure or page titles, leaving local intent unaddressed even though the branch is a local, walk-in business built on neighbourhood trust.
-              </p>
-            </div>
-            <div class="mt-6 pt-4 border-t border-white/[0.06] text-[11px] font-mono text-slate-500">
-              Impact: Loss of walk-in search traffic to local competitors
-            </div>
-          </div>
-
+        <div class="mt-5 pt-3.5 border-t border-neutral-100 text-[11px] font-mono text-neutral-500">
+          Impact: High bounce rate & lost specific search intent
         </div>
       </div>
-    </section>
 
-    <!-- =========================================================================
-        05. PROJECT OBJECTIVES & TRANSFORMATION STORY
-        ========================================================================= -->
-    <section id="objectives" class="py-20 md:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
-      <div class="space-y-16">
+      {/* Card 2 */}
+      <div class="p-6 sm:p-7 rounded-2xl bg-white border border-neutral-200/80 hover:border-[#0066CC]/40 hover:shadow-md transition-all flex flex-col justify-between group shadow-xs">
+        <div class="space-y-4">
+          <div class="flex items-center justify-between border-b border-neutral-100 pb-3">
+            <span class="font-mono text-xs text-[#0066CC] font-bold">CHALLENGE 02</span>
+            <Shield className="w-5 h-5 text-sky-600" />
+          </div>
+          <h3 class="text-lg sm:text-xl font-bold text-neutral-900 tracking-tight leading-snug group-hover:text-[#0066CC] transition-colors">
+            Compliance and trust signals were missing
+          </h3>
+          <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+            There was no dedicated KML Registration & Compliance page, and no FAQ content addressing the questions a first-time borrower actually has: whether a branch visit is mandatory, how foreclosure works, how repayments are collected, and how personal and financial data is protected. For a regulated lender, this content is the foundation of borrower trust.
+          </p>
+        </div>
+        <div class="mt-5 pt-3.5 border-t border-neutral-100 text-[11px] font-mono text-neutral-500">
+          Impact: Hesitation among first-time borrowers
+        </div>
+      </div>
+
+      {/* Card 3 */}
+      <div class="p-6 sm:p-7 rounded-2xl bg-white border border-neutral-200/80 hover:border-[#0066CC]/40 hover:shadow-md transition-all flex flex-col justify-between group shadow-xs">
+        <div class="space-y-4">
+          <div class="flex items-center justify-between border-b border-neutral-100 pb-3">
+            <span class="font-mono text-xs text-[#0066CC] font-bold">CHALLENGE 03</span>
+            <Coins className="w-5 h-5 text-amber-600" />
+          </div>
+          <h3 class="text-lg sm:text-xl font-bold text-neutral-900 tracking-tight leading-snug group-hover:text-[#0066CC] transition-colors">
+            Gold Loan and Doorstep Gold Loan needed clear separation
+          </h3>
+          <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+            These two products are closely related and searched for in similar ways. Without a deliberate content structure, the two pages would end up targeting the same terms and competing with each other instead of each ranking for its own distinct intent — one branch-based, one home-collection.
+          </p>
+        </div>
+        <div class="mt-5 pt-3.5 border-t border-neutral-100 text-[11px] font-mono text-neutral-500">
+          Impact: Internal search competition & keyword overlap
+        </div>
+      </div>
+
+      {/* Card 4 */}
+      <div class="p-6 sm:p-7 rounded-2xl bg-white border border-neutral-200/80 hover:border-[#0066CC]/40 hover:shadow-md transition-all flex flex-col justify-between group shadow-xs">
+        <div class="space-y-4">
+          <div class="flex items-center justify-between border-b border-neutral-100 pb-3">
+            <span class="font-mono text-xs text-[#0066CC] font-bold">CHALLENGE 04</span>
+            <Clock className="w-5 h-5 text-emerald-600" />
+          </div>
+          <h3 class="text-lg sm:text-xl font-bold text-neutral-900 tracking-tight leading-snug group-hover:text-[#0066CC] transition-colors">
+            No visible borrower journey
+          </h3>
+          <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+            The steps between a customer's first enquiry and receiving their loan — contact/visit, document verification, approval, disbursement — weren't laid out anywhere. First-time borrowers had no way to know what to expect, including how fast the process actually moves.
+          </p>
+        </div>
+        <div class="mt-5 pt-3.5 border-t border-neutral-100 text-[11px] font-mono text-neutral-500">
+          Impact: Customer drop-off before initial contact
+        </div>
+      </div>
+
+      {/* Card 5 */}
+      <div class="p-6 sm:p-7 rounded-2xl bg-white border border-neutral-200/80 hover:border-[#0066CC]/40 hover:shadow-md transition-all flex flex-col justify-between group shadow-xs md:col-span-2 lg:col-span-2">
+        <div class="space-y-4">
+          <div class="flex items-center justify-between border-b border-neutral-100 pb-3">
+            <span class="font-mono text-xs text-[#0066CC] font-bold">CHALLENGE 05</span>
+            <MapPin className="w-5 h-5 text-[#0066CC]" />
+          </div>
+          <h3 class="text-lg sm:text-xl font-bold text-neutral-900 tracking-tight leading-snug group-hover:text-[#0066CC] transition-colors">
+            Local search intent was underused
+          </h3>
+          <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+            Guruvayoor-specific searches — <em class="text-neutral-900 font-semibold">"gold loan Guruvayoor,"</em> <em class="text-neutral-900 font-semibold">"business loan Guruvayoor"</em> — weren't reflected in the site's structure or page titles, leaving local intent unaddressed even though the branch is a local, walk-in business built on neighbourhood trust.
+          </p>
+        </div>
+        <div class="mt-5 pt-3.5 border-t border-neutral-100 text-[11px] font-mono text-neutral-500">
+          Impact: Loss of walk-in search traffic to local competitors
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  {/* =========================================================================
+      03. PROJECT OBJECTIVES & TRANSFORMATION STORY
+      ========================================================================= */}
+  <section id="objectives" class="reveal-on-scroll scroll-mt-28 space-y-12">
+    {/* Section Heading */}
+    <div class="max-w-3xl space-y-4">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-[#0066CC] border border-blue-200/70 text-xs font-bold uppercase tracking-wider">
+        Project Objectives
+      </div>
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight leading-tight">
+        Five Core Objectives
+      </h2>
+      <p class="text-neutral-600 text-base sm:text-lg leading-relaxed">
+        Teknoppy's brief was to design and build a WordPress website that could accomplish five definitive goals:
+      </p>
+    </div>
+
+    {/* 5 Core Objectives */}
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {[
+        "Present all nine loan pages as distinct, individually optimized pages built around their own search intent",
+        "Make KML registration and compliance a visible, first-class part of the site rather than a footnote",
+        "Structure the Gold Loan and Doorstep Gold Loan pages around different search intent, so each could rank on its own terms",
+        "Lay out the borrower journey — including realistic approval timing — clearly enough that a first-time customer would know exactly what to expect",
+        "Reflect Guruvayoor-specific search intent in the pages where it mattered most, without turning every page into a location page"
+      ].map((item, i) => (
+        <div key={i} class={`p-5 rounded-2xl bg-white border border-neutral-200/80 shadow-xs hover:border-[#0066CC]/40 transition-colors flex items-start gap-3.5 ${i === 4 ? 'md:col-span-2 lg:col-span-2' : ''}`}>
+          <div class="w-7 h-7 rounded-lg bg-blue-50 border border-blue-200/70 flex items-center justify-center text-[#0066CC] font-mono text-xs font-bold shrink-0 mt-0.5">
+            0{i + 1}
+          </div>
+          <p class="text-xs sm:text-sm text-neutral-800 leading-relaxed font-medium">
+            {item}
+          </p>
+        </div>
+      ))}
+    </div>
+
+    {/* Before vs Strategy vs Delivered Comparison */}
+    <div class="rounded-3xl border border-neutral-200/80 bg-white overflow-hidden shadow-xs mt-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-neutral-200/80">
         
-        {/* Section Heading */}
-        <div class="max-w-3xl space-y-4">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-xs font-bold uppercase tracking-wider">
-            Project Objective
+        {/* BEFORE */}
+        <div class="p-8 sm:p-10 space-y-5 bg-rose-50/40">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
+            <span class="text-xs font-bold uppercase tracking-widest text-rose-700">Before Redesign</span>
           </div>
-          <h2 class="text-3xl sm:text-5xl text-white font-extrabold tracking-tight leading-tight">
-            Project Objective
-          </h2>
-          <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
-            Teknoppy's brief was to design and build a WordPress website that could:
-          </p>
+          <h3 class="text-lg sm:text-xl font-bold text-neutral-900">
+            Generic & Bundled Architecture
+          </h3>
+          <ul class="space-y-3.5 text-xs sm:text-sm text-neutral-600">
+            <li class="flex items-start gap-2.5">
+              <span class="text-rose-500 font-bold">✕</span>
+              <span>9 loan types squeezed into single generic services listing</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-rose-500 font-bold">✕</span>
+              <span>Compliance buried as an unhelpful footnote disclaimer</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-rose-500 font-bold">✕</span>
+              <span>Gold loan and doorstep gold loan competing for identical keywords</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-rose-500 font-bold">✕</span>
+              <span>Borrower timeline missing, creating hesitation around approval speed</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-rose-500 font-bold">✕</span>
+              <span>Zero targeting for Guruvayur locality and variant spelling</span>
+            </li>
+          </ul>
         </div>
 
-        {/* 5 Core Objectives directly from authoritative PDF */}
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {[
-            "Present all nine loan pages as distinct, individually optimized pages built around their own search intent",
-            "Make KML registration and compliance a visible, first-class part of the site rather than a footnote",
-            "Structure the Gold Loan and Doorstep Gold Loan pages around different search intent, so each could rank on its own terms",
-            "Lay out the borrower journey — including realistic approval timing — clearly enough that a first-time customer would know exactly what to expect",
-            "Reflect Guruvayoor-specific search intent in the pages where it mattered most, without turning every page into a location page"
-          ].map((item, i) => (
-            <div key={i} class={`p-5 rounded-2xl bg-[#0D1424]/90 border border-white/[0.08] shadow-lg flex items-start gap-3.5 ${i === 4 ? 'md:col-span-2 lg:col-span-2' : ''}`}>
-              <div class="w-7 h-7 rounded-lg bg-indigo-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-300 font-mono text-xs font-bold flex-shrink-0 mt-0.5">
-                0{i + 1}
-              </div>
-              <p class="text-xs sm:text-sm text-slate-200 leading-relaxed font-medium">
-                {item}
+        {/* STRATEGY */}
+        <div class="p-8 sm:p-10 space-y-5 bg-blue-50/40">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#0066CC]"></span>
+            <span class="text-xs font-bold uppercase tracking-widest text-[#0066CC]">Teknoppy Strategy</span>
+          </div>
+          <h3 class="text-lg sm:text-xl font-bold text-neutral-900">
+            Intent-Centric Architecture
+          </h3>
+          <ul class="space-y-3.5 text-xs sm:text-sm text-neutral-700">
+            <li class="flex items-start gap-2.5">
+              <span class="text-[#0066CC] font-bold">→</span>
+              <span>Structure URLs around user query intent, not internal hierarchy</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-[#0066CC] font-bold">→</span>
+              <span>Elevate KML regulation into core trust architecture and FAQ schema</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-[#0066CC] font-bold">→</span>
+              <span>Delineate branch transaction vs home collection value propositions</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-[#0066CC] font-bold">→</span>
+              <span>Publish 15–30 minute verified approval timeline on the homepage</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-[#0066CC] font-bold">→</span>
+              <span>Capture high-intent Guruvayoor & Guruvayur variations organically</span>
+            </li>
+          </ul>
+        </div>
+
+        {/* AFTER / DELIVERED */}
+        <div class="p-8 sm:p-10 space-y-5 bg-emerald-50/40">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+            <span class="text-xs font-bold uppercase tracking-widest text-emerald-700">Delivered Structure</span>
+          </div>
+          <h3 class="text-lg sm:text-xl font-bold text-neutral-900">
+            Authority & Conversion Ready
+          </h3>
+          <ul class="space-y-3.5 text-xs sm:text-sm text-neutral-700">
+            <li class="flex items-start gap-2.5">
+              <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+              <span>9 distinct, individually optimized pages with customized KYC & terms</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+              <span>First-class KML Registration & Compliance page with transparent terms</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+              <span>Cannibalization eliminated through differentiated content & headings</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+              <span>Visible 4-step borrower journey reducing drop-off before contact</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+              <span>Rank-ready for local low-volume, high-conversion commercial terms</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  {/* =========================================================================
+      04. INFORMATION ARCHITECTURE & INTERACTIVE 9 LOAN PAGES MATRIX
+      ========================================================================= */}
+  <section id="strategy" class="reveal-on-scroll scroll-mt-28 space-y-12">
+    <div id="architecture" class="scroll-mt-28 space-y-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+        <div class="lg:col-span-8 space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-[#0066CC] border border-blue-200/70 text-xs font-bold uppercase tracking-wider">
+            Information Architecture
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight leading-tight">
+            Built Around Search Intent, Not Internal Org Structure
+          </h2>
+          <p class="text-neutral-600 text-base sm:text-lg leading-relaxed">
+            Rather than mirroring how the business is organized internally, the site's structure was built around how a borrower actually searches. Someone looking for <em class="text-neutral-900 font-medium">"gold loan Guruvayoor"</em> has a different intent from someone comparing <em class="text-neutral-900 font-medium">"doorstep gold loan"</em> options, and both are different again from someone researching a <em class="text-neutral-900 font-medium">"micro business loan"</em> for a small enterprise.
+          </p>
+        </div>
+        <div class="lg:col-span-4 bg-[#F8FAFC] p-5 rounded-2xl border border-neutral-200/80 shadow-xs text-xs text-neutral-600 leading-relaxed">
+          <strong class="text-neutral-900 block mb-1 font-bold">Content Principle</strong>
+          Each loan page was given its own URL, with content written to answer the specific questions a borrower for that product would have — eligibility, required documents, and process — rather than generic loan copy repeated across pages.
+        </div>
+      </div>
+
+      {/* Interactive 9 Loan Pages Matrix Component (Standardized White Theme) */}
+      <AbrusInteractiveIA client:load />
+    </div>
+  </section>
+
+  {/* =========================================================================
+      05. PRODUCT SEPARATION: GOLD LOAN VS DOORSTEP GOLD LOAN
+      ========================================================================= */}
+  <section id="comparison" class="reveal-on-scroll scroll-mt-28 space-y-10">
+    <div class="max-w-3xl space-y-4">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-[#0066CC] border border-blue-200/70 text-xs font-bold uppercase tracking-wider">
+        Deliberate Product Differentiation
+      </div>
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight leading-tight">
+        Gold Loan vs Doorstep Gold Loan
+      </h2>
+      <p class="text-neutral-600 text-base sm:text-lg leading-relaxed">
+        Gold Loan and Doorstep Gold Loan are closely related products but serve distinctly different intents — one is a branch-based walk-in transaction, the other a home-collection service built around discretion and convenience.
+      </p>
+    </div>
+
+    {/* Split Screen Editorial Cards */}
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+      
+      {/* Branch-Based Card */}
+      <div class="rounded-3xl border border-neutral-200/80 bg-white p-8 sm:p-10 shadow-xs flex flex-col justify-between space-y-8 relative overflow-hidden group hover:border-[#0066CC]/40 transition-colors">
+        <div class="space-y-6">
+          <div class="flex items-center justify-between border-b border-neutral-100 pb-4">
+            <span class="text-xs font-bold uppercase tracking-widest text-[#0066CC] font-mono">Service Model A</span>
+            <span class="px-3 py-1 rounded-full text-xs font-bold bg-neutral-100 text-neutral-700">Branch-Based</span>
+          </div>
+
+          <div>
+            <h3 class="text-2xl sm:text-3xl font-bold text-neutral-900 tracking-tight">
+              Gold Loan
+            </h3>
+            <p class="text-sm text-neutral-500 mt-1">
+              Walk-in branch transaction for immediate liquidity
+            </p>
+          </div>
+
+          <div class="space-y-4 text-sm text-neutral-600">
+            <div class="p-4 rounded-xl bg-[#F8FAFC] border border-neutral-200/80 space-y-1">
+              <span class="text-xs font-bold text-[#0066CC] uppercase">Primary Borrower Intent</span>
+              <p class="font-medium text-neutral-800">
+                &ldquo;I want to visit the nearest branch near Thaikad, have my gold weighed in front of me, and walk out with immediate loan disbursement.&rdquo;
               </p>
+            </div>
+
+            <ul class="space-y-2.5">
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-[#0066CC] shrink-0" />
+                <span>In-person valuation at secure branch valuation desk</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-[#0066CC] shrink-0" />
+                <span>Instant physical gold vaulting under CCTV surveillance</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-[#0066CC] shrink-0" />
+                <span>15–30 minute total turnaround time</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-[#0066CC] shrink-0" />
+                <span>Immediate cash or direct bank/UPI settlement</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-neutral-100 text-xs text-neutral-500 font-mono">
+          Target SEO: Branch walk-in queries & local trust intent
+        </div>
+      </div>
+
+      {/* Doorstep Service Card */}
+      <div class="rounded-3xl border-2 border-blue-200/80 bg-blue-50/20 p-8 sm:p-10 shadow-xs flex flex-col justify-between space-y-8 relative overflow-hidden group hover:border-[#0066CC]/50 transition-colors">
+        <div class="space-y-6">
+          <div class="flex items-center justify-between border-b border-blue-100 pb-4">
+            <span class="text-xs font-bold uppercase tracking-widest text-[#0066CC] font-mono">Service Model B</span>
+            <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-100 text-[#0066CC]">Home-Collection</span>
+          </div>
+
+          <div>
+            <h3 class="text-2xl sm:text-3xl font-bold text-neutral-900 tracking-tight">
+              Doorstep Gold Loan
+            </h3>
+            <p class="text-sm text-neutral-500 mt-1">
+              Private, scheduled home collection built around convenience
+            </p>
+          </div>
+
+          <div class="space-y-4 text-sm text-neutral-600">
+            <div class="p-4 rounded-xl bg-white border border-blue-200/70 space-y-1">
+              <span class="text-xs font-bold text-[#0066CC] uppercase">Primary Borrower Intent</span>
+              <p class="font-medium text-neutral-800">
+                &ldquo;I want a confidential loan without visiting a branch in public; send an authorized lending officer with valuation equipment to my residence.&rdquo;
+              </p>
+            </div>
+
+            <ul class="space-y-2.5">
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-[#0066CC] shrink-0" />
+                <span>Appointment-based home or office appraisal</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-[#0066CC] shrink-0" />
+                <span>Certified mobile gold testing kit & calibrated scales</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-[#0066CC] shrink-0" />
+                <span>KYC & KML agreement signed on-site</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-[#0066CC] shrink-0" />
+                <span>Secure transit seal with real-time tracking</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-blue-100 text-xs text-neutral-500 font-mono">
+          Target SEO: Convenience queries & doorstep service intent
+        </div>
+      </div>
+
+    </div>
+
+    {/* Strategy Summary Note */}
+    <div class="p-6 rounded-2xl bg-[#F8FAFC] border border-neutral-200/80 text-sm text-neutral-700 leading-relaxed shadow-xs flex items-start gap-4">
+      <Sparkles className="w-5 h-5 text-[#0066CC] shrink-0 mt-0.5" />
+      <p>
+        <strong class="text-neutral-900 font-bold">Why the separation matters:</strong> We wrote each page around its own primary keyword and search intent, with distinct headings, FAQs, and calls to action. This prevents internal competition and ensures both pages reinforce the domain's topical authority for &ldquo;gold loan&rdquo; as a broader theme without cannibalizing each other.
+      </p>
+    </div>
+  </section>
+
+  {/* =========================================================================
+      06. THE BORROWER JOURNEY (4-STEP PROCESS TIMELINE)
+      ========================================================================= */}
+  <section id="journey" class="reveal-on-scroll scroll-mt-28 space-y-12">
+    <div class="max-w-3xl space-y-4">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-[#0066CC] border border-blue-200/70 text-xs font-bold uppercase tracking-wider">
+        Process Transparency
+      </div>
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight leading-tight">
+        The Borrower Journey: Measured in Minutes, Not Days
+      </h2>
+      <p class="text-neutral-600 text-base sm:text-lg leading-relaxed">
+        A four-step process — Contact/Visit, Document Verification, Approval, Disbursement — was designed into the homepage and repeated contextually across product pages. For a first-time borrower, seeing the full journey and knowing it moves in minutes reduces hesitation before they ever pick up the phone.
+      </p>
+    </div>
+
+    {/* Timeline Grid */}
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      {/* Step 1 */}
+      <div class="p-6 sm:p-7 rounded-2xl bg-white border border-neutral-200/80 shadow-xs space-y-4 relative hover:border-[#0066CC]/40 transition-colors">
+        <span class="font-mono text-xs font-bold text-neutral-400">STAGE 01</span>
+        <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-200/70 text-[#0066CC] flex items-center justify-center font-bold text-lg">
+          01
+        </div>
+        <h3 class="text-lg font-bold text-neutral-900">
+          Contact / Visit
+        </h3>
+        <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+          Borrower initiates contact via phone, WhatsApp, or walks directly into the Thaikad branch in Guruvayoor. Doorstep borrowers schedule a home appointment.
+        </p>
+      </div>
+
+      {/* Step 2 */}
+      <div class="p-6 sm:p-7 rounded-2xl bg-white border border-neutral-200/80 shadow-xs space-y-4 relative hover:border-[#0066CC]/40 transition-colors">
+        <span class="font-mono text-xs font-bold text-neutral-400">STAGE 02</span>
+        <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-200/70 text-[#0066CC] flex items-center justify-center font-bold text-lg">
+          02
+        </div>
+        <h3 class="text-lg font-bold text-neutral-900">
+          Document Verification
+        </h3>
+        <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+          Standard KYC verification (ID and address proof) alongside transparent, in-front-of-borrower gold valuation and appraisal under calibrated equipment.
+        </p>
+      </div>
+
+      {/* Step 3 (Featured Timing Highlight) */}
+      <div class="p-6 sm:p-7 rounded-2xl bg-gradient-to-b from-blue-50/80 to-white border-2 border-[#0066CC]/70 shadow-sm space-y-4 relative ring-2 ring-blue-500/10">
+        <div class="flex items-center justify-between">
+          <span class="font-mono text-xs font-bold text-[#0066CC]">STAGE 03 • KEY TIMING</span>
+          <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-[#0066CC] text-white">Rapid</span>
+        </div>
+        <div class="w-12 h-12 rounded-xl bg-[#0066CC] text-white flex items-center justify-center font-bold text-lg shadow-sm">
+          03
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-neutral-900">
+            Approval
+          </h3>
+          <p class="text-xs font-bold text-[#0066CC] mt-0.5">
+            Typically within 15–30 minutes
+          </p>
+        </div>
+        <p class="text-xs sm:text-sm text-neutral-700 leading-relaxed">
+          Approval completes within 15–30 minutes of valuation and verification, establishing loan eligibility without bureaucratic delays.
+        </p>
+      </div>
+
+      {/* Step 4 */}
+      <div class="p-6 sm:p-7 rounded-2xl bg-white border border-neutral-200/80 shadow-xs space-y-4 relative hover:border-[#0066CC]/40 transition-colors">
+        <span class="font-mono text-xs font-bold text-neutral-400">STAGE 04</span>
+        <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-200/70 text-[#0066CC] flex items-center justify-center font-bold text-lg">
+          04
+        </div>
+        <h3 class="text-lg font-bold text-neutral-900">
+          Disbursement
+        </h3>
+        <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+          Funds are disbursed immediately after signing the KML-compliant agreement via bank transfer, instant UPI, or direct cash collection.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  {/* =========================================================================
+      07. LOCAL SEARCH STRATEGY & DUAL-SPELLING COVERAGE
+      ========================================================================= */}
+  <section id="localseo" class="reveal-on-scroll scroll-mt-28">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+      
+      <div class="lg:col-span-6 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 text-[#0066CC] border border-blue-200/70 text-xs font-bold uppercase tracking-wider">
+          <Search className="w-3.5 h-3.5 text-[#0066CC]" />
+          Our Approach • Local Intent
+        </div>
+
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight leading-tight">
+          Local intent folded into the pages that need it
+        </h2>
+
+        <p class="text-neutral-600 text-base sm:text-lg leading-relaxed">
+          Rather than creating separate location pages for every service area, Guruvayoor-specific intent was built into the pages where borrowers actually search that way — <strong class="text-neutral-900 font-semibold">Gold Loan in Guruvayoor</strong> and <strong class="text-neutral-900 font-semibold">Business Loan in Guruvayoor</strong> exist as their own pages precisely because that phrasing reflects real search behaviour, while the rest of the product set stays focused on the product itself.
+        </p>
+
+        <p class="text-neutral-600 text-sm sm:text-base leading-relaxed">
+          Local search behaviour around this product also splits across two spellings of the same place name — <span class="font-semibold text-neutral-900">&ldquo;Guruvayoor&rdquo;</span> and <span class="font-semibold text-neutral-900">&ldquo;Guruvayur&rdquo;</span> — so the Gold Loan in Guruvayoor page was built to cover both naturally rather than picking one and losing the other.
+        </p>
+      </div>
+
+      {/* Target Keywords Table */}
+      <div class="lg:col-span-6 bg-[#F8FAFC] rounded-3xl p-6 sm:p-8 border border-neutral-200/80 shadow-xs space-y-5">
+        <div class="flex items-center justify-between border-b border-neutral-200 pb-4">
+          <div>
+            <span class="text-xs font-mono font-bold uppercase tracking-widest text-[#0066CC] block mb-1">
+              Verified Search Results
+            </span>
+            <h3 class="text-base sm:text-lg font-bold text-neutral-900">
+              Target keywords — Gold Loan in Guruvayoor page
+            </h3>
+          </div>
+          <span class="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full flex items-center gap-1.5 shadow-2xs">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            Google #1
+          </span>
+        </div>
+
+        <div class="overflow-hidden rounded-2xl border border-neutral-200 bg-white">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="border-b border-neutral-200 bg-[#F8FAFC] text-xs font-mono font-bold uppercase tracking-wider text-neutral-500">
+                <th class="py-3 px-4 sm:px-5">KEYWORD</th>
+                <th class="py-3 px-4 sm:px-5 text-right">GOOGLE RANKING</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-neutral-100 text-xs sm:text-sm">
+              {[
+                { kw: "Gold Loan Guruvayur", rank: "#1" },
+                { kw: "Best Gold Loan Guruvayur", rank: "#1" },
+                { kw: "Instant Gold Loan Guruvayur", rank: "#1" },
+                { kw: "Trusted Gold Loan Guruvayur", rank: "#1" },
+                { kw: "Gold Loan Guruvayur Kerala", rank: "#1" }
+              ].map((item, i) => (
+                <tr key={i} class="hover:bg-neutral-50/80 transition-colors">
+                  <td class="py-3 px-4 sm:px-5 font-mono text-neutral-900 font-medium">
+                    {item.kw}
+                  </td>
+                  <td class="py-3 px-4 sm:px-5 text-right">
+                    <span class="inline-flex items-center gap-1.5 font-mono font-bold text-xs px-2.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
+                      {item.rank}
+                    </span>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <p class="text-xs text-neutral-500 leading-relaxed pt-2 border-t border-neutral-200">
+          Each of these is a low-volume, high-intent local variant rather than a high-competition head term — a searcher using any of these is already close to choosing a branch, not just browsing options.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  {/* =========================================================================
+      08. REGULATORY TRUST & KML COMPLIANCE SECTION
+      ========================================================================= */}
+  <section id="compliance" class="reveal-on-scroll scroll-mt-28 relative rounded-3xl p-8 sm:p-10 md:p-12 bg-[#F8FAFC] border border-neutral-200/80 shadow-xs space-y-10">
+    <div class="max-w-3xl space-y-4">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-[#0066CC] border border-blue-200/70 text-xs font-bold uppercase tracking-wider">
+        <Shield className="w-3.5 h-3.5 text-[#0066CC]" />
+        Statutory Trust Infrastructure
+      </div>
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight leading-tight">
+        Regulatory Trust Designed into the Site, Not Bolted On
+      </h2>
+      <p class="text-neutral-600 text-base sm:text-lg leading-relaxed">
+        Because Abrus Krishna Finance operates under the Kerala Money-Lenders Act, 1958, we treated compliance content as core, not supplementary. A dedicated KML Registration & Compliance page states the company's regulatory status clearly, and FAQ content across the site addresses the practical concerns a cautious borrower brings to a lender: whether a branch visit is compulsory for KYC and agreement signing, how repayments work across UPI, bank transfer, and cash, what happens if an instalment is missed, and how customer data — KYC documents, loan files, pledged gold details — is protected through documentation controls, CCTV surveillance, and restricted staff access.
+      </p>
+    </div>
+
+    {/* Compliance Features Grid */}
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <div class="p-6 sm:p-7 rounded-2xl bg-white border border-neutral-200/80 space-y-4 shadow-xs hover:border-[#0066CC]/40 hover:shadow-md transition-all">
+        <div class="w-10 h-10 rounded-xl bg-blue-50 border border-blue-200/70 flex items-center justify-center text-[#0066CC]">
+          <FileText className="w-5 h-5" />
+        </div>
+        <h3 class="text-lg font-bold text-neutral-900">
+          Dedicated KML Compliance Page
+        </h3>
+        <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+          A standalone page clearly stating the company's statutory licensing status, registration credentials under the Kerala Money-Lenders Act, 1958, and authorized operational scope.
+        </p>
+      </div>
+
+      <div class="p-6 sm:p-7 rounded-2xl bg-white border border-neutral-200/80 space-y-4 shadow-xs hover:border-[#0066CC]/40 hover:shadow-md transition-all">
+        <div class="w-10 h-10 rounded-xl bg-blue-50 border border-blue-200/70 flex items-center justify-center text-sky-600">
+          <Shield className="w-5 h-5" />
+        </div>
+        <h3 class="text-lg font-bold text-neutral-900">
+          Customer Data Confidentiality
+        </h3>
+        <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+          Transparent explanation of how customer documents, KYC files, and pledged gold records are secured through documentation controls, CCTV surveillance, and restricted staff access.
+        </p>
+      </div>
+
+      <div class="p-6 sm:p-7 rounded-2xl bg-white border border-neutral-200/80 space-y-4 shadow-xs hover:border-[#0066CC]/40 hover:shadow-md transition-all">
+        <div class="w-10 h-10 rounded-xl bg-blue-50 border border-blue-200/70 flex items-center justify-center text-emerald-600">
+          <Coins className="w-5 h-5" />
+        </div>
+        <h3 class="text-lg font-bold text-neutral-900">
+          Clear Repayment & Foreclosure
+        </h3>
+        <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+          Addressing practical borrower concerns upfront: multiple repayment avenues (UPI, bank transfer, and cash), transparent interest terms, and clear foreclosure guidelines.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  {/* =========================================================================
+      09. VISUAL CASE-STUDY SHOWCASE & UI GALLERY
+      ========================================================================= */}
+  <section id="gallery" class="reveal-on-scroll scroll-mt-28 space-y-8">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
+      <div class="max-w-2xl space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-[#0066CC] border border-blue-200/70 text-xs font-bold uppercase tracking-wider">
+          Visual Showcase
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight leading-tight">
+          Website UI & Architecture Gallery
+        </h2>
+        <p class="text-neutral-600 text-base sm:text-lg">
+          Click any image to inspect the live interface, trust hierarchy, and Elementor design system in full-screen view.
+        </p>
+      </div>
+
+      <span class="text-xs font-mono font-bold text-neutral-500 uppercase tracking-widest hidden sm:block">
+        High-Resolution Previews
+      </span>
+    </div>
+
+    {/* Accessible Lightbox Component (Standardized White Theme with Uncropped Images) */}
+    <AbrusLightbox client:load items={galleryItems} />
+  </section>
+
+  {/* =========================================================================
+      10. DESIGN SYSTEM & TECHNOLOGY PLATFORM
+      ========================================================================= */}
+  <section id="technology" class="reveal-on-scroll scroll-mt-28 space-y-12">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+      
+      <div class="lg:col-span-5 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-[#0066CC] border border-blue-200/70 text-xs font-bold uppercase tracking-wider">
+          Platform & Architecture
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight leading-tight">
+          A WordPress Build Suited to Ongoing Use
+        </h2>
+        <p class="text-neutral-600 text-base sm:text-lg leading-relaxed">
+          The site was built on <strong class="text-neutral-900 font-semibold">WordPress with Elementor</strong>, giving the Abrus Krishna Finance administrative team a flexible platform they can update independently without needing a developer for everyday content changes.
+        </p>
+        <div class="p-6 rounded-2xl bg-[#F8FAFC] border border-neutral-200/80 shadow-xs space-y-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-neutral-500">Autonomous Management</span>
+          <p class="text-sm text-neutral-600 leading-relaxed">
+            Interest disclosures, holiday branch announcements, partner merchant updates, and regulatory notices can be revised swiftly while preserving the underlying technical SEO and intent structure.
+          </p>
+        </div>
+      </div>
+
+      {/* Summary of Delivered Work */}
+      <div class="lg:col-span-7 space-y-4">
+        <h3 class="text-xs font-mono font-bold uppercase tracking-widest text-neutral-500 mb-2">
+          Summary of Delivered Work
+        </h3>
+
+        <div class="space-y-3">
+          {[
+            {
+              num: "01",
+              title: "Nine dedicated loan pages",
+              desc: "Gold Loan, Gold Loan in Guruvayoor, Doorstep Gold Loan, Business Loan in Guruvayoor, Business & Micro Enterprise Loan, Micro Personal Loan, Micro Home Loan, Micro Finance, and Consumer Goods Loan each received its own page."
+            },
+            {
+              num: "02",
+              title: "Compliance-first content structure",
+              desc: "KML registration status, a dedicated KML Registration & Compliance page, and FAQ answers covering branch visits, repayment methods, foreclosure, and data confidentiality positioned early in the site."
+            },
+            {
+              num: "03",
+              title: "Intent-based separation between related products",
+              desc: "Gold Loan and Doorstep Gold Loan structured as two distinct pages targeting two distinct borrower intents, avoiding internal keyword competition."
+            },
+            {
+              num: "04",
+              title: "A visible, time-specific borrower process",
+              desc: "Contact/Visit → Document Verification → Approval → Disbursement laid out clearly on the homepage with realistic 15–30 minute approval timing included."
+            },
+            {
+              num: "05",
+              title: "Guruvayoor local intent captured without page bloat",
+              desc: "Gold Loan in Guruvayoor page targets both place name spellings, covering Gold Loan Guruvayur, Best Gold Loan Guruvayur, Instant Gold Loan Guruvayur, Trusted Gold Loan Guruvayur, and Gold Loan Guruvayur Kerala."
+            },
+            {
+              num: "06",
+              title: "A WordPress build suited to ongoing use",
+              desc: "Built on WordPress with Elementor, giving the Abrus Krishna Finance team complete autonomy to manage rates and notices without continuous developer reliance."
+            }
+          ].map((item) => (
+            <div key={item.num} class="p-4 sm:p-5 rounded-2xl bg-white border border-neutral-200/80 shadow-xs hover:border-[#0066CC]/40 transition-colors flex items-start gap-4">
+              <span class="font-mono text-xs font-bold text-[#0066CC] px-2.5 py-1 rounded-lg bg-blue-50 border border-blue-200/70 shrink-0">
+                {item.num}
+              </span>
+              <div>
+                <h4 class="text-sm sm:text-base font-bold text-neutral-900 mb-1">{item.title}</h4>
+                <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">{item.desc}</p>
+              </div>
             </div>
           ))}
         </div>
-
-        {/* Before vs Strategy vs After Comparison */}
-        <div class="rounded-3xl border border-white/[0.08] bg-[#0C1220]/80 overflow-hidden shadow-2xl">
-          <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/[0.08]">
-            
-            {/* BEFORE */}
-            <div class="p-8 sm:p-10 space-y-6 bg-rose-950/10">
-              <div class="flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
-                <span class="text-xs font-bold uppercase tracking-widest text-rose-400">Before Redesign</span>
-              </div>
-              <h3 class="text-xl font-bold text-white">
-                Generic & Bundled Architecture
-              </h3>
-              <ul class="space-y-3.5 text-sm text-slate-400">
-                <li class="flex items-start gap-2.5">
-                  <span class="text-rose-400 font-bold">✕</span>
-                  <span>9 loan types squeezed into single generic services listing</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <span class="text-rose-400 font-bold">✕</span>
-                  <span>Compliance buried as an unhelpful footnote disclaimer</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <span class="text-rose-400 font-bold">✕</span>
-                  <span>Gold loan and doorstep gold loan competing for identical keywords</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <span class="text-rose-400 font-bold">✕</span>
-                  <span>Borrower timeline missing, creating hesitation around approval speed</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <span class="text-rose-400 font-bold">✕</span>
-                  <span>Zero targeting for Guruvayur locality and variant spelling</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* STRATEGY */}
-            <div class="p-8 sm:p-10 space-y-6 bg-indigo-950/15">
-              <div class="flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>
-                <span class="text-xs font-bold uppercase tracking-widest text-indigo-400">Teknoppy Strategy</span>
-              </div>
-              <h3 class="text-xl font-bold text-white">
-                Intent-Centric Architecture
-              </h3>
-              <ul class="space-y-3.5 text-sm text-slate-300">
-                <li class="flex items-start gap-2.5">
-                  <span class="text-indigo-400 font-bold">→</span>
-                  <span>Structure URLs around user query intent, not internal hierarchy</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <span class="text-indigo-400 font-bold">→</span>
-                  <span>Elevate KML regulation into core trust architecture and FAQ schema</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <span class="text-indigo-400 font-bold">→</span>
-                  <span>Delineate branch transaction vs home collection value propositions</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <span class="text-indigo-400 font-bold">→</span>
-                  <span>Publish 15–30 minute verified approval timeline on the homepage</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <span class="text-indigo-400 font-bold">→</span>
-                  <span>Capture high-intent Guruvayoor & Guruvayur variations organically</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* AFTER / DELIVERED */}
-            <div class="p-8 sm:p-10 space-y-6 bg-emerald-950/10">
-              <div class="flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
-                <span class="text-xs font-bold uppercase tracking-widest text-emerald-400">Delivered Structure</span>
-              </div>
-              <h3 class="text-xl font-bold text-white">
-                Authority & Conversion Ready
-              </h3>
-              <ul class="space-y-3.5 text-sm text-slate-300">
-                <li class="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
-                  <span>9 distinct, individually optimized pages with customized KYC & terms</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
-                  <span>First-class KML Registration & Compliance page with transparent terms</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
-                  <span>Cannibalization eliminated through differentiated content & headings</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
-                  <span>Visible 4-step borrower journey reducing drop-off before contact</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
-                  <span>Rank-ready for local low-volume, high-conversion commercial terms</span>
-                </li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
-
       </div>
-    </section>
 
-    <!-- =========================================================================
-        06. INFORMATION ARCHITECTURE & INTERACTIVE 9 LOAN PAGES MATRIX
-        ========================================================================= -->
-    <section id="strategy" class="py-20 md:py-28 bg-[#070A12] border-y border-white/[0.08] scroll-mt-20 reveal-on-scroll">
-      <div id="architecture" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 scroll-mt-28">
-        
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end">
-          <div class="lg:col-span-8 space-y-4">
-            <span class="text-xs font-bold uppercase tracking-widest text-indigo-400">
-              Information Architecture
-            </span>
-            <h2 class="text-3xl sm:text-5xl text-white font-extrabold tracking-tight leading-tight">
-              Built Around Search Intent, Not Internal Org Structure
-            </h2>
-            <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
-              Rather than mirroring how the business is organized internally, the site's structure was built around how a borrower actually searches. Someone looking for <em class="text-white font-medium">"gold loan Guruvayoor"</em> has a different intent from someone comparing <em class="text-white font-medium">"doorstep gold loan"</em> options, and both are different again from someone researching a <em class="text-white font-medium">"micro business loan"</em> for a small enterprise.
-            </p>
-          </div>
-          <div class="lg:col-span-4 bg-[#0D1424]/90 p-5 rounded-2xl border border-white/[0.08] shadow-xl text-xs text-slate-300 leading-relaxed">
-            <strong class="text-white block mb-1 font-bold">Content Principle</strong>
-            Each loan page was given its own URL, with content written to answer the specific questions a borrower for that product would have — eligibility, required documents, and process — rather than generic loan copy repeated across pages.
-          </div>
-        </div>
+    </div>
+  </section>
 
-        {/* Interactive 9 Loan Pages Matrix Component */}
-        <AbrusInteractiveIA client:load />
-
+  {/* =========================================================================
+      11. WHY THIS STRUCTURE MATTERS FOR A REGULATED LENDER (YMYL & E-E-A-T)
+      ========================================================================= */}
+  <section class="reveal-on-scroll rounded-3xl p-8 sm:p-12 lg:p-14 bg-gradient-to-b from-[#F8FAFC] to-white border border-neutral-200/80 shadow-xs space-y-8 relative overflow-hidden">
+    <div class="max-w-3xl space-y-4 relative z-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-[#0066CC] border border-blue-200/70 text-xs font-bold uppercase tracking-wider">
+        Search Engine & YMYL Dynamics
       </div>
-    </section>
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight leading-tight">
+        Why This Structure Matters for a Regulated Lender
+      </h2>
+      <p class="text-neutral-600 text-base sm:text-lg leading-relaxed">
+        Lending falls squarely into what Google classifies as a YMYL topic — content that can affect a person's financial wellbeing. Sites in this category are held to a higher bar for demonstrating expertise, authoritativeness, and trustworthiness, and search engines increasingly reward pages that answer a searcher's real question directly rather than pages that talk around a topic.
+      </p>
+    </div>
 
-    <!-- =========================================================================
-        07. PRODUCT SEPARATION: GOLD LOAN VS DOORSTEP GOLD LOAN
-        ========================================================================= -->
-    <section id="comparison" class="py-20 md:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
-      <div class="space-y-14">
-        
-        <div class="max-w-3xl space-y-4">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 text-xs font-bold uppercase tracking-wider">
-            Deliberate Product Differentiation
-          </div>
-          <h2 class="text-3xl sm:text-5xl text-white font-extrabold tracking-tight leading-tight">
-            Gold Loan vs Doorstep Gold Loan
-          </h2>
-          <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
-            Gold Loan and Doorstep Gold Loan are closely related products but serve distinctly different intents — one is a branch-based walk-in transaction, the other a home-collection service built around discretion and convenience.
-          </p>
-        </div>
-
-        {/* Split Screen Editorial Cards */}
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-          
-          {/* Branch-Based Card */}
-          <div class="rounded-3xl border border-white/[0.08] bg-[#0D1424]/90 p-8 sm:p-10 shadow-xl flex flex-col justify-between space-y-8 relative overflow-hidden group">
-            <div class="space-y-6">
-              <div class="flex items-center justify-between border-b border-white/[0.06] pb-4">
-                <span class="text-xs font-bold uppercase tracking-widest text-indigo-400 font-mono">Service Model A</span>
-                <span class="px-3 py-1 rounded-full text-xs font-bold bg-white/[0.08] text-white">Branch-Based</span>
-              </div>
-
-              <div>
-                <h3 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">
-                  Gold Loan
-                </h3>
-                <p class="text-sm text-slate-400 mt-1">
-                  Walk-in branch transaction for immediate liquidity
-                </p>
-              </div>
-
-              <div class="space-y-4 text-sm text-slate-300">
-                <div class="p-4 rounded-xl bg-[#070A12] border border-white/[0.06] space-y-1">
-                  <span class="text-xs font-bold text-indigo-400 uppercase">Primary Borrower Intent</span>
-                  <p class="font-medium text-white">
-                    &ldquo;I want to visit the nearest branch near Thaikad, have my gold weighed in front of me, and walk out with immediate loan disbursement.&rdquo;
-                  </p>
-                </div>
-
-                <ul class="space-y-2.5">
-                  <li class="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-indigo-400 flex-shrink-0" />
-                    <span>In-person valuation at secure branch valuation desk</span>
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-indigo-400 flex-shrink-0" />
-                    <span>Instant physical gold vaulting under CCTV surveillance</span>
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-indigo-400 flex-shrink-0" />
-                    <span>15–30 minute total turnaround time</span>
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-indigo-400 flex-shrink-0" />
-                    <span>Immediate cash or direct bank/UPI settlement</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="pt-4 border-t border-white/[0.06] text-xs text-slate-500 font-mono">
-              Target SEO: Branch walk-in queries & local trust intent
-            </div>
-          </div>
-
-          {/* Doorstep Service Card */}
-          <div class="rounded-3xl border border-indigo-500/30 bg-[#0C1220]/90 text-white p-8 sm:p-10 shadow-2xl flex flex-col justify-between space-y-8 relative overflow-hidden group">
-            <div class="space-y-6">
-              <div class="flex items-center justify-between border-b border-white/[0.06] pb-4">
-                <span class="text-xs font-bold uppercase tracking-widest text-amber-400 font-mono">Service Model B</span>
-                <span class="px-3 py-1 rounded-full text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">Home-Collection</span>
-              </div>
-
-              <div>
-                <h3 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">
-                  Doorstep Gold Loan
-                </h3>
-                <p class="text-sm text-slate-400 mt-1">
-                  Private, scheduled home collection built around convenience
-                </p>
-              </div>
-
-              <div class="space-y-4 text-sm text-slate-300">
-                <div class="p-4 rounded-xl bg-[#070A12] border border-indigo-500/20 space-y-1">
-                  <span class="text-xs font-bold text-amber-400 uppercase">Primary Borrower Intent</span>
-                  <p class="font-medium text-white">
-                    &ldquo;I want a confidential loan without visiting a branch in public; send an authorized lending officer with valuation equipment to my residence.&rdquo;
-                  </p>
-                </div>
-
-                <ul class="space-y-2.5">
-                  <li class="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                    <span>Appointment-based home or office appraisal</span>
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                    <span>Certified mobile gold testing kit & calibrated scales</span>
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                    <span>KYC & KML agreement signed on-site</span>
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                    <span>Secure transit seal with real-time tracking</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="pt-4 border-t border-white/[0.06] text-xs text-slate-500 font-mono">
-              Target SEO: Convenience queries & doorstep service intent
-            </div>
-          </div>
-
-        </div>
-
-        {/* Strategy Summary Note */}
-        <div class="p-6 rounded-2xl bg-[#0D1424]/90 border border-white/[0.08] text-sm text-slate-300 leading-relaxed shadow-xl flex items-start gap-4">
-          <Sparkles className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
-          <p>
-            <strong class="text-white font-bold">Why the separation matters:</strong> We wrote each page around its own primary keyword and search intent, with distinct headings, FAQs, and calls to action. This prevents internal competition and ensures both pages reinforce the domain's topical authority for &ldquo;gold loan&rdquo; as a broader theme without cannibalizing each other.
-          </p>
-        </div>
-
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4 border-t border-neutral-200/80 relative z-10 text-sm sm:text-base text-neutral-600 leading-relaxed">
+      <div class="space-y-3">
+        <h3 class="text-lg font-bold text-neutral-900 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-[#0066CC]"></span>
+          Concrete Content Decisions
+        </h3>
+        <p>
+          For a KML-registered lender specifically, that translates into concrete content decisions: stating registration status plainly, explaining foreclosure and data-handling terms in FAQ form rather than legal boilerplate, and separating loan products so each page can build depth around one clear topic instead of spreading thin across nine.
+        </p>
       </div>
-    </section>
 
-    <!-- =========================================================================
-        08. THE BORROWER JOURNEY (4-STEP PROCESS TIMELINE)
-        ========================================================================= -->
-    <section id="journey" class="py-20 md:py-28 bg-[#070A12] border-y border-white/[0.08] reveal-on-scroll">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-        
-        <div class="max-w-3xl space-y-4">
-          <span class="text-xs font-bold uppercase tracking-widest text-indigo-400">
-            Process Transparency
-          </span>
-          <h2 class="text-3xl sm:text-5xl text-white font-extrabold tracking-tight leading-tight">
-            The Borrower Journey: Measured in Minutes, Not Days
-          </h2>
-          <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
-            A four-step process — Contact/Visit, Document Verification, Approval, Disbursement — was designed into the homepage and repeated contextually across product pages. For a first-time borrower, seeing the full journey and knowing it moves in minutes reduces hesitation before they ever pick up the phone.
-          </p>
-        </div>
-
-        {/* Timeline Grid */}
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          
-          {/* Step 1 */}
-          <div class="p-6 sm:p-7 rounded-2xl bg-[#0D1424]/90 border border-white/[0.08] shadow-xl space-y-4 relative">
-            <span class="font-mono text-xs font-bold text-slate-400">STAGE 01</span>
-            <div class="w-12 h-12 rounded-xl bg-indigo-500/15 border border-indigo-500/30 text-indigo-300 flex items-center justify-center font-bold text-lg">
-              01
-            </div>
-            <h3 class="text-lg font-bold text-white">
-              Contact / Visit
-            </h3>
-            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-              Borrower initiates contact via phone, WhatsApp, or walks directly into the Thaikad branch in Guruvayoor. Doorstep borrowers schedule a home appointment.
-            </p>
-          </div>
-
-          {/* Step 2 */}
-          <div class="p-6 sm:p-7 rounded-2xl bg-[#0D1424]/90 border border-white/[0.08] shadow-xl space-y-4 relative">
-            <span class="font-mono text-xs font-bold text-slate-400">STAGE 02</span>
-            <div class="w-12 h-12 rounded-xl bg-indigo-500/15 border border-indigo-500/30 text-indigo-300 flex items-center justify-center font-bold text-lg">
-              02
-            </div>
-            <h3 class="text-lg font-bold text-white">
-              Document Verification
-            </h3>
-            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-              Standard KYC verification (ID and address proof) alongside transparent, in-front-of-borrower gold valuation and appraisal under calibrated equipment.
-            </p>
-          </div>
-
-          {/* Step 3 (Featured Timing Highlight) */}
-          <div class="p-6 sm:p-7 rounded-2xl bg-[#0F182E] text-white border border-indigo-500/50 shadow-2xl space-y-4 relative ring-2 ring-indigo-500/30">
-            <div class="flex items-center justify-between">
-              <span class="font-mono text-xs font-bold text-indigo-300">STAGE 03 • KEY TIMING</span>
-              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-indigo-600 text-white">Rapid</span>
-            </div>
-            <div class="w-12 h-12 rounded-xl bg-indigo-500/25 border border-indigo-400/40 text-indigo-200 flex items-center justify-center font-bold text-lg">
-              03
-            </div>
-            <div>
-              <h3 class="text-lg font-bold text-white">
-                Approval
-              </h3>
-              <p class="text-xs font-bold text-indigo-300 mt-0.5">
-                Typically within 15–30 minutes
-              </p>
-            </div>
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Approval completes within 15–30 minutes of valuation and verification, establishing loan eligibility without bureaucratic delays.
-            </p>
-          </div>
-
-          {/* Step 4 */}
-          <div class="p-6 sm:p-7 rounded-2xl bg-[#0D1424]/90 border border-white/[0.08] shadow-xl space-y-4 relative">
-            <span class="font-mono text-xs font-bold text-slate-400">STAGE 04</span>
-            <div class="w-12 h-12 rounded-xl bg-indigo-500/15 border border-indigo-500/30 text-indigo-300 flex items-center justify-center font-bold text-lg">
-              04
-            </div>
-            <h3 class="text-lg font-bold text-white">
-              Disbursement
-            </h3>
-            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-              Funds are disbursed immediately after signing the KML-compliant agreement via bank transfer, instant UPI, or direct cash collection.
-            </p>
-          </div>
-
-        </div>
-
+      <div class="space-y-3">
+        <h3 class="text-lg font-bold text-neutral-900 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-sky-600"></span>
+          Surfacing in Generative Answers
+        </h3>
+        <p>
+          Search engines and AI answer tools increasingly extract FAQ-style content directly into search results and generative answers, which means well-structured compliance and process FAQs don't just build borrower trust — they improve the odds of the page itself being surfaced for the exact questions a borrower is asking.
+        </p>
       </div>
-    </section>
+    </div>
 
-    <!-- =========================================================================
-        09. LOCAL SEARCH STRATEGY & DUAL-SPELLING COVERAGE
-        ========================================================================= -->
-    <section id="localseo" class="py-20 md:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        
-        <div class="lg:col-span-6 space-y-6">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 text-xs font-bold uppercase tracking-wider">
-            <Search className="w-3.5 h-3.5 text-indigo-400" />
-            Our Approach • Local Intent
-          </div>
+    <div class="p-6 rounded-2xl bg-white border border-neutral-200/80 text-sm sm:text-base text-neutral-700 leading-relaxed relative z-10 shadow-2xs">
+      By giving each loan product its own page built around a specific intent, and by treating compliance as core content rather than an afterthought, the Abrus Krishna Finance site is structured to be both easier for borrowers to navigate and easier for search engines to understand as an authoritative source on Guruvayoor gold loans and micro-finance. See more examples in <a href="/case-study/" class="text-[#0066CC] hover:underline font-semibold transition-colors">Teknoppy's full case study library</a>.
+    </div>
+  </section>
 
-          <h2 class="text-3xl sm:text-5xl text-white font-extrabold tracking-tight leading-tight">
-            Local intent folded into the pages that need it
-          </h2>
-
-          <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
-            Rather than creating separate location pages for every service area, Guruvayoor-specific intent was built into the pages where borrowers actually search that way — <strong class="text-white font-semibold">Gold Loan in Guruvayoor</strong> and <strong class="text-white font-semibold">Business Loan in Guruvayoor</strong> exist as their own pages precisely because that phrasing reflects real search behaviour, while the rest of the product set stays focused on the product itself.
-          </p>
-
-          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-            Local search behaviour around this product also splits across two spellings of the same place name — <span class="font-semibold text-white">&ldquo;Guruvayoor&rdquo;</span> and <span class="font-semibold text-white">&ldquo;Guruvayur&rdquo;</span> — so the Gold Loan in Guruvayoor page was built to cover both naturally rather than picking one and losing the other.
-          </p>
-        </div>
-
-        {/* Target Keywords Table directly from authoritative PDF */}
-        <div class="lg:col-span-6 bg-[#0D1424]/90 rounded-3xl p-6 sm:p-8 border border-white/[0.08] shadow-2xl space-y-6">
-          <div class="flex items-center justify-between border-b border-white/[0.06] pb-4">
-            <div>
-              <span class="text-xs font-mono font-bold uppercase tracking-widest text-indigo-400 block mb-1">
-                Verified Search Results
-              </span>
-              <h3 class="text-base sm:text-lg font-bold text-white">
-                Target keywords — Gold Loan in Guruvayoor page
-              </h3>
-            </div>
-            <span class="text-xs font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full flex items-center gap-1.5 shadow-xs">
-              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              Google #1
-            </span>
-          </div>
-
-          <div class="overflow-hidden rounded-2xl border border-white/[0.06] bg-[#070A12]">
-            <table class="w-full text-left border-collapse">
-              <thead>
-                <tr class="border-b border-white/[0.08] bg-white/[0.02] text-xs font-mono font-bold uppercase tracking-wider text-slate-400">
-                  <th class="py-3.5 px-4 sm:px-5">KEYWORD</th>
-                  <th class="py-3.5 px-4 sm:px-5 text-right">GOOGLE RANKING</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-white/[0.06] text-xs sm:text-sm">
-                {[
-                  { kw: "Gold Loan Guruvayur", rank: "#1" },
-                  { kw: "Best Gold Loan Guruvayur", rank: "#1" },
-                  { kw: "Instant Gold Loan Guruvayur", rank: "#1" },
-                  { kw: "Trusted Gold Loan Guruvayur", rank: "#1" },
-                  { kw: "Gold Loan Guruvayur Kerala", rank: "#1" }
-                ].map((item, i) => (
-                  <tr key={i} class="hover:bg-white/[0.02] transition-colors">
-                    <td class="py-3.5 px-4 sm:px-5 font-mono text-white font-medium">
-                      {item.kw}
-                    </td>
-                    <td class="py-3.5 px-4 sm:px-5 text-right">
-                      <span class="inline-flex items-center gap-1.5 font-mono font-bold text-xs px-2.5 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                        {item.rank}
-                      </span>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          <p class="text-xs text-slate-400 leading-relaxed pt-2 border-t border-white/[0.06]">
-            Each of these is a low-volume, high-intent local variant rather than a high-competition head term — a searcher using any of these is already close to choosing a branch, not just browsing options.
-          </p>
-        </div>
-
+  {/* =========================================================================
+      12. FREQUENTLY ASKED QUESTIONS
+      ========================================================================= */}
+  <section id="faq" class="reveal-on-scroll scroll-mt-28 space-y-8 max-w-4xl">
+    <div class="space-y-3">
+      <div class="flex items-center gap-2">
+        <span class="text-xs font-mono font-bold uppercase tracking-widest text-[#0066CC]">Direct Answers</span>
+        <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+        <span class="text-xs font-bold text-neutral-500 uppercase tracking-wider">Due Diligence FAQ</span>
       </div>
-    </section>
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight">
+        Frequently Asked Questions
+      </h2>
+      <p class="text-neutral-600 text-sm sm:text-base">
+        Detailed rationale behind the information architecture, compliance approach, and WordPress implementation.
+      </p>
+    </div>
 
-    <!-- =========================================================================
-        10. REGULATORY TRUST & KML COMPLIANCE SECTION
-        ========================================================================= -->
-    <section id="compliance" class="py-20 md:py-28 bg-[#070A12] text-white border-y border-white/[0.08] relative reveal-on-scroll">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14 relative z-10">
-        
-        <div class="max-w-3xl space-y-4">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.05] border border-white/[0.08] text-indigo-400 text-xs font-bold uppercase tracking-wider">
-            <Shield className="w-3.5 h-3.5 text-indigo-400" />
-            Statutory Trust Infrastructure
-          </div>
-          <h2 class="text-3xl sm:text-5xl text-white font-extrabold tracking-tight leading-tight">
-            Regulatory Trust Designed into the Site, Not Bolted On
-          </h2>
-          <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
-            Because Abrus Krishna Finance operates under the Kerala Money-Lenders Act, 1958, we treated compliance content as core, not supplementary. A dedicated KML Registration & Compliance page states the company's regulatory status clearly, and FAQ content across the site addresses the practical concerns a cautious borrower brings to a lender: whether a branch visit is compulsory for KYC and agreement signing, how repayments work across UPI, bank transfer, and cash, what happens if an instalment is missed, and how customer data — KYC documents, loan files, pledged gold details — is protected through documentation controls, CCTV surveillance, and restricted staff access. This kind of specific, verifiable content is what Google's Helpful Content and E-E-A-T guidance rewards for YMYL (Your Money or Your Life) topics like lending.
-          </p>
-        </div>
+    {/* Standardized White CaseStudyFAQ Accordion */}
+    <CaseStudyFAQ faqs={faqsData} client:visible />
+  </section>
 
-        {/* Compliance Features Grid */}
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          
-          <div class="p-7 rounded-2xl bg-[#0D1424]/90 border border-white/[0.08] space-y-4 shadow-xl">
-            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
-              <FileText className="w-5 h-5" />
-            </div>
-            <h3 class="text-lg font-bold text-white">
-              Dedicated KML Compliance Page
-            </h3>
-            <p class="text-sm text-slate-400 leading-relaxed">
-              A standalone page clearly stating the company's statutory licensing status, registration credentials under the Kerala Money-Lenders Act, 1958, and authorized operational scope.
-            </p>
-          </div>
-
-          <div class="p-7 rounded-2xl bg-[#0D1424]/90 border border-white/[0.08] space-y-4 shadow-xl">
-            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-sky-400">
-              <Lock className="w-5 h-5" />
-            </div>
-            <h3 class="text-lg font-bold text-white">
-              Customer Data Confidentiality
-            </h3>
-            <p class="text-sm text-slate-400 leading-relaxed">
-              Transparent explanation of how customer documents, KYC files, and pledged gold records are secured through documentation controls, CCTV surveillance, and restricted staff access.
-            </p>
-          </div>
-
-          <div class="p-7 rounded-2xl bg-[#0D1424]/90 border border-white/[0.08] space-y-4 shadow-xl">
-            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-emerald-400">
-              <Coins className="w-5 h-5" />
-            </div>
-            <h3 class="text-lg font-bold text-white">
-              Clear Repayment & Foreclosure
-            </h3>
-            <p class="text-sm text-slate-400 leading-relaxed">
-              Addressing practical borrower concerns upfront: multiple repayment avenues (UPI, bank transfer, and cash), transparent interest terms, and clear foreclosure guidelines.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- =========================================================================
-        11. VISUAL CASE-STUDY SHOWCASE & UI GALLERY
-        ========================================================================= -->
-    <section id="gallery" class="py-20 md:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
-      <div class="space-y-12">
-        
-        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
-          <div class="max-w-2xl space-y-4">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-bold uppercase tracking-wider">
-              Visual Showcase
-            </div>
-            <h2 class="text-3xl sm:text-5xl text-white font-extrabold tracking-tight leading-tight">
-              Website UI & Architecture Gallery
-            </h2>
-            <p class="text-slate-300 text-base sm:text-lg">
-              Click any image to inspect the live interface, trust hierarchy, and Elementor design system in full-screen view.
-            </p>
-          </div>
-
-          <span class="text-xs font-bold text-slate-400 uppercase tracking-widest hidden sm:block">
-            High-Resolution Previews
-          </span>
-        </div>
-
-        {/* Accessible Dark Lightbox Component */}
-        <AbrusLightbox client:load items={galleryItems} />
-
-      </div>
-    </section>
-
-    <!-- =========================================================================
-        12. DESIGN SYSTEM & TECHNOLOGY PLATFORM
-        ========================================================================= -->
-    <section id="technology" class="py-20 md:py-28 bg-[#070A12] border-y border-white/[0.08] reveal-on-scroll">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-        
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          
-          <div class="lg:col-span-5 space-y-6">
-            <span class="text-xs font-bold uppercase tracking-widest text-indigo-400">
-              Platform & Architecture
-            </span>
-            <h2 class="text-3xl sm:text-5xl text-white font-extrabold tracking-tight leading-tight">
-              A WordPress Build Suited to Ongoing Use
-            </h2>
-            <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
-              The site was built on <strong class="text-white font-semibold">WordPress with Elementor</strong>, giving the Abrus Krishna Finance administrative team a flexible platform they can update independently without needing a developer for everyday content changes.
-            </p>
-            <div class="p-6 rounded-2xl bg-[#0D1424]/90 border border-white/[0.08] shadow-xl space-y-2">
-              <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Autonomous Management</span>
-              <p class="text-sm text-slate-300 leading-relaxed">
-                Interest disclosures, holiday branch announcements, partner merchant updates, and regulatory notices can be revised swiftly while preserving the underlying technical SEO and intent structure.
-              </p>
-            </div>
-          </div>
-
-          {/* Summary of Delivered Work */}
-          <div class="lg:col-span-7 space-y-4">
-            <h3 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">
-              Summary of Delivered Work
-            </h3>
-
-            <div class="space-y-3">
-              {[
-                {
-                  num: "01",
-                  title: "Nine dedicated loan pages",
-                  desc: "Gold Loan, Gold Loan in Guruvayoor, Doorstep Gold Loan, Business Loan in Guruvayoor, Business & Micro Enterprise Loan, Micro Personal Loan, Micro Home Loan, Micro Finance, and Consumer Goods Loan each received its own page."
-                },
-                {
-                  num: "02",
-                  title: "Compliance-first content structure",
-                  desc: "KML registration status, a dedicated KML Registration & Compliance page, and FAQ answers covering branch visits, repayment methods, foreclosure, and data confidentiality positioned early in the site."
-                },
-                {
-                  num: "03",
-                  title: "Intent-based separation between related products",
-                  desc: "Gold Loan and Doorstep Gold Loan structured as two distinct pages targeting two distinct borrower intents, avoiding internal keyword competition."
-                },
-                {
-                  num: "04",
-                  title: "A visible, time-specific borrower process",
-                  desc: "Contact/Visit → Document Verification → Approval → Disbursement laid out clearly on the homepage with realistic 15–30 minute approval timing included."
-                },
-                {
-                  num: "05",
-                  title: "Guruvayoor local intent captured without page bloat",
-                  desc: "Gold Loan in Guruvayoor page targets both place name spellings, covering Gold Loan Guruvayur, Best Gold Loan Guruvayur, Instant Gold Loan Guruvayur, Trusted Gold Loan Guruvayur, and Gold Loan Guruvayur Kerala."
-                },
-                {
-                  num: "06",
-                  title: "A WordPress build suited to ongoing use",
-                  desc: "Built on WordPress with Elementor, giving the Abrus Krishna Finance team complete autonomy to manage rates and notices without continuous developer reliance."
-                }
-              ].map((item) => (
-                <div key={item.num} class="p-4 sm:p-5 rounded-xl bg-[#0D1424]/90 border border-white/[0.08] shadow-sm flex items-start gap-4">
-                  <span class="font-mono text-xs font-bold text-indigo-300 px-2.5 py-1 rounded bg-indigo-500/15 border border-indigo-500/20 flex-shrink-0">
-                    {item.num}
-                  </span>
-                  <div>
-                    <h4 class="text-sm sm:text-base font-bold text-white mb-1">{item.title}</h4>
-                    <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">{item.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- =========================================================================
-        13. WHY THIS STRUCTURE MATTERS FOR A REGULATED LENDER (YMYL & E-E-A-T)
-        ========================================================================= -->
-    <section class="py-20 md:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
-      <div class="rounded-3xl sm:rounded-4xl bg-gradient-to-b from-[#0F172A] to-[#0A0E1A] text-white p-8 sm:p-12 lg:p-16 border border-white/[0.1] shadow-2xl space-y-8 relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
-
-        <div class="max-w-3xl space-y-4 relative z-10">
-          <span class="text-xs font-bold uppercase tracking-widest text-indigo-400">
-            Search Engine & YMYL Dynamics
-          </span>
-          <h2 class="text-3xl sm:text-5xl text-white font-extrabold tracking-tight leading-tight">
-            Why This Structure Matters for a Regulated Lender
-          </h2>
-          <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
-            Lending falls squarely into what Google classifies as a YMYL topic — content that can affect a person's financial wellbeing. Sites in this category are held to a higher bar for demonstrating expertise, authoritativeness, and trustworthiness, and search engines increasingly reward pages that answer a searcher's real question directly rather than pages that talk around a topic.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4 border-t border-white/[0.08] relative z-10 text-sm sm:text-base text-slate-300 leading-relaxed">
-          <div class="space-y-4">
-            <h3 class="text-lg font-bold text-white flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
-              Concrete Content Decisions
-            </h3>
-            <p>
-              For a KML-registered lender specifically, that translates into concrete content decisions: stating registration status plainly, explaining foreclosure and data-handling terms in FAQ form rather than legal boilerplate, and separating loan products so each page can build depth around one clear topic instead of spreading thin across nine.
-            </p>
-          </div>
-
-          <div class="space-y-4">
-            <h3 class="text-lg font-bold text-white flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-sky-400"></span>
-              Surfacing in Generative Answers
-            </h3>
-            <p>
-              Search engines and AI answer tools increasingly extract FAQ-style content directly into search results and generative answers, which means well-structured compliance and process FAQs don't just build borrower trust — they improve the odds of the page itself being surfaced for the exact questions a borrower is asking.
-            </p>
-          </div>
-        </div>
-
-        <div class="p-6 rounded-2xl bg-[#070A12]/80 border border-white/[0.08] text-sm sm:text-base text-slate-300 leading-relaxed relative z-10">
-          By giving each loan product its own page built around a specific intent, and by treating compliance as core content rather than an afterthought, the Abrus Krishna Finance site is structured to be both easier for borrowers to navigate and easier for search engines to understand as an authoritative source on Guruvayoor gold loans and micro-finance. See more examples in <a href="/case-study/" class="text-indigo-400 hover:text-indigo-300 underline font-semibold transition-colors">Teknoppy's full case study library</a>.
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-        14. FREQUENTLY ASKED QUESTIONS
-        ========================================================================= -->
-    <section id="faq" class="py-20 md:py-28 bg-[#070A12] border-y border-white/[0.08] reveal-on-scroll">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-        
-        <div class="text-center space-y-4">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.05] border border-white/[0.08] text-indigo-400 text-xs font-bold uppercase tracking-wider">
-            Case Study Insights
-          </div>
-          <h2 class="text-3xl sm:text-5xl text-white font-extrabold tracking-tight leading-tight">
-            Frequently Asked Questions
-          </h2>
-          <p class="text-slate-400 text-base sm:text-lg">
-            Detailed rationale behind the information architecture, compliance approach, and WordPress implementation.
-          </p>
-        </div>
-
-        {/* Interactive FAQ Accordion Component */}
-        <AbrusFAQ client:load />
-
-      </div>
-    </section>
-
-    <!-- =========================================================================
-        15. AUTHOR BYLINE & STRATEGIC CITATION (SANAL EDISON)
-        ========================================================================= -->
-    <section class="py-16 md:py-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
-      <div class="p-6 sm:p-8 rounded-3xl bg-[#0D1424]/90 border border-white/[0.1] shadow-2xl flex flex-col sm:flex-row items-center sm:items-start gap-6 backdrop-blur-xl">
-        <div class="relative w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border-2 border-indigo-500/40 shadow-lg flex-shrink-0">
-          <img 
-            src="/team/sanal-edison.webp" 
-            onerror="this.onerror=null;this.src='/sanal.png';"
-            alt="Sanal Edison, Digital Strategist at Teknoppy" 
-            class="w-full h-full object-cover"
-            loading="lazy"
-          />
-        </div>
-        <div class="space-y-2 text-center sm:text-left">
-          <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
-            <h3 class="text-lg sm:text-xl font-bold text-white">Sanal Edison</h3>
-            <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/15 border border-indigo-500/30 text-indigo-300">
-              Digital Strategist
-            </span>
-          </div>
-          <p class="text-xs text-slate-400 font-medium font-mono">Teknoppy • Kochi, Kerala</p>
-          <p class="text-sm text-slate-300 leading-relaxed pt-1">
-            &ldquo;Written by Sanal Edison, Digital Strategist at Teknoppy. Guiding search architecture, high-trust lending structures, and high-performance WordPress development for regulated enterprises.&rdquo;
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-        16. NEW LUXURY DARK CTA (MATCHING /case-study/)
-        ========================================================================= -->
-    <section class="py-24 md:py-32 bg-gradient-to-b from-[#0B101E] to-[#05070B] text-white relative overflow-hidden border-t border-white/[0.08] reveal-on-scroll">
-      {/* Ambient lighting */}
-      <div class="absolute top-0 left-1/4 w-[600px] h-[600px] bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
-      <div class="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-cyan-600/10 rounded-full blur-3xl pointer-events-none"></div>
-
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          
-          {/* Left Column: Heading & CTAs */}
-          <div class="lg:col-span-7 space-y-8">
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/30 text-xs font-bold uppercase tracking-wider backdrop-blur-md">
-              <Zap className="w-3.5 h-3.5 text-indigo-400" />
-              Start Your Project
-            </div>
-
-            <h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white">
-              Need a website for your gold loan, micro-finance, or lending business that separates your products clearly and <span class="bg-gradient-to-r from-white via-indigo-100 to-indigo-400 bg-clip-text text-transparent">builds regulatory trust into every page?</span>
-            </h2>
-
-            <p class="text-slate-300 text-base sm:text-lg leading-relaxed font-normal max-w-2xl">
-              Talk to Teknoppy to design an information architecture that separates your products clearly, captures local high-intent search queries, and builds statutory regulatory trust into every single page.
-            </p>
-
-            <div class="flex flex-wrap items-center gap-4 pt-2">
-              <a 
-                href={`tel:${site.phoneLink}`} 
-                class="inline-flex items-center gap-2.5 px-7 py-4 rounded-xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white text-sm font-bold shadow-xl shadow-indigo-600/30 hover:shadow-indigo-500/50 hover:-translate-y-0.5 transition-all"
-              >
-                <Phone className="w-4 h-4" />
-                <span>Talk to Teknoppy | {site.phone}</span>
-              </a>
-
-              <a 
-                href={`https://wa.me/${site.whatsapp}?text=${encodeURIComponent("Hi Teknoppy, I saw the Abrus Krishna Finance case study and would like to discuss a website for my business.")}`} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                class="inline-flex items-center gap-2.5 px-7 py-4 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-white text-sm font-bold shadow-lg transition-all hover:-translate-y-0.5"
-              >
-                <MessageCircle className="w-4 h-4" />
-                <span>WhatsApp Consultation</span>
-              </a>
-
-              <a 
-                href="/case-study/" 
-                class="inline-flex items-center gap-2 px-6 py-4 rounded-xl bg-[#0E1526] hover:bg-[#152038] text-slate-300 hover:text-white border border-white/[0.1] text-sm font-semibold transition-all"
-              >
-                <span>View All Case Studies (22)</span>
-                <ArrowRight className="w-4 h-4" />
-              </a>
-            </div>
-          </div>
-
-          {/* Right Column: Luxury Glass Consultation Panel */}
-          <div class="lg:col-span-5">
-            <div class="rounded-3xl bg-[#0D1424]/90 border border-white/[0.1] p-8 sm:p-10 shadow-2xl space-y-6 relative overflow-hidden backdrop-blur-xl">
-              <div class="flex items-center gap-5">
-                <div class="relative w-20 h-20 rounded-2xl overflow-hidden border-2 border-indigo-500/40 shadow-lg flex-shrink-0">
-                  <img 
-                    src="/team/sanal-edison.webp" 
-                    onerror="this.onerror=null;this.src='/sanal.png';"
-                    alt="Sanal Edison — Digital Strategist" 
-                    class="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="space-y-1">
-                  <h3 class="text-xl font-bold text-white">Sanal Edison</h3>
-                  <p class="text-xs font-bold uppercase tracking-wider text-indigo-400">Digital Strategist</p>
-                  <p class="text-xs text-slate-400">Teknoppy Leadership</p>
-                </div>
-              </div>
-
-              <p class="text-sm text-slate-300 leading-relaxed">
-                &ldquo;Whether launching a new financial portal or restructuring multi-category services, we engineer search authority and trust from day one.&rdquo;
-              </p>
-
-              <div class="space-y-3 pt-2 border-t border-white/[0.08]">
-                <a 
-                  href={`tel:${site.phoneLink}`}
-                  class="flex items-center gap-3 p-3 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] border border-white/[0.06] text-sm text-slate-200 hover:text-white transition-colors"
-                >
-                  <Phone className="w-4 h-4 text-indigo-400" />
-                  <span class="font-mono font-medium">{site.phone}</span>
-                </a>
-
-                <a 
-                  href={`mailto:${site.email}`}
-                  class="flex items-center gap-3 p-3 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] border border-white/[0.06] text-sm text-slate-200 hover:text-white transition-colors"
-                >
-                  <Mail className="w-4 h-4 text-indigo-400" />
-                  <span class="font-mono font-medium">{site.email}</span>
-                </a>
-              </div>
-
-              <div class="text-[11px] text-slate-500 font-mono text-center pt-2">
-                KOCHI, KERALA • DUBAI, UAE • DOHA, QATAR
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Official Dark Site Master Footer (Replacing old FooterCTA orange block) -->
-  <Footer />
-</Layout>
-
-<script>
-  // Fast & Polish Scroll Reveal Observer
-  if (typeof window !== 'undefined') {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-revealed');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
-
-    document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
-  }
-</script>
-
-<style is:global>
-  /* Native Smooth Scroll & Subnav Anchor Offset */
-  html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 8.5rem;
-  }
-
-  /* Global font family and typography tightening */
-  body, main {
-    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    letter-spacing: -0.011em;
-  }
-  p {
-    letter-spacing: -0.011em;
-  }
-
-  /* Utility to hide scrollbar for horizontal pills */
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-
-  /* Smooth, natural scroll reveals */
-  .reveal-on-scroll {
-    opacity: 0;
-    transform: translateY(18px);
-    transition: opacity 0.55s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1);
-    will-change: opacity, transform;
-  }
-  .reveal-on-scroll.is-revealed {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  .reveal-delay-1 { transition-delay: 0.08s; }
-  .reveal-delay-2 { transition-delay: 0.16s; }
-  .reveal-delay-3 { transition-delay: 0.24s; }
-
-  /* Respect reduced motion */
-  @media (prefers-reduced-motion: reduce) {
-    html {
-      scroll-behavior: auto !important;
-    }
-    .reveal-on-scroll {
-      opacity: 1 !important;
-      transform: none !important;
-      transition: none !important;
-    }
-    *, ::before, ::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
-    }
-  }
-</style>
+</CaseStudyTemplate>

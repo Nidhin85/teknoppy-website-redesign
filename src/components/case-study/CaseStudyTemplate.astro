@@ -71,32 +71,33 @@ export interface CaseStudyProps {
   liveWebsite: string;
   liveWebsiteUrl: string;
   heroHighlights?: string[];
+  navItems?: { id: string; label: string }[];
 
-  atAGlance: string[];
+  atAGlance?: string[];
 
-  aboutHeading: string;
-  aboutParagraphs: string[];
+  aboutHeading?: string;
+  aboutParagraphs?: string[];
 
-  challengeLead: string;
-  challenges: ChallengeItem[];
+  challengeLead?: string;
+  challenges?: ChallengeItem[];
 
-  objectiveLead: string;
-  objectives: string[];
+  objectiveLead?: string;
+  objectives?: string[];
 
   approachLead?: string;
-  approachPillars: ApproachPillar[];
+  approachPillars?: ApproachPillar[];
 
-  deliverables: DeliverableItem[];
+  deliverables?: DeliverableItem[];
 
-  whyMattersHeading: string;
-  whyMattersParagraphs: string[];
-  whyMattersCalloutHtml: string;
+  whyMattersHeading?: string;
+  whyMattersParagraphs?: string[];
+  whyMattersCalloutHtml?: string;
 
-  faqs: { question: string; answer: string }[];
+  faqs?: { question: string; answer: string }[];
 
   authorName?: string;
   authorRole?: string;
-  ctaHeadline: string;
+  ctaHeadline?: string;
   ctaPhoneText?: string;
   ctaPhoneTel?: string;
   ctaTagline?: string;
@@ -122,12 +123,13 @@ const {
   liveWebsite,
   liveWebsiteUrl,
   heroHighlights = [],
-  atAGlance,
-  aboutHeading,
-  aboutParagraphs,
-  challengeLead,
-  challenges,
-  objectiveLead,
+  navItems,
+  atAGlance = [],
+  aboutHeading = 'About the Project',
+  aboutParagraphs = [],
+  challengeLead = '',
+  challenges = [],
+  objectiveLead = '',
   objectives = [],
   approachLead,
   approachPillars = [],
@@ -344,13 +346,16 @@ const schemaFAQ = {
     {/* =========================================================================
         STICKY SUB-NAVIGATION
         ========================================================================= */}
-    <CaseStudyStickyNav clientName={clientName} client:load />
+    <CaseStudyStickyNav clientName={clientName} navItems={navItems} client:load />
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 space-y-20 md:space-y-28">
-
-      {/* =========================================================================
-          02. AT A GLANCE
-          ========================================================================= */}
+      {Astro.slots.has('default') ? (
+        <slot />
+      ) : (
+        <>
+          {/* =========================================================================
+              02. AT A GLANCE
+              ========================================================================= */}
       <section id="overview" class="reveal-on-scroll relative rounded-3xl p-8 sm:p-10 md:p-12 bg-[#F8FAFC] border border-neutral-200/80 shadow-xs overflow-hidden">
         <div class="relative z-10 space-y-7">
           <div class="flex items-center gap-3">
@@ -568,6 +573,8 @@ const schemaFAQ = {
 
         <CaseStudyFAQ faqs={faqs} client:visible />
       </section>
+        </>
+      )}
 
     </div>
 
