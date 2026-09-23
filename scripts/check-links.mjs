@@ -20,9 +20,9 @@ const files = walk(DIST);
 const pages = files.filter((f) => f.endsWith('.html'));
 const routes = new Set();
 for (const f of files) {
-  const rel = '/' + relative(DIST, f);
+  const rel = '/' + relative(DIST, f).replace(/\\/g, '/');
   routes.add(rel);
-  if (f.endsWith('index.html')) routes.add((dirname(rel) + '/').replace(/^\/\//, '/'));
+  if (f.endsWith('index.html')) routes.add((dirname(rel) + '/').replace(/\\/g, '/').replace(/^\/\//, '/'));
 }
 
 const redirects = existsSync('vercel.json')
@@ -46,7 +46,7 @@ const badAnchor = new Map();
 const add = (map, key, page) => map.set(key, (map.get(key) ?? new Set()).add(page));
 
 for (const file of pages) {
-  const page = '/' + relative(DIST, file);
+  const page = ('/' + relative(DIST, file)).replace(/\\/g, '/');
   const here = (dirname(page) + '/').replace(/^\/\//, '/');
   const html = readFileSync(file, 'utf8');
 

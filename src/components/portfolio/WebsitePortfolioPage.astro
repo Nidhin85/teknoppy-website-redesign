@@ -1,0 +1,136 @@
+---
+/**
+ * Modern, image-first Website Portfolio showcase page.
+ * Displays high-quality website homepage hero screenshots, clean 3-col grid,
+ * interactive category filters, and minimal project labels.
+ */
+import Layout from '../../layouts/Layout.astro';
+import Header from '../Header.astro';
+import FooterCTA from '../FooterCTA.astro';
+import WebsitePortfolioExplorer from './WebsitePortfolioExplorer.tsx';
+import { websitePortfolioProjects } from '../../data/websitePortfolioData';
+import { ShieldCheck, Layers, Sparkles, ArrowRight } from 'lucide-react';
+
+interface Props {
+  canonicalPath?: string;
+}
+
+const { canonicalPath = '/portfolios/website-projects/' } = Astro.props;
+
+const metaTitle = "Website Design Projects Kerala & GCC | Teknoppy Portfolio";
+const metaDescription = "Explore selected websites designed and developed by Teknoppy for businesses across industries in Kerala, the UAE and Qatar.";
+const canonicalURL = `https://teknoppy.com${canonicalPath}`;
+
+// Schema.org Structured Data
+const schemaCollection = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": metaTitle,
+  "description": metaDescription,
+  "url": canonicalURL,
+  "publisher": {
+    "@type": "Organization",
+    "name": "Teknoppy",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://teknoppy.com/logo.svg"
+    }
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": websitePortfolioProjects.map((item, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": item.name,
+      "url": item.href.startsWith('http') ? item.href : `https://teknoppy.com${item.href}`
+    }))
+  }
+};
+---
+
+<Layout title={metaTitle} description={metaDescription} image="/portfolios/website/general-tech-services.webp">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(schemaCollection)} />
+  </Fragment>
+
+  <!-- Global Header with solid background for inner pages -->
+  <Header forceSolidBg={true} />
+
+  <main class="min-h-screen bg-[#F8F9FA] text-neutral-900 pt-28 sm:pt-32 md:pt-36 pb-20 sm:pb-28">
+    <div class="max-w-[1380px] mx-auto px-4 sm:px-6 lg:px-8">
+      
+      {/* =========================================================================
+          HERO SECTION
+          ========================================================================= */}
+      <section class="text-center pt-4 sm:pt-6 pb-8 sm:pb-12">
+        {/* Eyebrow badge */}
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F05A2C]/10 border border-[#F05A2C]/20 text-[#F05A2C] text-xs font-bold uppercase tracking-wider mb-4 shadow-xs">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#F05A2C] animate-pulse"></span>
+          <span>OUR WORK</span>
+        </div>
+
+        {/* Main Heading */}
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-neutral-900 leading-[1.12] max-w-4xl mx-auto">
+          Website Design & <span class="text-[#F05A2C]">Development</span>
+        </h1>
+
+        {/* Short Description */}
+        <p class="mt-4 sm:mt-5 text-sm sm:text-base md:text-lg text-neutral-600 max-w-2xl mx-auto leading-relaxed font-normal">
+          A curated selection of websites designed and developed by Teknoppy for businesses across Kerala, the UAE and GCC. Crafted for visual impact, high conversion, and seamless performance.
+        </p>
+      </section>
+
+      {/* =========================================================================
+          INTERACTIVE PORTFOLIO EXPLORER (FILTERS + 3-COL IMAGE-FIRST GRID)
+          ========================================================================= */}
+      <WebsitePortfolioExplorer client:load />
+
+      {/* =========================================================================
+          TRUST / VALUE PROPOSITION STRIP
+          ========================================================================= */}
+      <section class="mt-20 sm:mt-28 pt-12 border-t border-neutral-200/80">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+          <div class="bg-white rounded-2xl p-6 sm:p-7 border border-neutral-200/60 shadow-xs flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-[#F05A2C]/10 text-[#F05A2C] flex items-center justify-center flex-shrink-0">
+              <Sparkles className="w-5 h-5" />
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-neutral-900 mb-1">In-House Design & Code</h3>
+              <p class="text-xs sm:text-sm text-neutral-500 leading-relaxed font-normal">
+                Every project is crafted by senior engineers and UI/UX designers, not outsourced to rotating freelancers.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 sm:p-7 border border-neutral-200/60 shadow-xs flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-[#F05A2C]/10 text-[#F05A2C] flex items-center justify-center flex-shrink-0">
+              <Layers className="w-5 h-5" />
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-neutral-900 mb-1">Tailored Architecture</h3>
+              <p class="text-xs sm:text-sm text-neutral-500 leading-relaxed font-normal">
+                Structured around real commercial sales funnels, high performance, and clean SEO crawlability from day one.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 sm:p-7 border border-neutral-200/60 shadow-xs flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-[#F05A2C]/10 text-[#F05A2C] flex items-center justify-center flex-shrink-0">
+              <ShieldCheck className="w-5 h-5" />
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-neutral-900 mb-1">Kerala & GCC Proven</h3>
+              <p class="text-xs sm:text-sm text-neutral-500 leading-relaxed font-normal">
+                Trusted by corporate, healthcare, finance, and ecommerce enterprises across Kerala, UAE, and Qatar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  {/* Contact Consultation Form & Global Footer */}
+  <FooterCTA />
+</Layout>
