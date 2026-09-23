@@ -1,17 +1,199 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import FooterCTA from '../components/FooterCTA.astro';
-import InnerPage from '../components/InnerPage.astro';
-import page from '../data/pages/case-studies/lenaa-personal-brand-website-case-study.json';
+import CaseStudyTemplate, { type CaseStudyProps } from '../components/case-study/CaseStudyTemplate.astro';
+
+const props: CaseStudyProps = {
+  metaTitle: "Lenaa: Personal Brand Website Design Case Study | Teknoppy",
+  metaDescription: "How Teknoppy built lenaalife.com on Astro: a 3-pillar architecture for actor, author, and TEDx speaker Lenaa, structured for search visibility from day one.",
+  canonicalURL: "https://teknoppy.com/lenaa-personal-brand-website-case-study/",
+  heroImage: "/case-studies/lenaalife.webp",
+  heroImageAlt: "Lenaa Actor Author TEDx Speaker Personal Brand Website Design Case Study",
+  schemaType: "TechArticle",
+  schemaAbout: {
+    type: "Person",
+    name: "Lenaa",
+    address: {
+      locality: "Kochi",
+      region: "Kerala",
+      country: "India"
+    }
+  },
+
+  clientName: "Lenaa",
+  categoryTag: "Personal Brand Website Design & Development",
+  tagBadge: "Celebrity Personal Brand Case Study",
+
+  title: "Lenaa: A Website Design and Development Case Study for a Kerala Actor, Author, and TEDx Speaker's Personal Brand",
+  storyLead: "How Teknoppy architected lenaalife.com on Astro as a single authoritative home uniting acting, bestselling books, and international speaking inquiries with on-page SEO from day one.",
+  industry: "Personal Branding (Actor, Author, Public Speaker)",
+  location: "Kerala, India",
+  services: "Personal Brand Website Design & Development, UI/UX Design, SEO",
+  platform: "Astro",
+  liveWebsite: "lenaalife.com",
+  liveWebsiteUrl: "https://www.lenaalife.com/",
+  heroHighlights: [
+    "3-Pillar Profile Architecture",
+    "Dedicated Book Funnels",
+    "Direct TEDx & Speaking Paths",
+    "Engineered on Astro"
+  ],
+
+  atAGlance: [
+    "One authoritative site replacing a presence scattered across Instagram, Facebook, and press mentions",
+    "A three-pillar structure — actor, author, speaker — instead of one flat \"about me\" page",
+    "Dedicated space for both books, Women-O-Pause and The Autobiography of God",
+    "A direct, clear path for TEDx and speaking inquiries",
+    "On-page SEO built in from day one, not added after launch"
+  ],
+
+  aboutHeading: "About Lenaa",
+  aboutParagraphs: [
+    "Lenaa is a Malayalam cinema actor, bestselling author of Women-O-Pause and The Autobiography of God, a three-time TEDx speaker, and an entrepreneur based in Kerala. Her work spans film, publishing, public speaking, and wellness advocacy.",
+    "A public figure working across three distinct fields runs into a specific problem most personal brands don't: search results and social platforms fragment that work across disconnected profiles, and no single page controls the narrative when someone actually searches her name. A journalist researching her acting work, a reader looking for her books, and an event organizer scouting a speaker were all landing on different, inconsistent impressions of the same person — or on nothing owned by her at all.",
+    "This is a genuinely different brief from a typical business website. There's no product catalogue or service menu to organize — the entire site has to represent one person credibly across three careers that each attract a different kind of visitor with a different intent, while still reading as one coherent identity rather than three separate mini-sites stitched together."
+  ],
+
+  challengeLead: "Before this project, Lenaa's professional presence existed everywhere except in one place she actually controlled.",
+  challenges: [
+    {
+      number: 1,
+      title: "No central profile",
+      description: "Lenaa's acting, authorship, and speaking work was scattered across Instagram, Facebook, and press mentions, with no single page to send media or collaborators to."
+    },
+    {
+      number: 2,
+      title: "Weak search visibility",
+      description: "Searches for her by name or book titles surfaced social posts and press coverage rather than an owned, controlling page — meaning the first impression a searcher got was whatever a platform algorithm happened to surface, not what she'd choose to lead with."
+    },
+    {
+      number: 3,
+      title: "No book or event funnel",
+      description: "Women-O-Pause and The Autobiography of God had no dedicated page to drive readers toward, and TEDx or speaking inquiries had no clear point of contact."
+    },
+    {
+      number: 4,
+      title: "Inconsistent brand presentation",
+      description: "Different platforms showed different photos, bios, and priorities, so a journalist or reader got a different first impression depending on where they landed."
+    },
+    {
+      number: 5,
+      title: "Not built for quick verification",
+      description: "A journalist on deadline or an event organizer comparing speakers typically checks a person's credibility fast, often from a phone, and a scattered social presence doesn't hold up well to that kind of quick verification."
+    }
+  ],
+
+  objectiveLead: "The goal wasn't just a portfolio site. Teknoppy's brief was to build a page that could:",
+  objectives: [
+    "Hold its own when someone searched her name, rather than ceding that search to scattered social platforms",
+    "Back up her books with a proper, dedicated landing point for readers",
+    "Give event organizers and press a clear, direct route to speaking and collaboration inquiries",
+    "Present one consistent bio, photo set, and narrative across every page",
+    "Hold up to a quick credibility check from a phone, without asking her to manage yet another social account"
+  ],
+
+  approachLead: "How Teknoppy crafted a unified, mobile-first entity foundation across cinema, literature, and thought leadership:",
+  approachPillars: [
+    {
+      title: "Discovery around real audience touchpoints",
+      paragraphs: [
+        "Work started with mapping her existing audience touchpoints — books, TEDx talks, press mentions, and social following — to understand who actually lands on a page like this and what they're looking for, rather than designing a generic personal-brand template and fitting her content into it afterward."
+      ]
+    },
+    {
+      title: "A three-pillar architecture, not one flat \"about me\" page",
+      paragraphs: [
+        "The site is structured around three pillars — actor, author, speaker — instead of a single biography page trying to cover all three at once. Each audience segment has a clear path in: a reader isn't wading through film credits to find her books, and an event organizer isn't scrolling past book details to find speaking information."
+      ]
+    },
+    {
+      title: "On-page SEO built in from the first draft",
+      paragraphs: [
+        "Headings, image alt text, and internal structure were all written with her name and book titles in mind from day one, rather than treating SEO as a pass applied after the design was finished. For a personal brand, that distinction matters: retrofitted SEO on a page built around visual storytelling often reads awkwardly, while SEO planned into the structure from the start doesn't have to fight the design."
+      ]
+    },
+    {
+      title: "Clear inquiry paths for books and speaking",
+      paragraphs: [
+        "Dedicated space for both books and a direct route for speaking and collaboration requests mean a reader or an organizer doesn't have to dig through generic contact information to reach the right outcome."
+      ]
+    },
+    {
+      title: "Designed to hold up on a phone, from a journalist's or organizer's first look",
+      paragraphs: [
+        "Press contacts and event organizers frequently do their first check of a person on a phone, often quickly and between other tasks. A site with heavy, slow-loading imagery or a layout that only really works on desktop undercuts exactly the polished first impression it's meant to create, so layout and load performance were built with that quick, mobile-first check in mind."
+      ]
+    },
+    {
+      title: "One consistent identity, site-wide",
+      paragraphs: [
+        "A single bio, photo set, and narrative are used across the entire site, so every visitor gets the same polished first impression regardless of which page they land on first — solving the exact inconsistency that scattered social profiles created."
+      ]
+    }
+  ],
+
+  deliverables: [
+    {
+      title: "One authoritative profile",
+      description: "A single site consolidating her film work, books, and TEDx talks, built to be the definitive source when people search for her."
+    },
+    {
+      title: "Search-ready structure",
+      description: "Pages built around her books and speaker positioning so this site, not scattered social mentions, is what shows up first."
+    },
+    {
+      title: "Clear inquiry paths",
+      description: "Dedicated space for her books and a direct route for speaking and collaboration requests."
+    },
+    {
+      title: "One consistent identity",
+      description: "A single bio, photo set, and narrative used site-wide, so every visitor gets the same polished first impression regardless of entry point."
+    }
+  ],
+
+  whyMattersHeading: "Why an Owned Site Matters for a Public Figure's E-E-A-T",
+  whyMattersParagraphs: [
+    "A personal brand website is, at its core, an entity-resolution problem. Search engines and AI research tools try to consolidate everything associated with a name into one coherent profile — but scattered social posts and press mentions are hard to merge automatically, especially when photos, bios, and details vary between platforms. An owned, structured site gives search engines one clear, authoritative source to anchor that identity to, rather than assembling a patchy picture from inconsistent fragments.",
+    "Specific, verifiable facts do real work here too: exact book titles, a precise \"three-time TEDx speaker\" credential, named film work. These are exactly the kind of details a journalist fact-checking a bio, an event organizer verifying a speaker, or an AI tool summarizing someone's background would want to draw from a single reliable source — and a site built around real specifics, rather than vague personal-brand language, is what makes that possible.",
+    "This is a different flavor of trust-building than a typical business site, but it follows the same underlying logic search engines apply everywhere: specific, consistent, verifiable information outranks vague, inconsistent claims, whether the subject is a lending company's compliance status or an individual's professional credentials."
+  ],
+  whyMattersCalloutHtml: `<p><strong>By consolidating acting, authorship, and speaking work into one search-ready site with a consistent identity</strong>, Lenaa's website is built to be the definitive answer whenever someone looks her up — not one voice among several scattered, inconsistent ones. See more examples in Teknoppy's <a href="/case-study/" class="underline font-bold text-[#0066CC]">full case study library</a>.</p>`,
+
+  faqs: [
+    {
+      question: "What platform was lenaalife.com built on?",
+      answer: "Astro."
+    },
+    {
+      question: "How long did the website design take?",
+      answer: "The website was designed and delivered in about one month."
+    },
+    {
+      question: "What services did Teknoppy provide for this project?",
+      answer: "Personal brand website design, UI/UX design, and on-page SEO structured around Lenaa's acting, author, and speaking work — built as one connected site rather than three separate sections bolted together."
+    },
+    {
+      question: "Does the site support her books and speaking engagements?",
+      answer: "Yes — the site includes dedicated space for her books, Women-O-Pause and The Autobiography of God, and a direct path for TEDx and speaking inquiries, so readers and event organizers don't have to dig through social media to find either."
+    },
+    {
+      question: "Who is the website built for?",
+      answer: "Three audiences in particular: readers looking for her books, event organizers scouting a speaker, and press or collaborators researching her film work — each gets a clear entry point instead of one generic bio page."
+    },
+    {
+      question: "Why does she need a personal website if she already has social media?",
+      answer: "Social platforms fragment her work across separate profiles that search engines struggle to consolidate into one clear identity, and she doesn't fully control the presentation on any of them. An owned site gives her one consistent, search-ready profile she controls directly."
+    },
+    {
+      question: "Is the site optimized to show up when someone searches her name?",
+      answer: "Yes — headings, image alt text, and internal structure were written with her name and book titles in mind from the first draft, rather than added as an afterthought once the design was finished."
+    },
+    {
+      question: "Does the site work well if someone checks it quickly on a phone?",
+      answer: "Yes — since press contacts and event organizers often do their first check on a phone, layout and load performance were built with that quick, mobile-first look in mind rather than assuming a desktop visit."
+    }
+  ],
+
+  ctaHeadline: "Want a personal brand website built the same way?"
+};
 ---
 
-<Layout title={page.meta.title} description={page.meta.description}>
-  <Header forceSolidBg={true} />
-
-  <main class="overflow-hidden bg-cream/20">
-    <InnerPage page={page} />
-  </main>
-
-  <FooterCTA />
-</Layout>
+<CaseStudyTemplate {...props} />

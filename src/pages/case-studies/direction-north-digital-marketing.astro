@@ -1,17 +1,156 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
-import FooterCTA from '../../components/FooterCTA.astro';
-import InnerPage from '../../components/InnerPage.astro';
-import page from '../../data/pages/case-studies/direction-north-digital-marketing.json';
+import CaseStudyTemplate, { type CaseStudyProps } from '../../components/case-study/CaseStudyTemplate.astro';
+
+const props: CaseStudyProps = {
+  metaTitle: "Direction North: Digital Marketing Case Study | Teknoppy",
+  metaDescription: "How Teknoppy manages social media campaigns and visual project showcases for Direction North, a Kerala retail display and visual merchandising manufacturer.",
+  canonicalURL: "https://teknoppy.com/case-studies/direction-north-digital-marketing/",
+  heroImage: "/client logos/direction north.png",
+  heroImageAlt: "Direction North Retail Display Digital Marketing Case Study",
+  schemaType: "TechArticle",
+  schemaAbout: {
+    type: "Organization",
+    name: "Direction North",
+    address: {
+      locality: "Kochi",
+      region: "Kerala",
+      country: "India"
+    }
+  },
+
+  clientName: "Direction North",
+  categoryTag: "Digital Marketing & Social Media Campaign Management",
+  tagBadge: "B2B Manufacturing Case Study",
+
+  title: "Direction North: Digital Marketing for a Retail Display Manufacturer",
+  storyLead: "How Teknoppy runs social media campaigns and community handling across Instagram and Facebook, turning bespoke retail installations and store transformations into an ongoing B2B visual portfolio.",
+  industry: "Retail Display & Visual Merchandising Manufacturing",
+  location: "Kerala, India",
+  services: "Digital Marketing, Social Media Campaign Management, Social Media Handling",
+  liveWebsite: "Instagram (@directionnorthllp)",
+  liveWebsiteUrl: "https://www.instagram.com/directionnorthllp/",
+  heroHighlights: [
+    "Ongoing Project Showcase",
+    "Brand Credibility Building",
+    "Structured Content Calendar",
+    "B2B Community Handling"
+  ],
+
+  atAGlance: [
+    "Installation photos and store transformations organized as an ongoing digital portfolio",
+    "Credibility established through high-caliber corporate and retail brand associations",
+    "Structured editorial calendar deployed across Instagram and Facebook",
+    "Active community management turning social engagement into qualified B2B enquiries"
+  ],
+
+  aboutHeading: "About Direction North",
+  aboutParagraphs: [
+    "Direction North is a Kerala-based retail display and visual merchandising manufacturer, producing floor displays, store transformations, exhibition builds, and premium retail branding for client brands.",
+    "Retail display manufacturing is a fundamentally visual, project-driven discipline. Prospective clients want to see tangible proof of craftsmanship, finish quality, and structural integrity before inviting a vendor into their procurement process."
+  ],
+
+  challengeLead: "Before this engagement, finished installations were delivered offline without creating ongoing digital sales equity:",
+  challenges: [
+    {
+      number: 1,
+      title: "No consistent showcase of completed work",
+      description: "Retail display and store transformation projects are inherently visual, but without a content plan, that proof of work wasn't being shared consistently as an ongoing portfolio."
+    },
+    {
+      number: 2,
+      title: "No visible brand-credibility signals",
+      description: "Serving established retail brands is a strong trust signal for a B2B buyer, but without deliberate content, those brand associations weren't visible to prospects browsing the company's social channels."
+    },
+    {
+      number: 3,
+      title: "Inconsistent posting across channels",
+      description: "Without a structured calendar, presence was sporadic, limiting visibility to a B2B audience actively researching display and merchandising vendors."
+    }
+  ],
+
+  objectiveLead: "Teknoppy's goal was to build a structured social presence that could:",
+  objectives: [
+    "Transform completed floor displays and store builds into an ongoing visual portfolio",
+    "Surface high-value client brand associations that establish institutional credibility",
+    "Maintain a predictable, disciplined publishing schedule across Instagram and Facebook",
+    "Handle inbound comments, direct messages, and vendor enquiries promptly to generate sales leads"
+  ],
+
+  approachLead: "How Teknoppy built a visual-first B2B campaign workflow for industrial merchandising:",
+  approachPillars: [
+    {
+      title: "Project showcase series",
+      paragraphs: [
+        "Installation photos, store transformation before-and-afters, and exhibition builds are documented and shared as structured thematic posts, turning completed shopfit work into a live digital showroom for retail decision-makers."
+      ]
+    },
+    {
+      title: "Credibility via brand association",
+      paragraphs: [
+        "Deliberately featuring commercial installations executed for respected retail brands provides prospective enterprise clients with immediate reassurance regarding build quality and delivery punctuality."
+      ]
+    },
+    {
+      title: "Consistent multi-channel scheduling",
+      paragraphs: [
+        "A structured monthly calendar ensures consistent impressions among commercial architects, visual merchandisers, and procurement managers across Instagram and Facebook."
+      ]
+    },
+    {
+      title: "Active community handling and lead qualification",
+      paragraphs: [
+        "Direct messages and post inquiries are promptly engaged, gathering basic project scope before routing leads to the Direction North sales team."
+      ]
+    }
+  ],
+
+  deliverables: [
+    {
+      title: "Project showcase content series",
+      description: "Documented store transformations and fixture builds published as a curated visual portfolio."
+    },
+    {
+      title: "Brand credibility framework",
+      description: "Strategic highlight posts spotlighting deliveries for prominent commercial retail brands."
+    },
+    {
+      title: "Multi-channel editorial calendar",
+      description: "Disciplined scheduling pipeline ensuring uninterrupted brand visibility across Instagram and Facebook."
+    },
+    {
+      title: "Active inquiry management",
+      description: "Prompt lead handling that converts social interactions into qualified sales consultations."
+    }
+  ],
+
+  whyMattersHeading: "Why Visual Storytelling Matters for B2B Merchandising Manufacturers",
+  whyMattersParagraphs: [
+    "In bespoke manufacturing and visual merchandising, procurement buyers rarely respond to generic promotional claims. They verify execution capabilities by examining past projects: joint finishes, illumination quality, material durability, and spatial balance.",
+    "Maintaining an active, high-resolution feed of recent client handovers transforms social media from an afterthought into a definitive visual proof point during contract evaluations."
+  ],
+  whyMattersCalloutHtml: `<p><strong>By transforming completed installations into an ongoing visual portfolio</strong>, Direction North maintains front-of-mind visibility with commercial brand managers and retail procurement teams. Discover more in our <a href="/case-study/" class="underline font-bold text-[#0066CC]">full case study library</a> or explore our <a href="/digital-marketing-company-kochi/" class="underline font-bold text-[#0066CC]">digital marketing services</a>.</p>`,
+
+  faqs: [
+    {
+      question: "What was the main goal of the Direction North digital marketing engagement?",
+      answer: "To run consistent social media campaigns and community handling that turn project-based retail display work into an ongoing visual portfolio for B2B buyers."
+    },
+    {
+      question: "Which channels does this engagement cover?",
+      answer: "Instagram (@directionnorthllp) and Facebook."
+    },
+    {
+      question: "Does this case study cover Direction North's website or SEO work?",
+      answer: "No — this case study covers social media campaign running and handling. The website structure and SEO work for this client is covered separately."
+    },
+    {
+      question: "Did this engagement affect Direction North's existing SEO rankings?",
+      answer: "This social media work was scoped separately from the site's SEO and content strategy, so it doesn't compete with or affect the website structure case study for this client."
+    }
+  ],
+
+  ctaHeadline: "Need social media that turns your completed projects into your next enquiry?"
+};
 ---
 
-<Layout title={page.meta.title} description={page.meta.description}>
-  <Header forceSolidBg={true} />
-
-  <main class="overflow-hidden bg-cream/20">
-    <InnerPage page={page} />
-  </main>
-
-  <FooterCTA />
-</Layout>
+<CaseStudyTemplate {...props} />

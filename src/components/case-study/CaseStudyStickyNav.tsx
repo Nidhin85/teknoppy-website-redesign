@@ -77,7 +77,7 @@ export const CaseStudyStickyNav: React.FC<Props> = ({ clientName, navItems = def
     <>
       {/* Pinned Top Reading Progress Bar */}
       <div 
-        className="fixed top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-indigo-500 via-indigo-400 to-violet-500 z-[60] transition-all duration-150 origin-left"
+        className="fixed top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#0066CC] via-blue-500 to-indigo-600 z-[60] transition-all duration-150 origin-left"
         style={{ width: `${scrollProgress}%` }}
         role="progressbar"
         aria-valuenow={Math.round(scrollProgress)}
@@ -90,14 +90,14 @@ export const CaseStudyStickyNav: React.FC<Props> = ({ clientName, navItems = def
       <div
         className={`w-full z-40 transition-all duration-300 ${
           isSticky
-            ? 'fixed top-[60px] lg:top-[74px] left-0 right-0 bg-[#05070B]/90 backdrop-blur-xl border-b border-white/[0.08] shadow-[0_15px_30px_rgba(0,0,0,0.8)] py-2.5'
-            : 'relative bg-[#080C16] border-y border-white/[0.08] py-3.5'
+            ? 'fixed top-[60px] lg:top-[74px] left-0 right-0 bg-white/95 backdrop-blur-xl border-b border-neutral-200/80 shadow-sm py-2.5'
+            : 'relative bg-[#F8FAFC] border-y border-neutral-200/80 py-3'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
           <div className="hidden md:flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span>
-            <span className="text-xs font-bold uppercase tracking-wider text-slate-200">
+            <span className="w-2 h-2 rounded-full bg-[#0066CC] animate-pulse"></span>
+            <span className="text-xs font-bold uppercase tracking-wider text-neutral-800">
               {clientName}
             </span>
           </div>
@@ -116,8 +116,8 @@ export const CaseStudyStickyNav: React.FC<Props> = ({ clientName, navItems = def
                   onClick={(e) => scrollToSection(e, item.id)}
                   className={`px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all whitespace-nowrap cursor-pointer ${
                     isActive
-                      ? 'bg-indigo-600 text-white shadow-md shadow-indigo-500/20'
-                      : 'text-slate-400 hover:text-white hover:bg-white/[0.06]'
+                      ? 'bg-[#0066CC] text-white shadow-xs'
+                      : 'text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100'
                   }`}
                   aria-current={isActive ? 'true' : undefined}
                 >
@@ -129,9 +129,9 @@ export const CaseStudyStickyNav: React.FC<Props> = ({ clientName, navItems = def
 
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="#contact-cta"
-              onClick={(e) => scrollToSection(e, 'contact-cta')}
-              className="px-3.5 py-1 rounded-full text-xs font-bold text-slate-300 hover:text-white bg-white/[0.06] hover:bg-white/[0.12] border border-white/[0.1] transition-all"
+              href="#contact"
+              onClick={(e) => scrollToSection(e, 'contact')}
+              className="px-3.5 py-1 rounded-full text-xs font-bold text-neutral-700 hover:text-neutral-900 bg-white hover:bg-neutral-100 border border-neutral-200/80 transition-all shadow-xs"
             >
               Get in Touch
             </a>

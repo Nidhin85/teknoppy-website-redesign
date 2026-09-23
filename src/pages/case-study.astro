@@ -73,52 +73,52 @@ const schemaFAQ = {
   <!-- Global Header with solid background -->
   <Header forceSolidBg={true} />
 
-  <main class="bg-[#05070B] text-slate-100 selection:bg-indigo-500/30 selection:text-indigo-200 overflow-x-clip pt-20 lg:pt-24 pb-20 sm:pb-28 font-sans">
+  <main class="bg-white text-neutral-900 selection:bg-blue-500/20 selection:text-blue-900 overflow-x-clip pt-20 lg:pt-24 pb-20 sm:pb-28 font-sans">
     
     <!-- =========================================================================
         SECTION 01: MODERN EDITORIAL HERO (NO BREADCRUMB)
         ========================================================================= -->
-    <section class="relative pt-14 pb-16 md:pt-22 md:pb-26 overflow-hidden border-b border-white/[0.08]">
+    <section class="relative pt-12 pb-14 md:pt-18 md:pb-20 overflow-hidden bg-gradient-to-b from-[#F8FAFC] via-white to-white border-b border-neutral-200/80">
       
       {/* Layered Atmospheric Ambient Lighting */}
-      <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(99,102,241,0.18),transparent_50%),radial-gradient(circle_at_80%_80%,rgba(56,189,248,0.12),transparent_50%)] pointer-events-none"></div>
-      <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.025)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(0,102,204,0.05),transparent_50%),radial-gradient(circle_at_80%_80%,rgba(56,189,248,0.04),transparent_50%)] pointer-events-none"></div>
+      <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.02)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none"></div>
 
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-7">
         
         {/* Eyebrow Label (NO BREADCRUMB) */}
         <div class="hero-fade-in">
-          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-xs font-bold uppercase tracking-wider shadow-sm backdrop-blur-md">
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200/70 text-[#0066CC] text-xs font-bold uppercase tracking-wider shadow-xs backdrop-blur-md">
             <span class="relative flex h-2 w-2">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-[#0066CC]"></span>
             </span>
             Our Work / Case Studies
           </div>
         </div>
 
         {/* Hero Headline & Subtitle */}
-        <div class="max-w-5xl space-y-6">
-          <h1 class="hero-fade-in hero-delay-1 text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.08]">
-            Digital Experiences, Websites and <span class="bg-gradient-to-r from-white via-indigo-100 to-indigo-400 bg-clip-text text-transparent">Growth Systems.</span>
+        <div class="max-w-5xl space-y-5">
+          <h1 class="hero-fade-in hero-delay-1 text-2xl sm:text-4xl lg:text-6xl font-extrabold tracking-tight text-neutral-900 leading-[1.15] break-words">
+            Digital Experiences, Websites and <span class="bg-gradient-to-r from-[#0066CC] via-blue-600 to-indigo-600 bg-clip-text text-transparent">Growth Systems.</span>
           </h1>
 
-          <p class="hero-fade-in hero-delay-2 text-base sm:text-[17px] text-slate-300 font-normal leading-[1.6] max-w-3xl">
+          <p class="hero-fade-in hero-delay-2 text-base sm:text-[17px] text-neutral-600 font-normal leading-[1.65] max-w-3xl">
             Real client results from Teknoppy's web design, ecommerce, web application, and SEO projects across Kerala, the UAE, Qatar, and the UK. Every project below represents verified engineering, measurable commercial deliverables, and authentic client partnerships.
           </p>
 
           {/* Quick Metric Chips */}
-          <div class="hero-fade-in hero-delay-3 flex flex-wrap items-center gap-3 pt-3">
-            <div class="px-4 py-2 rounded-full bg-[#0E1526] border border-white/[0.1] shadow-lg flex items-center gap-2 text-xs font-bold text-slate-200">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+          <div class="hero-fade-in hero-delay-3 flex flex-wrap items-center gap-3 pt-2">
+            <div class="px-4 py-2 rounded-full bg-white border border-neutral-200/80 shadow-xs flex items-center gap-2 text-xs font-bold text-neutral-700">
+              <CheckCircle2 className="w-4 h-4 text-emerald-600" />
               <span>22 Verified Client Case Studies</span>
             </div>
-            <div class="px-4 py-2 rounded-full bg-[#0E1526] border border-white/[0.1] shadow-lg flex items-center gap-2 text-xs font-bold text-slate-200">
-              <Sparkles className="w-4 h-4 text-indigo-400" />
+            <div class="px-4 py-2 rounded-full bg-white border border-neutral-200/80 shadow-xs flex items-center gap-2 text-xs font-bold text-neutral-700">
+              <Sparkles className="w-4 h-4 text-[#0066CC]" />
               <span>8 Specialized Service Disciplines</span>
             </div>
-            <div class="px-4 py-2 rounded-full bg-[#0E1526] border border-white/[0.1] shadow-lg flex items-center gap-2 text-xs font-bold text-slate-200">
-              <Globe2 className="w-4 h-4 text-sky-400" />
+            <div class="px-4 py-2 rounded-full bg-white border border-neutral-200/80 shadow-xs flex items-center gap-2 text-xs font-bold text-neutral-700">
+              <Globe2 className="w-4 h-4 text-sky-600" />
               <span>Kerala • UAE • Qatar • UK • Germany</span>
             </div>
           </div>
@@ -137,49 +137,49 @@ const schemaFAQ = {
     <!-- =========================================================================
         SECTION 03: HOW TEKNOPPY ARCHITECTS COMMERCIAL VALUE
         ========================================================================= -->
-    <section class="py-24 md:py-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
-      <div class="rounded-3xl sm:rounded-4xl bg-gradient-to-b from-[#0F172A] to-[#0A0E1A] text-white p-8 sm:p-12 lg:p-16 border border-white/[0.1] shadow-2xl space-y-12 relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
+    <section class="py-20 md:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
+      <div class="rounded-2xl sm:rounded-3xl bg-[#F8FAFC] text-neutral-900 p-8 sm:p-12 lg:p-14 border border-neutral-200/80 shadow-sm space-y-10 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl pointer-events-none"></div>
 
-        <div class="max-w-3xl space-y-4 relative z-10">
-          <span class="text-xs font-bold uppercase tracking-widest text-indigo-400">
+        <div class="max-w-3xl space-y-3 relative z-10">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#0066CC]">
             Engineering & Strategy Standards
           </span>
-          <h2 class="text-3xl sm:text-5xl text-white font-extrabold tracking-tight leading-tight">
+          <h2 class="text-2xl sm:text-4xl text-neutral-900 font-extrabold tracking-tight leading-tight">
             How Teknoppy Architects Commercial Value
           </h2>
-          <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+          <p class="text-neutral-600 text-base sm:text-[17px] leading-relaxed">
             Every case study in our library began with a distinct operational challenge: unorganized products, poor search visibility, outdated branding, or high checkout friction.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10 pt-4 border-t border-white/[0.08]">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10 pt-4 border-t border-neutral-200">
           <div class="space-y-3">
-            <div class="w-11 h-11 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
+            <div class="w-11 h-11 rounded-xl bg-blue-50 border border-blue-200/70 flex items-center justify-center text-[#0066CC]">
               <Zap className="w-5 h-5" />
             </div>
-            <h3 class="text-lg font-bold text-white">Search Intent From Day One</h3>
-            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            <h3 class="text-lg font-bold text-neutral-900">Search Intent From Day One</h3>
+            <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
               We design website architecture around actual borrower and customer queries rather than internal org charts, ensuring immediate crawlability and long-term organic rankings.
             </p>
           </div>
 
           <div class="space-y-3">
-            <div class="w-11 h-11 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-sky-400">
+            <div class="w-11 h-11 rounded-xl bg-blue-50 border border-blue-200/70 flex items-center justify-center text-[#0066CC]">
               <ShieldCheck className="w-5 h-5" />
             </div>
-            <h3 class="text-lg font-bold text-white">Institutional Trust & Compliance</h3>
-            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            <h3 class="text-lg font-bold text-neutral-900">Institutional Trust & Compliance</h3>
+            <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
               From regulated finance under the Kerala Money-Lenders Act to international ISO calibration standards in the UAE, compliance signals are engineered into core page layouts.
             </p>
           </div>
 
           <div class="space-y-3">
-            <div class="w-11 h-11 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-emerald-400">
+            <div class="w-11 h-11 rounded-xl bg-emerald-50 border border-emerald-200/70 flex items-center justify-center text-emerald-600">
               <TrendingUp className="w-5 h-5" />
             </div>
-            <h3 class="text-lg font-bold text-white">Conversion-Focused Performance</h3>
-            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            <h3 class="text-lg font-bold text-neutral-900">Conversion-Focused Performance</h3>
+            <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
               Fast load times, responsive mobile-first views, and clear inquiry paths that shorten the distance between first discovery and commercial engagement.
             </p>
           </div>
@@ -189,31 +189,31 @@ const schemaFAQ = {
     </section>
 
     <!-- =========================================================================
-        SECTION 04: FREQUENTLY ASKED QUESTIONS (DARK GLASS ACCORDION)
+        SECTION 04: FREQUENTLY ASKED QUESTIONS
         ========================================================================= -->
-    <section class="py-24 md:py-32 bg-[#070A12] border-y border-white/[0.08] reveal-on-scroll">
+    <section class="py-20 md:py-28 bg-[#F8FAFC] border-y border-neutral-200/80 reveal-on-scroll">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
-        <div class="text-center space-y-4">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/[0.05] border border-white/[0.08] text-indigo-400 text-xs font-bold uppercase tracking-wider">
+        <div class="text-center space-y-3">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-50 border border-blue-200/70 text-[#0066CC] text-xs font-bold uppercase tracking-wider">
             Case Study Inquiries
           </div>
-          <h2 class="text-3xl sm:text-5xl text-white font-extrabold tracking-tight leading-tight">
+          <h2 class="text-2xl sm:text-4xl text-neutral-900 font-extrabold tracking-tight leading-tight">
             Frequently Asked Questions
           </h2>
-          <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto">
+          <p class="text-neutral-600 text-base sm:text-[17px] max-w-2xl mx-auto">
             Clear, straightforward answers regarding our case studies, verified outcomes, and regional coverage.
           </p>
         </div>
 
         <div class="space-y-4">
           {caseStudyFAQs.map((faq, idx) => (
-            <div key={idx} class="p-6 sm:p-7 rounded-2xl bg-[#0E1526]/80 border border-white/[0.08] hover:border-white/15 transition-colors space-y-2.5">
-              <h3 class="text-base sm:text-lg font-bold text-white flex items-center gap-3">
-                <HelpCircle className="w-5 h-5 text-indigo-400 flex-shrink-0" />
+            <div key={idx} class="p-6 sm:p-7 rounded-2xl bg-white border border-neutral-200/80 hover:border-neutral-300 transition-colors shadow-xs space-y-2.5">
+              <h3 class="text-base sm:text-lg font-bold text-neutral-900 flex items-center gap-3">
+                <HelpCircle className="w-5 h-5 text-[#0066CC] flex-shrink-0" />
                 <span>{faq.q}</span>
               </h3>
-              <p class="text-sm text-slate-300 leading-relaxed pl-8">
+              <p class="text-sm text-neutral-600 leading-relaxed pl-8">
                 {faq.a}
               </p>
             </div>
@@ -224,35 +224,31 @@ const schemaFAQ = {
     </section>
 
     <!-- =========================================================================
-        SECTION 05: NEW LUXURY DARK CTA (REPLACING OLD ORANGE BLOCK)
+        SECTION 05: AGENCY CONSULTATION CTA
         ========================================================================= -->
-    <section class="py-24 md:py-32 bg-gradient-to-b from-[#0B101E] to-[#05070B] text-white relative overflow-hidden border-t border-white/[0.08] reveal-on-scroll">
-      {/* Ambient background lighting */}
-      <div class="absolute top-0 left-1/4 w-[600px] h-[600px] bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
-      <div class="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-cyan-600/10 rounded-full blur-3xl pointer-events-none"></div>
-
+    <section class="py-20 md:py-28 bg-white text-neutral-900 relative overflow-hidden border-t border-neutral-200/80 reveal-on-scroll">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           {/* Left Column: Heading, Proposition & Action CTAs */}
-          <div class="lg:col-span-7 space-y-8">
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/30 text-xs font-bold uppercase tracking-wider backdrop-blur-md">
-              <Zap className="w-3.5 h-3.5 text-indigo-400" />
+          <div class="lg:col-span-7 space-y-7">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 text-[#0066CC] border border-blue-200/70 text-xs font-bold uppercase tracking-wider backdrop-blur-md">
+              <Zap className="w-3.5 h-3.5 text-[#0066CC]" />
               Let's Build Something Great
             </div>
 
-            <h2 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-white">
-              Ready to Work with the Leading <span class="bg-gradient-to-r from-white via-indigo-100 to-indigo-400 bg-clip-text text-transparent">Digital Agency in Kerala?</span>
+            <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight text-neutral-900">
+              Ready to Work with the Leading <span class="bg-gradient-to-r from-[#0066CC] via-blue-600 to-indigo-600 bg-clip-text text-transparent">Digital Agency in Kerala?</span>
             </h2>
 
-            <p class="text-slate-300 text-base sm:text-lg leading-relaxed font-normal max-w-2xl">
+            <p class="text-neutral-600 text-base sm:text-lg leading-relaxed font-normal max-w-2xl">
               Whether you are launching a new business website, rebuilding an outdated web portal, or scaling custom web development and SEO infrastructure — Teknoppy is ready to deliver. Start with a free website audit and see exactly where your current online presence stands, or request a clear, no-obligation proposal within 24 hours.
             </p>
 
             <div class="flex flex-wrap items-center gap-4 pt-2">
               <a 
                 href={`tel:${site.phoneLink}`} 
-                class="inline-flex items-center gap-2.5 px-7 py-4 rounded-xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white text-sm font-bold shadow-xl shadow-indigo-600/30 hover:shadow-indigo-500/50 hover:-translate-y-0.5 transition-all"
+                class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl bg-[#0066CC] hover:bg-[#0052a3] text-white text-sm font-bold shadow-md shadow-blue-600/20 hover:-translate-y-0.5 transition-all"
               >
                 <Phone className="w-4 h-4" />
                 <span>Call Us | {site.phone}</span>
@@ -262,7 +258,7 @@ const schemaFAQ = {
                 href={`https://wa.me/${site.whatsapp}?text=${encodeURIComponent(site.whatsappMessage)}`} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                class="inline-flex items-center gap-2.5 px-7 py-4 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-white text-sm font-bold shadow-lg transition-all hover:-translate-y-0.5"
+                class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-white text-sm font-bold shadow-sm transition-all hover:-translate-y-0.5"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>WhatsApp Consultation</span>
@@ -270,7 +266,7 @@ const schemaFAQ = {
 
               <a 
                 href="/contact-us/" 
-                class="inline-flex items-center gap-2 px-6 py-4 rounded-xl bg-[#0E1526] hover:bg-[#152038] text-slate-300 hover:text-white border border-white/[0.1] text-sm font-semibold transition-all"
+                class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-neutral-100 hover:bg-neutral-200 text-neutral-800 text-sm font-semibold transition-all"
               >
                 <span>Request Free Quote</span>
                 <ArrowRight className="w-4 h-4" />
@@ -278,11 +274,11 @@ const schemaFAQ = {
             </div>
           </div>
 
-          {/* Right Column: Luxury Glass Consultation Panel with Sanal Edison */}
+          {/* Right Column: Leadership Consultation Panel with Sanal Edison */}
           <div class="lg:col-span-5">
-            <div class="rounded-3xl bg-[#0D1424]/90 border border-white/[0.1] p-8 sm:p-10 shadow-2xl space-y-6 relative overflow-hidden backdrop-blur-xl">
+            <div class="rounded-2xl sm:rounded-3xl bg-[#F8FAFC] border border-neutral-200/80 p-8 sm:p-10 shadow-lg space-y-6 relative overflow-hidden">
               <div class="flex items-center gap-5">
-                <div class="relative w-20 h-20 rounded-2xl overflow-hidden border-2 border-indigo-500/40 shadow-lg flex-shrink-0">
+                <div class="relative w-20 h-20 rounded-2xl overflow-hidden border-2 border-blue-500/30 shadow-md flex-shrink-0">
                   <img 
                     src="/team/sanal-edison.webp" 
                     onerror="this.onerror=null;this.src='/sanal.png';"
@@ -292,35 +288,35 @@ const schemaFAQ = {
                   />
                 </div>
                 <div class="space-y-1">
-                  <h3 class="text-xl font-bold text-white">Sanal Edison</h3>
-                  <p class="text-xs font-bold uppercase tracking-wider text-indigo-400">Digital Strategist</p>
-                  <p class="text-xs text-slate-400">Teknoppy Leadership</p>
+                  <h3 class="text-xl font-bold text-neutral-900">Sanal Edison</h3>
+                  <p class="text-xs font-bold uppercase tracking-wider text-[#0066CC]">Digital Strategist</p>
+                  <p class="text-xs text-neutral-500">Teknoppy Leadership</p>
                 </div>
               </div>
 
-              <p class="text-sm text-slate-300 leading-relaxed">
+              <p class="text-sm text-neutral-600 leading-relaxed">
                 &ldquo;Communicate directly with our strategists to engineer high-converting digital solutions built specifically for your industry.&rdquo;
               </p>
 
-              <div class="space-y-3 pt-2 border-t border-white/[0.08]">
+              <div class="space-y-3 pt-2 border-t border-neutral-200">
                 <a 
                   href={`tel:${site.phoneLink}`}
-                  class="flex items-center gap-3 p-3 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] border border-white/[0.06] text-sm text-slate-200 hover:text-white transition-colors"
+                  class="flex items-center gap-3 p-3 rounded-xl bg-white hover:bg-neutral-50 border border-neutral-200/80 text-sm text-neutral-800 transition-colors shadow-2xs"
                 >
-                  <Phone className="w-4 h-4 text-indigo-400" />
+                  <Phone className="w-4 h-4 text-[#0066CC]" />
                   <span class="font-mono font-medium">{site.phone}</span>
                 </a>
 
                 <a 
                   href={`mailto:${site.email}`}
-                  class="flex items-center gap-3 p-3 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] border border-white/[0.06] text-sm text-slate-200 hover:text-white transition-colors"
+                  class="flex items-center gap-3 p-3 rounded-xl bg-white hover:bg-neutral-50 border border-neutral-200/80 text-sm text-neutral-800 transition-colors shadow-2xs"
                 >
-                  <Mail className="w-4 h-4 text-indigo-400" />
+                  <Mail className="w-4 h-4 text-[#0066CC]" />
                   <span class="font-mono font-medium">{site.email}</span>
                 </a>
               </div>
 
-              <div class="text-[11px] text-slate-500 font-mono text-center pt-2">
+              <div class="text-[11px] text-neutral-400 font-mono text-center pt-2">
                 KOCHI, KERALA • DUBAI, UAE • DOHA, QATAR
               </div>
             </div>

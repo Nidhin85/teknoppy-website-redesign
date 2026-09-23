@@ -1,17 +1,157 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
-import FooterCTA from '../../components/FooterCTA.astro';
-import InnerPage from '../../components/InnerPage.astro';
-import page from '../../data/pages/case-studies/apolo-mattress-shopify-ecommerce.json';
+import CaseStudyTemplate, { type CaseStudyProps } from '../../components/case-study/CaseStudyTemplate.astro';
+
+const props: CaseStudyProps = {
+  metaTitle: "Apolo Mattress: Shopify Ecommerce Case Study | Teknoppy",
+  metaDescription: "How Teknoppy built apolomattress.com on Shopify for a Kerala mattress manufacturer, with product-fit guidance, verified reviews, and a 15-year warranty trust architecture.",
+  canonicalURL: "https://teknoppy.com/case-studies/apolo-mattress-shopify-ecommerce/",
+  heroImage: "/case-studies/apolomattress.webp",
+  heroImageAlt: "Apolo Mattress D2C Shopify Store Design Case Study",
+  schemaType: "TechArticle",
+  schemaAbout: {
+    type: "Organization",
+    name: "Apolo Mattress",
+    address: {
+      locality: "Ernakulam",
+      region: "Kerala",
+      country: "India"
+    }
+  },
+
+  clientName: "Apolo Mattress",
+  categoryTag: "Shopify D2C Store Design & Ecommerce Architecture",
+  tagBadge: "D2C Manufacturing Case Study",
+
+  title: "Apolo Mattress: A Shopify Store Built to Answer Every Question Before Checkout",
+  storyLead: "How Teknoppy architected apolomattress.com on Shopify to resolve customer purchase hesitation on high-ticket, hard-to-return sleep products through transparent fit guidance and embedded warranty assurance.",
+  industry: "Home Furnishing & Bedding Manufacturing (D2C Ecommerce)",
+  location: "Kerala, India",
+  services: "Shopify Development, Website Design, SEO",
+  platform: "Shopify",
+  liveWebsite: "apolomattress.com",
+  liveWebsiteUrl: "https://apolomattress.com",
+  heroHighlights: [
+    "Product-Fit Finder Flow",
+    "15-Year Warranty Framing",
+    "Surfaced Google Reviews",
+    "Frictionless Mobile Checkout"
+  ],
+
+  atAGlance: [
+    "Clear decision path differentiating memory foam, latex, pocket spring, and orthopedic foam models",
+    "Integrated Google customer reviews displayed directly across the homepage and collection pages",
+    "Pre-purchase hesitation FAQ addressing warranty, returns, custom dimensions, and cash on delivery",
+    "15-year warranty, free delivery, and easy exchange badges engineered across every screen"
+  ],
+
+  aboutHeading: "About Apolo Mattress",
+  aboutParagraphs: [
+    "Apolo Mattress is a Kerala-based mattress manufacturer selling memory foam, latex, pocket spring, and foam mattresses, along with pillows and mattress protectors, backed by a 15-year warranty.",
+    "Mattresses are one of the most difficult consumer categories to sell purely online. Shoppers cannot lie down or feel mattress firmness before paying. When choosing between Memory Hug, Latexa, Spring Fit, and Dream Fit, customers need lucid explanations regarding spine alignment, heat dissipation, and pressure relief to feel confident committing to a bulky product that cannot be easily returned."
+  ],
+
+  challengeLead: "Selling high-ticket, hard-to-return sleep systems online exposes specific conversion friction:",
+  challenges: [
+    {
+      number: 1,
+      title: "No product-fit guidance",
+      description: "With four distinct mattress compositions, customers previously lacked a straightforward mechanism to match their sleep habits, chronic back stiffness, or preferred firmness to the right model."
+    },
+    {
+      number: 2,
+      title: "Buried social proof",
+      description: "Satisfied customer reviews existed on Google Maps but weren't surfaced directly on the storefront, forcing prospective buyers to leave the buying flow to find reassurance."
+    },
+    {
+      number: 3,
+      title: "Unaddressed checkout friction",
+      description: "Critical questions concerning warranty claim steps, return conditions, delivery logistics, and COD availability were unaddressed before checkout."
+    }
+  ],
+
+  objectiveLead: "Teknoppy's brief was to create an intuitive D2C Shopify flagship that could:",
+  objectives: [
+    "Guide consumers effortlessly to their ideal mattress model based on sleeping posture and comfort preference",
+    "Embed verifiable social proof and warranty safeguards at every point of evaluation",
+    "Answer all logistic, dimensional, and payment queries directly on the product detail pages",
+    "Deliver a mobile-first, high-converting checkout experience with local payment gateway support"
+  ],
+
+  approachLead: "How Teknoppy transformed mattress shopping into an anxiety-free online buying experience:",
+  approachPillars: [
+    {
+      title: "Product-fit clarity built into catalog architecture",
+      paragraphs: [
+        "Each mattress model (Memory Hug, Latexa, Spring Fit, Dream Fit) features distinct visual badges highlighting orthopedic support, natural hypoallergenic materials, or motion isolation, paired with a dedicated 'Which mattress is best for you?' guidance section."
+      ]
+    },
+    {
+      title: "Live verified reviews on storefront",
+      paragraphs: [
+        "Real buyer reviews with star ratings are prominently featured on the homepage and beneath product buy buttons, providing immediate validation from verified owners across Kerala."
+      ]
+    },
+    {
+      title: "Proactive purchase hesitation FAQs",
+      paragraphs: [
+        "Concise, transparent answers concerning the 15-year warranty terms, doorstep delivery timelines, free replacement guarantees, and standard bed sizing eliminate doubts before cart addition."
+      ]
+    },
+    {
+      title: "Streamlined mobile checkout flow",
+      paragraphs: [
+        "The entire catalog was engineered mobile-first with lightning-fast variant switching (Single, Queen, King, Custom), UPI and Card integrations, and one-tap checkout."
+      ]
+    }
+  ],
+
+  deliverables: [
+    {
+      title: "Custom Shopify theme architecture",
+      description: "Modern, high-performance responsive storefront tailored to high-consideration home lifestyle commerce."
+    },
+    {
+      title: "Interactive mattress selection guidance",
+      description: "Clear ergonomic feature callouts matching back pain relief and spine support with specific core materials."
+    },
+    {
+      title: "Automated review & trust signal integration",
+      description: "Real-time Google customer feedback and 15-year manufacturer warranty badges embedded throughout."
+    },
+    {
+      title: "Pre-purchase objection FAQ framework",
+      description: "Targeted answers covering sizing dimensions, delivery protocol, COD, and trial exchange policies."
+    }
+  ],
+
+  whyMattersHeading: "Why Trust Engineering Decides D2C Furniture Conversions",
+  whyMattersParagraphs: [
+    "In direct-to-consumer ecommerce, purchasing a mattress requires substantial buyer commitment. If a storefront feels like a generic dropshipping site or fails to clarify return and warranty details plainly, buyers quickly abandon the cart to purchase from physical retail showrooms.",
+    "By establishing institutional manufacturer credibility, displaying transparent warranty guidelines, and providing empathetic sleep-fit recommendations, apolomattress.com removes the psychological hesitation that usually stalls online mattress sales."
+  ],
+  whyMattersCalloutHtml: `<p><strong>By answering every key consideration before the buyer reaches checkout</strong>, apolomattress.com provides a modern benchmark for D2C home furnishing commerce. Explore more in our <a href="/case-study/" class="underline font-bold text-[#0066CC]">case study library</a> or view our <a href="/shopify-development-company-kochi/" class="underline font-bold text-[#0066CC]">Shopify development services</a>.</p>`,
+
+  faqs: [
+    {
+      question: "What was the main goal of the Apolo Mattress Shopify project?",
+      answer: "To build a store that helps customers confidently choose the right mattress for their needs and answers the key questions — warranty, returns, delivery, sizing — before they buy."
+    },
+    {
+      question: "What mattresses does Apolo Mattress sell?",
+      answer: "Memory Hug (memory foam), Latexa (pure latex), Spring Fit (pocketed spring), and Dream Fit (foam) mattresses, along with pillows and mattress protectors."
+    },
+    {
+      question: "Did the project affect Apolo Mattress's existing rankings?",
+      answer: "The project was scoped to avoid keyword cannibalization across the site's product and collection pages — no overlapping targets were introduced."
+    },
+    {
+      question: "What platform is Apolo Mattress built on?",
+      answer: "Shopify."
+    }
+  ],
+
+  ctaHeadline: "Need a Shopify store that answers every question before a customer reaches checkout?"
+};
 ---
 
-<Layout title={page.meta.title} description={page.meta.description}>
-  <Header forceSolidBg={true} />
-
-  <main class="overflow-hidden bg-cream/20">
-    <InnerPage page={page} />
-  </main>
-
-  <FooterCTA />
-</Layout>
+<CaseStudyTemplate {...props} />
