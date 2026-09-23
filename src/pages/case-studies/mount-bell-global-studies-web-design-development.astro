@@ -1,17 +1,201 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
-import FooterCTA from '../../components/FooterCTA.astro';
-import InnerPage from '../../components/InnerPage.astro';
-import page from '../../data/pages/case-studies/mount-bell-global-studies-web-design-development.json';
+import CaseStudyTemplate, { type CaseStudyProps } from '../../components/case-study/CaseStudyTemplate.astro';
+
+const props: CaseStudyProps = {
+  metaTitle: "Mount Bell Global Studies: A Website Design & Development Case Study for an Overseas Education Consultancy | Teknoppy",
+  metaDescription: "How Teknoppy built a structured study-abroad platform for Mount Bell Global Studies with 13 country destination hubs, distinct immigration workflows, and dual-office presence in Thrissur and Kochi.",
+  canonicalURL: "https://teknoppy.com/case-studies/mount-bell-global-studies-web-design-development/",
+  heroImage: "/case-studies/mountbell.webp",
+  heroImageAlt: "Mount Bell Global Studies Overseas Education Consultancy Website Design Case Study",
+  schemaType: "TechArticle",
+  schemaAbout: {
+    type: "Organization",
+    name: "Mount Bell Global Studies",
+    address: {
+      locality: "Thrissur",
+      region: "Kerala",
+      country: "India"
+    }
+  },
+
+  clientName: "Mount Bell Global Studies",
+  categoryTag: "Website Design & Development, Information Architecture & SEO",
+  tagBadge: "Overseas Education & Immigration Platform",
+
+  title: "Mount Bell Global Studies: A Website Design and Development Case Study for a Kerala Overseas Education Consultancy",
+  storyLead: "How Teknoppy structured a transparent study-abroad and immigration portal for Mount Bell Global Studies, giving 13 international destinations dedicated hubs and establishing dual-office local authority across Thrissur and Kochi.",
+  industry: "Overseas Education Consultancy (Study Abroad & Immigration Services)",
+  location: "Thrissur (Head Office) and Kochi, Kerala",
+  services: "Website Design & Development, SEO",
+  platform: "Astro / Modern Web Architecture",
+  liveWebsite: "mountbell.com",
+  liveWebsiteUrl: "https://mountbell.com",
+  heroHighlights: [
+    "13 Dedicated Country Hubs",
+    "Separated Immigration Service",
+    "Dual Thrissur & Kochi Presence",
+    "Decision Sequence Content Flow"
+  ],
+
+  atAGlance: [
+    "Dedicated pages for 13 study destinations, replacing one generic destinations page",
+    "Immigration kept distinct from country-specific study-abroad consultancy",
+    "Both Kochi and Thrissur offices surfaced clearly for local relevance in each city",
+    "Testimonials and blog content added to build trust for a major life decision",
+    "Structured to make a genuinely wide range of options feel navigable, not overwhelming"
+  ],
+
+  aboutHeading: "About Mount Bell Global Studies",
+  aboutParagraphs: [
+    "Mount Bell Global Studies is a Kerala-based Overseas Education Consultancy headquartered in Thrissur with a second office in Kochi, representing universities and colleges across 15+ countries.",
+    "Choosing where to study abroad — and navigating the immigration process that follows — is one of the more significant decisions a student and their family will make, financially and personally. A website for this kind of consultancy isn't just describing services; it's helping a prospective student narrow down a genuinely large set of real options without the process feeling overwhelming at the exact moment they need clarity most.",
+    "With university and college partnerships spanning 15+ countries and a client base drawn from across Kerala, the consultancy's actual reach is considerably wider than a typical local business. The website needed to reflect that scale without losing the approachability a first-time visitor — often a student applying for the first time, alongside a parent weighing in on the decision — needs from the very first page they land on."
+  ],
+
+  challengeLead: "A consultancy covering 13+ study destinations and a separate immigration service needs a site structure built for that scale — the previous setup wasn't:",
+  challenges: [
+    {
+      number: 1,
+      title: "No dedicated page per study destination",
+      description: "With destinations across 13+ countries, study options sat undifferentiated, making it hard for a prospective student to research region-specific requirements and options without wading through everything at once."
+    },
+    {
+      number: 2,
+      title: "Immigration and study-abroad services blurred together",
+      description: "Without separate positioning, migration services could easily be confused with student study-abroad consultancy in the same navigation, when they're actually distinct services with different client needs."
+    },
+    {
+      number: 3,
+      title: "No visible dual-office presence",
+      description: "Kochi and Thrissur locations weren't both clearly surfaced, limiting local relevance for students researching from either city and unsure which office to contact."
+    },
+    {
+      number: 4,
+      title: "No trust-building content",
+      description: "Without testimonials or blog content, prospective students had little social proof or educational context to build confidence before committing to a major life decision."
+    },
+    {
+      number: 5,
+      title: "Not structured around how families actually make this decision",
+      description: "Choosing a study destination, understanding its visa and immigration requirements, and speaking with a counselor tend to happen in a specific sequence for most families, and the site wasn't organized to support that sequence naturally."
+    }
+  ],
+
+  objectiveLead: "Teknoppy's goal was to build a website that could:",
+  objectives: [
+    "Give each of the 13 study destinations its own dedicated, explorable page",
+    "Keep Immigration positioned as a distinct service from country-specific study-abroad consultancy",
+    "Surface both the Kochi and Thrissur offices clearly for local relevance",
+    "Build trust for a major decision through testimonials and educational blog content",
+    "Guide prospective students through a genuinely wide range of destinations and services without the site feeling like an undifferentiated wall of options"
+  ],
+
+  approachLead: "How Teknoppy engineered a student-and-family-centered educational advisory architecture:",
+  approachPillars: [
+    {
+      title: "Dedicated pages for 13 study destinations",
+      paragraphs: [
+        "UK, Canada, Australia, New Zealand, Ireland, France, Germany, Dubai, Sweden, Netherlands, Finland, Latvia, and Malta each received their own page under a clear Countries structure, rather than one generic destinations page trying to summarize all of them at once. A student researching Canada gets Canada-specific requirements and options, not a paragraph shared across thirteen countries."
+      ]
+    },
+    {
+      title: "Immigration kept distinct from study-abroad services",
+      paragraphs: [
+        "Immigration sits as its own top-level navigation item, separate from country-specific study programs, so a visitor researching migration services isn't mixed in with student consultancy content aimed at a different intent entirely."
+      ]
+    },
+    {
+      title: "Both offices surfaced clearly",
+      paragraphs: [
+        "Kochi and Thrissur addresses and phone numbers are both listed directly, giving students in either city a clear, direct local contact point rather than one generic contact page that doesn't specify which office actually serves them."
+      ]
+    },
+    {
+      title: "Testimonials and blog content build trust",
+      paragraphs: [
+        "Named student testimonials and a blog of study-abroad guidance content give prospective students social proof and educational context for a decision most families make only once or twice in a lifetime, where confidence in the consultancy matters as much as the country information itself."
+      ]
+    },
+    {
+      title: "Structured around the actual decision sequence",
+      paragraphs: [
+        "Navigation and content flow were built to follow how families typically approach this decision — narrowing down a destination first, then understanding what that country's visa and immigration process actually involves, before reaching out to a counselor — rather than presenting every option and service at the same level with no guided path through them."
+      ]
+    },
+    {
+      title: "Mobile-first, for how this research actually happens",
+      paragraphs: [
+        "Much of the early research for a study-abroad decision happens in short sessions on a phone — comparing countries, checking a requirement, reading a testimonial — often before a family sits down together to discuss it properly. Layout and navigation were built mobile-first so that comparison process holds up, rather than treating mobile as a secondary, scaled-down version of a desktop layout."
+      ]
+    }
+  ],
+
+  deliverablesLead: "Key platform features and information architecture delivered for Mount Bell Global Studies:",
+  deliverables: [
+    {
+      title: "13 Country-Specific Destination Hubs",
+      description: "UK, Canada, Australia, New Zealand, Ireland, France, Germany, Dubai, Sweden, Netherlands, Finland, Latvia, and Malta with tailored admission and visa guidelines."
+    },
+    {
+      title: "Independent Immigration Section",
+      description: "Distinct procedural architecture for skilled migration and visa documentation separate from academic counseling."
+    },
+    {
+      title: "Dual Local Office Grounding",
+      description: "Direct contact, maps, and appointment booking channels for both Thrissur (Head Office) and Kochi locations."
+    },
+    {
+      title: "Verified Student Social Proof",
+      description: "Named case stories, university acceptance testimonials, and practical destination advisories."
+    }
+  ],
+
+  whyMattersHeading: "Why This Structure Matters for a Major Life-Decision Service",
+  whyMattersParagraphs: [
+    "Choosing a study-abroad consultancy sits closer to a YMYL decision than most local business categories — the financial and personal stakes are genuinely high, and families researching this online are actively looking for reasons to trust one consultancy over another. Named testimonials and real educational blog content do more work here than polished service copy alone, because they give a prospective student something to verify: a real name, a real experience, a real explanation of how a visa process actually works.",
+    "Country-specific depth also matters for how these decisions get researched today. A growing number of students and parents use AI research tools to compare study destinations directly — \"which is easier, a UK or Canada study visa\" — and a site with genuine, separated depth per country gives those tools something specific to draw from, rather than a single vague \"study abroad consultancy\" page that can't answer a country-specific question with any real accuracy.",
+    "Local entity clarity plays its own role too. A student in Kochi and a student in Thrissur are searching from different local contexts, and a consultancy that clearly represents both offices — rather than one generic contact page — is easier for local search to associate correctly with each city, and easier for a prospective client to trust as genuinely accessible rather than remote."
+  ],
+  whyMattersCalloutHtml: `<p><strong>By giving 13 study destinations their own dedicated pages, keeping immigration clearly distinct, surfacing both offices, and adding real trust content through testimonials and blog guidance</strong>, the Mount Bell Global Studies site is built to guide a family through one of their biggest decisions with clarity instead of overwhelm. See more examples in Teknoppy's <a href="/case-study/" class="underline font-bold text-[#0066CC]">full case study library</a>.</p>`,
+
+  faqs: [
+    {
+      question: "What was the main goal of the Mount Bell Global Studies website project?",
+      answer: "To build a website that could guide prospective students through a wide range of study destinations and services without feeling overwhelming for a major life decision."
+    },
+    {
+      question: "Which countries does Mount Bell Global Studies cover?",
+      answer: "UK, Canada, Australia, New Zealand, Ireland, France, Germany, Dubai, Sweden, Netherlands, Finland, Latvia, and Malta, each with its own dedicated page."
+    },
+    {
+      question: "Does Mount Bell Global Studies handle both study-abroad consultancy and immigration?",
+      answer: "Yes — the site keeps Immigration as a distinct offering from its country-specific study-abroad consultancy services, so each is clear about what it covers."
+    },
+    {
+      question: "Does Mount Bell have offices in more than one city?",
+      answer: "Yes — the head office is in Thrissur, with a second office in Kochi. Both addresses and phone numbers are listed directly so students in either city have a clear local contact point."
+    },
+    {
+      question: "Why are testimonials and blog content included on the site?",
+      answer: "Choosing a study-abroad consultancy is a major decision most families make only once. Named testimonials and educational blog content give prospective students real social proof and context to build confidence before committing."
+    },
+    {
+      question: "How is the site organized for such a wide range of countries and services?",
+      answer: "Around the actual decision sequence most families follow — narrowing down a destination first, then understanding that country's visa and immigration process, before reaching out to a counselor — rather than presenting every option at once with no guided path."
+    },
+    {
+      question: "Can I get help with visa or immigration matters separately from choosing a study destination?",
+      answer: "Yes — Immigration is positioned as its own distinct service on the site, so it can be explored independently of the country-specific study-abroad pages."
+    },
+    {
+      question: "Does the site work well for researching on a phone?",
+      answer: "Yes — the layout was built mobile-first, since much of the early comparison research for a study-abroad decision happens in short sessions on a phone rather than at a desktop."
+    }
+  ],
+
+  authorRole: "Digital Strategist at Teknoppy",
+  ctaHeadline: "Need a website that makes a wide range of options easy for visitors to navigate before a big decision?"
+};
 ---
 
-<Layout title={page.meta.title} description={page.meta.description}>
-  <Header forceSolidBg={true} />
-
-  <main class="overflow-hidden bg-cream/20">
-    <InnerPage page={page} />
-  </main>
-
-  <FooterCTA />
-</Layout>
+<CaseStudyTemplate {...props} />
