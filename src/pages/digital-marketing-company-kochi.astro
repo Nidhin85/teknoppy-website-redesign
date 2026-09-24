@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import FooterCTA from '../components/FooterCTA.astro';
 import { ArrowRight, Play, Globe2, Smile, Award, Star, CheckCircle, Clock, Heart, Shield, Check, HelpCircle, User, Zap, Rocket, Activity, Home, Utensils, GraduationCap, Compass, Briefcase, Factory, Languages, MonitorSmartphone, Building2, Edit, ShieldCheck, Search, Layers, Network, Code, Gauge, LayoutGrid, Calendar, TrendingUp } from 'lucide-react';
 import page from '../data/pages/digital-marketing.json';
+import { digitalMarketingSchema } from '../data/schemas/digitalMarketingSchema';
 
 const title = page.meta.title;
 const description = page.meta.description;
@@ -27,22 +28,13 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
     label: "text-emerald-400"
   }
 };
-
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": page.faqs.items.map(faq => ({
-    "@type": "Question",
-    "name": faq.q,
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": faq.a
-    }
-  }))
-};
 ---
 
 <Layout title={title} description={description}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(digitalMarketingSchema)} />
+  </Fragment>
+
   <Header forceSolidBg={true} />
 
   <main class="overflow-hidden bg-cream/20">
@@ -571,11 +563,8 @@ const faqSchema = {
           ))}
         </div>
       </div>
-
-      <!-- FAQ Schema (FAQPage JSON-LD) -->
-      <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
     </section>
   </main>
 
-  <FooterCTA />
+  <FooterCTA includeSchema={false} />
 </Layout>

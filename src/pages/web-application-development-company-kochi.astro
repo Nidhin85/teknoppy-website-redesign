@@ -6,6 +6,7 @@ import { ArrowRight, Play, Globe2, Smile, Award, Star, CheckCircle, Clock, Heart
 import page from '../data/pages/web-application.json';
 import { getCollection } from 'astro:content';
 import blogPage from '../data/pages/blog.json';
+import { webAppSchema } from '../data/schemas/webAppSchema';
 
 // Latest Blog Posts — pulled live from the blog collection at build time so the
 // section tracks the CMS rather than a hand-maintained list. Category matching
@@ -47,22 +48,13 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
   emerald: { glow: "from-emerald-500/20 to-teal-500/20",  mesh: "from-emerald-500/10", label: "text-emerald-400" },
   violet:  { glow: "from-violet-500/20 to-purple-500/20", mesh: "from-violet-500/10",  label: "text-violet-400" }
 };
-
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": page.faqs.items.map(faq => ({
-    "@type": "Question",
-    "name": faq.q,
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": faq.a
-    }
-  }))
-};
 ---
 
 <Layout title={page.meta.title} description={page.meta.description}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(webAppSchema)} />
+  </Fragment>
+
   <Header forceSolidBg={true} />
 
   <main class="overflow-hidden bg-cream/20">
@@ -743,9 +735,6 @@ const faqSchema = {
           ))}
         </div>
       </div>
-
-      <!-- FAQ Schema -->
-      <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
     </section>
 
     <!-- LATEST BLOG POSTS — WEB APPLICATION DEVELOPMENT INSIGHTS -->
@@ -827,5 +816,5 @@ const faqSchema = {
     )}
   </main>
 
-  <FooterCTA />
+  <FooterCTA includeSchema={false} />
 </Layout>

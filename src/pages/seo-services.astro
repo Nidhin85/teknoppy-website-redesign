@@ -4,14 +4,19 @@ import Header from '../components/Header.astro';
 import FooterCTA from '../components/FooterCTA.astro';
 import InnerPage from '../components/InnerPage.astro';
 import page from '../data/pages/seo-services.json';
+import { seoServicesSchema } from '../data/schemas/seoServicesSchema';
 ---
 
 <Layout title={page.meta.title} description={page.meta.description}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(seoServicesSchema)} />
+  </Fragment>
+
   <Header forceSolidBg={true} />
 
   <main class="overflow-hidden bg-cream/20">
-    <InnerPage page={page} />
+    <InnerPage page={page} disableDefaultSchema={true} />
   </main>
 
-  <FooterCTA />
+  <FooterCTA includeSchema={false} />
 </Layout>
