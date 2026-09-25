@@ -5,6 +5,7 @@ import FooterCTA from '../components/FooterCTA.astro';
 import { ArrowRight, Play, Mail, Phone, Globe2, Smile, Award, Star, CheckCircle, Clock, Heart, Shield, Check, HelpCircle, User, Zap, Rocket, Activity, Home, Utensils, GraduationCap, Compass, Briefcase, Factory, Languages, MonitorSmartphone, Building2, Edit, ShieldCheck, Search, Layers, Network, Code, Gauge, LayoutGrid, Calendar, TrendingUp } from 'lucide-react';
 import page from '../data/pages/wordpress.json';
 import { getCollection } from 'astro:content';
+import { wordpressSchema } from '../data/schemas/wordpressSchema';
 
 // The source doc names three WordPress posts that are not written yet; the three
 // closest live posts stand in for them (see devNotes.blogNote). Resolving by slug
@@ -51,34 +52,13 @@ const caseAccents = {
     text: "text-emerald-400"
   }
 };
-
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": page.faqs.items.map(faq => ({
-    "@type": "Question",
-    "name": faq.q,
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": faq.a
-    }
-  }))
-};
-
-// E-E-A-T: the doc credits Abilash KR as the page’s technical author.
-const personSchema = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": page.author.name,
-  "jobTitle": page.author.role,
-  "email": page.author.email,
-  "telephone": page.author.phone,
-  "description": page.author.bio,
-  "worksFor": { "@type": "Organization", "name": "Teknoppy", "url": "https://teknoppy.com/" }
-};
 ---
 
 <Layout title={title} description={description}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(wordpressSchema)} />
+  </Fragment>
+
   <Header forceSolidBg={true} />
 
   <main class="overflow-hidden bg-cream/20">
@@ -626,9 +606,6 @@ const personSchema = {
           ))}
         </div>
       </div>
-
-      <!-- FAQ Schema -->
-      <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
     </section>
     <!-- MEET ABILASH KR (E-E-A-T AUTHOR BLOCK) -->
     <section class="py-20 bg-cream/30 border-t border-neutral-100">
@@ -675,10 +652,8 @@ const personSchema = {
           </div>
         </div>
       </div>
-
-      <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
     </section>
   </main>
 
-  <FooterCTA />
+  <FooterCTA includeSchema={false} />
 </Layout>
