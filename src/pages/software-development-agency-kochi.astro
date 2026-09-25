@@ -4,14 +4,19 @@ import Header from '../components/Header.astro';
 import FooterCTA from '../components/FooterCTA.astro';
 import InnerPage from '../components/InnerPage.astro';
 import page from '../data/pages/software-development-agency-kochi.json';
+import { softwareSchema } from '../data/schemas/softwareSchema';
 ---
 
 <Layout title={page.meta.title} description={page.meta.description}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />
+  </Fragment>
+
   <Header forceSolidBg={true} />
 
   <main class="overflow-hidden bg-cream/20">
-    <InnerPage page={page} />
+    <InnerPage page={page} disableDefaultSchema={true} />
   </main>
 
-  <FooterCTA />
+  <FooterCTA includeSchema={false} />
 </Layout>

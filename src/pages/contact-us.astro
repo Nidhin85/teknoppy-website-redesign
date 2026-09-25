@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import { Phone, Mail, MapPin, Clock, Zap, ArrowRight, MessageCircle, Send } from 'lucide-react';
 import site from '../data/site.json';
 import page from '../data/pages/contact.json';
+import { contactUsSchema } from '../data/schemas/contactUsSchema';
 
 const icons: Record<string, any> = { phone: Phone, mail: Mail, map: MapPin, clock: Clock };
 
@@ -13,77 +14,15 @@ const icons: Record<string, any> = { phone: Phone, mail: Mail, map: MapPin, cloc
 // somewhere else.
 const formEndpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT || '/api/contact';
 
-const sameAs = [site.social.linkedin, site.social.instagram, site.social.twitter].filter(
-  (u) => u && u !== '#'
-);
-
-const schemas = [
-  {
-    "@context": "https://schema.org",
-    "@type": "ContactPage",
-    "name": page.meta.title,
-    "description": page.meta.description,
-    "url": "https://teknoppy.com/contact-us/"
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": site.businessName,
-    "url": "https://teknoppy.com/",
-    "logo": "https://teknoppy.com/logo.svg",
-    "email": site.email,
-    "telephone": site.phone,
-    "founder": { "@id": "https://teknoppy.com/sanal-edison-digital-strategist/#person" },
-    ...(sameAs.length ? { sameAs } : {})
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": "https://teknoppy.com/#localbusiness",
-    "name": site.businessName,
-    "telephone": site.phone,
-    "email": site.email,
-    "url": "https://teknoppy.com/contact-us/",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Second Floor, Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam",
-      "addressLocality": "Kochi",
-      "addressRegion": "Kerala",
-      "postalCode": "682019",
-      "addressCountry": "IN"
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "opens": "10:00",
-        "closes": "18:00"
-      }
-    ],
-    "areaServed": [
-      { "@type": "State", "name": "Kerala" },
-      { "@type": "City", "name": "Kochi" },
-      { "@type": "Country", "name": "United Arab Emirates" },
-      { "@type": "Country", "name": "Qatar" }
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": page.faq.items.map((f) => ({
-      "@type": "Question",
-      "name": f.q,
-      "acceptedAnswer": { "@type": "Answer", "text": f.a }
-    }))
-  }
-];
-
 const fieldClass =
   "w-full bg-white border border-neutral-200 rounded-xl px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none";
 const labelClass = "block text-[13px] font-black text-neutral-700 uppercase tracking-widest mb-2";
 ---
 
 <Layout title={page.meta.title} description={page.meta.description}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(contactUsSchema)} />
+  </Fragment>
   <Header forceSolidBg={true} />
 
   <main class="overflow-hidden bg-cream/40">
@@ -317,8 +256,6 @@ const labelClass = "block text-[13px] font-black text-neutral-700 uppercase trac
   </main>
 
   <Footer />
-
-  {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
 </Layout>
 
 <script>
