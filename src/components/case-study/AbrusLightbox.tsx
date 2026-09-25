@@ -76,7 +76,7 @@ export const AbrusLightbox: React.FC<AbrusLightboxProps> = ({ items }) => {
           return (
             <div
               key={item.id}
-              className={`group flex flex-col justify-between overflow-hidden rounded-2xl border border-neutral-200/80 bg-white shadow-xs hover:border-[#0066CC]/50 hover:shadow-md transition-all duration-300 cursor-pointer ${
+              className={`group flex flex-col justify-between overflow-hidden rounded-2xl border border-neutral-200/80 bg-white shadow-xs hover:border-[#F05A2C]/50 hover:shadow-md transition-all duration-300 cursor-pointer ${
                 isLarge ? 'md:col-span-12 lg:col-span-8' : 'md:col-span-6 lg:col-span-4'
               }`}
               onClick={() => openLightbox(idx)}
@@ -103,20 +103,20 @@ export const AbrusLightbox: React.FC<AbrusLightboxProps> = ({ items }) => {
 
                 {/* Floating Category Tag */}
                 <div className="absolute top-4 left-4 z-10">
-                  <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-white/95 text-[#0066CC] border border-blue-200/80 shadow-xs backdrop-blur-md">
+                  <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-white/95 text-[#F05A2C] border border-orange-200/80 shadow-xs backdrop-blur-md">
                     {item.category}
                   </span>
                 </div>
 
                 {/* Expand Hover Icon */}
-                <div className="absolute bottom-4 right-4 z-10 w-9 h-9 rounded-full bg-white/95 text-neutral-700 border border-neutral-200/80 flex items-center justify-center shadow-sm opacity-0 group-hover:opacity-100 group-hover:scale-100 scale-90 group-hover:text-[#0066CC] transition-all duration-300">
+                <div className="absolute bottom-4 right-4 z-10 w-9 h-9 rounded-full bg-white/95 text-neutral-700 border border-neutral-200/80 flex items-center justify-center shadow-sm opacity-0 group-hover:opacity-100 group-hover:scale-100 scale-90 group-hover:text-[#F05A2C] transition-all duration-300">
                   <Maximize2 className="w-4 h-4" />
                 </div>
               </div>
 
               {/* Card Meta & Caption */}
               <div className="p-5 sm:p-6 space-y-2 bg-white">
-                <h3 className="text-neutral-900 text-base sm:text-lg font-bold tracking-tight group-hover:text-[#0066CC] transition-colors">
+                <h3 className="text-neutral-900 text-base sm:text-lg font-bold tracking-tight group-hover:text-[#F05A2C] transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-neutral-600 text-xs sm:text-sm leading-relaxed line-clamp-2">

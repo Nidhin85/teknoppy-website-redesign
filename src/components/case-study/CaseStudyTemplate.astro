@@ -213,30 +213,30 @@ const schemaFAQ = {
 
   <Header forceSolidBg={true} />
 
-  <main class="bg-white text-neutral-900 selection:bg-blue-500/20 selection:text-blue-900 overflow-x-hidden pt-20 lg:pt-24 font-sans">
+  <main class="bg-white text-neutral-900 selection:bg-primary/20 selection:text-primary overflow-x-hidden pt-20 lg:pt-24 font-sans">
     
     {/* =========================================================================
         01. HERO SECTION
         ========================================================================= */}
     <section id="project-hero" class="relative pt-10 pb-14 md:pt-16 md:pb-20 overflow-hidden bg-gradient-to-b from-[#F8FAFC] via-white to-white border-b border-neutral-200/80">
-      <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(0,102,204,0.04),transparent_50%),radial-gradient(circle_at_80%_80%,rgba(56,189,248,0.03),transparent_50%)] pointer-events-none"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(240,90,44,0.04),transparent_50%),radial-gradient(circle_at_80%_80%,rgba(249,174,66,0.03),transparent_50%)] pointer-events-none"></div>
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-7">
         
         {/* Breadcrumb & Marker */}
         <div class="flex flex-wrap items-center justify-between gap-4">
           <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-neutral-500">
-            <a href="/" class="hover:text-[#0066CC] transition-colors">Home</a>
+            <a href="/" class="hover:text-primary transition-colors">Home</a>
             <span>/</span>
-            <a href="/case-study/" class="hover:text-[#0066CC] transition-colors">Case Studies</a>
+            <a href="/case-study/" class="hover:text-primary transition-colors">Case Studies</a>
             <span>/</span>
             <span class="text-neutral-900 font-bold">{clientName}</span>
           </div>
 
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200/70 text-[#0066CC] text-xs font-bold uppercase tracking-wider shadow-xs backdrop-blur-md">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200/70 text-primary text-xs font-bold uppercase tracking-wider shadow-xs backdrop-blur-md">
             <span class="relative flex h-2 w-2">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-[#0066CC]"></span>
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary/70 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
             {tagBadge}
           </div>
@@ -245,7 +245,7 @@ const schemaFAQ = {
         {/* Hero Title & Story Lead */}
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-end">
           <div class="lg:col-span-8 space-y-5">
-            <div class="inline-block px-3 py-1 rounded-md bg-blue-50 border border-blue-200/70 text-[#0066CC] text-xs sm:text-sm font-bold tracking-wide uppercase">
+            <div class="inline-block px-3 py-1 rounded-md bg-orange-50 border border-orange-200/70 text-primary text-xs sm:text-sm font-bold tracking-wide uppercase">
               {categoryTag}
             </div>
 
@@ -290,7 +290,7 @@ const schemaFAQ = {
                   href={liveWebsiteUrl} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  class="font-bold text-[#0066CC] hover:text-blue-700 hover:underline flex items-center gap-1"
+                  class="font-bold text-primary hover:text-[#D24A20] hover:underline flex items-center gap-1"
                 >
                   {liveWebsite} <ExternalLink className="w-3.5 h-3.5" />
                 </a>
@@ -359,19 +359,19 @@ const schemaFAQ = {
       <section id="overview" class="reveal-on-scroll relative rounded-3xl p-8 sm:p-10 md:p-12 bg-[#F8FAFC] border border-neutral-200/80 shadow-xs overflow-hidden">
         <div class="relative z-10 space-y-7">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-blue-50 border border-blue-200/70 flex items-center justify-center text-[#0066CC]">
+            <div class="w-10 h-10 rounded-xl bg-orange-50 border border-orange-200/70 flex items-center justify-center text-primary">
               <Sparkles className="w-5 h-5" />
             </div>
             <div>
-              <span class="text-xs font-mono font-bold uppercase tracking-wider text-[#0066CC]">Executive Summary</span>
+              <span class="text-xs font-mono font-bold uppercase tracking-wider text-primary">Executive Summary</span>
               <h2 class="text-2xl sm:text-3xl font-extrabold text-neutral-900 tracking-tight">AT A GLANCE</h2>
             </div>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 pt-1">
             {atAGlance.map((point) => (
-              <div class="flex items-start gap-3.5 p-4 sm:p-5 rounded-2xl bg-white border border-neutral-200/80 shadow-2xs hover:border-[#0066CC]/40 transition-colors">
-                <CheckCircle2 className="w-5 h-5 text-[#0066CC] shrink-0 mt-0.5" />
+              <div class="flex items-start gap-3.5 p-4 sm:p-5 rounded-2xl bg-white border border-neutral-200/80 shadow-2xs hover:border-primary/40 transition-colors">
+                <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <span class="text-sm sm:text-base text-neutral-800 font-medium leading-relaxed">{point}</span>
               </div>
             ))}
@@ -385,8 +385,8 @@ const schemaFAQ = {
       <section id="about" class="reveal-on-scroll space-y-6 max-w-4xl">
         <div class="space-y-2.5">
           <div class="flex items-center gap-2">
-            <span class="text-xs font-mono font-bold uppercase tracking-widest text-[#0066CC]">Background</span>
-            <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+            <span class="text-xs font-mono font-bold uppercase tracking-widest text-primary">Background</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
             <span class="text-xs font-bold text-neutral-500 uppercase tracking-wider">{clientName}</span>
           </div>
           <h2 class="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight leading-tight">
@@ -440,8 +440,8 @@ const schemaFAQ = {
       <section id="objectives" class="reveal-on-scroll space-y-6 max-w-4xl">
         <div class="space-y-2.5">
           <div class="flex items-center gap-2">
-            <span class="text-xs font-mono font-bold uppercase tracking-widest text-[#0066CC]">Goals</span>
-            <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+            <span class="text-xs font-mono font-bold uppercase tracking-widest text-primary">Goals</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
             <span class="text-xs font-bold text-neutral-500 uppercase tracking-wider">Mandate</span>
           </div>
           <h2 class="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight">Project Objective</h2>
@@ -452,8 +452,8 @@ const schemaFAQ = {
 
         <div class="space-y-3.5">
           {objectives.map((obj) => (
-            <div class="flex items-start gap-3.5 p-4 sm:p-5 rounded-2xl bg-[#F8FAFC] border border-neutral-200/80 hover:border-[#0066CC]/40 transition-colors shadow-2xs">
-              <div class="w-6 h-6 rounded-full bg-blue-100 text-[#0066CC] flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">
+            <div class="flex items-start gap-3.5 p-4 sm:p-5 rounded-2xl bg-[#F8FAFC] border border-neutral-200/80 hover:border-primary/40 transition-colors shadow-2xs">
+              <div class="w-6 h-6 rounded-full bg-orange-100 text-primary flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">
                 ✓
               </div>
               <p class="text-sm sm:text-base text-neutral-800 leading-relaxed font-medium">
@@ -470,8 +470,8 @@ const schemaFAQ = {
       <section id="approach" class="reveal-on-scroll space-y-10">
         <div class="space-y-2.5 max-w-3xl">
           <div class="flex items-center gap-2">
-            <span class="text-xs font-mono font-bold uppercase tracking-widest text-[#0066CC]">Execution</span>
-            <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+            <span class="text-xs font-mono font-bold uppercase tracking-widest text-primary">Execution</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
             <span class="text-xs font-bold text-neutral-500 uppercase tracking-wider">Strategic Framework</span>
           </div>
           <h2 class="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight">Our Approach</h2>
@@ -482,9 +482,9 @@ const schemaFAQ = {
 
         <div class="space-y-6">
           {approachPillars.map((pillar, pIdx) => (
-            <div class="p-7 sm:p-9 rounded-2xl sm:rounded-3xl bg-white border border-neutral-200/80 hover:border-[#0066CC]/40 shadow-xs hover:shadow-md transition-all duration-300 space-y-3.5">
+            <div class="p-7 sm:p-9 rounded-2xl sm:rounded-3xl bg-white border border-neutral-200/80 hover:border-primary/40 shadow-xs hover:shadow-md transition-all duration-300 space-y-3.5">
               <div class="flex items-center gap-3">
-                <span class="text-xs font-mono font-bold uppercase tracking-wider text-[#0066CC] px-2.5 py-1 rounded-md bg-blue-50 border border-blue-200/70">
+                <span class="text-xs font-mono font-bold uppercase tracking-wider text-primary px-2.5 py-1 rounded-md bg-orange-50 border border-orange-200/70">
                   Pillar 0{pIdx + 1}
                 </span>
                 <h3 class="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight">
@@ -535,8 +535,8 @@ const schemaFAQ = {
       <section id="strategy" class="reveal-on-scroll space-y-6 max-w-4xl">
         <div class="space-y-2.5">
           <div class="flex items-center gap-2">
-            <span class="text-xs font-mono font-bold uppercase tracking-widest text-[#0066CC]">Impact</span>
-            <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+            <span class="text-xs font-mono font-bold uppercase tracking-widest text-primary">Impact</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
             <span class="text-xs font-bold text-neutral-500 uppercase tracking-wider">Strategic Reasoning</span>
           </div>
           <h2 class="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight leading-tight">
@@ -551,7 +551,7 @@ const schemaFAQ = {
         </div>
 
         {/* Highlight Callout Box */}
-        <div class="p-6 sm:p-8 rounded-2xl bg-blue-50/70 border border-blue-200/80 text-neutral-800 leading-relaxed text-sm sm:text-base shadow-xs">
+        <div class="p-6 sm:p-8 rounded-2xl bg-orange-50/50 border border-orange-200/70 text-neutral-800 leading-relaxed text-sm sm:text-base shadow-xs">
           <Fragment set:html={whyMattersCalloutHtml} />
         </div>
       </section>
@@ -562,8 +562,8 @@ const schemaFAQ = {
       <section id="faq" class="reveal-on-scroll space-y-8 max-w-4xl">
         <div class="space-y-2.5">
           <div class="flex items-center gap-2">
-            <span class="text-xs font-mono font-bold uppercase tracking-widest text-[#0066CC]">Direct Answers</span>
-            <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+            <span class="text-xs font-mono font-bold uppercase tracking-widest text-primary">Direct Answers</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
             <span class="text-xs font-bold text-neutral-500 uppercase tracking-wider">Due Diligence FAQ</span>
           </div>
           <h2 class="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight">
@@ -594,8 +594,8 @@ const schemaFAQ = {
       {/* Consultation Banner */}
       <div class="bg-gradient-to-b from-white to-[#F8FAFC] py-16 sm:py-20 px-4 sm:px-6 lg:px-8 text-center relative">
         <div class="max-w-4xl mx-auto space-y-7">
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 text-[#0066CC] border border-blue-200/70 text-xs font-bold uppercase tracking-wider">
-            <Zap className="w-3.5 h-3.5 text-[#0066CC]" />
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-50 text-primary border border-orange-200/70 text-xs font-bold uppercase tracking-wider">
+            <Zap className="w-3.5 h-3.5 text-primary" />
             Direct Consultation
           </div>
 
@@ -606,7 +606,7 @@ const schemaFAQ = {
           <div class="pt-2 flex flex-wrap items-center justify-center gap-4">
             <a
               href={`tel:${ctaPhoneTel}`}
-              class="inline-flex items-center justify-center gap-3 px-8 sm:px-10 py-4 rounded-xl bg-[#0066CC] text-white hover:bg-[#0052a3] font-bold text-sm sm:text-base tracking-wide shadow-md shadow-blue-600/20 hover:-translate-y-0.5 transition-all"
+              class="inline-flex items-center justify-center gap-3 px-8 sm:px-10 py-4 rounded-xl bg-primary text-white hover:bg-[#D24A20] font-bold text-sm sm:text-base tracking-wide shadow-md shadow-primary/20 hover:-translate-y-0.5 transition-all"
             >
               <Phone className="w-4 h-4" />
               <span>{ctaPhoneText}</span>

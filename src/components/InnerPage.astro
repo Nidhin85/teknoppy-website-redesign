@@ -16,9 +16,10 @@ import CostCalculator from './CostCalculator.tsx';
 
 interface Props {
   page: any;
+  disableDefaultSchema?: boolean;
 }
 
-const { page } = Astro.props;
+const { page, disableDefaultSchema = false } = Astro.props;
 const sections = page.sections ?? [];
 
 // Background tokens, so each page can alternate its sections without repeating
@@ -739,9 +740,9 @@ const breadcrumbSchema = page.breadcrumb && {
   </section>
 ))}
 
-{faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
-{breadcrumbSchema && <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />}
-{(Array.isArray(page.schema) ? page.schema : page.schema ? [page.schema] : []).map((sc: any) => (
+{!disableDefaultSchema && faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+{!disableDefaultSchema && breadcrumbSchema && <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />}
+{!disableDefaultSchema && (Array.isArray(page.schema) ? page.schema : page.schema ? [page.schema] : []).map((sc: any) => (
   <script type="application/ld+json" set:html={JSON.stringify(sc)} />
 ))}
 

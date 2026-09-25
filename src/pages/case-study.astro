@@ -73,7 +73,7 @@ const schemaFAQ = {
   <!-- Global Header with solid background -->
   <Header forceSolidBg={true} />
 
-  <main class="bg-white text-neutral-900 selection:bg-blue-500/20 selection:text-blue-900 overflow-x-clip pt-20 lg:pt-24 pb-20 sm:pb-28 font-sans">
+  <main class="bg-white text-neutral-900 selection:bg-primary/20 selection:text-primary overflow-x-clip pt-20 lg:pt-24 pb-20 sm:pb-28 font-sans">
     
     <!-- =========================================================================
         SECTION 01: MODERN EDITORIAL HERO (NO BREADCRUMB)
@@ -81,17 +81,17 @@ const schemaFAQ = {
     <section class="relative pt-12 pb-14 md:pt-18 md:pb-20 overflow-hidden bg-gradient-to-b from-[#F8FAFC] via-white to-white border-b border-neutral-200/80">
       
       {/* Layered Atmospheric Ambient Lighting */}
-      <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(0,102,204,0.05),transparent_50%),radial-gradient(circle_at_80%_80%,rgba(56,189,248,0.04),transparent_50%)] pointer-events-none"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(240,90,44,0.05),transparent_50%),radial-gradient(circle_at_80%_80%,rgba(249,174,66,0.04),transparent_50%)] pointer-events-none"></div>
       <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.02)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none"></div>
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-7">
         
         {/* Eyebrow Label (NO BREADCRUMB) */}
         <div class="hero-fade-in">
-          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200/70 text-[#0066CC] text-xs font-bold uppercase tracking-wider shadow-xs backdrop-blur-md">
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-orange-50 border border-orange-200/70 text-primary text-xs font-bold uppercase tracking-wider shadow-xs backdrop-blur-md">
             <span class="relative flex h-2 w-2">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-[#0066CC]"></span>
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary/70 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
             Our Work / Case Studies
           </div>
@@ -100,7 +100,7 @@ const schemaFAQ = {
         {/* Hero Headline & Subtitle */}
         <div class="max-w-5xl space-y-5">
           <h1 class="hero-fade-in hero-delay-1 text-2xl sm:text-4xl lg:text-6xl font-extrabold tracking-tight text-neutral-900 leading-[1.15] break-words">
-            Digital Experiences, Websites and <span class="bg-gradient-to-r from-[#0066CC] via-blue-600 to-indigo-600 bg-clip-text text-transparent">Growth Systems.</span>
+            Digital Experiences, Websites and <span class="text-primary">Growth Systems.</span>
           </h1>
 
           <p class="hero-fade-in hero-delay-2 text-base sm:text-[17px] text-neutral-600 font-normal leading-[1.65] max-w-3xl">
@@ -114,7 +114,7 @@ const schemaFAQ = {
               <span>22 Verified Client Case Studies</span>
             </div>
             <div class="px-4 py-2 rounded-full bg-white border border-neutral-200/80 shadow-xs flex items-center gap-2 text-xs font-bold text-neutral-700">
-              <Sparkles className="w-4 h-4 text-[#0066CC]" />
+              <Sparkles className="w-4 h-4 text-primary" />
               <span>8 Specialized Service Disciplines</span>
             </div>
             <div class="px-4 py-2 rounded-full bg-white border border-neutral-200/80 shadow-xs flex items-center gap-2 text-xs font-bold text-neutral-700">
@@ -139,10 +139,10 @@ const schemaFAQ = {
         ========================================================================= -->
     <section class="py-20 md:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
       <div class="rounded-2xl sm:rounded-3xl bg-[#F8FAFC] text-neutral-900 p-8 sm:p-12 lg:p-14 border border-neutral-200/80 shadow-sm space-y-10 relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
 
         <div class="max-w-3xl space-y-3 relative z-10">
-          <span class="text-xs font-bold uppercase tracking-widest text-[#0066CC]">
+          <span class="text-xs font-bold uppercase tracking-widest text-primary">
             Engineering & Strategy Standards
           </span>
           <h2 class="text-2xl sm:text-4xl text-neutral-900 font-extrabold tracking-tight leading-tight">
@@ -155,7 +155,7 @@ const schemaFAQ = {
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10 pt-4 border-t border-neutral-200">
           <div class="space-y-3">
-            <div class="w-11 h-11 rounded-xl bg-blue-50 border border-blue-200/70 flex items-center justify-center text-[#0066CC]">
+            <div class="w-11 h-11 rounded-xl bg-orange-50 border border-orange-200/70 flex items-center justify-center text-primary">
               <Zap className="w-5 h-5" />
             </div>
             <h3 class="text-lg font-bold text-neutral-900">Search Intent From Day One</h3>
@@ -165,7 +165,7 @@ const schemaFAQ = {
           </div>
 
           <div class="space-y-3">
-            <div class="w-11 h-11 rounded-xl bg-blue-50 border border-blue-200/70 flex items-center justify-center text-[#0066CC]">
+            <div class="w-11 h-11 rounded-xl bg-orange-50 border border-orange-200/70 flex items-center justify-center text-primary">
               <ShieldCheck className="w-5 h-5" />
             </div>
             <h3 class="text-lg font-bold text-neutral-900">Institutional Trust & Compliance</h3>
@@ -195,7 +195,7 @@ const schemaFAQ = {
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
         <div class="text-center space-y-3">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-50 border border-blue-200/70 text-[#0066CC] text-xs font-bold uppercase tracking-wider">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-orange-50 border border-orange-200/70 text-primary text-xs font-bold uppercase tracking-wider">
             Case Study Inquiries
           </div>
           <h2 class="text-2xl sm:text-4xl text-neutral-900 font-extrabold tracking-tight leading-tight">
@@ -210,7 +210,7 @@ const schemaFAQ = {
           {caseStudyFAQs.map((faq, idx) => (
             <div key={idx} class="p-6 sm:p-7 rounded-2xl bg-white border border-neutral-200/80 hover:border-neutral-300 transition-colors shadow-xs space-y-2.5">
               <h3 class="text-base sm:text-lg font-bold text-neutral-900 flex items-center gap-3">
-                <HelpCircle className="w-5 h-5 text-[#0066CC] flex-shrink-0" />
+                <HelpCircle className="w-5 h-5 text-primary flex-shrink-0" />
                 <span>{faq.q}</span>
               </h3>
               <p class="text-sm text-neutral-600 leading-relaxed pl-8">
@@ -232,13 +232,13 @@ const schemaFAQ = {
           
           {/* Left Column: Heading, Proposition & Action CTAs */}
           <div class="lg:col-span-7 space-y-7">
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 text-[#0066CC] border border-blue-200/70 text-xs font-bold uppercase tracking-wider backdrop-blur-md">
-              <Zap className="w-3.5 h-3.5 text-[#0066CC]" />
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-50 text-primary border border-orange-200/70 text-xs font-bold uppercase tracking-wider backdrop-blur-md">
+              <Zap className="w-3.5 h-3.5 text-primary" />
               Let's Build Something Great
             </div>
 
             <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight text-neutral-900">
-              Ready to Work with the Leading <span class="bg-gradient-to-r from-[#0066CC] via-blue-600 to-indigo-600 bg-clip-text text-transparent">Digital Agency in Kerala?</span>
+              Ready to Work with the Leading <span class="text-primary">Digital Agency in Kerala?</span>
             </h2>
 
             <p class="text-neutral-600 text-base sm:text-lg leading-relaxed font-normal max-w-2xl">
@@ -248,7 +248,7 @@ const schemaFAQ = {
             <div class="flex flex-wrap items-center gap-4 pt-2">
               <a 
                 href={`tel:${site.phoneLink}`} 
-                class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl bg-[#0066CC] hover:bg-[#0052a3] text-white text-sm font-bold shadow-md shadow-blue-600/20 hover:-translate-y-0.5 transition-all"
+                class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl bg-primary hover:bg-[#D24A20] text-white text-sm font-bold shadow-md shadow-primary/20 hover:-translate-y-0.5 transition-all"
               >
                 <Phone className="w-4 h-4" />
                 <span>Call Us | {site.phone}</span>
@@ -278,7 +278,7 @@ const schemaFAQ = {
           <div class="lg:col-span-5">
             <div class="rounded-2xl sm:rounded-3xl bg-[#F8FAFC] border border-neutral-200/80 p-8 sm:p-10 shadow-lg space-y-6 relative overflow-hidden">
               <div class="flex items-center gap-5">
-                <div class="relative w-20 h-20 rounded-2xl overflow-hidden border-2 border-blue-500/30 shadow-md flex-shrink-0">
+                <div class="relative w-20 h-20 rounded-2xl overflow-hidden border-2 border-primary/30 shadow-md flex-shrink-0">
                   <img 
                     src="/team/sanal-edison.webp" 
                     onerror="this.onerror=null;this.src='/sanal.png';"
@@ -289,7 +289,7 @@ const schemaFAQ = {
                 </div>
                 <div class="space-y-1">
                   <h3 class="text-xl font-bold text-neutral-900">Sanal Edison</h3>
-                  <p class="text-xs font-bold uppercase tracking-wider text-[#0066CC]">Digital Strategist</p>
+                  <p class="text-xs font-bold uppercase tracking-wider text-primary">Digital Strategist</p>
                   <p class="text-xs text-neutral-500">Teknoppy Leadership</p>
                 </div>
               </div>
@@ -303,7 +303,7 @@ const schemaFAQ = {
                   href={`tel:${site.phoneLink}`}
                   class="flex items-center gap-3 p-3 rounded-xl bg-white hover:bg-neutral-50 border border-neutral-200/80 text-sm text-neutral-800 transition-colors shadow-2xs"
                 >
-                  <Phone className="w-4 h-4 text-[#0066CC]" />
+                  <Phone className="w-4 h-4 text-primary" />
                   <span class="font-mono font-medium">{site.phone}</span>
                 </a>
 
@@ -311,7 +311,7 @@ const schemaFAQ = {
                   href={`mailto:${site.email}`}
                   class="flex items-center gap-3 p-3 rounded-xl bg-white hover:bg-neutral-50 border border-neutral-200/80 text-sm text-neutral-800 transition-colors shadow-2xs"
                 >
-                  <Mail className="w-4 h-4 text-[#0066CC]" />
+                  <Mail className="w-4 h-4 text-primary" />
                   <span class="font-mono font-medium">{site.email}</span>
                 </a>
               </div>

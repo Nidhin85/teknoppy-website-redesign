@@ -29,7 +29,7 @@ export const CaseStudyFAQ: React.FC<Props> = ({ faqs }) => {
             key={idx}
             className={`border rounded-2xl transition-all duration-200 overflow-hidden ${
               isOpen
-                ? 'bg-white border-[#0066CC]/50 shadow-md ring-1 ring-[#0066CC]/20'
+                ? 'bg-white border-[#F05A2C]/50 shadow-md ring-1 ring-[#F05A2C]/20'
                 : 'bg-white hover:bg-neutral-50/80 border-neutral-200/80 hover:border-neutral-300 shadow-2xs'
             }`}
           >
@@ -40,14 +40,14 @@ export const CaseStudyFAQ: React.FC<Props> = ({ faqs }) => {
                 aria-expanded={isOpen}
                 aria-controls={panelId}
                 onClick={() => toggle(idx)}
-                className="w-full text-left px-5 sm:px-7 py-4.5 sm:py-5 flex items-center justify-between gap-4 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0066CC] rounded-2xl"
+                className="w-full text-left px-5 sm:px-7 py-4.5 sm:py-5 flex items-center justify-between gap-4 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F05A2C] rounded-2xl"
               >
                 <span className="text-base sm:text-lg font-bold text-neutral-900 pr-2 leading-snug">
                   {faq.question}
                 </span>
                 <span
                   className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-transform duration-200 ${
-                    isOpen ? 'bg-[#0066CC] text-white rotate-180' : 'bg-neutral-100 text-neutral-600'
+                    isOpen ? 'bg-[#F05A2C] text-white rotate-180' : 'bg-neutral-100 text-neutral-600'
                   }`}
                   aria-hidden="true"
                 >

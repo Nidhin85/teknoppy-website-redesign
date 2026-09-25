@@ -134,7 +134,7 @@ export const AbrusInteractiveIA: React.FC = () => {
         <div className="relative z-10 space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-neutral-200 pb-5">
             <div>
-              <span className="text-xs font-bold uppercase tracking-widest text-[#0066CC]">
+              <span className="text-xs font-bold uppercase tracking-widest text-[#F05A2C]">
                 Architectural Flow Principle
               </span>
               <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-neutral-900 mt-1">
@@ -155,8 +155,8 @@ export const AbrusInteractiveIA: React.FC = () => {
               { num: '04', title: 'Compliance Trust', desc: 'Verifiable KML terms & transparent FAQ answers' },
               { num: '05', title: 'Frictionless Action', desc: 'Direct branch visit or doorstep appointment' }
             ].map((step, idx) => (
-              <div key={step.num} className="relative group p-4 rounded-xl bg-white border border-neutral-200/80 hover:border-[#0066CC]/50 hover:shadow-xs transition-all">
-                <span className="text-xs font-black text-[#0066CC]">{step.num}</span>
+              <div key={step.num} className="relative group p-4 rounded-xl bg-white border border-neutral-200/80 hover:border-[#F05A2C]/50 hover:shadow-xs transition-all">
+                <span className="text-xs font-black text-[#F05A2C]">{step.num}</span>
                 <h4 className="text-sm font-bold text-neutral-900 mt-1 mb-1">{step.title}</h4>
                 <p className="text-xs text-neutral-600 leading-relaxed">{step.desc}</p>
                 {idx < 4 && (
@@ -188,7 +188,7 @@ export const AbrusInteractiveIA: React.FC = () => {
                 onClick={() => setActiveCategory(cat)}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors cursor-pointer ${
                   activeCategory === cat
-                    ? 'bg-[#0066CC] text-white shadow-xs'
+                    ? 'bg-[#F05A2C] text-white shadow-xs'
                     : 'bg-white text-neutral-600 hover:text-neutral-900 border border-neutral-200/80'
                 }`}
               >
@@ -208,7 +208,7 @@ export const AbrusInteractiveIA: React.FC = () => {
                   onClick={() => setSelectedId(page.id)}
                   className={`w-full text-left p-4 rounded-xl border transition-all duration-200 flex items-center justify-between gap-3 cursor-pointer ${
                     isSelected
-                      ? 'bg-blue-50/70 border-[#0066CC] shadow-xs ring-1 ring-[#0066CC]/20'
+                      ? 'bg-orange-50/70 border-[#F05A2C] shadow-xs ring-1 ring-[#F05A2C]/20'
                       : 'bg-white hover:bg-neutral-50 border-neutral-200/80 hover:border-neutral-300'
                   }`}
                 >
@@ -225,7 +225,7 @@ export const AbrusInteractiveIA: React.FC = () => {
                       {page.slug}
                     </code>
                   </div>
-                  <ArrowRight className={`w-4 h-4 transition-transform ${isSelected ? 'text-[#0066CC] translate-x-1' : 'text-neutral-400'}`} />
+                  <ArrowRight className={`w-4 h-4 transition-transform ${isSelected ? 'text-[#F05A2C] translate-x-1' : 'text-neutral-400'}`} />
                 </button>
               );
             })}
@@ -236,7 +236,7 @@ export const AbrusInteractiveIA: React.FC = () => {
         <div className="lg:col-span-7 bg-white rounded-3xl border border-neutral-200/80 p-6 sm:p-8 shadow-sm space-y-6">
           <div className="flex flex-wrap items-center justify-between gap-2 border-b border-neutral-200 pb-4">
             <div>
-              <span className="text-xs font-semibold uppercase tracking-wider text-[#0066CC]">
+              <span className="text-xs font-semibold uppercase tracking-wider text-[#F05A2C]">
                 {selectedPage.category}
               </span>
               <h3 className="text-2xl font-bold text-neutral-900 mt-0.5">{selectedPage.name}</h3>
@@ -268,15 +268,15 @@ export const AbrusInteractiveIA: React.FC = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {selectedPage.keyContent.map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-xs text-neutral-700 bg-[#F8FAFC] p-2.5 rounded-lg border border-neutral-200/70">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#0066CC]"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#F05A2C]"></span>
                     <span>{item}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="p-4 rounded-xl bg-blue-50/70 border border-blue-200/80 space-y-1">
-              <span className="text-xs font-bold uppercase tracking-wider text-[#0066CC] block">
+            <div className="p-4 rounded-xl bg-orange-50/70 border border-orange-200/80 space-y-1">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#F05A2C] block">
                 Why This Separation Matters
               </span>
               <p className="text-xs sm:text-sm text-neutral-800 leading-relaxed">

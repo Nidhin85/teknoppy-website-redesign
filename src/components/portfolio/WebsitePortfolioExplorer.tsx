@@ -113,7 +113,7 @@ export const WebsitePortfolioExplorer: React.FC = () => {
       {/* =========================================================================
           PORTFOLIO GRID (2 large cards per row on desktop & tablet, 1 on mobile)
           ========================================================================= */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-9 items-start">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-9">
         {filteredProjects.map((project, idx) => {
           const isPriority = idx < 4;
 
@@ -121,21 +121,21 @@ export const WebsitePortfolioExplorer: React.FC = () => {
             <a
               key={project.id}
               href={project.href}
-              className="group block bg-white rounded-xl sm:rounded-2xl border border-neutral-200/80 hover:border-neutral-300 shadow-[0_2px_14px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.07)] hover:-translate-y-1 transition-all duration-300 p-3 sm:p-4 lg:p-5 flex flex-col"
+              className="group bg-white rounded-xl sm:rounded-2xl border border-neutral-200/80 hover:border-neutral-300 shadow-[0_2px_14px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.07)] hover:-translate-y-1 transition-all duration-300 p-3 sm:p-4 lg:p-5 flex flex-col justify-between h-full"
             >
-              {/* IMAGE CONTAINER (Dominates ~85–90% of card, 100% full screenshot, zero cropping) */}
-              <div className="w-full bg-[#f8f9fa] rounded-lg sm:rounded-xl overflow-hidden border border-neutral-100/90 flex items-center justify-center">
+              {/* IMAGE CONTAINER (Consistent aspect ratio presentation area, 100% full screenshot, zero cropping) */}
+              <div className="w-full aspect-[16/10] bg-[#f8f9fa] rounded-lg sm:rounded-xl overflow-hidden border border-neutral-100/90 flex items-center justify-center p-2 sm:p-3 relative">
                 <img
                   src={project.image}
                   alt={project.imageAlt}
                   loading={isPriority ? 'eager' : 'lazy'}
                   decoding="async"
-                  className="w-full h-auto block object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+                  className="max-w-full max-h-full w-auto h-auto object-contain block transition-transform duration-300 group-hover:scale-[1.01]"
                 />
               </div>
 
               {/* CARD FOOTER (Clean, ultra-compact: ~10–15% of card, matching reference layout) */}
-              <div className="pt-3 sm:pt-3.5 mt-3 sm:mt-3.5 border-t border-neutral-100 flex items-center justify-between gap-3">
+              <div className="pt-3 sm:pt-3.5 mt-auto border-t border-neutral-100 flex items-center justify-between gap-3">
                 <div className="min-w-0 flex-grow">
                   <h2 className="text-sm sm:text-base lg:text-lg font-semibold text-neutral-800 group-hover:text-[#F05A2C] transition-colors leading-snug line-clamp-1">
                     {project.name}

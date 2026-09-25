@@ -77,7 +77,7 @@ export const CaseStudyStickyNav: React.FC<Props> = ({ clientName, navItems = def
     <>
       {/* Pinned Top Reading Progress Bar */}
       <div 
-        className="fixed top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#0066CC] via-blue-500 to-indigo-600 z-[60] transition-all duration-150 origin-left"
+        className="fixed top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#F05A2C] to-[#F9AE42] z-[60] transition-all duration-150 origin-left"
         style={{ width: `${scrollProgress}%` }}
         role="progressbar"
         aria-valuenow={Math.round(scrollProgress)}
@@ -96,7 +96,7 @@ export const CaseStudyStickyNav: React.FC<Props> = ({ clientName, navItems = def
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
           <div className="hidden md:flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-[#0066CC] animate-pulse"></span>
+            <span className="w-2 h-2 rounded-full bg-[#F05A2C] animate-pulse"></span>
             <span className="text-xs font-bold uppercase tracking-wider text-neutral-800">
               {clientName}
             </span>
@@ -116,7 +116,7 @@ export const CaseStudyStickyNav: React.FC<Props> = ({ clientName, navItems = def
                   onClick={(e) => scrollToSection(e, item.id)}
                   className={`px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all whitespace-nowrap cursor-pointer ${
                     isActive
-                      ? 'bg-[#0066CC] text-white shadow-xs'
+                      ? 'bg-[#F05A2C] text-white shadow-xs'
                       : 'text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100'
                   }`}
                   aria-current={isActive ? 'true' : undefined}
