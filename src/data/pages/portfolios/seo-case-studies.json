@@ -67,15 +67,10 @@
           "items": [
             {
               "label": "Direction North",
-              "imageFallback": "Social-first engagement",
               "text": "Digital marketing for a retail display manufacturer",
-              "href": "/case-studies/direction-north-digital-marketing/"
-            },
-            {
-              "label": "Olives Boutique Resort",
-              "imageFallback": "Social-first engagement",
-              "text": "Digital marketing for a Wayanad eco-resort",
-              "href": "/case-studies/olives-boutique-resort-digital-marketing/"
+              "href": "/case-studies/direction-north-digital-marketing/",
+              "image": "/case-studies/direction-north.webp",
+              "imageAlt": "Direction North — Digital Marketing case study screenshot"
             }
           ]
         }
@@ -216,12 +211,6 @@
           "position": 4,
           "name": "Direction North",
           "url": "https://teknoppy.com/case-studies/direction-north-digital-marketing/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Olives Boutique Resort",
-          "url": "https://teknoppy.com/case-studies/olives-boutique-resort-digital-marketing/"
         }
       ]
     }

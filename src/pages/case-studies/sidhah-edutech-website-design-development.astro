@@ -1,0 +1,213 @@
+---
+import CaseStudyTemplate, { type CaseStudyProps } from '../../components/case-study/CaseStudyTemplate.astro';
+
+const props: CaseStudyProps = {
+  metaTitle: "Sidhah Edutech: Website Design & Development Case Study | Teknoppy",
+  metaDescription: "How Teknoppy built a programme-first, placement-driven website for a Kochi hospital administration training institute — designed around how students choose courses.",
+  canonicalURL: "https://teknoppy.com/case-studies/sidhah-edutech-website-design-development/",
+  heroImage: "/case-studies/sidhah-edutech.webp",
+  heroImageAlt: "Sidhah Edutech Hospital Administration Training Institute Web Design Case Study",
+  schemaType: "TechArticle",
+  schemaAbout: {
+    type: "EducationalOrganization",
+    name: "Sidhah Edutech",
+    address: {
+      locality: "Kochi",
+      region: "Kerala",
+      country: "India"
+    }
+  },
+
+  clientName: "Sidhah Edutech",
+  categoryTag: "Website Design and Development",
+  tagBadge: "Healthcare Education Case Study",
+
+  title: "Sidhah Edutech: A Website Design and Development Case Study for a Hospital Administration Training Institute",
+  storyLead: "How Teknoppy built a programme-first, placement-driven website for a Kochi hospital administration training institute — designed around how a student actually decides between a diploma and a PG diploma before enrolling.",
+  industry: "Healthcare Education – Hospital Administration Training",
+  location: "Kochi, Kerala",
+  services: "Website Design & Development, Information Architecture",
+  platform: "Modern responsive web build",
+  liveWebsite: "sidhah.com",
+  liveWebsiteUrl: "https://www.sidhah.com/",
+  heroHighlights: [
+    "Programme-First Architecture",
+    "Offline Classroom Differentiator",
+    "Verified Hospital Placements",
+    "Streamlined Enquiry Path"
+  ],
+
+  atAGlance: [
+    "New website built around two distinct programmes so a student can quickly identify which entry route fits their qualification",
+    "The offline, faculty-led classroom model presented as a clear differentiator, not a footnote",
+    "Real placement outcomes (Lakeshore Hospital, Najath Hospital, Don Bosco Hospital) shown where a prospective student is deciding whether to enrol",
+    "Certifications (ISO 9001, Ministry of MSME recognition) placed where a visitor can verify institutional credibility",
+    "A single, repeated enquiry path across programme pages, placements, and the homepage"
+  ],
+
+  aboutHeading: "About Sidhah Edutech",
+  aboutParagraphs: [
+    "Sidhah Edutech is a hospital administration training institute based in Kochi, Kerala, running classroom-based diploma programmes for students and graduates aiming to work in hospital management and administration roles. The institute runs two programmes: a 1-Year PG Diploma in Hospital Administration, structured across 7 modules and 60 chapters for bachelor's degree holders seeking management-track roles, and a 6-Month Diploma in Hospital Administration, structured across 4 modules and 38 chapters, open to Plus Two or equivalent qualification holders as the faster entry route into the field.",
+    "Both programmes include free add-on training in interview preparation, spoken English for healthcare settings, and Tally and GST accounting software. Sidhah Edutech positions itself specifically around an offline, classroom-first teaching model, stating plainly that there are no recorded videos and no login portal, only live faculty instruction, capped batch sizes, scheduled visits to partner hospitals, and face-to-face role-playing and mock interviews with direct feedback. The institute holds ISO 9001 certification and is recognised by the Ministry of Micro, Small & Medium Enterprises, the Technical Study & Skill Research Council, and Learn Curve Innovations & Technology. Its graduates have been placed at Lakeshore Hospital, Najath Hospital, and Don Bosco Hospital, in roles spanning corporate departments, front office, medical records, and outpatient services.",
+    "This case study covers the website design and development work delivered by Teknoppy — the site's structure, its programme and placement presentation, and how credibility information is organised for a prospective student evaluating a hospital administration course. It does not cover Sidhah Edutech's teaching delivery, hospital partnerships, or individual student outcomes, which are the institute's own domain."
+  ],
+
+  challengeLead: "Designing an educational portal that guides student decisions with clarity and transparency:",
+  challenges: [
+    {
+      number: 1,
+      title: "Two programmes needed clear, separate presentation",
+      description: "A Plus Two student choosing the 6-month diploma and a degree holder choosing the 1-year PG diploma are making different decisions with different entry requirements, so combining both into one page blurred a distinction that actually matters."
+    },
+    {
+      number: 2,
+      title: "The offline teaching model is a genuine differentiator that needed to stand out",
+      description: "In a market where many institutes have moved to recorded or online formats, Sidhah's live, face-to-face classroom approach is a real point of difference, but it only works as a selling point if a visitor sees it clearly and early."
+    },
+    {
+      number: 3,
+      title: "Placement outcomes needed to be specific, not just claimed",
+      description: "Naming Lakeshore Hospital, Najath Hospital, and Don Bosco Hospital as actual placement destinations carries far more weight than a general 'we help you get placed' statement, but that specificity was getting lost."
+    },
+    {
+      number: 4,
+      title: "Certifications and recognitions needed a visible, checkable home",
+      description: "ISO 9001 certification and the institute's other recognitions matter to a student or parent evaluating legitimacy, but only if they're placed where that evaluation actually happens."
+    },
+    {
+      number: 5,
+      title: "Students from varied academic backgrounds needed to see themselves as eligible",
+      description: "With admissions open to students from chemistry, economics, nursing, paramedical, commerce, and arts backgrounds, the site needed to make that breadth of eligibility clear rather than reading as narrowly technical."
+    }
+  ],
+
+  objectiveLead: "Teknoppy was engaged to design and build a website that helps a prospective student choose the right programme, understand what makes Sidhah's teaching model different, and enquire about admission with confidence. The brief centred on:",
+  objectives: [
+    "Structuring the 6-Month Diploma and 1-Year PG Diploma as two distinct, clearly compared programmes",
+    "Presenting the offline, faculty-led classroom model as a visible differentiator throughout the site",
+    "Surfacing named placement outcomes and certifications as concrete trust markers",
+    "Making eligibility clear for students from diverse academic backgrounds",
+    "Creating one consistent enquiry path across programme pages, placements, and the homepage"
+  ],
+
+  approachLead: "How Teknoppy built a programme-first, student-centric architecture:",
+  approachPillars: [
+    {
+      title: "Navigation built around two clear programme paths",
+      paragraphs: [
+        "The site's information architecture gives the 6-Month Diploma and the 1-Year PG Diploma their own distinct sections, each showing its own module count, chapter structure, and entry requirement, so a visitor can quickly identify which programme fits their qualification."
+      ]
+    },
+    {
+      title: "The offline classroom model presented as a core differentiator",
+      paragraphs: [
+        "Rather than a passing mention, the site presents Sidhah's live faculty instruction, capped batch sizes, hospital visits, and face-to-face mock interviews as a defined teaching philosophy, directly addressing why a student might choose this over an online alternative."
+      ]
+    },
+    {
+      title: "Named placement outcomes shown where they matter",
+      paragraphs: [
+        "Placements at Lakeshore Hospital, Najath Hospital, and Don Bosco Hospital, along with the specific roles graduates have moved into, are presented on the programme and placement pages themselves, giving a prospective student a concrete sense of where the training actually leads."
+      ]
+    },
+    {
+      title: "Certifications made visible and checkable",
+      paragraphs: [
+        "ISO 9001 certification and the institute's recognitions from the Ministry of MSME, the Technical Study & Skill Research Council, and Learn Curve Innovations & Technology are surfaced clearly rather than buried in a footer, giving a cautious visitor a concrete answer on institutional credibility."
+      ]
+    },
+    {
+      title: "Eligibility written for a genuinely diverse student base",
+      paragraphs: [
+        "Admission content was written to reflect that students come from chemistry, economics, nursing, paramedical, commerce, and arts backgrounds, so a visitor from any of these paths can see themselves as eligible rather than assuming the programme is only for one type of graduate."
+      ]
+    },
+    {
+      title: "One enquiry route, repeated",
+      paragraphs: [
+        "The same enquiry and campus-visit path is repeated consistently across programme pages, the placements section, and the homepage, so a visitor who's ready to act doesn't have to hunt for how."
+      ]
+    },
+    {
+      title: "Consistent brand and location details site-wide",
+      paragraphs: [
+        "The institute's name, Kochi location, and contact details are kept uniform across every page, so the business reads as one coherent, verifiable training institute rather than a set of loosely connected pages."
+      ]
+    }
+  ],
+
+  deliverables: [
+    {
+      title: "A rebuilt website with programme-first navigation",
+      description: "The 6-Month Diploma and 1-Year PG Diploma structured as two distinct, clearly compared programmes."
+    },
+    {
+      title: "Differentiated offline-model content",
+      description: "Live faculty instruction, capped batches, hospital visits, and mock interviews presented as a defined teaching philosophy."
+    },
+    {
+      title: "Named placement content",
+      description: "Lakeshore Hospital, Najath Hospital, and Don Bosco Hospital placements shown with the specific roles graduates have taken on."
+    },
+    {
+      title: "Visible certification and recognition content",
+      description: "ISO 9001 certification and institutional recognitions surfaced clearly on relevant pages."
+    },
+    {
+      title: "Inclusive eligibility content",
+      description: "Admission information written to reflect students from chemistry, economics, nursing, paramedical, commerce, and arts backgrounds."
+    },
+    {
+      title: "A consistent enquiry path",
+      description: "The same enquiry and campus-visit route repeated across programme, placement, and homepage content."
+    }
+  ],
+
+  whyMattersHeading: "Why This Structure Matters",
+  whyMattersParagraphs: [
+    "Choosing a hospital administration diploma is a career decision with real financial and time weight, and it sits close to the healthcare sector even though the training itself is administrative rather than clinical. That makes trust signals — verifiable certification, named placement outcomes, and a clearly explained teaching model — as important to the site's design as its visual presentation. A prospective student who can't quickly confirm the institute's credibility and outcomes is a student who keeps looking elsewhere, whatever the actual quality of the programme.",
+    "The same structure supports how AI-driven search and answer engines now handle vocational-training research. When each programme's duration, modules, entry requirement, and outcomes are written as plain, specific, crawlable text rather than folded into one general 'courses' page, both traditional search and AI Overviews or assistant-style answers can extract and represent it accurately, which matters as more students start their programme research by asking an AI tool to compare hospital administration courses before visiting a website directly.",
+    "Keeping the institute's name, location, and programme details consistent across every page, and keeping the two programmes clearly separated rather than merged into one course listing, is what lets search engines resolve Sidhah Edutech as one coherent training institute and understand each page's specific topic — the foundation for being found for the programme-specific and outcome-specific searches a real prospective student actually runs."
+  ],
+  whyMattersCalloutHtml: `<p><strong>This case study is part of Teknoppy's website design and development work for healthcare education and vocational training clients.</strong> Explore our <a href="/web-design-company-kochi/" class="underline font-bold text-[#F05A2C]">Website Design Company in Kochi</a> or view <a href="/case-study/" class="underline font-bold text-[#F05A2C]">More Teknoppy Case Studies</a>.</p>`,
+
+  faqs: [
+    {
+      question: "What is the difference between Sidhah Edutech's two diploma programmes?",
+      answer: "The 1-Year PG Diploma in Hospital Administration runs 7 modules and 60 chapters and requires a bachelor's degree, aimed at management-track roles. The 6-Month Diploma runs 4 modules and 38 chapters and is open to Plus Two or equivalent qualification holders, as a faster entry route."
+    },
+    {
+      question: "Are Sidhah Edutech's classes online or in person?",
+      answer: "Classes are entirely offline and classroom-based — the institute states there are no recorded videos and no login portal, only live faculty instruction."
+    },
+    {
+      question: "Where have Sidhah Edutech graduates been placed?",
+      answer: "Documented placements include Lakeshore Hospital, Najath Hospital, and Don Bosco Hospital, in roles spanning corporate departments, front office, medical records, and outpatient services."
+    },
+    {
+      question: "Is Sidhah Edutech a certified or recognised institute?",
+      answer: "Yes — Sidhah Edutech holds ISO 9001 certification and is recognised by the Ministry of Micro, Small & Medium Enterprises, the Technical Study & Skill Research Council, and Learn Curve Innovations & Technology."
+    },
+    {
+      question: "Can I join if my background is in arts or commerce rather than science?",
+      answer: "Yes — the institute accepts students from diverse academic backgrounds, including chemistry, economics, nursing, paramedical, commerce, and arts."
+    },
+    {
+      question: "Does the course include anything beyond hospital administration theory?",
+      answer: "Yes — both programmes include free add-on training in interview preparation, spoken English for healthcare settings, and Tally and GST accounting software."
+    },
+    {
+      question: "Where is Sidhah Edutech located?",
+      answer: "The institute is based in Kochi, Kerala, India."
+    },
+    {
+      question: "How do I enquire or visit the campus?",
+      answer: "An enquiry and campus-visit path is available consistently across the website's programme pages, placements section, and homepage."
+    }
+  ],
+
+  ctaHeadline: "Looking for a website that turns programme research into enrolled students?"
+};
+---
+
+<CaseStudyTemplate {...props} />

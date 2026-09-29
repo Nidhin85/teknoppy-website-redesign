@@ -66,7 +66,8 @@
     {
       "type": "projects",
       "bg": "white",
-      "h2": "Featured Work"
+      "h2": "Featured Work",
+      "exclude": ["SIBP"]
     },
     {
       "type": "prose",

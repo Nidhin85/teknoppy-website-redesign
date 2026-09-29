@@ -1,0 +1,217 @@
+---
+import CaseStudyTemplate, { type CaseStudyProps } from '../../components/case-study/CaseStudyTemplate.astro';
+
+const props: CaseStudyProps = {
+  metaTitle: "Logistics Gurukul: Web Design & Development Case Study | Teknoppy",
+  metaDescription: "How Teknoppy built a course-first, mobile-ready website on Astro for Kerala’s leading international logistics and supply chain training institute in Edappally, Kochi.",
+  canonicalURL: "https://teknoppy.com/case-studies/logistics-gurukul-web-design-development/",
+  heroImage: "/case-studies/logistics-gurukul.webp",
+  heroImageAlt: "Logistics Gurukul International Logistics Training Institute Web Design Case Study",
+  schemaType: "TechArticle",
+  schemaAbout: {
+    type: "EducationalOrganization",
+    name: "Logistics Gurukul",
+    address: {
+      locality: "Edappally, Kochi",
+      region: "Kerala",
+      country: "India"
+    }
+  },
+
+  clientName: "Logistics Gurukul",
+  categoryTag: "Website Design and Development",
+  tagBadge: "Vocational Education Case Study",
+
+  title: "Logistics Gurukul: A Website Design and Development Case Study for a Kochi Logistics Training Institute",
+  storyLead: "How Teknoppy built a course-first, mobile-ready website for Kerala's international logistics and supply chain training institute — designed around how a prospective student actually decides where to enrol.",
+  industry: "Vocational Education – International Logistics & Supply Chain Training",
+  location: "Edappally, Kochi, Kerala",
+  services: "Website Design & Development, Information Architecture",
+  platform: "Astro",
+  liveWebsite: "logisticsgurukul.com",
+  liveWebsiteUrl: "https://www.logisticsgurukul.com/",
+  heroHighlights: [
+    "Astro Fast Mobile Build",
+    "4-Stage Staged Pathway",
+    "ISO & STED Accreditations",
+    "Paid On-The-Job Placement"
+  ],
+
+  atAGlance: [
+    "New website built on Astro for a fast, mobile-first browsing experience for prospective students",
+    "Course-first navigation structured around the 1-Year Diploma in International Logistics and its internship-linked format",
+    "Certification and accreditation details (ISO 9001:2015, STED Council, FICS UK) placed where a visitor can verify them",
+    "A single, repeated enquiry path used consistently across every course and information page",
+    "Clear separation between course pages, placement/career content, and institute information to support both student and recruiter visitors"
+  ],
+
+  aboutHeading: "About Logistics Gurukul",
+  aboutParagraphs: [
+    "Logistics Gurukul is a Kochi-based training institute run by Edify Logiwise Solutions Pvt Ltd, offering structured, industry-linked education in international logistics and supply chain management from its campus in Edappally, Ernakulam. The institute's flagship programme is a 1-Year Diploma in International Logistics, built as a staged pathway rather than a classroom-only course: four months of classroom instruction, one month of internship, one month of product training, and six months of paid on-the-job training with partner organisations.",
+    "Alongside the diploma, Logistics Gurukul runs short-term courses and maintains its own placement arm, positioning itself around a claimed 100% internship placement record and recognition it presents as Kerala's leading logistics training provider, built on more than two decades of training delivery and over 20,000 students trained. The institute holds ISO 9001:2015 certification and is presented as an STED Council-approved training centre with FICS (UK) recognition, credentials that matter directly to a prospective student or parent evaluating whether a course is legitimate before enrolling.",
+    "This case study covers the website design and development work delivered by Teknoppy — the institute's public site, its information architecture, and how course, career, and institutional content is organised for a visitor deciding whether to enquire. It does not cover the institute's training curriculum, placement operations, or in-person delivery, which are Logistics Gurukul's own domain."
+  ],
+
+  challengeLead: "Structuring high-commitment vocational programmes for clarity and verifiable trust:",
+  challenges: [
+    {
+      number: 1,
+      title: "A one-year diploma is a high-commitment decision",
+      description: "A prospective student or their parent is comparing institutes, verifying credentials, and trying to understand a multi-stage programme (classroom, internship, product training, on-the-job training) before committing a full year. A site that just lists course names doesn't answer that."
+    },
+    {
+      number: 2,
+      title: "Credibility markers were easy to miss",
+      description: "ISO certification, STED Council approval, and FICS UK recognition are exactly the kind of detail a cautious visitor looks for, but they carry no weight if they're buried instead of placed where the decision actually happens."
+    },
+    {
+      number: 3,
+      title: "Two different audiences needed two different journeys",
+      description: "Prospective students want course structure, fees, and outcomes. Recruiters and partner companies want to know who Logistics Gurukul trains and how hiring works through the institute. The same navigation was being asked to serve both."
+    },
+    {
+      number: 4,
+      title: "Career outcomes needed to be shown, not just claimed",
+      description: "A claim of 100% internship placement means little without a visible sense of what roles graduates actually move into, so the site needed to make career pathways concrete rather than abstract."
+    },
+    {
+      number: 5,
+      title: "Most visits happen on a phone",
+      description: "A student researching courses is typically doing it on a mobile browser between classes or in the evening, so page weight and load speed directly affect whether they stay long enough to read the course structure at all."
+    }
+  ],
+
+  objectiveLead: "Teknoppy was engaged to design and build a website that gives a prospective student everything they need to evaluate the diploma programme and enquire with confidence, while giving recruiters and partners a clear picture of the institute's training standards. The brief centred on:",
+  objectives: [
+    "Structuring the diploma programme so its four-stage format (classroom, internship, product training, on-the-job training) is understandable at a glance",
+    "Surfacing certification and accreditation (ISO 9001:2015, STED Council, FICS UK) as visible trust markers rather than footnotes",
+    "Building a clear, mobile-first navigation covering Home, About, Courses, Life at Gurukul, Journal, Jobs, and Contact",
+    "Presenting career pathways and skill areas in a way a visitor can scan without reading dense paragraphs",
+    "Creating one consistent enquiry route that appears at every stage of the visitor's research, not just on a single contact page"
+  ],
+
+  approachLead: "How Teknoppy built a course-first, mobile-optimised Astro platform:",
+  approachPillars: [
+    {
+      title: "Navigation built around the visitor's journey",
+      paragraphs: [
+        "The site's information architecture follows how a prospective student actually researches a course: Home introduces the institute and its standing, About covers the institute's story, team, and certifications, Courses breaks down the diploma and short-term programmes, Life at Gurukul shows the campus and student experience, Journal carries blogs and updates, and Jobs and Contact give recruiters and enquirers a direct route in. Each section was scoped so a visitor never has to guess where a piece of information lives."
+      ]
+    },
+    {
+      title: "The programme shown as a timeline",
+      paragraphs: [
+        "Rather than describing the diploma in a single paragraph, the course page breaks the twelve months into its four distinct stages — classroom instruction, internship, product training, and paid on-the-job training — so a visitor can see the shape of the year before deciding to enquire. This matters more for a one-year commitment than for a short workshop, where the format itself is part of the decision."
+      ]
+    },
+    {
+      title: "Approvals and certifications placed where they can be checked",
+      paragraphs: [
+        "ISO 9001:2015 certification, STED Council-approved centre status, and FICS UK recognition are surfaced on the About and Certification pages rather than left to a single logo strip, giving a cautious visitor — or a parent reviewing the site on a student's behalf — a concrete, checkable answer to 'is this institute legitimate.'"
+      ]
+    },
+    {
+      title: "Skills and career pathways made visible",
+      paragraphs: [
+        "The site sets out the practical skill areas the diploma covers and maps out a career pathway with named roles a graduate can move into, replacing a vague placement claim with a concrete picture of where the training actually leads."
+      ]
+    },
+    {
+      title: "One enquiry route, repeated",
+      paragraphs: [
+        "Instead of a single contact form, the enquiry path is repeated consistently across course pages, the homepage, and career content, so a visitor who has decided to act doesn't have to hunt for how."
+      ]
+    },
+    {
+      title: "Built on Astro for speed on mobile",
+      paragraphs: [
+        "The site was built on the Astro framework, chosen for fast page loads and low overhead on mobile connections — the primary way most prospective students browse. Faster, lighter pages mean fewer visitors dropping off before they reach the course details that matter to their decision."
+      ]
+    },
+    {
+      title: "Local details kept consistent",
+      paragraphs: [
+        "The institute's name, Edappally address, and contact details are kept consistent across every page and listing, so the business reads as one coherent, verifiable entity rather than a set of loosely connected pages."
+      ]
+    }
+  ],
+
+  deliverables: [
+    {
+      title: "A rebuilt website on Astro",
+      description: "A fast, mobile-first site covering Home, About, Courses, Life at Gurukul, Journal, Jobs, and Contact."
+    },
+    {
+      title: "A staged diploma course page",
+      description: "The 1-Year Diploma in International Logistics presented as a clear four-stage timeline: classroom, internship, product training, on-the-job training."
+    },
+    {
+      title: "Certification and accreditation content",
+      description: "ISO 9001:2015, STED Council approval, and FICS UK recognition placed on the About and Certification pages as visible trust markers."
+    },
+    {
+      title: "A career pathway and skills section",
+      description: "Named roles and skill areas set out to make training outcomes concrete rather than a bare placement statistic."
+    },
+    {
+      title: "A consistent enquiry path",
+      description: "The same enquiry route repeated across course, career, and institute pages instead of a single isolated contact form."
+    },
+    {
+      title: "Consistent institute details site-wide",
+      description: "Name, Edappally address, and contact information kept uniform across every page for a single, verifiable entity."
+    }
+  ],
+
+  whyMattersHeading: "Why This Structure Matters",
+  whyMattersParagraphs: [
+    "A one-year diploma is a YMYL-adjacent decision in the sense that it affects a student's career trajectory and a household's time and money, even though it isn't a medical or financial product. That makes trust signals — verifiable certification, a clear programme structure, visible outcomes — as important to the site's design as its visual polish. A prospective student or parent who can't quickly confirm the institute's standing is a prospective student who leaves without enquiring, whatever the course content actually offers.",
+    "The same structure also supports how AI-driven search and answer engines now handle course and institute queries. When a course's format, duration, and accreditation are written as plain, specific, crawlable text rather than buried in a downloadable brochure or a single hero banner, both traditional search and AI Overviews or assistant-style answers can extract and represent it accurately — which matters for a category where prospective students increasingly ask AI tools to shortlist and compare training institutes before visiting a site at all.",
+    "Keeping the institute's name, location, and credentials consistent site-wide, and keeping course, career, and institutional content in clearly separated sections rather than one long page, is what lets search engines resolve Logistics Gurukul as one coherent entity and understand each page's specific topic — the foundation for the institute being found for the course-specific and location-specific searches a real prospective student runs."
+  ],
+  whyMattersCalloutHtml: `<p><strong>This case study is part of Teknoppy's website design and development work for education and training-sector clients in Kerala.</strong> Explore our <a href="/web-design-company-kochi/" class="underline font-bold text-[#F05A2C]">Website Design Company in Kochi</a> or view <a href="/case-study/" class="underline font-bold text-[#F05A2C]">More Teknoppy Case Studies</a>.</p>`,
+
+  faqs: [
+    {
+      question: "What does the 1-Year Diploma in International Logistics at Logistics Gurukul actually cover month by month?",
+      answer: "The programme runs four months of classroom instruction, one month of internship, one month of product training, and six months of paid on-the-job training with partner organisations — a staged format rather than a single continuous classroom course."
+    },
+    {
+      question: "Is Logistics Gurukul an accredited or certified training institute?",
+      answer: "Logistics Gurukul holds ISO 9001:2015 certification and is presented as an STED Council-approved training centre with FICS (UK) recognition, details set out on the institute's About and Certification pages."
+    },
+    {
+      question: "Where is Logistics Gurukul located?",
+      answer: "The institute is based in Edappally, Ernakulam, Kochi, Kerala."
+    },
+    {
+      question: "Does Logistics Gurukul help with job placement after the course?",
+      answer: "Yes — the institute runs an internship-linked training format and positions its diploma around a placement record, with career pathway and skills information set out on the website to show the roles graduates typically move into."
+    },
+    {
+      question: "Are there shorter courses available besides the 1-year diploma?",
+      answer: "Yes — alongside the main diploma, Logistics Gurukul offers short-term courses, listed on the Courses section of the website."
+    },
+    {
+      question: "What kind of jobs can I get after completing the logistics diploma?",
+      answer: "The website sets out a career pathway with specific named roles in international logistics and supply chain operations that graduates typically progress into, rather than a general placement claim alone."
+    },
+    {
+      question: "Is the Logistics Gurukul diploma recognised outside India?",
+      answer: "The programme is presented with FICS (UK) recognition alongside its STED Council approval and ISO 9001:2015 certification, all detailed on the institute's certification page."
+    },
+    {
+      question: "How do I enquire about admission to Logistics Gurukul?",
+      answer: "An enquiry path is available consistently across the website's course, career, and contact pages, so you can start an enquiry from wherever you're reading."
+    },
+    {
+      question: "Is Logistics Gurukul's website mobile-friendly?",
+      answer: "Yes — the site was rebuilt on the Astro framework specifically for fast loading and easy browsing on mobile devices, since most prospective students research courses on their phones."
+    }
+  ],
+
+  ctaHeadline: "Looking for a website that turns course research into enquiries?"
+};
+---
+
+<CaseStudyTemplate {...props} />

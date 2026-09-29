@@ -1,0 +1,217 @@
+---
+import CaseStudyTemplate, { type CaseStudyProps } from '../../components/case-study/CaseStudyTemplate.astro';
+
+const props: CaseStudyProps = {
+  metaTitle: "U Scholar International: Web Design & Development Case Study | Teknoppy",
+  metaDescription: "How Teknoppy built a destination-first, process-driven website for a Kerala-based study abroad consultancy guiding students across 20+ global destinations.",
+  canonicalURL: "https://teknoppy.com/case-studies/uscholar-international-web-design-development/",
+  heroImage: "/case-studies/u-scholar-international.webp",
+  heroImageAlt: "U Scholar International Study Abroad Education Consultancy Web Design Case Study",
+  schemaType: "TechArticle",
+  schemaAbout: {
+    type: "EducationalOrganization",
+    name: "U Scholar International",
+    address: {
+      locality: "Perinthalmanna, Malappuram",
+      region: "Kerala",
+      country: "India"
+    }
+  },
+
+  clientName: "U Scholar International",
+  categoryTag: "Website Design and Development",
+  tagBadge: "Overseas Education Case Study",
+
+  title: "U Scholar International: A Website Design and Development Case Study for a Study Abroad Consultancy",
+  storyLead: "How Teknoppy built a destination-first, process-driven website for a Kerala-based study abroad consultancy — designed around how a student or parent actually evaluates a counsellor before committing to an application.",
+  industry: "Overseas Education Consultancy",
+  location: "Perinthalmanna, Malappuram, Kerala",
+  services: "Website Design & Development, Information Architecture",
+  platform: "Modern responsive web build",
+  liveWebsite: "uscholar.in",
+  liveWebsiteUrl: "https://www.uscholar.in/",
+  heroHighlights: [
+    "20+ Study Destinations",
+    "End-to-End Application Journey",
+    "12,000+ Students Placed",
+    "Dedicated Post-Arrival Support"
+  ],
+
+  atAGlance: [
+    "New website built around destination and service structure so a student can find their specific country and application need directly",
+    "End-to-end process — counselling, admissions, scholarships, visa support, and post-arrival assistance — presented as one visible journey, not scattered pages",
+    "Track record (10+ years, 12,000+ students placed, 20,000+ applications processed) placed where a student is actually deciding whether to trust the consultancy",
+    "20+ study destinations, including UK, USA, Canada, Australia, and Germany, organised for easy country-by-country comparison",
+    "A single, repeated consultation path across country pages, service pages, and the homepage"
+  ],
+
+  aboutHeading: "About U Scholar International",
+  aboutParagraphs: [
+    "U Scholar International is an overseas education consultancy based in Perinthalmanna, Malappuram, Kerala, guiding students through the full study-abroad process — from career counselling to university admissions, scholarships, visa applications, and settling in after arrival. The consultancy is led by Managing Director Hakeem Valiyathodi and reports more than 10 years of operational experience.",
+    "U Scholar's stated track record includes over 12,000 students placed and more than 20,000 applications processed, across partnerships spanning 20-plus study destinations including the UK, USA, Canada, Australia, Germany, and Latvia. Its service range covers university admissions counselling, career planning, scholarship identification and matching, visa application support, document preparation, interview preparation including mock interviews, budget and financial planning, and post-arrival assistance once a student has landed in their destination country.",
+    "This case study covers the website design and development work delivered by Teknoppy — the site's structure, its destination and service presentation, and how track record and process information is organised for a student or parent evaluating a study-abroad consultancy. It does not cover U Scholar's counselling methodology, university partnerships, or individual student outcomes, which are the consultancy's own domain."
+  ],
+
+  challengeLead: "Designing high-trust student and parent journeys across international academic destinations:",
+  challenges: [
+    {
+      number: 1,
+      title: "20-plus destinations needed clear, comparable structure",
+      description: "A student deciding between the UK, Canada, and Australia is comparing very different visa requirements, costs, and timelines, so lumping every country into one page makes that comparison harder rather than easier."
+    },
+    {
+      number: 2,
+      title: "Choosing a study-abroad consultant is a high-trust decision",
+      description: "Families are committing significant money and a young person's academic future to this process, so a visitor evaluates track record, process transparency, and post-arrival support carefully before their first consultation."
+    },
+    {
+      number: 3,
+      title: "The end-to-end process wasn't visible as one journey",
+      description: "Counselling, admissions, scholarships, visa support, and post-arrival assistance are distinct stages, but a prospective student needed to see them as one connected service rather than separate, disconnected offerings."
+    },
+    {
+      number: 4,
+      title: "Track record figures needed to sit near the decision, not just on an about page",
+      description: "Numbers like 12,000+ students placed and 20+ years of experience only build confidence when a visitor sees them at the point they're actually deciding whether to book a consultation."
+    },
+    {
+      number: 5,
+      title: "Most research happens on a phone, often with a parent involved",
+      description: "Students and parents frequently browse study-abroad options together on a shared phone screen, so the site needed to stay clear and fast on mobile rather than assuming a desktop-first audience."
+    }
+  ],
+
+  objectiveLead: "Teknoppy was engaged to design and build a website that helps a prospective student compare destinations, understand the full application process, and book a consultation with confidence. The brief centred on:",
+  objectives: [
+    "Structuring the 20-plus study destinations for clear, country-by-country comparison",
+    "Presenting the end-to-end service journey — counselling, admissions, scholarships, visa support, post-arrival assistance — as one visible process",
+    "Surfacing track record (years of experience, students placed, applications processed) as a visible trust marker rather than a footnote",
+    "Building navigation and content that works for both a student researching alone and a parent reviewing options with them",
+    "Creating one consistent consultation-booking path across country pages, service pages, and the homepage"
+  ],
+
+  approachLead: "How Teknoppy structured a transparent destination-first study abroad portal:",
+  approachPillars: [
+    {
+      title: "Navigation built around destination-first research",
+      paragraphs: [
+        "The site's information architecture gives each study destination its own clear place in the structure, so a student comparing the UK against Canada or Australia can move between them directly rather than hunting through one long combined page."
+      ]
+    },
+    {
+      title: "The full journey shown as one connected process",
+      paragraphs: [
+        "Counselling, university admissions, scholarship matching, visa application support, document preparation, interview preparation, and post-arrival assistance are presented as stages of a single service journey, so a prospective student understands what happens from their first enquiry through to landing in their destination country."
+      ]
+    },
+    {
+      title: "Track record placed at the decision point",
+      paragraphs: [
+        "U Scholar's 10+ years of experience, 12,000+ students placed, and 20,000+ applications processed are surfaced on destination and service pages themselves, not confined to a single about page, so a visitor sees the track record exactly where they're weighing whether to trust the consultancy."
+      ]
+    },
+    {
+      title: "Content built for students and parents together",
+      paragraphs: [
+        "Because study-abroad decisions are often made jointly, service and destination pages were written in plain, specific language covering cost, timeline, and process detail — the kind of information a parent needs alongside what a student is looking for."
+      ]
+    },
+    {
+      title: "Post-arrival support given its own visibility",
+      paragraphs: [
+        "Post-arrival assistance is a genuine differentiator for a consultancy, so it's presented as a distinct, visible part of the service journey rather than an afterthought mentioned only in passing."
+      ]
+    },
+    {
+      title: "One consultation path, repeated",
+      paragraphs: [
+        "The same consultation-booking route is repeated consistently across destination pages, service pages, and the homepage, so a visitor who's ready to talk to a counsellor doesn't have to search for how."
+      ]
+    },
+    {
+      title: "Consistent brand and location details site-wide",
+      paragraphs: [
+        "The consultancy's name, Perinthalmanna address, and contact details are kept uniform across every page, so the business reads as one coherent, verifiable consultancy rather than a set of loosely connected destination listings."
+      ]
+    }
+  ],
+
+  deliverables: [
+    {
+      title: "A rebuilt website with destination-first navigation",
+      description: "20-plus study destinations, including the UK, USA, Canada, Australia, and Germany, structured for direct comparison."
+    },
+    {
+      title: "An end-to-end service journey presentation",
+      description: "Counselling, admissions, scholarships, visa support, document and interview preparation, and post-arrival assistance shown as one connected process."
+    },
+    {
+      title: "Visible track record content",
+      description: "10+ years of experience, 12,000+ students placed, and 20,000+ applications processed surfaced on destination and service pages."
+    },
+    {
+      title: "Dual-audience content",
+      description: "Service and destination pages written to serve both the researching student and the parent reviewing options alongside them."
+    },
+    {
+      title: "Dedicated post-arrival support content",
+      description: "Post-arrival assistance presented as a distinct, visible service stage rather than a footnote."
+    },
+    {
+      title: "A consistent consultation-booking path",
+      description: "The same booking route repeated across destination, service, and homepage content instead of a single isolated contact form."
+    }
+  ],
+
+  whyMattersHeading: "Why This Structure Matters",
+  whyMattersParagraphs: [
+    "A study-abroad decision is a YMYL-adjacent commitment — it affects a student's finances, academic trajectory, and years of their life, even though it isn't a medical or legal product. That makes trust signals — verifiable experience, a transparent process, visible post-arrival support — as central to the site's design as its visual presentation. A family that can't quickly confirm a consultancy's track record and process is a family that keeps researching elsewhere, whatever the actual quality of service behind the site.",
+    "The same structure supports how AI-driven search and answer engines now handle study-abroad research. When each destination's requirements, timelines, and services are written as plain, specific, crawlable text rather than buried in a single combined page, both traditional search and AI Overviews or assistant-style answers can extract and represent it accurately, which matters as more students and parents start their research by asking an AI tool to compare consultancies and destinations before visiting a website directly.",
+    "Keeping the consultancy's name, location, and track record consistent across every destination and service page, and keeping each of the 20-plus destinations clearly separated rather than merged into one page, is what lets search engines resolve U Scholar International as one coherent entity and understand each page's specific topic — the foundation for being found for the destination-specific and service-specific searches a real prospective student actually runs."
+  ],
+  whyMattersCalloutHtml: `<p><strong>This case study is part of Teknoppy's website design and development work for education and overseas-study consultancy clients.</strong> Explore our <a href="/web-design-company-kochi/" class="underline font-bold text-[#F05A2C]">Website Design Company in Kochi</a> or view <a href="/case-study/" class="underline font-bold text-[#F05A2C]">More Teknoppy Case Studies</a>.</p>`,
+
+  faqs: [
+    {
+      question: "What services does U Scholar International offer?",
+      answer: "University admissions counselling, career planning, scholarship identification and matching, visa application support, document preparation, interview preparation including mock interviews, budget and financial planning, and post-arrival assistance."
+    },
+    {
+      question: "Which countries does U Scholar International help students apply to?",
+      answer: "The consultancy covers more than 20 study destinations, including the UK, USA, Canada, Australia, Germany, and Latvia."
+    },
+    {
+      question: "How experienced is U Scholar International?",
+      answer: "The consultancy reports more than 10 years of operational experience, with over 12,000 students placed and more than 20,000 applications processed."
+    },
+    {
+      question: "Does U Scholar International help with scholarships?",
+      answer: "Yes — scholarship identification and matching is one of the consultancy's core services, alongside admissions and visa support."
+    },
+    {
+      question: "Where is U Scholar International located?",
+      answer: "The consultancy is based in Perinthalmanna, Malappuram, Kerala, India."
+    },
+    {
+      question: "Does U Scholar International help after I arrive in my study destination?",
+      answer: "Yes — post-arrival assistance is a dedicated part of the service, supporting students once they've landed in their destination country."
+    },
+    {
+      question: "Who leads U Scholar International?",
+      answer: "U Scholar International is led by Managing Director Hakeem Valiyathodi."
+    },
+    {
+      question: "How do I book a consultation with U Scholar International?",
+      answer: "A consultation-booking path is available consistently across the website's destination pages, service pages, and homepage, so you can start from whichever page brought you there."
+    },
+    {
+      question: "Does U Scholar International help with visa applications, not just university admissions?",
+      answer: "Yes — visa application support and document preparation are handled as part of the same end-to-end service, alongside admissions counselling and scholarship matching."
+    }
+  ],
+
+  ctaHeadline: "Looking for a website that turns study-abroad research into booked consultations?"
+};
+---
+
+<CaseStudyTemplate {...props} />

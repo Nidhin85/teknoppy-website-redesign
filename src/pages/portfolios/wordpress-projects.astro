@@ -1,17 +1,10 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
-import FooterCTA from '../../components/FooterCTA.astro';
-import InnerPage from '../../components/InnerPage.astro';
+/**
+ * Standardized WordPress Projects Portfolio Page.
+ * Image-first, modern, responsive showcase of Teknoppy WordPress design & development projects.
+ */
+import CategoryPortfolioPage from '../../components/portfolio/CategoryPortfolioPage.astro';
 import page from '../../data/pages/portfolios/wordpress-projects.json';
 ---
 
-<Layout title={page.meta.title} description={page.meta.description}>
-  <Header forceSolidBg={true} />
-
-  <main class="overflow-hidden bg-cream/20">
-    <InnerPage page={page} />
-  </main>
-
-  <FooterCTA />
-</Layout>
+<CategoryPortfolioPage page={page} canonicalPath="/portfolios/wordpress-projects/" />

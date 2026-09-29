@@ -1,0 +1,213 @@
+---
+import CaseStudyTemplate, { type CaseStudyProps } from '../../components/case-study/CaseStudyTemplate.astro';
+
+const props: CaseStudyProps = {
+  metaTitle: "YatraBay: International Tour Operator Website Design Case Study | Teknoppy",
+  metaDescription: "How Teknoppy built a destination-first, process-transparent website for YatraBay, a Trivandrum tour operator — structuring packages, 0% hidden fees pricing, and visa timelines.",
+  canonicalURL: "https://teknoppy.com/case-study/yatrabay/",
+  heroImage: "/case-studies/yatrabay.webp",
+  heroImageAlt: "YatraBay International Tour Operator Website Design & Development Case Study",
+  schemaType: "TechArticle",
+  schemaAbout: {
+    type: "TravelAgency",
+    name: "YatraBay",
+    address: {
+      locality: "Trivandrum",
+      region: "Kerala",
+      country: "India"
+    }
+  },
+
+  clientName: "YatraBay",
+  categoryTag: "Website Design and Development",
+  tagBadge: "Travel & Tourism Case Study",
+
+  title: "YatraBay: A Website Design and Development Case Study for a Kerala-Based International Tour Operator",
+  storyLead: "How Teknoppy built a destination-first, process-transparent website for a Trivandrum tour operator — designed around how a traveller actually compares packages, pricing, and visa timelines before booking.",
+  industry: "International Tour Operator & Travel Packages",
+  location: "Neeramankara, Trivandrum, Kerala",
+  services: "Website Design & Development, Information Architecture",
+  platform: "Modern responsive web build",
+  liveWebsite: "yatrabay.com",
+  liveWebsiteUrl: "https://yatrabay.com/",
+  heroHighlights: [
+    "Destination-First Architecture",
+    "Four-Step Booking Journey",
+    "Pricing & Visa Transparency",
+    "24/7 Digital Concierge Support"
+  ],
+
+  atAGlance: [
+    "New website built around destination and package type so a traveller can compare Europe, Asia, Middle East, and domestic trips directly",
+    "A four-step booking process — consultation, itinerary customisation, logistics, trip support — shown clearly before a traveller commits",
+    "Pricing transparency (\"0% Hidden Fees\") and visa processing timelines placed where a traveller is actually deciding, not buried in fine print",
+    "Specialised package types (honeymoon, group, adventure) given their own visibility alongside standard destination packages",
+    "A single, repeated enquiry path across destination pages, package pages, and the homepage"
+  ],
+
+  aboutHeading: "About YatraBay",
+  aboutParagraphs: [
+    "YatraBay is an international tour operator headquartered at KJ Square, Neeramankara, Trivandrum, Kerala, offering curated travel packages that bundle flights, accommodation, visa processing, guided tours, and travel insurance across more than 150 countries. The company positions itself around a \"0% Hidden Fees\" transparent pricing model and 24/7 digital concierge support available over WhatsApp.",
+    "YatraBay's package range spans Europe (multi-country Eastern and Central European itineraries covering Italy, Switzerland, France, Austria, Germany, Hungary, Croatia, and Slovenia, running 3 to 16 days), Asian destinations (Thailand, including Bangkok, Phuket, and Krabi, along with Vietnam and Cambodia), Middle East packages centred on Dubai, and domestic Indian itineraries including Lakshadweep. Alongside standard destination packages, the company offers honeymoon, group, and adventure travel packages, built through a four-step process: consultation, itinerary customisation, logistics management, and trip support. YatraBay reports visa processing turnaround of 3 to 5 days and an average customer rating of 4.9 out of 5 across its packages.",
+    "This case study covers the website design and development work delivered by Teknoppy — the site's structure, its destination and package presentation, and how pricing and process information is organised for a traveller evaluating a tour operator. It does not cover YatraBay's tour operations, supplier relationships, or individual trip execution, which are the company's own domain."
+  ],
+
+  challengeLead: "Structuring high-trust international travel packages for transparent discovery:",
+  challenges: [
+    {
+      number: 1,
+      title: "Packages across four regions needed clear separation",
+      description: "A traveller comparing a Europe multi-country tour against a Thailand beach package or a Dubai city break is making very different decisions, so combining every destination into one catalogue made comparison harder rather than easier."
+    },
+    {
+      number: 2,
+      title: "International travel booking is a high-trust decision",
+      description: "A traveller is committing significant money and vacation time to a package sight-unseen, so pricing transparency, visa timelines, and support availability needed to be visible before the first enquiry, not discovered after."
+    },
+    {
+      number: 3,
+      title: "The booking process wasn't visible as one connected journey",
+      description: "Consultation, itinerary customisation, logistics, and trip support are distinct stages, but a prospective traveller needed to see them as one clear path rather than assuming everything happens after payment."
+    },
+    {
+      number: 4,
+      title: "Specialised packages were getting lost among standard destination listings",
+      description: "Honeymoon, group, and adventure travellers are searching with different intent than a general destination browser, and needed their own visible path rather than being folded into generic country pages."
+    },
+    {
+      number: 5,
+      title: "Visa processing and pricing details needed to sit near the decision",
+      description: "A stated 3–5 day visa turnaround and a \"0% Hidden Fees\" pricing claim only build confidence when a traveller sees them at the point they're comparing packages, not on a separate policy page."
+    }
+  ],
+
+  objectiveLead: "Teknoppy was engaged to design and build a website that lets a prospective traveller compare destinations, understand the full booking process, and enquire with confidence. The brief centred on:",
+  objectives: [
+    "Structuring Europe, Asia, Middle East, and domestic packages as distinct, comparable regional sections",
+    "Making the four-step booking process (consultation, customisation, logistics, trip support) visible early in the visitor's journey",
+    "Surfacing pricing transparency and visa processing timelines as visible trust markers on package pages",
+    "Giving honeymoon, group, and adventure packages their own clear visibility alongside standard destination listings",
+    "Creating one consistent enquiry path across destination pages, package pages, and the homepage"
+  ],
+
+  approachLead: "How Teknoppy built a destination-first, process-transparent travel portal:",
+  approachPillars: [
+    {
+      title: "Navigation built around region-first browsing",
+      paragraphs: [
+        "The site's information architecture separates Europe, Asian destinations, Middle East, and domestic Indian packages into their own clear sections, so a traveller researching a Europe multi-country trip isn't wading through Thailand beach packages to get there."
+      ]
+    },
+    {
+      title: "The booking process shown as one connected journey",
+      paragraphs: [
+        "Consultation, itinerary customisation, logistics management, and trip support are presented as stages of a single, visible process, so a prospective traveller understands what happens from their first enquiry through to on-trip support, not just what's included in the package price."
+      ]
+    },
+    {
+      title: "Pricing and visa timelines placed at the decision point",
+      paragraphs: [
+        "The \"0% Hidden Fees\" pricing model and the 3–5 day visa processing turnaround are surfaced on destination and package pages themselves, rather than confined to a separate terms page, so a traveller sees this information exactly where they're comparing options."
+      ]
+    },
+    {
+      title: "Specialised packages given their own visibility",
+      paragraphs: [
+        "Honeymoon, group, and adventure packages are presented as their own distinct package types rather than folded into general country listings, matching how travellers with that specific intent actually search."
+      ]
+    },
+    {
+      title: "Support availability made concrete",
+      paragraphs: [
+        "24/7 digital concierge support over WhatsApp is presented as a specific, ongoing service rather than a generic \"contact us\" mention, reflecting how much weight ongoing support carries for a traveller booking an international, multi-day itinerary."
+      ]
+    },
+    {
+      title: "One enquiry route, repeated",
+      paragraphs: [
+        "The same enquiry path is repeated consistently across destination pages, package pages, and the homepage, so a traveller who's found the right package doesn't have to search for how to enquire."
+      ]
+    },
+    {
+      title: "Consistent brand and location details site-wide",
+      paragraphs: [
+        "The company name, Trivandrum address, and contact details are kept uniform across every page, so the business reads as one coherent, verifiable tour operator rather than a set of loosely connected destination pages."
+      ]
+    }
+  ],
+
+  deliverables: [
+    {
+      title: "A rebuilt website with region-first navigation",
+      description: "Europe, Asian destinations, Middle East, and domestic Indian packages structured as distinct, comparable sections."
+    },
+    {
+      title: "A visible four-step booking process",
+      description: "Consultation, itinerary customisation, logistics management, and trip support set out clearly for a prospective traveller."
+    },
+    {
+      title: "Transparent pricing and visa content",
+      description: "The \"0% Hidden Fees\" model and 3–5 day visa processing turnaround surfaced on destination and package pages."
+    },
+    {
+      title: "Dedicated specialised package sections",
+      description: "Honeymoon, group, and adventure packages given their own visibility alongside standard destination listings."
+    },
+    {
+      title: "Concrete support-availability content",
+      description: "24/7 digital concierge support over WhatsApp presented as a specific, ongoing service."
+    },
+    {
+      title: "A consistent enquiry path",
+      description: "The same enquiry route repeated across destination, package, and homepage content instead of a single isolated contact form."
+    }
+  ],
+
+  whyMattersHeading: "Why This Structure Matters",
+  whyMattersParagraphs: [
+    "Booking an international trip is a decision with real financial and time weight — a traveller is trusting an operator with flights, accommodation, visas, and in-country logistics, often for a once-a-year holiday or a honeymoon that can't be redone. That makes clear, specific content about pricing, process, and support more valuable to a prospective traveller than broad marketing claims, and it's why the site was built to make that information visible at the point of decision rather than tucked into policy pages.",
+    "The same structure supports how AI-driven search and answer engines now handle travel-package research. When each destination's package details, pricing model, and visa timelines are written as plain, specific, crawlable text rather than combined into one generic \"packages\" page, both traditional search and AI Overviews or assistant-style answers can extract and represent it accurately, which matters as more travellers start their trip research by asking an AI tool to compare tour operators and destinations before visiting a website directly.",
+    "Keeping the company name, location, and package details consistent across every destination and package page, and keeping the regional categories and specialised package types clearly separated rather than merged into one listing, is what lets search engines resolve YatraBay as one coherent tour operator and understand each page's specific topic — the foundation for being found for the destination-specific and package-specific searches a real traveller actually runs."
+  ],
+  whyMattersCalloutHtml: `<p><strong>This case study is part of Teknoppy's website design and development work for travel and tourism clients.</strong> Explore our <a href="/web-design-company-kochi/" class="underline font-bold text-[#F05A2C]">Website Design Company in Kochi</a> or view <a href="/case-study/" class="underline font-bold text-[#F05A2C]">More Teknoppy Case Studies</a>.</p>`,
+
+  faqs: [
+    {
+      question: "What destinations does YatraBay offer packages for?",
+      answer: "YatraBay offers packages across Europe (including Italy, Switzerland, France, Austria, Germany, Hungary, Croatia, and Slovenia), Asian destinations (Thailand, Vietnam, Cambodia), the Middle East (Dubai), and domestic Indian destinations including Lakshadweep, alongside 150+ countries overall."
+    },
+    {
+      question: "Does YatraBay handle visa processing?",
+      answer: "Yes — visa processing is included as part of the package, with a stated turnaround of 3 to 5 days."
+    },
+    {
+      question: "Are there any hidden fees with YatraBay packages?",
+      answer: "YatraBay positions its pricing around a \"0% Hidden Fees\" model, with costs presented transparently as part of the package."
+    },
+    {
+      question: "Can I customise my itinerary with YatraBay, or only book fixed packages?",
+      answer: "Itineraries are customisable — itinerary customisation is a dedicated stage in YatraBay's four-step booking process, alongside consultation, logistics management, and trip support."
+    },
+    {
+      question: "Does YatraBay offer honeymoon packages?",
+      answer: "Yes — honeymoon packages are offered as a specialised package type, alongside group and adventure travel packages."
+    },
+    {
+      question: "Where is YatraBay based?",
+      answer: "YatraBay is headquartered at KJ Square, Neeramankara, Trivandrum, Kerala, India."
+    },
+    {
+      question: "What support is available if something comes up during my trip?",
+      answer: "YatraBay provides 24/7 digital concierge support over WhatsApp as part of its trip support service."
+    },
+    {
+      question: "How do I enquire about a package with YatraBay?",
+      answer: "An enquiry path is available consistently across the website's destination pages, package pages, and homepage, so you can start an enquiry from whichever package you're viewing."
+    }
+  ],
+
+  ctaHeadline: "Looking for a website that turns destination research into booked trips?"
+};
+---
+
+<CaseStudyTemplate {...props} />

@@ -108,6 +108,13 @@
               "href": "/lenaa-personal-brand-website-case-study/",
               "image": "/case-studies/lenaalife.webp",
               "imageAlt": "Lenaa website homepage screenshot"
+            },
+            {
+              "label": "Olives Boutique Resort",
+              "text": "Eco-luxury plantation resort website in Wayanad",
+              "href": "/case-studies/olives-boutique-resort-digital-marketing/",
+              "image": "/case-studies/olivesresort.webp",
+              "imageAlt": "Olives Boutique Resort website homepage screenshot"
             }
           ]
         },
@@ -205,6 +212,13 @@
               "href": "/case-studies/creative-web-design-qatar-seo-content/",
               "image": "/case-studies/webdesignqa.webp",
               "imageAlt": "Creative Web Design Qatar website homepage screenshot"
+            },
+            {
+              "label": "Koojo Custom Powder Coating",
+              "text": "Topical SEO strategy and site architecture for a GTA industrial metal finisher",
+              "href": "/case-studies/koojo-custom-powder-coating-seo/",
+              "image": "/case-studies/koojopowdercoating.webp",
+              "imageAlt": "Koojo Custom Powder Coating website homepage screenshot"
             }
           ]
         },
@@ -216,12 +230,6 @@
               "imageFallback": "Social-first engagement",
               "text": "Digital marketing for a retail display manufacturer",
               "href": "/case-studies/direction-north-digital-marketing/"
-            },
-            {
-              "label": "Olives Boutique Resort",
-              "imageFallback": "Social-first engagement",
-              "text": "Digital marketing for a Wayanad eco-resort",
-              "href": "/case-studies/olives-boutique-resort-digital-marketing/"
             }
           ]
         }

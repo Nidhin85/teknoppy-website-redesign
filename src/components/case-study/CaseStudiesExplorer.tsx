@@ -266,7 +266,7 @@ export const CaseStudiesExplorer: React.FC = () => {
                 }}
                 className="text-xs font-bold text-[#F05A2C] hover:text-[#D24A20] transition-colors flex items-center gap-1.5 cursor-pointer"
               >
-                <span>Reset to All Projects (22)</span>
+                <span>Reset to All Projects ({caseStudiesList.length})</span>
                 <X className="w-3.5 h-3.5" />
               </button>
             )}
@@ -353,7 +353,7 @@ export const CaseStudiesExplorer: React.FC = () => {
               }}
               className="px-5 py-2.5 rounded-full bg-[#F05A2C] hover:bg-[#D24A20] text-white text-xs font-bold uppercase tracking-wider transition-colors cursor-pointer shadow-sm shadow-[#F05A2C]/20"
             >
-              Reset All Filters (22)
+              Reset All Filters ({caseStudiesList.length})
             </button>
           </div>
         )}
