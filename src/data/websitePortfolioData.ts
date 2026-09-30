@@ -376,5 +376,17 @@ export const websitePortfolioProjects: WebsitePortfolioItem[] = [
     imageAlt: 'Teknoppy website project - U Scholar International education consultancy homepage',
     href: '/case-studies/uscholar-international-web-design-development/',
     location: 'Perinthalmanna, Malappuram, Kerala'
+  },
+  {
+    id: 'visakh-rj',
+    name: 'Visakh RJ',
+    tagline: 'Personal brand platform for an established PMP trainer, speaker, and coach: story-led layout, video-proof integration, and direct enquiry channels.',
+    industryLabel: 'Web Design & Development',
+    category: 'web-design',
+    categories: ['web-design'],
+    image: '/portfolios/website/visakh-rj.webp',
+    imageAlt: 'Teknoppy website project - Visakh RJ personal brand homepage',
+    href: '/case-studies/visakh-rj-web-design/',
+    location: 'Mumbai / Pan-India'
   }
 ];
