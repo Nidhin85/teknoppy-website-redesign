@@ -157,21 +157,23 @@ export default function CostCalculator({ config }: { config: Config }) {
             {type.tiers.map((t) => (
               <label
                 key={t.id}
-                className={`flex items-start gap-3 p-4 cursor-pointer transition-colors ${t.id === tier.id ? 'bg-primary/5' : 'bg-white hover:bg-neutral-50'}`}
+                className={`flex flex-col sm:flex-row sm:items-start justify-between gap-2 sm:gap-3 p-4 cursor-pointer transition-colors ${t.id === tier.id ? 'bg-primary/5' : 'bg-white hover:bg-neutral-50'}`}
               >
-                <input
-                  type="radio"
-                  name="cc-tier"
-                  value={t.id}
-                  checked={t.id === tier.id}
-                  onChange={() => setTierId(t.id)}
-                  className="mt-1 accent-[#F05A2C] w-4 h-4 flex-shrink-0"
-                />
-                <span className="min-w-0 flex-grow">
-                  <span className="block text-sm font-bold text-neutral-900 leading-snug">{t.label}</span>
-                  {t.detail && <span className="block text-xs font-semibold text-neutral-500 mt-1 leading-relaxed">{t.detail}</span>}
-                </span>
-                <span className="text-xs font-black text-primary whitespace-nowrap tabular-nums pt-0.5">
+                <div className="flex items-start gap-3 min-w-0 flex-grow">
+                  <input
+                    type="radio"
+                    name="cc-tier"
+                    value={t.id}
+                    checked={t.id === tier.id}
+                    onChange={() => setTierId(t.id)}
+                    className="mt-1 accent-[#F05A2C] w-4 h-4 flex-shrink-0"
+                  />
+                  <span className="min-w-0 flex-grow">
+                    <span className="block text-sm font-bold text-neutral-900 leading-snug">{t.label}</span>
+                    {t.detail && <span className="block text-xs font-semibold text-neutral-500 mt-1 leading-relaxed">{t.detail}</span>}
+                  </span>
+                </div>
+                <span className="text-xs font-black text-primary whitespace-nowrap tabular-nums pl-7 sm:pl-0 sm:pt-0.5 self-start sm:self-auto">
                   {band(t.min, t.max, t.openEnded)}
                 </span>
               </label>

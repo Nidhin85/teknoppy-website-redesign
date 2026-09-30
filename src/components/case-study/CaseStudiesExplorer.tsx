@@ -241,12 +241,12 @@ export const CaseStudiesExplorer: React.FC = () => {
 
           {/* Active Filter Info & Results Count Banner */}
           <div className="flex flex-wrap items-center justify-between gap-3 text-xs text-neutral-500 pt-2 border-t border-neutral-200/60">
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
               <span className="font-semibold text-neutral-500">Active Filter:</span>
               <span className="font-bold px-2.5 py-0.5 rounded-full bg-orange-50 text-[#F05A2C] border border-orange-200/60">
                 {filterCategories.find(c => c.id === activeCategory)?.label || 'All Projects'}
               </span>
-              <span>•</span>
+              <span className="hidden sm:inline">•</span>
               <span className="font-medium text-neutral-700">
                 <strong className="text-neutral-900 font-bold">{filteredProjects.length}</strong> {filteredProjects.length === 1 ? 'Project' : 'Projects'} Displayed
               </span>

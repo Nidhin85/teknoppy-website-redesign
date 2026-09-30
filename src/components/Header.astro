@@ -42,15 +42,15 @@ const links = [
   class={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
     forceSolidBg 
       ? 'bg-white border-b border-neutral-200/50 py-3 shadow-md shadow-black/[0.03]' 
-      : 'bg-transparent border-b border-transparent pt-9 pb-4'
+      : 'bg-transparent border-b border-transparent py-3.5 sm:py-4 lg:pt-9 lg:pb-4'
   }`}
   data-force-solid={forceSolidBg ? "true" : "false"}
 >
-  <div class="max-w-[1280px] mx-auto px-6 lg:px-12 flex items-center justify-between">
+  <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between">
     
     <!-- Logo -->
     <a href="/" class="flex items-center gap-2 group relative z-50">
-      <img src="/logo.svg" alt="Teknoppy Logo" width="220" height="62" class="h-[52px] w-auto group-hover:opacity-85 transition-opacity duration-300" />
+      <img src="/logo.svg" alt="Teknoppy Logo" width="220" height="62" class="h-[42px] sm:h-[48px] lg:h-[52px] w-auto group-hover:opacity-85 transition-opacity duration-300" />
     </a>
 
     <!-- Desktop Nav -->
@@ -140,7 +140,7 @@ const links = [
      never hit it because forceSolidBg skips the scroll handler entirely. -->
 <div
   id="mobile-menu"
-  class="fixed inset-0 top-[75px] bg-white z-40 transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col border-t border-border"
+  class="fixed inset-0 top-[64px] sm:top-[70px] lg:top-[75px] bg-white z-40 transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col border-t border-border"
   aria-hidden="true"
 >
   <nav class="flex-1 min-h-0 overflow-y-auto overscroll-contain flex flex-col gap-3 px-8 pt-6 pb-6">
@@ -193,7 +193,7 @@ const links = [
   // Sticky header handling
   const forceSolid = header?.dataset.forceSolid === 'true';
   const SOLID = ['py-3', 'bg-white/95', 'backdrop-blur-md', 'border-neutral-200/50', 'shadow-md', 'shadow-black/[0.03]'];
-  const TRANSPARENT = ['pt-9', 'pb-4', 'bg-transparent', 'border-transparent'];
+  const TRANSPARENT = ['py-3.5', 'sm:py-4', 'lg:pt-9', 'lg:pb-4', 'bg-transparent', 'border-transparent'];
 
   function applyScrollState() {
     if (forceSolid || isMenuOpen) return;

@@ -40,7 +40,7 @@ const isCurrent = (href: string) => pathname === href || pathname === href.repla
   <div class="absolute inset-0 pointer-events-none bg-[linear-gradient(to_right,rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.025)_1px,transparent_1px)] bg-[size:56px_56px]"></div>
   <div class="absolute -top-32 -left-24 w-[420px] h-[420px] rounded-full bg-primary/10 blur-[120px] pointer-events-none"></div>
 
-  <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
+  <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
 
     <!-- MAIN GRID -->
     <div class="grid gap-12 lg:gap-16 lg:grid-cols-12 py-16 lg:py-20">
@@ -139,7 +139,7 @@ const isCurrent = (href: string) => pathname === href || pathname === href.repla
         &copy; {year} {site.businessName}. All rights reserved. Established {site.established}, Kochi, Kerala.
       </p>
 
-      <div class="flex items-center gap-6">
+      <div class="flex flex-wrap items-center gap-x-6 gap-y-2">
         {footer.legal.map((item) => (
           <a href={item.href} class="text-xs text-neutral-500 font-medium hover:text-neutral-300 transition-colors">{item.label}</a>
         ))}

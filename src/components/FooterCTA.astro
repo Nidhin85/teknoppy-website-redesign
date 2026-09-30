@@ -10,9 +10,19 @@ const formEndpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT || '/api/contact';
 
 interface Props {
   includeSchema?: boolean;
+  personName?: string;
+  personRole?: string;
+  personImage?: string;
+  personBio?: string;
 }
 
-const { includeSchema = true } = Astro.props;
+const { 
+  includeSchema = true,
+  personName = "Sanal Edison",
+  personRole = "(Digital strategist)",
+  personImage = "/sanal.png",
+  personBio = "Communicate with our experts to bring out better solutions to your problem."
+} = Astro.props;
 
 const businessInfo = {
   name: site.businessName,
@@ -51,7 +61,7 @@ const schema = {
   <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.15),transparent_45%)] pointer-events-none"></div>
   <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
 
-  <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
+  <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
       
       <!-- Left Column: SEO Content & Consultation Form -->
@@ -161,23 +171,23 @@ const schema = {
 
       <!-- Right Column: Sanal's Expert Profile Card -->
       <div class="lg:col-span-5 w-full lg:sticky lg:top-32">
-        <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 md:p-12 text-center space-y-8 shadow-2xl relative overflow-hidden group">
+        <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 sm:p-8 md:p-12 text-center space-y-8 shadow-2xl relative overflow-hidden group">
           <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-white/10 to-transparent opacity-50 group-hover:opacity-80 transition-opacity duration-700 blur-2xl"></div>
           
           <div class="relative w-36 h-36 mx-auto">
             <!-- Double Ring outline -->
             <div class="absolute inset-0 rounded-full border border-white/20 scale-110"></div>
             <div class="absolute inset-0 rounded-full border-2 border-white/80 overflow-hidden shadow-lg">
-              <img src="/sanal.png" alt="Sanal Edison" class="w-full h-full object-cover" />
+              <img src={personImage} alt={personName} class="w-full h-full object-cover" />
             </div>
           </div>
           
           <div class="space-y-3">
-            <h4 class="text-2xl font-bold text-white">Sanal Edison</h4>
-            <p class="text-sm text-[#F9AE42] font-semibold tracking-wider uppercase">(Digital strategist)</p>
+            <h4 class="text-2xl font-bold text-white">{personName}</h4>
+            <p class="text-sm text-[#F9AE42] font-semibold tracking-wider uppercase">{personRole}</p>
             <div class="h-px w-12 bg-white/20 mx-auto"></div>
             <p class="text-sm text-white/90 max-w-[280px] mx-auto leading-relaxed">
-              Communicate with our experts to bring out better solutions to your problem.
+              {personBio}
             </p>
           </div>
 
