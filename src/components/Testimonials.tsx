@@ -55,9 +55,23 @@ type VideoTestimonial = {
 export default function Testimonials({
   testimonials = defaultTestimonials,
   videos = [],
+  badge = "Client Success Stories",
+  heading,
+  headingLead,
+  headingAccent,
+  headingRest,
+  intro = "Businesses across Kerala and the GCC have trusted our website design Kerala expertise to build their online presence — here is what some of them have to say about working with Teknoppy web design agency.",
+  statsLabel = "120+ projects delivered",
 }: {
   testimonials?: { name: string; role: string; content: string; initials: string; photo?: string }[];
   videos?: VideoTestimonial[];
+  badge?: string;
+  heading?: React.ReactNode;
+  headingLead?: string;
+  headingAccent?: string;
+  headingRest?: string;
+  intro?: string;
+  statsLabel?: string;
 } = {}) {
   // Real client videos, supplied by the client. The panel used to rotate a stock
   // image behind a play button that did nothing.
@@ -161,17 +175,25 @@ export default function Testimonials({
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F9AE42]/10 border border-[#F9AE42]/30 text-primary text-sm font-bold uppercase tracking-wider mb-6 shadow-sm transform -rotate-1">
-              Client Success Stories
+              {badge}
             </div>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-neutral-900 mb-4 leading-tight">
-              What Our Clients Say About <span className="text-primary">Teknoppy</span> — Web Design Agency Kerala
+              {heading || (headingLead ? (
+                <>
+                  {headingLead} {headingAccent && <span className="text-primary">{headingAccent}</span>} {headingRest}
+                </>
+              ) : (
+                <>
+                  What Our Clients Say About <span className="text-primary">Teknoppy</span> — Web Design Agency Kerala
+                </>
+              ))}
             </h2>
             <p className="text-neutral-600 text-sm md:text-base leading-relaxed">
-              Businesses across Kerala and the GCC have trusted our website design Kerala expertise to build their online presence — here is what some of them have to say about working with Teknoppy web design agency.
+              {intro}
             </p>
           </div>
           <div className="text-2xl md:text-3xl font-bold text-neutral-950 tracking-tight shrink-0">
-            120+ projects delivered
+            {statsLabel}
           </div>
         </div>
 
@@ -351,12 +373,12 @@ export default function Testimonials({
             ) : null}
           </div>
 
-          {/* Column 3: 3x3 Client Logos Grid */}
-          <div className="lg:col-span-4 bg-white border border-neutral-100 rounded-xl overflow-hidden shadow-sm grid grid-cols-3 divide-x divide-y divide-neutral-100">
+          {/* Column 3: Client Logos Grid (3x3 on mobile/desktop, 9-col strip on tablet) */}
+          <div className="md:col-span-2 lg:col-span-4 bg-white border border-neutral-100 rounded-xl overflow-hidden shadow-sm grid grid-cols-3 md:grid-cols-9 lg:grid-cols-3 divide-x divide-y md:divide-y-0 lg:divide-y divide-neutral-100">
             {clientLogos.map((logo) => (
               <div 
                 key={logo.src} 
-                className="logo-plate aspect-square flex items-center justify-center p-6 bg-white hover:bg-neutral-50/50 transition-colors duration-300 border-neutral-100"
+                className="logo-plate aspect-square flex items-center justify-center p-3.5 sm:p-4 md:p-3 lg:p-6 bg-white hover:bg-neutral-50/50 transition-colors duration-300 border-neutral-100"
               >
                 <img 
                   src={logo.src} 
