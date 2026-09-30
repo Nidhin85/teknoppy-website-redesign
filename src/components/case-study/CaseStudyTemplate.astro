@@ -101,6 +101,29 @@ export interface CaseStudyProps {
   ctaPhoneText?: string;
   ctaPhoneTel?: string;
   ctaTagline?: string;
+  rankingKeywords?: RankingKeywordsData;
+}
+
+export interface KeywordRow {
+  keyword: string;
+  page?: string | number;
+  position?: string | number;
+  map?: string | number;
+  ai?: string | number;
+}
+
+export interface KeywordGroup {
+  title?: string;
+  badge?: string;
+  note?: string;
+  hasMap?: boolean;
+  hasAi?: boolean;
+  rows: KeywordRow[];
+}
+
+export interface RankingKeywordsData {
+  lead?: string;
+  groups: KeywordGroup[];
 }
 
 const {
@@ -143,8 +166,21 @@ const {
   ctaHeadline = 'Need a high-performing digital platform tailored to your growth goals?',
   ctaPhoneText = `Talk to Teknoppy | ${site.phone}`,
   ctaPhoneTel = site.phoneLink,
-  ctaTagline = 'TEKNOPPY.COM • KOCHI, KERALA • DUBAI, UAE'
+  ctaTagline = 'TEKNOPPY.COM • KOCHI, KERALA • DUBAI, UAE',
+  rankingKeywords
 } = Astro.props as CaseStudyProps;
+
+const effectiveNavItems = navItems || [
+  { id: 'overview', label: 'Overview' },
+  { id: 'about', label: 'About' },
+  { id: 'challenges', label: 'Challenges' },
+  { id: 'objectives', label: 'Objectives' },
+  { id: 'approach', label: 'Approach' },
+  { id: 'deliverables', label: 'Deliverables' },
+  ...(rankingKeywords && rankingKeywords.groups?.length ? [{ id: 'keywords', label: 'Keywords' }] : []),
+  { id: 'strategy', label: 'Strategic Value' },
+  { id: 'faq', label: 'FAQ' },
+];
 
 // Build Structured Data for Article & FAQ
 const schemaArticle = {
@@ -346,7 +382,7 @@ const schemaFAQ = {
     {/* =========================================================================
         STICKY SUB-NAVIGATION
         ========================================================================= */}
-    <CaseStudyStickyNav clientName={clientName} navItems={navItems} client:load />
+    <CaseStudyStickyNav clientName={clientName} navItems={effectiveNavItems} client:load />
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 space-y-20 md:space-y-28">
       {Astro.slots.has('default') ? (
@@ -528,6 +564,115 @@ const schemaFAQ = {
           ))}
         </div>
       </section>
+
+      {/* =========================================================================
+          RANKING KEYWORDS SECTION
+          ========================================================================= */}
+      {rankingKeywords && rankingKeywords.groups && rankingKeywords.groups.length > 0 && (
+        <section id="keywords" class="reveal-on-scroll space-y-8 scroll-mt-28">
+          <div class="space-y-2.5 max-w-3xl">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 text-[#F05A2C] border border-orange-200/70 text-xs font-bold uppercase tracking-wider">
+              <Sparkles className="w-3.5 h-3.5 text-[#F05A2C]" />
+              Verified Performance
+            </div>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight leading-tight">
+              Ranking Keywords
+            </h2>
+            {rankingKeywords.lead && (
+              <p class="text-base sm:text-lg text-neutral-600 leading-relaxed">
+                {rankingKeywords.lead}
+              </p>
+            )}
+          </div>
+
+          <div class="space-y-8">
+            {rankingKeywords.groups.map((group) => {
+              const showMap = group.hasMap ?? group.rows.some(r => r.map !== undefined && r.map !== '');
+              const showAi = group.hasAi ?? group.rows.some(r => r.ai !== undefined && r.ai !== '');
+              return (
+                <div class="bg-[#F8FAFC] rounded-3xl p-6 sm:p-8 border border-neutral-200/80 shadow-xs space-y-5">
+                  <div class="flex flex-wrap items-center justify-between gap-4 border-b border-neutral-200 pb-4">
+                    <div>
+                      <span class="text-xs font-mono font-bold uppercase tracking-widest text-[#F05A2C] block mb-1">
+                        Verified Search Results
+                      </span>
+                      <h3 class="text-base sm:text-lg font-bold text-neutral-900">
+                        {group.title || `Target keywords — ${clientName}`}
+                      </h3>
+                    </div>
+                    <span class="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full flex items-center gap-1.5 shadow-2xs">
+                      <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                      {group.badge || 'Google Page 1'}
+                    </span>
+                  </div>
+
+                  <div class="overflow-x-auto rounded-2xl border border-neutral-200 bg-white">
+                    <table class="w-full text-left border-collapse min-w-[500px]">
+                      <thead>
+                        <tr class="border-b border-neutral-200 bg-[#F8FAFC] text-xs font-mono font-bold uppercase tracking-wider text-neutral-500">
+                          <th class="py-3 px-4 sm:px-5">RANKING KEYWORDS</th>
+                          <th class="py-3 px-4 sm:px-5 text-center">PAGE</th>
+                          <th class="py-3 px-4 sm:px-5 text-center">POSITION</th>
+                          {showMap && <th class="py-3 px-4 sm:px-5 text-center">MAP</th>}
+                          {showAi && <th class="py-3 px-4 sm:px-5 text-center">AI</th>}
+                        </tr>
+                      </thead>
+                      <tbody class="divide-y divide-neutral-100 text-xs sm:text-sm">
+                        {group.rows.map((row) => (
+                          <tr class="hover:bg-neutral-50/80 transition-colors">
+                            <td class="py-3 px-4 sm:px-5 font-mono text-neutral-900 font-medium">
+                              {row.keyword}
+                            </td>
+                            <td class="py-3 px-4 sm:px-5 text-center">
+                              {row.page !== undefined && row.page !== '' ? (
+                                <span class="inline-flex items-center justify-center font-mono font-bold text-xs px-2.5 py-1 rounded-full bg-neutral-100 border border-neutral-200 text-neutral-800 min-w-[28px]">
+                                  {row.page}
+                                </span>
+                              ) : null}
+                            </td>
+                            <td class="py-3 px-4 sm:px-5 text-center">
+                              {row.position !== undefined && row.position !== '' ? (
+                                <span class="inline-flex items-center justify-center gap-1 font-mono font-bold text-xs px-2.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 min-w-[28px]">
+                                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
+                                  {row.position}
+                                </span>
+                              ) : null}
+                            </td>
+                            {showMap && (
+                              <td class="py-3 px-4 sm:px-5 text-center">
+                                {row.map !== undefined && row.map !== '' ? (
+                                  <span class="inline-flex items-center justify-center font-mono font-bold text-xs px-2.5 py-1 rounded-full bg-orange-50 border border-orange-200/70 text-[#F05A2C] min-w-[28px]">
+                                    {row.map}
+                                  </span>
+                                ) : null}
+                              </td>
+                            )}
+                            {showAi && (
+                              <td class="py-3 px-4 sm:px-5 text-center">
+                                {row.ai !== undefined && row.ai !== '' ? (
+                                  <span class="inline-flex items-center justify-center font-mono font-bold text-xs px-2.5 py-1 rounded-full bg-purple-50 border border-purple-200 text-purple-700 min-w-[28px]">
+                                    {row.ai}
+                                  </span>
+                                ) : null}
+                              </td>
+                            )}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+
+                  {group.note && (
+                    <p class="text-xs text-neutral-500 leading-relaxed pt-2 border-t border-neutral-200">
+                      {group.note}
+                    </p>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      )}
 
       {/* =========================================================================
           08. WHY THIS STRUCTURE / DESIGN MATTERS
