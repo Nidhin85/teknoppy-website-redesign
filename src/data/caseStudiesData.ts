@@ -448,6 +448,58 @@ export const caseStudiesList: CaseStudyItem[] = [
     href: '/case-studies/uscholar-international-web-design-development/',
     location: 'Perinthalmanna, Malappuram, Kerala',
     tag: 'Overseas Education Consultancy'
+  },
+  {
+    id: 'visakh-rj-web-design',
+    title: 'Visakh RJ — Web Design & Development',
+    client: 'Visakh RJ',
+    category: 'Web Design & Development',
+    categories: ['Web Design & Development'],
+    description: 'Personal-brand website design and Astro build for an established PMP trainer: story-led layout, video-proof integration, and direct enquiry channels.',
+    image: '/case-studies/visakh-rj-web-design.webp',
+    imageAlt: 'Visakh RJ — Web Design & Development website homepage screenshot',
+    href: '/case-studies/visakh-rj-web-design/',
+    location: 'Mumbai / Pan-India',
+    tag: 'Personal Brand & Education'
+  },
+  {
+    id: 'edamanasserry-spine-hospital-seo',
+    title: 'Edamanasserry Spine Hospital — SEO Services',
+    client: 'Edamanasserry Spine Hospital (ESH)',
+    category: 'SEO',
+    categories: ['SEO'],
+    description: 'Topical SEO strategy and condition-led architecture for an Ayurvedic spine care hospital in Tamil Nadu, built on verifiable doctor-backed E-E-A-T signals.',
+    image: '/case-studies/edamanasserry-spine-hospital.webp',
+    imageAlt: 'Edamanasserry Spine Hospital — SEO Services website homepage screenshot',
+    href: '/case-studies/edamanasserry-spine-hospital-seo/',
+    location: 'Tamil Nadu, India',
+    tag: 'Ayurvedic Healthcare SEO'
+  },
+  {
+    id: 'roja-houseboats-alleppey-seo',
+    title: 'Roja Houseboats — SEO Services',
+    client: 'Roja Houseboats',
+    category: 'SEO',
+    categories: ['SEO'],
+    description: 'Local entity SEO, audience-specific bedroom mapping, and pre-booking trust architecture for an Alleppey backwater houseboat operator in Alappuzha.',
+    image: '/case-studies/roja-houseboats.webp',
+    imageAlt: 'Roja Houseboats — SEO Services website homepage screenshot',
+    href: '/case-studies/roja-houseboats-alleppey-seo/',
+    location: 'Alappuzha (Alleppey), Kerala',
+    tag: 'Tourism & Hospitality SEO'
+  },
+  {
+    id: 'visakh-rj-pmp-trainer-seo',
+    title: 'Visakh RJ — SEO Services',
+    client: 'Visakh RJ',
+    category: 'SEO',
+    categories: ['SEO'],
+    description: 'Entity SEO strategy and search-intent architecture for a PMP trainer in India: verifiable E-E-A-T credibility and question-led content.',
+    image: '/case-studies/visakh-rj-seo.webp',
+    imageAlt: 'Visakh RJ — SEO Services website homepage screenshot',
+    href: '/case-studies/visakh-rj-pmp-trainer-seo/',
+    location: 'Mumbai / Pan-India',
+    tag: 'Entity SEO & E-E-A-T'
   }
 ];
 
