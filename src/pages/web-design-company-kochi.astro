@@ -70,6 +70,26 @@ const testimonials = page.testimonials.items.map(item => {
   };
 });
 
+// Curated verified client logos for the continuous Trusted Partners marquee
+const trustedPartnerLogos = [
+  { name: 'Abroad Career', src: '/client logos/Abroad-career-1.jpg' },
+  { name: 'Abu Dhabi Business Hub', src: '/client logos/abu-dhabi.jpg' },
+  { name: 'Al Coffee', src: '/client logos/al-coffee-1.jpg' },
+  { name: 'Amster', src: '/client logos/amster.jpg' },
+  { name: 'Laughing Waters', src: '/client logos/laughing-waters.jpg' },
+  { name: 'Olive Builders', src: '/client logos/olive.jpg' },
+  { name: 'WestN Resorts', src: '/client logos/westn.jpg' },
+  { name: 'Abrus Krishna Finance', src: '/client logos/abrus-krishna-finance.jpg' },
+  { name: 'Cochin Suraksha', src: '/client logos/cochin-suraksha.webp' },
+  { name: 'General Tech Services', src: '/client logos/general-tech-services.jpg' },
+  { name: 'Leema Engineering', src: '/client logos/leema-engineering.png' },
+  { name: 'Kerala Dayz', src: '/client logos/kerala-dayz.png' },
+  { name: 'Varma Ayurveda', src: '/client logos/varma-ayurveda.png' },
+  { name: 'Edamanasserry Spine Hospital', src: '/client logos/edamanasserry-spine-hospital.jpg' },
+  { name: 'Creative Qatar', src: '/client logos/creative-qatar.png' },
+  { name: 'Alankar Avenue', src: '/client logos/alankar-avenue.png' }
+];
+
 const title = page.meta.title;
 const description = page.meta.description;
 
@@ -293,23 +313,47 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
               </p>
             </div>
 
-            <!-- Trust Bar with Client Logos -->
-            <div class="pt-8 border-t border-neutral-200/60 flex items-center gap-4">
-              <div class="flex -space-x-2.5">
-                {[
-                  '/client logos/Abroad-career-1.jpg',
-                  '/client logos/abu-dhabi.jpg',
-                  '/client logos/al-coffee-1.jpg',
-                  '/client logos/amster.jpg'
-                ].map((src) => (
-                   <div class="logo-plate w-9 h-9 rounded-full border-2 border-white bg-white flex items-center justify-center overflow-hidden shadow-sm">
-                     <img src={src} alt="Client partner logo" class="w-full h-full object-contain p-1.5 grayscale mix-blend-multiply" />
-                   </div>
-                ))}
-              </div>
+            <!-- Trusted Partners Continuous Scrolling Marquee -->
+            <div class="pt-8 space-y-4">
               <div>
-                <p class="text-[12px] font-bold text-neutral-400 uppercase tracking-wider">Trusted Partner</p>
+                <p class="text-[12px] font-bold text-neutral-400 uppercase tracking-wider">Trusted Partners</p>
                 <p class="text-sm font-semibold text-neutral-900 leading-tight">100+ Brands Across Kerala</p>
+              </div>
+
+              <!-- Marquee Track flanked by clean divider borders -->
+              <div class="border-y border-neutral-200/70 py-4 sm:py-5">
+                <div class="marquee-viewport relative w-full overflow-hidden marquee-mask py-1" aria-label="Trusted client brand logos">
+                  <div class="flex w-max">
+                    <!-- First set of logos -->
+                    <div class="marquee-content flex items-center gap-6 sm:gap-8 lg:gap-10 pr-6 sm:pr-8 lg:pr-10 shrink-0">
+                      {trustedPartnerLogos.map((logo) => (
+                        <div class="logo-plate h-[72px] sm:h-[84px] lg:h-[98px] xl:h-[106px] min-w-[110px] sm:min-w-[130px] px-5 sm:px-7 py-2 rounded-xl border border-neutral-200/80 bg-white/95 shadow-[0_2px_6px_rgba(0,0,0,0.03)] flex items-center justify-center shrink-0 hover:border-primary/40 hover:shadow-md transition-all duration-300">
+                          <img 
+                            src={logo.src} 
+                            alt={`${logo.name} logo`} 
+                            loading="lazy" 
+                            decoding="async" 
+                            class="h-[56px] sm:h-[66px] lg:h-[80px] xl:h-[88px] w-auto max-w-[160px] sm:max-w-[200px] lg:max-w-[240px] xl:max-w-[270px] object-contain grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300 mix-blend-multiply" 
+                          />
+                        </div>
+                      ))}
+                    </div>
+                    <!-- Duplicate set for seamless continuous loop -->
+                    <div class="marquee-content flex items-center gap-6 sm:gap-8 lg:gap-10 pr-6 sm:pr-8 lg:pr-10 shrink-0" aria-hidden="true">
+                      {trustedPartnerLogos.map((logo) => (
+                        <div class="logo-plate h-[72px] sm:h-[84px] lg:h-[98px] xl:h-[106px] min-w-[110px] sm:min-w-[130px] px-5 sm:px-7 py-2 rounded-xl border border-neutral-200/80 bg-white/95 shadow-[0_2px_6px_rgba(0,0,0,0.03)] flex items-center justify-center shrink-0 hover:border-primary/40 hover:shadow-md transition-all duration-300">
+                          <img 
+                            src={logo.src} 
+                            alt={`${logo.name} logo`} 
+                            loading="lazy" 
+                            decoding="async" 
+                            class="h-[56px] sm:h-[66px] lg:h-[80px] xl:h-[88px] w-auto max-w-[160px] sm:max-w-[200px] lg:max-w-[240px] xl:max-w-[270px] object-contain grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300 mix-blend-multiply" 
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -926,6 +970,45 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  /* Continuous Horizontal Scrolling Logo Marquee */
+  .marquee-viewport {
+    mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+  }
+
+  .marquee-content {
+    animation: marquee-scroll 45s linear infinite;
+    will-change: transform;
+  }
+
+  @keyframes marquee-scroll {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+
+  /* Pause or slow down on hover for desktop cursor interaction */
+  @media (hover: hover) and (pointer: fine) {
+    .marquee-viewport:hover .marquee-content {
+      animation-play-state: paused;
+    }
+  }
+
+  /* Respect user accessibility preferences */
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-content {
+      animation: none;
+    }
+    .marquee-viewport {
+      overflow-x: auto;
+      mask-image: none;
+      -webkit-mask-image: none;
     }
   }
 </style>
