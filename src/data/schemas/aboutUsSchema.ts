@@ -271,7 +271,7 @@ export const aboutUsSchema = {
     {
       "@type": "Person",
       "@id": "https://teknoppy.com/#nandana",
-      "name": "Nandana",
+      "name": "Nandana S Madhu",
       "jobTitle": "Web Developer",
       "image": "https://www.teknoppy.com/team/nandana.webp",
       "description": "Nandana builds the client sites Teknoppy ships, turning approved designs into working front-end and WordPress builds and handling fixes and updates after launch.",
