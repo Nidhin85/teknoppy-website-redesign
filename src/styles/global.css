@@ -20,7 +20,8 @@
      real, and near-identical to the #111 they were inheriting. */
   --color-neutral-850: oklch(23.5% 0 0);
 
-  --font-sans: "Geist", "Inter", sans-serif;
+  --font-sans: "Sora", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-heading: "Sora", "Inter", sans-serif;
 
   /* Type scale, tuned up from Tailwind's defaults. The old bottom of the scale
      (12px/14px body copy) read as too small on phones, where most of this site's
@@ -67,8 +68,59 @@
 }
 
 @layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
   body {
     @apply bg-background text-black font-sans antialiased selection:bg-primary/20 selection:text-primary;
+    line-height: 1.65;
+    letter-spacing: -0.011em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading, var(--font-sans));
+    letter-spacing: -0.026em;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  p {
+    line-height: 1.65;
+    letter-spacing: -0.008em;
+  }
+}
+
+/* Cursor text magnification / magnetic typography enhancements */
+[data-magnetic-heading] {
+  isolation: isolate;
+  position: relative;
+  z-index: 30;
+  cursor: default;
+  pointer-events: auto;
+}
+
+[data-magnetic-heading] * {
+  pointer-events: none;
+}
+
+[data-magnetic-heading] .mag-word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+[data-magnetic-heading] .mag-char {
+  display: inline-block;
+  transform-origin: center center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-magnetic-heading] .mag-char {
+    transform: none !important;
   }
 }
 
