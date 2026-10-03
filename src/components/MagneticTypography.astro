@@ -1,0 +1,248 @@
+---
+/**
+ * MagneticTypography Component (Production)
+ * High-performance cursor-following text magnification lens (magnetic typography).
+ * 
+ * Production architecture:
+ * - Zero debug/development UI or elements
+ * - True heading-relative 2D Euclidean distance calculation
+ * - Smoothstep cubic Hermite easing curve across 160px radius
+ * - RequestAnimationFrame-driven updates (no CSS transition conflicts)
+ * - Smooth decay return to scale(1) on pointerleave
+ * - Disabled on touch devices and respects prefers-reduced-motion
+ * - Semantic accessibility preserved with parent aria-label and aria-hidden on split chars
+ */
+---
+<script is:inline>
+  (function() {
+    function setupMagneticTypography() {
+      // 1. Accessibility: respects prefers-reduced-motion
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        return;
+      }
+
+      var headings = document.querySelectorAll('[data-magnetic-heading]');
+      if (!headings.length) return;
+
+      headings.forEach(function(heading) {
+        if (heading.dataset.magneticInit === 'true') return;
+        heading.dataset.magneticInit = 'true';
+
+        // Ensure heading is ready for pointer events
+        heading.style.cursor = 'default';
+        heading.style.pointerEvents = 'auto';
+
+        // Preserve full accessibility label for screen readers
+        var fullText = (heading.textContent || '').trim().replace(/\s+/g, ' ');
+        if (!heading.getAttribute('aria-label')) {
+          heading.setAttribute('aria-label', fullText);
+        }
+
+        // Helper to split text node into .mag-word and .mag-char
+        function splitTextNode(textNode) {
+          var frag = document.createDocumentFragment();
+          var text = textNode.textContent || '';
+          var tokens = text.split(/(\s+)/);
+
+          tokens.forEach(function(token) {
+            if (/^\s+$/.test(token)) {
+              frag.appendChild(document.createTextNode(token));
+            } else if (token.length > 0) {
+              var wordSpan = document.createElement('span');
+              wordSpan.className = 'mag-word';
+              wordSpan.style.display = 'inline-block';
+              wordSpan.style.whiteSpace = 'nowrap';
+              wordSpan.style.pointerEvents = 'none';
+
+              for (var i = 0; i < token.length; i++) {
+                var charSpan = document.createElement('span');
+                charSpan.className = 'mag-char';
+                charSpan.setAttribute('aria-hidden', 'true');
+                charSpan.style.display = 'inline-block';
+                charSpan.style.transformOrigin = 'center center';
+                charSpan.style.willChange = 'transform';
+                charSpan.style.pointerEvents = 'none';
+                charSpan.textContent = token[i];
+                wordSpan.appendChild(charSpan);
+              }
+              frag.appendChild(wordSpan);
+            }
+          });
+
+          return frag;
+        }
+
+        function processNode(node) {
+          if (node.nodeType === 3) { // TEXT_NODE
+            var text = node.textContent || '';
+            if (!text || text.trim() === '') return;
+            var frag = splitTextNode(node);
+            if (node.parentNode) {
+              node.parentNode.replaceChild(frag, node);
+            }
+          } else if (node.nodeType === 1) { // ELEMENT_NODE
+            if (node.classList && (node.classList.contains('mag-word') || node.classList.contains('mag-char'))) return;
+            var children = Array.prototype.slice.call(node.childNodes);
+            for (var j = 0; j < children.length; j++) {
+              processNode(children[j]);
+            }
+          }
+        }
+
+        var topChildren = Array.prototype.slice.call(heading.childNodes);
+        for (var k = 0; k < topChildren.length; k++) {
+          processNode(topChildren[k]);
+        }
+
+        // Collect all character elements
+        var charElements = Array.prototype.slice.call(heading.querySelectorAll('.mag-char'));
+        if (charElements.length === 0) return;
+
+        var charStates = charElements.map(function(el) {
+          return {
+            el: el,
+            char: el.textContent,
+            cx: 0,
+            cy: 0,
+            currentScale: 1
+          };
+        });
+
+        // Measure optical centers relative to heading coordinate space
+        function measureCharacters() {
+          var hRect = heading.getBoundingClientRect();
+          for (var i = 0; i < charStates.length; i++) {
+            var cRect = charStates[i].el.getBoundingClientRect();
+            charStates[i].cx = (cRect.left + cRect.width / 2) - hRect.left;
+            charStates[i].cy = (cRect.top + cRect.height / 2) - hRect.top;
+          }
+        }
+
+        // Measure immediately and once fonts settle
+        measureCharacters();
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(measureCharacters);
+        }
+
+        var isHovering = false;
+        var pointerX = -9999;
+        var pointerY = -9999;
+        var rafId = null;
+
+        var RADIUS = 160;     // Magnification influence radius in px
+        var MAX_SCALE = 0.22;  // Up to 1.22x peak magnification
+
+        // Real-time RAF transform loop
+        function updateTransforms() {
+          rafId = null;
+
+          for (var i = 0; i < charStates.length; i++) {
+            var c = charStates[i];
+            var targetScale = 1;
+
+            if (isHovering) {
+              var dx = pointerX - c.cx;
+              var dy = pointerY - c.cy;
+              var distance = Math.sqrt(dx * dx + dy * dy);
+
+              if (distance < RADIUS) {
+                var influence = Math.max(0, 1 - distance / RADIUS);
+                var eased = influence * influence * (3 - 2 * influence);
+                targetScale = 1 + eased * MAX_SCALE;
+              }
+            }
+
+            c.currentScale = targetScale;
+
+            if (targetScale > 1.002) {
+              c.el.style.transform = 'scale(' + targetScale.toFixed(3) + ')';
+            } else if (c.el.style.transform) {
+              c.el.style.transform = '';
+            }
+          }
+        }
+
+        // Smooth decay back to scale(1) on pointer leave
+        function decayTransforms() {
+          var anyActive = false;
+
+          for (var i = 0; i < charStates.length; i++) {
+            var c = charStates[i];
+            if (c.currentScale > 1.002) {
+              c.currentScale += (1 - c.currentScale) * 0.28;
+              c.el.style.transform = 'scale(' + c.currentScale.toFixed(3) + ')';
+              anyActive = true;
+            } else if (c.currentScale !== 1) {
+              c.currentScale = 1;
+              c.el.style.transform = '';
+            }
+          }
+
+          if (anyActive) {
+            rafId = requestAnimationFrame(decayTransforms);
+          } else {
+            rafId = null;
+            for (var j = 0; j < charStates.length; j++) {
+              charStates[j].currentScale = 1;
+              charStates[j].el.style.transform = '';
+            }
+          }
+        }
+
+        // Pointer event listeners on heading
+        function onPointerEnter(e) {
+          if (e.pointerType === 'touch') return;
+          if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
+          isHovering = true;
+          measureCharacters();
+          var hRect = heading.getBoundingClientRect();
+          pointerX = e.clientX - hRect.left;
+          pointerY = e.clientY - hRect.top;
+          updateTransforms();
+        }
+
+        function onPointerMove(e) {
+          if (e.pointerType === 'touch') return;
+          if (!isHovering) {
+            isHovering = true;
+            measureCharacters();
+          }
+          var hRect = heading.getBoundingClientRect();
+          pointerX = e.clientX - hRect.left;
+          pointerY = e.clientY - hRect.top;
+
+          if (!rafId) {
+            rafId = requestAnimationFrame(updateTransforms);
+          }
+        }
+
+        function onPointerLeave(e) {
+          isHovering = false;
+          pointerX = -9999;
+          pointerY = -9999;
+          if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
+          rafId = requestAnimationFrame(decayTransforms);
+        }
+
+        heading.addEventListener('pointerenter', onPointerEnter);
+        heading.addEventListener('pointermove', onPointerMove);
+        heading.addEventListener('pointerleave', onPointerLeave);
+
+        window.addEventListener('resize', function() {
+          measureCharacters();
+        }, { passive: true });
+
+        window.addEventListener('scroll', function() {
+          measureCharacters();
+        }, { passive: true });
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', setupMagneticTypography);
+    } else {
+      setupMagneticTypography();
+    }
+    document.addEventListener('astro:page-load', setupMagneticTypography);
+  })();
+</script>
