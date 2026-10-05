@@ -451,13 +451,13 @@ export const caseStudiesList: CaseStudyItem[] = [
   },
   {
     id: 'visakh-rj-web-design',
-    title: 'Visakh RJ — Web Design & Development',
-    client: 'Visakh RJ',
+    title: 'RJ Visakh — Web Design & Development',
+    client: 'RJ Visakh',
     category: 'Web Design & Development',
     categories: ['Web Design & Development'],
     description: 'Personal-brand website design and Astro build for an established PMP trainer: story-led layout, video-proof integration, and direct enquiry channels.',
     image: '/case-studies/visakh-rj-web-design.webp',
-    imageAlt: 'Visakh RJ — Web Design & Development website homepage screenshot',
+    imageAlt: 'RJ Visakh — Web Design & Development website homepage screenshot',
     href: '/case-studies/visakh-rj-web-design/',
     location: 'Mumbai / Pan-India',
     tag: 'Personal Brand & Education'
@@ -490,13 +490,13 @@ export const caseStudiesList: CaseStudyItem[] = [
   },
   {
     id: 'visakh-rj-pmp-trainer-seo',
-    title: 'Visakh RJ — SEO Services',
-    client: 'Visakh RJ',
+    title: 'RJ Visakh — SEO Services',
+    client: 'RJ Visakh',
     category: 'SEO',
     categories: ['SEO'],
     description: 'Entity SEO strategy and search-intent architecture for a PMP trainer in India: verifiable E-E-A-T credibility and question-led content.',
     image: '/case-studies/visakh-rj-seo.webp',
-    imageAlt: 'Visakh RJ — SEO Services website homepage screenshot',
+    imageAlt: 'RJ Visakh — SEO Services website homepage screenshot',
     href: '/case-studies/visakh-rj-pmp-trainer-seo/',
     location: 'Mumbai / Pan-India',
     tag: 'Entity SEO & E-E-A-T'
