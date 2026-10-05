@@ -379,13 +379,13 @@ export const websitePortfolioProjects: WebsitePortfolioItem[] = [
   },
   {
     id: 'visakh-rj',
-    name: 'Visakh RJ',
+    name: 'RJ Visakh',
     tagline: 'Personal brand platform for an established PMP trainer, speaker, and coach: story-led layout, video-proof integration, and direct enquiry channels.',
     industryLabel: 'Web Design & Development',
     category: 'web-design',
     categories: ['web-design'],
     image: '/portfolios/website/visakh-rj.webp',
-    imageAlt: 'Teknoppy website project - Visakh RJ personal brand homepage',
+    imageAlt: 'Teknoppy website project - RJ Visakh personal brand homepage',
     href: '/case-studies/visakh-rj-web-design/',
     location: 'Mumbai / Pan-India'
   }
