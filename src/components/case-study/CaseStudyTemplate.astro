@@ -68,6 +68,7 @@ export interface CaseStudyProps {
   location: string;
   services: string;
   platform?: string;
+  approach?: string;
   liveWebsite: string;
   liveWebsiteUrl: string;
   heroHighlights?: string[];
@@ -143,6 +144,7 @@ const {
   location,
   services,
   platform,
+  approach,
   liveWebsite,
   liveWebsiteUrl,
   heroHighlights = [],
@@ -320,6 +322,12 @@ const schemaFAQ = {
                 <span class="text-neutral-500">Services</span>
                 <span class="font-semibold text-right text-neutral-800">{services}</span>
               </div>
+              {approach && (
+                <div class="flex justify-between gap-4">
+                  <span class="text-neutral-500">Approach</span>
+                  <span class="font-semibold text-right text-neutral-800">{approach}</span>
+                </div>
+              )}
               <div class="flex justify-between gap-4 pt-2 border-t border-neutral-200">
                 <span class="text-neutral-500">Live Website</span>
                 <a 
