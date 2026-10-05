@@ -81,7 +81,8 @@ export const CaseStudiesExplorer: React.FC = () => {
     filterCategories.forEach(cat => {
       if (cat.id !== 'all') {
         counts[cat.id] = caseStudiesList.filter(item => 
-          item.category.toLowerCase().replace(/-/g, ' ') === cat.label.toLowerCase().replace(/-/g, ' ')
+          item.category.toLowerCase().replace(/-/g, ' ') === cat.label.toLowerCase().replace(/-/g, ' ') ||
+          (item.categories && item.categories.some(c => c.toLowerCase().replace(/-/g, ' ') === cat.label.toLowerCase().replace(/-/g, ' ')))
         ).length;
       }
     });
@@ -97,7 +98,8 @@ export const CaseStudiesExplorer: React.FC = () => {
       const selectedCat = filterCategories.find(c => c.id === activeCategory);
       if (selectedCat) {
         result = result.filter(item => 
-          item.category.toLowerCase().replace(/-/g, ' ') === selectedCat.label.toLowerCase().replace(/-/g, ' ')
+          item.category.toLowerCase().replace(/-/g, ' ') === selectedCat.label.toLowerCase().replace(/-/g, ' ') ||
+          (item.categories && item.categories.some(c => c.toLowerCase().replace(/-/g, ' ') === selectedCat.label.toLowerCase().replace(/-/g, ' ')))
         );
       }
     }

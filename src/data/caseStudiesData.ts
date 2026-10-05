@@ -30,6 +30,7 @@ export const filterCategories: FilterCategory[] = [
   { id: 'shopify', label: 'Shopify', slug: 'shopify' },
   { id: 'seo', label: 'SEO', slug: 'seo' },
   { id: 'digital-marketing', label: 'Digital Marketing', slug: 'digital-marketing' },
+  { id: 'social-media', label: 'Social Media', slug: 'social-media' },
 ];
 
 export const caseStudiesList: CaseStudyItem[] = [
@@ -334,29 +335,29 @@ export const caseStudiesList: CaseStudyItem[] = [
   },
   {
     id: 'direction-north-marketing',
-    title: 'Direction North — Digital Marketing',
+    title: 'Direction North — Social Media',
     client: 'Direction North',
-    category: 'Digital Marketing',
-    categories: ['Digital Marketing'],
-    description: 'Holistic digital acquisition campaigns combining performance marketing, conversion tracking, and multi-channel audience targeting.',
-    image: '/case-studies/directionnorth.webp',
-    imageAlt: 'Direction North — Digital Marketing website homepage screenshot',
+    category: 'Social Media',
+    categories: ['Social Media', 'Digital Marketing'],
+    description: 'Ongoing Instagram and Facebook visual portfolio and inquiry handling for a Kochi retail display and visual merchandising manufacturer.',
+    image: '/case-studies/direction-north.webp',
+    imageAlt: 'Direction North — Social Media Services website homepage screenshot',
     href: '/case-studies/direction-north-digital-marketing/',
-    location: 'Dubai, UAE',
-    tag: 'Performance Acquisition'
+    location: 'Kadavanthra Road, Kochi, Kerala',
+    tag: 'Retail Display Social Media'
   },
   {
     id: 'olives-boutique-resort-web-design',
-    title: 'Olives Boutique Resort — Web Design & Development',
+    title: 'Olives Boutique Resort — Social Media',
     client: 'Olives Boutique Resort',
-    category: 'Web Design & Development',
-    categories: ['Web Design & Development'],
-    description: 'Eco-luxury plantation resort website in Wayanad, designed to drive direct booking inquiries and guest acquisition.',
+    category: 'Social Media',
+    categories: ['Social Media', 'Digital Marketing'],
+    description: 'Instagram and Facebook presence for a family resort in Kalpetta, Wayanad, structured around family holiday questions, real property visuals, and direct booking routes.',
     image: '/case-studies/olivesresort.webp',
-    imageAlt: 'Olives Boutique Resort — Web Design & Development website homepage screenshot',
+    imageAlt: 'Olives Boutique Resort — Social Media Services website homepage screenshot',
     href: '/case-studies/olives-boutique-resort-digital-marketing/',
-    location: 'Wayanad, Kerala',
-    tag: 'Hospitality Web Design'
+    location: 'Kalpetta, Wayanad, Kerala',
+    tag: 'Hospitality Social Media'
   },
   {
     id: 'sidhah-edutech-web-design',
@@ -500,6 +501,71 @@ export const caseStudiesList: CaseStudyItem[] = [
     href: '/case-studies/visakh-rj-pmp-trainer-seo/',
     location: 'Mumbai / Pan-India',
     tag: 'Entity SEO & E-E-A-T'
+  },
+  {
+    id: 'alankar-avenue-social-media',
+    title: 'Alankar Avenue — Social Media',
+    client: 'Alankar Avenue',
+    category: 'Social Media',
+    categories: ['Social Media'],
+    description: 'Instagram and Facebook presence for a business hotel near Vyttila Metro, structured around guest questions, location clarity, and direct enquiries.',
+    image: '/client logos/alankar-avenue.png',
+    imageAlt: 'Alankar Avenue — Social Media Services case study',
+    href: '/case-studies/alankar-avenue-social-media/',
+    location: 'Vyttila, Kochi, Kerala',
+    tag: 'Hospitality Social Media'
+  },
+  {
+    id: 'hotel-elite-palazzo-social-media',
+    title: 'Hotel Elite Palazzo — Social Media',
+    client: 'Hotel Elite Palazzo',
+    category: 'Social Media',
+    categories: ['Social Media'],
+    description: 'Instagram and Facebook content planning for a four-star hotel near Cochin Airport, structured around transit convenience, business stays, and banquet enquiries.',
+    image: '/client logos/elite-palazzo.png',
+    imageAlt: 'Hotel Elite Palazzo — Social Media Services case study',
+    href: '/case-studies/hotel-elite-palazzo-social-media/',
+    location: 'Angamaly, Ernakulam, Kerala',
+    tag: 'Four-Star Hotel Social Media'
+  },
+  {
+    id: 'leema-engineering-works-seo',
+    title: 'Leema Engineering Works — SEO Services',
+    client: 'Leema Engineering Works',
+    category: 'SEO',
+    categories: ['SEO'],
+    description: 'Topical and entity SEO restructure across 66 pages, eight topical pillars, and 15 GCC location pages for a 50-year industrial pipes and fittings supplier.',
+    image: '/case-studies/leemaeng.webp',
+    imageAlt: 'Leema Engineering Works — SEO Services website homepage screenshot',
+    href: '/case-studies/leema-engineering-works-seo/',
+    location: 'Sharjah, UAE (serving GCC)',
+    tag: 'Industrial B2B SEO'
+  },
+  {
+    id: 'roja-houseboats-wordpress-development',
+    title: 'Roja Houseboats — WordPress Development',
+    client: 'Roja Houseboats',
+    category: 'WordPress Development',
+    categories: ['WordPress Development', 'Web Design & Development'],
+    description: 'Booking-focused WordPress website for an Alleppey houseboat operator, structured by bedroom count and pre-booking planning guides.',
+    image: '/case-studies/roja-houseboats.webp',
+    imageAlt: 'Roja Houseboats — WordPress Development website homepage screenshot',
+    href: '/case-studies/roja-houseboats-wordpress-development/',
+    location: 'Alleppey (Alappuzha), Kerala',
+    tag: 'Tourism WordPress Website'
+  },
+  {
+    id: 'shaapp-food-social-media',
+    title: 'Shaapp Food — Social Media',
+    client: 'Shaapp Food',
+    category: 'Social Media',
+    categories: ['Social Media'],
+    description: 'Instagram and Facebook presence for a Kerala-cuisine restaurant near Vyttila Mobility Hub, organized by dish categories, opening hours, and direct visit paths.',
+    image: '/client logos/shaapp-food.png',
+    imageAlt: 'Shaapp Food — Social Media Services case study',
+    href: '/case-studies/shaapp-food-social-media/',
+    location: 'Kaniyambuzha Road, Vyttila, Kochi',
+    tag: 'Restaurant Social Media'
   }
 ];
 
