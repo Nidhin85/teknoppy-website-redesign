@@ -134,3 +134,214 @@
    `theme-card-edge` and `logo-plate` in ~60 files. They were the hooks the dark
    palette used and are now inert — they style nothing. Left in place so the diff
    stays small; safe to strip whenever those files are next touched. */
+
+/* ==========================================================================
+   Homepage CTA Conversion Micro-Interactions & Scroll Reveals
+   ========================================================================== */
+
+/* ==========================================================================
+   Homepage CTA Conversion Animation System (Multi-Type Rhythm)
+   ========================================================================== */
+
+/* Type A: Standard Vertical Scroll Reveal */
+.cta-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.cta-reveal.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Type B: Alternating Side Slide-In (Flowing Entrance) */
+.cta-slide-left {
+  opacity: 0;
+  transform: translateX(-55px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.cta-slide-left.is-revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.cta-slide-right {
+  opacity: 0;
+  transform: translateX(55px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.cta-slide-right.is-revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Standout Interruption Checkpoints (Scale + Slide + Shimmer) */
+.cta-checkpoint {
+  opacity: 0;
+  transform: translateY(24px) scale(0.97);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.cta-checkpoint.is-revealed {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Responsive side translation adjustment for mobile screens */
+@media (max-width: 640px) {
+  .cta-slide-left {
+    transform: translateX(-22px);
+  }
+  .cta-slide-right {
+    transform: translateX(22px);
+  }
+  .cta-checkpoint {
+    transform: translateY(16px) scale(0.98);
+  }
+}
+
+/* One-Time Controlled Shimmer Highlight */
+.cta-shimmer-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-shimmer-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    105deg,
+    transparent 15%,
+    rgba(255, 255, 255, 0.22) 42%,
+    rgba(255, 255, 255, 0.36) 50%,
+    rgba(255, 255, 255, 0.22) 58%,
+    transparent 85%
+  );
+  transform: translateX(-130%);
+  pointer-events: none;
+}
+
+.is-revealed .cta-shimmer-btn::after,
+.cta-shimmer-btn.is-revealed::after {
+  animation: cta-single-shimmer 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.35s 1 forwards;
+}
+
+@keyframes cta-single-shimmer {
+  0% {
+    transform: translateX(-130%);
+  }
+  100% {
+    transform: translateX(145%);
+  }
+}
+
+/* Interactive CTA Arrow with Controlled Invite Sequence */
+.cta-arrow {
+  display: inline-flex;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.group:hover .cta-arrow,
+.group:focus-visible .cta-arrow {
+  transform: translateX(8px);
+}
+
+.is-revealed .cta-arrow-invite,
+.cta-arrow-invite.is-revealed {
+  animation: cta-arrow-invite-once 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.4s 1 forwards;
+}
+
+@keyframes cta-arrow-invite-once {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+}
+
+/* Hero Primary CTA Entrance (Fade + Scale 0.96 -> 1 + One-time Warm Glow) */
+.hero-cta-primary {
+  animation: hero-cta-entrance 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both,
+             hero-cta-pulse-once 0.85s ease-in-out 0.85s both;
+}
+
+@keyframes hero-cta-entrance {
+  0% {
+    opacity: 0;
+    transform: translateY(14px) scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes hero-cta-pulse-once {
+  0%, 100% {
+    box-shadow: 0 6px 20px rgba(240, 90, 44, 0.25);
+  }
+  50% {
+    box-shadow: 0 8px 30px rgba(240, 90, 44, 0.45), 0 0 0 5px rgba(240, 90, 44, 0.12);
+  }
+}
+
+/* Service Card CTA Micro-interactions */
+.service-cta-link {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-cta-link:hover .service-cta-arrow,
+.service-cta-link:focus-visible .service-cta-arrow {
+  transform: translateX(8px);
+}
+
+.service-cta-link:active {
+  transform: scale(0.98);
+}
+
+/* Accessibility: Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .cta-reveal,
+  .cta-slide-left,
+  .cta-slide-right,
+  .cta-checkpoint {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .cta-shimmer-btn::after {
+    display: none !important;
+  }
+  .is-revealed .cta-arrow-invite,
+  .cta-arrow-invite.is-revealed {
+    animation: none !important;
+  }
+  .hero-cta-primary {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .service-cta-link:hover .service-cta-arrow,
+  .service-cta-link:focus-visible .service-cta-arrow {
+    transform: none !important;
+  }
+  .service-cta-link:active {
+    transform: none !important;
+  }
+  .cta-arrow {
+    transition: none !important;
+  }
+}
+

@@ -90,5 +90,19 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
         </article>
       ))}
     </div>
+
+    <!-- Subtle Contextual CTA: After Blog Insights -->
+    <div class="cta-reveal mt-14 pt-8 border-t border-neutral-100 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+      <p class="text-sm text-neutral-600 font-medium">
+        Looking for advice tailored to your industry and growth goals?
+      </p>
+      <a
+        href="/request-a-quote/"
+        class="inline-flex items-center gap-2 text-sm font-bold text-primary hover:text-neutral-900 transition-colors group shrink-0"
+      >
+        <span>Have a Project in Mind? Let's Talk</span>
+        <span class="cta-arrow cta-arrow-invite font-bold">→</span>
+      </a>
+    </div>
   </div>
 </section>

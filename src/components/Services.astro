@@ -1,7 +1,17 @@
 ---
+import { ArrowRight } from "lucide-react";
 import home from "../data/home.json";
 
 const services = home.services.cards;
+
+const serviceActionCtas = [
+  "Build My Website",
+  "Build With WordPress",
+  "Build My Online Store",
+  "Discuss My Project",
+  "Grow My Website",
+  "Improve My User Experience"
+];
 
 // Card icons stay hardcoded here and are zipped with the JSON cards by index.
 const icons = [
@@ -36,7 +46,7 @@ const icons = [
     <!-- Redesigned Glassmorphic Services Grid (with mobile stacking scroll fixed) -->
     <div class="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
       {services.map((service, index) => (
-        <a href={service.href} class="group relative services-card-sticky bg-white rounded-2xl p-8 md:p-10 border border-neutral-100/85 shadow-[0_10px_35px_rgba(240,90,44,0.04)] hover:border-primary/35 hover:shadow-[0_15px_40px_rgba(240,90,44,0.08)] hover:-translate-y-1.5 transition-all duration-500 flex flex-col h-full overflow-hidden" style={`--stack-idx: ${index};`}>
+        <div class="group relative services-card-sticky bg-white rounded-2xl p-8 md:p-10 border border-neutral-100/85 shadow-[0_10px_35px_rgba(240,90,44,0.04)] hover:border-primary/35 hover:shadow-[0_15px_40px_rgba(240,90,44,0.08)] hover:-translate-y-1.5 transition-all duration-500 flex flex-col justify-between h-full overflow-hidden" style={`--stack-idx: ${index};`}>
           
           <!-- Hover Accent Glow (Permanent on mobile, hover on desktop) -->
           <div class="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-primary/10 md:from-primary/15 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-700 blur-xl md:blur-2xl -z-10"></div>
@@ -44,25 +54,70 @@ const icons = [
           <!-- Large Background Watermark Icon -->
           <div class="absolute -right-6 -bottom-6 text-primary opacity-[0.02] group-hover:opacity-[0.05] group-hover:scale-110 pointer-events-none transition-all duration-700 select-none -z-10 [&>svg]:w-36 [&>svg]:h-36 [&>svg]:stroke-[0.8]" set:html={icons[index]}></div>
 
-          <div class="flex justify-between items-start mb-8">
-            <div class="w-14 h-14 rounded-2xl bg-primary/5 border border-primary/10 flex items-center justify-center transition-all duration-300 group-hover:bg-primary group-hover:border-primary group-hover:shadow-[0_8px_20px_rgba(240,90,44,0.35)] text-primary group-hover:text-white" set:html={icons[index]}>
+          <div>
+            <div class="flex justify-between items-start mb-8">
+              <div class="w-14 h-14 rounded-2xl bg-primary/5 border border-primary/10 flex items-center justify-center transition-all duration-300 group-hover:bg-primary group-hover:border-primary group-hover:shadow-[0_8px_20px_rgba(240,90,44,0.35)] text-primary group-hover:text-white" set:html={icons[index]}>
+              </div>
+              
+              <!-- Arrow indicator to service page -->
+              <a href={service.href} aria-label={`Explore ${service.title}`} class="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center opacity-70 group-hover:opacity-100 hover:bg-primary/10 hover:border-primary/30 transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-neutral-500 hover:text-primary transform -rotate-45 hover:rotate-0 transition-all duration-300"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
             </div>
             
-            <!-- Arrow indicator -->
-            <div class="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center opacity-70 group-hover:opacity-100 group-hover:bg-primary/5 group-hover:border-primary/20 transition-all duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-neutral-500 group-hover:text-primary transform -rotate-45 group-hover:rotate-0 transition-all duration-300"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </div>
+            <h3 class="text-2xl font-black text-neutral-900 mb-4 leading-snug">
+              <a href={service.href} class="hover:text-primary transition-colors duration-300">
+                {service.title}
+              </a>
+            </h3>
+            
+            <p class="text-neutral-600 text-base leading-relaxed font-medium">
+              {service.description}
+            </p>
           </div>
-          
-          <h3 class="text-2xl font-black text-neutral-900 mb-4 leading-snug">
-            {service.title}
-          </h3>
-          
-          <p class="text-neutral-600 text-base leading-relaxed flex-grow font-medium">
-            {service.description}
-          </p>
-        </a>
+
+          <!-- Subtle Individual Service Conversion CTA: Directly to existing enquiry page -->
+          <div class="pt-6 mt-6 border-t border-neutral-100 flex items-center justify-between gap-3">
+            <a
+              href="/request-a-quote/"
+              class="service-cta-link inline-flex items-center gap-2 text-sm font-bold text-primary hover:text-neutral-900 transition-colors group/cta"
+            >
+              <span>{serviceActionCtas[index]}</span>
+              <ArrowRight className="service-cta-arrow w-4 h-4 transition-transform duration-200 group-hover/cta:translate-x-1.5 group-focus-visible/cta:translate-x-1.5" />
+            </a>
+            <a
+              href={service.href}
+              class="text-xs font-semibold text-neutral-400 hover:text-neutral-700 transition-colors hidden sm:inline-block"
+            >
+              Learn more
+            </a>
+          </div>
+        </div>
       ))}
+    </div>
+
+    <!-- Strong Conversion CTA: After Services (Standout Checkpoint) -->
+    <div class="cta-checkpoint mt-14 pt-8 border-t border-neutral-100 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left bg-neutral-50/70 rounded-2xl p-6 sm:p-8 border border-neutral-200/70 shadow-xs">
+      <div class="max-w-xl">
+        <h3 class="text-xl font-bold text-neutral-900 tracking-tight">Tell Us What You Need</h3>
+        <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Have a specific project scope or digital need? Tell us what you're looking for and our team will prepare a tailored solution.</p>
+      </div>
+      <div class="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full sm:w-auto">
+        <a
+          href="/request-a-quote/"
+          data-magnetic-btn
+          class="cta-shimmer-btn w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 text-sm font-bold text-white bg-primary hover:bg-primary/95 rounded-full shadow-md shadow-primary/20 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 group"
+        >
+          <span>Find the Right Solution</span>
+          <ArrowRight className="cta-arrow cta-arrow-invite w-4 h-4" />
+        </a>
+        <a
+          href="/services/"
+          class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-bold text-neutral-800 bg-white border border-neutral-200/90 rounded-full hover:border-primary hover:text-primary transition-all duration-300 shadow-2xs"
+        >
+          <span>Explore All Services</span>
+        </a>
+      </div>
     </div>
   </div>
 </section>

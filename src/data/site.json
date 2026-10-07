@@ -12,6 +12,12 @@
   "founderName": "Sanal Edison",
   "founderRole": "Digital strategist",
   "established": "2018",
+  "defaultContact": {
+    "name": "Vijayakala",
+    "role": "Business Development & Client Relations",
+    "image": "/team/vijayakala-expert.webp",
+    "bio": "Vijayakala is the first point of contact for new enquiries and the ongoing link between clients and the delivery team, covering scoping, proposals, and account communication."
+  },
   "_statsNote": "Canonical, verified headline figures. Every page must use these — do not introduce a page-local variant.",
   "stats": {
     "projects": "120+",
