@@ -1,5 +1,5 @@
 ---
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, ArrowRight } from 'lucide-react';
 import home from "../data/home.json";
 
 interface Props {
@@ -56,6 +56,25 @@ const schema = {
           </div>
         </details>
       ))}
+    </div>
+
+    <!-- Contextual Conversion CTA: After FAQ (Side Slide-In from Left) -->
+    <div class="cta-slide-left mt-14 pt-8 border-t border-neutral-200/60 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left bg-white rounded-2xl p-6 sm:p-8 border border-neutral-200/80 shadow-xs">
+      <div class="max-w-xl">
+        <h3 class="text-lg sm:text-xl font-bold text-neutral-900 tracking-tight">
+          Still Have Questions?
+        </h3>
+        <p class="text-sm text-neutral-600 mt-1">
+          Tell us what you're looking for and our team can guide you.
+        </p>
+      </div>
+      <a
+        href="/request-a-quote/"
+        class="cta-shimmer-btn inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-bold text-white bg-primary hover:bg-primary/95 rounded-full transition-all duration-300 shadow-md shadow-primary/20 hover:shadow-lg hover:-translate-y-0.5 shrink-0 group whitespace-nowrap"
+      >
+        <span>Let's Discuss Your Project</span>
+        <ArrowRight className="cta-arrow cta-arrow-invite w-4 h-4" />
+      </a>
     </div>
   </div>
 

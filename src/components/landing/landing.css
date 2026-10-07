@@ -83,6 +83,8 @@ section{padding-block:26px}
 .btn--primary{background:var(--orange);color:#fff;box-shadow:0 4px 14px rgba(242,101,34,.3)}
 .btn--ghost{background:#fff;color:var(--ink);border-color:var(--orange);box-shadow:var(--shadow)}
 .btn--ghost .ico{color:var(--orange)}
+.btn--call{background:#F9AE42;color:#111;border-color:#F9AE42;font-weight:700;box-shadow:0 4px 14px rgba(249,174,66,.3)}
+.btn--call .ico{color:#111}
 .btn--outline{background:#fff;color:var(--orange);border-color:var(--orange)}
 .btn--light{background:#fff;color:var(--orange)}
 
@@ -91,6 +93,7 @@ section{padding-block:26px}
   .btn--wa:hover{background:var(--wa-d)}
   .btn--primary:hover{background:var(--orange-d)}
   .btn--ghost:hover{background:var(--orange-tint)}
+  .btn--call:hover{background:#E89F36;border-color:#E89F36;color:#111}
   .btn--outline:hover{background:var(--orange);color:#fff}
   .btn--light:hover{background:var(--orange-tint)}
 }

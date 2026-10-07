@@ -128,10 +128,11 @@ import home from "../data/home.json";
       >
         <a
           href={home.hero.primaryCta.href}
-          class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.25)] hover:bg-primary/95 hover:shadow-[0_6px_25px_rgba(240,90,44,0.35)] hover:-translate-y-0.5 transition-all duration-300 leading-snug sm:whitespace-nowrap text-center"
+          data-magnetic-btn
+          class="hero-cta-primary cta-shimmer-btn group w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.25)] hover:bg-primary/95 hover:shadow-[0_6px_25px_rgba(240,90,44,0.35)] hover:-translate-y-0.5 transition-all duration-300 leading-snug sm:whitespace-nowrap text-center"
         >
-          {home.hero.primaryCta.label}
-          <ArrowRight className="w-4 h-4" />
+          <span>{home.hero.primaryCta.label}</span>
+          <ArrowRight className="cta-arrow w-4 h-4" />
         </a>
         <a
           href={home.hero.secondaryCta.href}
@@ -156,6 +157,20 @@ import home from "../data/home.json";
             <span class="text-[13px] text-neutral-500 font-semibold mt-1.5 uppercase tracking-wide text-center xl:text-left leading-tight">{stat.label}</span>
           </div>
         ))}
+      </div>
+
+      <!-- Subtle Conversion Opportunity: After Hero Trust Indicators (Side Slide-In) -->
+      <div class="cta-slide-left mt-4 pt-3.5 border-t border-neutral-100/60 flex flex-col sm:flex-row items-center justify-between gap-2.5 max-w-lg mx-auto xl:mx-0">
+        <span class="text-xs text-neutral-500 font-medium text-center sm:text-left">
+          Tell us what you need and we'll help you find the right solution.
+        </span>
+        <a
+          href="/request-a-quote/"
+          class="inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:text-primary-hover whitespace-nowrap group transition-colors"
+        >
+          <span>Let's Discuss Your Project</span>
+          <ArrowRight className="cta-arrow cta-arrow-invite w-3.5 h-3.5" />
+        </a>
       </div>
     </div>
 

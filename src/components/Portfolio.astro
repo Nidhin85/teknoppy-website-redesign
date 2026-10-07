@@ -1,5 +1,5 @@
 ---
-import { ExternalLink, ArrowUpRight } from 'lucide-react';
+import { ExternalLink, ArrowUpRight, ArrowRight } from 'lucide-react';
 
 // Real client work, sourced from the case-study cluster in src/data/pages/case-studies/.
 // Deliberately no result metrics: every statBand in that cluster is empty because the
@@ -176,6 +176,22 @@ const projects = [
 
         </div>
       ))}
+    </div>
+
+    <!-- Conversion CTA: After Project Cards (Standout Checkpoint) -->
+    <div class="cta-checkpoint mt-24 pt-12 border-t border-neutral-100 flex flex-col md:flex-row items-center justify-between gap-6 p-8 sm:p-10 rounded-2xl bg-cream/60 border border-neutral-200/70 text-center md:text-left">
+      <div class="max-w-xl">
+        <h3 class="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight">Want Results Like These?</h3>
+        <p class="text-sm text-neutral-600 mt-1.5 leading-relaxed">Tell us what you're building and we'll suggest the right approach for your budget and timeline.</p>
+      </div>
+      <a
+        href="/request-a-quote/"
+        data-magnetic-btn
+        class="cta-shimmer-btn inline-flex items-center justify-center gap-2.5 px-8 py-4 text-sm font-bold text-white bg-primary rounded-full hover:bg-primary/95 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 shrink-0 group whitespace-nowrap"
+      >
+        <span>Want Results Like These? Let's Talk</span>
+        <ArrowRight className="cta-arrow cta-arrow-invite w-4 h-4" />
+      </a>
     </div>
   </div>
 </section>

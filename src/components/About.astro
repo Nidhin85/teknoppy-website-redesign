@@ -1,5 +1,5 @@
 ---
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, ArrowRight } from "lucide-react";
 import home from "../data/home.json";
 ---
 
@@ -140,6 +140,21 @@ import home from "../data/home.json";
           </p>
         </div>
       </div>
+    </div>
+
+    <!-- Contextual CTA: After Who We Are -->
+    <div class="cta-reveal mt-14 pt-8 border-t border-neutral-200/70 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+      <div class="max-w-xl">
+        <p class="text-base font-bold text-neutral-900 tracking-tight">Have an idea in mind?</p>
+        <p class="text-sm text-neutral-600 mt-1">Have an idea in mind? Let's turn it into a digital experience.</p>
+      </div>
+      <a
+        href="/request-a-quote/"
+        class="cta-shimmer-btn inline-flex items-center gap-2 px-6 py-3.5 text-sm font-bold text-primary bg-primary/10 hover:bg-primary hover:text-white border border-primary/25 rounded-full transition-all duration-300 shadow-2xs hover:shadow-md hover:-translate-y-0.5 shrink-0 group"
+      >
+        <span>Talk to Our Experts</span>
+        <ArrowRight className="cta-arrow cta-arrow-invite w-4 h-4" />
+      </a>
     </div>
   </div>
 </section>

@@ -390,7 +390,7 @@ export default function Testimonials({
           </div>
 
           {/* The grid is a teaser — the full roster lives on /clients/ */}
-          <div className="md:col-span-2 lg:col-span-12 flex justify-center pt-2">
+          <div className="md:col-span-2 lg:col-span-12 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 pt-2">
             <a
               href="/clients/"
               className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-bold text-neutral-900 bg-white border border-neutral-200 rounded-full hover:border-primary hover:text-primary hover:-translate-y-0.5 transition-all duration-300"
@@ -398,8 +398,37 @@ export default function Testimonials({
               View all clients
               <ArrowRight className="w-4 h-4" />
             </a>
+            <a
+              href="/request-a-quote/"
+              className="cta-reveal inline-flex items-center gap-1.5 text-sm font-bold text-primary hover:text-primary-hover transition-colors group"
+            >
+              <span>Join Our Growing Client Network</span>
+              <ArrowRight className="cta-arrow cta-arrow-invite w-3.5 h-3.5" />
+            </a>
           </div>
 
+        </div>
+
+        {/* Trust-based Conversion CTA: After Testimonials (Standout Checkpoint) */}
+        <div className="cta-checkpoint mt-16 pt-10 border-t border-neutral-100">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-7 sm:p-9 rounded-2xl bg-white border border-neutral-200/80 shadow-xs text-center sm:text-left">
+            <div className="space-y-1 max-w-xl">
+              <h3 className="text-lg sm:text-xl font-bold text-neutral-900 tracking-tight">
+                Ready to Work With Us?
+              </h3>
+              <p className="text-xs sm:text-sm text-neutral-600 font-normal leading-relaxed">
+                Let's discuss your goals and build the right digital solution.
+              </p>
+            </div>
+            <a
+              href="/request-a-quote/"
+              data-magnetic-btn
+              className="cta-shimmer-btn inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-bold text-white bg-primary rounded-full hover:bg-primary/95 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 shrink-0 group whitespace-nowrap"
+            >
+              <span>Get Started with Teknoppy</span>
+              <ArrowRight className="cta-arrow cta-arrow-invite w-4 h-4" />
+            </a>
+          </div>
         </div>
 
       </div>
