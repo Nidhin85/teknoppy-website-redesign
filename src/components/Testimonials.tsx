@@ -400,7 +400,7 @@ export default function Testimonials({
             </a>
             <a
               href="/request-a-quote/"
-              className="cta-reveal inline-flex items-center gap-1.5 text-sm font-bold text-primary hover:text-primary-hover transition-colors group"
+              className="cta-reveal cta-pulse-medium cta-pulse-delay-2 inline-flex items-center gap-1.5 text-sm font-bold text-primary hover:text-primary-hover transition-colors group"
             >
               <span>Join Our Growing Client Network</span>
               <ArrowRight className="cta-arrow cta-arrow-invite w-3.5 h-3.5" />
@@ -423,7 +423,7 @@ export default function Testimonials({
             <a
               href="/request-a-quote/"
               data-magnetic-btn
-              className="cta-shimmer-btn inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-bold text-white bg-primary rounded-full hover:bg-primary/95 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 shrink-0 group whitespace-nowrap"
+              className="cta-shimmer-btn cta-pulse-strong cta-pulse-delay-4 inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-bold text-white bg-primary rounded-full hover:bg-primary/95 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 shrink-0 group whitespace-nowrap"
             >
               <span>Get Started with Teknoppy</span>
               <ArrowRight className="cta-arrow cta-arrow-invite w-4 h-4" />

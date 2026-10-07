@@ -345,3 +345,227 @@
   }
 }
 
+/* ==========================================================
+   HOMEPAGE CTA ATTENTION PULSE & VIBRATION (HOMEPAGE ONLY)
+   Rhythm: REST -> small pulse -> tiny vibration -> REST -> small pulse -> REST
+   Cycle: 3.2s (with ~70% calm resting time)
+   ========================================================== */
+
+/* Base behavior: only active when on homepage */
+.is-homepage .cta-pulse-strong,
+.is-homepage .cta-pulse-medium,
+.is-homepage .cta-pulse-subtle {
+  transform-origin: center center;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+/* Desktop Pulse Animations */
+@keyframes ctaPulseStrong {
+  0% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  4% {
+    transform: scale(1.02) translate3d(0, -1px, 0);
+  }
+  8% {
+    transform: scale(1.03) translate3d(0, -1px, 0);
+  }
+  11% {
+    transform: scale(1.03) translate3d(-1px, -1px, 0);
+  }
+  13% {
+    transform: scale(1.03) translate3d(1px, -1px, 0);
+  }
+  16% {
+    transform: scale(1.01) translate3d(0, 0, 0);
+  }
+  19% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  24% {
+    transform: scale(1.018) translate3d(0, -0.5px, 0);
+  }
+  28% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes ctaPulseMedium {
+  0% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  4% {
+    transform: scale(1.015) translate3d(0, -0.75px, 0);
+  }
+  8% {
+    transform: scale(1.022) translate3d(0, -0.75px, 0);
+  }
+  11% {
+    transform: scale(1.022) translate3d(-0.75px, -0.75px, 0);
+  }
+  13% {
+    transform: scale(1.022) translate3d(0.75px, -0.75px, 0);
+  }
+  16% {
+    transform: scale(1.008) translate3d(0, 0, 0);
+  }
+  19% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  24% {
+    transform: scale(1.012) translate3d(0, -0.5px, 0);
+  }
+  28% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes ctaPulseSubtle {
+  0% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  5% {
+    transform: scale(1.012) translate3d(0, -0.5px, 0);
+  }
+  8% {
+    transform: scale(1.016) translate3d(0, -0.5px, 0);
+  }
+  11% {
+    transform: scale(1.016) translate3d(-0.5px, 0, 0);
+  }
+  13% {
+    transform: scale(1.016) translate3d(0.5px, 0, 0);
+  }
+  16% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes ctaArrowPulse {
+  0%, 19%, 100% {
+    transform: translateX(0);
+  }
+  8%, 13% {
+    transform: translateX(5px);
+  }
+  24% {
+    transform: translateX(3px);
+  }
+  28% {
+    transform: translateX(0);
+  }
+}
+
+/* Scroll-aware Trigger: Active ONLY when in viewport */
+.is-homepage .cta-pulse-strong.is-pulsing {
+  animation: ctaPulseStrong 3.2s ease-in-out infinite;
+}
+
+.is-homepage .cta-pulse-medium.is-pulsing {
+  animation: ctaPulseMedium 3.2s ease-in-out infinite;
+}
+
+.is-homepage .cta-pulse-subtle.is-pulsing {
+  animation: ctaPulseSubtle 3.2s ease-in-out infinite;
+}
+
+/* Arrow synchronized nudge during attention pulse */
+.is-homepage .cta-pulse-strong.is-pulsing .cta-arrow,
+.is-homepage .cta-pulse-medium.is-pulsing .cta-arrow,
+.is-homepage .cta-pulse-subtle.is-pulsing .service-cta-arrow {
+  animation: ctaArrowPulse 3.2s ease-in-out infinite;
+  animation-delay: inherit;
+}
+
+/* Staggered Delay classes */
+.is-homepage .cta-pulse-delay-1 { animation-delay: 0.25s; }
+.is-homepage .cta-pulse-delay-2 { animation-delay: 0.8s; }
+.is-homepage .cta-pulse-delay-3 { animation-delay: 1.4s; }
+.is-homepage .cta-pulse-delay-4 { animation-delay: 1.9s; }
+.is-homepage .cta-pulse-delay-5 { animation-delay: 2.5s; }
+
+/* Desktop Hover Feedback: Pause pulse and elevate */
+@media (hover: hover) and (pointer: fine) {
+  .is-homepage .cta-pulse-strong:hover,
+  .is-homepage .cta-pulse-medium:hover,
+  .is-homepage .cta-pulse-subtle:hover {
+    animation-play-state: paused !important;
+    transform: translateY(-2px) scale(1.025) !important;
+  }
+  .is-homepage .cta-pulse-strong:hover .cta-arrow,
+  .is-homepage .cta-pulse-medium:hover .cta-arrow,
+  .is-homepage .cta-pulse-subtle:hover .service-cta-arrow {
+    animation-play-state: paused !important;
+    transform: translateX(6px) !important;
+  }
+}
+
+/* Click / Tap Feedback: Short press down */
+.is-homepage .cta-pulse-strong:active,
+.is-homepage .cta-pulse-medium:active,
+.is-homepage .cta-pulse-subtle:active {
+  animation-play-state: paused !important;
+  transform: scale(0.97) !important;
+  transition: transform 0.08s ease-out !important;
+}
+
+/* Mobile-tuned Keyframes (Gently reduced scale & micro-vibration) */
+@media (max-width: 640px) {
+  @keyframes ctaPulseStrong {
+    0% { transform: scale(1) translate3d(0, 0, 0); }
+    4% { transform: scale(1.015) translate3d(0, -0.5px, 0); }
+    8% { transform: scale(1.02) translate3d(0, -0.5px, 0); }
+    11% { transform: scale(1.02) translate3d(-0.5px, 0, 0); }
+    13% { transform: scale(1.02) translate3d(0.5px, 0, 0); }
+    16% { transform: scale(1) translate3d(0, 0, 0); }
+    24% { transform: scale(1.01) translate3d(0, 0, 0); }
+    28% { transform: scale(1) translate3d(0, 0, 0); }
+    100% { transform: scale(1) translate3d(0, 0, 0); }
+  }
+  @keyframes ctaPulseMedium {
+    0% { transform: scale(1) translate3d(0, 0, 0); }
+    5% { transform: scale(1.012) translate3d(0, -0.5px, 0); }
+    8% { transform: scale(1.015) translate3d(0, -0.5px, 0); }
+    11% { transform: scale(1.015) translate3d(-0.5px, 0, 0); }
+    13% { transform: scale(1.015) translate3d(0.5px, 0, 0); }
+    16% { transform: scale(1) translate3d(0, 0, 0); }
+    100% { transform: scale(1) translate3d(0, 0, 0); }
+  }
+  @keyframes ctaPulseSubtle {
+    0% { transform: scale(1) translate3d(0, 0, 0); }
+    6% { transform: scale(1.01) translate3d(0, 0, 0); }
+    10% { transform: scale(1.012) translate3d(0, 0, 0); }
+    14% { transform: scale(1) translate3d(0, 0, 0); }
+    100% { transform: scale(1) translate3d(0, 0, 0); }
+  }
+  @keyframes ctaArrowPulse {
+    0%, 19%, 100% { transform: translateX(0); }
+    8%, 13% { transform: translateX(3px); }
+    24% { transform: translateX(1.5px); }
+    28% { transform: translateX(0); }
+  }
+}
+
+/* Accessibility: Complete Disable on prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .is-homepage .cta-pulse-strong,
+  .is-homepage .cta-pulse-medium,
+  .is-homepage .cta-pulse-subtle,
+  .is-homepage .cta-pulse-strong .cta-arrow,
+  .is-homepage .cta-pulse-medium .cta-arrow,
+  .is-homepage .cta-pulse-subtle .service-cta-arrow {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
