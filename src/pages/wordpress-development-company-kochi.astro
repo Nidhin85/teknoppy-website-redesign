@@ -54,7 +54,12 @@ const caseAccents = {
 };
 ---
 
-<Layout title={title} description={description}>
+<Layout
+  title={title}
+  description={description}
+  floatingCtaLabel="Build With WordPress"
+  floatingCtaHref="/request-a-quote/"
+>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(wordpressSchema)} />
   </Fragment>

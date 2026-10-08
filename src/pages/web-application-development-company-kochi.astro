@@ -50,7 +50,12 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
 };
 ---
 
-<Layout title={page.meta.title} description={page.meta.description}>
+<Layout
+  title={page.meta.title}
+  description={page.meta.description}
+  floatingCtaLabel="Discuss My Project"
+  floatingCtaHref="/request-a-quote/"
+>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(webAppSchema)} />
   </Fragment>

@@ -171,7 +171,13 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
 };
 ---
 
-<Layout title={title} description={description} showBottomBar={true}>
+<Layout
+  title={title}
+  description={description}
+  showBottomBar={true}
+  floatingCtaLabel="Let's Build Your Website"
+  floatingCtaHref="/request-a-quote/"
+>
   <Header />
 
   <main class="overflow-hidden">
@@ -199,16 +205,16 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
         <!-- Hero Text (Left Column) -->
         <div class="xl:col-span-7 flex flex-col items-center text-center xl:items-start xl:text-left">
           <!-- Badge -->
-          <div class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-full bg-[#F9AE42]/10 border border-[#F9AE42]/30 text-primary text-xs sm:text-sm font-bold uppercase tracking-wider mb-6 shadow-sm transform -rotate-1">
-            <Zap class="w-4 h-4 text-primary" />
-            {page.hero.badge}
+          <div class="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-[#F9AE42]/10 border border-[#F9AE42]/30 text-primary text-[11px] sm:text-sm font-bold uppercase tracking-wider mb-6 shadow-sm transform -rotate-1 max-w-full">
+            <Zap class="w-3.5 sm:w-4 h-3.5 sm:h-4 text-primary shrink-0" />
+            <span class="truncate sm:whitespace-normal">{page.hero.badge}</span>
           </div>
 
           <!-- Headline (H1) -->
           <h1 class="text-3xl sm:text-5xl lg:text-[52px] xl:text-[56px] font-black leading-[1.15] tracking-tight text-neutral-900 mb-6">
             <span class="block">
               {page.hero.headingLead}{" "}
-              <span class="inline-block bg-primary text-white px-3 sm:px-4 py-0.5 rounded-[1.5rem] transform -rotate-1 shadow-md mx-1">
+              <span class="inline-block bg-primary text-white px-2.5 sm:px-4 py-0.5 rounded-[1.5rem] transform -rotate-1 shadow-md mx-0.5 sm:mx-1 whitespace-nowrap">
                 {page.hero.headingAccent}
               </span>{" "}
               {page.hero.headingRest}
@@ -221,22 +227,22 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
           </p>
 
           <!-- CTAs -->
-          <div class="flex flex-col sm:flex-row items-center gap-3.5 w-full sm:w-auto mb-8">
+          <div class="flex flex-col sm:flex-row items-center gap-3.5 w-full sm:w-auto mb-8 max-w-full">
             <a 
               href={page.hero.ctaPrimary.href} 
-              class="w-full sm:w-auto inline-flex items-center justify-center text-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.25)] hover:bg-primary/95 hover:shadow-[0_6px_25px_rgba(240,90,44,0.35)] hover:-translate-y-0.5 transition-all duration-300 leading-snug sm:whitespace-nowrap"
+              class="kochi-cta kochi-cta-primary w-full sm:w-auto inline-flex items-center justify-center text-center gap-2 px-5 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.25)] hover:bg-primary/95 transition-all duration-300 leading-snug"
             >
-              {page.hero.ctaPrimary.label}
-              <ArrowRight class="w-4 h-4" />
+              <span>{page.hero.ctaPrimary.label}</span>
+              <ArrowRight class="w-4 h-4 kochi-cta-arrow text-white transition-transform duration-300 shrink-0" />
             </a>
             <a 
               href={page.hero.ctaSecondary.href} 
-              class="w-full sm:w-auto inline-flex items-center justify-center text-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 text-base font-bold text-neutral-700 bg-white border border-neutral-200 rounded-full hover:border-primary/50 hover:bg-cream transition-all duration-300 shadow-sm leading-snug sm:whitespace-nowrap"
+              class="kochi-cta-tertiary w-full sm:w-auto inline-flex items-center justify-center text-center gap-2 px-5 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-neutral-700 bg-white border border-neutral-200 rounded-full hover:border-primary/50 hover:bg-cream transition-all duration-300 shadow-sm leading-snug"
             >
-              <span class="flex items-center justify-center w-6 h-6 rounded-full border border-neutral-300 text-primary">
+              <span class="flex items-center justify-center w-6 h-6 rounded-full border border-neutral-300 text-primary shrink-0">
                 <Play class="w-2.5 h-2.5 fill-current ml-0.5" />
               </span>
-              {page.hero.ctaSecondary.label}
+              <span>{page.hero.ctaSecondary.label}</span>
             </a>
           </div>
 
@@ -286,6 +292,15 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
           <p class="text-base md:text-lg text-neutral-600 leading-relaxed font-medium pl-0 lg:pl-6">
             {page.introBand[1]}
           </p>
+          <div class="pt-2 pl-0 lg:pl-6">
+            <a 
+              href="/request-a-quote/" 
+              class="kochi-cta kochi-cta-secondary inline-flex items-center gap-2 px-6 py-3 text-sm font-bold text-neutral-900 bg-white border border-neutral-200/90 rounded-full hover:border-primary hover:text-primary transition-all duration-300 shadow-sm"
+            >
+              Talk About My Website
+              <ArrowRight class="w-4 h-4 kochi-cta-arrow text-primary transition-transform duration-300" />
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -295,11 +310,11 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
       <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
         <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/tekenoppyadvantage.webp')] opacity-75"></div>
       </div>
-      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 xl:gap-20 items-start">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10 min-w-0">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 xl:gap-20 items-start min-w-0">
 
           <!-- Left Column (Sticky Panel) -->
-          <div class="lg:col-span-5 lg:sticky lg:top-32 space-y-8">
+          <div class="lg:col-span-5 lg:sticky lg:top-32 space-y-8 min-w-0 w-full overflow-hidden">
             <div>
               <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F9AE42]/10 border border-[#F9AE42]/30 text-primary text-sm font-bold uppercase tracking-wider mb-6 shadow-sm transform -rotate-1">
                 {page.whyTeknoppy.badge}
@@ -311,6 +326,15 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
               <p class="text-neutral-600 text-base leading-relaxed">
                 {page.whyTeknoppy.intro}
               </p>
+              <div class="pt-5">
+                <a 
+                  href="/request-a-quote/" 
+                  class="kochi-cta kochi-cta-secondary inline-flex items-center gap-2 px-6 py-3.5 text-sm font-bold text-neutral-900 bg-white border border-neutral-200/90 rounded-full hover:border-primary hover:text-primary transition-all duration-300 shadow-sm"
+                >
+                  Get My Website Started
+                  <ArrowRight class="w-4 h-4 kochi-cta-arrow text-primary transition-transform duration-300" />
+                </a>
+              </div>
             </div>
 
             <!-- Trusted Partners Continuous Scrolling Marquee -->
@@ -355,11 +379,22 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
                   </div>
                 </div>
               </div>
+
+              <!-- Compact conversion CTA connected to trusted partners marquee -->
+              <div class="pt-2">
+                <a 
+                  href="/request-a-quote/" 
+                  class="kochi-cta kochi-cta-secondary inline-flex items-center gap-2 px-5 py-2.5 text-xs sm:text-sm font-bold text-neutral-800 bg-white border border-neutral-200/90 rounded-full hover:border-primary hover:text-primary transition-all duration-300 shadow-sm"
+                >
+                  Build a Website Like These
+                  <ArrowRight class="w-3.5 h-3.5 kochi-cta-arrow text-primary transition-transform duration-300" />
+                </a>
+              </div>
             </div>
           </div>
 
           <!-- Right Column (Custom Feature Cards Grid) -->
-          <div class="lg:col-span-7 grid sm:grid-cols-2 gap-6">
+          <div class="lg:col-span-7 grid sm:grid-cols-2 gap-6 min-w-0 w-full">
             {page.whyTeknoppy.cards.map((card, idx) => (
               <div class="relative bg-white border border-neutral-100/80 hover:border-primary/30 rounded-2xl p-7 sm:p-8 transition-all duration-500 group flex flex-col justify-between shadow-sm hover:shadow-[0_20px_50px_rgba(240,90,44,0.06)] hover:-translate-y-1">
                 <div>
@@ -443,6 +478,20 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
             );
           })}
         </div>
+
+        <!-- Services Checkpoint CTA -->
+        <div class="mt-14 sm:mt-16 text-center max-w-xl mx-auto flex flex-col items-center">
+          <a 
+            href="/request-a-quote/" 
+            class="kochi-cta kochi-cta-primary inline-flex items-center justify-center gap-3 px-8 py-4 text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.25)] hover:bg-primary/95 transition-all duration-300"
+          >
+            Tell Us What Website You Need
+            <ArrowRight class="w-4 h-4 kochi-cta-arrow text-white transition-transform duration-300" />
+          </a>
+          <p class="text-xs sm:text-sm font-medium text-neutral-500 mt-3">
+            Get a tailored recommendation for your business.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -490,6 +539,16 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
             );
           })}
         </div>
+
+        <div class="mt-14 sm:mt-16 flex justify-center">
+          <a 
+            href="/request-a-quote/" 
+            class="kochi-cta kochi-cta-primary inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.25)] hover:bg-primary/95 transition-all duration-300"
+          >
+            Plan My Website Project
+            <ArrowRight class="w-4 h-4 kochi-cta-arrow text-white transition-transform duration-300" />
+          </a>
+        </div>
       </div>
     </section>
 
@@ -531,6 +590,20 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
         <p class="text-neutral-500 text-xs sm:text-sm mt-5 leading-relaxed max-w-3xl font-medium">
           {page.pricing.footnote}
         </p>
+
+        <!-- Pricing Checkpoint CTA -->
+        <div class="mt-12 text-center max-w-xl mx-auto flex flex-col items-center">
+          <a 
+            href="/request-a-quote/" 
+            class="kochi-cta kochi-cta-primary inline-flex items-center justify-center gap-3 px-9 py-4 text-base sm:text-lg font-bold text-white bg-primary rounded-full shadow-[0_8px_25px_rgba(240,90,44,0.3)] hover:bg-primary/95 transition-all duration-300"
+          >
+            Get My Exact Website Quote
+            <ArrowRight class="w-4 h-4 kochi-cta-arrow text-white transition-transform duration-300" />
+          </a>
+          <p class="text-xs sm:text-sm font-medium text-neutral-500 mt-3">
+            Tell us your requirements and we'll prepare a tailored quote.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -582,6 +655,16 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
             );
           })}
         </div>
+
+        <div class="mt-14 sm:mt-16 flex justify-center">
+          <a 
+            href="/request-a-quote/" 
+            class="kochi-cta kochi-cta-secondary inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-neutral-900 bg-white border border-neutral-200/90 rounded-full hover:border-primary hover:text-primary transition-all duration-300 shadow-sm"
+          >
+            Discuss My Industry Website
+            <ArrowRight class="w-4 h-4 kochi-cta-arrow text-primary transition-transform duration-300" />
+          </a>
+        </div>
       </div>
     </section>
 
@@ -625,8 +708,18 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
           ))}
         </div>
 
-        <div class="mt-14 flex justify-center">
-          <a href={page.projects.allLink.href} class="inline-flex items-center gap-3 px-8 py-4 text-sm font-bold text-white bg-primary rounded-full hover:bg-primary/95 transition-all shadow-lg shadow-primary/20 hover:-translate-y-0.5">
+        <div class="mt-14 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a 
+            href="/request-a-quote/" 
+            class="kochi-cta kochi-cta-primary w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.25)] hover:bg-primary/95 transition-all duration-300"
+          >
+            Build My Business Website
+            <ArrowRight class="w-4 h-4 kochi-cta-arrow text-white transition-transform duration-300" />
+          </a>
+          <a 
+            href={page.projects.allLink.href} 
+            class="kochi-cta-tertiary w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-bold text-neutral-800 bg-white border border-neutral-200/90 rounded-full hover:border-primary/50 hover:text-primary hover:bg-cream transition-all duration-300 shadow-sm"
+          >
             {page.projects.allLink.label}
             <ArrowRight class="w-4 h-4" />
           </a>
@@ -742,6 +835,16 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
             );
           })}
         </div>
+
+        <div class="mt-14 sm:mt-16 flex justify-center">
+          <a 
+            href="/request-a-quote/" 
+            class="kochi-cta kochi-cta-primary inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.25)] hover:bg-primary/95 transition-all duration-300"
+          >
+            Get Results Like These
+            <ArrowRight class="w-4 h-4 kochi-cta-arrow text-white transition-transform duration-300" />
+          </a>
+        </div>
       </div>
     </section>
 
@@ -754,6 +857,8 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
       headingAccent={page.testimonials.headingAccent}
       headingRest={page.testimonials.headingRest}
       intro={page.testimonials.intro}
+      ctaText="Let's Build My Website"
+      ctaClassName="kochi-cta kochi-cta-primary inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold text-white bg-primary rounded-full hover:bg-primary/95 transition-all shadow-md shrink-0 group whitespace-nowrap"
       client:visible
     />
 
@@ -928,7 +1033,10 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
     </section>
   </main>
 
-  <FooterCTA />
+  <FooterCTA 
+    heading="Ready to Build Your Website?"
+    description="Tell us what you're looking to build and we'll help you plan the right website for your business."
+  />
 </Layout>
 
 <style>

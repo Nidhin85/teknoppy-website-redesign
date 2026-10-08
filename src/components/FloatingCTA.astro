@@ -1,0 +1,250 @@
+---
+/**
+ * Global Floating CTA Component
+ *
+ * Sitewide, continuously floating conversion button across all pages of the Teknoppy website.
+ * Features:
+ * - Smooth vertical floating motion (3.8s ease-in-out infinite)
+ * - Visual elevation lift with synchronized soft shadow
+ * - Periodic attention pulse ring every 9 seconds (idle for ~7.5s, brief outward glow ring, then settles)
+ * - Desktop position: stacked above WhatsAppFab (bottom-24 right-6) with 16px gap and zero overlap
+ * - Mobile position: optimized touch target >=44px, bottom-20 right-4 (stays clear of browser chrome and Kochi bottom bar)
+ * - Suppressed on /request-a-quote/, /admin/, and LP pages
+ * - Context-aware default labels: "Let's Talk" / "Start Your Project" / "Get Free Quote"
+ * - Full prefers-reduced-motion support (disables motion, remains accessible and static)
+ */
+interface Props {
+  label?: string;
+  href?: string;
+  hide?: boolean;
+}
+
+const { label: customLabel, href: customHref, hide = false } = Astro.props;
+
+// Determine current route context
+const pathname = Astro.url.pathname.replace(/\/$/, '') || '/';
+
+// Route suppression checks
+const isQuotePage = pathname === '/request-a-quote';
+const isAdminPage = pathname.startsWith('/admin');
+const isLpPage = pathname.startsWith('/lp');
+const isThankYouPage = pathname.includes('thank-you');
+
+// Should this CTA render?
+const shouldRender = !hide && !isQuotePage && !isAdminPage && !isLpPage && !isThankYouPage;
+
+// Route-aware defaults for the 5 core service pages and other sections
+const isWebDesign = pathname === '/web-design-company-kochi' || pathname.startsWith('/web-design-');
+const isWordPress = pathname === '/wordpress-development-company-kochi' || pathname.startsWith('/wordpress-');
+const isEcommerce = pathname === '/ecommerce-website-development-company-kochi' || pathname.startsWith('/ecommerce-') || pathname.startsWith('/woocommerce-') || pathname.startsWith('/shopify-');
+const isWebApp = pathname === '/web-application-development-company-kochi' || pathname.startsWith('/web-app-') || pathname.startsWith('/saas-') || pathname.startsWith('/portal-');
+const isDigitalMarketing = pathname === '/digital-marketing-company-kochi' || pathname === '/digital-marketing-company-kerala' || pathname.startsWith('/seo-') || pathname.startsWith('/marketing-');
+
+let defaultLabel = "Let's Talk";
+if (isWebDesign) {
+  defaultLabel = "Let's Build Your Website";
+} else if (isWordPress) {
+  defaultLabel = "Build With WordPress";
+} else if (isEcommerce) {
+  defaultLabel = "Build My Online Store";
+} else if (isWebApp) {
+  defaultLabel = "Discuss My Project";
+} else if (isDigitalMarketing) {
+  defaultLabel = "Grow My Business";
+} else if (pathname === '/contact-us') {
+  defaultLabel = "Get Free Quote";
+} else if (pathname.includes('/case-stud') || pathname.includes('/portfolios')) {
+  defaultLabel = "Discuss Your Project";
+} else if (pathname === '/services') {
+  defaultLabel = "Start Your Project";
+}
+
+const resolvedLabel = customLabel || defaultLabel;
+const resolvedHref = customHref || "/request-a-quote/";
+---
+
+{shouldRender && (
+  <div
+    id="global-floating-cta-wrap"
+    class={`global-floating-cta-wrap fixed z-30 pointer-events-auto right-4 sm:right-5 md:right-6 bottom-20 md:bottom-24`}
+    role="region"
+    aria-label="Quick Enquiry CTA"
+  >
+    <a
+      href={resolvedHref}
+      class="floating-cta group relative inline-flex items-center gap-2 sm:gap-2.5 rounded-full bg-[#F05A2C] text-white font-bold text-xs sm:text-sm tracking-wide px-3.5 sm:px-5 py-2.5 sm:py-3 transition-colors duration-200 select-none focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#F05A2C]/40 focus-visible:ring-offset-2"
+      aria-label={`${resolvedLabel} - Contact Teknoppy`}
+    >
+      <!-- Periodic Attention Pulse Expanding Ring -->
+      <span class="floating-cta-pulse-ring" aria-hidden="true"></span>
+
+      <!-- Live Active Indicator Dot -->
+      <span class="relative flex h-2 sm:h-2.5 w-2 sm:w-2.5 shrink-0" aria-hidden="true">
+        <span class="floating-cta-ping-dot absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2 sm:h-2.5 w-2 sm:w-2.5 bg-emerald-400"></span>
+      </span>
+
+      <!-- Crisp Message/Chat Icon -->
+      <svg
+        class="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 transition-transform duration-300 group-hover:rotate-12"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2.3"
+        aria-hidden="true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+        />
+      </svg>
+
+      <!-- Label Text -->
+      <span class="floating-cta-text whitespace-nowrap leading-none pt-0.5">
+        {resolvedLabel}
+      </span>
+
+      <!-- Subtle Right Direction Arrow -->
+      <svg
+        class="w-3 h-3 sm:w-3.5 sm:h-3.5 shrink-0 transition-transform duration-300 group-hover:translate-x-1 opacity-90"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2.5"
+        aria-hidden="true"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+    </a>
+  </div>
+)}
+
+<style>
+  /* Container entrance on initial mount */
+  .global-floating-cta-wrap {
+    opacity: 0;
+    transform: translateY(16px);
+    animation: globalCtaEntrance 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+    will-change: transform, opacity;
+  }
+
+  @keyframes globalCtaEntrance {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Continuous floating motion on CTA button */
+  .floating-cta {
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 8px 24px -4px rgba(240, 90, 44, 0.42), 0 2px 6px -1px rgba(0, 0, 0, 0.08);
+    animation: globalCtaFloat 3.8s ease-in-out infinite 0.9s;
+    will-change: transform, box-shadow;
+    cursor: pointer;
+    font-family: 'Sora', sans-serif;
+  }
+
+  @keyframes globalCtaFloat {
+    0%, 100% {
+      transform: translateY(0);
+      box-shadow: 0 8px 24px -4px rgba(240, 90, 44, 0.42), 0 2px 6px -1px rgba(0, 0, 0, 0.08);
+    }
+    50% {
+      transform: translateY(-7px);
+      box-shadow: 0 16px 32px -4px rgba(240, 90, 44, 0.55), 0 4px 10px -2px rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  /* Mobile floating adjustment (smoothly gentler distance) */
+  @media (max-width: 767px) {
+    @keyframes globalCtaFloat {
+      0%, 100% {
+        transform: translateY(0);
+        box-shadow: 0 6px 20px -3px rgba(240, 90, 44, 0.40);
+      }
+      50% {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px -3px rgba(240, 90, 44, 0.50);
+      }
+    }
+  }
+
+  /* Periodic Attention Pulse Ring: triggers a subtle expanding glow every 9s */
+  .floating-cta-pulse-ring {
+    position: absolute;
+    inset: -2px;
+    border-radius: 9999px;
+    pointer-events: none;
+    opacity: 0;
+    animation: globalCtaPulseRing 9s ease-out infinite 2s;
+  }
+
+  @keyframes globalCtaPulseRing {
+    0%, 82% {
+      opacity: 0;
+      transform: scale(0.98);
+      box-shadow: 0 0 0 0 rgba(240, 90, 44, 0);
+    }
+    85% {
+      opacity: 0.85;
+      transform: scale(1.02);
+      box-shadow: 0 0 0 3px rgba(240, 90, 44, 0.50);
+    }
+    91% {
+      opacity: 0;
+      transform: scale(1.15);
+      box-shadow: 0 0 0 13px rgba(240, 90, 44, 0);
+    }
+    93%, 100% {
+      opacity: 0;
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(240, 90, 44, 0);
+    }
+  }
+
+  /* Subtle ping animation on the live dot */
+  .floating-cta-ping-dot {
+    animation: ping 2.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  /* Desktop Hover Interactions */
+  @media (hover: hover) and (pointer: fine) {
+    .floating-cta:hover {
+      animation-play-state: paused;
+      transform: translateY(-4px) scale(1.035);
+      background-color: #D24A20;
+      box-shadow: 0 18px 36px -4px rgba(240, 90, 44, 0.62), 0 0 20px 2px rgba(240, 90, 44, 0.35);
+      transition: transform 0.22s ease-out, box-shadow 0.22s ease-out, background-color 0.2s ease;
+    }
+    .floating-cta:hover .floating-cta-pulse-ring {
+      animation-play-state: paused;
+      opacity: 0;
+    }
+  }
+
+  /* Active / Touch Feedback */
+  .floating-cta:active {
+    animation-play-state: paused;
+    transform: translateY(0) scale(0.97);
+    transition: transform 0.08s ease;
+  }
+
+  /* Accessibility: Prefers Reduced Motion */
+  @media (prefers-reduced-motion: reduce) {
+    .global-floating-cta-wrap,
+    .floating-cta,
+    .floating-cta-pulse-ring,
+    .floating-cta-ping-dot {
+      animation: none !important;
+      transition: none !important;
+      transform: none !important;
+      opacity: 1 !important;
+    }
+    .floating-cta-pulse-ring {
+      display: none !important;
+    }
+  }
+</style>

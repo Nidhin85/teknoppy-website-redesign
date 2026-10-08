@@ -346,226 +346,515 @@
 }
 
 /* ==========================================================
-   HOMEPAGE CTA ATTENTION PULSE & VIBRATION (HOMEPAGE ONLY)
-   Rhythm: REST -> small pulse -> tiny vibration -> REST -> small pulse -> REST
-   Cycle: 3.2s (with ~70% calm resting time)
+   HOMEPAGE FLOATING CTA INTERACTION SYSTEM (HOMEPAGE ONLY)
+   Rhythm: Smooth, subtle vertical float (3-5px) with periodic
+           soft attention glow (every ~7-8s) and optional
+           sideways micro-motion on selected links.
+   Scoped strictly to .is-homepage
    ========================================================== */
 
-/* Base behavior: only active when on homepage */
+/* Base Floating Behavior: Will-change and smooth transitions */
+.is-homepage .cta-float-primary,
+.is-homepage .cta-float-secondary,
+.is-homepage .cta-float-sway,
 .is-homepage .cta-pulse-strong,
 .is-homepage .cta-pulse-medium,
 .is-homepage .cta-pulse-subtle {
+  position: relative;
+  will-change: transform, box-shadow;
   transform-origin: center center;
   backface-visibility: hidden;
-  will-change: transform;
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.28s ease,
+              background-color 0.2s ease,
+              color 0.2s ease;
 }
 
-/* Desktop Pulse Animations */
-@keyframes ctaPulseStrong {
+/* Keyframes: Primary Float (~4.8px vertical movement, 4.2s smooth sinusoidal ease-in-out) */
+@keyframes ctaFloatPrimary {
   0% {
-    transform: scale(1) translate3d(0, 0, 0);
+    transform: translateY(0);
   }
-  4% {
-    transform: scale(1.02) translate3d(0, -1px, 0);
-  }
-  8% {
-    transform: scale(1.03) translate3d(0, -1px, 0);
-  }
-  11% {
-    transform: scale(1.03) translate3d(-1px, -1px, 0);
-  }
-  13% {
-    transform: scale(1.03) translate3d(1px, -1px, 0);
-  }
-  16% {
-    transform: scale(1.01) translate3d(0, 0, 0);
-  }
-  19% {
-    transform: scale(1) translate3d(0, 0, 0);
-  }
-  24% {
-    transform: scale(1.018) translate3d(0, -0.5px, 0);
-  }
-  28% {
-    transform: scale(1) translate3d(0, 0, 0);
+  50% {
+    transform: translateY(-4.8px);
   }
   100% {
-    transform: scale(1) translate3d(0, 0, 0);
+    transform: translateY(0);
   }
 }
 
-@keyframes ctaPulseMedium {
+/* Keyframes: Secondary Float (~2.8px subtle vertical movement, 4.0s smooth cycle) */
+@keyframes ctaFloatSecondary {
   0% {
-    transform: scale(1) translate3d(0, 0, 0);
+    transform: translateY(0);
   }
-  4% {
-    transform: scale(1.015) translate3d(0, -0.75px, 0);
-  }
-  8% {
-    transform: scale(1.022) translate3d(0, -0.75px, 0);
-  }
-  11% {
-    transform: scale(1.022) translate3d(-0.75px, -0.75px, 0);
-  }
-  13% {
-    transform: scale(1.022) translate3d(0.75px, -0.75px, 0);
-  }
-  16% {
-    transform: scale(1.008) translate3d(0, 0, 0);
-  }
-  19% {
-    transform: scale(1) translate3d(0, 0, 0);
-  }
-  24% {
-    transform: scale(1.012) translate3d(0, -0.5px, 0);
-  }
-  28% {
-    transform: scale(1) translate3d(0, 0, 0);
+  50% {
+    transform: translateY(-2.8px);
   }
   100% {
-    transform: scale(1) translate3d(0, 0, 0);
+    transform: translateY(0);
   }
 }
 
-@keyframes ctaPulseSubtle {
+/* Keyframes: Sideways Micro-motion (±1.5px subtle horizontal sway + vertical float) */
+@keyframes ctaFloatSway {
   0% {
-    transform: scale(1) translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
-  5% {
-    transform: scale(1.012) translate3d(0, -0.5px, 0);
+  25% {
+    transform: translate3d(-1.5px, -2px, 0);
   }
-  8% {
-    transform: scale(1.016) translate3d(0, -0.5px, 0);
+  50% {
+    transform: translate3d(0, -3.8px, 0);
   }
-  11% {
-    transform: scale(1.016) translate3d(-0.5px, 0, 0);
-  }
-  13% {
-    transform: scale(1.016) translate3d(0.5px, 0, 0);
-  }
-  16% {
-    transform: scale(1) translate3d(0, 0, 0);
+  75% {
+    transform: translate3d(1.5px, -1.8px, 0);
   }
   100% {
-    transform: scale(1) translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
-@keyframes ctaArrowPulse {
-  0%, 19%, 100% {
+/* Keyframes: Periodic Soft Attention Glow (Every ~7.6s, calm resting 84% of time) */
+@keyframes ctaPeriodicGlowPrimary {
+  0%, 82%, 100% {
+    box-shadow: 0 6px 20px rgba(240, 90, 44, 0.25), 0 0 0 0 rgba(240, 90, 44, 0);
+  }
+  86% {
+    box-shadow: 0 6px 22px rgba(240, 90, 44, 0.32), 0 0 0 4px rgba(240, 90, 44, 0.32);
+  }
+  92% {
+    box-shadow: 0 6px 20px rgba(240, 90, 44, 0.25), 0 0 0 9px rgba(240, 90, 44, 0);
+  }
+}
+
+@keyframes ctaPeriodicGlowSecondary {
+  0%, 84%, 100% {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04), 0 0 0 0 rgba(240, 90, 44, 0);
+  }
+  88% {
+    box-shadow: 0 4px 12px rgba(240, 90, 44, 0.12), 0 0 0 3px rgba(240, 90, 44, 0.22);
+  }
+  94% {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04), 0 0 0 7px rgba(240, 90, 44, 0);
+  }
+}
+
+/* Arrow synchronized micro-nudge */
+@keyframes ctaArrowFloat {
+  0%, 100% {
     transform: translateX(0);
   }
-  8%, 13% {
-    transform: translateX(5px);
-  }
-  24% {
-    transform: translateX(3px);
-  }
-  28% {
-    transform: translateX(0);
+  50% {
+    transform: translateX(2.5px);
   }
 }
 
-/* Scroll-aware Trigger: Active ONLY when in viewport */
-.is-homepage .cta-pulse-strong.is-pulsing {
-  animation: ctaPulseStrong 3.2s ease-in-out infinite;
+/* Active Floating State: Triggered when in viewport */
+.is-homepage .cta-float-primary.is-floating,
+.is-homepage .cta-float-primary.is-pulsing {
+  animation: ctaFloatPrimary 4.2s ease-in-out infinite,
+             ctaPeriodicGlowPrimary 7.6s ease-out infinite;
 }
 
-.is-homepage .cta-pulse-medium.is-pulsing {
-  animation: ctaPulseMedium 3.2s ease-in-out infinite;
+.is-homepage .cta-float-secondary.is-floating,
+.is-homepage .cta-float-secondary.is-pulsing {
+  animation: ctaFloatSecondary 4.0s ease-in-out infinite,
+             ctaPeriodicGlowSecondary 7.6s ease-out infinite;
 }
 
-.is-homepage .cta-pulse-subtle.is-pulsing {
-  animation: ctaPulseSubtle 3.2s ease-in-out infinite;
+.is-homepage .cta-float-sway.is-floating,
+.is-homepage .cta-float-sway.is-pulsing {
+  animation: ctaFloatSway 4.4s ease-in-out infinite,
+             ctaPeriodicGlowSecondary 7.6s ease-out infinite;
 }
 
-/* Arrow synchronized nudge during attention pulse */
+/* Combination: Primary with Sway */
+.is-homepage .cta-float-primary.cta-float-sway.is-floating,
+.is-homepage .cta-float-primary.cta-float-sway.is-pulsing {
+  animation: ctaFloatSway 4.4s ease-in-out infinite,
+             ctaPeriodicGlowPrimary 7.6s ease-out infinite;
+}
+
+/* Fallback for existing pulse classes */
+.is-homepage .cta-pulse-strong.is-pulsing:not(.cta-float-primary):not(.cta-float-secondary):not(.cta-float-sway) {
+  animation: ctaFloatPrimary 4.2s ease-in-out infinite,
+             ctaPeriodicGlowPrimary 7.6s ease-out infinite;
+}
+.is-homepage .cta-pulse-medium.is-pulsing:not(.cta-float-primary):not(.cta-float-secondary):not(.cta-float-sway) {
+  animation: ctaFloatSecondary 4.0s ease-in-out infinite,
+             ctaPeriodicGlowSecondary 7.6s ease-out infinite;
+}
+.is-homepage .cta-pulse-subtle.is-pulsing:not(.cta-float-primary):not(.cta-float-secondary):not(.cta-float-sway) {
+  animation: ctaFloatSecondary 4.0s ease-in-out infinite;
+}
+
+/* Arrow synchronized motion when active */
+.is-homepage .cta-float-primary.is-floating .cta-arrow,
+.is-homepage .cta-float-secondary.is-floating .cta-arrow,
+.is-homepage .cta-float-sway.is-floating .cta-arrow,
+.is-homepage .cta-float-subtle.is-floating .service-cta-arrow,
 .is-homepage .cta-pulse-strong.is-pulsing .cta-arrow,
 .is-homepage .cta-pulse-medium.is-pulsing .cta-arrow,
 .is-homepage .cta-pulse-subtle.is-pulsing .service-cta-arrow {
-  animation: ctaArrowPulse 3.2s ease-in-out infinite;
+  animation: ctaArrowFloat 4.2s ease-in-out infinite;
   animation-delay: inherit;
 }
 
-/* Staggered Delay classes */
-.is-homepage .cta-pulse-delay-1 { animation-delay: 0.25s; }
-.is-homepage .cta-pulse-delay-2 { animation-delay: 0.8s; }
-.is-homepage .cta-pulse-delay-3 { animation-delay: 1.4s; }
-.is-homepage .cta-pulse-delay-4 { animation-delay: 1.9s; }
-.is-homepage .cta-pulse-delay-5 { animation-delay: 2.5s; }
+/* Natural Staggered Delays */
+.is-homepage .cta-delay-1 { animation-delay: 0s, 1.2s; }
+.is-homepage .cta-delay-2 { animation-delay: 0.4s, 1.6s; }
+.is-homepage .cta-delay-3 { animation-delay: 0.8s, 2.0s; }
+.is-homepage .cta-delay-4 { animation-delay: 1.2s, 2.4s; }
+.is-homepage .cta-delay-5 { animation-delay: 1.6s, 2.8s; }
+.is-homepage .cta-delay-6 { animation-delay: 2.0s, 3.2s; }
+.is-homepage .cta-delay-7 { animation-delay: 2.4s, 3.6s; }
+.is-homepage .cta-delay-8 { animation-delay: 2.8s, 4.0s; }
+.is-homepage .cta-delay-9 { animation-delay: 0.3s, 1.5s; }
+.is-homepage .cta-delay-10 { animation-delay: 0.7s, 1.9s; }
+.is-homepage .cta-delay-11 { animation-delay: 1.1s, 2.3s; }
+.is-homepage .cta-delay-12 { animation-delay: 0.5s, 1.7s; }
+.is-homepage .cta-delay-13 { animation-delay: 0.9s, 2.1s; }
+.is-homepage .cta-delay-14 { animation-delay: 1.3s, 2.5s; }
+.is-homepage .cta-delay-15 { animation-delay: 0.6s, 1.8s; }
+.is-homepage .cta-delay-16 { animation-delay: 1.0s, 2.2s; }
 
-/* Desktop Hover Feedback: Pause pulse and elevate */
+/* Desktop Hover Interaction: Pause float & glow, scale gently, elevate shadow */
 @media (hover: hover) and (pointer: fine) {
+  .is-homepage .cta-float-primary:hover,
+  .is-homepage .cta-float-secondary:hover,
+  .is-homepage .cta-float-sway:hover,
   .is-homepage .cta-pulse-strong:hover,
   .is-homepage .cta-pulse-medium:hover,
   .is-homepage .cta-pulse-subtle:hover {
     animation-play-state: paused !important;
-    transform: translateY(-2px) scale(1.025) !important;
+    transform: translateY(-3.5px) scale(1.035) !important;
   }
+
+  .is-homepage .cta-float-primary:hover,
+  .is-homepage .cta-pulse-strong:hover {
+    box-shadow: 0 10px 28px rgba(240, 90, 44, 0.38) !important;
+  }
+
+  .is-homepage .cta-float-secondary:hover,
+  .is-homepage .cta-pulse-medium:hover,
+  .is-homepage .cta-pulse-subtle:hover {
+    box-shadow: 0 8px 22px rgba(240, 90, 44, 0.16) !important;
+  }
+
+  /* Micro arrow slide on hover */
+  .is-homepage .cta-float-primary:hover .cta-arrow,
+  .is-homepage .cta-float-secondary:hover .cta-arrow,
+  .is-homepage .cta-float-sway:hover .cta-arrow,
   .is-homepage .cta-pulse-strong:hover .cta-arrow,
   .is-homepage .cta-pulse-medium:hover .cta-arrow,
   .is-homepage .cta-pulse-subtle:hover .service-cta-arrow {
-    animation-play-state: paused !important;
-    transform: translateX(6px) !important;
+    transform: translateX(4.5px) !important;
+    transition: transform 0.2s ease-out;
   }
 }
 
-/* Click / Tap Feedback: Short press down */
+/* Touch & Click Feedback */
+.is-homepage .cta-float-primary:active,
+.is-homepage .cta-float-secondary:active,
+.is-homepage .cta-float-sway:active,
 .is-homepage .cta-pulse-strong:active,
 .is-homepage .cta-pulse-medium:active,
 .is-homepage .cta-pulse-subtle:active {
+  animation-play-state: paused !important;
+  transform: scale(0.98) !important;
+  transition: transform 0.08s ease-out !important;
+}
+
+/* Mobile-tuned Keyframes (Reduced movement, no horizontal sway to prevent overflow) */
+@media (max-width: 640px) {
+  @keyframes ctaFloatPrimary {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-2.5px); }
+    100% { transform: translateY(0); }
+  }
+
+  @keyframes ctaFloatSecondary {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-1.8px); }
+    100% { transform: translateY(0); }
+  }
+
+  @keyframes ctaFloatSway {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-2.0px); }
+    100% { transform: translateY(0); }
+  }
+
+  @keyframes ctaPeriodicGlowPrimary {
+    0%, 84%, 100% {
+      box-shadow: 0 4px 14px rgba(240, 90, 44, 0.22), 0 0 0 0 rgba(240, 90, 44, 0);
+    }
+    90% {
+      box-shadow: 0 4px 14px rgba(240, 90, 44, 0.22), 0 0 0 4px rgba(240, 90, 44, 0.24);
+    }
+    96% {
+      box-shadow: 0 4px 14px rgba(240, 90, 44, 0.22), 0 0 0 6px rgba(240, 90, 44, 0);
+    }
+  }
+
+  @keyframes ctaPeriodicGlowSecondary {
+    0%, 86%, 100% {
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04), 0 0 0 0 rgba(240, 90, 44, 0);
+    }
+    92% {
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04), 0 0 0 3px rgba(240, 90, 44, 0.18);
+    }
+    98% {
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04), 0 0 0 5px rgba(240, 90, 44, 0);
+    }
+  }
+}
+
+/* Accessibility: Full Disable on prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .is-homepage .cta-float-primary,
+  .is-homepage .cta-float-secondary,
+  .is-homepage .cta-float-sway,
+  .is-homepage .cta-pulse-strong,
+  .is-homepage .cta-pulse-medium,
+  .is-homepage .cta-pulse-subtle {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+/* ==========================================================
+   WEB DESIGN COMPANY KOCHI CTA SYSTEM (PAGE-SPECIFIC)
+   Sequence: REST -> SLIGHT LIFT (3-5px) -> ARROW MOVES ->
+             -> SOFT HIGHLIGHT SWEEP -> SETTLE -> PAUSE -> REPEAT
+   Cycle: ~4.2s with ~65% calm resting pause
+   Scoped strictly to .is-kochi-page
+   ========================================================== */
+
+/* Base Button Properties */
+.is-kochi-page .kochi-cta {
+  position: relative;
+  overflow: hidden;
+  will-change: transform;
+  transform-origin: center center;
+  backface-visibility: hidden;
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.28s ease, 
+              background-color 0.2s ease, 
+              border-color 0.2s ease, 
+              color 0.2s ease;
+}
+
+/* Subtle Shimmer Sweep Pseudo-element */
+.is-kochi-page .kochi-cta::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 60%;
+  height: 200%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.35) 50%,
+    transparent 100%
+  );
+  transform: translateX(-150%) rotate(25deg);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.is-kochi-page .kochi-cta-secondary::after {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(240, 90, 44, 0.12) 50%,
+    transparent 100%
+  );
+}
+
+/* Arrow transition */
+.is-kochi-page .kochi-cta .kochi-cta-arrow {
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+/* Desktop Keyframes: Primary Lift & Settle */
+@keyframes kochiLiftPrimary {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  6% {
+    transform: translateY(-4.5px) scale(1.02);
+  }
+  14% {
+    transform: translateY(-4.5px) scale(1.02);
+  }
+  24% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Desktop Keyframes: Secondary Subtle Lift */
+@keyframes kochiLiftSecondary {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  6% {
+    transform: translateY(-3px) scale(1.012);
+  }
+  14% {
+    transform: translateY(-3px) scale(1.012);
+  }
+  24% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Desktop Keyframes: Arrow Directional Movement */
+@keyframes kochiArrowShift {
+  0% {
+    transform: translateX(0);
+  }
+  8% {
+    transform: translateX(4.5px);
+  }
+  18% {
+    transform: translateX(4.5px);
+  }
+  26% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Highlight Sweep Keyframes */
+@keyframes kochiHighlightSweep {
+  0% {
+    transform: translateX(-150%) rotate(25deg);
+    opacity: 0;
+  }
+  6% {
+    opacity: 1;
+  }
+  22% {
+    transform: translateX(350%) rotate(25deg);
+    opacity: 1;
+  }
+  24% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(350%) rotate(25deg);
+    opacity: 0;
+  }
+}
+
+/* Scroll-triggered viewport activation */
+.is-kochi-page .kochi-cta-primary.is-in-view {
+  animation: kochiLiftPrimary 4.2s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+.is-kochi-page .kochi-cta-secondary.is-in-view {
+  animation: kochiLiftSecondary 4.2s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+.is-kochi-page .kochi-cta.is-in-view .kochi-cta-arrow {
+  animation: kochiArrowShift 4.2s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+.is-kochi-page .kochi-cta.is-in-view::after {
+  animation: kochiHighlightSweep 4.2s ease-in-out infinite;
+}
+
+/* Staggered Delay classes for natural pacing */
+.is-kochi-page .kochi-cta-delay-1 { animation-delay: 0.3s; }
+.is-kochi-page .kochi-cta-delay-1::after { animation-delay: 0.3s; }
+.is-kochi-page .kochi-cta-delay-1 .kochi-cta-arrow { animation-delay: 0.3s; }
+
+.is-kochi-page .kochi-cta-delay-2 { animation-delay: 0.8s; }
+.is-kochi-page .kochi-cta-delay-2::after { animation-delay: 0.8s; }
+.is-kochi-page .kochi-cta-delay-2 .kochi-cta-arrow { animation-delay: 0.8s; }
+
+.is-kochi-page .kochi-cta-delay-3 { animation-delay: 1.4s; }
+.is-kochi-page .kochi-cta-delay-3::after { animation-delay: 1.4s; }
+.is-kochi-page .kochi-cta-delay-3 .kochi-cta-arrow { animation-delay: 1.4s; }
+
+/* Desktop Hover Feedback: Pause ongoing cycle and apply magnetic lift */
+@media (hover: hover) and (pointer: fine) {
+  .is-kochi-page .kochi-cta:hover {
+    animation-play-state: paused !important;
+    transform: translateY(-3.5px) scale(1.02) !important;
+  }
+  .is-kochi-page .kochi-cta-primary:hover {
+    box-shadow: 0 10px 30px rgba(240, 90, 44, 0.35) !important;
+  }
+  .is-kochi-page .kochi-cta-secondary:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
+  }
+  .is-kochi-page .kochi-cta:hover .kochi-cta-arrow {
+    animation-play-state: paused !important;
+    transform: translateX(5px) !important;
+  }
+  .is-kochi-page .kochi-cta:hover::after {
+    animation-play-state: paused !important;
+  }
+}
+
+/* Click / Tap Active Feedback */
+.is-kochi-page .kochi-cta:active {
   animation-play-state: paused !important;
   transform: scale(0.97) !important;
   transition: transform 0.08s ease-out !important;
 }
 
-/* Mobile-tuned Keyframes (Gently reduced scale & micro-vibration) */
+/* Mobile-tuned Keyframes (Gently reduced distance for touch screens) */
 @media (max-width: 640px) {
-  @keyframes ctaPulseStrong {
-    0% { transform: scale(1) translate3d(0, 0, 0); }
-    4% { transform: scale(1.015) translate3d(0, -0.5px, 0); }
-    8% { transform: scale(1.02) translate3d(0, -0.5px, 0); }
-    11% { transform: scale(1.02) translate3d(-0.5px, 0, 0); }
-    13% { transform: scale(1.02) translate3d(0.5px, 0, 0); }
-    16% { transform: scale(1) translate3d(0, 0, 0); }
-    24% { transform: scale(1.01) translate3d(0, 0, 0); }
-    28% { transform: scale(1) translate3d(0, 0, 0); }
-    100% { transform: scale(1) translate3d(0, 0, 0); }
+  @keyframes kochiLiftPrimary {
+    0% { transform: translateY(0) scale(1); }
+    6% { transform: translateY(-2.5px) scale(1.012); }
+    14% { transform: translateY(-2.5px) scale(1.012); }
+    24% { transform: translateY(0) scale(1); }
+    100% { transform: translateY(0) scale(1); }
   }
-  @keyframes ctaPulseMedium {
-    0% { transform: scale(1) translate3d(0, 0, 0); }
-    5% { transform: scale(1.012) translate3d(0, -0.5px, 0); }
-    8% { transform: scale(1.015) translate3d(0, -0.5px, 0); }
-    11% { transform: scale(1.015) translate3d(-0.5px, 0, 0); }
-    13% { transform: scale(1.015) translate3d(0.5px, 0, 0); }
-    16% { transform: scale(1) translate3d(0, 0, 0); }
-    100% { transform: scale(1) translate3d(0, 0, 0); }
+  @keyframes kochiLiftSecondary {
+    0% { transform: translateY(0) scale(1); }
+    6% { transform: translateY(-2px) scale(1.008); }
+    14% { transform: translateY(-2px) scale(1.008); }
+    24% { transform: translateY(0) scale(1); }
+    100% { transform: translateY(0) scale(1); }
   }
-  @keyframes ctaPulseSubtle {
-    0% { transform: scale(1) translate3d(0, 0, 0); }
-    6% { transform: scale(1.01) translate3d(0, 0, 0); }
-    10% { transform: scale(1.012) translate3d(0, 0, 0); }
-    14% { transform: scale(1) translate3d(0, 0, 0); }
-    100% { transform: scale(1) translate3d(0, 0, 0); }
-  }
-  @keyframes ctaArrowPulse {
-    0%, 19%, 100% { transform: translateX(0); }
-    8%, 13% { transform: translateX(3px); }
-    24% { transform: translateX(1.5px); }
-    28% { transform: translateX(0); }
+  @keyframes kochiArrowShift {
+    0% { transform: translateX(0); }
+    8% { transform: translateX(2.5px); }
+    18% { transform: translateX(2.5px); }
+    26% { transform: translateX(0); }
+    100% { transform: translateX(0); }
   }
 }
 
-/* Accessibility: Complete Disable on prefers-reduced-motion */
+/* Accessibility: Full override on prefers-reduced-motion */
 @media (prefers-reduced-motion: reduce) {
-  .is-homepage .cta-pulse-strong,
-  .is-homepage .cta-pulse-medium,
-  .is-homepage .cta-pulse-subtle,
-  .is-homepage .cta-pulse-strong .cta-arrow,
-  .is-homepage .cta-pulse-medium .cta-arrow,
-  .is-homepage .cta-pulse-subtle .service-cta-arrow {
+  .is-kochi-page .kochi-cta,
+  .is-kochi-page .kochi-cta-primary,
+  .is-kochi-page .kochi-cta-secondary,
+  .is-kochi-page .kochi-cta .kochi-cta-arrow,
+  .is-kochi-page .kochi-cta::after {
     animation: none !important;
     transform: none !important;
   }
+  .is-kochi-page .kochi-cta::after {
+    display: none !important;
+  }
 }
+
 

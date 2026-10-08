@@ -3,6 +3,7 @@ import '../styles/global.css';
 import site from '../data/site.json';
 import WhatsAppFab from '../components/WhatsAppFab.astro';
 import BottomActionBar from '../components/BottomActionBar.astro';
+import FloatingCTA from '../components/FloatingCTA.astro';
 import MagneticTypography from '../components/MagneticTypography.astro';
 
 interface Props {
@@ -13,9 +14,22 @@ interface Props {
   lang?: string;
   hideBottomBar?: boolean;
   showBottomBar?: boolean;
+  hideFloatingCta?: boolean;
+  floatingCtaLabel?: string;
+  floatingCtaHref?: string;
 }
 
-const { title, description, image = '/og-image.png', lang = 'en', hideBottomBar = false, showBottomBar } = Astro.props;
+const {
+  title,
+  description,
+  image = '/og-image.png',
+  lang = 'en',
+  hideBottomBar = false,
+  showBottomBar,
+  hideFloatingCta = false,
+  floatingCtaLabel,
+  floatingCtaHref
+} = Astro.props;
 
 // Default SEO values
 const siteName = "Teknoppy";
@@ -89,8 +103,15 @@ const displayBottomBar = (showBottomBar ?? isKochiPage) && !hideBottomBar;
     <!-- Slot for additional head elements like Schema.org scripts -->
     <slot name="head" />
   </head>
-  <body id="top" class={`min-h-screen flex flex-col relative pb-20 md:pb-0 ${isHomePage ? 'is-homepage' : ''}`}>
+  <body id="top" class={`min-h-screen flex flex-col relative pb-20 md:pb-0 ${isHomePage ? 'is-homepage' : ''} ${isKochiPage ? 'is-kochi-page' : ''}`}>
     <slot />
+
+    <!-- Sitewide Continuously Floating CTA System -->
+    <FloatingCTA
+      hide={hideFloatingCta}
+      label={floatingCtaLabel}
+      href={floatingCtaHref}
+    />
 
     <!-- Floating WhatsApp button (tablet + desktop; the bar below covers phones) -->
     <WhatsAppFab />
@@ -132,26 +153,50 @@ const displayBottomBar = (showBottomBar ?? isKochiPage) && !hideBottomBar;
           }
         }
 
-        // Homepage Attention Pulse & Vibration Observer (Homepage Only)
+        // Homepage Floating CTA & Attention Glow Observer (Homepage Only)
         if (document.body.classList.contains('is-homepage')) {
-          const pulseButtons = document.querySelectorAll(
-            '.cta-pulse-strong, .cta-pulse-medium, .cta-pulse-subtle'
+          const floatingButtons = document.querySelectorAll(
+            '.cta-float-primary, .cta-float-secondary, .cta-float-sway, .cta-pulse-strong, .cta-pulse-medium, .cta-pulse-subtle'
           );
-          if (pulseButtons.length > 0) {
+          if (floatingButtons.length > 0) {
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-              const pulseObserver = new IntersectionObserver(
+              const floatObserver = new IntersectionObserver(
                 (entries) => {
                   entries.forEach((entry) => {
                     if (entry.isIntersecting) {
+                      entry.target.classList.add('is-floating');
                       entry.target.classList.add('is-pulsing');
                     } else {
+                      entry.target.classList.remove('is-floating');
                       entry.target.classList.remove('is-pulsing');
+                    }
+                  });
+                },
+                { threshold: 0.1, rootMargin: '60px 0px 60px 0px' }
+              );
+              floatingButtons.forEach((btn) => floatObserver.observe(btn));
+            }
+          }
+        }
+
+        // Web Design Company Kochi CTA Observer (Kochi Page Only)
+        if (document.body.classList.contains('is-kochi-page')) {
+          const kochiCtas = document.querySelectorAll('.kochi-cta');
+          if (kochiCtas.length > 0) {
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+              const kochiObserver = new IntersectionObserver(
+                (entries) => {
+                  entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                      entry.target.classList.add('is-in-view');
+                    } else {
+                      entry.target.classList.remove('is-in-view');
                     }
                   });
                 },
                 { threshold: 0.1, rootMargin: '40px 0px 40px 0px' }
               );
-              pulseButtons.forEach((btn) => pulseObserver.observe(btn));
+              kochiCtas.forEach((btn) => kochiObserver.observe(btn));
             }
           }
         }

@@ -14,6 +14,8 @@ interface Props {
   personRole?: string;
   personImage?: string;
   personBio?: string;
+  heading?: string;
+  description?: string;
 }
 
 const defaultContact = site.defaultContact || {
@@ -28,7 +30,9 @@ const {
   personName = defaultContact.name,
   personRole = defaultContact.role,
   personImage = defaultContact.image,
-  personBio = defaultContact.bio
+  personBio = defaultContact.bio,
+  heading,
+  description
 } = Astro.props;
 
 const businessInfo = {
@@ -80,11 +84,13 @@ const schema = {
           </div>
           
           <h2 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-white">
-            Ready to Work with the Leading <br class="hidden lg:block"/> <span class="text-cream">Web Design Company in Kerala?</span>
+            {heading ? heading : (
+              <>Ready to Work with the Leading <br class="hidden lg:block"/> <span class="text-cream">Web Design Company in Kerala?</span></>
+            )}
           </h2>
           
           <p class="text-base md:text-lg text-white/95 leading-relaxed font-medium max-w-2xl">
-            Whether you are launching a new business website, rebuilding an outdated one, or scaling your web development Kerala digital infrastructure — Teknoppy is ready to deliver. Start with a free website audit and see exactly where your current online presence stands, or request a quote and get a clear, no-obligation proposal within 24 hours.
+            {description ? description : "Whether you are launching a new business website, rebuilding an outdated one, or scaling your web development Kerala digital infrastructure — Teknoppy is ready to deliver. Start with a free website audit and see exactly where your current online presence stands, or request a quote and get a clear, no-obligation proposal within 24 hours."}
           </p>
         </div>
 
