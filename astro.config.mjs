@@ -71,10 +71,10 @@ export default defineConfig({
 
   integrations: [
     react(),
-    // The CMS admin shell, the 404 and the paid-traffic landing pages (/lp/) are not
-    // organic content — keep them out of the index.
+    // The paid-traffic landing pages (/lp/) are not organic content — keep them out
+    // of the index.
     sitemap({
-      filter: (page) => !page.includes('/admin') && !page.includes('/lp/'),
+      filter: (page) => !page.includes('/lp/'),
       changefreq: 'weekly',
       lastmod: new Date()
     })

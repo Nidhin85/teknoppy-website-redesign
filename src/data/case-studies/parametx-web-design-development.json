@@ -1,0 +1,196 @@
+{
+  "metaTitle": "Parametx: Web Design & Development Case Study | Teknoppy",
+  "metaDescription": "How Teknoppy built a track-first, career-outcome-driven website for a Kollam-based BIM training and internship center for architects and engineers.",
+  "canonicalURL": "https://teknoppy.com/case-studies/parametx-web-design-development/",
+  "heroImage": "/case-studies/parametx.webp",
+  "heroImageAlt": "Parametx BIM Training and Internship Center Web Design Case Study",
+  "schemaType": "TechArticle",
+  "schemaAbout": {
+    "type": "EducationalOrganization",
+    "name": "Parametx",
+    "address": {
+      "locality": "Chandanathope, Kollam",
+      "region": "Kerala",
+      "country": "India"
+    }
+  },
+  "clientName": "Parametx",
+  "categoryTag": "Website Design and Development",
+  "tagBadge": "Architecture & Engineering Education",
+  "title": "Parametx: A Website Design and Development Case Study for a BIM Training and Internship Center",
+  "storyLead": "How Teknoppy built a track-first, career-outcome-driven website for a Kollam-based BIM training center — designed around how an architecture or construction professional actually decides which programme will get them hired.",
+  "industry": "BIM Training & Internship Center (Architecture & Construction Education)",
+  "location": "Chandanathope, Kollam, Kerala",
+  "services": "Website Design & Development, Information Architecture",
+  "platform": "Modern responsive web build",
+  "liveWebsite": "parametx.com",
+  "liveWebsiteUrl": "https://www.parametx.com/",
+  "heroHighlights": [
+    "5 Specialized BIM Tracks",
+    "Software-Specific Transparency",
+    "MNC Portfolio Strategy",
+    "Audience-Specific Fit"
+  ],
+  "atAGlance": [
+    "New website built around five distinct BIM training tracks so a professional can find the exact discipline they need to upskill in",
+    "Software-specific detail (Revit, AutoCAD, Navisworks, Rhino 3D, Civil 3D, and more) shown per track instead of one generic software list",
+    "Career-outcome content — portfolio strategy, MNC-ready preparation, active hiring routes — placed alongside the training tracks, not on a separate page",
+    "Content structured for six distinct professional audiences: architects, civil engineers, MEP engineers, diploma holders, urban planners, and career switchers",
+    "A single, repeated enquiry and admission path across track pages and the homepage"
+  ],
+  "aboutHeading": "About Parametx",
+  "aboutParagraphs": [
+    "Parametx is a Building Information Modeling (BIM) training and internship center based in Chandanathope, Kollam, Kerala, running project-based educational programmes for architecture and construction professionals. The center's training range spans five tracks: BIM Architecture (covering Revit, AutoCAD, Navisworks, Rhino 3D, and Twinmotion), BIM MEP (mechanical, electrical, and plumbing systems), BIM Infrastructure (Civil 3D and Infraworks), BIM Interior Designing (3D Max and Adobe Photoshop), and Advanced AutoCAD Training (including Bluebeam).",
+    "Parametx positions its training around international building standards rather than software instruction alone, backed by what it describes as 13-plus years of on-site industry experience behind its curriculum, and a reversed-engineered approach to portfolio building based on how hiring actually works in the industry. The center runs limited class sizes for personalised mentorship and frames its outcome as MNC-ready career preparation, with active hiring connections spanning Dubai and India. Its programmes are built for six professional categories: architects, civil engineers, MEP engineers, diploma holders, urban planners, and career switchers moving into BIM-based roles.",
+    "This case study covers the website design and development work delivered by Teknoppy — the site's structure, its training-track and career-outcome presentation, and how programme information is organised for a professional evaluating a BIM upskilling path. It does not cover Parametx's training curriculum, instructor delivery, or individual placement outcomes, which are the center's own domain."
+  ],
+  "challengeLead": "Structuring professional technical education around hiring outcomes and software rigor:",
+  "challenges": [
+    {
+      "number": 1,
+      "title": "Five BIM tracks needed to read as five distinct decisions",
+      "description": "An architect evaluating the BIM Architecture track and an MEP engineer evaluating BIM MEP are looking for very different software and outcomes, so combining every track into one generic 'courses' page made comparison harder than it needed to be."
+    },
+    {
+      "number": 2,
+      "title": "Software-level detail mattered more than a general description",
+      "description": "A professional deciding between training centers wants to know exactly which tools a track covers — Revit versus Civil 3D versus 3D Max — not a vague reference to 'industry software.'"
+    },
+    {
+      "number": 3,
+      "title": "Career outcome needed to sit next to the training, not apart from it",
+      "description": "Portfolio strategy, MNC-ready preparation, and hiring connections are strong differentiators for a training center, but they lose their weight if a visitor has to leave the track page to find them."
+    },
+    {
+      "number": 4,
+      "title": "Six different professional audiences needed to see themselves in the content",
+      "description": "An architect, an MEP engineer, and a career switcher each arrive with different starting knowledge and different questions, so the site needed to speak to all six without defaulting to one."
+    },
+    {
+      "number": 5,
+      "title": "Limited-seat, intake-based admission needed clear visibility",
+      "description": "With defined intake cycles and limited class sizes for mentorship, the site needed to make admission timing and availability clear rather than leaving a prospective student to ask."
+    }
+  ],
+  "objectiveLead": "Teknoppy was engaged to design and build a website that helps a working professional or career switcher choose the right BIM track, understand the career outcome it leads to, and enquire about admission with confidence. The brief centred on:",
+  "objectives": [
+    "Structuring BIM Architecture, BIM MEP, BIM Infrastructure, BIM Interior Designing, and Advanced AutoCAD Training as five distinct, comparable tracks",
+    "Presenting the specific software covered in each track — Revit, AutoCAD, Navisworks, Rhino 3D, Twinmotion, Civil 3D, Infraworks, 3D Max, Photoshop, Bluebeam — clearly and accurately",
+    "Placing career-outcome content (portfolio strategy, MNC-ready preparation, hiring connections) alongside the relevant training track",
+    "Building content that speaks to architects, civil engineers, MEP engineers, diploma holders, urban planners, and career switchers",
+    "Making intake timing, limited seat availability, and the enquiry path clearly visible"
+  ],
+  "approachLead": "How Teknoppy built a track-first, outcome-driven education website:",
+  "approachPillars": [
+    {
+      "title": "Navigation built around five training tracks",
+      "paragraphs": [
+        "The site's information architecture gives BIM Architecture, BIM MEP, BIM Infrastructure, BIM Interior Designing, and Advanced AutoCAD Training their own clear sections, so a professional can go straight to the track relevant to their discipline rather than reading through four irrelevant ones first."
+      ]
+    },
+    {
+      "title": "Software detail shown per track, not as one generic list",
+      "paragraphs": [
+        "Each track's specific software — Revit, AutoCAD, Navisworks, Rhino 3D, and Twinmotion for BIM Architecture; Civil 3D and Infraworks for BIM Infrastructure; 3D Max and Photoshop for BIM Interior Designing, and so on — is presented in context, giving a prospective student an accurate picture of exactly what they'll learn."
+      ]
+    },
+    {
+      "title": "Career outcome built into the training-track content",
+      "paragraphs": [
+        "Rather than a separate 'careers' page disconnected from the courses themselves, portfolio strategy, international building standards, and MNC-ready preparation are presented as part of each track's value, alongside the specific hiring connections Parametx maintains across Dubai and India."
+      ]
+    },
+    {
+      "title": "Content built for six different professional starting points",
+      "paragraphs": [
+        "Because architects, civil engineers, MEP engineers, diploma holders, urban planners, and career switchers each arrive with different backgrounds, track content was written to address the specific question each group is likely to have about relevance and fit."
+      ]
+    },
+    {
+      "title": "Admission timing and seat limits made visible",
+      "paragraphs": [
+        "Intake information and the center's limited-seat, mentorship-focused class structure are presented clearly on the site, so a prospective student understands both the opportunity and the time-sensitivity of applying."
+      ]
+    },
+    {
+      "title": "One enquiry and admission path, repeated",
+      "paragraphs": [
+        "The same enquiry and admission route is repeated consistently across track pages and the homepage, so a visitor who's decided on a track doesn't have to search for how to apply."
+      ]
+    },
+    {
+      "title": "Consistent brand and location details site-wide",
+      "paragraphs": [
+        "The center's name, Kollam address, and contact details are kept uniform across every page, so the business reads as one coherent, verifiable training center rather than a set of loosely connected course listings."
+      ]
+    }
+  ],
+  "deliverables": [
+    {
+      "title": "A rebuilt website with track-first navigation",
+      "description": "BIM Architecture, BIM MEP, BIM Infrastructure, BIM Interior Designing, and Advanced AutoCAD Training structured as five distinct, comparable sections."
+    },
+    {
+      "title": "Software-specific track content",
+      "description": "Each track's specific tools presented in context — Revit, Navisworks, Civil 3D, 3D Max, Bluebeam, and more — rather than one generic software list."
+    },
+    {
+      "title": "Integrated career-outcome content",
+      "description": "Portfolio strategy, international building standards, and MNC-ready preparation presented alongside each relevant training track."
+    },
+    {
+      "title": "Audience-specific track descriptions",
+      "description": "Content addressing architects, civil engineers, MEP engineers, diploma holders, urban planners, and career switchers directly."
+    },
+    {
+      "title": "Visible admission and intake information",
+      "description": "Intake timing and limited-seat class structure presented clearly rather than left implicit."
+    },
+    {
+      "title": "A consistent enquiry and admission path",
+      "description": "The same enquiry route repeated across track pages and the homepage instead of a single isolated contact form."
+    }
+  ],
+  "whyMattersHeading": "Why This Structure Matters",
+  "whyMattersParagraphs": [
+    "Choosing a BIM training programme is a career decision with real financial and time weight — a working professional is committing tuition and months of study against a specific career outcome. That makes clear, specific detail about software coverage, career preparation, and hiring connections more valuable to a prospective student than a general training pitch, and it's why the site was built to surface that detail on each track page rather than leaving it implied.",
+    "The same structure supports how AI-driven search and answer engines now handle professional-training research. When each BIM track's software, audience, and career outcome are written as plain, specific, crawlable text rather than folded into one combined 'courses' page, both traditional search and AI Overviews or assistant-style answers can extract and represent it accurately, which matters as more architecture and construction professionals start their training research by asking an AI tool to compare BIM programmes before visiting a website directly.",
+    "Keeping the center's name, location, and track descriptions consistent across every page, and keeping the five BIM tracks clearly separated rather than merged into one course listing, is what lets search engines resolve Parametx as one coherent training center and understand each track page's specific topic — the foundation for being found for the track-specific and software-specific searches a real prospective student actually runs."
+  ],
+  "whyMattersCalloutHtml": "<p><strong>This case study is part of Teknoppy's website design and development work for professional training and education clients.</strong> Explore our <a href=\"/web-design-company-kochi/\" class=\"underline font-bold text-[#F05A2C]\">Website Design Company in Kochi</a> or view <a href=\"/case-study/\" class=\"underline font-bold text-[#F05A2C]\">More Teknoppy Case Studies</a>.</p>",
+  "faqs": [
+    {
+      "question": "What BIM training tracks does Parametx offer?",
+      "answer": "Five tracks: BIM Architecture, BIM MEP, BIM Infrastructure, BIM Interior Designing, and Advanced AutoCAD Training."
+    },
+    {
+      "question": "What software will I learn in the BIM Architecture track?",
+      "answer": "The BIM Architecture track covers Revit, AutoCAD, Navisworks, Rhino 3D, and Twinmotion."
+    },
+    {
+      "question": "Is Parametx suitable for someone switching careers into BIM, not just architects or engineers?",
+      "answer": "Yes — Parametx's programmes are built for six professional categories, including career switchers, alongside architects, civil engineers, MEP engineers, diploma holders, and urban planners."
+    },
+    {
+      "question": "Does Parametx help with job placement after training?",
+      "answer": "The center frames its outcome as MNC-ready career preparation, with portfolio strategy support and active hiring connections spanning Dubai and India."
+    },
+    {
+      "question": "Where is Parametx located?",
+      "answer": "Parametx is based in Chandanathope, Kollam, Kerala, India."
+    },
+    {
+      "question": "Are Parametx classes large or small?",
+      "answer": "Parametx runs limited class sizes specifically to allow for personalised mentorship during training."
+    },
+    {
+      "question": "Which track should I choose if I want to work on civil infrastructure projects?",
+      "answer": "The BIM Infrastructure track, covering Civil 3D and Infraworks, is built for professionals working on civil and infrastructure-focused BIM projects."
+    },
+    {
+      "question": "How do I apply or enquire about admission to Parametx?",
+      "answer": "An enquiry and admission path is available consistently across the website's track pages and homepage, so you can start from whichever track you're interested in."
+    }
+  ],
+  "ctaHeadline": "Looking for a website that turns programme research into enrolled students?"
+}

@@ -1,0 +1,194 @@
+{
+  "metaTitle": "Roja Houseboats: WordPress Website Development Case Study | Teknoppy",
+  "metaDescription": "How Teknoppy built a booking-focused WordPress website for an Alleppey houseboat operator, organised by bedroom count and planning guides.",
+  "canonicalURL": "https://teknoppy.com/case-studies/roja-houseboats-wordpress-development/",
+  "heroImage": "/case-studies/roja-houseboats.webp",
+  "heroImageAlt": "Roja Houseboats WordPress Website Development Case Study",
+  "schemaType": "TechArticle",
+  "schemaAbout": {
+    "type": "Organization",
+    "name": "Roja Houseboats",
+    "address": {
+      "locality": "Alleppey (Alappuzha)",
+      "region": "Kerala",
+      "country": "India"
+    }
+  },
+  "clientName": "Roja Houseboats",
+  "categoryTag": "WordPress Website Development",
+  "tagBadge": "Tourism WordPress Case Study",
+  "title": "Roja Houseboats: A WordPress Website Development Case Study for an Alleppey Houseboat Operator",
+  "storyLead": "How Teknoppy built a booking-focused WordPress website for an Alleppey houseboat operator — organised around how a traveller actually chooses a boat, compares the backwaters, and gets ready to book.",
+  "industry": "Houseboat Tourism – Kerala Backwaters",
+  "location": "Alleppey (Alappuzha), Kerala",
+  "services": "WordPress Development, Information Architecture, Content Structure",
+  "platform": "WordPress",
+  "liveWebsite": "rojahouseboats.com",
+  "liveWebsiteUrl": "https://rojahouseboats.com/",
+  "heroHighlights": [
+    "Bedroom-Based Boat Pages",
+    "Dedicated Premium Page",
+    "2026 Step-by-Step Guide",
+    "Unified Enquiry Flow"
+  ],
+  "atAGlance": [
+    "A WordPress website built around the way travellers actually choose a houseboat: by number of bedrooms",
+    "Separate pages for 1 bedroom, 2 bedroom, and 3 bedroom houseboats in Alleppey, each answering its own search",
+    "A dedicated page for travellers looking for the best, more premium houseboat experience",
+    "A planning layer of guides, including a step-by-step booking guide and an Alleppey vs Kumarakom comparison",
+    "One consistent booking and enquiry path across boat pages, guides, and the homepage"
+  ],
+  "aboutHeading": "About Roja Houseboats",
+  "aboutParagraphs": [
+    "Roja Houseboats is a houseboat operator based in Alleppey, the Kerala backwater town most travellers picture when they think of a kettuvallam cruise. The business offers houseboat stays on the Alleppey backwaters, and its website is where most travellers first meet it: someone planning a Kerala trip, searching for a houseboat in Alleppey, and trying to work out which boat suits their group before they enquire.",
+    "That search is more involved than it looks. A couple, a family of five, and a group of friends all want a houseboat, but they need different boats, and they usually have the same set of questions before they commit: how many bedrooms do we need, what does a premium boat offer over a standard one, how does booking actually work, and is Alleppey the right place or should we look at Kumarakom instead. The website was built to answer those questions in that order.",
+    "This case study covers the WordPress website development work delivered by Teknoppy: the build, the page structure, and how boat and planning content is organised for a traveller preparing to book. It does not cover Roja Houseboats' fleet, crew, or on-water operations, which belong to the business itself."
+  ],
+  "challengeLead": "Key challenges addressed during the WordPress website development engagement:",
+  "challenges": [
+    {
+      "number": 1,
+      "title": "Group size drives the whole decision",
+      "description": "Houseboats are chosen by how many people are travelling. A site that lists boats in one undifferentiated block makes a traveller work out for themselves which boat fits a couple and which fits a family."
+    },
+    {
+      "number": 2,
+      "title": "Alleppey is a crowded search market",
+      "description": "Houseboat operators in Alleppey compete for the same handful of searches, so a site needs pages that match specific searches, such as bedroom count or a premium stay, instead of one homepage trying to cover everything."
+    },
+    {
+      "number": 3,
+      "title": "First-time travellers do not know how booking works",
+      "description": "Many visitors have never booked a houseboat before. They want a plain explanation of the process, written for a beginner, before they are comfortable sending an enquiry."
+    },
+    {
+      "number": 4,
+      "title": "Travellers compare destinations before they compare boats",
+      "description": "A visitor weighing Alleppey against Kumarakom is not ready to look at boats yet. The site needed content that helps them decide on the destination and then carries them on to the boat pages."
+    },
+    {
+      "number": 5,
+      "title": "Most planning happens on a phone",
+      "description": "Trip research is done on mobile, often in short sessions over several days, so pages had to load quickly and read cleanly on a small screen."
+    }
+  ],
+  "objectiveLead": "Teknoppy was engaged to build a WordPress website that helps a traveller choose the right houseboat, understand how to book it, and enquire without friction. The brief centred on:",
+  "objectives": [
+    "Giving 1 bedroom, 2 bedroom, and 3 bedroom houseboats their own clear pages",
+    "Creating a page for travellers who want the best houseboat experience in Alleppey",
+    "Publishing planning guides that answer the questions travellers ask before booking",
+    "Keeping the build fast, mobile-friendly, and easy for the Roja team to update",
+    "Repeating one consistent enquiry path across every page type"
+  ],
+  "approachLead": "How Teknoppy built a booking-focused WordPress structure tailored to Kerala tourism travellers:",
+  "approachPillars": [
+    {
+      "title": "Boat pages organised by bedroom count",
+      "paragraphs": [
+        "The site gives 1 bedroom, 2 bedroom, and 3 bedroom houseboats separate pages. A couple looking at a one-bedroom boat and a family looking at a three-bedroom boat each land on a page written for their group, with no need to sift through boats that do not fit."
+      ]
+    },
+    {
+      "title": "A premium page for the traveller who wants the best",
+      "paragraphs": [
+        "Some visitors are not shopping by price or size; they want the best experience on offer. A dedicated page for that search gives them somewhere to land and keeps that intent separate from the standard boat pages, so each page stays focused on one job."
+      ]
+    },
+    {
+      "title": "Planning guides built around real questions",
+      "paragraphs": [
+        "A complete booking guide for 2026 walks a first-time traveller through how to book a houseboat in Alleppey, in the order they would ask the questions. A separate comparison of Alleppey and Kumarakom backwaters helps visitors settle the destination question before they pick a boat."
+      ]
+    },
+    {
+      "title": "Guides linked into the boat pages",
+      "paragraphs": [
+        "The guides do not sit apart from the booking pages. A traveller reading about how to book is one click from the boat pages, and a traveller on a boat page can reach the guides if they still have questions, so the planning content feeds the enquiry path instead of leading away from it."
+      ]
+    },
+    {
+      "title": "WordPress for easy day-to-day updates",
+      "paragraphs": [
+        "The site runs on WordPress so the Roja team can add a new guide, adjust a boat page, or update seasonal information themselves without a developer. For a seasonal tourism business, that ability to keep pages current matters as much as the launch."
+      ]
+    },
+    {
+      "title": "Built for speed and small screens",
+      "paragraphs": [
+        "Pages were built to load quickly and read well on mobile, since travellers plan on their phones. A cleaner, lighter build also helps visitors stay long enough to reach the boat details and the enquiry option."
+      ]
+    },
+    {
+      "title": "One enquiry path, repeated",
+      "paragraphs": [
+        "The same booking and enquiry route appears on boat pages, guides, and the homepage, so a traveller who has made up their mind does not have to look for how to get in touch."
+      ]
+    }
+  ],
+  "deliverables": [
+    {
+      "title": "A WordPress website for houseboat booking",
+      "description": "A fast, mobile-friendly build with a clear structure for boats, guides, and enquiries."
+    },
+    {
+      "title": "Three bedroom-based boat pages",
+      "description": "Separate pages for 1 bedroom, 2 bedroom, and 3 bedroom houseboats in Alleppey."
+    },
+    {
+      "title": "A premium houseboat page",
+      "description": "A dedicated page for travellers searching for the best houseboat experience in Alleppey."
+    },
+    {
+      "title": "A 2026 booking guide",
+      "description": "A step-by-step guide to booking a houseboat in Alleppey, written for first-time travellers."
+    },
+    {
+      "title": "A destination comparison guide",
+      "description": "An Alleppey vs Kumarakom backwaters comparison to help travellers choose where to stay."
+    },
+    {
+      "title": "A consistent enquiry path",
+      "description": "The same booking and enquiry route repeated across boat pages, guides, and the homepage."
+    }
+  ],
+  "whyMattersHeading": "Why This Structure Matters",
+  "whyMattersParagraphs": [
+    "A houseboat trip is a considered purchase. Travellers set aside several days of a holiday for it and often pay a significant amount, so they read before they enquire. A website that answers their questions in a clear order earns the enquiry; a website that makes them guess sends them to the next operator in the search results.",
+    "The same structure suits how people now research trips. When a boat page states plainly which group size it suits, and a guide explains how booking works in simple steps, both search engines and AI answer tools can pull out an accurate answer. That matters as more travellers ask an assistant questions like \"which houseboat is best for a family of four in Alleppey\" before they ever open a website.",
+    "Keeping boat pages, the premium page, and the planning guides separate, each with one clear purpose, also helps search engines understand what every page is for. It lets Roja Houseboats be found for the specific searches travellers actually run, such as a 2 bedroom houseboat in Alleppey or how to book a houseboat, rather than competing with itself across a handful of overlapping pages."
+  ],
+  "whyMattersCalloutHtml": "<p>This case study is part of Teknoppy's WordPress development work for travel and tourism businesses in Kerala. Explore more: <a href=\"/wordpress-development-company-kochi/\" class=\"underline font-bold text-[#F05A2C]\">WordPress Development Company in Kochi</a> · <a href=\"/case-study/\" class=\"underline font-bold text-[#F05A2C]\">More Teknoppy Case Studies</a></p>",
+  "faqs": [
+    {
+      "question": "How do I choose between a 1, 2, and 3 bedroom houseboat in Alleppey?",
+      "answer": "Start with your group size. The Roja Houseboats website gives each option its own page, so a couple, a small family, and a larger group can each look at the boat built for them instead of comparing everything at once."
+    },
+    {
+      "question": "How do I book a houseboat in Alleppey?",
+      "answer": "The website carries a step-by-step 2026 booking guide for exactly this question, written for first-time travellers, with an enquiry option available on the boat pages and the guide itself."
+    },
+    {
+      "question": "Is Alleppey or Kumarakom better for a houseboat trip?",
+      "answer": "Roja Houseboats publishes an Alleppey vs Kumarakom backwaters comparison to help travellers decide, so you can settle on the destination before you choose a boat."
+    },
+    {
+      "question": "Is there a premium houseboat option in Alleppey?",
+      "answer": "Yes. The website has a dedicated page for travellers looking for the best houseboat experience in Alleppey, separate from the standard bedroom-based boat pages."
+    },
+    {
+      "question": "Why was the Roja Houseboats website built on WordPress?",
+      "answer": "WordPress lets the Roja team add guides, adjust boat pages, and keep seasonal information current themselves, which suits a tourism business that needs to update its site regularly."
+    },
+    {
+      "question": "Does the website work well on a phone?",
+      "answer": "Yes. It was built to load quickly and read cleanly on mobile, because most travellers plan trips on their phones."
+    },
+    {
+      "question": "Can a travel or tourism business in Kerala get a WordPress site built like this?",
+      "answer": "Yes. Teknoppy builds WordPress websites for houseboat operators, resorts, and tour companies, structured around how travellers search and book."
+    }
+  ],
+  "ctaHeadline": "Looking for a WordPress website that turns trip research into bookings?",
+  "ctaPhoneText": "Teknoppy builds fast, easy-to-manage WordPress websites for travel and tourism businesses across Kerala. Call +91 6282249224",
+  "ctaPhoneTel": "+916282249224"
+}

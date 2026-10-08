@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+/* The CMS app and build scripts are not site markup — keep their strings out of the class scan. */
+@source not "../../cms";
+@source not "../../scripts";
+
 @theme {
   --color-primary: #F05A2C;
   --color-secondary: #F9AE42;

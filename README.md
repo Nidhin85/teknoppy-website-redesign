@@ -44,6 +44,21 @@ All commands are run from the root of the project, from a terminal:
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
 
+## 📝 Content (Payload CMS)
+
+Page copy is edited in the Payload CMS in [cms/](cms/) and pulled into the content
+files (`src/data/**`, `src/content/**`) before each build, so the site stays static.
+
+| Command | Action |
+| :-- | :-- |
+| `npm run cms:pull` | Overwrite the content files with what is in the CMS |
+| `npm run cms:pull -- --check` | List content files that differ from the CMS, write nothing |
+
+`npm run build` runs `cms:pull` first. It needs `PAYLOAD_URL` and `PAYLOAD_API_KEY`
+(see [.env.example](.env.example)); without `PAYLOAD_URL` the build uses the committed
+files. Running the CMS, the content map and deployment are covered in
+[cms/README.md](cms/README.md).
+
 ## ✉️ Contact form
 
 Both forms — the footer CTA and the contact page — POST JSON to `/api/contact`

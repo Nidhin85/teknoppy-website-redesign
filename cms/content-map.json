@@ -1,0 +1,185 @@
+{
+  "$comment": "Maps every content file of the Astro site (paths relative to the repo root) to a Payload global or collection. Read by cms/scripts/generate-schema.mjs, cms/scripts/seed.ts and scripts/pull-cms.mjs.",
+  "globals": [
+    {
+      "slug": "home",
+      "label": "Homepage",
+      "group": "Site",
+      "file": "src/data/home.json"
+    },
+    {
+      "slug": "site",
+      "label": "Site Settings",
+      "group": "Site",
+      "file": "src/data/site.json"
+    },
+    {
+      "slug": "footer",
+      "label": "Footer",
+      "group": "Site",
+      "file": "src/data/footer.json"
+    },
+    {
+      "slug": "clients",
+      "label": "Client Logos",
+      "group": "Site",
+      "file": "src/data/clients.json"
+    },
+    {
+      "slug": "videoTestimonials",
+      "label": "Video Testimonials",
+      "group": "Site",
+      "file": "src/data/video-testimonials.json"
+    },
+    {
+      "slug": "lifeAtTeknoppy",
+      "label": "Life at Teknoppy",
+      "group": "Site",
+      "file": "src/data/lifeAtTeknoppy.json"
+    },
+    {
+      "slug": "caseStudiesIndex",
+      "label": "Case Study Listing",
+      "group": "Case Studies & Portfolio",
+      "file": "src/data/caseStudiesData.json"
+    },
+    {
+      "slug": "websitePortfolio",
+      "label": "Website Portfolio",
+      "group": "Case Studies & Portfolio",
+      "file": "src/data/websitePortfolioData.json"
+    },
+    {
+      "slug": "aboutPage",
+      "label": "About Page",
+      "group": "Standalone Pages",
+      "file": "src/data/pages/about.json"
+    },
+    {
+      "slug": "blogPage",
+      "label": "Blog Hub Page",
+      "group": "Standalone Pages",
+      "file": "src/data/pages/blog.json"
+    },
+    {
+      "slug": "certificationsPage",
+      "label": "Certifications Page",
+      "group": "Standalone Pages",
+      "file": "src/data/pages/certifications.json"
+    },
+    {
+      "slug": "clientsPage",
+      "label": "Clients Page",
+      "group": "Standalone Pages",
+      "file": "src/data/pages/clients.json"
+    },
+    {
+      "slug": "contactPage",
+      "label": "Contact Page",
+      "group": "Standalone Pages",
+      "file": "src/data/pages/contact.json"
+    },
+    {
+      "slug": "leadershipPage",
+      "label": "Leadership Page",
+      "group": "Standalone Pages",
+      "file": "src/data/pages/leadership.json"
+    },
+    {
+      "slug": "webDesignPage",
+      "label": "Web Design Pillar",
+      "group": "Service Pillar Pages",
+      "file": "src/data/pages/web-design.json"
+    },
+    {
+      "slug": "wordpressPage",
+      "label": "WordPress Pillar",
+      "group": "Service Pillar Pages",
+      "file": "src/data/pages/wordpress.json"
+    },
+    {
+      "slug": "ecommercePage",
+      "label": "Ecommerce Pillar",
+      "group": "Service Pillar Pages",
+      "file": "src/data/pages/ecommerce.json"
+    },
+    {
+      "slug": "webApplicationPage",
+      "label": "Web Application Pillar",
+      "group": "Service Pillar Pages",
+      "file": "src/data/pages/web-application.json"
+    },
+    {
+      "slug": "digitalMarketingPage",
+      "label": "Digital Marketing Pillar",
+      "group": "Service Pillar Pages",
+      "file": "src/data/pages/digital-marketing.json"
+    }
+  ],
+  "collections": [
+    {
+      "slug": "pages",
+      "labels": {
+        "singular": "Page",
+        "plural": "Pages"
+      },
+      "group": "Pages",
+      "dir": "src/data/pages",
+      "ext": "json",
+      "recursive": true,
+      "exclude": [
+        "about",
+        "blog",
+        "certifications",
+        "clients",
+        "contact",
+        "leadership",
+        "digital-marketing",
+        "ecommerce",
+        "web-application",
+        "web-design",
+        "wordpress"
+      ]
+    },
+    {
+      "slug": "caseStudies",
+      "labels": {
+        "singular": "Case Study",
+        "plural": "Case Studies"
+      },
+      "group": "Case Studies & Portfolio",
+      "dir": "src/data/case-studies",
+      "ext": "json"
+    },
+    {
+      "slug": "posts",
+      "labels": {
+        "singular": "Blog Post",
+        "plural": "Blog Posts"
+      },
+      "group": "Blog & Testimonials",
+      "dir": "src/content/blog",
+      "ext": "md"
+    },
+    {
+      "slug": "portfolio",
+      "labels": {
+        "singular": "Portfolio Project",
+        "plural": "Portfolio Projects"
+      },
+      "group": "Case Studies & Portfolio",
+      "dir": "src/content/portfolio",
+      "ext": "md"
+    },
+    {
+      "slug": "testimonials",
+      "labels": {
+        "singular": "Testimonial",
+        "plural": "Testimonials"
+      },
+      "group": "Blog & Testimonials",
+      "dir": "src/content/testimonials",
+      "ext": "md"
+    }
+  ]
+}

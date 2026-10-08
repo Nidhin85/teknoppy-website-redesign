@@ -7,9 +7,10 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "npm run cms:pull && astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "cms:pull": "node scripts/pull-cms.mjs",
     "check:links": "node scripts/check-links.mjs",
     "test:contact": "node scripts/test-contact-email.mjs"
   },

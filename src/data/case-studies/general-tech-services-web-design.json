@@ -1,0 +1,182 @@
+{
+  "metaTitle": "General Tech Services: A Website Design & Development Case Study for a UAE ISO 17025 Calibration Lab | Teknoppy",
+  "metaDescription": "How Teknoppy rebuilt generaltech.ae on Astro with an accreditation-led structure, 3 separated user journeys, and dedicated pages for all 15 calibration disciplines.",
+  "canonicalURL": "https://teknoppy.com/case-studies/general-tech-services-web-design/",
+  "heroImage": "/case-studies/generaltech.webp",
+  "heroImageAlt": "General Tech Services UAE ISO 17025 Calibration Lab Website Design Case Study",
+  "schemaType": "TechArticle",
+  "schemaAbout": {
+    "type": "Organization",
+    "name": "General Tech Services",
+    "address": {
+      "locality": "Sharjah",
+      "region": "Sharjah",
+      "country": "United Arab Emirates"
+    }
+  },
+  "clientName": "General Tech Services",
+  "categoryTag": "Web Design, Information Architecture & Development",
+  "tagBadge": "UAE Industrial Web Design Case Study",
+  "title": "General Tech Services: A Website Design and Development Case Study for a UAE ISO 17025 Calibration Lab",
+  "storyLead": "How Teknoppy rebuilt generaltech.ae on Astro around accreditation-led credibility, separated visitor journeys for calibration, products, and services, and room for 185 content topics to grow.",
+  "industry": "ISO 17025 Calibration & Industrial Equipment Distribution",
+  "location": "Sharjah, UAE",
+  "services": "Website Design & Development, Information Architecture, SEO",
+  "platform": "Astro",
+  "liveWebsite": "generaltech.ae",
+  "liveWebsiteUrl": "https://generaltech.ae",
+  "heroHighlights": [
+    "Accreditation-Led Structure",
+    "3 Separated Journeys",
+    "15 Dedicated Discipline Pages",
+    "Engineered on Astro"
+  ],
+  "atAGlance": [
+    "Accreditation-led homepage structure surfacing EIAC & ENAS ISO 17025 status immediately, not buried",
+    "Three separated journeys — Calibration, Products, and Services — instead of one tangled navigation",
+    "Cross-linked categories and disciplines, replacing dead-end product and service pages",
+    "All 15 accredited calibration disciplines given their own dedicated pages",
+    "Rebuilt on Astro for a faster, more structured technical foundation"
+  ],
+  "aboutHeading": "About General Tech Services",
+  "aboutParagraphs": [
+    "General Tech Services is an EIAC & ENAS accredited ISO 17025 calibration laboratory and authorized distributor of 50+ industrial brands, operating out of Sharjah since 1998. With three distinct business lines — calibration, product supply, and engineering services — under one roof, the old site buried the lab's accreditation credibility and made it hard for visitors to tell whether they'd landed on a calibration provider or an equipment shop.",
+    "Structuring a site around three genuinely different offerings is harder than it looks. Each business line has its own visitor intent, its own vocabulary, and its own decision process — a calibration client is verifying accreditation scope, while a product buyer is comparing brands and specifications. A single, undifferentiated navigation asks both visitors to wade through content meant for the other.",
+    "This case study covers website design and development — structure, information architecture, and the build itself. A separate case study covers this client's ongoing SEO, content, and Google Business Profile work."
+  ],
+  "challengeLead": "A business with 28 years of accredited history and three distinct service lines needs a site structure that actually reflects that — the previous one didn't.",
+  "challenges": [
+    {
+      "number": 1,
+      "title": "Accreditation buried, not led with",
+      "description": "EIAC & ENAS ISO 17025 accreditation is General Tech's single strongest trust signal, but the old structure didn't put it in front of visitors early or consistently across the site."
+    },
+    {
+      "number": 2,
+      "title": "Service and product journeys tangled together",
+      "description": "Calibration services, engineering services, and the 50+ brand product catalogue competed for the same navigation space, making it unclear which path to take depending on what a visitor actually needed."
+    },
+    {
+      "number": 3,
+      "title": "Categories and equipment left as dead ends",
+      "description": "Product categories and calibration disciplines weren't cross-linked, so a visitor researching one service — say, torque calibration — had no easy route to related equipment or adjacent disciplines."
+    },
+    {
+      "number": 4,
+      "title": "No structural room for the site's own content growth",
+      "description": "A parallel content strategy covering 15 calibration disciplines across dozens of topics was already underway, but the existing site structure wasn't built with a clear home for that volume of content to expand into."
+    },
+    {
+      "number": 5,
+      "title": "Not built with a technical buyer's actual research pattern in mind",
+      "description": "A visitor searching for one specific discipline or one specific brand doesn't want to browse a general site — they want the shortest path to the exact page that answers their question, which the tangled prior structure didn't support."
+    }
+  ],
+  "objectiveLead": "Teknoppy's goal was to rebuild the site around a structure that could:",
+  "objectives": [
+    "Put accreditation trust front and center, rather than buried below other content",
+    "Cleanly separate the Calibration, Product, and Services journeys into distinct paths",
+    "Connect related categories, disciplines, and equipment so visitors and search engines can navigate the full range of what's offered",
+    "Give the site's own growing content strategy a clear structural home to expand into",
+    "Match how a technical buyer actually searches — task-first, not by browsing a general site"
+  ],
+  "approachLead": "How Teknoppy mapped an accreditation-first architecture and built high-performance templates in Astro:",
+  "approachPillars": [
+    {
+      "title": "A structure audit before any design work",
+      "paragraphs": [
+        "Discovery started with a full content and structure audit of the existing site against how visitors actually search for calibration and industrial supply services, rather than starting from a visual redesign and working backward into structure."
+      ]
+    },
+    {
+      "title": "A three-pillar architecture, mapped before design",
+      "paragraphs": [
+        "Teknoppy mapped a three-pillar architecture — Calibration, Products, and Services — before touching visual design, so navigation and homepage sections could separate Calibration Capabilities, Product Supply, and Engineering Services into distinct, self-contained paths, each with its own entry point and call to action."
+      ]
+    },
+    {
+      "title": "Accreditation surfaced as a repeated trust anchor",
+      "paragraphs": [
+        "EIAC & ENAS ISO 17025 accreditation, the 15-discipline scope, and 28+ years of operating history are now surfaced in the hero section, a dedicated \"Why General Tech\" section, and repeated as trust anchors through the page — rather than mentioned once and left for a visitor to stumble across."
+      ]
+    },
+    {
+      "title": "Cross-linked categories, disciplines, and equipment",
+      "paragraphs": [
+        "Calibration disciplines, product categories, and related services now link to each other directly, so a visitor on a torque calibration page can move naturally into torque tools or adjacent disciplines instead of hitting a dead end and leaving the site to search elsewhere."
+      ]
+    },
+    {
+      "title": "Built in Astro, with room for the content strategy to grow",
+      "paragraphs": [
+        "Page templates were built in Astro to keep accreditation and trust signals consistent across every service and product page, and to give the site's parallel 185-topic content strategy a clear structural home to expand into without needing another restructure later."
+      ]
+    },
+    {
+      "title": "A navigation designed for task-first search, not browsing",
+      "paragraphs": [
+        "Most visitors arrive already knowing what they need — a specific calibration discipline, a specific brand, or a specific engineering service — rather than intending to browse the whole site. Navigation and internal linking were structured around getting that visitor to the exact relevant page in as few steps as possible, rather than routing everyone through a generic homepage-first journey."
+      ]
+    }
+  ],
+  "deliverables": [
+    {
+      "title": "Accreditation-led structure",
+      "description": "EIAC & ENAS ISO 17025 accreditation, the 15-discipline scope, and 28+ years of operating history are now surfaced in the hero, the \"Why General Tech\" section, and repeated as trust anchors through the page."
+    },
+    {
+      "title": "Three clear journeys: Calibration, Products, Services",
+      "description": "Navigation and homepage sections now separate Calibration Capabilities, Product Supply, and Engineering Services into distinct, self-contained paths, each with its own entry point and CTA."
+    },
+    {
+      "title": "Cross-linked categories and disciplines",
+      "description": "Calibration disciplines, product categories, and related services now link to each other, so a visitor on one page can move naturally into adjacent equipment or disciplines instead of hitting a dead end."
+    },
+    {
+      "title": "A build ready for content growth",
+      "description": "The Astro-based structure gives the site's expanding pillar content strategy a clear home, rather than requiring another restructure as content grows."
+    }
+  ],
+  "whyMattersHeading": "Why Structure Matters for an Accreditation-Led Business's E-E-A-T",
+  "whyMattersParagraphs": [
+    "For a calibration lab, structural design decisions carry as much trust weight as the copy itself. Where accreditation sits on the page, how many clicks separate a visitor from confirming it, and whether related disciplines are easy to find all shape whether a technical buyer trusts the site enough to keep reading. Burying an EIAC & ENAS accreditation credential under generic homepage content undersells exactly the fact that should be leading the page.",
+    "Site performance is part of this too, not separate from it. Astro is built for fast, minimal-JavaScript output, which directly supports the Core Web Vitals and page-experience signals search engines factor into ranking — and separately, a visitor evaluating a technical services provider reasonably expects the site itself to load and behave professionally, especially on mobile where a slow, clunky site undercuts the same credibility the accreditation content is trying to build.",
+    "There's a semantic dimension too, in a business with three genuinely different offerings under one name. Keeping \"General Tech Services,\" its ISO 17025 accreditation, and each of its three business lines described consistently across the site helps search engines and AI research tools resolve them as one coherent entity operating across calibration, product supply, and engineering — rather than three loosely related businesses that happen to share a homepage."
+  ],
+  "whyMattersCalloutHtml": "<p><strong>By leading with accreditation, separating three distinct business lines into their own clear journeys</strong>, and cross-linking every discipline and category instead of leaving dead ends, the General Tech Services site is structured to convert a technical buyer's trust into an actual enquiry. See more examples in Teknoppy's <a href=\"/case-study/\" class=\"underline font-bold text-[#F05A2C]\">full case study library</a> or our <a href=\"/web-design-company-for-gcc-businesses/\" class=\"underline font-bold text-[#F05A2C]\">web design service for GCC businesses</a>.</p>",
+  "faqs": [
+    {
+      "question": "What was the main goal of the redesign?",
+      "answer": "To put General Tech's ISO 17025 accreditation front and center and give visitors three clear paths — Calibration, Products, and Services — instead of one tangled navigation."
+    },
+    {
+      "question": "What platform was the new site built on?",
+      "answer": "The site was rebuilt on Astro, chosen for performance and to support the three-pillar content structure cleanly as the site's content continues to grow."
+    },
+    {
+      "question": "Does the new site cover all of General Tech's calibration disciplines?",
+      "answer": "Yes — all 15 accredited calibration disciplines are represented with their own dedicated pages, cross-linked to related products and services."
+    },
+    {
+      "question": "How are the calibration, product, and service journeys separated?",
+      "answer": "Each has its own distinct navigation path and homepage section — Calibration Capabilities, Product Supply, and Engineering Services — with its own entry point and call to action, rather than sharing one general menu."
+    },
+    {
+      "question": "Why does the homepage lead with accreditation instead of services?",
+      "answer": "Because EIAC & ENAS ISO 17025 accreditation is General Tech's strongest trust signal for a technical buyer, and burying it below general content meant most visitors never saw the credential that actually differentiates the lab."
+    },
+    {
+      "question": "Are product categories and calibration disciplines cross-linked?",
+      "answer": "Yes — a visitor on a specific calibration discipline page can now move directly into related equipment or adjacent disciplines instead of hitting a dead end and leaving the site."
+    },
+    {
+      "question": "Does this case study cover the same work as General Tech's SEO case study?",
+      "answer": "No — this case study covers website design and development, the structure and build itself. A separate case study covers this client's ongoing SEO, content, and Google Business Profile work."
+    },
+    {
+      "question": "Why was the navigation built around specific tasks instead of general browsing?",
+      "answer": "Most visitors already know what they need — a specific discipline, brand, or service — so navigation and internal linking are structured to get them to that exact page in as few steps as possible, rather than routing everyone through a generic homepage-first path."
+    }
+  ],
+  "ctaHeadline": "Need a website structure that puts your accreditation, services, and products where visitors — and search engines — can actually find them?"
+}

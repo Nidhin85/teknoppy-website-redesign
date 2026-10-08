@@ -1,0 +1,187 @@
+{
+  "metaTitle": "Modestsisters: A Shopify E-Commerce Case Study for a UAE Modest Fashion Brand | Teknoppy",
+  "metaDescription": "How Teknoppy built a Shopify storefront for Modestsisters in the UAE, structuring modest fashion collections, transparent UAE shipping terms, and Instagram support integration.",
+  "canonicalURL": "https://teknoppy.com/case-studies/modestsisters-shopify-ecommerce/",
+  "heroImage": "/case-studies/modestsisters.webp",
+  "heroImageAlt": "Modestsisters UAE Modest Fashion Brand Shopify Ecommerce Case Study",
+  "schemaType": "TechArticle",
+  "schemaAbout": {
+    "type": "Organization",
+    "name": "Modestsisters",
+    "address": {
+      "country": "United Arab Emirates"
+    }
+  },
+  "clientName": "Modestsisters",
+  "categoryTag": "Shopify Development, UI/UX & E-Commerce SEO",
+  "tagBadge": "UAE Modest Fashion D2C Store",
+  "title": "Modestsisters: A Shopify E-Commerce Case Study for a UAE Modest Fashion Brand",
+  "storyLead": "How Teknoppy designed and developed a luxury Shopify shopping experience for Modestsisters, creating structured hierarchies for abayas and accessories, sitewide free shipping trust, and seamless Instagram support.",
+  "industry": "Modest Fashion & Apparel (D2C Ecommerce)",
+  "location": "UAE",
+  "services": "Shopify Development, Website Design, SEO",
+  "platform": "Shopify",
+  "liveWebsite": "modestsisters.co",
+  "liveWebsiteUrl": "https://modestsisters.co",
+  "heroHighlights": [
+    "Structured Clothing & Accessory Silos",
+    "Sitewide Free UAE Shipping Banner",
+    "Visible Sale & Comparative Pricing",
+    "Direct Instagram Customer Care"
+  ],
+  "atAGlance": [
+    "Clothing and Accessories organized into structured, navigable categories",
+    "Free UAE shipping surfaced site-wide, not just at checkout",
+    "Original and discounted prices shown consistently across product listings",
+    "A direct Instagram support channel meeting shoppers where they already engage",
+    "A storefront built to match the brand's \"effortless elegance and timeless luxury\" positioning"
+  ],
+  "aboutHeading": "About Modestsisters",
+  "aboutParagraphs": [
+    "Modestsisters is a UAE-based modest fashion brand selling handcrafted abayas, coord-sets, dresses, and tops, alongside jewelry and sunglasses.",
+    "Modest fashion shoppers are often browsing with a specific style already in mind — an abaya for a particular occasion, a coord-set in a certain silhouette — rather than casually scrolling a general clothing catalog. A flat, uncategorized store works against exactly this kind of shopper, forcing her to sift through everything rather than moving directly to what she came for.",
+    "Accessories add a second layer most standalone clothing brands don't have to plan for. Jewelry and sunglasses serve a genuinely different browsing intent than an abaya or coord-set, and treating them as an afterthought tacked onto the clothing catalog undersells both — a shopper looking specifically for jewelry shouldn't have to wade through dresses to find it."
+  ],
+  "challengeLead": "A growing modest fashion catalog needs a structure that respects how intentionally its shoppers browse — the previous setup didn't have one:",
+  "challenges": [
+    {
+      "number": 1,
+      "title": "No structured category hierarchy",
+      "description": "Abayas, coord-sets, dresses, and tops, alongside jewelry and sunglasses, sat without a clear Clothing versus Accessories split, making it harder for shoppers to move between product types."
+    },
+    {
+      "number": 2,
+      "title": "No visible shipping terms",
+      "description": "Without shipping information surfaced upfront, UAE customers had to reach checkout or ask directly before knowing delivery terms — an unnecessary point of friction for a detail that should be settled before a shopper even adds an item to cart."
+    },
+    {
+      "number": 3,
+      "title": "No consistent discount visibility",
+      "description": "Sale pricing wasn't shown consistently across listings, making it harder for shoppers to spot current offers while browsing rather than discovering a discount only after opening a product page."
+    },
+    {
+      "number": 4,
+      "title": "No support channel matching how shoppers actually engage with the brand",
+      "description": "Without a direct route through the platform where modest-fashion shoppers already follow and interact with the brand, order questions and general enquiries had no clear, comfortable path."
+    },
+    {
+      "number": 5,
+      "title": "Storefront experience didn't reflect the brand's positioning",
+      "description": "Modestsisters positions itself around \"effortless elegance and timeless luxury,\" but a cluttered or unclear shopping experience undercuts that positioning regardless of how well the products themselves live up to it."
+    }
+  ],
+  "objectiveLead": "Teknoppy's goal was to build a Shopify store that could:",
+  "objectives": [
+    "Organize a growing clothing and accessories catalog into a clear, navigable structure",
+    "Surface shipping information upfront, before checkout",
+    "Show sale pricing consistently across the catalog, not just on individual product pages",
+    "Route support through the channel shoppers already use to engage with the brand",
+    "Give the brand's \"effortless elegance and timeless luxury\" positioning a storefront to actually match"
+  ],
+  "approachLead": "How Teknoppy crafted an elegant Shopify storefront optimized for modest fashion shoppers:",
+  "approachPillars": [
+    {
+      "title": "Clothing and Accessories organized into structured categories",
+      "paragraphs": [
+        "Abayas, Coord-Sets, Dresses, and Tops sit under Clothing; Necklaces, Rings, and Bracelets sit under Accessories; Sunglasses stands as its own category. Giving each garment type its own clear place, rather than one flat product grid, lets a shopper who already knows she wants an abaya move there directly instead of scrolling past everything else first."
+      ]
+    },
+    {
+      "title": "Free shipping messaging surfaced site-wide",
+      "paragraphs": [
+        "A persistent banner — \"Free shipping within UAE on all orders\" — sets delivery expectations before a customer ever reaches checkout, removing a common point of last-minute hesitation at exactly the stage where it does the most damage to a completed sale."
+      ]
+    },
+    {
+      "title": "Consistent sale pricing display",
+      "paragraphs": [
+        "Original and discounted prices are shown together across product listings, making current offers easy to spot while browsing rather than requiring a shopper to open each product individually to find out if it's discounted."
+      ]
+    },
+    {
+      "title": "A direct Instagram support channel",
+      "paragraphs": [
+        "Order support and general enquiries route to the brand's Instagram, meeting modest-fashion shoppers on the platform where they already engage with the brand — following its posts, watching new arrivals, building familiarity — rather than redirecting them to an unfamiliar contact form."
+      ]
+    },
+    {
+      "title": "A storefront that matches the brand's positioning",
+      "paragraphs": [
+        "Layout, imagery treatment, and overall pacing were built to reflect \"effortless elegance and timeless luxury\" as an actual browsing experience, not just a tagline sitting above a generic ecommerce template."
+      ]
+    },
+    {
+      "title": "Mobile-first, for how modest fashion is actually browsed",
+      "paragraphs": [
+        "Fashion discovery for this audience happens largely through mobile browsing, often alongside the same Instagram feed the brand uses for support. Category pages, product imagery, and checkout were built mobile-first, so the experience holds together across the same device a shopper uses to follow the brand in the first place."
+      ]
+    }
+  ],
+  "deliverables": [
+    {
+      "title": "Clothing & Accessories Category Architecture",
+      "description": "Abayas, Coord-Sets, Dresses, and Tops structured under Clothing; Necklaces, Rings, and Bracelets structured under Accessories; Sunglasses isolated as a dedicated line."
+    },
+    {
+      "title": "Sitewide Free Delivery Reassurance",
+      "description": "Persistent top announcement banner confirming free shipping throughout the UAE on all orders."
+    },
+    {
+      "title": "Immediate Discount & Compare-At Pricing",
+      "description": "Real-time comparative pricing highlighting active sales directly on category listings without opening product details."
+    },
+    {
+      "title": "Instagram Support Channel Route",
+      "description": "Direct mobile routing to the brand's Instagram profile for effortless customer styling and order inquiries."
+    }
+  ],
+  "whyMattersHeading": "Why Category Clarity Matters for Modest Fashion E-Commerce",
+  "whyMattersParagraphs": [
+    "Modest fashion shoppers frequently search with specific, values-driven intent — \"abaya\" isn't interchangeable with \"dress\" in either search behaviour or actual product fit, and a category structure that keeps these as clearly separated entities matters as much to a search engine matching intent as it does to a shopper who already knows exactly what she's browsing for. Lumping distinct garment types into one generic \"clothing\" bucket dilutes both.",
+    "Stating a concrete local shipping term — free shipping within the UAE, specifically — also functions as a real, checkable local commerce signal, the kind of specific answer both search engines and AI shopping assistants increasingly need to answer a buyer's actual question (\"does this ship free to my emirate\") rather than a vague general shipping policy page.",
+    "Consistent discount display plays a similar role for buying confidence. A shopper who has to open every product individually to discover whether it's discounted is more likely to abandon browsing altogether than one who can scan a category page and immediately see which pieces are on sale — a small structural decision with a real effect on how far into the catalog a visitor actually gets.",
+    "Routing support through Instagram, rather than a generic contact form, reflects how modest fashion and other visually driven D2C categories actually build trust today: through an ongoing social presence a shopper already follows, not a one-off transactional interaction. Meeting a customer in the channel where the relationship already exists tends to resolve concerns faster and with more warmth than an anonymous support ticket."
+  ],
+  "whyMattersCalloutHtml": "<p><strong>By organizing a growing catalog into clear categories, making shipping and pricing visible before checkout, and routing support through the channel shoppers already trust</strong>, the Modestsisters storefront is built to feel as considered as the 'effortless elegance' it's selling. See more examples in Teknoppy's <a href=\"/case-study/\" class=\"underline font-bold text-[#F05A2C]\">full case study library</a> or our <a href=\"/shopify-development-company-kochi/\" class=\"underline font-bold text-[#F05A2C]\">Shopify development service</a>.</p>",
+  "faqs": [
+    {
+      "question": "What was the main goal of the Modestsisters Shopify project?",
+      "answer": "To build a store that organizes a growing modest fashion catalog into a clear structure while surfacing shipping and pricing information upfront."
+    },
+    {
+      "question": "What does Modestsisters sell?",
+      "answer": "Abayas, coord-sets, dresses, and tops, alongside necklaces, rings, bracelets, and sunglasses, shipped within the UAE."
+    },
+    {
+      "question": "What platform is Modestsisters built on?",
+      "answer": "Shopify."
+    },
+    {
+      "question": "How are products organized on the site?",
+      "answer": "Under two main groups — Clothing (Abayas, Coord-Sets, Dresses, Tops) and Accessories (Necklaces, Rings, Bracelets) — with Sunglasses as its own category, so shoppers can move directly to the type of product they want."
+    },
+    {
+      "question": "Is shipping free within the UAE?",
+      "answer": "Yes — a site-wide banner states free shipping within the UAE on all orders, shown before checkout rather than as a surprise at the final step."
+    },
+    {
+      "question": "How can I tell if an item is on sale while browsing?",
+      "answer": "Original and discounted prices are shown together directly on product listings, so current offers are visible while browsing rather than only after opening an individual product."
+    },
+    {
+      "question": "How do I contact Modestsisters with a question about my order?",
+      "answer": "Through the brand's Instagram, which is used as the direct support and enquiry channel — the platform where most modest-fashion shoppers already follow and engage with the brand."
+    },
+    {
+      "question": "Why does the site route support through Instagram instead of a contact form?",
+      "answer": "Because it meets shoppers in the channel where they already have a relationship with the brand, rather than redirecting them to an unfamiliar form for a brand they mostly know through social content."
+    },
+    {
+      "question": "Does the site work well for browsing on a phone?",
+      "answer": "Yes — category pages, product imagery, and checkout were built mobile-first, since most modest fashion browsing for this audience happens on the same device used to follow the brand on Instagram."
+    }
+  ],
+  "authorRole": "Digital Strategist at Teknoppy",
+  "ctaHeadline": "Need a Shopify store that turns a growing catalog into an easy, elegant shopping experience?",
+  "deliverablesLead": "Shopify enhancements and store features engineered for Modestsisters:"
+}
