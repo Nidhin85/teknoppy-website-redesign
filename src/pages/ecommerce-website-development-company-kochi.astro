@@ -52,7 +52,12 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
 };
 ---
 
-<Layout title={title} description={description}>
+<Layout
+  title={title}
+  description={description}
+  floatingCtaLabel="Build My Online Store"
+  floatingCtaHref="/request-a-quote/"
+>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(ecommerceSchema)} />
   </Fragment>

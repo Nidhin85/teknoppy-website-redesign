@@ -30,7 +30,12 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
 };
 ---
 
-<Layout title={title} description={description}>
+<Layout
+  title={title}
+  description={description}
+  floatingCtaLabel="Grow My Business"
+  floatingCtaHref="/request-a-quote/"
+>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(digitalMarketingSchema)} />
   </Fragment>

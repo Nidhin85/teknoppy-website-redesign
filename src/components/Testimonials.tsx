@@ -62,6 +62,8 @@ export default function Testimonials({
   headingRest,
   intro = "Businesses across Kerala and the GCC have trusted our website design Kerala expertise to build their online presence — here is what some of them have to say about working with Teknoppy web design agency.",
   statsLabel = "120+ projects delivered",
+  ctaText = "Get Started with Teknoppy",
+  ctaClassName = "cta-float-primary cta-delay-14 cta-shimmer-btn cta-pulse-strong cta-pulse-delay-4 inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-bold text-white bg-primary rounded-full hover:bg-primary/95 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 shrink-0 group whitespace-nowrap",
 }: {
   testimonials?: { name: string; role: string; content: string; initials: string; photo?: string }[];
   videos?: VideoTestimonial[];
@@ -72,6 +74,8 @@ export default function Testimonials({
   headingRest?: string;
   intro?: string;
   statsLabel?: string;
+  ctaText?: string;
+  ctaClassName?: string;
 } = {}) {
   // Real client videos, supplied by the client. The panel used to rotate a stock
   // image behind a play button that did nothing.
@@ -400,7 +404,7 @@ export default function Testimonials({
             </a>
             <a
               href="/request-a-quote/"
-              className="cta-reveal cta-pulse-medium cta-pulse-delay-2 inline-flex items-center gap-1.5 text-sm font-bold text-primary hover:text-primary-hover transition-colors group"
+              className="cta-reveal cta-float-secondary cta-float-sway cta-delay-13 cta-pulse-medium cta-pulse-delay-2 inline-flex items-center gap-1.5 text-sm font-bold text-primary hover:text-primary-hover transition-colors group"
             >
               <span>Join Our Growing Client Network</span>
               <ArrowRight className="cta-arrow cta-arrow-invite w-3.5 h-3.5" />
@@ -423,9 +427,9 @@ export default function Testimonials({
             <a
               href="/request-a-quote/"
               data-magnetic-btn
-              className="cta-shimmer-btn cta-pulse-strong cta-pulse-delay-4 inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-bold text-white bg-primary rounded-full hover:bg-primary/95 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 shrink-0 group whitespace-nowrap"
+              className={ctaClassName}
             >
-              <span>Get Started with Teknoppy</span>
+              <span>{ctaText}</span>
               <ArrowRight className="cta-arrow cta-arrow-invite w-4 h-4" />
             </a>
           </div>
