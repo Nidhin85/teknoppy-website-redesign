@@ -44,6 +44,11 @@
       "id": "digital-marketing",
       "label": "Digital Marketing",
       "slug": "digital-marketing"
+    },
+    {
+      "id": "social-media",
+      "label": "Social Media",
+      "slug": "social-media"
     }
   ],
   "websitePortfolioProjects": [
@@ -464,6 +469,66 @@
       "imageAlt": "Teknoppy website project - RJ Visakh personal brand homepage",
       "href": "/case-studies/visakh-rj-web-design/",
       "location": "Mumbai / Pan-India"
+    },
+    {
+      "id": "alankar-avenue-social-media",
+      "name": "Alankar Avenue",
+      "tagline": "Instagram and Facebook presence for a business hotel near Vyttila Metro, structured around guest questions, location clarity, and direct enquiries.",
+      "industryLabel": "Social Media",
+      "category": "social-media",
+      "categories": [
+        "social-media",
+        "digital-marketing"
+      ],
+      "image": "/client logos/alankar-avenue.png",
+      "imageAlt": "Teknoppy social media project - Alankar Avenue case study",
+      "href": "/case-studies/alankar-avenue-social-media/",
+      "location": "Vyttila, Kochi, Kerala"
+    },
+    {
+      "id": "hotel-elite-palazzo-social-media",
+      "name": "Hotel Elite Palazzo",
+      "tagline": "Instagram and Facebook content planning for a four-star hotel near Cochin Airport, structured around transit convenience, business stays, and banquet enquiries.",
+      "industryLabel": "Social Media",
+      "category": "social-media",
+      "categories": [
+        "social-media",
+        "digital-marketing"
+      ],
+      "image": "/client logos/elite-palazzo.png",
+      "imageAlt": "Teknoppy social media project - Hotel Elite Palazzo case study",
+      "href": "/case-studies/hotel-elite-palazzo-social-media/",
+      "location": "Angamaly, Ernakulam, Kerala"
+    },
+    {
+      "id": "shaapp-food-social-media",
+      "name": "Shaapp Food",
+      "tagline": "Instagram and Facebook presence for a Kerala-cuisine restaurant near Vyttila Mobility Hub, organized by dish categories, opening hours, and direct visit paths.",
+      "industryLabel": "Social Media",
+      "category": "social-media",
+      "categories": [
+        "social-media",
+        "digital-marketing"
+      ],
+      "image": "/client logos/shaapp-food.png",
+      "imageAlt": "Teknoppy social media project - Shaapp Food case study",
+      "href": "/case-studies/shaapp-food-social-media/",
+      "location": "Kaniyambuzha Road, Vyttila, Kochi"
+    },
+    {
+      "id": "harrisons-tea-town-social-media",
+      "name": "Harrisons Tea Town",
+      "tagline": "Social media campaign content and plantation heritage storytelling for a century-old Kerala tea brand.",
+      "industryLabel": "Social Media",
+      "category": "social-media",
+      "categories": [
+        "social-media",
+        "digital-marketing"
+      ],
+      "image": "/client logos/harrisons-tea-town.png",
+      "imageAlt": "Teknoppy social media project - Harrisons Tea Town case study",
+      "href": "/case-studies/harrisons-tea-town-social-media/",
+      "location": "Kochi, Kerala"
     }
   ]
 }
