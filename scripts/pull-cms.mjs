@@ -65,7 +65,9 @@ function isDocValid(collection, doc, content) {
     return false;
   }
 
-  if (doc.slug.includes('/') || doc.slug.includes('\\') || doc.slug.includes('..')) {
+  // Nested pages (collections marked `recursive`) are keyed by path, e.g. "portfolios/website-projects".
+  const nested = collection.recursive && doc.slug.split('/').every((part) => part.trim());
+  if ((doc.slug.includes('/') && !nested) || doc.slug.includes('\\') || doc.slug.includes('..')) {
     console.warn(`[cms:pull] Skipping doc with invalid characters in slug "${doc.slug}" in collection "${collection.slug}"`);
     return false;
   }
