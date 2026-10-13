@@ -127,7 +127,13 @@ function sync(file, content) {
 
 for (const global of contentMap.globals) {
   const doc = await get(`globals/${global.slug}?depth=0`);
-  sync(path.join(repoRoot, global.file), objectFromPayload(doc, schema.globals[global.slug]) ?? {});
+  const content = objectFromPayload(doc, schema.globals[global.slug]);
+  const file = path.join(repoRoot, global.file);
+  if ((!content || Object.keys(content).length === 0) && fs.existsSync(file)) {
+    console.warn(`[cms:pull] CMS returned empty content for global "${global.slug}" — preserving local file.`);
+    continue;
+  }
+  sync(file, content ?? {});
 }
 
 for (const collection of contentMap.collections) {

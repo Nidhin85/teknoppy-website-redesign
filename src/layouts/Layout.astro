@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import '../styles/motion.css';
 import site from '../data/site.json';
 import WhatsAppFab from '../components/WhatsAppFab.astro';
 import BottomActionBar from '../components/BottomActionBar.astro';
@@ -224,5 +225,6 @@ const displayBottomBar = (showBottomBar ?? isKochiPage) && !hideBottomBar;
       });
     </script>
     <MagneticTypography />
+    <script src="../scripts/motion.js"></script>
   </body>
 </html>
