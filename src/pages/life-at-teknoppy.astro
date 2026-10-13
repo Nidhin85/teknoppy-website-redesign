@@ -1,1196 +1,3662 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import {
-  lifeEntries,
-  dailyTimeline,
-  teamMembers,
-  projectWorkflow,
-  activeBuilds,
-  clientMoments,
-  milestones,
-  cultureMoments
-} from '../data/lifeAtTeknoppy';
+import lifeData from '../data/lifeAtTeknoppy.json';
 
-const title = "Life @ Teknoppy — Team Culture, Office Moments & Behind the Scenes";
-const description = "Explore Life at Teknoppy — Kerala's premier web design and digital agency. Behind the websites, code, and launches: discover our team culture, daily rhythms, client collaborations, and creative craft.";
+// CMS integration helper with reliable fallbacks
+const getMemberPhoto = (nameSnippet: string, fallback: string) => {
+  const member = lifeData?.teamMembers?.find((m: any) => m.name.toLowerCase().includes(nameSnippet.toLowerCase()));
+  return member?.photo || fallback;
+};
 
-// Verified initials helper
-const initials = (name: string) =>
-  name.split(/\s+/).filter(Boolean).map(w => w[0]).join('').slice(0, 2).toUpperCase();
+const orbitMembers = [
+  ['g1', 'NK', 'Niya K K and Farsana A', 'Reviewing a client audit, <i class="fill">Sept 2026</i>.', 'SEO team audit review at one screen', 'teknoppy-seo-team-audit-review.webp · Landscape 1200 × 800, WebP, under 150 KB', getMemberPhoto('Niya', '/team/niya-kk.webp')],
+  ['g2', 'NS', 'Nandana S Madhu', 'On a WordPress build, <i class="fill">month 2026</i>.', 'Developer at work, code and design side by side', 'teknoppy-developer-wordpress-build.webp', getMemberPhoto('Nandana', '/team/nandana.webp')],
+  ['g3', 'VK', 'Vijayakala', 'On a scoping call with a client, <i class="fill">month 2026</i>.', 'Client relations on a call', 'teknoppy-client-relations-call.webp', getMemberPhoto('Vijayakala', '/team/vijayakala.webp')],
+  ['g5', 'AK', 'Adithya K', 'Planning a client content calendar, <i class="fill">month 2026</i>.', 'Content and social planning', 'teknoppy-social-content-planning.webp', getMemberPhoto('Adithya', '/team/adithya-k.webp')],
+  ['g4', 'SE', 'Sanal Edison', 'Talking through a site plan with the team, <i class="fill">month 2026</i>.', 'Founder with the team', 'teknoppy-founder-team-discussion.webp', getMemberPhoto('Sanal', '/team/sanal-edison.webp')],
+  ['g5', 'ALL', 'Morning stand-up', 'The whole team at the Vyttila office, <i class="fill">month 2026</i>.', 'Morning stand-up, whole team', 'teknoppy-morning-standup.webp', '']
+];
 
-// Structured data for Life @ Teknoppy
-const schema = {
+const title = "Life at Teknoppy — Team Culture, Routines & Behind the Scenes";
+const description = "The people, routines and Vyttila office behind 120+ websites since 2018. Explore how we work, who we are, candid team stories and a typical day at Teknoppy.";
+
+// Structured data schemas
+const orgSchema = {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://teknoppy.com/life-at-teknoppy/#webpage",
-  "url": "https://teknoppy.com/life-at-teknoppy/",
-  "name": "Life @ Teknoppy — Team Culture & Behind the Scenes",
-  "description": description,
-  "publisher": {
-    "@type": "Organization",
-    "name": "Teknoppy",
-    "url": "https://teknoppy.com",
-    "logo": "https://teknoppy.com/logo.svg"
+  "@type": "Organization",
+  "@id": "https://www.teknoppy.com/#organization",
+  "name": "Teknoppy",
+  "url": "https://www.teknoppy.com/",
+  "logo": "https://www.teknoppy.com/logo.svg",
+  "telephone": "+91 6282249224",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Second Floor, Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam",
+    "addressLocality": "Vyttila, Kochi",
+    "addressRegion": "Kerala",
+    "postalCode": "682019",
+    "addressCountry": "IN"
   }
 };
 
-const filterCategories = [
-  { id: 'all', label: 'All Moments' },
-  { id: 'team', label: 'Team' },
-  { id: 'projects', label: 'Projects' },
-  { id: 'clients', label: 'Clients' },
-  { id: 'behind-the-scenes', label: 'Behind the Scenes' },
-  { id: 'achievements', label: 'Achievements' },
-  { id: 'culture', label: 'Culture' }
-];
+const localBizSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://www.teknoppy.com/#localbusiness",
+  "name": "Teknoppy",
+  "image": "https://www.teknoppy.com/og-image.png",
+  "telephone": "+91 6282249224",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Second Floor, Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam",
+    "addressLocality": "Vyttila, Kochi",
+    "addressRegion": "Kerala",
+    "postalCode": "682019",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 9.9678,
+    "longitude": 76.3197
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:30",
+      "closes": "17:30"
+    }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is it like to work at Teknoppy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Teknoppy is a small in-house agency in Vyttila, Kochi. Designers, developers, SEO specialists and marketers sit together and work on the same client accounts. Junior staff work on real projects from the first week, with a senior colleague reviewing their work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many people work at Teknoppy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "10 people across client relations, SEO, development and social content, all in-house in one office."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is the Teknoppy office?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On the second floor of Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam, Vyttila, Kochi, Kerala 682019. It's a short walk from Thykoodam Metro station."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the team work with clients outside Kerala?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Alongside clients in Kerala, the team works with clients in the UAE and Qatar, with calls scheduled on Gulf time for those accounts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Teknoppy train its team?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Junior work is reviewed side by side by a senior colleague, and the team runs a weekly knowledge-share session every Friday."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can clients meet the Teknoppy team?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Clients and candidates are welcome at the office by appointment. Call +91 6282249224 to arrange a visit."
+      }
+    }
+  ]
+};
 ---
 
-<Layout title={title} description={description} hideBottomBar={true}>
+<Layout title={title} description={description} hideBottomBar={true} hideFloatingCta={true}>
   <Fragment slot="head">
-    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" />
+    <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(localBizSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   </Fragment>
 
-  <Header forceSolidBg={false} />
+  <!-- Custom orange cursor ring (desktop fine pointer only) -->
+  <div id="cursor-ring" class="cursor-ring" aria-hidden="true"></div>
 
-  <!-- STICKY FLOATING LIFE NAVIGATION BAR & SCROLL COUNTER -->
-  <aside id="life-nav-tracker" class="fixed top-20 right-4 sm:right-8 z-40 hidden md:flex items-center gap-3 bg-neutral-900/90 text-white backdrop-blur-md px-4 py-2 rounded-full border border-white/10 shadow-2xl transition-all duration-300">
-    <div class="flex items-center gap-1.5 text-xs font-black tracking-widest text-primary uppercase">
-      <span id="active-step-num">01</span>
-      <span class="text-neutral-500">/</span>
-      <span class="text-neutral-400">08</span>
+  <!-- Top scroll progress bar in orange -->
+  <div id="progress"></div>
+
+  <!-- SECTION 0: GLOBAL STICKY BLURRED NAV -->
+  <nav id="life-nav">
+    <div class="wrap">
+      <a class="logo" href="/" aria-label="Teknoppy Home">Teknop<b>p</b>y</a>
+      <a class="btn btn-primary nav-btn" href="/request-a-quote/" data-magnetic style="padding:10px 18px">
+        Get free quote <span class="arr">→</span>
+      </a>
     </div>
-    <div class="w-[1px] h-3 bg-white/20"></div>
-    <span id="active-step-title" class="text-xs font-bold text-neutral-200 tracking-wide">Hero</span>
-    <div class="flex items-center gap-1.5 ml-2">
-      <a href="#manifesto" class="w-2 h-2 rounded-full bg-white/30 hover:bg-primary transition-colors" title="Manifesto"></a>
-      <a href="#daily" class="w-2 h-2 rounded-full bg-white/30 hover:bg-primary transition-colors" title="A Day at Teknoppy"></a>
-      <a href="#wall" class="w-2 h-2 rounded-full bg-white/30 hover:bg-primary transition-colors" title="The Teknoppy Wall"></a>
-      <a href="#workflow" class="w-2 h-2 rounded-full bg-white/30 hover:bg-primary transition-colors" title="Workflow"></a>
-      <a href="#team" class="w-2 h-2 rounded-full bg-white/30 hover:bg-primary transition-colors" title="People Behind Teknoppy"></a>
+  </nav>
+
+  <!-- Side dot navigation (desktop only) -->
+  <div class="dots" id="dots" aria-label="Section navigation">
+    <a href="#top" aria-label="Go to Top"><span>Top</span></a>
+    <a href="#process" aria-label="Go to How we work"><span>How we work</span></a>
+    <a href="#values" aria-label="Go to Values"><span>Values</span></a>
+    <a href="#team" aria-label="Go to Team"><span>Team</span></a>
+    <a href="#voices" aria-label="Go to Stories"><span>Stories</span></a>
+    <a href="#day" aria-label="Go to A day"><span>A day</span></a>
+    <a href="#celebrate" aria-label="Go to Celebrations"><span>Celebrations</span></a>
+    <a href="#faq" aria-label="Go to FAQ"><span>FAQ</span></a>
+  </div>
+
+  <main id="life-page">
+
+    <!-- =========================================================================
+         SECTION 1: HERO (CENTRED)
+         ========================================================================= -->
+    <header class="hero" id="top">
+      <!-- Ambient floating glow blobs for depth -->
+      <div class="motion-glow-blob" style="width:420px;height:420px;top:40px;left:5%;" aria-hidden="true"></div>
+      <div class="motion-glow-blob" style="width:480px;height:480px;top:260px;right:4%;animation-delay:-6s;" aria-hidden="true"></div>
+
+      <div class="wrap">
+        <p class="draft" data-reveal="down">Draft for review. Text marked <i class="fill">like this</i> needs a real detail before publishing. Photo and video slots show the file name and size to use.</p>
+        <div class="crumb" data-reveal="up" data-delay="0.1s"><a href="/">Home</a><span>/</span><a href="/about-us/">About Us</a><span>/</span><span>Life at Teknoppy</span></div>
+        <h1 id="h1" data-chars>Life at <span class="o">Teknoppy</span></h1>
+        <p class="lead" data-reveal="up" data-delay="0.15s">The people, routines and Vyttila office behind 120+ websites since 2018.</p>
+        <p class="intro" data-reveal="up" data-delay="0.2s">Teknoppy is a web design and digital marketing agency in Vyttila, Kochi, founded in 2018 by Sanal Edison. Our in-house team of designers, developers, SEO specialists and social media strategists works from one office on websites and campaigns for clients in Kerala, the UAE and Qatar.</p>
+        <p class="intro" data-reveal="up" data-delay="0.25s">This page shows how we work, who we are and what a normal day looks like. Every photo here was taken at our office, and every story is written by the person named on it.</p>
+        <div class="ctas" data-reveal="up" data-delay="0.3s">
+          <a class="btn btn-primary" href="/career/" data-magnetic>See open roles <span class="arr">→</span></a>
+          <a class="btn btn-ghost" href="#team" data-magnetic>Meet the team</a>
+        </div>
+        <div class="fan" id="fan-stage" role="region" aria-label="Teknoppy Culture, Team and Studio Showcase">
+          <!-- CARD 1: SEO PERFORMANCE DASHBOARD MOCKUP -->
+          <div class="card c1" data-tilt="12" data-parallax="0.08">
+            <div class="hero-card hero-card-seo" role="img" aria-label="SEO performance dashboard mockup showing 98% audit health score, keyword rankings, and organic growth analytics">
+              <div class="hcs-top">
+                <div class="hcs-dots" aria-hidden="true"><span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span></div>
+                <span class="hcs-pill"><span class="hcs-live-dot" aria-hidden="true"></span>SEO SUITE · AUDIT</span>
+              </div>
+              <div class="hcs-stats">
+                <div class="hcs-stat-box">
+                  <span class="hcs-stat-lbl">HEALTH SCORE</span>
+                  <div class="hcs-stat-val"><span class="num">98</span><small class="sub">/100</small><span class="badge hcs-badge-green">▲ 4%</span></div>
+                </div>
+                <div class="hcs-stat-box">
+                  <span class="hcs-stat-lbl">TOP 3 RANKS</span>
+                  <div class="hcs-stat-val"><span class="num">120+</span><span class="badge hcs-badge-orange">GOOGLE</span></div>
+                </div>
+              </div>
+              <div class="hcs-chart-wrap">
+                <div class="hcs-chart-head">
+                  <span class="hcs-chart-title">ORGANIC TRAFFIC</span>
+                  <span class="hcs-chart-growth">+142% YOY</span>
+                </div>
+                <svg class="hcs-svg-chart" viewBox="0 0 240 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="hcs-grad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#f15a24" stop-opacity="0.38"/>
+                      <stop offset="100%" stop-color="#f15a24" stop-opacity="0.0"/>
+                    </linearGradient>
+                  </defs>
+                  <line x1="0" y1="16" x2="240" y2="16" stroke="rgba(255,255,255,0.06)" stroke-dasharray="3 3"/>
+                  <line x1="0" y1="36" x2="240" y2="36" stroke="rgba(255,255,255,0.06)" stroke-dasharray="3 3"/>
+                  <line x1="0" y1="56" x2="240" y2="56" stroke="rgba(255,255,255,0.06)"/>
+                  <path d="M0,52 C35,48 55,42 85,38 C115,34 145,26 175,18 C205,10 220,8 240,4 L240,64 L0,64 Z" fill="url(#hcs-grad)"/>
+                  <path d="M0,52 C35,48 55,42 85,38 C115,34 145,26 175,18 C205,10 220,8 240,4" stroke="#f15a24" stroke-width="2.5" stroke-linecap="round"/>
+                  <circle cx="85" cy="38" r="3" fill="#f15a24"/>
+                  <circle cx="175" cy="18" r="3" fill="#f15a24"/>
+                  <circle cx="240" cy="4" r="4" fill="#ffffff" stroke="#f15a24" stroke-width="2"/>
+                </svg>
+              </div>
+              <div class="hcs-keywords">
+                <div class="hcs-kw-row">
+                  <span class="hcs-kw-name">web design kochi</span>
+                  <span class="hcs-kw-rank">#1</span>
+                </div>
+                <div class="hcs-kw-row">
+                  <span class="hcs-kw-name">seo agency kerala</span>
+                  <span class="hcs-kw-rank">#1</span>
+                </div>
+                <div class="hcs-kw-row">
+                  <span class="hcs-kw-name">ecommerce web design</span>
+                  <span class="hcs-kw-rank">#2</span>
+                </div>
+              </div>
+              <div class="hcs-footer">
+                <span>Core Web Vitals: Good</span>
+                <span>Vyttila SEO Team</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2: FULL TEAM GRID COMPOSITION WITH TEKNOPPY LOGO -->
+          <div class="card c2" data-tilt="8" data-parallax="0.03">
+            <div class="hero-card hero-card-team" role="img" aria-label="Teknoppy in-house team composition featuring official logo and verified portraits of all 10 specialists in Vyttila, Kochi">
+              <div class="hct-top">
+                <img src="/logo.svg" alt="Teknoppy" width="112" height="32" class="hct-logo" />
+                <span class="hct-pill">In-House Team · 10 Specialists</span>
+              </div>
+              <div class="hct-grid">
+                <div class="hct-member">
+                  <div class="hct-avatar-wrap">
+                    <img src="/team/sanal-edison.webp" alt="Sanal Edison, Founder" class="hct-avatar" loading="eager" width="44" height="44" />
+                  </div>
+                  <span class="hct-name">Sanal</span>
+                </div>
+                <div class="hct-member">
+                  <div class="hct-avatar-wrap">
+                    <img src="/team/vijayakala.webp" alt="Vijayakala, Client Relations" class="hct-avatar" loading="eager" width="44" height="44" />
+                  </div>
+                  <span class="hct-name">Vijaya</span>
+                </div>
+                <div class="hct-member">
+                  <div class="hct-avatar-wrap">
+                    <img src="/team/niya-kk.webp" alt="Niya K K, SEO Lead" class="hct-avatar" loading="eager" width="44" height="44" />
+                  </div>
+                  <span class="hct-name">Niya</span>
+                </div>
+                <div class="hct-member">
+                  <div class="hct-avatar-wrap">
+                    <img src="/team/nandana.webp" alt="Nandana S Madhu, Web Developer" class="hct-avatar" loading="eager" width="44" height="44" />
+                  </div>
+                  <span class="hct-name">Nandana</span>
+                </div>
+                <div class="hct-member">
+                  <div class="hct-avatar-wrap">
+                    <img src="/team/adithya-k.webp" alt="Adithya K, Content Strategist" class="hct-avatar" loading="eager" width="44" height="44" />
+                  </div>
+                  <span class="hct-name">Adithya</span>
+                </div>
+                <div class="hct-member">
+                  <div class="hct-avatar-wrap">
+                    <img src="/team/neha-p.webp" alt="Neha P, SEO Analyst" class="hct-avatar" loading="eager" width="44" height="44" />
+                  </div>
+                  <span class="hct-name">Neha</span>
+                </div>
+                <div class="hct-member">
+                  <div class="hct-avatar-wrap">
+                    <img src="/team/nithya-sibi.webp" alt="Nithya Sibi, Jr SEO" class="hct-avatar" loading="eager" width="44" height="44" />
+                  </div>
+                  <span class="hct-name">Nithya</span>
+                </div>
+                <div class="hct-member">
+                  <div class="hct-avatar-wrap">
+                    <img src="/team/anjali-babu.webp" alt="Anjali Babu, Jr SEO" class="hct-avatar" loading="eager" width="44" height="44" />
+                  </div>
+                  <span class="hct-name">Anjali</span>
+                </div>
+                <div class="hct-member">
+                  <div class="hct-avatar-wrap">
+                    <img src="/team/anjana-babu.webp" alt="Anjana Babu, Jr SEO" class="hct-avatar" loading="eager" width="44" height="44" />
+                  </div>
+                  <span class="hct-name">Anjana</span>
+                </div>
+                <div class="hct-member">
+                  <div class="hct-avatar-wrap">
+                    <img src="/team/farsana-a.webp" alt="Farsana A, Jr SEO" class="hct-avatar" loading="eager" width="44" height="44" />
+                  </div>
+                  <span class="hct-name">Farsana</span>
+                </div>
+              </div>
+              <div class="hct-footer">
+                <div class="hct-foot-top">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="var(--orange, #f15a24)"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  <span>100% In-House in Vyttila, Kochi</span>
+                </div>
+                <span class="hct-foot-sub">Design · Development · SEO · Content</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3: OUR KOCHI STUDIO ARCHITECTURAL SHOWCASE -->
+          <div class="card c3" data-tilt="12" data-parallax="0.1">
+            <div class="hero-card hero-card-studio" role="img" aria-label="Our Kochi Studio architectural showcase of Teknoppy Kaithakal Building, Vyttila, Kochi">
+              <div class="hcb-top">
+                <span class="hcb-tag">Our Kochi Studio</span>
+                <span class="hcb-coord">9.9678° N · 76.3197° E</span>
+              </div>
+              <div class="hcb-vis">
+                <svg class="hcb-svg" viewBox="0 0 240 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <!-- Architectural Grid Background -->
+                  <defs>
+                    <pattern id="archGrid" width="12" height="12" patternUnits="userSpaceOnUse">
+                      <path d="M 12 0 L 0 0 0 12" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
+                    </pattern>
+                  </defs>
+                  <rect width="240" height="120" fill="url(#archGrid)"/>
+                  
+                  <!-- Ground line -->
+                  <line x1="16" y1="108" x2="224" y2="108" stroke="#475569" stroke-width="1.5"/>
+                  
+                  <!-- Building Outline -->
+                  <rect x="36" y="24" width="168" height="84" rx="3" stroke="#64748b" stroke-width="1.5" fill="rgba(15,23,42,0.6)"/>
+                  
+                  <!-- Rooftop parapet & details -->
+                  <line x1="30" y1="24" x2="210" y2="24" stroke="#94a3b8" stroke-width="2"/>
+                  <rect x="52" y="16" width="36" height="8" stroke="#475569" stroke-width="1"/>
+                  <line x1="180" y1="14" x2="180" y2="24" stroke="#475569" stroke-width="1"/>
+                  
+                  <!-- Floor 3 / Upper level -->
+                  <rect x="46" y="32" width="26" height="16" stroke="rgba(148,163,184,0.4)" stroke-width="1" rx="1"/>
+                  <rect x="80" y="32" width="26" height="16" stroke="rgba(148,163,184,0.4)" stroke-width="1" rx="1"/>
+                  <rect x="134" y="32" width="26" height="16" stroke="rgba(148,163,184,0.4)" stroke-width="1" rx="1"/>
+                  <rect x="168" y="32" width="26" height="16" stroke="rgba(148,163,184,0.4)" stroke-width="1" rx="1"/>
+                  
+                  <!-- Floor 2: TEKNOPPY STUDIO (HIGHLIGHTED IN ORANGE ACCENT) -->
+                  <rect x="38" y="54" width="164" height="26" fill="rgba(241,90,36,0.12)" stroke="#f15a24" stroke-width="1.5"/>
+                  <rect x="46" y="58" width="26" height="18" fill="rgba(241,90,36,0.22)" stroke="#f15a24" stroke-width="1" rx="1"/>
+                  <rect x="80" y="58" width="26" height="18" fill="rgba(241,90,36,0.22)" stroke="#f15a24" stroke-width="1" rx="1"/>
+                  <rect x="134" y="58" width="26" height="18" fill="rgba(241,90,36,0.22)" stroke="#f15a24" stroke-width="1" rx="1"/>
+                  <rect x="168" y="58" width="26" height="18" fill="rgba(241,90,36,0.22)" stroke="#f15a24" stroke-width="1" rx="1"/>
+                  <!-- Floor 2 Center Badge -->
+                  <rect x="110" y="58" width="20" height="18" fill="#f15a24" rx="2"/>
+                  <text x="120" y="70" fill="#ffffff" font-size="7.5" font-weight="800" text-anchor="middle" font-family="'Sora', sans-serif">2F</text>
+                  
+                  <!-- Floor 1 / Ground Floor Entrance -->
+                  <rect x="46" y="86" width="26" height="16" stroke="rgba(148,163,184,0.4)" stroke-width="1" rx="1"/>
+                  <!-- Main Entrance Door -->
+                  <rect x="108" y="84" width="24" height="24" stroke="#94a3b8" stroke-width="1.5" fill="rgba(30,41,59,0.8)"/>
+                  <line x1="120" y1="84" x2="120" y2="108" stroke="#64748b" stroke-width="1"/>
+                  <rect x="168" y="86" width="26" height="16" stroke="rgba(148,163,184,0.4)" stroke-width="1" rx="1"/>
+                  
+                  <!-- Studio Zone Indicators -->
+                  <text x="120" y="44" fill="#94a3b8" font-size="6" font-weight="700" text-anchor="middle" letter-spacing="1">KAITHAKAL BUILDING</text>
+                  <text x="120" y="116" fill="#f15a24" font-size="6.5" font-weight="800" text-anchor="middle" letter-spacing="0.5">TEKNOPPY DIGITAL AGENCY · 2ND FL</text>
+                  
+                  <!-- North Pointer compass -->
+                  <circle cx="218" cy="22" r="10" stroke="#475569" stroke-width="0.8" fill="rgba(15,23,42,0.5)"/>
+                  <path d="M218 15 L221 24 L218 22 L215 24 Z" fill="#f15a24"/>
+                  <text x="218" y="30" fill="#64748b" font-size="5.5" font-weight="700" text-anchor="middle">N</text>
+                </svg>
+              </div>
+              <div class="hcb-addr-box">
+                <div class="hcb-addr-title">
+                  <span>Kaithakal Building</span>
+                  <span class="hcb-addr-floor">2nd Floor HQ</span>
+                </div>
+                <div class="hcb-addr-line">Door No 49, Kaithakal Lane, Thykoodam</div>
+                <div class="hcb-addr-meta">
+                  <span class="hcb-addr-metro">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    Thykoodam Metro · 2 min walk
+                  </span>
+                  <span>Vyttila, Kochi</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="facts" data-stagger="50">
+          <div><small>Founded</small><b><span class="cnt" data-count data-to="2018" data-from="1990">2018</span>, Kochi</b></div>
+          <div><small>Team</small><b><i class="fill">10</i> people, all in-house</b></div>
+          <div><small>Office</small><b>Thykoodam, Vyttila</b></div>
+          <div><small>Clients in</small><b>Kerala, UAE and Qatar</b></div>
+          <div><small>Delivered</small><b><span class="cnt" data-count data-to="120" data-from="0">120</span>+ websites</b></div>
+          <div><small>Last updated</small><b>October 2026</b></div>
+        </div>
+
+        <!-- Bouncing scroll-down cue indicator -->
+        <div class="motion-scroll-cue" style="margin-top:28px;" aria-hidden="true">
+          <span style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--soft);">Scroll down</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 10l5 5 5-5"/></svg>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================================================
+         SECTION 2: HOW WE WORK (STICKY SPLIT-SCREEN PROCESS STORY)
+         ========================================================================= -->
+    <section id="process" style="border-top:1px solid var(--line)">
+      <div class="wrap split">
+        <div class="sticky" id="sticky">
+          <div class="badge"><i id="snum">01</i><span id="sname">Discovery</span></div>
+          <div class="layer on"><div class="ph g3"><span class="t">Client relations on a call</span><span class="f">teknoppy-client-relations-call.webp</span></div></div>
+          <div class="layer"><div class="ph g5"><span class="t">Site structure planning on a whiteboard</span><span class="f">teknoppy-sitemap-planning-session.webp · Landscape 1200 × 675, WebP, under 150 KB</span></div></div>
+          <div class="layer"><div class="ph g2"><span class="t">Founder with the team</span><span class="f">teknoppy-founder-team-discussion.webp</span></div></div>
+          <div class="layer"><div class="ph g4"><span class="t">Developer at work, code and design side by side</span><span class="f">teknoppy-developer-wordpress-build.webp</span></div></div>
+          <div class="layer"><div class="ph g1"><span class="t">Senior and junior reviewing work side by side</span><span class="f">teknoppy-seo-review-session.webp</span></div></div>
+          <div class="layer"><div class="ph g5"><span class="t">Project launch day</span><span class="f">teknoppy-project-launch.webp</span></div></div>
+          <p class="cap" id="scap">Vijayakala on a scoping call with a client, <i class="fill">month 2026</i>.</p>
+          <span class="meter" id="smeter" style="width:16.6%"></span>
+        </div>
+        <div class="steps" id="steps">
+          <div class="step intro rv" data-reveal="up">
+            <span class="tag" style="justify-self:start;align-self:flex-start">How we work</span>
+            <h2 class="words" data-words>How does a project move through our team?</h2>
+            <p>Every project goes through the same six stages, and the same people stay with it from the first call to the monthly report. Nothing is passed to a subcontractor.</p>
+          </div>
+          <div class="step" data-reveal="up" data-cap='Vijayakala on a scoping call with a client, <i class="fill">month 2026</i>.'>
+            <span class="n">01</span><small>Client Relations</small><h3>Discovery</h3>
+            <p>Vijayakala scopes the brief, budget and timeline with the client.</p>
+            <div class="mobph ph g3"><span class="t">Client relations on a call</span></div>
+          </div>
+          <div class="step" data-reveal="up" data-cap='Planning the page structure for a client site, Vyttila office, <i class="fill">month 2026</i>.'>
+            <span class="n">02</span><small>Founder</small><h3>Strategy</h3>
+            <p>Sanal plans the site structure and decides which keyword each page owns.</p>
+            <div class="mobph ph g5"><span class="t">Site structure planning on a whiteboard</span></div>
+          </div>
+          <div class="step" data-reveal="up" data-cap='Sanal Edison talking through a site plan with the team, <i class="fill">month 2026</i>.'>
+            <span class="n">03</span><small>Design</small><h3>Design</h3>
+            <p>Wireframes first, then full layouts. The client signs off before any code.</p>
+            <div class="mobph ph g2"><span class="t">Founder with the team</span></div>
+          </div>
+          <div class="step" data-reveal="up" data-cap='Nandana S Madhu on a WordPress build, <i class="fill">month 2026</i>.'>
+            <span class="n">04</span><small>Development</small><h3>Build</h3>
+            <p>Nandana turns the approved design into a working WordPress or custom build.</p>
+            <div class="mobph ph g4"><span class="t">Developer at work</span></div>
+          </div>
+          <div class="step" data-cap="An SEO review before a client update goes live.">
+            <span class="n">05</span><small>SEO team</small><h3>SEO</h3>
+            <p>On-page work, schema and speed checks, all reviewed by Niya before launch.</p>
+            <div class="mobph ph g1"><span class="t">Senior and junior reviewing work side by side</span></div>
+          </div>
+          <div class="step" data-reveal="up" data-cap='Launch day for <i class="fill">client site</i>, <i class="fill">date</i>.'>
+            <span class="n">06</span><small>SEO and Client Relations</small><h3>Launch and report</h3>
+            <p>We go live, track rankings and send a monthly report in plain language.</p>
+            <div class="mobph ph g5"><span class="t">Project launch day</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 3: VALUES (NUMBERED ACCORDION)
+         ========================================================================= -->
+    <section id="values" style="background:var(--surface);border-block:1px solid var(--line)">
+      <div class="wrap">
+        <div class="center sec">
+          <span class="tag">Our values</span>
+          <h2 class="words" data-words>What does Teknoppy value?</h2>
+          <p>We keep our values short and tie each one to something we actually do. If we can't point to the habit, it isn't a value yet.</p>
+        </div>
+        <div class="vacc rv" id="vacc" data-stagger="60">
+          <div class="vi open" data-spotlight data-tilt="4">
+            <button aria-expanded="true">
+              <span class="num">01</span><h3>Every page earns its place</h3><span class="pl">+</span>
+            </button>
+            <div class="body">
+              <div>
+                <div class="inner">
+                  <p>We don't build a page without a clear goal and a keyword it owns.</p>
+                  <div class="prac"><b>In practice</b>The same rule shapes our own website. Our <a href="/case-study/">case studies</a> show it on client sites.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vi" data-spotlight data-tilt="4">
+            <button aria-expanded="false">
+              <span class="num">02</span><h3>Reviewed before it ships</h3><span class="pl">+</span>
+            </button>
+            <div class="body">
+              <div>
+                <div class="inner">
+                  <p>Junior work always gets a senior review before a client sees it.</p>
+                  <div class="prac"><b>In practice</b>Every SEO change is checked by our SEO Lead before it goes live.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vi" data-spotlight data-tilt="4">
+            <button aria-expanded="false">
+              <span class="num">03</span><h3>Provable, not claimed</h3><span class="pl">+</span>
+            </button>
+            <div class="body">
+              <div>
+                <div class="inner">
+                  <p>We show evidence instead of adjectives, to clients and to each other.</p>
+                  <div class="prac"><b>In practice</b>Our <a href="/certifications/">certifications page</a> only lists badges that link to an official verification page.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vi" data-spotlight data-tilt="4">
+            <button aria-expanded="false">
+              <span class="num">04</span><h3>Learn in the open</h3><span class="pl">+</span>
+            </button>
+            <div class="body">
+              <div>
+                <div class="inner">
+                  <p>Mistakes get talked about, not hidden. Someone else will make the same one next month.</p>
+                  <div class="prac"><b>In practice</b><i class="fill">A weekly knowledge-share session every Friday</i>, plus <i class="fill">certifications earned by the team this year, with links</i>.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vi" data-spotlight data-tilt="4">
+            <button aria-expanded="false">
+              <span class="num">05</span><h3>Clients hear it from us first</h3><span class="pl">+</span>
+            </button>
+            <div class="body">
+              <div>
+                <div class="inner">
+                  <p>Good news or bad, the client hears it from us the same day.</p>
+                  <div class="prac"><b>In practice</b>Every client has one named contact from the first call.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="founder rv" data-reveal="up">
+          <img
+            src="/team/sanal-edison.webp"
+            alt="Sanal Edison, Founder and Digital Strategist"
+            width="110"
+            height="110"
+            loading="lazy"
+            decoding="async"
+            class="av"
+            style="object-fit:cover;object-position:top;"
+          />
+          <div>
+            <blockquote><i class="fill">Two or three lines in Sanal's own words: why he built an in-house team, and what he looks for in the people who join.</i></blockquote>
+            <cite><a href="/about-us/">Sanal Edison</a>, Founder and Digital Strategist</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 4: TEAM (ROTATING ORBIT)
+         ========================================================================= -->
+    <section id="team">
+      <div class="wrap teamw">
+        <div class="orbit rv" id="orbit" data-orbit={JSON.stringify(orbitMembers)}>
+          <div class="ring"></div>
+          <div class="spin" id="ospin"></div>
+          <div class="ocore" id="ocore"></div>
+        </div>
+        <div class="tinfo sec">
+          <span class="tag" style="justify-self:start">The team</span>
+          <h2 class="words" data-words>Who works at Teknoppy?</h2>
+          <p>A team of <i class="fill">10</i> people across client relations, SEO, development and social content, all in one office. These are candid photos from a normal working week.</p>
+          <div class="tcard" id="tcard"></div>
+          <div class="tnav" id="tnav"></div>
+          <p class="about">Full roles and bios for everyone are on our <a href="/about-us/">About page</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 5: IN THEIR WORDS (STORY CARDS & VIDEO)
+         ========================================================================= -->
+    <section id="voices" style="padding-top:20px">
+      <div class="wrap">
+        <div class="center sec">
+          <span class="tag">In their words</span>
+          <h2 class="words" data-words>What is it like to work at Teknoppy?</h2>
+          <p>These stories are written by the people named on them. We only edit for length.</p>
+        </div>
+        <div class="stories" data-stagger="60">
+          <div class="story rv" data-spotlight>
+            <div class="top">
+              <img
+                src="/team/niya-kk.webp"
+                alt="Niya K K"
+                width="58"
+                height="58"
+                loading="lazy"
+                decoding="async"
+                class="av"
+                style="object-fit:cover;object-position:top;"
+              />
+              <div><b>Niya K K</b><span>SEO Lead · Written <i class="fill">month 2026</i></span></div>
+            </div>
+            <q>I joined in <i class="fill">month, year</i>. Before Teknoppy I was <i class="fill">previous role</i>. Now I set the SEO priorities for each client and check changes before they go live. The work I'm proudest of is <i class="fill">project and what changed for the client</i>. If you're applying, <i class="fill">one honest tip</i>.</q>
+          </div>
+          <div class="story rv" data-spotlight style="--d:1">
+            <div class="top">
+              <img
+                src="/team/nandana.webp"
+                alt="Nandana S Madhu"
+                width="58"
+                height="58"
+                loading="lazy"
+                decoding="async"
+                class="av"
+                style="object-fit:cover;object-position:top;"
+              />
+              <div><b>Nandana S Madhu</b><span>Web Developer · Written <i class="fill">month 2026</i></span></div>
+            </div>
+            <q>My first build here was <i class="fill">project</i>. The part nobody sees is <i class="fill">a real detail about the build</i>. What I like is <i class="fill">something specific: sitting next to the SEO team, client feedback, the tools</i>. Something I learned here that I didn't know before: <i class="fill">one lesson</i>.</q>
+          </div>
+          <div class="story rv" data-spotlight>
+            <div class="top"><span class="av g5" aria-hidden="true">👤</span><div><b><i class="fill">Name</i></b><span><i class="fill">role</i> · Written <i class="fill">month 2026</i></span></div></div>
+            <q>I started as an intern in <i class="fill">month, year</i>. In my first week I was <i class="fill">real first task</i>, with someone senior checking my work. After three months I was offered a full-time role. The biggest change since then: <i class="fill">what you now do on your own</i>.</q>
+          </div>
+          <div class="story rv" data-spotlight style="--d:1">
+            <div class="top">
+              <img
+                src="/team/vijayakala.webp"
+                alt="Vijayakala"
+                width="58"
+                height="58"
+                loading="lazy"
+                decoding="async"
+                class="av"
+                style="object-fit:cover;object-position:top;"
+              />
+              <div><b>Vijayakala</b><span>Business Development and Client Relations · Written <i class="fill">month 2026</i></span></div>
+            </div>
+            <q>Most of my day is talking to clients in Kerala and the Gulf. A good day is when <i class="fill">real example</i>. What makes my job easier is <i class="fill">how the team supports client work</i>. The question clients ask me most is <i class="fill">question</i>.</q>
+          </div>
+        </div>
+        <div class="vrow">
+          <button class="video rv" id="team-video-btn" data-reveal="up" data-tilt="6" aria-label="Play team video: a normal morning at the Teknoppy office">
+            <div class="ph g5">
+              <span class="play"><svg width="26" height="26" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></span>
+              <span class="t">Team video: a normal morning at the Teknoppy office</span>
+              <span class="f">teknoppy-team-video-2026-thumbnail.webp · 60 to 90 seconds, 16:9, YouTube embed with thumbnail first</span>
+            </div>
+          </button>
+          <div class="tscript rv" style="--d:1">
+            <b>A morning at our Vyttila office</b>
+            <p>Filmed <i class="fill">month 2026</i>. <a href="#voices">Read the transcript</a>.</p>
+            <p><i class="fill">Add the full video transcript here, under 150 words.</i></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 6: A TYPICAL DAY (FILMSTRIP)
+         ========================================================================= -->
+    <section id="day" style="padding-top:20px">
+      <div class="wrap">
+        <div class="center sec">
+          <span class="tag">A typical day</span>
+          <h2 class="words" data-words>What does a day at the Teknoppy office look like?</h2>
+          <p>Our office is on the second floor of Kaithakal Building in Thykoodam, Vyttila, a short walk from Thykoodam Metro. Most days follow a rhythm like this.</p>
+        </div>
+        <div class="film rv">
+          <div class="frames" id="frames" data-stagger="40">
+            <div class="frame" data-reveal="up"><time>9:30 am</time><b>Stand-up</b><span>Ten minutes on what's shipping today and who needs a hand.</span></div>
+            <div class="frame" data-reveal="up"><time><i class="fill">10:00 am</i></time><b>Focused work</b><span>Builds, audits and content. Headphones on, notifications off.</span></div>
+            <div class="frame photo" data-reveal="up"><div class="ph g4"><span class="t">Office interior, wide shot with the team working</span><span class="f">teknoppy-office-interior-vyttila.webp · Landscape 1200 × 800, WebP, under 150 KB</span></div></div>
+            <div class="frame" data-reveal="up"><time><i class="fill">12:00 pm</i></time><b>Reviews</b><span>Seniors go through junior work side by side, not over email.</span></div>
+            <div class="frame" data-reveal="up"><time><i class="fill">1:00 pm</i></time><b>Lunch together</b><span>Most of us eat in the office. <i class="fill">Any regular team lunch or tradition</i></span></div>
+            <div class="frame" data-reveal="up"><time><i class="fill">2:00 pm</i></time><b>Client calls</b><span>Including calls on Gulf time for UAE and Qatar accounts.</span></div>
+            <div class="frame" data-reveal="up"><time>5:00 pm</time><b>Wrap-up</b><span>Rankings checked, reports updated, tomorrow planned.</span></div>
+          </div>
+          <p class="filmhint">Drag or swipe through the day →</p>
+        </div>
+        <div class="place">
+          <div class="info rv" data-reveal="up">
+            <div><small>Address</small>Second Floor, Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam, Vyttila, Kochi, Kerala 682019</div>
+            <div><small>Getting here</small>Short walk from Thykoodam Metro station</div>
+            <div><small>Working days</small><i class="fill">Monday to Saturday</i>, 9:30 am to 5:30 pm</div>
+            <div><small>Visiting</small>Clients and candidates are welcome by appointment. Call <a href="tel:+916282249224">+91 6282249224</a>.</div>
+          </div>
+          <div class="map rv" data-reveal="up" style="--d:1">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="none" aria-hidden="true"><path d="M30,260 C120,240 140,170 200,150"/></svg>
+            <span class="mlabel">Thykoodam Metro → office</span>
+            <span class="pin"></span>
+            <b>Google Map embed from the Teknoppy Business Profile</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 7: CELEBRATIONS (DRAG CAROUSEL & LIGHTBOX)
+         ========================================================================= -->
+    <section id="celebrate" style="background:var(--tint);border-block:1px solid var(--tint-line)">
+      <div class="wrap">
+        <div class="center sec">
+          <span class="tag" style="background:var(--surface)">Celebrations</span>
+          <h2 class="words" data-words>How does the team celebrate?</h2>
+          <p>We mark festivals, birthdays and project launches together. Every photo below is dated and was taken at our office or on a team outing.</p>
+        </div>
+      </div>
+      <div class="carw">
+        <div class="car" id="car">
+          <figure class="slide" tabindex="0">
+            <div class="ph g1"><span class="t">Onam pookalam and sadya at the office</span><span class="f">teknoppy-onam-2026-vyttila.webp</span></div>
+            <figcaption><b>Onam</b>Onam at the Vyttila office, <i class="fill">September 2026</i>.</figcaption>
+          </figure>
+          <figure class="slide" tabindex="0">
+            <div class="ph g4"><span class="t">Christmas</span><span class="f">teknoppy-christmas-2025.webp</span></div>
+            <figcaption><b>Christmas</b>Christmas, <i class="fill">December 2025</i>.</figcaption>
+          </figure>
+          <figure class="slide" tabindex="0">
+            <div class="ph g3"><span class="t">Team birthday</span><span class="f">teknoppy-birthday-celebration.webp</span></div>
+            <figcaption><b>Team birthday</b><i class="fill">Name</i>'s birthday, <i class="fill">date</i>.</figcaption>
+          </figure>
+          <figure class="slide" tabindex="0">
+            <div class="ph g5"><span class="t">Project launch day</span><span class="f">teknoppy-project-launch.webp</span></div>
+            <figcaption><b>Project launch day</b>Launch day for <i class="fill">client site</i>, <i class="fill">date</i>.</figcaption>
+          </figure>
+          <figure class="slide" tabindex="0">
+            <div class="ph g2"><span class="t">Team outing</span><span class="f">teknoppy-team-outing.webp</span></div>
+            <figcaption><b>Team outing</b>Team outing to <i class="fill">place</i>, <i class="fill">date</i>.</figcaption>
+          </figure>
+          <figure class="slide" tabindex="0">
+            <div class="ph g4"><span class="t">Community: college talk, workshop or student mentoring</span><span class="f">Show only if real, and link the event page · teknoppy-community-session.webp</span></div>
+            <figcaption><b>Community</b><i class="fill">Session name at college or event, date, link to event page</i></figcaption>
+          </figure>
+        </div>
+        <div class="wrap carctl">
+          <button id="cprev" aria-label="Previous photo">←</button>
+          <div class="carbar"><i id="cbar"></i></div>
+          <button id="cnext" aria-label="Next photo">→</button>
+        </div>
+      </div>
+      <p class="social wrap" data-reveal="up">More from the office on <i class="fill">Instagram</i> and <i class="fill">LinkedIn</i>.</p>
+      <div class="wrap" style="margin-top:20px;" data-marquee aria-hidden="true">
+        <div style="display:flex;gap:40px;white-space:nowrap;font-weight:700;color:var(--muted);font-size:14px;letter-spacing:0.02em;">
+          <span style="color:var(--orange);">✦</span><span>Onam Pookalam & Sadya</span>
+          <span style="color:var(--orange);">✦</span><span>Christmas Celebrations</span>
+          <span style="color:var(--orange);">✦</span><span>Team Birthday Milestones</span>
+          <span style="color:var(--orange);">✦</span><span>Client Launch Days</span>
+          <span style="color:var(--orange);">✦</span><span>Vyttila Team Outings</span>
+          <span style="color:var(--orange);">✦</span><span>Community & Student Mentoring</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 8: FAQ (TWO-COLUMN CARDS)
+         ========================================================================= -->
+    <section id="faq">
+      <div class="wrap">
+        <div class="center sec">
+          <span class="tag">FAQ</span>
+          <h2 class="words" data-words>Questions about life at Teknoppy</h2>
+        </div>
+        <div class="faqg rv" data-stagger="50">
+          <div class="qa open" data-reveal="up">
+            <button aria-expanded="true">What is it like to work at Teknoppy?<span class="pm"></span></button>
+            <div class="ans"><div><p>Teknoppy is a small in-house agency in Vyttila, Kochi. Designers, developers, SEO specialists and marketers sit together and work on the same client accounts. Junior staff work on real projects from the first week, with a senior colleague reviewing their work.</p></div></div>
+          </div>
+          <div class="qa" data-reveal="up">
+            <button aria-expanded="false">How many people work at Teknoppy?<span class="pm"></span></button>
+            <div class="ans"><div><p><i class="fill">10</i> people across client relations, SEO, development and social content, all in-house in one office.</p></div></div>
+          </div>
+          <div class="qa" data-reveal="up">
+            <button aria-expanded="false">Where is the Teknoppy office?<span class="pm"></span></button>
+            <div class="ans"><div><p>On the second floor of Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam, Vyttila, Kochi, Kerala 682019. It's a short walk from Thykoodam Metro station.</p></div></div>
+          </div>
+          <div class="qa" data-reveal="up">
+            <button aria-expanded="false">Does the team work with clients outside Kerala?<span class="pm"></span></button>
+            <div class="ans"><div><p>Yes. Alongside clients in Kerala, the team works with clients in the UAE and Qatar, with calls scheduled on Gulf time for those accounts.</p></div></div>
+          </div>
+          <div class="qa" data-reveal="up">
+            <button aria-expanded="false">Does Teknoppy train its team?<span class="pm"></span></button>
+            <div class="ans"><div><p>Yes. Junior work is reviewed side by side by a senior colleague, and the team runs <i class="fill">a weekly knowledge-share session every Friday</i>.</p></div></div>
+          </div>
+          <div class="qa" data-reveal="up">
+            <button aria-expanded="false">Can clients meet the Teknoppy team?<span class="pm"></span></button>
+            <div class="ans"><div><p>Yes. Clients and candidates are welcome at the office by appointment. Call +91 6282249224 to arrange a visit.</p></div></div>
+          </div>
+        </div>
+        <p class="faqnote">Questions about open roles, internships, freshers or how we hire are answered on our <a href="/career/">careers page</a>.</p>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 9: WORK WITH THIS TEAM (CLOSING SPLIT)
+         ========================================================================= -->
+    <div class="wrap" id="join">
+      <div class="center sec" style="margin-bottom:32px">
+        <h2 class="words" data-words>Work with this team</h2>
+      </div>
+      <div class="endsplit rv" data-reveal="up">
+        <div class="l" data-spotlight>
+          <h3>Want to join us?</h3>
+          <p>Open roles, how we hire and how to apply are all on our careers page.</p>
+          <a class="btn btn-primary motion-shine-btn" href="/career/" data-magnetic>Go to careers <span class="arr">→</span></a>
+        </div>
+        <div class="r" data-spotlight>
+          <h3>Need a website or SEO?</h3>
+          <p>Talk to the same people you've just met. We reply within one business day.</p>
+          <a class="btn" href="/request-a-quote/" data-magnetic>Request a quote <span class="arr">→</span></a>
+        </div>
+      </div>
     </div>
-  </aside>
 
-  <main class="overflow-x-hidden bg-[#FCFCFC] text-neutral-900">
+    <!-- Exact reference footer string -->
+    <footer>Teknoppy · Web design and digital marketing, Kochi · +91 6282249224</footer>
 
-    <!-- =========================================================================
-         SECTION 1: CINEMATIC COLLAGE HERO
-         ========================================================================= -->
-    <section id="hero" class="life-section relative min-h-[92vh] lg:min-h-screen pt-32 pb-24 flex items-center justify-center overflow-hidden bg-neutral-950 text-white" data-section-num="01" data-section-name="Hero">
-      <!-- Ambient Grid & Glow -->
-      <div class="absolute inset-0 pointer-events-none z-0">
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,rgba(240,90,44,0.18)_0%,transparent_70%)]"></div>
-        <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:64px_64px]"></div>
+    <!-- Interactive Lightbox Modal -->
+    <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+      <div class="box">
+        <div id="lbph"></div>
+        <p id="lbc"></p>
+        <button class="x" id="lbx" aria-label="Close">✕</button>
       </div>
-
-      <!-- Floating Pills Foreground Tags -->
-      <div class="absolute inset-0 max-w-[1400px] mx-auto pointer-events-none z-20 overflow-hidden">
-        <span class="hero-floating-pill absolute top-28 left-6 sm:left-12 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-[11px] sm:text-xs font-black uppercase tracking-widest text-primary shadow-lg animate-float-slow">
-          ✦ PEOPLE & CULTURE
-        </span>
-        <span class="hero-floating-pill absolute top-40 right-6 sm:right-16 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-[11px] sm:text-xs font-black uppercase tracking-widest text-[#F9AE42] shadow-lg animate-float-delayed">
-          ✦ DIGITAL ARCHITECTURE
-        </span>
-        <span class="hero-floating-pill absolute bottom-32 left-10 sm:left-24 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-[11px] sm:text-xs font-black uppercase tracking-widest text-white/90 shadow-lg animate-float-slow">
-          ✦ DAILY CRAFT
-        </span>
-        <span class="hero-floating-pill absolute bottom-28 right-8 sm:right-28 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-[11px] sm:text-xs font-black uppercase tracking-widest text-primary shadow-lg animate-float-delayed">
-          ✦ KOCHI & BEYOND
-        </span>
-      </div>
-
-      <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10 w-full">
-        <!-- Center Cinematic Typography -->
-        <div class="text-center max-w-4xl mx-auto mb-12 sm:mb-16">
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-black text-primary uppercase tracking-[0.25em] mb-6 shadow-inner">
-            <span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
-            Digital Journal & Culture Wall
-          </div>
-          
-          <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-[88px] font-black tracking-tight leading-[1.02] text-white mb-6 uppercase">
-            LIFE <span class="text-primary italic font-serif">@</span> TEKNOPPY
-          </h1>
-
-          <p class="text-base sm:text-xl lg:text-2xl text-neutral-300 font-medium leading-relaxed max-w-3xl mx-auto">
-            Behind the websites, ideas, launches and results — this is the people, daily work, and moments that make Teknoppy.
-          </p>
-        </div>
-
-        <!-- Layered Collage Cards (Depth Flow) -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-5xl mx-auto relative">
-          <!-- Card 1: Team & Collaboration -->
-          <div class="group relative aspect-[4/5] rounded-3xl overflow-hidden border border-white/10 bg-neutral-900 shadow-2xl hover:scale-[1.03] transition-all duration-500 -rotate-1 hover:rotate-0">
-            <img src="/whoweare.webp" alt="Teknoppy Team Collaboration" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-5 flex flex-col justify-end">
-              <span class="text-[10px] font-black tracking-widest uppercase text-primary mb-1">TEAM DISCOVERY</span>
-              <p class="text-sm font-bold text-white leading-tight">Sprint Planning & Design Ideation</p>
-            </div>
-          </div>
-
-          <!-- Card 2: Founder / Leadership Craft -->
-          <div class="group relative aspect-[4/5] rounded-3xl overflow-hidden border border-white/10 bg-neutral-900 shadow-2xl hover:scale-[1.03] transition-all duration-500 translate-y-4 md:translate-y-8 rotate-2 hover:rotate-0">
-            <img src="/team/sanal-edison.webp" alt="Sanal Edison - Lead Designer" class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent p-5 flex flex-col justify-end">
-              <span class="text-[10px] font-black tracking-widest uppercase text-[#F9AE42] mb-1">CREATIVE DIRECTION</span>
-              <p class="text-sm font-bold text-white leading-tight">Sanal Edison & UX Architecture</p>
-            </div>
-          </div>
-
-          <!-- Card 3: Client Moments & Reviews -->
-          <div class="group relative aspect-[4/5] rounded-3xl overflow-hidden border border-white/10 bg-neutral-900 shadow-2xl hover:scale-[1.03] transition-all duration-500 -translate-y-2 md:-translate-y-4 -rotate-2 hover:rotate-0">
-            <img src="/testimonials/vivek-menon.webp" alt="Vivek Menon - Evosyz Collaboration" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent p-5 flex flex-col justify-end">
-              <span class="text-[10px] font-black tracking-widest uppercase text-emerald-400 mb-1">CLIENT MOMENT</span>
-              <p class="text-sm font-bold text-white leading-tight">Evosyz FinTech Strategy Session</p>
-            </div>
-          </div>
-
-          <!-- Card 4: Web Projects Shipped -->
-          <div class="group relative aspect-[4/5] rounded-3xl overflow-hidden border border-white/10 bg-neutral-900 shadow-2xl hover:scale-[1.03] transition-all duration-500 translate-y-3 rotate-1 hover:rotate-0">
-            <img src="/portfolios/website/direction-north.webp" alt="Direction North Portal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-5 flex flex-col justify-end">
-              <span class="text-[10px] font-black tracking-widest uppercase text-primary mb-1">LIVE LAUNCH</span>
-              <p class="text-sm font-bold text-white leading-tight">Direction North Global Freight</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Scroll down nudge -->
-        <div class="text-center mt-14 sm:mt-16">
-          <a href="#manifesto" class="inline-flex flex-col items-center gap-2 text-xs font-bold text-neutral-400 hover:text-primary transition-colors group">
-            <span class="uppercase tracking-widest">Scroll To Explore</span>
-            <svg class="w-5 h-5 text-primary group-hover:translate-y-1 transition-transform animate-bounce" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         SECTION 2: "THIS IS US" MANIFESTO STREAM
-         ========================================================================= -->
-    <section id="manifesto" class="life-section py-24 sm:py-32 bg-[#FAF7F2] border-b border-neutral-200/60 relative overflow-hidden" data-section-num="02" data-section-name="Manifesto">
-      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
-        <div class="max-w-4xl mx-auto text-center mb-16">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-xs font-bold text-primary uppercase tracking-wider mb-4">
-            Our Culture & Ethos
-          </div>
-          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-neutral-900 tracking-tight leading-tight">
-            More Than Work.
-          </h2>
-          <p class="text-base sm:text-xl text-neutral-600 font-medium leading-relaxed mt-4 max-w-2xl mx-auto">
-            We don’t just build templates. We obsess over the nuance, the performance, the user journey, and the people behind every brand we touch.
-          </p>
-        </div>
-
-        <!-- Kinetic Typography Stream -->
-        <div class="manifesto-stream max-w-5xl mx-auto space-y-4 sm:space-y-6">
-          {['DESIGNING', 'BUILDING', 'SOLVING', 'LEARNING', 'CELEBRATING'].map((word, idx) => {
-            const subtitles = [
-              'Sculpting intuitive interfaces with purpose, clarity, and conversion psychology.',
-              'Writing lean, semantic code that loads in milliseconds on any mobile connection.',
-              'De-tangling complex business workflows into seamless digital customer funnels.',
-              'Staying relentless on Core Web Vitals, new web standards, and search algorithms.',
-              'Cheering every client milestone, production release, and team victory together.'
-            ];
-            return (
-              <div class="manifesto-card group bg-white border border-neutral-200/70 rounded-3xl p-6 sm:p-10 shadow-sm hover:shadow-xl hover:border-primary/40 transition-all duration-300 flex flex-col md:flex-row md:items-center justify-between gap-4 cursor-default">
-                <div class="flex items-baseline gap-4 sm:gap-6">
-                  <span class="text-xs sm:text-sm font-black text-primary font-mono tracking-widest">0{idx + 1}</span>
-                  <span class="text-3xl sm:text-5xl lg:text-6xl font-black text-neutral-900 group-hover:text-primary transition-colors tracking-tight uppercase">
-                    {word}
-                  </span>
-                </div>
-                <p class="text-xs sm:text-sm text-neutral-500 font-semibold max-w-md md:text-right group-hover:text-neutral-700 transition-colors">
-                  {subtitles[idx]}
-                </p>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         SECTION 3: A DAY AT TEKNOPPY (STICKY HORIZONTAL / CAROUSEL RAIL)
-         ========================================================================= -->
-    <section id="daily" class="life-section py-24 sm:py-32 bg-white border-b border-neutral-200/60 relative" data-section-num="03" data-section-name="Daily Rhythms">
-      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-12">
-        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-16">
-          <div>
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-xs font-bold text-primary uppercase tracking-wider mb-3">
-              Daily Rhythms
-            </div>
-            <h2 class="text-3xl sm:text-5xl font-black text-neutral-900 tracking-tight leading-tight">
-              A Day At <span class="text-primary">Teknoppy</span>
-            </h2>
-            <p class="text-sm sm:text-base text-neutral-500 font-semibold mt-2 max-w-xl">
-              From morning espresso & stand-up to late-evening Lighthouse benchmarks — here is how our days unfold at the Kochi studio.
-            </p>
-          </div>
-
-          <!-- Controls for Desktop -->
-          <div class="hidden sm:flex items-center gap-3">
-            <button id="daily-prev-btn" class="w-12 h-12 rounded-full border border-neutral-200 bg-neutral-50 hover:bg-white hover:border-primary text-neutral-700 hover:text-primary flex items-center justify-center transition-all shadow-sm active:scale-95" aria-label="Previous Day Step">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg>
-            </button>
-            <button id="daily-next-btn" class="w-12 h-12 rounded-full border border-neutral-200 bg-neutral-50 hover:bg-white hover:border-primary text-neutral-700 hover:text-primary flex items-center justify-center transition-all shadow-sm active:scale-95" aria-label="Next Day Step">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
-            </button>
-          </div>
-        </div>
-
-        <!-- Scrollable Rail -->
-        <div id="daily-rail" class="flex gap-6 overflow-x-auto pb-8 pt-2 scroll-smooth snap-x snap-mandatory scrollbar-none">
-          {dailyTimeline.map((item, index) => (
-            <div class="snap-start shrink-0 w-[290px] sm:w-[360px] md:w-[400px] bg-white border border-neutral-200/80 rounded-3xl p-6 sm:p-7 shadow-sm hover:shadow-xl hover:border-primary/30 transition-all duration-300 flex flex-col justify-between group">
-              <div>
-                <!-- Time & Location Header -->
-                <div class="flex items-center justify-between mb-5">
-                  <div class="flex items-baseline gap-1 font-mono text-primary font-black">
-                    <span class="text-3xl sm:text-4xl leading-none">{item.time}</span>
-                    <span class="text-xs font-bold uppercase">{item.period}</span>
-                  </div>
-                  <span class="px-3 py-1 rounded-full bg-neutral-100 text-[11px] font-bold text-neutral-600 uppercase tracking-wider">
-                    {item.location}
-                  </span>
-                </div>
-
-                <!-- Visual Snapshot -->
-                <div class="aspect-[16/10] rounded-2xl overflow-hidden bg-neutral-100 border border-neutral-200/60 mb-5 relative">
-                  <img src={item.image} alt={item.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-                  <span class="absolute bottom-2.5 left-2.5 px-2.5 py-1 rounded-md bg-black/75 backdrop-blur-sm text-[10px] font-black uppercase text-white tracking-widest">
-                    {item.tag}
-                  </span>
-                </div>
-
-                <h3 class="text-lg sm:text-xl font-black text-neutral-900 group-hover:text-primary transition-colors mb-2 leading-snug">
-                  {item.title}
-                </h3>
-                <p class="text-xs sm:text-sm font-bold text-neutral-700 mb-3">{item.subtitle}</p>
-                <p class="text-xs sm:text-sm text-neutral-500 font-medium leading-relaxed">
-                  {item.description}
-                </p>
-              </div>
-
-              <div class="mt-6 pt-4 border-t border-neutral-100 flex items-center justify-between text-xs font-bold text-neutral-400">
-                <span>Phase 0{index + 1} of 05</span>
-                <span class="text-primary font-black group-hover:translate-x-1 transition-transform">✦ In Progress</span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         SECTION 4: THE TEKNOPPY WALL (EXPANDABLE MASONRY & FILTER)
-         ========================================================================= -->
-    <section id="wall" class="life-section py-24 sm:py-32 bg-[#F9F7F5] border-b border-neutral-200/60 relative" data-section-num="04" data-section-name="Media Wall">
-      <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-12">
-        <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-xs font-bold text-primary uppercase tracking-wider mb-4">
-            Visual Journal & Wall
-          </div>
-          <h2 class="text-3xl sm:text-5xl font-black text-neutral-900 tracking-tight leading-tight">
-            The <span class="text-primary">Teknoppy</span> Wall
-          </h2>
-          <p class="text-sm sm:text-base text-neutral-600 font-semibold mt-3">
-            An expanding collection of project drops, client catchups, team highlights, and candid agency life. Click any card to expand.
-          </p>
-        </div>
-
-        <!-- Filter Navigation Tabs -->
-        <div class="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto pb-4 mb-10 scrollbar-none">
-          {filterCategories.map((cat, idx) => (
-            <button
-              class={`life-filter-btn px-4 sm:px-5 py-2.5 rounded-full text-xs font-black uppercase tracking-wider whitespace-nowrap transition-all duration-200 border ${
-                idx === 0
-                  ? 'bg-neutral-900 text-white border-neutral-900 shadow-md is-active'
-                  : 'bg-white text-neutral-600 border-neutral-200 hover:border-primary hover:text-primary'
-              }`}
-              data-category={cat.id}
-            >
-              {cat.label}
-            </button>
-          ))}
-        </div>
-
-        <!-- Masonry Grid Cards -->
-        <div id="media-wall-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6">
-          {lifeEntries.map((item, idx) => (
-            <div
-              class="wall-card group relative bg-white border border-neutral-200/80 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:border-primary/40 transition-all duration-300 cursor-pointer flex flex-col"
-              data-category={item.category}
-              data-index={idx}
-              data-id={item.id}
-              data-title={item.title}
-              data-date={item.formattedDate}
-              data-type={item.type}
-              data-media={item.mediaUrl}
-              data-youtube={item.youtubeId || ''}
-              data-desc={item.description}
-            >
-              <!-- Media Frame -->
-              <div class="relative w-full aspect-[4/3] bg-neutral-100 overflow-hidden">
-                <img
-                  src={item.thumbnailUrl || item.mediaUrl}
-                  alt={item.title}
-                  loading="lazy"
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-
-                {item.type === 'video' && (
-                  <div class="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/20 transition-colors">
-                    <div class="w-12 h-12 rounded-full bg-primary/95 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                      <svg class="w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                    </div>
-                  </div>
-                )}
-
-                {item.isNew && (
-                  <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-primary text-white text-[10px] font-black uppercase tracking-widest shadow-md">
-                    ● RECENT
-                  </span>
-                )}
-
-                <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-white text-[10px] font-black uppercase tracking-widest">
-                  {item.formattedDate}
-                </span>
-              </div>
-
-              <!-- Content Body -->
-              <div class="p-6 flex flex-col flex-1 justify-between">
-                <div>
-                  <div class="flex items-center gap-2 mb-2">
-                    <span class="text-[11px] font-black uppercase tracking-wider text-primary">
-                      #{item.category}
-                    </span>
-                    {item.client && (
-                      <span class="text-[11px] font-semibold text-neutral-400">· {item.client}</span>
-                    )}
-                  </div>
-                  <h3 class="text-base font-black text-neutral-900 group-hover:text-primary transition-colors leading-snug mb-2">
-                    {item.title}
-                  </h3>
-                  <p class="text-xs text-neutral-500 font-medium leading-relaxed line-clamp-2">
-                    {item.description}
-                  </p>
-                </div>
-
-                <div class="mt-4 pt-3 border-t border-neutral-100 flex items-center justify-between text-xs font-bold text-neutral-400 group-hover:text-neutral-700">
-                  <span>View Details</span>
-                  <svg class="w-4 h-4 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         SECTION 5: DATE-BASED TIMELINE ("OUR JOURNEY")
-         ========================================================================= -->
-    <section id="journey" class="life-section py-24 sm:py-32 bg-white border-b border-neutral-200/60 relative" data-section-num="05" data-section-name="Journey">
-      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-12">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-xs font-bold text-primary uppercase tracking-wider mb-4">
-            Chronological Flow
-          </div>
-          <h2 class="text-3xl sm:text-5xl font-black text-neutral-900 tracking-tight leading-tight">
-            Our <span class="text-primary">Journey</span> & Milestones
-          </h2>
-          <p class="text-sm sm:text-base text-neutral-600 font-semibold mt-3">
-            A real-time progression of recent agency releases, collaborations, and engineering wins.
-          </p>
-        </div>
-
-        <!-- Vertical Timeline Container -->
-        <div class="relative max-w-4xl mx-auto">
-          <!-- Center Vertical Track Line -->
-          <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-[2px] bg-neutral-200 md:-translate-x-1/2 z-0"></div>
-
-          <div class="space-y-12 sm:space-y-16 relative z-10">
-            <!-- Timeline Item 1 -->
-            <div class="relative flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-12 pl-12 md:pl-0">
-              <div class="absolute left-2.5 md:left-1/2 top-4 md:top-1/2 w-4 h-4 rounded-full bg-primary border-4 border-white shadow-md md:-translate-x-1/2 md:-translate-y-1/2 z-10"></div>
-              
-              <div class="md:w-1/2 md:text-right">
-                <span class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-mono font-black mb-2">OCTOBER 2026</span>
-                <h3 class="text-xl font-black text-neutral-900">Evosyz FinTech Platform Review</h3>
-                <p class="text-xs sm:text-sm text-neutral-500 font-semibold mt-1">Strategic discussion with Vivek Menon focusing on sub-second loads & investor dashboard aesthetics.</p>
-              </div>
-              <div class="md:w-1/2">
-                <div class="aspect-[16/9] rounded-2xl overflow-hidden border border-neutral-200 shadow-sm bg-neutral-100">
-                  <img src="/testimonials/vivek-menon.webp" alt="Evosyz Review" class="w-full h-full object-cover" loading="lazy" />
-                </div>
-              </div>
-            </div>
-
-            <!-- Timeline Item 2 -->
-            <div class="relative flex flex-col md:flex-row-reverse items-start md:items-center gap-6 md:gap-12 pl-12 md:pl-0">
-              <div class="absolute left-2.5 md:left-1/2 top-4 md:top-1/2 w-4 h-4 rounded-full bg-neutral-900 border-4 border-white shadow-md md:-translate-x-1/2 md:-translate-y-1/2 z-10"></div>
-              
-              <div class="md:w-1/2 md:text-left">
-                <span class="inline-block px-3 py-1 rounded-full bg-neutral-100 text-neutral-700 text-xs font-mono font-black mb-2">SEPTEMBER 2026</span>
-                <h3 class="text-xl font-black text-neutral-900">Direction North Global Freight Launch</h3>
-                <p class="text-xs sm:text-sm text-neutral-500 font-semibold mt-1">Rolled out a comprehensive multi-region logistics quotation portal built for worldwide conversion.</p>
-              </div>
-              <div class="md:w-1/2">
-                <div class="aspect-[16/9] rounded-2xl overflow-hidden border border-neutral-200 shadow-sm bg-neutral-100">
-                  <img src="/portfolios/website/direction-north.webp" alt="Direction North" class="w-full h-full object-cover" loading="lazy" />
-                </div>
-              </div>
-            </div>
-
-            <!-- Timeline Item 3 -->
-            <div class="relative flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-12 pl-12 md:pl-0">
-              <div class="absolute left-2.5 md:left-1/2 top-4 md:top-1/2 w-4 h-4 rounded-full bg-primary border-4 border-white shadow-md md:-translate-x-1/2 md:-translate-y-1/2 z-10"></div>
-              
-              <div class="md:w-1/2 md:text-right">
-                <span class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-mono font-black mb-2">AUGUST 2026</span>
-                <h3 class="text-xl font-black text-neutral-900">Core Web Vitals Benchmark Sprint</h3>
-                <p class="text-xs sm:text-sm text-neutral-500 font-semibold mt-1">Rigorous audit sprint achieving top INP and LCP performance across our active client portfolio.</p>
-              </div>
-              <div class="md:w-1/2">
-                <div class="aspect-[16/9] rounded-2xl overflow-hidden border border-neutral-200 shadow-sm bg-neutral-100">
-                  <img src="/whoweare.webp" alt="SEO Team Sprint" class="w-full h-full object-cover" loading="lazy" />
-                </div>
-              </div>
-            </div>
-
-            <!-- Timeline Item 4 -->
-            <div class="relative flex flex-col md:flex-row-reverse items-start md:items-center gap-6 md:gap-12 pl-12 md:pl-0">
-              <div class="absolute left-2.5 md:left-1/2 top-4 md:top-1/2 w-4 h-4 rounded-full bg-neutral-900 border-4 border-white shadow-md md:-translate-x-1/2 md:-translate-y-1/2 z-10"></div>
-              
-              <div class="md:w-1/2 md:text-left">
-                <span class="inline-block px-3 py-1 rounded-full bg-neutral-100 text-neutral-700 text-xs font-mono font-black mb-2">JULY 2026</span>
-                <h3 class="text-xl font-black text-neutral-900">Cochin Suraksha & Hike RV Launches</h3>
-                <p class="text-xs sm:text-sm text-neutral-500 font-semibold mt-1">Dual production launch celebrating enterprise safety solutions and adventure tourism portals.</p>
-              </div>
-              <div class="md:w-1/2">
-                <div class="aspect-[16/9] rounded-2xl overflow-hidden border border-neutral-200 shadow-sm bg-neutral-100">
-                  <img src="/portfolios/website/cochin-suraksha.webp" alt="Cochin Suraksha" class="w-full h-full object-cover" loading="lazy" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         SECTION 6: PROJECT PROGRESS ("FROM IDEA TO LAUNCH")
-         ========================================================================= -->
-    <section id="workflow" class="life-section py-24 sm:py-32 bg-[#F9F7F5] border-b border-neutral-200/60 relative" data-section-num="06" data-section-name="Workflow">
-      <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-12">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-xs font-bold text-primary uppercase tracking-wider mb-4">
-            Production Lifecycle
-          </div>
-          <h2 class="text-3xl sm:text-5xl font-black text-neutral-900 tracking-tight leading-tight">
-            From Idea To <span class="text-primary">Launch</span>
-          </h2>
-          <p class="text-sm sm:text-base text-neutral-600 font-semibold mt-3">
-            Every website follows a rigorous, collaborative 6-stage engineering and design journey.
-          </p>
-        </div>
-
-        <!-- 6 Steps Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          {projectWorkflow.map((stage) => (
-            <div class="bg-white border border-neutral-200/80 rounded-3xl p-7 shadow-sm hover:shadow-xl hover:border-primary/40 transition-all duration-300 flex flex-col justify-between group">
-              <div>
-                <div class="flex items-center justify-between mb-4">
-                  <span class="text-3xl font-black text-primary font-mono">{stage.number}</span>
-                  <span class="text-xs font-black text-neutral-400 uppercase tracking-widest">{stage.subtitle}</span>
-                </div>
-                <h3 class="text-xl font-black text-neutral-900 group-hover:text-primary transition-colors mb-3">
-                  {stage.title}
-                </h3>
-                <p class="text-xs sm:text-sm text-neutral-500 font-semibold leading-relaxed mb-6">
-                  {stage.description}
-                </p>
-              </div>
-
-              <div>
-                <span class="text-[11px] font-black uppercase tracking-wider text-neutral-400 block mb-2">Key Deliverables:</span>
-                <div class="flex flex-wrap gap-1.5">
-                  {stage.deliverables.map((deliv) => (
-                    <span class="px-2.5 py-1 rounded-md bg-neutral-100 text-[11px] font-bold text-neutral-700">
-                      ✓ {deliv}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         SECTION 7: CURRENTLY BUILDING (LIVE PRODUCTION BOARD)
-         ========================================================================= -->
-    <section class="py-20 bg-neutral-900 text-white border-b border-white/10 relative overflow-hidden">
-      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
-        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-          <div>
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-black text-[#F9AE42] uppercase tracking-wider mb-3">
-              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              Live Production Board
-            </div>
-            <h2 class="text-3xl sm:text-4xl font-black text-white tracking-tight">
-              Currently Building <span class="text-primary italic">@</span> Studio
-            </h2>
-          </div>
-          <p class="text-xs sm:text-sm text-neutral-400 max-w-md font-medium">
-            A transparent peek at client portals currently undergoing design prototyping, backend integrations, and quality assurance.
-          </p>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {activeBuilds.map((build) => (
-            <div class="bg-neutral-950/80 border border-white/10 rounded-2xl p-6 shadow-xl flex flex-col justify-between">
-              <div>
-                <div class="flex items-center justify-between mb-4">
-                  <span class="px-2.5 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-white/10 text-white">
-                    {build.badge}
-                  </span>
-                  <span class="text-xs font-mono font-bold text-[#F9AE42]">{build.progressPercent}%</span>
-                </div>
-                <h3 class="text-base font-black text-white mb-1 leading-snug">{build.client}</h3>
-                <p class="text-xs text-primary font-bold mb-3">{build.projectType}</p>
-                <p class="text-xs text-neutral-400 font-medium leading-relaxed mb-5">{build.stage}</p>
-              </div>
-
-              <div>
-                <!-- Progress Bar -->
-                <div class="w-full h-1.5 bg-neutral-800 rounded-full overflow-hidden mb-3">
-                  <div class="h-full bg-primary rounded-full transition-all duration-1000" style={`width: ${build.progressPercent}%`}></div>
-                </div>
-                <div class="text-[11px] font-bold text-neutral-500">
-                  Lead: <span class="text-neutral-300">{build.lead}</span>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         SECTION 8: WITH OUR CLIENTS (FILM-STRIP STRIP)
-         ========================================================================= -->
-    <section class="py-24 bg-white border-b border-neutral-200/60 overflow-hidden relative">
-      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-12 mb-10">
-        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
-          <div>
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-xs font-bold text-primary uppercase tracking-wider mb-3">
-              True Partnerships
-            </div>
-            <h2 class="text-3xl sm:text-4xl font-black text-neutral-900 tracking-tight">
-              With Our <span class="text-primary">Clients</span>
-            </h2>
-          </div>
-          <p class="text-xs sm:text-sm text-neutral-500 font-semibold max-w-md">
-            Long-term relationships founded on transparency, direct communication, and measurable growth.
-          </p>
-        </div>
-      </div>
-
-      <!-- Film Strip Rail -->
-      <div class="client-film-strip flex gap-6 px-4 overflow-x-auto pb-4 scrollbar-none">
-        {clientMoments.map((c) => (
-          <div class="shrink-0 w-[300px] sm:w-[350px] bg-neutral-50 border border-neutral-200/80 rounded-3xl p-6 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
-            <div>
-              <div class="flex items-center gap-4 mb-4">
-                <img src={c.image} alt={c.clientName} class="w-14 h-14 rounded-2xl object-cover border border-neutral-200 shadow-sm" loading="lazy" />
-                <div>
-                  <h3 class="text-base font-black text-neutral-900 leading-tight">{c.clientName}</h3>
-                  <p class="text-xs text-primary font-bold">{c.organization}</p>
-                  <span class="text-[11px] text-neutral-400">{c.location}</span>
-                </div>
-              </div>
-              <p class="text-xs sm:text-sm text-neutral-600 font-medium italic leading-relaxed">
-                "{c.highlight}"
-              </p>
-            </div>
-            <div class="mt-4 pt-3 border-t border-neutral-200/60 text-[11px] font-bold text-neutral-500 flex items-center justify-between">
-              <span>{c.role}</span>
-              <span class="text-primary">✦ Verified</span>
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         SECTION 9: THE PEOPLE BEHIND TEKNOPPY (3D NEWSPAPER FOLDING CARDS)
-         ========================================================================= -->
-    <section id="team" class="life-section py-24 sm:py-32 bg-[#FAF7F2] border-b border-neutral-200/60 relative" data-section-num="07" data-section-name="Team">
-      <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-12">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-xs font-bold text-primary uppercase tracking-wider mb-4">
-            The Makers & Strategists
-          </div>
-          <h2 class="text-3xl sm:text-5xl font-black text-neutral-900 tracking-tight leading-tight">
-            The People Behind <span class="text-primary">Teknoppy</span>
-          </h2>
-          <p class="text-sm sm:text-base text-neutral-600 font-semibold mt-3">
-            Real people doing real craft. Hover or tap each profile to unfold their story and technical specialty.
-          </p>
-        </div>
-
-        <!-- 3D Newspaper Fold Cards Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
-          {teamMembers.map((member) => (
-            <div class="newspaper-fold-wrapper relative select-none">
-              <div class="newspaper-card relative bg-white border border-neutral-200 rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 flex flex-col group cursor-pointer">
-                <!-- Folding Top Leaf / Image -->
-                <div class="newspaper-leaf relative w-full aspect-[3/4] bg-[#FFF9F6] border-b border-neutral-100 flex items-center justify-center overflow-hidden">
-                  <span class="absolute text-6xl font-black text-primary/10 select-none">{initials(member.name)}</span>
-                  <img
-                    src={member.photo}
-                    alt={member.name}
-                    loading="lazy"
-                    class="relative w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <!-- Editorial Stamp Tag -->
-                  <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur-md border border-neutral-200 text-[10px] font-black text-neutral-800 uppercase tracking-widest shadow-sm">
-                    {member.department}
-                  </div>
-                </div>
-
-                <!-- Editorial Content Below -->
-                <div class="p-6 flex flex-col flex-1 justify-between bg-white">
-                  <div>
-                    <h3 class="text-xl font-black text-neutral-900 group-hover:text-primary transition-colors leading-snug">
-                      {member.name}
-                    </h3>
-                    <p class="text-xs text-primary font-bold uppercase tracking-wider mt-1 mb-3">
-                      {member.role}
-                    </p>
-                    <div class="w-8 h-[2px] bg-primary/80 mb-3"></div>
-                    <p class="text-xs text-neutral-500 font-semibold leading-relaxed mb-4">
-                      {member.bio}
-                    </p>
-                  </div>
-
-                  <div class="pt-3 border-t border-neutral-100 flex items-center justify-between text-[11px] font-bold text-neutral-400">
-                    <span class="text-neutral-600 truncate max-w-[200px]">{member.specialty}</span>
-                    <span class="text-primary font-black ml-2">✦</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <!-- "MEET THE TEAM" HORIZONTAL EDITORIAL TICKER -->
-        <div class="mt-20 pt-10 border-t border-neutral-200/80 overflow-hidden">
-          <div class="team-editorial-ticker flex whitespace-nowrap text-lg sm:text-2xl font-black uppercase text-neutral-800 tracking-wider">
-            <div class="ticker-content flex items-center gap-8 animate-ticker">
-              <span>SANAL EDISON — FOUNDER & DIGITAL STRATEGIST</span>
-              <span class="text-primary">✦</span>
-              <span>VIJAYAKALA — BUSINESS DEVELOPMENT & CLIENT RELATIONS</span>
-              <span class="text-primary">✦</span>
-              <span>NIYA K K — SEO LEAD</span>
-              <span class="text-primary">✦</span>
-              <span>NEHA P — SEO ANALYST</span>
-              <span class="text-primary">✦</span>
-              <span>NANDANA S MADHU — WEB DEVELOPER</span>
-              <span class="text-primary">✦</span>
-              <span>ADITHYA K — CONTENT STRATEGIST</span>
-              <span class="text-primary">✦</span>
-              <span>NITHYA SIBI — JR. SEO EXECUTIVE</span>
-              <span class="text-primary">✦</span>
-              <span>ANJALI BABU — JR. SEO EXECUTIVE</span>
-              <span class="text-primary">✦</span>
-            </div>
-            <div class="ticker-content flex items-center gap-8 animate-ticker" aria-hidden="true">
-              <span>SANAL EDISON — FOUNDER & DIGITAL STRATEGIST</span>
-              <span class="text-primary">✦</span>
-              <span>VIJAYAKALA — BUSINESS DEVELOPMENT & CLIENT RELATIONS</span>
-              <span class="text-primary">✦</span>
-              <span>NIYA K K — SEO LEAD</span>
-              <span class="text-primary">✦</span>
-              <span>NEHA P — SEO ANALYST</span>
-              <span class="text-primary">✦</span>
-              <span>NANDANA S MADHU — WEB DEVELOPER</span>
-              <span class="text-primary">✦</span>
-              <span>ADITHYA K — CONTENT STRATEGIST</span>
-              <span class="text-primary">✦</span>
-              <span>NITHYA SIBI — JR. SEO EXECUTIVE</span>
-              <span class="text-primary">✦</span>
-              <span>ANJALI BABU — JR. SEO EXECUTIVE</span>
-              <span class="text-primary">✦</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         SECTION 10: MILESTONES & ACHIEVEMENTS
-         ========================================================================= -->
-    <section class="py-20 bg-neutral-950 text-white border-b border-white/10 relative">
-      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-12">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
-          {milestones.map((m) => (
-            <div class="bg-neutral-900 border border-white/10 rounded-3xl p-6 sm:p-8 flex flex-col justify-between group hover:border-primary/40 transition-colors">
-              <div>
-                <span class="text-4xl sm:text-5xl lg:text-6xl font-black text-white font-mono block mb-2 group-hover:text-primary transition-colors">
-                  {m.value}
-                </span>
-                <div class="w-8 h-[2px] bg-primary mb-3"></div>
-                <h3 class="text-xs sm:text-sm font-black text-neutral-200 uppercase tracking-widest">{m.label}</h3>
-              </div>
-              <p class="text-xs text-neutral-400 font-medium mt-3">{m.sublabel}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         SECTION 11: CELEBRATIONS & CULTURE ("MOMENTS BETWEEN THE WORK")
-         ========================================================================= -->
-    <section class="py-24 sm:py-32 bg-white border-b border-neutral-200/60 relative overflow-hidden">
-      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-12">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-xs font-bold text-primary uppercase tracking-wider mb-4">
-            Culture & Balance
-          </div>
-          <h2 class="text-3xl sm:text-5xl font-black text-neutral-900 tracking-tight leading-tight">
-            The Moments <span class="text-primary">Between The Work</span>
-          </h2>
-          <p class="text-sm sm:text-base text-neutral-600 font-semibold mt-3">
-            Tea breaks, whiteboard brainstorms, deployment celebrations, and honest laughs.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-          {cultureMoments.map((item) => (
-            <div class={`polaroid-card bg-[#FAFAFA] border border-neutral-200 p-4 pb-6 rounded-2xl shadow-md hover:shadow-2xl hover:scale-105 transition-all duration-300 ${item.rotation} hover:rotate-0`}>
-              <div class="aspect-[4/3] rounded-xl overflow-hidden bg-neutral-100 mb-4 border border-neutral-200/60">
-                <img src={item.image} alt={item.caption} class="w-full h-full object-cover" loading="lazy" />
-              </div>
-              <span class="text-[10px] font-black uppercase text-primary tracking-widest block mb-1">{item.tag}</span>
-              <h3 class="text-sm font-black text-neutral-900 leading-snug mb-1">{item.caption}</h3>
-              <p class="text-xs text-neutral-500 font-medium">{item.subtext}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         SECTION 12: INFINITE DUAL-ROW CONTINUOUS PHOTO FLOW
-         ========================================================================= -->
-    <section class="py-16 bg-[#F9F7F5] border-b border-neutral-200/60 overflow-hidden">
-      <div class="max-w-[1280px] mx-auto px-4 mb-8 text-center">
-        <span class="text-xs font-black uppercase text-neutral-400 tracking-[0.25em]">Living Photo Stream</span>
-      </div>
-
-      <!-- ROW 1 (Rightward) -->
-      <div class="infinite-photo-row flex gap-4 whitespace-nowrap mb-4 animate-marquee-right">
-        {[
-          '/portfolios/website/direction-north.webp',
-          '/portfolios/website/aeden-fruits-international.webp',
-          '/portfolios/website/general-tech-services.webp',
-          '/portfolios/website/hike-rv-caravans.webp',
-          '/portfolios/website/abrus-krishna-finance.webp',
-          '/portfolios/website/cochin-suraksha.webp',
-          '/portfolios/website/direction-north.webp',
-          '/portfolios/website/aeden-fruits-international.webp'
-        ].map((imgSrc) => (
-          <div class="shrink-0 w-64 sm:w-80 h-44 sm:h-52 rounded-2xl overflow-hidden border border-neutral-200 shadow-sm bg-white">
-            <img src={imgSrc} alt="Teknoppy Work Snapshot" class="w-full h-full object-cover" loading="lazy" />
-          </div>
-        ))}
-      </div>
-
-      <!-- ROW 2 (Leftward) -->
-      <div class="infinite-photo-row flex gap-4 whitespace-nowrap animate-marquee-left">
-        {[
-          '/whoweare.webp',
-          '/testimonials/vivek-menon.webp',
-          '/whatwedo.webp',
-          '/testimonials/dr-asghar.webp',
-          '/tekenoppyadvantage.webp',
-          '/testimonials/biju-thomas.webp',
-          '/whoweare.webp',
-          '/testimonials/lenaa.webp'
-        ].map((imgSrc) => (
-          <div class="shrink-0 w-64 sm:w-80 h-44 sm:h-52 rounded-2xl overflow-hidden border border-neutral-200 shadow-sm bg-white">
-            <img src={imgSrc} alt="Teknoppy Culture Snapshot" class="w-full h-full object-cover" loading="lazy" />
-          </div>
-        ))}
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         SECTION 13: PRE-FOOTER CRESCENDO ("THIS IS TEKNOPPY") & CTA
-         ========================================================================= -->
-    <section class="life-section py-28 sm:py-36 bg-neutral-950 text-white text-center relative overflow-hidden" data-section-num="08" data-section-name="Crescendo">
-      <div class="absolute inset-0 pointer-events-none">
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(240,90,44,0.15)_0%,transparent_70%)]"></div>
-      </div>
-
-      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
-        <span class="text-xs sm:text-sm font-black uppercase text-primary tracking-[0.3em] block mb-6">
-          ✦ THE CULTURE. THE PEOPLE. THE RESULTS.
-        </span>
-
-        <h2 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight leading-none uppercase mb-8">
-          THIS IS <span class="text-primary italic">TEKNOPPY.</span>
-        </h2>
-
-        <p class="text-base sm:text-xl text-neutral-300 font-medium max-w-2xl mx-auto leading-relaxed mb-12">
-          Want to collaborate with a team that treats your website like their own product? Let’s start the conversation.
-        </p>
-
-        <!-- Subtle Conversion CTAs -->
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-          <a
-            href="/request-a-quote/"
-            class="cta-pulse-strong w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 sm:px-10 py-4 text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_25px_rgba(240,90,44,0.4)] hover:bg-primary/95 hover:-translate-y-0.5 transition-all"
-          >
-            <span>Start a Project</span>
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-          </a>
-          <a
-            href="/career/"
-            class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 sm:px-10 py-4 text-base font-bold text-white border border-white/20 rounded-full hover:bg-white/10 transition-all"
-          >
-            <span>Join Teknoppy</span>
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
-          </a>
-        </div>
-      </div>
-    </section>
+    </div>
 
   </main>
 
-  <!-- =========================================================================
-       INTERACTIVE FULLSCREEN MEDIA LIGHTBOX MODAL
-       ========================================================================= -->
-  <div id="life-lightbox" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-xl hidden flex-col justify-between p-4 sm:p-8" role="dialog" aria-modal="true" aria-label="Media Lightbox">
-    <!-- Top bar -->
-    <div class="flex items-center justify-between text-white max-w-5xl mx-auto w-full z-10">
-      <div class="flex items-center gap-3">
-        <span id="lb-category" class="px-3 py-1 rounded-full bg-primary/90 text-white text-[11px] font-black uppercase tracking-wider">
-          Category
-        </span>
-        <span id="lb-date" class="text-xs text-neutral-400 font-mono font-bold">OCT 2026</span>
-      </div>
-      <button id="lb-close-btn" class="p-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors" aria-label="Close Lightbox">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-      </button>
-    </div>
-
-    <!-- Center Stage -->
-    <div class="relative flex-1 flex items-center justify-center my-4 max-w-5xl mx-auto w-full overflow-hidden">
-      <!-- Prev Button -->
-      <button id="lb-prev-btn" class="absolute left-2 sm:left-4 z-20 w-12 h-12 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center transition-all backdrop-blur-sm" aria-label="Previous Media">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
-      </button>
-
-      <!-- Content Container -->
-      <div id="lb-media-stage" class="max-h-[65vh] sm:max-h-[72vh] max-w-full flex items-center justify-center">
-        <img id="lb-image" src="" alt="" class="max-h-[65vh] sm:max-h-[72vh] max-w-full object-contain rounded-2xl shadow-2xl transition-transform duration-300" />
-        <div id="lb-video-wrapper" class="hidden w-[90vw] max-w-4xl aspect-video rounded-2xl overflow-hidden shadow-2xl">
-          <iframe id="lb-iframe" class="w-full h-full" src="" title="Video preview" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-
-      <!-- Next Button -->
-      <button id="lb-next-btn" class="absolute right-2 sm:right-4 z-20 w-12 h-12 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center transition-all backdrop-blur-sm" aria-label="Next Media">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
-      </button>
-    </div>
-
-    <!-- Bottom Description -->
-    <div class="text-white max-w-5xl mx-auto w-full border-t border-white/10 pt-4 z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-      <div>
-        <h3 id="lb-title" class="text-base sm:text-lg font-black text-white leading-snug">Title</h3>
-        <p id="lb-desc" class="text-xs sm:text-sm text-neutral-300 font-medium mt-1 max-w-2xl">Description</p>
-      </div>
-      <div class="text-[11px] font-mono text-neutral-400">
-        Use <kbd class="px-1.5 py-0.5 bg-white/10 rounded">ESC</kbd> to close · <kbd class="px-1.5 py-0.5 bg-white/10 rounded">←</kbd> <kbd class="px-1.5 py-0.5 bg-white/10 rounded">→</kbd> to navigate
-      </div>
-    </div>
-  </div>
-
+  <!-- Complete Site Footer -->
   <Footer />
 
 </Layout>
 
-<style>
-  /* 3D NEWSPAPER FOLDING ANIMATION */
-  .newspaper-fold-wrapper {
-    perspective: 1200px;
+<style is:global>
+/* ==========================================================================
+   LIFE AT TEKNOPPY V4 BRAND TOKENS & MOTIONS
+   ========================================================================== */
+:root {
+  --bg: #fcfcfc;
+  --surface: #ffffff;
+  --ink: #1a1a1a;
+  --muted: #555555;
+  --soft: #8a8a8a;
+  --line: #eeeeee;
+  --orange: #f15a24;
+  --tint: #fff1eb;
+  --tint-line: #ffe0d2;
+  --display: "Sora", "Segoe UI", system-ui, sans-serif;
+  --body: "Manrope", "Segoe UI", system-ui, sans-serif;
+  --r: 22px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#life-page {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+#life-page h1,
+#life-page h2,
+#life-page h3 {
+  font-family: var(--display);
+  margin: 0;
+  line-height: 1.12;
+  letter-spacing: -.03em;
+  text-wrap: balance;
+}
+
+#life-page p {
+  margin: 0;
+}
+
+#life-page a {
+  color: inherit;
+}
+
+#life-page button {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--orange) !important;
+  outline-offset: 3px !important;
+}
+
+.wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-inline: 20px;
+}
+
+#life-page section {
+  padding-block: 100px;
+  overflow-x: clip;
+}
+
+.fill {
+  background: var(--tint);
+  color: var(--orange);
+  border: 1px dashed #f8b597;
+  border-radius: 6px;
+  padding: 0 5px;
+  font-weight: 600;
+  font-style: normal;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+/* Custom Orange Cursor Ring (desktop fine pointer only) */
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  border: 2px solid var(--orange);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.25s, width 0.2s, height 0.2s, background-color 0.2s;
+}
+@media (pointer: fine) {
+  .cursor-ring.active {
+    opacity: 0.7;
   }
-  .newspaper-card {
-    transform-style: preserve-3d;
+  .cursor-ring.hover {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(241, 90, 36, 0.12);
+    border-color: var(--orange);
   }
-  .newspaper-leaf {
-    transform-origin: left center;
-    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s ease;
+}
+@media (pointer: coarse) {
+  .cursor-ring {
+    display: none !important;
   }
-  .newspaper-fold-wrapper:hover .newspaper-leaf,
-  .newspaper-fold-wrapper.is-unfolded .newspaper-leaf {
-    transform: rotateY(-18deg) scale(1.02);
-    box-shadow: -15px 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Scroll progress bar */
+#progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: var(--orange);
+  transform-origin: left;
+  transform: scaleX(0);
+  z-index: 90;
+}
+
+.center {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 56px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 12.5px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--orange);
+  background: var(--tint);
+  border: 1px solid var(--tint-line);
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+
+.center h2 {
+  font-size: clamp(30px, 4.2vw, 52px);
+  margin-top: 16px;
+}
+
+.center p {
+  color: var(--muted);
+  font-size: 17px;
+  margin-top: 14px;
+}
+
+/* Word-by-word heading reveal */
+.words .wd {
+  display: inline-block;
+  opacity: .12;
+  transition: opacity .5s, transform .6s cubic-bezier(.2,.8,.2,1);
+  transform: translateY(10px);
+}
+.in .words .wd,
+.nojs .words .wd {
+  opacity: 1;
+  transform: none;
+}
+
+/* Sticky Blurred Nav (Section 0) */
+#life-nav {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 40;
+  background: rgba(252, 252, 252, .88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+#life-nav .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding-block: 14px;
+}
+.logo {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 22px;
+  text-decoration: none;
+}
+.logo b {
+  color: var(--orange);
+}
+
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  overflow: hidden;
+  isolation: isolate;
+  border: 0;
+  cursor: pointer;
+  transition: transform .3s cubic-bezier(.2,.8,.2,1), color .3s, border-color .3s;
+  white-space: nowrap;
+}
+.btn-primary {
+  background: var(--orange);
+  color: #fff;
+  box-shadow: 0 10px 26px -12px rgba(241, 90, 36, .75);
+}
+.btn-primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, .45), transparent);
+  transform: skewX(-20deg);
+  transition: left .7s;
+  z-index: -1;
+}
+.btn-primary:hover::before {
+  left: 130%;
+}
+.btn-ghost {
+  border: 1.5px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+}
+.btn-ghost:hover {
+  border-color: var(--orange);
+  color: var(--orange);
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+.btn .arr {
+  transition: transform .3s;
+}
+.btn:hover .arr {
+  transform: translateX(5px);
+}
+
+/* Side Dots Navigation */
+.dots {
+  position: fixed;
+  right: 18px;
+  top: 50%;
+  translate: 0 -50%;
+  z-index: 45;
+  display: grid;
+  gap: 10px;
+}
+.dots a {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #d9d4d0;
+  background: var(--bg);
+  display: block;
+  transition: all .35s;
+}
+.dots a.on {
+  background: var(--orange);
+  border-color: var(--orange);
+  transform: scale(1.3);
+}
+.dots a span {
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  translate: 0 -50%;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--orange);
+  background: var(--surface);
+  border: 1px solid var(--tint-line);
+  padding: 3px 9px;
+  border-radius: 999px;
+  opacity: 0;
+  transform: translateX(6px);
+  transition: all .3s;
+  pointer-events: none;
+}
+.dots a:hover span,
+.dots a:focus-visible span {
+  opacity: 1;
+  transform: none;
+}
+
+/* Photo placeholders */
+.ph {
+  position: relative;
+  overflow: hidden;
+  background: var(--tint);
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 6px;
+  text-align: center;
+  padding: 14px;
+}
+.ph::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--g);
+  transition: transform 1.1s cubic-bezier(.2,.8,.2,1);
+}
+.ph > * {
+  position: relative;
+}
+.ph .t {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.3;
+  background: rgba(255, 255, 255, .86);
+  padding: 4px 10px;
+  border-radius: 8px;
+  max-width: 26ch;
+}
+.ph .f {
+  font-size: 10.5px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, .72);
+  padding: 2px 7px;
+  border-radius: 6px;
+  overflow-wrap: anywhere;
+  max-width: 32ch;
+}
+.g1 { --g: linear-gradient(150deg, #ffe0d2, #f8b597 60%, #f15a24); }
+.g2 { --g: linear-gradient(200deg, #fff1eb, #e9e4e0 55%, #c9c2bd); }
+.g3 { --g: radial-gradient(circle at 30% 30%, #fff6f1, #fcd3bf 50%, #f3a27e); }
+.g4 { --g: linear-gradient(160deg, #f2f0ee, #ddd6d1 60%, #a8a09a); }
+.g5 { --g: linear-gradient(130deg, #ffd9c7, #ffefe7 50%, #f6c3ab); }
+
+/* ==========================================================================
+   SECTION 1: HERO
+   ========================================================================== */
+.hero {
+  padding-block: 48px 70px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -320px;
+  width: 900px;
+  height: 900px;
+  translate: -50% 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(241, 90, 36, .12), transparent 60%);
+  animation: glow 8s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes glow {
+  50% { transform: scale(1.12); }
+}
+.draft {
+  display: inline-block;
+  font-size: 13px;
+  color: var(--muted);
+  background: var(--surface);
+  border: 1px dashed var(--line);
+  border-radius: 12px;
+  padding: 8px 14px;
+  margin-bottom: 16px;
+  max-width: 100%;
+}
+.crumb {
+  font-size: 14px;
+  color: var(--soft);
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.crumb a {
+  color: var(--muted);
+}
+.hero h1 {
+  position: relative;
+  font-size: clamp(50px, 9vw, 120px);
+  font-weight: 800;
+  letter-spacing: -.055em;
+  line-height: .95;
+  margin-top: 22px;
+}
+.hero h1 .ch {
+  display: inline-block;
+  animation: drop .8s cubic-bezier(.3,1.4,.5,1) both;
+  animation-delay: calc(var(--i) * 45ms + 100ms);
+}
+@keyframes drop {
+  from { opacity: 0; transform: translateY(-40px) rotate(-8deg); }
+}
+.hero h1 .o {
+  color: var(--orange);
+}
+.hero .lead {
+  position: relative;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(18px, 2vw, 22px);
+  margin: 20px auto 0;
+  max-width: 34ch;
+  animation: fade 1s .7s both;
+}
+.hero .intro {
+  position: relative;
+  color: var(--muted);
+  max-width: 66ch;
+  margin: 16px auto 0;
+  animation: fade 1s .85s both;
+}
+@keyframes fade {
+  from { opacity: 0; transform: translateY(16px); }
+}
+.hero .ctas {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 26px;
+  animation: fade 1s 1s both;
+  position: relative;
+}
+.fan {
+  position: relative;
+  height: 400px;
+  margin-top: 56px;
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+.fan .card {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 300px;
+  height: 370px;
+  margin-left: -150px;
+  border-radius: var(--r);
+  overflow: hidden;
+  box-shadow: 0 30px 60px -30px rgba(26, 26, 26, .45);
+  border: 6px solid var(--surface);
+  transition: transform .8s cubic-bezier(.2,.8,.2,1);
+  transform: rotate(0) translateY(40px);
+  animation: fanin 1.2s cubic-bezier(.2,.8,.2,1) backwards;
+  animation-delay: .9s;
+}
+.fan .card .ph {
+  position: absolute;
+  inset: 0;
+}
+.fan .c1 { --tx: -290px; --rz: -12deg; z-index: 1; }
+.fan .c2 { --tx: 0px; --rz: 0deg; z-index: 3; --ty: -14px; }
+.fan .c3 { --tx: 290px; --rz: 12deg; z-index: 2; }
+@keyframes fanin {
+  from { transform: none; opacity: 0; }
+}
+.fan .card {
+  transform: translateX(var(--tx)) translateY(var(--ty, 0)) rotate(var(--rz));
+}
+.fan:hover .c1 {
+  transform: translateX(-330px) rotate(-16deg);
+}
+.fan:hover .c3 {
+  transform: translateX(330px) rotate(16deg);
+}
+.fan:hover .c2 {
+  transform: translateY(-26px) scale(1.03);
+}
+
+/* ==========================================================================
+   HERO PHOTO-FAN RICH VISUAL CARDS
+   ========================================================================== */
+.hero-card {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  user-select: none;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* --- CARD 1: SEO SUITE DASHBOARD --- */
+.hero-card-seo {
+  background: #0d121c;
+  background-image:
+    radial-gradient(ellipse at 80% 0%, rgba(241, 90, 36, 0.16) 0%, transparent 60%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: auto, 16px 16px, 16px 16px;
+  padding: 16px 16px 14px;
+  color: #f1f5f9;
+  justify-content: space-between;
+}
+.hcs-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.hcs-dots {
+  display: flex;
+  gap: 5px;
+}
+.hcs-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.hcs-dots .dot-r { background: #ef4444; }
+.hcs-dots .dot-y { background: #f59e0b; }
+.hcs-dots .dot-g { background: #10b981; }
+.hcs-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+.hcs-live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+  animation: pulse-dot 2s infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
+}
+
+.hcs-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 10px;
+}
+.hcs-stat-box {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+.hcs-stat-lbl {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #64748b;
+  display: block;
+  margin-bottom: 2px;
+}
+.hcs-stat-val {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+.hcs-stat-val .num {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1;
+  color: #ffffff;
+  font-family: 'Sora', sans-serif;
+}
+.hcs-stat-val .sub {
+  font-size: 10px;
+  color: #64748b;
+  font-weight: 600;
+}
+.hcs-stat-val .badge {
+  font-size: 9px;
+  font-weight: 700;
+  padding: 1px 4px;
+  border-radius: 4px;
+  margin-left: auto;
+}
+.hcs-badge-green { background: rgba(16, 185, 129, 0.15); color: #34d399; }
+.hcs-badge-orange { background: rgba(241, 90, 36, 0.2); color: #fb923c; }
+
+.hcs-chart-wrap {
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+.hcs-chart-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 9px;
+  margin-bottom: 4px;
+}
+.hcs-chart-title {
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.hcs-chart-growth {
+  font-weight: 800;
+  color: #10b981;
+}
+.hcs-svg-chart {
+  width: 100%;
+  height: 60px;
+  display: block;
+}
+
+.hcs-keywords {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.hcs-kw-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+.hcs-kw-name {
+  color: #cbd5e1;
+  font-weight: 600;
+}
+.hcs-kw-rank {
+  font-weight: 800;
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.15);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 9px;
+}
+
+.hcs-footer {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 9px;
+  font-weight: 600;
+  color: #64748b;
+  padding-top: 6px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+.hcs-footer span:last-child {
+  color: var(--orange, #f15a24);
+  font-weight: 700;
+}
+
+/* --- CARD 2: FULL TEAM GRID --- */
+.hero-card-team {
+  background: #ffffff;
+  padding: 16px 14px 12px;
+  color: #1a1a1a;
+  justify-content: space-between;
+}
+.hct-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.hct-logo {
+  height: 24px;
+  width: auto;
+  display: block;
+}
+.hct-pill {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--orange, #f15a24);
+  background: var(--tint, #fff1eb);
+  padding: 2px 8px;
+  border-radius: 99px;
+  border: 1px solid var(--tint-line, #ffe0d2);
+}
+
+.hct-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px 4px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+.hct-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.hct-avatar-wrap {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  background: #f4f4f4;
+  flex-shrink: 0;
+}
+.hct-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+.hct-name {
+  font-size: 9px;
+  font-weight: 700;
+  color: #333333;
+  margin-top: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 46px;
+  line-height: 1.1;
+}
+
+.hct-footer {
+  margin-top: 6px;
+  background: #fafafa;
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+  padding: 6px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: center;
+}
+.hct-foot-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 10px;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+.hct-foot-sub {
+  font-size: 8.5px;
+  font-weight: 600;
+  color: #888888;
+  letter-spacing: 0.03em;
+}
+
+/* --- CARD 3: OUR KOCHI STUDIO --- */
+.hero-card-studio {
+  background: #0f141d;
+  background-image:
+    radial-gradient(ellipse at 20% 0%, rgba(241, 90, 36, 0.14) 0%, transparent 55%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: auto, 18px 18px, 18px 18px;
+  padding: 16px 14px 14px;
+  color: #f1f5f9;
+  justify-content: space-between;
+}
+.hcb-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.hcb-tag {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--orange, #f15a24);
+  text-transform: uppercase;
+  background: rgba(241, 90, 36, 0.15);
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+.hcb-coord {
+  font-size: 9px;
+  font-weight: 700;
+  color: #64748b;
+  font-family: monospace;
+}
+
+.hcb-vis {
+  margin: 6px 0;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  padding: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.hcb-svg {
+  width: 100%;
+  height: 130px;
+  display: block;
+}
+
+.hcb-addr-box {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.hcb-addr-title {
+  font-size: 11px;
+  font-weight: 800;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.hcb-addr-floor {
+  font-size: 9px;
+  font-weight: 700;
+  color: var(--orange, #f15a24);
+  background: rgba(241, 90, 36, 0.15);
+  padding: 1px 5px;
+  border-radius: 3px;
+  margin-left: auto;
+}
+.hcb-addr-line {
+  font-size: 9.5px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+.hcb-addr-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 8.5px;
+  font-weight: 600;
+  color: #64748b;
+  margin-top: 3px;
+  padding-top: 4px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.hcb-addr-metro {
+  color: #38bdf8;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 40px;
+  position: relative;
+}
+.facts div {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 10px 20px;
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  transition: transform .3s, border-color .3s, background .3s;
+}
+.facts div:hover {
+  transform: translateY(-4px);
+  border-color: var(--tint-line);
+  background: var(--tint);
+}
+.facts small {
+  color: var(--soft);
+  font-size: 12.5px;
+  font-weight: 700;
+}
+.facts b {
+  font-family: var(--display);
+  font-size: 15px;
+}
+
+/* ==========================================================================
+   SECTION 2: PROCESS (STICKY SPLIT)
+   ========================================================================== */
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+.sticky {
+  position: sticky;
+  top: 96px;
+  height: calc(100vh - 140px);
+  max-height: 620px;
+  border-radius: 28px;
+  overflow: hidden;
+  background: var(--tint);
+}
+.sticky .layer {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(1.06);
+  transition: opacity .7s, transform 1.2s cubic-bezier(.2,.8,.2,1);
+}
+.sticky .layer.on {
+  opacity: 1;
+  transform: none;
+}
+.sticky .layer .ph {
+  position: absolute;
+  inset: 0;
+}
+.sticky .badge {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 3;
+  background: var(--surface);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 14px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  box-shadow: 0 10px 24px -14px rgba(26, 26, 26, .4);
+}
+.sticky .badge i {
+  font-style: normal;
+  color: var(--orange);
+}
+.sticky .cap {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 3;
+  background: rgba(255, 255, 255, .94);
+  border-radius: 14px;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: var(--muted);
+  transition: opacity .4s;
+}
+.sticky .meter {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  background: var(--orange);
+  z-index: 4;
+  transition: width .5s cubic-bezier(.2,.8,.2,1);
+}
+.steps {
+  display: grid;
+  gap: 0;
+}
+.step {
+  min-height: 62vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding-block: 20px;
+  opacity: .28;
+  transition: opacity .5s;
+}
+.step.on {
+  opacity: 1;
+}
+.step .n {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 72px;
+  line-height: .9;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--orange);
+  transition: color 0.4s cubic-bezier(.2,.8,.2,1), transform 0.4s cubic-bezier(.2,.8,.2,1), text-shadow 0.4s cubic-bezier(.2,.8,.2,1);
+}
+.step.on .n {
+  color: var(--orange);
+  -webkit-text-stroke: 0;
+  transform: translateX(6px);
+  text-shadow: 0 0 24px rgba(241, 90, 36, 0.45);
+}
+.step small {
+  font-weight: 800;
+  color: var(--orange);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.step h3 {
+  font-size: clamp(28px, 3.4vw, 42px);
+}
+.step p {
+  color: var(--muted);
+  font-size: 18px;
+  max-width: 34ch;
+}
+.step .mobph {
+  display: none;
+}
+.steps > .intro {
+  min-height: auto;
+  opacity: 1;
+  padding-bottom: 20px;
+}
+.steps > .intro h2 {
+  font-size: clamp(30px, 4vw, 48px);
+}
+.steps > .intro p {
+  max-width: 46ch;
+}
+
+/* ==========================================================================
+   SECTION 3: VALUES (ACCORDION)
+   ========================================================================== */
+.vacc {
+  border-top: 2px solid var(--ink);
+}
+.vi {
+  border-bottom: 1px solid var(--line);
+}
+.vi button {
+  all: unset;
+  box-sizing: border-box;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  gap: 20px;
+  align-items: center;
+  padding: 26px 6px;
+  cursor: pointer;
+}
+.vi button:focus-visible {
+  outline: 3px solid var(--orange);
+}
+.vi .num {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 15px;
+  color: var(--soft);
+  transition: color .3s;
+}
+.vi h3 {
+  font-size: clamp(22px, 2.8vw, 34px);
+  transition: color .3s, transform .4s cubic-bezier(.2,.8,.2,1);
+}
+.vi button:hover h3 {
+  transform: translateX(10px);
+}
+.vi .pl {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1.5px solid var(--line);
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  transition: all .4s;
+}
+.vi.open .num,
+.vi.open h3 {
+  color: var(--orange);
+}
+.vi.open .pl {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: #fff;
+  transform: rotate(45deg);
+}
+.vi .body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows .5s cubic-bezier(.2,.8,.2,1);
+}
+.vi.open .body {
+  grid-template-rows: 1fr;
+}
+.vi .body > div {
+  overflow: hidden;
+}
+.vi .inner {
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr;
+  gap: 20px;
+  padding: 0 6px 28px;
+}
+.vi .inner p {
+  color: var(--muted);
+  font-size: 17px;
+  grid-column: 2;
+}
+.vi .prac {
+  grid-column: 3;
+  background: var(--tint);
+  border: 1px solid var(--tint-line);
+  border-radius: 16px;
+  padding: 16px 18px;
+  font-size: 15px;
+}
+.vi .prac b {
+  display: block;
+  color: var(--orange);
+  font-family: var(--display);
+  margin-bottom: 4px;
+}
+.vi .prac a {
+  color: var(--orange);
+  font-weight: 800;
+}
+.founder {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 30px;
+  align-items: center;
+  padding: 36px;
+  border-radius: 28px;
+  background: var(--orange);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.founder::before {
+  content: "“";
+  position: absolute;
+  right: 30px;
+  top: -40px;
+  font-family: var(--display);
+  font-size: 220px;
+  line-height: 1;
+  color: rgba(255, 255, 255, .14);
+  z-index: -1;
+  animation: bob 6s ease-in-out infinite;
+}
+@keyframes bob {
+  50% { transform: translateY(-12px); }
+}
+.founder .av {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: var(--g);
+  border: 4px solid #fff;
+  display: grid;
+  place-items: center;
+  font-size: 34px;
+  animation: bob 5s ease-in-out infinite;
+  object-fit: cover;
+  object-position: top;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, .25);
+}
+.founder blockquote {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(19px, 2.3vw, 26px);
+  line-height: 1.4;
+}
+.founder .fill {
+  background: rgba(255, 255, 255, .2);
+  color: #fff;
+  border-color: rgba(255, 255, 255, .6);
+}
+.founder cite {
+  display: block;
+  margin-top: 12px;
+  font-style: normal;
+  opacity: .9;
+}
+.founder cite a {
+  color: #fff;
+  font-weight: 800;
+}
+.founder > div {
+  min-width: 0;
+}
+
+/* ==========================================================================
+   SECTION 4: TEAM (ORBIT)
+   ========================================================================== */
+.teamw {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.orbit {
+  position: relative;
+  aspect-ratio: 1/1;
+  max-width: 520px;
+  width: 100%;
+  margin: 0 auto;
+}
+.orbit .ring {
+  position: absolute;
+  inset: 6%;
+  border: 2px dashed var(--tint-line);
+  border-radius: 50%;
+}
+.orbit .spin {
+  position: absolute;
+  inset: 0;
+  animation: spin 46s linear infinite;
+}
+.orbit:hover .spin,
+.orbit:hover .od {
+  animation-play-state: paused;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+.od {
+  position: absolute;
+  width: 24%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--surface);
+  box-shadow: 0 14px 30px -14px rgba(26, 26, 26, .45);
+  cursor: pointer;
+  padding: 0;
+  background: none;
+  translate: -50% -50%;
+  animation: spin 46s linear infinite reverse;
+  transition: scale .4s cubic-bezier(.3,1.4,.5,1), box-shadow .3s;
+}
+.od .ph {
+  position: absolute;
+  inset: 0;
+  padding: 6px;
+}
+.od .ph .t,
+.od .ph .f {
+  display: none;
+}
+.od .ini {
+  position: relative;
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 15px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, .88);
+  border-radius: 999px;
+  padding: 2px 8px;
+}
+.od:hover,
+.od.on {
+  scale: 1.15;
+  box-shadow: 0 0 0 4px var(--orange), 0 20px 40px -16px rgba(241, 90, 36, .6);
+}
+.ocore {
+  position: absolute;
+  inset: 32%;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 26px 50px -24px rgba(26, 26, 26, .5);
+  border: 6px solid var(--surface);
+}
+.ocore .ph {
+  position: absolute;
+  inset: 0;
+  transition: opacity .4s;
+}
+.ocore .ph .t { font-size: 12px; }
+.ocore .ph .f { font-size: 9.5px; }
+.tinfo {
+  display: grid;
+  gap: 16px;
+}
+.tinfo h2 {
+  font-size: clamp(30px, 4vw, 48px);
+}
+.tinfo > p {
+  color: var(--muted);
+  font-size: 17px;
+}
+.tcard {
+  border-radius: 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  padding: 22px 24px;
+  min-height: 150px;
+  display: grid;
+  gap: 6px;
+  align-content: start;
+}
+.tcard b {
+  font-family: var(--display);
+  font-size: 22px;
+}
+.tcard span {
+  color: var(--muted);
+}
+.tcard small {
+  color: var(--soft);
+  font-size: 12.5px;
+  overflow-wrap: anywhere;
+}
+.tcard.swap {
+  animation: swap .5s cubic-bezier(.2,.8,.2,1);
+}
+@keyframes swap {
+  from { opacity: 0; transform: translateY(10px); }
+}
+.tnav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.tnav button {
+  border: 1.5px solid var(--line);
+  background: var(--surface);
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-weight: 700;
+  font-size: 13.5px;
+  cursor: pointer;
+  transition: all .3s;
+}
+.tnav button:hover,
+.tnav button.on {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: #fff;
+}
+.tinfo .about a {
+  color: var(--orange);
+  font-weight: 800;
+}
+
+/* ==========================================================================
+   SECTION 5: IN THEIR WORDS (SPOTLIGHT STORIES & VIDEO)
+   ========================================================================== */
+.stories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.story {
+  --mx: 50%;
+  --my: 50%;
+  position: relative;
+  border-radius: var(--r);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  padding: 32px;
+  display: grid;
+  gap: 18px;
+  align-content: start;
+  overflow: hidden;
+  isolation: isolate;
+  transition: transform .45s cubic-bezier(.2,.8,.2,1), border-color .3s;
+}
+.story::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(420px circle at var(--mx) var(--my), rgba(241, 90, 36, .1), transparent 45%);
+  opacity: 0;
+  transition: opacity .3s;
+  z-index: -1;
+}
+.story:hover {
+  transform: translateY(-6px);
+  border-color: var(--tint-line);
+}
+.story:hover::before {
+  opacity: 1;
+}
+.story .top {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.story .av {
+  flex: none;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: var(--g);
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  object-fit: cover;
+  object-position: top;
+  border: 2px solid var(--surface);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+}
+.od-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+.story .top b {
+  display: block;
+  font-family: var(--display);
+  font-size: 17px;
+}
+.story .top span {
+  color: var(--muted);
+  font-size: 14px;
+}
+.story q {
+  font-size: 17px;
+  line-height: 1.65;
+  quotes: "“" "”";
+}
+.vrow {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+.video {
+  position: relative;
+  border-radius: var(--r);
+  overflow: hidden;
+  min-height: 380px;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  text-align: center;
+  width: 100%;
+}
+.video .ph {
+  position: absolute;
+  inset: 0;
+}
+.video:hover .ph::before {
+  transform: scale(1.06);
+}
+.play {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: var(--orange);
+  display: grid;
+  place-items: center;
+  position: relative;
+  transition: transform .3s;
+}
+.play::before,
+.play::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid var(--orange);
+  animation: ping 2.2s infinite;
+}
+.play::after {
+  animation-delay: 1.1s;
+}
+@keyframes ping {
+  to { transform: scale(1.6); opacity: 0; }
+}
+.video:hover .play {
+  transform: scale(1.1);
+}
+.tscript {
+  border-radius: var(--r);
+  background: var(--tint);
+  border: 1px solid var(--tint-line);
+  padding: 28px;
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+.tscript b {
+  font-family: var(--display);
+  font-size: 19px;
+}
+.tscript p {
+  color: var(--muted);
+}
+.tscript a {
+  color: var(--orange);
+  font-weight: 800;
+}
+
+/* ==========================================================================
+   SECTION 6: A TYPICAL DAY (FILMSTRIP)
+   ========================================================================= */
+.film {
+  position: relative;
+  background: var(--ink);
+  border-radius: 28px;
+  padding: 30px 0;
+  overflow: hidden;
+}
+.film::before,
+.film::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 14px;
+  background: repeating-linear-gradient(90deg, transparent 0 18px, rgba(255, 255, 255, .22) 18px 34px);
+  background-size: 34px 100%;
+  animation: sprock 2s linear infinite;
+}
+.film::before { top: 8px; }
+.film::after { bottom: 8px; }
+@keyframes sprock {
+  to { background-position: 34px 0; }
+}
+.frames {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 18px 24px;
+  scrollbar-width: none;
+  cursor: grab;
+}
+.frames::-webkit-scrollbar {
+  display: none;
+}
+.frames.drag {
+  cursor: grabbing;
+  scroll-snap-type: none;
+}
+.frame {
+  flex: 0 0 280px;
+  scroll-snap-align: start;
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 22px;
+  display: grid;
+  gap: 8px;
+  align-content: start;
+  transition: transform .45s cubic-bezier(.2,.8,.2,1), box-shadow .4s;
+  min-height: 200px;
+}
+.frame:hover {
+  transform: translateY(-6px) rotate(-1deg);
+  box-shadow: 0 0 0 3px var(--orange);
+}
+.frame time {
+  font-family: var(--display);
+  font-weight: 800;
+  color: var(--orange);
+  font-size: 22px;
+}
+.frame b {
+  font-family: var(--display);
+  font-size: 19px;
+}
+.frame span {
+  color: var(--muted);
+  font-size: 15px;
+}
+.frame.photo {
+  flex-basis: 380px;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+.frame.photo .ph {
+  position: absolute;
+  inset: 0;
+}
+.filmhint {
+  color: rgba(255, 255, 255, .7);
+  font-size: 13px;
+  text-align: center;
+  margin-top: 6px;
+}
+.place {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 24px;
+}
+.info {
+  border-radius: var(--r);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  padding: 8px 26px;
+}
+.info div {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+.info div:last-child {
+  border-bottom: 0;
+}
+.info small {
+  display: block;
+  color: var(--soft);
+  font-weight: 800;
+  font-size: 12.5px;
+}
+.info a {
+  color: var(--orange);
+  font-weight: 800;
+}
+.map {
+  position: relative;
+  border-radius: var(--r);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  min-height: 300px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.map::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+.map svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.map path {
+  fill: none;
+  stroke: var(--orange);
+  stroke-width: 3;
+  stroke-dasharray: 8 8;
+  animation: dash 1.4s linear infinite;
+}
+@keyframes dash {
+  to { stroke-dashoffset: -32; }
+}
+.map .pin {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  border-radius: 50% 50% 50% 0;
+  rotate: -45deg;
+  background: var(--orange);
+  box-shadow: 0 10px 20px -6px rgba(241, 90, 36, .7);
+  animation: hop 2.2s cubic-bezier(.3,1.4,.5,1) infinite;
+}
+.map .pin::after {
+  content: "";
+  position: absolute;
+  inset: 15px;
+  border-radius: 50%;
+  background: #fff;
+}
+@keyframes hop {
+  50% { translate: 6px -6px; }
+}
+.map b {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  font-family: var(--display);
+  font-size: 13.5px;
+  background: rgba(255, 255, 255, .94);
+  border-radius: 12px;
+  padding: 8px;
+}
+.map .mlabel {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--muted);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 10px;
+}
+
+/* ==========================================================================
+   SECTION 7: CELEBRATIONS (CAROUSEL & LIGHTBOX)
+   ========================================================================== */
+.carw {
+  position: relative;
+}
+.car {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 10px max(20px, calc((100vw - 1180px) / 2 + 20px)) 30px;
+  scrollbar-width: none;
+  cursor: grab;
+}
+.car::-webkit-scrollbar {
+  display: none;
+}
+.car.drag {
+  cursor: grabbing;
+  scroll-snap-type: none;
+}
+.slide {
+  flex: 0 0 min(420px, 80vw);
+  scroll-snap-align: center;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+  transition: transform .5s cubic-bezier(.2,.8,.2,1), opacity .5s;
+  opacity: .55;
+  transform: scale(.92);
+  cursor: pointer;
+}
+.slide.on {
+  opacity: 1;
+  transform: none;
+}
+.slide .ph {
+  height: 320px;
+  border-radius: var(--r);
+}
+.slide:hover .ph::before {
+  transform: scale(1.06);
+}
+.slide figcaption {
+  color: var(--muted);
+  font-size: 14.5px;
+  padding-inline: 4px;
+}
+.slide figcaption b {
+  display: block;
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 18px;
+}
+.carctl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.carbar {
+  flex: 1;
+  height: 3px;
+  background: var(--line);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.carbar i {
+  display: block;
+  height: 100%;
+  background: var(--orange);
+  width: 0;
+  transition: width .3s;
+}
+.carctl button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1.5px solid var(--line);
+  background: var(--surface);
+  font-size: 18px;
+  cursor: pointer;
+  transition: all .3s;
+}
+.carctl button:hover {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: #fff;
+}
+.social {
+  margin-top: 22px;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* Lightbox Modal */
+.lb {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(20, 18, 17, .92);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .35s;
+}
+.lb.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.lb .box {
+  width: min(820px, 100%);
+  display: grid;
+  gap: 14px;
+  transform: scale(.9);
+  transition: transform .45s cubic-bezier(.2,.8,.2,1);
+}
+.lb.open .box {
+  transform: none;
+}
+.lb .ph {
+  aspect-ratio: 3/2;
+  max-width: 100%;
+  border-radius: 18px;
+}
+.lb p {
+  color: #fff;
+  text-align: center;
+}
+.lb .x {
+  justify-self: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, .3);
+  background: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .3s;
+}
+.lb .x:hover {
+  background: var(--orange);
+  border-color: var(--orange);
+}
+
+/* ==========================================================================
+   SECTION 8: FAQ (TWO-COLUMN CARDS)
+   ========================================================================== */
+.faqg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  align-items: start;
+}
+.qa {
+  border-radius: 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  transition: border-color .3s, box-shadow .3s;
+}
+.qa.open {
+  border-color: #ffd3c1;
+  box-shadow: 0 20px 40px -30px rgba(241, 90, 36, .6);
+}
+.qa button {
+  all: unset;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: center;
+  padding: 20px 22px;
+  cursor: pointer;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 17px;
+}
+.qa button:focus-visible {
+  outline: 3px solid var(--orange);
+}
+.pm {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--tint);
+  color: var(--orange);
+  display: grid;
+  place-items: center;
+  position: relative;
+  transition: transform .4s, background .3s, color .3s;
+}
+.pm::before,
+.pm::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  background: currentColor;
+  transition: transform .4s;
+}
+.pm::after {
+  transform: rotate(90deg);
+}
+.qa.open .pm {
+  background: var(--orange);
+  color: #fff;
+  transform: rotate(180deg);
+}
+.qa.open .pm::after {
+  transform: rotate(0);
+}
+.ans {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows .45s cubic-bezier(.2,.8,.2,1);
+}
+.qa.open .ans {
+  grid-template-rows: 1fr;
+}
+.ans > div {
+  overflow: hidden;
+}
+.ans p {
+  color: var(--muted);
+  padding: 0 22px 20px;
+}
+.faqnote {
+  text-align: center;
+  color: var(--muted);
+  margin-top: 22px;
+}
+.faqnote a {
+  color: var(--orange);
+  font-weight: 800;
+}
+
+/* ==========================================================================
+   SECTION 9: WORK WITH THIS TEAM (CLOSING SPLIT)
+   ========================================================================== */
+.endsplit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 32px;
+  overflow: hidden;
+  border: 1px solid var(--tint-line);
+}
+.endsplit > div {
+  padding: 56px 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  min-width: 0;
+}
+.endsplit h3 {
+  font-size: clamp(28px, 3.4vw, 42px);
+  letter-spacing: -.04em;
+}
+.endsplit p {
+  font-size: 17px;
+  max-width: 34ch;
+}
+.endsplit .l {
+  background: var(--tint);
+}
+.endsplit .l p {
+  color: var(--muted);
+}
+.endsplit .r {
+  background: var(--orange);
+  color: #fff;
+}
+.endsplit .r .btn {
+  background: #fff;
+  color: var(--orange);
+}
+.endsplit .r::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 40px solid rgba(255, 255, 255, .12);
+  right: -100px;
+  bottom: -120px;
+  animation: spin 26s linear infinite;
+  z-index: -1;
+}
+.endsplit .r::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40%;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, .2), transparent);
+  transform: skewX(-20deg);
+  animation: shine 5s ease-in-out infinite;
+  z-index: -1;
+}
+@keyframes shine {
+  0%, 60% { left: -40%; }
+  100% { left: 130%; }
+}
+
+#life-page footer {
+  padding-block: 30px;
+  text-align: center;
+  color: var(--soft);
+  font-size: 14px;
+  border-top: 1px solid var(--line);
+  margin-top: 90px;
+}
+
+/* Scroll reveal system */
+.js .rv {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity .9s, transform .9s cubic-bezier(.2,.8,.2,1);
+  transition-delay: calc(var(--d, 0) * 90ms);
+}
+.js .rv.in {
+  opacity: 1;
+  transform: none;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 980px) {
+  .dots {
+    display: none;
+  }
+  .split,
+  .teamw,
+  .place,
+  .vrow,
+  .faqg {
+    grid-template-columns: 1fr;
+  }
+  .sticky {
+    display: none;
+  }
+  .step {
+    min-height: auto;
+    opacity: 1;
+    padding-block: 26px;
+    border-bottom: 1px solid var(--line);
+  }
+  .step .mobph {
+    display: grid;
+    height: 220px;
+    border-radius: 18px;
+    margin-top: 8px;
+  }
+  .step .n {
+    color: var(--orange);
+    -webkit-text-stroke: 0;
+    font-size: 52px;
+  }
+  .vi .inner {
+    grid-template-columns: 1fr;
+    padding-left: 6px;
+  }
+  .vi .inner p,
+  .vi .prac {
+    grid-column: auto;
+  }
+  .vi button {
+    grid-template-columns: 50px 1fr auto;
+  }
+  .stories {
+    grid-template-columns: 1fr;
+  }
+  .endsplit {
+    grid-template-columns: 1fr;
+  }
+  .fan .c1 { --tx: -200px; }
+  .fan .c3 { --tx: 200px; }
+}
+
+@media (max-width: 620px) {
+  #life-page section {
+    padding-block: 68px;
+  }
+  .fan {
+    height: 300px;
+  }
+  .fan .card {
+    width: 200px;
+    height: 260px;
+    margin-left: -100px;
+  }
+  .fan .c1 { --tx: -95px; }
+  .fan .c3 { --tx: 95px; }
+  .fan:hover .c1 { transform: translateX(-110px) rotate(-16deg); }
+  .fan:hover .c3 { transform: translateX(110px) rotate(16deg); }
+  .facts div {
+    padding: 8px 14px;
+  }
+  .vi button {
+    grid-template-columns: 36px 1fr auto;
+    gap: 12px;
+    padding: 20px 2px;
+  }
+  .vi .pl {
+    width: 38px;
+    height: 38px;
+  }
+  .founder {
+    grid-template-columns: 1fr;
+    padding: 26px;
+  }
+  .story {
+    padding: 24px;
+  }
+  .video {
+    min-height: 240px;
+  }
+  .frame {
+    flex-basis: 230px;
+  }
+  .frame.photo {
+    flex-basis: 280px;
+  }
+  .slide .ph {
+    height: 240px;
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 28px;
+  }
+  .facts div {
+    border-radius: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    padding: 10px 12px;
+    text-align: left;
+  }
+  .facts b {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  .fan .c1 .ph > *,
+  .fan .c3 .ph > * {
+    display: none;
+  }
+  .fan .c2 .ph .f {
+    display: none;
+  }
+  .hero-card-seo {
+    padding: 10px 10px 8px;
+  }
+  .hcs-top {
+    padding-bottom: 6px;
+  }
+  .hcs-pill {
+    font-size: 8px;
+  }
+  .hcs-stats {
+    gap: 4px;
+    margin-top: 6px;
+  }
+  .hcs-stat-box {
+    padding: 4px 6px;
+  }
+  .hcs-stat-lbl {
+    font-size: 7.5px;
+  }
+  .hcs-stat-val .num {
+    font-size: 14px;
+  }
+  .hcs-stat-val .sub {
+    font-size: 8px;
+  }
+  .hcs-stat-val .badge {
+    font-size: 7.5px;
+    padding: 0 3px;
+  }
+  .hcs-chart-wrap {
+    margin-top: 6px;
+    padding: 4px 6px;
+  }
+  .hcs-svg-chart {
+    height: 38px;
+  }
+  .hcs-keywords {
+    margin-top: 6px;
+    gap: 3px;
+  }
+  .hcs-kw-row {
+    font-size: 8px;
+    padding: 2px 5px;
+  }
+  .hcs-kw-rank {
+    font-size: 7.5px;
+    padding: 0 4px;
+  }
+  .hcs-footer {
+    font-size: 7.5px;
+    margin-top: 4px;
+    padding-top: 4px;
   }
 
-  /* TICKER & MARQUEE FLOWS */
-  @keyframes tickerFlow {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+  .hero-card-team {
+    padding: 10px 8px 8px;
   }
-  .animate-ticker {
-    animation: tickerFlow 25s linear infinite;
+  .hct-logo {
+    height: 17px;
   }
-  .team-editorial-ticker:hover .animate-ticker {
-    animation-play-state: paused;
+  .hct-pill {
+    font-size: 7.5px;
+    padding: 1px 5px;
   }
-
-  @keyframes marqueeLeft {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+  .hct-grid {
+    gap: 4px 2px;
+    margin-top: 6px;
   }
-  @keyframes marqueeRight {
-    0% { transform: translateX(-50%); }
-    100% { transform: translateX(0); }
+  .hct-avatar-wrap {
+    width: 28px;
+    height: 28px;
+    border-width: 1.5px;
   }
-  .animate-marquee-left {
-    animation: marqueeLeft 35s linear infinite;
+  .hct-name {
+    font-size: 7.5px;
+    max-width: 32px;
+    margin-top: 2px;
   }
-  .animate-marquee-right {
-    animation: marqueeRight 35s linear infinite;
+  .hct-footer {
+    padding: 4px 6px;
+    margin-top: 4px;
   }
-  .infinite-photo-row:hover {
-    animation-play-state: paused;
+  .hct-foot-top {
+    font-size: 8px;
   }
-
-  /* FLOATING ANIMATIONS FOR HERO PILLS */
-  @keyframes floatSlow {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }
-  }
-  @keyframes floatDelayed {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(8px); }
-  }
-  .animate-float-slow {
-    animation: floatSlow 5s ease-in-out infinite;
-  }
-  .animate-float-delayed {
-    animation: floatDelayed 6s ease-in-out 1s infinite;
+  .hct-foot-sub {
+    font-size: 7px;
   }
 
-  /* REDUCED MOTION SAFEGUARDS */
-  @media (prefers-reduced-motion: reduce) {
-    .animate-ticker,
-    .animate-marquee-left,
-    .animate-marquee-right,
-    .animate-float-slow,
-    .animate-float-delayed {
-      animation: none !important;
-    }
-    .newspaper-leaf {
-      transform: none !important;
-      transition: none !important;
-    }
+  .hero-card-studio {
+    padding: 10px 10px 8px;
   }
+  .hcb-top {
+    padding-bottom: 5px;
+  }
+  .hcb-tag {
+    font-size: 8px;
+    padding: 1px 5px;
+  }
+  .hcb-coord {
+    font-size: 7.5px;
+  }
+  .hcb-vis {
+    margin: 4px 0;
+    padding: 4px;
+  }
+  .hcb-svg {
+    height: 80px;
+  }
+  .hcb-addr-box {
+    padding: 5px 6px;
+  }
+  .hcb-addr-title {
+    font-size: 9px;
+  }
+  .hcb-addr-floor {
+    font-size: 7.5px;
+    padding: 0 3px;
+  }
+  .hcb-addr-line {
+    font-size: 8px;
+  }
+  .hcb-addr-meta {
+    font-size: 7px;
+    margin-top: 2px;
+    padding-top: 2px;
+  }
+  .hero .ctas .btn {
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+  .ocore .ph .f {
+    display: none;
+  }
+  .ocore .ph .t {
+    font-size: 10.5px;
+    padding: 3px 6px;
+  }
+  .orbit {
+    max-width: 340px;
+  }
+  .endsplit > div {
+    padding: 36px 24px;
+  }
+  .nav-btn {
+    display: none;
+  }
+}
+
+/* Prefers Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .words .wd {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .js .rv {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .cursor-ring {
+    display: none !important;
+  }
+}
 </style>
 
 <script is:inline>
-  document.addEventListener('DOMContentLoaded', () => {
-    // 1. SECTION SPY & SCROLL COUNTER (01 / 08)
-    const sections = document.querySelectorAll('.life-section');
-    const stepNum = document.getElementById('active-step-num');
-    const stepTitle = document.getElementById('active-step-title');
+(function() {
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var fine = matchMedia('(pointer:fine)').matches;
+  var root = document.documentElement;
 
-    if (sections.length > 0 && stepNum && stepTitle) {
-      const sectionObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const num = entry.target.getAttribute('data-section-num');
-            const name = entry.target.getAttribute('data-section-name');
-            if (num) stepNum.textContent = num;
-            if (name) stepTitle.textContent = name;
-          }
-        });
-      }, { threshold: 0.3 });
+  function $$(selector, context) {
+    return [].slice.call((context || document).querySelectorAll(selector));
+  }
 
-      sections.forEach((sec) => sectionObserver.observe(sec));
-    }
+  // 1. CUSTOM CURSOR RING (desktop fine pointer only)
+  var cursor = document.getElementById('cursor-ring');
+  if (fine && !reduce && cursor) {
+    cursor.classList.add('active');
+    document.addEventListener('mousemove', function(e) {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    }, { passive: true });
 
-    // 2. DAILY CAROUSEL CONTROLS
-    const dailyRail = document.getElementById('daily-rail');
-    const prevBtn = document.getElementById('daily-prev-btn');
-    const nextBtn = document.getElementById('daily-next-btn');
+    $$('a, button, .frame, .slide, .qa button, .vi button, .od').forEach(function(el) {
+      el.addEventListener('mouseenter', function() { cursor.classList.add('hover'); });
+      el.addEventListener('mouseleave', function() { cursor.classList.remove('hover'); });
+    });
+  }
 
-    if (dailyRail && prevBtn && nextBtn) {
-      prevBtn.addEventListener('click', () => {
-        dailyRail.scrollBy({ left: -380, behavior: 'smooth' });
+  // 2. MAGNETIC HOVER EFFECT ON MAIN BUTTONS (desktop fine pointer)
+  if (fine && !reduce) {
+    $$('.btn').forEach(function(b) {
+      b.addEventListener('mousemove', function(e) {
+        var r = b.getBoundingClientRect();
+        var x = (e.clientX - (r.left + r.width / 2)) * 0.22;
+        var y = (e.clientY - (r.top + r.height / 2)) * 0.22;
+        b.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
       });
-      nextBtn.addEventListener('click', () => {
-        dailyRail.scrollBy({ left: 380, behavior: 'smooth' });
-      });
-    }
-
-    // 3. CATEGORY FILTER SYSTEM
-    const filterButtons = document.querySelectorAll('.life-filter-btn');
-    const wallCards = document.querySelectorAll('.wall-card');
-
-    filterButtons.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        filterButtons.forEach((b) => {
-          b.classList.remove('bg-neutral-900', 'text-white', 'border-neutral-900', 'shadow-md', 'is-active');
-          b.classList.add('bg-white', 'text-neutral-600', 'border-neutral-200');
-        });
-        btn.classList.add('bg-neutral-900', 'text-white', 'border-neutral-900', 'shadow-md', 'is-active');
-        btn.classList.remove('bg-white', 'text-neutral-600', 'border-neutral-200');
-
-        const cat = btn.getAttribute('data-category');
-        wallCards.forEach((card) => {
-          const cardCat = card.getAttribute('data-category');
-          if (cat === 'all' || cardCat === cat) {
-            card.style.display = 'flex';
-            card.style.opacity = '1';
-            card.style.transform = 'scale(1)';
-          } else {
-            card.style.display = 'none';
-            card.style.opacity = '0';
-            card.style.transform = 'scale(0.95)';
-          }
-        });
+      b.addEventListener('mouseleave', function() {
+        b.style.transform = '';
       });
     });
+  }
 
-    // 4. INTERACTIVE LIGHTBOX SYSTEM
-    const lightbox = document.getElementById('life-lightbox');
-    const lbImg = document.getElementById('lb-image');
-    const lbVideoWrapper = document.getElementById('lb-video-wrapper');
-    const lbIframe = document.getElementById('lb-iframe');
-    const lbTitle = document.getElementById('lb-title');
-    const lbDesc = document.getElementById('lb-desc');
-    const lbCategory = document.getElementById('lb-category');
-    const lbDate = document.getElementById('lb-date');
-    const lbCloseBtn = document.getElementById('lb-close-btn');
-    const lbPrevBtn = document.getElementById('lb-prev-btn');
-    const lbNextBtn = document.getElementById('lb-next-btn');
-
-    let currentIndex = 0;
-    const cardsArray = Array.from(wallCards);
-
-    function openLightbox(index) {
-      if (!lightbox || index < 0 || index >= cardsArray.length) return;
-      currentIndex = index;
-      const card = cardsArray[currentIndex];
-
-      const type = card.getAttribute('data-type');
-      const media = card.getAttribute('data-media');
-      const youtube = card.getAttribute('data-youtube');
-      const title = card.getAttribute('data-title');
-      const desc = card.getAttribute('data-desc');
-      const date = card.getAttribute('data-date');
-      const category = card.getAttribute('data-category');
-
-      if (lbTitle) lbTitle.textContent = title || '';
-      if (lbDesc) lbDesc.textContent = desc || '';
-      if (lbDate) lbDate.textContent = date || '';
-      if (lbCategory) lbCategory.textContent = '#' + (category || '');
-
-      if (type === 'video' && youtube) {
-        if (lbImg) lbImg.classList.add('hidden');
-        if (lbVideoWrapper && lbIframe) {
-          lbVideoWrapper.classList.remove('hidden');
-          lbIframe.src = 'https://www.youtube-nocookie.com/embed/' + youtube + '?autoplay=1';
-        }
-      } else {
-        if (lbVideoWrapper && lbIframe) {
-          lbVideoWrapper.classList.add('hidden');
-          lbIframe.src = '';
-        }
-        if (lbImg) {
-          lbImg.classList.remove('hidden');
-          lbImg.src = media || '';
-          lbImg.alt = title || '';
-        }
-      }
-
-      lightbox.classList.remove('hidden');
-      lightbox.classList.add('flex');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeLightbox() {
-      if (!lightbox) return;
-      lightbox.classList.add('hidden');
-      lightbox.classList.remove('flex');
-      if (lbIframe) lbIframe.src = '';
-      document.body.style.overflow = '';
-    }
-
-    wallCards.forEach((card, idx) => {
-      card.addEventListener('click', () => openLightbox(idx));
+  // 3. 3D FAN CARDS TILT TOWARD CURSOR (desktop fine pointer)
+  var fan = document.getElementById('fan-stage');
+  if (fine && !reduce && fan) {
+    fan.addEventListener('mousemove', function(e) {
+      var r = fan.getBoundingClientRect();
+      var x = ((e.clientX - (r.left + r.width / 2)) / (r.width / 2)) * 8;
+      var y = -((e.clientY - (r.top + r.height / 2)) / (r.height / 2)) * 6;
+      fan.style.transform = 'rotateY(' + x + 'deg) rotateX(' + y + 'deg)';
     });
-
-    if (lbCloseBtn) lbCloseBtn.addEventListener('click', closeLightbox);
-    if (lbPrevBtn) lbPrevBtn.addEventListener('click', () => {
-      const newIdx = (currentIndex - 1 + cardsArray.length) % cardsArray.length;
-      openLightbox(newIdx);
+    fan.addEventListener('mouseleave', function() {
+      fan.style.transform = '';
     });
-    if (lbNextBtn) lbNextBtn.addEventListener('click', () => {
-      const newIdx = (currentIndex + 1) % cardsArray.length;
-      openLightbox(newIdx);
+  }
+
+  // 4. HERO H1 CHARACTER BOUNCE ANIMATION
+  var h1 = document.getElementById('h1');
+  if (h1) {
+    var k = 0;
+    h1.innerHTML = h1.innerHTML.replace(/(<span class="o">)?([^<]+)(</span>)?/g, function(m, a, txt, b) {
+      return (a || '') + txt.split(' ').map(function(w) {
+        return w ? '<span style="white-space:nowrap;display:inline-block">' + w.split('').map(function(c) {
+          return '<span class="ch" style="--i:' + (k++) + '">' + c + '</span>';
+        }).join('') + '</span>' : '';
+      }).join(' ') + (b || '');
     });
+  }
 
-    // Keyboard handlers
-    document.addEventListener('keydown', (e) => {
-      if (!lightbox || lightbox.classList.contains('hidden')) return;
-      if (e.key === 'Escape') closeLightbox();
-      if (e.key === 'ArrowLeft' && lbPrevBtn) lbPrevBtn.click();
-      if (e.key === 'ArrowRight' && lbNextBtn) lbNextBtn.click();
-    });
-
-    // Touch swipe handling for mobile
-    let touchStartX = 0;
-    if (lightbox) {
-      lightbox.addEventListener('touchstart', (e) => {
-        touchStartX = e.changedTouches[0].screenX;
-      }, { passive: true });
-      lightbox.addEventListener('touchend', (e) => {
-        const touchEndX = e.changedTouches[0].screenX;
-        if (touchStartX - touchEndX > 50 && lbNextBtn) lbNextBtn.click();
-        if (touchEndX - touchStartX > 50 && lbPrevBtn) lbPrevBtn.click();
-      }, { passive: true });
-    }
-
-    // 5. MOBILE AUTO-UNFOLD OBSERVER FOR TEAM NEWSPAPER CARDS
-    const foldCards = document.querySelectorAll('.newspaper-fold-wrapper');
-    if (foldCards.length > 0) {
-      const foldObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-unfolded');
-          } else {
-            entry.target.classList.remove('is-unfolded');
-          }
-        });
-      }, { threshold: 0.4 });
-
-      foldCards.forEach((c) => foldObserver.observe(c));
-    }
+  // 5. WORD-BY-WORD REVEAL SPLIT FOR SECTION HEADINGS
+  $$('.words').forEach(function(h) {
+    var i = 0;
+    h.innerHTML = h.textContent.split(' ').map(function(w) {
+      return '<span class="wd" style="transition-delay:' + (i++ * 60) + 'ms">' + w + '</span>';
+    }).join(' ');
   });
+
+  // 6. SCROLL REVEALS & NUMBER COUNT-UP OBSERVER
+  function show(el) {
+    el.classList.add('in');
+  }
+
+  if (!reduce && 'IntersectionObserver' in window) {
+    root.classList.add('js');
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          show(e.target);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    $$('.rv, .sec, .step.intro').forEach(function(el) {
+      if (el.getBoundingClientRect().top < innerHeight) {
+        show(el);
+      } else {
+        io.observe(el);
+      }
+    });
+
+    // Fallback safety timeout
+    setTimeout(function() {
+      $$('.rv:not(.in), .sec:not(.in), .step.intro:not(.in)').forEach(show);
+    }, 4500);
+
+    // Number count-up
+    var co = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (!e.isIntersecting) return;
+        var el = e.target;
+        var to = +el.dataset.to;
+        var from = +(el.dataset.from || 0);
+        var t0 = null;
+        (function step(t) {
+          if (t) t0 = t0 || t;
+          var p = t0 ? Math.min((t - t0) / 1600, 1) : 0;
+          el.textContent = Math.round(from + (to - from) * (1 - Math.pow(1 - p, 3)));
+          if (p < 1) requestAnimationFrame(step);
+        })();
+        co.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+
+    $$('.cnt').forEach(function(c) {
+      co.observe(c);
+    });
+  } else {
+    root.classList.add('nojs');
+    $$('.sec, .step.intro').forEach(show);
+  }
+
+  // 7. VALUES ACCORDION
+  $$('.vi button').forEach(function(b) {
+    b.addEventListener('click', function() {
+      var vi = b.parentElement;
+      var open = !vi.classList.contains('open');
+      $$('.vi').forEach(function(v) {
+        v.classList.remove('open');
+        var btn = v.querySelector('button');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      });
+      if (open) {
+        vi.classList.add('open');
+        b.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // 8. FAQ ACCORDION
+  $$('.qa button').forEach(function(b) {
+    b.addEventListener('click', function() {
+      var qa = b.parentElement;
+      var open = !qa.classList.contains('open');
+      qa.classList.toggle('open', open);
+      b.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+
+  // 9. TEAM ORBIT SYSTEM
+  var orbitEl = document.getElementById('orbit');
+  var T = null;
+  if (orbitEl && orbitEl.dataset.orbit) {
+    try {
+      T = JSON.parse(orbitEl.dataset.orbit);
+    } catch(e) {}
+  }
+  if (!T || !T.length) {
+    T = [
+      ['g1', 'NK', 'Niya K K and Farsana A', 'Reviewing a client audit, <i class="fill">Sept 2026</i>.', 'SEO team audit review at one screen', 'teknoppy-seo-team-audit-review.webp · Landscape 1200 × 800, WebP, under 150 KB', '/team/niya-kk.webp'],
+      ['g2', 'NS', 'Nandana S Madhu', 'On a WordPress build, <i class="fill">month 2026</i>.', 'Developer at work, code and design side by side', 'teknoppy-developer-wordpress-build.webp', '/team/nandana.webp'],
+      ['g3', 'VK', 'Vijayakala', 'On a scoping call with a client, <i class="fill">month 2026</i>.', 'Client relations on a call', 'teknoppy-client-relations-call.webp', '/team/vijayakala.webp'],
+      ['g5', 'AK', 'Adithya K', 'Planning a client content calendar, <i class="fill">month 2026</i>.', 'Content and social planning', 'teknoppy-social-content-planning.webp', '/team/adithya-k.webp'],
+      ['g4', 'SE', 'Sanal Edison', 'Talking through a site plan with the team, <i class="fill">month 2026</i>.', 'Founder with the team', 'teknoppy-founder-team-discussion.webp', '/team/sanal-edison.webp'],
+      ['g5', 'ALL', 'Morning stand-up', 'The whole team at the Vyttila office, <i class="fill">month 2026</i>.', 'Morning stand-up, whole team', 'teknoppy-morning-standup.webp', '']
+    ];
+  }
+
+  var ospin = document.getElementById('ospin');
+  var ocore = document.getElementById('ocore');
+  var tcard = document.getElementById('tcard');
+  var tnav = document.getElementById('tnav');
+  var ti = 0;
+  var ttimer;
+
+  if (ospin && ocore && tcard && tnav) {
+    ospin.innerHTML = T.map(function(t, i) {
+      var a = (i / T.length) * Math.PI * 2 - Math.PI / 2;
+      var avatarContent = t[6]
+        ? '<img src="' + t[6] + '" alt="' + t[2].replace(/"/g, '&quot;') + '" width="80" height="80" loading="lazy" decoding="async" class="od-avatar" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;" />'
+        : '<div class="ph ' + t[0] + '"><span class="ini">' + t[1] + '</span></div>';
+      return '<button class="od" style="left:' + (50 + 44 * Math.cos(a)) + '%;top:' + (50 + 44 * Math.sin(a)) + '%" data-i="' + i + '" aria-label="' + t[2] + '">' + avatarContent + '</button>';
+    }).join('');
+
+    tnav.innerHTML = T.map(function(t, i) {
+      return '<button data-i="' + i + '">' + t[2].split(' and ')[0] + '</button>';
+    }).join('');
+
+    function pick(i) {
+      ti = i;
+      var t = T[i];
+      ocore.innerHTML = '<div class="ph ' + t[0] + '"><span class="t">' + t[4] + '</span><span class="f">' + t[5].split(' · ')[0] + '</span></div>';
+      tcard.className = 'tcard';
+      void tcard.offsetWidth;
+      tcard.className = 'tcard swap';
+      tcard.innerHTML = '<b>' + t[2] + '</b><span>' + t[3] + '</span><small>Photo: ' + t[4] + ' · ' + t[5] + '</small>';
+
+      $$('.od').forEach(function(o) {
+        o.classList.toggle('on', +o.dataset.i === i);
+      });
+      $$('#tnav button').forEach(function(b) {
+        b.classList.toggle('on', +b.dataset.i === i);
+      });
+
+      clearTimeout(ttimer);
+      if (!reduce && document.visibilityState !== 'hidden') {
+        ttimer = setTimeout(function() {
+          pick((ti + 1) % T.length);
+        }, 3800);
+      }
+    }
+
+    $$('.od').forEach(function(o) {
+      o.addEventListener('click', function() { pick(+o.dataset.i); });
+      o.addEventListener('mouseenter', function() { if (fine) pick(+o.dataset.i); });
+    });
+
+    $$('#tnav button').forEach(function(b) {
+      b.addEventListener('click', function() { pick(+b.dataset.i); });
+    });
+
+    pick(0);
+
+    // Pause orbit timer when tab is hidden
+    document.addEventListener('visibilitychange', function() {
+      if (document.visibilityState === 'hidden') {
+        clearTimeout(ttimer);
+      } else if (!reduce) {
+        ttimer = setTimeout(function() { pick((ti + 1) % T.length); }, 3800);
+      }
+    });
+  }
+
+  // 10. SPOTLIGHT STORY CARDS
+  if (fine) {
+    $$('.story').forEach(function(s) {
+      s.addEventListener('mousemove', function(e) {
+        var r = s.getBoundingClientRect();
+        s.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+        s.style.setProperty('--my', (e.clientY - r.top) + 'px');
+      });
+    });
+  }
+
+  // 11. IN-PLACE VIDEO LOADER (fast performance)
+  var videoBtn = document.getElementById('team-video-btn');
+  if (videoBtn) {
+    videoBtn.addEventListener('click', function() {
+      var wrapper = document.createElement('div');
+      wrapper.className = 'video-embed-container';
+      wrapper.style.cssText = 'position:relative;width:100%;height:100%;min-height:380px;background:#000;border-radius:var(--r);overflow:hidden;';
+      wrapper.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=1" title="Teknoppy Team Video" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+      videoBtn.parentNode.replaceChild(wrapper, videoBtn);
+    });
+  }
+
+  // 12. DRAG-SCROLL HELPER FOR FILMSTRIP & CAROUSEL
+  function dragger(el) {
+    if (!el) return;
+    var down = false;
+    var sx = 0;
+    var sl = 0;
+    var moved = false;
+
+    el.addEventListener('mousedown', function(e) {
+      down = true;
+      moved = false;
+      sx = e.pageX;
+      sl = el.scrollLeft;
+      el.classList.add('drag');
+    });
+
+    addEventListener('mouseup', function() {
+      if (down) {
+        down = false;
+        el.classList.remove('drag');
+      }
+    });
+
+    el.addEventListener('mousemove', function(e) {
+      if (down) {
+        e.preventDefault();
+        if (Math.abs(e.pageX - sx) > 4) moved = true;
+        el.scrollLeft = sl - (e.pageX - sx);
+      }
+    });
+
+    el.addEventListener('click', function(e) {
+      if (moved) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+    }, true);
+  }
+
+  dragger(document.getElementById('frames'));
+  var car = document.getElementById('car');
+  dragger(car);
+
+  // 13. CELEBRATIONS CAROUSEL SYNC & CONTROLS
+  if (car) {
+    var slides = $$('.slide', car);
+    var cbar = document.getElementById('cbar');
+
+    function carSync() {
+      var c = car.getBoundingClientRect();
+      var mid = c.left + c.width / 2;
+      var best = 0;
+      var bd = 1e9;
+      slides.forEach(function(s, i) {
+        var r = s.getBoundingClientRect();
+        var d = Math.abs(r.left + r.width / 2 - mid);
+        if (d < bd) {
+          bd = d;
+          best = i;
+        }
+      });
+      slides.forEach(function(s, i) {
+        s.classList.toggle('on', i === best);
+      });
+      var max = car.scrollWidth - car.clientWidth;
+      if (cbar) {
+        cbar.style.width = (max > 0 ? (car.scrollLeft / max * 100) : 100) + '%';
+      }
+    }
+
+    car.addEventListener('scroll', carSync, { passive: true });
+    carSync();
+
+    function stepWidth() {
+      return slides.length ? (slides[0].offsetWidth + 20) : 340;
+    }
+
+    var cnext = document.getElementById('cnext');
+    var cprev = document.getElementById('cprev');
+    if (cnext) cnext.onclick = function() { car.scrollBy({ left: stepWidth(), behavior: 'smooth' }); };
+    if (cprev) cprev.onclick = function() { car.scrollBy({ left: -stepWidth(), behavior: 'smooth' }); };
+
+    // 14. LIGHTBOX MODAL WITH ACCESSIBLE FOCUS TRAP
+    var lb = document.getElementById('lb');
+    var lastSlide = null;
+
+    slides.forEach(function(s) {
+      s.addEventListener('click', function() {
+        lastSlide = s;
+        var ph = s.querySelector('.ph');
+        var fig = s.querySelector('figcaption');
+        if (ph && document.getElementById('lbph')) {
+          document.getElementById('lbph').innerHTML = ph.outerHTML;
+        }
+        if (fig && document.getElementById('lbc')) {
+          document.getElementById('lbc').innerHTML = fig.innerHTML.replace(/<b>.*?</b>/, '');
+        }
+        if (lb) {
+          lb.classList.add('open');
+          var xBtn = document.getElementById('lbx');
+          if (xBtn) xBtn.focus();
+        }
+      });
+      s.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          s.click();
+        }
+      });
+    });
+
+    function closeLb() {
+      if (!lb) return;
+      lb.classList.remove('open');
+      if (lastSlide && lastSlide.focus) {
+        lastSlide.focus();
+      }
+    }
+
+    var lbx = document.getElementById('lbx');
+    if (lbx) lbx.onclick = closeLb;
+    if (lb) {
+      lb.addEventListener('click', function(e) {
+        if (e.target === lb) closeLb();
+      });
+    }
+    addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && lb && lb.classList.contains('open')) {
+        closeLb();
+      }
+    });
+  }
+
+  // 15. SCROLL PROGRESS BAR, STICKY PROCESS STORY & SIDE DOT NAVIGATION
+  var bar = document.getElementById('progress');
+  var steps = $$('.step[data-cap]');
+  var layers = $$('#sticky .layer');
+  var names = ['Discovery', 'Strategy', 'Design', 'Build', 'SEO', 'Launch and report'];
+  var curStep = -1;
+  var dots = $$('#dots a');
+  var dsecs = dots.map(function(a) {
+    return document.querySelector(a.getAttribute('href'));
+  });
+
+  function onScroll() {
+    var H = root.scrollHeight - innerHeight;
+    if (bar) {
+      bar.style.transform = 'scaleX(' + (H > 0 ? scrollY / H : 0) + ')';
+    }
+
+    // Process steps sync
+    var mid = innerHeight * 0.5;
+    var act = 0;
+    steps.forEach(function(s, i) {
+      if (s.getBoundingClientRect().top < mid) act = i;
+    });
+
+    steps.forEach(function(s, i) {
+      s.classList.toggle('on', i === act);
+    });
+
+    if (act !== curStep) {
+      curStep = act;
+      layers.forEach(function(l, i) {
+        l.classList.toggle('on', i === act);
+      });
+      var snum = document.getElementById('snum');
+      var sname = document.getElementById('sname');
+      var scap = document.getElementById('scap');
+      var smeter = document.getElementById('smeter');
+      if (snum) snum.textContent = '0' + (act + 1);
+      if (sname) sname.textContent = names[act];
+      if (scap && steps[act]) scap.innerHTML = steps[act].dataset.cap;
+      if (smeter) smeter.style.width = ((act + 1) / 6 * 100) + '%';
+    }
+
+    // Side dots sync
+    var d = 0;
+    dsecs.forEach(function(s, i) {
+      if (s && s.getBoundingClientRect().top < innerHeight * 0.45) d = i;
+    });
+    dots.forEach(function(a, i) {
+      a.classList.toggle('on', i === d);
+    });
+  }
+
+  addEventListener('scroll', onScroll, { passive: true });
+  addEventListener('resize', onScroll, { passive: true });
+  onScroll();
+
+})();
 </script>
