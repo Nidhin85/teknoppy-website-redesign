@@ -1,0 +1,215 @@
+---
+// Team Orbit interactive section with counter-rotating portrait nodes and team profile card
+const teamMembers = [
+  {
+    initials: 'NK',
+    name: 'Niya K K & SEO Team',
+    role: 'SEO Lead & Analysts',
+    shortName: 'Niya K K',
+    desc: 'Setting SEO priorities, technical site audits, schema markup and pre-launch checks.',
+    photo: '/team/niya-kk.webp',
+    caption: 'SEO team audit review at one screen'
+  },
+  {
+    initials: 'NS',
+    name: 'Nandana S Madhu',
+    role: 'Web Developer',
+    shortName: 'Nandana',
+    desc: 'Frontend and WordPress development, responsive styling, and fast Core Web Vitals builds.',
+    photo: '/team/nandana.webp',
+    caption: 'Developer at work, code and design side by side'
+  },
+  {
+    initials: 'VK',
+    name: 'Vijayakala',
+    role: 'Client Relations & Operations',
+    shortName: 'Vijayakala',
+    desc: 'Client communications, scoping calls for Kerala and Gulf accounts, and delivery coordination.',
+    photo: '/team/vijayakala.webp',
+    caption: 'Client relations scoping call'
+  },
+  {
+    initials: 'AK',
+    name: 'Adithya K',
+    role: 'Social Media Content Strategist',
+    shortName: 'Adithya K',
+    desc: 'Brand voice, editorial planning, graphic content direction and multi-channel campaign calendars.',
+    photo: '/team/adithya-k.webp',
+    caption: 'Content and social planning'
+  },
+  {
+    initials: 'SE',
+    name: 'Sanal Edison',
+    role: 'Founder & Digital Strategist',
+    shortName: 'Sanal Edison',
+    desc: 'Strategy lead, client consultation, technical roadmap and organic search architecture.',
+    photo: '/team/sanal-edison.webp',
+    caption: 'Founder strategy and team direction'
+  },
+  {
+    initials: 'ALL',
+    name: 'The Full In-House Team',
+    role: 'Design, Code & SEO',
+    shortName: 'Whole Team',
+    desc: '10 specialists working together under one roof at Kaithakal Building, Thykoodam, Vyttila.',
+    photo: '/whoweare.webp',
+    caption: 'Whole team at the Vyttila office'
+  }
+];
+---
+
+<section id="team" style="scroll-margin-top:90px">
+  <div class="wrap teamw">
+    <!-- Interactive Orbit Ring Container -->
+    <div class="orbit rv" id="orbit" role="region" aria-label="Interactive Team Member Orbit">
+      <div class="ring" aria-hidden="true"></div>
+      
+      <!-- Counter-rotating Orbit Container -->
+      <div class="spin" id="ospin">
+        {teamMembers.map((m, idx) => {
+          const angle = (idx / teamMembers.length) * Math.PI * 2 - Math.PI / 2;
+          const left = 50 + 44 * Math.cos(angle);
+          const top = 50 + 44 * Math.sin(angle);
+          return (
+            <button
+              class={`od ${idx === 0 ? 'on' : ''}`}
+              style={`left:${left.toFixed(2)}%;top:${top.toFixed(2)}%`}
+              data-i={idx}
+              aria-label={m.name}
+            >
+              <div class="od-img-wrap">
+                <img src={m.photo} alt={m.name} class="od-img" loading="lazy" />
+                <span class="ini">{m.initials}</span>
+              </div>
+            </button>
+          );
+        })}
+      </div>
+
+      <!-- Center Featured Focus Circle -->
+      <div class="ocore" id="ocore">
+        <div class="ocore-content">
+          <img id="ocore-img" src={teamMembers[0].photo} alt={teamMembers[0].name} class="ocore-img" />
+          <div class="ocore-meta">
+            <span class="t" id="ocore-title">{teamMembers[0].name}</span>
+            <span class="f" id="ocore-sub">{teamMembers[0].caption}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Orbit Information & Selector Buttons -->
+    <div class="tinfo sec">
+      <span class="tag" style="justify-self:start">The team</span>
+      <h2 class="words">Who works at Teknoppy?</h2>
+      <p>A team of 10 people across client relations, SEO, development and social content, all in one office. These are candid photos from a normal working week.</p>
+      
+      <!-- Selected Member Card -->
+      <div class="tcard" id="tcard">
+        <b id="tcard-name">{teamMembers[0].name}</b>
+        <span class="tcard-role" id="tcard-role">{teamMembers[0].role}</span>
+        <p class="tcard-desc" id="tcard-desc">{teamMembers[0].desc}</p>
+        <small id="tcard-photo">Photo: {teamMembers[0].caption}</small>
+      </div>
+
+      <!-- Pill Navigators -->
+      <div class="tnav" id="tnav">
+        {teamMembers.map((m, idx) => (
+          <button class={idx === 0 ? 'on' : ''} data-i={idx}>
+            {m.shortName}
+          </button>
+        ))}
+      </div>
+
+      <p class="about">Full roles and bios for everyone are on our <a href="/about-us/">About page</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Data for Client Orbit Script -->
+<script is:inline define:vars={{ teamMembers }}>
+  window.__TEKNOPPY_TEAM_ORBIT__ = teamMembers;
+</script>
+
+<style>
+  .od-img-wrap {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    background: var(--tint);
+  }
+  .od-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+  }
+  .od .ini {
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 11px;
+    color: #fff;
+    background: rgba(26,26,26,0.85);
+    backdrop-filter: blur(4px);
+    border-radius: 999px;
+    padding: 1px 6px;
+    border: 1px solid rgba(255,255,255,0.4);
+    pointer-events: none;
+  }
+  .ocore-content {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+  }
+  .ocore-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    transition: opacity 0.4s ease, transform 0.6s ease;
+  }
+  .ocore-meta {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(26,26,26,0.85) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 12px;
+    text-align: center;
+    pointer-events: none;
+  }
+  .ocore-meta .t {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 13px;
+    color: #fff;
+    line-height: 1.2;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  }
+  .ocore-meta .f {
+    font-size: 11px;
+    color: rgba(255,255,255,0.8);
+    margin-top: 2px;
+    line-height: 1.2;
+  }
+  .tcard-role {
+    font-weight: 700;
+    color: var(--orange);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .tcard-desc {
+    color: var(--muted);
+    font-size: 15.5px;
+    line-height: 1.5;
+    margin: 4px 0 6px;
+  }
+</style>

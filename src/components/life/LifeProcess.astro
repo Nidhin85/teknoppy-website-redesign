@@ -1,0 +1,574 @@
+---
+// LifeProcess.astro — Full-screen sticky scroll experience for "How We Work"
+---
+
+<section id="process" class="how-we-work">
+  <div class="how-we-work__track" id="process-track">
+    <div class="how-we-work__sticky">
+      <div class="how-we-work__inner">
+        
+        <!-- Section Header / Intro (integrated seamlessly in the pinned frame) -->
+        <header class="how-we-work__intro">
+          <span class="tag">How we work</span>
+          <h2 class="how-we-work__title">How does a project move through our team?</h2>
+          <p class="intro-desc">
+            Every project goes through the same six stages, and the same people stay with it from the first call to the monthly report. Nothing is passed to a subcontractor.
+          </p>
+
+          <!-- Interactive Stage Pills -->
+          <div class="how-we-work__nav-wrap">
+            <div class="how-we-work__pills" role="tablist" aria-label="Project stages">
+              <button type="button" class="stage-pill active" data-stage="0" aria-selected="true" aria-label="Stage 1: Discovery">
+                <span class="pill-dot"></span>
+                <span class="pill-num">01</span>
+                <span class="pill-name">Discovery</span>
+              </button>
+              <button type="button" class="stage-pill" data-stage="1" aria-selected="false" aria-label="Stage 2: Strategy">
+                <span class="pill-dot"></span>
+                <span class="pill-num">02</span>
+                <span class="pill-name">Strategy</span>
+              </button>
+              <button type="button" class="stage-pill" data-stage="2" aria-selected="false" aria-label="Stage 3: Design">
+                <span class="pill-dot"></span>
+                <span class="pill-num">03</span>
+                <span class="pill-name">Design</span>
+              </button>
+              <button type="button" class="stage-pill" data-stage="3" aria-selected="false" aria-label="Stage 4: Build">
+                <span class="pill-dot"></span>
+                <span class="pill-num">04</span>
+                <span class="pill-name">Build</span>
+              </button>
+              <button type="button" class="stage-pill" data-stage="4" aria-selected="false" aria-label="Stage 5: SEO">
+                <span class="pill-dot"></span>
+                <span class="pill-num">05</span>
+                <span class="pill-name">SEO</span>
+              </button>
+              <button type="button" class="stage-pill" data-stage="5" aria-selected="false" aria-label="Stage 6: Launch and report">
+                <span class="pill-dot"></span>
+                <span class="pill-num">06</span>
+                <span class="pill-name">Launch</span>
+              </button>
+            </div>
+            
+            <!-- Progress Meter -->
+            <div class="how-we-work__meter-track" aria-hidden="true">
+              <div class="how-we-work__meter-fill" id="howWeWorkMeterFill" style="width: 16.666%;"></div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Pinned Stationary Stage Viewport (Text changes smoothly in-place) -->
+        <div class="how-we-work__viewport" id="stageViewport" aria-live="polite">
+          <!-- Stage 01 -->
+          <article class="how-we-work__stage active" data-index="0" aria-hidden="false">
+            <span class="stage-num">01</span>
+            <small class="stage-role">Client Relations</small>
+            <h3 class="stage-title">Discovery</h3>
+            <p class="stage-desc">Vijayakala scopes the brief, budget and timeline with the client.</p>
+          </article>
+
+          <!-- Stage 02 -->
+          <article class="how-we-work__stage exit-down" data-index="1" aria-hidden="true">
+            <span class="stage-num">02</span>
+            <small class="stage-role">Founder</small>
+            <h3 class="stage-title">Strategy</h3>
+            <p class="stage-desc">Sanal plans the site structure and decides which keyword each page owns.</p>
+          </article>
+
+          <!-- Stage 03 -->
+          <article class="how-we-work__stage exit-down" data-index="2" aria-hidden="true">
+            <span class="stage-num">03</span>
+            <small class="stage-role">Design</small>
+            <h3 class="stage-title">Design</h3>
+            <p class="stage-desc">Wireframes first, then full layouts. The client signs off before any code.</p>
+          </article>
+
+          <!-- Stage 04 -->
+          <article class="how-we-work__stage exit-down" data-index="3" aria-hidden="true">
+            <span class="stage-num">04</span>
+            <small class="stage-role">Development</small>
+            <h3 class="stage-title">Build</h3>
+            <p class="stage-desc">Nandana turns the approved design into a working WordPress or custom build.</p>
+          </article>
+
+          <!-- Stage 05 -->
+          <article class="how-we-work__stage exit-down" data-index="4" aria-hidden="true">
+            <span class="stage-num">05</span>
+            <small class="stage-role">SEO team</small>
+            <h3 class="stage-title">SEO</h3>
+            <p class="stage-desc">On-page work, schema and speed checks, all reviewed by Niya before launch.</p>
+          </article>
+
+          <!-- Stage 06 -->
+          <article class="how-we-work__stage exit-down" data-index="5" aria-hidden="true">
+            <span class="stage-num">06</span>
+            <small class="stage-role">SEO and Client Relations</small>
+            <h3 class="stage-title">Launch and report</h3>
+            <p class="stage-desc">We go live, track rankings and send a monthly report in plain language.</p>
+          </article>
+        </div>
+
+        <!-- Subtle scroll indicator hint -->
+        <div class="how-we-work__scroll-hint" id="howWeWorkHint" aria-hidden="true">
+          <span>Scroll to explore stages</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <polyline points="19 12 12 19 5 12"></polyline>
+          </svg>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Container & Outer Scroll Track */
+  .how-we-work {
+    position: relative;
+    width: 100%;
+    background: #ffffff;
+    border-top: 1px solid var(--line);
+    scroll-margin-top: 80px;
+  }
+
+  .how-we-work__track {
+    position: relative;
+    width: 100%;
+    /* 500vh gives ~66.7vh of smooth deliberate scrolling per stage */
+    min-height: 500vh;
+  }
+
+  /* Pinned 100vh Sticky Viewport */
+  .how-we-work__sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #ffffff;
+    z-index: 2;
+  }
+
+  /* Centered Main Content Frame */
+  .how-we-work__inner {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 24px 24px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  /* Section Intro Header */
+  .how-we-work__intro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .how-we-work__intro .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--tint);
+    border: 1px solid var(--tint-line);
+    color: var(--orange);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 999px;
+    margin-bottom: 12px;
+  }
+
+  .how-we-work__intro h2,
+  .how-we-work__intro .how-we-work__title {
+    font-family: var(--display);
+    font-size: clamp(26px, 3.4vw, 42px);
+    font-weight: 800;
+    color: var(--ink);
+    line-height: 1.2;
+    margin-bottom: 10px;
+    letter-spacing: -0.015em;
+    opacity: 1 !important;
+  }
+
+  .how-we-work__intro .intro-desc {
+    font-family: var(--body);
+    font-size: clamp(14.5px, 1.15vw, 16.5px);
+    color: var(--muted);
+    max-width: 58ch;
+    line-height: 1.6;
+    margin: 0 auto;
+  }
+
+  /* Stage Navigation Pills & Meter */
+  .how-we-work__nav-wrap {
+    margin-top: 22px;
+    width: 100%;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .how-we-work__pills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .stage-pill {
+    all: unset;
+    cursor: pointer;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--muted);
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid var(--line);
+    transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    user-select: none;
+  }
+
+  .stage-pill .pill-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #d4d4d4;
+    transition: background 0.25s ease, transform 0.25s ease;
+  }
+
+  .stage-pill .pill-num {
+    font-weight: 800;
+    color: var(--soft);
+    font-size: 11.5px;
+    transition: color 0.25s ease;
+  }
+
+  .stage-pill .pill-name {
+    transition: color 0.25s ease;
+  }
+
+  .stage-pill:hover {
+    color: var(--ink);
+    background: rgba(0, 0, 0, 0.06);
+    border-color: rgba(0, 0, 0, 0.12);
+  }
+
+  .stage-pill.active {
+    background: var(--tint);
+    border-color: var(--tint-line);
+    color: var(--orange);
+    box-shadow: 0 2px 10px rgba(241, 90, 36, 0.14);
+  }
+
+  .stage-pill.active .pill-dot {
+    background: var(--orange);
+    transform: scale(1.2);
+  }
+
+  .stage-pill.active .pill-num {
+    color: var(--orange);
+  }
+
+  .how-we-work__meter-track {
+    width: 100%;
+    max-width: 640px;
+    height: 3px;
+    background: var(--line);
+    border-radius: 999px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .how-we-work__meter-fill {
+    height: 100%;
+    background: var(--orange);
+    border-radius: 999px;
+    transition: width 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  /* Stationary Stage Viewport */
+  .how-we-work__viewport {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    min-height: 240px;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Stage Card Elements (Smooth, in-place transitions) */
+  .how-we-work__stage {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%) translateY(28px);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+                visibility 0.45s;
+    will-change: opacity, transform;
+  }
+
+  .how-we-work__stage.active {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateY(-50%) translateY(0);
+  }
+
+  .how-we-work__stage.exit-up {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transform: translateY(-50%) translateY(-28px);
+  }
+
+  .how-we-work__stage.exit-down {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transform: translateY(-50%) translateY(28px);
+  }
+
+  .stage-num {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: clamp(60px, 7vw, 82px);
+    line-height: 0.95;
+    color: var(--orange);
+    margin-bottom: 4px;
+    letter-spacing: -0.02em;
+    display: block;
+  }
+
+  .stage-role {
+    font-family: var(--body);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 4px;
+    display: inline-block;
+  }
+
+  .stage-title {
+    font-family: var(--display);
+    font-size: clamp(28px, 3.6vw, 42px);
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.15;
+    margin-bottom: 10px;
+  }
+
+  .stage-desc {
+    font-family: var(--body);
+    font-size: clamp(15.5px, 1.3vw, 18.5px);
+    color: var(--muted);
+    line-height: 1.65;
+    max-width: 44ch;
+    margin: 0 auto;
+  }
+
+  /* Subtle Scroll Hint */
+  .how-we-work__scroll-hint {
+    margin-top: 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--soft);
+    letter-spacing: 0.04em;
+    opacity: 0.85;
+    transition: opacity 0.4s ease;
+  }
+
+  .how-we-work__scroll-hint svg {
+    animation: bounceDown 2s infinite ease-in-out;
+  }
+
+  @keyframes bounceDown {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(4px);
+    }
+    60% {
+      transform: translateY(2px);
+    }
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .how-we-work__track {
+      min-height: 400vh;
+    }
+    .how-we-work__inner {
+      padding: 16px 16px 24px;
+    }
+    .how-we-work__intro h2 {
+      font-size: clamp(23px, 5.5vw, 32px);
+    }
+    .how-we-work__pills {
+      gap: 6px;
+    }
+    .stage-pill {
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+    .how-we-work__viewport {
+      min-height: 220px;
+      margin-top: 24px;
+    }
+    .stage-num {
+      font-size: 54px;
+    }
+    .stage-title {
+      font-size: 26px;
+    }
+    .stage-desc {
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .how-we-work__track {
+      min-height: 360vh;
+    }
+    .how-we-work__pills {
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      padding-bottom: 4px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .how-we-work__pills::-webkit-scrollbar {
+      display: none;
+    }
+    .stage-pill {
+      flex-shrink: 0;
+    }
+    .how-we-work__scroll-hint {
+      display: none;
+    }
+  }
+</style>
+
+<script is:inline>
+  (function() {
+    var track = document.getElementById('process-track');
+    var stages = Array.prototype.slice.call(document.querySelectorAll('.how-we-work__stage'));
+    var pills = Array.prototype.slice.call(document.querySelectorAll('.stage-pill'));
+    var meterFill = document.getElementById('howWeWorkMeterFill');
+    var hint = document.getElementById('howWeWorkHint');
+    if (!track || !stages.length) return;
+
+    var currentStageIdx = 0;
+
+    function updateStickyProcess() {
+      var trackRect = track.getBoundingClientRect();
+      var trackHeight = track.offsetHeight;
+      var windowH = window.innerHeight;
+      var maxScroll = trackHeight - windowH;
+
+      if (maxScroll <= 0) return;
+
+      var scrolled = -trackRect.top;
+      var progress = Math.min(Math.max(scrolled / maxScroll, 0), 1);
+
+      // Hide hint once scrolling begins inside track
+      if (hint) {
+        hint.style.opacity = progress > 0.04 ? '0' : '0.85';
+      }
+
+      // 6 stages evenly distributed across scroll progress
+      var newIdx = Math.floor(progress * 6);
+      if (newIdx >= 6) newIdx = 5;
+      if (newIdx < 0) newIdx = 0;
+
+      // Update meter fill percentage
+      if (meterFill) {
+        meterFill.style.width = ((newIdx + 1) / 6 * 100) + '%';
+      }
+
+      // Update active stage and classes
+      if (newIdx !== currentStageIdx) {
+        currentStageIdx = newIdx;
+
+        stages.forEach(function(st, idx) {
+          st.classList.remove('active', 'exit-up', 'exit-down');
+          if (idx === newIdx) {
+            st.classList.add('active');
+            st.setAttribute('aria-hidden', 'false');
+          } else if (idx < newIdx) {
+            st.classList.add('exit-up');
+            st.setAttribute('aria-hidden', 'true');
+          } else {
+            st.classList.add('exit-down');
+            st.setAttribute('aria-hidden', 'true');
+          }
+        });
+
+        pills.forEach(function(pill, idx) {
+          var isActive = idx === newIdx;
+          pill.classList.toggle('active', isActive);
+          pill.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        });
+      }
+    }
+
+    window.addEventListener('scroll', updateStickyProcess, { passive: true });
+    window.addEventListener('resize', updateStickyProcess);
+    updateStickyProcess();
+
+    // Clicking pills smoothly scrolls to that stage
+    pills.forEach(function(pill, idx) {
+      pill.addEventListener('click', function() {
+        var trackTop = window.scrollY + track.getBoundingClientRect().top;
+        var trackHeight = track.offsetHeight;
+        var windowH = window.innerHeight;
+        var maxScroll = trackHeight - windowH;
+        var targetProgress = (idx + 0.5) / 6;
+        var targetScroll = trackTop + (targetProgress * maxScroll);
+        window.scrollTo({ top: targetScroll, behavior: 'smooth' });
+      });
+    });
+  })();
+</script>
