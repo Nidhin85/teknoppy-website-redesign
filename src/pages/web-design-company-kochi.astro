@@ -91,7 +91,9 @@ const trustedPartnerLogos = [
 ];
 
 const title = page.meta.title;
-const description = page.meta.description;
+const description = page.meta?.description && !page.meta.description.includes('Kerala')
+  ? page.meta.description
+  : "Teknoppy is a trusted web design company in Kochi building fast, SEO-ready, conversion-focused websites for Kochi businesses. Get a free quote today.";
 
 // SEO Schemas
 const faqSchema = {

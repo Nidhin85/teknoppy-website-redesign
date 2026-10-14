@@ -133,6 +133,53 @@ for (const global of contentMap.globals) {
     console.warn(`[cms:pull] CMS returned empty content for global "${global.slug}" — preserving local file.`);
     continue;
   }
+
+  // Guard: Protect homepage, Kochi page, and site footer corrections from being overwritten by stale CMS database records
+  if (global.slug === 'home' && fs.existsSync(file)) {
+    const local = safeReadContentFile(file);
+    if (local?.faq?.items?.length > (content?.faq?.items?.length ?? 0)) {
+      console.warn(`[cms:pull] Preserving approved local FAQs for "home" (${local.faq.items.length} items vs CMS ${content?.faq?.items?.length ?? 0}).`);
+      content.faq = local.faq;
+    }
+    if (local?.hero?.trustBar) content.hero = { ...content?.hero, trustBar: local.hero.trustBar };
+    if (local?.about) content.about = { ...content?.about, intro: local.about.intro, stats: local.about.stats };
+    if (local?.services?.cards?.[0]) {
+      content.services = content.services || { cards: [] };
+      content.services.cards[0] = { ...content.services.cards[0], ...local.services.cards[0] };
+    }
+    if (local?.whyChooseUs?.features?.[1]) {
+      content.whyChooseUs = content.whyChooseUs || { features: [] };
+      content.whyChooseUs.features[1] = { ...content.whyChooseUs.features[1], ...local.whyChooseUs.features[1] };
+    }
+  }
+
+  if (global.slug === 'webDesignPage' && fs.existsSync(file)) {
+    const local = safeReadContentFile(file);
+    if (local) {
+      console.warn(`[cms:pull] Preserving approved local corrections for "webDesignPage" (Kochi page).`);
+      if (local.meta) content.meta = { ...content?.meta, description: local.meta.description };
+      if (local.hero) content.hero = { ...content?.hero, badge: local.hero.badge, body: local.hero.body, stats: local.hero.stats };
+      if (local.introBand) content.introBand = local.introBand;
+      if (local.whyTeknoppy) content.whyTeknoppy = local.whyTeknoppy;
+      if (local.services) content.services = local.services;
+      if (local.pricing) content.pricing = local.pricing;
+      if (local.industries) content.industries = local.industries;
+      if (local.projects) content.projects = local.projects;
+      if (local.caseStudies) content.caseStudies = local.caseStudies;
+      if (local.author) content.author = local.author;
+      if (local.cta) content.cta = local.cta;
+      if (local.faqs) content.faqs = local.faqs;
+    }
+  }
+
+  if (global.slug === 'footer' && fs.existsSync(file)) {
+    const local = safeReadContentFile(file);
+    if (local) {
+      if (local.columns) content.columns = local.columns;
+      if (local.areasWeServe) content.areasWeServe = local.areasWeServe;
+    }
+  }
+
   sync(file, content ?? {});
 }
 
