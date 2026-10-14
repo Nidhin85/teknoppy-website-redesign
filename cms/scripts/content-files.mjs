@@ -51,6 +51,6 @@ export function parseMarkdown(source) {
 }
 
 export function readContentFile(file) {
-  const source = fs.readFileSync(file, 'utf8')
+  const source = fs.readFileSync(file, 'utf8').replace(/\r\n/g, '\n')
   return file.endsWith('.md') ? parseMarkdown(source) : JSON.parse(source)
 }

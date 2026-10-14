@@ -102,18 +102,58 @@ const faqSchema = {
     "name": faq.q,
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": faq.a
+      "text": faq.a.replace(/<[^>]*>/g, '')
     }
   }))
 };
 
-const pageUrl = "https://teknoppy.com/web-design-company-kochi/";
+const pageUrl = "https://www.teknoppy.com/web-design-company-kochi/";
+
+const kochiLocalBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://www.teknoppy.com/web-design-company-kochi/#localbusiness",
+  "name": "Teknoppy – Web Design Company in Kochi",
+  "url": "https://www.teknoppy.com/web-design-company-kochi/",
+  "logo": "https://www.teknoppy.com/logo.svg",
+  "image": "https://www.teknoppy.com/og-image.png",
+  "telephone": "+91-6282249224",
+  "email": "sales@teknoppy.com",
+  "priceRange": "₹15,000 - ₹3,00,000",
+  "foundingDate": "2018",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Second Floor, Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam, Vyttila",
+    "addressLocality": "Kochi",
+    "addressRegion": "Kerala",
+    "postalCode": "682019",
+    "addressCountry": "IN"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Kochi" },
+    { "@type": "Place", "name": "Ernakulam" },
+    { "@type": "Place", "name": "Vyttila" },
+    { "@type": "Place", "name": "Edappally" },
+    { "@type": "Place", "name": "Kakkanad" }
+  ],
+  "hasMap": "https://maps.google.com/maps?q=Teknoppy+Vyttila+Kochi",
+  "sameAs": [
+    "https://maps.google.com/maps?q=Teknoppy+Vyttila+Kochi",
+    "https://www.facebook.com/teknoppy",
+    "https://www.linkedin.com/company/teknoppy"
+  ],
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Teknoppy",
+    "url": "https://www.teknoppy.com/"
+  }
+};
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://teknoppy.com/" },
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.teknoppy.com/" },
     { "@type": "ListItem", "position": 2, "name": "Web Design Company in Kochi", "item": pageUrl }
   ]
 };
@@ -124,7 +164,7 @@ const serviceSchema = {
   "name": "Web Design Company in Kochi",
   "serviceType": "Web Design and Development",
   "url": pageUrl,
-  "provider": { "@type": "LocalBusiness", "@id": "https://teknoppy.com/#localbusiness" },
+  "provider": { "@type": "LocalBusiness", "@id": "https://www.teknoppy.com/web-design-company-kochi/#localbusiness" },
   "areaServed": [
     { "@type": "City", "name": "Kochi" },
     { "@type": "State", "name": "Kerala" }
@@ -147,7 +187,7 @@ const personSchema = {
   "email": page.author.email,
   "telephone": page.author.phone,
   "description": page.author.bio,
-  "worksFor": { "@type": "Organization", "name": "Teknoppy", "url": "https://teknoppy.com/" }
+  "worksFor": { "@type": "Organization", "name": "Teknoppy", "url": "https://www.teknoppy.com/" }
 };
 
 // Icons mapped by index with JSON lists
@@ -174,10 +214,14 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
 <Layout
   title={title}
   description={description}
+  canonical="https://www.teknoppy.com/web-design-company-kochi/"
   showBottomBar={true}
   floatingCtaLabel="Let's Build Your Website"
   floatingCtaHref="/request-a-quote/"
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(kochiLocalBusinessSchema)} />
+  </Fragment>
   <Header />
 
   <main class="overflow-hidden">
@@ -341,7 +385,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
             <div class="pt-8 space-y-4">
               <div>
                 <p class="text-[12px] font-bold text-neutral-400 uppercase tracking-wider">Trusted Partners</p>
-                <p class="text-sm font-semibold text-neutral-900 leading-tight">100+ Brands Across Kerala</p>
+                <p class="text-sm font-semibold text-neutral-900 leading-tight">Trusted by 100+ Brands in Kochi & Beyond</p>
               </div>
 
               <!-- Marquee Track flanked by clean divider borders -->
@@ -587,9 +631,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
             </table>
           </div>
         </div>
-        <p class="text-neutral-500 text-xs sm:text-sm mt-5 leading-relaxed max-w-3xl font-medium">
-          {page.pricing.footnote}
-        </p>
+        <p class="text-neutral-500 text-xs sm:text-sm mt-5 leading-relaxed max-w-3xl font-medium" set:html={page.pricing.footnote} />
 
         <!-- Pricing Checkpoint CTA -->
         <div class="mt-12 text-center max-w-xl mx-auto flex flex-col items-center">
@@ -966,7 +1008,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
               </summary>
               <div class="px-6 md:px-7 pb-6 md:pb-7 text-neutral-600 leading-relaxed font-normal text-sm sm:text-base faq-content">
                 <div class="h-px w-full bg-neutral-100 mb-5"></div>
-                <p>{faq.a}</p>
+                <p set:html={faq.a}></p>
               </div>
             </details>
           ))}
@@ -1034,9 +1076,33 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
   </main>
 
   <FooterCTA 
-    heading="Ready to Build Your Website?"
-    description="Tell us what you're looking to build and we'll help you plan the right website for your business."
-  />
+    heading="Ready to Work with the Leading Web Design Company in Kochi?"
+    description="Whether you are launching a new business website, rebuilding an outdated one, or scaling your web presence in Kochi — Teknoppy is ready to deliver. Start with a free website audit and see exactly where your current online presence stands, or request a quote and get a clear, no-obligation proposal within 24 hours."
+    includeSchema={false}
+  >
+    <div slot="after-form" class="mt-12 pt-8 border-t border-white/20 space-y-6">
+      <h3 class="text-2xl font-bold text-white flex items-center gap-3">
+        <span class="w-8 h-1 bg-white rounded-full"></span>
+        Visit Our Kochi Office
+      </h3>
+      <p class="text-sm md:text-base text-white/90 leading-relaxed font-medium">
+        Teknoppy, Second Floor, Kaithakal Building, Door No 49,<br />
+        Kaithakal Lane, Thykoodam, Vyttila, Ernakulam, Kochi, Kerala 682019<br />
+        Phone: <a href="tel:+916282249224" class="underline hover:text-white">+91 6282249224</a> · Email: <a href="mailto:sales@teknoppy.com" class="underline hover:text-white">sales@teknoppy.com</a>
+      </p>
+      <div class="rounded-2xl overflow-hidden border border-white/20 shadow-lg">
+        <iframe
+          src="https://maps.google.com/maps?q=Teknoppy+Vyttila+Kochi&output=embed"
+          width="100%"
+          height="320"
+          style="border:0"
+          loading="lazy"
+          title="Teknoppy office location in Vyttila, Kochi"
+          class="w-full block"
+        ></iframe>
+      </div>
+    </div>
+  </FooterCTA>
 </Layout>
 
 <style>

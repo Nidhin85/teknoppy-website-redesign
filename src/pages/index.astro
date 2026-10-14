@@ -3,8 +3,12 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import About from '../components/About.astro';
+import KeralaCities from '../components/KeralaCities.astro';
 import Services from '../components/Services.astro';
+import KeralaProcess from '../components/KeralaProcess.astro';
+import KeralaPricing from '../components/KeralaPricing.astro';
 import WhyChooseUs from '../components/WhyChooseUs.astro';
+import KeralaIndustries from '../components/KeralaIndustries.astro';
 import Portfolio from '../components/Portfolio.astro';
 import Testimonials from '../components/Testimonials.tsx';
 import videoTestimonials from '../data/video-testimonials.json';
@@ -12,9 +16,12 @@ import Blog from '../components/Blog.astro';
 import FAQ from '../components/FAQ.astro';
 import FooterCTA from '../components/FooterCTA.astro';
 import { getCollection } from 'astro:content';
+import home from '../data/home.json';
 
 const title = "Web Design Company in Kerala — Teknoppy | Website Design and Development";
-const description = "Teknoppy is a trusted Web Design Company in Kerala delivering SEO-friendly, responsive, and conversion-focused websites for businesses across Kerala and Kochi. Book your free consultation today.";
+const description = "Teknoppy is a trusted web design company in Kerala building SEO-friendly, responsive websites for businesses from Thiruvananthapuram to Kozhikode. Book a free consultation.";
+
+const stripHtml = (html: string) => html.replace(/<[^>]*>?/gm, '');
 
 const homepageSchema = {
   "@context": "https://schema.org",
@@ -25,27 +32,14 @@ const homepageSchema = {
       "name": "Teknoppy",
       "url": "https://www.teknoppy.com/",
       "logo": "https://www.teknoppy.com/logo.svg",
-      "image": "https://www.teknoppy.com/og-image.png",
+      "description": "Web design company in Kerala",
       "foundingDate": "2018",
       "founder": {
         "@type": "Person",
         "name": "Sanal Edison"
       },
-      "email": "sales@teknoppy.com",
-      "telephone": "+91-6282249224",
-      "sameAs": [
-        "https://www.teknoppy.com/"
-      ]
-    },
-    {
-      "@type": "ProfessionalService",
-      "@id": "https://www.teknoppy.com/#localbusiness",
-      "name": "Teknoppy",
-      "image": "https://www.teknoppy.com/og-image.png",
-      "url": "https://www.teknoppy.com/",
       "telephone": "+91-6282249224",
       "email": "sales@teknoppy.com",
-      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Second Floor, Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam, Vyttila",
@@ -55,18 +49,19 @@ const homepageSchema = {
         "addressCountry": "IN"
       },
       "areaServed": [
-        "Kochi",
-        "Thrissur",
-        "Kozhikode",
-        "Thiruvananthapuram",
-        "Palakkad",
-        "Kottayam",
-        "UAE",
-        "Qatar"
+        { "@type": "State", "name": "Kerala" },
+        { "@type": "City", "name": "Kochi" },
+        { "@type": "City", "name": "Thrissur" },
+        { "@type": "City", "name": "Kozhikode" },
+        { "@type": "City", "name": "Thiruvananthapuram" },
+        { "@type": "City", "name": "Palakkad" },
+        { "@type": "City", "name": "Kottayam" }
       ],
-      "parentOrganization": {
-        "@id": "https://www.teknoppy.com/#organization"
-      }
+      "sameAs": [
+        "https://www.facebook.com/teknoppy/",
+        "https://www.linkedin.com/company/teknoppy/",
+        "https://www.instagram.com/teknoppy/"
+      ]
     },
     {
       "@type": "WebSite",
@@ -75,46 +70,19 @@ const homepageSchema = {
       "name": "Teknoppy",
       "publisher": {
         "@id": "https://www.teknoppy.com/#organization"
-      },
-      "inLanguage": "en-IN"
+      }
     },
     {
       "@type": "FAQPage",
       "@id": "https://www.teknoppy.com/#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Which web design company in Kerala is reliable?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Teknoppy has been delivering professional website design and development from our Kochi office since 2018. With over 120 completed projects across Kerala, the UAE and Qatar, we are one of Kerala's most trusted digital agencies, backed by real client results, not just claims."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How to choose a web design company in Kerala?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Look for three things: a verified portfolio with real Kerala clients, demonstrated SEO knowledge built into the design process, and clear post-launch support terms. A good Kerala web design agency delivers not just a website but measurable business outcomes including search rankings and lead generation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What does a web design company in Kerala provide?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A full-service web design company in Kerala provides website design, custom development, ecommerce solutions, SEO integration, UI UX design, web application development, and ongoing technical support, everything a Kerala business needs to build, rank, and grow its digital presence."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How much does website design cost in Kerala?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Website design costs in Kerala vary based on scope. A business website typically starts from a clearly scoped package price while ecommerce and web application projects are quoted based on features and complexity."
-          }
+      "mainEntity": home.faq.items.map((faq) => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": stripHtml(faq.answer)
         }
-      ]
+      }))
     }
   ]
 };
@@ -124,7 +92,7 @@ const testimonials = (await getCollection('testimonials'))
   .map((e) => ({ name: e.data.name, role: e.data.role, content: e.data.quote, initials: e.data.initials, photo: e.data.photo }));
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} canonical="https://www.teknoppy.com/">
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(homepageSchema)} />
   </Fragment>
@@ -132,8 +100,12 @@ const testimonials = (await getCollection('testimonials'))
   <main>
     <Hero />
     <About />
+    <KeralaCities />
     <Services />
+    <KeralaProcess />
+    <KeralaPricing />
     <WhyChooseUs />
+    <KeralaIndustries />
     <Portfolio />
     <Testimonials testimonials={testimonials} videos={videoTestimonials.videos} client:visible />
     <Blog />

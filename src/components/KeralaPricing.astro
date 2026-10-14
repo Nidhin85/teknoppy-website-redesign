@@ -1,0 +1,76 @@
+---
+import { ArrowRight, Check, Shield } from "lucide-react";
+
+const pricingRows = [
+  { package: "Landing page", price: "from Rs. 15,000" },
+  { package: "Business website (5–8 pages)", price: "from Rs. 25,000" },
+  { package: "Corporate website with CMS", price: "from Rs. 1,20,000" },
+  { package: "Ecommerce website", price: "Custom quote" },
+  { package: "Web application", price: "Custom quote" },
+  { package: "Monthly maintenance", price: "from Rs. 3,000 / month" }
+];
+---
+
+<section id="kerala-pricing" class="py-24 md:py-32 bg-white relative overflow-hidden">
+  <div class="max-w-[1000px] mx-auto px-6 lg:px-12 relative z-10">
+    <div class="max-w-2xl mx-auto text-center flex flex-col items-center mb-16">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-bold uppercase tracking-wider mb-6 shadow-sm transform -rotate-1">
+        Transparent Pricing
+      </div>
+      <h2 class="text-3xl md:text-5xl font-black leading-tight text-neutral-900 mb-4" data-magnetic-heading>
+        Website Design Cost in Kerala
+      </h2>
+      <p class="text-lg md:text-xl text-neutral-600 font-medium leading-relaxed">
+        Clear, written quotes before work starts. No hidden fees.
+      </p>
+    </div>
+
+    <!-- Pricing Table -->
+    <div class="bg-[#fcfcfc] rounded-2xl border border-neutral-200 shadow-sm overflow-hidden mb-10">
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-neutral-100/80 border-b border-neutral-200">
+              <th scope="col" class="py-4 px-6 md:px-8 text-sm font-black text-neutral-900 uppercase tracking-wider">
+                Package
+              </th>
+              <th scope="col" class="py-4 px-6 md:px-8 text-sm font-black text-neutral-900 uppercase tracking-wider text-right">
+                Price
+              </th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-neutral-200/70">
+            {pricingRows.map((row) => (
+              <tr class="hover:bg-white transition-colors">
+                <td class="py-5 px-6 md:px-8 text-base md:text-lg font-bold text-neutral-900">
+                  {row.package}
+                </td>
+                <td class="py-5 px-6 md:px-8 text-base md:text-lg font-black text-primary text-right whitespace-nowrap">
+                  {row.price}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-6 p-6 rounded-2xl bg-cream border border-neutral-200/70 text-center sm:text-left">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+          <Shield className="w-5 h-5" />
+        </div>
+        <p class="text-sm text-neutral-700 font-medium">
+          Detailed project scope, milestone delivery, and zero surprise charges.
+        </p>
+      </div>
+      <a
+        href="/web-design-pricing-kerala/"
+        class="inline-flex items-center gap-2 px-6 py-3.5 text-sm font-bold text-white bg-primary hover:bg-primary/95 rounded-full transition-all shadow-sm hover:shadow-md shrink-0 group"
+      >
+        <span>See Full Pricing</span>
+        <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+      </a>
+    </div>
+  </div>
+</section>

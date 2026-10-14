@@ -9,6 +9,7 @@ import { ExternalLink, ArrowUpRight, ArrowRight } from 'lucide-react';
 const projects = [
   {
     client: "Lenaa",
+    location: "Kochi, Kerala",
     title: "One Personal Brand Website for an Actor, Author and TEDx Speaker",
     industry: "Personal Brand, Film & Publishing",
     href: "/lenaa-personal-brand-website-case-study/",
@@ -24,6 +25,7 @@ const projects = [
   },
   {
     client: "TriQare",
+    location: "Mumbai, India (Pan-India)",
     title: "A Trust-First Pre-Launch Platform for a One-Tap Emergency SOS App",
     industry: "Healthtech",
     href: "/case-studies/triqare-web-application-design/",
@@ -39,6 +41,7 @@ const projects = [
   },
   {
     client: "Apolo Mattress",
+    location: "Ernakulam, Kerala",
     title: "A Shopify Store Built to Answer Every Question Before Checkout",
     industry: "Ecommerce, Manufacturing",
     href: "/case-studies/apolo-mattress-shopify-ecommerce/",
@@ -51,6 +54,38 @@ const projects = [
     liveUrl: "https://apolomattress.com",
     color: "from-purple-500/20 to-indigo-500/20",
     accent: "bg-purple-500"
+  },
+  {
+    client: "Greens Ayurveda",
+    location: "Azhiyur, Kozhikode, Kerala",
+    title: "Global Wellness & Ayurvedic Hospital Platform Driving International Patient Care",
+    industry: "Healthcare & Ayurveda",
+    href: "/case-study/",
+    imageDesktop: "/case-studies/greensayurveda.webp",
+    imageMobile: "/case-studies/greensayurveda.webp",
+    imageAlt: "Greens Ayurveda website homepage screenshot — wellness hospital website design by Teknoppy",
+    summary: "A calm, mobile-first wellness website for a prestigious Ayurvedic hospital in North Kerala, connecting international and domestic patients with verified treatment programs and direct inquiry forms.",
+    services: "Website Design, Content Architecture, Healthcare SEO",
+    liveLabel: "greensayurveda.com",
+    liveUrl: "https://greensayurveda.com",
+    color: "from-emerald-500/20 to-teal-500/20",
+    accent: "bg-emerald-500"
+  },
+  {
+    client: "Olives Resort",
+    location: "Wayanad, Kerala",
+    title: "Immersive Hospitality Website with Direct Booking Integration & Interactive Route Maps",
+    industry: "Hospitality & Eco-Tourism",
+    href: "/case-studies/olives-boutique-resort-digital-marketing/",
+    imageDesktop: "/case-studies/olivesresort.webp",
+    imageMobile: "/case-studies/olivesresort.webp",
+    imageAlt: "Olives Boutique Resort website homepage screenshot — resort website design by Teknoppy",
+    summary: "An eco-friendly resort in Kalpetta, Wayanad featuring room showcase galleries, clear travel connectivity details, and direct booking inquiries that reduce third-party OTA commissions.",
+    services: "Website Strategy, Social Media Marketing, Booking Enquiry Flow",
+    liveLabel: "olivesresort.com",
+    liveUrl: "https://www.instagram.com/olivesresortwayanad/",
+    color: "from-lime-500/20 to-green-500/20",
+    accent: "bg-lime-600"
   }
 ];
 ---
@@ -136,9 +171,13 @@ const projects = [
               {project.industry}
             </div>
             
-            <h3 class="text-3xl lg:text-4xl font-black text-neutral-900 mb-4 leading-[1.1] group-hover:text-primary transition-all duration-500">
+            <h3 class="text-3xl lg:text-4xl font-black text-neutral-900 mb-2 leading-[1.1] group-hover:text-primary transition-all duration-500">
               {project.client}
             </h3>
+
+            <p class="text-xs sm:text-sm font-bold text-primary mb-4">
+              Location: {project.location}
+            </p>
 
             <p class="text-lg lg:text-xl text-neutral-800 font-bold mb-6 leading-snug">
               {project.title}
@@ -176,6 +215,13 @@ const projects = [
 
         </div>
       ))}
+    </div>
+
+    <!-- Regional Clients Strip -->
+    <div class="mt-20 py-5 px-8 rounded-2xl bg-[#fcfcfc] border border-neutral-200/80 text-center">
+      <p class="text-sm md:text-base font-bold text-neutral-800 tracking-wide">
+        Clients in Kochi · Kozhikode · Wayanad · Thrissur · Thiruvananthapuram
+      </p>
     </div>
 
     <!-- Conversion CTA: After Project Cards (Standout Checkpoint) -->

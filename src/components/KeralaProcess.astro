@@ -1,0 +1,74 @@
+---
+import { CheckCircle2, ArrowRight } from "lucide-react";
+
+const steps = [
+  {
+    number: "01",
+    h3: "01 Discovery",
+    desc: "Goals, audience and competitor check for your Kerala market."
+  },
+  {
+    number: "02",
+    h3: "02 Planning",
+    desc: "Sitemap, page list and URL structure."
+  },
+  {
+    number: "03",
+    h3: "03 Design",
+    desc: "Wireframes and visual design for mobile and desktop."
+  },
+  {
+    number: "04",
+    h3: "04 Development",
+    desc: "Build on WordPress / Shopify / custom code with schema."
+  },
+  {
+    number: "05",
+    h3: "05 SEO & Speed",
+    desc: "On-page SEO, Core Web Vitals, Search Console setup."
+  },
+  {
+    number: "06",
+    h3: "06 Launch & Support",
+    desc: "Testing, go-live, training and ongoing maintenance."
+  }
+];
+---
+
+<section id="process" class="py-24 md:py-32 bg-cream relative overflow-hidden">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
+    <div class="max-w-3xl mx-auto text-center flex flex-col items-center mb-16 md:mb-20">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-bold uppercase tracking-wider mb-6 shadow-sm transform -rotate-1">
+        Proven Methodology
+      </div>
+      <h2 class="text-3xl md:text-5xl font-black leading-tight text-neutral-900 mb-6" data-magnetic-heading>
+        Our Web Design Process for Kerala Businesses
+      </h2>
+      <p class="text-lg md:text-xl text-neutral-600 leading-relaxed font-medium">
+        A structured, milestone-driven framework that guarantees clarity, on-time delivery, and measurable search visibility.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      {steps.map((step) => (
+        <div class="bg-white rounded-2xl p-8 border border-neutral-200/80 shadow-sm hover:shadow-md hover:border-primary/30 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary font-black text-lg mb-6">
+              {step.number}
+            </div>
+            <h3 class="text-xl md:text-2xl font-black text-neutral-900 mb-3">
+              {step.h3}
+            </h3>
+            <p class="text-neutral-600 text-base leading-relaxed">
+              {step.desc}
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-neutral-100 flex items-center gap-2 text-xs font-semibold text-neutral-400">
+            <CheckCircle2 className="w-4 h-4 text-primary" />
+            <span>Milestone-verified delivery</span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
