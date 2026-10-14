@@ -52,7 +52,7 @@ const schema = {
           </summary>
           <div class="px-6 md:px-8 pb-6 md:pb-8 text-neutral-600 leading-relaxed font-normal text-sm md:text-base faq-content">
             <div class="h-px w-full bg-neutral-100 mb-6"></div>
-            <p>{faq.answer}</p>
+            <p set:html={faq.answer} class="leading-relaxed"></p>
           </div>
         </details>
       ))}

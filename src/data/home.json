@@ -21,14 +21,14 @@
       { "value": "120+", "label": "Websites Delivered" },
       { "value": "100+", "label": "Happy Clients" },
       { "value": "8 Years", "label": "of Experience" },
-      { "value": "2018", "label": "Established in Kochi" }
+      { "value": "2018", "label": "Established in Kerala" }
     ]
   },
   "about": {
     "badge": "Who We Are",
     "headingAccent": "Kerala's Professional",
     "headingRest": "Web Design Agency",
-    "intro": "Teknoppy Kerala is a full-service digital agency founded and headquartered in Kochi, serving businesses across Kerala, Thrissur, and South India. Led by Sanal and a dedicated team of designers, developers, and SEO strategists, we have been building high-performance websites since 2018.",
+    "intro": "Teknoppy Kerala is a full-service digital agency founded and headquartered in Kochi, serving businesses in every major Kerala city — Kochi, Thrissur, Kozhikode, Thiruvananthapuram, Palakkad and Kottayam — and across South India. Led by Sanal and a dedicated team of designers, developers, and SEO strategists, we have been building high-performance websites since 2018.",
     "paragraphs": [
       "As a professional web design agency Kerala businesses have trusted since 2018, we bring together creative design and technical precision to deliver websites that rank, convert, and represent your brand with authority. From custom website design Kerala startups need to enterprise-level web development Kerala corporations demand — our work spans industries, project sizes, and business goals.",
       "We have delivered over 120 successful websites across healthcare, retail, hospitality, education, real estate, and manufacturing sectors. Every project begins with strategy and ends with measurable results."
@@ -53,7 +53,7 @@
         "sublabel": "Delivering custom web design from Kochi since 2018."
       },
       {
-        "value": 12,
+        "value": 10,
         "suffix": "+",
         "label": "Industries Covered",
         "sublabel": "Broad sector expertise from retail to corporate portals."
@@ -71,9 +71,9 @@
     "cards": [
       {
         "title": "Website Design and Development",
-        "description": "We create responsive web design Kerala businesses are proud to show — clean, fast, mobile-optimised, and built to convert. From corporate portals to business landing pages, every website we design is engineered for performance and search visibility.",
+        "description": "We design responsive websites that Kerala businesses are proud to show — clean, fast, mobile-optimised and built to convert.",
         "linkText": "Explore our web design services in Kochi",
-        "href": "/web-design-company-kochi/"
+        "href": "#kerala-cities"
       },
       {
         "title": "WordPress Website Development",
@@ -120,7 +120,7 @@
       },
       {
         "title": "A Proven Track Record Kerala Businesses Rely On",
-        "description": "As a Web Design Company in Kerala with over 120 completed projects, our work speaks louder than promises. Clients across Kochi, Thrissur, Kozhikode, and Ernakulam have seen measurable improvements in search rankings, lead generation, and website engagement within the first 90 days of launch."
+        "description": "As a Web Design Company in Kerala with over 120 completed projects, our work speaks louder than promises. Clients across Kochi, Thrissur, Kozhikode and Thiruvananthapuram have seen measurable improvements in search rankings, lead generation, and website engagement within the first 90 days of launch."
       },
       {
         "title": "Affordable Website Design Without Compromising Quality",
@@ -148,7 +148,7 @@
     "items": [
       {
         "question": "Which web design company in Kerala is reliable?",
-        "answer": "Teknoppy has been delivering professional website design and development from our Kochi office since 2018. With over 120 completed projects across Kerala, the UAE and Qatar, we are one of Kerala's most trusted digital agencies — backed by real client results, not just claims."
+        "answer": "Teknoppy has delivered professional website design and development for businesses across Kerala since 2018. With over 120 completed projects across Kerala, the UAE and Qatar, we are one of Kerala's most trusted digital agencies — backed by real client results, not just claims."
       },
       {
         "question": "How to choose a web design company in Kerala?",
@@ -160,7 +160,31 @@
       },
       {
         "question": "How much does website design cost in Kerala?",
-        "answer": "Website design costs in Kerala vary based on scope — a business website typically starts from a clearly scoped package price while ecommerce and web application projects are quoted based on features and complexity. View our detailed pricing to understand which package suits your business."
+        "answer": "Website design costs in Kerala vary by scope. Business websites start from Rs. 25,000 and landing pages from Rs. 15,000. Ecommerce and web app projects are quoted individually. See <a href=\"#kerala-pricing\" class=\"text-primary font-semibold hover:underline\">Website Design Cost in Kerala</a> above."
+      },
+      {
+        "question": "Do you work with businesses outside Kochi?",
+        "answer": "Yes. We work with clients in Thrissur, Kozhikode, Thiruvananthapuram, Palakkad, Kottayam and across Kerala, with online meetings at every stage."
+      },
+      {
+        "question": "How long does it take to build a website?",
+        "answer": "Most business websites go live in 3–5 weeks. Larger corporate or ecommerce sites take 6–10 weeks."
+      },
+      {
+        "question": "Do you build ecommerce websites in Kerala?",
+        "answer": "Yes. We build WooCommerce and Shopify stores with Indian payment gateways. Link: <a href=\"/ecommerce-website-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Ecommerce Development</a> page."
+      },
+      {
+        "question": "Will my website be mobile-friendly and SEO-ready?",
+        "answer": "Yes. Every site is mobile-first and ships with on-page SEO, schema and Search Console setup."
+      },
+      {
+        "question": "Can you build a Malayalam or multilingual website?",
+        "answer": "Yes. We build Malayalam, English and multi-language websites for local and overseas visitors."
+      },
+      {
+        "question": "Do you offer website maintenance after launch?",
+        "answer": "Yes. Maintenance plans start from Rs. 3,000 per month and cover updates, backups and security."
       }
     ]
   }

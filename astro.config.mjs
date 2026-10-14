@@ -63,7 +63,7 @@ function devApiContactPlugin() {
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://teknoppy.com',
+  site: 'https://www.teknoppy.com',
 
   vite: {
     plugins: [tailwindcss(), devApiContactPlugin()]

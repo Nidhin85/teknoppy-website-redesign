@@ -64,7 +64,7 @@ import home from "../data/home.json";
           <h3
             class="text-4xl sm:text-5xl lg:text-6xl font-black text-black tracking-tight leading-none flex items-baseline gap-0.5"
           >
-            <span class="counter" data-target={home.about.stats[0].value}>0</span>
+            <span class="counter" data-target={home.about.stats[0].value}>{home.about.stats[0].value}</span>
             <span class="text-primary font-bold">{home.about.stats[0].suffix}</span>
           </h3>
           <p
@@ -85,7 +85,7 @@ import home from "../data/home.json";
           <h3
             class="text-4xl sm:text-5xl lg:text-6xl font-black text-black tracking-tight leading-none flex items-baseline gap-0.5"
           >
-            <span class="counter" data-target={home.about.stats[1].value}>0</span>
+            <span class="counter" data-target={home.about.stats[1].value}>{home.about.stats[1].value}</span>
             <span class="text-secondary font-bold">{home.about.stats[1].suffix}</span>
           </h3>
           <p
@@ -106,7 +106,7 @@ import home from "../data/home.json";
           <h3
             class="text-4xl sm:text-5xl lg:text-6xl font-black text-black tracking-tight leading-none flex items-baseline gap-0.5"
           >
-            <span class="counter" data-target={home.about.stats[2].value}>0</span>
+            <span class="counter" data-target={home.about.stats[2].value}>{home.about.stats[2].value}</span>
             <span class="text-primary font-bold">{home.about.stats[2].suffix}</span>
           </h3>
           <p
@@ -127,7 +127,7 @@ import home from "../data/home.json";
           <h3
             class="text-4xl sm:text-5xl lg:text-6xl font-black text-black tracking-tight leading-none flex items-baseline gap-0.5"
           >
-            <span class="counter" data-target={home.about.stats[3].value}>0</span>
+            <span class="counter" data-target={home.about.stats[3].value}>{home.about.stats[3].value}</span>
             <span class="text-primary font-bold">{home.about.stats[3].suffix}</span>
           </h3>
           <p
@@ -170,6 +170,7 @@ import home from "../data/home.json";
           // Start counter animation
           const counters = entry.target.querySelectorAll(".counter");
           counters.forEach((counter) => {
+            counter.innerText = "0";
             const updateCount = () => {
               const target = +counter.getAttribute("data-target")!;
               const count = +counter.innerText;

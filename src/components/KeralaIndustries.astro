@@ -1,0 +1,125 @@
+---
+import { 
+  HeartPulse, 
+  Leaf, 
+  Palmtree, 
+  Building2, 
+  GraduationCap, 
+  ShoppingBag, 
+  Factory, 
+  Cpu, 
+  ArrowUpRight 
+} from "lucide-react";
+
+const industries = [
+  {
+    h3: "Healthcare & Hospitals",
+    line: "Doctor profiles, appointment forms, treatment pages",
+    link: null,
+    icon: HeartPulse
+  },
+  {
+    h3: "Ayurveda & Wellness",
+    line: "Treatment pages for local and overseas patients",
+    link: "/case-study/",
+    linkText: "View Greens Ayurveda Case Study",
+    icon: Leaf
+  },
+  {
+    h3: "Tourism & Resorts",
+    line: "Booking enquiries, galleries, maps",
+    link: "/case-studies/olives-boutique-resort-digital-marketing/",
+    linkText: "View Olives Resort Case Study",
+    icon: Palmtree
+  },
+  {
+    h3: "Real Estate & Builders",
+    line: "Project pages, floor plans, lead forms",
+    link: null,
+    icon: Building2
+  },
+  {
+    h3: "Education",
+    line: "Course pages, admissions, event updates",
+    link: null,
+    icon: GraduationCap
+  },
+  {
+    h3: "Retail & Ecommerce",
+    line: "Online stores with Indian payment gateways",
+    link: "/case-studies/apolo-mattress-shopify-ecommerce/",
+    linkText: "View Apolo Mattress Case Study",
+    icon: ShoppingBag
+  },
+  {
+    h3: "Manufacturing & B2B",
+    line: "Product catalogues and dealer enquiries",
+    link: null,
+    icon: Factory
+  },
+  {
+    h3: "Startups & Tech",
+    line: "Fast launch sites and web apps",
+    link: "/case-studies/triqare-web-application-design/",
+    linkText: "View TriQare Case Study",
+    icon: Cpu
+  }
+];
+---
+
+<section id="industries" class="py-24 md:py-32 bg-cream relative overflow-hidden">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
+    <div class="max-w-3xl mx-auto text-center flex flex-col items-center mb-16 md:mb-20">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-bold uppercase tracking-wider mb-6 shadow-sm transform -rotate-1">
+        Specialized Expertise
+      </div>
+      <h2 class="text-3xl md:text-5xl font-black leading-tight text-neutral-900 mb-6" data-magnetic-heading>
+        Industries We Serve Across Kerala
+      </h2>
+      <p class="text-lg md:text-xl text-neutral-600 leading-relaxed font-medium">
+        Tailored digital solutions architected for the distinct commercial requirements and visitor behaviors of Kerala's key sectors.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {industries.map((item) => {
+        const IconComponent = item.icon;
+        return (
+          <div class="group relative bg-white rounded-2xl p-7 border border-neutral-200/80 hover:border-primary/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-primary/5 border border-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300 mb-6">
+                <IconComponent className="w-6 h-6" />
+              </div>
+
+              <h3 class="text-xl font-black text-neutral-900 mb-3 group-hover:text-primary transition-colors">
+                {item.link ? (
+                  <a href={item.link} class="hover:underline">
+                    {item.h3}
+                  </a>
+                ) : (
+                  item.h3
+                )}
+              </h3>
+
+              <p class="text-neutral-600 text-sm leading-relaxed mb-4">
+                {item.line}
+              </p>
+            </div>
+
+            {item.link && (
+              <div class="pt-4 border-t border-neutral-100 mt-2">
+                <a
+                  href={item.link}
+                  class="inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:text-neutral-900 transition-colors"
+                >
+                  <span>{item.linkText}</span>
+                  <ArrowUpRight className="w-3.5 h-3.5" />
+                </a>
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</section>

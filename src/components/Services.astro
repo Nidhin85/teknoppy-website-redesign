@@ -60,9 +60,11 @@ const icons = [
               </div>
               
               <!-- Arrow indicator to service page -->
-              <a href={service.href} aria-label={`Explore ${service.title}`} class="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center opacity-70 group-hover:opacity-100 hover:bg-primary/10 hover:border-primary/30 transition-all duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-neutral-500 hover:text-primary transform -rotate-45 hover:rotate-0 transition-all duration-300"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </a>
+              {index !== 0 && (
+                <a href={service.href} aria-label={`Explore ${service.title}`} class="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center opacity-70 group-hover:opacity-100 hover:bg-primary/10 hover:border-primary/30 transition-all duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-neutral-500 hover:text-primary transform -rotate-45 hover:rotate-0 transition-all duration-300"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+              )}
             </div>
             
             <h3 class="text-2xl font-black text-neutral-900 mb-4 leading-snug">
