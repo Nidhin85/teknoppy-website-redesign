@@ -36,8 +36,8 @@ const {
 
 // Default SEO values
 const siteName = "Teknoppy";
-const canonicalURL = canonical 
-  ? new URL(canonical) 
+const canonicalURL = canonical
+  ? new URL(canonical)
   : new URL(Astro.url.pathname, Astro.site || 'https://www.teknoppy.com');
 // Social crawlers reject relative paths — always resolve against the site origin.
 const ogImageURL = new URL(image, Astro.site || 'https://www.teknoppy.com');
