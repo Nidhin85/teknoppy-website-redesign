@@ -1,0 +1,66 @@
+---
+// FAQ Section for Life at Teknoppy with 2-column accordion and clear answers
+const faqs = [
+  {
+    q: "What is it like to work at Teknoppy?",
+    a: "Teknoppy is a tight-knit in-house agency in Vyttila, Kochi. Designers, developers, SEO specialists and marketers sit together and work on the same client accounts. Junior staff work on real projects from the first week, with a senior colleague reviewing their work.",
+    isOpen: true
+  },
+  {
+    q: "How many people work at Teknoppy?",
+    a: "10 people across client relations, SEO, development and social content, all in-house under one roof in our Kochi office.",
+    isOpen: false
+  },
+  {
+    q: "Where is the Teknoppy office located?",
+    a: "On the second floor of Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam, Vyttila, Kochi, Kerala 682019. It is a 3-minute walk from Thykoodam Metro station.",
+    isOpen: false
+  },
+  {
+    q: "Does the team work with clients outside Kerala?",
+    a: "Yes. Alongside businesses across Kerala, our team manages active accounts in Dubai, Abu Dhabi, Doha, and Muscat, with communications coordinated on Gulf Standard Time.",
+    isOpen: false
+  },
+  {
+    q: "Does Teknoppy train its team and junior members?",
+    a: "Yes. Junior work is guided side by side by a senior colleague rather than over tickets, and the team runs weekly knowledge-share sessions every Friday on tools, technical SEO, and development practices.",
+    isOpen: false
+  },
+  {
+    q: "Can clients meet the Teknoppy team before starting a project?",
+    a: "Yes. Clients and candidates are always welcome at our Vyttila studio by appointment. Call +91 6282249224 to schedule a visit and cup of tea.",
+    isOpen: false
+  }
+];
+---
+
+<section id="faq" style="scroll-margin-top:90px">
+  <div class="wrap">
+    <div class="center sec">
+      <span class="tag">FAQ</span>
+      <h2 class="words">Questions about life at Teknoppy</h2>
+    </div>
+
+    <!-- 2-Column FAQ Accordion -->
+    <div class="faqg rv">
+      {faqs.map((item) => (
+        <div class={`qa ${item.isOpen ? 'open' : ''}`}>
+          <button aria-expanded={item.isOpen ? 'true' : 'false'}>
+            <span>{item.q}</span>
+            <span class="pm" aria-hidden="true"></span>
+          </button>
+          <div class="ans">
+            <div>
+              <p>{item.a}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <p class="faqnote">
+      Questions about open roles, internships, freshers or how we hire are answered on our 
+      <a href="/career/">careers page</a>.
+    </p>
+  </div>
+</section>

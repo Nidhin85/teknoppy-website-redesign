@@ -1,0 +1,165 @@
+---
+// Celebrations section with draggable horizontal photo carousel, progress bar, and interactive lightbox modal
+const celebrations = [
+  {
+    title: 'Onam Celebrations',
+    caption: 'Onam pookalam and traditional sadya at our Vyttila studio with the whole team.',
+    photo: '/whoweare.webp',
+    tag: 'Culture & Festival',
+    accent: 'g1'
+  },
+  {
+    title: 'Christmas & Year-End',
+    caption: 'Christmas celebration, secret gift exchanges and annual retrospectives at Teknoppy.',
+    photo: '/whatwedo.webp',
+    tag: 'Year-End',
+    accent: 'g4'
+  },
+  {
+    title: 'Team Milestones & Birthdays',
+    caption: 'Marking team birthdays and work anniversaries with sweets, cake, and celebrations.',
+    photo: '/team/sanal-edison.webp',
+    tag: 'Milestone',
+    accent: 'g3'
+  },
+  {
+    title: 'Project Go-Live Days',
+    caption: 'Celebrating major client launches after weeks of careful development, SEO audits and QA.',
+    photo: '/mockup.webp',
+    tag: 'Client Launch',
+    accent: 'g5'
+  },
+  {
+    title: 'Team Outings & Refreshers',
+    caption: 'Stepping outside the office for weekend team gatherings, coastal retreats, and team dinners.',
+    photo: '/whoweare.webp',
+    tag: 'Team Outing',
+    accent: 'g2'
+  },
+  {
+    title: 'Friday Knowledge Sharing',
+    caption: 'Weekly open design & code demos, Google algorithm updates, and skill-building sessions.',
+    photo: '/whatwedo.webp',
+    tag: 'Continuous Learning',
+    accent: 'g4'
+  }
+];
+---
+
+<section id="celebrate" style="background:var(--tint);border-block:1px solid var(--tint-line);scroll-margin-top:90px">
+  <div class="wrap">
+    <div class="center sec">
+      <span class="tag" style="background:var(--surface)">Celebrations</span>
+      <h2 class="words">How does the team celebrate?</h2>
+      <p>We mark festivals, birthdays and project launches together. Every photo below was taken at our office or on a team outing.</p>
+    </div>
+  </div>
+
+  <!-- Draggable Horizontal Carousel Container -->
+  <div class="carw">
+    <div class="car" id="car" role="region" aria-label="Celebration photos carousel">
+      {celebrations.map((c, idx) => (
+        <figure class={`slide ${idx === 0 ? 'on' : ''}`} data-index={idx} tabindex="0" role="button" aria-label={`View photo of ${c.title}`}>
+          <div class="slide-img-wrap">
+            <img src={c.photo} alt={c.title} class="slide-img" loading="lazy" />
+            <div class="slide-badge">{c.tag}</div>
+          </div>
+          <figcaption>
+            <b>{c.title}</b>
+            {c.caption}
+          </figcaption>
+        </figure>
+      ))}
+    </div>
+
+    <!-- Carousel Controls & Progress Meter -->
+    <div class="wrap carctl">
+      <button id="cprev" aria-label="Previous photo">←</button>
+      <div class="carbar">
+        <i id="cbar" style="width: 16.6%;"></i>
+      </div>
+      <button id="cnext" aria-label="Next photo">→</button>
+    </div>
+  </div>
+
+  <p class="social wrap">
+    More moments from the office on 
+    <a href="https://www.instagram.com/teknoppy/" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a> 
+    and 
+    <a href="https://www.linkedin.com/company/teknoppy/" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>.
+  </p>
+</section>
+
+<!-- Accessible Lightbox Modal Dialog -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <div class="box">
+    <div id="lbph" class="lb-photo-target"></div>
+    <p id="lbc" class="lb-caption"></p>
+    <button class="x" id="lbx" aria-label="Close photo viewer">✕</button>
+  </div>
+</div>
+
+<style>
+  .slide-img-wrap {
+    height: 320px;
+    border-radius: var(--r);
+    overflow: hidden;
+    position: relative;
+    background: #1a1a1a;
+  }
+  .slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .slide:hover .slide-img {
+    transform: scale(1.06);
+  }
+  .slide-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    font-family: var(--display);
+    font-size: 11.5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--orange);
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(8px);
+    padding: 4px 10px;
+    border-radius: 999px;
+  }
+  .social-link {
+    color: var(--orange);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .social-link:hover {
+    color: var(--ink);
+  }
+  .lb-photo-target {
+    width: 100%;
+    max-height: 70vh;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lb-photo-target img {
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    display: block;
+  }
+  .lb-caption {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-inline: 10px;
+  }
+</style>

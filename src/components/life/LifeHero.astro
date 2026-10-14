@@ -1,0 +1,487 @@
+---
+// Centered Hero section for Life at Teknoppy matching the reference HTML design:
+// Breadcrumbs, heading, lead, introduction, CTAs, 3-card fan with real photography, and company facts bar
+---
+
+<section class="hero-section" id="top">
+  <!-- Subtle ambient glow background for depth matching reference -->
+  <div class="hero-ambient-glow" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <!-- Breadcrumb Navigation -->
+    <nav class="crumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span class="sep" aria-hidden="true">/</span>
+      <a href="/about-us/">About Us</a>
+      <span class="sep" aria-hidden="true">/</span>
+      <span class="current" aria-current="page">Life at Teknoppy</span>
+    </nav>
+
+    <!-- Main Heading -->
+    <h1 class="hero-title" id="h1">
+      Life at <br class="mobile-br" /><span class="text-orange">Teknoppy</span>
+    </h1>
+
+    <!-- Supporting Headline -->
+    <p class="lead">
+      The people, routines and Vyttila office behind 120+ websites since 2018.
+    </p>
+
+    <!-- Concise Introduction -->
+    <div class="intro-group">
+      <p class="intro">
+        Teknoppy is a web design and digital marketing agency in Vyttila, Kochi, founded in 2018 by Sanal Edison. Our in-house team of designers, developers, SEO specialists and social media strategists works from one office on websites and campaigns for clients in Kerala, the UAE and Qatar.
+      </p>
+      <p class="intro">
+        This page shows how we work, who we are and what a normal day looks like. Every photo here was taken at our office, and every story is written by the person named on it.
+      </p>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="ctas">
+      <a class="btn btn-primary" href="/career/">
+        See open roles <span class="arr" aria-hidden="true">→</span>
+      </a>
+      <a class="btn btn-ghost" href="#team">
+        Meet the team
+      </a>
+    </div>
+
+    <!-- 3-Card Fan Visual Showcase with Real Photographs -->
+    <div class="fan" id="hero-fan" aria-hidden="true">
+      <!-- Card 1: Left Card (Tilted -12deg) -->
+      <div class="card c1">
+        <div class="card-photo-wrap">
+          <img
+            src="/whatwedo.webp"
+            alt="Teknoppy SEO and web development specialists at work"
+            class="card-img"
+            loading="eager"
+          />
+          <div class="card-overlay">
+            <span class="card-badge">Design & Code Floor</span>
+            <div class="card-text">
+              <span class="card-title">Specialists at Work</span>
+              <span class="card-sub">Design, Code & Search under one roof</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Center Card (Prominent, Upright, Visual Priority) -->
+      <div class="card c2">
+        <div class="card-photo-wrap">
+          <img
+            src="/whoweare.webp"
+            alt="Full Teknoppy in-house team together at Vyttila studio"
+            class="card-img"
+            loading="eager"
+          />
+          <div class="card-overlay">
+            <span class="card-badge badge-orange">The In-House Team</span>
+            <div class="card-text">
+              <span class="card-title">10 Specialists Under One Roof</span>
+              <span class="card-sub">Kaithakal Building, Thykoodam, Vyttila</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Right Card (Tilted +12deg) -->
+      <div class="card c3">
+        <div class="card-photo-wrap">
+          <img
+            src="/team/vijayakala.webp"
+            alt="Vijayakala, Business Development and Client Relations at Teknoppy"
+            class="card-img"
+            loading="eager"
+            style="object-position: top center;"
+          />
+          <div class="card-overlay">
+            <span class="card-badge">Client Relations</span>
+            <div class="card-text">
+              <span class="card-title">Direct Client Scoping</span>
+              <span class="card-sub">Dedicated account lead for Kerala & Gulf</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Company Facts Row with Animated Viewport Counters -->
+    <div class="facts">
+      <div class="fact-pill">
+        <small>Founded</small>
+        <b><span class="cnt" data-to="2018" data-from="1990">2018</span>, Kochi</b>
+      </div>
+      <div class="fact-pill">
+        <small>Team</small>
+        <b>10 people, all in-house</b>
+      </div>
+      <div class="fact-pill">
+        <small>Office</small>
+        <b>Thykoodam, Vyttila</b>
+      </div>
+      <div class="fact-pill">
+        <small>Clients in</small>
+        <b>Kerala, UAE and Qatar</b>
+      </div>
+      <div class="fact-pill">
+        <small>Delivered</small>
+        <b><span class="cnt" data-to="120" data-from="0">120</span>+ websites</b>
+      </div>
+      <div class="fact-pill">
+        <small>Last updated</small>
+        <b>October 2026</b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero-section {
+    padding-block: 48px 70px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Ambient radial orange glow matching reference */
+  .hero-ambient-glow {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -320px;
+    width: 900px;
+    height: 900px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(241, 90, 36, 0.12), transparent 60%);
+    animation: heroGlow 8s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 0;
+  }
+  @keyframes heroGlow {
+    50% { transform: translateX(-50%) scale(1.12); }
+  }
+
+  /* Breadcrumb Navigation */
+  .crumb {
+    font-size: 14px;
+    color: var(--soft);
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+  }
+  .crumb a {
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  .crumb a:hover {
+    color: var(--orange);
+  }
+  .crumb .sep {
+    color: var(--line);
+  }
+  .crumb .current {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  /* Main Heading */
+  .hero-title {
+    position: relative;
+    font-size: clamp(48px, 8.5vw, 110px);
+    font-weight: 800;
+    letter-spacing: -0.055em;
+    line-height: 0.98;
+    margin-top: 22px;
+    z-index: 2;
+  }
+  br.mobile-br {
+    display: none;
+  }
+  @media (max-width: 540px) {
+    br.mobile-br {
+      display: block;
+    }
+  }
+  .text-orange {
+    color: var(--orange);
+  }
+
+  /* Lead & Intro */
+  .lead {
+    position: relative;
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: clamp(18px, 2vw, 22px);
+    margin: 20px auto 0;
+    max-width: 36ch;
+    z-index: 2;
+    color: var(--ink);
+  }
+  .intro-group {
+    position: relative;
+    z-index: 2;
+  }
+  .intro {
+    position: relative;
+    color: var(--muted);
+    max-width: 66ch;
+    margin: 16px auto 0;
+    font-size: 16.5px;
+    line-height: 1.65;
+  }
+
+  /* CTAs */
+  .ctas {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 28px;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* 3-Card Fan */
+  .fan {
+    position: relative;
+    height: 400px;
+    margin-top: 56px;
+    perspective: 1200px;
+    z-index: 2;
+  }
+  .fan .card {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 300px;
+    height: 370px;
+    margin-left: -150px;
+    border-radius: var(--r);
+    overflow: hidden;
+    box-shadow: 0 30px 60px -30px rgba(26, 26, 26, 0.45);
+    border: 6px solid var(--surface);
+    transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease;
+    transform: translateX(var(--tx)) translateY(var(--ty, 0px)) rotate(var(--rz));
+    animation: fanin 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+    animation-delay: 0.9s;
+    background: #1a1a1a;
+  }
+  @keyframes fanin {
+    from {
+      opacity: 0;
+      transform: translateX(0) translateY(40px) scale(0.9);
+    }
+  }
+
+  .fan .c1 {
+    --tx: -290px;
+    --rz: -12deg;
+    z-index: 1;
+  }
+  .fan .c2 {
+    --tx: 0px;
+    --rz: 0deg;
+    --ty: -14px;
+    z-index: 3;
+    box-shadow: 0 35px 70px -25px rgba(26, 26, 26, 0.55);
+  }
+  .fan .c3 {
+    --tx: 290px;
+    --rz: 12deg;
+    z-index: 2;
+  }
+
+  /* Hover Expansion */
+  .fan:hover .c1 {
+    transform: translateX(-330px) translateY(0) rotate(-16deg);
+  }
+  .fan:hover .c3 {
+    transform: translateX(330px) translateY(0) rotate(16deg);
+  }
+  .fan:hover .c2 {
+    transform: translateY(-26px) scale(1.04);
+  }
+
+  /* Card Interior */
+  .card-photo-wrap {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+  }
+  .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .card:hover .card-img {
+    transform: scale(1.06);
+  }
+  .card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(26,26,26,0.2) 0%, transparent 35%, rgba(26,26,26,0.85) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    color: #fff;
+    pointer-events: none;
+    text-align: left;
+  }
+  .card-badge {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--orange);
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(8px);
+    border-radius: 999px;
+    padding: 4px 12px;
+    align-self: flex-start;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  .card-badge.badge-orange {
+    background: var(--orange);
+    color: #fff;
+  }
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .card-title {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.2;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  }
+  .card-sub {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.3;
+  }
+
+  /* Facts Bar */
+  .facts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 2;
+  }
+  .fact-pill {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 10px 20px;
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+    transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+  }
+  .fact-pill:hover {
+    transform: translateY(-4px);
+    border-color: var(--tint-line);
+    background: var(--tint);
+  }
+  .fact-pill small {
+    color: var(--soft);
+    font-size: 12.5px;
+    font-weight: 700;
+  }
+  .fact-pill b {
+    font-family: var(--display);
+    font-size: 15px;
+  }
+
+  /* Responsive Breakpoints matching reference */
+  @media (max-width: 980px) {
+    .fan .c1 { --tx: -200px; }
+    .fan .c3 { --tx: 200px; }
+    .fan:hover .c1 { transform: translateX(-220px) rotate(-14deg); }
+    .fan:hover .c3 { transform: translateX(220px) rotate(14deg); }
+  }
+
+  @media (max-width: 620px) {
+    .hero-section { padding-block: 36px 48px; }
+    .hero-title { font-size: clamp(30px, 8.5vw, 44px); letter-spacing: -0.04em; }
+    .lead { font-size: 17px; margin-top: 14px; }
+    .intro { font-size: 15px; margin-top: 12px; }
+    .ctas {
+      flex-direction: column;
+      width: 100%;
+      max-width: 320px;
+      margin-inline: auto;
+      gap: 10px;
+      margin-top: 22px;
+    }
+    .ctas .btn {
+      width: 100%;
+      justify-content: center;
+    }
+    .fan {
+      height: 270px;
+      margin-top: 32px;
+    }
+    .fan .card {
+      width: 170px;
+      height: 230px;
+      margin-left: -85px;
+      border-width: 3.5px;
+    }
+    .fan .c1 { --tx: -75px; }
+    .fan .c3 { --tx: 75px; }
+    .fan:hover .c1 { transform: translateX(-90px) rotate(-14deg); }
+    .fan:hover .c3 { transform: translateX(90px) rotate(14deg); }
+    .fan .c1 .card-text, .fan .c3 .card-text { display: none; }
+    .card-title { font-size: 12.5px; }
+    .card-sub { font-size: 11px; }
+    .card-badge { font-size: 9.5px; padding: 2px 7px; }
+    .facts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 26px;
+    }
+    .fact-pill {
+      border-radius: 14px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+      padding: 10px 14px;
+      text-align: left;
+    }
+    .fact-pill b { font-size: 13.5px; line-height: 1.3; }
+  }
+
+  @media (max-width: 360px) {
+    .hero-title { font-size: 28px; }
+    .fan .card { width: 150px; height: 210px; margin-left: -75px; }
+    .fan .c1 { --tx: -65px; }
+    .fan .c3 { --tx: 65px; }
+    .fan:hover .c1 { transform: translateX(-75px) rotate(-12deg); }
+    .fan:hover .c3 { transform: translateX(75px) rotate(12deg); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-ambient-glow { animation: none; }
+    .fan .card { animation: none; transition: none; }
+    .fan:hover .card { transform: translateX(var(--tx)) translateY(var(--ty, 0px)) rotate(var(--rz)); }
+  }
+</style>

@@ -1,0 +1,145 @@
+---
+// Values section for Life at Teknoppy with interactive accordion and founder quote
+---
+
+<section id="values" style="background:var(--surface);border-block:1px solid var(--line);scroll-margin-top:90px">
+  <div class="wrap">
+    <div class="center sec">
+      <span class="tag">Our values</span>
+      <h2 class="words">What does Teknoppy value?</h2>
+      <p>We keep our values short and tie each one to something we actually do. If we can't point to the habit, it isn't a value yet.</p>
+    </div>
+
+    <!-- Values Accordion -->
+    <div class="vacc rv" id="vacc">
+      <div class="vi open">
+        <button aria-expanded="true">
+          <span class="num">01</span>
+          <h3>Every page earns its place</h3>
+          <span class="pl" aria-hidden="true">+</span>
+        </button>
+        <div class="body">
+          <div>
+            <div class="inner">
+              <p>We don't build a page without a clear goal and a keyword it owns.</p>
+              <div class="prac">
+                <b>In practice</b>
+                The same rule shapes our own website. Our <a href="/case-studies/">case studies</a> show it on client sites.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vi">
+        <button aria-expanded="false">
+          <span class="num">02</span>
+          <h3>Reviewed before it ships</h3>
+          <span class="pl" aria-hidden="true">+</span>
+        </button>
+        <div class="body">
+          <div>
+            <div class="inner">
+              <p>Junior work always gets a senior review before a client sees it.</p>
+              <div class="prac">
+                <b>In practice</b>
+                Every SEO change is checked by our SEO Lead before it goes live.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vi">
+        <button aria-expanded="false">
+          <span class="num">03</span>
+          <h3>Provable, not claimed</h3>
+          <span class="pl" aria-hidden="true">+</span>
+        </button>
+        <div class="body">
+          <div>
+            <div class="inner">
+              <p>We show evidence instead of adjectives, to clients and to each other.</p>
+              <div class="prac">
+                <b>In practice</b>
+                Our case studies and audit reports only feature verified data and official ranking benchmarks.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vi">
+        <button aria-expanded="false">
+          <span class="num">04</span>
+          <h3>Learn in the open</h3>
+          <span class="pl" aria-hidden="true">+</span>
+        </button>
+        <div class="body">
+          <div>
+            <div class="inner">
+              <p>Mistakes get talked about, not hidden. Someone else will make the same one next month.</p>
+              <div class="prac">
+                <b>In practice</b>
+                A weekly knowledge-share session every Friday, plus continuous certifications earned by the team.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vi">
+        <button aria-expanded="false">
+          <span class="num">05</span>
+          <h3>Clients hear it from us first</h3>
+          <span class="pl" aria-hidden="true">+</span>
+        </button>
+        <div class="body">
+          <div>
+            <div class="inner">
+              <p>Good news or bad, the client hears it from us the same day.</p>
+              <div class="prac">
+                <b>In practice</b>
+                Every client has one named point of contact from the very first scoping call.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Founder Quote Card with Real Photo -->
+    <div class="founder rv">
+      <div class="founder-av-wrap">
+        <img src="/team/sanal-edison.webp" alt="Sanal Edison, Founder of Teknoppy" class="founder-img" loading="lazy" />
+      </div>
+      <div>
+        <blockquote>
+          "We built Teknoppy around one fundamental rule: clients should talk directly to the specialists building their site. When designers, developers and SEO leads sit side by side in the same office, decisions are fast, craftsmanship stays sharp, and nothing gets lost in translation."
+        </blockquote>
+        <cite>
+          <a href="/about-us/">Sanal Edison</a>, Founder and Digital Strategist
+        </cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .founder-av-wrap {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 24px -8px rgba(0,0,0,0.3);
+    animation: bob 5s ease-in-out infinite;
+    flex-shrink: 0;
+  }
+  .founder-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+</style>
