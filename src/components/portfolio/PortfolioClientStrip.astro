@@ -1,0 +1,20 @@
+---
+import clientsData from '../../data/clients.json';
+
+const clientLogos = (clientsData.logos || []).slice(0, 16);
+---
+
+<section class="pf-clients" aria-label="Trusted Clients">
+  <div class="wrap">
+    <p>Trusted by businesses in Kerala, UAE &amp; Qatar</p>
+    <div class="pf-marq">
+      <div class="pf-mtrack" id="logos">
+        {[...clientLogos, ...clientLogos].map((c) => (
+          <div class="pf-lg" title={c.name}>
+            <img src={c.src} alt={`${c.name} logo`} loading="lazy" />
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,68 @@
+---
+// Quick View Modal Component for Portfolio Details
+---
+
+<div class="pf-modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="pf-mbox">
+    <button class="pf-x" id="mx" aria-label="Close modal">✕</button>
+    
+    <!-- Left Column (Mockup & Scrolling Preview) -->
+    <div class="pf-mleft">
+      <div class="pf-shot" id="mShot">
+        <div class="bar">
+          <i></i><i></i><i></i>
+          <span id="mUrl">project.teknoppy.com</span>
+        </div>
+        <img src="" alt="" id="mImg" class="site-img" />
+      </div>
+    </div>
+    
+    <!-- Right Column (Project Meta & Actions) -->
+    <div class="pf-mright">
+      <div class="pf-ctags" id="mTags"></div>
+      <h3 id="mTitle"></h3>
+      <p id="mDesc"></p>
+      
+      <dl class="pf-dl" id="mDl">
+        <div>
+          <dt>Client</dt>
+          <dd id="mClient">-</dd>
+        </div>
+        <div>
+          <dt>Industry</dt>
+          <dd id="mInd">-</dd>
+        </div>
+        <div>
+          <dt>Location</dt>
+          <dd id="mLoc">-</dd>
+        </div>
+        <div>
+          <dt>Year</dt>
+          <dd id="mYear">-</dd>
+        </div>
+        <div>
+          <dt>Services</dt>
+          <dd id="mServices">-</dd>
+        </div>
+        <div>
+          <dt>Built with</dt>
+          <dd id="mTech">-</dd>
+        </div>
+      </dl>
+      
+      <div class="pf-mres" id="mRes">
+        <b id="mResMetric">+212%</b>
+        <span id="mResLabel">Organic search growth</span>
+      </div>
+      
+      <div class="pf-mbtns" id="mBtns">
+        <a class="pf-btn pf-btn-primary" id="mCsBtn" href="/case-study/">
+          Read case study <span class="arr">→</span>
+        </a>
+        <a class="pf-btn pf-btn-ghost" href="#contact" data-close>
+          Start a similar project <span class="arr">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

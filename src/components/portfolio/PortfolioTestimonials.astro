@@ -1,0 +1,97 @@
+---
+// Testimonials Carousel Component with Authentic Client Reviews
+const reviews = [
+  {
+    name: "Biju Thomas",
+    role: "CEO, Olives Boutique Resort, Wayanad",
+    quote: "We now rank at the top of Google for our keywords and get many direct booking calls due to better visibility. Thank you Teknoppy for all the support.",
+    photo: "/testimonials/biju-thomas.webp",
+    initials: "BT"
+  },
+  {
+    name: "Vivek Menon",
+    role: "CTO, Evosyz, Kochi",
+    quote: "Being in the Fintech space, we needed a reliable partner. Teknoppy created an appealing website that represents our brand perfectly.",
+    photo: "/testimonials/vivek-menon-portrait.webp",
+    initials: "VM"
+  },
+  {
+    name: "Dr. Asghar",
+    role: "CEO, Greens Ayurveda, Calicut",
+    quote: "Mr. Sanal is exceptionally supportive and customer-friendly. I have worked with many IT teams, but I am 100% happy with Teknoppy. No doubt, I recommend them with 100% satisfaction.",
+    photo: "/testimonials/dr-asghar.webp",
+    initials: "DA"
+  },
+  {
+    name: "Shainesh Prakashan",
+    role: "CEO, Exacore IT, Infopark Kochi",
+    quote: "Teknoppy was very intuitive in understanding our requirements. They made great digital collateral and now we are getting good outreach to the market.",
+    photo: "/testimonials/shainesh-prakashan.webp",
+    initials: "SP"
+  },
+  {
+    name: "Rincy",
+    role: "Astrologer & Psychic Healer, Australia",
+    quote: "Thank you Teknoppy for a wonderful mobile app for my tarot channel. All functions work great and I am getting many subscribers.",
+    photo: "/testimonials/rincy.webp",
+    initials: "R"
+  }
+];
+---
+
+<section id="reviews" class="pf-section" style="padding-top: 20px;">
+  <div class="wrap pf-tst">
+    <div class="txt pf-rv">
+      <span class="pf-tag">Client words</span>
+      <h2>What clients say after launch</h2>
+      <p>
+        These feedback entries come from client founders and leaders whose websites and campaigns are featured on this page.
+      </p>
+      
+      <div class="pf-rating">
+        <b><i class="pf-fill">4.9</i></b>
+        <div>
+          <span class="stars">★★★★★</span>
+          <small>From <i class="pf-fill">85+</i> Google reviews</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Box -->
+    <div class="pf-qcar pf-rv" style="--d:1">
+      <div class="pf-qs" id="qs">
+        {reviews.map((r, i) => (
+          <div class={`pf-q ${i === 0 ? 'on' : ''}`}>
+            <blockquote>"{r.quote}"</blockquote>
+            <div class="who">
+              <span class="av">
+                <img src={r.photo} alt={r.name} loading="lazy" />
+              </span>
+              <div>
+                <b>{r.name}</b>
+                <span>{r.role}</span>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="pf-qctl">
+        <div class="pf-qdots" id="qdots">
+          {reviews.map((_, i) => (
+            <button 
+              aria-label={`Go to review ${i + 1}`} 
+              class={i === 0 ? 'on' : ''}
+              data-idx={i}
+            />
+          ))}
+        </div>
+        
+        <div class="pf-qarr">
+          <button id="qp" aria-label="Previous review">←</button>
+          <button id="qn" aria-label="Next review">→</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

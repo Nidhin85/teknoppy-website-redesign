@@ -1,0 +1,124 @@
+---
+import { PORTFOLIO_PROJECTS } from '../../data/portfolioItems';
+
+// Select projects for Hero scrolling columns
+const colA = PORTFOLIO_PROJECTS.slice(0, 6);
+const colB = PORTFOLIO_PROJECTS.slice(6, 12);
+---
+
+<header class="pf-hero" id="top">
+  <div class="wrap pf-hgrid">
+    <div>
+      <div class="pf-crumb pf-fadeup" style="--d:1">
+        <a href="/">Home</a>
+        <span>/</span>
+        <span class="text-neutral-900 font-semibold">Portfolio</span>
+      </div>
+      
+      <span class="pf-tag pf-fadeup" style="--d:1">
+        Our work · 2018 to 2026
+      </span>
+      
+      <h1 class="pf-fadeup" style="--d:2">
+        Websites that help businesses 
+        <span class="pf-rot" id="rot">
+          <span class="on">grow.</span>
+          <span>rank.</span>
+          <span>sell.</span>
+          <span>stand out.</span>
+          <svg viewBox="0 0 300 16" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M3 11 C 80 3, 200 3, 297 9" />
+          </svg>
+        </span>
+      </h1>
+      
+      <p class="lead pf-fadeup" style="--d:3">
+        A selection of the 120+ websites, online stores, SEO campaigns, and custom web applications our in-house team in Vyttila, Kochi has delivered for clients across Kerala, the UAE, and Qatar.
+      </p>
+      
+      <div class="pf-ctas pf-fadeup" style="--d:4">
+        <a class="pf-btn pf-btn-primary" href="#work">
+          Browse projects <span class="arr">↓</span>
+        </a>
+        <a class="pf-btn pf-btn-ghost" href="/case-study/">
+          See case studies
+        </a>
+      </div>
+      
+      <div class="pf-hstats pf-fadeup" style="--d:5">
+        <div>
+          <b><span class="cnt" data-to="120">120</span><em>+</em></b>
+          <small>Websites delivered</small>
+        </div>
+        <div>
+          <b><span class="cnt" data-to="8">8</span></b>
+          <small>Years since 2018</small>
+        </div>
+        <div>
+          <b><span class="cnt" data-to="3">3</span></b>
+          <small>Countries served</small>
+        </div>
+      </div>
+    </div>
+    
+    <div class="pf-hwrap pf-fadeup" style="--d:3">
+      <div class="pf-float f1">
+        <span class="ic">↗</span>
+        <span>
+          <i class="pf-fill">+212%</i> organic traffic
+          <small>Healthcare & Clinic SEO, Kerala</small>
+        </span>
+      </div>
+      
+      <div class="pf-float f2">
+        <span class="ic">⚡</span>
+        <span>
+          PageSpeed <i class="pf-fill">96</i>
+          <small>Every build tested before launch</small>
+        </span>
+      </div>
+      
+      <div class="pf-cols" aria-hidden="true">
+        <!-- Column 1 (Scrolls Up) -->
+        <div class="col">
+          <div class="pf-track" id="t1">
+            {[...colA, ...colA].map((p, idx) => (
+              <div class="pf-mini">
+                <div class="bar">
+                  <i></i><i></i><i></i>
+                </div>
+                <div class={`thumb ${idx % 2 === 1 ? 'tall' : ''}`}>
+                  <img src={p.image} alt={p.name} loading="eager" />
+                </div>
+                <p>
+                  <span>{p.name}</span>
+                  <small>{p.location.split(',')[0]}</small>
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        <!-- Column 2 (Scrolls Down) -->
+        <div class="col">
+          <div class="pf-track" id="t2">
+            {[...colB, ...colB].map((p, idx) => (
+              <div class="pf-mini">
+                <div class="bar">
+                  <i></i><i></i><i></i>
+                </div>
+                <div class={`thumb ${idx % 2 === 0 ? 'tall' : ''}`}>
+                  <img src={p.image} alt={p.name} loading="eager" />
+                </div>
+                <p>
+                  <span>{p.name}</span>
+                  <small>{p.location.split(',')[0]}</small>
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

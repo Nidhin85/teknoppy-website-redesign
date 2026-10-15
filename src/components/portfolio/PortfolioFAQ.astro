@@ -1,0 +1,73 @@
+---
+// Portfolio FAQ Accordion Component
+const faqs = [
+  {
+    q: "What kind of projects does Teknoppy work on?",
+    a: "We specialize in custom business websites, high-converting WooCommerce and Shopify e-commerce stores, B2B lead generation platforms, SEO campaigns, and bespoke web applications. Most clients partner with us for a complete website build and retain our Kochi team for ongoing SEO, performance monitoring, and content marketing."
+  },
+  {
+    q: "Are the projects in this portfolio live websites?",
+    a: "Yes. Every project card represents a genuine client engagement delivered by our in-house team. Where client non-disclosure agreements permit, cards link to the live production site or detailed case studies with architecture metrics."
+  },
+  {
+    q: "Do you work with clients outside Kerala?",
+    a: "Yes. Alongside businesses across Kochi, Thrissur, Calicut, and Trivandrum, we design, build, and market websites for clients in Dubai, Sharjah, Abu Dhabi, and Doha, with communication and project milestones scheduled on Gulf Standard Time."
+  },
+  {
+    q: "How long does a website project take from start to launch?",
+    a: "A typical high-performance business website takes 4 to 6 weeks from discovery to deployment. E-commerce stores with extensive product catalogs and custom web applications take 8 to 12 weeks. Every client receives a detailed sprint timeline before kickoff."
+  },
+  {
+    q: "Which platforms and tech stacks do you build on?",
+    a: "We develop primarily on modern Astro, WordPress/WooCommerce, Shopify Plus, Next.js, and React with Tailwind CSS. We choose the platform specifically according to your team's maintenance capabilities, SEO objectives, and scalability requirements."
+  },
+  {
+    q: "Can I see results and metrics for a business in my industry?",
+    a: "Yes. Our Case Studies section documents verified traffic gains, conversion surges, and speed benchmarks across healthcare, hospitality, real estate, and retail. If your specific niche is not featured here, contact us and we will share relevant past project walkthroughs."
+  }
+];
+---
+
+<section id="faq" class="pf-section" style="padding-top: 20px;">
+  <div class="wrap pf-faqw">
+    <!-- Sticky Sidebar -->
+    <div class="side pf-rv">
+      <span class="pf-tag">FAQ</span>
+      <h2>Questions about our work</h2>
+      <p>
+        Straightforward answers to the most common questions clients ask before starting a project with our Kochi studio.
+      </p>
+      
+      <div class="pf-ask">
+        <b>Want to see more work?</b>
+        <p>
+          We can share specialized projects in your industry that aren't publicly published here, during a call or in person at our Vyttila office.
+        </p>
+        <a class="pf-btn pf-btn-primary" href="#contact">
+          Ask for examples <span class="arr">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Accordion List -->
+    <div class="pf-acc pf-rv" style="--d:1">
+      {faqs.map((faq, idx) => (
+        <div class={`pf-qa ${idx === 0 ? 'open' : ''}`}>
+          <button 
+            type="button" 
+            aria-expanded={idx === 0 ? "true" : "false"}
+            aria-controls={`pf-ans-${idx}`}
+          >
+            {faq.q}
+            <span class="pf-pm" aria-hidden="true"></span>
+          </button>
+          <div class="pf-ans" id={`pf-ans-${idx}`}>
+            <div>
+              <p>{faq.a}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
