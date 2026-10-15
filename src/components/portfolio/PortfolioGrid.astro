@@ -1,0 +1,125 @@
+---
+import { PORTFOLIO_PROJECTS, PORTFOLIO_CATEGORIES } from '../../data/portfolioItems';
+
+const categoryLabels: Record<string, string> = PORTFOLIO_CATEGORIES;
+---
+
+<section id="work" class="pf-work-section">
+  <div class="wrap">
+    <div class="pf-head pf-rv">
+      <div>
+        <span class="pf-tag">Selected projects</span>
+        <h2>Recent work from our Kochi studio</h2>
+      </div>
+      <p>
+        Hover any project to scroll through the full page preview. Click any card for detailed client goals, technologies used, and a link to the complete case study.
+      </p>
+    </div>
+
+    <!-- Sticky Filters Bar -->
+    <div class="pf-filters" id="filters">
+      <!-- Category Filter Chips -->
+      <div class="pf-chips" id="chips" role="tablist" aria-label="Filter by service">
+        {Object.entries(PORTFOLIO_CATEGORIES).map(([key, label]) => {
+          const count = key === 'all' 
+            ? PORTFOLIO_PROJECTS.length 
+            : PORTFOLIO_PROJECTS.filter(p => p.categories.includes(key)).length;
+          return (
+            <button 
+              class={`pf-chip ${key === 'all' ? 'on' : ''}`} 
+              role="tab" 
+              aria-selected={key === 'all' ? "true" : "false"}
+              data-c={key}
+            >
+              {label}
+              <sup>{count}</sup>
+            </button>
+          );
+        })}
+      </div>
+
+      <!-- Region Selector Segmented Control -->
+      <div class="pf-seg" id="seg" role="tablist" aria-label="Filter by region">
+        <span class="pill" id="pill"></span>
+        <button class="on" data-r="all">All</button>
+        <button data-r="kerala">Kerala</button>
+        <button data-r="uae">UAE</button>
+        <button data-r="qatar">Qatar</button>
+      </div>
+    </div>
+
+    <!-- Live Project Count -->
+    <p class="pf-count" id="count" aria-live="polite">
+      Showing <b>{Math.min(9, PORTFOLIO_PROJECTS.length)}</b> of <b>{PORTFOLIO_PROJECTS.length}</b> projects
+    </p>
+
+    <!-- Cards Grid -->
+    <div class="pf-grid" id="grid">
+      {PORTFOLIO_PROJECTS.map((p, index) => (
+        <button 
+          class={`pf-card ${p.wide ? 'wide' : ''} ${index >= 9 ? 'hide' : ''}`} 
+          data-id={p.id} 
+          data-categories={p.categories.join(',')}
+          data-region={p.region}
+          aria-label={`View ${p.name} project details`}
+        >
+          <div class="pf-shot">
+            <div class="bar">
+              <i></i><i></i><i></i>
+              <span>{p.slug}.teknoppy.com</span>
+            </div>
+            <img 
+              src={p.image} 
+              alt={p.imageAlt} 
+              loading="lazy" 
+              class="site-img" 
+            />
+            {p.hasCaseStudy && (
+              <span class="cs-badge">Case study</span>
+            )}
+            <span class="fname">{p.image.split('/').pop()}</span>
+            <span class="hint">Scrolling preview</span>
+          </div>
+
+          <div class="pf-cbody">
+            <div class="pf-ctags">
+              {p.categories.map((c) => (
+                <span>{categoryLabels[c] || c}</span>
+              ))}
+            </div>
+
+            <h3>{p.name} — {p.title}</h3>
+
+            <div class="pf-cfoot">
+              <div>
+                <span class="loc">{p.location} · {p.year}</span>
+                <span class="res">
+                  <i class="pf-fill">{p.resultMetric}</i> {p.resultLabel}
+                </span>
+              </div>
+              <span class="pf-go">→</span>
+            </div>
+          </div>
+        </button>
+      ))}
+    </div>
+
+    <!-- Empty State -->
+    <div class="pf-empty" id="empty">
+      <p class="text-lg font-bold text-neutral-800 mb-2">No projects match that filter yet.</p>
+      <a href="#work" id="reset" style="color:var(--pf-orange);font-weight:800;text-decoration:underline">
+        Show all projects
+      </a>
+    </div>
+
+    <!-- Load More Button -->
+    <div class="pf-more" id="more">
+      <button class="pf-btn pf-btn-ghost" id="moreBtn">
+        Load more projects <span class="arr">↓</span>
+      </button>
+      <small id="moreTxt">
+        {Math.max(0, PORTFOLIO_PROJECTS.length - 9)} more projects
+      </small>
+    </div>
+  </div>
+</section>

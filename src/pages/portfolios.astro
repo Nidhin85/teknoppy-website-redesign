@@ -1,17 +1,536 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
-import FooterCTA from '../components/FooterCTA.astro';
-import InnerPage from '../components/InnerPage.astro';
-import page from '../data/pages/portfolios.json';
+import Footer from '../components/Footer.astro';
+import PortfolioHero from '../components/portfolio/PortfolioHero.astro';
+import PortfolioClientStrip from '../components/portfolio/PortfolioClientStrip.astro';
+import PortfolioGrid from '../components/portfolio/PortfolioGrid.astro';
+import PortfolioBeforeAfter from '../components/portfolio/PortfolioBeforeAfter.astro';
+import PortfolioFeaturedStack from '../components/portfolio/PortfolioFeaturedStack.astro';
+import PortfolioIndustries from '../components/portfolio/PortfolioIndustries.astro';
+import PortfolioTestimonials from '../components/portfolio/PortfolioTestimonials.astro';
+import PortfolioFAQ from '../components/portfolio/PortfolioFAQ.astro';
+import PortfolioCTA from '../components/portfolio/PortfolioCTA.astro';
+import PortfolioQuickViewModal from '../components/portfolio/PortfolioQuickViewModal.astro';
+import { PORTFOLIO_PROJECTS } from '../data/portfolioItems';
+import '../styles/portfolio.css';
+
+const title = "Portfolio | Website Design, Ecommerce & SEO Projects | Teknoppy Kochi";
+const description = "Explore 120+ websites, online stores, SEO campaigns, and custom web applications delivered by Teknoppy in Kochi for businesses across Kerala, the UAE, and Qatar.";
+
+// SEO Structured Data Schemas
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.teknoppy.com/portfolios/#webpage",
+      "url": "https://www.teknoppy.com/portfolios/",
+      "name": "Teknoppy Portfolio — Web Design, Ecommerce & SEO Projects",
+      "description": description,
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://www.teknoppy.com/#organization",
+        "name": "Teknoppy",
+        "url": "https://www.teknoppy.com/",
+        "logo": "https://www.teknoppy.com/logo.svg",
+        "telephone": "+91 6282249224",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Second Floor, Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam",
+          "addressLocality": "Vyttila, Kochi",
+          "addressRegion": "Kerala",
+          "postalCode": "682019",
+          "addressCountry": "IN"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.teknoppy.com/portfolios/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.teknoppy.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Portfolio",
+          "item": "https://www.teknoppy.com/portfolios/"
+        }
+      ]
+    }
+  ]
+};
 ---
 
-<Layout title={page.meta.title} description={page.meta.description}>
+<Layout title={title} description={description} canonical="https://www.teknoppy.com/portfolios/">
+  <!-- Structured Data -->
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+  <!-- Scroll Progress Indicator -->
+  <div id="pf-progress" aria-hidden="true"></div>
+
+  <!-- Shared Site Header -->
   <Header forceSolidBg={true} />
 
-  <main class="overflow-hidden bg-cream/20">
-    <InnerPage page={page} />
+  <!-- Main Content -->
+  <main class="overflow-hidden bg-[#fcfcfc] text-[#1a1a1a] pt-16 sm:pt-20">
+    <PortfolioHero />
+    <PortfolioClientStrip />
+    <PortfolioGrid />
+    <PortfolioBeforeAfter />
+    <PortfolioFeaturedStack />
+    <PortfolioIndustries />
+    <PortfolioTestimonials />
+    <PortfolioFAQ />
+    <PortfolioCTA />
   </main>
 
-  <FooterCTA />
+  <!-- Quick View Modal -->
+  <PortfolioQuickViewModal />
+
+  <!-- Shared Site Footer -->
+  <Footer />
+
+  <!-- Serialized Project Data for Interactive Scripts -->
+  <script id="pf-projects-data" type="application/json" set:html={JSON.stringify(PORTFOLIO_PROJECTS)} />
 </Layout>
+
+<script is:inline>
+(function() {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var root = document.documentElement;
+
+  function $(s, c) { return (c || document).querySelector(s); }
+  function $$(s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); }
+
+  /* 1. Projects Data */
+  var dataScript = $('#pf-projects-data');
+  var PROJECTS = dataScript ? JSON.parse(dataScript.textContent) : [];
+  var projectMap = {};
+  PROJECTS.forEach(function(p) { projectMap[p.id] = p; });
+
+  /* 2. Top Scroll Progress Bar & Stacked Cards */
+  var prog = $('#pf-progress');
+  var scs = $$('.pf-sc');
+  var tick = false;
+
+  function onScroll() {
+    var h = root.scrollHeight - window.innerHeight;
+    if (prog) {
+      prog.style.transform = 'scaleX(' + (h > 0 ? window.scrollY / h : 0) + ')';
+    }
+
+    if (scs.length > 0 && !reduce) {
+      scs.forEach(function(c, i) {
+        var next = scs[i + 1];
+        if (!next) {
+          c.style.transform = '';
+          c.style.filter = '';
+          return;
+        }
+        var dist = next.getBoundingClientRect().top - c.getBoundingClientRect().top;
+        var p = Math.max(0, Math.min(1, 1 - dist / c.offsetHeight));
+        c.style.transform = 'scale(' + (1 - p * 0.05) + ')';
+        c.style.filter = 'brightness(' + (1 - p * 0.06) + ')';
+      });
+    }
+    tick = false;
+  }
+
+  window.addEventListener('scroll', function() {
+    if (!tick) {
+      tick = true;
+      window.requestAnimationFrame(onScroll);
+    }
+  }, { passive: true });
+  onScroll();
+
+  /* 3. Hero Rotating Words */
+  var rw = $$('#rot span');
+  var ri = 0;
+  if (!reduce && rw.length > 0) {
+    setInterval(function() {
+      var current = rw[ri];
+      current.classList.remove('on');
+      current.classList.add('out');
+      setTimeout(function() {
+        current.classList.remove('out');
+      }, 700);
+      ri = (ri + 1) % rw.length;
+      rw[ri].classList.add('on');
+    }, 2400);
+  }
+
+  /* 4. Portfolio Grid Filters & Pagination */
+  var grid = $('#grid');
+  var cards = $$('.pf-card', grid);
+  var PAGE = 9;
+  var shown = PAGE;
+  var currentCat = 'all';
+  var currentReg = 'all';
+
+  function applyFilter(anim) {
+    var matched = PROJECTS.filter(function(p) {
+      var matchCat = currentCat === 'all' || p.categories.indexOf(currentCat) > -1;
+      var matchReg = currentReg === 'all' || p.region === currentReg;
+      return matchCat && matchReg;
+    });
+
+    var matchedIds = matched.slice(0, shown).map(function(p) { return p.id; });
+    var k = 0;
+
+    cards.forEach(function(c) {
+      var id = parseInt(c.dataset.id, 10);
+      var isVisible = matchedIds.indexOf(id) > -1;
+      c.classList.toggle('hide', !isVisible);
+      c.classList.remove('pop');
+
+      if (isVisible && anim && !reduce) {
+        void c.offsetWidth;
+        c.style.setProperty('--k', k++);
+        c.classList.add('pop');
+      }
+    });
+
+    var countEl = $('#count');
+    if (countEl) {
+      countEl.innerHTML = 'Showing <b>' + matchedIds.length + '</b> of <b>' + matched.length + '</b> projects';
+    }
+
+    var emptyEl = $('#empty');
+    if (emptyEl) {
+      emptyEl.classList.toggle('on', matched.length === 0);
+    }
+
+    var left = matched.length - matchedIds.length;
+    var moreEl = $('#more');
+    var moreTxt = $('#moreTxt');
+    if (moreEl) {
+      moreEl.style.display = left > 0 ? '' : 'none';
+    }
+    if (moreTxt) {
+      moreTxt.textContent = left + ' more ' + (left === 1 ? 'project' : 'projects');
+    }
+  }
+
+  // Category chips click
+  var chipsContainer = $('#chips');
+  if (chipsContainer) {
+    chipsContainer.addEventListener('click', function(e) {
+      var btn = e.target.closest('.pf-chip');
+      if (!btn) return;
+      $$('.pf-chip', chipsContainer).forEach(function(x) {
+        var isThis = x === btn;
+        x.classList.toggle('on', isThis);
+        x.setAttribute('aria-selected', isThis ? 'true' : 'false');
+      });
+      currentCat = btn.dataset.c;
+      shown = PAGE;
+      applyFilter(true);
+    });
+  }
+
+  // Region Segment pill
+  var pill = $('#pill');
+  var seg = $('#seg');
+  function movePill() {
+    var activeBtn = $('#seg button.on');
+    if (pill && activeBtn) {
+      pill.style.left = activeBtn.offsetLeft + 'px';
+      pill.style.width = activeBtn.offsetWidth + 'px';
+    }
+  }
+
+  if (seg) {
+    seg.addEventListener('click', function(e) {
+      var btn = e.target.closest('button');
+      if (!btn) return;
+      $$('button', seg).forEach(function(x) {
+        x.classList.toggle('on', x === btn);
+      });
+      currentReg = btn.dataset.r;
+      shown = PAGE;
+      movePill();
+      applyFilter(true);
+    });
+  }
+
+  window.addEventListener('resize', movePill);
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(movePill);
+  }
+  movePill();
+
+  // Load More Button
+  var moreBtn = $('#moreBtn');
+  if (moreBtn) {
+    moreBtn.addEventListener('click', function() {
+      var before = $$('.pf-card:not(.hide)', grid).length;
+      shown += PAGE;
+      applyFilter(false);
+      $$('.pf-card:not(.hide)', grid).slice(before).forEach(function(c, i) {
+        if (reduce) return;
+        c.style.setProperty('--k', i);
+        c.classList.add('pop');
+      });
+    });
+  }
+
+  // Reset Button
+  var resetBtn = $('#reset');
+  if (resetBtn) {
+    resetBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      currentCat = 'all';
+      currentReg = 'all';
+      shown = PAGE;
+      $$('.pf-chip').forEach(function(x, i) { x.classList.toggle('on', i === 0); });
+      $$('#seg button').forEach(function(x, i) { x.classList.toggle('on', i === 0); });
+      movePill();
+      applyFilter(true);
+    });
+  }
+
+  /* 5. Quick View Modal */
+  var modal = $('#modal');
+  var lastActive = null;
+
+  function openModal(id) {
+    var p = projectMap[id];
+    if (!p) return;
+    lastActive = document.activeElement;
+
+    var mUrl = $('#mUrl');
+    var mImg = $('#mImg');
+    var mTags = $('#mTags');
+    var mTitle = $('#mTitle');
+    var mDesc = $('#mDesc');
+    var mClient = $('#mClient');
+    var mInd = $('#mInd');
+    var mLoc = $('#mLoc');
+    var mYear = $('#mYear');
+    var mServices = $('#mServices');
+    var mTech = $('#mTech');
+    var mResMetric = $('#mResMetric');
+    var mResLabel = $('#mResLabel');
+    var mCsBtn = $('#mCsBtn');
+
+    if (mUrl) mUrl.textContent = p.slug + '.teknoppy.com';
+    if (mImg) {
+      mImg.src = p.image;
+      mImg.alt = p.imageAlt;
+    }
+    if (mTags) {
+      mTags.innerHTML = p.categories.map(function(c) {
+        return '<span>' + c.toUpperCase() + '</span>';
+      }).join('');
+    }
+    if (mTitle) mTitle.textContent = p.name + ' — ' + p.title;
+    if (mDesc) mDesc.textContent = p.description;
+    if (mClient) mClient.textContent = p.name;
+    if (mInd) mInd.textContent = p.industry;
+    if (mLoc) mLoc.textContent = p.location;
+    if (mYear) mYear.textContent = p.year;
+    if (mServices) mServices.textContent = p.categories.map(function(c) { return c.toUpperCase(); }).join(', ');
+    if (mTech) mTech.textContent = p.tech;
+    if (mResMetric) mResMetric.textContent = p.resultMetric;
+    if (mResLabel) mResLabel.textContent = p.resultLabel;
+
+    if (mCsBtn) {
+      if (p.hasCaseStudy) {
+        mCsBtn.href = p.href;
+        mCsBtn.style.display = '';
+      } else {
+        mCsBtn.style.display = 'none';
+      }
+    }
+
+    if (modal) {
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      setTimeout(function() {
+        var x = $('#mx');
+        if (x) x.focus();
+      }, 60);
+    }
+  }
+
+  function closeModal() {
+    if (modal) {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+      if (lastActive) lastActive.focus();
+    }
+  }
+
+  if (grid) {
+    grid.addEventListener('click', function(e) {
+      var card = e.target.closest('.pf-card');
+      if (card) {
+        var id = parseInt(card.dataset.id, 10);
+        openModal(id);
+      }
+    });
+  }
+
+  var closeBtn = $('#mx');
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
+  if (modal) {
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal || e.target.closest('[data-close]')) {
+        closeModal();
+      }
+    });
+  }
+
+  window.addEventListener('keydown', function(e) {
+    if (!modal || !modal.classList.contains('open')) return;
+    if (e.key === 'Escape') closeModal();
+    if (e.key === 'Tab') {
+      var focusables = $$('button, a[href], input', modal);
+      var first = focusables[0];
+      var last = focusables[focusables.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    }
+  });
+
+  /* 6. Before / After Redesign Comparison Slider */
+  var ba = $('#ba');
+  var bi = $('#baIn');
+  if (ba && bi) {
+    bi.addEventListener('input', function() {
+      ba.style.setProperty('--pos', bi.value + '%');
+    });
+
+    if (!reduce && 'IntersectionObserver' in window) {
+      var baObserver = new IntersectionObserver(function(entries) {
+        if (!entries[0].isIntersecting) return;
+        baObserver.disconnect();
+        var startTime = null;
+        function sweep(timestamp) {
+          startTime = startTime || timestamp;
+          var progress = Math.min((timestamp - startTime) / 1800, 1);
+          var val = 50 + Math.sin(progress * Math.PI * 2) * 22 * (1 - progress);
+          ba.style.setProperty('--pos', val + '%');
+          bi.value = val;
+          if (progress < 1) window.requestAnimationFrame(sweep);
+        }
+        window.requestAnimationFrame(sweep);
+      }, { threshold: 0.5 });
+      baObserver.observe(ba);
+    }
+  }
+
+  /* 7. Testimonials Carousel */
+  var quotes = $$('.pf-q');
+  var dots = $$('#qdots button');
+  var curQ = 0;
+  var qTimer = null;
+
+  function goReview(index) {
+    if (quotes.length === 0) return;
+    var prev = quotes[curQ];
+    if (prev) {
+      prev.classList.remove('on');
+      prev.classList.add('out');
+      setTimeout(function() {
+        prev.classList.remove('out');
+      }, 600);
+    }
+    curQ = (index + quotes.length) % quotes.length;
+    var next = quotes[curQ];
+    if (next) next.classList.add('on');
+    dots.forEach(function(d, i) {
+      d.classList.toggle('on', i === curQ);
+    });
+    startReviewTimer();
+  }
+
+  function startReviewTimer() {
+    clearInterval(qTimer);
+    if (!reduce && quotes.length > 1) {
+      qTimer = setInterval(function() {
+        goReview(curQ + 1);
+      }, 6500);
+    }
+  }
+
+  var nextBtn = $('#qn');
+  var prevBtn = $('#qp');
+  if (nextBtn) nextBtn.addEventListener('click', function() { goReview(curQ + 1); });
+  if (prevBtn) prevBtn.addEventListener('click', function() { goReview(curQ - 1); });
+
+  dots.forEach(function(dot, idx) {
+    dot.addEventListener('click', function() {
+      if (idx !== curQ) goReview(idx);
+    });
+  });
+  startReviewTimer();
+
+  /* 8. FAQ Accordion */
+  $$('.pf-qa button').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = btn.parentElement;
+      var isOpen = item.classList.contains('open');
+      item.classList.toggle('open', !isOpen);
+      btn.setAttribute('aria-expanded', !isOpen ? 'true' : 'false');
+    });
+  });
+
+  /* 9. Scroll Reveals & Number Counters */
+  if (!reduce && 'IntersectionObserver' in window) {
+    root.classList.add('js');
+
+    var revealObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    $$('.pf-rv').forEach(function(el) {
+      revealObserver.observe(el);
+    });
+    setTimeout(function() {
+      $$('.pf-rv').forEach(function(el) {
+        el.classList.add('in');
+      });
+    }, 5000);
+
+    var countObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (!entry.isIntersecting) return;
+        var el = entry.target;
+        var targetVal = parseInt(el.dataset.to, 10);
+        var start = null;
+        function countStep(timestamp) {
+          start = start || timestamp;
+          var prog = Math.min((timestamp - start) / 1500, 1);
+          el.textContent = Math.round(targetVal * (1 - Math.pow(1 - prog, 3)));
+          if (prog < 1) window.requestAnimationFrame(countStep);
+        }
+        window.requestAnimationFrame(countStep);
+        countObserver.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+
+    $$('.cnt').forEach(function(c) {
+      countObserver.observe(c);
+    });
+  }
+})();
+</script>
