@@ -180,6 +180,14 @@ for (const global of contentMap.globals) {
     }
   }
 
+  if (global.slug === 'aboutPage' && fs.existsSync(file)) {
+    const local = safeReadContentFile(file);
+    if (local?.team) {
+      console.warn(`[cms:pull] Preserving approved local team section for "aboutPage".`);
+      content.team = local.team;
+    }
+  }
+
   sync(file, content ?? {});
 }
 
