@@ -188,6 +188,16 @@ for (const global of contentMap.globals) {
     }
   }
 
+  if (global.slug === 'clients' && fs.existsSync(file)) {
+    const local = safeReadContentFile(file);
+    if (local?.logos && Array.isArray(local.logos)) {
+      if (local.logos.length >= (content?.logos?.length ?? 0)) {
+        console.warn(`[cms:pull] Preserving approved local client logos for "clients" (${local.logos.length} items vs CMS ${content?.logos?.length ?? 0}).`);
+        content.logos = local.logos;
+      }
+    }
+  }
+
   sync(file, content ?? {});
 }
 
