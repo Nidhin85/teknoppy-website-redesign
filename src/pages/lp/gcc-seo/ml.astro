@@ -38,7 +38,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Malayalam:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style is:inline>
-:root{--o:#F26522;--o2:#D4500F;--y:#FFC629;--y2:#FFF4CC;--k:#111111;--k2:#2B2B2B;--g:#5C5C5C;--line:#ECE7DF;--bg:#FFFFFF;--cream:#FFFAF2;--wa:#128C4A}
+:root{--o:#F26522;--o2:#D4500F;--y:#FFC629;--y2:#FFF4CC;--k:#111111;--k2:#2B2B2B;--g:#5C5C5C;--line:#ECE7DF;--bg:#FFFFFF;--cream:#FFFAF2;--wa:#128C4A;--neu-flat:6px 6px 18px rgba(17,17,17,0.06), -6px -6px 18px rgba(255,255,255,0.95);--neu-hover:10px 14px 28px rgba(17,17,17,0.1), -8px -8px 22px rgba(255,255,255,1);--neu-inset:inset 2px 2px 5px rgba(17,17,17,0.06), inset -2px -2px 5px rgba(255,255,255,0.85);--neu-dark:8px 8px 24px rgba(0,0,0,0.5), -4px -4px 16px rgba(43,43,43,0.3);--neu-dark-hover:12px 14px 30px rgba(0,0,0,0.65), -6px -6px 20px rgba(43,43,43,0.45)}
 body{margin:0;background:#FFFFFF}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -63,14 +63,14 @@ a{color:#D4500F}a:hover{color:#A93D08}
 .g2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
 .g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
 .g4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
-.card{background:#fff;border:1.5px solid #ECE7DF;border-radius:22px;padding:28px;transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
-.card:hover{transform:translateY(-6px);box-shadow:0 22px 40px -24px rgba(17,17,17,.35);border-color:#F26522}
+.card{background:#fff;border:1.5px solid #ECE7DF;border-radius:22px;padding:28px;box-shadow:var(--neu-flat);transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
+.card:hover{transform:translateY(-6px);box-shadow:var(--neu-hover);border-color:#F26522}
 
 /* header */
 .hdr{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid #F1ECE4}
 .hdr .wrap{display:flex;justify-content:space-between;align-items:center;height:74px;gap:16px}
-.logo{text-decoration:none;font-family:Sora,sans-serif;font-weight:800;font-size:28px;color:#111;letter-spacing:-0.5px}
-.logo span{color:#F26522}
+.logo{display:inline-flex;align-items:center;text-decoration:none}
+.logo img{height:38px;width:auto;display:block;object-fit:contain}
 .nav{display:flex;gap:28px}
 .nav a{color:#111;text-decoration:none;font-weight:700;font-size:15px;position:relative}
 .nav a::after{content:"";position:absolute;left:0;bottom:-4px;height:2px;width:0;background:#F26522;transition:width .25s}
@@ -140,7 +140,7 @@ a{color:#D4500F}a:hover{color:#A93D08}
 @keyframes scroll{to{transform:translateX(-50%)}}
 
 /* stats */
-.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border:1.5px solid #111;border-radius:24px;overflow:hidden;background:#fff;margin-top:-1px}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border:1.5px solid #111;border-radius:24px;overflow:hidden;background:#fff;margin-top:-1px;box-shadow:var(--neu-flat)}
 .stat{padding:30px 24px;border-right:1.5px solid #111;text-align:center}
 .stat:last-child{border-right:none}
 .stat .n{font-family:Sora,sans-serif;font-size:44px;font-weight:800;line-height:1.1;color:#111}
@@ -160,10 +160,10 @@ a{color:#D4500F}a:hover{color:#A93D08}
 .growth b{font-family:Sora,sans-serif;font-size:28px;color:#111}
 
 /* problem vs promise */
-.split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-radius:28px;overflow:hidden;border:1.5px solid #111}
+.split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-radius:28px;overflow:hidden;border:1.5px solid #111;box-shadow:var(--neu-flat)}
 .split > div{padding:44px}
 .pain{background:#fff}
-.gain{background:#111;color:#fff}
+.gain{background:#111;color:#fff;box-shadow:var(--neu-dark)}
 .li{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid #EFEAE2;font-size:17px}
 .gain .li{border-color:#2B2B2B}
 .li:last-child{border-bottom:none}
@@ -172,7 +172,7 @@ a{color:#D4500F}a:hover{color:#A93D08}
 .ic.ok{background:#FFC629;color:#111}
 
 /* services */
-.svc .ico{width:52px;height:52px;border-radius:16px;background:#FFF4CC;color:#111;display:flex;align-items:center;justify-content:center;margin-bottom:16px;transition:background .3s,transform .3s}
+.svc .ico{width:52px;height:52px;border-radius:16px;background:#FFF4CC;color:#111;display:flex;align-items:center;justify-content:center;margin-bottom:16px;box-shadow:3px 3px 8px rgba(242,101,34,.12), -2px -2px 6px rgba(255,255,255,.95);transition:background .3s,transform .3s}
 .svc:hover .ico{background:#F26522;color:#fff;transform:rotate(-8deg)}
 .svc h3{margin:0 0 6px;font-family:Sora,sans-serif;font-size:19px}
 .svc p{margin:0;color:#5C5C5C;font-size:15px}
@@ -181,32 +181,33 @@ a{color:#D4500F}a:hover{color:#A93D08}
 .track{position:relative;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:14px}
 .track::before{content:"";position:absolute;left:4%;right:4%;top:28px;height:3px;background:repeating-linear-gradient(90deg,#111 0 10px,transparent 10px 18px)}
 .step{position:relative;text-align:center}
-.dot{width:58px;height:58px;margin:0 auto 14px;border-radius:50%;background:#fff;border:2px solid #111;display:flex;align-items:center;justify-content:center;font-family:Sora,sans-serif;font-weight:800;position:relative;z-index:1;transition:background .3s,color .3s}
+.dot{width:58px;height:58px;margin:0 auto 14px;border-radius:50%;background:#fff;border:2px solid #111;display:flex;align-items:center;justify-content:center;font-family:Sora,sans-serif;font-weight:800;position:relative;z-index:1;box-shadow:4px 4px 12px rgba(17,17,17,.08), -3px -3px 8px rgba(255,255,255,.9);transition:background .3s,color .3s,box-shadow .3s}
 .step:hover .dot{background:#F26522;color:#fff;border-color:#F26522}
 .step.last .dot{background:#FFC629}
 .step b{display:block;font-size:15px}
 .step span{display:block;font-size:13px;color:#5C5C5C}
 
 /* audit includes */
-.audit{background:#FFC629;border-radius:32px;padding:56px;position:relative;overflow:hidden}
+.audit{background:#FFC629;border-radius:32px;padding:56px;position:relative;overflow:hidden;box-shadow:10px 10px 30px rgba(242,101,34,.15), -8px -8px 24px rgba(255,255,255,.8)}
 .audit::after{content:"";position:absolute;width:340px;height:340px;border-radius:50%;border:40px solid rgba(242,101,34,.25);right:-110px;top:-110px;animation:spin 30s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
-.chk{display:flex;gap:12px;align-items:flex-start;background:#fff;border-radius:16px;padding:16px 18px;font-weight:700;border:1.5px solid #111}
+.chk{display:flex;gap:12px;align-items:flex-start;background:#fff;border-radius:16px;padding:16px 18px;font-weight:700;border:1.5px solid #111;box-shadow:3px 3px 8px rgba(17,17,17,.04), -2px -2px 6px rgba(255,255,255,.9)}
 .chk .ic{background:#111;color:#FFC629}
 
 /* pricing */
-.price{display:flex;flex-direction:column;gap:14px}
+.price{display:flex;flex-direction:column;gap:14px;box-shadow:var(--neu-flat)}
+.price:hover{box-shadow:var(--neu-hover)}
 .price .amt{font-family:Sora,sans-serif;font-size:40px;font-weight:800;line-height:1.1}
 .price ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;flex-grow:1}
 .price li{display:flex;gap:10px}
 .price li::before{content:"✓";color:#F26522;font-weight:800}
-.price.hot{background:#111;color:#fff;border-color:#111;transform:translateY(-10px)}
-.price.hot:hover{transform:translateY(-16px)}
+.price.hot{background:#111;color:#fff;border-color:#111;box-shadow:var(--neu-dark);transform:translateY(-10px)}
+.price.hot:hover{transform:translateY(-16px);box-shadow:var(--neu-dark-hover)}
 .price.hot li::before{color:#FFC629}
 .badge{align-self:flex-start;background:#FFC629;color:#111;font-weight:800;font-size:12px;letter-spacing:.6px;text-transform:uppercase;padding:5px 12px;border-radius:999px}
 
 /* compare */
-.tbl{overflow-x:auto;border:1.5px solid #111;border-radius:22px;background:#fff}
+.tbl{overflow-x:auto;border:1.5px solid #111;border-radius:22px;background:#fff;box-shadow:var(--neu-flat)}
 table{width:100%;min-width:640px;border-collapse:collapse;font-size:16px}
 th,td{padding:17px 22px;text-align:center}
 th:first-child,td:first-child{text-align:left}
@@ -217,15 +218,50 @@ td.us{background:#FFF4CC;font-weight:800}
 td.them{color:#6B6B6B}
 
 /* reviews */
-.quote{display:flex;flex-direction:column;gap:16px}
+.quote{display:flex;flex-direction:column;gap:16px;box-shadow:var(--neu-flat)}
+.quote:hover{box-shadow:var(--neu-hover)}
 .quote blockquote{margin:0;font-size:17px;flex-grow:1}
 .quote blockquote::before{content:"“";display:block;font-family:Sora,serif;font-size:60px;line-height:.6;color:#F26522;margin-bottom:8px}
 .who{display:flex;gap:12px;align-items:center}
 .av{width:46px;height:46px;border-radius:50%;background:#FFC629;color:#111;font-weight:800;display:flex;align-items:center;justify-content:center}
 
+/* video carousel */
+.vcarousel-wrap{position:relative;margin-bottom:48px}
+.vcarousel{display:flex;gap:22px;overflow-x:auto;scroll-behavior:auto;-webkit-overflow-scrolling:touch;padding:12px 6px 24px 6px;margin:-12px -6px -24px -6px;scrollbar-width:none}
+.vcarousel::-webkit-scrollbar{display:none}
+.vcard{flex:0 0 calc((100% - 44px) / 3);background:#fff;border:1.5px solid #ECE7DF;border-radius:20px;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--neu-flat);transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;cursor:pointer;position:relative}
+.vcard:hover{transform:translateY(-6px);box-shadow:var(--neu-hover);border-color:#F26522}
+.vcard:focus-visible{outline:3px solid #F26522;outline-offset:3px}
+.vcard-media{position:relative;width:100%;aspect-ratio:16/9;background:#0B1422;overflow:hidden}
+.vcard-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.vcard:hover .vcard-media img{transform:scale(1.05)}
+.vcard-badge{position:absolute;top:12px;left:12px;background:rgba(17,17,17,.88);backdrop-filter:blur(6px);color:#fff;font-family:Sora,sans-serif;font-weight:700;font-size:11px;letter-spacing:.04em;padding:4px 10px;border-radius:6px;display:inline-flex;align-items:center;gap:5px;z-index:2}
+.vcard-badge.short{background:rgba(242,101,34,.92)}
+.vcard-play{position:absolute;inset:0;margin:auto;width:52px;height:52px;border-radius:50%;background:rgba(17,17,17,.82);backdrop-filter:blur(6px);border:2px solid rgba(255,255,255,.8);display:flex;align-items:center;justify-content:center;color:#fff;transition:transform .25s,background .25s,border-color .25s;box-shadow:0 8px 22px rgba(0,0,0,.45);z-index:2}
+.vcard:hover .vcard-play{transform:scale(1.12);background:#F26522;border-color:#fff}
+.vcard-play svg{margin-left:3px}
+.vcard-body{padding:22px;display:flex;flex-direction:column;gap:5px;flex-grow:1}
+.vcard-body strong{font-size:17px;color:#111;font-family:Sora,'Noto Sans Malayalam',sans-serif}
+.vcard-body span{font-size:14px;color:#5C5C5C;font-weight:500}
+.vcard-body p{margin:8px 0 0;font-size:14px;color:#2B2B2B;line-height:1.5;font-style:italic}
+.ccontrols{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:24px}
+.cbtn{width:46px;height:46px;border-radius:50%;background:#fff;border:1.5px solid #111;color:#111;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:var(--neu-flat);transition:transform .2s,background .2s,color .2s,box-shadow .2s}
+.cbtn:hover{background:#111;color:#fff;transform:scale(1.06);box-shadow:var(--neu-hover)}
+.cbtn:focus-visible{outline:3px solid #F26522}
+
+/* modal video player */
+.vmodal{border:none;padding:0;background:transparent;max-width:880px;width:calc(100% - 32px);margin:auto;border-radius:20px;overflow:visible}
+.vmodal::backdrop{background:rgba(11,20,34,.88);backdrop-filter:blur(8px)}
+.vmodal-box{background:#111;border:1px solid #2B2B2B;border-radius:20px;padding:20px;position:relative;box-shadow:0 30px 70px rgba(0,0,0,.8)}
+.vmodal-close{position:absolute;top:-16px;right:-16px;width:40px;height:40px;border-radius:50%;background:#F26522;color:#fff;border:2px solid #fff;font-family:Sora,sans-serif;font-weight:700;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.45);transition:transform .2s,background .2s;z-index:10}
+.vmodal-close:hover{transform:scale(1.1);background:#D4500F}
+.vplayer-wrap{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden}
+.vplayer-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:none}
+.vmodal-caption{margin-top:14px;color:#fff;font-size:16px;font-weight:600}
+
 /* faq */
-details{background:#fff;border:1.5px solid #ECE7DF;border-radius:18px;padding:20px 24px;transition:border-color .2s}
-details[open]{border-color:#111}
+details{background:#fff;border:1.5px solid #ECE7DF;border-radius:18px;padding:20px 24px;box-shadow:4px 4px 12px rgba(17,17,17,.04), -4px -4px 12px rgba(255,255,255,.9);transition:border-color .2s,box-shadow .2s}
+details[open]{border-color:#111;box-shadow:6px 6px 18px rgba(17,17,17,.07), -6px -6px 18px rgba(255,255,255,.95)}
 summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;font-weight:800;font-size:17px}
 summary::-webkit-details-marker{display:none}
 .plus{flex:none;width:30px;height:30px;border-radius:50%;background:#FFF4CC;display:flex;align-items:center;justify-content:center;transition:transform .25s,background .25s;font-size:20px;line-height:1}
@@ -233,11 +269,11 @@ details[open] .plus{transform:rotate(45deg);background:#F26522;color:#fff}
 details p{margin:12px 0 0;color:#3D3D3D}
 
 /* form */
-.formcard{background:#fff;border:1.5px solid #111;border-radius:26px;padding:34px;box-shadow:12px 12px 0 #F26522}
+.formcard{background:#fff;border:1.5px solid #111;border-radius:26px;padding:34px;box-shadow:12px 12px 32px rgba(242,101,34,.15), -8px -8px 24px rgba(255,255,255,.9)}
 label{display:flex;flex-direction:column;gap:6px;font-weight:700;font-size:14px}
-input,select{height:52px;padding:0 16px;border:1.5px solid #DDD5C9;border-radius:14px;font:inherit;font-weight:500;background:#fff;transition:border-color .2s,box-shadow .2s}
-input:focus,select:focus{outline:none;border-color:#F26522;box-shadow:0 0 0 4px rgba(242,101,34,.15)}
-.expert{display:flex;gap:16px;align-items:center;background:#fff;border:1.5px solid #111;border-radius:20px;padding:18px}
+input,select{height:52px;padding:0 16px;border:1.5px solid #DDD5C9;border-radius:14px;font:inherit;font-weight:500;background:#fff;box-shadow:var(--neu-inset);transition:border-color .2s,box-shadow .2s}
+input:focus,select:focus{outline:none;border-color:#F26522;box-shadow:0 0 0 4px rgba(242,101,34,.18), var(--neu-inset)}
+.expert{display:flex;gap:16px;align-items:center;background:#fff;border:1.5px solid #111;border-radius:20px;padding:18px;box-shadow:var(--neu-flat)}
 .ph{width:66px;height:66px;border-radius:50%;background:#FFF4CC;flex:none;display:flex;align-items:center;justify-content:center;font-size:11px;color:#5C5C5C;overflow:hidden}
 .ph img{width:100%;height:100%;object-fit:cover}
 .online{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:#0E7039;font-weight:800}
@@ -245,7 +281,7 @@ input:focus,select:focus{outline:none;border-color:#F26522;box-shadow:0 0 0 4px 
 @keyframes pulse2{50%{opacity:.3}}
 
 /* final */
-.final{background:#111;color:#fff;border-radius:32px;padding:64px 56px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:28px;position:relative;overflow:hidden}
+.final{background:#111;color:#fff;border-radius:32px;padding:64px 56px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:28px;position:relative;overflow:hidden;box-shadow:var(--neu-dark)}
 .final::before{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:#F26522;left:-80px;bottom:-140px;opacity:.9;animation:float1 10s ease-in-out infinite}
 .final::after{content:"";position:absolute;width:120px;height:120px;border-radius:50%;background:#FFC629;right:22%;top:-60px;animation:float2 9s ease-in-out infinite}
 .final > *{position:relative;z-index:1}
@@ -264,6 +300,7 @@ footer a{color:#3D3D3D;text-decoration:none}
 @media (max-width:1000px){
 .hero-grid,.g2,.split{grid-template-columns:minmax(0,1fr)}
 .g3,.g4{grid-template-columns:repeat(2,minmax(0,1fr))}
+.vcard{flex:0 0 calc((100% - 22px) / 2)}
 .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
 .stat:nth-child(2){border-right:none}.stat:nth-child(-n+2){border-bottom:1.5px solid #111}
 .track{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:28px}.track::before{display:none}
@@ -273,6 +310,7 @@ footer a{color:#3D3D3D;text-decoration:none}
 }
 @media (max-width:640px){
 .g3,.g4{grid-template-columns:minmax(0,1fr)}
+.vcard{flex:0 0 calc(85% - 10px)}
 .h1{font-size:38px}.h2{font-size:30px}.sec{padding:68px 0}
 .split > div,.audit,.final{padding:30px 22px}
 .hl{white-space:normal}
@@ -294,7 +332,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- HEADER -->
 <header class="hdr">
 <div class="wrap">
-<a class="logo" href="https://www.teknoppy.com/">tekn<span>o</span>ppy</a>
+<a class="logo" href="https://www.teknoppy.com/" aria-label="Teknoppy Home"><img src="/logo.svg" alt="Teknoppy" width="135" height="38" style="height:38px;width:auto;display:block;object-fit:contain"></a>
 <nav class="nav" aria-label="Page sections">
 <a href="#results">Results</a><a href="#services">Services</a><a href="#process">Process</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a>
 </nav>
@@ -490,11 +528,157 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 </section>
 
-<!-- REVIEWS -->
-<section class="sec" style="background:#FFFAF2">
+<!-- REVIEWS & CLIENT VIDEO TESTIMONIALS -->
+<section id="reviews" class="sec" style="background:#FFFAF2">
 <div class="wrap">
-<div class="center rv"><p class="eyebrow">Google reviews · 4.9/5</p><h2 class="h2 disp">ഞങ്ങളുടെ clients പറയുന്നത്</h2></div>
-<div class="g3">
+<div class="center rv">
+  <p class="eyebrow">വീഡിയോ അനുഭവങ്ങൾ · Google rating 4.9/5</p>
+  <h2 class="h2 disp">ഞങ്ങളുടെ clients പറയുന്നത് നേരിട്ട് കേൾക്കൂ</h2>
+  <p class="lead">Teknoppy-യോടൊപ്പം വളർന്ന സംരംഭകരുടെ യഥാർത്ഥ അനുഭവങ്ങൾ.</p>
+</div>
+
+<!-- Continuous Auto-scrolling Video Carousel -->
+<div class="vcarousel-wrap rv">
+  <div class="vcarousel" id="vTrack" tabindex="0" role="region" aria-label="Client testimonial video carousel">
+    <!-- Video 1: Lenaa -->
+    <article class="vcard" data-yt="T6Vzf4ZhCYk" data-title="Lena Shares Her Teknoppy Experience" tabindex="0" role="button" aria-label="Play Lenaa's video testimonial">
+      <div class="vcard-media">
+        <span class="vcard-badge short">YouTube Short · 9:16</span>
+        <img src="/testimonials/lenaa.webp" alt="Lenaa, Actor & Author" width="404" height="720" style="object-position:center 22%" loading="lazy" decoding="async">
+        <span class="vcard-play" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+        </span>
+      </div>
+      <div class="vcard-body">
+        <strong>Lenaa</strong>
+        <span>Actor, Author &amp; TEDx Speaker, Kerala</span>
+        <p>"Teknoppy built my personal brand website with exceptional design precision and care."</p>
+      </div>
+    </article>
+
+    <!-- Video 2: Vivek Menon -->
+    <article class="vcard" data-yt="E7HfgGOHjYE" data-title="Vivek Menon on Teknoppy's Digital & SEO Solutions" tabindex="0" role="button" aria-label="Play Vivek Menon's video testimonial">
+      <div class="vcard-media">
+        <span class="vcard-badge">Client Story</span>
+        <img src="/testimonials/vivek-menon.webp" alt="Vivek Menon, CTO at Evosyz" width="480" height="360" loading="lazy" decoding="async">
+        <span class="vcard-play" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+        </span>
+      </div>
+      <div class="vcard-body">
+        <strong>Vivek Menon</strong>
+        <span>CTO, Evosyz, Kochi</span>
+        <p>"Teknoppy has been our reliable partner for technology, web architecture, and digital visibility."</p>
+      </div>
+    </article>
+
+    <!-- Video 3: Client Testimonial 2 -->
+    <article class="vcard" data-yt="ocV7KcfU9vs" data-title="Teknoppy Client Testimonial" tabindex="0" role="button" aria-label="Play client video testimonial">
+      <div class="vcard-media">
+        <span class="vcard-badge">Client Story</span>
+        <img src="/testimonials/client-2.webp" alt="Teknoppy Client Testimonial" width="480" height="360" loading="lazy" decoding="async">
+        <span class="vcard-play" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+        </span>
+      </div>
+      <div class="vcard-body">
+        <strong>Client Testimonial</strong>
+        <span>Teknoppy Business Client</span>
+        <p>"Working with Teknoppy helped us systematically scale our market reach and customer outreach."</p>
+      </div>
+    </article>
+
+    <!-- Video 4: Client Testimonial 1 -->
+    <article class="vcard" data-yt="-N_zd4eCPPM" data-title="Teknoppy Client Testimonial" tabindex="0" role="button" aria-label="Play client video testimonial">
+      <div class="vcard-media">
+        <span class="vcard-badge">Client Story</span>
+        <img src="/testimonials/client-1.webp" alt="Teknoppy Client Testimonial" width="480" height="360" loading="lazy" decoding="async">
+        <span class="vcard-play" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+        </span>
+      </div>
+      <div class="vcard-body">
+        <strong>Client Testimonial</strong>
+        <span>Teknoppy Business Client</span>
+        <p>"Dependable communication, transparent deliverables, and strong technical execution throughout."</p>
+      </div>
+    </article>
+
+    <!-- Clones for seamless infinite auto-scroll loop -->
+    <article class="vcard" data-yt="T6Vzf4ZhCYk" data-title="Lena Shares Her Teknoppy Experience" tabindex="0" role="button" aria-label="Play Lenaa's video testimonial (loop)">
+      <div class="vcard-media">
+        <span class="vcard-badge short">YouTube Short · 9:16</span>
+        <img src="/testimonials/lenaa.webp" alt="Lenaa, Actor & Author" width="404" height="720" style="object-position:center 22%" loading="lazy" decoding="async">
+        <span class="vcard-play" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+        </span>
+      </div>
+      <div class="vcard-body">
+        <strong>Lenaa</strong>
+        <span>Actor, Author &amp; TEDx Speaker, Kerala</span>
+        <p>"Teknoppy built my personal brand website with exceptional design precision and care."</p>
+      </div>
+    </article>
+
+    <article class="vcard" data-yt="E7HfgGOHjYE" data-title="Vivek Menon on Teknoppy's Digital & SEO Solutions" tabindex="0" role="button" aria-label="Play Vivek Menon's video testimonial (loop)">
+      <div class="vcard-media">
+        <span class="vcard-badge">Client Story</span>
+        <img src="/testimonials/vivek-menon.webp" alt="Vivek Menon, CTO at Evosyz" width="480" height="360" loading="lazy" decoding="async">
+        <span class="vcard-play" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+        </span>
+      </div>
+      <div class="vcard-body">
+        <strong>Vivek Menon</strong>
+        <span>CTO, Evosyz, Kochi</span>
+        <p>"Teknoppy has been our reliable partner for technology, web architecture, and digital visibility."</p>
+      </div>
+    </article>
+
+    <article class="vcard" data-yt="ocV7KcfU9vs" data-title="Teknoppy Client Testimonial" tabindex="0" role="button" aria-label="Play client video testimonial (loop)">
+      <div class="vcard-media">
+        <span class="vcard-badge">Client Story</span>
+        <img src="/testimonials/client-2.webp" alt="Teknoppy Client Testimonial" width="480" height="360" loading="lazy" decoding="async">
+        <span class="vcard-play" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+        </span>
+      </div>
+      <div class="vcard-body">
+        <strong>Client Testimonial</strong>
+        <span>Teknoppy Business Client</span>
+        <p>"Working with Teknoppy helped us systematically scale our market reach and customer outreach."</p>
+      </div>
+    </article>
+
+    <article class="vcard" data-yt="-N_zd4eCPPM" data-title="Teknoppy Client Testimonial" tabindex="0" role="button" aria-label="Play client video testimonial (loop)">
+      <div class="vcard-media">
+        <span class="vcard-badge">Client Story</span>
+        <img src="/testimonials/client-1.webp" alt="Teknoppy Client Testimonial" width="480" height="360" loading="lazy" decoding="async">
+        <span class="vcard-play" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+        </span>
+      </div>
+      <div class="vcard-body">
+        <strong>Client Testimonial</strong>
+        <span>Teknoppy Business Client</span>
+        <p>"Dependable communication, transparent deliverables, and strong technical execution throughout."</p>
+      </div>
+    </article>
+  </div>
+
+  <!-- Carousel Controls -->
+  <div class="ccontrols">
+    <button type="button" class="cbtn" id="vPrev" aria-label="Previous testimonial videos">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <button type="button" class="cbtn" id="vNext" aria-label="Next testimonial videos">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- Written Reviews -->
+<div class="g3" style="margin-top:20px">
 <figure class="card quote rv d1" style="margin:0"><span class="stars" aria-hidden="true">★★★★★</span><blockquote>We now rank at the top of Google for our keywords and get many direct booking calls due to better visibility.</blockquote><figcaption class="who"><span class="av">BT</span><span><strong style="display:block">Biju Thomas</strong><span style="font-size:14px;color:#5C5C5C">CEO, Olives Resort, Wayanad</span></span></figcaption></figure>
 <figure class="card quote rv d2" style="margin:0"><span class="stars" aria-hidden="true">★★★★★</span><blockquote>Teknoppy was very intuitive in understanding our requirements. Now we are getting good outreach to the market.</blockquote><figcaption class="who"><span class="av">SP</span><span><strong style="display:block">Shainesh Prakashan</strong><span style="font-size:14px;color:#5C5C5C">CEO, Exacore IT, Infopark Kochi</span></span></figcaption></figure>
 <figure class="card quote rv d3" style="margin:0"><span class="stars" aria-hidden="true">★★★★★</span><blockquote>I have worked with many IT teams, but I am 100% happy with Teknoppy. No doubt, I recommend them.</blockquote><figcaption class="who"><span class="av">DA</span><span><strong style="display:block">Dr. Asghar</strong><span style="font-size:14px;color:#5C5C5C">CEO, Greens Ayurveda, Calicut</span></span></figcaption></figure>
@@ -502,6 +686,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div style="text-align:center;margin-top:32px"><a href="https://share.google/aBHUgwgV4Eb1CEfKZ" target="_blank" rel="noopener noreferrer" style="font-weight:800;text-decoration:none">Read all reviews on Google →</a></div>
 </div>
 </section>
+
+<!-- Modal Video Player -->
+<dialog id="videoModal" class="vmodal" aria-labelledby="vModalTitle">
+  <div class="vmodal-box">
+    <button type="button" class="vmodal-close" id="vModalClose" aria-label="Close video player">✕</button>
+    <div class="vplayer-wrap">
+      <iframe id="vModalFrame" title="Client Video Testimonial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="vmodal-caption" id="vModalTitle"></div>
+  </div>
+</dialog>
 
 <!-- FAQ -->
 <section id="faq" class="sec">
@@ -565,7 +760,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- FOOTER -->
 <footer>
 <div class="wrap g3" style="gap:32px">
-<div><a class="logo" href="https://www.teknoppy.com/">tekn<span>o</span>ppy</a><p style="margin:10px 0 0">Kerala-based SEO company helping businesses in the GCC and worldwide grow on Google.</p></div>
+<div><a class="logo" href="https://www.teknoppy.com/" aria-label="Teknoppy Home" style="display:inline-block;margin-bottom:12px"><img src="/logo.svg" alt="Teknoppy" width="128" height="36" style="height:36px;width:auto;display:block;object-fit:contain"></a><p style="margin:10px 0 0">Kerala-based SEO company helping businesses in the GCC and worldwide grow on Google.</p></div>
 <div><strong style="color:#111">Markets</strong><p style="margin:10px 0 0">UAE · Saudi Arabia · Qatar · Kuwait · Oman · Bahrain · India</p></div>
 <div><strong style="color:#111">Contact</strong><p style="margin:10px 0 0"><a href="tel:+916282249224">+91 62822 49224</a><br><a href="mailto:sales@teknoppy.com">sales@teknoppy.com</a><br>Vyttila, Kochi, Kerala 682019</p></div>
 </div>
@@ -589,6 +784,127 @@ var end=+el.getAttribute('data-count');if(reduce)return;el.textContent='0';
 var o=new IntersectionObserver(function(en){if(!en[0].isIntersecting)return;o.disconnect();var t0=null;
 function step(t){if(!t0)t0=t;var p=Math.min((t-t0)/1600,1);el.textContent=Math.round(end*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(step);}
 requestAnimationFrame(step);},{threshold:.5});o.observe(el);});
+
+// Video Carousel Auto-scroll & Modal Player
+var vTrack = document.getElementById('vTrack');
+var vPrev = document.getElementById('vPrev');
+var vNext = document.getElementById('vNext');
+var vModal = document.getElementById('videoModal');
+var vFrame = document.getElementById('vModalFrame');
+var vTitle = document.getElementById('vModalTitle');
+var vClose = document.getElementById('vModalClose');
+
+if (vTrack) {
+  var isHovered = false;
+  var isFocused = false;
+  var isTouching = false;
+  var isModalOpen = false;
+  var isDocumentHidden = document.hidden;
+  var speed = 0.75;
+  var rafId = null;
+
+  function stepCarousel() {
+    if (!reduce && !isHovered && !isFocused && !isTouching && !isModalOpen && !isDocumentHidden) {
+      vTrack.scrollLeft += speed;
+      var half = vTrack.scrollWidth / 2;
+      if (half > 0 && vTrack.scrollLeft >= half) {
+        vTrack.scrollLeft -= half;
+      }
+    }
+    rafId = requestAnimationFrame(stepCarousel);
+  }
+
+  if (!reduce) {
+    rafId = requestAnimationFrame(stepCarousel);
+  }
+
+  vTrack.addEventListener('mouseenter', function(){ isHovered = true; });
+  vTrack.addEventListener('mouseleave', function(){ isHovered = false; });
+  vTrack.addEventListener('focusin', function(){ isFocused = true; });
+  vTrack.addEventListener('focusout', function(){ isFocused = false; });
+  vTrack.addEventListener('touchstart', function(){ isTouching = true; }, { passive: true });
+  vTrack.addEventListener('touchend', function(){ isTouching = false; }, { passive: true });
+  vTrack.addEventListener('touchcancel', function(){ isTouching = false; }, { passive: true });
+
+  document.addEventListener('visibilitychange', function(){
+    isDocumentHidden = document.hidden;
+  });
+
+  var cardStep = function(){
+    var first = vTrack.querySelector('.vcard');
+    return first ? first.offsetWidth + 22 : 360;
+  };
+
+  if (vPrev) {
+    vPrev.addEventListener('click', function(){
+      vTrack.scrollBy({ left: -cardStep(), behavior: 'smooth' });
+      setTimeout(function(){
+        if (vTrack.scrollLeft <= 0) {
+          var half = vTrack.scrollWidth / 2;
+          if (half > 0) vTrack.scrollLeft += half;
+        }
+      }, 350);
+    });
+  }
+
+  if (vNext) {
+    vNext.addEventListener('click', function(){
+      vTrack.scrollBy({ left: cardStep(), behavior: 'smooth' });
+    });
+  }
+
+  function openVideo(id, title) {
+    if (!vModal || !vFrame) return;
+    isModalOpen = true;
+    vFrame.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?autoplay=1&rel=0&playsinline=1';
+    if (vTitle) vTitle.textContent = title || 'Client Testimonial';
+    if (typeof vModal.showModal === 'function') {
+      vModal.showModal();
+    } else {
+      vModal.setAttribute('open', '');
+    }
+  }
+
+  function closeVideo() {
+    if (!vModal || !vFrame) return;
+    isModalOpen = false;
+    vFrame.src = 'about:blank';
+    vFrame.removeAttribute('src');
+    if (typeof vModal.close === 'function') {
+      vModal.close();
+    } else {
+      vModal.removeAttribute('open');
+    }
+  }
+
+  var vCards = Array.prototype.slice.call(vTrack.querySelectorAll('.vcard'));
+  vCards.forEach(function(card){
+    card.addEventListener('click', function(){
+      var yt = card.getAttribute('data-yt');
+      var title = card.getAttribute('data-title');
+      if (yt) openVideo(yt, title);
+    });
+    card.addEventListener('keydown', function(e){
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        var yt = card.getAttribute('data-yt');
+        var title = card.getAttribute('data-title');
+        if (yt) openVideo(yt, title);
+      }
+    });
+  });
+
+  if (vClose) vClose.addEventListener('click', closeVideo);
+  if (vModal) {
+    vModal.addEventListener('click', function(e){
+      if (e.target === vModal) closeVideo();
+    });
+    vModal.addEventListener('cancel', function(){
+      closeVideo();
+    });
+  }
+}
+
 var f=document.getElementById('auditForm');
 if(f){
 f.addEventListener('submit',function(e){e.preventDefault();
