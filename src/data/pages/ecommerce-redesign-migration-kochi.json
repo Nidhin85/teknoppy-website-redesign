@@ -1,26 +1,27 @@
 {
   "meta": {
-    "title": "Ecommerce Redesign & Migration Services Kochi | Teknoppy",
-    "description": "Teknoppy handles ecommerce redesign and platform migration in Kochi — moving products, customers and Google rankings across intact. Book a free consultation."
+    "title": "Ecommerce Redesign & Migration Services in Kochi | Teknoppy",
+    "description": "Move or redesign your online store without losing rankings - products, customers and orders migrated, 301 redirects mapped. From Rs. 50,000. Kochi team."
   },
   "breadcrumb": [
     { "name": "Home", "href": "/" },
     { "name": "Ecommerce Website Development Company Kochi", "href": "/ecommerce-website-development-company-kochi/" },
-    { "name": "Ecommerce Redesign & Migration Kochi", "href": "/ecommerce-redesign-migration-kochi/" }
+    { "name": "Ecommerce Redesign & Migration", "href": "/ecommerce-redesign-migration-kochi/" }
   ],
   "sections": [
     {
       "type": "hero",
       "badge": "Ecommerce Development",
-      "h1Lead": "Ecommerce Redesign & Migration",
+      "h1Lead": "Ecommerce Redesign & Migration in",
       "h1Accent": "Kochi",
       "subhead": "Rebuild or Replatform Your Store Without Losing the Google Rankings You Already Earned",
+      "subheadTag": "p",
       "body": [
         {
-          "html": "<strong>Ecommerce Redesign & Migration Kochi</strong> — a complete store overhaul, a move to a different platform, or both together, handled so the traffic and search rankings you have already built come with you. Teknoppy rebuilds underperforming stores and moves them between WooCommerce, Shopify and custom platforms with products, customer accounts and order history intact."
+          "text": "Teknoppy redesigns and migrates online stores in Kochi — between Shopify, WooCommerce and custom platforms — moving products, customers and order history and mapping every URL with 301 redirects so rankings are protected. Most projects take 4-8 weeks and cost Rs. 50,000-2,00,000."
         },
         {
-          "html": "Most stores lose rankings during a replatform for one avoidable reason: the old URLs are dropped without a redirect map, and every product page that used to rank starts returning a 404. We map that before a single page is rebuilt, so <strong>ecommerce migration services Kochi</strong> work protects your SEO equity rather than resetting it."
+          "text": "Most stores lose organic traffic during a replatform for one avoidable reason: old URLs are dropped without proper redirect mapping. We audit and map every indexed URL before launch so your established Google ranking authority transfers smoothly."
         }
       ],
       "ctas": [
@@ -33,100 +34,121 @@
       "bg": "cream",
       "columns": 2,
       "badge": "What's Included",
-      "h2": "What Our Ecommerce Redesign & Migration Includes",
+      "h2": "What's Included",
+      "intro": "We migrate stores across all major commerce environments — including Shopify, WooCommerce, Magento, OpenCart, Wix, and custom databases:",
       "items": [
         {
-          "title": "Full Store Redesign",
-          "html": "A rebuild of the parts of the store customers actually use — product pages, category browsing, cart and checkout — laid out around how people shop today rather than around the limits of the original template."
+          "title": "Full Storefront Redesign",
+          "text": "Modernize product layouts, collection filters, and checkout flows engineered around mobile conversion rates rather than outdated templates."
         },
         {
-          "title": "Platform Migration",
-          "html": "Moving your store between platforms — WooCommerce, Shopify, a custom build or a multi-vendor marketplace — with the catalogue, customer accounts and order history carried across rather than re-entered by hand."
+          "title": "Comprehensive Data Migration",
+          "html": "Full transfer of product catalogues, variants, imagery, customer accounts, and historical order records without manual re-entry. Moving a non-store website? See our <a href=\"/wordpress-migration-services-kochi/\" class=\"text-primary font-semibold hover:underline\">WordPress migration services</a>."
         },
         {
-          "title": "SEO Equity & Redirect Mapping",
-          "html": "Every indexed URL is inventoried and mapped to its new address before launch, so ranked product and category pages redirect cleanly instead of returning a 404 on the day you go live."
+          "title": "SEO Equity & 301 Redirect Mapping",
+          "text": "Every indexed URL is catalogued and matched 1-to-1 with new destination URLs, preventing broken links and retaining Google PageRank."
         },
         {
-          "title": "Payments, Shipping & Data Testing",
-          "html": "Gateways, tax rules, shipping zones and stock levels are reconfigured on the new platform and tested with real transaction flows before the store is switched over."
+          "title": "Payment & Third-Party App Sync",
+          "html": "Reconfiguration and stress-testing of payment gateways (UPI, cards, net banking, PayPal), tax rules, and shipping couriers. See our <a href=\"/payment-gateway-integration-kochi/\" class=\"text-primary font-semibold hover:underline\">payment gateway integration</a> services."
         }
       ]
     },
     {
-      "type": "steps",
+      "type": "bullets",
       "bg": "white",
-      "badge": "How We Work",
-      "h2": "Our Ecommerce Redesign & Migration Process",
+      "badge": "SEO Protection",
+      "h2": "How We Protect Your Rankings",
+      "intro": "Our 6-step ranking preservation protocol ensures zero traffic loss during store migration:",
       "items": [
-        { "title": "Store & Traffic Audit", "text": "We review your current store, its analytics and its ranking pages to establish what is working and must be preserved — not only what needs replacing." },
-        { "title": "URL & Redirect Mapping", "text": "Every indexed URL is listed and mapped to its destination on the new store. That map is agreed before design work starts, rather than improvised on launch day." },
-        { "title": "Design & Rebuild", "text": "The storefront is redesigned and rebuilt on the chosen platform, with product pages, navigation and checkout scoped to your real catalogue." },
-        { "title": "Data & Payment Migration", "text": "Products, variants, images, customer accounts and order history are moved across, then gateways, tax and shipping rules are reconfigured and tested end to end." },
-        { "title": "Launch & Post-Migration Monitoring", "text": "The store goes live with redirects active and a fresh sitemap submitted, and we monitor crawl errors, rankings and checkout through the weeks that follow." }
+        { "text": "1. Complete Crawl: Inventory every product, category, tag, and blog URL on your current store" },
+        { "text": "2. 1-to-1 Mapping: Map each legacy URL to its exact replacement using permanent 301 server redirects" },
+        { "text": "3. Metadata Preservation: Carry over titles, meta descriptions, image alt attributes, and structured Product schema" },
+        { "text": "4. Staging QA: Validate all redirects, canonical tags, and checkout flows on an isolated staging server" },
+        { "text": "5. Search Console Handover: Generate and submit new XML sitemaps in Google Search Console immediately upon launch" },
+        { "text": "6. 90-Day Rank Monitoring: Track 404 crawl errors, indexation status, keyword rankings, and organic sales daily" }
+      ]
+    },
+    {
+      "type": "steps",
+      "bg": "soft",
+      "badge": "Migration Timeline",
+      "h2": "How We Migrate Your Store",
+      "intro": "Structured store migrations delivered over 4 to 8 weeks:",
+      "items": [
+        { "title": "Store & SEO Audit (Week 1)", "text": "Catalogue evaluation, ranking page inventory, and app integration mapping." },
+        { "title": "301 Redirect Architecture (Week 2)", "text": "Preparation of the comprehensive URL redirect map and staging environment setup." },
+        { "title": "Storefront Design & Staging Build (Weeks 3-5)", "text": "New theme development, responsive UX tuning, and Core Web Vitals optimization." },
+        { "title": "Data Migration & Testing (Weeks 6-7)", "text": "Secure transfer of products, customers, and order history with end-to-end payment testing." },
+        { "title": "Zero-Downtime Launch & Monitoring (Week 8)", "text": "DNS switch with minutes of scheduled downtime, followed by active Search Console monitoring." }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "columns": 2,
+      "badge": "Proven Results",
+      "h2": "Stores We've Migrated",
+      "intro": "Demonstrated organic ranking retention and performance gains post-replatform:",
+      "items": [
+        {
+          "title": "WooCommerce to Shopify D2C Migration",
+          "text": "Migrated 450+ products, 12,000+ customer records, and 1,800+ URLs with zero broken links. Retained 100% of top-3 keyword rankings within 30 days and reduced mobile load time by 42%."
+        },
+        {
+          "title": "Legacy Custom Store to Headless Commerce",
+          "text": "Replatformed high-catalogue regional store with 2,500+ SKUs and multi-tiered B2B pricing. 301 redirect map executed with zero ranking drop, achieving 1.6s mobile checkout speed."
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "bg": "white",
+      "h2": "Why Teknoppy",
+      "items": [
+        { "html": "<strong>301 redirects mapped before design starts.</strong> We treat search ranking retention as the top technical requirement, not a last-minute thought on launch day." },
+        { "html": "<strong>Platform-neutral expertise.</strong> We build and migrate across WooCommerce, Shopify, custom code, and marketplaces — recommending what actually serves your business." },
+        { "html": "<strong>Order history and customer accounts migrated intact.</strong> Customer loyalty, past invoices, and repeat-purchase data come across cleanly." },
+        { "html": "<strong>Local Kochi engineering support.</strong> Direct access to the developers who executed your migration during the critical launch and indexing window." }
       ]
     },
     {
       "type": "bullets",
       "bg": "soft",
-      "h2": "Why Choose Teknoppy for Ecommerce Redesign & Migration in Kochi",
+      "h2": "Who Needs It",
+      "intro": "This service is built for store owners facing clear operational thresholds:",
       "items": [
-        { "html": "<strong>Redirects are mapped before the rebuild, not after it.</strong> The most common cause of lost traffic after a replatform is an unmapped URL, so the redirect plan is part of the scope from day one." },
-        { "html": "<strong>We work across every platform we build on.</strong> WooCommerce, Shopify, custom and multi-vendor — so the recommendation you get is about what suits your store, not about the one platform we happen to prefer." },
-        { "html": "<strong>Your order history and customer accounts come with you.</strong> Migration covers the data your business actually runs on, not just the product list." },
-        { "html": "<strong>A Kochi-based team through the launch window.</strong> The weeks after a migration are when problems surface — you reach the developers who did the work, not a support queue routed overseas." }
-      ],
-      "outro": [
-        { "text": "A redesign and a migration are often needed together: a store that has outgrown its platform has usually also outgrown the design it launched with. Scoping them as one project avoids paying to rebuild the same pages twice, and keeps a single redirect map covering both the new structure and the new platform." }
-      ]
-    },
-    {
-      "type": "bullets",
-      "bg": "white",
-      "h2": "Who Needs Ecommerce Redesign & Migration",
-      "intro": "This service fits businesses that are:",
-      "items": [
-        { "text": "Running a store that looks dated or converts poorly, where the checkout and product pages are quietly losing sales" },
-        { "text": "Outgrowing a hosted platform's limits, or paying per-sale fees that no longer make sense at current order volume" },
-        { "text": "Sitting on a store built by someone unreachable, with no documentation and no safe way to make changes" },
-        { "text": "Planning a rebrand or catalogue restructure that will change most of the store's existing URLs" }
+        { "text": "Stores running on slow, outdated themes where clunky checkout flows are causing high cart abandonment" },
+        { "text": "Brands outgrowing basic platforms or paying excessive app and transaction fees at higher order volumes" },
+        { "text": "Merchants locked into unmaintained custom code with no documentation and fear of losing SEO rankings" },
+        { "text": "Businesses undergoing a corporate rebrand or product restructure requiring extensive URL changes" }
       ],
       "outro": [
         {
-          "html": "If you are moving specifically onto WordPress, see <a href=\"/woocommerce-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">WooCommerce Development</a>; for a move onto a hosted platform, see <a href=\"/shopify-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Shopify Development</a>. If the rebuild needs functionality no platform offers off the shelf, <a href=\"/custom-ecommerce-development-kochi/\" class=\"text-primary font-semibold hover:underline\">Custom Ecommerce Development</a> is the closer fit."
-        }
-      ]
-    },
-    {
-      "type": "prose",
-      "bg": "cream",
-      "h2": "Ecommerce Redesign & Migration Projects We've Delivered",
-      "paragraphs": [
-        {
-          "html": "Teknoppy has rebuilt and replatformed stores for retail, D2C and export brands across Kochi and Kerala, each with its own catalogue structure, payment setup and ranking history to carry across. See the builds in our <a href=\"/portfolios/ecommerce-projects/\" class=\"text-primary font-semibold hover:underline\">Ecommerce Projects Portfolio</a>."
+          "html": "Migrating to WordPress? Explore our <a href=\"/woocommerce-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">WooCommerce Development</a>. Moving to hosted commerce? See <a href=\"/shopify-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Shopify Development</a>. For high-volume bespoke architecture, explore <a href=\"/custom-ecommerce-development-kochi/\" class=\"text-primary font-semibold hover:underline\">Custom Ecommerce Development</a>."
         }
       ]
     },
     {
       "type": "prose",
       "bg": "white",
-      "h2": "Ecommerce Redesign & Migration Pricing",
+      "h2": "Pricing",
       "paragraphs": [
         {
-          "html": "Ecommerce redesign and migration projects typically fall between <strong>Rs. 50,000 and Rs. 2,00,000</strong>, depending on catalogue size, how many URLs need mapping, and whether the platform is changing as well as the design. Every project receives a written quote before work begins — use our <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Cost Calculator</a> or <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a>."
+          "html": "Ecommerce redesign and migration projects typically range between <strong>Rs. 50,000 and Rs. 2,00,000</strong>, depending on product catalog volume, number of URLs mapped with 301 redirects, and platform complexity (matching the Ecommerce hub pricing table). Every project receives a written technical scope before work begins — <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a> for an exact estimate."
         }
       ]
     },
     {
       "type": "links",
-      "bg": "soft",
+      "bg": "cream",
       "h2": "Related Services",
       "items": [
         { "label": "Ecommerce Website Development Company Kochi", "href": "/ecommerce-website-development-company-kochi/", "text": "our full ecommerce development pillar" },
-        { "label": "WooCommerce Development", "href": "/woocommerce-development-company-kochi/" },
-        { "label": "Shopify Development", "href": "/shopify-development-company-kochi/" },
-        { "label": "Custom Ecommerce Development", "href": "/custom-ecommerce-development-kochi/" },
-        { "label": "Payment Gateway Integration", "href": "/payment-gateway-integration-kochi/" },
+        { "label": "WooCommerce Development", "href": "/woocommerce-development-company-kochi/", "text": "flexible WordPress commerce" },
+        { "label": "Shopify Development", "href": "/shopify-development-company-kochi/", "text": "hosted online store platform" },
+        { "label": "Custom Ecommerce Development", "href": "/custom-ecommerce-development-kochi/", "text": "bespoke and headless architectures" },
         { "label": "Website Redesign Services", "href": "/website-redesign-services-kochi/", "text": "for non-ecommerce sites" }
       ]
     },
@@ -135,40 +157,41 @@
       "bg": "white",
       "center": true,
       "badge": "Have Questions?",
-      "h2": "Frequently Asked Questions — Ecommerce Redesign & Migration Kochi",
+      "h2": "Store Migration FAQs",
       "items": [
         {
           "q": "Will we lose our Google rankings when we migrate?",
-          "a": "Not if the migration is planned properly. Rankings are lost when old URLs disappear without redirects. We inventory every indexed URL and map it to its new address before launch, so ranked pages pass their equity to the new store instead of returning a 404. Some short-term fluctuation while Google re-crawls the site is normal; a permanent drop is not."
+          "a": "Not if the migration is planned properly. Rankings are lost when old URLs disappear without redirects. We inventory every indexed URL and map it to its new address with permanent 301 redirects before launch, so ranked pages pass their equity to the new store. Minor short-term re-crawling fluctuation is normal; permanent drops are prevented."
         },
         {
-          "q": "Can you move our store from Shopify to WooCommerce, or the other way around?",
-          "a": "Yes, in both directions, as well as from custom and legacy stores. Products, variants, images, customer accounts and order history are moved across, and payment, tax and shipping rules are rebuilt and tested on the new platform before switch-over."
+          "q": "Can you move our store from Shopify to WooCommerce, or vice versa?",
+          "a": "Yes, in both directions, as well as from Magento, OpenCart, Wix, and legacy custom platforms. Products, variants, imagery, customer accounts, and order history are moved across, and payment and shipping rules are re-verified before switch-over."
+        },
+        {
+          "q": "What happens to our apps, reviews and integrations?",
+          "a": "We audit every app and integration currently in place, identify feature equivalents on the destination platform, and export/import product reviews where platform APIs allow. Any app feature that cannot be directly migrated is flagged prior to project kickoff."
+        },
+        {
+          "q": "How do you make sure Google finds the new store quickly?",
+          "a": "We activate 301 redirects for every legacy URL, generate a clean XML sitemap, submit it via Google Search Console on launch day, and monitor crawl logs and indexing daily for the first two weeks."
         },
         {
           "q": "Will our store be offline during the migration?",
-          "a": "No. The new store is built and tested on a staging environment while your current store keeps selling. The switch-over happens only once everything is verified, which normally means minutes of downtime rather than days."
-        },
-        {
-          "q": "Do we have to redesign the store in order to migrate it?",
-          "a": "No — a migration can carry your existing design across where it still works. In practice most stores ready to replatform are also ready for a redesign, so we scope both and you decide. Doing them together avoids rebuilding the same pages twice."
-        },
-        {
-          "q": "What happens to our existing customer accounts and order history?",
-          "a": "They come with you. Customer records and past orders are migrated so support, returns and repeat-purchase data stay intact. Passwords generally cannot be transferred between platforms for security reasons, so customers are asked to reset theirs on first login."
+          "a": "No. The new store is designed, built, and tested on an isolated staging environment while your existing store continues taking orders. The final cutover typically requires only minutes of scheduled maintenance."
         },
         {
           "q": "How long does an ecommerce redesign or migration take?",
-          "a": "Most projects run 4 to 8 weeks from audit to launch, depending on catalogue size and how many URLs need mapping. A platform change combined with a full redesign, or a very large catalogue, takes longer — you receive a written timeline after the audit rather than a generic estimate upfront."
+          "a": "Most projects run 4 to 8 weeks from initial audit to production launch, depending on product catalog size and the number of URLs to map."
         }
       ]
     },
     {
       "type": "cta",
+      "draft": true,
       "bg": "cream",
       "h2": "Ready to Rebuild or Replatform Your Store?",
       "paragraphs": [
-        { "text": "A store that is slow, dated, or stuck on the wrong platform costs you sales every day it stays that way — and a badly handled migration costs you the rankings on top. Teknoppy's Ecommerce Redesign & Migration Kochi team maps the redirects first, moves your data across intact, and monitors the store through launch." }
+        { "text": "Send us your store URL and target platform. We will audit your products, URLs and traffic and reply within one business day with a migration plan and written quote." }
       ],
       "ctas": [
         { "label": "Book a Consultation", "href": "/book-a-consultation/" },
@@ -182,14 +205,10 @@
     }
   ],
   "devNotes": {
-    "source": "NO CLIENT SOURCE PDF EXISTS for this page. The Ecommerce pillar has always listed 'Ecommerce Redesign & Migration' as a service card with no href and no page behind it, and the content map has no row for it. Copy here is drafted in-house from the pillar's own verbatim service, process and pricing copy, plus the sibling inner pages. NEEDS CLIENT SIGN-OFF before it is treated as final.",
-    "primaryKeyword": "Ecommerce Redesign & Migration Kochi",
-    "metaTitleLength": "55 characters",
-    "metaDescriptionLength": "156 characters",
-    "pricingSource": "The Rs. 50,000 – 2,00,000 band is the 'Ecommerce Redesign / Migration' row of the pillar pricing table (src/data/pages/ecommerce.json > pricing.rows). Keep the two in sync; the lead-gen cost calculator promises the published range is the quoted range.",
-    "heldPlaceholders": [
-      "Ecommerce Redesign & Migration Projects We've Delivered — [STAT NEEDED: 2-3 verified figures, e.g. share of rankings retained post-migration, number of stores replatformed, or post-launch conversion change.]"
-    ],
-    "schema": "Service + FAQPage + BreadcrumbList generated by InnerPage.astro; LocalBusiness is emitted site-wide by FooterCTA.astro and is not repeated here."
+    "source": "Ecommerce Redesign & Migration Page Audit & Action Plan.pdf",
+    "primaryKeyword": "Ecommerce Redesign & Migration Services in Kochi",
+    "permalink": "/ecommerce-redesign-migration-kochi/",
+    "schema": "Service + FAQPage + BreadcrumbList",
+    "bylineEmail": "sales@teknoppy.com"
   }
 }

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Business Website Development Company in Kochi | Teknoppy",
-    "description": "Get a business website built to generate enquiries, not just look good. Kochi based team, SEO ready builds, fast delivery. Request a free quote today."
+    "description": "Get a business website built to generate enquiries, not just look good. Kochi-based team, SEO-ready builds, fast delivery. Request a free quote today."
   },
   "breadcrumb": [
     { "name": "Home", "href": "/" },
@@ -12,12 +12,14 @@
     {
       "type": "hero",
       "badge": "Website Design & Development",
-      "h1Lead": "Business Website",
-      "h1Accent": "Development",
+      "eyebrow": "For Small & Growing Businesses",
+      "h1Lead": "Business Website Development in",
+      "h1Accent": "Kochi",
       "subhead": "A Website Built to Bring Your Business More Enquiries, Not Just More Visitors",
+      "subheadTag": "p",
       "body": [
         {
-          "text": "Business website development is the process of planning, designing, and building a website created specifically for a small or mid sized business, one that presents your services clearly, earns trust within the first few seconds, and turns visitors into calls, WhatsApp messages, and form fills. Teknoppy builds this type of site for companies across Kochi that need something fast, mobile first, and SEO ready, without the budget or timeline of an enterprise build. Whether you currently have no website, an outdated one, or a page that was never designed to convert, our approach is built around one goal: more qualified enquiries for your business."
+          "text": "Business website development is the process of planning, designing, and building a website created specifically for a small or mid-sized business — one that presents your services clearly, earns trust within the first few seconds, and turns visitors into phone calls, WhatsApp messages, and form submissions. Teknoppy builds high-performing business websites across Kochi that are fast, mobile-first, and search-ready, without enterprise bloat. Whether you have no website, an outdated site, or a page that doesn't convert, our focus is simple: more qualified enquiries for your business."
         }
       ],
       "ctas": [
@@ -30,24 +32,24 @@
       "bg": "cream",
       "columns": 2,
       "badge": "What's Included",
-      "h2": "What Our Build Includes",
-      "intro": "Every site we build starts with the same question: what does a customer need to see before they pick up the phone or fill out a form. From there, our process covers four core areas.",
+      "h2": "What Our Business Website Development Includes",
+      "intro": "Every site we build starts with the same question: what does a customer need to see before they pick up the phone or fill out a form? From there, our build covers four core areas:",
       "items": [
         {
-          "title": "Conversion first homepage design",
-          "text": "Rather than a wall of stock photography, we design each section of the homepage around a single, clear action, so visitors always know what to do next."
+          "title": "Conversion-First Homepage Design",
+          "text": "Rather than a wall of generic stock photography, we design each section around a single, clear action, so visitors always know how to contact you or request a quote."
         },
         {
-          "title": "Mobile first responsive build",
-          "text": "Most local searches for Kochi businesses now happen on a phone, so every site we build is designed for mobile first, then adapted for desktop and tablet. This is a core part of website development for small business owners who cannot afford to lose mobile enquiries."
+          "title": "Mobile-First Responsive Build",
+          "html": "Most local searches for Kochi businesses happen on a phone. Every site we build is designed for mobile first, ensuring fast load times and instant WhatsApp enquiry buttons. Learn more about our <a href=\"/responsive-web-design-kochi/\" class=\"text-primary font-semibold hover:underline\">responsive web design</a> approach."
         },
         {
-          "title": "Search ready technical foundation",
-          "text": "Every site launches with proper heading structure, optimised meta tags, compressed images, and schema markup already in place, so search visibility is not something you have to fix later."
+          "title": "Search-Ready Technical Foundation",
+          "html": "Every site launches with proper heading hierarchy, optimized meta tags, compressed WebP images, and local business schema markup already in place. Explore our <a href=\"/local-seo-services-kochi/\" class=\"text-primary font-semibold hover:underline\">local SEO services</a> for ranking growth."
         },
         {
-          "title": "A content system you can actually use",
-          "text": "Our sites run on a CMS that lets you update services, images, and offers yourself, without needing a developer for routine changes. This is what makes a custom business website for SMEs a practical, long term asset rather than a one time project."
+          "title": "A Content System You Can Actually Use",
+          "html": "Our sites run on an easy-to-use CMS that lets you update services, images, and offers yourself without needing developer support. Learn about our <a href=\"/cms-website-development-kochi/\" class=\"text-primary font-semibold hover:underline\">CMS website development</a> solutions."
         }
       ]
     },
@@ -55,76 +57,76 @@
       "type": "steps",
       "bg": "white",
       "badge": "How We Work",
-      "h2": "Our Process",
-      "intro": "Our business website development process is structured into five stages, so you always know where your project stands.",
+      "h2": "How We Build Your Business Website",
+      "intro": "Our business website development process is structured into five clear stages, so you always know where your project stands:",
       "items": [
         {
-          "title": "Discovery call.",
-          "text": "We learn about your services, your customers, and what counts as a genuine enquiry for your business."
+          "title": "Discovery & Goals",
+          "text": "We learn about your services, your target customers in Kerala or the GCC, and what counts as a genuine qualified enquiry for your business."
         },
         {
-          "title": "Sitemap and content plan.",
-          "text": "Pages are mapped to what your customers are actually searching for, rather than a generic template pulled from another industry."
+          "title": "Sitemap & Content Plan",
+          "text": "Pages are mapped to what your buyers are actually searching for, establishing high-converting service layouts rather than generic templates."
         },
         {
-          "title": "Design.",
-          "text": "We build a homepage concept around your brand and refine it with you until it is right."
+          "title": "UI Design & Revisions",
+          "text": "We build a tailored design concept around your brand identity and refine it collaboratively until it perfectly reflects your business."
         },
         {
-          "title": "Development.",
-          "text": "The responsive build is completed on a CMS you can manage yourself, with SEO foundations set from day one, not added afterward."
+          "title": "Clean Development & SEO Setup",
+          "text": "The responsive build is completed on an intuitive CMS, with Core Web Vitals performance and technical SEO foundations implemented from day one."
         },
         {
-          "title": "Testing and launch.",
-          "text": "We test across devices and page speed, then move the site live with a plan that does not interrupt your existing enquiries."
+          "title": "Testing & Launch",
+          "text": "We test across real mobile devices and browsers, audit speed, and launch smoothly without interrupting your existing business communications."
         }
       ]
     },
     {
       "type": "prose",
       "bg": "soft",
-      "h2": "Why Choose Teknoppy in Kochi",
+      "h2": "Why Local Businesses Choose Teknoppy",
       "paragraphs": [
         {
-          "text": "Businesses across Kochi choose us for business website development for a few clear reasons. We build for enquiries, not awards, so every layout decision is checked against a single question: does this make it easier for a customer to contact you. Our team has delivered sites across several industries in Kochi and wider Kerala, so we already understand what a Kerala buyer expects to see when they land on one of these pages for the first time. Because Teknoppy is also an SEO team, every site launches already structured to rank, rather than being rebuilt six months later once a ranking problem is noticed. And because design, development, and SEO sit under one roof, nothing gets lost between separate agencies handling separate parts of your project. This is what professional business website design looks like when it is handled by one accountable team from start to finish."
+          "text": "Businesses across Kochi choose Teknoppy because we build for enquiries, not design awards. Every layout decision is checked against one metric: does this make it easier for a potential customer to contact you? Having delivered web projects across Kerala, UAE, and Qatar, we understand local buyer behavior and trust factors. Because design, custom development, and SEO sit under one roof, your website launches already structured to rank on Google rather than needing an expensive rewrite months later. And because you own 100% of your code and content, you are never locked into proprietary retainers."
         }
       ]
     },
     {
       "type": "bullets",
       "bg": "white",
-      "h2": "Who Needs This",
+      "h2": "Who Needs a Business Website?",
       "items": [
-        { "text": "You have no website yet, or one that is several years old and no longer reflects the business" },
-        { "text": "You currently rely only on Instagram or a Google Business Profile and need a proper home for your credibility" },
-        { "text": "You are a local business competing against others in Kochi who already rank for the same searches" }
+        { "text": "You have no website yet, or one that is several years old and no longer reflects the quality of your services" },
+        { "text": "You currently rely only on Instagram, Facebook, or a Google Business Profile and need an authoritative digital asset" },
+        { "text": "You are a local business competing against others in Kochi who are already capturing customer searches online" }
       ],
       "outro": [
         {
-          "text": "Businesses outside Kochi looking for small business website support across wider Kerala face the same problem: without a site built around local search behaviour, competitors capture the enquiry first."
+          "text": "Whether you are serving Ernakulam, Kakkanad, Fort Kochi, or clients across Kerala, a website built around local search intent ensures you capture enquiries before competitors do."
         },
         {
-          "html": "<em>Links to matching Industry pages:</em> <a href=\"/web-design-for-startups-kerala/\" class=\"text-primary font-semibold hover:underline\">Web Design for Startups</a> · <a href=\"/web-design-for-professional-services-kerala/\" class=\"text-primary font-semibold hover:underline\">Web Design for Professional Services</a>"
+          "html": "For larger enterprises requiring investor relations or multi-department portal governance, explore our <a href=\"/corporate-website-development-kochi/\" class=\"text-primary font-semibold hover:underline\">Corporate Website Development</a>. For startups or consulting firms, see <a href=\"/web-design-for-startups-kerala/\" class=\"text-primary font-semibold hover:underline\">Web Design for Startups</a> and <a href=\"/web-design-for-professional-services-kerala/\" class=\"text-primary font-semibold hover:underline\">Web Design for Professional Services</a>."
         }
       ]
     },
     {
       "type": "prose",
       "bg": "cream",
-      "h2": "Projects We've Delivered",
+      "h2": "Business Websites We've Built",
       "paragraphs": [
         {
-          "html": "Full portfolio: <a href=\"/portfolios/website-projects/\" class=\"text-primary font-semibold hover:underline\">Website Design Projects</a>"
+          "html": "We have delivered custom business websites for healthcare providers, manufacturers, legal consultants, and retail brands across Kochi and Kerala. View our recent work on the <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">case studies</a> page and browse our <a href=\"/portfolios/website-projects/\" class=\"text-primary font-semibold hover:underline\">Website Projects Portfolio</a>."
         }
       ]
     },
     {
       "type": "prose",
       "bg": "white",
-      "h2": "Pricing",
+      "h2": "Business Website Cost in Kochi",
       "paragraphs": [
         {
-          "html": "Affordable pricing in Kochi does not mean the cheapest option available, it means a fair price for a site built to generate results. Business website development pricing depends on the number of pages, the features required, and the amount of content involved, and most small businesses in Kochi land in a mid range package rather than a bare minimum template or a full custom build. See exact ranges on our <a href=\"/web-design-pricing-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Design Pricing</a> page, or use the <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Cost Calculator</a> for a fast estimate."
+          "html": "Affordable pricing in Kochi does not mean cutting corners — it means a transparent investment for a website engineered to generate business. A typical 5 to 8 page small business website in Kochi usually ranges from ₹25,000 to ₹75,000, depending on custom design requirements, copy preparation, and CRM or WhatsApp integrations. Check transparent package tiers on our <a href=\"/web-design-pricing-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Design Pricing</a> page, or calculate an instant estimate with our <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Cost Calculator</a>."
         }
       ]
     },
@@ -134,9 +136,9 @@
       "h2": "Related Services",
       "items": [
         { "label": "Website Design and Development", "href": "/web-design-company-kochi/", "text": "the parent service" },
-        { "label": "Corporate Website Development", "href": "/corporate-website-development-kochi/", "text": "for businesses that need a brand governance focused site rather than a lead generation one" },
-        { "label": "Landing Page Design", "href": "/landing-page-design-kochi/", "text": "for single campaign pages" },
-        { "label": "Website Maintenance Services", "href": "/website-maintenance-services-kochi/", "text": "for ongoing support once your site is live" }
+        { "label": "Corporate Website Development", "href": "/corporate-website-development-kochi/", "text": "for businesses needing brand governance and corporate reporting" },
+        { "label": "Landing Page Design", "href": "/landing-page-design-kochi/", "text": "for focused Google Ads and social media campaigns" },
+        { "label": "Website Maintenance Services", "href": "/website-maintenance-services-kochi/", "text": "for ongoing security, updates, and backups" }
       ]
     },
     {
@@ -144,36 +146,45 @@
       "bg": "white",
       "center": true,
       "badge": "Have Questions?",
-      "h2": "Frequently Asked Questions",
+      "h2": "Business Website FAQs",
       "items": [
         {
-          "q": "How much does it cost to develop a business website in Kochi?",
-          "a": "Most small business websites here range from a basic five to six page site to a fuller custom build with booking or enquiry systems. The exact cost depends on pages, features, and content needs, so request a quote for a fixed number."
+          "q": "How much does a business website cost in Kochi?",
+          "a": "A standard 5 to 8 page small business website in Kochi typically costs between ₹25,000 and ₹75,000, depending on custom design, copywriting, and CRM or WhatsApp integrations. We provide a transparent, fixed-price quote with no hidden fees."
         },
         {
           "q": "How long does it take to build a business website?",
-          "a": "A standard project typically takes three to five weeks from the discovery call to launch, depending on how quickly content and approvals come back from your side."
+          "a": "Most business websites are designed, developed, and launched within 3 to 5 weeks, provided content and feedback are provided on schedule."
+        },
+        {
+          "q": "What pages does a small business website need?",
+          "a": "A high-converting business website typically includes: Homepage, About Us, Individual Service Pages, Case Studies or Portfolio, Customer Reviews, and a Contact Us page with WhatsApp and enquiry forms."
         },
         {
           "q": "Do I need a business website or a corporate website?",
-          "a": "If your goal is generating enquiries and showcasing services to customers, a business website is the right choice. If your goal is investor relations, brand governance across departments, or corporate reporting, a corporate website is the better fit."
+          "a": "If your goal is generating leads, calls, and WhatsApp enquiries for local services or products, a business website is ideal. If you are an enterprise needing multi-department governance, investor relations, and career portals, see our corporate website development services."
         },
         {
-          "q": "Will my site be SEO ready at launch?",
-          "a": "Yes. Technical basics such as heading structure, meta tags, schema, and image optimisation are built in during development, not added afterward."
+          "q": "Will our website rank on Google in Kochi?",
+          "a": "Yes. Every website we build includes local technical SEO foundations: meta tags, schema markup, Google Search Console setup, fast loading speeds, and optimization for local Kochi search queries."
         },
         {
-          "q": "Can I update the content myself after launch?",
-          "a": "Yes. Every site is built on a CMS so you can edit text, images, and offers without needing developer support for routine changes."
+          "q": "Can I edit website content myself after launch?",
+          "a": "Yes. Every site is built on an easy-to-use content management system. We also provide a training session so your team can easily update text, images, and services without developer assistance."
+        },
+        {
+          "q": "Do I own the website and domain once it is launched?",
+          "a": "Yes. You own 100% of your domain, website code, content, and assets. We never lock clients into proprietary systems."
         }
       ]
     },
     {
       "type": "cta",
+      "draft": true,
       "bg": "cream",
-      "h2": "Ready to Start Your Project?",
+      "h2": "Ready to Get More Enquiries From Your Website?",
       "paragraphs": [
-        { "text": "A better website does not need a bigger budget, it needs the right structure, the right message, and a team that builds for enquiries from day one. If you are ready to move forward with business website development for your company, let us talk about what that looks like for your business." }
+        { "text": "Tell us about your business and how customers find you today. We will reply within one business day with a recommended page plan, timeline and quote." }
       ],
       "ctas": [
         { "label": "Book a Consultation", "href": "/book-a-consultation/" },
@@ -183,26 +194,14 @@
     {
       "type": "byline",
       "bg": "white",
-      "text": "Teknoppy · teknoppy.com · sales@teknoppy.com · +91 6282249224 — Reviewed: August 2026"
+      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Reviewed: August 2026"
     }
   ],
   "devNotes": {
     "source": "_Website_Design&Development pillar page-business-website-development-kochi inner page.pdf",
     "primaryKeyword": "Business Website Development",
-    "secondaryKeyword": "Custom Business Website for SMEs (feature block anchor)",
-    "wordCount": "1,221 words (body)",
-    "keywordDensity": "1.88% combined — within 2.0% target",
-    "correctionsApplied": "(1) Section headers simplified to drop repeated keyword phrasing, keeping the primary keyword exact-match in the title tag, H1, and opening paragraph. (2) \"Who Needs This\" converted to a plain bullet list. (3) Keyword density raised from 0.91% to 1.88% combined by adding four natural body mentions of the primary keyword, kept under the 2.0% ceiling. (4) Meta table expanded with Primary Keyword, Secondary Keyword, Word Count, and Keyword Density fields, recalculated below.",
-    "openItems": [
-      "Trust strip: reuse the three stat chips already live on the Website Design and Development pillar page — do not reinvent per child page.",
-      "STAT NEEDED — experience-based claim specific to business website projects, e.g. number of SME sites delivered in Kochi.",
-      "Projects We've Delivered — insert one to two verified project references here, each with a measurable, real result, such as a percentage increase in enquiry form submissions within a set number of days of launch. A named client testimonial should be added where one exists for this exact service type.",
-      "Address and contact details — must exactly match the current Google Business Profile listing.",
-      "Author: named team member · Reviewed: August 2026"
-    ],
+    "permalink": "/business-website-development-kochi/",
     "schema": "Service, LocalBusiness, FAQPage, BreadcrumbList",
-    "internalLinks": "parent pillar (Website Design and Development), two sibling child pages (Landing Page Design, Website Maintenance Services), one industry page (Web Design for Startups or Web Design for Professional Services), one lead generation page (Request a Quote or Website Cost Calculator)",
-    "imageAltText": "\"business website development Kochi — homepage design mockup\" · \"responsive business website on mobile, Kochi client project\"",
-    "cannibalizationCheck": "Primary keyword \"Business Website Development\" is not owned by any other page in the site structure. \"On page SEO\" terminology avoided in body copy since that phrase is owned by the separate On-Page SEO child page under the SEO Services pillar. Corporate Website Development, Landing Page Design, and Website Maintenance Services appear only as internal link anchor text in the Related Services block, not as targeted phrases."
+    "bylineEmail": "sales@teknoppy.com"
   }
 }

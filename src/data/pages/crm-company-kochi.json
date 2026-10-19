@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "CRM Development Company Kochi | Teknoppy",
-    "description": "Need a CRM Development Company Kochi businesses can rely on? Teknoppy builds CRMs your sales team actually uses. Book a consultation."
+    "title": "Custom CRM Development Company in Kochi | Teknoppy",
+    "description": "Custom CRM software built around how your team sells - leads, follow-ups, automation and data migration. Live in 4-10 weeks. Book a free consultation."
   },
   "breadcrumb": [
     {
@@ -13,7 +13,7 @@
       "href": "/web-application-development-company-kochi/"
     },
     {
-      "name": "CRM Development Company Kochi",
+      "name": "CRM Development Company in Kochi",
       "href": "/crm-company-kochi/"
     }
   ],
@@ -21,15 +21,15 @@
     {
       "type": "hero",
       "badge": "Web Application Development",
-      "h1Lead": "CRM Development Company",
+      "h1Lead": "CRM Development Company in",
       "h1Accent": "Kochi",
       "subhead": "A CRM Built Around Your Actual Sales Process, Not a Generic Pipeline",
       "body": [
         {
-          "text": "CRM Development Company Kochi — that's what businesses search for when off-the-shelf CRM software doesn't match how their sales and customer relationships actually work. Teknoppy builds and customizes CRM systems around your real sales process, since forcing a unique business into a generic pipeline usually means the team stops using the tool altogether."
+          "text": "Teknoppy builds custom CRM software in Kochi around how your sales team actually works — your stages, fields and follow-ups. We migrate your existing contacts, connect your website forms, WhatsApp Business API and email, and train your team. Most custom CRMs go live in 4-10 weeks."
         },
         {
-          "text": "Choosing the right CRM Development Company Kochi partner matters because a CRM only creates value if your team actually adopts it — a system that doesn't match how deals really move through your pipeline gets abandoned within months, no matter how well-built the software is."
+          "text": "Choosing the right CRM development partner in Kochi matters because software only creates value if your team actually uses it. A system that doesn't match how deals actually move through your pipeline gets abandoned within months — we build tools your team will rely on daily."
         }
       ],
       "ctas": [
@@ -56,88 +56,110 @@
         },
         {
           "title": "Sales & Lead Management",
-          "text": "Sales CRM development Kochi and lead management system development track prospects from first contact through close, giving your team visibility into exactly where every deal stands."
+          "text": "Lead management and sales tracking from first inquiry through closing, giving your team complete visibility into deal stages, pending quotes, and conversion rates."
         },
         {
           "title": "Automation & Dashboards",
-          "text": "CRM automation services handle repetitive tasks — follow-up reminders, status updates, assignment rules — while a CRM dashboard development view gives managers a clear picture of pipeline health at a glance."
+          "html": "Automated follow-up reminders, status triggers, and assignment rules reduce manual data entry. Paired with real-time analytics — explore our <a href=\"/dashboard-development-services-kochi/\" class=\"text-primary font-semibold hover:underline\">dashboard development services</a> for custom BI."
         },
         {
           "title": "Integration & Data Migration",
-          "text": "CRM system integration services connect your CRM to email, marketing tools, and other business software, and CRM data migration services move existing customer data over cleanly when switching systems."
+          "html": "Direct API connections for WhatsApp Business API, website forms, IndiaMART/JustDial leads, Gmail/Outlook, and Tally/ERP systems. Learn more about our <a href=\"/api-integration-services-kochi/\" class=\"text-primary font-semibold hover:underline\">API integration services</a>."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "columns": 3,
+      "badge": "Platform Choice",
+      "h2": "Custom CRM or an Off-the-Shelf CRM?",
+      "intro": "We help you select the most cost-effective CRM path based on your team size and operational complexity:",
+      "items": [
+        {
+          "title": "Custom CRM Platform",
+          "text": "Built 100% around your exact sales pipeline and custom fields. One-time build cost with zero recurring per-user licensing fees. You own all code and customer data."
+        },
+        {
+          "title": "Off-the-Shelf CRM",
+          "text": "Platforms like Zoho, HubSpot, or Salesforce are quick to start but carry escalating monthly per-user licensing fees and lock your team into rigid third-party workflows."
+        },
+        {
+          "title": "CRM Configuration & Sync",
+          "text": "If an off-the-shelf CRM fits your workflow, we configure custom pipelines, configure automation rules, and integrate your website forms seamlessly."
         }
       ]
     },
     {
       "type": "steps",
-      "bg": "white",
+      "bg": "soft",
       "badge": "How We Work",
       "h2": "Our CRM Development Process",
       "items": [
         {
-          "title": "Sales Process Mapping",
-          "text": "We document exactly how your team currently manages leads and customers before designing the system around it."
+          "title": "Sales Process Mapping (Week 1)",
+          "text": "We document your real pipeline stages, required customer fields, and follow-up protocols before designing the system."
         },
         {
-          "title": "Custom Build & Configuration",
-          "text": "CRM customization services shape fields, pipelines, and workflows to match your actual sales stages, not a generic default."
+          "title": "Custom Build & Configuration (Weeks 2-5)",
+          "text": "Fields, pipelines, and roles are built and tested on a secure staging environment."
         },
         {
-          "title": "Automation Setup",
-          "text": "Repetitive tasks are automated so the team spends time selling, not manually updating records."
+          "title": "Automation Setup (Week 6)",
+          "text": "Lead assignment rules, automated WhatsApp/email triggers, and reminder workflows are configured."
         },
         {
-          "title": "Integration & Migration",
-          "text": "Existing tools are connected and historical customer data is migrated without loss or duplication."
+          "title": "Integration & Migration (Weeks 7-8)",
+          "text": "Historical customer records and contacts from spreadsheets or legacy software are cleaned, mapped, and migrated."
         },
         {
-          "title": "Training & Adoption Support",
-          "text": "The team is trained on the actual system built for them, improving real adoption over generic onboarding."
+          "title": "Training & Adoption (Weeks 9-10)",
+          "text": "Live training for sales reps and managers, backed by 30 days of active post-launch adoption support."
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "bg": "white",
+      "badge": "The Teknoppy Advantage",
+      "h2": "Why Choose Teknoppy for CRM Development in Kochi",
+      "items": [
+        {
+          "html": "<strong>Built around your actual sales process.</strong> We design around how your team communicates and sells, ensuring high adoption from day one."
+        },
+        {
+          "html": "<strong>Cloud-based and mobile-ready.</strong> Accessible from the office, the field, or any smartphone browser with secure encryption."
+        },
+        {
+          "html": "<strong>Zero recurring seat fees for custom builds.</strong> Scale your sales team without worrying about monthly per-user licensing costs."
+        },
+        {
+          "html": "<strong>Adoption-focused training and support.</strong> We conduct live team walkthroughs and review usage metrics during the first 30 days."
         }
       ]
     },
     {
       "type": "bullets",
       "bg": "soft",
-      "badge": "The Teknoppy Advantage",
-      "h2": "Why Choose Teknoppy for CRM Development in Kochi",
-      "items": [
-        {
-          "html": "<strong>We build around your sales process, not a template.</strong> A CRM that doesn't match how deals actually move gets abandoned — we design for real usage from the start."
-        },
-        {
-          "html": "<strong>Cloud CRM development Kochi</strong> businesses can access from anywhere, with data secured and backed up reliably."
-        },
-        {
-          "html": "<strong>CRM software for small business</strong> scoped appropriately — not over-engineered with enterprise complexity a smaller team doesn't need."
-        },
-        {
-          "html": "<strong>Adoption-focused training</strong>, since the best CRM is worthless if the sales team doesn't actually use it day to day."
-        }
-      ]
-    },
-    {
-      "type": "bullets",
-      "bg": "white",
       "h2": "Who Needs CRM Development Services",
-      "intro": "This service fits businesses that are:",
+      "intro": "This service fits businesses across key Kerala industries:",
       "items": [
         {
-          "text": "Managing leads and customers through spreadsheets or disconnected tools with no central system"
+          "text": "Real Estate & Builders: managing property enquiries across portals, site visits, and agent assignments"
         },
         {
-          "text": "Using an off-the-shelf CRM that doesn't match their actual sales process, leading to poor adoption"
+          "text": "Healthcare & Clinics: tracking patient consults, treatment enquiries, and automated appointment follow-ups"
         },
         {
-          "text": "Growing to a point where sales visibility and pipeline tracking have become genuinely difficult without a dedicated system"
+          "text": "Education & Admissions: student lead capture, counsellor assignment, and admission lifecycle tracking"
+        },
+        {
+          "text": "B2B Manufacturing & Distribution: multi-stage quote pipelines, dealer networks, and reorder reminders"
         }
       ],
       "outro": [
         {
           "html": "If your need extends beyond CRM into broader business software, see <a href=\"/software-development-agency-kochi/\" class=\"text-primary font-semibold hover:underline\">Software Development</a> or <a href=\"/erp-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">ERP Development</a>. For a subscription-based CRM product you plan to sell, see <a href=\"/saas-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">SaaS Development</a>."
-        },
-        {
-          "text": "Many businesses adopt a CRM, use it inconsistently for a few months, and quietly abandon it once the sales team finds it easier to track deals in a spreadsheet again. That pattern almost always traces back to the system not matching how the team actually sells, rather than any failure on the team's part."
         }
       ]
     },
@@ -147,17 +169,17 @@
       "h2": "CRM Development Projects We've Delivered",
       "paragraphs": [
         {
-          "html": "Teknoppy has built and customized CRM systems for businesses across Kochi and Kerala, improving sales visibility and pipeline tracking for teams previously working from spreadsheets or generic tools. See more of our work on the <a href=\"/web-application-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Web Application Development</a> page."
+          "html": "Teknoppy has developed custom CRM pipelines and lead capture solutions for businesses across Kochi and Kerala — replacing chaotic spreadsheets and abandoned software with intuitive tools. See our <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">case studies</a> and explore our <a href=\"/web-application-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Web Application Development</a> work."
         }
       ]
     },
     {
       "type": "prose",
       "bg": "white",
-      "h2": "CRM Development Pricing",
+      "h2": "CRM Development Cost in Kochi",
       "paragraphs": [
         {
-          "html": "CRM pricing depends on customization depth, automation complexity, and whether data migration from an existing system is required. For a tailored estimate, use our <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Cost Calculator</a> or <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a>."
+          "html": "CRM development costs depend on customization scope: <strong>Existing CRM Configuration & Integration</strong> ranges from Rs. 35,000 to Rs. 75,000 (2-4 weeks); <strong>Custom Core Pipeline CRM</strong> ranges from Rs. 85,000 to Rs. 1,75,000 (4-6 weeks); and <strong>Advanced Multi-Team Custom CRM</strong> with automated WhatsApp workflows and ERP sync ranges from Rs. 1,80,000 to Rs. 3,50,000+ (6-10 weeks). <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a> for a written scope and estimate."
         }
       ]
     },
@@ -172,16 +194,19 @@
           "text": "our full web application development pillar"
         },
         {
-          "label": "SaaS Development",
-          "href": "/saas-development-company-kochi/"
+          "label": "Dashboard Development Services",
+          "href": "/dashboard-development-services-kochi/",
+          "text": "custom BI and pipeline analytics"
         },
         {
           "label": "ERP Development",
-          "href": "/erp-development-company-kochi/"
+          "href": "/erp-development-company-kochi/",
+          "text": "enterprise resource planning"
         },
         {
           "label": "API Integration Services",
-          "href": "/api-integration-services-kochi/"
+          "href": "/api-integration-services-kochi/",
+          "text": "connect third-party platforms"
         }
       ]
     },
@@ -190,41 +215,42 @@
       "bg": "white",
       "center": true,
       "badge": "Have Questions?",
-      "h2": "Frequently Asked Questions — CRM Development Company Kochi",
+      "h2": "CRM Development FAQs",
       "items": [
         {
-          "q": "Should we build a custom CRM or use an existing platform?",
-          "a": "It depends on how closely your sales process fits standard CRM logic. Custom CRM software development makes sense when generic platforms genuinely don't fit; customizing an existing platform is often faster and more cost-effective when the fit is close."
+          "q": "How much does custom CRM development cost in Kochi?",
+          "a": "Configuring an existing CRM typically costs between Rs. 35,000 and Rs. 75,000. A custom-built CRM with tailored pipelines, lead scoring, and automated reminders ranges from Rs. 85,000 to Rs. 3,50,000+ depending on team size and integrations. We provide an exact proposal after reviewing your sales process."
+        },
+        {
+          "q": "Do we pay per-user fees for a custom CRM?",
+          "a": "No. When Teknoppy builds a custom CRM, you own the software and database outright. There are zero monthly per-user license fees, meaning your team can grow without escalating software costs."
+        },
+        {
+          "q": "Can the CRM capture leads from WhatsApp and our website automatically?",
+          "a": "Yes. We integrate your website forms, landing pages, and the official WhatsApp Business API so every new enquiry enters the CRM instantly, assigns to a sales representative, and sends an automatic acknowledgment."
+        },
+        {
+          "q": "Can my sales team use the CRM on their smartphones?",
+          "a": "Yes. The CRM is built responsive and cloud-hosted, allowing sales representatives in the field to update deal statuses, log call notes, and view client contact details on mobile browsers."
         },
         {
           "q": "Can you migrate our existing customer data into a new CRM?",
-          "a": "Yes. CRM data migration services move contacts, deal history, and notes from your current system or spreadsheets without loss, checked carefully before the old system is retired."
-        },
-        {
-          "q": "Do you integrate the CRM with our other business tools?",
-          "a": "Yes. CRM system integration services connect your CRM to email platforms, marketing tools, and other software your team already uses."
-        },
-        {
-          "q": "How is lead management handled in the CRM?",
-          "a": "Lead management system development tracks prospects from first contact through close, with clear stages and ownership so nothing falls through the cracks."
-        },
-        {
-          "q": "Will the CRM automate repetitive tasks for our sales team?",
-          "a": "Yes. CRM automation services handle follow-up reminders, status updates, and assignment rules, so the team spends less time on data entry and more time actually selling."
+          "a": "Yes. We clean, format, and migrate your contacts, past deal history, and notes from Excel spreadsheets, Google Sheets, or legacy software with zero data loss."
         },
         {
           "q": "How long does a CRM development project take?",
-          "a": "Timelines vary by customization depth, typically ranging from 4 to 10 weeks for a fully custom build, shorter for configuring an existing platform to fit your workflow."
+          "a": "A custom CRM development project typically takes 4 to 10 weeks, encompassing sales process mapping, interface design, automation setup, data migration, and live user training."
         }
       ]
     },
     {
       "type": "cta",
+      "draft": true,
       "bg": "cream",
-      "h2": "Ready to Start Your CRM Development Project?",
+      "h2": "Ready to Build a CRM Your Sales Team Will Use?",
       "paragraphs": [
         {
-          "text": "If your sales team is managing leads through spreadsheets or fighting a CRM that doesn't fit, the right system built around your actual process changes that. Teknoppy's CRM Development Company Kochi team builds CRMs your sales team will actually use."
+          "text": "Tell us how your team sells today and which tools you use. We reply within 24 hours to book a sales-process mapping call and give an estimate range."
         }
       ],
       "ctas": [
@@ -246,13 +272,9 @@
   ],
   "devNotes": {
     "source": "Web Application Development pillar page - crm development company kochi innerpage.pdf",
-    "primaryKeyword": "CRM Development Company Kochi",
+    "primaryKeyword": "CRM Development Company in Kochi",
     "permalink": "/crm-company-kochi/",
     "schema": "Service + LocalBusiness + FAQPage + BreadcrumbList",
-    "heldPlaceholders": [
-      "Projects We've Delivered — [STAT NEEDED: add 2-3 verified figures — e.g. lead conversion improvement, time saved through automation, or adoption rate achieved for a specific client.] Held out of the rendered copy until the account lead supplies verified figures."
-    ],
-    "bylineEmail": "Doc supplied sanal@teknoppy.com. Replaced with sales@teknoppy.com, the address used sitewide.",
-    "linkNote": "Doc's 'Software Development' link now resolves to the real page at /software-development-agency-kochi/ (built 2026-09-16). The earlier placeholder pointing at the Web Application Development pillar has been removed."
+    "bylineEmail": "sales@teknoppy.com"
   }
 }

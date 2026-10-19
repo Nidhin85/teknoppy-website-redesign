@@ -1,9 +1,9 @@
 {
-  "metaTitle": "Libra Group UAE: A Web Applications & Cloud Portals Case Study for a Multi-Service UAE Facilities Company | Teknoppy",
-  "metaDescription": "How Teknoppy built a structured multi-line digital platform for Libra Group UAE, uniting 6 distinct service divisions and 20+ years of Dubai operating history.",
+  "metaTitle": "Libra Group UAE: Multi-Service Website Case Study | Teknoppy",
+  "metaDescription": "How Teknoppy built one WordPress website for Libra Group UAE's six service lines - with service pages, SIRA certification upfront and a clear quote path.",
   "canonicalURL": "https://teknoppy.com/case-studies/libra-group-uae-web-application-design/",
   "heroImage": "/case-studies/libragroupuae.webp",
-  "heroImageAlt": "Libra Group UAE Facilities Management, Security and Interior Fit-Out Web Platform Case Study",
+  "heroImageAlt": "Libra Group UAE Multi-Service Facilities Management, Security and Interior Fit-Out Website Case Study",
   "schemaType": "TechArticle",
   "schemaAbout": {
     "type": "Organization",
@@ -14,13 +14,13 @@
     }
   },
   "clientName": "Libra Group UAE",
-  "categoryTag": "Web Application Development, Content Strategy & SEO",
+  "categoryTag": "Corporate Website Development & WordPress",
   "tagBadge": "UAE Facilities & Security Web Platform",
-  "title": "Libra Group UAE: A Web Applications & Cloud Portals Case Study for a Multi-Service UAE Facilities Company",
-  "storyLead": "How Teknoppy architected a unified digital front door for Libra Group UAE, structuring six distinct B2B service lines and elevating SIRA accreditation into a first-class procurement trust signal.",
+  "title": "Libra Group UAE: One Website for Six Facilities Services in Dubai",
+  "storyLead": "How Teknoppy architected a unified digital front door for Libra Group UAE, structuring six distinct B2B facilities lines and elevating SIRA accreditation into a primary procurement trust signal.",
   "industry": "Facilities Management, Security & Interior Fit-Out",
   "location": "Dubai, UAE",
-  "services": "Web Application Development, Content Strategy, SEO",
+  "services": "Corporate Website Development, Content Strategy, WordPress & SEO",
   "platform": "WordPress (Elementor)",
   "liveWebsite": "libragroupuae.com",
   "liveWebsiteUrl": "https://libragroupuae.com",
@@ -31,44 +31,45 @@
     "Fast Procurement-Stage Comparison"
   ],
   "atAGlance": [
-    "Six service lines, six dedicated pages — Security, Cleaning, Maintenance, Life Guard, Concierge, and Libra Interiors",
-    "SIRA certification promoted to a first-class trust signal, not buried in copy",
-    "A consistent \"Request a Quote\" CTA on every service page",
-    "One visual identity holding six genuinely different businesses together",
-    "Built for fast procurement-stage comparison, not a slow brochure-site browse"
+    "Client: Libra Group UAE (operating in Dubai since 2001)",
+    "Services: 6 lines — Security, Cleaning, Maintenance (HVAC/MEP), Life Guard, Concierge, and Interiors",
+    "What We Built: High-performing multi-service corporate website with dedicated division pages",
+    "Platform: WordPress + Elementor with customized performance & caching layers",
+    "Key Features: Prominent SIRA accreditation trust signals, unified visual identity, fast quote CTA routing",
+    "Project Duration: 6 weeks from initial architecture mapping to production launch"
   ],
   "aboutHeading": "About Libra Group UAE",
   "aboutParagraphs": [
-    "Libra Group UAE has been operating in Dubai since 2001, running six distinct service lines — cleaning, SIRA-certified security, HVAC/MEP maintenance, lifeguard services, concierge, and interior fit-out — serving corporate and industrial clients across the UAE.",
-    "This engagement sits under Teknoppy's Web Applications & Cloud Portals work as a structured, multi-line-of-business digital platform — built to function as one coherent front door across six otherwise unrelated service categories, rather than a single-purpose brochure site. Twenty years of operating history wasn't the problem; a website that could actually represent six different businesses credibly, to six different kinds of buyers, was.",
-    "Each of Libra Group's six divisions also serves a genuinely different buyer with different priorities: a corporate security lead checks SIRA certification and response protocols, a facilities manager comparing HVAC providers checks maintenance scope and service-level terms, and a hospitality client considering interior fit-out is evaluating design portfolio and project history. A platform trying to speak to all of them with one generic pitch would satisfy none of them well."
+    "Libra Group UAE has been operating in Dubai since 2001, running six distinct service lines — cleaning, SIRA-certified security, HVAC/MEP maintenance, lifeguard services, concierge, and interior fit-out — serving corporate, commercial, and industrial clients across the United Arab Emirates.",
+    "This engagement sits under Teknoppy's Corporate Website Development and GCC web design work as a structured, multi-line-of-business digital platform — built to function as one coherent front door across six otherwise distinct service categories, rather than an unorganized generic company site. Twenty years of operating history wasn't the problem; a website that could represent six different commercial operations credibly to distinct corporate procurement buyers was.",
+    "Each of Libra Group's six divisions serves a unique buyer persona with specific criteria: a corporate security director checks SIRA certification and armed guarding protocols, a commercial facility manager evaluating HVAC providers inspects maintenance scope and response SLAs, and a hospitality developer considering interior fit-out reviews previous project portfolios. A website trying to address all of them with one generic homepage pitch would satisfy none of them well."
   ],
   "challengeLead": "Representing six genuinely different B2B services under one roof creates problems a single-service company never has to solve:",
   "challenges": [
     {
       "number": 1,
       "title": "Six services, one undifferentiated homepage",
-      "description": "Cleaning, security, HVAC, MEP, lifeguard, and interiors are very different buying decisions with very different buyers. A corporate security lead and a residential cleaning customer shouldn't land on the same generic pitch."
+      "description": "Cleaning, security, HVAC, MEP, lifeguard, and interiors are very different buying decisions with very different buyers. A corporate security lead and a commercial facility manager shouldn't land on the same generic pitch."
     },
     {
       "number": 2,
       "title": "SIRA certification buried instead of leading",
-      "description": "For a security services buyer, certification is often the first filter, not a footnote. Left as plain text, it did none of the trust-building work it's capable of."
+      "description": "For a security services buyer in Dubai, regulatory licensing (SIRA) is often the first filter, not a footnote. Left as plain text, it did none of the trust-building work it is capable of."
     },
     {
       "number": 3,
       "title": "No repeatable next step for a B2B sales cycle",
-      "description": "Facility management is a considered purchase with a procurement process behind it. Without a consistent \"Request a Quote\" path on every service page, each visit risked ending in a dead click instead of a lead."
+      "description": "Facility management is a considered purchase with a procurement process behind it. Without a consistent 'Request a Quote' path on every service page, each visit risked ending in a bounce instead of a lead."
     },
     {
       "number": 4,
       "title": "No unifying brand architecture across six businesses",
-      "description": "Interior fit-out, armed security, and janitorial services don't naturally read as one company without deliberate design work — without it, the site risked feeling like six loosely related microsites rather than one credible group."
+      "description": "Interior fit-out, certified security, and MEP services don't naturally read as one company without deliberate design work — without it, the site risked feeling like six loosely related microsites rather than one credible group."
     },
     {
       "number": 5,
       "title": "Not built for fast procurement-stage comparison",
-      "description": "Facilities managers and procurement leads often shortlist several vendors quickly, frequently starting that comparison on a phone before a formal RFP process begins, and the previous site wasn't structured for that quick, comparative first look."
+      "description": "Facilities managers and procurement leads often shortlist several vendors quickly, frequently starting that comparison on a phone before a formal RFP process begins, and the previous site wasn't structured for rapid mobile evaluation."
     }
   ],
   "objectiveLead": "Teknoppy's job was to turn two decades of operating history and six service divisions into a platform that could:",
@@ -77,7 +78,7 @@
     "Promote SIRA certification and other credentials to first-class trust signals",
     "Give every visitor the same clear, repeatable next step toward requesting a quote",
     "Hold six distinct businesses together under one credible visual identity",
-    "Work for a quick comparison-stage look, not just a slow, deliberate desktop read-through"
+    "Work for a quick comparison-stage look on mobile, not just a slow desktop read-through"
   ],
   "approachLead": "How Teknoppy mapped an architecture built for B2B procurement decision-makers:",
   "approachPillars": [
@@ -114,7 +115,7 @@
     {
       "title": "Content structured for how procurement research happens now",
       "paragraphs": [
-        "A facilities or security lead increasingly starts vendor research with a direct, specific question — \"SIRA certified security company Dubai\" or \"HVAC maintenance provider UAE\" — rather than browsing a general facilities-management directory. Giving each service its own detailed page, stating certifications explicitly, means both traditional search results and AI-assisted procurement research tools have something specific to match that query to, rather than one broad company page that answers none of those searches precisely."
+        "A facilities or security lead increasingly starts vendor research with a direct, specific question — 'SIRA certified security company Dubai' or 'HVAC maintenance provider UAE' — rather than browsing a general facilities-management directory. Giving each service its own detailed page, stating certifications explicitly, means both traditional search results and AI-assisted procurement research tools have something specific to match that query to."
       ]
     }
   ],
@@ -138,11 +139,11 @@
   ],
   "whyMattersHeading": "Why Certification-First Design Matters for a Regulated B2B Service",
   "whyMattersParagraphs": [
-    "Security services operate under real regulatory oversight — SIRA certification in the UAE isn't a marketing badge, it's a licensing requirement, and a corporate buyer evaluating a security provider treats it as a pass/fail filter before anything else. Content and design that surface that certification prominently and specifically, rather than folding it into general company copy, are doing the same verification work a procurement checklist would do manually — just faster, and before the first call even happens.",
-    "Six distinct service lines also create a genuine entity SEO requirement: \"Libra Group security services\" and \"Libra Group interior fit-out\" need to exist as separate, clearly bounded topics so search engines — and increasingly AI procurement research tools — can match a specific buyer's need to the right division, rather than returning one blended, generic \"facilities company\" result that answers no one's actual question precisely.",
+    "Security services operate under strict regulatory oversight — SIRA certification in the UAE isn't a marketing badge, it's a mandatory licensing requirement, and a corporate buyer evaluating a security provider treats it as a pass/fail filter before anything else. Content and design that surface that certification prominently and specifically, rather than folding it into general company copy, are doing the same verification work a procurement checklist would do manually — just faster, and before the first call even happens.",
+    "Six distinct service lines also create a genuine entity SEO requirement: 'Libra Group security services' and 'Libra Group interior fit-out' need to exist as separate, clearly bounded topics so search engines — and increasingly AI procurement research tools — can match a specific buyer's need to the right division, rather than returning one blended, generic 'facilities company' result that answers no one's actual question precisely.",
     "A consistent brand identity across six pages does complementary work on the trust side. A visitor moving from the Security page to the Interior Fit-Out page should recognize immediately that the same accountable company stands behind both, rather than wondering whether they've navigated to a different, unrelated business — that consistency is itself part of what makes a 20-year operating history feel credible rather than assumed."
   ],
-  "whyMattersCalloutHtml": "<p><strong>By giving each service line its own page, promoting SIRA certification to the trust signal it actually is, and holding six businesses together under one credible identity</strong>, the Libra Group UAE platform is built to turn a facilities manager's first search into a qualified quote request. See more examples in Teknoppy's <a href=\"/case-study/\" class=\"underline font-bold text-[#F05A2C]\">full case study library</a> or our <a href=\"/web-application-development-company-kochi/\" class=\"underline font-bold text-[#F05A2C]\">web application development service</a>.</p>",
+  "whyMattersCalloutHtml": "<p><strong>By giving each service line its own page, promoting SIRA certification to the trust signal it actually is, and holding six businesses together under one credible identity</strong>, the Libra Group UAE platform is built to turn a facilities manager's first search into a qualified quote request. See more examples in Teknoppy's <a href=\"/corporate-website-development-kochi/\" class=\"underline font-bold text-[#F05A2C]\">corporate website development services</a>, our <a href=\"/web-design-company-for-gcc-businesses/\" class=\"underline font-bold text-[#F05A2C]\">GCC web design work</a>, or explore our <a href=\"/wordpress-development-company-kochi/\" class=\"underline font-bold text-[#F05A2C]\">WordPress development company</a>.</p>",
   "faqs": [
     {
       "question": "What was the main challenge in designing Libra Group UAE's website?",
@@ -166,11 +167,11 @@
     },
     {
       "question": "Can I request a quote for just one service, like HVAC maintenance, without going through the whole company?",
-      "answer": "Yes — each service line, including HVAC and MEP maintenance, has its own dedicated page with the same \"Request a Quote\" path, so an enquiry can be scoped to exactly the service needed."
+      "answer": "Yes — each service line, including HVAC and MEP maintenance, has its own dedicated page with the same 'Request a Quote' path, so an enquiry can be scoped to exactly the service needed."
     },
     {
       "question": "What platform was the site built on?",
-      "answer": "WordPress, built with Elementor, giving the team a flexible foundation to manage six distinct service lines under one platform."
+      "answer": "WordPress, built with Elementor, giving the team a flexible foundation to manage six distinct service lines under one platform without requiring ongoing developer assistance for copy updates."
     },
     {
       "question": "Does the site work well for comparing Libra Group against other vendors quickly?",

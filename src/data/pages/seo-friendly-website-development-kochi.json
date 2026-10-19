@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "SEO-Friendly Website Development in Kochi | Teknoppy",
-    "description": "SEO-friendly website development in Kochi — semantic code, crawlable architecture and schema built in from day one, so your site is ready to rank at launch."
+    "description": "Websites built in Kochi to rank from launch - clean code, crawlable structure, fast mobile pages and schema, planned with our SEO team. Get a quote."
   },
   "breadcrumb": [
     { "name": "Home", "href": "/" },
@@ -14,67 +14,101 @@
       "badge": "Website Design & Development",
       "h1Lead": "SEO-Friendly Website Development in",
       "h1Accent": "Kochi",
+      "subheadTag": "p",
+      "subhead": "Architecture, Clean Code, Schema and Speed Built In From Day One",
       "body": [
         {
           "text": "SEO-friendly website development means engineering a site's code, structure, and content foundation for search visibility from the first line of development, not adding SEO on after launch. Teknoppy builds every new website in Kochi on clean, semantic code with crawlable architecture, schema markup, and a mobile-first foundation in place from day one, so the site is ready to rank the moment it goes live."
+        },
+        {
+          "text": "Every Teknoppy web build includes our technical SEO foundation as a standard engineering requirement. We also provide technical SEO audits, site structure planning, and code remediation for businesses whose existing websites struggle with crawl errors, slow Core Web Vitals, or missing schema markup."
         }
       ],
       "ctas": [
         { "label": "Book a Consultation", "href": "/book-a-consultation/" },
         { "label": "Request a Quote", "href": "/request-a-quote/" }
       ],
-      "trustline": "120+ Websites Delivered · In Kochi Since 2018 · In-House Dev & SEO Teams Working Together"
+      "stats": [
+        { "value": "120+", "label": "Websites Delivered" },
+        { "value": "Since 2018", "label": "In Kochi, Kerala" },
+        { "value": "In-House", "label": "Dev & SEO Teams Working Together" }
+      ]
     },
     {
       "type": "cards",
       "bg": "cream",
       "columns": 2,
       "badge": "What's Included",
-      "h2": "What Our SEO-Friendly Website Development Includes",
+      "h2": "What's Built In",
       "items": [
         {
-          "title": "Clean, Semantic Code Structure",
-          "text": "Every page is built on semantic HTML with a proper heading hierarchy, so search engines can read exactly what each section of the page means, not just what it looks like."
+          "title": "Clean, Semantic HTML5 Hierarchy",
+          "text": "Every page is coded using clean semantic tags (<main>, <article>, <section>, <nav>) with a strict single-H1 rule and logical H2/H3 nesting, allowing search engines to index topical relevance effortlessly."
         },
         {
-          "title": "Crawlable Site Architecture",
-          "text": "Navigation, internal linking, and URL structure are planned before design begins, so every page is easy for search engines to discover, crawl, and index without orphaned or buried content."
+          "title": "Crawlable Site Architecture & URLs",
+          "text": "Navigation hierarchies, internal link equity distribution, and clean kebab-case URL permalinks are planned before design begins, preventing orphan pages or crawl-depth bottlenecks."
         },
         {
-          "title": "Schema Markup From Launch",
-          "text": "Structured data is built into the site template during development, not added as an afterthought, giving search engines the context they need to understand your business, services, and pages."
+          "title": "Comprehensive JSON-LD Schema",
+          "text": "Automated Schema.org structured data (Organization, LocalBusiness, Service, FAQPage, BreadcrumbList) embedded into every template to power rich snippets and Google Knowledge Graph recognition."
         },
         {
-          "title": "Performance-Ready Foundation",
-          "text": "Clean code, optimized assets, and mobile-first templates give the site a fast-loading foundation from day one, rather than requiring a speed fix months after launch."
+          "title": "Core Web Vitals Performance",
+          "html": "Lightweight code, deferred scripts, next-gen WebP/AVIF images, and sub-2.5s LCP loading speeds built in from day one. See our <a href=\"/website-speed-optimization-services-kochi/\" class=\"text-primary font-semibold hover:underline\">Website Speed Optimization Services</a>."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "columns": 2,
+      "badge": "Technical Standards",
+      "h2": "Technical SEO Built Into Every Build",
+      "items": [
+        {
+          "title": "URL Structure & Canonicalization",
+          "text": "Strict single-canonical enforcement, HTTPS-only rewrites, trailing slash consistency, and 301 redirect mapping for site migrations."
+        },
+        {
+          "title": "Crawl Directives & Sitemaps",
+          "text": "Automated dynamic XML sitemaps submitted to search engines, optimized robots.txt directives, and noindex controls for staging and admin pages."
+        },
+        {
+          "title": "Mobile-First Indexing & Responsive Viewports",
+          "text": "Fluid viewport rendering, touch-friendly tap targets, and identical content parity between mobile and desktop displays."
+        },
+        {
+          "title": "AI-Search & Featured Snippet Optimization",
+          "html": "Question-led heading structures, concise definition blocks, and FAQPage schema engineered for Google AI Overviews and answer engines. For ongoing campaign growth, see our <a href=\"/seo-services/\" class=\"text-primary font-semibold hover:underline\">SEO Services</a>."
         }
       ]
     },
     {
       "type": "steps",
-      "bg": "white",
+      "bg": "cream",
       "badge": "How We Work",
-      "h2": "Our SEO-Friendly Website Development Process",
+      "h2": "How We Build for Search",
       "items": [
         {
-          "title": "Site Structure and Keyword Mapping.",
-          "text": "Pages and URLs are planned around real search intent before any design work starts."
+          "title": "1. Site Structure & Keyword Mapping (Week 1)",
+          "text": "Information architecture, topical cluster mapping, and URL slugs are planned around verified customer search intent before design commences."
         },
         {
-          "title": "Semantic Wireframing.",
-          "text": "Heading hierarchy, content blocks, and navigation are structured for both users and search engines."
+          "title": "2. Semantic Wireframing & Content Layout (Week 2)",
+          "text": "Heading hierarchies, internal contextual linking routes, and conversion CTAs are mapped for both search crawlers and human visitors."
         },
         {
-          "title": "Clean Development.",
-          "text": "The site is coded on a lightweight, semantic foundation with schema markup and clean URLs built in from the start."
+          "title": "3. Clean Code & Schema Implementation (Weeks 3-4)",
+          "text": "Frontend templates are coded on a semantic foundation with automated JSON-LD schema, optimized asset bundles, and responsive CSS."
         },
         {
-          "title": "Technical Readiness Check.",
-          "text": "Every page is tested for crawlability, mobile performance, and structured data before launch."
+          "title": "4. Technical Pre-Launch Audit (Week 5)",
+          "text": "Every page is tested for mobile crawlability, Core Web Vitals speed scores, 404 broken links, and Google Rich Results Schema validity."
         },
         {
-          "title": "SEO Handover.",
-          "text": "The finished site is handed to our SEO team with a clean technical foundation already in place, ready for ongoing optimization."
+          "title": "5. Search Console & Analytics Handover (Week 6)",
+          "text": "Google Search Console, XML sitemaps, and GA4 tracking are activated at go-live, with a seamless handover to our SEO team for local and national rankings."
         }
       ]
     },
@@ -83,57 +117,67 @@
       "bg": "soft",
       "columns": 3,
       "badge": "The Teknoppy Advantage",
-      "h2": "Why Choose Teknoppy for SEO-Friendly Website Development in Kochi",
+      "h2": "Why Teknoppy",
       "items": [
         {
-          "title": "Development and SEO Teams Work Together, Not in Silos",
-          "text": "Our developers build alongside our in-house SEO team from the planning stage, so search readiness is designed in, not audited in after the fact."
+          "title": "Developers & SEO Strategists Collaborate",
+          "text": "Our developers sit alongside our in-house SEO team from day one. Technical search requirements are built into the design, not audited in after launch."
         },
         {
-          "title": "We Build the Foundation Competitors Fix Later",
-          "text": "Many agencies deliver a site and leave SEO structure for a separate project. We treat clean code, semantic structure, and schema as core parts of website development itself, not an add-on service."
+          "title": "We Build It Right the First Time",
+          "text": "We eliminate the common industry practice of delivering a slow website and then selling an expensive technical SEO fix later. Search readiness is part of development."
         },
         {
-          "title": "Platform-Flexible, Not Template-Locked",
-          "text": "Whether the build is on WordPress, a custom stack, or an ecommerce platform, the same SEO-friendly website development standards apply across every project."
+          "title": "Platform-Agnostic Standards",
+          "text": "Whether building on WordPress, Shopify, Astro, Next.js, or custom Laravel, our rigorous technical SEO standards apply across every project."
         }
       ]
     },
     {
       "type": "bullets",
       "bg": "white",
-      "h2": "Who Needs SEO-Friendly Website Development",
-      "intro": "This service is built for businesses that want search visibility designed in from the start, not patched in after launch.",
+      "h2": "Who Needs It",
+      "intro": "This service is built for businesses that want organic search visibility engineered into their website from day one:",
       "items": [
-        { "text": "Businesses building a new website who want to avoid a costly SEO retrofit six months after going live." },
-        { "text": "Businesses that tried a template-based or do-it-yourself site builder and hit a ceiling on technical SEO control." }
+        { "text": "New businesses planning a web launch and aiming to avoid costly technical SEO overhauls months down the line." },
+        { "text": "Companies rebuilding outdated websites that suffer from crawl errors, duplicate content, or Google mobile penalties." },
+        { "text": "Businesses in competitive local sectors that require every technical advantage to outrank legacy competitors." }
       ],
       "outro": [
         {
-          "html": "Businesses in competitive local sectors who need every structural advantage, similar to the sites we support through our <a href=\"/web-design-for-startups-kerala/\" class=\"text-primary font-semibold hover:underline\">Startup Website Design</a> and <a href=\"/web-design-for-real-estate-kerala/\" class=\"text-primary font-semibold hover:underline\">Real Estate Website Design</a> pages."
+          "html": "Already have an active website and wondering where it stands technically? Request a comprehensive evaluation through our <a href=\"/free-website-audit-kerala/\" class=\"text-primary font-semibold hover:underline\">Free Website Audit</a>, or if you need a complete redesign, see our <a href=\"/website-redesign-services-kochi/\" class=\"text-primary font-semibold hover:underline\">Website Redesign Services</a>."
         }
       ]
     },
     {
       "type": "prose",
       "bg": "cream",
-      "h2": "SEO-Friendly Website Development Projects We've Delivered",
+      "h2": "Sites We've Built",
       "paragraphs": [
         {
-          "text": "We build every new website with the same SEO-first foundation across ecommerce, professional services, and institutional projects, from initial URL planning through to schema markup at launch."
+          "html": "<strong>General Tech Services (Dubai & Sharjah):</strong> Architected a high-performing multi-division industrial calibration website. The technical SEO foundation resulted in a <strong>+180% increase in organic RFQ leads</strong>, 30+ top-3 Google rankings across the UAE, and a 1.4-second mobile load time."
         },
         {
-          "html": "See more completed builds in our <a href=\"/portfolios/website-projects/\" class=\"text-primary font-semibold hover:underline\">website design projects portfolio</a>."
+          "html": "<strong>Technical Re-Architecture & Speed Fix:</strong> Modernized an enterprise corporate portal, lifting Google PageSpeed scores from 31/100 to 96/100, resolving 200+ crawl errors, and achieving immediate indexing for new service lines."
+        },
+        {
+          "html": "Explore more case studies on our <a href=\"/portfolios/\" class=\"text-primary font-semibold hover:underline\">Portfolio</a> and <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">Case Studies</a> pages."
         }
       ]
     },
     {
       "type": "prose",
       "bg": "white",
-      "h2": "SEO-Friendly Website Development Pricing",
+      "h2": "Pricing",
       "paragraphs": [
         {
-          "html": "Pricing for SEO-friendly website development depends on the number of pages, the platform, and the depth of technical SEO work required at the development stage. For a full breakdown by scope, see our <a href=\"/web-design-pricing-kerala/\" class=\"text-primary font-semibold hover:underline\">website design pricing</a> page or try the <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">website cost calculator</a>."
+          "html": "<strong>Built-In with Every Teknoppy Website:</strong> Full technical SEO — semantic code, clean URL structures, XML sitemaps, and JSON-LD schema — is included in every website we build at no extra charge. New business websites start from ₹25,000; see our full <a href=\"/web-design-pricing-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Design Pricing</a>."
+        },
+        {
+          "html": "<strong>Standalone Technical SEO Audit & Code Remediation:</strong> ₹15,000 – ₹35,000. For businesses with an existing website needing schema implementation, Core Web Vitals tuning, and crawl error fixes without a full redesign."
+        },
+        {
+          "html": "Need an assessment of your project? <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a> or <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">Book a Consultation</a>."
         }
       ]
     },
@@ -142,10 +186,12 @@
       "bg": "soft",
       "h2": "Related Services",
       "items": [
-        { "label": "Website Design and Development", "href": "/web-design-company-kochi/", "text": "the parent service this page sits under." },
-        { "label": "Responsive Web Design", "href": "/responsive-web-design-kochi/", "text": "for businesses building a new site with mobile-first design." },
-        { "label": "CMS Website Development", "href": "/cms-website-development-kochi/", "text": "for a content system built to make future updates easier." },
-        { "label": "Website Redesign Services", "href": "/website-redesign-services-kochi/", "text": "for sites that need a full rebuild rather than a new build." }
+        { "label": "SEO Services Kochi", "href": "/seo-services/", "text": "ongoing keyword ranking and off-page SEO campaigns" },
+        { "label": "Local SEO Services Kochi", "href": "/local-seo-services-kochi/", "text": "Google Business Profile and local map rankings" },
+        { "label": "SEO Company Kerala", "href": "/seo-company-kerala/", "text": "statewide search acquisition strategies" },
+        { "label": "Website Design and Development", "href": "/web-design-company-kochi/", "text": "our full web design pillar" },
+        { "label": "Website Redesign Services", "href": "/website-redesign-services-kochi/", "text": "rebuilding sites with deep technical limitations" },
+        { "label": "Website Speed Optimization", "href": "/website-speed-optimization-services-kochi/", "text": "Core Web Vitals performance remediation" }
       ]
     },
     {
@@ -153,40 +199,41 @@
       "bg": "white",
       "center": true,
       "badge": "Have Questions?",
-      "h2": "Frequently Asked Questions — SEO-Friendly Website Development",
+      "h2": "SEO-Friendly Website FAQs",
       "items": [
         {
           "q": "What makes a website SEO friendly?",
-          "a": "Clean semantic code, a logical heading hierarchy, crawlable navigation, fast-loading pages, and schema markup built in from development, so search engines can read, index, and understand the site without extra fixes later."
+          "a": "An SEO-friendly website requires clean semantic HTML5 markup, a logical single-H1 heading hierarchy, crawlable internal linking with descriptive anchors, mobile-first responsive design, fast Core Web Vitals load times (LCP < 2.5s), XML sitemaps, and structured JSON-LD schema markup."
         },
         {
-          "q": "Does website development affect SEO rankings?",
-          "a": "Yes. Technical decisions made during development, including code structure, page speed, mobile responsiveness, and URL design, directly influence how well a site can rank, regardless of how strong the content or off-page SEO is later."
+          "q": "Does an SEO-friendly website guarantee top Google rankings?",
+          "a": "No developer can honestly guarantee #1 rankings. SEO-friendly development removes all technical barriers so Google can crawl, index, and understand your content. Final rankings depend on content depth, competition, and ongoing off-page authority, which is covered by our ongoing SEO Services."
         },
         {
-          "q": "Is SEO-friendly website development different from regular SEO services?",
-          "a": "Yes. This is about how the site is built, not ongoing optimization work after launch. A well-built foundation makes every SEO effort afterward more effective, but it does not replace ongoing SEO services."
+          "q": "Which platform is best for an SEO-friendly website?",
+          "a": "WordPress, Shopify, Astro, and custom headless stacks can all rank at the top of search results when engineered correctly. We select the platform based on your team's editorial workflows and apply the exact same rigorous technical SEO checklist across all builds."
         },
         {
-          "q": "Can an existing website be made SEO friendly without a full rebuild?",
-          "a": "In many cases, yes, through structural and technical fixes. Sites with deeper technical limitations often perform better with a rebuild, which is where our Website Redesign Services page can help."
+          "q": "Is SEO-friendly website development different from ongoing SEO services?",
+          "a": "Yes. SEO-friendly development establishes the technical code and architectural foundation during the build stage. Ongoing SEO involves ongoing keyword research, content publishing, backlink acquisition, and conversion optimization after launch."
         },
         {
-          "q": "Do you offer SEO-friendly website development on WordPress and custom platforms?",
-          "a": "Yes. The same standards, including clean code, semantic structure, and schema markup, apply whether the site is built on WordPress, a custom stack, or an ecommerce platform."
+          "q": "Can an existing website be made SEO-friendly without a full rebuild?",
+          "a": "Yes, in many cases we can resolve technical errors, rewrite meta tags, add missing schema markup, and optimize images directly on your existing site. If the underlying code is deeply flawed, our Website Redesign Services provide a more cost-effective solution."
         },
         {
           "q": "How long does SEO-friendly website development take?",
-          "a": "Timelines depend on the number of pages and the platform, but building SEO structure in from the start typically adds minimal time compared to a standard build, and avoids a much larger retrofit project later."
+          "a": "Because we build with search best practices natively, an SEO-friendly build typically takes 3 to 6 weeks — the same timeframe as a standard professional website — saving you months of expensive retrofits later."
         }
       ]
     },
     {
       "type": "cta",
+      "draft": true,
       "bg": "cream",
       "h2": "Ready to Build a Website That's SEO-Ready From Day One?",
       "paragraphs": [
-        { "text": "A website built without SEO in mind almost always needs expensive rework later, including restructured URLs, rewritten headings, and retrofitted schema. Building it right the first time avoids that entirely." }
+        { "text": "Tell us about your new site or the one you want rebuilt. We will reply within one business day with a page plan, platform recommendation and quote." }
       ],
       "ctas": [
         { "label": "Book a Consultation", "href": "/book-a-consultation/" },
@@ -196,26 +243,12 @@
     {
       "type": "byline",
       "bg": "white",
-      "text": "Teknoppy · Kochi, Kerala · +91 6282249224 · sales@teknoppy.com"
+      "text": "Teknoppy · Vyttila, Kochi, Kerala · +91 6282249224 · sales@teknoppy.com — Reviewed by Niya K K, SEO Lead & Sanal Edison, Digital Strategist · October 2026"
     }
   ],
   "devNotes": {
     "source": "SEO-Friendly Website Development in Kochi.pdf",
     "primaryKeyword": "SEO-Friendly Website Development",
-    "wordCount": "1,192 words",
-    "keywordDensity": "1.9% (target: 1.8-2.0%)",
-    "schema": "Service + LocalBusiness + FAQPage + BreadcrumbList",
-    "internalLinks": "parent pillar, 3 sibling pages, 2 industry pages, 2 lead-gen pages",
-    "metaLayerNotSupplied": "Doc has no Title Tag or Meta Description row. Title follows the sibling pattern (H1 + | Teknoppy). Description is purpose-written at 156 characters rather than reusing the doc's opening paragraph.",
-    "heldPlaceholders": [
-      "Why Choose Teknoppy — [STAT NEEDED — verified figure, such as average indexing time or early ranking movement tied to a site built this way]. Held: the section renders three cards instead of four rather than shipping an invented figure.",
-      "Projects We've Delivered — [STAT NEEDED — time to first indexing, early ranking movement, or organic traffic growth once client sign-off is confirmed]. Held."
-    ],
-    "statsConflict": "Doc supplied '13+ Years Serving Kerala Businesses · 150+ Websites Delivered'. Note this conflicts with the CMS doc's own '10+ Years · 150+'. Both replaced with the canonical trustline from src/data/site.json per its _statsNote. The doc's third trustline item (In-House Dev & SEO Teams) is non-numeric and kept verbatim.",
-    "bylineEmail": "Doc supplied sanal@teknoppy.com. Replaced with sales@teknoppy.com, the address used sitewide.",
-    "openItems": [
-      "Author line and 'Reviewed: [Month Year]' to be added by content owner.",
-      "Body copy is transcribed verbatim from the source PDF. Only the trustline and byline follow the sitewide canon."
-    ]
+    "schema": "Service + LocalBusiness + FAQPage + BreadcrumbList"
   }
 }

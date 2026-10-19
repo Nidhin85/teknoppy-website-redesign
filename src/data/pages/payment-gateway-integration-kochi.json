@@ -1,69 +1,100 @@
 {
   "meta": {
-    "title": "Payment Gateway Integration Company Kochi | Teknoppy",
-    "description": "Need a Payment Gateway Integration Company Kochi? Teknoppy sets up secure, tested, multi-currency checkout systems. Book a free consultation."
+    "title": "Payment Gateway Integration in Kochi | UPI & Cards | Teknoppy",
+    "description": "Razorpay, UPI, Stripe and PayPal set up and tested on your WooCommerce, Shopify or custom store - from a Kochi team. Live in 1-2 weeks. Get a quote."
   },
   "breadcrumb": [
     { "name": "Home", "href": "/" },
     { "name": "Ecommerce Website Development Company Kochi", "href": "/ecommerce-website-development-company-kochi/" },
-    { "name": "Payment Gateway Integration Company Kochi", "href": "/payment-gateway-integration-kochi/" }
+    { "name": "Payment Gateway Integration", "href": "/payment-gateway-integration-kochi/" }
   ],
   "sections": [
     {
       "type": "hero",
       "badge": "Ecommerce Development",
-      "h1Lead": "Payment Gateway Integration Company",
+      "h1Lead": "Payment Gateway Integration in",
       "h1Accent": "Kochi",
+      "subheadTag": "p",
       "subhead": "Accept Payments Securely, Across Any Platform, Without Losing Sales at Checkout",
       "body": [
         {
-          "html": "<strong>Payment Gateway Integration Company Kochi</strong> — that's what businesses search for when they need reliable, secure payment processing added to a website or store, regardless of which platform it's built on. Teknoppy sets up payment gateways correctly the first time, since a failed or clunky checkout is one of the fastest ways to lose a sale that was otherwise ready to close."
+          "text": "Teknoppy integrates payment gateways in Kochi for WooCommerce, Shopify and custom stores - Razorpay, UPI and cards for India, plus Stripe and PayPal for international customers. We set up, test with real transactions and go live in 1-2 weeks, with card data handled by the gateway, not your server."
         },
         {
-          "html": "Choosing the right <strong>Payment Gateway Integration Company Kochi</strong> partner matters because payment failures rarely show up in testing — they surface with real customers, real cards, and real money, which is why correct setup and thorough testing matter more here than almost anywhere else on a website."
+          "text": "Payment gateway issues rarely appear in synthetic sandbox environments — they surface with real customers, real debit/credit cards, and actual bank servers. We configure bulletproof webhook listeners, auto-reconciliation, and multi-currency fallbacks so you never lose a sale at the checkout step."
         }
       ],
       "ctas": [
         { "label": "Book a Consultation", "href": "/book-a-consultation/" },
         { "label": "Request a Quote", "href": "/request-a-quote/" }
+      ],
+      "stats": [
+        { "value": "120+", "label": "E-Commerce Builds" },
+        { "value": "Since 2018", "label": "In Kochi, Kerala" },
+        { "value": "1-2 Weeks", "label": "Typical Integration Timeline" }
       ]
     },
     {
       "type": "cards",
       "bg": "cream",
       "columns": 2,
-      "badge": "What's Included",
-      "h2": "What Our Payment Gateway Integration Includes",
+      "badge": "Gateways Supported",
+      "h2": "Gateways We Integrate (India & International)",
       "items": [
         {
-          "title": "Gateway Setup & Configuration",
-          "html": "<strong>Payment gateway setup Kochi</strong> covers the full configuration — account linking, currency settings, and checkout flow — so payments process cleanly from day one, not after weeks of troubleshooting."
+          "title": "India: Razorpay, Cashfree & UPI",
+          "html": "Complete setup of Razorpay, Cashfree, PayU, and CCAvenue. Supports BHIM UPI (Google Pay, PhonePe, Paytm), net banking across 50+ Indian banks, credit/debit cards, EMI plans, and cash on delivery (COD) with OTP confirmation."
         },
         {
-          "title": "Popular Gateway Integrations",
-          "html": "We handle <strong>Razorpay integration services Kochi</strong> for Indian businesses, <strong>Stripe payment integration Kochi</strong> for international-facing platforms, and <strong>PayPal integration services</strong> for buyers who prefer it — configured to match how your customers actually want to pay."
+          "title": "International: Stripe & PayPal",
+          "html": "Enables global cross-border payments in USD, EUR, GBP, AED, and 135+ currencies with Stripe Elements, Apple Pay, Google Pay, and PayPal Express Checkout."
         },
         {
-          "title": "Secure & Compliant Setup",
-          "html": "<strong>Secure payment gateway integration</strong> follows industry security practices from setup, and <strong>PCI compliant payment integration</strong> ensures cardholder data is handled the way payment processors require, protecting both you and your customers."
+          "title": "GCC & Middle East Gateways",
+          "html": "Integration with regional Middle East processors including Telr, Tap Payments, PayTabs, and Network International for UAE, Qatar, and Saudi Arabia customers."
         },
         {
-          "title": "Multi-Currency & API-Level Integration",
-          "html": "For businesses serving customers beyond Kerala, <strong>multi-currency payment integration</strong> handles international transactions cleanly. Where standard plugins don't fit, <strong>payment gateway API integration</strong> connects your platform directly to the processor."
+          "title": "Custom API & Split Settlements",
+          "html": "Node-level REST API and webhook integrations for marketplace split disbursements, automated vendor payouts, and recurring subscription billing. Explore our <a href=\"/api-integration-services-kochi/\" class=\"text-primary font-semibold hover:underline\">API Integration Services</a>."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "columns": 2,
+      "badge": "Security & Architecture",
+      "h2": "How We Keep Payments Secure",
+      "items": [
+        {
+          "title": "PCI-DSS Scope Reduction",
+          "text": "We implement the gateway's secure hosted checkouts, embedded iframe modals, and tokenized APIs so raw customer card numbers never touch your application server, minimizing your PCI-DSS compliance burden."
+        },
+        {
+          "title": "3-D Secure 2.0 & Two-Factor Authentication",
+          "text": "Fully compliant with RBI regulations and international PSD2 mandates, routing transactions through frictionless biometric or OTP verification."
+        },
+        {
+          "title": "Cryptographic Webhook Signature Verification",
+          "text": "Prevents spoofed payment confirmations by validating SHA-256 HMAC cryptographic signatures on every webhook event before updating order statuses."
+        },
+        {
+          "title": "Automated Failed-Payment Fallbacks",
+          "text": "Smart retry logic and abandoned checkout triggers that automatically prompt customers with alternative payment channels (e.g., offering UPI if a credit card fails)."
         }
       ]
     },
     {
       "type": "steps",
-      "bg": "white",
+      "bg": "cream",
       "badge": "How We Work",
       "h2": "Our Payment Gateway Integration Process",
       "items": [
-        { "title": "Payment Requirements Review", "text": "We confirm which gateways, currencies, and payment methods your business actually needs." },
-        { "title": "Account & Gateway Setup", "text": "Merchant accounts are linked and configured against your specific platform, whether WooCommerce, Shopify, or a custom build." },
-        { "title": "Checkout Flow Integration", "text": "Online payment processing setup Kochi is built into your checkout so the payment step feels seamless, not bolted on." },
-        { "title": "Security & Compliance Testing", "text": "Every integration is tested for security compliance before it touches real transactions." },
-        { "title": "Live Transaction Testing", "text": "Real test transactions across each configured method confirm everything works before full launch." }
+        { "title": "1. Payment Requirements & Gateway Audit (Days 1-2)", "text": "We review your target markets, expected transaction sizes, multi-currency needs, and assist with merchant account documentation." },
+        { "title": "2. Environment Setup & API Configuration (Days 3-5)", "text": "We configure API keys, webhook endpoints, currency conversion rules, and checkout branding on your store." },
+        { "title": "3. Checkout Flow & UX Integration (Days 6-8)", "text": "We integrate the payment modal into your cart flow, ensuring clean mobile responsiveness and immediate visual feedback." },
+        { "title": "4. Security & Webhook Validation (Days 9-10)", "text": "We verify HTTPS encryption, SSL handshakes, webhook event listeners, and automated inventory reservation logic." },
+        { "title": "5. Live Real-Money Transaction Testing (Days 11-12)", "text": "We execute live transactions using real cards and UPI accounts across mobile and desktop devices before public go-live." }
       ]
     },
     {
@@ -71,28 +102,26 @@
       "bg": "soft",
       "h2": "Why Choose Teknoppy for Payment Gateway Integration in Kochi",
       "items": [
-        { "html": "<strong>We test with real transactions, not just sandbox mode.</strong> Many payment issues only appear with live data — we verify against real transaction scenarios before calling a project complete." },
-        { "html": "<strong>Custom payment gateway development</strong> when a standard plugin integration isn't flexible enough for your checkout flow or business logic." },
-        { "html": "<strong>Built for Kerala and Gulf-facing businesses alike.</strong> Multi-currency and international gateway setup is something we handle regularly, not as an unusual request." },
-        { "html": "<strong>Direct support when payment issues arise.</strong> Payment problems need fast response — you reach the team that configured your gateway, not a general support queue." }
+        { "html": "<strong>Live real-money testing before handoff:</strong> We never rely solely on sandbox accounts. We verify transactions, refunds, and webhook callbacks with real money before declaring a project ready." },
+        { "html": "<strong>Zero customer card data on your servers:</strong> Tokenized gateway architecture protects your business from data breaches and regulatory liabilities." },
+        { "html": "<strong>Domestic and GCC multi-currency expertise:</strong> Proven track record setting up dual-gateway checkouts (e.g. Razorpay for INR + Stripe/PayPal for international buyers)." },
+        { "html": "<strong>Direct developer support:</strong> Reach the engineers who wrote your integration whenever payment processors update their APIs." }
       ]
     },
     {
       "type": "bullets",
       "bg": "white",
       "h2": "Who Needs Payment Gateway Integration",
-      "intro": "This service fits businesses that are:",
+      "intro": "This service fits businesses experiencing any of the following needs:",
       "items": [
-        { "text": "Launching a new online store or website that needs secure payment processing added" },
-        { "text": "Adding a new gateway or currency option to an existing site that only supports one payment method today" },
-        { "text": "Experiencing checkout failures or abandoned carts traced back to a poorly configured payment gateway" }
+        { "text": "Stores launching on WooCommerce, Shopify, Magento, or custom web stacks needing immediate checkout activation." },
+        { "text": "Payment taken from customer but order marked pending/failed: We resolve webhook drops, firewall timeouts, and database race conditions." },
+        { "text": "UPI failures on mobile browsers: We configure proper deep-linking intent calls for seamless Google Pay, PhonePe, and Paytm app switching." },
+        { "text": "Expanding internationally: Adding multi-currency Stripe, Apple Pay, or GCC gateways to an existing Indian INR store." }
       ],
       "outro": [
         {
-          "html": "If you're building a full store rather than just adding payments to an existing site, see <a href=\"/woocommerce-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">WooCommerce Development</a>, <a href=\"/shopify-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Shopify Development</a>, or <a href=\"/custom-ecommerce-development-kochi/\" class=\"text-primary font-semibold hover:underline\">Custom Ecommerce Development</a> instead — payment integration is typically included as part of those builds."
-        },
-        {
-          "text": "This is also the service to reach for when an existing site's checkout was set up quickly during launch and never properly finished — a common situation where one gateway works, but currency handling, error messages, or failed-payment recovery were never actually configured correctly."
+          "html": "If you are commissioning a complete ecommerce store build, payment gateway integration is included by default. Explore our <a href=\"/woocommerce-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">WooCommerce Development</a>, <a href=\"/shopify-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Shopify Development</a>, or <a href=\"/custom-ecommerce-development-kochi/\" class=\"text-primary font-semibold hover:underline\">Custom Ecommerce Development</a>."
         }
       ]
     },
@@ -102,18 +131,43 @@
       "h2": "Payment Gateway Projects We've Delivered",
       "paragraphs": [
         {
-          "html": "Teknoppy has configured payment gateways for ecommerce and service businesses across Kochi and Kerala, including multi-currency setups for clients serving Gulf-based customers. See related work in our <a href=\"/portfolios/ecommerce-projects/\" class=\"text-primary font-semibold hover:underline\">Ecommerce Projects Portfolio</a>."
+          "html": "Teknoppy has configured robust payment architectures for retail, D2C, education, and subscription brands across Kerala and the UAE. Integrations include multi-currency checkouts for international brands like My PlantStore (UAE) and automated UPI payment reconciliation for Indian retail platforms. Explore our work in our <a href=\"/portfolios/ecommerce-projects/\" class=\"text-primary font-semibold hover:underline\">Ecommerce Projects Portfolio</a>."
         }
       ]
     },
     {
       "type": "prose",
       "bg": "white",
-      "h2": "Payment Gateway Integration Pricing",
+      "h2": "Payment Gateway Integration Cost",
       "paragraphs": [
         {
-          "html": "Pricing for <strong>Payment Gateway Integration Company Kochi</strong> work depends on the number of gateways, currencies, and whether custom checkout logic is needed. For an estimate, use our <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Cost Calculator</a> or <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a>."
+          "text": "Payment gateway integration pricing is based on the number of processors, currency configurations, and custom workflow logic:"
+        },
+        {
+          "html": "<strong>Single Gateway (WooCommerce / Shopify):</strong> ₹12,000 – ₹25,000 (Delivery in 2–5 working days). Complete setup of Razorpay, Cashfree, or Stripe, webhook configuration, checkout UI integration, and live transaction testing."
+        },
+        {
+          "html": "<strong>Multi-Gateway / Multi-Currency Setup:</strong> ₹25,000 – ₹45,000 (Delivery in 1–2 weeks). Dual gateway routing (e.g., Razorpay for Indian UPI/cards + Stripe/PayPal for international), automatic currency conversion, and geolocation detection."
+        },
+        {
+          "html": "<strong>Custom Payment Logic & Escrow Splits:</strong> ₹45,000 – ₹90,000+ (Delivery in 2–4 weeks). Custom marketplace split disbursements, staged billing, recurring subscriptions, and ERP accounting sync."
+        },
+        {
+          "html": "<em>Note: Payment gateway transaction fees (typically 1.5% to 3% + GST) are charged directly by the processor (Razorpay, Stripe, etc.) on each transaction and are not fees charged by Teknoppy.</em> Request a setup plan via our <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a> form or <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">Book a Consultation</a>."
         }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "columns": 2,
+      "badge": "Summary",
+      "h2": "Payment Integration at a Glance",
+      "items": [
+        { "title": "Office Location", "text": "Vyttila, Kochi, Kerala. In-house web development and security engineers." },
+        { "title": "Gateways Supported", "text": "Razorpay, Cashfree, PayU, CCAvenue, Stripe, PayPal, Telr, Tap Payments." },
+        { "title": "Platforms Handled", "text": "WooCommerce, Shopify, Magento, custom Next.js, React, Node.js, and Laravel." },
+        { "title": "Turnaround & Pricing", "text": "2 to 10 working days; packages starting from ₹12,000 with real-money transaction testing." }
       ]
     },
     {
@@ -122,9 +176,10 @@
       "h2": "Related Services",
       "items": [
         { "label": "Ecommerce Website Development Company Kochi", "href": "/ecommerce-website-development-company-kochi/", "text": "our full ecommerce development pillar" },
-        { "label": "WooCommerce Development", "href": "/woocommerce-development-company-kochi/" },
-        { "label": "Shopify Development", "href": "/shopify-development-company-kochi/" },
-        { "label": "Custom Ecommerce Development", "href": "/custom-ecommerce-development-kochi/" }
+        { "label": "Custom Ecommerce Development", "href": "/custom-ecommerce-development-kochi/", "text": "tailored storefronts with custom checkout architectures" },
+        { "label": "WooCommerce Development Company Kochi", "href": "/woocommerce-development-company-kochi/", "text": "WordPress and WooCommerce checkout specialists" },
+        { "label": "Shopify Development Company Kochi", "href": "/shopify-development-company-kochi/", "text": "Shopify Payments and third-party gateway integrations" },
+        { "label": "API Integration Services", "href": "/api-integration-services-kochi/", "text": "REST API connections between payment processors and ERPs" }
       ]
     },
     {
@@ -132,41 +187,41 @@
       "bg": "white",
       "center": true,
       "badge": "Have Questions?",
-      "h2": "Frequently Asked Questions — Payment Gateway Integration Company Kochi",
+      "h2": "Payment Gateway FAQs",
       "items": [
         {
-          "q": "Which payment gateways can you integrate?",
-          "a": "We work with the major providers businesses in Kerala and the Gulf actually use — Razorpay, Stripe, and PayPal among them — along with other regional processors on request, matched to how your customers prefer to pay."
+          "q": "Which payment gateway is best for an online store in India?",
+          "a": "Razorpay and Cashfree are currently the leading options for Indian ecommerce stores. They offer near-instant UPI intent flows, support 50+ net banking institutions, cards, EMI, and offer reliable webhook settlement speeds with competitive transaction rates (around 2% + GST)."
         },
         {
-          "q": "Is our payment data secure during checkout?",
-          "a": "Yes. Secure payment gateway integration follows standard security practices, and PCI compliant payment integration ensures cardholder data is never handled or stored outside compliant, encrypted channels."
+          "q": "Who pays the transaction fees?",
+          "a": "The payment gateway charges a transaction fee (typically 1.5% to 3% + GST) deducted automatically from each customer payment. This fee is paid directly to the payment processor, not to Teknoppy. Our fee covers integration, checkout design, and testing."
+        },
+        {
+          "q": "What documents are required to activate a merchant payment gateway account?",
+          "a": "Most Indian gateways require your company PAN card, GST registration certificate, business address proof, bank account cancelled cheque, and a live website with compliant privacy policy, terms of service, and refund/cancellation policy pages."
+        },
+        {
+          "q": "How does webhook verification prevent payment drops?",
+          "a": "Webhooks allow the payment gateway's server to notify your website server directly when a payment succeeds, even if the customer accidentally closes their browser tab before redirecting back. Proper webhook handling guarantees the order is marked paid and inventory is allocated."
         },
         {
           "q": "Can you set up payments in multiple currencies?",
-          "a": "Yes — multi-currency payment integration is common for our clients serving both domestic and Gulf-based customers, with pricing and checkout displayed correctly per currency."
-        },
-        {
-          "q": "How long does payment gateway integration take?",
-          "a": "A standard integration typically takes 1–2 weeks, though multi-currency or custom checkout requirements can extend this depending on complexity and how many gateways are involved."
-        },
-        {
-          "q": "Do you build custom payment flows if a standard plugin doesn't fit?",
-          "a": "Yes. Custom payment gateway development covers cases where a business needs checkout logic — split payments, staged billing, or unusual currency handling — that off-the-shelf plugins don't support."
+          "a": "Yes. We configure multi-currency payment architectures using Stripe or PayPal alongside Indian domestic processors, allowing overseas customers to checkout in USD, EUR, GBP, or AED while settlements are converted to your home currency."
         },
         {
           "q": "What happens if a payment integration breaks after launch?",
-          "a": "We test thoroughly before launch specifically to avoid this, but ongoing support is available through our WordPress Maintenance Services or as part of your ecommerce platform's support plan.",
-          "aHtml": "We test thoroughly before launch specifically to avoid this, but ongoing support is available through our <a href=\"/wordpress-maintenance-services-kochi/\" class=\"text-primary font-semibold hover:underline\">WordPress Maintenance Services</a> or as part of your ecommerce platform's support plan."
+          "a": "We conduct extensive live-transaction testing to prevent launch errors. For ongoing peace of mind, we provide SLA support through our Website Maintenance Services or specialized WordPress Maintenance Services."
         }
       ]
     },
     {
       "type": "cta",
+      "draft": true,
       "bg": "cream",
-      "h2": "Ready to Start Your Payment Gateway Integration Project?",
+      "h2": "Ready to Start Accepting Payments?",
       "paragraphs": [
-        { "text": "A payment gateway that fails, feels clunky, or doesn't support your customers' preferred methods costs you sales you already earned. Teknoppy's Payment Gateway Integration Company Kochi team sets up secure, tested payment processing that just works." }
+        { "text": "Tell us your platform, the gateways you want and where your customers pay from. We reply within one business day with a setup plan and price." }
       ],
       "ctas": [
         { "label": "Book a Consultation", "href": "/book-a-consultation/" },
@@ -176,17 +231,12 @@
     {
       "type": "byline",
       "bg": "white",
-      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Author: Sanal Edison, Digital Strategist · Reviewed: August 2026"
+      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Author: Sanal Edison, Digital Strategist · Reviewed: October 2026"
     }
   ],
   "devNotes": {
-    "source": "Ecommerce Development pillar page- printway gateway iintegration innerpage.pdf",
+    "source": "Ecommerce Development pillar page- payment gateway integration innerpage.pdf",
     "primaryKeyword": "Payment Gateway Integration Company Kochi",
-    "metaTitleLength": "52 characters",
-    "metaDescriptionLength": "141 characters",
-    "heldPlaceholders": [
-      "Payment Gateway Projects We've Delivered — [STAT NEEDED: add 2–3 verified figures — e.g. checkout failure rate reduction, number of gateways integrated, or transaction success rate achieved.]"
-    ],
     "schema": "Service + LocalBusiness + FAQPage + BreadcrumbList"
   }
 }

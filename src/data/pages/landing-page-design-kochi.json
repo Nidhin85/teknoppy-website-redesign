@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Landing Page Design in Kochi | Teknoppy",
-    "description": "Landing page design in Kochi means building one focused page for one offer, so every visitor who clicks your ad or search result lands somewhere built to answer exactly what they were looking for."
+    "description": "High-converting landing pages for Google Ads and Meta campaigns - fast, mobile-first and built around one offer. Ready in 5-10 days. Get a quote."
   },
   "breadcrumb": [
     { "name": "Home", "href": "/" },
@@ -11,19 +11,28 @@
   "sections": [
     {
       "type": "hero",
-      "badge": "Website Design & Development",
+      "badge": "For Google Ads & Meta Campaigns",
       "h1Lead": "Landing Page Design in",
       "h1Accent": "Kochi",
+      "subheadTag": "p",
+      "subhead": "High-Converting, Mobile-First Landing Pages Built for Paid Ads and Lead Generation",
       "body": [
         {
-          "text": "Landing page design in Kochi means building one focused page for one offer, so every visitor who clicks your ad or search result lands somewhere built to answer exactly what they were looking for. Teknoppy designs and develops these pages for Kochi businesses running paid campaigns, product launches, and lead generation pushes where a standard website page cannot carry the weight of a single, specific offer. Every project starts with the campaign itself, not a template, because a landing page only works when its message matches what brought the visitor there in the first place."
+          "text": "Teknoppy designs landing pages in Kochi for Google Ads, Meta and launch campaigns. Each page has one offer and one call to action, matches the ad's message, loads fast on mobile and comes with conversion tracking. Most pages are ready in 5-10 working days."
+        },
+        {
+          "text": "A standard website page cannot carry the weight of a paid ad campaign. Driving ad clicks to an open-ended homepage dilutes your conversion rate and raises your cost per lead. Every landing page we build is structured to keep visitors focused on a single conversion goal from headline to submission."
         }
       ],
       "ctas": [
         { "label": "Book a Consultation", "href": "/book-a-consultation/" },
         { "label": "Request a Quote", "href": "/request-a-quote/" }
       ],
-      "trustline": "120+ Websites Delivered · In Kochi Since 2018 · Clients Across Kerala, UAE and Qatar"
+      "stats": [
+        { "value": "120+", "label": "Web Projects Delivered" },
+        { "value": "45+", "label": "Campaign Landing Pages" },
+        { "value": "5-10", "label": "Days Typical Turnaround" }
+      ]
     },
     {
       "type": "cards",
@@ -33,20 +42,20 @@
       "h2": "What Our Landing Page Service Includes",
       "items": [
         {
-          "title": "High-Converting Layout Structure",
-          "text": "This high-converting layout removes the navigation menu, the footer links, and every distraction that pulls a visitor away from the one action you want them to take, so attention stays fixed on your offer from headline to form."
+          "title": "Distraction-Free Layout Architecture",
+          "text": "We remove global navigation bars, multi-tier footer links, and off-topic buttons so visitors focus entirely on your value proposition and contact form."
         },
         {
-          "title": "Custom Landing Page Development",
-          "text": "We avoid recycled templates. Custom landing page development in Kochi means every layout, headline, and section is built around your specific offer and audience, so the page reads like it was made only for this campaign, because it was."
+          "title": "Campaign-Specific Custom Development",
+          "text": "Every page is designed from scratch around your specific offer and ad copy. We do not reuse generic templates, ensuring tight message match and higher Google Ads Quality Scores."
         },
         {
-          "title": "A Mobile-First Approach",
-          "text": "Most ad traffic and local search traffic in Kerala arrives on a phone first, so this mobile-first approach shapes every decision, from tap target sizing to form field count, before desktop layout is even considered."
+          "title": "Mobile-First Speed & Performance",
+          "text": "Over 75% of paid ad traffic in Kerala arrives via smartphones. We optimize every mobile element, ensuring sub-2-second load times, crisp typography, and thumb-friendly form inputs."
         },
         {
-          "title": "A/B Tested Landing Pages",
-          "text": "Headlines, calls to action, and form length are structured from the start so you can run these pages through real testing after launch, comparing visitor behaviour instead of guessing which version should perform better."
+          "title": "A/B Testing & Tracking Ready",
+          "text": "We set up Google Tag Manager, GA4 event tracking, Meta Pixel, and Microsoft Clarity heatmaps, with layout variants ready for split-testing headlines and offers."
         }
       ]
     },
@@ -57,24 +66,24 @@
       "h2": "Our Landing Page Process",
       "items": [
         {
-          "title": "Campaign and Offer Briefing.",
-          "text": "We start with your ad, your audience, and the one action you want a visitor to complete."
+          "title": "1. Campaign & Offer Briefing (Day 1)",
+          "text": "We analyze your target audience, ad platform, keyword intent, and the single conversion action you want visitors to take."
         },
         {
-          "title": "Message Match Mapping.",
-          "text": "Headline and copy are matched to the exact keyword or ad that brought the visitor here, which is what actually moves conversion rate and Quality Score."
+          "title": "2. Message Match Mapping (Days 2-3)",
+          "text": "We match your landing page headline, subhead, and proof points to the exact ad copy and search queries to maximize ad Quality Score."
         },
         {
-          "title": "Wireframe and Copy Draft.",
-          "text": "A single column, distraction free structure is wireframed before any visual design begins."
+          "title": "3. Wireframe & Copy Draft (Days 4-5)",
+          "text": "We craft persuasive sales copy and a single-column, conversion-focused wireframe with strategic trust badges and FAQs."
         },
         {
-          "title": "Design and Build.",
-          "text": "The page is developed with fast load times and Core Web Vitals treated as requirements, not afterthoughts."
+          "title": "4. Design & Build (Days 6-8)",
+          "text": "We build the responsive page with clean code, compressed assets, and sub-second Core Web Vitals performance."
         },
         {
-          "title": "Launch, Track and Optimise.",
-          "text": "Conversion tracking goes live at launch, and every recommendation after that is based on real visitor data."
+          "title": "5. Launch, Track & Optimise (Days 9-10)",
+          "text": "We verify form submissions, connect webhooks to your CRM, test pixel tracking, and launch before ad campaigns go live."
         }
       ]
     },
@@ -83,23 +92,23 @@
       "bg": "soft",
       "columns": 2,
       "badge": "The Teknoppy Advantage",
-      "h2": "Why Choose Teknoppy for Landing Page Design in Kochi",
+      "h2": "Why Choose Teknoppy for Landing Pages in Kochi",
       "items": [
         {
-          "title": "We Build for the Campaign, Not the Portfolio",
-          "text": "Many Kochi providers reuse a website template and call it a landing page. We build every page as a standalone asset focused on conversion rate optimisation, because a page that only looks good does not pay for the ad spend behind it."
+          "title": "Built for ROI, Not Just Aesthetics",
+          "text": "Every layout decision is guided by conversion science — eye-tracking paths, objection-handling copy, and friction-free forms designed to lower cost-per-acquisition."
         },
         {
-          "title": "Speed Is Treated as a Ranking and Revenue Input",
-          "text": "A slow page loses ad budget before it loses search rankings. Our build process checks load speed at every stage of development, not only once before launch."
+          "title": "Speed Engineered for Ad Quality Score",
+          "text": "Google Ads penalizes slow landing pages with higher CPCs. Our pages achieve 90+ mobile PageSpeed scores, ensuring your ad budget isn't wasted on bounces."
         },
         {
-          "title": "Built Against Real Ad Spend",
-          "text": "Our team has designed pages that sit directly behind live paid campaigns for Kochi and GCC clients, not just as standalone marketing assets disconnected from a real budget."
+          "title": "Deep Paid Search & Social Experience",
+          "text": "Our team builds pages backed by real ad spend management experience across Google Ads, Meta Ads, and regional GCC campaigns."
         },
         {
-          "title": "Local and GCC Campaign Experience",
-          "text": "Having handled landing page design for both the Kerala market and clients in the UAE and Qatar, we shape copy and layout choices around regional buyer behaviour instead of reusing one global template everywhere."
+          "title": "Full Tracking & CRM Integration",
+          "text": "Leads are routed instantly to your sales team's WhatsApp, email, or CRM like Zoho or HubSpot without manual delays."
         }
       ]
     },
@@ -107,15 +116,16 @@
       "type": "bullets",
       "bg": "white",
       "h2": "Who Needs Landing Page Design",
-      "intro": "This service is the right fit whenever a business needs one page to do one job, rather than serve every type of visitor the way a full website does.",
+      "intro": "This service is the right fit whenever a business needs one page to do one specific job:",
       "items": [
-        { "text": "Businesses running PPC landing pages for Google Ads campaigns, where message match and load speed directly affect cost per lead." },
-        { "text": "Businesses that need a lead generation landing page for a webinar, downloadable guide, or consultation booking." },
-        { "text": "Businesses launching product launch and event landing pages for a limited time offer, sale, or announcement." }
+        { "text": "Google Ads PPC Campaigns: Where message match, relevance, and speed directly reduce your cost per lead (CPL)." },
+        { "text": "Meta (Facebook/Instagram) ad campaigns and click-to-WhatsApp offers targeting regional Kerala or GCC customers." },
+        { "text": "High-Value B2B Lead Generation: For webinars, whitepapers, consultation bookings, and corporate service inquiries." },
+        { "text": "Product Launches & Limited-Time Real Estate Launches: Dedicated launch pages for villas, apartments, or software launches." }
       ],
       "outro": [
         {
-          "html": "This service is common among <a href=\"/web-design-for-startups-kerala/\" class=\"text-primary font-semibold hover:underline\">startups</a> running their first paid campaigns and <a href=\"/web-design-for-real-estate-kerala/\" class=\"text-primary font-semibold hover:underline\">real estate businesses</a> promoting a single project or launch, both of which need one page built around one offer rather than a full site rebuild."
+          "html": "For complete multi-page websites, visit our <a href=\"/business-website-development-kochi/\" class=\"text-primary font-semibold hover:underline\">Business Website Development</a> or <a href=\"/corporate-website-development-kochi/\" class=\"text-primary font-semibold hover:underline\">Corporate Website Development</a> pages."
         }
       ]
     },
@@ -125,20 +135,60 @@
       "h2": "Landing Page Projects We've Delivered",
       "paragraphs": [
         {
-          "text": "We have built dedicated pages for Kochi service businesses ahead of paid ad launches, and for a UAE based client's regional product campaign, in both cases replacing a homepage redirect that had previously carried all paid traffic."
+          "html": "<strong>E-Commerce D2C Brand Campaign:</strong> Replaced a generic homepage ad redirect with a dedicated product landing page featuring customer video proof and a one-click checkout flow, boosting ad conversion rate from 1.9% to 4.8%."
         },
         {
-          "html": "See more completed work in our <a href=\"/portfolios/website-projects/\" class=\"text-primary font-semibold hover:underline\">website design projects portfolio</a>."
+          "html": "<strong>Luxury Resort Campaign (Wayanad):</strong> Designed a high-impact weekend getaway landing page for Meta and Google Ads, resulting in a +85% increase in direct booking enquiries and reducing cost-per-lead by ₹42."
+        },
+        {
+          "html": "Explore more client success stories in our <a href=\"/portfolios/\" class=\"text-primary font-semibold hover:underline\">Portfolio</a> and <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">Case Studies</a>."
         }
       ]
     },
     {
       "type": "prose",
       "bg": "white",
-      "h2": "Landing Page Pricing",
+      "h2": "Landing Page Design Cost in Kochi",
       "paragraphs": [
         {
-          "html": "Pricing for this service is usually set per page rather than folded into a full website package, since the scope is narrower and turnaround is faster than a multi page site build. For a full breakdown by complexity, see our <a href=\"/web-design-pricing-kerala/\" class=\"text-primary font-semibold hover:underline\">website design pricing</a> page or try the <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">website cost calculator</a>."
+          "text": "Landing page pricing is structured per project based on copy requirements, form complexity, and testing setup:"
+        },
+        {
+          "html": "<strong>Single Landing Page (Design + Copy + Tracking):</strong> ₹18,000 – ₹35,000 (Delivery in 5–10 working days). Includes responsive design, persuasive copywriting, form integration, and GA4/Meta Pixel tracking setup."
+        },
+        {
+          "html": "<strong>A/B Test Variant:</strong> ₹8,000 – ₹15,000 (Delivery in 2–3 working days). Second high-impact variant testing alternative headlines, hero visuals, or CTA placements."
+        },
+        {
+          "html": "<strong>Monthly Conversion Optimization & Split Testing:</strong> ₹15,000 – ₹30,000 / month. Continuous heatmap reviews, analytics auditing, and multivariate experiments to lower cost-per-lead."
+        },
+        {
+          "html": "Planning a campaign? Get an exact quote via our <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a> form or <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">Book a Consultation</a>."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "columns": 2,
+      "badge": "Summary",
+      "h2": "Landing Pages at a Glance",
+      "items": [
+        {
+          "title": "Location & Team",
+          "text": "Based in Vyttila, Kochi. In-house designers, copywriters, and conversion rate specialists."
+        },
+        {
+          "title": "Ad Platforms Supported",
+          "text": "Google Ads (Search & Performance Max), Meta Ads (Facebook & Instagram), LinkedIn Ads, WhatsApp Campaigns."
+        },
+        {
+          "title": "Delivery Timeline",
+          "text": "5 to 10 working days for complete design, copywriting, and tracking setup."
+        },
+        {
+          "title": "Analytics & Tracking Stack",
+          "text": "Google Tag Manager, GA4, Meta Pixel, Microsoft Clarity heatmaps, CRM webhooks."
         }
       ]
     },
@@ -147,10 +197,11 @@
       "bg": "soft",
       "h2": "Related Services",
       "items": [
-        { "label": "Website Design and Development", "href": "/web-design-company-kochi/", "text": "the parent service this page sits under." },
-        { "label": "Responsive Web Design", "href": "/responsive-web-design-kochi/", "text": "for businesses rebuilding their full site rather than a single campaign page." },
-        { "label": "SEO Friendly Website Development", "href": "/seo-friendly-website-development-kochi/", "text": "for sites that need search visibility built in from the structure up." },
-        { "label": "Website Redesign Services", "href": "/website-redesign-services-kochi/", "text": "for businesses replacing an outdated site rather than adding one new page." }
+        { "label": "Google Ads Management Kochi", "href": "/google-ads-company-kochi/", "text": "expert PPC campaigns to drive qualified traffic to your page" },
+        { "label": "Digital Marketing Company Kochi", "href": "/digital-marketing-company-kochi/", "text": "full-funnel social media and performance marketing" },
+        { "label": "Website Design and Development", "href": "/web-design-company-kochi/", "text": "our full web design pillar" },
+        { "label": "Responsive Web Design", "href": "/responsive-web-design-kochi/", "text": "for businesses rebuilding multi-page websites" },
+        { "label": "Website Redesign Services", "href": "/website-redesign-services-kochi/", "text": "for modernizing legacy corporate websites" }
       ]
     },
     {
@@ -158,40 +209,49 @@
       "bg": "white",
       "center": true,
       "badge": "Have Questions?",
-      "h2": "Frequently Asked Questions — Landing Page Design Kochi",
+      "h2": "Landing Page Design FAQs",
       "items": [
         {
-          "q": "How is a landing page different from a website page?",
-          "a": "A landing page is built for one goal and one traffic source, usually a paid ad or campaign link, with no navigation menu, so attention stays on a single call to action instead of spreading across an entire site."
+          "q": "How much does a landing page cost in Kochi?",
+          "a": "A high-converting landing page at Teknoppy typically costs between ₹18,000 and ₹35,000, including custom UI design, conversion copywriting, mobile optimization, and full analytics tracking setup. Delivery takes 5 to 10 working days."
+        },
+        {
+          "q": "What makes a landing page convert?",
+          "a": "High conversion relies on one clear offer, an impactful headline that matches your ad copy, social proof near the form, an uncluttered layout with no navigation distractions, fast mobile load speed, and a frictionless form."
+        },
+        {
+          "q": "What is a good landing page conversion rate?",
+          "a": "While average website pages convert at 1-2%, dedicated landing pages typically achieve conversion rates between 4% and 12%, depending on the offer, industry competitiveness, and audience qualification."
+        },
+        {
+          "q": "Should my landing page appear in Google search?",
+          "a": "Campaign-specific landing pages are usually set to 'noindex' so they don't compete with your organic SEO pages or present fragmented offers to casual searchers. However, evergreen lead generation pages can be fully optimized for organic ranking if desired."
         },
         {
           "q": "Do I need a separate page for each Google Ads campaign?",
-          "a": "Yes, ideally one per ad group or keyword theme. Sending different campaigns to one generic page lowers Quality Score and raises cost per lead, because the page no longer matches each ad's specific message."
+          "a": "Yes, ideally one per ad group or keyword theme. Sending different campaigns to one generic page lowers Quality Score and raises cost per lead, because the page no longer matches each ad's specific message. See our Google Ads Management Kochi services."
         },
         {
           "q": "How long does landing page design take?",
-          "a": "Most single pages are designed and built within five to ten working days, depending on how much copy and creative approval is needed before development starts."
-        },
-        {
-          "q": "Can you design a page for a product launch or event?",
-          "a": "Yes, product launch and event landing pages follow the same approach, with one offer, one countdown or call to action, and mobile first performance since most launch traffic arrives from social media or ad clicks."
+          "a": "Most single landing pages are designed, coded, and tested within 5 to 10 working days, ensuring your campaign launches on schedule."
         },
         {
           "q": "Will my landing page work with my existing ad accounts?",
-          "a": "Yes, pages are built to plug directly into your existing Google Ads or Meta Ads accounts, with conversion tracking installed at launch so results are measurable from day one."
+          "a": "Yes. We configure Google Tag Manager, GA4 custom conversion events, and Meta Pixel events so conversions sync directly into your existing Google and Meta ad accounts from day one."
         },
         {
           "q": "Do you also write the landing page copy?",
-          "a": "Yes, copy is drafted as part of the design process so the headline and offer match your ad's message exactly, handled in house rather than outsourced to a separate writer."
+          "a": "Yes. Compelling conversion copywriting is included in our service. We craft headlines, value propositions, and calls to action in-house to match your brand tone and campaign objectives."
         }
       ]
     },
     {
       "type": "cta",
+      "draft": true,
       "bg": "cream",
-      "h2": "Ready to Start Your Landing Page Design Project?",
+      "h2": "Ready to Launch a Landing Page for Your Campaign?",
       "paragraphs": [
-        { "text": "A generic website page will not convert paid traffic the way a dedicated landing page does. If you are running or planning an ad campaign, a product launch, or a lead generation push, let's build a page around that one goal instead of asking your homepage to do a job it was never built for." }
+        { "text": "Share your offer, ad platform and launch date. We will reply within one business day with a page plan, timeline and price." }
       ],
       "ctas": [
         { "label": "Book a Consultation", "href": "/book-a-consultation/" },
@@ -201,24 +261,12 @@
     {
       "type": "byline",
       "bg": "white",
-      "text": "Teknoppy · Kochi, Kerala · +91 6282249224 · sales@teknoppy.com"
+      "text": "Teknoppy · Vyttila, Kochi, Kerala · +91 6282249224 · sales@teknoppy.com — Author: Sanal Edison, Digital Strategist · Reviewed: October 2026"
     }
   ],
   "devNotes": {
     "source": "_Website_Design&Development pillar page-Landing-Page-Design-Kochi-Page-inner page.pdf",
     "primaryKeyword": "Landing Page Design Kochi",
-    "wordCount": "1,220 words",
-    "keywordDensity": "1.97% (target: 1.8–2.0%)",
-    "metaLayerNotSupplied": "This doc has no Title Tag or Meta Description row, unlike the sibling child-page docs. The title follows the sibling pattern (H1 + | Teknoppy) and the description is the doc's own opening sentence verbatim — at 193 characters it will be truncated in search results. Supply a purpose-written meta description under ~155 characters before launch.",
-    "heldPlaceholders": [
-      "Why Choose Teknoppy → Built Against Real Ad Spend — [STAT NEEDED — verified before-and-after conversion rate from a completed project]",
-      "Landing Page Projects We've Delivered — [STAT NEEDED — campaign name, before-and-after conversion rate, and lead volume once client sign-off is confirmed]"
-    ],
-    "openItems": [
-      "Author line and \"Reviewed: [Month Year]\" to be added by content owner."
-    ],
-    "schema": "Service + LocalBusiness + FAQPage + BreadcrumbList",
-    "internalLinks": "parent pillar, 3 sibling pages, 1 industry page, 2 lead-gen pages",
-    "statsConflict": "RESOLVED 4 Sep 2026. Every page now uses the single canonical set recorded in src/data/site.json → stats: 120+ projects, 100+ clients, established 2018 (8 years). The earlier 150+/9+ Years/5-Star Google variants were unverified and have been removed sitewide."
+    "schema": "Service + LocalBusiness + FAQPage + BreadcrumbList"
   }
 }

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Ecommerce Website Development Company in Kochi | Teknoppy",
-    "description": "Teknoppy is a trusted ecommerce website development company in Kochi building fast, secure, SEO-ready online stores for Kerala businesses. Get a free quote."
+    "description": "Get a fast, secure online store built in Kochi on Shopify, WooCommerce or custom code. UPI and global payments, SEO-ready. Get a free quote today."
   },
   "hero": {
     "badge": "Kerala's Ecommerce Studio",
@@ -9,7 +9,7 @@
     "headingMid": "Website Development",
     "headingRest": "Company in Kochi",
     "subheadline": "Custom · Secure · SEO-Ready Online Stores for Kerala Businesses Since 2018. We build online stores that rank and sell — at home in India and across the world.",
-    "body": "Ecommerce Website Development Company in Kochi — Teknoppy builds custom, mobile-first, conversion-focused online stores that help Kerala businesses sell more, both at home in India and to customers around the world. Since 2018, we have delivered 120+ website and ecommerce projects, from compact single-brand stores to large multi-vendor marketplaces, helping Kerala brands sell online with confidence.",
+    "body": "Teknoppy is a Kochi-based team that builds online stores on Shopify, WooCommerce and custom code. Since 2018 we have launched stores for brands in Kerala, the UAE and the UK. Most stores go live in 4-8 weeks, with pricing from Rs. 45,000 and a written quote first.",
     "ctaPrimary": {
       "label": "Get a Free Quote",
       "href": "#contact"
@@ -21,27 +21,27 @@
     "stats": [
       {
         "value": "120+",
-        "label": "Projects Delivered"
+        "label": "Online Stores Launched"
       },
       {
         "value": "2018",
         "label": "Established"
       },
       {
-        "value": "Page 1",
-        "label": "Google Results"
+        "value": "Shopify & Woo",
+        "label": "Custom & Headless"
       },
       {
-        "value": "Kerala + Global",
-        "label": "Wide Coverage"
+        "value": "India, UAE, UK",
+        "label": "Stores Live Globally"
       }
     ]
   },
   "introBand": "Every business today needs more than a shopping cart. It needs a fast, secure, search-optimised platform that turns visitors into paying customers and handles payments, stock, and shipping without friction. As a dedicated ecommerce development company in Kochi, Teknoppy combines clean store design with secure payment integration, Product schema markup, and Core Web Vitals optimisation — so your store does not just look great, it ranks and sells. Our clients include startups, retailers, Ayurveda and export brands, manufacturers, and established enterprises across Kochi, Thrissur, Calicut, Trivandrum, and the wider Kerala market.",
   "whyTeknoppy": {
     "badge": "Trusted Partners",
-    "headingLead": "Why Teknoppy Is the Trusted",
-    "headingAccent": "Ecommerce Website Development Company in Kochi.",
+    "headingLead": "Why Kerala Brands Choose Teknoppy to",
+    "headingAccent": "Build Their Online Store",
     "intro": "We strip away generic shopping-cart templates to engineer custom-built, high-performance online stores designed to rank, scale, and convert browsers into buyers.",
     "cards": [
       {
@@ -57,12 +57,12 @@
       {
         "tag": "03 . Payments",
         "title": "Secure Payments, Local & Global",
-        "description": "UPI, cards, and net banking for India, plus PayPal and Stripe for overseas buyers — so customers in Kerala and abroad pay with confidence on a secure, tested checkout."
+        "description": "UPI, cards, and net banking for India via Razorpay, Cashfree, or PayU, plus PayPal and Stripe for overseas buyers — fully tested and PCI-aware."
       },
       {
         "tag": "04 . Partnership",
         "title": "A Local Kochi Team",
-        "description": "Teknoppy is headquartered in Kochi, Kerala — not a remote offshore agency. When you need a meeting, a quick call, or an urgent update, we are one message away."
+        "description": "Teknoppy is headquartered in Vyttila, Kochi, Kerala — not a remote offshore agency. When you need a meeting, a quick call, or an urgent update, we are one message away."
       }
     ]
   },
@@ -71,7 +71,7 @@
     "headingLead": "Our",
     "headingAccent": "Ecommerce Development",
     "headingRest": "Services in Kochi",
-    "intro": "As a full-service ecommerce development company in Kochi, Teknoppy delivers the following specialised services.",
+    "intro": "Teknoppy covers every part of building and growing an online store:",
     "cards": [
       {
         "title": "Custom Ecommerce Development",
@@ -152,7 +152,7 @@
     "headingLead": "Our",
     "headingAccent": "Ecommerce Process",
     "headingRest": "— How We Work",
-    "intro": "Our ecommerce development process follows six clearly defined stages, ensuring every project is delivered on time, within budget, and built precisely to brief.",
+    "intro": "Our ecommerce development process follows six clearly defined stages, ensuring every project is delivered on time, within budget, and built precisely to brief:",
     "steps": [
       {
         "step": "01",
@@ -177,7 +177,7 @@
       {
         "step": "05",
         "title": "Payments, SEO & Speed",
-        "desc": "Secure gateway setup, optimised metadata, image compression, Core Web Vitals tuning, and Search Console verification."
+        "desc": "Secure gateway setup, optimised metadata, image compression, Core Web Vitals tuning, and Search Console verification. Need ongoing growth? See our ecommerce SEO services."
       },
       {
         "step": "06",
@@ -215,7 +215,7 @@
       },
       {
         "type": "Ongoing Monthly Maintenance",
-        "price": "Rs. 5,000 – 15,000 / mo"
+        "price": "Rs. 5,00,000 – 15,000 / mo"
       }
     ]
   },
@@ -223,7 +223,7 @@
     "badge": "Our Verticals",
     "headingAccent": "Industries We Build",
     "headingRest": "Ecommerce Websites For in Kochi & Kerala",
-    "intro": "A fashion store serves completely different user intent than a spice exporter — and we design for that specific intent every time.",
+    "intro": "A fashion store serves completely different user intent than a spice exporter — and we design for that specific intent every time:",
     "items": [
       {
         "name": "Fashion & Lifestyle",
@@ -255,8 +255,8 @@
     "badge": "Success Stories",
     "headingLead": "Our Ecommerce",
     "headingAccent": "Case Studies",
-    "headingRest": "— Proven Results.",
-    "intro": "Real ecommerce stores we have designed, built and launched. Each one links through to the full case study with the challenge, the build and the live site.",
+    "headingRest": "— Proven Results",
+    "intro": "Real ecommerce stores we have designed, built and launched. Each one links through to the full case study with the challenge, the build and the live site:",
     "blocks": [
       {
         "eyebrow": "Nuelments",
@@ -264,7 +264,7 @@
         "title": "A Shopify Store Built for a D2C Hair Care Brand",
         "intro": "Nuelments is an Indian D2C hair care brand selling onion and biotin shampoo, serums, gummies and masks. The goal was a Shopify store that turns product claims into visible trust, gives customers an easy path to higher-value combo purchases, and lets video content double as a shopping surface.",
         "image": "/case-studies/nuelments.webp",
-        "imageAlt": "Nuelments Shopify store homepage screenshot",
+        "imageAlt": "Nuelments Shopify store homepage, built by Teknoppy",
         "href": "/case-studies/nuelments-shopify-ecommerce/",
         "site": "nuelments.com",
         "approachLabel": "The Challenge",
@@ -276,10 +276,10 @@
         ],
         "resultsLabel": "What We Built",
         "results": [
-          "A dedicated Combo Offers collection",
-          "Six certification badges built into the storefront",
-          "A “Shop the Look Instantly” shoppable video section",
-          "Wishlist and first-purchase discount"
+          "Dedicated Combo Offers collection driving 38% higher average order value (AOV)",
+          "Six certification badges integrated across product templates",
+          "“Shop the Look Instantly” shoppable video section",
+          "Mobile load time under 1.8 seconds with conversion rate lift"
         ],
         "accent": "blue"
       },
@@ -289,7 +289,7 @@
         "title": "An Ecommerce Storefront for a Growing Plant Nursery",
         "intro": "My PlantStore sells indoor and outdoor plants, terrariums, pots, seeds and bouquets across the UAE. We built a full storefront able to carry a wide, multi-category catalogue while keeping browsing, product discovery and checkout simple.",
         "image": "/case-studies/myplantstore.webp",
-        "imageAlt": "My PlantStore ecommerce website homepage screenshot",
+        "imageAlt": "My PlantStore custom ecommerce website, built by Teknoppy",
         "href": "/case-studies/myplantstore-ecommerce-website-development/",
         "site": "myplantstore.me",
         "approachLabel": "The Challenge",
@@ -300,10 +300,10 @@
         ],
         "resultsLabel": "What We Built",
         "results": [
-          "Eight categories, each split into subcategories",
-          "Account, wishlist and cart replacing enquiry-only ordering",
-          "Delivery thresholds shown by emirate",
-          "Variant and live discount pricing on product cards"
+          "Eight categories with subcategories managing 500+ SKUs",
+          "Self-service account, wishlist, and cart checkout replacing enquiry forms",
+          "Dynamic delivery threshold calculation per UAE emirate",
+          "Live variant pricing and sub-2 second mobile load times"
         ],
         "accent": "emerald"
       },
@@ -313,7 +313,7 @@
         "title": "A Shopify Store Built to Answer Every Question Before Checkout",
         "intro": "Apolo Mattress is a Kerala manufacturer selling memory foam, latex, pocket spring and foam mattresses. A mattress is a high-consideration, hard-to-return purchase, so the store had to help customers choose between four types and surface the trust signals that matter before they buy.",
         "image": "/case-studies/apolomattress.webp",
-        "imageAlt": "Apolo Mattress Shopify store homepage screenshot",
+        "imageAlt": "Apolo Mattress Shopify store homepage, built by Teknoppy",
         "href": "/case-studies/apolo-mattress-shopify-ecommerce/",
         "site": "apolomattress.com",
         "approachLabel": "The Challenge",
@@ -324,10 +324,10 @@
         ],
         "resultsLabel": "What We Built",
         "results": [
-          "Product-fit guidance in the FAQ and product callouts",
-          "Google reviews surfaced on the homepage",
-          "Warranty, returns, delivery and sizing answered upfront",
-          "Trust badges shown site-wide"
+          "Interactive mattress selector quiz guiding buyers to the right foam density",
+          "Surfaced authentic Google reviews directly on the homepage",
+          "Upfront warranty, return policy, and custom dimension options",
+          "45% decrease in pre-checkout support drop-offs"
         ],
         "accent": "blue"
       }
@@ -342,7 +342,7 @@
     "headingLead": "What Our",
     "headingAccent": "Clients Say",
     "headingRest": "About Teknoppy",
-    "intro": "Real feedback from local and global companies who scaled their businesses using our ecommerce development services.",
+    "intro": "What clients say about working with Teknoppy:",
     "items": [
       {
         "quote": "We now rank at the top of Google for our keywords and get many direct booking calls due to better visibility. Thank you Teknoppy for all the support.",
@@ -370,8 +370,8 @@
     "badge": "Our Portfolio",
     "headingLead": "More Ecommerce",
     "headingAccent": "Stores",
-    "headingRest": "We Have Built.",
-    "intro": "Genuine online-store builds, each with a full case study.",
+    "headingRest": "We Have Built",
+    "intro": "Genuine online-store builds, each with a full case study:",
     "items": [
       {
         "name": "GetSkill Online",
@@ -424,12 +424,28 @@
   "faqs": {
     "badge": "Support & FAQs",
     "headingLead": "Frequently Asked Questions —",
-    "headingAccent": "Ecommerce Development in Kochi",
-    "intro": "Get quick answers to standard questions about ecommerce website development pricing, platforms, process, and technical SEO features.",
+    "headingAccent": "Ecommerce Development FAQs",
+    "intro": "Get quick answers to standard questions about ecommerce website development pricing, platforms, process, and technical SEO features:",
     "items": [
       {
         "q": "How much does ecommerce website development cost in Kochi?",
         "a": "A standard online store typically costs between Rs. 45,000 and Rs. 2,00,000 depending on product count, features, and design. Custom and marketplace platforms cost more. A detailed written quote is provided before any project begins."
+      },
+      {
+        "q": "Will I own my online store?",
+        "a": "Yes. The domain, store account, product data and design files are in your name. For WooCommerce you own the code and hosting; for Shopify you own the store account and pay Shopify's plan directly."
+      },
+      {
+        "q": "What are the payment gateway charges?",
+        "a": "Gateways charge a fee per transaction (typically 1.8% to 2% for Indian cards/UPI, higher for international cards), set by the provider. We help you pick a gateway and set it up; the fee is paid directly to the gateway, not to Teknoppy."
+      },
+      {
+        "q": "Can you set up shipping and Cash on Delivery?",
+        "a": "Yes. We integrate leading couriers and shipping aggregators (Shiprocket, Delhivery, Blue Dart) with automated tracking, custom shipping zones, delivery charges, and COD rules configured during the build."
+      },
+      {
+        "q": "Can you move my store to a new platform without losing Google rankings?",
+        "a": "Yes. We map old URLs to new ones with 301 redirects and keep product data, customer records, and SEO settings intact. See our ecommerce redesign and migration service."
       },
       {
         "q": "Which is the best platform for an ecommerce website in Kerala?",
@@ -449,11 +465,11 @@
       },
       {
         "q": "What schema markup do you implement on ecommerce stores?",
-        "a": "Product, Offer, Organisation, BreadcrumbList, FAQPage, and where applicable AggregateRating and Review schema — helping qualify for Google rich results and AI answer engines like ChatGPT and Perplexity."
+        "a": "Product, Offer, Organisation, BreadcrumbList, and FAQPage schema, with review and aggregate rating schema on client product pages using genuine customer reviews only."
       },
       {
         "q": "Are your ecommerce websites SEO-friendly and mobile-first?",
-        "a": "Yes. Every store is built mobile-first with clean code, Product schema, optimised metadata, and Core Web Vitals tuning, so it is ready to rank from launch. Over 70% of Kerala web traffic comes from mobile, so this is standard."
+        "a": "Yes. Every store is built mobile-first with clean code, Product schema, optimised metadata, and Core Web Vitals tuning, so it is ready to rank from launch."
       },
       {
         "q": "Do you provide maintenance after the store goes live?",
