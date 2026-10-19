@@ -1001,10 +1001,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }
 })();
 
-/* Audit form: builds a prefilled WhatsApp message and opens WhatsApp */
+/* Audit form: submits enquiry to /api/contact, opens WhatsApp, and redirects to thank-you */
 var auditForm = document.getElementById('auditForm');
 if (auditForm) {
-  auditForm.addEventListener('submit', function(e){
+  auditForm.addEventListener('submit', async function(e){
     e.preventDefault();
     var f = e.target, ok = document.getElementById('ok');
     if (!f.name.value.trim() || !f.phone.value.trim()) {
@@ -1014,13 +1014,44 @@ if (auditForm) {
       ok.classList.add('show');
       return;
     }
-    var msg = 'Hi Teknoppy, I want a free SEO audit.\nName: ' + f.name.value + '\nWhatsApp: ' + f.phone.value + '\nWebsite: ' + f.website.value + '\nCountry: ' + f.country.value;
-    var url = 'https://wa.me/916282249224?text=' + encodeURIComponent(msg);
-    ok.style.background = '';
-    ok.style.color = '';
-    ok.innerHTML = 'Your request is ready. <a href="' + url + '" target="_blank" rel="noopener">Send it on WhatsApp →</a>';
-    ok.classList.add('show');
-    try { window.open(url, '_blank'); } catch (err) {}
+
+    var btn = f.querySelector('button[type="submit"]');
+    if (btn) btn.disabled = true;
+
+    var nameVal = f.name.value.trim();
+    var phoneVal = f.phone.value.trim();
+    var siteVal = f.website.value.trim();
+    var countryVal = f.country.value;
+
+    var payload = {
+      name: nameVal,
+      phone: phoneVal,
+      email: 'lead@teknoppy.com',
+      service: 'GCC SEO Audit (' + countryVal + ')',
+      message: 'Website: ' + (siteVal || 'Not provided') + '\nTarget Country: ' + countryVal + '\nSource: GCC SEO English Landing Page',
+      source: 'GCC SEO English Landing Page'
+    };
+
+    try {
+      var res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      if (!res.ok) throw new Error('Server returned ' + res.status);
+
+      var msg = 'Hi Teknoppy, I want a free SEO audit.\nName: ' + nameVal + '\nWhatsApp: ' + phoneVal + '\nWebsite: ' + siteVal + '\nCountry: ' + countryVal;
+      var url = 'https://wa.me/916282249224?text=' + encodeURIComponent(msg);
+      try { window.open(url, '_blank'); } catch (err) {}
+
+      window.location.href = '/lp/gcc-seo/en/thank-you/';
+    } catch (err) {
+      ok.style.background = '#FDECEC';
+      ok.style.color = '#C62828';
+      ok.textContent = 'Could not submit your request. Please call +91 62822 49224 or reach out directly on WhatsApp.';
+      ok.classList.add('show');
+      if (btn) btn.disabled = false;
+    }
   });
 }
 </script>

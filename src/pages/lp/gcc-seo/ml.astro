@@ -742,6 +742,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <label>Website URL<input name="website" type="url" placeholder="https://yourbusiness.com"></label>
 <label>Target Country<select name="country"><option>UAE</option><option>Saudi Arabia</option><option>Qatar</option><option>Kuwait</option><option>Oman</option><option>Bahrain</option><option>India</option></select></label>
 <button type="submit" class="btn btn-o" style="width:100%;margin-top:6px">Send Audit Request on WhatsApp →</button>
+<div id="mlOk" style="display:none;padding:12px;border-radius:10px;font-size:14px;font-weight:600;text-align:center;"></div>
 </form>
 </div>
 </div>
@@ -907,9 +908,60 @@ if (vTrack) {
 
 var f=document.getElementById('auditForm');
 if(f){
-f.addEventListener('submit',function(e){e.preventDefault();
-var t='Hi Teknoppy, I want a free SEO audit.\nName: '+f.name.value+'\nWhatsApp: '+f.phone.value+'\nWebsite: '+f.website.value+'\nCountry: '+f.country.value;
-window.open('https://wa.me/916282249224?text='+encodeURIComponent(t),'_blank');});
+f.addEventListener('submit',async function(e){
+  e.preventDefault();
+  var mlOk = document.getElementById('mlOk');
+  if (mlOk) { mlOk.style.display = 'none'; mlOk.textContent = ''; }
+
+  var nameVal = (f.name.value || '').trim();
+  var phoneVal = (f.phone.value || '').trim();
+  var siteVal = (f.website.value || '').trim();
+  var countryVal = f.country.value;
+
+  if(!nameVal || !phoneVal){
+    if(mlOk){
+      mlOk.style.background = '#FDECEC';
+      mlOk.style.color = '#C62828';
+      mlOk.textContent = 'ദയവായി നിങ്ങളുടെ പേരും WhatsApp നമ്പറും നൽകുക.';
+      mlOk.style.display = 'block';
+    }
+    return;
+  }
+
+  var btn = f.querySelector('button[type="submit"]');
+  if(btn) btn.disabled = true;
+
+  var payload = {
+    name: nameVal,
+    phone: phoneVal,
+    email: 'lead@teknoppy.com',
+    service: 'GCC SEO Audit Malayalam (' + countryVal + ')',
+    message: 'Website: ' + (siteVal || 'Not provided') + '\nTarget Country: ' + countryVal + '\nSource: GCC SEO Malayalam Landing Page',
+    source: 'GCC SEO Malayalam Landing Page'
+  };
+
+  try {
+    var res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    if(!res.ok) throw new Error('Server returned ' + res.status);
+
+    var t='Hi Teknoppy, I want a free SEO audit.\nName: '+nameVal+'\nWhatsApp: '+phoneVal+'\nWebsite: '+siteVal+'\nCountry: '+countryVal;
+    try { window.open('https://wa.me/916282249224?text='+encodeURIComponent(t),'_blank'); } catch(err){}
+
+    window.location.href = '/lp/gcc-seo/ml/thank-you/';
+  } catch(err) {
+    if(mlOk){
+      mlOk.style.background = '#FDECEC';
+      mlOk.style.color = '#C62828';
+      mlOk.textContent = 'അഭ്യർത്ഥന സമർപ്പിക്കാൻ സാധിച്ചില്ല. ദയവായി +91 62822 49224 എന്ന നമ്പറിലേക്ക് വിളിക്കുകയോ WhatsApp ചെയ്യുകയോ ചെയ്യുക.';
+      mlOk.style.display = 'block';
+    }
+    if(btn) btn.disabled = false;
+  }
+});
 }
 })();
 </script>
