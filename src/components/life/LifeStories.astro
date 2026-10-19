@@ -79,18 +79,28 @@
 
     <!-- Studio Video Row -->
     <div class="vrow">
-      <div class="video rv" role="region" aria-label="A morning at Teknoppy Studio">
-        <div class="video-thumb-wrap">
-          <img src="/whoweare.webp" alt="Teknoppy studio team at work" class="video-thumb-img" loading="lazy" />
-          <div class="video-overlay">
-            <div class="play" aria-label="Play Studio Overview Video">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff" aria-hidden="true">
-                <path d="M8 5v14l11-7z"/>
-              </svg>
-            </div>
-            <span class="vtitle">A morning inside our Vyttila studio</span>
-            <span class="vmeta">Candid team moments & daily workflow</span>
-          </div>
+      <div class="video rv" id="studioVideoWrap" role="region" aria-label="A morning at Teknoppy Studio">
+        <video
+          id="studioVideo"
+          class="video-player"
+          poster="/video/poster.jpg"
+          preload="none"
+          playsinline
+          controls
+        >
+          <source src="/video/Teknoppy-Web-Banner.mp4" type="video/mp4" />
+          <source src="/video/Teknoppy%20Web%20Banner%20final.mp4" type="video/mp4" />
+          Your browser does not support HTML5 video.
+        </video>
+
+        <div class="video-overlay" id="studioVideoOverlay">
+          <button type="button" class="play" id="studioPlayBtn" aria-label="Play Studio Overview Video">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff" aria-hidden="true">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </button>
+          <span class="vtitle">A morning inside our Vyttila studio</span>
+          <span class="vmeta">Candid team moments & daily workflow</span>
         </div>
       </div>
       
@@ -104,6 +114,34 @@
     </div>
   </div>
 </section>
+
+<script>
+  const video = document.getElementById('studioVideo');
+  const overlay = document.getElementById('studioVideoOverlay');
+  const playBtn = document.getElementById('studioPlayBtn');
+
+  if (video && overlay) {
+    function startVideo() {
+      overlay.classList.add('is-hidden');
+      video.play().catch(function(err) {
+        console.warn('Playback error:', err);
+        overlay.classList.remove('is-hidden');
+      });
+    }
+
+    overlay.addEventListener('click', startVideo);
+    if (playBtn) {
+      playBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        startVideo();
+      });
+    }
+
+    video.addEventListener('ended', function() {
+      overlay.classList.remove('is-hidden');
+    });
+  }
+</script>
 
 <style>
   .story-av-wrap {
@@ -122,23 +160,14 @@
     object-position: top center;
     display: block;
   }
-  .video-thumb-wrap {
+  .video-player {
     position: absolute;
     inset: 0;
-    overflow: hidden;
-    background: #1a1a1a;
-  }
-  .video-thumb-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-    filter: brightness(0.85);
-    transition: transform 1.1s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.4s ease;
-  }
-  .video:hover .video-thumb-img {
-    transform: scale(1.05);
-    filter: brightness(0.95);
+    background: #0d0d0d;
   }
   .video-overlay {
     position: absolute;
@@ -151,6 +180,19 @@
     background: radial-gradient(circle at center, rgba(26,26,26,0.3) 0%, rgba(26,26,26,0.7) 100%);
     padding: 24px;
     text-align: center;
+    transition: opacity 0.35s ease, visibility 0.35s ease;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .video-overlay.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .play {
+    border: none;
+    cursor: pointer;
+    outline: none;
   }
   .vtitle {
     font-family: var(--display);

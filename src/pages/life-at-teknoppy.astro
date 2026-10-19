@@ -1308,8 +1308,12 @@ const faqSchema = {
     .video { min-height: 240px; }
     .frame { flex-basis: 230px; }
     .frame.photo { flex-basis: 280px; }
-    .orbit { max-width: 340px; }
+    .orbit { max-width: min(290px, calc(100vw - 60px)); margin-inline: auto; }
     .endsplit > div { padding: 36px 24px; }
+  }
+
+  @media (max-width: 360px) {
+    .orbit { max-width: 240px; }
   }
 
   @media (prefers-reduced-motion: reduce) {

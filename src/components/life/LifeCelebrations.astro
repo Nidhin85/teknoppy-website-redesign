@@ -2,46 +2,81 @@
 // Celebrations section with draggable horizontal photo carousel, progress bar, and interactive lightbox modal
 const celebrations = [
   {
-    title: 'Onam Celebrations',
-    caption: 'Onam pookalam and traditional sadya at our Vyttila studio with the whole team.',
-    photo: '/whoweare.webp',
+    title: 'Onam Festival & Pookkalam',
+    caption: 'Traditional Onam festival celebration with Kerala Kasavu attire, Nilavilakku, and authentic team spirit at our studio.',
+    photo: '/images/life/teknoppy-onam-celebration.webp',
     tag: 'Culture & Festival',
     accent: 'g1'
   },
   {
-    title: 'Christmas & Year-End',
-    caption: 'Christmas celebration, secret gift exchanges and annual retrospectives at Teknoppy.',
-    photo: '/whatwedo.webp',
-    tag: 'Year-End',
+    title: 'Pookkalam Flower Carpet',
+    caption: 'Hands-on team collaboration arranging fresh yellow and orange marigold petals for the Onam pookkalam.',
+    photo: '/images/life/teknoppy-pookkalam-preparation.webp',
+    tag: 'Tradition & Art',
     accent: 'g4'
   },
   {
-    title: 'Team Milestones & Birthdays',
-    caption: 'Marking team birthdays and work anniversaries with sweets, cake, and celebrations.',
-    photo: '/team/sanal-edison.webp',
-    tag: 'Milestone',
-    accent: 'g3'
-  },
-  {
-    title: 'Project Go-Live Days',
-    caption: 'Celebrating major client launches after weeks of careful development, SEO audits and QA.',
-    photo: '/mockup.webp',
+    title: 'Project Go-Live & Launch Presentation',
+    caption: 'Unveiling major client websites in our conference room — presenting the official personal brand platform for celebrity author Lenaa.',
+    photo: '/images/life/teknoppy-project-launch-presentation.webp',
     tag: 'Client Launch',
     accent: 'g5'
   },
   {
-    title: 'Team Outings & Refreshers',
-    caption: 'Stepping outside the office for weekend team gatherings, coastal retreats, and team dinners.',
-    photo: '/whoweare.webp',
-    tag: 'Team Outing',
+    title: 'Team & Client Milestone',
+    caption: 'Celebrating successful project go-lives together with our clients and in-house team in front of the Teknoppy studio wall.',
+    photo: '/images/life/teknoppy-team-client-milestone.webp',
+    tag: 'Team Milestone',
+    accent: 'g3'
+  },
+  {
+    title: 'Strategy & Consultation Lounge',
+    caption: 'Face-to-face consultations in our lounge — mapping brand positioning, target audience, and organic search architecture.',
+    photo: '/images/life/teknoppy-client-consultation-lenaa.webp',
+    tag: 'Client Strategy',
     accent: 'g2'
   },
   {
-    title: 'Friday Knowledge Sharing',
-    caption: 'Weekly open design & code demos, Google algorithm updates, and skill-building sessions.',
-    photo: '/whatwedo.webp',
-    tag: 'Continuous Learning',
+    title: 'Partnership Handshake & Trust',
+    caption: 'Long-term client partnerships built on transparency, honest deadlines, and measurable digital growth.',
+    photo: '/images/life/teknoppy-client-partnership-handshake.webp',
+    tag: 'Client Partnership',
+    accent: 'g1'
+  },
+  {
+    title: 'Studio Celebrations & Cake Cutting',
+    caption: 'Marking company achievements, festival highlights, and shared milestones together in the studio.',
+    photo: '/video/poster.jpg',
+    tag: 'Studio Celebration',
+    accent: 'g5'
+  },
+  {
+    title: 'Behind the Scenes & Media Shoots',
+    caption: 'Filming campaign interviews, client documentary features, and digital launch stories directly inside our conference room.',
+    photo: '/images/life/teknoppy-behind-the-scenes-shoot.webp',
+    tag: 'Behind The Scenes',
     accent: 'g4'
+  },
+  {
+    title: 'The 10-Specialist In-House Team',
+    caption: '10 specialists across design, code, content, and organic search collaborating under one roof in Kaithakal Building, Vyttila.',
+    photo: '/images/life/teknoppy-10-specialists-group.webp',
+    tag: 'In-House Team',
+    accent: 'g3'
+  },
+  {
+    title: 'Studio Team & Leadership',
+    caption: 'Founder Sanal Edison and the in-house team at our Vyttila studio celebrating team milestones.',
+    photo: '/images/life/teknoppy-team-inhouse-studio.webp',
+    tag: 'Team & Leadership',
+    accent: 'g1'
+  },
+  {
+    title: 'Collaborative Reviews & Mentorship',
+    caption: 'SEO leads, developers, and analysts sit at the same table reviewing site architecture, schema, and Core Web Vitals before staging.',
+    photo: '/images/life/teknoppy-team-collaborative-review.jpg',
+    tag: 'Collaborative Review',
+    accent: 'g2'
   }
 ];
 ---
@@ -76,7 +111,7 @@ const celebrations = [
     <div class="wrap carctl">
       <button id="cprev" aria-label="Previous photo">←</button>
       <div class="carbar">
-        <i id="cbar" style="width: 16.6%;"></i>
+        <i id="cbar" style={`width: ${(100 / celebrations.length).toFixed(1)}%;`}></i>
       </div>
       <button id="cnext" aria-label="Next photo">→</button>
     </div>
