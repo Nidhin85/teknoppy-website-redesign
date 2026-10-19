@@ -1,18 +1,17 @@
 ---
 /**
  * Polished, brand-aligned Thank-You page for GCC SEO landing page submissions.
- * Follows the reference visual layout:
- * - Solid circular green success checkmark
+ * Uses the exact landing page header & footer matching the reference design:
+ * - Clean sticky white header with Teknoppy logo, section nav links, and orange Free SEO Audit button
+ * - Solid circular green success checkmark (#05B67A)
  * - Centered "Thank you!" heading and confirmation text
  * - Clean symmetrical white cards:
- *     1. "Connect With Us" with round social & messaging buttons
- *     2. "Visit Our Website" with clean green "Visit Website" CTA button
- * - Official Teknoppy Header & Footer
- * - Preserved GTM implementation (GTM-NHX2WJ39)
+ *     1. "Connect With Us" with round social & messaging buttons + phone & email
+ *     2. "Visit Our Website" with clean green "Visit Website" CTA button + domain tag
+ * - Clean white 3-column landing page footer (Markets, Contact, Copyright)
+ * - Preserved GTM implementation (GTM-NHX2WJ39) and noindex directives
  */
 import Layout from '../../layouts/Layout.astro';
-import Header from '../Header.astro';
-import Footer from '../Footer.astro';
 import site from '../../data/site.json';
 import { Check, Phone, Mail } from 'lucide-react';
 
@@ -89,6 +88,8 @@ const socialChannels = [
     icon: '<path fill="currentColor" d="M23 12s0-3.7-.5-5.5a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.5a2.9 2.9 0 0 0-2 2C1 8.3 1 12 1 12s0 3.7.5 5.5a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.5a2.9 2.9 0 0 0 2-2C23 15.7 23 12 23 12M9.8 15.5v-7l6 3.5z"/>'
   }
 ];
+
+const basePath = EN ? '/lp/gcc-seo/en/' : '/lp/gcc-seo/ml/';
 ---
 
 <Layout title={copy.title} description={copy.description} lang={lang} hideBottomBar={true}>
@@ -117,11 +118,25 @@ const socialChannels = [
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <!-- Official Teknoppy Header with Solid Background -->
-  <Header forceSolidBg={true} />
+  <!-- Landing Page Specific Header (Exact match to uploaded reference) -->
+  <header class="gcc-hdr">
+    <div class="gcc-wrap">
+      <a class="gcc-logo" href="https://www.teknoppy.com/" aria-label="Teknoppy Home">
+        <img src="/logo.svg" alt="Teknoppy" width="135" height="38" style="height:38px;width:auto;display:block;object-fit:contain" />
+      </a>
+      <nav class="gcc-nav" aria-label="Page sections">
+        <a href={`${basePath}#results`}>Results</a>
+        <a href={`${basePath}#services`}>Services</a>
+        <a href={`${basePath}#process`}>Process</a>
+        <a href={`${basePath}#pricing`}>Pricing</a>
+        <a href={`${basePath}#faq`}>FAQ</a>
+      </nav>
+      <a class="gcc-btn-audit" href={`${basePath}#audit`}>Free SEO Audit</a>
+    </div>
+  </header>
 
   <!-- Main Thank You Section (Clean, centered, matching reference layout) -->
-  <main class={`flex-grow pt-24 sm:pt-28 md:pt-36 pb-20 sm:pb-24 md:pb-32 bg-[#F8F9FA] text-neutral-900 ${!EN ? 'font-[\'Noto_Sans_Malayalam\',sans-serif]' : ''}`}>
+  <main class={`flex-grow pt-12 sm:pt-16 md:pt-20 pb-16 sm:pb-20 md:pb-24 bg-[#F8F9FA] text-neutral-900 ${!EN ? 'font-[\'Noto_Sans_Malayalam\',sans-serif]' : ''}`}>
     <div class="max-w-3xl mx-auto px-4 sm:px-6">
 
       <!-- Success Checkmark Icon (Matching the green circular badge from the reference) -->
@@ -204,6 +219,144 @@ const socialChannels = [
     </div>
   </main>
 
-  <!-- Official Teknoppy Footer -->
-  <Footer />
+  <!-- Landing Page Specific Footer (Exact match to uploaded reference) -->
+  <footer class="gcc-footer">
+    <div class="gcc-wrap gcc-footer-grid">
+      <div>
+        <a class="gcc-logo" href="https://www.teknoppy.com/" aria-label="Teknoppy Home" style="display:inline-block;margin-bottom:12px">
+          <img src="/logo.svg" alt="Teknoppy" width="128" height="36" style="height:36px;width:auto;display:block;object-fit:contain" />
+        </a>
+        <p style="margin:10px 0 0;color:#555;font-size:14px;line-height:1.6;max-width:320px">
+          Kerala-based SEO company helping businesses in the GCC and worldwide grow on Google.
+        </p>
+      </div>
+      <div>
+        <strong style="color:#111;font-size:15px;display:block;margin-bottom:10px">Markets</strong>
+        <p style="margin:0;color:#555;font-size:14px;line-height:1.6">
+          UAE · Saudi Arabia · Qatar · Kuwait · Oman · Bahrain · India
+        </p>
+      </div>
+      <div>
+        <strong style="color:#111;font-size:15px;display:block;margin-bottom:10px">Contact</strong>
+        <p style="margin:0;color:#555;font-size:14px;line-height:1.7">
+          <a href="tel:+916282249224" style="color:#555;text-decoration:none">+91 62822 49224</a><br />
+          <a href="mailto:sales@teknoppy.com" style="color:#555;text-decoration:none">sales@teknoppy.com</a><br />
+          Vyttila, Kochi, Kerala 682019
+        </p>
+      </div>
+    </div>
+    <div class="gcc-wrap gcc-footer-bottom">
+      © 2026 Teknoppy. All rights reserved.
+    </div>
+  </footer>
 </Layout>
+
+<style>
+  .gcc-hdr {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid #ECE7DF;
+  }
+  .gcc-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: max(20px, env(safe-area-inset-left, 0px));
+    padding-right: max(20px, env(safe-area-inset-right, 0px));
+  }
+  .gcc-hdr .gcc-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 74px;
+    gap: 16px;
+  }
+  .gcc-logo {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  .gcc-nav {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+  }
+  .gcc-nav a {
+    color: #111;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    position: relative;
+    transition: color 0.2s;
+  }
+  .gcc-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 0;
+    background: #F26522;
+    transition: width 0.25s;
+  }
+  .gcc-nav a:hover::after {
+    width: 100%;
+  }
+  .gcc-btn-audit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 0 24px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 999px;
+    background: #F26522;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 8px 20px -6px rgba(242, 101, 34, 0.6);
+    transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+    white-space: nowrap;
+  }
+  .gcc-btn-audit:hover {
+    transform: translateY(-2px);
+    background: #D84F10;
+    color: #fff;
+    box-shadow: 0 10px 24px -6px rgba(242, 101, 34, 0.7);
+  }
+  @media (max-width: 1000px) {
+    .gcc-nav {
+      display: none;
+    }
+  }
+
+  .gcc-footer {
+    background: #fff;
+    border-top: 1.5px solid #ECE7DF;
+    padding: 44px 0 28px;
+    font-size: 15px;
+    color: #3D3D3D;
+    margin-top: auto;
+  }
+  .gcc-footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+  }
+  .gcc-footer-bottom {
+    margin-top: 28px;
+    padding-top: 18px;
+    border-top: 1px solid #ECE7DF;
+    font-size: 14px;
+    color: #777;
+  }
+  @media (max-width: 800px) {
+    .gcc-footer-grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+  }
+</style>

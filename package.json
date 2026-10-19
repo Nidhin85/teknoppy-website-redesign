@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "npm run cms:pull && astro build",
-    "preview": "astro preview",
+    "preview": "node scripts/preview.mjs",
     "astro": "astro",
     "cms:pull": "node scripts/pull-cms.mjs",
     "check:links": "node scripts/check-links.mjs",
