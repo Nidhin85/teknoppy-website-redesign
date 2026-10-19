@@ -16,14 +16,35 @@ const celebrations = [
     accent: 'g4'
   },
   {
-    title: 'Team Milestones & Anniversaries',
-    caption: 'Celebrating high-impact milestones, client successes, and team work anniversaries under one roof.',
-    photo: '/images/life/teknoppy-team-portrait.webp',
+    title: 'Project Go-Live & Launch Presentation',
+    caption: 'Unveiling major client websites in our conference room — presenting the official personal brand platform for celebrity author Lenaa.',
+    photo: '/images/life/teknoppy-project-launch-presentation.webp',
+    tag: 'Client Launch',
+    accent: 'g5'
+  },
+  {
+    title: 'Team & Client Milestone',
+    caption: 'Celebrating successful project go-lives together with our clients and in-house team in front of the Teknoppy studio wall.',
+    photo: '/images/life/teknoppy-team-client-milestone.webp',
     tag: 'Team Milestone',
     accent: 'g3'
   },
   {
-    title: 'Celebration Moments & Cake Cutting',
+    title: 'Strategy & Consultation Lounge',
+    caption: 'Face-to-face consultations in our lounge — mapping brand positioning, target audience, and organic search architecture.',
+    photo: '/images/life/teknoppy-client-consultation-lenaa.webp',
+    tag: 'Client Strategy',
+    accent: 'g2'
+  },
+  {
+    title: 'Partnership Handshake & Trust',
+    caption: 'Long-term client partnerships built on transparency, honest deadlines, and measurable digital growth.',
+    photo: '/images/life/teknoppy-client-partnership-handshake.webp',
+    tag: 'Client Partnership',
+    accent: 'g1'
+  },
+  {
+    title: 'Studio Celebrations & Cake Cutting',
     caption: 'Marking company achievements, festival highlights, and shared milestones together in the studio.',
     photo: '/video/poster.jpg',
     tag: 'Studio Celebration',
@@ -35,13 +56,6 @@ const celebrations = [
     photo: '/images/life/teknoppy-team-collaboration.webp',
     tag: 'Mentorship',
     accent: 'g2'
-  },
-  {
-    title: 'Sprint Planning & Tech Sessions',
-    caption: 'Daily stand-ups, backlog grooming, and creative brainstorming sessions in our active workspace.',
-    photo: '/images/life/teknoppy-studio-work.webp',
-    tag: 'Innovation',
-    accent: 'g4'
   }
 ];
 ---
@@ -76,7 +90,7 @@ const celebrations = [
     <div class="wrap carctl">
       <button id="cprev" aria-label="Previous photo">←</button>
       <div class="carbar">
-        <i id="cbar" style="width: 16.6%;"></i>
+        <i id="cbar" style={`width: ${(100 / celebrations.length).toFixed(1)}%;`}></i>
       </div>
       <button id="cnext" aria-label="Next photo">→</button>
     </div>
