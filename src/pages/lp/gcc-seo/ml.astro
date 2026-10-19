@@ -102,35 +102,73 @@ a{color:#D4500F}a:hover{color:#A93D08}
 .pulse::before{content:"";position:absolute;inset:0;border-radius:999px;box-shadow:0 0 0 0 rgba(18,140,74,.55);animation:pulse 2.2s infinite}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(18,140,74,.55)}70%{box-shadow:0 0 0 16px rgba(18,140,74,0)}100%{box-shadow:0 0 0 0 rgba(18,140,74,0)}}
 
-/* hero visual */
-.viz{position:relative}
-.serp{background:#fff;border-radius:24px;padding:24px;border:1.5px solid #111;box-shadow:12px 12px 0 #111;animation:rise .9s .2s cubic-bezier(.2,.8,.2,1) both}
-@keyframes rise{from{opacity:0;transform:translateY(40px) rotate(-2deg)}to{opacity:1;transform:none}}
-.search{display:flex;align-items:center;gap:10px;padding:12px 16px;border:1.5px solid #E2DCD2;border-radius:999px;margin-bottom:18px;font-size:15px}
+/* hero video banner */
+.hero-full-wrap{width:100%;margin:0;padding:0;position:relative;overflow:hidden;background:#000}
+.hero-video-banner{width:100%;margin:0;padding:0;position:relative;background:#000;overflow:hidden;line-height:0}
+.hero-video-banner video{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:center center;display:block;border:0;margin:0;padding:0}
+.video-controls-badge{position:absolute;bottom:clamp(12px,2.5vw,24px);right:clamp(14px,3vw,32px);display:flex;align-items:center;gap:10px;padding:7px 14px;border-radius:999px;background:rgba(17,17,17,0.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.22);color:#fff;font-size:0.82rem;font-weight:700;z-index:10;box-shadow:0 6px 18px rgba(0,0,0,0.45);transition:transform .2s}
+.video-controls-badge:hover{transform:scale(1.02)}
+.vc-left{display:flex;align-items:center;gap:8px}
+.vc-pill{background:#F26522;color:#fff;font-size:0.68rem;font-weight:800;padding:3px 8px;border-radius:999px;letter-spacing:0.04em;text-transform:uppercase}
+.vc-title{color:#F3F3F3;font-size:0.78rem}
+.vc-actions{display:flex;align-items:center;gap:6px;margin-left:4px}
+.vc-btn{background:rgba(255,255,255,0.14);border:1px solid rgba(255,255,255,0.25);color:#fff;font-size:0.75rem;font-weight:700;padding:4px 10px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:4px;transition:background .2s;font-family:inherit}
+.vc-btn:hover{background:rgba(255,255,255,0.28)}
+
+/* Hero proof card (SERP simulation) */
+.proof-wrap{position:relative;min-width:0}
+.proof-card{background:#fff;border:1.5px solid #111;border-radius:24px;box-shadow:10px 10px 0 #111;overflow:hidden}
+.proof-top{min-width:0;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid #ECE7DF;background:#FAF8F5}
+.dots-top{display:flex;gap:6px}.dots-top i{width:10px;height:10px;border-radius:50%;background:#E3DED7;display:inline-block}
+.proof-top .label{font-size:12px;font-weight:700;color:#5C5C5C;letter-spacing:.05em;text-transform:uppercase}
+.live{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:#128C4A}
+.live::before{content:"";width:8px;height:8px;border-radius:50%;background:#128C4A;animation:pulse-live 1.6s infinite}
+@keyframes pulse-live{0%{box-shadow:0 0 0 0 rgba(18,140,74,.5)}100%{box-shadow:0 0 0 10px rgba(18,140,74,0)}}
+.proof-body{padding:22px 22px 8px}
+.gs-head{display:flex;align-items:center;gap:14px}
+.gs-brand{display:inline-flex;align-items:center;gap:8px;font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:700;letter-spacing:-.5px;color:#5F6368;flex:none}
+.gs-brand img{width:26px;height:26px;flex:none}
+.gs-head .search{flex:1;min-width:0;display:flex;align-items:center;justify-content:space-between;border:1px solid #DFDAD3;border-radius:999px;padding:12px 18px;font-size:16px;font-weight:500;box-shadow:0 1px 6px rgba(32,33,36,.18);margin-bottom:0}
+.gs-head .search .q{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#202124}
 .caret{display:inline-block;width:2px;height:18px;background:#111;margin-left:2px;vertical-align:middle;animation:blink 1s steps(1) infinite}
 @keyframes blink{50%{opacity:0}}
-.typing{display:inline-block;overflow:hidden;white-space:nowrap;vertical-align:middle;animation:type 2.2s .8s steps(24) both}
-@keyframes type{from{width:0}to{width:24ch}}
-.res{display:flex;gap:14px;align-items:flex-start;border-radius:16px;padding:14px 16px}
-.res.win{background:#FFF4CC;border:1.5px solid #FFC629}
-.rank{flex:none;width:58px;height:58px;border-radius:14px;background:#111;color:#fff;overflow:hidden;position:relative;font-family:Sora,sans-serif;font-weight:800;font-size:24px}
-.rank .col{position:absolute;left:0;right:0;top:0;display:flex;flex-direction:column;animation:climb 3.2s 1.2s cubic-bezier(.6,0,.2,1) both}
-.rank .col span{height:58px;display:flex;align-items:center;justify-content:center}
-.rank .col span:last-child{color:#FFC629}
-@keyframes climb{0%{transform:translateY(0)}30%{transform:translateY(-58px)}60%{transform:translateY(-116px)}100%{transform:translateY(-174px)}}
-.ghost{height:10px;border-radius:6px;background:#EEE9E1;margin-bottom:8px}
-.chart{margin-top:16px;padding-top:16px;border-top:1px dashed #E2DCD2}
-.chart .row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;font-size:14px;color:#5C5C5C}
-.chart .big{font-family:Sora,sans-serif;font-size:30px;font-weight:800;color:#111}
-.chart .big em{font-style:normal;color:#F26522}
-.line{stroke-dasharray:420;stroke-dashoffset:420;animation:draw 2.4s 1.4s ease forwards}
-.area{opacity:0;animation:fade 1s 3s ease forwards}
-@keyframes draw{to{stroke-dashoffset:0}}
-@keyframes fade{to{opacity:1}}
-.chip{position:absolute;background:#fff;border:1.5px solid #111;border-radius:14px;padding:10px 14px;font-weight:800;font-size:14px;box-shadow:5px 5px 0 #111;display:flex;align-items:center;gap:8px}
-.chip1{left:-34px;top:38%;animation:bob 4s ease-in-out infinite}
-.chip2{right:-18px;bottom:-22px;background:#FFC629;animation:bob 5s 1s ease-in-out infinite}
-@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.gs-tabs{display:flex;gap:18px;margin:14px 0 0;padding-left:2px;border-bottom:1px solid #EBEBEB;font-family:Arial,sans-serif;font-size:13px;color:#5F6368}
+.gs-tabs span{padding-bottom:9px}
+.gs-tabs .on{color:#1A73E8;border-bottom:3px solid #1A73E8;font-weight:700}
+.gs-count{font-family:Arial,sans-serif;font-size:12px;color:#70757A;margin-top:10px}
+.gs-count b{font-weight:700;color:#5F6368}
+.proof-card .serp{margin-top:10px;display:grid;gap:10px;border:none;box-shadow:none;padding:0;animation:none}
+.proof-card .res{display:grid;grid-template-columns:1fr auto;align-items:start;font-family:Arial,sans-serif;gap:14px;padding:14px;border-radius:14px}
+.proof-card .res.win{background:#FFF4CC;border:1.5px solid #FFC629}
+.proof-card .res.win .pos{width:auto;height:auto;padding:6px 12px;border-radius:999px;font-size:14px;background:#111;color:#FFC629;font-weight:800;transition:transform .3s}
+.proof-card .res.win .pos.bump{transform:scale(1.18)}
+.proof-card .res.ghost{opacity:.7;padding:10px 14px}
+.proof-card .res.ghost .pos{width:auto;height:auto;padding:6px 12px;border-radius:999px;font-size:12px;background:#F3F0EC;color:#B9B2A8}
+.proof-card .sk{height:9px;border-radius:9px;background:#F0ECE7;margin:5px 0}
+.site{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.fav{width:28px;height:28px;flex:none;border-radius:50%;background:#fff;border:1px solid #DADCE0;display:grid;place-items:center;font-weight:800;font-size:13px;color:#F26522}
+.site b{display:block;font-size:14px;font-weight:600;color:#202124;line-height:1.2}
+.proof-card .res .url{display:block;font-size:12px;color:#4D5156;line-height:1.3}
+.proof-card .res .title{font-size:18px;font-weight:700;color:#1A0DAB;line-height:1.3}
+.proof-card .res .desc{font-size:13.5px;color:#4D5156;margin-top:3px}
+.fade{transition:opacity .35s}
+.fade.out{opacity:0}
+.proof-foot{display:grid;grid-template-columns:1fr 1.25fr;gap:16px;align-items:end;padding:18px 22px 22px;border-top:1px dashed #ECE7DF;margin-top:14px}
+.metric small{display:block;font-size:13px;color:#5C5C5C;font-weight:600}
+.metric .big{font-size:42px;font-weight:800;line-height:1.1;font-family:Sora,sans-serif}
+.metric .big em{font-style:normal;color:#F26522}
+.metric .client{display:inline-block;margin-top:6px;font-size:12px;font-weight:700;background:#F3F0EC;border-radius:999px;padding:4px 10px}
+.chart svg{width:100%;height:auto;display:block}
+.chart .ax{font-size:10px;fill:#9A938A;font-family:inherit}
+.proof-chips{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:0 22px 22px}
+.proof-chips div{border:1px solid #ECE7DF;border-radius:14px;padding:10px 8px;text-align:center;background:#FFFDFB}
+.proof-chips b{display:block;font-size:20px;font-weight:800;line-height:1.1;font-family:Sora,sans-serif}
+.proof-chips b em{font-style:normal;color:#F26522}
+.proof-chips span{display:block;font-size:11.5px;color:#5C5C5C;font-weight:600;margin-top:4px;line-height:1.3}
+.kw-dots{display:flex;justify-content:center;gap:8px;margin-top:20px}
+.kw-dots button{width:10px;height:10px;border-radius:999px;border:0;background:#DCD5CC;cursor:pointer;transition:.3s;padding:0}
+.kw-dots button.on{width:30px;background:#F26522}
+.proof-caption{text-align:center;font-size:13px;color:#5C5C5C;margin-top:10px;font-weight:600}
 
 /* marquee */
 .mq{background:#111;color:#fff;overflow:hidden;padding:18px 0;border-top:4px solid #FFC629}
@@ -147,17 +185,32 @@ a{color:#D4500F}a:hover{color:#A93D08}
 .stat .n i{font-style:normal;color:#F26522}
 .stat .l{color:#5C5C5C;font-weight:600}
 
-/* results */
-.rcard{position:relative;overflow:hidden}
-.rcard .tag{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
-.loc{font-size:13px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;color:#5C5C5C}
-.no1{background:#FFC629;color:#111;font-family:Sora,sans-serif;font-weight:800;padding:4px 12px;border-radius:10px}
-.kw{background:#FFFAF2;border:1.5px dashed #E2CDB4;border-radius:12px;padding:10px 14px;font-weight:700;margin:12px 0 18px}
-.bar{height:12px;background:#F4EFE7;border-radius:8px;overflow:hidden}
-.bar i{display:block;height:100%;border-radius:8px;background:linear-gradient(90deg,#FFC629,#F26522);transform-origin:left;transform:scaleX(0);transition:transform 1.6s cubic-bezier(.2,.8,.2,1)}
-.rv.in .bar i,.no-js .bar i{transform:scaleX(1)}
-.growth{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px}
-.growth b{font-family:Sora,sans-serif;font-size:28px;color:#111}
+/* Results section (redesigned) */
+.results{background:#fff;border-block:1px solid #ECE7DF}
+.rk-grid{margin-top:44px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch}
+.rk{background:#fff;border:1.5px solid #111;border-radius:24px;box-shadow:8px 8px 0 #111;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.rk:hover{transform:translate(-3px,-3px);box-shadow:11px 11px 0 #111}
+.rk-head{background:#23245E;color:#fff;padding:22px 22px 20px;position:relative;overflow:hidden}
+.rk-head::after{content:"#1";position:absolute;right:-6px;top:-30px;font-size:120px;font-weight:800;line-height:1;color:rgba(255,255,255,.05);pointer-events:none;font-family:Sora,sans-serif}
+.rk-meta{display:flex;justify-content:space-between;align-items:center;gap:10px;position:relative;z-index:1}
+.rk-mk{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#C9CAF0}
+.rk-mk i{font-style:normal;font-size:16px;letter-spacing:0}
+.rk-badge{background:#FFC629;color:#111;font-weight:800;font-size:12px;padding:5px 10px;border-radius:999px;white-space:nowrap}
+.rk-name{font-size:21px;font-weight:800;margin-top:12px;position:relative;z-index:1;font-family:Sora,'Noto Sans Malayalam',sans-serif}
+.rk-grow{display:flex;align-items:baseline;gap:8px;margin-top:10px;position:relative;z-index:1}
+.rk-grow b{font-size:32px;font-weight:800;line-height:1;color:#FFC629;font-family:Sora,sans-serif}
+.rk-grow span{font-size:13px;color:#C9CAF0;font-weight:600}
+.rk-th{display:flex;justify-content:space-between;padding:16px 22px 6px;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5C5C5C}
+.rk-list{list-style:none;padding:0 12px 14px;flex:1;margin:0}
+.rk-list li{display:flex;align-items:center;gap:12px;padding:11px 10px;border-radius:12px;font-weight:600;font-size:15px;line-height:1.35}
+.rk-list li:nth-child(odd){background:#FAF8F5}
+.rk-list .g{width:18px;height:18px;flex:none}
+.rk-list .k{flex:1;min-width:0;color:#111}
+.rk-list .p{flex:none;min-width:40px;height:30px;display:grid;place-items:center;border-radius:9px;background:#FFC629;color:#111;font-weight:800;font-size:14px;box-shadow:0 4px 12px -5px rgba(255,199,44,.9)}
+.rk-sum{display:flex;justify-content:center;margin-top:30px}
+.rk-sum > span{display:inline-flex;flex-wrap:wrap;justify-content:center;gap:6px 14px;background:#FFF4CC;border:1.5px solid #FFC629;border-radius:999px;padding:10px 20px;font-weight:700;font-size:15px}
+.rk-sum b{color:#F26522}
+.results-cta{text-align:center;margin-top:40px}
 
 /* problem vs promise */
 .split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-radius:28px;overflow:hidden;border:1.5px solid #111;box-shadow:var(--neu-flat)}
@@ -299,26 +352,73 @@ footer a{color:#3D3D3D;text-decoration:none}
 
 @media (max-width:1000px){
 .hero-grid,.g2,.split{grid-template-columns:minmax(0,1fr)}
+.proof-wrap{max-width:560px;margin-inline:auto;width:100%}
+.rk-grid{grid-template-columns:1fr;max-width:520px;margin-inline:auto}
 .g3,.g4{grid-template-columns:repeat(2,minmax(0,1fr))}
 .vcard{flex:0 0 calc((100% - 22px) / 2)}
 .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
 .stat:nth-child(2){border-right:none}.stat:nth-child(-n+2){border-bottom:1.5px solid #111}
 .track{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:28px}.track::before{display:none}
 .nav{display:none}
-.chip1{left:8px}
 .price.hot{transform:none}
 }
-@media (max-width:640px){
+@media (max-width:680px){
+.hdr .btn{display:none}
+.pill{font-size:12px;padding:6px 12px 6px 6px;max-width:100%;white-space:normal;line-height:1.3}
+.pill b{padding:2px 8px;font-size:11px}
 .g3,.g4{grid-template-columns:minmax(0,1fr)}
 .vcard{flex:0 0 calc(85% - 10px)}
-.h1{font-size:38px}.h2{font-size:30px}.sec{padding:68px 0}
-.split > div,.audit,.final{padding:30px 22px}
+.h1{font-size:36px;line-height:1.2}.h2{font-size:28px}.sec{padding:64px 0}
+.split > div,.audit,.final{padding:28px 18px}
 .hl{white-space:normal}
+.proof-foot{grid-template-columns:1fr}
+.proof-card{box-shadow:6px 6px 0 #111}
+.metric .big{font-size:34px}
+.proof-chips{grid-template-columns:repeat(3,1fr);gap:8px;padding:0 16px 18px}
+.gs-brand{font-size:0;gap:0}
+.gs-brand img{width:28px;height:28px}
+.gs-tabs{gap:14px}
+.gs-tabs span:nth-child(n+5){display:none}
+.proof-card .res .title{font-size:16px}
+.proof-chips b{font-size:17px}
+.video-controls-badge{bottom:8px;right:8px;padding:4px 8px;gap:6px;max-width:calc(100% - 16px)}
+.vc-title{display:none}
+.vc-pill{font-size:0.62rem;padding:2px 6px}
+.vc-btn{font-size:0.7rem;padding:3px 8px}
 .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;gap:8px;padding:10px;background:#fff;border-top:1.5px solid #111}
 .mbar a{flex:1;min-height:48px;font-size:15px;padding:0 10px}
 footer{padding-bottom:90px}
+/* compare table mobile fix */
+.tbl{border-radius:18px;-webkit-overflow-scrolling:touch}
+table{width:100%;min-width:100%;table-layout:fixed;font-size:12px}
+th,td{padding:10px 4px;line-height:1.3;word-break:break-word}
+th:first-child,td:first-child{font-size:11.5px;width:28%;padding-left:8px}
+th.us,td.us{width:36%}
+th:last-child,td:last-child{width:36%;padding-right:8px}
+/* results keywords mobile fix */
+.rk{border-radius:20px;box-shadow:6px 6px 0 #111}
+.rk-head{padding:18px 18px 16px}
+.rk-name{font-size:19px;margin-top:10px}
+.rk-grow b{font-size:28px}
+.rk-list{padding:0 10px 12px}
+.rk-list li{padding:10px 8px;font-size:13.5px;gap:8px}
+.rk-list .k{overflow-wrap:break-word;word-break:normal}
+.rk-list .p{min-width:34px;height:26px;font-size:12.5px;border-radius:7px}
+.rk-sum > span{font-size:13px;padding:8px 14px;line-height:1.4}
 }
-@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none !important;transition:none !important}.line{stroke-dashoffset:0}.area{opacity:1}.rank .col{transform:translateY(-174px)}.typing{width:24ch}.js .rv{opacity:1;transform:none}.bar i{transform:scaleX(1)}}
+@media (max-width:380px){
+.vc-left{display:none}
+.vc-btn span:last-child{display:none}
+.pill{font-size:11px}
+.h1{font-size:28px}
+table{font-size:11.5px}
+th,td{padding:10px 4px}
+th:first-child,td:first-child{font-size:11px}
+.rk-list li{font-size:12px;padding:8px 5px;gap:6px}
+.rk-badge{font-size:11px;padding:3px 8px}
+.rk-mk{font-size:11px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none !important;transition:none !important}.line{stroke-dashoffset:0}.area{opacity:1}.js .rv{opacity:1;transform:none}}
 </style>
 </head>
 <body>
@@ -340,8 +440,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
+<!-- FULL-BLEED HERO VIDEO BANNER -->
+<section class="hero-full-wrap" id="hero-reel">
+  <div class="hero-video-banner" id="heroVideoBanner">
+    <video
+      id="heroVideo"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      poster="/video/poster.jpg">
+      <source src="/video/Teknoppy-Web-Banner.mp4" type="video/mp4">
+      <source src="/video/Teknoppy%20Web%20Banner%20final.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Accessible overlay controls badge -->
+    <div class="video-controls-badge">
+      <div class="vc-left">
+        <span class="vc-pill">Kochi Studio</span>
+        <span class="vc-title">Teknoppy Reel</span>
+      </div>
+      <div class="vc-actions">
+        <button type="button" id="soundBtn" class="vc-btn" aria-label="Unmute audio">
+          <span id="soundIcon">🔇</span>
+          <span id="soundText">Sound</span>
+        </button>
+        <button type="button" id="playBtn" class="vc-btn" aria-label="Pause video">
+          <span id="playIcon">⏸</span>
+          <span id="playText">Pause</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HERO CONTENT BELOW VIDEO -->
+<section class="hero" id="hero-content">
 <div class="dots" aria-hidden="true"></div>
 <div class="blob b1" aria-hidden="true"></div><div class="blob b2" aria-hidden="true"></div><div class="blob b3" aria-hidden="true"></div><div class="blob b4" aria-hidden="true"></div>
 <div class="wrap hero-grid">
@@ -360,24 +496,61 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 </div>
 
-<div class="viz">
-<div class="serp" role="img" aria-label="Google search for cmm calibration services showing GeneralTech climbing to position 1 with 256 percent traffic growth">
-<div class="search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5C5C5C" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg><span><span class="typing">cmm calibration services</span><span class="caret"></span></span></div>
-<div class="res win">
-<div class="rank"><div class="col"><span>#9</span><span>#5</span><span>#3</span><span>#1</span></div></div>
-<div><div style="font-size:13px;color:#5C5C5C">generaltech… › calibration</div><div style="font-size:17px;color:#1A47B8;font-weight:700;line-height:1.35">CMM Calibration Services in UAE — GeneralTech</div><div style="font-size:14px;color:#5C5C5C">Accredited calibration for coordinate measuring machines…</div></div>
-</div>
-<div class="res" style="opacity:.55"><div style="width:58px"></div><div style="flex:1"><div class="ghost" style="width:40%"></div><div class="ghost" style="width:80%;background:#E2DCD2"></div><div class="ghost" style="width:92%"></div></div></div>
-<div class="chart">
-<div class="row"><span>Organic traffic</span><span class="big">+<em>256</em>%</span></div>
-<svg viewBox="0 0 400 110" width="100%" height="110" aria-hidden="true">
-<path class="area" d="M0 100 L40 96 L80 92 L120 88 L160 80 L200 70 L240 58 L280 44 L320 30 L360 18 L400 6 L400 110 L0 110 Z" fill="#FFF4CC"></path>
-<path class="line" d="M0 100 L40 96 L80 92 L120 88 L160 80 L200 70 L240 58 L280 44 L320 30 L360 18 L400 6" fill="none" stroke="#F26522" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg>
-</div>
-</div>
-<div class="chip chip1"><span style="color:#F26522">▲</span>Top 3 rankings</div>
-<div class="chip chip2">500+ keywords ranked</div>
+<div class="proof-wrap" aria-label="Live client ranking example">
+  <div class="proof-card">
+    <div class="proof-top">
+      <div class="dots-top"><i></i><i></i><i></i></div>
+      <span class="label">Google search · <span id="h-market">UAE</span></span>
+      <span class="live">Ranking now</span>
+    </div>
+    <div class="proof-body">
+      <div class="gs-head">
+        <span class="gs-brand"><img src="https://www.google.com/favicon.ico" alt="" width="26" height="26">Google</span>
+        <div class="search">
+          <span class="q"><span id="h-query">ISO 17025 Calibration UAE</span><span class="caret"></span></span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4285F4" stroke-width="2.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </div>
+      </div>
+      <div class="gs-tabs"><span class="on">All</span><span>Maps</span><span>Images</span><span>News</span><span>Videos</span></div>
+      <div class="gs-count">Google results in <b id="h-market2">UAE</b></div>
+      <div class="serp">
+        <div class="res win">
+          <div class="fade" id="h-res">
+            <div class="site"><span class="fav" id="h-fav">G</span><div><b id="h-site">GeneralTech Services</b><span class="url" id="h-url">generaltech… › calibration</span></div></div>
+            <div class="title" id="h-title">ISO 17025 Calibration UAE — GeneralTech</div>
+            <div class="desc" id="h-desc">Accredited calibration for coordinate measuring machines and precision instruments…</div>
+          </div>
+          <div class="pos" id="h-pos">#1</div>
+        </div>
+        <div class="res ghost"><div><div class="sk" style="width:35%"></div><div class="sk" style="width:70%;height:12px;background:#E4E8F4"></div><div class="sk" style="width:90%"></div></div><div class="pos">#2</div></div>
+      </div>
+    </div>
+    <div class="proof-foot">
+      <div class="metric">
+        <small>Organic traffic growth</small>
+        <div class="big">+<em id="h-growth">256</em>%</div>
+        <span class="client" id="h-client">GeneralTech Services · UAE</span>
+      </div>
+      <div class="chart">
+        <svg viewBox="0 0 220 110" aria-hidden="true">
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC629" stop-opacity=".55"/><stop offset="1" stop-color="#FFC629" stop-opacity="0"/></linearGradient></defs>
+          <line x1="0" y1="92" x2="220" y2="92" stroke="#ECE7DF"/>
+          <path id="h-area" d="M4 86 C40 84 70 80 100 70 S160 40 214 16 L214 92 L4 92 Z" fill="url(#g1)"/>
+          <path id="h-line" d="M4 86 C40 84 70 80 100 70 S160 40 214 16" fill="none" stroke="#F26522" stroke-width="3.5" stroke-linecap="round"/>
+          <circle id="h-dot" cx="214" cy="16" r="5" fill="#F26522" stroke="#fff" stroke-width="2"/>
+          <text class="ax" x="4" y="106">Before SEO</text>
+          <text class="ax" x="216" y="106" text-anchor="end">Today</text>
+        </svg>
+      </div>
+    </div>
+    <div class="proof-chips">
+      <div><b><em>#</em>1</b><span>Google position</span></div>
+      <div><b id="h-kwn">5</b><span>Keywords at #1</span></div>
+      <div><b>500<em>+</em></b><span>Keywords ranked</span></div>
+    </div>
+  </div>
+  <div class="kw-dots" id="h-dots" role="tablist" aria-label="Client keywords"></div>
+  <p class="proof-caption">Real Gulf clients · <b style="color:#F26522">#1 on Google</b></p>
 </div>
 </div>
 </section>
@@ -401,15 +574,82 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- RESULTS -->
-<section id="results" class="sec">
+<section id="results" class="sec results">
 <div class="wrap">
-<div class="center rv"><p class="eyebrow">Real SEO results in the GCC</p><h2 class="h2 disp">Gulf-ലെ ഞങ്ങളുടെ clients ഇപ്പോൾ Google-ൽ #1</h2><p class="lead">പ്രധാന commercial keywords — വാങ്ങാൻ തയ്യാറായ customers search ചെയ്യുന്ന വാക്കുകൾ — ൽ നേടിയ യഥാർത്ഥ rankings.</p></div>
-<div class="g3">
-<article class="card rcard rv d1"><div class="tag"><span class="loc">UAE · Calibration</span><span class="no1">#1</span></div><h3 class="disp" style="margin:0;font-size:22px">GeneralTech Services</h3><div class="kw"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F26522" stroke-width="2.4" aria-hidden="true" style="vertical-align:-3px;margin-right:6px"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>cmm calibration services</div><div class="growth"><span style="color:#5C5C5C">Traffic growth</span><b>+256%</b></div><div class="bar"><i style="width:100%"></i></div></article>
-<article class="card rcard rv d2"><div class="tag"><span class="loc">Sharjah · Industrial</span><span class="no1">#1</span></div><h3 class="disp" style="margin:0;font-size:22px">Leema Engineering Works</h3><div class="kw"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F26522" stroke-width="2.4" aria-hidden="true" style="vertical-align:-3px;margin-right:6px"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>pipe supplier in sharjah</div><div class="growth"><span style="color:#5C5C5C">Traffic growth</span><b>+215%</b></div><div class="bar"><i style="width:84%"></i></div></article>
-<article class="card rcard rv d3"><div class="tag"><span class="loc">Qatar · Web Design</span><span class="no1">#1</span></div><h3 class="disp" style="margin:0;font-size:22px">Creative Web Design Qatar</h3><div class="kw"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F26522" stroke-width="2.4" aria-hidden="true" style="vertical-align:-3px;margin-right:6px"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>web design in qatar</div><div class="growth"><span style="color:#5C5C5C">Traffic growth</span><b>+178%</b></div><div class="bar"><i style="width:70%"></i></div></article>
+<div class="center rv">
+  <p class="eyebrow">Real SEO results in the GCC</p>
+  <h2 class="h2 disp">Gulf-ലെ ഞങ്ങളുടെ clients ഇപ്പോൾ Google-ൽ #1</h2>
+  <p class="lead">പ്രധാന commercial keywords — വാങ്ങാൻ തയ്യാറായ customers search ചെയ്യുന്ന വാക്കുകൾ — ൽ നേടിയ യഥാർത്ഥ rankings.</p>
 </div>
-<div style="text-align:center;margin-top:40px" class="rv"><a class="btn btn-k" href="#audit">I Want Results Like These →</a></div>
+
+<div class="rk-grid" id="rkGrid">
+  <!-- GeneralTech Services -->
+  <article class="rk rv d1">
+    <div class="rk-head">
+      <div class="rk-meta">
+        <span class="rk-mk"><i>🇦🇪</i>UAE · Calibration</span>
+        <span class="rk-badge">5 / 5 at #1</span>
+      </div>
+      <h3 class="rk-name">GeneralTech Services</h3>
+      <div class="rk-grow"><b>+256%</b><span>organic traffic growth</span></div>
+    </div>
+    <div class="rk-th"><span>Keyword</span><span>Position</span></div>
+    <ul class="rk-list">
+      <li><img class="g" src="https://www.google.com/favicon.ico" alt="Google" width="18" height="18" loading="lazy"><span class="k">ISO 17025 Calibration UAE</span><span class="p">#1</span></li>
+      <li><img class="g" src="https://www.google.com/favicon.ico" alt="Google" width="18" height="18" loading="lazy"><span class="k">Electrical Calibration UAE</span><span class="p">#1</span></li>
+      <li><img class="g" src="https://www.google.com/favicon.ico" alt="Google" width="18" height="18" loading="lazy"><span class="k">Humidity Calibration UAE</span><span class="p">#1</span></li>
+      <li><img class="g" src="https://www.google.com/favicon.ico" alt="Google" width="18" height="18" loading="lazy"><span class="k">Force Calibration UAE</span><span class="p">#1</span></li>
+      <li><img class="g" src="https://www.google.com/favicon.ico" alt="Google" width="18" height="18" loading="lazy"><span class="k">Dimensional Calibration UAE</span><span class="p">#1</span></li>
+    </ul>
+  </article>
+
+  <!-- Leema Engineering Works -->
+  <article class="rk rv d2">
+    <div class="rk-head">
+      <div class="rk-meta">
+        <span class="rk-mk"><i>🇦🇪</i>Sharjah · Industrial</span>
+        <span class="rk-badge">5 / 5 at #1</span>
+      </div>
+      <h3 class="rk-name">Leema Engineering Works</h3>
+      <div class="rk-grow"><b>+215%</b><span>organic traffic growth</span></div>
+    </div>
+    <div class="rk-th"><span>Keyword</span><span>Position</span></div>
+    <ul class="rk-list">
+      <li><img class="g" src="https://www.google.com/favicon.ico" alt="Google" width="18" height="18" loading="lazy"><span class="k">Pipe Supplier in Sharjah</span><span class="p">#1</span></li>
+      <li><img class="g" src="https://www.google.com/favicon.ico" alt="Google" width="18" height="18" loading="lazy"><span class="k">Pipe Fittings Supplier in Sharjah</span><span class="p">#1</span></li>
+      <li><img class="g" src="https://www.google.com/favicon.ico" alt="Google" width="18" height="18" loading="lazy"><span class="k">Flanges Supplier in Sharjah</span><span class="p">#1</span></li>
+      <li><img class="g" src="https://www.google.com/favicon.ico" alt="Google" width="18" height="18" loading="lazy"><span class="k">Premier Pipes and Fittings Suppliers in Sharjah</span><span class="p">#1</span></li>
+      <li><img class="g" src="https://www.google.com/favicon.ico" alt="Google" width="18" height="18" loading="lazy"><span class="k">Non-China Flanges Supplier in UAE</span><span class="p">#1</span></li>
+    </ul>
+  </article>
+
+  <!-- Creative Web Design Qatar -->
+  <article class="rk rv d3">
+    <div class="rk-head">
+      <div class="rk-meta">
+        <span class="rk-mk"><i>🇶🇦</i>Qatar · Web Design</span>
+        <span class="rk-badge">6 / 6 at #1</span>
+      </div>
+      <h3 class="rk-name">Creative Web Design Qatar</h3>
+      <div class="rk-grow"><b>+178%</b><span>organic traffic growth</span></div>
+    </div>
+    <div class="rk-th"><span>Keyword</span><span>Position</span></div>
+    <ul class="rk-list">
+      <li><img class="g" src="https://www.google.com/favicon.ico" alt="Google" width="18" height="18" loading="lazy"><span class="k">Web design in Qatar</span><span class="p">#1</span></li>
+      <li><img class="g" src="https://www.google.com/favicon.ico" alt="Google" width="18" height="18" loading="lazy"><span class="k">Website design company Doha Qatar</span><span class="p">#1</span></li>
+      <li><img class="g" src="https://www.google.com/favicon.ico" alt="Google" width="18" height="18" loading="lazy"><span class="k">Web design company Doha</span><span class="p">#1</span></li>
+      <li><img class="g" src="https://www.google.com/favicon.ico" alt="Google" width="18" height="18" loading="lazy"><span class="k">Website design company Qatar</span><span class="p">#1</span></li>
+      <li><img class="g" src="https://www.google.com/favicon.ico" alt="Google" width="18" height="18" loading="lazy"><span class="k">Microsoft 365</span><span class="p">#1</span></li>
+      <li><img class="g" src="https://www.google.com/favicon.ico" alt="Google" width="18" height="18" loading="lazy"><span class="k">Creative web design Qatar</span><span class="p">#1</span></li>
+    </ul>
+  </article>
+</div>
+
+<div class="rk-sum rv">
+  <span>🏆 <span><b id="rkTotal">16</b> keywords</span>·<span><b>3</b> Gulf clients</span>·<span>എല്ലാം Google-ൽ <b>#1</b></span></span>
+</div>
+
+<div class="results-cta rv"><a class="btn btn-o" href="#audit">I Want Results Like These →</a></div>
 </div>
 </section>
 
@@ -777,6 +1017,163 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script is:inline>
 (function(){
 var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* Hero Video Controls */
+var heroVid = document.getElementById('heroVideo');
+var soundBtn = document.getElementById('soundBtn');
+var soundIcon = document.getElementById('soundIcon');
+var soundText = document.getElementById('soundText');
+var playBtn = document.getElementById('playBtn');
+var playIcon = document.getElementById('playIcon');
+var playText = document.getElementById('playText');
+
+if (heroVid) {
+  if (reduce) {
+    heroVid.removeAttribute('autoplay');
+    heroVid.pause();
+  }
+  if (soundBtn) {
+    soundBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      if (heroVid.muted) {
+        heroVid.muted = false;
+        if (soundIcon) soundIcon.textContent = '🔊';
+        if (soundText) soundText.textContent = 'Mute';
+        soundBtn.setAttribute('aria-label', 'Mute audio');
+      } else {
+        heroVid.muted = true;
+        if (soundIcon) soundIcon.textContent = '🔇';
+        if (soundText) soundText.textContent = 'Sound';
+        soundBtn.setAttribute('aria-label', 'Unmute audio');
+      }
+    });
+  }
+  if (playBtn) {
+    playBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      if (heroVid.paused) {
+        heroVid.play();
+        if (playIcon) playIcon.textContent = '⏸';
+        if (playText) playText.textContent = 'Pause';
+        playBtn.setAttribute('aria-label', 'Pause video');
+      } else {
+        heroVid.pause();
+        if (playIcon) playIcon.textContent = '▶';
+        if (playText) playText.textContent = 'Play';
+        playBtn.setAttribute('aria-label', 'Play video');
+      }
+    });
+  }
+  heroVid.addEventListener('play', function() {
+    if (playIcon) playIcon.textContent = '⏸';
+    if (playText) playText.textContent = 'Pause';
+  });
+  heroVid.addEventListener('pause', function() {
+    if (playIcon) playIcon.textContent = '▶';
+    if (playText) playText.textContent = 'Play';
+  });
+}
+
+/* Hero Proof Card Client Cycling */
+var CLIENTS = [
+  {client:"GeneralTech Services", market:"UAE", flag:"🇦🇪", industry:"Calibration", growth:256,
+   url:"generaltech… › calibration", title:"ISO 17025 Calibration UAE — GeneralTech", desc:"Accredited calibration for coordinate measuring machines and precision instruments…",
+   keywords:["ISO 17025 Calibration UAE","Electrical Calibration UAE","Humidity Calibration UAE","Force Calibration UAE","Dimensional Calibration UAE"]},
+  {client:"Leema Engineering Works", market:"Sharjah", flag:"🇦🇪", industry:"Industrial", growth:215,
+   url:"leema… › pipes", title:"Pipe Supplier in Sharjah — Leema Engineering Works", desc:"MS, GI & stainless steel pipes for industrial projects…",
+   keywords:["Pipe Supplier in Sharjah","Pipe Fittings Supplier in Sharjah","Flanges Supplier in Sharjah","Premier Pipes and Fittings Suppliers in Sharjah","Non-China Flanges Supplier in UAE"]},
+  {client:"Creative Web Design Qatar", market:"Qatar", flag:"🇶🇦", industry:"Web Design", growth:178,
+   url:"creativewebdesign… › qatar", title:"Web Design in Qatar — Creative Web Design", desc:"Custom, mobile-first websites for Doha businesses…",
+   keywords:["Web design in Qatar","Website design company Doha Qatar","Web design company Doha","Website design company Qatar","Microsoft 365","Creative web design Qatar"]}
+];
+
+var $ = function(id) { return document.getElementById(id); };
+var dotsEl = $('h-dots');
+var idx = 0, timer, typer;
+
+function curve(g) {
+  var end = Math.max(14, 86 - Math.min(g || 200, 300) * 0.26);
+  var mid = (86 + end) / 2 + 6;
+  return 'M4 86 C40 84 70 82 100 ' + mid + ' S160 ' + (end + 22) + ' 214 ' + end;
+}
+
+function show(i, manual) {
+  if (!dotsEl) return;
+  idx = i;
+  var d = CLIENTS[i];
+  var kw = d.keywords[0];
+  Array.prototype.slice.call(dotsEl.children).forEach(function(b, j) {
+    b.classList.toggle('on', j === i);
+  });
+  if ($('h-market')) $('h-market').textContent = d.market;
+  if ($('h-market2')) $('h-market2').textContent = d.market;
+  if ($('h-res')) $('h-res').classList.add('out');
+  clearInterval(typer);
+  var q = $('h-query');
+  if (q) {
+    q.textContent = '';
+    var c = 0;
+    typer = setInterval(function() {
+      q.textContent = kw.slice(0, ++c);
+      if (c >= kw.length) {
+        clearInterval(typer);
+        reveal(d);
+      }
+    }, reduce ? 0 : 45);
+  } else {
+    reveal(d);
+  }
+  if (manual) {
+    clearInterval(timer);
+    timer = setInterval(next, 5600);
+  }
+}
+
+function reveal(d) {
+  if ($('h-site')) $('h-site').textContent = d.client;
+  if ($('h-fav')) $('h-fav').textContent = d.client.charAt(0);
+  if ($('h-url')) $('h-url').textContent = d.url;
+  if ($('h-title')) $('h-title').textContent = d.title;
+  if ($('h-desc')) $('h-desc').textContent = d.desc;
+  if ($('h-res')) $('h-res').classList.remove('out');
+  var pos = $('h-pos');
+  if (pos) {
+    var seq = [9, 5, 3, 1];
+    var k = 0;
+    var climb = setInterval(function() {
+      pos.textContent = '#' + seq[k];
+      pos.classList.add('bump');
+      setTimeout(function() { pos.classList.remove('bump'); }, 180);
+      if (++k >= seq.length) clearInterval(climb);
+    }, reduce ? 0 : 220);
+  }
+  if ($('h-growth')) $('h-growth').textContent = d.growth;
+  if ($('h-client')) $('h-client').textContent = d.client + ' · ' + d.market;
+  if ($('h-kwn')) $('h-kwn').textContent = d.keywords.length;
+  var p = curve(d.growth);
+  if ($('h-line')) $('h-line').setAttribute('d', p);
+  if ($('h-area')) $('h-area').setAttribute('d', p + ' L214 92 L4 92 Z');
+  if ($('h-dot')) $('h-dot').setAttribute('cy', p.split(' ').pop());
+}
+
+function next() {
+  show((idx + 1) % CLIENTS.length);
+}
+
+if (dotsEl) {
+  CLIENTS.forEach(function(c, i) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.setAttribute('aria-label', c.client);
+    b.onclick = function() { show(i, true); };
+    dotsEl.appendChild(b);
+  });
+  show(0);
+  if (!reduce) {
+    timer = setInterval(next, 5600);
+  }
+}
+
 var els=document.querySelectorAll('.rv');
 if(!('IntersectionObserver' in window)||reduce){els.forEach(function(e){e.classList.add('in')});}
 else{var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}})},{threshold:.15});els.forEach(function(e){io.observe(e)});}
