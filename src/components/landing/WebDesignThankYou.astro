@@ -1,18 +1,17 @@
 ---
 /**
  * Polished, brand-aligned Thank-You page for Web Design Landing Page submissions.
- * Matches the reference visual layout:
+ * Uses the Web Design landing page header & footer matching the landing page design:
+ * - Topbar offer banner + sticky header with phone capsule and Get Free Quote button
  * - Solid circular green success checkmark (#05B67A)
  * - Centered "Thank you!" heading and confirmation text
  * - Two clean symmetrical white cards:
  *     1. "Connect With Us" with round social & messaging buttons + phone & email
  *     2. "Visit Our Website" with clean green "Visit Website" CTA button + domain tag
- * - Official Teknoppy Header & Footer
- * - Preserved GTM implementation (GTM-NHX2WJ39)
+ * - Web Design landing page dark footer
+ * - Preserved GTM implementation (GTM-NHX2WJ39) and noindex directives
  */
 import Layout from '../../layouts/Layout.astro';
-import Header from '../Header.astro';
-import Footer from '../Footer.astro';
 import site from '../../data/site.json';
 import { Check, Phone, Mail } from 'lucide-react';
 
@@ -85,11 +84,28 @@ const socialChannels = [
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <!-- Official Teknoppy Header with Solid Background -->
-  <Header forceSolidBg={true} />
+  <!-- Web Design Landing Page Top Strip -->
+  <div class="wd-topbar">
+    🎉 <b>Free website audit</b> with every quote this month · Reply within 24 hours · <a href="/web-design-company-landingpage/#enquiry">Claim yours</a>
+  </div>
+
+  <!-- Web Design Landing Page Header -->
+  <header class="wd-header">
+    <div class="wd-wrap wd-nav">
+      <a href="/web-design-company-landingpage/" class="wd-logo" aria-label="Teknoppy">
+        <img src="/logo.svg" alt="Teknoppy" width="145" height="38" onerror="this.onerror=null;this.src='https://www.teknoppy.com/logo.svg';" />
+      </a>
+      <div class="wd-nav-cta">
+        <a class="wd-nav-phone" href="tel:+916282249224">
+          <span class="ic">📞</span><span class="t">+91 62822 49224</span>
+        </a>
+        <a class="wd-btn wd-btn-orange" href="/web-design-company-landingpage/#enquiry">Get Free Quote</a>
+      </div>
+    </div>
+  </header>
 
   <!-- Main Thank You Section (Clean, centered, matching reference layout) -->
-  <main class="flex-grow pt-24 sm:pt-28 md:pt-36 pb-20 sm:pb-24 md:pb-32 bg-[#F8F9FA] text-neutral-900">
+  <main class="flex-grow pt-12 sm:pt-16 md:pt-20 pb-16 sm:pb-20 md:pb-24 bg-[#F8F9FA] text-neutral-900">
     <div class="max-w-3xl mx-auto px-4 sm:px-6">
 
       <!-- Success Checkmark Icon (Matching the green circular badge from the reference) -->
@@ -172,6 +188,145 @@ const socialChannels = [
     </div>
   </main>
 
-  <!-- Official Teknoppy Footer -->
-  <Footer />
+  <!-- Web Design Landing Page Footer -->
+  <footer class="wd-footer">
+    <div class="wd-wrap">
+      <span>© 2026 <b>Teknoppy</b> · Web Design Company in Kochi, Kerala</span>
+      <span>Established 2018 · Thykoodam, Vyttila, Ernakulam</span>
+    </div>
+  </footer>
 </Layout>
+
+<style>
+  .wd-topbar {
+    background: #111;
+    color: #fff;
+    font-size: clamp(0.78rem, 2vw, 0.88rem);
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 16px;
+    line-height: 1.4;
+  }
+  .wd-topbar b {
+    color: #FFC629;
+  }
+  .wd-topbar a {
+    color: #FFC629;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .wd-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(245, 246, 250, 0.95);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(226, 230, 238, 0.8);
+    box-shadow: 0 4px 18px rgba(166, 175, 195, 0.15);
+  }
+  .wd-wrap {
+    width: min(1180px, 100% - 36px);
+    margin-inline: auto;
+  }
+  .wd-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+  }
+  .wd-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  .wd-logo img {
+    height: 38px;
+    width: auto;
+    max-width: 170px;
+    display: block;
+    object-fit: contain;
+  }
+  .wd-nav-cta {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+  }
+  .wd-nav-phone {
+    font-weight: 700;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 0.95rem;
+    padding: 7px 16px;
+    border-radius: 999px;
+    background: #fff;
+    color: #111;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(226, 230, 238, 0.8);
+    transition: transform 0.25s ease, box-shadow 0.25s;
+    white-space: nowrap;
+  }
+  .wd-nav-phone:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  .wd-nav-phone .ic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #FFF4CC;
+    display: grid;
+    place-items: center;
+    font-size: 0.95rem;
+  }
+  .wd-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 24px;
+    font-size: 0.94rem;
+    min-height: 44px;
+    font-weight: 700;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .wd-btn-orange {
+    background: #FF6B00;
+    color: #fff;
+    box-shadow: 0 8px 20px -6px rgba(255, 107, 0, 0.6);
+  }
+  .wd-btn-orange:hover {
+    background: #E05E00;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+  .wd-footer {
+    background: #111;
+    color: #A3A3A3;
+    padding: 24px 0;
+    font-size: 0.88rem;
+    margin-top: auto;
+  }
+  .wd-footer .wd-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .wd-footer b {
+    color: #FFC629;
+  }
+  @media (max-width: 640px) {
+    .wd-nav-phone span.t, .wd-nav .wd-btn {
+      display: none;
+    }
+    .wd-wrap {
+      width: calc(100% - 24px);
+    }
+  }
+</style>
