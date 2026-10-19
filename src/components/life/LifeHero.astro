@@ -1,6 +1,6 @@
 ---
 // Centered Hero section for Life at Teknoppy matching the reference HTML design:
-// Breadcrumbs, heading, lead, introduction, CTAs, 3-card fan with real photography, and company facts bar
+// Hero section with heading, lead, introduction, CTAs, 3-card fan with authentic studio photography, and company facts bar
 ---
 
 <section class="hero-section" id="top">
@@ -8,15 +8,6 @@
   <div class="hero-ambient-glow" aria-hidden="true"></div>
 
   <div class="wrap">
-    <!-- Breadcrumb Navigation -->
-    <nav class="crumb" aria-label="Breadcrumb">
-      <a href="/">Home</a>
-      <span class="sep" aria-hidden="true">/</span>
-      <a href="/about-us/">About Us</a>
-      <span class="sep" aria-hidden="true">/</span>
-      <span class="current" aria-current="page">Life at Teknoppy</span>
-    </nav>
-
     <!-- Main Heading -->
     <h1 class="hero-title" id="h1">
       Life at <br class="mobile-br" /><span class="text-orange">Teknoppy</span>
@@ -53,13 +44,14 @@
       <div class="card c1">
         <div class="card-photo-wrap">
           <img
-            src="/whatwedo.webp"
-            alt="Teknoppy SEO and web development specialists at work"
+            src="/images/life/teknoppy-studio-work.webp"
+            alt="Teknoppy SEO and web design specialists collaborating at work"
             class="card-img"
             loading="eager"
+            style="object-position: center 25%;"
           />
           <div class="card-overlay">
-            <span class="card-badge">Design & Code Floor</span>
+            <span class="card-badge">Design & Sprint Floor</span>
             <div class="card-text">
               <span class="card-title">Specialists at Work</span>
               <span class="card-sub">Design, Code & Search under one roof</span>
@@ -72,10 +64,11 @@
       <div class="card c2">
         <div class="card-photo-wrap">
           <img
-            src="/whoweare.webp"
+            src="/images/life/teknoppy-team-portrait.webp"
             alt="Full Teknoppy in-house team together at Vyttila studio"
             class="card-img"
             loading="eager"
+            style="object-position: center center;"
           />
           <div class="card-overlay">
             <span class="card-badge badge-orange">The In-House Team</span>
@@ -91,17 +84,17 @@
       <div class="card c3">
         <div class="card-photo-wrap">
           <img
-            src="/team/vijayakala.webp"
-            alt="Vijayakala, Business Development and Client Relations at Teknoppy"
+            src="/images/life/teknoppy-team-collaboration.webp"
+            alt="Teknoppy team members conducting peer reviews and collaborative problem solving"
             class="card-img"
             loading="eager"
-            style="object-position: top center;"
+            style="object-position: center top;"
           />
           <div class="card-overlay">
-            <span class="card-badge">Client Relations</span>
+            <span class="card-badge">Peer Review</span>
             <div class="card-text">
-              <span class="card-title">Direct Client Scoping</span>
-              <span class="card-sub">Dedicated account lead for Kerala & Gulf</span>
+              <span class="card-title">Side-by-Side Feedback</span>
+              <span class="card-sub">Collaborative review and junior mentorship</span>
             </div>
           </div>
         </div>
@@ -140,7 +133,7 @@
 
 <style>
   .hero-section {
-    padding-block: 48px 70px;
+    padding-block: 28px 70px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -165,33 +158,6 @@
     50% { transform: translateX(-50%) scale(1.12); }
   }
 
-  /* Breadcrumb Navigation */
-  .crumb {
-    font-size: 14px;
-    color: var(--soft);
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 2;
-  }
-  .crumb a {
-    color: var(--muted);
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-  .crumb a:hover {
-    color: var(--orange);
-  }
-  .crumb .sep {
-    color: var(--line);
-  }
-  .crumb .current {
-    color: var(--ink);
-    font-weight: 600;
-  }
-
   /* Main Heading */
   .hero-title {
     position: relative;
@@ -199,7 +165,7 @@
     font-weight: 800;
     letter-spacing: -0.055em;
     line-height: 0.98;
-    margin-top: 22px;
+    margin-top: 0;
     z-index: 2;
   }
   br.mobile-br {
