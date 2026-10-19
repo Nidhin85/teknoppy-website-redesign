@@ -61,13 +61,16 @@ export default async function handler(req, res) {
   if (body.company_website) return res.status(200).json({ ok: true });
 
   const name = String(body.name || '').trim();
-  const email = String(body.email || '').trim();
   const phone = String(body.phone || '').trim();
-  const message = String(body.message || '').trim();
   const service = String(body.service || '').trim();
   const source = String(body.source || 'Website').trim();
+  const email = String(body.email || '').trim() || (phone ? 'lead@teknoppy.com' : '');
+  const message = String(body.message || '').trim() || (service ? `Enquiry for ${service}` : (phone ? `Lead submission from ${phone}` : ''));
 
-  if (!name || !email || !message) {
+  if (!name || (!email && !phone)) {
+    return res.status(400).json({ error: 'Name and either email or phone are required' });
+  }
+  if (!email || !message) {
     return res.status(400).json({ error: 'Name, email and message are required' });
   }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
@@ -76,8 +79,8 @@ export default async function handler(req, res) {
 
   const API_KEY = process.env.RESEND_API_KEY;
   if (!API_KEY) {
-    if (process.env.NODE_ENV !== 'production') {
-      console.warn('[contact] RESEND_API_KEY is not set in dev. Form submission accepted locally.');
+    if (process.env.NODE_ENV !== 'production' || !process.env.VERCEL) {
+      console.warn('[contact] RESEND_API_KEY is not set locally. Form submission accepted for local testing.');
       return res.status(200).json({ ok: true, dev: true });
     }
     console.error('[contact] RESEND_API_KEY is not set');
