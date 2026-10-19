@@ -129,18 +129,18 @@
     },
     {
       "id": "triqare-web-app",
-      "title": "TriQare — Web Application",
+      "title": "TriQare — Pre-Launch Website",
       "client": "TriQare",
-      "category": "Web Application",
+      "category": "Web Design & Development",
       "categories": [
-        "Web Application"
+        "Web Design & Development"
       ],
-      "description": "HealthTech emergency SOS web application coordinating real-time medical responder alerts and patient geolocation.",
+      "description": "Pre-launch waitlist website and trust architecture for an emergency ambulance SOS app, capturing qualified founding members.",
       "image": "/case-studies/triqare-desktop.webp",
-      "imageAlt": "TriQare — Web Application website homepage screenshot",
+      "imageAlt": "TriQare — Pre-Launch Website homepage screenshot",
       "href": "/case-studies/triqare-web-application-design/",
-      "location": "Kochi, Kerala",
-      "tag": "HealthTech Emergency SOS"
+      "location": "Mumbai, Maharashtra",
+      "tag": "HealthTech Startup Website"
     },
     {
       "id": "sun-and-moon-korean-ecommerce",
@@ -252,18 +252,19 @@
     },
     {
       "id": "libra-group-uae-web-app",
-      "title": "Libra Group UAE — Web Application",
+      "title": "Libra Group UAE — Multi-Service Facilities Website",
       "client": "Libra Group UAE",
-      "category": "Web Application",
+      "category": "Corporate Website",
       "categories": [
-        "Web Application"
+        "Corporate Website",
+        "WordPress"
       ],
-      "description": "Enterprise facilities management web application digitizing client work orders and operational dispatch across the Emirates.",
+      "description": "Multi-service corporate website unifying six facilities management divisions in Dubai with SIRA accreditation and clear quote workflows.",
       "image": "/case-studies/libragroupuae.webp",
-      "imageAlt": "Libra Group UAE — Web Application website homepage screenshot",
+      "imageAlt": "Libra Group UAE multi-service facilities website screenshot",
       "href": "/case-studies/libra-group-uae-web-application-design/",
       "location": "Dubai, UAE",
-      "tag": "Facilities Management Portal"
+      "tag": "Multi-Service Facilities Website"
     },
     {
       "id": "getskillonline-ecommerce",

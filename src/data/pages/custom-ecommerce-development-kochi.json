@@ -1,26 +1,27 @@
 {
   "meta": {
-    "title": "Custom Ecommerce Development Company Kochi | Teknoppy",
-    "description": "Need a Custom Ecommerce Development Company Kochi? Teknoppy builds bespoke, scalable ecommerce platforms for complex stores. Book a free consultation."
+    "title": "Custom Ecommerce Development Company in Kochi | Teknoppy",
+    "description": "Custom ecommerce platforms for stores that have outgrown Shopify or WooCommerce - bespoke checkout, headless builds and ERP integration. Book a call."
   },
   "breadcrumb": [
     { "name": "Home", "href": "/" },
     { "name": "Ecommerce Website Development Company Kochi", "href": "/ecommerce-website-development-company-kochi/" },
-    { "name": "Custom Ecommerce Development Company Kochi", "href": "/custom-ecommerce-development-kochi/" }
+    { "name": "Custom Ecommerce Development", "href": "/custom-ecommerce-development-kochi/" }
   ],
   "sections": [
     {
       "type": "hero",
       "badge": "Ecommerce Development",
-      "h1Lead": "Custom Ecommerce Development Company",
+      "h1Lead": "Custom Ecommerce Development Company in",
       "h1Accent": "Kochi",
       "subhead": "For Ecommerce Businesses That Have Outgrown Off-the-Shelf Platforms",
+      "subheadTag": "p",
       "body": [
         {
-          "html": "<strong>Custom Ecommerce Development Company Kochi</strong> — that's what businesses search for once WooCommerce or Shopify's standard setup can't handle what they actually need. Teknoppy builds fully custom ecommerce platforms for businesses with complex product logic, unusual checkout requirements, or integrations that off-the-shelf platforms weren't designed to support."
+          "text": "Teknoppy builds custom ecommerce platforms in Kochi for stores that have outgrown Shopify or WooCommerce — with bespoke checkout and pricing rules, headless storefronts, and links to your ERP, CRM and inventory systems. Most builds take 6-12 weeks and start from Rs. 2,00,000."
         },
         {
-          "html": "Choosing the right <strong>Custom Ecommerce Development Company Kochi</strong> partner matters more here than on a standard store build, since a custom platform has to be architected correctly from the start — retrofitting complex logic onto the wrong foundation later is expensive and slow."
+          "text": "Choosing the right custom ecommerce development partner in Kochi matters because custom architecture must be scalable from day one — retrofitting complex pricing or catalogue logic onto the wrong foundation later is expensive and slow."
         }
       ],
       "ctas": [
@@ -34,109 +35,146 @@
       "columns": 2,
       "badge": "What's Included",
       "h2": "What Our Custom Ecommerce Development Includes",
+      "intro": "When standard store plugins become a limitation, we engineer dedicated commerce platforms covering five core capabilities:",
       "items": [
         {
           "title": "Custom Platform Architecture",
-          "html": "<strong>Custom ecommerce platform development</strong> starts with choosing the right technical foundation for your specific scale, product complexity, and growth plans — not defaulting to whatever platform is fastest to set up."
+          "text": "Custom ecommerce platform development starts with choosing the right technical foundation for your specific scale, product complexity, and growth plans — not defaulting to whatever platform is fastest to set up."
         },
         {
           "title": "Bespoke Checkout & Product Logic",
-          "html": "For businesses with pricing rules, configurators, or checkout flows no standard plugin supports, <strong>custom checkout development Kochi</strong> and <strong>custom product configurator development</strong> are built around exactly how your products and pricing actually work."
+          "html": "For businesses with tiered B2B pricing, custom configurators, or bespoke checkout flows. Includes seamless <a href=\"/payment-gateway-integration-kochi/\" class=\"text-primary font-semibold hover:underline\">payment gateway integration</a> with Razorpay, Stripe, and Cashfree."
         },
         {
           "title": "Headless & API-First Builds",
-          "html": "Where flexibility matters more than convenience, <strong>headless ecommerce development</strong> separates your storefront from the backend, giving you full control over frontend experience and <strong>ecommerce API integration</strong> with other business systems."
+          "text": "Where flexibility matters, headless ecommerce decouples the high-speed frontend from backend services, giving you full control over user experience, Core Web Vitals, and multi-channel selling."
         },
         {
-          "title": "Multi-Vendor & Enterprise-Scale Builds",
-          "html": "For marketplaces or high-traffic operations, <strong>multi-vendor ecommerce development</strong> and <strong>scalable ecommerce solutions Kochi</strong> are architected to handle growth without performance breaking down."
+          "title": "Enterprise-Scale & B2B Builds",
+          "html": "B2B portals with wholesale price tiers, credit terms, and ERP sync. For multi-seller platforms, see our <a href=\"/marketplace-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Marketplace Development</a> services."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "columns": 2,
+      "badge": "Technology Stack",
+      "h2": "Technologies We Build With",
+      "intro": "We build custom commerce platforms using proven, modern engineering frameworks:",
+      "items": [
+        {
+          "title": "Modern Frontend Frameworks",
+          "text": "Next.js, Astro, and React storefronts delivering lightning-fast sub-second page loads and superior Core Web Vitals scores."
+        },
+        {
+          "title": "Robust Backend & API Architecture",
+          "text": "Node.js, Laravel, and Python APIs engineered for high-concurrency catalog queries and secure order processing."
+        },
+        {
+          "title": "Enterprise Databases",
+          "text": "PostgreSQL and MySQL configured with query caching, connection pooling, and automated daily backups."
+        },
+        {
+          "title": "Payment & Cloud Infrastructure",
+          "text": "Direct integrations for Razorpay, Stripe, and Cashfree, hosted on scalable AWS or Cloudflare edge networks."
         }
       ]
     },
     {
       "type": "steps",
-      "bg": "white",
+      "bg": "soft",
       "badge": "How We Work",
       "h2": "Our Custom Ecommerce Development Process",
+      "intro": "Our custom build process is structured across five sequential stages:",
       "items": [
         {
-          "title": "Technical & Business Requirements Review",
-          "text": "We document the specific logic, integrations, and scale requirements a standard platform can't handle."
+          "title": "Requirements & Architecture (Weeks 1-2)",
+          "text": "We map your specific product logic, B2B pricing tiers, and ERP/CRM integration requirements into a technical specification."
         },
         {
-          "title": "Architecture Planning",
-          "text": "The right technical foundation is chosen — headless, API-first, or a hybrid approach — based on your actual needs, not convenience."
+          "title": "Database & UX Wireframes (Weeks 3-4)",
+          "text": "Database schemas for custom attributes and high-converting checkout wireframes are created and approved."
         },
         {
-          "title": "Custom Build",
-          "text": "Bespoke ecommerce development Kochi work is built and tested incrementally, not delivered as one untested block at the end."
+          "title": "Storefront & API Build (Weeks 5-8)",
+          "text": "The custom frontend, backend business logic, and third-party API connections are developed and reviewed in staging."
         },
         {
-          "title": "Integration & Data Testing",
-          "text": "All third-party systems, payment methods, and custom logic are tested against real data before launch."
+          "title": "Integration & Security Auditing (Weeks 9-10)",
+          "text": "End-to-end testing of payments, tax rules, courier integrations, and stress-testing under simulated traffic surges."
         },
         {
-          "title": "Launch & Handover",
-          "text": "Full documentation is provided so your team or ours can maintain and extend the platform going forward."
+          "title": "Migration, Launch & Handover (Weeks 11-12)",
+          "text": "Full product data and order migration, 301 URL redirect implementation, and complete source code and documentation handover."
         }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "columns": 2,
+      "badge": "Proven Delivery",
+      "h2": "Custom Ecommerce Projects We've Delivered",
+      "intro": "Live custom platforms engineered for distinct business models:",
+      "items": [
+        {
+          "title": "My PlantStore — Dubai, UAE",
+          "text": "Custom ecommerce storefront built for a leading UAE plant nursery brand. Features 8 product categories with multi-level subcategories, customer accounts & wishlist, emirate-based delivery thresholds, and live variant pricing."
+        },
+        {
+          "title": "B2B Manufacturing & Wholesale Portal",
+          "text": "B2B wholesale portal featuring custom bulk pricing tiers, dealer credit management, automated GST invoicing, and real-time ERP inventory synchronization."
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "bg": "white",
+      "badge": "The Teknoppy Advantage",
+      "h2": "Why Choose Teknoppy for Custom Ecommerce in Kochi",
+      "items": [
+        { "html": "<strong>In-house development team in Vyttila, Kochi.</strong> You collaborate directly with senior engineers architecting your store, not offshore subcontractors." },
+        { "html": "<strong>Full documentation and source code ownership.</strong> You receive 100% ownership of source repositories, server credentials, and documentation with zero vendor lock-in." },
+        { "html": "<strong>Engineered for high-volume transactions.</strong> Robust database optimization and edge caching ensure sub-second page loads during seasonal sales spikes." },
+        { "html": "<strong>Comprehensive post-launch support.</strong> SLA-backed maintenance, security patch monitoring, and performance reviews after going live." }
       ]
     },
     {
       "type": "bullets",
       "bg": "soft",
-      "h2": "Why Choose Teknoppy for Custom Ecommerce Development in Kochi",
-      "items": [
-        { "html": "<strong>We architect before we build.</strong> Custom platforms fail when the technical foundation is wrong from day one — we scope architecture properly before writing code." },
-        { "html": "<strong>Enterprise ecommerce solutions Kochi businesses can actually scale on.</strong> Systems are built to handle real order volume growth, not just demo-stage traffic." },
-        { "html": "<strong>Custom online store development matched to your business logic</strong>, not adapted from a generic template pretending to be custom." },
-        { "html": "<strong>Direct communication with the team building it.</strong> Complex ecommerce projects need fast, technical back-and-forth — you're not routed through account managers who don't understand the build." }
-      ]
-    },
-    {
-      "type": "bullets",
-      "bg": "white",
       "h2": "Who Needs Custom Ecommerce Development",
-      "intro": "This service fits businesses that are:",
+      "intro": "This service fits businesses where standard tools become a bottleneck:",
       "items": [
-        { "text": "Running product or pricing logic too complex for WooCommerce or Shopify's standard configuration" },
-        { "html": "Needing a <strong>headless ecommerce development</strong> setup to support a custom frontend or multiple sales channels" },
-        { "html": "Building a multi-vendor marketplace or enterprise-scale platform requiring <strong>scalable ecommerce solutions Kochi</strong>" }
+        { "text": "Running product, bundle, or pricing logic too complex for standard Shopify or WooCommerce plugins" },
+        { "text": "Needing a headless ecommerce architecture to power web, mobile apps, or multi-region storefronts from one backend" },
+        { "text": "Operating B2B wholesale portals requiring custom credit limits, customer-specific price lists, and ERP integration" }
       ],
       "outro": [
         {
-          "html": "If your ecommerce needs fit within a standard platform, see <a href=\"/woocommerce-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">WooCommerce Development</a> or <a href=\"/shopify-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Shopify Development</a> instead — both are faster and more cost-effective when a custom build isn't strictly necessary. This service makes the most sense once those platforms have genuinely become a constraint rather than a preference."
-        }
-      ]
-    },
-    {
-      "type": "prose",
-      "bg": "cream",
-      "h2": "Custom Ecommerce Projects We've Delivered",
-      "paragraphs": [
-        {
-          "html": "Teknoppy has built custom ecommerce platforms for businesses across Kochi and Kerala with requirements standard platforms couldn't support — complex pricing logic, multi-system integrations, and high-volume product catalogues. See more in our <a href=\"/portfolios/ecommerce-projects/\" class=\"text-primary font-semibold hover:underline\">Ecommerce Projects Portfolio</a>."
+          "html": "If your store requirements fit standard catalog features, see our <a href=\"/woocommerce-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">WooCommerce Development</a> or <a href=\"/shopify-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Shopify Development</a> services — both are faster and more economical when bespoke code is not strictly required."
         }
       ]
     },
     {
       "type": "prose",
       "bg": "white",
-      "h2": "Custom Ecommerce Development Pricing",
+      "h2": "Custom Ecommerce Development Cost in Kochi",
       "paragraphs": [
         {
-          "html": "Because every <strong>custom ecommerce platform development</strong> project is scoped around unique technical requirements, pricing varies significantly by complexity. For an estimate based on your specific needs, use our <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Cost Calculator</a> or <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a>."
+          "html": "Custom online stores and B2B portals typically range from Rs. 2,00,000 to Rs. 6,00,000+, depending on the number of third-party integrations (ERP, CRM, inventory), bespoke checkout/pricing rules, and headless architecture requirements, usually delivered over 6 to 12 weeks. <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a> for a comprehensive technical proposal."
         }
       ]
     },
     {
       "type": "links",
-      "bg": "soft",
+      "bg": "cream",
       "h2": "Related Services",
       "items": [
         { "label": "Ecommerce Website Development Company Kochi", "href": "/ecommerce-website-development-company-kochi/", "text": "our full ecommerce development pillar" },
-        { "label": "WooCommerce Development", "href": "/woocommerce-development-company-kochi/" },
-        { "label": "Shopify Development", "href": "/shopify-development-company-kochi/" },
-        { "label": "Marketplace Development", "href": "/marketplace-development-company-kochi/" }
+        { "label": "WooCommerce Development", "href": "/woocommerce-development-company-kochi/", "text": "for WordPress-based online stores" },
+        { "label": "Shopify Development", "href": "/shopify-development-company-kochi/", "text": "for hosted, low-maintenance commerce" },
+        { "label": "Marketplace Development", "href": "/marketplace-development-company-kochi/", "text": "for multi-vendor platforms" }
       ]
     },
     {
@@ -144,40 +182,41 @@
       "bg": "white",
       "center": true,
       "badge": "Have Questions?",
-      "h2": "Frequently Asked Questions — Custom Ecommerce Development Company Kochi",
+      "h2": "Custom Ecommerce FAQs",
       "items": [
         {
           "q": "When does a business actually need custom ecommerce development instead of WooCommerce or Shopify?",
           "a": "When product logic, checkout requirements, or integrations exceed what standard plugins or apps can handle — complex pricing rules, unusual product configurators, or connecting to internal systems no off-the-shelf integration supports."
         },
         {
-          "q": "What is headless ecommerce, and do we need it?",
-          "a": "Headless ecommerce development separates your storefront design from the backend systems managing products and orders. It's worth it if you need a highly custom frontend experience or plan to sell across multiple channels from one backend."
+          "q": "How much does custom ecommerce development cost in Kochi?",
+          "a": "Most custom stores and B2B commerce portals cost between Rs. 2,00,000 and Rs. 6,00,000, depending on custom pricing logic, headless storefront requirements, and ERP or CRM integrations. We provide a detailed scope and fixed quote following technical review."
         },
         {
-          "q": "Can you integrate our custom store with existing business systems?",
-          "a": "Yes. Ecommerce API integration connects custom stores to ERPs, CRMs, inventory systems, or accounting software your business already runs on."
+          "q": "Will we own the source code and store data?",
+          "a": "Yes. 100% of the custom source code, database architectures, and cloud hosting accounts are transferred to your ownership after deployment, with zero vendor lock-in."
+        },
+        {
+          "q": "What is headless ecommerce, and do we need it?",
+          "a": "Headless ecommerce separates your frontend customer-facing storefront from the backend database and order engine. It is ideal if you require sub-second mobile speeds or plan to power a web store, mobile apps, and kiosks from a single product database."
+        },
+        {
+          "q": "Can you move our products and orders from Shopify or WooCommerce?",
+          "a": "Yes. We migrate your product catalog, customer accounts, and order history, while setting up comprehensive 301 redirects to ensure your established Google search rankings are completely protected."
         },
         {
           "q": "How long does a custom ecommerce build take?",
-          "a": "Custom builds typically take 6–12 weeks depending on complexity, since architecture and testing take longer than a standard platform setup. We'll give you a realistic timeline after the requirements review rather than a fixed estimate upfront, since scope varies significantly project to project."
-        },
-        {
-          "q": "Do you build multi-vendor marketplace platforms?",
-          "a": "Yes — multi-vendor ecommerce development is one of our custom build specialities, though for a dedicated marketplace-first platform, see our Marketplace Development page."
-        },
-        {
-          "q": "Will a custom platform be harder to maintain than WooCommerce or Shopify?",
-          "a": "Not if it's built and documented properly. We provide full technical documentation at handover specifically so a custom platform doesn't become dependent on one developer's memory."
+          "a": "Custom builds typically take 6 to 12 weeks depending on technical complexity, accommodating database planning, custom API development, payment integration, and cross-device testing."
         }
       ]
     },
     {
       "type": "cta",
+      "draft": true,
       "bg": "cream",
-      "h2": "Ready to Start Your Custom Ecommerce Development Project?",
+      "h2": "Ready to Build a Store That Fits Your Business?",
       "paragraphs": [
-        { "text": "If WooCommerce or Shopify can't handle your product logic, checkout requirements, or integrations, a custom build is the right investment rather than forcing a workaround. Teknoppy's Custom Ecommerce Development Company Kochi team architects platforms around exactly how your business actually operates." }
+        { "text": "Tell us what your current platform cannot do. We will reply within one business day to set up a requirements call and give an estimate range." }
       ],
       "ctas": [
         { "label": "Book a Consultation", "href": "/book-a-consultation/" },
@@ -192,12 +231,9 @@
   ],
   "devNotes": {
     "source": "WordPress Development pillar page - custom ecommmerce devolpment innerpage.pdf",
-    "primaryKeyword": "Custom Ecommerce Development Company Kochi",
-    "metaTitleLength": "53 characters",
-    "metaDescriptionLength": "150 characters",
-    "heldPlaceholders": [
-      "Custom Ecommerce Projects We've Delivered — [STAT NEEDED: add 2–3 verified figures — e.g. transaction volume handled, integration count, or a specific performance benchmark achieved.]"
-    ],
-    "schema": "Service + LocalBusiness + FAQPage + BreadcrumbList"
+    "primaryKeyword": "Custom Ecommerce Development Company in Kochi",
+    "permalink": "/custom-ecommerce-development-kochi/",
+    "schema": "Service + LocalBusiness + FAQPage + BreadcrumbList",
+    "bylineEmail": "sales@teknoppy.com"
   }
 }

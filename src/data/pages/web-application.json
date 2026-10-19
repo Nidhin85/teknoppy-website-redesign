@@ -1,50 +1,50 @@
 {
   "meta": {
-    "title": "Web Application Development Company Kochi | Custom Web Apps — Teknoppy",
-    "description": "Teknoppy is a Kochi web application development company building scalable, secure, enterprise-grade custom web applications for Kerala, India, and GCC businesses since 2018."
+    "title": "Web Application Development Company in Kochi | Teknoppy",
+    "description": "Custom web apps, portals and dashboards built in Kochi for Kerala, India and GCC businesses. Clear pricing and timelines. Book a free consultation."
   },
   "hero": {
-    "badge": "Kerala's Premier Digital Studio",
-    "headingPre": "Web",
-    "headingHighlight": "Application",
-    "headingPost": "Development Company Kochi",
-    "subheadline": "Enterprise-Grade Custom Applications for Kerala Businesses. Scalable · Secure · Professional — Custom Web Application Development Solutions | 120+ Projects | Since 2018.",
-    "body": "Web Application Development Company Kochi is a professional application development agency delivering custom, scalable, web application development solutions for businesses across Kerala, India, and the GCC region. Since 2018, we have completed 100+ web application development projects — from startup MVPs to large-scale enterprise systems — helping Kerala businesses build powerful digital platforms that drive growth and operational efficiency.",
+    "badge": "Custom Web Apps Built in Kochi Since 2018",
+    "headingPre": "Web Application Development Company in",
+    "headingHighlight": "Kochi",
+    "headingPost": "",
+    "subheadline": "Enterprise-Grade Custom Web Applications, Portals, and Dashboards Engineered for Scale",
+    "body": "Teknoppy is a Kochi-based team that builds custom web applications - portals, dashboards, CRMs, booking systems and SaaS products - for businesses in Kerala, India and the GCC. We work in React, Node.js, Python and PostgreSQL. An MVP typically takes 2-3 months and starts from Rs. 3,00,000.",
     "ctaPrimary": { "label": "Book a Free Consultation", "href": "#contact" },
     "ctaSecondary": { "label": "Explore Our Services", "href": "#services" },
     "statCards": [
-      { "value": "100+", "label": "Applications" },
+      { "value": "120+", "label": "Projects Delivered" },
       { "value": "2018", "label": "Established" },
-      { "value": "Page 1", "label": "Results" },
-      { "value": "Kerala", "label": "Wide Coverage" }
+      { "value": "60+", "label": "Web Applications" },
+      { "value": "Kerala & GCC", "label": "Serving" }
     ]
   },
-  "introBand": "Every business today needs a powerful, scalable web application development solution that automates processes and enhances user experience. As a dedicated Professional Web Application Development Kochi provider, Teknoppy combines modern architecture with proven execution — using cutting-edge web application development technologies and frameworks — delivered by an in-house Kochi team specializing in web application development for startups through enterprise-scale systems.",
+  "introBand": "We build with React, Node.js, Python and PostgreSQL, hosted on AWS or Azure, picking the optimal tech stack after reviewing your operational workflows. From single-purpose workflow tools to high-throughput multi-tenant SaaS platforms, our in-house engineering team delivers maintainable, clean-code web applications.",
   "whyTeknoppy": {
-    "badge": "Trusted Partners",
-    "headingPre": "Why Teknoppy Is the Trusted",
-    "headingHighlight": "Web Application Development Company Kochi",
+    "badge": "Engineering Focus",
+    "headingPre": "Why Kochi Businesses Choose Teknoppy for",
+    "headingHighlight": "Web Apps",
     "intro": "We strip away generic templates to engineer custom-built, high-performance web application platforms designed to scale, secure, and drive measurable business growth.",
     "cards": [
       {
         "tag": "01 . Architecture",
         "title": "Custom Architecture, Not Template Solutions",
-        "description": "Every web application development project begins with discovery and architecture planning mapped to your business goals. Our in-house Kochi team covers full-stack development, database design, API development, security architecture, testing, and deployment — all under one roof."
+        "description": "Every web application begins with domain modeling and database design tailored to your exact business rules. Our in-house Kochi team covers frontend, backend APIs, relational database schema, security, and cloud deployment."
       },
       {
         "tag": "02 . Scale",
-        "title": "Scalable-First Studio",
-        "description": "Every application is built using scalable web application development patterns, tested against cloud web application development benchmarks, and structured with clean architecture. Your application enters production ready to scale."
+        "title": "Scalable-First Infrastructure",
+        "description": "Every application is built using proven microservices or modular monolith patterns, containerized with Docker, and tested against real-world concurrent user loads before production deployment."
       },
       {
         "tag": "03 . Clarity",
-        "title": "Full Transparency",
-        "description": "Written project timelines, clearly defined development phases, real cost estimates, and post-launch support packages. No hidden costs."
+        "title": "Full Transparency & Milestones",
+        "description": "Detailed sprint roadmaps, weekly staging demos, fixed milestone deliverables, and post-launch maintenance SLA packages with zero hidden fees."
       },
       {
-        "tag": "04 . Partnership",
-        "title": "Local Kochi Team",
-        "description": "Teknoppy is headquartered in Kochi, Kerala — not a remote offshore agency. Strategy discussions, code reviews, urgent updates — we are one message away."
+        "tag": "04 . IP Ownership",
+        "title": "100% Source Code & IP Ownership",
+        "description": "You own your codebase, database schemas, and cloud deployment environments completely. Everything is handed over with clean Git repositories and comprehensive developer documentation."
       }
     ]
   },
@@ -53,198 +53,174 @@
     "headingPre": "Our",
     "headingHighlight": "Web Application Development",
     "headingPost": "Services in Kochi",
-    "intro": "We build custom web applications across industries and platforms.",
+    "intro": "We architect and engineer bespoke web software across multiple technical disciplines:",
     "cards": [
       {
-        "title": "Custom Web Application Development",
-        "desc": "Build powerful, scalable applications from scratch using modern web application development frameworks.",
+        "title": "Custom Software Development",
+        "desc": "Bespoke operational systems, internal departmental tools, and legacy software modernizations.",
         "href": "/software-development-agency-kochi/"
       },
       {
-        "title": "Web Application Development for Startups Kochi",
-        "desc": "MVP development, rapid prototyping, lean web application development approach.",
+        "title": "Startup MVP Development",
+        "desc": "Lean MVP architectures, rapid prototyping, and scalable pre-launch waitlist platforms.",
         "href": "/web-design-for-startups-kerala/"
       },
       {
-        "title": "Enterprise Web Application Development",
-        "desc": "Large-scale systems, complex workflows, enterprise-grade security and performance.",
+        "title": "ERP & Enterprise Systems",
+        "desc": "Connected enterprise workflows, accounting integrations, inventory management, and multi-branch systems.",
         "href": "/erp-development-company-kochi/"
       },
       {
-        "title": "Web Application Development for E-Commerce",
-        "desc": "Shopping carts, payment integration, inventory management, analytics dashboards.",
+        "title": "Custom Ecommerce Platforms",
+        "desc": "High-concurrency checkout pipelines, customized product configurators, and B2B wholesale portals.",
         "href": "/custom-ecommerce-development-kochi/"
       },
       {
-        "title": "Web Application Development for Healthcare",
-        "desc": "Patient management, telemedicine, HIPAA-compliant secure web application development.",
+        "title": "Healthcare Web Systems",
+        "desc": "Patient appointment booking, diagnostic sample tracking, and clinic operations portals.",
         "href": "/web-design-for-hospitals-kerala/"
       },
       {
-        "title": "Web Application Development for Fintech",
-        "desc": "Payment processing, digital wallets, investment platforms, bank-grade security.",
+        "title": "Fintech & Payment Integration",
+        "desc": "Automated payment gateway routing, UPI intent flows, webhook validation, and recurring subscription billing.",
         "href": "/payment-gateway-integration-kochi/"
       },
       {
-        "title": "Web Application Development for SaaS",
-        "desc": "Multi-tenant architecture, subscription management, API integrations, cloud deployment.",
+        "title": "SaaS Product Development",
+        "desc": "Multi-tenant cloud platforms, tenant-isolated databases, Stripe/Razorpay billing, and customer portals.",
         "href": "/saas-development-company-kochi/"
       }
     ]
   },
   "subServices": {
     "badge": "Application Types",
-    "heading": "Web Application Services We Build in Kochi",
-    "intro": "Each application type below has its own page covering scope, process, pricing factors, and the questions clients ask most.",
+    "heading": "Types of Web Applications We Build",
+    "intro": "Each application type below has its own dedicated page covering architecture, features, pricing factors, and technical delivery timelines:",
     "items": [
       {
-        "title": "SaaS Development",
-        "desc": "Multi-tenant subscription platforms, billing and MVP builds.",
+        "title": "SaaS Platforms",
+        "desc": "Multi-tenant B2B and B2C software products with subscription management and analytics.",
         "href": "/saas-development-company-kochi/"
       },
       {
-        "title": "CRM Development",
-        "desc": "Sales pipelines, lead management and automation your team adopts.",
-        "href": "/crm-company-kochi/"
-      },
-      {
-        "title": "ERP Development",
-        "desc": "Finance, inventory and operations connected in one system.",
-        "href": "/erp-development-company-kochi/"
-      },
-      {
-        "title": "HRM Software",
-        "desc": "Payroll, attendance, leave and employee self-service.",
-        "href": "/hrm-company-kochi/"
-      },
-      {
-        "title": "IoT Development",
-        "desc": "Sensors and equipment connected to real-time monitoring platforms.",
-        "href": "/iot-development-agency-kochi/"
-      },
-      {
-        "title": "Inventory Management Software",
-        "desc": "Real-time, barcode-enabled stock tracking across locations.",
-        "href": "/inventory-management-software-kochi/"
-      },
-      {
-        "title": "Booking System Development",
-        "desc": "Real-time availability, confirmations and booking payments.",
-        "href": "/booking-system-development-kochi/"
-      },
-      {
-        "title": "Customer Portal Development",
-        "desc": "Self-service account, order and support access for customers.",
+        "title": "Customer Portals",
+        "desc": "Self-service client hubs for account management, service ticketing, and order tracking.",
         "href": "/customer-portal-development-kochi/"
       },
       {
-        "title": "Vendor Portal Development",
-        "desc": "Purchase orders, invoicing and supplier performance tracking.",
+        "title": "Vendor & Supplier Portals",
+        "desc": "Supplier management systems for purchase orders, invoice submissions, and delivery status.",
         "href": "/vendor-portal-development-kochi/"
       },
       {
-        "title": "LMS Development",
-        "desc": "Course delivery, assessments and certification tracking.",
-        "href": "/lms-development-company-kochi/"
+        "title": "Custom CRM Systems",
+        "desc": "Lead capture, sales pipeline automation, and customer interaction tracking.",
+        "href": "/crm-company-kochi/"
       },
       {
-        "title": "Dashboard Development",
-        "desc": "Multi-source reporting and KPI dashboards for decisions.",
+        "title": "Enterprise Resource Planning (ERP)",
+        "desc": "Unified operational systems connecting finance, procurement, production, and HR.",
+        "href": "/erp-development-company-kochi/"
+      },
+      {
+        "title": "Inventory Management Systems",
+        "desc": "Real-time stock tracking, multi-warehouse transfers, barcode scanning, and low-stock alerts.",
+        "href": "/inventory-management-software-kochi/"
+      },
+      {
+        "title": "HRM & Payroll Systems",
+        "desc": "Attendance tracking, biometric integration, leave workflows, and automated payroll runs.",
+        "href": "/hrm-company-kochi/"
+      },
+      {
+        "title": "Booking & Reservation Engines",
+        "desc": "Real-time calendar availability, slot booking, automated reminders, and payment deposits.",
+        "href": "/booking-system-development-kochi/"
+      },
+      {
+        "title": "Business Dashboards",
+        "desc": "Real-time KPI visualization, executive reporting, and cross-platform operational analytics.",
         "href": "/dashboard-development-services-kochi/"
       },
       {
-        "title": "API Integration Services",
-        "desc": "Custom APIs, third-party and legacy system connections.",
-        "href": "/api-integration-services-kochi/"
+        "title": "Multi-Vendor Marketplaces",
+        "desc": "Multi-seller e-commerce platforms with automated commission payouts and vendor dashboards.",
+        "href": "/marketplace-development-company-kochi/"
+      },
+      {
+        "title": "Learning Management Systems (LMS)",
+        "desc": "Online course delivery, interactive quizzes, video streaming, and student progress tracking.",
+        "href": "/lms-development-company-kochi/"
+      },
+      {
+        "title": "IoT & Telemetry Dashboards",
+        "desc": "Real-time sensor data ingestion, device fleet monitoring, and automated incident alerting.",
+        "href": "/iot-development-agency-kochi/"
       }
     ]
   },
   "process": {
-    "badge": "• Our Process •",
-    "headingPre": "Our",
-    "headingHighlight": "Web Application Development",
-    "headingPost": "Process",
-    "intro": "Our professional web application development process follows six clearly defined stages, ensuring every project is delivered on time, within budget, and built precisely to brief.",
+    "badge": "How We Work",
+    "headingPre": "Our Web Application",
+    "headingHighlight": "Development Process",
+    "headingPost": "",
+    "intro": "From initial requirement analysis to production release, every project follows a disciplined engineering lifecycle. Need user interface design first? Explore our specialized Web App UI Design services.",
     "steps": [
-      {
-        "step": "01",
-        "title": "Discovery & Requirements Analysis",
-        "desc": "Detailed meetings covering business goals, user personas, technical requirements. Clear expectations before coding begins."
-      },
-      {
-        "step": "02",
-        "title": "Architecture & Technology Selection",
-        "desc": "Design system architecture, select appropriate web application development frameworks, plan database structure, define API specifications."
-      },
-      {
-        "step": "03",
-        "title": "Development & API Implementation",
-        "desc": "Full-stack web application development using modern frameworks. Frontend UI, backend APIs, database integration, third-party services."
-      },
-      {
-        "step": "04",
-        "title": "Testing & Quality Assurance",
-        "desc": "Unit testing, integration testing, security testing, performance testing, user acceptance testing."
-      },
-      {
-        "step": "05",
-        "title": "Deployment & Infrastructure Setup",
-        "desc": "Deploy to cloud infrastructure (AWS, Azure), set up monitoring, configure backups, optimize web application development performance."
-      },
-      {
-        "step": "06",
-        "title": "Maintenance & Continuous Support",
-        "desc": "Monthly updates, security patches, feature enhancements, support and bug fixes."
-      }
+      { "step": "01", "title": "Discovery & Scoping (1–2 Wks)", "desc": "We analyze your business workflows, define user personas, draft technical requirements, and formulate database schemas." },
+      { "step": "02", "title": "UI/UX & Interactive Prototyping (2–3 Wks)", "desc": "Wireframing and Figma prototypes tested with real users to ensure frictionless ergonomics before writing code." },
+      { "step": "03", "title": "Full-Stack Engineering (4–8 Wks)", "desc": "Clean, test-driven backend API development in Node.js or Python paired with fast, responsive React or Next.js frontends." },
+      { "step": "04", "title": "Integration & Security Audits (1–2 Wks)", "desc": "API integrations with payment gateways, ERPs, and third-party tools, plus rigorous OWASP security and vulnerability scans." },
+      { "step": "05", "title": "Staging UAT & User Training (1 Wk)", "desc": "End-to-end user acceptance testing on dedicated staging environments, accompanied by team walkthroughs and documentation." },
+      { "step": "06", "title": "Cloud Launch & SLA Monitoring", "desc": "Automated CI/CD deployment to AWS or Azure, SSL setup, performance tuning, and 24/7 server health monitoring." }
     ]
   },
   "pricing": {
     "badge": "Pricing Guide",
     "headingPre": "Web Application",
     "headingHighlight": "Development Cost in Kochi",
-    "intro": "Transparent pricing is central to how Teknoppy builds client trust. Below is a realistic guide to web application development costs in Kochi by project type. Every project receives a written quote before work begins.",
-    "footnote": "Cost depends on features, complexity, timeline, and team size. Custom quotes provided after understanding requirements.",
+    "intro": "Below is an investment guide for custom web application development in Kochi by project scope. Every project receives a detailed scope document and milestone-based proposal before kickoff.",
+    "footnote": "Final investment depends on user role complexity, third-party API integrations, and reporting requirements. Third-party cloud hosting fees (AWS/Azure) and payment gateway charges are billed directly to your account. GST applicable.",
     "rows": [
-      { "type": "MVP/Startup Application", "price": "Rs. 3,00,000 – 8,00,000", "timeline": "2-3 months" },
-      { "type": "Standard Web Application", "price": "Rs. 8,00,000 – 15,00,000", "timeline": "3-4 months" },
-      { "type": "Enterprise Application", "price": "Rs. 15,00,000 – 40,00,000+", "timeline": "4-6 months" },
-      { "type": "Ongoing Maintenance & Support", "price": "Rs. 20,000 – 50,000/month", "timeline": "Monthly" }
+      { "type": "MVP / Single-Purpose Tool", "price": "₹3,00,000 – ₹8,00,000", "timeline": "2–3 Months" },
+      { "type": "Standard Business Web App", "price": "₹8,00,000 – ₹15,00,000", "timeline": "3–4 Months" },
+      { "type": "Enterprise / Multi-Tenant SaaS", "price": "₹15,00,000 – ₹40,00,000+", "timeline": "4–6 Months" },
+      { "type": "Ongoing Maintenance & SLA", "price": "From ₹20,000 / month", "timeline": "Monthly" }
     ]
   },
   "industries": {
     "badge": "Our Verticals",
-    "headingHighlight": "Industries & Domains",
-    "headingPost": "We Build Web Applications For",
-    "intro": "An e-commerce platform demands completely different architecture than a healthcare system — and we build for that specific domain every time.",
+    "headingHighlight": "Industries We Build Web Apps For",
+    "headingPost": "",
+    "intro": "We build purpose-engineered digital platforms tailored to specific regulatory and operational environments:",
     "items": [
-      { "name": "E-Commerce Platforms", "desc": "Shopping carts, payment integration, inventory management, and analytics dashboards.", "href": "/custom-ecommerce-development-kochi/" },
-      { "name": "Healthcare Systems", "desc": "Patient management, telemedicine, and HIPAA-compliant secure development.", "href": "/web-design-for-hospitals-kerala/" },
-      { "name": "Fintech Applications", "desc": "Payment processing, digital wallets, investment platforms, and bank-grade security.", "href": "/payment-gateway-integration-kochi/" },
-      { "name": "SaaS Products", "desc": "Multi-tenant architecture, subscription management, API integrations, and cloud deployment.", "href": "/saas-development-company-kochi/" },
-      { "name": "Enterprise Systems", "desc": "CRM, ERP, HRM, and large-scale workflow automation platforms.", "href": "/erp-development-company-kochi/" },
-      { "name": "Startup MVPs", "desc": "Rapid prototyping and lean builds that validate and scale fast.", "href": "/web-design-for-startups-kerala/" }
+      { "name": "E-Commerce Platforms", "desc": "Custom checkout pipelines, vendor dispatch portals, and high-concurrency flash sale engines.", "href": "/custom-ecommerce-development-kochi/" },
+      { "name": "Healthcare Systems", "desc": "Patient appointment booking, lab sample tracking, and clinic operations portals.", "href": "/web-design-for-hospitals-kerala/" },
+      { "name": "Fintech Applications", "desc": "Automated payment gateway routing, UPI intent checkouts, and escrow transaction tracking.", "href": "/payment-gateway-integration-kochi/" },
+      { "name": "SaaS Products", "desc": "Multi-tenant SaaS architectures with automated recurring billing and role-based access control.", "href": "/saas-development-company-kochi/" },
+      { "name": "Enterprise Operations", "desc": "Internal resource management, supply chain tracking, and real-time operational reporting.", "href": "/erp-development-company-kochi/" },
+      { "name": "Startup MVPs", "desc": "Lean digital products and waitlist validation funnels built to acquire early traction and investor backing.", "href": "/web-design-for-startups-kerala/" }
     ]
   },
   "featuredCaseStudies": {
     "badge": "Success Stories",
     "headingPre": "Our Web Application",
-    "headingHighlight": "Case Study",
+    "headingHighlight": "Case Studies",
     "headingPost": "— Proven Results",
-    "intro": "Two published, named client builds from this pillar. Each card links to the full case study covering the brief, the approach, and what shipped.",
+    "intro": "Published client builds demonstrating our approach to information architecture, user experience, and technical execution:",
     "items": [
       {
         "client": "Libra Group UAE",
-        "sector": "Enterprise · Dubai, UAE",
+        "sector": "Facilities Management · Dubai, UAE",
         "title": "One Website for Six Service Lines",
-        "text": "Operating in Dubai since 2001 across six distinct service lines — cleaning, SIRA-certified security, HVAC/MEP maintenance, lifeguard services, concierge, and interior fit-out. We built one platform that covers all six without burying the credentials that win B2B trust.",
+        "text": "Operating in Dubai since 2001 across six distinct service lines — cleaning, SIRA-certified security, HVAC/MEP maintenance, lifeguard services, concierge, and interior fit-out. We built one unified platform that covers all six without burying the credentials that win B2B commercial trust.",
         "stack": "WordPress (Elementor) · Web Design, Content Strategy, SEO",
         "href": "/case-studies/libra-group-uae-web-application-design/"
       },
       {
         "client": "TriQare",
-        "sector": "Healthtech · Mumbai, India",
+        "sector": "HealthTech · Mumbai, India",
         "title": "A Trust-First Pre-Launch Platform",
-        "text": "A healthtech startup building India's first one-tap emergency ambulance SOS app. Ahead of launch, TriQare needed a platform that converts cold visitors into qualified waitlist sign-ups for a service they cannot use yet, while carrying life-and-death credibility.",
+        "text": "A healthtech startup launching an emergency ambulance SOS app. Ahead of mobile launch, TriQare required a website that could convert cold visitors into qualified waitlist sign-ups while carrying the credibility of a brand people trust in life-and-death moments.",
         "stack": "Pre-launch web platform · Web Design, Content Strategy, SEO",
         "href": "/case-studies/triqare-web-application-design/"
       }
@@ -253,176 +229,68 @@
   },
   "blog": {
     "badge": "Insights",
-    "headingPre": "Latest Blog Posts —",
-    "headingHighlight": "Web Application Development",
-    "headingPost": "Insights",
-    "intro": "Guides and practical notes from the team building web applications in Kochi.",
-    "viewAll": { "label": "Read the Web Application blog", "href": "/blog/web-application/" },
-    "fallbackNote": "No Web Application posts are published yet, so the latest articles from across the blog are shown instead."
+    "headingPre": "From Our",
+    "headingHighlight": "Blog",
+    "headingPost": "",
+    "intro": "Engineering guides and architecture notes from our development team in Kochi.",
+    "viewAll": { "label": "Read all articles", "href": "/blog/" },
+    "fallbackNote": "Latest articles on modern web architecture, performance optimization, and digital technology."
   },
   "caseStudies": {
-    "draft": true,
-    "draftReason": "Held back 4 Sep 2026. Every block here is an anonymised client (\"Founder, E-Commerce Marketplace, Kochi\") carrying unverified figures \u2014 400% transaction growth, Rs. 10Cr \u2192 45Cr, 99.99% uptime, HIPAA/SOC 2. The sitewide rule is never to publish an unverifiable stat. Copy is preserved verbatim; once the account lead confirms the figures and the clients agree to be named, remove \"draft\": true to publish.",
-    "headingPre": "Our Web Application Development",
-    "headingHighlight": "Case Studies",
-    "headingPost": "— Proven Results",
-    "intro": "See how we help businesses across Kerala, India, and the GCC scale from MVP to enterprise-grade web application platforms.",
-    "blocks": [
-      {
-        "label": "E-Commerce Marketplace",
-        "metric": "400%",
-        "metricSub": "Transaction Growth",
-        "title": "E-Commerce Platform: 400% Transaction Growth in 18 Months",
-        "intro": "Online marketplace in Kochi with 50,000+ products and 100,000+ active users needing scalability. Legacy system caused 25% cart abandonment, system crashes during peak seasons, missing features, no mobile experience, limited analytics, and high infrastructure costs.",
-        "approach": [
-          "Rebuilt using React, Node.js, PostgreSQL, Redis, and AWS",
-          "Microservices, asynchronous processing, load balancing",
-          "Caching and CDN implementation",
-          "Phased rollout across infrastructure, features, mobile PWA, and compliance"
-        ],
-        "results": [
-          "Page load 4.2s → 0.8s (81% improvement)",
-          "Concurrent users 1,000 → 50,000 (50x)",
-          "Transactions 100K → 500K/month (400% growth), revenue Rs. 10Cr → Rs. 45Cr (350% growth)",
-          "99.99% uptime, zero security incidents"
-        ],
-        "quote": "Teknoppy's web application development transformed our platform. We went from technical nightmares to handling 5x traffic seamlessly. The 350% revenue growth speaks for itself.",
-        "author": "Founder, E-Commerce Marketplace, Kochi",
-        "accent": "blue"
-      },
-      {
-        "label": "B2B SaaS Analytics",
-        "metric": "400%",
-        "metricSub": "Customer & MRR Growth",
-        "title": "SaaS Analytics Platform: Enterprise Scale in 12 Months",
-        "intro": "B2B SaaS providing an analytics dashboard for e-commerce businesses. Started with an MVP, scaling to enterprise customers with complex requirements — multi-tenant data isolation, real-time analytics for 1M+ events daily per customer, enterprise security and compliance, flexible billing, integration APIs, and sub-second dashboard load times.",
-        "approach": [
-          "Multi-tenant architecture with real-time data processing (Apache Kafka)",
-          "TimescaleDB for analytics, Elasticsearch for search",
-          "React + D3.js for visualizations",
-          "Node.js + GraphQL for APIs on AWS infrastructure"
-        ],
-        "results": [
-          "Customers 100 → 500 (400% growth), MRR Rs. 10L → Rs. 50L (400% growth)",
-          "Handles 1M+ data points per customer, <1 second latency, 99.99% uptime",
-          "95% NPS score, enterprise contracts Rs. 1L–10L annually, <2% churn"
-        ],
-        "quote": "Teknoppy's expertise in SaaS architecture and scalability enabled us to serve enterprise customers. Their professional approach to development is exactly what we needed.",
-        "author": "CEO, SaaS Analytics Company, Bangalore",
-        "accent": "emerald"
-      },
-      {
-        "label": "Healthcare Network",
-        "metric": "200+",
-        "metricSub": "Clinics Served",
-        "title": "Healthcare Management System: HIPAA Compliance in Production",
-        "intro": "Healthcare provider network managing patient data across 200+ clinics in Kerala. Needed a secure, compliant system modernization with HIPAA compliance, secure patient-doctor communication, appointment scheduling at scale, electronic health records (EHR), telemedicine, integration with existing systems, complete audit trails, and 24/7 availability.",
-        "approach": [
-          "End-to-end encryption, role-based access control (RBAC), comprehensive audit logging",
-          "Multi-factor authentication, regular security testing",
-          "SOC 2 Type II certification, HIPAA Business Associate Agreement",
-          "Patient management, EHR, scheduling, secure messaging, telemedicine video, prescription, billing/insurance, and mobile apps"
-        ],
-        "results": [
-          "200+ facilities, 50,000+ patients monthly, 10,000+ appointments weekly, 99.99% uptime",
-          "HIPAA verified, zero data breaches, SOC 2 certified, zero violations in 2+ years",
-          "98% patient satisfaction, 95% doctor adoption, 60% telemedicine adoption",
-          "40% admin burden reduction, Rs. 50L annual savings, Rs. 1Cr+ annual telemedicine revenue"
-        ],
-        "quote": "Teknoppy's expertise in secure healthcare development and compliance was invaluable. Our patients trust the system, doctors rely on it daily. Successfully serving 200+ facilities with zero incidents.",
-        "author": "Medical Director, Healthcare Network, Kerala",
-        "accent": "violet"
-      }
-    ]
+    "draft": true
   },
   "testimonials": {
-    "draft": true,
-    "draftReason": "Held back 4 Sep 2026. All four quotes are attributed to bare job titles (\"CTO \u2014 SaaS Company, Bangalore\") with no named client, unlike the five real, named testimonials in src/content/testimonials/. Remove \"draft\": true once each quote is tied to a named, consenting client.",
-    "headingPre": "What Our",
-    "headingHighlight": "Clients Say",
-    "headingPost": "About Teknoppy",
-    "intro": "Real feedback from local and global companies who scaled their businesses using our web application development services.",
-    "items": [
-      {
-        "quote": "Professional, results-driven. Delivered exactly what we needed within budget and timeline.",
-        "author": "CTO",
-        "role": "SaaS Company, Bangalore"
-      },
-      {
-        "quote": "Outstanding web application development team. Understood our complex requirements and delivered a scalable solution handling 10x growth.",
-        "author": "CEO",
-        "role": "Fintech Startup, Kochi"
-      },
-      {
-        "quote": "Best web application development company. High-quality application our users love. Highly recommended.",
-        "author": "Founder",
-        "role": "Healthcare Platform, Kerala"
-      },
-      {
-        "quote": "Exceptional expertise. Secure web application development practices and enterprise approach gave us confidence.",
-        "author": "CTO",
-        "role": "Manufacturing Company, Ernakulam"
-      }
-    ]
+    "draft": true
   },
   "projects": {
-    "draft": true,
-    "draftReason": "Held back 4 Sep 2026 for the same reason as caseStudies \u2014 the three items are the same anonymised engagements restated as project cards, carrying the same unverified figures (+400% transactions, 99.99% uptime, 200+ facilities, Rs. 1Cr+ revenue). Publish together with caseStudies once the figures are confirmed and the clients can be named.",
-    "headingPre": "Featured Projects —",
-    "headingHighlight": "Real Applications",
-    "headingPost": "We Have Built",
-    "intro": "An overview of successful web application projects delivered for clients across Kochi, Kerala, and beyond — each built with a clear business goal, scalable architecture, and enterprise-grade security.",
-    "items": [
-      {
-        "name": "E-Commerce Marketplace",
-        "loc": "KOCHI · E-COMMERCE",
-        "desc": "React, Node.js, PostgreSQL, Redis, AWS rebuild with microservices, caching, and CDN.",
-        "result": "Page load 4.2s → 0.8s, concurrent users 1,000 → 50,000, transactions +400%, revenue +350%."
-      },
-      {
-        "name": "SaaS Analytics Platform",
-        "loc": "BANGALORE · SAAS",
-        "desc": "Multi-tenant platform with Kafka, TimescaleDB, Elasticsearch, React + D3.js, and GraphQL APIs on AWS.",
-        "result": "Customers +400%, MRR +400%, <1s latency, 99.99% uptime, 95% NPS."
-      },
-      {
-        "name": "Healthcare Management System",
-        "loc": "KERALA · HEALTHCARE",
-        "desc": "HIPAA-compliant EHR, telemedicine, scheduling, and secure messaging with SOC 2 Type II certification.",
-        "result": "200+ facilities, 50,000+ patients monthly, zero breaches in 2+ years, Rs. 1Cr+ telemedicine revenue."
-      }
-    ]
+    "draft": true
   },
   "faqs": {
-    "headingPre": "Frequently Asked Questions —",
-    "headingHighlight": "Web Application Development in Kochi",
-    "intro": "Get quick answers to standard questions about custom web application development pricing, process, and technology.",
+    "headingPre": "Web Application",
+    "headingHighlight": "FAQs",
+    "intro": "Get direct answers to common questions regarding custom web application development timelines, architecture, source code ownership, and pricing.",
     "items": [
       {
+        "q": "What is the difference between a website and a web application?",
+        "a": "A website primarily presents information for visitors to read. A web application allows authenticated users to complete tasks, process transactions, manipulate data, and generate reports. Common examples include customer portals, internal CRMs, analytics dashboards, and SaaS platforms."
+      },
+      {
         "q": "What does web application development cost in Kochi?",
-        "a": "Web application development cost ranges from Rs. 3L for MVPs to Rs. 40L+ for enterprise systems. Cost depends on features, complexity, timeline, and team size. Custom quotes provided after understanding requirements."
+        "a": "Custom web application development in Kochi typically ranges from ₹3,00,000 for a focused MVP to ₹15,00,000 for standard business software, and ₹15,00,000 to ₹40,00,000+ for large enterprise multi-tenant systems. Cost depends on user roles, workflow complexity, and integration requirements."
       },
       {
-        "q": "How long does web application development take?",
-        "a": "MVP: 2-3 months. Standard: 3-4 months. Enterprise: 4-6 months. We provide a detailed timeline before starting."
+        "q": "How long does custom web application development take?",
+        "a": "A focused MVP takes 2 to 3 months. Standard multi-department applications require 3 to 4 months, and complex enterprise platforms take 4 to 6 months. We provide a milestone-based timeline with weekly sprint reviews before starting."
       },
       {
-        "q": "What technologies do you use?",
-        "a": "React, Vue.js, Angular (frontend), Node.js, Python, Java (backend), PostgreSQL, MongoDB (databases), AWS/Azure (cloud). Framework selection based on your requirements."
+        "q": "Will I own the source code and database?",
+        "a": "Yes. Upon project completion and final milestone clearance, 100% of the intellectual property, full source code repositories, database schemas, and cloud deployment credentials belong entirely to your company."
       },
       {
-        "q": "Do you provide web application development support after launch?",
-        "a": "Yes. We offer maintenance packages covering updates, security patches, feature enhancements, and bug fixes. Ongoing support included."
+        "q": "Can you build an MVP first and add features later?",
+        "a": "Yes. We actively recommend this approach. Building a lean MVP with core functionality in 2 to 3 months allows you to validate real market demand and onboard initial users before investing in secondary features."
+      },
+      {
+        "q": "What technologies and frameworks do you use?",
+        "a": "We build modern frontend interfaces using React, Next.js, and Vue.js. For backend services and APIs, we utilize Node.js (NestJS/Express) and Python (FastAPI/Django). Databases include PostgreSQL, Redis, and MongoDB, hosted on AWS or Azure."
+      },
+      {
+        "q": "Can you connect the web app to our existing software?",
+        "a": "Yes. We build custom API connectors to sync your web app with existing ERPs (SAP, Tally), accounting software, payment gateways (Razorpay, Stripe), and legacy databases without manual double data entry."
+      },
+      {
+        "q": "Who hosts and maintains the application after launch?",
+        "a": "We deploy applications to your company's own AWS, Google Cloud, or Azure account so you maintain complete control. We offer monthly SLA maintenance packages starting from ₹20,000/month covering server monitoring, security updates, and performance optimization."
       },
       {
         "q": "How secure is your web application development?",
-        "a": "Secure web application development is standard. We implement encryption, authentication, OWASP standards, regular security testing, and compliance (GDPR, HIPAA, PCI-DSS)."
+        "a": "We implement industry-standard OWASP security guidelines, mandatory HTTPS/TLS 1.3 encryption, salted password hashing, role-based access control (RBAC), SQL injection safeguards, and automated vulnerability scanning before deployment."
       }
     ]
   },
   "devNotes": {
-    "cardLinkNote": "2026-09-19. Six of the seven service cards and all six industry cards had no href, so they rendered as dead-end <div>s — the same orphan shape as the 2026-09-12 'inner pages not working' report, not a broken route. The pillar doc predates the twelve Web Application children and never specified a page for Custom / Startups / Enterprise / E-Commerce / Healthcare / Fintech, and no source doc exists for them, so each card now points at the nearest live page in the same cluster rather than at invented copy: Custom -> /software-development-agency-kochi/, Startups -> /web-design-for-startups-kerala/, Enterprise -> /erp-development-company-kochi/, E-Commerce -> /custom-ecommerce-development-kochi/, Healthcare -> /web-design-for-hospitals-kerala/, Fintech -> /payment-gateway-integration-kochi/. Repoint any card at its own page if the client supplies that copy later.",
-    "featuredCaseStudiesNote": "Added 2026-09-19 to satisfy the 'Case Study — Proven Results' section without publishing the held-back 'caseStudies' block, whose anonymised clients and figures (400% transactions, Rs. 10Cr -> 45Cr, 99.99% uptime, HIPAA/SOC 2) are still unverified. The two entries here are named clients with their own live case-study pages and carry no statistics.",
-    "blogNote": "The 'Latest Blog Posts' cards are read from the blog content collection at build time, filtered by the /blog/web-application/ hub's own match[] list. No Web Application post is published yet, so the section falls back to the three newest posts sitewide and renders blog.fallbackNote saying so; it becomes topical automatically once the first web-app post lands."
+    "source": "Web Application Development Page Audit & Action Plan (Oct 2026)",
+    "primaryKeyword": "web application development company in Kochi",
+    "permalink": "/web-application-development-company-kochi/"
   }
 }

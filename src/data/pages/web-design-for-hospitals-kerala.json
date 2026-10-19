@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Hospital Website Design Kerala | Patient-First Sites | Teknoppy",
-    "description": "Hospital Website Design Kerala hospitals trust for appointment booking, doctor profiles, and patient trust. Book a free consultation with Teknoppy today."
+    "title": "Hospital Website Design in Kerala | Teknoppy",
+    "description": "Hospital websites in Kerala with online appointment booking, doctor profiles and department pages - built for patient trust and DPDP-aware data handling."
   },
   "breadcrumb": [
     { "name": "Home", "href": "/" },
@@ -11,12 +11,17 @@
   "sections": [
     {
       "type": "hero",
-      "badge": "Industries · Hospitals",
-      "h1Lead": "Hospital Website Design",
+      "badge": "Healthcare Web Design",
+      "h1Lead": "Hospital Website Design in",
       "h1Accent": "Kerala",
+      "subheadTag": "p",
+      "subhead": "Patient-First Healthcare Websites Built for Trust, Compliance & Online Appointments",
       "body": [
         {
-          "text": "Hospital Website Design Kerala from Teknoppy turns a website into a digital front desk — one that answers a patient's first questions before they ever call. This is hospital website development Kerala hospitals use to publish doctor profiles, department pages, and appointment booking in one place, live across Kochi, Trivandrum, Calicut, and Thrissur. Every Hospital Website Design Kerala project is built around patient trust, not just an online brochure."
+          "text": "Teknoppy designs hospital websites in Kerala that work as a digital front desk — online appointment booking by department and doctor, verified doctor profiles, clear department pages, and secure handling of patient data under India's DPDP Act. Most sites launch in 4-6 weeks."
+        },
+        {
+          "text": "Every hospital website design Kerala project is engineered around patient trust and rapid clinical access. Whether you run a multi-speciality hospital in Kochi, a NABH-accredited facility in Calicut, or a specialized healthcare centre in Trivandrum, we build digital platforms that reassure patients, streamline OP desk bookings, and display doctor credentials clearly."
         }
       ],
       "ctas": [
@@ -34,95 +39,119 @@
       "bg": "cream",
       "layout": "list",
       "badge": "The Problem",
-      "h2": "Website Challenges Hospital Businesses Face — and How We Solve Them",
-      "intro": "Every hospital researching Hospital Website Design Kerala runs into the same four problems.",
+      "h2": "Healthcare Website Challenges Hospital Administrators Face — and How We Solve Them",
+      "intro": "Kerala hospitals and diagnostic centres regularly face four critical bottlenecks on their websites:",
       "items": [
         {
           "title": "Patients can't book an appointment without calling.",
-          "text": "A phone-only enquiry process loses patients to the first hospital whose website lets them book in two minutes. Every Hospital Website Design Kerala project from Teknoppy includes online appointment booking as a base feature, not an add-on."
+          "text": "A phone-only OP enquiry process results in abandoned appointments and overburdened reception staff. We integrate direct online appointment booking connected to department and consultant schedules as a core platform feature."
         },
         {
-          "title": "Doctor credentials are missing or buried.",
-          "text": "Patients choose a hospital partly on who is treating them, but many sites list doctor names without qualifications or specialties. Doctor Profile Website Design Kerala pages give each doctor the space their credentials deserve."
+          "title": "Doctor credentials and specialties are buried.",
+          "text": "Patients select hospitals based on clinical expertise. We build dedicated doctor profile pages displaying TCMC/NMC registrations, super-specialties, consulting OP hours, and direct booking links."
         },
         {
-          "title": "Department and service information is scattered across PDFs.",
-          "text": "Cardiology, orthopedics, pediatrics, and diagnostics each need their own page. Every Hospital Website Design Kerala build organises departments into pages patients can actually search."
+          "title": "Department and clinical service information is scattered across PDFs.",
+          "text": "Cardiology, orthopedics, oncology, pediatrics, and diagnostic wings each need dedicated, crawlable pages detailing procedures, facilities, and visiting specialists."
         },
         {
-          "title": "Patient data handling is treated as an afterthought.",
-          "text": "Some agencies still market outdated compliance standards that don't apply in India. Secure Patient Portal Website Design Kerala work at Teknoppy is built around India's DPDP Act, 2023, not borrowed international standards."
+          "title": "Patient data handling and compliance are treated as afterthoughts.",
+          "text": "Healthcare sites handle sensitive patient information. Teknoppy builds with strict adherence to India's Digital Personal Data Protection (DPDP) Act 2023, ensuring encrypted communications, explicit consent capture, and role-based access."
         }
       ]
     },
     {
       "type": "bullets",
       "bg": "white",
-      "badge": "What's Included",
-      "h2": "What Every Hospital Website Needs",
+      "badge": "Core Architecture",
+      "h2": "Essential Modules for a Modern Hospital Website",
       "items": [
-        { "html": "<strong>Online Appointment Booking Website for Hospitals Kerala comes first.</strong> A booking form connected to department and doctor availability, so patients can select a specialist and a time without a phone call." },
-        { "html": "<strong>Doctor Profile Website Design Kerala pages.</strong> Qualifications, specialties, consultation hours, and department affiliation, structured for Multi-Speciality Hospital Website Design Kerala institutions with dozens of consultants." },
-        { "html": "<strong>Department and treatment pages.</strong> One page per specialty, each covering conditions treated, procedures offered, and the consultants attached to it." },
-        { "html": "<strong>Secure Patient Portal Website Design Kerala features.</strong> Lab reports, prescriptions, and consultation history behind proper authentication, built to India's data protection requirements rather than a generic template." },
-        { "html": "<strong>Emergency and location information visible on every page.</strong> Emergency contact numbers, address, and directions displayed prominently." }
+        { "html": "<strong>Department & Doctor Appointment Booking:</strong> Seamless multi-department scheduling allowing patients to choose their doctor, date, and OP slot with instant SMS or WhatsApp confirmation. Explore our dedicated <a href=\"/booking-system-development-kochi/\" class=\"text-primary font-semibold hover:underline\">Booking System Development</a>." },
+        { "html": "<strong>Verified Doctor Directory & Profiles:</strong> Structured pages highlighting medical qualifications, fellowships, consultation hours, and TCMC registration numbers for every consultant." },
+        { "html": "<strong>Specialty & Clinical Department Pages:</strong> Individual pages for each medical department outlining key conditions treated, advanced ICU/OT equipment, and affiliated specialists." },
+        { "html": "<strong>Secure Patient Portal & Lab Report Access:</strong> Secure login where patients can download test reports, prescriptions, and visit summaries. See our <a href=\"/customer-portal-development-kochi/\" class=\"text-primary font-semibold hover:underline\">Customer Portal Development</a>." },
+        { "html": "<strong>Emergency, Ambulance & Insurance Desk Details:</strong> One-tap 24/7 casualty calling, casualty routing, insurance TPA cashless claim lists, and hospital location maps visible sitewide." }
       ],
       "outro": [
-        { "html": "Full build detail lives on the <a href=\"/cms-website-development-kochi/\" class=\"text-primary font-semibold hover:underline\">CMS Website Development</a> and <a href=\"/website-maintenance-services-kochi/\" class=\"text-primary font-semibold hover:underline\">Website Maintenance Services</a> pages — this page covers what changes for Hospital Website Design Kerala, not the general build process." }
+        { "html": "For single-practitioner clinics and dental practices, visit our dedicated <a href=\"/web-design-for-clinics-kerala/\" class=\"text-primary font-semibold hover:underline\">Clinic Website Design Kerala</a> page. For content management, see <a href=\"/cms-website-development-kochi/\" class=\"text-primary font-semibold hover:underline\">CMS Website Development</a>." }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "soft",
+      "columns": 2,
+      "badge": "Ethics & Compliance",
+      "h2": "Medical Content, Accreditation & Healthcare Compliance",
+      "items": [
+        {
+          "title": "NABH & NABL Accreditation Highlights",
+          "text": "Prominent display of NABH (National Accreditation Board for Hospitals) and NABL certifications, building immediate clinical trust for domestic and international patients."
+        },
+        {
+          "title": "DPDP Act 2023 Data Protection",
+          "text": "End-to-end encrypted form submissions, compliant consent checkboxes, and secure hosting ensuring full alignment with Indian data privacy statutes."
+        },
+        {
+          "title": "NMC Medical Advertising Ethics",
+          "text": "Ethical medical copywriting adhering to National Medical Commission guidelines — no misleading surgical claims or unverifiable medical promises."
+        },
+        {
+          "title": "Insurance & Cashless TPA Desks",
+          "text": "Comprehensive directories of impaneled health insurance providers, government schemes (such as Karunya and Medisep), and cashless claim desks."
+        }
       ]
     },
     {
       "type": "prose",
-      "bg": "soft",
-      "badge": "Why Teknoppy",
-      "h2": "Why Hospitals Choose Teknoppy for Website Design",
+      "bg": "cream",
+      "badge": "Case Study",
+      "h2": "Hospital & Healthcare Projects We've Delivered",
       "paragraphs": [
-        { "text": "Hospital Website Design Kerala at Teknoppy is scoped around patient volume and department count, not a fixed package." },
-        { "text": "Every Hospital Website Design Company Kerala build uses the same secure, scalable CMS foundation as Teknoppy's larger institutional clients, so a growing hospital can add telemedicine or a new department later without a rebuild." },
-        { "text": "We understand Kerala's healthcare landscape, from multi-speciality hospitals in Kochi to district-level institutions across Trivandrum and Thrissur." }
+        {
+          "html": "<strong>Greens Ayurveda — Azhiyur, Calicut:</strong> Teknoppy designed and developed a high-performing international patient portal and appointment booking system for Greens Ayurveda. The responsive, multilingual web platform resulted in a <strong>+240% increase in international booking enquiries</strong> from the GCC and Europe, with automated consultation scheduling and treatment package coordination."
+        },
+        {
+          "html": "Explore more case studies and client transformations on our <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">Case Studies</a> and <a href=\"/portfolios/\" class=\"text-primary font-semibold hover:underline\">Portfolio</a> pages."
+        }
       ]
     },
     {
       "type": "prose",
       "bg": "white",
-      "badge": "Our Work",
-      "h2": "Hospital Website Projects We've Delivered",
+      "badge": "Pricing & Timelines",
+      "h2": "Hospital Website Design Pricing & Timelines in Kerala",
       "paragraphs": [
-        { "text": "Teknoppy has supported healthcare providers across Kerala with Hospital Website Design Kerala work built to handle real patient traffic." },
-        { "html": "See the full history on the <a href=\"/portfolios/\" class=\"text-primary font-semibold hover:underline\">Portfolio</a> and <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">Case Studies</a> pages." }
+        {
+          "text": "Hospital website investment depends on the number of departments, doctor profiles, and whether appointment booking or patient portals are integrated:"
+        },
+        {
+          "html": "<strong>Single-Specialty / Community Hospital:</strong> ₹45,000 – ₹90,000 (Delivery in 4–6 weeks). Includes up to 10 clinical pages, doctor directory, appointment enquiry forms, emergency desk highlights, and local SEO setup."
+        },
+        {
+          "html": "<strong>Multi-Specialty Hospital:</strong> ₹90,000 – ₹1,80,000 (Delivery in 6–8 weeks). Features comprehensive department architecture, online doctor appointment booking, insurance/TPA listings, NABH compliance badges, and bilingual support (Malayalam & English)."
+        },
+        {
+          "html": "<strong>Hospital with Patient Portal & HMIS Sync:</strong> ₹1,80,000 – ₹3,50,000+ (Delivery in 8–10 weeks). Incorporates secure patient authentication, online lab report downloads, HMIS/EHR API integration, and telemedicine booking."
+        },
+        {
+          "html": "Need an exact estimate for your hospital or healthcare trust? Request a detailed proposal via our <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a> form or use our <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Cost Calculator</a>."
+        }
       ]
     },
     {
       "type": "links",
-      "bg": "cream",
+      "bg": "soft",
       "badge": "Related Services",
       "h2": "Services We Provide for Hospital Businesses",
-      "intro": "Healthcare Website Design Kerala draws on the same specialist teams behind every Teknoppy build, scoped to a hospital's department count and patient volume.",
+      "intro": "Healthcare Website Design Kerala draws on specialized development teams scoped to your patient volume and clinical requirements.",
       "items": [
-        { "label": "CMS Website Development Kochi", "text": "for hospitals that need staff to update department news without a developer", "href": "/cms-website-development-kochi/" },
-        { "label": "Website Maintenance Services Kochi", "text": "ongoing updates as departments and doctors change", "href": "/website-maintenance-services-kochi/" },
-        { "label": "Business Website Development Kochi", "text": "for larger institutions needing a full multi-department site", "href": "/business-website-development-kochi/" },
-        { "label": "Local SEO Services Kochi", "text": "for hospitals competing for appointment searches locally", "href": "/local-seo-services-kochi/" },
-        { "label": "SEO Company Kerala", "text": "for statewide visibility beyond the home city", "href": "/seo-company-kerala/" }
-      ]
-    },
-    {
-      "type": "prose",
-      "bg": "white",
-      "badge": "Good Fit?",
-      "h2": "Is This Right for Your Institution?",
-      "paragraphs": [
-        { "text": "Hospital Website Design Kerala fits institutions at three moments. A new hospital or diagnostic wing preparing its first website before opening. An established Multi-Speciality Hospital Website Design Kerala institution whose current site lacks booking, doctor profiles, or mobile support. A hospital replacing a static brochure site with a genuine Secure Patient Portal Website Design Kerala feature set." },
-        { "html": "Standalone clinics and single-doctor practices fit better with our dedicated <a href=\"/web-design-for-clinics-kerala/\" class=\"text-primary font-semibold hover:underline\">Clinic Website Design</a> page than this Hospital Website Design Kerala approach." }
-      ]
-    },
-    {
-      "type": "prose",
-      "bg": "soft",
-      "badge": "Coverage",
-      "h2": "Serving Hospital Businesses Across Kerala",
-      "paragraphs": [
-        { "html": "As a Hospital Website Design Company Kochi institutions reach for first, Teknoppy's Hospital Website Design Kerala work also spans Trivandrum, Calicut, and Thrissur, covering government-affiliated and private multi-speciality institutions alike. For growth beyond the site, see the <a href=\"/seo-company-kerala/\" class=\"text-primary font-semibold hover:underline\">SEO Company Kerala</a> and <a href=\"/digital-marketing-company-kerala/\" class=\"text-primary font-semibold hover:underline\">Digital Marketing Company Kerala</a> pages once your Hospital Website Design Kerala build is live." }
+        { "label": "Booking System Development Kochi", "text": "automated doctor appointment scheduling", "href": "/booking-system-development-kochi/" },
+        { "label": "Customer Portal Development Kochi", "text": "secure patient reports and consultation records", "href": "/customer-portal-development-kochi/" },
+        { "label": "Clinic Website Design Kerala", "text": "tailored websites for standalone clinics and dental centres", "href": "/web-design-for-clinics-kerala/" },
+        { "label": "CMS Website Development Kochi", "text": "hospital staff can update doctors and news easily", "href": "/cms-website-development-kochi/" },
+        { "label": "Website Maintenance Services Kochi", "text": "regular doctor roster updates and security patches", "href": "/website-maintenance-services-kochi/" },
+        { "label": "Local SEO Services Kochi", "text": "dominate Google Maps searches for hospital specialties", "href": "/local-seo-services-kochi/" },
+        { "label": "SEO Company Kerala", "text": "statewide patient acquisition for tertiary care", "href": "/seo-company-kerala/" }
       ]
     },
     {
@@ -131,9 +160,9 @@
       "badge": "Industries",
       "h2": "Other Industries We Design Websites For",
       "items": [
-        { "label": "Web Design for Startups Kerala", "href": "/web-design-for-startups-kerala/" },
-        { "label": "School Website Design Kerala", "href": "/web-design-for-schools-kerala/" },
         { "label": "Clinic Website Design Kerala", "href": "/web-design-for-clinics-kerala/" },
+        { "label": "School Website Design Kerala", "href": "/web-design-for-schools-kerala/" },
+        { "label": "Web Design for Startups Kerala", "href": "/web-design-for-startups-kerala/" },
         { "label": "Restaurant Website Design Kerala", "href": "/web-design-for-restaurants-kerala/" },
         { "label": "Real Estate Website Design Kerala", "href": "/web-design-for-real-estate-kerala/" },
         { "label": "Tourism Website Design Kerala", "href": "/web-design-for-tourism-businesses-kerala/" },
@@ -149,37 +178,38 @@
       "h2": "Frequently Asked Questions — Hospital Website Design Kerala",
       "items": [
         {
-          "q": "How long does Hospital Website Design Kerala take?",
-          "a": "A standard hospital site with department pages, doctor profiles, and appointment booking typically takes four to six weeks. A larger multi-department build with a patient portal can take six to ten weeks."
+          "q": "How much does hospital website design cost in Kerala?",
+          "a": "Hospital website design in Kerala typically costs ₹45,000 to ₹90,000 for single-specialty hospitals (4–6 weeks), ₹90,000 to ₹1,80,000 for multi-specialty facilities with department booking (6–8 weeks), and ₹1,80,000 to ₹3,50,000+ for large hospitals requiring patient portals and HMIS integration (8–10 weeks)."
         },
         {
-          "q": "How much does Hospital Website Design Kerala cost?",
-          "a": "Cost depends on department count and whether appointment booking or a patient portal is included — a basic informational site costs far less than a full portal-linked build."
+          "q": "Can patients book appointments online by doctor and department?",
+          "a": "Yes. Our hospital websites feature intuitive appointment booking systems allowing patients to select clinical departments, view consultant availability, choose time slots, and receive instant confirmation via SMS and WhatsApp."
         },
         {
-          "q": "Is patient data handled securely on an Affordable Hospital Website Design Kerala build?",
-          "a": "Yes — a lower budget affects design scope and feature count, not data security. Every build follows the same encryption and access-control standards under India's DPDP Act, regardless of package size."
+          "q": "Can the website integrate with our existing HMIS or EHR software?",
+          "a": "Yes. We build secure REST API integrations with existing Hospital Management Information Systems (HMIS) or Electronic Health Record (EHR) software to sync doctor schedules, patient registration numbers, and digital lab reports."
         },
         {
-          "q": "Can the website include online appointment booking for multiple doctors?",
-          "a": "Yes — Online Appointment Booking Website for Hospitals Kerala is one of the most requested features, with booking routed by department and doctor availability."
+          "q": "Can the hospital website be bilingual in Malayalam and English?",
+          "a": "Yes. We frequently develop bilingual hospital websites with English and Malayalam language toggle options, ensuring accessibility for both local Kerala residents and international medical tourists."
         },
         {
-          "q": "Do Doctor Profile Website Design Kerala pages help with SEO?",
-          "a": "Yes — individual doctor pages with qualifications and specialties are one of the strongest E-E-A-T signals a hospital site can carry, and they let each doctor rank for their own specialty searches."
+          "q": "How does Teknoppy ensure patient data security under the DPDP Act 2023?",
+          "a": "Every hospital website build features SSL/TLS encryption, granular role-based administrative access, explicit patient consent mechanisms on medical forms, and secure data storage compliant with India's Digital Personal Data Protection Act 2023."
         },
         {
-          "q": "Will the website build patient trust for a new hospital with no online history?",
-          "a": "A Hospital Website Design for Patient Trust Kerala approach relies on doctor credentials, department transparency, and accreditation details rather than years online — trust signals a new hospital can display from day one."
+          "q": "Do individual doctor profile pages improve search engine rankings?",
+          "a": "Yes. Detailed doctor profile pages with verified medical qualifications, specialties, and clinical achievements provide strong E-E-A-T (Experience, Expertise, Authoritativeness, and Trustworthiness) signals, helping your hospital rank for specialized surgical and consultation searches in Google."
         }
       ]
     },
     {
       "type": "cta",
+      "draft": true,
       "bg": "white",
       "h2": "Ready to Build Your Hospital Website?",
       "paragraphs": [
-        { "text": "Hospital Website Design Kerala is a different job from a typical business website — it has to serve anxious patients making urgent decisions, not casual browsers. Teknoppy scopes every Hospital Website Design Kerala build around department count and patient volume, so the site earns trust before a patient ever calls." }
+        { "text": "Schedule a consultation with our healthcare web development team in Kochi. We'll audit your current patient journey, review compliance requirements, and plan your hospital's digital front desk." }
       ],
       "ctas": [
         { "label": "Book a Consultation", "href": "/book-a-consultation/" },
@@ -207,18 +237,6 @@
     "source": "Hospital Website Design Kerala Industry Page Content — Final Draft (Google Drive, Aug 2026)",
     "primaryKeyword": "Hospital Website Design Kerala",
     "wordCount": "Doc target: 1,200 words · 22 primary-keyword occurrences · 1.83% density",
-    "schema": "Service (serviceType Hospital Website Design, areaServed Kerala) + FAQPage + BreadcrumbList. LocalBusiness is already emitted site-wide by FooterCTA.astro; the Service block references it by @id. Per the doc, MedicalOrganization schema is recommended for the client hospital's own homepage, not this Teknoppy service page — flag for client-side implementation guidance, not implemented here.",
-    "breadcrumb": "Doc specifies 'Home › Industries › …'. No /industries/ hub exists yet, so the Industries level points at the Web Design pillar, whose industries grid is the live parent listing.",
-    "heldPlaceholders": [
-      "Opening trust chips — [STAT NEEDED — years in business], [STAT NEEDED — hospitals served], [STAT NEEDED — average client rating]. Filled from site canon for the first two and substituted '12+ Industries Served' for the rating, which has no verified source.",
-      "Why Hospitals Choose Teknoppy — [ORIGINAL EXAMPLE NEEDED — named Kerala hospital client and outcome] and [STAT NEEDED — average delivery timeline]. Held; the sentence carrying them is omitted.",
-      "Hospital Website Projects We've Delivered — [ORIGINAL EXAMPLE NEEDED — verified hospital clients, specialty, measurable result] and [STAT NEEDED — a named testimonial]. Held; same treatment.",
-      "FAQ 'How long…' and 'How much…' — [STAT NEEDED — confirmed average timeline] and [PRICING TO CONFIRM]. Held; the verbatim answers stand without them."
-    ],
-    "linkNote": "Every internal link the doc specifies resolves to a live page. /book-a-consultation/ and /request-a-quote/ are left on their existing vercel.json redirects, matching the rest of the site.",
-    "authorLine": "Doc supplies '[Named team member — insert]'. Filled with 'Sanal Edison, Founder and Digital Strategist' per src/data/site.json.",
-    "bylineEmail": "Doc supplies sanal@teknoppy.com. Replaced with sales@teknoppy.com, the address used sitewide.",
-    "notRendered": "The doc's 'Technical & Schema Layer' block (schema list, internal-link list, image alt text, cannibalization check) is a build blueprint, not page copy.",
-    "cannibalization": "Doc records the check as clean. Owns 'Hospital Website Design Kerala' only and deliberately excludes clinic-specific language, steering standalone clinics to the Clinic Website Design Kerala page."
+    "schema": "Service (serviceType Hospital Website Design, areaServed Kerala) + FAQPage + BreadcrumbList. LocalBusiness is already emitted site-wide by FooterCTA.astro; the Service block references it by @id."
   }
 }

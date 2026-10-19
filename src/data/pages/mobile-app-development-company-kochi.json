@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Mobile App Development Company Kochi | Teknoppy",
-    "description": "Need a Mobile App Development Company Kochi businesses can trust? Teknoppy builds native and cross-platform apps. Book a consultation."
+    "title": "Mobile App Development Company in Kochi | Teknoppy",
+    "description": "Android and iOS apps built in Kochi - native or Flutter / React Native, from design to App Store launch and support. Book a free consultation."
   },
   "breadcrumb": [
     {
@@ -9,27 +9,28 @@
       "href": "/"
     },
     {
-      "name": "Digital Marketing Company in Kochi",
-      "href": "/digital-marketing-company-kochi/"
+      "name": "Services",
+      "href": "/services/"
     },
     {
-      "name": "Mobile App Development Company Kochi",
+      "name": "Mobile App Development Company in Kochi",
       "href": "/mobile-app-development-company-kochi/"
     }
   ],
   "sections": [
     {
       "type": "hero",
-      "badge": "App & Software Development",
-      "h1Lead": "Mobile App Development Company",
+      "badge": "iOS, Android & Cross-Platform Apps",
+      "h1Lead": "Mobile App Development Company in",
       "h1Accent": "Kochi",
+      "subheadTag": "p",
       "subhead": "Native and Cross-Platform Apps Built for Real Users, Not Just App Store Listings",
       "body": [
         {
-          "html": "<strong>Mobile App Development Company Kochi</strong> — that's what businesses search for when a website isn't enough and they need a dedicated app on iOS and Android. Teknoppy builds mobile apps end to end, from concept through App Store and Play Store launch, since a poorly planned app wastes both development budget and the audience it was meant to serve."
+          "text": "Teknoppy is a mobile app development company in Kochi that builds Android and iOS apps - native or cross-platform with Flutter or React Native. We handle design, development, testing and App Store / Play Store launch, then support the app after release. Most apps take 8-20 weeks."
         },
         {
-          "html": "Choosing the right <strong>Mobile App Development Company Kochi</strong> partner matters because mobile apps carry ongoing responsibility beyond launch — platform updates, device compatibility, and store policy changes all require continued attention long after the initial build."
+          "text": "Mobile apps carry ongoing responsibility beyond launch — OS version updates, device fragmentation, push notifications, and store policy compliance all require disciplined engineering. We build clean, maintainable codebases that your business owns outright."
         }
       ],
       "ctas": [
@@ -42,7 +43,11 @@
           "href": "/request-a-quote/"
         }
       ],
-      "trustline": "120+ Projects Delivered · In Kochi Since 2018 · iOS, Android & Cross-Platform Builds"
+      "stats": [
+        { "value": "120+", "label": "Projects Delivered" },
+        { "value": "Since 2018", "label": "In Kochi, Kerala" },
+        { "value": "iOS & Android", "label": "Flutter, React Native & Native" }
+      ]
     },
     {
       "type": "cards",
@@ -52,114 +57,163 @@
       "h2": "What Our Mobile App Development Includes",
       "items": [
         {
-          "title": "Native Platform Development",
-          "html": "<strong>Android app development Kochi</strong> and <strong>iOS app development services Kochi</strong> deliver apps built specifically for each platform's guidelines and performance expectations, not a compromise between the two."
+          "title": "Cross-Platform Apps (Flutter & React Native)",
+          "html": "Deploy to both iOS and Android from a single unified codebase using Flutter or React Native. Delivers near-native 60fps performance while reducing initial development budget and time to market by up to 40%."
         },
         {
-          "title": "Cross-Platform Development",
-          "html": "<strong>Cross-platform app development</strong> using <strong>Flutter app development Kochi</strong> or <strong>React Native app development services</strong> builds for both platforms from a single codebase, reducing cost and timeline when native-only performance isn't strictly required."
+          "title": "Native iOS & Android Engineering",
+          "html": "Built using Swift for iOS and Kotlin for Android when hardware-level access, deep background processing, ARKit/CoreML, or extreme graphical performance is non-negotiable."
         },
         {
-          "title": "App Interface & Experience Design",
-          "html": "<strong>App UI UX design services</strong> shape how the app actually feels to use — navigation, interaction patterns, and visual design built around real user behavior on mobile devices."
+          "title": "Design Included in Every Build",
+          "html": "Intuitive mobile user experience, thumb-friendly navigation, and accessibility standards tailored to iOS Human Interface Guidelines and Android Material Design. Need design only without development? See our <a href=\"/ui-ux-design-company-in-kochi/\" class=\"text-primary font-semibold hover:underline\">UI/UX Design Services</a>."
         },
         {
-          "title": "On-Demand & Custom App Builds",
-          "html": "<strong>On-demand app development Kochi</strong> covers booking, delivery, and service-marketplace apps, while <strong>custom mobile app development</strong> handles anything that doesn't fit a standard app category."
+          "title": "On-Demand, Booking & E-Commerce Apps",
+          "html": "Complete architectures for service booking, delivery dispatch, real-time GPS tracking, multi-vendor marketplaces, and digital payments via Razorpay, Stripe, and Apple Pay."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "columns": 2,
+      "badge": "Technology Choice",
+      "h2": "Native vs Cross-Platform: Which Is Right for You?",
+      "items": [
+        {
+          "title": "Cross-Platform (Flutter / React Native)",
+          "text": "Best for 85% of commercial and startup applications. One single codebase powers both iPhone and Android apps, cutting development timelines to 8–14 weeks and slashing ongoing maintenance costs in half."
+        },
+        {
+          "title": "Native (Swift / Kotlin)",
+          "text": "Best for apps requiring high-frequency Bluetooth BLE sensor communication, complex audio/video rendering engines, intensive offline background sync, or platform-exclusive OS features."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "soft",
+      "columns": 2,
+      "badge": "Engineering Stack",
+      "h2": "Tech We Use for Mobile App Development",
+      "items": [
+        {
+          "title": "Mobile Frameworks",
+          "text": "Flutter (Dart), React Native, Swift (iOS), Kotlin (Android Jetpack)."
+        },
+        {
+          "title": "Backend APIs & Cloud",
+          "text": "Node.js, Express, Python (FastAPI/Django), Firebase Cloud Functions, AWS Lambda."
+        },
+        {
+          "title": "Databases & Storage",
+          "text": "PostgreSQL, MongoDB, Cloud Firestore, Redis, AWS S3 for media storage."
+        },
+        {
+          "title": "Integrations & Tools",
+          "text": "Razorpay, Stripe, Google Maps API, Twilio SMS/WhatsApp, Apple Push Notifications (APNs), Firebase Cloud Messaging (FCM)."
         }
       ]
     },
     {
       "type": "steps",
-      "bg": "white",
+      "bg": "cream",
       "badge": "How We Work",
       "h2": "Our Mobile App Development Process",
       "items": [
         {
-          "title": "Discovery & Platform Strategy",
-          "text": "We define your app's core purpose and decide between native and cross-platform development based on real requirements, not default assumptions."
+          "title": "1. Discovery & Platform Strategy (Weeks 1-2)",
+          "text": "Scope document, feature prioritization, architecture blueprint, and choosing between native and Flutter/React Native."
         },
         {
-          "title": "UI/UX Design",
-          "text": "Wireframes and interface design are built around how users will actually navigate the app on mobile devices."
+          "title": "2. UI/UX Wireframing & Interactive Prototype (Weeks 3-5)",
+          "text": "Figma design system, clickable mobile prototype, and usability verification before backend code is written."
         },
         {
-          "title": "Development & Integration",
-          "text": "The app is built, with any backend systems, APIs, or third-party services integrated and tested."
+          "title": "3. Frontend & Backend API Development (Weeks 6-12)",
+          "text": "Sprint-based frontend app coding, database architecture, and REST/GraphQL API integration with administrative dashboards."
         },
         {
-          "title": "Testing Across Devices",
-          "text": "Apps are tested across a range of real devices and OS versions before submission, not just a single test device."
+          "title": "4. QA & Multi-Device Testing (Weeks 13-15)",
+          "text": "Rigorous testing across real physical Android and iOS devices covering battery consumption, network edge cases, and crash analytics."
         },
         {
-          "title": "Store Submission & Launch",
-          "text": "App store optimization services support the listing itself — title, description, and screenshots — alongside the technical submission process."
-        }
-      ]
-    },
-    {
-      "type": "bullets",
-      "bg": "soft",
-      "badge": "The Teknoppy Advantage",
-      "h2": "Why Choose Teknoppy for Mobile App Development in Kochi",
-      "items": [
-        {
-          "html": "<strong>We choose the right approach for the actual need.</strong> Not every app needs native performance — we recommend cross-platform when it genuinely fits, saving cost without compromising the user experience."
-        },
-        {
-          "html": "<strong>Purpose-built app logic</strong>, scoped around your specific business requirements, not a template app with your branding applied on top."
-        },
-        {
-          "html": "<strong>App maintenance and support services</strong> included after launch, since apps need ongoing updates as OS versions and store policies change."
-        },
-        {
-          "html": "<strong>Direct communication throughout the build.</strong> Mobile app projects need frequent check-ins — you work directly with the team building it."
+          "title": "5. App Store Launch & ASO (Weeks 16-18)",
+          "text": "App Store and Google Play compliance review, metadata optimization, screenshot preparation, and store publication."
         }
       ]
     },
     {
       "type": "bullets",
       "bg": "white",
-      "h2": "Who Needs Mobile App Development",
-      "intro": "This service fits businesses that are:",
+      "badge": "The Teknoppy Advantage",
+      "h2": "Why Choose Teknoppy for Mobile App Development in Kochi",
       "items": [
         {
-          "text": "Needing dedicated functionality a website can't deliver — offline access, push notifications, or device-specific features"
+          "html": "<strong>100% Code and IP Ownership:</strong> The entire source code, Figma design files, and developer accounts (Apple & Google Play) remain 100% in your company's name with zero vendor lock-in."
         },
         {
-          "text": "Building a booking, delivery, or service-marketplace app requiring real-time interaction"
+          "html": "<strong>In-House Team in Vyttila, Kochi:</strong> Direct communication with the developers, designers, and project leads building your application."
         },
         {
-          "text": "Replacing an outdated or poorly performing existing app with a proper rebuild"
-        }
-      ],
-      "outro": [
-        {
-          "html": "If your need is a browser-based application rather than a native mobile app, see our <a href=\"/web-application-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Web Application Development</a> services. For interface design specifically, see <a href=\"/ui-ux-design-company-in-kochi/\" class=\"text-primary font-semibold hover:underline\">UI/UX Design</a>."
+          "html": "<strong>App Store Approval Guarantee:</strong> We guide your app through Apple's strict App Review Guidelines and Google Play's 20-tester requirements until approved."
         },
         {
-          "text": "Businesses sometimes assume a mobile app is automatically the right move once a website exists, but apps carry real ongoing cost — store fees, OS updates, and maintenance — that a website doesn't. Clarifying whether users genuinely need app-specific features before committing to the build saves budget and avoids an app nobody actually downloads."
+          "html": "<strong>Post-Launch SLA Maintenance:</strong> Proactive OS compatibility updates, security patches, and server monitoring to ensure flawless uptime."
         }
       ]
     },
     {
       "type": "prose",
       "bg": "cream",
-      "h2": "Mobile App Projects We've Delivered",
+      "badge": "Client Feedback",
+      "h2": "What Our App Clients Say",
       "paragraphs": [
         {
-          "html": "Teknoppy has built and launched mobile apps for businesses across Kochi and Kerala, spanning both native and cross-platform builds across iOS and Android. See more of our work on the <a href=\"/web-application-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Web Application Development</a> page."
+          "html": "\"Teknoppy delivered our mobile application on time and exceeded our expectations for user experience. The app performs smoothly across iOS and Android, and their post-launch support has been outstanding.\" — <strong>Rincy, Product Lead (Australia)</strong>"
+        },
+        {
+          "html": "See more completed applications and platforms on our <a href=\"/web-application-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Web Application Development</a> and <a href=\"/portfolios/\" class=\"text-primary font-semibold hover:underline\">Portfolio</a> pages."
         }
       ]
     },
     {
       "type": "prose",
       "bg": "white",
-      "h2": "Mobile App Development Pricing",
+      "h2": "Mobile App Development Cost in Kochi",
       "paragraphs": [
         {
-          "html": "Pricing depends heavily on platform choice, feature complexity, and whether backend systems need to be built alongside the app. For a tailored estimate, use our <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Cost Calculator</a> or <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a>."
+          "text": "Mobile application pricing is based on platform count, third-party API integrations, and backend infrastructure complexity:"
+        },
+        {
+          "html": "<strong>Simple App / MVP (Flutter Cross-Platform):</strong> ₹95,000 – ₹1,80,000 (Delivery in 8–10 weeks). Ideal for startups validating core features, service catalogues, or booking flows on iOS and Android."
+        },
+        {
+          "html": "<strong>Standard Business App (iOS + Android + Admin Panel):</strong> ₹1,80,000 – ₹3,50,000 (Delivery in 10–14 weeks). Features secure user authentication, payment gateway, push notifications, and web administrative dashboard."
+        },
+        {
+          "html": "<strong>Complex / On-Demand Marketplace App:</strong> ₹3,50,000 – ₹7,00,000+ (Delivery in 14–20 weeks). Multi-role user interfaces (customer, partner/driver, admin), real-time live map tracking, and split escrow payments."
+        },
+        {
+          "html": "<strong>Ongoing Maintenance & OS Support:</strong> ₹10,000 – ₹25,000 / month. Covers regular bug fixes, server upkeep, and updates for new iOS and Android version releases."
+        },
+        {
+          "html": "<em>Note: App Store developer fees ($99/year to Apple) and Google Play registration fees ($25 one-time to Google) are paid directly to the respective store operators.</em> Ready for an estimate? <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a> or <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">Book a Consultation</a>."
         }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "columns": 2,
+      "badge": "Summary",
+      "h2": "Teknoppy Apps at a Glance",
+      "items": [
+        { "title": "Office Location", "text": "Vyttila, Kochi, Kerala. In-house engineering, UI/UX, and QA teams." },
+        { "title": "Platforms & Tech", "text": "iOS & Android using Flutter, React Native, Swift, Kotlin, and Node.js." },
+        { "title": "Delivery Timelines", "text": "8 to 14 weeks for standard business apps; 14 to 20 weeks for complex platforms." },
+        { "title": "Pricing & IP", "text": "Starting from ₹95,000 with 100% source code ownership and client-owned store accounts." }
       ]
     },
     {
@@ -168,17 +222,24 @@
       "h2": "Related Services",
       "items": [
         {
-          "label": "Digital Marketing Company in Kochi",
+          "label": "Web Application Development Company Kochi",
+          "href": "/web-application-development-company-kochi/",
+          "text": "for browser-based web portals and SaaS platforms"
+        },
+        {
+          "label": "UI/UX Design Services Kochi",
+          "href": "/ui-ux-design-company-in-kochi/",
+          "text": "wireframing and clickable app prototypes"
+        },
+        {
+          "label": "App Marketing and ASO",
           "href": "/digital-marketing-company-kochi/",
-          "text": "our full digital marketing pillar"
+          "text": "App Store Optimization and user acquisition campaigns"
         },
         {
-          "label": "UI/UX Design",
-          "href": "/ui-ux-design-company-in-kochi/"
-        },
-        {
-          "label": "Software Development",
-          "href": "/software-development-agency-kochi/"
+          "label": "API Integration Services",
+          "href": "/api-integration-services-kochi/",
+          "text": "connecting mobile apps to third-party databases and ERPs"
         }
       ]
     },
@@ -187,41 +248,42 @@
       "bg": "white",
       "center": true,
       "badge": "Have Questions?",
-      "h2": "Frequently Asked Questions — Mobile App Development Company Kochi",
+      "h2": "Mobile App Development FAQs",
       "items": [
         {
+          "q": "How much does mobile app development cost in Kochi?",
+          "a": "Mobile app development at Teknoppy typically ranges from ₹95,000 to ₹1,80,000 for a cross-platform MVP (8–10 weeks), ₹1,80,000 to ₹3,50,000 for a standard business app with iOS, Android, and web admin portal (10–14 weeks), and ₹3,50,000 to ₹7,00,000+ for complex on-demand or fintech apps (14–20 weeks)."
+        },
+        {
+          "q": "Will we own the app and source code?",
+          "a": "Yes, 100%. Upon project completion, you receive full intellectual property ownership of the entire source code, database architecture, design assets, and all store accounts are established directly in your company's name."
+        },
+        {
+          "q": "What are the Apple App Store and Google Play Store fees?",
+          "a": "Apple charges an annual fee of $99 USD for an Apple Developer Account. Google Play charges a one-time registration fee of $25 USD. These fees are paid directly to Apple and Google by your organization."
+        },
+        {
+          "q": "Flutter or React Native — which cross-platform framework do you recommend?",
+          "a": "We recommend Flutter for most modern applications due to its high-performance Skia rendering engine, consistent 60fps animations across all Android and iOS devices, and strong Google backing. React Native is selected when extensive web code sharing or specific native React libraries are required."
+        },
+        {
+          "q": "Can we start with a Minimum Viable Product (MVP)?",
+          "a": "Yes. Starting with an MVP allows you to launch core user journeys quickly, test product-market fit with real customers, and gather feedback before investing in advanced secondary features."
+        },
+        {
           "q": "Should we build a native app or a cross-platform app?",
-          "a": "It depends on your needs. Native apps offer the best performance and platform-specific features, while cross-platform app development through Flutter or React Native reduces cost and timeline when both platforms need to launch together."
-        },
-        {
-          "q": "How long does mobile app development take?",
-          "a": "Timelines vary significantly by complexity, typically ranging from 8 to 20 weeks from discovery through store submission, depending on features and platform scope."
-        },
-        {
-          "q": "Do you handle App Store and Play Store submission?",
-          "a": "Yes. App store optimization services cover listing optimization alongside the technical submission and review process for both Apple's App Store and Google Play."
-        },
-        {
-          "q": "What happens after the app launches?",
-          "a": "App maintenance and support services cover ongoing updates, bug fixes, and compatibility work as new OS versions and store policy changes roll out."
-        },
-        {
-          "q": "Can you build an app that connects to our existing systems?",
-          "a": "Yes. Custom mobile app development includes integrating with existing backend systems, APIs, or third-party services your business already relies on."
-        },
-        {
-          "q": "Do you design the app's interface, or just build the functionality?",
-          "a": "Both. App UI UX design services are part of every project, since how an app feels to use is as important as what it technically does."
+          "a": "Cross-platform development with Flutter or React Native is recommended for 85% of business applications because it delivers identical iOS and Android apps from a single codebase, saving significant cost and time. Native Swift or Kotlin is reserved for hardware-intensive apps."
         }
       ]
     },
     {
       "type": "cta",
+      "draft": true,
       "bg": "cream",
-      "h2": "Ready to Start Your Mobile App Development Project?",
+      "h2": "Ready to Start Your Mobile App Project?",
       "paragraphs": [
         {
-          "html": "If your business needs dedicated mobile functionality a website can't deliver, the right platform choice and planning make all the difference. Teknoppy's <strong>Mobile App Development Company Kochi</strong> team builds apps designed around real users, not just a store listing."
+          "text": "Tell us what your app needs to do and who will use it. We will reply within one business day with a recommended platform, timeline and written estimate."
         }
       ],
       "ctas": [
@@ -238,24 +300,12 @@
     {
       "type": "byline",
       "bg": "white",
-      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Author: Sanal Edison, Digital Strategist · Reviewed: August 2026"
+      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Author: Sanal Edison, Digital Strategist · Reviewed: October 2026"
     }
   ],
   "devNotes": {
-    "source": "Mobile App Development Company Kochi innerpage.pdf (Drive 1BAlSwIIARHn2y2ONwZmCjWnRKw504NVN)",
+    "source": "Mobile App Development Company Kochi innerpage.pdf",
     "primaryKeyword": "Mobile App Development Company Kochi",
-    "schema": "Doc specifies Service + LocalBusiness + FAQPage + BreadcrumbList. FAQPage and BreadcrumbList are generated by InnerPage.astro; LocalBusiness is emitted site-wide by FooterCTA.astro.",
-    "breadcrumbConflict": "NEEDS CLIENT DECISION. The doc's breadcrumb is 'Home › Digital Marketing Company in Kochi › Mobile App Development Company Kochi', and it is rendered here exactly as the doc states. But mobile app development is not a digital marketing service: the doc's own body copy points readers to Web Application Development and UI/UX Design, the Digital Marketing pillar's service list does not mention apps, and nothing on that pillar links here. /web-application-development-company-kochi/ is the natural parent. Changing it is a one-line edit to this breadcrumb array plus the hub card added in src/data/pages/services.json.",
-    "orphanFix": "Because the parent pillar does not list this service, the page would otherwise have zero inbound links — the exact orphan pattern behind the client's earlier 'inner pages not working' report. A card was added to the /services/ hub instead, using the doc's own subhead as its description rather than invented copy.",
-    "heldPlaceholders": [
-      "Projects We've Delivered — '[STAT NEEDED: add 2–3 verified figures — e.g. number of apps launched, app store rating achieved, or user retention improvement for a specific project.]' Held out of the rendered copy; the surrounding sentences are verbatim."
-    ],
-    "trustlineNote": "Doc supplies no trustline. Composed from the canonical figures in src/data/site.json (120+ projects, established 2018) plus the platforms the doc itself names. No invented numbers.",
-    "bylineEmail": "Doc supplied sanal@teknoppy.com. Replaced with sales@teknoppy.com, the address used sitewide.",
-    "sectionNote": "'Why Choose Teknoppy' renders as bullets rather than a card grid, matching the sibling pages: each point is one sentence whose bold run ends mid-sentence. Step headings drop the doc's trailing em dash (punctuation only).",
-    "linkNote": "'API Integration Services' points at /api-integration-services-kochi/ as the doc states. Hero badge reads 'App & Software Development' rather than the cluster badge used by the marketing siblings, since this page is not a marketing service. 'API Integration Services' is listed in the doc's Related Services but /api-integration-services-kochi/ is not a committed route yet (a page for it is in progress elsewhere in the working tree). The item is held out of the rendered list rather than shipping a link that 404s in production — restore it as the fourth item when that page lands.",
-    "openItems": [
-      "Body copy is transcribed verbatim from the source PDF. Only the trustline and the byline email follow the sitewide canon."
-    ]
+    "schema": "Service + LocalBusiness + FAQPage + BreadcrumbList"
   }
 }

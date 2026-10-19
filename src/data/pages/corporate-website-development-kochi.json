@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Corporate Website Development Company in Kochi | Teknoppy",
-    "description": "Corporate website development for established Kochi businesses. Multi department structure, brand governance, and stakeholder ready pages. Request a quote."
+    "description": "Corporate website development in Kochi: multi-department structure, brand governance, role-based CMS and stakeholder-ready pages. Request a quote."
   },
   "breadcrumb": [
     { "name": "Home", "href": "/" },
@@ -12,12 +12,17 @@
     {
       "type": "hero",
       "badge": "Website Design & Development",
-      "h1Lead": "Corporate Website",
-      "h1Accent": "Development",
+      "eyebrow": "For Multi-Department Organisations",
+      "h1Lead": "Corporate Website Development in",
+      "h1Accent": "Kochi",
       "subhead": "A Website That Reflects the Scale, Structure, and Standards of Your Organization",
+      "subheadTag": "p",
       "body": [
         {
-          "text": "Corporate website development is the process of designing and building a website for an established organization, one that needs to represent multiple departments, maintain consistent branding across every page, and meet the governance standards larger businesses are held to. Teknoppy builds corporate websites for companies across Kochi that have outgrown a template site and need a platform built around structure, credibility, and long term brand consistency, not just a single lead form."
+          "text": "Corporate website development is the process of designing and building a website for an established organization — one that needs to represent multiple departments, maintain consistent branding across every page, and meet the governance standards larger businesses are held to."
+        },
+        {
+          "text": "Teknoppy builds corporate websites in Kochi for organisations with several departments, locations or brands — with a documented brand system, role-based CMS access and stakeholder sign-off at each stage. Most projects take 8-14 weeks."
         }
       ],
       "ctas": [
@@ -31,113 +36,147 @@
       "columns": 2,
       "badge": "What's Included",
       "h2": "What Our Corporate Website Development Includes",
-      "intro": "Corporate projects carry more stakeholders and more moving parts than a typical business site, so our process covers four core areas built specifically for that scale.",
+      "intro": "Corporate projects carry more stakeholders and more moving parts than a typical business site. Our builds cover four core architecture pillars:",
       "items": [
         {
-          "title": "Multi department content architecture.",
-          "text": "The site is structured around departments, teams, or business units rather than a flat service list, so every division has a clear, findable home on the site."
+          "title": "Multi-Department Content Architecture",
+          "text": "The site is structured around departments, business units or operating divisions rather than a flat service list, so every team has a dedicated, findable home."
         },
         {
-          "title": "A documented brand system.",
-          "text": "Typography, colour, and component rules are documented and applied across every page, so the site does not drift in tone or style as more pages are added over time. This is a core part of enterprise website development that Kochi organisations need once more than one team is publishing content."
+          "title": "Documented Brand System",
+          "text": "Typography, colour palettes, and component rules are codified and applied across every layout, ensuring the brand never drifts in tone or visual style as teams add pages over time."
         },
         {
-          "title": "Governance ready CMS structure.",
-          "text": "Role based content permissions let different departments update their own sections without needing to touch, or risk breaking, the rest of the site."
+          "title": "Governance-Ready CMS Structure",
+          "html": "Role-based content permissions let individual departments update their own sections without risking site-wide breakage. Built on <a href=\"/cms-website-development-kochi/\" class=\"text-primary font-semibold hover:underline\">CMS website development</a> architecture with multi-tier approvals."
         },
         {
-          "title": "Stakeholder facing pages.",
-          "text": "Dedicated sections for leadership, reports, and compliance information are built to the same design standard as the rest of the site, not bolted on as an afterthought."
+          "title": "Stakeholder-Facing Pages",
+          "text": "Dedicated sections for board leadership, annual reports, ESG disclosures, careers, and investor relations are designed to the highest institutional standards."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "columns": 2,
+      "badge": "Enterprise Readiness",
+      "h2": "Built for Corporate Requirements",
+      "intro": "Enterprise IT, legal, and marketing teams evaluate infrastructure rigorously. Every corporate website Teknoppy delivers includes:",
+      "items": [
+        {
+          "title": "Enterprise Security & Access",
+          "text": "SSL encryption, Web Application Firewall (WAF), daily off-site backups, two-factor authentication (2FA) for administrators, and role-based access control (RBAC)."
+        },
+        {
+          "title": "Accessibility & Global Compliance",
+          "text": "Engineered to WCAG 2.2 AA accessibility standards, cookie consent management, GDPR/DPDP-ready privacy frameworks, and clean structured data."
+        },
+        {
+          "title": "Multilingual & Multi-Region",
+          "text": "Bilingual and multilingual configurations — including English, Malayalam, and Arabic with native right-to-left (RTL) typography for Gulf operations."
+        },
+        {
+          "title": "High Uptime & Performance Hosting",
+          "text": "Cloud-native infrastructure with CDN edge caching, sub-second load times, and 99.9% uptime monitoring for corporate reliability."
         }
       ]
     },
     {
       "type": "steps",
-      "bg": "white",
+      "bg": "soft",
       "badge": "How We Work",
-      "h2": "Our Process",
-      "intro": "Corporate builds move through five stages, with sign off built in at each one rather than left until the end.",
+      "h2": "How We Build Corporate Websites",
+      "intro": "Corporate builds move through five structured stages, with written sign-offs from your named stakeholders at each milestone:",
       "items": [
         {
-          "title": "Discovery and stakeholder mapping.",
-          "text": "We identify every department or team that needs a presence on the site, and who signs off on what."
+          "title": "Discovery & Stakeholder Mapping (Weeks 1-2)",
+          "text": "We identify every department, division, and brand unit needing a presence, establishing clear approval hierarchies and project scope."
         },
         {
-          "title": "Information architecture.",
-          "text": "Pages and navigation are mapped across departments before any design work starts, so nothing gets restructured halfway through."
+          "title": "Information Architecture & Wireframes (Weeks 3-4)",
+          "text": "Departmental navigation and content hierarchies are mapped and approved before visual styling commences."
         },
         {
-          "title": "Brand system design.",
-          "text": "A documented set of design rules is built first, then applied consistently across every page and department."
+          "title": "Brand System Design (Weeks 5-7)",
+          "text": "Design tokens, responsive layouts, and master templates are crafted and reviewed across corporate brand guidelines."
         },
         {
-          "title": "Governance ready development.",
-          "text": "The CMS is configured with role based permissions so departments can manage their own content independently."
+          "title": "Governance-Ready CMS Development (Weeks 8-11)",
+          "text": "The CMS is configured with role-based permissions, automated workflows, and enterprise security integrations."
         },
         {
-          "title": "Testing, sign off, and launch.",
-          "text": "Stakeholders review their sections before a coordinated launch, rather than one team approving on behalf of the whole organisation."
+          "title": "Testing, Sign-off & Launch (Weeks 12-14)",
+          "text": "Department heads review their respective sections in staging before a coordinated zero-downtime production rollout."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "columns": 2,
+      "badge": "Proven Delivery",
+      "h2": "Corporate Projects We Have Delivered",
+      "intro": "Representative corporate implementations built for multi-division enterprises:",
+      "items": [
+        {
+          "title": "Libra Group UAE — Dubai",
+          "text": "Unified six distinct business divisions — facility management, security, HVAC/MEP engineering, lifeguard services, concierge, and interior fit-out — into one authoritative corporate web presence."
+        },
+        {
+          "title": "Mountbell — Kochi",
+          "text": "Comprehensive corporate web platform featuring structured multi-tier service architecture, corporate governance presentation, and streamlined stakeholder inquiries."
         }
       ]
     },
     {
       "type": "prose",
-      "bg": "soft",
-      "h2": "Why Choose Teknoppy for Corporate Website Development in Kochi",
+      "bg": "white",
+      "h2": "Why Choose Teknoppy for Corporate Websites",
       "paragraphs": [
         {
-          "text": "Established organisations across Kochi choose us because we are set up for multi stakeholder projects, not just single owner ones. One team handles design, development, and SEO together, so departments are not left coordinating between separate agencies. We have experience managing sign off across several stakeholders on one project, which keeps builds from stalling in review cycles the way they often do elsewhere. Because Teknoppy also works with clients across the Gulf, our builds already account for the compliance and presentation expectations of UAE and Qatar based stakeholders where relevant. This is what a properly governed corporate website looks like when structure is planned in from the start, not patched in later."
+          "html": "Established organisations across Kochi choose Teknoppy because we are structured for multi-stakeholder corporate projects. One senior in-house team handles architecture, design, custom development, and SEO together, eliminating coordination friction between separate agencies. Each project stage concludes with written sign-off from your named approvers, so feedback is gathered systematically once rather than across scattered email threads. For organisations with regional presence in the UAE and Qatar, we build bilingual English-Arabic corporate sites with native right-to-left layouts — explore our <a href=\"/web-design-company-for-gcc-businesses/\" class=\"text-primary font-semibold hover:underline\">web design for GCC businesses</a> for regional capabilities."
         }
       ]
     },
     {
       "type": "bullets",
-      "bg": "white",
-      "h2": "Who Needs Corporate Website Development",
-      "intro": "This service fits an organisation once a single owner template site no longer reflects how the business actually runs.",
+      "bg": "soft",
+      "h2": "Who Needs a Corporate Website?",
+      "intro": "This service is tailored for organizations once a simple single-owner template site no longer reflects operational scale:",
       "items": [
-        { "text": "Your organisation spans multiple departments or locations and each one needs its own clear space on the site" },
-        { "text": "Different teams need to publish and update their own content without one person acting as a bottleneck for every change" },
-        { "text": "Your site needs to meet brand and governance standards for stakeholders, investors, or partners, not just customers" }
+        { "text": "Your organization spans multiple departments, subsidiaries, or locations, each requiring a dedicated section" },
+        { "text": "Different internal teams need to manage their own content independently without creating bottlenecks" },
+        { "text": "Your website must meet stringent governance, compliance, and brand standards for investors, partners, and institutions" }
       ],
       "outro": [
         {
-          "html": "If your goal is a single, lead focused site rather than a multi department platform, our <a href=\"/business-website-development-kochi/\" class=\"text-primary font-semibold hover:underline\">Business Website Development</a> service is usually the better fit."
+          "html": "If your primary goal is a focused lead-generation site for a single service line, our <a href=\"/business-website-development-kochi/\" class=\"text-primary font-semibold hover:underline\">Business Website Development</a> is usually the ideal fit."
         },
         {
-          "html": "<em>Related reading:</em> <a href=\"/web-design-for-manufacturing-companies-kerala/\" class=\"text-primary font-semibold hover:underline\">Web Design for Manufacturing Companies</a> · <a href=\"/web-design-for-professional-services-kerala/\" class=\"text-primary font-semibold hover:underline\">Web Design for Professional Services</a>"
-        }
-      ]
-    },
-    {
-      "type": "prose",
-      "bg": "cream",
-      "h2": "Corporate Projects We Have Delivered",
-      "paragraphs": [
-        {
-          "html": "Full portfolio: <a href=\"/portfolios/website-projects/\" class=\"text-primary font-semibold hover:underline\">Website Design Projects</a>"
+          "html": "<em>Related industry solutions:</em> <a href=\"/web-design-for-manufacturing-companies-kerala/\" class=\"text-primary font-semibold hover:underline\">Web Design for Manufacturing Companies</a> · <a href=\"/web-design-for-professional-services-kerala/\" class=\"text-primary font-semibold hover:underline\">Web Design for Professional Services</a>"
         }
       ]
     },
     {
       "type": "prose",
       "bg": "white",
-      "h2": "Corporate Website Development Pricing",
+      "h2": "Corporate Website Cost in Kochi",
       "paragraphs": [
         {
-          "html": "Pricing depends on the number of departments or sections, the complexity of the permission structure, and any custom functionality required. Most corporate builds sit above a standard small business package because of the added architecture and stakeholder review work involved. See exact ranges on our <a href=\"/web-design-pricing-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Design Pricing</a> page, or use the <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Cost Calculator</a> for a fast estimate."
+          "html": "Corporate website investments in Kochi typically range from Rs. 75,000 to Rs. 2,50,000+, depending on the number of departments, multilingual requirements, and custom third-party integrations, taking 8 to 14 weeks including structured review stages. View full details on our <a href=\"/web-design-pricing-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Design Pricing</a> page, or use the <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Cost Calculator</a> for an immediate estimate."
         }
       ]
     },
     {
       "type": "links",
-      "bg": "soft",
+      "bg": "cream",
       "h2": "Related Services",
       "items": [
         { "label": "Website Design and Development", "href": "/web-design-company-kochi/", "text": "the parent service" },
-        { "label": "Business Website Development", "href": "/business-website-development-kochi/", "text": "for SMEs that need a single lead generation site rather than a multi department platform" },
+        { "label": "Business Website Development", "href": "/business-website-development-kochi/", "text": "for SMEs needing a focused lead-generation site" },
         { "label": "CMS Website Development", "href": "/cms-website-development-kochi/", "text": "for the underlying content management platform" },
-        { "label": "Website Maintenance Services", "href": "/website-maintenance-services-kochi/", "text": "for ongoing support once your site is live" }
+        { "label": "Website Maintenance Services", "href": "/website-maintenance-services-kochi/", "text": "for ongoing security, updates, and SLAs" }
       ]
     },
     {
@@ -145,36 +184,49 @@
       "bg": "white",
       "center": true,
       "badge": "Have Questions?",
-      "h2": "Frequently Asked Questions — Corporate Website Development",
+      "h2": "Corporate Website FAQs",
       "items": [
         {
           "q": "How much does it cost to develop a corporate website in Kochi?",
-          "a": "Cost depends on the number of departments or sections, the permission structure required, and any custom functionality. Corporate builds typically cost more than a standard small business site because of the added architecture and stakeholder review involved, so request a quote for a fixed number."
+          "a": "Most corporate websites in Kochi cost between Rs. 75,000 and Rs. 2,50,000+, depending on department count, multilingual support, and integration requirements. We provide a transparent, fixed-price proposal following requirements mapping."
         },
         {
           "q": "How is a corporate website different from a business website?",
-          "a": "A corporate website is built for organisations with multiple departments, stakeholders, and brand governance needs. A business website is built for a single business focused on generating enquiries. Most SMEs need the latter."
+          "a": "A corporate website is built for organisations with multiple departments, stakeholders, and brand governance needs. A business website is built for a single business focused on generating customer enquiries. Explore our business website development services for SME builds."
         },
         {
-          "q": "Can different departments manage their own content?",
-          "a": "Yes. These builds use role based CMS permissions so individual departments can update their own sections without affecting the rest of the site."
+          "q": "Can different departments manage their own content independently?",
+          "a": "Yes. We configure role-based CMS permissions so individual department teams can publish updates to their own sections without risking changes to global navigation or other divisions. See our CMS website development solutions for details."
         },
         {
-          "q": "How long does a corporate project take?",
-          "a": "Timelines vary with the number of departments and stakeholders involved, but most projects take longer than a standard business site because of the additional review and sign off stages."
+          "q": "How long does a corporate website project take?",
+          "a": "Corporate builds typically take 8 to 14 weeks, accommodating structured stakeholder reviews, brand approval checkpoints, and cross-departmental testing."
         },
         {
-          "q": "Will the site scale as we add more departments or locations?",
-          "a": "Yes. The information architecture and brand system are built to extend to new departments or locations without needing to redesign the site from scratch."
+          "q": "What pages does a corporate website need?",
+          "a": "Typically: Homepage, About & Executive Leadership, individual division or service sections, Careers with job board integration, Press & News, Investor/Governance documentation, Locations, and Contact pages."
+        },
+        {
+          "q": "How do you keep a corporate website secure?",
+          "a": "We deploy SSL certificates, Web Application Firewalls (WAF), daily off-site backups, two-factor authentication (2FA) for administrators, and role-based access control, backed by continuous uptime monitoring."
+        },
+        {
+          "q": "Can the corporate website support multiple languages?",
+          "a": "Yes. We build multilingual corporate sites, such as English and Malayalam, or English and Arabic with native right-to-left (RTL) layout and typography."
+        },
+        {
+          "q": "Can you migrate content from our existing corporate website?",
+          "a": "Yes. We audit and map your existing content structure, migrate media assets and articles, and configure comprehensive 301 redirects to preserve all established search rankings."
         }
       ]
     },
     {
       "type": "cta",
+      "draft": true,
       "bg": "cream",
-      "h2": "Ready to Start Your Corporate Website Project",
+      "h2": "Ready to Start Your Corporate Website Project?",
       "paragraphs": [
-        { "text": "A corporate website is not just a bigger business site, it needs structure, governance, and a brand system that holds up as your organisation grows. If you are ready to move forward, let us talk about what that looks like for your teams." }
+        { "text": "Share your departments, approval process and timeline. We will reply within one business day to book a scoping call with your team." }
       ],
       "ctas": [
         { "label": "Book a Consultation", "href": "/book-a-consultation/" },
@@ -189,18 +241,9 @@
   ],
   "devNotes": {
     "source": "Website_Design&Development pillar page-corporate-website-development-kochi innerpage.pdf",
-    "primaryKeyword": "Corporate Website Development",
-    "secondaryKeyword": "Enterprise Website Development (feature block anchor)",
-    "wordCount": "1,101 words · keyword density 1.91% — within 2.0% target",
-    "openItems": [
-      "Trust strip: reuse the three stat chips already live on the Website Design and Development pillar page, do not reinvent per child page.",
-      "STAT NEEDED — experience-based claim specific to corporate projects, e.g. number of multi-department sites delivered.",
-      "Corporate Projects We Have Delivered — insert one to two verified project references here, each with a measurable result, such as a reduction in content update turnaround time after moving to a departmental CMS structure. A named client testimonial should be added where one exists for this exact service type.",
-      "Address and contact details — must exactly match the current Google Business Profile listing.",
-      "Author: named team member · Reviewed: August 2026"
-    ],
+    "primaryKeyword": "Corporate Website Development in Kochi",
+    "permalink": "/corporate-website-development-kochi/",
     "schema": "Service, LocalBusiness, FAQPage, BreadcrumbList",
-    "imageAltText": "\"corporate website development Kochi — multi department homepage layout\" · \"corporate brand system example, Teknoppy Kochi project\"",
-    "cannibalizationCheck": "Primary keyword \"Corporate Website Development\" is not owned by any other page in the site structure. Positioning is kept separate from Business Website Development (SME/lead-gen angle) and Website Redesign Services (\"redesign\" never targeted here). \"On page SEO\" and SEO-cluster terminology avoided entirely — those phrases belong to the SEO Services pillar."
+    "bylineEmail": "sales@teknoppy.com"
   }
 }

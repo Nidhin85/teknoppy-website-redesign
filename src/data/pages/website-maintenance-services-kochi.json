@@ -1,22 +1,25 @@
 {
   "meta": {
     "title": "Website Maintenance Services in Kochi | Teknoppy",
-    "description": "Keep your live website secure, updated, and monitored after launch. Kochi based team, monthly reporting, backups, and direct support on any platform."
+    "description": "Secure, updated, and monitored websites after launch. Kochi team, monthly reporting, off-server backups, and direct support on any platform. Get a quote."
   },
   "breadcrumb": [
     { "name": "Home", "href": "/" },
-    { "name": "Website Design & Development", "href": "/web-design-company-kochi/" },
-    { "name": "Website Maintenance Services", "href": "/website-maintenance-services-kochi/" }
+    { "name": "Web Design", "href": "/web-design-company-kochi/" },
+    { "name": "Website Maintenance", "href": "/website-maintenance-services-kochi/" }
   ],
   "sections": [
     {
       "type": "hero",
-      "badge": "Website Design & Development",
+      "badge": "Website Maintenance & Support",
       "h1Lead": "Website Maintenance Services in",
       "h1Accent": "Kochi",
       "body": [
         {
-          "text": "Website maintenance services from Teknoppy keep an already-live website secure, current, and free of errors long after launch. Kochi businesses come to us when their site was built years ago and never touched again, when plugins and CMS software have gone out of date, or when nobody has been checking uptime and backups since the developer moved on. Every website maintenance plan starts with a health check of what is actually running on your site today before any update goes live."
+          "text": "Teknoppy maintains live websites in Kochi on monthly plans from Rs. 5,000 - covering software and plugin updates tested on staging, uptime and security monitoring, off-server backups, content edits and a written monthly report. We support WordPress, ecommerce and custom-built sites."
+        },
+        {
+          "text": "Kochi businesses come to us when their site was built years ago and never touched again, when plugins and CMS software have gone out of date, or when nobody has been checking uptime and backups since the developer moved on. Every maintenance plan starts with a free health check of what is currently running on your site before any update goes live."
         }
       ],
       "ctas": [
@@ -30,123 +33,145 @@
       "bg": "cream",
       "columns": 2,
       "badge": "What's Included",
-      "h2": "What Our Website Maintenance Services Include",
+      "h2": "What's Included in Every Maintenance Plan",
       "items": [
         {
-          "title": "Software and Plugin Updates",
-          "text": "Website maintenance starts with keeping the CMS core, themes, plugins, and third-party integrations on their latest stable versions, tested in a staging environment before anything reaches the live site, closing the security gaps outdated software leaves open."
+          "title": "Software and Plugin Updates on Staging",
+          "text": "We test CMS core, theme, and plugin updates in an isolated staging environment before deploying to your live site, preventing broken layouts and database corruption. Looking specifically for WordPress? See our dedicated WordPress maintenance plans."
         },
         {
-          "title": "Uptime and Security Monitoring",
-          "text": "Your site is monitored around the clock for downtime, malware injections, and SSL certificate expiry, with alerts sent the moment an issue is detected rather than discovered later by a customer."
+          "title": "24/7 Uptime and Security Monitoring",
+          "text": "Uptime is checked every 5 minutes with automated alert pings. Daily malware scans, SSL certificate renewals, and brute-force login protection safeguard your site around the clock."
         },
         {
-          "title": "Automated Backup and Recovery",
-          "text": "Scheduled full-site and database backups are stored off-server as part of every website maintenance plan, so a hack, a failed update, or a server outage means a quick restore instead of a rebuild from zero."
+          "title": "Daily Automated Off-Server Backups",
+          "text": "Full-site and database backups are encrypted and stored off-server on AWS S3 with 30-day retention, enabling complete one-click restoration if a server fails."
         },
         {
-          "title": "Content and CMS Updates",
-          "text": "Every plan includes a set number of monthly content edits handled directly by our team, whether that is a price list change, a new team member added, or a banner swap, with no ticket queue and no waiting on a developer."
+          "title": "Monthly Content Edits & Speed Checks",
+          "text": "Every plan includes dedicated developer hours for banner updates, text changes, and blog publishing, paired with periodic performance tuning to keep Core Web Vitals sharp."
         }
       ]
     },
     {
-      "type": "steps",
+      "type": "pricing",
       "bg": "white",
+      "h2": "Website Maintenance Plans & Pricing",
+      "intro": "Straightforward monthly retainers with no lock-in contracts. Choose the level of coverage that matches your business:",
+      "columns": ["Plan", "Monthly Investment", "Features & Response Times"],
+      "rows": [
+        {
+          "service": "Basic Maintenance",
+          "price": "₹5,000 / month",
+          "timeline": "Core & plugin updates, weekly off-server backups, 24/7 uptime monitoring, 1 hour content edits, monthly written report. 8-hour response time."
+        },
+        {
+          "service": "Standard Business",
+          "price": "₹10,000 / month",
+          "timeline": "Daily off-server backups, staging update testing, 3 hours content edits, monthly speed optimization, malware removal. 4-hour priority response."
+        },
+        {
+          "service": "Ecommerce & High-Traffic",
+          "price": "₹15,000 / month",
+          "timeline": "WooCommerce/Shopify store checks, payment gateway testing, daily database backups, security hardening, 5 hours edits. 2-hour critical downtime response."
+        }
+      ],
+      "note": "Plans are billed monthly with 30 days notice, or annually with a 15% discount. Third-party hosting fees and commercial plugin licenses are separate. Support hours: Mon–Sat, 9:30 AM – 6:30 PM IST with emergency on-call coverage."
+    },
+    {
+      "type": "steps",
+      "bg": "cream",
       "badge": "How We Work",
-      "h2": "Our Website Maintenance Services Process",
+      "h2": "How Our Maintenance Works",
       "items": [
         {
-          "title": "Website Health Audit.",
-          "text": "We review your current CMS version, plugins, hosting environment, and any past vulnerabilities before proposing a plan."
+          "title": "Website Health Audit",
+          "text": "We review your current CMS version, active plugins, server response times, and past vulnerabilities before proposing a plan."
         },
         {
-          "title": "Maintenance Plan Setup.",
-          "text": "You choose a monthly or annual website maintenance plan scoped to your platform, whether that is WordPress, a custom build, or an ecommerce store."
+          "title": "Maintenance Plan Setup",
+          "text": "We configure off-server automated backups, set up uptime monitoring pings, and establish an isolated staging test environment."
         },
         {
-          "title": "Scheduled Updates and Monitoring.",
-          "text": "Core, plugin, and security updates run on a fixed schedule, backed by continuous uptime monitoring in the background."
+          "title": "Scheduled Updates and Monitoring",
+          "text": "Security patches and plugin upgrades are applied on a predictable monthly schedule, with critical zero-day vulnerabilities patched immediately."
         },
         {
-          "title": "Monthly Reporting.",
-          "text": "You receive a plain-language report covering what was updated, what was fixed, backup status, and uptime record for the month."
+          "title": "Monthly Written Reporting",
+          "text": "You receive a plain-language summary detailing updates installed, backup confirmations, uptime percentage, and site speed scores."
         },
         {
-          "title": "Ongoing Support Requests.",
-          "text": "Content changes and urgent fixes go through a direct request line, tracked from submission through to resolution."
+          "title": "Ongoing Support Requests",
+          "text": "Content updates and bug fixes are submitted via email or direct WhatsApp support, resolved within guaranteed SLA windows."
         }
       ]
     },
     {
       "type": "cards",
-      "bg": "soft",
+      "bg": "white",
       "columns": 2,
       "badge": "The Teknoppy Advantage",
-      "h2": "Why Choose Teknoppy for Website Maintenance Services in Kochi",
+      "h2": "Why Businesses Choose Teknoppy for Maintenance",
       "items": [
         {
-          "title": "We Support Every Platform, Not Just One",
-          "text": "Many agencies only maintain the platform they built. Our team supports WordPress, custom PHP builds, and ecommerce platforms alike, so we can take over website maintenance regardless of who built the original site."
+          "title": "We Support Every Major Platform",
+          "text": "We maintain WordPress, WooCommerce, Shopify, custom PHP / Laravel, and static Astro/React sites. If you are running WordPress, explore our specialized WordPress Maintenance Services in Kochi."
         },
         {
-          "title": "We Report on Every Visit, Not Just Big Fixes",
-          "text": "Every website maintenance plan includes a written monthly report of updates, fixes, and uptime, not a vague email saying everything is fine."
+          "title": "Written Transparent Monthly Reports",
+          "text": "No mystery billing. Every month you receive a report showing exact updates completed, security scan results, uptime logs, and speed metrics."
         },
         {
-          "title": "We're a Direct-Access Kochi Team",
-          "text": "There is no offshore ticket queue between you and the engineer handling your website maintenance request, which matters most the moment something actually breaks."
+          "title": "Direct Access to Kochi Engineers",
+          "text": "No call center or offshore ticketing queue. You collaborate directly with our in-house developers based in Vyttila, Kochi."
+        },
+        {
+          "title": "Proactive Health Checks",
+          "text": "We catch broken contact forms, expired SSL certificates, and database slowdowns before your customers encounter them."
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "bg": "soft",
+      "h2": "Does Your Website Need a Maintenance Plan?",
+      "intro": "Without regular upkeep, websites quietly accumulate security vulnerabilities and performance bottlenecks:",
+      "items": [
+        { "text": "Websites running outdated CMS versions or unpatched plugins that pose severe hacking risks." },
+        { "text": "Online stores where payment failures, checkout bugs, or broken forms directly cost daily revenue." },
+        { "text": "Corporate, clinic, and institutional sites where downtime damages trust and brand credibility." },
+        { "text": "Websites built by freelancers or past agencies with no active technical support arrangement." }
+      ],
+      "outro": [
+        {
+          "html": "If your site requires a complete visual overhaul rather than routine upkeep, consider our <a href=\"/website-redesign-services-kochi/\" class=\"text-primary font-semibold hover:underline\">Website Redesign Services</a>. For pure mobile optimization, see our <a href=\"/responsive-web-design-kochi/\" class=\"text-primary font-semibold hover:underline\">Responsive Web Design</a>."
         }
       ]
     },
     {
       "type": "bullets",
       "bg": "white",
-      "h2": "Who Needs Website Maintenance Services",
-      "intro": "This service fits any business whose website is quietly getting less secure and more outdated the longer it goes untouched, whether or not that shows up yet in traffic or enquiries.",
+      "badge": "At A Glance",
+      "h2": "Maintenance at a Glance",
       "items": [
-        { "text": "Businesses with a live website that has not been updated since launch and is now running outdated, vulnerable software." },
-        { "html": "Ecommerce store owners who need consistent security patching and backup coverage around live transactions, alongside our broader <a href=\"/ecommerce-website-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Ecommerce Website Development</a> services." },
-        { "text": "Schools, clinics, and service businesses that depend on constant uptime, similar to the institutional and healthcare sites we support." }
-      ],
-      "outro": [
-        {
-          "text": "This is especially common among Kochi businesses whose site was handed off by a previous developer with no ongoing support arrangement in place."
-        }
-      ]
-    },
-    {
-      "type": "prose",
-      "bg": "cream",
-      "h2": "Website Maintenance Projects We've Delivered",
-      "paragraphs": [
-        {
-          "text": "We currently manage ongoing website maintenance for client sites across ecommerce, professional services, and institutional websites, handling everything from routine plugin updates to emergency downtime response."
-        },
-        {
-          "html": "See more completed work in our <a href=\"/portfolios/website-projects/\" class=\"text-primary font-semibold hover:underline\">website design projects portfolio</a>."
-        }
-      ]
-    },
-    {
-      "type": "prose",
-      "bg": "white",
-      "h2": "Website Maintenance Services Pricing",
-      "paragraphs": [
-        {
-          "html": "Website maintenance cost in Kochi depends on your platform, how often updates and content changes are needed, and whether ongoing security monitoring is included. For a full breakdown by scope, see our <a href=\"/web-design-pricing-kerala/\" class=\"text-primary font-semibold hover:underline\">website design pricing</a> page or try the <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">website cost calculator</a>."
-        }
+        { "html": "<strong>Office Location:</strong> Vyttila, Kochi, Kerala · Established 2018" },
+        { "html": "<strong>Plans:</strong> Basic (₹5,000/mo) · Standard (₹10,000/mo) · Ecommerce (₹15,000/mo)" },
+        { "html": "<strong>Supported Platforms:</strong> WordPress, WooCommerce, Shopify, Custom PHP / Laravel, HTML5" },
+        { "html": "<strong>Monitoring:</strong> 24/7 uptime checks every 5 minutes, automated malware scanning, SSL tracking" },
+        { "html": "<strong>Backups:</strong> Automated daily/weekly off-server cloud backups (AWS S3) with 30-day retention" },
+        { "html": "<strong>Response Times:</strong> 2-hour response for critical downtime · 24-48 hours for standard content edits" }
       ]
     },
     {
       "type": "links",
-      "bg": "soft",
+      "bg": "cream",
       "h2": "Related Services",
       "items": [
-        { "label": "Website Design and Development", "href": "/web-design-company-kochi/", "text": "the parent service this page sits under." },
-        { "label": "Website Redesign Services", "href": "/website-redesign-services-kochi/", "text": "for sites that need a full rebuild rather than ongoing upkeep." },
-        { "label": "CMS Website Development", "href": "/cms-website-development-kochi/", "text": "for a content system built to make future updates easier." },
-        { "label": "Responsive Web Design", "href": "/responsive-web-design-kochi/", "text": "for businesses building a new site rather than maintaining an existing one." }
+        { "label": "Website Design and Development", "href": "/web-design-company-kochi/", "text": "parent custom web design pillar" },
+        { "label": "WordPress Maintenance Services Kochi", "href": "/wordpress-maintenance-services-kochi/", "text": "dedicated WordPress core, plugin, and WooCommerce support" },
+        { "label": "Website Speed Optimization Services", "href": "/website-speed-optimization-services-kochi/", "text": "Core Web Vitals tuning and server cache acceleration" },
+        { "label": "Website Redesign Services", "href": "/website-redesign-services-kochi/", "text": "comprehensive visual and structural rebuilds" },
+        { "label": "CMS Website Development", "href": "/cms-website-development-kochi/", "text": "manageable content management systems" }
       ]
     },
     {
@@ -154,40 +179,49 @@
       "bg": "white",
       "center": true,
       "badge": "Have Questions?",
-      "h2": "Frequently Asked Questions — Website Maintenance Services Kochi",
+      "h2": "Website Maintenance FAQs",
       "items": [
         {
           "q": "What does website maintenance include?",
-          "a": "It covers software and plugin updates, uptime and security monitoring, scheduled backups, technical bug fixes, and a set allowance of content edits each month, so a live website stays secure and current after launch."
+          "a": "It covers software and plugin updates, uptime and security monitoring, scheduled off-server backups, technical bug fixes, and an allocation of monthly content edits, keeping your live site secure, fast, and up to date."
         },
         {
           "q": "How much does website maintenance cost in Kochi?",
-          "a": "Cost depends on your platform, site complexity, and how often updates and content changes are needed, and is typically structured as a monthly or annual retainer rather than a flat one-time fee."
+          "a": "Our standard plans range from ₹5,000/month for basic informational websites to ₹10,000/month for growing business sites, and ₹15,000/month for active WooCommerce or Shopify stores."
         },
         {
           "q": "How often should a website be updated?",
-          "a": "Security and plugin updates should be checked at least monthly, with critical patches applied within days of release. Content update frequency depends on the business, ranging from weekly to monthly changes."
+          "a": "Maintenance follows three cadences: 1) Security and plugin updates tested and applied monthly; 2) Critical security patches deployed within hours of release; 3) Content, blog, and pricing edits updated as needed within your plan's hours."
+        },
+        {
+          "q": "Is there a minimum contract length?",
+          "a": "No long-term lock-in. Our maintenance plans operate on a flexible month-to-month basis with 30 days notice. We also offer annual billing with a 15% discount for teams seeking year-round peace of mind."
+        },
+        {
+          "q": "What is not included in a maintenance plan?",
+          "a": "Full website redesigns, extensive custom feature coding, and commercial third-party software/plugin licensing fees are quoted separately. Routine content updates and minor structural tweaks within your monthly hours are fully included."
         },
         {
           "q": "Do you maintain websites built by another agency?",
-          "a": "Yes, most of our website maintenance clients come to us with a site built by a previous developer or agency, and we begin every engagement with a full audit regardless of who built the original site."
+          "a": "Yes. Most of our maintenance clients come to us with existing sites built by previous developers. We initiate every engagement with a comprehensive security and codebase audit before taking over management."
         },
         {
           "q": "What happens if my website goes down?",
-          "a": "Uptime monitoring flags downtime the moment it happens, and our team investigates and restores service, using the most recent backup if needed, rather than waiting for you to notice and report it."
+          "a": "Our automated 24/7 monitoring detects outages within 5 minutes. Our engineering team immediately diagnoses the incident, resolves server or database issues, and restores from verified backups if necessary. Critical emergency response is within 2 to 4 hours."
         },
         {
           "q": "Is website maintenance different from web hosting?",
-          "a": "Yes. Hosting is the server your site runs on. Website maintenance is the ongoing work of updating, securing, and fixing that site, and most businesses need both."
+          "a": "Yes. Web hosting is the physical or cloud server where your files live. Website maintenance is the active technical labor of keeping that site updated, secure, optimized, and patched against vulnerabilities. You need both to keep a site healthy."
         }
       ]
     },
     {
       "type": "cta",
+      "draft": true,
       "bg": "cream",
       "h2": "Ready to Put Your Website on a Maintenance Plan?",
       "paragraphs": [
-        { "text": "An unmaintained website is not neutral. It becomes more vulnerable and more outdated with every month it is left alone. A right-sized website maintenance plan fixes that before it turns into a security incident or a lost customer." }
+        { "text": "Send us your website address. We will run a free health check and reply within one business day with the right plan and monthly price." }
       ],
       "ctas": [
         { "label": "Book a Consultation", "href": "/book-a-consultation/" },
@@ -197,28 +231,23 @@
     {
       "type": "byline",
       "bg": "white",
-      "text": "Teknoppy · Kochi, Kerala · +91 6282249224 · sales@teknoppy.com"
+      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Reviewed: October 2026 by Sanal Edison, Digital Strategist."
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Website Maintenance Services in Kochi",
+      "serviceType": "Website maintenance",
+      "provider": { "@id": "https://teknoppy.com/#localbusiness" },
+      "areaServed": ["Kochi", "Kerala", "India"],
+      "url": "https://teknoppy.com/website-maintenance-services-kochi/"
     }
   ],
   "devNotes": {
-    "source": "Website Design&Development pillar page - Website Maintenance Services inner page.pdf",
-    "primaryKeyword": "Website Maintenance Services",
-    "wordCount": "1,196 words",
-    "keywordDensity": "1.9% (target: 1.8-2.0%)",
-    "metaLayerNotSupplied": "Doc supplies no Title Tag or Meta Description row, same as the Landing Page and Redesign docs. Title follows the sibling pattern (H1 + | Teknoppy). Description purpose-written at 149 characters.",
-    "heldPlaceholders": [
-      "Why Choose Teknoppy — [STAT NEEDED — verified uptime percentage or active maintenance client count from current engagements]",
-      "Website Maintenance Projects We've Delivered — [STAT NEEDED — before-and-after uptime, incident response time, or update-cycle count once client sign-off is confirmed]"
-    ],
-    "openItems": [
-      "Author line and \"Reviewed: [Month Year]\" to be added by content owner.",
-      "Related Services links to /cms-website-development-kochi/, which is not built yet. Pricing links to /web-design-pricing-kerala/ and /website-cost-calculator-kerala/, also not built. Same sitewide dead-link pattern as the other child pages.",
-      "Doc asked for 2 industry links (Clinic Website Design, School Website Design). Neither page exists and neither has a defined slug in the site structure — the pillar's Industries block has no hrefs at all. The schools and clinics bullet is left as plain text; link it once those pages exist."
-    ],
-    "schema": "Service + LocalBusiness + FAQPage + BreadcrumbList",
-    "internalLinks": "parent pillar, 3 sibling pages, 1 ecommerce service page, 2 lead-gen pages",
-    "statsConflict": "Doc supplied trust chips '13+ Years Serving Kerala Businesses' and '100+ Websites Actively Supported'. The 13+ years figure contradicts the canonical 'in Kochi since 2018' in src/data/site.json, and the actively-supported count is unverified. Replaced with the canonical trustline, keeping the doc's third chip (Kochi-Based Team, Direct Support Line) since it is a positioning claim, not a number.",
-    "bylineEmail": "Doc supplied sanal@teknoppy.com. Replaced with sales@teknoppy.com, the sitewide address.",
-    "cannibalizationCheck": "Distinct from /wordpress-maintenance-services-kochi/ under the WordPress pillar, which targets 'WordPress Maintenance Services Kochi'. This page targets the platform-agnostic 'Website Maintenance Services' and its copy deliberately covers WordPress, custom PHP, and ecommerce together rather than WordPress alone."
+    "source": "Website Maintenance Services Page Audit & Action Plan (Oct 2026)",
+    "primaryKeyword": "website maintenance services in Kochi",
+    "permalink": "/website-maintenance-services-kochi/"
   }
 }

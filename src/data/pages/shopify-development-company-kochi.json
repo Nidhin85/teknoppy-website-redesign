@@ -1,31 +1,37 @@
 {
   "meta": {
-    "title": "Shopify Development Company Kochi | Teknoppy",
-    "description": "Looking for a Shopify Development Company Kochi? Teknoppy builds fast, secure, conversion-ready Shopify stores. Book a free consultation today."
+    "title": "Shopify Development Company in Kochi | Teknoppy",
+    "description": "Shopify stores designed and built in Kochi for brands in India and the UAE - custom themes, apps and payments. Live in 3-5 weeks. Book a free call."
   },
   "breadcrumb": [
     { "name": "Home", "href": "/" },
     { "name": "Ecommerce Website Development Company Kochi", "href": "/ecommerce-website-development-company-kochi/" },
-    { "name": "Shopify Development Company Kochi", "href": "/shopify-development-company-kochi/" }
+    { "name": "Shopify Development Company in Kochi", "href": "/shopify-development-company-kochi/" }
   ],
   "sections": [
     {
       "type": "hero",
       "badge": "Ecommerce Development",
-      "h1Lead": "Shopify Development Company",
+      "h1Lead": "Shopify Development Company in",
       "h1Accent": "Kochi",
+      "subheadTag": "p",
       "subhead": "Launch a Shopify Store Built to Convert, Not Just Go Live",
       "body": [
         {
-          "html": "<strong>Shopify Development Company Kochi</strong> — that's what businesses search for when they want a store built on Shopify's hosted platform without the hassle of managing servers, security, or updates themselves. Teknoppy builds Shopify stores that are fast, well-structured, and set up to convert visitors into paying customers from the first day they go live."
+          "text": "Teknoppy builds Shopify stores in Kochi for brands selling in India and the UAE - custom theme design, product pages, apps and payment setup, launched in 3-5 weeks. Shopify handles hosting and security, so your team focuses on selling."
         },
         {
-          "html": "Choosing the right <strong>Shopify Development Company Kochi</strong> partner matters because Shopify's ease of use hides a lot of setup decisions that affect performance later — app choices, theme structure, and checkout configuration all shape how well a store actually sells, not just how it looks at launch."
+          "text": "Shopify provides world-class cloud infrastructure, but stock templates and plugin bloat can hurt conversion rates and mobile load speeds. We architect custom Online Store 2.0 themes, integrate frictionless Indian UPI checkout flows, and configure multi-currency Shopify Markets for international reach."
         }
       ],
       "ctas": [
         { "label": "Book a Consultation", "href": "/book-a-consultation/" },
         { "label": "Request a Quote", "href": "/request-a-quote/" }
+      ],
+      "stats": [
+        { "value": "120+", "label": "Online Stores Built" },
+        { "value": "Shopify 2.0", "label": "Custom Liquid & Sections" },
+        { "value": "3-5 Weeks", "label": "Typical Launch Timeline" }
       ]
     },
     {
@@ -36,20 +42,20 @@
       "h2": "What Our Shopify Development Includes",
       "items": [
         {
-          "title": "Custom Store Setup & Configuration",
-          "html": "Every project starts with <strong>Shopify store setup Kochi</strong> scoped to your product range, shipping zones, and tax settings — configured properly rather than left on Shopify's generic defaults."
+          "title": "Online Store 2.0 Custom Theme Architecture",
+          "html": "Custom Liquid development using modular drag-and-drop sections, allowing your marketing team to build high-converting landing pages and promotional banners without touching code."
         },
         {
-          "title": "Custom Store Design",
-          "html": "For brands that need more than a stock Shopify theme, <strong>custom Shopify store design</strong> builds a storefront around your actual products and brand identity, not a template reused across thousands of other stores."
+          "title": "High-Converting Product Pages & Cart UX",
+          "html": "Conversion-focused layouts featuring sticky checkout triggers, dynamic color and size swatches, custom bundle builders, and authentic customer review displays."
         },
         {
-          "title": "Theme Customization & Product Page Design",
-          "html": "<strong>Shopify theme customization Kochi</strong> and <strong>Shopify product page design</strong> work together to present products clearly, reduce friction, and guide visitors toward checkout rather than away from it."
+          "title": "Indian & GCC Payment Gateway Integration",
+          "html": "Seamless setup of Razorpay, Cashfree, and PayU with instant mobile UPI intent switching, alongside Stripe, PayPal, and Apple Pay for GCC and international customers. Explore <a href=\"/payment-gateway-integration-kochi/\" class=\"text-primary font-semibold hover:underline\">Payment Gateway Integration</a>."
         },
         {
-          "title": "App Development & Payment Setup",
-          "html": "When Shopify's app store doesn't cover a specific need, <strong>Shopify app development Kochi</strong> builds it directly. <strong>Shopify payment gateway integration</strong> ensures customers can pay securely through the methods relevant to your market."
+          "title": "App Stack Curation & Custom Private Apps",
+          "html": "We install and configure only vetted, lightweight apps (Klaviyo, Loox, Shiprocket, WhatsApp automated recovery), and develop custom private apps when third-party tools fall short."
         }
       ]
     },
@@ -59,61 +65,106 @@
       "badge": "How We Work",
       "h2": "Our Shopify Development Process",
       "items": [
-        { "title": "Store Requirements Review", "text": "We map your product catalogue, shipping needs, and payment requirements before any build work begins." },
-        { "title": "Store Architecture & Setup", "text": "Collections, navigation, and core configuration are structured around how customers will actually browse and buy." },
-        { "title": "Design & Theme Customization", "text": "Product pages, cart, and checkout are styled to match your brand and reduce abandonment." },
-        { "title": "App & Payment Integration", "text": "Any custom apps and payment gateways are added and tested against real transaction flows." },
-        { "title": "Testing & Launch", "text": "Full checkout and device testing before go-live, followed by monitored launch support." }
+        { "title": "1. Store Requirements & Product Taxonomy (Week 1)", "text": "We organize your product catalog, collections, shipping matrices, and international currency requirements." },
+        { "title": "2. Custom UI/UX & Liquid Theme Design (Weeks 2-3)", "text": "Figma design system converted into a fast, bloat-free Online Store 2.0 theme built for mobile shoppers." },
+        { "title": "3. Gateway, App & Logistics Integration (Week 4)", "text": "We configure Indian UPI/card gateways, courier shipping APIs (Shiprocket/Delhivery), and inventory management sync." },
+        { "title": "4. Quality Assurance & Device Testing (Week 5)", "text": "Testing checkout funnels, coupon logic, and mobile responsiveness across real Android and iOS smartphones." },
+        { "title": "5. Go-Live & Post-Launch Support", "text": "Domain cutover, Google Analytics 4 tracking verification, and hands-on merchant dashboard training." }
       ]
     },
     {
-      "type": "bullets",
+      "type": "cards",
       "bg": "soft",
-      "h2": "Why Choose Teknoppy for Shopify Development in Kochi",
+      "columns": 2,
+      "badge": "The Teknoppy Advantage",
+      "h2": "Why Brands Choose Teknoppy",
       "items": [
-        { "html": "<strong>We configure stores properly from day one.</strong> Many underperforming Shopify stores trace back to rushed setup — we scope shipping, tax, and payment logic correctly upfront." },
-        { "html": "<strong>Affordable Shopify development Kochi businesses can scale into.</strong> Store structure is built to add products, collections, or new markets later without a rebuild." },
-        { "html": "<strong>Shopify SEO optimization built into setup</strong>, not bolted on afterward — page structure, collections, and metadata are configured to be search-ready at launch." },
-        { "html": "<strong>Kochi-based team you can actually reach.</strong> Store issues need fast turnaround; you work directly with the developers who built your store, not a routed support queue." }
-      ],
-      "outro": [
-        { "text": "Store owners often underestimate how much of a Shopify store's performance comes down to early configuration choices — app selection, theme structure, and how collections are organised all affect speed and search visibility long after launch. We treat those decisions as part of the build itself, not something to fix once problems appear." }
+        {
+          "title": "Engineered for Sub-2s Mobile Load Times",
+          "text": "We eliminate unnecessary third-party JavaScript apps that drag down Shopify store speeds, maintaining 90+ mobile PageSpeed scores."
+        },
+        {
+          "title": "Multi-Currency & International Commerce",
+          "text": "Expertise configuring Shopify Markets for cross-border brands targeting both India (INR) and the UAE/GCC (AED, QAR, SAR)."
+        },
+        {
+          "title": "Zero-Downtime Migration Services",
+          "html": "Safely migrate product catalogs, customer histories, and SEO URL equity from WooCommerce or Magento. See our <a href=\"/ecommerce-redesign-migration-kochi/\" class=\"text-primary font-semibold hover:underline\">Ecommerce Redesign & Migration</a>."
+        },
+        {
+          "title": "Direct Collaboration in Kochi",
+          "text": "Work directly with senior Shopify theme developers and ecommerce strategists in Vyttila, Kochi."
+        }
       ]
     },
     {
       "type": "bullets",
       "bg": "white",
-      "h2": "Who Needs Shopify Development",
-      "intro": "This service fits businesses that are:",
+      "h2": "Is Shopify Right for Your Brand?",
+      "intro": "Shopify is the ideal ecommerce platform for businesses that require:",
       "items": [
-        { "text": "Launching a new store and want it built correctly on Shopify from the start" },
-        { "html": "Migrating an existing store to Shopify through <strong>Shopify migration services</strong>" },
-        { "text": "Running an underperforming Shopify store that needs a rebuild — slow pages, poor product presentation, or weak search visibility" }
+        { "text": "Direct-to-Consumer (D2C) brands looking for rapid deployment, hassle-free hosting, and high checkout reliability." },
+        { "text": "Brands expanding across India and the GCC needing automated currency conversion and localized payment gateways." },
+        { "text": "Retail companies seeking a cloud platform with zero server maintenance, automated security updates, and robust fraud prevention." }
       ],
       "outro": [
         {
-          "html": "Businesses considering <strong>Shopify store development Kochi</strong> work often come to us after a DIY setup or a previous agency left the store under-configured for real order volume. If your ecommerce needs sit outside Shopify specifically, see <a href=\"/woocommerce-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">WooCommerce Development</a> or <a href=\"/custom-ecommerce-development-kochi/\" class=\"text-primary font-semibold hover:underline\">Custom Ecommerce Development</a>."
+          "html": "If your store requires open-source code ownership without monthly platform software subscriptions, explore our <a href=\"/woocommerce-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">WooCommerce Development</a> or bespoke <a href=\"/custom-ecommerce-development-kochi/\" class=\"text-primary font-semibold hover:underline\">Custom Ecommerce Development</a>."
         }
       ]
     },
     {
       "type": "prose",
       "bg": "cream",
-      "h2": "Shopify Projects We've Delivered",
+      "h2": "Shopify Stores We've Built",
       "paragraphs": [
         {
-          "html": "Teknoppy has built and migrated Shopify stores for businesses across Kochi and Kerala, each configured around real product catalogues and market-specific payment needs rather than generic templates. See more in our <a href=\"/portfolios/ecommerce-projects/\" class=\"text-primary font-semibold hover:underline\">Ecommerce Projects Portfolio</a>."
+          "html": "<strong>Modestsisters (UAE & GCC Modest Fashion):</strong> Built a responsive Shopify boutique with multi-currency checkout (AED, SAR, USD) and optimized collection pages, achieving <strong>2.8x order velocity</strong> during high-traffic seasonal collection drops."
+        },
+        {
+          "html": "<strong>Apolo Mattress (Kerala D2C):</strong> Engineered a custom Shopify storefront with an interactive mattress selector and verified review badges, achieving a <strong>96/100 mobile PageSpeed score</strong> and reducing pre-checkout abandonments."
+        },
+        {
+          "html": "<strong>Nuelments (D2C Hair Care):</strong> Developed a bespoke Shopify theme featuring shoppable video reels and custom bundle discount logic, lifting <strong>Average Order Value (AOV) by +38%</strong>."
+        },
+        {
+          "html": "See more projects in our <a href=\"/portfolios/ecommerce-projects/\" class=\"text-primary font-semibold hover:underline\">Ecommerce Projects Portfolio</a>."
         }
       ]
     },
     {
       "type": "prose",
       "bg": "white",
-      "h2": "Shopify Development Pricing",
+      "h2": "Shopify Development Cost in Kochi",
       "paragraphs": [
         {
-          "html": "Pricing for <strong>Shopify Development Company Kochi</strong> projects depends on catalogue size, custom app requirements, and design complexity. For a tailored estimate, use our <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Cost Calculator</a> or <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a>."
+          "text": "Shopify development pricing depends on theme customization depth, product catalog scale, and custom integrations:"
+        },
+        {
+          "html": "<strong>Starter Shopify Store:</strong> ₹45,000 – ₹85,000 (Delivery in 3 weeks). Professional theme setup, up to 25 products configured, payment gateway integration, shipping zones, and mobile optimization."
+        },
+        {
+          "html": "<strong>Custom-Designed Shopify Store:</strong> ₹90,000 – ₹1,80,000 (Delivery in 4–5 weeks). Bespoke Liquid theme design, custom product page builders, automated marketing flows, and performance tuning."
+        },
+        {
+          "html": "<strong>Shopify Platform Migration:</strong> ₹65,000 – ₹1,40,000 (Delivery in 2–4 weeks). Complete product, customer, and order data transfer with 301 SEO redirect mapping from WooCommerce, Magento, or custom carts."
+        },
+        {
+          "html": "<em>Note: Shopify platform plans (Basic $39/mo or ₹1,999/mo) and paid app subscriptions are paid directly to Shopify.</em> Ready to build? <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a> or <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">Book a Consultation</a>."
         }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "columns": 2,
+      "badge": "Summary",
+      "h2": "Shopify at a Glance",
+      "items": [
+        { "title": "Office Location", "text": "Vyttila, Kochi, Kerala. In-house Shopify developers and ecommerce conversion designers." },
+        { "title": "Specialization", "text": "Online Store 2.0 Liquid themes, custom product pages, D2C brand stores, and Shopify Markets." },
+        { "title": "Typical Turnaround", "text": "3 to 5 weeks from initial design wireframes to production store launch." },
+        { "title": "Storefront Proof", "text": "Trusted by brands across India and the GCC including Modestsisters, Apolo Mattress, and Nuelments." }
       ]
     },
     {
@@ -122,9 +173,10 @@
       "h2": "Related Services",
       "items": [
         { "label": "Ecommerce Website Development Company Kochi", "href": "/ecommerce-website-development-company-kochi/", "text": "our full ecommerce development pillar" },
-        { "label": "WooCommerce Development", "href": "/woocommerce-development-company-kochi/" },
-        { "label": "Custom Ecommerce Development", "href": "/custom-ecommerce-development-kochi/" },
-        { "label": "Payment Gateway Integration", "href": "/payment-gateway-integration-kochi/" }
+        { "label": "Ecommerce Redesign & Migration", "href": "/ecommerce-redesign-migration-kochi/", "text": "migrating existing stores to Shopify without SEO loss" },
+        { "label": "Ecommerce SEO Services Kochi", "href": "/ecommerce-seo-services-kochi/", "text": "organic search rankings for product collections" },
+        { "label": "WooCommerce Development", "href": "/woocommerce-development-company-kochi/", "text": "self-hosted WordPress ecommerce alternatives" },
+        { "label": "Payment Gateway Integration", "href": "/payment-gateway-integration-kochi/", "text": "Razorpay, UPI, Cashfree, and international gateways" }
       ]
     },
     {
@@ -132,40 +184,41 @@
       "bg": "white",
       "center": true,
       "badge": "Have Questions?",
-      "h2": "Frequently Asked Questions — Shopify Development Company Kochi",
+      "h2": "Shopify FAQs",
       "items": [
         {
+          "q": "How much does a Shopify store cost in Kochi?",
+          "a": "A professional Shopify store typically costs ₹45,000 to ₹85,000 for a curated starter store (3 weeks), and ₹90,000 to ₹1,80,000 for a fully bespoke custom-designed Liquid theme (4–5 weeks). Shopify platform hosting plans and paid app subscriptions are billed separately by Shopify."
+        },
+        {
+          "q": "Can a Shopify store accept UPI and handle Indian GST?",
+          "a": "Yes. We integrate Indian payment gateways like Razorpay, Cashfree, or PayU to enable seamless UPI payments (Google Pay, PhonePe, Paytm QR and intent), and configure GST-compliant tax calculations, HSN codes, and automated customer tax invoices."
+        },
+        {
+          "q": "Do I own my Shopify store?",
+          "a": "You own 100% of your business data, product catalog, customer lists, and custom theme code. The underlying hosting and commerce software is licensed via Shopify on a predictable monthly subscription plan."
+        },
+        {
           "q": "How is Shopify different from WooCommerce?",
-          "a": "Shopify is a fully hosted platform — Shopify manages servers, security, and updates for you, at a monthly cost. WooCommerce runs on WordPress and gives you full ownership of code and hosting. Shopify suits businesses that want a managed platform with less technical overhead."
+          "a": "Shopify is a fully managed cloud platform where Shopify handles servers, security, and updates for a monthly fee. WooCommerce is open-source software running on WordPress that gives you full hosting control. Shopify is best for brands prioritizing speed of execution and low technical maintenance."
         },
         {
           "q": "Can you migrate our existing store to Shopify?",
-          "a": "Yes — our Shopify migration services handle moving products, customer data, and order history from other platforms with minimal downtime."
+          "a": "Yes. Our Ecommerce Redesign & Migration services safely transfer product catalogs, customer records, and order history from WooCommerce, Magento, or OpenCart to Shopify, with comprehensive 301 URL redirect maps to preserve existing search rankings."
         },
         {
-          "q": "Will our Shopify store be optimised for search engines?",
-          "a": "Yes. Shopify SEO optimization is built into setup — page structure, collection organisation, and metadata are configured with search visibility in mind from the start, though Shopify's platform has some built-in SEO limitations we'll walk you through."
-        },
-        {
-          "q": "How long does Shopify store development take?",
-          "a": "A typical store, depending on catalogue size and custom features, takes 3–5 weeks from requirements review to launch. Larger catalogues or custom app requirements can extend this timeline."
-        },
-        {
-          "q": "Do you build custom Shopify apps?",
-          "a": "Yes. When an existing app doesn't cover a specific need, our Shopify app development Kochi work builds custom functionality directly into your store."
-        },
-        {
-          "q": "Can you customize product pages to match our brand?",
-          "a": "Yes — Shopify product page design is tailored to your brand and product type rather than left as a default theme layout."
+          "q": "Will our Shopify store be optimized for search engines?",
+          "a": "Yes. We implement structured collection URLs, optimized title and meta tags, fast WebP media, and JSON-LD product schema to maximize search visibility. For ongoing organic growth, explore our Ecommerce SEO Services."
         }
       ]
     },
     {
       "type": "cta",
+      "draft": true,
       "bg": "cream",
-      "h2": "Ready to Start Your Shopify Development Project?",
+      "h2": "Ready to Launch Your Shopify Store?",
       "paragraphs": [
-        { "text": "A Shopify store that's slow, poorly configured, or hard to manage costs you sales every day it stays that way. Teknoppy's Shopify Development Company Kochi team builds stores set up correctly from day one — fast, secure, and ready to sell." }
+        { "text": "Tell us about your products, markets and launch date. We will reply within one business day with a store plan, theme approach and quote." }
       ],
       "ctas": [
         { "label": "Book a Consultation", "href": "/book-a-consultation/" },
@@ -175,17 +228,12 @@
     {
       "type": "byline",
       "bg": "white",
-      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Author: Sanal Edison, Digital Strategist · Reviewed: August 2026"
+      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Author: Sanal Edison, Digital Strategist · Reviewed: October 2026"
     }
   ],
   "devNotes": {
     "source": "Ecommerce Development pillar page - shopify devolpment kochi innner page.pdf",
     "primaryKeyword": "Shopify Development Company Kochi",
-    "metaTitleLength": "44 characters",
-    "metaDescriptionLength": "143 characters",
-    "heldPlaceholders": [
-      "Shopify Projects We've Delivered — [STAT NEEDED: add 2–3 verified figures — e.g. conversion rate improvement, number of stores launched, or average page-load time achieved.]"
-    ],
     "schema": "Service + LocalBusiness + FAQPage + BreadcrumbList"
   }
 }

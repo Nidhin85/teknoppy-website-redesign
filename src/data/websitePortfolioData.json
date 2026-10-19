@@ -258,15 +258,15 @@
     {
       "id": "libra-group-uae",
       "name": "Libra Group UAE",
-      "tagline": "Enterprise facilities management web application digitizing client work orders and operational dispatch across the Emirates.",
-      "industryLabel": "Web Application",
-      "category": "web-app",
+      "tagline": "Multi-service corporate website unifying six facilities management divisions in Dubai with SIRA accreditation and clear quote workflows.",
+      "industryLabel": "Corporate Website",
+      "category": "web-design",
       "categories": [
-        "web-app",
-        "web-design"
+        "web-design",
+        "wordpress"
       ],
       "image": "/case-studies/libragroupuae.webp",
-      "imageAlt": "Teknoppy website project - Libra Group UAE facilities management portal",
+      "imageAlt": "Teknoppy website project - Libra Group UAE multi-service facilities website",
       "href": "/case-studies/libra-group-uae-web-application-design/",
       "location": "Dubai, UAE"
     },

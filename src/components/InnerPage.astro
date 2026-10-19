@@ -122,9 +122,15 @@ const breadcrumbSchema = page.breadcrumb && {
           </h1>
 
           {hero.subhead && (
-            <h2 class="text-lg sm:text-xl lg:text-2xl font-bold text-white/90 mb-6 leading-snug max-w-3xl">
-              {hero.subhead}
-            </h2>
+            hero.subheadTag === 'p' ? (
+              <p class="text-lg sm:text-xl lg:text-2xl font-bold text-white/90 mb-6 leading-snug max-w-3xl">
+                {hero.subhead}
+              </p>
+            ) : (
+              <h2 class="text-lg sm:text-xl lg:text-2xl font-bold text-white/90 mb-6 leading-snug max-w-3xl">
+                {hero.subhead}
+              </h2>
+            )
           )}
 
           {(hero.body ?? []).map((p: any) => (

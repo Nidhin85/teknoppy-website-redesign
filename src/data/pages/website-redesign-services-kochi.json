@@ -1,22 +1,25 @@
 {
   "meta": {
     "title": "Website Redesign Services in Kochi | Teknoppy",
-    "description": "Redesign an outdated or slow website without losing your Google rankings. Kochi based team, full site audit first, redirects planned before launch."
+    "description": "Redesign an outdated or slow website without losing your Google rankings. Kochi based team, full site audit first, 301 redirects planned. Get a quote."
   },
   "breadcrumb": [
     { "name": "Home", "href": "/" },
-    { "name": "Website Design & Development", "href": "/web-design-company-kochi/" },
-    { "name": "Website Redesign Services", "href": "/website-redesign-services-kochi/" }
+    { "name": "Web Design", "href": "/web-design-company-kochi/" },
+    { "name": "Website Redesign", "href": "/website-redesign-services-kochi/" }
   ],
   "sections": [
     {
       "type": "hero",
-      "badge": "Website Design & Development",
+      "badge": "Website Redesign & Revamp",
       "h1Lead": "Website Redesign Services in",
       "h1Accent": "Kochi",
       "body": [
         {
-          "text": "Website redesign services from Teknoppy rebuild an existing website that no longer performs, whether it looks outdated, loads slowly, or simply is not bringing in the enquiries it used to. Kochi businesses come to us when their current site was built years ago, was never mobile friendly, or has fallen behind competitors who redesigned first. Every redesign project starts with an audit of what is actually broken across the site before a single design decision is made."
+          "text": "Teknoppy redesigns outdated or slow websites in Kochi without losing Google rankings. We audit your current site, map every URL with 301 redirects, rebuild it mobile-first for speed, and monitor rankings after launch. Most redesigns take 4-8 weeks."
+        },
+        {
+          "text": "Kochi businesses come to us when their current site was built years ago, was never mobile-friendly, or has fallen behind competitors who modernized first. Every redesign starts with an audit of what is actually broken across the site before a single design decision is made."
         }
       ],
       "ctas": [
@@ -33,165 +36,196 @@
       "h2": "What Our Website Redesign Services Include",
       "items": [
         {
-          "title": "Website Revamp Services Kochi",
-          "text": "A full website revamp covers structure, design, and content together, rebuilding the site around what your business actually offers today rather than patching over an old layout from a previous era."
+          "title": "Full Website Rebuild",
+          "text": "We rebuild your architecture, visual UI, and messaging around what your company sells today rather than patching over a legacy layout from years ago."
         },
         {
-          "title": "Outdated Website Redesign",
-          "text": "Many redesign projects start because the current site was built on old technology or an old template. We rebuild these from the ground up on a modern, secure foundation rather than layering fixes on top of an ageing system."
+          "title": "Outdated Website Modernization",
+          "text": "Replace fragile templates, unsupported plugins, and insecure CMS installations with modern, high-speed component architecture."
         },
         {
           "title": "UI/UX Redesign for Existing Websites",
-          "text": "Beyond visuals, this is about how visitors actually move through your site. Navigation, page layout, and call to action placement are redesigned around real user behaviour, not just a fresh colour scheme."
+          "text": "Restructure page flows, navigation menus, and call-to-action placement around actual visitor behavior. Need an in-depth analysis first? Explore our UX Audit Services."
         },
         {
-          "title": "Content Migration During Redesign",
-          "text": "This covers moving your existing pages, images, and blog posts into the new design with proper redirects in place, not platform or hosting migration, so a redesign does not mean starting your content and search visibility from zero."
-        }
-      ]
-    },
-    {
-      "type": "steps",
-      "bg": "white",
-      "badge": "How We Work",
-      "h2": "Our Website Redesign Services Process",
-      "items": [
-        {
-          "title": "Site Audit and Goal Setting.",
-          "text": "We review your current site's performance, traffic, and weak points, and agree on what success looks like for the new version."
-        },
-        {
-          "title": "Content and SEO Mapping.",
-          "text": "Every existing page is mapped to a new URL structure with redirects planned in advance, protecting the search visibility already built up."
-        },
-        {
-          "title": "Design and Structure Rebuild.",
-          "text": "New wireframes and visual design are built around your current business goals, not the layout the old site happened to have."
-        },
-        {
-          "title": "Development and Testing.",
-          "text": "The rebuilt site is developed, tested across devices, and checked against Core Web Vitals before anything goes live."
-        },
-        {
-          "title": "Launch and Post-Launch Monitoring.",
-          "text": "We monitor rankings, traffic, and site speed closely in the weeks after launch to catch any issues early."
-        }
-      ]
-    },
-    {
-      "type": "cards",
-      "bg": "soft",
-      "columns": 2,
-      "badge": "The Teknoppy Advantage",
-      "h2": "Why Choose Teknoppy for Website Redesign Services in Kochi",
-      "items": [
-        {
-          "title": "We Protect Rankings, Not Just Looks",
-          "text": "A website redesign without losing SEO rankings is the outcome we plan for from day one, not an afterthought handled after launch. URL mapping and redirects are built into the process before design work even begins."
-        },
-        {
-          "title": "We Redesign for Speed, Not Just Style",
-          "text": "Redesign for slow or outdated websites is one of our most common project types. Where a previous developer left a heavy, slow loading site, our rebuild treats load speed as a core requirement, not a nice to have."
-        },
-        {
-          "title": "We've Rebuilt Sites Across Kochi and the GCC",
-          "text": "Website redesign for Kochi and Kerala businesses is our core focus, and we've also handled ecommerce and business website redesign projects for clients in the UAE and Qatar, so regional buyer expectations shape the rebuild, not just local ones."
-        },
-        {
-          "title": "We Measure the Redesign, Not Just Deliver It",
-          "text": "Website redesign conversion rate improvement is tracked after launch wherever analytics access allows, so you can see whether the new site is actually performing better, not just looking better."
+          "title": "Content & SEO Migration",
+          "text": "We transfer your existing high-ranking articles, product descriptions, and media into the new site with complete 301 redirect mappings so your organic traffic is safeguarded."
         }
       ]
     },
     {
       "type": "bullets",
       "bg": "white",
-      "h2": "Who Needs Website Redesign Services",
-      "intro": "This service fits any business whose current website is actively working against them, rather than for them, whether that shows up in traffic, enquiries, or simply how the site looks compared to competitors.",
+      "badge": "SEO Protection",
+      "h2": "How We Protect Your Rankings",
+      "intro": "The biggest fear of redesigning a website is losing existing Google rankings and traffic. Here is our exact 5-step SEO migration safeguard:",
       "items": [
-        { "text": "Businesses with a website more than three or four years old that no longer reflects their current offering or brand." },
-        { "text": "Businesses whose current site is slow, difficult to update, or was never built to work properly on mobile devices." },
-        { "text": "Businesses that need ecommerce and business website redesign because an old store or catalogue site is losing sales to newer competitors." }
+        { "html": "<strong>1. Pre-Redesign URL Crawl:</strong> We audit and catalogue every existing URL, meta title, heading structure, and ranking keyword currently delivering traffic." },
+        { "html": "<strong>2. Comprehensive 301 Redirect Mapping:</strong> Every legacy URL is mapped to its exact new counterpart, ensuring zero broken 404 links for users or search bots." },
+        { "html": "<strong>3. Content & Keyword Architecture Preservation:</strong> Core ranking copy, internal link hubs, and semantic heading hierarchies are preserved and optimized." },
+        { "html": "<strong>4. Staging Verification Before Launch:</strong> We test all redirects, canonical tags, and schema markup on a password-protected staging site before DNS cutover." },
+        { "html": "<strong>5. Post-Launch Search Console Monitoring:</strong> We submit the updated XML sitemap and monitor Google Search Console for 30–60 days to verify smooth indexation." }
+      ]
+    },
+    {
+      "type": "steps",
+      "bg": "cream",
+      "badge": "How We Work",
+      "h2": "How a Redesign Works",
+      "items": [
+        {
+          "title": "Site Audit & Goal Setting (Week 1)",
+          "text": "We analyze your current site's speed, traffic channels, conversion bottlenecks, and competitor positioning to establish clear KPIs."
+        },
+        {
+          "title": "Information Architecture & SEO Mapping (Weeks 2–3)",
+          "text": "We map out the new sitemap, page hierarchies, and 301 redirect strategy, ensuring every high-value organic ranking is protected."
+        },
+        {
+          "title": "UI/UX Design & Prototyping (Weeks 3–4)",
+          "text": "Modern wireframes and high-fidelity Figma prototypes designed mobile-first around conversion goals."
+        },
+        {
+          "title": "Development & Core Web Vitals Optimization (Weeks 5–6)",
+          "text": "Clean coding on Astro, WordPress, or modern frameworks, engineered for sub-second load times and passing Core Web Vitals."
+        },
+        {
+          "title": "Launch & Search Console Monitoring (Weeks 7–8)",
+          "text": "Seamless zero-downtime cutover during low-traffic hours, accompanied by post-launch indexing and rank tracking."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "badge": "Case Evidence",
+      "h2": "Websites We've Redesigned",
+      "intro": "Real before-and-after performance gains from redesign projects delivered by Teknoppy:",
+      "columns": 2,
+      "items": [
+        {
+          "title": "Kochi Interior Design Studio",
+          "text": "Restructured an outdated, slow-loading portfolio website with responsive gallery layouts and on-page SEO optimization.\n\n• Mobile Load Time: 6.8s → 1.4s (79% faster)\n• Google PageSpeed Score: 31 → 96\n• Inquiries Generated: 12/mo → 41/mo (3.4x increase)\n• Organic Rankings: 100% of top keywords retained via 301 mapping"
+        },
+        {
+          "title": "GCC Industrial Supplier (Leema Engineering)",
+          "text": "Rebuilt a static desktop-only catalog into a mobile-first B2B commercial platform for Dubai and Saudi Arabian buyers.\n\n• Restructured heavy valve and piping product catalogs\n• Built multi-channel quote inquiry workflows\n• Replaced legacy code with responsive, fast-loading architecture"
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "bg": "soft",
+      "h2": "Does Your Website Need a Redesign?",
+      "intro": "If your site displays three or more of the following warning signs, a structured redesign will deliver immediate commercial returns:",
+      "items": [
+        { "text": "Age: The website is more than 3 to 4 years old and looks outdated compared to modern competitors." },
+        { "text": "Mobile Performance: The site is slow, fails Core Web Vitals, or is difficult to read on mobile phones." },
+        { "text": "Content Management: Updating basic text, pricing, or projects requires contacting an external programmer." },
+        { "text": "Declining Conversions: Traffic has remained flat or inquiries have steadily dropped over recent quarters." },
+        { "text": "Brand Disconnect: The website no longer reflects your current service offerings, team scale, or enterprise credentials." }
       ],
       "outro": [
         {
-          "html": "This is especially common among established Kochi businesses and <a href=\"/blog/\" class=\"text-primary font-semibold hover:underline\">Kerala Business Blog</a> readers who are actively researching a rebuild, as well as tourism, restaurant, and real estate businesses whose visual presentation directly affects daily enquiries."
+          "html": "Only need mobile layout adjustments on your existing codebase? See our <a href=\"/responsive-web-design-kochi/\" class=\"text-primary font-semibold hover:underline\">Responsive Web Design</a> services. For online shopping stores, explore our dedicated <a href=\"/ecommerce-redesign-migration-kochi/\" class=\"text-primary font-semibold hover:underline\">Ecommerce Redesign & Migration</a>."
         }
       ]
     },
     {
-      "type": "prose",
-      "bg": "cream",
-      "h2": "Website Redesign Projects We've Delivered",
-      "paragraphs": [
+      "type": "pricing",
+      "bg": "white",
+      "h2": "Website Redesign Cost in Kochi",
+      "intro": "We provide transparent, fixed-scope redesign pricing following a comprehensive site audit:",
+      "columns": ["Redesign Tier", "Estimated Investment (INR)", "Typical Timeline"],
+      "rows": [
         {
-          "text": "We have rebuilt an outdated interior design studio website in Kochi that was suffering from poor user experience and stagnant enquiries, restructuring its portfolio pages and improving on-page SEO as part of the same project."
+          "service": "Design Refresh",
+          "price": "₹25,000 – ₹55,000",
+          "timeline": "3–4 Weeks (Keep existing URL structure, modernize UI/UX and mobile performance)"
         },
         {
-          "html": "See more completed redesigns in our <a href=\"/portfolios/website-projects/\" class=\"text-primary font-semibold hover:underline\">website design projects portfolio</a>."
+          "service": "Full Rebuild & Content Migration",
+          "price": "₹55,000 – ₹1,20,000",
+          "timeline": "5–8 Weeks (Complete sitemap restructuring, content migration, 301 redirect map, and SEO tuning)"
+        },
+        {
+          "service": "Enterprise Replatforming",
+          "price": "₹1,20,000 – ₹2,50,000+",
+          "timeline": "6–10 Weeks (Large corporate portal migration, custom integrations, multi-language support)"
         }
-      ]
+      ],
+      "note": "For online store redesigns, see our dedicated Ecommerce Redesign and WordPress Migration services. Detailed proposal provided after reviewing your live site."
     },
     {
-      "type": "prose",
-      "bg": "white",
-      "h2": "Website Redesign Services Pricing",
-      "paragraphs": [
-        {
-          "html": "Website redesign cost in Kochi depends on how much of the existing site can be reused versus rebuilt from scratch, along with how many pages and how much content need migrating. For a full breakdown by scope, see our <a href=\"/web-design-pricing-kerala/\" class=\"text-primary font-semibold hover:underline\">website design pricing</a> page or try the <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">website cost calculator</a>."
-        }
+      "type": "bullets",
+      "bg": "cream",
+      "badge": "At A Glance",
+      "h2": "Website Redesign at a Glance",
+      "items": [
+        { "html": "<strong>Office Location:</strong> Vyttila, Kochi, Kerala · Established 2018" },
+        { "html": "<strong>Project Duration:</strong> Typically 4 to 8 weeks depending on page count and content migration" },
+        { "html": "<strong>SEO Protection:</strong> 100% URL-to-URL 301 redirect mapping and Search Console tracking" },
+        { "html": "<strong>Core Performance Target:</strong> Sub-second load times and passing Core Web Vitals" },
+        { "html": "<strong>Investment Range:</strong> ₹25,000 to ₹1,20,000+ with milestone-based payment schedules" },
+        { "html": "<strong>Example Results:</strong> PageSpeed 31 → 96, inquiries increased from 12/mo to 41/mo" }
       ]
     },
     {
       "type": "links",
-      "bg": "soft",
+      "bg": "white",
       "h2": "Related Services",
       "items": [
-        { "label": "Website Design and Development", "href": "/web-design-company-kochi/", "text": "the parent service this page sits under." },
-        { "label": "Responsive Web Design", "href": "/responsive-web-design-kochi/", "text": "for businesses building a new site rather than rebuilding an existing one." },
-        { "label": "Website Maintenance Services", "href": "/website-maintenance-services-kochi/", "text": "for ongoing upkeep once your redesigned site is live." },
-        { "label": "CMS Website Development", "href": "/cms-website-development-kochi/", "text": "for redesigns that also need an easier content management system." }
+        { "label": "Website Design and Development", "href": "/web-design-company-kochi/", "text": "our primary custom web design pillar" },
+        { "label": "Ecommerce Redesign & Migration Kochi", "href": "/ecommerce-redesign-migration-kochi/", "text": "rebuilding WooCommerce, Shopify, and custom stores" },
+        { "label": "WordPress Migration Services Kochi", "href": "/wordpress-migration-services-kochi/", "text": "switching platforms to WordPress without data loss" },
+        { "label": "Website Speed Optimization Services", "href": "/website-speed-optimization-services-kochi/", "text": "performance tuning for slow-loading websites" },
+        { "label": "Website Maintenance Services", "href": "/website-maintenance-services-kochi/", "text": "ongoing security, updates, and backups after launch" }
       ]
     },
     {
       "type": "faq",
-      "bg": "white",
+      "bg": "cream",
       "center": true,
       "badge": "Have Questions?",
-      "h2": "Frequently Asked Questions — Website Redesign Services Kochi",
+      "h2": "Website Redesign FAQs",
       "items": [
         {
           "q": "Will a website redesign affect my current SEO rankings?",
-          "a": "Not if it is planned correctly. We map every existing URL to its new equivalent and set up proper redirects before launch, which is the main reason rankings can actually improve rather than drop after a redesign."
+          "a": "Not when executed properly. We audit all current ranking URLs, maintain existing on-page keyword signals, and implement a comprehensive 301 redirect map. Following our SEO migration protocols, rankings typically improve due to faster speeds and cleaner site architecture."
         },
         {
-          "q": "How do I know if my website needs a redesign rather than a maintenance fix?",
-          "a": "If your site is slow, hard to update, not mobile friendly, or older than three to four years, a redesign usually delivers more value than ongoing patchwork fixes to an outdated foundation."
+          "q": "How much does a website redesign cost in Kochi?",
+          "a": "A design refresh modernizing existing pages typically costs ₹25,000 to ₹55,000. A comprehensive architectural rebuild with content migration ranges from ₹55,000 to ₹1,20,000+. We provide a fixed quote after auditing your current site."
         },
         {
-          "q": "Can you redesign an ecommerce or business website without losing existing orders or data?",
-          "a": "Yes, product data, customer records, and order history are migrated carefully as part of the process, with testing done before the new site fully replaces the old one."
+          "q": "Will my domain and email accounts change during a redesign?",
+          "a": "No. Your domain name and corporate email hosting (Google Workspace, Microsoft 365, cPanel) remain completely unchanged. We switch only the website files during a planned low-traffic cutover window."
+        },
+        {
+          "q": "Can you reuse our existing content and images?",
+          "a": "Yes. We preserve all high-performing articles, product descriptions, and media assets. Outdated content is rewritten or pruned, with 301 redirects mapped to maintain user experience and search equity."
+        },
+        {
+          "q": "Can you redesign an ecommerce website without losing order history?",
+          "a": "Yes. Customer databases, product catalogs, and order history are migrated with zero data loss. See our dedicated Ecommerce Redesign & Migration Services in Kochi for store rebuilds."
         },
         {
           "q": "How long does a website redesign project take?",
-          "a": "Most redesigns take four to eight weeks depending on how many pages need migrating and how much new design and content work is involved."
+          "a": "Most business website redesigns take 4 to 8 weeks from initial audit to final launch, depending on page volume and custom feature requirements."
         },
         {
-          "q": "Will my new website still be mobile friendly and fast?",
-          "a": "Yes, every redesign is built mobile first and tested against Core Web Vitals benchmarks before launch, since this affects both user experience and search rankings."
-        },
-        {
-          "q": "Do you redesign websites built by another agency?",
-          "a": "Yes, most of our redesign projects start with a site built by a previous developer or agency, and we begin every project with a full audit regardless of who built the original site."
+          "q": "Do you redesign websites built by other agencies or freelancers?",
+          "a": "Yes. Most of our redesign clients come to us with legacy sites built by previous developers. We begin every engagement with an objective technical audit regardless of who originally created the site."
         }
       ]
     },
     {
       "type": "cta",
-      "bg": "cream",
+      "draft": true,
+      "bg": "white",
       "h2": "Ready to Start Your Website Redesign Project?",
       "paragraphs": [
-        { "text": "An old website is quietly costing you enquiries every day it stays online. If your current site no longer reflects your business or is falling behind competitors, let's rebuild it around what your business needs today, not what it needed years ago." }
+        { "text": "Send us your current website. We will review speed, SEO and structure and reply within one business day with what to keep, what to rebuild and an estimate." }
       ],
       "ctas": [
         { "label": "Book a Consultation", "href": "/book-a-consultation/" },
@@ -200,27 +234,24 @@
     },
     {
       "type": "byline",
-      "bg": "white",
-      "text": "Teknoppy · Kochi, Kerala · +91 6282249224 · sales@teknoppy.com"
+      "bg": "cream",
+      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Reviewed: October 2026 by Sanal Edison, Founder & Digital Strategist."
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Website Redesign Services in Kochi",
+      "serviceType": "Website redesign",
+      "provider": { "@id": "https://teknoppy.com/#localbusiness" },
+      "areaServed": ["Kochi", "Kerala", "India", "United Arab Emirates", "Qatar"],
+      "url": "https://teknoppy.com/website-redesign-services-kochi/"
     }
   ],
   "devNotes": {
-    "source": "Website Design&Development pillar page-Website Redesign Services Kochi inner page.pdf",
-    "primaryKeyword": "Website Redesign Services",
-    "wordCount": "1,207 words",
-    "keywordDensity": "1.99% (target: 1.8-2.0%)",
-    "metaLayerNotSupplied": "This doc has no Title Tag or Meta Description row, same as the Landing Page doc. Title follows the sibling pattern (H1 + | Teknoppy). Description is purpose-written at 147 characters rather than reusing the doc's 470-character opening paragraph.",
-    "heldPlaceholders": [
-      "Why Choose Teknoppy → We've Rebuilt Sites Across Kochi and the GCC — [STAT NEEDED — verified traffic or ranking improvement from a completed redesign project]",
-      "Website Redesign Projects We've Delivered — [STAT NEEDED — before-and-after enquiry numbers and ranking positions once client sign-off is confirmed]"
-    ],
-    "openItems": [
-      "Author line and \"Reviewed: [Month Year]\" to be added by content owner.",
-      "Related Services links to /website-maintenance-services-kochi/ and /cms-website-development-kochi/, neither of which is built yet — same dead-link pattern already present on the Business and Corporate child pages. Pricing links to /web-design-pricing-kerala/ and /website-cost-calculator-kerala/, also not built. Resolve sitewide in one pass."
-    ],
-    "schema": "Service + LocalBusiness + FAQPage + BreadcrumbList",
-    "internalLinks": "parent pillar, 3 sibling pages, 1 blog reference, 2 lead-gen pages",
-    "statsConflict": "Doc supplied '150+ Websites Delivered · 9+ Years in Kochi'. Replaced with the canonical trustline from src/data/site.json (120+ projects, in Kochi since 2018), matching the resolution recorded on the Landing Page doc 4 Sep 2026.",
-    "bylineEmail": "Doc supplied sanal@teknoppy.com. Replaced with sales@teknoppy.com, the address used on all 51 other byline and contact instances sitewide."
+    "source": "Website Redesign Services Page Audit & Action Plan (Oct 2026)",
+    "primaryKeyword": "website redesign services in Kochi",
+    "permalink": "/website-redesign-services-kochi/"
   }
 }

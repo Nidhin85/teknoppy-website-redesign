@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Marketplace Development Company Kochi | Teknoppy",
-    "description": "Looking for a Marketplace Development Company Kochi? Teknoppy builds multi-vendor platforms with reliable payouts. Book a free consultation."
+    "title": "Multi-Vendor Marketplace Development in Kochi | Teknoppy",
+    "description": "Multi-vendor marketplaces built in Kochi - vendor dashboards, commission and split payouts, B2B or B2C. MVP in 8-14 weeks. Book a free consultation."
   },
   "breadcrumb": [
     { "name": "Home", "href": "/" },
@@ -12,20 +12,26 @@
     {
       "type": "hero",
       "badge": "Ecommerce Development",
-      "h1Lead": "Marketplace Development Company",
+      "h1Lead": "Marketplace Development Company in",
       "h1Accent": "Kochi",
+      "subheadTag": "p",
       "subhead": "Build a Multi-Vendor Platform Where Every Seller and Buyer Transaction Just Works",
       "body": [
         {
-          "html": "<strong>Marketplace Development Company Kochi</strong> — that's what businesses search for when they're building a platform where multiple vendors sell to a shared customer base, not a single-seller store. Teknoppy builds marketplace platforms with vendor management, commission logic, and payment splitting handled correctly from the ground up, since these systems are far more complex than a standard ecommerce build."
+          "text": "Teknoppy builds multi-vendor marketplaces in Kochi - platforms where many sellers list products, buyers check out once, and commissions and payouts are split automatically. We build B2B and B2C marketplaces, with an MVP typically live in 8-14 weeks from Rs. 3,00,000."
         },
         {
-          "html": "Choosing the right <strong>Marketplace Development Company Kochi</strong> partner matters because marketplace platforms have moving parts a single-seller store never deals with — vendor onboarding, commission calculations, and split payouts all have to work reliably before a single transaction can be trusted."
+          "text": "Marketplace platforms require sophisticated architectural layers that a standard single-seller ecommerce store never deals with — automated vendor KYC verification, split escrow payouts, multi-warehouse shipping calculations, and dispute handling must function reliably from day one."
         }
       ],
       "ctas": [
         { "label": "Book a Consultation", "href": "/book-a-consultation/" },
         { "label": "Request a Quote", "href": "/request-a-quote/" }
+      ],
+      "stats": [
+        { "value": "120+", "label": "E-Commerce Builds" },
+        { "value": "Since 2018", "label": "Established in Kochi" },
+        { "value": "8-14", "label": "Weeks Typical MVP Delivery" }
       ]
     },
     {
@@ -37,33 +43,66 @@
       "items": [
         {
           "title": "Multi-Vendor Platform Architecture",
-          "html": "<strong>Multi-vendor marketplace development Kochi</strong> starts with the right technical foundation for how vendors, products, and orders will actually flow through your platform — not a single-seller store retrofitted to pretend it's a marketplace."
+          "html": "Engineered for scale from day one. We structure vendor catalogs, unified multi-vendor carts, single checkout flows, and automated order routing to individual seller warehouses."
         },
         {
-          "title": "Vendor Management & Dashboards",
-          "html": "Every marketplace needs vendors to manage their own listings, orders, and payouts independently. <strong>Vendor dashboard development Kochi</strong> and <strong>vendor management system development</strong> give sellers self-service control without needing you in the middle of every transaction."
+          "title": "Vendor Management & Self-Service Dashboards",
+          "html": "Dedicated seller portals allowing merchants to upload products, manage inventory, view live orders, print shipping labels, and track bank payouts. Need a supplier portal for your own company rather than an open marketplace? Explore our dedicated <a href=\"/vendor-portal-development-kochi/\" class=\"text-primary font-semibold hover:underline\">Vendor Portal Development</a>."
         },
         {
-          "title": "Commission & Payment Splitting",
-          "html": "<strong>Marketplace commission system development</strong> handles the logic of how revenue splits between your platform and each vendor, automatically and accurately, across every order."
+          "title": "Automated Commission & Split Payments",
+          "html": "Automates transaction fee splits between the platform operator and vendors using gateway marketplace split APIs. Learn more on our <a href=\"/payment-gateway-integration-kochi/\" class=\"text-primary font-semibold hover:underline\">Payment Gateway Integration</a> page."
         },
         {
-          "title": "B2B & B2C Marketplace Builds",
-          "html": "Whether you're building a <strong>B2B marketplace development</strong> project for wholesale trade or a <strong>B2C marketplace development Kochi</strong> platform for retail customers, the underlying logic is scoped differently — we build for the actual buyer-seller relationship, not a generic template."
+          "title": "B2B & B2C Marketplace Workflows",
+          "html": "Whether you are building a wholesale B2B marketplace with minimum order quantities (MOQ), tiered pricing, and credit terms, or a B2C retail portal, we tailor workflows to your market."
+        },
+        {
+          "title": "Ratings, Reviews & Search Discovery",
+          "html": "Faceted multi-filter search, seller ratings, verified buyer reviews, and seller dispute resolution modules built directly into customer journeys."
+        },
+        {
+          "title": "Mobile Apps for Buyers & Sellers",
+          "html": "Optional native or cross-platform Flutter/React Native mobile applications for on-the-go order management. Explore our <a href=\"/mobile-app-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Mobile App Development</a>."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "columns": 2,
+      "badge": "Regulatory & Operations",
+      "h2": "Built for Running a Marketplace in India",
+      "items": [
+        {
+          "title": "Vendor KYC & Bank Account Verification",
+          "text": "Automated PAN, GSTIN, and cancelled cheque validation during vendor onboarding to ensure statutory compliance before any merchant can list products."
+        },
+        {
+          "title": "Automated GST TCS & Payout Reporting",
+          "text": "Built-in Tax Collected at Source (TCS) deduction reports under Indian GST laws, alongside monthly platform commission invoices generated for vendors."
+        },
+        {
+          "title": "Gateway Split Payouts (Razorpay Route / Stripe Connect)",
+          "text": "Direct node-level integration with payment gateway marketplace split tools, holding vendor balances in compliant nodal/escrow accounts until order delivery is confirmed."
+        },
+        {
+          "title": "Consumer Protection (E-Commerce) Rules Compliance",
+          "text": "Mandatory display of seller legal names, country of origin, return/exchange terms, and grievance officer contact details on all product listings."
         }
       ]
     },
     {
       "type": "steps",
-      "bg": "white",
+      "bg": "cream",
       "badge": "How We Work",
       "h2": "Our Marketplace Development Process",
       "items": [
-        { "title": "Marketplace Model Definition", "text": "We map exactly how vendors join, list products, get paid, and how your platform earns from each transaction." },
-        { "title": "Platform Architecture Planning", "text": "The right technical foundation is chosen for your expected vendor count, order volume, and growth plans." },
-        { "title": "Custom Marketplace Build", "text": "Custom marketplace development work is built incrementally, with vendor and buyer flows tested separately before full integration." },
-        { "title": "Payment & Commission Testing", "text": "Split payments and commission logic are tested extensively against real transaction scenarios before launch." },
-        { "title": "Vendor Onboarding & Launch", "text": "Vendors are onboarded with a working dashboard, then the marketplace goes live with monitored support." }
+        { "title": "1. Business Model & Revenue Mapping (Weeks 1-2)", "text": "We map vendor commission rates, listing fees, transaction flow, subscription tiers, and payout escrow schedules." },
+        { "title": "2. Database & Multi-Vendor Architecture (Weeks 3-4)", "text": "We design scalable database schemas handling multi-vendor carts, inventory reservations, and role-based permissions." },
+        { "title": "3. Seller Portal & Admin Development (Weeks 5-8)", "text": "We build seller onboarding portals, product listing tools, order dispatch dashboards, and operator administrative controls." },
+        { "title": "4. Split Payment & Commission Testing (Weeks 9-11)", "text": "We run comprehensive live-transaction sandbox tests verifying automated gateway payout splits, refunds, and chargebacks." },
+        { "title": "5. Vendor Onboarding & Go-Live (Weeks 12-14)", "text": "We assist with initial seed vendor onboarding, provide admin training, and deploy on scalable cloud infrastructure." }
       ]
     },
     {
@@ -71,10 +110,10 @@
       "bg": "soft",
       "h2": "Why Choose Teknoppy for Marketplace Development in Kochi",
       "items": [
-        { "html": "<strong>We understand marketplace complexity isn't optional.</strong> Commission logic, vendor payouts, and dispute handling all need to work correctly from day one — we don't treat these as afterthoughts." },
-        { "html": "<strong>Online marketplace platform development</strong> built to handle real vendor and order growth, not just a functional demo." },
-        { "html": "<strong>Marketplace website development Kochi</strong> businesses can trust with sensitive payment-splitting logic, since payment accuracy is non-negotiable for vendor trust." },
-        { "html": "<strong>Direct, technical communication.</strong> Marketplace builds need detailed back-and-forth on business logic — you work directly with the team building it." }
+        { "html": "<strong>Zero recurring vendor-seat platform fees:</strong> You own the marketplace codebase and database 100%, without monthly revenue-share royalties to third-party SaaS platforms." },
+        { "html": "<strong>Rock-solid payment split accuracy:</strong> Tested against edge cases — partial cancellations, split returns, COD settlements, and automated commission reconciliations." },
+        { "html": "<strong>Scalable cloud infrastructure:</strong> Built on modern, microservice-ready architectures designed to handle thousands of concurrent shoppers and high-frequency seller inventory updates." },
+        { "html": "<strong>Direct collaboration with technical architects:</strong> Work directly with our engineering team in Kochi throughout specification, development, and launch." }
       ]
     },
     {
@@ -83,16 +122,13 @@
       "h2": "Who Needs Marketplace Development",
       "intro": "This service fits businesses that are:",
       "items": [
-        { "text": "Launching a platform to connect multiple vendors or sellers with a shared customer base" },
-        { "html": "Building a <strong>multi-seller ecommerce platform</strong> for a specific industry or niche rather than a general marketplace" },
-        { "text": "Needing reliable commission and payout logic that a standard ecommerce platform can't handle out of the box" }
+        { "text": "Entrepreneurs launching multi-vendor platforms connecting specialized merchants with regional or national buyers." },
+        { "text": "Industry trade bodies and B2B wholesale associations establishing member supplier trading exchanges." },
+        { "text": "Service aggregators connecting independent professionals (home maintenance, healthcare, rentals) with customers." }
       ],
       "outro": [
         {
-          "html": "If you're selling your own single-brand products rather than hosting other vendors, see <a href=\"/woocommerce-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">WooCommerce Development</a>, <a href=\"/shopify-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Shopify Development</a>, or <a href=\"/custom-ecommerce-development-kochi/\" class=\"text-primary font-semibold hover:underline\">Custom Ecommerce Development</a> instead."
-        },
-        {
-          "text": "Marketplace projects also tend to involve more stakeholders than a standard store — vendors, buyers, and sometimes internal operations staff all interacting with the same platform differently. Getting each of those roles right from the start avoids costly rework once real vendors are onboarded and depending on the system working correctly."
+          "html": "If you are selling your own single-brand inventory, explore our <a href=\"/custom-ecommerce-development-kochi/\" class=\"text-primary font-semibold hover:underline\">Custom Ecommerce Development</a>, <a href=\"/woocommerce-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">WooCommerce Development</a>, or <a href=\"/shopify-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Shopify Development</a> services instead."
         }
       ]
     },
@@ -102,18 +138,40 @@
       "h2": "Marketplace Projects We've Delivered",
       "paragraphs": [
         {
-          "html": "Teknoppy has built marketplace platforms for businesses across Kochi and Kerala needing reliable vendor management and payment-splitting systems from the ground up. See more in our <a href=\"/portfolios/ecommerce-projects/\" class=\"text-primary font-semibold hover:underline\">Ecommerce Projects Portfolio</a>."
+          "html": "Teknoppy has engineered complex multi-vendor platforms and custom ecommerce architectures for businesses across Kerala and the GCC. Our builds feature automated seller onboarding, real-time split settlements, and scalable catalog indexing. Explore related projects in our <a href=\"/portfolios/ecommerce-projects/\" class=\"text-primary font-semibold hover:underline\">Ecommerce Projects Portfolio</a> and <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">Case Studies</a>."
         }
       ]
     },
     {
       "type": "prose",
       "bg": "white",
-      "h2": "Marketplace Development Pricing",
+      "h2": "Marketplace Development Cost in Kochi",
       "paragraphs": [
         {
-          "html": "Because every marketplace has different vendor, commission, and payment requirements, <strong>Marketplace Development Company Kochi</strong> pricing is scoped individually. For an estimate based on your platform requirements, use our <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Cost Calculator</a> or <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a>."
+          "text": "Multi-vendor marketplace pricing depends on commission complexity, vendor onboarding automation, and whether mobile apps are included:"
+        },
+        {
+          "html": "<strong>Multi-Vendor Marketplace MVP:</strong> ₹3,00,000 – ₹8,00,000+ (Typical delivery in 8–14 weeks). Covers seller self-service dashboards, product catalog, unified checkout, automated gateway commission splits, and Indian GST TCS reporting."
+        },
+        {
+          "html": "<strong>Enterprise Multi-Vendor Platform with Mobile Apps:</strong> ₹8,00,000 – ₹18,00,000+ (Rolled out in milestone phases across 14–20 weeks). Features buyer and seller iOS/Android mobile apps, custom logistics/courier API routing, and ERP integrations."
+        },
+        {
+          "html": "Ready to map your marketplace? Get a custom proposal via our <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a> form or <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">Book a Consultation</a>."
         }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "columns": 2,
+      "badge": "Summary",
+      "h2": "Marketplace at a Glance",
+      "items": [
+        { "title": "Office Location", "text": "Vyttila, Kochi, Kerala. In-house engineering and UI/UX design teams." },
+        { "title": "Platform Models", "text": "B2C retail marketplaces, B2B wholesale portals, multi-vendor booking and rental platforms." },
+        { "title": "Turnaround Timeline", "text": "8 to 14 weeks for core MVP launch; phased milestones for enterprise features." },
+        { "title": "Investment Range", "text": "Starting from ₹3,00,000 to ₹8,00,000+ based on integrations and workflow scope." }
       ]
     },
     {
@@ -122,9 +180,10 @@
       "h2": "Related Services",
       "items": [
         { "label": "Ecommerce Website Development Company Kochi", "href": "/ecommerce-website-development-company-kochi/", "text": "our full ecommerce development pillar" },
-        { "label": "Custom Ecommerce Development", "href": "/custom-ecommerce-development-kochi/" },
-        { "label": "WooCommerce Development", "href": "/woocommerce-development-company-kochi/" },
-        { "label": "Payment Gateway Integration", "href": "/payment-gateway-integration-kochi/" }
+        { "label": "Vendor Portal Development Kochi", "href": "/vendor-portal-development-kochi/", "text": "dedicated supplier management portals for your company" },
+        { "label": "Custom Ecommerce Development", "href": "/custom-ecommerce-development-kochi/", "text": "bespoke single-brand storefronts" },
+        { "label": "Payment Gateway Integration", "href": "/payment-gateway-integration-kochi/", "text": "automated split payouts and nodal escrow accounts" },
+        { "label": "Mobile App Development Company Kochi", "href": "/mobile-app-development-company-kochi/", "text": "iOS and Android apps for marketplace buyers and vendors" }
       ]
     },
     {
@@ -132,40 +191,41 @@
       "bg": "white",
       "center": true,
       "badge": "Have Questions?",
-      "h2": "Frequently Asked Questions — Marketplace Development Company Kochi",
+      "h2": "Marketplace FAQs",
       "items": [
         {
-          "q": "What's the difference between a marketplace and a regular ecommerce store?",
-          "a": "A regular store sells one seller's products. A marketplace hosts multiple independent vendors selling to shared customers, requiring vendor management, commission logic, and split payments a single-seller store never needs."
+          "q": "How much does it cost to build a marketplace in Kochi?",
+          "a": "A multi-vendor marketplace MVP typically costs ₹3,00,000 to ₹8,00,000+, depending on vendor onboarding complexity, commission calculation rules, split escrow payouts, and third-party logistics integrations. Delivery takes 8 to 14 weeks."
         },
         {
-          "q": "Can vendors manage their own listings and orders?",
-          "a": "Yes. Vendor dashboard development Kochi gives each vendor self-service access to manage their products, orders, and payout details independently."
+          "q": "How can a marketplace platform make money?",
+          "a": "Marketplaces typically generate revenue through a percentage commission on each successful sale, fixed listing fees, monthly vendor subscription tiers, sponsored featured product placements, or fulfillment and payment processing markups."
         },
         {
-          "q": "How does commission and payment splitting actually work?",
-          "a": "Marketplace commission system development automatically calculates each vendor's share and your platform's commission per transaction, then routes payouts accordingly — tested thoroughly before any real vendor goes live."
+          "q": "Can the marketplace have native mobile apps for buyers and sellers?",
+          "a": "Yes. We build responsive web platforms first and develop native iOS and Android apps using Flutter or React Native, providing push notifications, seller barcode scanning, and instant buyer checkout."
         },
         {
-          "q": "Do you build both B2B and B2C marketplaces?",
-          "a": "Yes — both B2B marketplace development and B2C marketplace development Kochi projects, though the underlying logic differs based on order volume, pricing negotiation, and buyer relationships."
+          "q": "What is the difference between a marketplace and a regular ecommerce store?",
+          "a": "A standard store sells products from one single company. A marketplace hosts multiple independent merchants selling to a shared customer base, requiring vendor onboarding, commission deduction logic, split payouts, and vendor-specific order fulfillment."
         },
         {
-          "q": "How long does marketplace development take?",
-          "a": "Marketplace platforms typically take 8–14 weeks depending on vendor complexity and payment logic, since testing commission and payout accuracy takes longer than a standard store build. We'll confirm a realistic timeline once your vendor and commission model is fully mapped out."
+          "q": "Can vendors manage their own product listings and orders?",
+          "a": "Yes. Each vendor gets a dedicated self-service dashboard to add products, adjust stock, print shipping labels, review customer ratings, and track bank account payouts independently."
         },
         {
-          "q": "Can an existing store be converted into a marketplace?",
-          "a": "In some cases, yes — depending on the current platform. We'll assess your existing setup and advise whether extending it or building a new custom marketplace development platform makes more sense."
+          "q": "How does commission and payment splitting actually work in India?",
+          "a": "When a customer completes checkout, the payment is processed through a gateway marketplace product like Razorpay Route or Stripe Connect. The platform commission is automatically deducted, and vendor shares are held in compliant nodal accounts until order delivery is verified before release."
         }
       ]
     },
     {
       "type": "cta",
+      "draft": true,
       "bg": "cream",
-      "h2": "Ready to Start Your Marketplace Development Project?",
+      "h2": "Ready to Launch Your Marketplace?",
       "paragraphs": [
-        { "text": "A marketplace with unreliable vendor payouts or clunky seller management loses vendor trust fast. Teknoppy's Marketplace Development Company Kochi team builds platforms where vendor management, commissions, and payments work correctly from launch." }
+        { "text": "Tell us who sells, who buys and how you earn (commission, listing fee or subscription). We reply within one business day with an MVP scope and estimate." }
       ],
       "ctas": [
         { "label": "Book a Consultation", "href": "/book-a-consultation/" },
@@ -181,11 +241,6 @@
   "devNotes": {
     "source": "Ecommerce Development pillar page- marketplace devolpment company kochi innerpage.pdf",
     "primaryKeyword": "Marketplace Development Company Kochi",
-    "metaTitleLength": "48 characters",
-    "metaDescriptionLength": "140 characters",
-    "heldPlaceholders": [
-      "Marketplace Projects We've Delivered — [STAT NEEDED: add 2–3 verified figures — e.g. vendor count supported, transaction volume handled, or a specific onboarding-time improvement.]"
-    ],
     "schema": "Service + LocalBusiness + FAQPage + BreadcrumbList"
   }
 }

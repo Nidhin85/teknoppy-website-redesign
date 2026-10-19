@@ -1,11 +1,12 @@
 {
   "meta": {
     "title": "UI/UX Design Company in Kochi | Teknoppy",
-    "description": "Teknoppy is a trusted UI/UX design company in Kochi, building website, app & dashboard interfaces for startups and enterprises since 2018."
+    "description": "UI/UX design for websites, mobile apps and dashboards - research, Figma prototypes and usability testing by a Kochi team. Get a quote in 24 hours."
   },
   "breadcrumb": [
     { "name": "Home", "href": "/" },
-    { "name": "UI/UX Design Company in Kochi", "href": "/ui-ux-design-company-in-kochi/" }
+    { "name": "Services", "href": "/services/" },
+    { "name": "UI/UX Design", "href": "/ui-ux-design-company-in-kochi/" }
   ],
   "sections": [
     {
@@ -15,9 +16,9 @@
       "h1Accent": "Kochi",
       "subhead": "Website, App & Dashboard UI/UX Design for Startups and Enterprises — Since 2018",
       "body": [
-        { "text": "UI/UX Design Company in Kochi is exactly what Teknoppy has been since 2018. As a dedicated UI/UX design company in Kochi, we design interfaces and experiences for websites, mobile apps, and dashboards — helping local Kerala businesses and international clients turn ideas into products people genuinely enjoy using." },
-        { "text": "Whether you are a startup founder in Infopark, a hospital planning a patient portal, or an overseas client researching design partners in India, our team builds interfaces that are clear, fast, and genuinely easy to use. The goal: a design a first-time visitor understands in seconds, and one that still holds up after months of daily use." },
-        { "text": "As a UI/UX design company in Kochi, we work directly with founders, product managers, and marketing teams — whether they are based in Kochi, elsewhere in Kerala, or reaching us remotely from abroad." }
+        { "text": "Teknoppy is a UI/UX design team in Kochi that designs websites, mobile apps and dashboards. We start with user research, build wireframes and Figma prototypes, test with real users, and hand off developer-ready files. Most design sprints take 2-4 weeks, starting from Rs. 20,000." },
+        { "text": "Whether you are a startup founder in Infopark, a hospital planning a patient portal, or an overseas team researching design partners in India, our team builds interfaces that are clear, fast, and genuinely easy to use. The goal: a design a first-time visitor understands in seconds, and one that still holds up after months of daily use." },
+        { "text": "We work directly with founders, product managers, and engineering leads — whether you need design sprints in Kochi or remote collaboration across time zones." }
       ],
       "stats": [
         { "value": "120+", "label": "Projects Delivered" },
@@ -31,15 +32,23 @@
       "bg": "cream",
       "h2": "What Good UI/UX Actually Means for Your Product",
       "paragraphs": [
-        { "text": "UI (user interface) is how a product looks — layout, color, typography, buttons. UX (user experience) is how it feels to use — how easily someone finds what they need and completes a task. A UI/UX design company in Kochi has to get both right, because a beautiful screen that confuses users fails just as often as a functional screen that looks outdated. That balance is the standard every project at Teknoppy is measured against." }
+        { "text": "UI (user interface) is how a product looks — layout, color, typography, buttons, and visual rhythm. UX (user experience) is how it feels to use — how effortlessly someone completes a task without getting stuck. A UI/UX design team in Kochi must master both, because a visually stunning screen that confuses users fails just as quickly as a functional screen that feels clunky and outdated. That standard shapes every screen designed at Teknoppy." }
       ]
     },
     {
-      "type": "prose",
+      "type": "cards",
       "bg": "white",
-      "h2": "The Kochi Design & Tech Landscape in 2026",
-      "paragraphs": [
-        { "text": "Kochi has grown into one of South India's most active startup and IT hubs, anchored by Infopark and a steady flow of product teams building for Indian and international users. As founders here compete on user experience rather than price alone, demand for a serious UI/UX design company in Kochi — not just a freelancer with a template — keeps climbing. Products are also increasingly discovered through AI tools before a human opens the app, which makes clear design documentation part of good SEO and GEO practice, not just good design." }
+      "badge": "What's Included",
+      "h2": "What You Get with Every UI/UX Sprint",
+      "intro": "Every interface project ships with production-grade assets ready for implementation:",
+      "columns": 2,
+      "items": [
+        { "title": "User Flows & Architecture", "text": "Low-friction user journeys, information hierarchy, and edge-case mapping before visuals begin." },
+        { "title": "Full Figma Source Files", "text": "Fully organized Figma files with auto-layout, design tokens, and components that your developers can inspect." },
+        { "title": "Clickable Interactive Prototypes", "text": "High-fidelity clickable prototypes in Figma for user validation, stakeholder buy-in, and investor demos." },
+        { "title": "Design System & Component Library", "text": "Reusable typography, color variables, button states, and inputs that scale with future product releases." },
+        { "title": "WCAG 2.2 AA Accessibility Checks", "text": "Verified color contrast, legible typography hierarchies, focus states, and touch-target sizes." },
+        { "title": "Developer Handoff Specifications", "text": "Comprehensive spacing redlines, CSS properties, interactive states, and a handoff walkthrough session." }
       ]
     },
     {
@@ -47,14 +56,14 @@
       "bg": "soft",
       "columns": 2,
       "badge": "The Teknoppy Advantage",
-      "h2": "Why Teknoppy Is a Trusted UI/UX Design Company in Kochi",
+      "h2": "Why Founders and Teams Choose Teknoppy for UI/UX",
       "items": [
-        { "title": "User-Centered, Not Just Decorative", "text": "As a genuine user-centered design company in Kochi, we start with how real users behave, not just how a screen should look. Every layout decision is tied to a task the user is trying to complete." },
-        { "title": "Full-Stack Delivery", "text": "As a UI UX design and development company in Kochi, we don't just hand over a Figma file — our in-house developers can build the same design into a working website or app, so nothing is lost in translation." },
-        { "title": "Research Before Screens", "text": "Our UX research services in Kochi and UX audit company in Kochi work identify real user friction before a single screen is drawn." },
-        { "title": "Affordable Without Cutting Corners", "text": "As an affordable UI/UX design company in Kochi, our hybrid Kerala-based team keeps costs sensible for startups while still meeting the standard enterprise clients expect." },
-        { "title": "Consistent Across Every Screen", "text": "As a responsive UI design company in Kochi, every layout is tested across phone, tablet, and desktop before it ships." },
-        { "title": "Proven, Not Just Promised", "text": "Clients researching a UX design company with case studies in Kochi can review real project outcomes — the same standard behind our reputation as a UI/UX design company with proven results in Kochi." }
+        { "title": "User-Centered, Not Just Decorative", "text": "We start with how real users behave, not just how a screen should look. Every layout decision is tied to a clear user task." },
+        { "title": "Full-Stack Delivery Collaboration", "text": "Because our developers sit in the same team as our designers, we don't just hand over Figma files — designs are architected to be built accurately without technical compromises." },
+        { "title": "Research Before Screens", "text": "Our UX research methods and usability audits identify friction in existing products before a single pixel is redrawn." },
+        { "title": "Affordable Without Cutting Corners", "text": "Our hybrid Kochi-based team keeps sprint costs accessible for funded startups while meeting global enterprise interface standards." },
+        { "title": "Consistent Across Every Screen", "text": "Every screen is designed mobile-first and tested rigorously across phone, tablet, and 4K desktop breakpoints." },
+        { "title": "Proven, Measurable Outcomes", "text": "Clients review real project deliverables — transparent workflows, measurable retention gains, and reduced drop-off rates." }
       ]
     },
     {
@@ -62,14 +71,14 @@
       "bg": "white",
       "badge": "What We Do",
       "h2": "Our UI/UX Design Services in Kochi",
-      "intro": "As a full-stack UI/UX design company in Kochi and user interface design agency in Kochi, Teknoppy covers the complete design lifecycle, backed by a Figma design agency in Kochi workflow that keeps every file organised for handoff.",
+      "intro": "Teknoppy covers the complete digital product design lifecycle, backed by an organized Figma workflow that eliminates developer friction.",
       "items": [
-        { "title": "Website UI Design", "text": "Clean, conversion-focused website UI design in Kochi for corporate sites, landing pages, and portals.", "linkText": "Website UI Design →", "href": "/website-ui-design-kochi/" },
-        { "title": "Mobile App UI/UX Design", "text": "Mobile app UI UX design in Kochi for iOS and Android, from onboarding flow to final screen polish." },
-        { "title": "Dashboard UI Design", "text": "Dashboard UI design in Kochi built for SaaS UI UX design company Kochi clients, admin panels, and analytics tools.", "linkText": "Dashboard UI Design →", "href": "/dashboard-ui-design-kochi/" },
-        { "title": "Web App UI Design", "text": "Web app UI design company in Kochi services for complex, logic-heavy platforms and internal tools.", "linkText": "Web App UI Design →", "href": "/web-app-ui-design-kochi/" },
-        { "title": "UX Audit & Research", "text": "A structured UX audit company in Kochi service that reports where users struggle.", "linkText": "UX Audit →", "href": "/ux-audit-services-kochi/" },
-        { "title": "Wireframing & Prototyping", "text": "Wireframing and prototyping services in Kochi that let you test a flow before code is written." }
+        { "title": "Website UI Design", "text": "Clean, conversion-focused website UI design in Kochi for corporate sites, landing pages, and web portals.", "linkText": "Website UI Design →", "href": "/website-ui-design-kochi/" },
+        { "title": "Mobile App UI/UX Design", "text": "iOS and Android app interfaces, from onboarding flows and micro-interactions to final screen polish." },
+        { "title": "Dashboard UI Design", "text": "Specialized dashboard UI design in Kochi for B2B SaaS platforms, analytics interfaces, and complex admin panels.", "linkText": "Dashboard UI Design →", "href": "/dashboard-ui-design-kochi/" },
+        { "title": "Web App UI Design", "text": "High-complexity web application interface design for workflow-heavy internal tools and commercial software.", "linkText": "Web App UI Design →", "href": "/web-app-ui-design-kochi/" },
+        { "title": "UX Audit & Usability Reviews", "text": "Structured UX audit reports diagnosing why users drop off, complete with a prioritized roadmap of design fixes.", "linkText": "UX Audit Services →", "href": "/ux-audit-services-kochi/" },
+        { "title": "Wireframing & Rapid Prototyping", "text": "Interactive wireframes and clickable Figma prototypes that let you validate user flows before investing in code." }
       ]
     },
     {
@@ -78,107 +87,103 @@
       "badge": "How We Work",
       "h2": "How We Work — Our Design Process",
       "items": [
-        { "title": "Discovery & Research (Days 1–3).", "text": "We study your business, your users, and your competitors before any screen is designed." },
-        { "title": "Wireframing (Week 1).", "text": "Low-fidelity wireframes map out structure and flow, so the logic is agreed before visual design begins." },
-        { "title": "UI Design & Prototyping (Weeks 2–3).", "text": "High-fidelity screens and a clickable prototype in Figma, ready for stakeholder review." },
-        { "title": "Usability Testing.", "text": "Real users try the prototype so friction is caught before development, not after launch." },
-        { "title": "Developer Handoff.", "text": "Clean, documented files and specs handed to your developers or ours — a typical project completes in 2 to 4 weeks." },
-        { "title": "Post-Launch Support.", "text": "Minor refinements and design QA once the build goes live, the same discipline every UI/UX design company in Kochi engagement follows here." }
+        { "title": "Discovery & Research (Days 1–3)", "text": "We examine your business model, target user personas, and competitor benchmarks before opening Figma." },
+        { "title": "Wireframing & Information Architecture (Week 1)", "text": "Low-fidelity wireframes map out user journeys and screen hierarchy, aligning on logic before visual styling begins." },
+        { "title": "UI Design & Interactive Prototyping (Weeks 2–3)", "text": "High-fidelity visual design, design tokens, and clickable Figma prototypes ready for stakeholder and user testing." },
+        { "title": "Usability Testing & Feedback", "text": "Real users test core task completion to catch friction, confusion, and drop-offs before code is written." },
+        { "title": "Developer Handoff & Specs", "text": "Clean, tokenized design systems and spacing guidelines handed to your engineering team with a live walkthrough." },
+        { "title": "Post-Launch Design QA", "text": "Reviewing staging and production builds against Figma to ensure visual fidelity and interaction polish." }
       ]
     },
     {
       "type": "pricing",
       "bg": "white",
-      "h2": "Investment Guide for UI/UX Design Projects in Kochi",
-      "intro": "As a straightforward UI/UX design company in Kochi, we publish realistic ranges rather than \"contact us for pricing\" placeholders.",
-      "columns": ["Service", "Estimated Investment (INR)"],
+      "h2": "UI/UX Design Cost in Kochi",
+      "intro": "We publish straightforward sprint estimates rather than ambiguous consultation gates:",
+      "columns": ["Service", "Estimated Investment (INR)", "Typical Timeline"],
       "rows": [
-        { "service": "Website UI Design", "price": "Rs. 20,000 – 60,000" },
-        { "service": "Mobile App UI/UX Design", "price": "Rs. 40,000 – 1,50,000" },
-        { "service": "Dashboard / SaaS UI Design", "price": "Rs. 50,000 – 2,00,000" },
-        { "service": "UX Audit (existing product)", "price": "Rs. 15,000 – 40,000" },
-        { "service": "Wireframing & Prototyping (standalone)", "price": "Rs. 10,000 – 30,000" }
+        { "service": "Website UI Design", "price": "₹20,000 – ₹60,000", "timeline": "1–3 Weeks" },
+        { "service": "Mobile App UI/UX Design", "price": "₹40,000 – ₹1,50,000", "timeline": "2–5 Weeks" },
+        { "service": "Dashboard / SaaS UI Design", "price": "₹50,000 – ₹2,00,000", "timeline": "3–6 Weeks" },
+        { "service": "UX Audit (Existing Product)", "price": "₹15,000 – ₹40,000", "timeline": "1–2 Weeks" },
+        { "service": "Wireframing & Prototyping", "price": "₹10,000 – ₹30,000", "timeline": "1–2 Weeks" }
       ],
-      "note": "Final pricing depends on the number of screens, platforms, and research depth. Every client of our UI/UX design company in Kochi receives a written scope and quote before work begins — reviewed and updated July 2026."
+      "note": "Final pricing reflects screen count, interaction complexity, and user research depth. You own 100% of all Figma source files, components, and design assets upon final payment. Reviewed: October 2026."
     },
     {
       "type": "cards",
       "bg": "soft",
       "columns": 2,
-      "h2": "Industries We Design For in Kochi and Beyond",
-      "intro": "Every industry expects something different from a screen, so a serious UI/UX design company in Kochi starts from the user's intent, not a one-size-fits-all template.",
+      "h2": "Industries We Design For",
+      "intro": "Every vertical requires unique interface ergonomics and cognitive expectations:",
       "items": [
-        { "title": "Startups & SaaS", "text": "As a startup UI UX design agency in Kochi, we build onboarding and dashboard UI founders use to pass investor scrutiny." },
-        { "title": "Healthcare & Clinics", "text": "Healthcare app UX design in Kochi for appointment and patient-portal interfaces built for people who are often stressed." },
-        { "title": "Fintech & Corporate", "text": "Fintech app UI design in Kochi for clients handling money and sensitive data." },
-        { "title": "Ecommerce & Retail", "text": "Ecommerce UI UX design in Kochi brands rely on for mobile-first browsing and checkout flow." },
-        { "title": "Education & Hospitality", "text": "Booking and enquiry interfaces designed around how travellers and parents actually search." },
-        { "title": "Redesigns & Conversion Work", "text": "UI UX redesign services in Kochi for products that have outgrown their first version, plus conversion-focused UI UX design in Kochi for teams optimising an existing flow rather than starting from zero." }
-      ]
-    },
-    {
-      "type": "cards",
-      "bg": "white",
-      "columns": 2,
-      "h2": "Featured Projects — Real Interfaces We Have Designed",
-      "intro": "An overview of UI/UX projects delivered for clients in Kochi and Infopark — each built around real user research, not just visual polish.",
-      "items": [
-        { "title": "Evosyz — Fintech Web & Product UI/UX", "html": "<span class=\"text-[12px] font-black text-primary uppercase tracking-wider block mb-2\">Kochi · Fintech</span>A clean, mobile-first interface for a regulated fintech company, with clear information hierarchy, intuitive navigation, and conversion-focused UI for franchisees and financial partners.<br /><br /><strong>Result:</strong> Increased franchise and partnership enquiries, and a website users describe as representing the brand perfectly." },
-        { "title": "Exacore IT — Digital Collateral & Brand Interface", "html": "<span class=\"text-[12px] font-black text-primary uppercase tracking-wider block mb-2\">Infopark, Kochi · IT</span>UI/UX and digital collateral design for an Infopark-based IT company, focused on communicating capabilities clearly to prospective clients.<br /><br /><strong>Result:</strong> Stronger market outreach and a clearer digital presence, as confirmed directly by the client's leadership." }
+        { "title": "Startups & SaaS", "text": "High-converting onboarding funnels, multi-tenant dashboards, and sleek UI that impresses enterprise buyers." },
+        { "title": "Healthcare & Clinics", "text": "Calm, reassuring patient portals, doctor appointment schedules, and diagnostic records built for accessibility." },
+        { "title": "Fintech & Banking", "text": "High-security transaction screens, data tables, and KYC flows where trust and clarity are paramount." },
+        { "title": "Ecommerce & D2C", "text": "Frictionless mobile browsing, product configuration, and streamlined one-page checkout experiences." },
+        { "title": "Education & LMS", "text": "Intuitive student portals, interactive video course interfaces, and assessment dashboards." },
+        { "title": "Logistics & Operations", "text": "Dense data visualization, dispatch boards, and fleet tracking interfaces built for rapid operational decisions." }
       ]
     },
     {
       "type": "prose",
       "bg": "white",
+      "h2": "Designing for Kochi's Startups and Businesses",
       "paragraphs": [
-        { "html": "View all projects: <a href=\"/portfolios/\" class=\"text-primary font-semibold hover:underline\">teknoppy.com/portfolios/</a>" }
+        { "text": "Kochi has grown into one of South India's most vibrant technology ecosystems, anchored by Infopark and an active community of venture-backed and bootstrapped product teams. In today's market, competing on product quality means competing on user experience. Teknoppy works alongside Kerala founders to build world-class interfaces that stand tall on international stages." }
+      ]
+    },
+    {
+      "type": "bullets",
+      "bg": "cream",
+      "badge": "At A Glance",
+      "h2": "Teknoppy UI/UX at a Glance",
+      "items": [
+        { "html": "<strong>Office Location:</strong> Vyttila, Kochi, Kerala · Established 2018" },
+        { "html": "<strong>Design Scope:</strong> Web applications, mobile apps (iOS & Android), dashboards, corporate websites" },
+        { "html": "<strong>Primary Design Tools:</strong> Figma, FigJam, Adobe Creative Cloud" },
+        { "html": "<strong>Sprint Timelines:</strong> 2–4 weeks for standard products; 5–8 weeks for complex SaaS dashboards" },
+        { "html": "<strong>Investment Range:</strong> ₹20,000 to ₹2,00,000 depending on screen count and complexity" },
+        { "html": "<strong>Deliverables:</strong> User research, wireframes, full Figma source files, interactive prototype, WCAG checks, developer handoff" }
       ]
     },
     {
       "type": "caseStudies",
-      "bg": "cream",
+      "bg": "white",
       "h2": "Our UI/UX Case Studies — Proven Results",
       "items": [
         {
-          "title": "Case Study 1 — Evosyz: Fintech UI/UX That Builds Trust and Drives Enquiries",
+          "title": "Evosyz: Fintech UI/UX That Builds Trust and Drives Enquiries",
           "intro": [
-            { "text": "Evosyz is a growing fintech company headquartered in Kochi. They approached Teknoppy with two challenges: designing a professional, trust-focused interface for a regulated industry, and generating quality enquiries from prospective franchisees and financial partners across India." }
+            { "text": "Evosyz is an expanding fintech company headquartered in Kochi. They partnered with Teknoppy to design a professional, compliance-ready interface to attract franchisees and financial partners across India." }
           ],
           "approach": [
-            "User research — understanding franchisee and partner decision-making before drawing any screens.",
-            "Wireframing & UI design — a clean, mobile-first interface with intuitive navigation and professional hierarchy.",
-            "Prototyping & usability testing — validating flows with real users before development.",
-            "Developer handoff — clean, documented Figma files so nothing was lost between design and build."
+            "Conducted user research to understand franchisee evaluation criteria.",
+            "Engineered a mobile-first UI with clear trust signals and compliance clarity.",
+            "Built clickable Figma prototypes to validate inquiry workflows before coding.",
+            "Delivered comprehensive component tokens for seamless developer handoff."
           ],
           "results": [
-            "Increased franchise and partnership enquiries from targeted segments.",
-            "Stronger positioning as a credible fintech company in Kochi.",
-            "A design system that scales cleanly as new pages and flows are added."
+            "Noticeable increase in qualified franchise and partner inquiries.",
+            "Clearer market positioning as a trusted regional fintech entity.",
+            "Scalable Figma design system that easily accommodates new product lines."
           ],
           "quote": "Being in the fintech space, we needed a reliable partner. Teknoppy created an appealing website that represents our brand perfectly.",
           "author": "— Vivek Menon, CTO, Evosyz",
-          "links": "Video: <a href=\"https://youtube.com/watch?v=E7HfgGOHjYE\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary font-semibold hover:underline\">youtube.com/watch?v=E7HfgGOHjYE</a> · Full case study: <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">teknoppy.com/evosyz-case-study/</a>"
+          "links": "Video: <a href=\"https://youtube.com/watch?v=E7HfgGOHjYE\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary font-semibold hover:underline\">Watch on YouTube</a>"
         }
       ]
     },
     {
       "type": "posts",
-      "bg": "white",
-      "h2": "Latest Blog Posts — Web Design & Digital Insights",
+      "bg": "soft",
+      "h2": "Latest UI/UX Design Insights",
       "items": [
         { "title": "Web Design Principles and Best Practices: A Complete Guide to UX Design", "text": "Core usability, accessibility, and layout principles behind interfaces that are genuinely easy to use.", "href": "/blog/" },
         { "title": "Responsive Web Design Best Practices: Building Sites That Work on All Devices", "text": "Practical guidance for building layouts that perform consistently across desktop, tablet, and mobile screens.", "href": "/blog/" },
-        { "title": "Latest Web Design Trends in 2026: Modern Styles and Techniques That Convert", "text": "Mobile-first layouts, AI-powered UX, bold typography, and conversion-focused design patterns shaping interfaces this year.", "href": "/blog/latest-web-design-trends-2026/" }
+        { "title": "Latest Web Design Trends in 2026: Modern Styles and Techniques That Convert", "text": "Mobile-first layouts, bold typography, and conversion-focused design patterns shaping modern interfaces.", "href": "/blog/latest-web-design-trends-2026/" }
       ],
       "viewAll": { "label": "View all posts", "href": "/blog/" }
-    },
-    {
-      "type": "prose",
-      "bg": "cream",
-      "paragraphs": [
-        { "text": "If the answer is yes across most of the questions a good UI/UX partner should answer clearly, that is a UI/UX design company in Kochi worth talking to." },
-        { "text": "This combination of research-first process, clean handoff, and measurable usability carries into every UI/UX design company in Kochi engagement, whether the client is down the road in Infopark or reviewing our work from overseas." }
-      ]
     },
     {
       "type": "faq",
@@ -187,17 +192,50 @@
       "badge": "Have Questions?",
       "h2": "Frequently Asked Questions",
       "items": [
-        { "q": "Is Teknoppy really a UI/UX design company in Kochi, or a general web agency that also does design?", "a": "Teknoppy is a genuine UI/UX design company in Kochi, with a dedicated research-to-prototype process, not design bolted onto a web development project as an afterthought." },
-        { "q": "How long does a UI/UX design project take?", "a": "Most website or app UI design projects take 2 to 4 weeks from discovery to final handoff; larger dashboard or multi-flow apps can take 5 to 8 weeks depending on scope." },
-        { "q": "How much does UI/UX design cost in Kochi?", "a": "Most projects range from Rs. 20,000 to Rs. 2,00,000 depending on platform and complexity. A written quote is shared before any work starts." },
-        { "q": "Do you only design, or can you also build the product?", "a": "Both. As a UI UX design and development company in Kochi, our in-house team can take a design straight into a working product." },
-        { "q": "What is the difference between a UI design company and a UX design company?", "a": "A UI design company in Kochi focuses on visual layout; a UX design company in Kochi focuses on flow and usability. Teknoppy handles both together, since the two rarely succeed in isolation." },
-        { "q": "Do you run a UX audit on an existing product?", "a": "Yes. Our UX audit company in Kochi service reviews your current site or app and delivers a prioritised list of usability fixes, typically within a week." },
-        { "q": "Do you optimise content for AI answer engines like ChatGPT and Perplexity?", "a": "Yes. Alongside SEO, we structure content and schema for AEO and GEO — clear, question-led sections that answer engines can cite when asked who the best UI/UX design company in Kochi is." },
-        { "q": "Do you work with clients outside Kochi or India?", "a": "Yes. Alongside local Kochi and Kerala clients, we work with international clients researching design partners in India, with calls scheduled to suit their time zone." },
-        { "q": "Can visiting or overseas founders manage a project remotely without visiting Kochi in person?", "a": "Yes. Most projects run entirely over video calls, shared Figma files, and written updates, so founders travelling or based abroad can manage the entire process without visiting our Kochi office." },
-        { "q": "Which is the best UI UX design company in Kochi?", "a": "The best choice is the one that fits your goals, shows real outcomes, and explains its process clearly rather than the one claiming the title loudest. Teknoppy's 120+ delivered projects and repeat client relationships are the evidence we'd point to." },
-        { "q": "How to choose a UI UX design company in Kochi?", "a": "Check for a research-first process, a portfolio with real outcomes, transparent pricing, and a team that can also build what it designs." }
+        {
+          "q": "Is Teknoppy a dedicated UI/UX design company in Kochi, or a web agency that also does design?",
+          "a": "Teknoppy operates as a full-service digital studio with dedicated UI/UX design sprints. Every interface project follows a structured design process — user research, wireframing, Figma prototyping, and usability testing. Because our developers work in the same team, our designs are engineered for seamless technical implementation."
+        },
+        {
+          "q": "Do I get the Figma source files?",
+          "a": "Yes. Upon project completion and final payment, you receive 100% full access to the organized Figma source files, reusable components, style guides, and exported SVG/image assets."
+        },
+        {
+          "q": "How many revisions are included in a design sprint?",
+          "a": "Each phase includes two structured revision cycles — first during low-fidelity wireframing to lock in structure, and again during high-fidelity visual styling. Additional rounds can be accommodated transparently if requirements evolve."
+        },
+        {
+          "q": "Do you design for accessibility (WCAG)?",
+          "a": "Yes. We verify color contrast ratios, font sizing, accessible focus states, and keyboard navigation against WCAG 2.2 AA guidelines during our UI design process."
+        },
+        {
+          "q": "Can you design for our in-house developers?",
+          "a": "Yes. We provide complete developer-ready Figma handoff packages with auto-layout specs, spacing variables, component states, and interactive notes, accompanied by a dedicated walkthrough call with your engineering team."
+        },
+        {
+          "q": "Do you only design, or can you also build the product?",
+          "a": "We do both. If you need end-to-end delivery, our development team builds custom applications in React, Node.js, and Python. Explore our Web Application Development and Web Design services for full-stack build details."
+        },
+        {
+          "q": "Do you run a UX audit on an existing product?",
+          "a": "Yes. We evaluate your existing web application or mobile app to identify usability bottlenecks, confusing navigation, and drop-off points. See our dedicated UX Audit Services in Kochi for details."
+        },
+        {
+          "q": "How long does a UI/UX design project take?",
+          "a": "Most website or mobile app sprints take 2 to 4 weeks from discovery to final handoff. Complex multi-role dashboards or SaaS platforms typically take 4 to 8 weeks."
+        },
+        {
+          "q": "How much does UI/UX design cost in Kochi?",
+          "a": "UI/UX design projects generally range from ₹20,000 to ₹2,00,000 depending on screen count, user flows, and research requirements. We provide a transparent scope and fixed quote before kickoff."
+        },
+        {
+          "q": "Which is the best UI/UX design company in Kochi?",
+          "a": "The best UI/UX partner demonstrates real screens and case studies, conducts user research rather than relying on guesswork, tests designs with actual users, provides complete source files, and offers transparent pricing. We encourage founders to compare our process with any studio in Kerala."
+        },
+        {
+          "q": "Can overseas or remote founders manage the project without visiting Kochi?",
+          "a": "Yes. Most of our projects run smoothly via scheduled video conferences, shared interactive Figma links, and regular asynchronous milestone updates."
+        }
       ]
     },
     {
@@ -207,43 +245,38 @@
       "items": [
         {
           "name": "Sanal Edison",
-          "role": "Founder & Design Strategy Lead",
+          "role": "Founder & Digital Strategist",
           "contact": "sales@teknoppy.com · +91 6282249224",
           "photo": "/sanal.png",
           "photoAlt": "Sanal Edison, Founder and Digital Strategist at Teknoppy",
-          "bio": "Sanal has led 120+ web, app, and design projects since founding Teknoppy in 2018. He now leads an in-house team of UI designers, UX researchers, and developers who take every project from wireframe to working product.",
-          "reviewed": "Reviewed: July 2026."
+          "bio": "Sanal has led digital strategy across 120+ web, mobile, and software projects since founding Teknoppy in 2018. Connect with Sanal on LinkedIn or visit the leadership page for more background.",
+          "reviewed": "Reviewed: October 2026."
         }
       ]
     },
     {
       "type": "cta",
+      "draft": true,
       "bg": "white",
       "h2": "Start Your UI/UX Design Project",
       "paragraphs": [
-        { "text": "As a trusted UI/UX design company in Kochi, Teknoppy is ready to turn your idea into an interface people actually enjoy using — backed by a 24-hour response time and a typical 2-to-4-week design sprint." }
+        { "text": "Turn your product idea into an intuitive, polished interface that users love and investors trust. We reply within one business day with a clear scope and timeline." }
       ],
       "ctas": [
-        { "label": "Free Website Audit →", "href": "/free-website-audit-kerala/" },
-        { "label": "Request a Quote →", "href": "/request-a-quote/" },
-        { "label": "Book a Consultation →", "href": "/book-a-consultation/" }
+        { "label": "Book a Free Design Review", "href": "#contact" },
+        { "label": "Request a Quote", "href": "/request-a-quote/" },
+        { "label": "Explore UX Audit", "href": "/ux-audit-services-kochi/" }
       ]
     },
     {
       "type": "byline",
       "bg": "cream",
-      "text": "Teknoppy — UI/UX Design Company in Kochi · teknoppy.com · +91 6282249224 · sales@teknoppy.com · Second Floor, Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam, Kochi, Kerala 682019"
+      "text": "Teknoppy — UI/UX Design Company in Kochi · teknoppy.com · +91 6282249224 · sales@teknoppy.com · Second Floor, Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam, Kochi, Kerala 682019. Note: We sign an NDA before reviewing your confidential product idea."
     }
   ],
   "devNotes": {
-    "source": "PILLAR 7 - UI UX DESIGN COMPANY KOCHI.pdf",
-    "primaryKeyword": "UI/UX Design Company in Kochi",
-    "url": "teknoppy.com/ui-ux-design-company-in-kochi/",
-    "wordCount": "2,168 · primary density 0.88% · 40/40 secondary keywords · SEO score 98/100",
-    "schemaStack": "Organization · LocalBusiness · Service · FAQPage · BreadcrumbList · AggregateRating · Person",
-    "urlDiscrepancy": "The site structure doc lists this pillar as /ui-ux-design-company-kochi/; the repo route is /ui-ux-design-company-in-kochi/, which is what this doc's own SEO spec specifies. The \"in\" form is canonical.",
-    "cannibalizationCheck": "Child-page phrases (\"Website UI Design,\" \"Dashboard UI Design,\" \"Web App UI Design,\" \"UX Audit\") are used only as anchor-linked service names, not repeated as full exact-match keywords, so this pillar and its future child pages target different queries.",
-    "childPages": "All four child pages linked from the services grid are built: /website-ui-design-kochi/, /dashboard-ui-design-kochi/, /web-app-ui-design-kochi/, /ux-audit-services-kochi/. The doc writes the last one as /ux-audit-kochi/; its own source doc specifies /ux-audit-services-kochi/, so the services-grid link points there.",
-    "aggregateRating": "Doc lists AggregateRating in the schema stack. Withheld until verified ratings exist."
+    "source": "UI/UX Design Page Audit & Action Plan (Oct 2026)",
+    "primaryKeyword": "UI/UX design company in Kochi",
+    "url": "teknoppy.com/ui-ux-design-company-in-kochi/"
   }
 }
