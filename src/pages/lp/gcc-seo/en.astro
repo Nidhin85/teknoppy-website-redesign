@@ -1001,7 +1001,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }
 })();
 
-/* Audit form: submits enquiry to /api/contact, opens WhatsApp, and redirects to thank-you */
+/* Audit form: submits enquiry to /api/contact and redirects to thank-you page on confirmed success */
 var auditForm = document.getElementById('auditForm');
 if (auditForm) {
   auditForm.addEventListener('submit', async function(e){
@@ -1016,7 +1016,11 @@ if (auditForm) {
     }
 
     var btn = f.querySelector('button[type="submit"]');
-    if (btn) btn.disabled = true;
+    var origBtnText = btn ? btn.innerHTML : '';
+    if (btn) {
+      btn.disabled = true;
+      btn.style.opacity = '0.7';
+    }
 
     var nameVal = f.name.value.trim();
     var phoneVal = f.phone.value.trim();
@@ -1038,19 +1042,31 @@ if (auditForm) {
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify(payload)
       });
-      if (!res.ok) throw new Error('Server returned ' + res.status);
 
-      var msg = 'Hi Teknoppy, I want a free SEO audit.\nName: ' + nameVal + '\nWhatsApp: ' + phoneVal + '\nWebsite: ' + siteVal + '\nCountry: ' + countryVal;
-      var url = 'https://wa.me/916282249224?text=' + encodeURIComponent(msg);
-      try { window.open(url, '_blank'); } catch (err) {}
+      var data = null;
+      try {
+        data = await res.json();
+      } catch (parseErr) {
+        data = null;
+      }
 
+      if (!res.ok || !data || data.ok !== true) {
+        var errorMsg = (data && data.error) ? data.error : 'Could not submit your request. Please try again.';
+        throw new Error(errorMsg);
+      }
+
+      // Confirmed success: redirect to thank-you page (NO WhatsApp popup)
       window.location.href = '/lp/gcc-seo/en/thank-you/';
     } catch (err) {
       ok.style.background = '#FDECEC';
       ok.style.color = '#C62828';
-      ok.textContent = 'Could not submit your request. Please call +91 62822 49224 or reach out directly on WhatsApp.';
+      ok.textContent = err.message || 'Could not submit your request. Please call +91 62822 49224 or reach out directly on WhatsApp.';
       ok.classList.add('show');
-      if (btn) btn.disabled = false;
+      if (btn) {
+        btn.disabled = false;
+        btn.style.opacity = '1';
+        if (origBtnText) btn.innerHTML = origBtnText;
+      }
     }
   });
 }

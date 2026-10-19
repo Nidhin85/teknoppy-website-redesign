@@ -192,10 +192,20 @@ function msgFor(a) {
 }
 
 document.querySelectorAll('a[href="#enquiry"]').forEach(function(a){
-  a.addEventListener('click', function(e){
-    e.preventDefault();
-    openWA(msgFor(a), a.textContent.trim().slice(0, 40));
-  });
+  if (a.dataset.msg || a.classList.contains('wa') || /WhatsApp/i.test(a.textContent)) {
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      openWA(msgFor(a), a.textContent.trim().slice(0, 40));
+    });
+  } else {
+    a.addEventListener('click', function(e){
+      var target = document.getElementById('enquiry');
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  }
 });
 
 /* Scroll Progress Bar */
@@ -294,12 +304,16 @@ document.querySelectorAll('a[href="#enquiry"]').forEach(function(a){
     if (phone.replace(/\D/g, '').length < 8) { f.phone.focus(); f.phone.style.borderColor = '#E0440E'; return; }
 
     var btn = f.querySelector('button[type="submit"]');
-    if (btn) btn.disabled = true;
+    var origBtnText = btn ? btn.innerHTML : '';
+    if (btn) {
+      btn.disabled = true;
+      btn.style.opacity = '0.7';
+    }
 
     var payload = {
       name: name,
       phone: phone,
-      email: 'lead@teknoppy.com', // Default placeholder for WhatsApp lead gen forms where email is optional
+      email: 'lead@teknoppy.com', // Default placeholder for lead forms where email is not in the short form
       service: svc,
       message: 'Service: ' + svc + '\nBudget: ' + bud + '\nSource: Web Design Kochi Landing Page',
       source: 'Web Design Landing Page'
@@ -311,19 +325,31 @@ document.querySelectorAll('a[href="#enquiry"]').forEach(function(a){
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify(payload)
       });
-      if (!res.ok) throw new Error('Server returned ' + res.status);
 
-      // Open WhatsApp prefilled message in a background/new tab
-      openWA('I need a website quote.\nName: ' + name + '\nPhone: ' + phone + '\nService: ' + svc + '\nBudget: ' + bud, 'form');
+      var data = null;
+      try {
+        data = await res.json();
+      } catch (parseErr) {
+        data = null;
+      }
 
-      // Redirect to confirmed Thank You page
+      if (!res.ok || !data || data.ok !== true) {
+        var errorMsg = (data && data.error) ? data.error : 'Could not submit your request. Please try again.';
+        throw new Error(errorMsg);
+      }
+
+      // Confirmed success: redirect to thank-you page (NO WhatsApp popup)
       window.location.href = '/web-design-company-landingpage/thank-you/';
     } catch (err) {
       if (errEl) {
-        errEl.textContent = 'Could not submit your request. Please call +91 62822 49224 or reach out via WhatsApp.';
+        errEl.textContent = err.message || 'Could not submit your request. Please call +91 62822 49224 or reach out via WhatsApp.';
         errEl.style.display = 'block';
       }
-      if (btn) btn.disabled = false;
+      if (btn) {
+        btn.disabled = false;
+        btn.style.opacity = '1';
+        if (origBtnText) btn.innerHTML = origBtnText;
+      }
     }
   });
 })();
