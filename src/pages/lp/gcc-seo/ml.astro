@@ -425,7 +425,11 @@ th:first-child,td:first-child{font-size:11px}
 .hero-video-h1{position:absolute;inset:0;z-index:2;display:flex;align-items:center;justify-content:center;padding:16px 20px 70px;text-align:center;line-height:normal;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(0,0,0,.5) 100%)}
 .hero-video-h1 h1{margin:0;max-width:1100px;color:#fff;font-family:Sora,'Noto Sans Malayalam',sans-serif;font-weight:800;font-size:clamp(1.6rem,4.4vw,3.6rem);line-height:1.15;letter-spacing:-.01em;text-wrap:balance;text-shadow:0 4px 24px rgba(0,0,0,.7)}
 .hero-video-banner .video-controls-badge{z-index:5}
-@media (max-width:600px){.hero-video-h1{padding:10px 14px 50px}.hero-video-h1 h1{font-size:clamp(1.15rem,5.4vw,1.55rem)}}
+@media (max-width:768px){
+  .hero-video-banner{display:flex;flex-direction:column}
+  .hero-video-h1{position:relative;inset:auto;order:-1;padding:16px 20px 14px;background:#111111;border-bottom:1px solid rgba(255,255,255,.08);pointer-events:auto}
+  .hero-video-h1 h1{font-size:clamp(1.15rem,4.8vw,1.45rem);line-height:1.35;text-shadow:none;max-width:100%}
+}
 
 </style>
 </head>
