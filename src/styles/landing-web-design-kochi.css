@@ -48,7 +48,7 @@ html {
 }
 
 html, body {
-  overflow-x: hidden;
+  overflow-x: clip;
   width: 100%;
 }
 
@@ -369,7 +369,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(245, 246, 250, 0.92);
+  background: rgba(245, 246, 250, 0.95);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(226, 230, 238, 0.8);
@@ -3533,3 +3533,11 @@ footer b {
     transform: none !important;
   }
 }
+
+/* === H1 centred on hero video === */
+.hero-video-h1{position:absolute;top:0;right:0;bottom:0;left:0;-webkit-box-align:center;-webkit-box-pack:center;z-index:1;display:flex;align-items:center;justify-content:center;padding:16px 20px 70px;text-align:center;line-height:normal;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.12) 0%,rgba(0,0,0,.42) 100%)}
+.hero-video-h1 h1{margin:0;font-family:'Sora',sans-serif;font-weight:700;letter-spacing:-0.025em;width:100%;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;max-width:1200px;color:#fff;font-size:clamp(1.6rem,4.6vw,4rem);line-height:1.1;text-shadow:0 4px 24px rgba(0,0,0,.7)}
+/* old H1 kept as same-looking text */
+.hero-title{font-family:Manrope,sans-serif;color:var(--black);letter-spacing:-0.03em;text-wrap:balance;font-size:clamp(2.2rem,5.2vw,3.8rem);font-weight:800;line-height:1.12;margin-bottom:20px}
+@media (max-width:600px){.hero-video-h1{padding:8px 16px 62px;background:linear-gradient(180deg,rgba(0,0,0,.30) 0%,rgba(0,0,0,.55) 100%)}.hero-video-h1 h1{font-size:clamp(1.3rem,6.2vw,1.75rem);text-shadow:0 2px 12px rgba(0,0,0,.7)}}
+@media (max-width:380px){.hero-center-box .hero-title{font-size:1.95rem}}
