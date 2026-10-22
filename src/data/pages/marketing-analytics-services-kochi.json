@@ -1,31 +1,50 @@
 {
   "meta": {
-    "title": "Marketing Analytics Services Kochi | Teknoppy",
-    "description": "Marketing Analytics Services Kochi businesses use to measure every channel — GA4, Search Console, conversion and call tracking, and clear reporting."
+    "title": "Marketing Analytics Services in Kochi | GA4 Setup | Teknoppy",
+    "description": "Marketing analytics in Kochi by Teknoppy: GA4 and Tag Manager setup, call and WhatsApp tracking, Search Console and one dashboard for every channel."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Digital Marketing Company in Kochi", "href": "/digital-marketing-company-kochi/" },
-    { "name": "Marketing Analytics Services Kochi", "href": "/marketing-analytics-services-kochi/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "Digital Marketing in Kochi",
+      "href": "/digital-marketing-company-kochi/"
+    },
+    {
+      "name": "Marketing Analytics Services in Kochi",
+      "href": "/marketing-analytics-services-kochi/"
+    }
   ],
   "sections": [
     {
       "type": "hero",
       "badge": "Digital Marketing",
-      "h1Lead": "Marketing Analytics Services",
+      "h1Lead": "Marketing Analytics Services in",
       "h1Accent": "Kochi",
       "subhead": "Analytics & Performance Tracking So Every Channel Is Measured",
       "body": [
         {
-          "html": "<strong>Marketing Analytics Services Kochi</strong> — that's what businesses look for when they are spending on SEO, ads and social media but cannot say which of them is producing enquiries. As a performance marketing agency Kochi brands rely on, Teknoppy sets up GA4, Search Console, and call tracking so every channel is measured and every report tells the truth."
+          "html": "Teknoppy provides marketing analytics services in Kochi for businesses that spend on SEO, ads and social but cannot see which channel brings enquiries. We set up GA4, Search Console and call tracking so every channel is measured and every report tells the truth."
         },
         {
-          "html": "Choosing the right <strong>Marketing Analytics Services Kochi</strong> partner matters because most tracking setups are incomplete — page views are counted, but form submissions, phone calls and WhatsApp clicks are not. Without those, marketing decisions are made on traffic rather than on leads."
+          "html": "Getting tracking right matters because most tracking setups are incomplete — page views are counted, but form submissions, phone calls and WhatsApp clicks are not. Without those, marketing decisions are made on traffic rather than on leads."
         }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ],
       "trustline": "120+ Projects Delivered · In Kochi Since 2018 · GA4, Search Console & Call Tracking"
     },
@@ -34,23 +53,23 @@
       "bg": "cream",
       "columns": 2,
       "badge": "What's Included",
-      "h2": "What Our Analytics & Performance Services Include",
+      "h2": "What Our Marketing Analytics Services Include",
       "items": [
         {
           "title": "GA4 Setup & Configuration",
-          "html": "<strong>GA4 setup services Kochi</strong> covering property configuration, event and conversion setup, internal-traffic filtering and Google Tag Manager, so the data you collect is clean from day one."
+          "html": "<strong>GA4 setup services in Kochi</strong> covering property configuration, event and conversion setup, internal-traffic filtering and Google Tag Manager, so the data you collect is clean from day one."
         },
         {
-          "title": "Search Console & SEO Reporting",
-          "html": "<strong>Google Search Console setup</strong>, sitemap submission and indexing checks, connected to reporting that shows which searches and pages actually bring visitors to your site."
+          "title": "Search Console Setup & Reporting",
+          "html": "Google Search Console configuration and GA4 integration connected to reporting that shows which searches and pages actually bring organic visitors to your site. For indexing and crawl fixes, see our <a href=\"/technical-seo-services-kochi/\" class=\"text-primary font-semibold hover:underline\">Technical SEO</a> service."
         },
         {
           "title": "Conversion & Call Tracking",
-          "html": "<strong>Conversion tracking setup</strong> for enquiry forms, phone calls, WhatsApp clicks and Google Ads, so every lead can be traced back to the channel and campaign that produced it."
+          "html": "Conversion tracking setup for enquiry forms, click-to-call, WhatsApp clicks, Meta Pixel / Conversions API, and Google Ads, so every lead can be traced back to the channel and campaign that produced it."
         },
         {
-          "title": "Dashboards & Performance Reviews",
-          "html": "<strong>Marketing dashboards</strong> that bring every channel into one view, with regular reviews that explain what was done, what it cost, and what it returned."
+          "title": "Looker Studio Dashboards & Reviews",
+          "html": "Marketing dashboards that bring every channel into one view, with regular reviews that explain what was done, what it cost, and what it returned."
         }
       ]
     },
@@ -88,21 +107,38 @@
       "badge": "The Teknoppy Advantage",
       "h2": "Why Choose Teknoppy for Marketing Analytics in Kochi",
       "items": [
-        { "html": "<strong>We track leads, not just traffic.</strong> Forms, calls and WhatsApp clicks are measured, because those are the actions a Kerala business actually gets enquiries through." },
-        { "html": "<strong>One team for the website, the campaigns and the tracking</strong>, so nothing is lost between a developer, an ad agency and an analytics consultant." },
-        { "html": "<strong>Transparent, ROI-focused reporting.</strong> You always know what was done, what it cost, and what it returned." },
-        { "html": "<strong>Setups you own.</strong> Analytics, Tag Manager and Search Console are configured in accounts that belong to your business, not ours." }
+        {
+          "html": "<strong>We track leads, not just traffic.</strong> Forms, calls and WhatsApp clicks are measured, because those are the actions a Kerala business actually gets enquiries through."
+        },
+        {
+          "html": "<strong>One team for the website, the campaigns and the tracking</strong>, so nothing is lost between a developer, an ad agency and an analytics consultant."
+        },
+        {
+          "html": "<strong>Transparent, ROI-focused reporting.</strong> You always know what was done, what it cost, and what it returned."
+        },
+        {
+          "html": "<strong>Setups you own.</strong> Analytics, Tag Manager and Search Console are configured in accounts that belong to your business, not ours."
+        }
       ]
     },
     {
       "type": "bullets",
       "bg": "white",
-      "h2": "Who Needs Analytics & Performance Services",
+      "h2": "Who Needs Marketing Analytics",
       "intro": "This service fits businesses that are:",
       "items": [
-        { "text": "Spending on SEO, Google Ads or social media without knowing which channel produces their enquiries" },
-        { "text": "Running a website with no analytics, or with analytics that nobody trusts" },
-        { "text": "Receiving agency reports full of impressions and clicks but no link to leads or revenue" }
+        {
+          "text": "Spending on SEO, Google Ads or social media without knowing which channel produces their enquiries"
+        },
+        {
+          "text": "Running Google + Meta ads with conflicting conversion numbers across platforms"
+        },
+        {
+          "text": "Moved from old Google Analytics to GA4 and lost critical event tracking or goal visibility"
+        },
+        {
+          "text": "Receiving agency reports full of impressions and clicks but no link to leads or revenue"
+        }
       ],
       "outro": [
         {
@@ -116,22 +152,39 @@
     {
       "type": "prose",
       "bg": "cream",
-      "h2": "Analytics & Performance Pricing",
+      "h2": "Marketing Analytics Cost in Kochi",
       "paragraphs": [
         {
-          "html": "Analytics work is priced either as a one-time setup project or as part of a monthly marketing retainer, scoped to the number of channels, conversion actions and reports you need. For a tailored estimate, <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a> or <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">Book a Consultation</a>."
+          "html": "Analytics and tracking setup is priced either as a one-time configuration project (typically Rs. 15,000 to Rs. 35,000) or as part of a monthly marketing retainer with ongoing dashboard reporting and reviews. <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a free tracking audit</a> or quote."
         }
       ]
     },
     {
       "type": "links",
       "bg": "soft",
-      "h2": "Related Services",
+      "h2": "Other digital marketing services in Kochi",
       "items": [
-        { "label": "Digital Marketing Company in Kochi", "href": "/digital-marketing-company-kochi/", "text": "our full digital marketing pillar" },
-        { "label": "Google Ads Management", "href": "/google-ads-company-kochi/" },
-        { "label": "SEO Services", "href": "/seo-services/" },
-        { "label": "Landing Pages & CRO", "href": "/landing-page-design-kochi/" }
+        {
+          "label": "Digital Marketing Company in Kochi",
+          "href": "/digital-marketing-company-kochi/",
+          "text": "our full digital marketing pillar"
+        },
+        {
+          "label": "Google Ads Management",
+          "href": "/google-ads-company-kochi/"
+        },
+        {
+          "label": "SEO Services",
+          "href": "/seo-services/"
+        },
+        {
+          "label": "Landing Pages & CRO",
+          "href": "/landing-page-design-kochi/"
+        },
+        {
+          "label": "Technical SEO Services",
+          "href": "/technical-seo-services-kochi/"
+        }
       ]
     },
     {
@@ -139,7 +192,7 @@
       "bg": "white",
       "center": true,
       "badge": "Have Questions?",
-      "h2": "Frequently Asked Questions — Marketing Analytics Services Kochi",
+      "h2": "Frequently Asked Questions — Marketing Analytics in Kochi",
       "items": [
         {
           "q": "What is included in a marketing analytics setup?",
@@ -155,7 +208,7 @@
         },
         {
           "q": "Who owns the analytics accounts and data?",
-          "a": "You do. GA4, Tag Manager and Search Console are set up in accounts that belong to your business, with access shared to our team."
+          "a": "You do. GA4, Tag Manager and Search Console are set up in accounts that belong to your business, with access shared to our team. Access is granted to Teknoppy as an authorized user and can be removed at any time; no customer data is exported or stored outside your own accounts."
         },
         {
           "q": "How often will we receive reports?",
@@ -173,18 +226,24 @@
       "h2": "Ready to Measure What Your Marketing Returns?",
       "paragraphs": [
         {
-          "html": "If you cannot say which channel produced last month's enquiries, the tracking is the first thing to fix. Teknoppy's <strong>Marketing Analytics Services Kochi</strong> team sets it up so every channel is measured."
+          "html": "Send us your website and ad accounts. We will audit your current tracking for free and tell you exactly which leads you are missing."
         }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
       "type": "byline",
       "bg": "white",
-      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Author: Sanal Edison, Digital Strategist · Reviewed: September 2026"
+      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Written by Sanal Edison, Digital Strategist · Reviewed: October 2026"
     }
   ],
   "devNotes": {
