@@ -65,7 +65,7 @@
         "bio": "Nithya handles day-to-day SEO execution across client accounts, from on-page fixes and metadata through to rank tracking and ongoing site health checks."
       },
       {
-        "name": "Anjaly Babu",
+        "name": "Anjali Babu",
         "role": "Jr. SEO Executive",
         "photo": "/team/anjali-babu.webp",
         "photoAlt": "Anjali Babu, Jr. SEO Executive at Teknoppy",
@@ -90,7 +90,7 @@
         "role": "Jr. SEO Executive",
         "photo": "/team/jyothsana-pk.webp",
         "photoAlt": "Jyothsana P K, Jr. SEO Executive at Teknoppy",
-        "bio": "Jyotsana supports Teknoppy's SEO delivery across client accounts, handling keyword mapping, on-page updates, internal linking, and the regular checks that keep client pages indexed and ranking."
+        "bio": "Jyothsana supports Teknoppy's SEO delivery across client accounts, handling keyword mapping, on-page updates, internal linking, and the regular checks that keep client pages indexed and ranking."
       }
     ]
   },
@@ -99,6 +99,11 @@
     "heading": "Frequently Asked Questions",
     "intro": "Common questions about who we are, what we handle, and how a project starts.",
     "items": [
+      {
+        "q": "Where is Teknoppy located?",
+        "a": "Teknoppy's office is located on the second floor of Kaithakal Building, Kaithakal Lane, Thykoodam, Vyttila, Kochi, Kerala 682019. We meet clients in person at our office and collaborate with partners across Kerala, India, and the GCC remotely.",
+        "source": "/about-us/"
+      },
       {
         "q": "What services does Teknoppy offer?",
         "a": "Website design and development, WordPress, ecommerce, web applications, SEO, digital marketing, and UI/UX design, all delivered by one in-house team.",

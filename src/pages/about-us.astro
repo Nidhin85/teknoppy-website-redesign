@@ -9,8 +9,8 @@ import { aboutUsSchema } from '../data/schemas/aboutUsSchema';
 const initials = (name: string) =>
   name.split(/\s+/).filter(Boolean).map(w => w[0]).join('').slice(0, 2).toUpperCase();
 
-const title = "About Teknoppy — Web Design Agency Kerala | Our Story, Team & Mission";
-const description = "Teknoppy is a professional web design and digital agency headquartered in Kochi, Kerala. Founded in 2018, we have delivered 120+ high-performance websites for businesses across Kerala and beyond.";
+const title = "About Teknoppy | Web & Digital Agency in Kochi";
+const description = "Meet Teknoppy - a Kochi web design, development and digital marketing team founded in 2018 by Sanal Edison. Our story, people and how we work.";
 
 const stats = [
   { value: "120+", label: "Websites Delivered", icon: Rocket },
@@ -21,27 +21,27 @@ const stats = [
 
 const values = [
   {
-    title: "Every Website We Build Is SEO-Friendly from Day One",
+    title: "SEO From Day One",
     desc: "We do not bolt SEO on after launch. Every project begins with keyword research, structured data planning, and Core Web Vitals benchmarking — making SEO-friendly website design Kerala businesses need a foundational principle, not an afterthought."
   },
   {
-    title: "A Proven Track Record Kerala Businesses Rely On",
+    title: "Proven Track Record",
     desc: "As a Web Design Company in Kerala with over 120 completed projects, our work speaks louder than promises. Clients across Kochi, Thrissur, Kozhikode, and Ernakulam have seen measurable improvements in search rankings, lead generation, and website engagement within the first 90 days of launch."
   },
   {
-    title: "Affordable Website Design Without Compromising Quality",
+    title: "Clear, Transparent Pricing",
     desc: "We believe every Kerala business — from a Thrissur-based startup to a Kochi enterprise — deserves a world-class website at a fair price. Our affordable website design Kerala packages are transparent, clearly scoped, and delivered on time with zero hidden costs."
   },
   {
-    title: "We Understand the Kerala Business Landscape",
+    title: "Local Market Knowledge",
     desc: "Our team lives and works in Kerala. We understand how Kerala buyers search online, what local businesses need to stand out in competitive markets, and how to position your brand for both statewide and city-level search visibility."
   },
   {
-    title: "From Strategy to Launch — We Handle Everything",
+    title: "One Team, Start to Finish",
     desc: "Design, development, content integration, SEO setup, speed optimisation, schema markup, and post-launch support — Teknoppy delivers a technically sound, conversion-focused website under one roof so you never need to coordinate multiple vendors."
   },
   {
-    title: "We Are With You After Your Website Goes Live",
+    title: "Support After Launch",
     desc: "Our relationship does not end at launch. Every client receives dedicated post-launch support, performance monitoring, and proactive maintenance to ensure your website continues to rank, load fast, and convert visitors into leads long after going live."
   }
 ];
@@ -144,7 +144,7 @@ const testimonials = [
             Our Story
           </div>
           <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight mb-6">
-            Who We Are — Kerala's Professional <span class="text-primary">Web Design Agency</span>
+            Who We <span class="text-primary">Are</span>
           </h2>
           <div class="space-y-5">
             <p class="text-neutral-600 font-medium text-base sm:text-lg leading-relaxed">
@@ -351,5 +351,9 @@ const testimonials = [
     </section>
   </main>
 
-  <FooterCTA includeSchema={false} />
+  <FooterCTA
+    includeSchema={false}
+    heading="Want to Work With Our Team?"
+    description="Tell us about your project. We reply within one business day and set up a call with the right people from our team."
+  />
 </Layout>
