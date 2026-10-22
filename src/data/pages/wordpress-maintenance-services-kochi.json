@@ -1,31 +1,50 @@
 {
   "meta": {
-    "title": "WordPress Maintenance Services Kochi | Teknoppy",
-    "description": "Need WordPress maintenance in Kochi? Teknoppy handles updates, backups, security & uptime monitoring. Book a free site health check today."
+    "title": "WordPress Maintenance Services in Kochi | Teknoppy",
+    "description": "Monthly WordPress care plans for Kochi businesses: staged updates, daily off-site backups, security and uptime monitoring, fixes and a monthly report."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "WordPress Development Company in Kochi", "href": "/wordpress-development-company-kochi/" },
-    { "name": "WordPress Maintenance Services Kochi", "href": "/wordpress-maintenance-services-kochi/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "WordPress Development",
+      "href": "/wordpress-development-company-kochi/"
+    },
+    {
+      "name": "WordPress Maintenance",
+      "href": "/wordpress-maintenance-services-kochi/"
+    }
   ],
   "sections": [
     {
       "type": "hero",
       "badge": "WordPress Development",
-      "h1Lead": "WordPress Maintenance Services",
+      "h1Lead": "WordPress Maintenance Services in",
       "h1Accent": "Kochi",
       "subhead": "Keeping a Live Site Secure, Fast, and Actually Working",
       "body": [
         {
-          "html": "<strong>WordPress Maintenance Services Kochi</strong> is what Teknoppy provides once your site is live and needs to stay that way — updates applied without breaking things, backups that actually restore, and someone watching for problems before a customer finds them first. A WordPress site isn't a one-time build. Core software, themes, and plugins all change on their own schedules, and each change is a small chance something stops working. That's the gap this service closes — ongoing, hands-on upkeep instead of a site left to quietly drift out of date."
+          "html": "Teknoppy's WordPress care plans keep Kochi business sites updated, backed up and secure. We test core, theme and plugin updates on staging, keep daily off-site backups, monitor uptime and security around the clock, fix issues within the plan and send a plain-language report every month. Plans start from Rs. 5,000/month."
         },
         {
-          "html": "Businesses across Kochi increasingly learn this the hard way — a hacked login page, a plugin update that broke checkout, a site that's been down for hours before anyone noticed. <strong>WordPress Maintenance Services Kochi</strong> work exists to catch that before it costs you traffic, rankings, or a customer. Without a dedicated <strong>WordPress website update service</strong> in place, most sites simply accumulate risk quietly in the background until something forces the issue."
+          "html": "Not on WordPress? See our <a href=\"/website-maintenance-services-kochi/\" class=\"text-primary font-semibold hover:underline\">website maintenance services</a> for other frameworks. For WordPress sites, a dedicated care plan prevents downtime, broken checkouts, and security vulnerabilities before they impact revenue."
         }
       ],
       "ctas": [
-        { "label": "Book a Free Site Health Check", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Free Site Health Check",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
@@ -33,23 +52,23 @@
       "bg": "cream",
       "columns": 2,
       "badge": "What's Included",
-      "h2": "What Our Maintenance Service Includes",
+      "h2": "What Our WordPress Maintenance Includes",
       "items": [
         {
           "title": "Core, Theme & Plugin Updates",
-          "html": "Outdated plugins are the most common way WordPress sites get compromised. Our <strong>WordPress plugin update service</strong> runs on a fixed schedule, tested on a staging copy before anything touches your live site — so an update never becomes the reason your site goes down."
+          "html": "Outdated plugins are the most common way WordPress sites get compromised. Updates run on a fixed schedule and are tested on staging before deployment so an update never breaks your live site."
         },
         {
-          "title": "Daily Backups & Restore",
-          "html": "Every site on a maintenance plan gets a <strong>WordPress backup and restore service</strong> running daily, stored off-server, with a restore process we've actually tested — not just configured and forgotten. A backup that's never been restored isn't a real safety net."
+          "title": "Daily Backups & Verified Restore",
+          "html": "Daily automated backups stored securely off-server with verified restore capability, giving you a reliable safety net if anything ever fails."
         },
         {
-          "title": "Security Monitoring",
-          "html": "<strong>WordPress security monitoring Kochi</strong> work runs continuously, watching for malware injections, brute-force login attempts, and unauthorized file changes. Most attacks on small business sites are automated and opportunistic, which is exactly why continuous monitoring catches what a monthly check would miss."
+          "title": "Security & Malware Monitoring",
+          "html": "We watch your site around the clock for malware, brute-force logins and unexpected file changes, and act before customers notice."
         },
         {
-          "title": "Uptime Monitoring",
-          "html": "Our <strong>WordPress uptime monitoring service</strong> checks your site every few minutes. If it goes down, we know before your customers do, and before it shows up as a drop in enquiries you can't immediately explain."
+          "title": "24/7 Uptime Monitoring",
+          "html": "Continuous automated uptime monitoring checks your site every 5 minutes. If downtime occurs, our engineers are alerted immediately to restore availability."
         }
       ]
     },
@@ -84,13 +103,23 @@
     {
       "type": "bullets",
       "bg": "soft",
-      "h2": "Who Needs This",
+      "h2": "Who Needs WordPress Maintenance",
       "items": [
-        { "text": "Your site was built by a freelancer or agency no longer available to support it" },
-        { "text": "You've had a plugin conflict, broken layout, or unplanned downtime in the last year" },
-        { "text": "You're running ecommerce or lead-generation where even a few hours offline costs real money" },
-        { "html": "You want a <strong>monthly WordPress maintenance plan</strong> instead of paying emergency rates every time something breaks" },
-        { "text": "You've never had a formal maintenance arrangement and aren't sure what state your site's backups or plugin versions are actually in" }
+        {
+          "text": "Your site was built by a freelancer or agency no longer available to support it"
+        },
+        {
+          "text": "You have had a plugin conflict, broken layout, or unplanned downtime in the past year"
+        },
+        {
+          "text": "You run ecommerce or lead-generation where even a few hours offline costs revenue"
+        },
+        {
+          "text": "You want a predictable monthly care plan instead of paying emergency hourly rates"
+        },
+        {
+          "text": "You have never had formal maintenance and are unsure what state your backups or security are in"
+        }
       ],
       "outro": [
         {
@@ -117,10 +146,10 @@
     {
       "type": "prose",
       "bg": "cream",
-      "h2": "WordPress Maintenance Pricing",
+      "h2": "WordPress Care Plans and Pricing",
       "paragraphs": [
         {
-          "html": "Because every <strong>WordPress care plan</strong> is scoped to the site's size and traffic, pricing depends on how much monitoring and support your site actually needs. A small brochure site typically needs less active monitoring than an ecommerce store processing daily orders, so plans are priced accordingly rather than sold as one fixed package. For an estimate based on your specific site, use our <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Cost Calculator</a> or <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a>."
+          "html": "WordPress maintenance at Teknoppy typically ranges from <strong>Rs. 5,000 to Rs. 15,000 per month</strong>. Standard business sites typically invest Rs. 5,000 to Rs. 8,000/mo, while WooCommerce stores or high-traffic sites needing weekly staging tests and database optimisation range from Rs. 10,000 to Rs. 15,000/mo. All plans run month-to-month with 30 days notice. <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a> for an exact proposal."
         }
       ]
     },
@@ -129,10 +158,28 @@
       "bg": "white",
       "h2": "Related Services",
       "items": [
-        { "label": "WordPress Development Company in Kochi", "href": "/wordpress-development-company-kochi/", "text": "our full WordPress development pillar" },
-        { "label": "Custom WordPress Development Kochi", "href": "/custom-wordpress-development-kochi/" },
-        { "label": "WordPress Speed Optimization", "href": "/wordpress-speed-optimization-kochi/" },
-        { "label": "WordPress Migration Services", "href": "/wordpress-migration-services-kochi/" }
+        {
+          "label": "WordPress Development Company in Kochi",
+          "href": "/wordpress-development-company-kochi/",
+          "text": "our full WordPress development pillar"
+        },
+        {
+          "label": "Website Maintenance Services",
+          "href": "/website-maintenance-services-kochi/",
+          "text": "for non-WordPress platforms"
+        },
+        {
+          "label": "WordPress Speed Optimization",
+          "href": "/wordpress-speed-optimization-kochi/"
+        },
+        {
+          "label": "Custom WordPress Development Kochi",
+          "href": "/custom-wordpress-development-kochi/"
+        },
+        {
+          "label": "WordPress Migration Services",
+          "href": "/wordpress-migration-services-kochi/"
+        }
       ]
     },
     {
@@ -144,23 +191,27 @@
       "items": [
         {
           "q": "What does WordPress maintenance service include?",
-          "a": "It includes regular core, theme, and plugin updates, daily backups, security monitoring, and uptime checks — everything needed to keep a live WordPress site secure and functional. WordPress Maintenance Services Kochi plans also include ongoing bug fixes as part of the service, not billed separately."
+          "a": "It includes scheduled core, theme, and plugin updates tested on staging, daily off-site backups, continuous security scanning, 24/7 uptime checks, bug fixes within the plan, and a monthly health report."
         },
         {
           "q": "How much does WordPress maintenance cost in Kochi?",
-          "a": "It depends on site size, traffic, and whether ecommerce functionality is involved. A simple business site costs less than a high-traffic store needing more frequent monitoring and support."
+          "a": "WordPress maintenance in Kochi typically costs between Rs. 5,000 and Rs. 15,000 a month with Teknoppy, depending on site size, traffic and whether it is a WooCommerce store. Every plan includes staged updates, daily off-site backups, security and uptime monitoring and a monthly report."
+        },
+        {
+          "q": "Can you maintain a WordPress site another developer built?",
+          "a": "Yes. Most sites on our care plans were built by other developers or agencies. We start with a comprehensive site health and security audit to check plugin versions, hosting quality, and database health before onboarding."
+        },
+        {
+          "q": "Is there a minimum contract period?",
+          "a": "Our WordPress care plans run month to month with no long-term lock-in. You can upgrade, pause, or cancel with 30 days notice."
+        },
+        {
+          "q": "What do you do if our WordPress site is hacked?",
+          "a": "If an active care-plan site is compromised, we immediately restore from clean daily off-site backups, isolate vulnerable plugins, clear malware, and patch access vectors at no extra charge."
         },
         {
           "q": "How often should a WordPress site be updated?",
           "a": "Security patches should be applied immediately when released. Plugin and theme updates are typically reviewed and tested on staging monthly as part of a standard update cycle."
-        },
-        {
-          "q": "Do you offer emergency WordPress support?",
-          "a": "Yes. Emergency WordPress support Kochi is available to clients on a maintenance plan if a site goes down, gets hacked, or stops functioning unexpectedly."
-        },
-        {
-          "q": "Who maintains the site if we already have an in-house developer?",
-          "a": "You can keep maintenance in-house, or hand specific parts — backups, security monitoring, or update management — to us. Either way, we document changes so nothing depends on us alone."
         }
       ]
     },
@@ -169,17 +220,25 @@
       "bg": "white",
       "h2": "Ready to Stop Firefighting Your Website?",
       "paragraphs": [
-        { "text": "An unmaintained WordPress site doesn't fail all at once — it degrades through slow load times, small errors, and security gaps until one of them costs you a customer. Teknoppy's WordPress support services Kochi team handles the ongoing work so your site stays fast, secure, and online." }
+        {
+          "text": "An unmaintained WordPress site doesn't fail all at once — it degrades through slow load times, small errors, and security gaps until one of them costs you a customer. Teknoppy's WordPress support services Kochi team handles the ongoing work so your site stays fast, secure, and online."
+        }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
       "type": "byline",
       "bg": "cream",
-      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Reviewed: August 2026"
+      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Written by Sanal Edison, Digital Strategist · Reviewed: October 2026"
     }
   ],
   "devNotes": {
@@ -190,7 +249,9 @@
     "heldPlaceholders": [
       "Sites We Currently Maintain — [STAT NEEDED: add 2–3 verified figures — e.g. number of sites under active maintenance, average incident response time, uptime percentage achieved.]"
     ],
-    "openItems": ["Author: [Name needed] · Reviewed: August 2026"],
+    "openItems": [
+      "Author: [Name needed] · Reviewed: August 2026"
+    ],
     "schema": "Service + LocalBusiness + FAQPage + BreadcrumbList"
   }
 }
