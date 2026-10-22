@@ -4,9 +4,18 @@
     "description": "Get a business website built to generate enquiries, not just look good. Kochi-based team, SEO-ready builds, fast delivery. Request a free quote today."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Website Design Company in Kochi", "href": "/web-design-company-kochi/" },
-    { "name": "Business Website Development", "href": "/business-website-development-kochi/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Web Design",
+      "href": "/web-design-company-kochi/"
+    },
+    {
+      "name": "Business Website Development",
+      "href": "/business-website-development-kochi/"
+    }
   ],
   "sections": [
     {
@@ -23,8 +32,14 @@
         }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
@@ -97,9 +112,15 @@
       "bg": "white",
       "h2": "Who Needs a Business Website?",
       "items": [
-        { "text": "You have no website yet, or one that is several years old and no longer reflects the quality of your services" },
-        { "text": "You currently rely only on Instagram, Facebook, or a Google Business Profile and need an authoritative digital asset" },
-        { "text": "You are a local business competing against others in Kochi who are already capturing customer searches online" }
+        {
+          "text": "You have no website yet, or one that is several years old and no longer reflects the quality of your services"
+        },
+        {
+          "text": "You currently rely only on Instagram, Facebook, or a Google Business Profile and need an authoritative digital asset"
+        },
+        {
+          "text": "You are a local business competing against others in Kochi who are already capturing customer searches online"
+        }
       ],
       "outro": [
         {
@@ -135,10 +156,26 @@
       "bg": "soft",
       "h2": "Related Services",
       "items": [
-        { "label": "Website Design and Development", "href": "/web-design-company-kochi/", "text": "the parent service" },
-        { "label": "Corporate Website Development", "href": "/corporate-website-development-kochi/", "text": "for businesses needing brand governance and corporate reporting" },
-        { "label": "Landing Page Design", "href": "/landing-page-design-kochi/", "text": "for focused Google Ads and social media campaigns" },
-        { "label": "Website Maintenance Services", "href": "/website-maintenance-services-kochi/", "text": "for ongoing security, updates, and backups" }
+        {
+          "label": "Website Design and Development",
+          "href": "/web-design-company-kochi/",
+          "text": "the parent service"
+        },
+        {
+          "label": "Corporate Website Development",
+          "href": "/corporate-website-development-kochi/",
+          "text": "for businesses needing brand governance and corporate reporting"
+        },
+        {
+          "label": "Landing Page Design",
+          "href": "/landing-page-design-kochi/",
+          "text": "for focused Google Ads and social media campaigns"
+        },
+        {
+          "label": "Website Maintenance Services",
+          "href": "/website-maintenance-services-kochi/",
+          "text": "for ongoing security, updates, and backups"
+        }
       ]
     },
     {
@@ -162,7 +199,7 @@
         },
         {
           "q": "Do I need a business website or a corporate website?",
-          "a": "If your goal is generating leads, calls, and WhatsApp enquiries for local services or products, a business website is ideal. If you are an enterprise needing multi-department governance, investor relations, and career portals, see our corporate website development services."
+          "a": "If your goal is generating leads, calls, and WhatsApp enquiries for local services or products, a business website is ideal. If you are an enterprise needing multi-department governance, investor relations, and career portals, see our <a href=\"/corporate-website-development-kochi/\" class=\"text-primary font-semibold hover:underline\">corporate website development</a> services."
         },
         {
           "q": "Will our website rank on Google in Kochi?",
@@ -184,17 +221,25 @@
       "bg": "cream",
       "h2": "Ready to Get More Enquiries From Your Website?",
       "paragraphs": [
-        { "text": "Tell us about your business and how customers find you today. We will reply within one business day with a recommended page plan, timeline and quote." }
+        {
+          "text": "Tell us about your business and how customers find you today. We will reply within one business day with a recommended page plan, timeline and quote."
+        }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
       "type": "byline",
       "bg": "white",
-      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Reviewed: August 2026"
+      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Written by Sanal Edison, Digital Strategist · Reviewed: October 2026"
     }
   ],
   "devNotes": {
