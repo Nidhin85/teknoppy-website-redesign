@@ -4,9 +4,18 @@
     "description": "Custom ecommerce platforms for stores that have outgrown Shopify or WooCommerce - bespoke checkout, headless builds and ERP integration. Book a call."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Ecommerce Website Development Company Kochi", "href": "/ecommerce-website-development-company-kochi/" },
-    { "name": "Custom Ecommerce Development", "href": "/custom-ecommerce-development-kochi/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Ecommerce Development",
+      "href": "/ecommerce-website-development-company-kochi/"
+    },
+    {
+      "name": "Custom Ecommerce Development",
+      "href": "/custom-ecommerce-development-kochi/"
+    }
   ],
   "sections": [
     {
@@ -25,8 +34,14 @@
         }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
@@ -134,10 +149,18 @@
       "badge": "The Teknoppy Advantage",
       "h2": "Why Choose Teknoppy for Custom Ecommerce in Kochi",
       "items": [
-        { "html": "<strong>In-house development team in Vyttila, Kochi.</strong> You collaborate directly with senior engineers architecting your store, not offshore subcontractors." },
-        { "html": "<strong>Full documentation and source code ownership.</strong> You receive 100% ownership of source repositories, server credentials, and documentation with zero vendor lock-in." },
-        { "html": "<strong>Engineered for high-volume transactions.</strong> Robust database optimization and edge caching ensure sub-second page loads during seasonal sales spikes." },
-        { "html": "<strong>Comprehensive post-launch support.</strong> SLA-backed maintenance, security patch monitoring, and performance reviews after going live." }
+        {
+          "html": "<strong>In-house development team in Vyttila, Kochi.</strong> You collaborate directly with senior engineers architecting your store, not offshore subcontractors."
+        },
+        {
+          "html": "<strong>Full documentation and source code ownership.</strong> You receive 100% ownership of source repositories, server credentials, and documentation with zero vendor lock-in."
+        },
+        {
+          "html": "<strong>Engineered for high-volume transactions.</strong> Robust database optimization and edge caching ensure sub-second page loads during seasonal sales spikes."
+        },
+        {
+          "html": "<strong>Comprehensive post-launch support.</strong> SLA-backed maintenance, security patch monitoring, and performance reviews after going live."
+        }
       ]
     },
     {
@@ -146,9 +169,15 @@
       "h2": "Who Needs Custom Ecommerce Development",
       "intro": "This service fits businesses where standard tools become a bottleneck:",
       "items": [
-        { "text": "Running product, bundle, or pricing logic too complex for standard Shopify or WooCommerce plugins" },
-        { "text": "Needing a headless ecommerce architecture to power web, mobile apps, or multi-region storefronts from one backend" },
-        { "text": "Operating B2B wholesale portals requiring custom credit limits, customer-specific price lists, and ERP integration" }
+        {
+          "text": "Running product, bundle, or pricing logic too complex for standard Shopify or WooCommerce plugins"
+        },
+        {
+          "text": "Needing a headless ecommerce architecture to power web, mobile apps, or multi-region storefronts from one backend"
+        },
+        {
+          "text": "Operating B2B wholesale portals requiring custom credit limits, customer-specific price lists, and ERP integration"
+        }
       ],
       "outro": [
         {
@@ -171,10 +200,26 @@
       "bg": "cream",
       "h2": "Related Services",
       "items": [
-        { "label": "Ecommerce Website Development Company Kochi", "href": "/ecommerce-website-development-company-kochi/", "text": "our full ecommerce development pillar" },
-        { "label": "WooCommerce Development", "href": "/woocommerce-development-company-kochi/", "text": "for WordPress-based online stores" },
-        { "label": "Shopify Development", "href": "/shopify-development-company-kochi/", "text": "for hosted, low-maintenance commerce" },
-        { "label": "Marketplace Development", "href": "/marketplace-development-company-kochi/", "text": "for multi-vendor platforms" }
+        {
+          "label": "Ecommerce Website Development Company Kochi",
+          "href": "/ecommerce-website-development-company-kochi/",
+          "text": "our full ecommerce development pillar"
+        },
+        {
+          "label": "WooCommerce Development",
+          "href": "/woocommerce-development-company-kochi/",
+          "text": "for WordPress-based online stores"
+        },
+        {
+          "label": "Shopify Development",
+          "href": "/shopify-development-company-kochi/",
+          "text": "for hosted, low-maintenance commerce"
+        },
+        {
+          "label": "Marketplace Development",
+          "href": "/marketplace-development-company-kochi/",
+          "text": "for multi-vendor platforms"
+        }
       ]
     },
     {
@@ -216,17 +261,25 @@
       "bg": "cream",
       "h2": "Ready to Build a Store That Fits Your Business?",
       "paragraphs": [
-        { "text": "Tell us what your current platform cannot do. We will reply within one business day to set up a requirements call and give an estimate range." }
+        {
+          "text": "Tell us what your current platform cannot do. We will reply within one business day to set up a requirements call and give an estimate range."
+        }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
       "type": "byline",
       "bg": "white",
-      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Author: Sanal Edison, Digital Strategist · Reviewed: August 2026"
+      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Written by Sanal Edison, Digital Strategist · Reviewed: October 2026"
     }
   ],
   "devNotes": {
