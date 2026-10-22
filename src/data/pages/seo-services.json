@@ -1,37 +1,67 @@
 {
   "meta": {
-    "title": "SEO Services | Teknoppy",
-    "description": "Teknoppy delivers full-service SEO services — technical SEO, on-page optimization, content strategy & reporting since 2018."
+    "title": "SEO Services in Kochi: Technical, Local & On-Page | Teknoppy",
+    "description": "Teknoppy's SEO services in Kochi: technical, on-page, local and content SEO with monthly reporting. Plans from Rs. 15,000/month. Get a free SEO audit."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "SEO Services", "href": "/seo-services/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "SEO Services in Kochi",
+      "href": "/seo-services/"
+    }
   ],
   "sections": [
     {
       "type": "hero",
       "badge": "Search Engine Optimization · Technical SEO · Content Strategy · Reporting",
-      "h1Lead": "SEO",
-      "h1Accent": "Services",
-      "subhead": "Search Engine Optimization, Technical SEO & Content Strategy for Growing Businesses — Since 2018",
+      "h1Lead": "SEO Services in Kochi for Businesses That Want",
+      "h1Accent": "Lasting Rankings",
+      "subhead": "Technical SEO, on-page, local SEO and content strategy, with monthly reporting. Trusted since 2018.",
       "body": [
-        { "text": "SEO services are what Teknoppy has delivered since 2018, and this page is the place to understand exactly what that means before you commit to any agency. As a full-service SEO agency, we combine search engine optimization services with technical fixes, content strategy, and honest reporting — built for businesses that want durable rankings, not a one-month spike that fades." },
-        { "text": "Whether you run a small clinic, a growing SaaS company, or an established enterprise, our SEO services are built around one idea: organic SEO services should compound over time, not chase algorithm updates every quarter. Most clients see meaningful movement within 3 to 6 months, and the gains keep building from there rather than resetting." },
-        { "text": "As SEO consulting services, we work with in-house marketing teams, founders, and agencies that need a specialist partner — not a generalist trying to cover everything at once." }
+        {
+          "text": "SEO services are the ongoing work of improving a website so it ranks higher in Google and is cited in AI answers. Teknoppy, a Kochi-based SEO agency since 2018, delivers a technical audit, on-page fixes, content, local SEO and link building, reported monthly. Most clients see movement in 3 to 6 months."
+        },
+        {
+          "text": "Founded 2018 | Based in Vyttila, Kochi | Plans from Rs. 15,000/month | First movement in 3-6 months | Monthly reporting."
+        },
+        {
+          "text": "We also advise in-house teams, founders and agencies that need a specialist partner — with every campaign tied to qualified organic enquiries, calls and sales."
+        }
       ],
       "stats": [
-        { "value": "120+", "label": "Projects Delivered" },
-        { "value": "2018", "label": "Established" },
-        { "value": "3–6 Mo", "label": "Typical Ranking Timeline" },
-        { "value": "Monthly", "label": "Reporting Cadence" }
+        {
+          "value": "120+",
+          "label": "Web & Digital Projects"
+        },
+        {
+          "value": "2018",
+          "label": "Established"
+        },
+        {
+          "value": "3–6 Mo",
+          "label": "Typical Ranking Timeline"
+        },
+        {
+          "value": "Monthly",
+          "label": "Reporting Cadence"
+        }
       ]
     },
     {
       "type": "prose",
       "bg": "cream",
-      "h2": "What Great SEO Services Actually Include",
+      "h2": "What Do SEO Services Include?",
       "paragraphs": [
-        { "text": "Real SEO services are more than a monthly blog post and a backlink report. They cover SEO strategy and planning, technical SEO audit and fixes, on-page optimization services, content SEO and keyword strategy, website speed and Core Web Vitals fixes, and ongoing link building and authority building — each working together under one SEO management services plan, not sold as disconnected add-ons." }
+        {
+          "html": "Real SEO services are more than a monthly blog post and a backlink report. A complete engagement covers:<br/><br/>• <strong>SEO strategy and keyword research:</strong> what to target, and why.<br/>• <strong>Technical SEO:</strong> crawlability, indexing and site health.<br/>• <strong>On-page optimization:</strong> titles, headings, content and schema.<br/>• <strong>Content SEO:</strong> pages and articles built around real search questions.<br/>• <strong>Speed and Core Web Vitals:</strong> faster pages, better page experience.<br/>• <strong>Link building:</strong> earned links that build durable authority."
+        }
       ]
     },
     {
@@ -39,7 +69,9 @@
       "bg": "white",
       "h2": "Why SEO Matters in 2026",
       "paragraphs": [
-        { "text": "Search behavior keeps splitting across more surfaces than a single Google results page — AI Overviews, ChatGPT, and Perplexity now answer questions that used to send a click to a website. SEO services in 2026 have to plan for both: rankings in traditional search, and citability in AI-generated answers. A site that only optimizes for the old model is already behind on the newer one, even if last year's tactics still technically \"work.\"" }
+        {
+          "text": "Search behavior keeps splitting across more surfaces than a single Google results page — AI Overviews, ChatGPT, and Perplexity now answer questions that used to send a click to a website. SEO services in 2026 have to plan for both: rankings in traditional search, and citability in AI-generated answers. A site that only optimizes for the old model is already behind on the newer one, even if last year's tactics still technically \"work.\""
+        }
       ]
     },
     {
@@ -49,10 +81,22 @@
       "badge": "The Teknoppy Advantage",
       "h2": "Why Teknoppy's SEO Services Are Trusted",
       "items": [
-        { "title": "Data-Driven, Not Guesswork", "text": "As data-driven SEO services, every recommendation ties back to search data, competitor gaps, and real ranking opportunity — not a generic checklist applied to every client the same way." },
-        { "title": "Transparent From Day One", "text": "Our transparent SEO reporting means you see exactly what was done, what it cost, and what changed — reviewed together, not buried in a dashboard nobody explains." },
-        { "title": "In-House, Not Outsourced Twice", "text": "As an in-house SEO team, our experienced SEO strategists handle your account directly \u2014 no reselling, no second agency in the chain, and the same people on your account from audit to reporting." },
-        { "title": "Proven, Not Promised", "text": "We are an SEO agency with real case studies — actual ranking and traffic results from actual clients, available on request, not just claimed on a homepage." }
+        {
+          "title": "Data-Driven, Not Guesswork",
+          "text": "Every recommendation ties back to search data, competitor gaps and real ranking opportunity — not a generic checklist applied to every client the same way."
+        },
+        {
+          "title": "Transparent From Day One",
+          "text": "Our transparent SEO reporting means you see exactly what was done, what it cost, and what changed — reviewed together, not buried in a dashboard nobody explains."
+        },
+        {
+          "title": "In-House, Not Outsourced Twice",
+          "text": "Our in-house strategists handle your account directly, from audit to reporting — no reselling, no second agency in the chain."
+        },
+        {
+          "title": "Proven, Not Promised",
+          "text": "Our results come from real client work. See the case studies below for verified ranking and traffic outcomes."
+        }
       ]
     },
     {
@@ -62,20 +106,57 @@
       "h2": "Our SEO Services",
       "intro": "Teknoppy's SEO services cover the full stack, each backed by a dedicated specialist and a written scope before work begins.",
       "items": [
-        { "title": "Technical SEO", "text": "Site health, crawlability, and indexing fixes that clear the path for everything else to work.", "linkText": "Technical SEO →", "href": "/technical-seo-services-kochi/" },
-        { "title": "Local SEO", "text": "Local search visibility services for businesses that depend on nearby customers finding them first.", "linkText": "Local SEO →", "href": "/local-seo-services-kochi/" },
-        { "title": "On-Page SEO", "text": "On-page optimization services covering titles, structure, and schema and structured data implementation.", "linkText": "On-Page SEO →", "href": "/on-page-seo-services-kochi/" },
-        { "title": "SEO Audit", "text": "A full SEO site architecture planning review that flags exactly what is holding a site back.", "linkText": "SEO Audit →", "href": "/seo-audit-services-kochi/" },
-        { "title": "Core Web Vitals Optimization", "text": "Fixing the technical metrics Google uses to judge page experience.", "linkText": "Core Web Vitals Optimization →", "href": "/core-web-vitals-optimization-kochi/" },
-        { "title": "Website Speed Optimization", "text": "Faster load times, which support rankings, conversions, and Core Web Vitals.", "linkText": "Website Speed Optimization →", "href": "/website-speed-optimization-services-kochi/" },
-        { "title": "Ecommerce SEO", "text": "Ecommerce SEO strategy for product pages, category structure, and search-driven revenue.", "linkText": "Ecommerce SEO →", "href": "/ecommerce-seo-services-kochi/" }
+        {
+          "title": "Technical SEO",
+          "text": "Site health, crawlability, and indexing fixes that clear the path for everything else to work.",
+          "linkText": "Technical SEO →",
+          "href": "/technical-seo-services-kochi/"
+        },
+        {
+          "title": "Local SEO",
+          "text": "Local search visibility services for businesses that depend on nearby customers finding them first.",
+          "linkText": "Local SEO →",
+          "href": "/local-seo-services-kochi/"
+        },
+        {
+          "title": "On-Page SEO",
+          "text": "On-page optimization services covering titles, structure, and schema and structured data implementation.",
+          "linkText": "On-Page SEO →",
+          "href": "/on-page-seo-services-kochi/"
+        },
+        {
+          "title": "SEO Audit",
+          "text": "A full review of site structure, content and technical health that flags exactly what is holding your rankings back.",
+          "linkText": "SEO Audit →",
+          "href": "/seo-audit-services-kochi/"
+        },
+        {
+          "title": "Core Web Vitals Optimization",
+          "text": "Fixing the technical metrics Google uses to judge page experience.",
+          "linkText": "Core Web Vitals Optimization →",
+          "href": "/core-web-vitals-optimization-kochi/"
+        },
+        {
+          "title": "Website Speed Optimization",
+          "text": "Faster load times, which support rankings, conversions, and Core Web Vitals.",
+          "linkText": "Website Speed Optimization →",
+          "href": "/website-speed-optimization-services-kochi/"
+        },
+        {
+          "title": "Ecommerce SEO",
+          "text": "Ecommerce SEO strategy for product pages, category structure, and search-driven revenue.",
+          "linkText": "Ecommerce SEO →",
+          "href": "/ecommerce-seo-services-kochi/"
+        }
       ]
     },
     {
       "type": "prose",
       "bg": "white",
       "paragraphs": [
-        { "text": "Every engagement also includes keyword research and mapping, so content and technical work point at the same target." }
+        {
+          "text": "Every engagement also includes keyword research and mapping, so content and technical work point at the same target."
+        }
       ]
     },
     {
@@ -84,47 +165,99 @@
       "badge": "How We Work",
       "h2": "Our SEO Process — How We Work",
       "items": [
-        { "title": "Audit & Research (Week 1).", "text": "Full technical, on-page, and competitor audit before any recommendation is made." },
-        { "title": "Strategy & Roadmap (Week 2).", "text": "A written plan with priorities, timelines, and expected impact." },
-        { "title": "Implementation (Ongoing, Monthly Cycles).", "text": "Technical fixes, content, and link building run in monthly sprints, tracked against the roadmap." },
-        { "title": "Reporting & Review (Monthly).", "text": "A plain-English report and a call to walk through what moved, what didn't, and why." },
-        { "title": "Scaling (Month 4 Onward).", "text": "Once early technical and on-page work compounds, budget shifts toward content and authority building." }
+        {
+          "title": "Audit & Research (Week 1).",
+          "text": "Full technical, on-page, and competitor audit before any recommendation is made."
+        },
+        {
+          "title": "Strategy & Roadmap (Week 2).",
+          "text": "A written plan with priorities, timelines, and expected impact."
+        },
+        {
+          "title": "Implementation (Ongoing, Monthly Cycles).",
+          "text": "Technical fixes, content, and link building run in monthly sprints, tracked against the roadmap."
+        },
+        {
+          "title": "Reporting & Review (Monthly).",
+          "text": "A plain-English report and a call to walk through what moved, what didn't, and why."
+        },
+        {
+          "title": "Scaling (Month 4 Onward).",
+          "text": "Once early technical and on-page work compounds, budget shifts toward content and authority building."
+        }
       ]
     },
     {
       "type": "pricing",
       "bg": "white",
-      "h2": "Investment Guide for SEO Services",
-      "columns": ["Service", "Estimated Investment"],
-      "rows": [
-        { "service": "SEO Audit (one-time)", "price": "Rs. 15,000 – 40,000" },
-        { "service": "SEO services for small businesses", "price": "Rs. 15,000 – 35,000 / month" },
-        { "service": "Monthly SEO services (mid-size / competitive)", "price": "Rs. 35,000 – 75,000 / month" },
-        { "service": "Enterprise SEO services", "price": "Rs. 75,000 – 2,00,000+ / month" },
-        { "service": "White-label SEO services (for agencies)", "price": "Custom, quoted per client volume" }
+      "h2": "How Much Do SEO Services Cost?",
+      "columns": [
+        "Service",
+        "Estimated Investment"
       ],
-      "note": "Every plan is delivered as SEO services with written scope — a document stating exactly what is included. We are also an affordable SEO services option for smaller teams, scaling into ROI-focused SEO agency retainers as budgets grow. Reviewed and updated July 2026."
+      "rows": [
+        {
+          "service": "SEO Audit (one-time)",
+          "price": "Rs. 15,000 – 40,000"
+        },
+        {
+          "service": "SEO services for small businesses",
+          "price": "Rs. 15,000 – 35,000 / month"
+        },
+        {
+          "service": "Monthly SEO services (mid-size / competitive)",
+          "price": "Rs. 35,000 – 75,000 / month"
+        },
+        {
+          "service": "Enterprise SEO services",
+          "price": "Rs. 75,000 – 2,00,000+ / month"
+        },
+        {
+          "service": "White-label SEO services (for agencies)",
+          "price": "Custom, quoted per client volume"
+        }
+      ],
+      "note": "Most businesses pay Rs. 15,000 to Rs. 75,000 per month for SEO services at Teknoppy. A one-time SEO audit costs Rs. 15,000 to Rs. 40,000. We offer entry-level plans for smaller teams and scale retainers as budgets grow. Reviewed and updated October 2026."
     },
     {
       "type": "cards",
       "bg": "soft",
       "columns": 2,
       "h2": "Who We Serve",
-      "intro": "Teknoppy delivers SEO services for startups, healthcare providers, hospitality brands, real estate firms, and manufacturers — locally from our base in Kerala, across India, and for clients further afield including the GCC. As a result-oriented SEO agency, our approach adapts by industry:",
+      "intro": "Teknoppy delivers SEO services for startups, healthcare providers, hospitality brands, real estate firms, and manufacturers — locally from our base in Kerala, across India, and for clients further afield including the GCC. Our approach changes by industry:",
       "items": [
-        { "title": "Startups", "text": "Need visibility fast on a lean budget, so early work leans technical and on-page." },
-        { "title": "Healthcare & Clinics", "text": "Need trust-first local content alongside technical accuracy." },
-        { "title": "Hospitality & Tourism", "text": "Need seasonal keyword planning around booking windows." },
-        { "title": "Ecommerce", "text": "Needs category-page structure and product-level optimization working together." },
-        { "title": "Enterprise & Corporate", "text": "Needs governance, reporting cadence, and stakeholder-ready summaries." }
+        {
+          "title": "Startups",
+          "text": "Need visibility fast on a lean budget, so early work leans technical and on-page."
+        },
+        {
+          "title": "Healthcare & Clinics",
+          "text": "Need trust-first local content alongside technical accuracy."
+        },
+        {
+          "title": "Hospitality & Tourism",
+          "text": "Need seasonal keyword planning around booking windows."
+        },
+        {
+          "title": "Ecommerce",
+          "text": "Needs category-page structure and product-level optimization working together."
+        },
+        {
+          "title": "Enterprise & Corporate",
+          "text": "Needs governance, reporting cadence, and stakeholder-ready summaries."
+        }
       ]
     },
     {
       "type": "prose",
       "bg": "white",
       "paragraphs": [
-        { "text": "Across every one of these, our SEO services with proven results rely on the same audit-plan-execute-report discipline, whether the client is in Kochi, elsewhere in Kerala, or overseas." },
-        { "html": "View all projects: <a href=\"/portfolios/\" class=\"text-primary font-semibold hover:underline\">teknoppy.com/portfolios/</a>" }
+        {
+          "text": "Across every one of these, every project follows the same cycle: audit, plan, execute, report, whether the client is in Kochi, elsewhere in Kerala, or overseas."
+        },
+        {
+          "html": "View all projects: <a href=\"/portfolios/\" class=\"text-primary font-semibold hover:underline\">teknoppy.com/portfolios/</a>"
+        }
       ]
     },
     {
@@ -134,8 +267,14 @@
       "h2": "Featured Projects — Real SEO Results We Have Delivered",
       "intro": "An overview of SEO engagements delivered for clients across Kerala — each built on the same audit-plan-execute-report discipline described on this page.",
       "items": [
-        { "title": "Olives Resort — Hospitality SEO & Local Search", "html": "<span class=\"text-[12px] font-black text-primary uppercase tracking-wider block mb-2\">Wayanad · Hospitality</span>Technical SEO, local search optimization, and seasonal keyword planning for a resort competing for direct bookings around peak travel windows.<br /><br /><strong>Result:</strong> Top Google rankings for target keywords and a significant increase in direct booking calls." },
-        { "title": "Greens Ayurveda — Healthcare & Wellness SEO", "html": "<span class=\"text-[12px] font-black text-primary uppercase tracking-wider block mb-2\">Calicut · Ayurveda</span>Trust-first local content and technical SEO for an Ayurvedic wellness brand serving domestic and international patients.<br /><br /><strong>Result:</strong> Stronger organic visibility for treatment keywords and improved engagement from international enquiries." }
+        {
+          "title": "Olives Resort — Hospitality SEO & Local Search",
+          "html": "<span class=\"text-[12px] font-black text-primary uppercase tracking-wider block mb-2\">Wayanad · Hospitality</span>Technical SEO, local search optimization, and seasonal keyword planning for a resort competing for direct bookings around peak travel windows.<br /><br /><strong>Result:</strong> Top Google rankings for target keywords and a significant increase in direct booking calls."
+        },
+        {
+          "title": "Greens Ayurveda — Healthcare & Wellness SEO",
+          "html": "<span class=\"text-[12px] font-black text-primary uppercase tracking-wider block mb-2\">Calicut · Ayurveda</span>Trust-first local content and technical SEO for an Ayurvedic wellness brand serving domestic and international patients.<br /><br /><strong>Result:</strong> Stronger organic visibility for treatment keywords and improved engagement from international enquiries."
+        }
       ]
     },
     {
@@ -146,7 +285,9 @@
         {
           "title": "Case Study 1 — Olives Resort: SEO That Converts Search Visibility Into Direct Bookings",
           "intro": [
-            { "text": "Olives Resort is a hospitality brand in Wayanad competing for attention in a seasonal, booking-driven market. They approached Teknoppy to improve organic visibility and turn that visibility into direct enquiries, rather than relying solely on OTA listings." }
+            {
+              "text": "Olives Resort is a hospitality brand in Wayanad competing for attention in a seasonal, booking-driven market. They approached Teknoppy to improve organic visibility and turn that visibility into direct enquiries, rather than relying solely on OTA listings."
+            }
           ],
           "approach": [
             "Technical & on-page audit — fixing crawlability, site speed, and structured data.",
@@ -161,20 +302,35 @@
           ],
           "quote": "We now rank at the top of Google for our keywords and get many direct booking calls due to better visibility. Thank you Teknoppy for all the support.",
           "author": "— Biju Thomas, CEO, Olives Resort, Wayanad",
-          "links": "Full case study: <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">teknoppy.com/olives-resort-case-study/</a>"
+          "links": "Full case study: <a href=\"/case-studies/olives-boutique-resort-digital-marketing/\" class=\"text-primary font-semibold hover:underline\">Read the full Olives Resort case study →</a>"
         }
       ]
     },
     {
       "type": "posts",
       "bg": "cream",
-      "h2": "Latest Blog Posts — Web Design & Digital Insights",
+      "h2": "SEO Guides and Insights",
       "items": [
-        { "title": "Beyond Rankings: How Top SEO Companies Are Redefining Digital Success in the AI-First Era", "text": "How AI is reshaping organic search and what businesses must do differently in 2026.", "href": "/blog/seo-ai-first-era/" },
-        { "title": "How to Rank #1 on Google Maps in Kochi: Local SEO Guide 2026", "text": "A practical local SEO guide covering Google Business Profile optimization and map-pack visibility.", "href": "/blog/" },
-        { "title": "Digital Marketing Strategy Framework: Build a Winning Plan for Your Business", "text": "A structured framework for building a digital marketing plan that ties SEO, content, and channels together.", "href": "/blog/" }
+        {
+          "title": "Beyond Rankings: How Top SEO Companies Are Redefining Digital Success in the AI-First Era",
+          "text": "How AI is reshaping organic search and what businesses must do differently in 2026.",
+          "href": "/blog/seo-ai-first-era/"
+        },
+        {
+          "title": "How to Rank #1 on Google Maps in Kochi: Local SEO Guide 2026",
+          "text": "A practical local SEO guide covering Google Business Profile optimization and map-pack visibility.",
+          "href": "/blog/"
+        },
+        {
+          "title": "Digital Marketing Strategy Framework: Build a Winning Plan for Your Business",
+          "text": "A structured framework for building a digital marketing plan that ties SEO, content, and channels together.",
+          "href": "/blog/"
+        }
       ],
-      "viewAll": { "label": "View all posts", "href": "/blog/" }
+      "viewAll": {
+        "label": "View all posts",
+        "href": "/blog/"
+      }
     },
     {
       "type": "faq",
@@ -183,14 +339,46 @@
       "badge": "Have Questions?",
       "h2": "Frequently Asked Questions",
       "items": [
-        { "q": "What do SEO services include?", "a": "A complete engagement covers technical SEO, on-page optimization, content and keyword strategy, link building, and monthly reporting — not just one of these sold alone as \"SEO.\"" },
-        { "q": "How much do SEO services cost?", "a": "Most businesses invest between Rs. 15,000 and Rs. 75,000 per month depending on competition and scope; enterprise engagements run higher. A written quote is shared before work starts." },
-        { "q": "How long do SEO services take to show results?", "a": "Most clients see meaningful movement within 3 to 6 months, with gains compounding over the following months rather than resetting each cycle." },
-        { "q": "How to choose an SEO services company?", "a": "Look for written scope, transparent reporting, real case studies, and a team that can explain its reasoning in plain language — not just promise page-one rankings." },
-        { "q": "What is the difference between SEO services and SEO consulting?", "a": "SEO services mean we execute the work directly — audits, fixes, content, links. SEO consulting services mean we advise your existing team on strategy while your staff implements it." },
-        { "q": "Which is the best SEO services provider for my business?", "a": "The right fit depends on your industry, budget, and current site health — a best SEO services for businesses answer is rarely one-size-fits-all, which is why every engagement starts with an audit." },
-        { "q": "Do SEO services also help with AI answer engines like ChatGPT and Perplexity?", "a": "Yes. Alongside traditional Google rankings, we structure content and schema for AEO and GEO, since SEO services that also optimize for AI answer engines are increasingly what separates a modern agency from a legacy one." },
-        { "q": "Do you offer SEO services for businesses outside Kerala or India?", "a": "Yes. While Teknoppy is based in Kerala, our SEO services are delivered remotely for clients across India and internationally, with reporting calls scheduled to suit the client's time zone." }
+        {
+          "q": "What do SEO services include?",
+          "a": "A complete engagement covers technical SEO, on-page optimization, content and keyword strategy, link building, and monthly reporting — not just one of these sold alone as 'SEO'."
+        },
+        {
+          "q": "How much do SEO services cost?",
+          "a": "Most businesses invest between Rs. 15,000 and Rs. 75,000 per month depending on competition and scope; enterprise engagements run higher. A written quote is shared before work starts."
+        },
+        {
+          "q": "How long do SEO services take to show results?",
+          "a": "Most clients see meaningful movement within 3 to 6 months, with gains compounding over the following months rather than resetting each cycle."
+        },
+        {
+          "q": "Which SEO provider is right for my business?",
+          "a": "The right fit depends on your industry, budget and current site health. That is why every Teknoppy engagement starts with an audit: it shows what to fix first and what results are realistic."
+        },
+        {
+          "q": "What is the difference between SEO services and SEO consulting?",
+          "a": "SEO services mean we execute the work directly — audits, fixes, content, links. SEO consulting services mean we advise your existing team on strategy while your staff implements it."
+        },
+        {
+          "q": "Do you guarantee page-one rankings?",
+          "a": "No. Google controls rankings, so no ethical agency can guarantee them. We commit to a written scope, monthly reporting and work tied to keywords and pages that can move. Most clients see movement within 3 to 6 months."
+        },
+        {
+          "q": "Does Teknoppy offer SEO services in Kochi?",
+          "a": "Yes. Teknoppy is based in Vyttila, Kochi, and delivers SEO services for businesses in Kochi, across Kerala and in the GCC. Remote clients get reporting calls at a time that suits their time zone."
+        },
+        {
+          "q": "What do I get in the first 90 days of SEO?",
+          "a": "Month 1 covers the audit, keyword mapping and a written roadmap. Months 2 and 3 focus on technical fixes, on-page updates and content. Ranking movement usually starts between months 3 and 6."
+        },
+        {
+          "q": "What reports will I receive?",
+          "a": "A plain-English monthly report and a review call covering what was done, what moved and why. It tracks rankings, organic traffic and enquiries, not just impressions."
+        },
+        {
+          "q": "Do SEO services also help with AI answer engines like ChatGPT and Perplexity?",
+          "a": "Yes. Alongside traditional Google rankings, we structure content and schema for AEO and GEO, since SEO services that also optimize for AI answer engines are increasingly what separates a modern agency from a legacy one."
+        }
       ]
     },
     {
@@ -204,8 +392,8 @@
           "contact": "sales@teknoppy.com · +91 6282249224",
           "photo": "/sanal.png",
           "photoAlt": "Sanal Edison, Founder and Digital Strategist at Teknoppy",
-          "bio": "Sanal has led 120+ SEO and digital projects since founding Teknoppy in 2018, working directly with clients across Kerala, India, and internationally.",
-          "reviewed": "Reviewed: July 2026."
+          "bio": "Sanal has led 120+ web and digital projects since founding Teknoppy in 2018, working directly with clients across Kerala, India, and internationally.",
+          "reviewed": "Reviewed: October 2026."
         },
         {
           "name": "Niya K K",
@@ -235,18 +423,29 @@
       "bg": "white",
       "h2": "Start Your SEO Project",
       "paragraphs": [
-        { "text": "As a trusted provider of SEO services, Teknoppy is ready to audit your current site, build a written roadmap, and start reporting results on a monthly cycle." }
+        {
+          "text": "Teknoppy is ready to audit your current site, build a written roadmap, and start reporting results on a monthly cycle."
+        }
       ],
       "ctas": [
-        { "label": "Free Website Audit →", "href": "/free-website-audit-kerala/" },
-        { "label": "Request a Quote →", "href": "/request-a-quote/" },
-        { "label": "Book a Consultation →", "href": "/book-a-consultation/" }
+        {
+          "label": "Free Website Audit →",
+          "href": "/free-website-audit-kerala/"
+        },
+        {
+          "label": "Request a Quote →",
+          "href": "/request-a-quote/"
+        },
+        {
+          "label": "Book a Consultation →",
+          "href": "/book-a-consultation/"
+        }
       ]
     },
     {
       "type": "byline",
       "bg": "cream",
-      "text": "Teknoppy — SEO Services · teknoppy.com · +91 6282249224 · sales@teknoppy.com · Second Floor, Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam, Kochi, Kerala 682019"
+      "text": "Teknoppy — SEO Services · teknoppy.com · +91 6282249224 · sales@teknoppy.com — Written by Sanal Edison, Founder and SEO Strategy Lead. Reviewed by Niya K K, SEO Lead. Last updated October 2026."
     }
   ],
   "devNotes": {
@@ -257,7 +456,7 @@
     "schemaStack": "Organization · Service · FAQPage · BreadcrumbList · AggregateRating · Person",
     "urlDiscrepancy": "Other pages (Services hub, SEO Company Kerala) linked to /seo/. This doc specifies /seo-services/, so the page is built there and those links were updated to match.",
     "cannibalizationCheck": "This page does not target \"Kochi\" or \"Kerala\" as keywords, and does not use exact-match phrases reserved for child pages (Technical SEO, Local SEO, On-Page SEO, SEO Audit, Core Web Vitals Optimization, Website Speed Optimization, Ecommerce SEO, SEO Company Kochi, SEO Company Kerala). Child-page names are used only as anchor-linked service names; Kochi/Kerala appear only as service-area context.",
-    "childPages": "All seven child pages are now built. Each doc specified a longer permalink than the pillar copy used, so every link here was repointed: /technical-seo/ \u2192 /technical-seo-services-kochi/, /local-seo/ \u2192 /local-seo-services-kochi/, /on-page-seo/ \u2192 /on-page-seo-services-kochi/, /seo-audit/ \u2192 /seo-audit-services-kochi/, /core-web-vitals-optimization/ \u2192 /core-web-vitals-optimization-kochi/, /website-speed-optimization/ \u2192 /website-speed-optimization-services-kochi/, /ecommerce-seo/ \u2192 /ecommerce-seo-services-kochi/. The short paths are kept as redirects in vercel.json in case the doc URLs were published anywhere.",
+    "childPages": "All seven child pages are now built. Each doc specified a longer permalink than the pillar copy used, so every link here was repointed: /technical-seo/ → /technical-seo-services-kochi/, /local-seo/ → /local-seo-services-kochi/, /on-page-seo/ → /on-page-seo-services-kochi/, /seo-audit/ → /seo-audit-services-kochi/, /core-web-vitals-optimization/ → /core-web-vitals-optimization-kochi/, /website-speed-optimization/ → /website-speed-optimization-services-kochi/, /ecommerce-seo/ → /ecommerce-seo-services-kochi/. The short paths are kept as redirects in vercel.json in case the doc URLs were published anywhere.",
     "aggregateRating": "Doc lists AggregateRating in the schema stack. Withheld until verified ratings exist, consistent with the Certifications page rule.",
     "dataNeededBeforeLaunch": [
       "Photo files for the three SEO team members are not in the repo yet. The team block references /team/niya-kk.webp, /team/neha-p.webp, and /team/nithya-sibi.webp — save the portraits to public/team/ under exactly those names, or the cards render without an avatar.",
