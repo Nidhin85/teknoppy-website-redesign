@@ -1,31 +1,46 @@
 {
   "meta": {
-    "title": "Branding Agency Kochi | Teknoppy",
-    "description": "Looking for a Branding Agency Kochi businesses can rely on? Teknoppy builds identity, messaging and ad creative that stay consistent on every channel."
+    "title": "Branding Agency in Kochi | Logo & Brand Identity | Teknoppy",
+    "description": "Branding agency in Kochi: logo, brand identity, messaging and guidelines, applied across your website and ads. See what is included and get a quote."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Digital Marketing Company in Kochi", "href": "/digital-marketing-company-kochi/" },
-    { "name": "Branding Agency Kochi", "href": "/branding-agency-kochi/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "Branding Agency in Kochi",
+      "href": "/branding-agency-kochi/"
+    }
   ],
   "sections": [
     {
       "type": "hero",
-      "badge": "Digital Marketing",
-      "h1Lead": "Branding Agency",
+      "badge": "Branding & Creative",
+      "h1Lead": "Branding Agency in",
       "h1Accent": "Kochi",
       "subhead": "Identity, Messaging and Creative That Make Your Business Look Credible Everywhere",
       "body": [
         {
-          "html": "<strong>Branding Agency Kochi</strong> — that's what businesses search for when their logo, website, social pages and ads all look like they belong to different companies. Teknoppy crafts identity, messaging, and ad creative that make your business look credible across every channel and lift campaign performance."
+          "text": "Teknoppy is a branding agency in Kochi, Kerala. We create your logo, colours, typography, messaging and brand guidelines, then apply them to your website, ads and social media. Branding is priced per project, with a written quote before work begins."
         },
         {
-          "html": "Choosing the right <strong>Branding Agency Kochi</strong> partner matters because branding is not a logo file. It is the set of decisions — name, colours, typography, tone of voice, imagery — that every later piece of marketing is built on. When those decisions are made once and written down, every website page, ad and post gets faster to produce and easier to recognise."
+          "text": "Branding is more than a logo. It is the set of decisions (name, colours, typography, tone of voice and imagery) that every later piece of marketing is built on. When those decisions are written down once, every web page, ad and post is faster to produce and easier to recognise."
         }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ],
       "trustline": "120+ Projects Delivered · In Kochi Since 2018 · Identity, Messaging & Ad Creative"
     },
@@ -38,7 +53,7 @@
       "items": [
         {
           "title": "Logo & Visual Identity",
-          "html": "<strong>Logo design services Kochi</strong> businesses use to get a complete identity rather than a single mark — primary and secondary logos, colour palette, typography and the usage rules that keep them consistent."
+          "text": "Logo design for Kochi businesses that want a complete identity, not a single mark: primary and secondary logos, colour palette, typography and the usage rules that keep them consistent."
         },
         {
           "title": "Brand Messaging & Tone of Voice",
@@ -80,7 +95,8 @@
           "title": "Rollout Across Channels",
           "text": "The identity is applied to your website, social profiles, ad creative and collateral, so the new brand appears consistently everywhere at once."
         }
-      ]
+      ],
+      "intro": "Our branding process has five steps, from brand audit to rollout across your channels."
     },
     {
       "type": "bullets",
@@ -88,10 +104,18 @@
       "badge": "The Teknoppy Advantage",
       "h2": "Why Choose Teknoppy for Branding in Kochi",
       "items": [
-        { "html": "<strong>Branding built by the same team that builds your website and runs your campaigns</strong>, so the identity is designed for the places it will actually be used, not just for a presentation slide." },
-        { "html": "<strong>Messaging before visuals.</strong> We settle what the brand needs to say before choosing how it looks, which keeps design decisions tied to a business reason." },
-        { "html": "<strong>Guidelines your team can actually follow</strong> — short, practical, and written for the people who will use them every day." },
-        { "html": "<strong>Creative designed to perform.</strong> Ad creative is produced alongside our Google Ads and social media teams, so it is built around how campaigns are really run." }
+        {
+          "html": "<strong>Branding built by the same team that builds your website and runs your campaigns</strong>, so the identity is designed for the places it will actually be used, not just for a presentation slide."
+        },
+        {
+          "html": "<strong>Messaging before visuals.</strong> We settle what the brand needs to say before choosing how it looks, which keeps design decisions tied to a business reason."
+        },
+        {
+          "html": "<strong>Guidelines your team can actually follow</strong> — short, practical, and written for the people who will use them every day."
+        },
+        {
+          "html": "<strong>Creative designed to perform.</strong> Ad creative is produced alongside our Google Ads and social media teams, so it is built around how campaigns are really run."
+        }
       ]
     },
     {
@@ -100,9 +124,15 @@
       "h2": "Who Needs Branding Services",
       "intro": "This service fits businesses that are:",
       "items": [
-        { "text": "Launching a new business or product and need an identity before the website and marketing begin" },
-        { "text": "Established, but with a logo, website and social presence that no longer look like the same company" },
-        { "text": "Running ads or social campaigns with inconsistent creative that is hurting trust and performance" }
+        {
+          "text": "Launching a new business or product and need an identity before the website and marketing begin"
+        },
+        {
+          "text": "Established, but with a logo, website and social presence that no longer look like the same company"
+        },
+        {
+          "text": "Running ads or social campaigns with inconsistent creative that is hurting trust and performance"
+        }
       ],
       "outro": [
         {
@@ -116,10 +146,10 @@
     {
       "type": "prose",
       "bg": "cream",
-      "h2": "Branding Pricing",
+      "h2": "Branding Pricing in Kochi",
       "paragraphs": [
         {
-          "html": "Branding is priced per project, scoped to what you need — identity only, identity plus messaging and guidelines, or a full rollout including website and campaign creative. For a tailored estimate, <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a> or <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">Book a Consultation</a>."
+          "html": "Branding is priced per project. One-time branding projects at Teknoppy typically fall between Rs. 25,000 and Rs. 1,00,000, depending on scope. You get a written quote before any work begins. To get a tailored estimate, <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a> or <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">Book a Consultation</a>."
         }
       ]
     },
@@ -128,10 +158,23 @@
       "bg": "soft",
       "h2": "Related Services",
       "items": [
-        { "label": "Digital Marketing Company in Kochi", "href": "/digital-marketing-company-kochi/", "text": "our full digital marketing pillar" },
-        { "label": "Social Media Marketing", "href": "/social-media-marketing-company-kochi/" },
-        { "label": "Google Ads Management", "href": "/google-ads-company-kochi/" },
-        { "label": "Web Design Company in Kochi", "href": "/web-design-company-kochi/" }
+        {
+          "label": "Digital Marketing Company in Kochi",
+          "href": "/digital-marketing-company-kochi/",
+          "text": "our full digital marketing pillar"
+        },
+        {
+          "label": "Social Media Marketing",
+          "href": "/social-media-marketing-company-kochi/"
+        },
+        {
+          "label": "Google Ads Management",
+          "href": "/google-ads-company-kochi/"
+        },
+        {
+          "label": "Web Design Company in Kochi",
+          "href": "/web-design-company-kochi/"
+        }
       ]
     },
     {
@@ -173,12 +216,18 @@
       "h2": "Ready to Start Your Branding Project?",
       "paragraphs": [
         {
-          "html": "If your business looks different everywhere it appears, customers notice. Teknoppy's <strong>Branding Agency Kochi</strong> team builds an identity and messaging system that keeps every channel consistent."
+          "text": "Tell us about your business and goals. We will reply with a clear scope and a written quote before any work begins."
         }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
