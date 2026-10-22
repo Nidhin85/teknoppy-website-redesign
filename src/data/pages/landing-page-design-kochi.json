@@ -1,12 +1,21 @@
 {
   "meta": {
-    "title": "Landing Page Design in Kochi | Teknoppy",
-    "description": "High-converting landing pages for Google Ads and Meta campaigns - fast, mobile-first and built around one offer. Ready in 5-10 days. Get a quote."
+    "title": "Landing Page Design in Kochi | High-Converting Pages | Teknoppy",
+    "description": "Landing page design in Kochi for Google Ads, Meta ads and launches. One offer, fast mobile pages, tracking built in. Ready in 5-10 working days."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Website Design & Development", "href": "/web-design-company-kochi/" },
-    { "name": "Landing Page Design", "href": "/landing-page-design-kochi/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Website Design & Development",
+      "href": "/web-design-company-kochi/"
+    },
+    {
+      "name": "Landing Page Design",
+      "href": "/landing-page-design-kochi/"
+    }
   ],
   "sections": [
     {
@@ -25,13 +34,28 @@
         }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ],
       "stats": [
-        { "value": "120+", "label": "Web Projects Delivered" },
-        { "value": "45+", "label": "Campaign Landing Pages" },
-        { "value": "5-10", "label": "Days Typical Turnaround" }
+        {
+          "value": "120+",
+          "label": "Web Projects Delivered"
+        },
+        {
+          "value": "45+",
+          "label": "Campaign Landing Pages"
+        },
+        {
+          "value": "5-10",
+          "label": "Days Typical Turnaround"
+        }
       ]
     },
     {
@@ -96,7 +120,7 @@
       "items": [
         {
           "title": "Built for ROI, Not Just Aesthetics",
-          "text": "Every layout decision is guided by conversion science — eye-tracking paths, objection-handling copy, and friction-free forms designed to lower cost-per-acquisition."
+          "text": "Every page we build starts from the ad and the offer, not from a website template. Every layout decision is guided by conversion science — eye-tracking paths, objection-handling copy, and friction-free forms designed to lower cost-per-acquisition."
         },
         {
           "title": "Speed Engineered for Ad Quality Score",
@@ -118,10 +142,18 @@
       "h2": "Who Needs Landing Page Design",
       "intro": "This service is the right fit whenever a business needs one page to do one specific job:",
       "items": [
-        { "text": "Google Ads PPC Campaigns: Where message match, relevance, and speed directly reduce your cost per lead (CPL)." },
-        { "text": "Meta (Facebook/Instagram) ad campaigns and click-to-WhatsApp offers targeting regional Kerala or GCC customers." },
-        { "text": "High-Value B2B Lead Generation: For webinars, whitepapers, consultation bookings, and corporate service inquiries." },
-        { "text": "Product Launches & Limited-Time Real Estate Launches: Dedicated launch pages for villas, apartments, or software launches." }
+        {
+          "html": "<a href=\"/google-ads-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Google Ads campaigns</a>: Where message match, relevance, and speed directly reduce your cost per lead (CPL)."
+        },
+        {
+          "text": "Meta (Facebook/Instagram) ad campaigns and click-to-WhatsApp offers targeting regional Kerala or GCC customers."
+        },
+        {
+          "text": "High-Value B2B Lead Generation: For webinars, whitepapers, consultation bookings, and corporate service inquiries."
+        },
+        {
+          "text": "Product Launches & Limited-Time Real Estate Launches: Dedicated launch pages for villas, apartments, or software launches."
+        }
       ],
       "outro": [
         {
@@ -197,11 +229,31 @@
       "bg": "soft",
       "h2": "Related Services",
       "items": [
-        { "label": "Google Ads Management Kochi", "href": "/google-ads-company-kochi/", "text": "expert PPC campaigns to drive qualified traffic to your page" },
-        { "label": "Digital Marketing Company Kochi", "href": "/digital-marketing-company-kochi/", "text": "full-funnel social media and performance marketing" },
-        { "label": "Website Design and Development", "href": "/web-design-company-kochi/", "text": "our full web design pillar" },
-        { "label": "Responsive Web Design", "href": "/responsive-web-design-kochi/", "text": "for businesses rebuilding multi-page websites" },
-        { "label": "Website Redesign Services", "href": "/website-redesign-services-kochi/", "text": "for modernizing legacy corporate websites" }
+        {
+          "label": "Google Ads Management Kochi",
+          "href": "/google-ads-company-kochi/",
+          "text": "expert PPC campaigns to drive qualified traffic to your page"
+        },
+        {
+          "label": "Marketing Analytics & Tracking",
+          "href": "/marketing-analytics-services-kochi/",
+          "text": "GA4, Tag Manager, and conversion event tracking"
+        },
+        {
+          "label": "Digital Marketing Company Kochi",
+          "href": "/digital-marketing-company-kochi/",
+          "text": "full-funnel social media and performance marketing"
+        },
+        {
+          "label": "Website Design and Development",
+          "href": "/web-design-company-kochi/",
+          "text": "our full web design pillar"
+        },
+        {
+          "label": "Responsive Web Design",
+          "href": "/responsive-web-design-kochi/",
+          "text": "for businesses rebuilding multi-page websites"
+        }
       ]
     },
     {
@@ -209,7 +261,7 @@
       "bg": "white",
       "center": true,
       "badge": "Have Questions?",
-      "h2": "Landing Page Design FAQs",
+      "h2": "Frequently Asked Questions — Landing Page Design in Kochi",
       "items": [
         {
           "q": "How much does a landing page cost in Kochi?",
@@ -251,11 +303,19 @@
       "bg": "cream",
       "h2": "Ready to Launch a Landing Page for Your Campaign?",
       "paragraphs": [
-        { "text": "Share your offer, ad platform and launch date. We will reply within one business day with a page plan, timeline and price." }
+        {
+          "text": "Share your offer, ad platform and launch date. We will reply within one business day with a page plan, timeline and price."
+        }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
