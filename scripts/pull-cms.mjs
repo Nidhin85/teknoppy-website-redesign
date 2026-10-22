@@ -201,12 +201,28 @@ for (const global of contentMap.globals) {
   sync(file, content ?? {});
 }
 
+const protectedPages = new Set([
+  'wordpress-migration-services-kochi',
+  'wordpress-speed-optimization-kochi',
+  'wordpress-web-design-kochi'
+]);
+
 for (const collection of contentMap.collections) {
   const docs = await getAll(collection.slug);
   const dir = path.join(repoRoot, collection.dir);
   const validDocs = [];
 
   for (const doc of docs) {
+    // Guard: Protect approved local service pages from being overwritten by stale CMS records
+    if (collection.slug === 'pages' && protectedPages.has(doc.slug)) {
+      const localFile = path.join(dir, `${doc.slug}.${collection.ext}`);
+      if (fs.existsSync(localFile)) {
+        console.warn(`[cms:pull] Preserving approved local file for "${doc.slug}".`);
+        validDocs.push(doc);
+        continue;
+      }
+    }
+
     const content = objectFromPayload(doc, schema.collections[collection.slug]) ?? {};
     if (!isDocValid(collection, doc, content)) {
       if (collection.ext === 'md') {
