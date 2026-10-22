@@ -1,31 +1,50 @@
 {
   "meta": {
-    "title": "WordPress Web Design Kochi | Teknoppy",
-    "description": "Get expert WordPress Web Design Kochi services from Teknoppy — fast, mobile-first, SEO-ready sites built to convert. Book a free consultation today."
+    "title": "WordPress Web Design in Kochi | SEO-Ready Sites | Teknoppy",
+    "description": "Mobile-first WordPress websites designed around your brand, with on-page SEO built in and an easy editor for your team. Kochi studio. Free consultation."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "WordPress Development Company in Kochi", "href": "/wordpress-development-company-kochi/" },
-    { "name": "WordPress Web Design Kochi", "href": "/wordpress-web-design-kochi/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/web-design-company-kochi/"
+    },
+    {
+      "name": "WordPress Development",
+      "href": "/wordpress-development-company-kochi/"
+    },
+    {
+      "name": "WordPress Web Design",
+      "href": "/wordpress-web-design-kochi/"
+    }
   ],
   "sections": [
     {
       "type": "hero",
       "badge": "WordPress Development",
-      "h1Lead": "WordPress Web Design",
+      "h1Lead": "WordPress Web Design in",
       "h1Accent": "Kochi",
       "subhead": "Build a WordPress Website That's Fast, Mobile-Ready, and Built to Rank in Kochi",
       "body": [
         {
-          "html": "<strong>WordPress Web Design Kochi</strong> is what Teknoppy delivers for businesses that need a fast, mobile-first, search-ready website built on WordPress — not a template dropped online, but a design shaped around how your customers in Kochi and Kerala actually search, browse, and buy. Whether you're a startup, a growing service business, or an established brand replacing a dated site, our <strong>WordPress web design Kochi</strong> team builds sites that load fast, look sharp on every screen, and are structured for Google from day one."
+          "html": "<strong>WordPress Web Design in Kochi</strong> by Teknoppy designs WordPress websites for Kochi businesses from our Vyttila studio. Each site is designed for your brand, built mobile-first with on-page SEO, and handed over with an editor your team can actually use. Most business sites launch in 3–5 weeks and start from Rs. 40,000."
         },
         {
-          "html": "Kochi's business landscape has changed fast — customers now judge a company within seconds of landing on its site, on a phone more often than a desktop. A dated WordPress theme, slow load times, or a cluttered layout quietly costs leads every single day. That's the gap our <strong>WordPress Web Design Kochi</strong> service is built to close: design that looks credible immediately and is structured to convert, not just decorate a homepage."
+          "html": "Whether you are a growing service business, a healthcare clinic, or a corporate firm replacing an outdated website, our team creates clean layouts, clear conversion pathways, and reliable performance that represents your brand credibly."
         }
       ],
       "ctas": [
-        { "label": "Book a Free Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Free Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
@@ -35,8 +54,8 @@
       "h2": "What Our WordPress Web Design Includes",
       "items": [
         {
-          "title": "Custom Theme Design",
-          "html": "We don't reskin a stock theme and call it done. Every <strong>WordPress website design Kochi</strong> project starts with a layout built around your brand, your content, and your conversion goals — not a generic drag-and-drop template."
+          "title": "Custom or Customised Theme — Your Choice",
+          "html": "We don't force a one-size-fits-all approach. For bespoke requirements and peak speed, we build custom hand-coded themes. For businesses wanting rapid flexibility, we customize lightweight visual builders with clean code."
         },
         {
           "title": "Responsive, Mobile-First Layouts",
@@ -71,8 +90,8 @@
           "text": "Page structure is mapped before a single visual element is designed, so navigation and content hierarchy make sense."
         },
         {
-          "title": "Custom Theme Customization",
-          "text": "Design is built out visually, with WordPress theme customization applied to match your brand and goals."
+          "title": "Visual Design & WordPress Theme Build",
+          "text": "Design is built out visually to match your branding, with responsive layouts, accessible typography, and intuitive page hierarchy."
         },
         {
           "title": "Content & SEO Integration",
@@ -89,10 +108,18 @@
       "bg": "soft",
       "h2": "Why Choose Teknoppy for WordPress Web Design in Kochi",
       "items": [
-        { "html": "<strong>Kochi-based team, real accountability.</strong> We're not a remote freelancer network — you can meet the people building your site." },
-        { "html": "<strong>Design decisions backed by SEO.</strong> Our <strong>business WordPress website design</strong> work is structured so the site is easy to rank, not just easy to look at." },
-        { "html": "<strong>Professional WordPress designers Kochi businesses return to.</strong> Many of our WordPress design clients come back for redesigns, new landing pages, or ecommerce additions as they grow." },
-        { "html": "<strong>Affordable WordPress design Kochi businesses can scale with.</strong> Pricing is built around what a growing business actually needs first, not a one-size-fits-all package." }
+        {
+          "html": "<strong>Kochi-based team, real accountability.</strong> We're not a remote freelancer network — you can meet the people building your site."
+        },
+        {
+          "html": "<strong>Design decisions backed by SEO.</strong> Our <strong>business WordPress website design</strong> work is structured so the site is easy to rank, not just easy to look at."
+        },
+        {
+          "html": "<strong>Professional WordPress designers Kochi businesses return to.</strong> Many of our WordPress design clients come back for redesigns, new landing pages, or ecommerce additions as they grow."
+        },
+        {
+          "html": "<strong>Affordable WordPress design Kochi businesses can scale with.</strong> Pricing is built around what a growing business actually needs first, not a one-size-fits-all package."
+        }
       ]
     },
     {
@@ -101,9 +128,15 @@
       "h2": "Who Needs WordPress Web Design",
       "intro": "Our modern WordPress website design service fits businesses that are:",
       "items": [
-        { "text": "Launching their first website and need something that looks credible and ranks from day one" },
-        { "text": "Replacing an outdated, slow, or non-mobile-friendly WordPress site" },
-        { "text": "Rebranding and need their website visually realigned with a new identity" }
+        {
+          "text": "Launching their first website and need something that looks credible and ranks from day one"
+        },
+        {
+          "text": "Replacing an outdated, slow, or non-mobile-friendly WordPress site"
+        },
+        {
+          "text": "Rebranding and need their website visually realigned with a new identity"
+        }
       ],
       "outro": [
         {
@@ -120,7 +153,7 @@
       "h2": "WordPress Web Design Projects We've Delivered",
       "paragraphs": [
         {
-          "html": "Teknoppy has designed and launched WordPress websites for businesses across Kochi and Kerala, from single-location service businesses to multi-location brands — each rebuilt around faster load times, mobile usability, and clearer calls to action. See more in our <a href=\"/portfolios/website-projects/\" class=\"text-primary font-semibold hover:underline\">Website Design Portfolio</a>."
+          "html": "Teknoppy has designed and launched WordPress websites for businesses across Kerala, including financial portals like <a href=\"/portfolios/\" class=\"text-primary font-semibold hover:underline\">Abrus Krishna Finance</a> and wellness brands like <a href=\"/portfolios/\" class=\"text-primary font-semibold hover:underline\">Varma Ayurveda</a> — each rebuilt around faster load times, mobile usability, and clearer enquiry forms. See more in our <a href=\"/portfolios/website-projects/\" class=\"text-primary font-semibold hover:underline\">Website Design Portfolio</a>."
         }
       ]
     },
@@ -130,7 +163,7 @@
       "h2": "WordPress Web Design Pricing",
       "paragraphs": [
         {
-          "html": "<strong>WordPress Web Design Kochi</strong> projects are scoped around page count, custom design complexity, and content needs, so pricing varies by project. For a detailed breakdown, use our <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Cost Calculator</a> or <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a>."
+          "html": "WordPress web design projects are scoped around page count, custom features, and content needs. 5–8 page business sites typically start from Rs. 40,000. 10–20 page corporate sites with custom layouts and integrations range from Rs. 80,000 to Rs. 1,80,000. For an estimate based on your specific site, use our <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Cost Calculator</a> or <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a>."
         }
       ]
     },
@@ -139,10 +172,23 @@
       "bg": "soft",
       "h2": "Related Services",
       "items": [
-        { "label": "WordPress Development Company in Kochi", "href": "/wordpress-development-company-kochi/", "text": "our full WordPress development pillar" },
-        { "label": "Custom WordPress Development", "href": "/custom-wordpress-development-kochi/" },
-        { "label": "WordPress Maintenance Services", "href": "/wordpress-maintenance-services-kochi/" },
-        { "label": "WordPress Speed Optimization", "href": "/wordpress-speed-optimization-kochi/" }
+        {
+          "label": "WordPress Development Company in Kochi",
+          "href": "/wordpress-development-company-kochi/",
+          "text": "our full WordPress development pillar"
+        },
+        {
+          "label": "Custom WordPress Development",
+          "href": "/custom-wordpress-development-kochi/"
+        },
+        {
+          "label": "WordPress Maintenance Services",
+          "href": "/wordpress-maintenance-services-kochi/"
+        },
+        {
+          "label": "WordPress Speed Optimization",
+          "href": "/wordpress-speed-optimization-kochi/"
+        }
       ]
     },
     {
@@ -154,35 +200,27 @@
       "items": [
         {
           "q": "How much does WordPress web design cost in Kochi?",
-          "a": "Pricing depends on the number of pages, design complexity, and whether custom features are needed. Most small business WordPress design projects with Teknoppy start at a scoped package after a discovery call — use our cost calculator for an instant estimate."
+          "a": "A standard 5–8 page business website on WordPress starts from Rs. 40,000. Larger sites (10–20 pages) with bespoke page layouts, custom post types, and CRM or marketing integrations typically cost between Rs. 80,000 and Rs. 1,80,000."
         },
         {
           "q": "How long does a WordPress web design project take?",
-          "a": "A typical WordPress website design Kochi project takes 2–4 weeks from discovery to launch, depending on page count and how quickly content and approvals come back to us."
+          "a": "Most business websites launch within 3 to 5 weeks from kickoff, depending on content availability, design iterations, and feedback speed."
         },
         {
           "q": "Will my WordPress website work well on mobile?",
           "a": "Yes. Every design we build is mobile-first and tested across devices before launch, since most website visitors in Kerala now browse primarily on mobile."
         },
         {
-          "q": "Do you use page builders like Elementor, or hand-coded themes?",
-          "a": "We use whichever fits the project — Elementor or similar builders for flexibility on content-heavy sites, or hand-coded themes when performance and long-term control matter more. We'll recommend the right approach after understanding your goals."
+          "q": "Can my team easily edit pages and add blog posts?",
+          "a": "Yes. We configure the WordPress editor (Gutenberg block editor or your chosen visual builder) so your team can easily create new pages, publish blog articles, and update text and images without touching code."
         },
         {
-          "q": "Do you use premium themes or fully custom designs?",
-          "a": "It depends on your budget and goals. We recommend custom WordPress themes Kochi businesses can fully control long-term, though premium themes with heavy WordPress theme customization are sometimes the more practical starting point for a first launch."
+          "q": "Do I own the website after launch?",
+          "a": "Yes, 100%. You own the domain, hosting, code, database, and all creative assets. There are no proprietary lock-ins or recurring licensing fees payable to us for owning your site."
         },
         {
-          "q": "Do you handle the visual UI as well as the layout structure?",
-          "a": "Yes — our WordPress UI design services cover both, from overall page layout down to button placement, menu behaviour, and how a visitor's eye moves down the page."
-        },
-        {
-          "q": "Is this different from a generic WordPress theme design?",
-          "a": "Yes. A modern WordPress website design from Teknoppy is built around your specific business and content, unlike an off-the-shelf theme that's reused across thousands of unrelated sites."
-        },
-        {
-          "q": "Is SEO included in the web design, or is it separate?",
-          "a": "Core on-page SEO — headings, page structure, image optimisation, and speed — is built into every design. Deeper SEO campaigns are handled separately through our SEO Services."
+          "q": "Do you handle both visual design and SEO?",
+          "a": "Yes. Core on-page SEO — including clean semantic HTML, heading structure, fast asset delivery, schema markup, and meta tags — is built directly into every site we deliver."
         }
       ]
     },
@@ -191,11 +229,19 @@
       "bg": "cream",
       "h2": "Ready to Start Your WordPress Web Design Project?",
       "paragraphs": [
-        { "text": "A slow, outdated, or hard-to-navigate website costs you customers before they even see what you offer. Teknoppy's WordPress Web Design Kochi team builds sites that load fast, look credible, and are structured to rank — built around your business, not a template." }
+        {
+          "text": "Tell us about your brand and the website you need. We reply within one business day with a recommended site plan, timeline and fixed quote."
+        }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
