@@ -1,31 +1,50 @@
 {
   "meta": {
-    "title": "Custom WordPress Development Kochi | Teknoppy",
-    "description": "Need custom WordPress development in Kochi? Teknoppy builds bespoke plugins, integrations, and functionality. Book a free consultation today."
+    "title": "Custom WordPress & Plugin Development Kochi | Teknoppy",
+    "description": "Custom WordPress plugins, post types and CRM, payment or booking integrations, built to WordPress standards by our Kochi team. Book a free consultation."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "WordPress Development Company in Kochi", "href": "/wordpress-development-company-kochi/" },
-    { "name": "Custom WordPress Development Kochi", "href": "/custom-wordpress-development-kochi/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "WordPress Development",
+      "href": "/wordpress-development-company-kochi/"
+    },
+    {
+      "name": "Custom WordPress Development",
+      "href": "/custom-wordpress-development-kochi/"
+    }
   ],
   "sections": [
     {
       "type": "hero",
       "badge": "WordPress Development",
-      "h1Lead": "Custom WordPress Development",
+      "h1Lead": "Custom WordPress Development in",
       "h1Accent": "Kochi",
       "subhead": "Beyond Themes and Plugins — WordPress Built Around How Your Business Actually Works",
       "body": [
         {
-          "html": "<strong>Custom WordPress Development Kochi</strong> is what Teknoppy delivers when an off-the-shelf theme and a handful of plugins aren't enough to run your business anymore. Some sites need custom booking logic, member-only content, unusual data structures, or a workflow no plugin was built to handle. That's the gap this service closes — WordPress stretched and rebuilt around what your business specifically needs, not what a plugin marketplace happens to offer."
+          "html": "Custom WordPress development is writing new code — plugins, custom post types, Gutenberg blocks and API integrations — so WordPress does what off-the-shelf themes and plugins cannot. Teknoppy's Kochi team builds and documents this code to core WordPress standards, so it stays stable through updates."
         },
         {
-          "html": "Businesses across Kochi increasingly reach the limits of a standard WordPress setup once operations get more complex — and that's exactly when <strong>Custom WordPress Development Kochi</strong> work becomes worth the investment over patching together more plugins."
+          "html": "Service: custom plugins, post types, Gutenberg blocks, API integrations | Team: in-house, Vyttila, Kochi | Handover: code repo + documentation"
         }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
@@ -59,11 +78,26 @@
       "badge": "How We Work",
       "h2": "Our Custom WordPress Development Process",
       "items": [
-        { "title": "Requirements Mapping", "text": "We document exactly what the current setup can't do, and what it needs to do instead." },
-        { "title": "Technical Scoping", "text": "Custom features are scoped individually, so you know what's being built and why before development starts." },
-        { "title": "Bespoke Build", "text": "Bespoke WordPress development Kochi work is written cleanly, following WordPress coding standards so it survives future updates." },
-        { "title": "Integration & Testing", "text": "Every custom feature is tested against real data and real user flows, not just a demo environment." },
-        { "title": "Handover & Documentation", "text": "You receive documentation for anything custom-built, so future changes don't depend on guesswork." }
+        {
+          "title": "Requirements Mapping",
+          "text": "We document exactly what the current setup can't do, and what it needs to do instead."
+        },
+        {
+          "title": "Technical Scoping",
+          "text": "Custom features are scoped individually, so you know what's being built and why before development starts."
+        },
+        {
+          "title": "Development to WordPress Coding Standards",
+          "text": "Bespoke development written cleanly, following core WordPress coding standards so it survives future updates without breakage."
+        },
+        {
+          "title": "Integration & Testing",
+          "text": "Every custom feature is tested against real data and real user flows, not just a demo environment."
+        },
+        {
+          "title": "Handover & Documentation",
+          "text": "You receive documentation for anything custom-built, so future changes don't depend on guesswork."
+        }
       ]
     },
     {
@@ -71,10 +105,18 @@
       "bg": "soft",
       "h2": "Why Choose Teknoppy for Custom WordPress Development in Kochi",
       "items": [
-        { "html": "<strong>We build to WordPress standards, not shortcuts.</strong> Every custom build follows core WordPress coding practices, so it keeps working through future WordPress updates instead of breaking." },
-        { "html": "<strong>Advanced WordPress development Kochi businesses can rely on long-term.</strong> Custom code is documented and structured for handover, not locked to one developer's memory." },
-        { "html": "<strong>WordPress custom coding services matched to real business logic</strong>, not templated add-ons — we scope around your actual workflow first." },
-        { "html": "<strong>Kochi-based, direct communication.</strong> Custom development involves back-and-forth scoping; you're working with the team building it, not routed through account managers." }
+        {
+          "html": "<strong>We build to WordPress standards, not shortcuts.</strong> Every custom build follows core WordPress coding practices, so it keeps working through future WordPress updates instead of breaking."
+        },
+        {
+          "html": "<strong>Advanced WordPress development Kochi businesses can rely on long-term.</strong> Custom code is documented and structured for handover, not locked to one developer's memory."
+        },
+        {
+          "html": "<strong>WordPress custom coding services matched to real business logic</strong>, not templated add-ons — we scope around your actual workflow first."
+        },
+        {
+          "html": "<strong>Kochi-based, direct communication.</strong> Custom development involves back-and-forth scoping; you're working with the team building it, not routed through account managers."
+        }
       ]
     },
     {
@@ -83,9 +125,15 @@
       "h2": "Who Needs Custom WordPress Development",
       "intro": "Our tailored WordPress solutions Kochi service fits businesses that are:",
       "items": [
-        { "text": "Running a workflow no existing plugin handles cleanly — bookings, memberships, custom quoting, or unusual product logic" },
-        { "text": "Needing their WordPress site to talk to other software they already use, such as a CRM or inventory system" },
-        { "text": "Outgrowing a plugin-stacked site that's become slow, fragile, or hard to maintain" }
+        {
+          "text": "Running a workflow no existing plugin handles cleanly — bookings, memberships, custom quoting, or unusual product logic"
+        },
+        {
+          "text": "Needing their WordPress site to talk to other software they already use, such as a CRM or inventory system"
+        },
+        {
+          "text": "Outgrowing a plugin-stacked site that's become slow, fragile, or hard to maintain"
+        }
       ],
       "outro": [
         {
@@ -112,10 +160,10 @@
     {
       "type": "prose",
       "bg": "white",
-      "h2": "Custom WordPress Development Pricing",
+      "h2": "Custom WordPress Development Cost in Kochi",
       "paragraphs": [
         {
-          "html": "Because every <strong>custom WordPress backend development</strong> project is scoped individually, pricing depends on the complexity of the functionality required. For an estimate based on your specific requirements, use our <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Cost Calculator</a> or <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a>."
+          "html": "Custom WordPress pricing depends on functional scope: small custom plugins typically range from Rs. 15,000 to Rs. 35,000, while bespoke booking workflows, CRM integrations, and member dashboards range from Rs. 40,000 to Rs. 1,20,000+. For complete website builds, see our <a href=\"/wordpress-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">WordPress Development Company in Kochi</a> page. <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a> for a scoped proposal."
         }
       ]
     },
@@ -124,10 +172,23 @@
       "bg": "soft",
       "h2": "Related Services",
       "items": [
-        { "label": "WordPress Development Company in Kochi", "href": "/wordpress-development-company-kochi/", "text": "our full WordPress development pillar" },
-        { "label": "WordPress Web Design Kochi", "href": "/wordpress-web-design-kochi/" },
-        { "label": "WordPress Maintenance Services", "href": "/wordpress-maintenance-services-kochi/" },
-        { "label": "WordPress Migration Services", "href": "/wordpress-migration-services-kochi/" }
+        {
+          "label": "WordPress Development Company in Kochi",
+          "href": "/wordpress-development-company-kochi/",
+          "text": "our full WordPress development pillar"
+        },
+        {
+          "label": "WordPress Web Design Kochi",
+          "href": "/wordpress-web-design-kochi/"
+        },
+        {
+          "label": "WooCommerce Development",
+          "href": "/woocommerce-development-company-kochi/"
+        },
+        {
+          "label": "WordPress Maintenance Services",
+          "href": "/wordpress-maintenance-services-kochi/"
+        }
       ]
     },
     {
@@ -135,32 +196,32 @@
       "bg": "white",
       "center": true,
       "badge": "Have Questions?",
-      "h2": "Frequently Asked Questions — Custom WordPress Development Kochi",
+      "h2": "Custom WordPress FAQs",
       "items": [
         {
-          "q": "What counts as \"custom\" WordPress development versus a regular build?",
-          "a": "Custom development means writing code specifically for your business logic — a booking system, a custom post type, or an integration — rather than configuring an existing theme or plugin to approximate what you need. Custom WordPress development Kochi projects typically start once a standard setup can no longer keep up with what the business needs."
+          "q": "What counts as custom WordPress development versus a regular build?",
+          "a": "A regular build configures an existing theme and plugins. Custom WordPress development means writing new code — a plugin, custom post type, Gutenberg blocks or API integration — for business logic no existing tool handles, such as seasonal room pricing or syncing enquiries to your CRM. It is built to WordPress standards so it survives updates."
+        },
+        {
+          "q": "How much does custom WordPress development cost in Kochi?",
+          "a": "Typical small plugins range from Rs. 15,000 to Rs. 35,000, while custom booking workflows, CRM integrations, and member dashboards range from Rs. 40,000 to Rs. 1,20,000 depending on requirements. We provide a fixed quote after requirements mapping."
+        },
+        {
+          "q": "Who owns the custom code?",
+          "a": "You do. 100% of the custom source code, documentation, and Git repositories are handed over to your team upon launch with no proprietary lock-in."
+        },
+        {
+          "q": "Should I build this in WordPress or as a custom web application?",
+          "a": "If your project centers on content, service presentation, and a few custom workflows, WordPress is ideal. If the core product is the software itself (multi-tenant SaaS, complex web portal), see our Web Application Development services.",
+          "aHtml": "If your project centers on content, service presentation, and a few custom workflows, WordPress is ideal. If the core product is the software itself (multi-tenant SaaS, complex web portal), see our <a href=\"/web-application-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Web Application Development</a> services."
         },
         {
           "q": "Can you integrate WordPress with software we already use?",
-          "a": "Yes. Our WordPress API integration Kochi work regularly connects WordPress to CRMs, accounting tools, booking platforms, and other business software through APIs."
+          "a": "Yes. Our WordPress API integration work regularly connects WordPress to CRMs, accounting tools, booking platforms, and other business software through secure APIs."
         },
         {
           "q": "Will custom code break when WordPress updates?",
-          "a": "Not if it's built correctly. We follow WordPress coding standards specifically so custom features remain stable through core and plugin updates, rather than needing constant fixes."
-        },
-        {
-          "q": "Do you build fully custom plugins, or only modify existing ones?",
-          "a": "Both, depending on the need. Some projects need a small, purpose-built plugin from scratch; others just need an existing plugin extended. We'll recommend whichever is more maintainable for you long-term."
-        },
-        {
-          "q": "How do you scope a custom development project before starting?",
-          "a": "We start with a requirements mapping session to document exactly what the current site can't do, then scope each custom WordPress functionality piece individually so there are no surprises mid-project."
-        },
-        {
-          "q": "Who maintains the custom code after launch?",
-          "a": "You can maintain it in-house if you have the resources, or add it to our WordPress Maintenance Services plan — either way, full documentation is provided at handover so nothing depends on us alone.",
-          "aHtml": "You can maintain it in-house if you have the resources, or add it to our <a href=\"/wordpress-maintenance-services-kochi/\" class=\"text-primary font-semibold hover:underline\">WordPress Maintenance Services</a> plan — either way, full documentation is provided at handover so nothing depends on us alone."
+          "a": "Not if it's built correctly. We follow WordPress core coding standards, hooks, and filter architectures specifically so custom features remain stable through core and plugin updates."
         }
       ]
     },
@@ -169,17 +230,25 @@
       "bg": "cream",
       "h2": "Ready to Start Your Custom WordPress Development Project?",
       "paragraphs": [
-        { "text": "If your current WordPress site is held together with plugins that don't quite fit, it's costing you time and flexibility. Teknoppy's WordPress developer for custom projects team builds functionality scoped to your actual business — not a generic workaround." }
+        {
+          "text": "If your current WordPress site is held together with plugins that don't quite fit, it's costing you time and flexibility. Teknoppy's WordPress developer for custom projects team builds functionality scoped to your actual business — not a generic workaround."
+        }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
       "type": "byline",
       "bg": "white",
-      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Author: Sanal Edison, Digital Strategist · Reviewed: August 2026"
+      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Written by Sanal Edison, Digital Strategist · Reviewed: October 2026"
     }
   ],
   "devNotes": {
