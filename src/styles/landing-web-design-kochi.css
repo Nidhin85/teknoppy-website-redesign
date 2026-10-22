@@ -3539,5 +3539,9 @@ footer b {
 .hero-video-h1 h1{margin:0;font-family:'Sora',sans-serif;font-weight:700;letter-spacing:-0.025em;width:100%;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;max-width:1200px;color:#fff;font-size:clamp(1.6rem,4.6vw,4rem);line-height:1.1;text-shadow:0 4px 24px rgba(0,0,0,.7)}
 /* old H1 kept as same-looking text */
 .hero-title{font-family:Manrope,sans-serif;color:var(--black);letter-spacing:-0.03em;text-wrap:balance;font-size:clamp(2.2rem,5.2vw,3.8rem);font-weight:800;line-height:1.12;margin-bottom:20px}
-@media (max-width:600px){.hero-video-h1{padding:8px 16px 62px;background:linear-gradient(180deg,rgba(0,0,0,.30) 0%,rgba(0,0,0,.55) 100%)}.hero-video-h1 h1{font-size:clamp(1.3rem,6.2vw,1.75rem);text-shadow:0 2px 12px rgba(0,0,0,.7)}}
+@media (max-width:768px){
+  .hero-video-banner{display:flex;flex-direction:column}
+  .hero-video-h1{position:relative;top:auto;right:auto;bottom:auto;left:auto;order:-1;padding:16px 20px 14px;background:#111111;border-bottom:1px solid rgba(255,255,255,.08);pointer-events:auto}
+  .hero-video-h1 h1{font-size:clamp(1.2rem,5vw,1.55rem);line-height:1.22;text-shadow:none;max-width:100%}
+}
 @media (max-width:380px){.hero-center-box .hero-title{font-size:1.95rem}}
