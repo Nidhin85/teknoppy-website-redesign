@@ -1,31 +1,50 @@
 {
   "meta": {
-    "title": "WordPress Speed Optimization Kochi | Teknoppy",
-    "description": "Slow WordPress site? Teknoppy's WordPress Speed Optimization Kochi service fixes load times, caching & Core Web Vitals. Get a free audit."
+    "title": "WordPress Speed Optimization in Kochi | Teknoppy",
+    "description": "Slow WordPress site? We fix caching, images, plugins, database and hosting bottlenecks, then show before-and-after PageSpeed and Core Web Vitals results."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "WordPress Development Company in Kochi", "href": "/wordpress-development-company-kochi/" },
-    { "name": "WordPress Speed Optimization Kochi", "href": "/wordpress-speed-optimization-kochi/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/web-design-company-kochi/"
+    },
+    {
+      "name": "WordPress Development",
+      "href": "/wordpress-development-company-kochi/"
+    },
+    {
+      "name": "WordPress Speed Optimization",
+      "href": "/wordpress-speed-optimization-kochi/"
+    }
   ],
   "sections": [
     {
       "type": "hero",
       "badge": "WordPress Development",
-      "h1Lead": "WordPress Speed Optimization",
+      "h1Lead": "WordPress Speed Optimization in",
       "h1Accent": "Kochi",
       "subhead": "Fixing a Slow WordPress Site From the Inside Out",
       "body": [
         {
-          "html": "<strong>WordPress Speed Optimization Kochi</strong> is what Teknoppy delivers when a WordPress site loads slowly, scores poorly on a speed test, or simply feels sluggish to visitors — and no amount of guessing at plugins has fixed it. A slow site isn't usually one problem; it's a stack of small ones — unoptimized images, bloated plugins, no caching layer, a theme doing more work than it needs to. We go through the site layer by layer, fix what's actually causing the slowdown, and confirm the improvement with real, repeatable measurements — not just a \"feels faster\" guess."
+          "html": "<strong>WordPress Speed Optimization in Kochi</strong> by Teknoppy speeds up slow WordPress sites for Kochi and Kerala businesses. We test first, fix caching, images, plugins, database queries and scripts in order of impact, then re-test with the same tool and deliver a verified before-and-after performance report. Most sites are optimized within 2–4 days."
         },
         {
-          "html": "Businesses across Kochi often discover this problem the same way: someone runs a <strong>WordPress site speed audit</strong> through a free online tool, gets a poor score, and has no clear idea what to actually do about it. <strong>WordPress Speed Optimization Kochi</strong> work exists to close that exact gap — turning a report full of red flags into a site that loads fast and stays fast."
+          "html": "Businesses across Kochi often discover this problem the same way: a free online speed audit flags slow load times and red scores, but gives no clear path forward. Our speed optimization service turns confusing warnings into real load-time reductions that keep visitors on your site and satisfy Google's ranking criteria."
         }
       ],
       "ctas": [
-        { "label": "Get a Free Audit", "href": "/free-website-audit-kerala/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Get a Free Audit",
+          "href": "/free-website-audit-kerala/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
@@ -84,30 +103,40 @@
     {
       "type": "bullets",
       "bg": "soft",
-      "h2": "Who Needs This",
+      "h2": "Who Needs WordPress Speed Optimization",
       "items": [
-        { "text": "You've run a free speed test and it flagged slow load time, large images, or render-blocking scripts" },
-        { "html": "Visitors are bouncing quickly, especially on mobile, and you suspect <strong>reduce WordPress loading time</strong> is the fix, not a redesign" },
-        { "text": "Your site was fast at launch but has slowed down as plugins and content were added over time" },
-        { "html": "You need <strong>WordPress mobile speed optimization</strong> specifically, since mobile visitors often see a slower experience than desktop even on the same site" },
-        { "text": "You've already tried a caching plugin on your own and it didn't meaningfully change anything" }
+        {
+          "text": "You've run a free speed test and it flagged slow load time, large images, or render-blocking scripts"
+        },
+        {
+          "html": "Visitors are bouncing quickly, especially on mobile, and you suspect <strong>reduce WordPress loading time</strong> is the fix, not a redesign"
+        },
+        {
+          "text": "Your site was fast at launch but has slowed down as plugins and content were added over time"
+        },
+        {
+          "html": "You need <strong>WordPress mobile speed optimization</strong> specifically, since mobile visitors often see a slower experience than desktop even on the same site"
+        },
+        {
+          "text": "You've already tried a caching plugin on your own and it didn't meaningfully change anything"
+        }
       ],
       "outro": [
         {
           "html": "A <strong>slow WordPress website fix</strong> is rarely about installing one plugin — it's usually a combination of small issues that need to be found and fixed individually. This is also common after a site has picked up traffic from outside Kerala, including GCC visitors on mobile connections, where load time differences are felt more, not less."
         },
         {
-          "html": "If your speed issue is actually about how the site ranks — not just how fast it loads — see our <a href=\"/core-web-vitals-optimization-kochi/\" class=\"text-primary font-semibold hover:underline\">Core Web Vitals Optimization</a> and <a href=\"/website-speed-optimization-kochi/\" class=\"text-primary font-semibold hover:underline\">Website Speed Optimization Services</a> pages under our SEO services, which cover the ranking side of site speed. This page focuses specifically on the WordPress-side technical fixes."
+          "html": "If your speed issue is actually about how the site ranks — not just how fast it loads — see our <a href=\"/core-web-vitals-optimization-kochi/\" class=\"text-primary font-semibold hover:underline\">Core Web Vitals Optimization</a> and <a href=\"/website-speed-optimization-services-kochi/\" class=\"text-primary font-semibold hover:underline\">Website Speed Optimization Services</a> pages under our SEO services, which cover the ranking side of site speed. This page focuses specifically on the WordPress-side technical fixes."
         }
       ]
     },
     {
       "type": "prose",
       "bg": "white",
-      "h2": "Results We've Delivered",
+      "h2": "WordPress Speed Results We've Delivered",
       "paragraphs": [
         {
-          "html": "Teknoppy has optimized WordPress sites across Kochi and Kerala, working from failing <strong>GTmetrix PageSpeed optimization Kochi</strong> scores through to passing Core Web Vitals thresholds. See related work in our <a href=\"/portfolios/website-projects/\" class=\"text-primary font-semibold hover:underline\">Website Projects Portfolio</a>."
+          "html": "Teknoppy has helped Kochi and Kerala businesses achieve sub-2 second load times and pass Google's Core Web Vitals thresholds (LCP under 2.5s, CLS under 0.1, and INP under 200ms). See related work in our <a href=\"/portfolios/website-projects/\" class=\"text-primary font-semibold hover:underline\">Website Projects Portfolio</a>."
         }
       ]
     },
@@ -117,7 +146,7 @@
       "h2": "WordPress Speed Optimization Pricing",
       "paragraphs": [
         {
-          "html": "Pricing depends on how much work the audit uncovers — a site needing only caching and image fixes costs less than one requiring database cleanup, script optimization, and a hosting-level fix. For an estimate based on your specific site, use our <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Cost Calculator</a> or <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a>."
+          "html": "Quick fix (caching + images + CDN setup): from Rs. 15,000 | Full performance optimization (plugins, database, asset minification & script deferral): Rs. 25,000 - 45,000. For an estimate based on your specific site, use our <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Cost Calculator</a> or <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a>."
         }
       ]
     },
@@ -126,10 +155,24 @@
       "bg": "white",
       "h2": "Related Services",
       "items": [
-        { "label": "WordPress Development Company in Kochi", "href": "/wordpress-development-company-kochi/", "text": "our full WordPress development pillar" },
-        { "label": "WordPress Maintenance Services", "href": "/wordpress-maintenance-services-kochi/" },
-        { "label": "WordPress Migration Services", "href": "/wordpress-migration-services-kochi/" },
-        { "label": "Core Web Vitals Optimization", "href": "/core-web-vitals-optimization-kochi/", "text": "ranking-focused speed work under our SEO services" }
+        {
+          "label": "WordPress Development Company in Kochi",
+          "href": "/wordpress-development-company-kochi/",
+          "text": "our full WordPress development pillar"
+        },
+        {
+          "label": "WordPress Maintenance Services",
+          "href": "/wordpress-maintenance-services-kochi/"
+        },
+        {
+          "label": "WordPress Migration Services",
+          "href": "/wordpress-migration-services-kochi/"
+        },
+        {
+          "label": "Core Web Vitals Optimization",
+          "href": "/core-web-vitals-optimization-kochi/",
+          "text": "ranking-focused speed work under our SEO services"
+        }
       ]
     },
     {
@@ -141,23 +184,27 @@
       "items": [
         {
           "q": "What does WordPress speed optimization include?",
-          "a": "It includes a full technical audit, caching setup, image compression, database cleanup, and script optimization — everything needed to bring load time down and keep it down, not just a temporary fix."
+          "a": "It includes a baseline audit, caching setup (page, browser, object), image compression, database query cleanup, CSS/JS deferral, and removal of render-blocking assets."
         },
         {
           "q": "How is this different from Core Web Vitals optimization?",
-          "a": "Core Web Vitals optimization focuses specifically on Google's ranking metrics. WordPress Speed Optimization Kochi work covers the broader technical fix — caching, images, database, hosting — some of which directly improves Core Web Vitals scores as a result."
+          "a": "Core Web Vitals focuses strictly on Google's search ranking signals (LCP, CLS, INP). WordPress speed optimization is the broader engineering work on the WordPress host, database, plugins, and theme that produces fast real-world loading."
         },
         {
-          "q": "Can you fix a slow WordPress website without a full redesign?",
-          "a": "Yes. Most speed issues come from technical bottlenecks, not design — a slow WordPress website fix rarely requires changing how the site looks."
+          "q": "Can you fix a slow WordPress website without a redesign?",
+          "a": "Yes. The vast majority of speed bottlenecks are code, image, and database issues that can be fixed under the hood without altering the look and feel of your website."
         },
         {
           "q": "Do you provide before-and-after speed test results?",
-          "a": "Yes. We run a baseline test before starting and a comparison test after, using the same tool, so the improvement is measurable rather than a claim."
+          "a": "Yes. We capture baseline metrics in Google PageSpeed Insights and GTmetrix before making changes, and deliver a comprehensive before-and-after verification report."
+        },
+        {
+          "q": "How much does WordPress speed optimization cost in Kochi?",
+          "a": "Basic optimization (caching and image compression) starts at Rs. 15,000. Full performance tuning covering database queries, plugin audits, and script minification typically ranges between Rs. 25,000 and Rs. 45,000."
         },
         {
           "q": "How do you handle WordPress mobile speed optimization specifically?",
-          "a": "Mobile devices and connections behave differently from desktop, so we test and optimize separately for mobile — including image sizing, script loading order, and caching behavior on slower connections."
+          "a": "Mobile devices and cellular networks require special consideration. We optimize mobile viewport assets, implement responsive image sizing (WebP/AVIF), defer non-critical mobile JavaScript, and minimize layout shifts (CLS) on touchscreens."
         }
       ]
     },
@@ -166,11 +213,19 @@
       "bg": "white",
       "h2": "Ready to Fix a Slow WordPress Site?",
       "paragraphs": [
-        { "text": "A slow website quietly costs you visitors, rankings, and enquiries every single day it stays that way. Teknoppy's WordPress performance optimization Kochi team finds the actual cause and fixes it, with real before-and-after numbers to show for it." }
+        {
+          "text": "Tell us your website URL and current speed issues. We will run a free audit and send you a before-and-after speed improvement roadmap within 24 hours."
+        }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
