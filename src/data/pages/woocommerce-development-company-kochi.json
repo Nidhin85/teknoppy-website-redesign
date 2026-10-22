@@ -4,9 +4,18 @@
     "description": "WooCommerce stores on WordPress you fully own - set up, designed and launched in Kochi with UPI and card payments. Ready in 3-6 weeks. Get a quote."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Ecommerce Development", "href": "/ecommerce-website-development-company-kochi/" },
-    { "name": "WooCommerce Development", "href": "/woocommerce-development-company-kochi/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Ecommerce Development",
+      "href": "/ecommerce-website-development-company-kochi/"
+    },
+    {
+      "name": "WooCommerce Development",
+      "href": "/woocommerce-development-company-kochi/"
+    }
   ],
   "sections": [
     {
@@ -14,7 +23,7 @@
       "badge": "Ecommerce Development · WordPress",
       "h1Lead": "WooCommerce Development Company in",
       "h1Accent": "Kochi",
-      "subhead": "Launch or Rebuild Your Online Store on WordPress's Most Trusted Ecommerce Platform",
+      "subhead": "Launch or Rebuild Your Online Store on WordPress with WooCommerce",
       "body": [
         {
           "text": "Teknoppy builds WooCommerce stores in Kochi on WordPress - set up with your products, shipping, GST and payment options, designed to sell, and ready in 3-6 weeks. You own the store, the content and the customer data, with no platform subscription."
@@ -24,8 +33,14 @@
         }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
@@ -63,11 +78,26 @@
       "badge": "How We Work",
       "h2": "Our WooCommerce Development Process",
       "items": [
-        { "title": "Store Requirements Review (Days 1–3)", "text": "We map your product variants, categories, payment gateway requirements, and shipping calculation rules." },
-        { "title": "Information Architecture & Store Setup (Week 1)", "text": "Core WordPress and WooCommerce installation, database tuning, category hierarchy, and SEO breadcrumbs." },
-        { "title": "Theme Customization & UX Design (Weeks 2–3)", "text": "Bespoke styling for product pages, mobile menus, cart drawers, and frictionless checkout funnels." },
-        { "title": "Payments & Shipping Integration (Week 4)", "text": "Payment gateway setup, UPI testing, automated GST invoice templates, and courier API synchronization." },
-        { "title": "End-to-End Testing & Launch (Weeks 5–6)", "text": "Simulated live checkout testing across mobile devices, SSL verification, speed audit, and production cutover." }
+        {
+          "title": "Store Requirements Review (Days 1–3)",
+          "text": "We map your product variants, categories, payment gateway requirements, and shipping calculation rules."
+        },
+        {
+          "title": "Information Architecture & Store Setup (Week 1)",
+          "text": "Core WordPress and WooCommerce installation, database tuning, category hierarchy, and SEO breadcrumbs."
+        },
+        {
+          "title": "Theme Customization & UX Design (Weeks 2–3)",
+          "text": "Bespoke styling for product pages, mobile menus, cart drawers, and frictionless checkout funnels."
+        },
+        {
+          "title": "Payments & Shipping Integration (Week 4)",
+          "text": "Payment gateway setup, UPI testing, automated GST invoice templates, and courier API synchronization."
+        },
+        {
+          "title": "End-to-End Testing & Launch (Weeks 5–6)",
+          "text": "Simulated live checkout testing across mobile devices, SSL verification, speed audit, and production cutover."
+        }
       ]
     },
     {
@@ -75,10 +105,18 @@
       "bg": "soft",
       "h2": "Why Store Owners Choose Teknoppy",
       "items": [
-        { "html": "<strong>100% Store & Data Ownership:</strong> Unlike hosted SaaS platforms, your WordPress store, customer database, and order records belong entirely to you with zero monthly platform subscriptions." },
-        { "html": "<strong>Domestic & International Gateways:</strong> We configure Razorpay, Cashfree, UPI, Stripe, PayPal, and Telr/PayTabs for domestic Indian and GCC cross-border shoppers. See our <a href=\"/payment-gateway-integration-kochi/\" class=\"text-primary font-semibold hover:underline\">Payment Gateway Integration</a>." },
-        { "html": "<strong>GST & Tax Ready:</strong> Automated tax calculation, HSN code tagging on product receipts, and compliant PDF invoice generation." },
-        { "html": "<strong>Engineered for Speed:</strong> Clean code, server-level object caching (Redis), lightweight theme frameworks, and WebP image optimization to ensure sub-2-second load times." }
+        {
+          "html": "<strong>100% Store & Data Ownership:</strong> Unlike hosted SaaS platforms, your WordPress store, customer database, and order records belong entirely to you with zero monthly platform subscriptions."
+        },
+        {
+          "html": "<strong>Domestic & International Gateways:</strong> We configure Razorpay, Cashfree, UPI, Stripe, PayPal, and Telr/PayTabs for domestic Indian and GCC cross-border shoppers. See our <a href=\"/payment-gateway-integration-kochi/\" class=\"text-primary font-semibold hover:underline\">Payment Gateway Integration</a>."
+        },
+        {
+          "html": "<strong>GST & Tax Ready:</strong> Automated tax calculation, HSN code tagging on product receipts, and compliant PDF invoice generation."
+        },
+        {
+          "html": "<strong>Engineered for Speed:</strong> Clean code, server-level object caching (Redis), lightweight theme frameworks, and WebP image optimization to ensure sub-2-second load times."
+        }
       ]
     },
     {
@@ -87,9 +125,15 @@
       "h2": "Is WooCommerce Right for Your Store?",
       "intro": "WooCommerce is the ideal e-commerce engine if your business values long-term asset ownership and customizability:",
       "items": [
-        { "text": "Brands launching a new online store who want full control over design, features, and hosting costs." },
-        { "text": "Existing merchants migrating from closed, expensive platforms like Shopify or Magento without losing customer history." },
-        { "text": "Content-rich businesses that rely on strong organic SEO, blogs, and landing pages alongside their product catalog." }
+        {
+          "text": "Brands launching a new online store who want full control over design, features, and hosting costs."
+        },
+        {
+          "text": "Existing merchants migrating from closed, expensive platforms like Shopify or Magento without losing customer history."
+        },
+        {
+          "text": "Content-rich businesses that rely on strong organic SEO, blogs, and landing pages alongside their product catalog."
+        }
       ],
       "outro": [
         {
@@ -102,7 +146,11 @@
       "bg": "cream",
       "h2": "WooCommerce Development Cost in Kochi",
       "intro": "Transparent fixed-scope pricing for custom WordPress e-commerce store builds:",
-      "columns": ["Store Tier", "Estimated Investment (INR)", "Typical Timeline & Scope"],
+      "columns": [
+        "Store Tier",
+        "Estimated Investment (INR)",
+        "Typical Timeline & Scope"
+      ],
       "rows": [
         {
           "service": "Starter Store",
@@ -133,12 +181,24 @@
       "badge": "At A Glance",
       "h2": "WooCommerce at a Glance",
       "items": [
-        { "html": "<strong>Office Location:</strong> Vyttila, Kochi, Kerala · Established 2018" },
-        { "html": "<strong>Core Platform:</strong> WordPress + WooCommerce" },
-        { "html": "<strong>Delivery Timeline:</strong> 3 to 6 weeks from initial planning to live launch" },
-        { "html": "<strong>Pricing:</strong> Starting from ₹45,000 for starter stores; ₹75,000 to ₹1,50,000 for custom builds" },
-        { "html": "<strong>Payments Supported:</strong> Razorpay, Cashfree, BHIM UPI, Stripe, PayPal, Cash on Delivery" },
-        { "html": "<strong>Store Ownership:</strong> 100% ownership of source code, hosting, and customer data" }
+        {
+          "html": "<strong>Office Location:</strong> Vyttila, Kochi, Kerala · Established 2018"
+        },
+        {
+          "html": "<strong>Core Platform:</strong> WordPress + WooCommerce"
+        },
+        {
+          "html": "<strong>Delivery Timeline:</strong> 3 to 6 weeks from initial planning to live launch"
+        },
+        {
+          "html": "<strong>Pricing:</strong> Starting from ₹45,000 for starter stores; ₹75,000 to ₹1,50,000 for custom builds"
+        },
+        {
+          "html": "<strong>Payments Supported:</strong> Razorpay, Cashfree, BHIM UPI, Stripe, PayPal, Cash on Delivery"
+        },
+        {
+          "html": "<strong>Store Ownership:</strong> 100% ownership of source code, hosting, and customer data"
+        }
       ]
     },
     {
@@ -146,12 +206,36 @@
       "bg": "cream",
       "h2": "Related Services",
       "items": [
-        { "label": "Ecommerce Website Development Company Kochi", "href": "/ecommerce-website-development-company-kochi/", "text": "our primary e-commerce solutions pillar" },
-        { "label": "WordPress Development Company in Kochi", "href": "/wordpress-development-company-kochi/", "text": "expert custom WordPress development and themes" },
-        { "label": "Shopify Development Company Kochi", "href": "/shopify-development-company-kochi/", "text": "hosted Shopify and Shopify Plus storefronts" },
-        { "label": "Custom Ecommerce Development", "href": "/custom-ecommerce-development-kochi/", "text": "tailored platforms and complex checkout architectures" },
-        { "label": "Payment Gateway Integration Kochi", "href": "/payment-gateway-integration-kochi/", "text": "UPI, credit cards, and multi-currency gateway integration" },
-        { "label": "WordPress Maintenance Services Kochi", "href": "/wordpress-maintenance-services-kochi/", "text": "ongoing plugin updates, backups, and security monitoring" }
+        {
+          "label": "Ecommerce Website Development Company Kochi",
+          "href": "/ecommerce-website-development-company-kochi/",
+          "text": "our primary e-commerce solutions pillar"
+        },
+        {
+          "label": "WordPress Development Company in Kochi",
+          "href": "/wordpress-development-company-kochi/",
+          "text": "expert custom WordPress development and themes"
+        },
+        {
+          "label": "Shopify Development Company Kochi",
+          "href": "/shopify-development-company-kochi/",
+          "text": "hosted Shopify and Shopify Plus storefronts"
+        },
+        {
+          "label": "Custom Ecommerce Development",
+          "href": "/custom-ecommerce-development-kochi/",
+          "text": "tailored platforms and complex checkout architectures"
+        },
+        {
+          "label": "Payment Gateway Integration Kochi",
+          "href": "/payment-gateway-integration-kochi/",
+          "text": "UPI, credit cards, and multi-currency gateway integration"
+        },
+        {
+          "label": "WordPress Maintenance Services Kochi",
+          "href": "/wordpress-maintenance-services-kochi/",
+          "text": "ongoing plugin updates, backups, and security monitoring"
+        }
       ]
     },
     {
@@ -193,17 +277,25 @@
       "bg": "cream",
       "h2": "Ready to Launch Your WooCommerce Store?",
       "paragraphs": [
-        { "text": "Tell us about your products, payments and delivery areas. We will reply within one business day with a store plan, timeline and quote." }
+        {
+          "text": "Tell us about your products, payments and delivery areas. We will reply within one business day with a store plan, timeline and quote."
+        }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
       "type": "byline",
       "bg": "white",
-      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Reviewed: October 2026 by Sanal Edison, Digital Strategist."
+      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Written by Sanal Edison, Digital Strategist · Reviewed: October 2026"
     }
   ],
   "schema": [
@@ -212,8 +304,15 @@
       "@type": "Service",
       "name": "WooCommerce Development in Kochi",
       "serviceType": "WooCommerce store development",
-      "provider": { "@id": "https://teknoppy.com/#localbusiness" },
-      "areaServed": ["Kochi", "Kerala", "India", "United Arab Emirates"],
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "Kochi",
+        "Kerala",
+        "India",
+        "United Arab Emirates"
+      ],
       "url": "https://teknoppy.com/woocommerce-development-company-kochi/"
     }
   ],
