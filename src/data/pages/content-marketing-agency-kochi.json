@@ -1,31 +1,50 @@
 {
   "meta": {
-    "title": "Content Marketing Agency Kochi | Teknoppy",
-    "description": "Need a Content Marketing Agency Kochi businesses can rely on? Teknoppy builds SEO-focused content strategies that rank. Book a consultation."
+    "title": "Content Marketing Agency in Kochi | Teknoppy",
+    "description": "Teknoppy is a content marketing agency in Kochi. We plan, write and publish blogs and SEO content that bring organic enquiries. From Rs. 15,000/month."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Digital Marketing Company in Kochi", "href": "/digital-marketing-company-kochi/" },
-    { "name": "Content Marketing Agency Kochi", "href": "/content-marketing-agency-kochi/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "Digital Marketing in Kochi",
+      "href": "/digital-marketing-company-kochi/"
+    },
+    {
+      "name": "Content Marketing Agency in Kochi",
+      "href": "/content-marketing-agency-kochi/"
+    }
   ],
   "sections": [
     {
       "type": "hero",
       "badge": "Digital Marketing",
-      "h1Lead": "Content Marketing Agency",
+      "h1Lead": "Content Marketing Agency in",
       "h1Accent": "Kochi",
-      "subhead": "Content That Builds Organic Reach, Not Just Fills a Publishing Calendar",
+      "subhead": "Strategy, writing and SEO content that brings in organic enquiries",
       "body": [
         {
-          "html": "<strong>Content Marketing Agency Kochi</strong> — that's what businesses search for when they need consistent, strategic content built to attract organic traffic and build authority, not just occasional blog posts published without a plan. Teknoppy's content marketing work ties strategy, writing, and SEO together, since content that isn't built for search rarely earns traffic worth the effort."
+          "html": "Teknoppy is a content marketing agency in Kochi, Kerala. We plan, write and publish blog posts, articles and long-form content that help businesses get found on Google and in AI search. Content plans start from Rs. 15,000 per month, with a written quote before any work begins."
         },
         {
-          "html": "Choosing the right <strong>Content Marketing Agency Kochi</strong> partner matters because content marketing compounds slowly — a strong content foundation built with strategy behind it keeps generating traffic months later, while disconnected posts published without direction rarely add up to anything."
+          "html": "Content works slowly but keeps paying. A clear strategy and steady publishing build traffic that lasts for months. A handful of random posts rarely do."
         }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ],
       "trustline": "120+ Projects Delivered · In Kochi Since 2018 · Strategy, Writing & SEO Under One Roof"
     },
@@ -34,23 +53,23 @@
       "bg": "cream",
       "columns": 2,
       "badge": "What's Included",
-      "h2": "What Our Content Marketing Includes",
+      "h2": "Content marketing services in Kochi: what we do",
       "items": [
         {
           "title": "Content Strategy & Planning",
-          "html": "<strong>Content strategy development Kochi</strong> maps out what to write, for whom, and why — tied to real search demand and your actual business goals, not a random topic list."
+          "html": "We decide what to write, for whom and why. Topics come from real search demand and your business goals, not a random list."
         },
         {
-          "title": "SEO-Focused Content Writing",
-          "html": "<strong>SEO content writing services</strong> ensure every piece is built to rank, targeting real keywords with the depth and structure search engines and readers both expect."
+          "title": "SEO Content Writing",
+          "html": "Every article targets a real search need, with the depth, structure and sources that readers and search engines expect."
         },
         {
-          "title": "Blog & Article Content",
-          "html": "<strong>Blog content writing services Kochi</strong> and <strong>article writing services for businesses</strong> cover regular, ongoing content production — the ongoing engine that builds organic traffic over time."
+          "title": "Blog & Article Writing",
+          "html": "Regular, researched posts that build organic traffic month after month."
         },
         {
           "title": "Long-Form & Brand Content",
-          "html": "<strong>Long-form content creation services</strong> and <strong>brand storytelling content services</strong> go deeper where a topic needs more authority-building depth than a standard blog post provides."
+          "html": "Guides, whitepapers and brand stories for topics that need more depth than a standard blog post."
         }
       ]
     },
@@ -88,28 +107,42 @@
       "badge": "The Teknoppy Advantage",
       "h2": "Why Choose Teknoppy for Content Marketing in Kochi",
       "items": [
-        { "html": "<strong>We tie content directly to keyword strategy.</strong> Content built without SEO research rarely ranks — we research demand before writing, not after." },
-        { "html": "<strong>Website content marketing Kochi</strong> work that fits your actual site structure, strengthening existing pages rather than existing in isolation." },
-        { "html": "<strong>B2B content marketing services</strong> for businesses selling to other businesses, where content needs to build trust and authority differently than consumer-facing content." },
-        { "html": "<strong>Consistent output, not sporadic bursts.</strong> A content calendar keeps production steady, since irregular publishing rarely builds the momentum content marketing needs." }
+        {
+          "html": "<strong>We tie content directly to keyword strategy.</strong> Content built without SEO research rarely ranks — we research demand before writing, not after."
+        },
+        {
+          "html": "<strong>Website content marketing Kochi</strong> work that fits your actual site structure, strengthening existing pages rather than existing in isolation."
+        },
+        {
+          "html": "<strong>B2B content marketing services</strong> for businesses selling to other businesses, where content needs to build trust and authority differently than consumer-facing content."
+        },
+        {
+          "html": "<strong>Consistent output, not sporadic bursts.</strong> A content calendar keeps production steady, since irregular publishing rarely builds the momentum content marketing needs."
+        }
       ]
     },
     {
       "type": "bullets",
       "bg": "white",
-      "h2": "Who Needs Content Marketing Services",
-      "intro": "This service fits businesses that are:",
+      "h2": "Who We Create Content For",
+      "intro": "Startups and new businesses, healthcare and clinics, real estate, restaurants and food, schools and education, tourism and travel, professional services, and B2B companies.",
       "items": [
-        { "text": "Wanting to build organic traffic and authority rather than relying solely on paid ads" },
-        { "text": "Struggling to publish content consistently without a clear strategy behind it" },
-        { "text": "Needing content that supports SEO goals directly, not just generic articles unrelated to target keywords" }
+        {
+          "text": "Wanting to build organic traffic and authority rather than relying solely on paid ads"
+        },
+        {
+          "text": "Struggling to publish content consistently without a clear strategy behind it"
+        },
+        {
+          "text": "Needing content that supports SEO goals directly, not just generic articles unrelated to target keywords"
+        }
       ],
       "outro": [
         {
           "html": "If your priority is paid search instead, see <a href=\"/google-ads-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Google Ads Management</a>. For content specifically built for search rankings, see the full <a href=\"/seo-services/\" class=\"text-primary font-semibold hover:underline\">SEO Services</a> pillar."
         },
         {
-          "text": "Businesses often underestimate how long content marketing takes to compound — a handful of scattered posts rarely move the needle, but a sustained, strategic library of content built around real search demand keeps generating traffic long after each individual piece was published."
+          "text": "A sustained, strategic library of content built around real search demand keeps generating traffic long after each individual piece was published."
         }
       ]
     },
@@ -126,22 +159,39 @@
     {
       "type": "prose",
       "bg": "white",
-      "h2": "Content Marketing Pricing",
+      "h2": "Content marketing pricing in Kochi",
       "paragraphs": [
         {
-          "html": "Content marketing is typically priced by content volume and complexity — a monthly retainer covering strategy, writing, and publishing. For a tailored estimate, use our <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Cost Calculator</a> or <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a>."
+          "html": "Most Kochi businesses invest between <strong>Rs. 15,000 and Rs. 50,000 per month</strong> in content marketing. Your price depends on how many articles you need each month, how long and deep each article is, how much industry research or expert input is needed, and design, visuals and distribution. We share a written quote before any work starts. <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a>."
         }
       ]
     },
     {
       "type": "links",
       "bg": "soft",
-      "h2": "Related Services",
+      "h2": "Other digital marketing services in Kochi",
       "items": [
-        { "label": "Digital Marketing Company in Kochi", "href": "/digital-marketing-company-kochi/", "text": "our full digital marketing pillar" },
-        { "label": "Google Ads Management", "href": "/google-ads-company-kochi/" },
-        { "label": "Social Media Marketing", "href": "/social-media-marketing-company-kochi/" },
-        { "label": "SEO Services", "href": "/seo-services/" }
+        {
+          "label": "Digital Marketing Company in Kochi",
+          "href": "/digital-marketing-company-kochi/",
+          "text": "our full digital marketing pillar"
+        },
+        {
+          "label": "SEO Services",
+          "href": "/seo-services/"
+        },
+        {
+          "label": "Google Ads Management",
+          "href": "/google-ads-company-kochi/"
+        },
+        {
+          "label": "Social Media Marketing",
+          "href": "/social-media-marketing-company-kochi/"
+        },
+        {
+          "label": "Email Marketing",
+          "href": "/email-marketing-company-kochi/"
+        }
       ]
     },
     {
@@ -152,49 +202,71 @@
       "h2": "Frequently Asked Questions — Content Marketing Agency Kochi",
       "items": [
         {
+          "q": "What does a content marketing agency in Kochi do?",
+          "a": "A content marketing agency plans, writes and publishes content that brings the right customers to your business. At Teknoppy that means content strategy, a publishing calendar, SEO-led blogs and articles, long-form guides, and monthly reports on traffic, rankings and enquiries."
+        },
+        {
+          "q": "How much does content marketing cost in Kochi?",
+          "a": "Most Kochi businesses pay between Rs. 15,000 and Rs. 50,000 per month. The price depends on how many articles you need, how deep each one goes, and how much industry research is required. We share a written quote before work starts."
+        },
+        {
+          "q": "How long does content marketing take to show results?",
+          "a": "Most businesses see meaningful traffic growth in 3 to 6 months. Search engines need time to find, index and rank new content, and results build as more articles are published and linked together. Paid ads are faster, but traffic stops when the budget stops."
+        },
+        {
           "q": "How is content marketing different from SEO?",
-          "a": "Content marketing focuses on creating strategic, valuable content — blogs, articles, guides — while SEO covers the broader technical and on-page work that helps that content (and your whole site) rank. Good content marketing is built with SEO in mind from the start."
+          "a": "Content marketing is the planning and creation of useful content such as blogs, guides and articles. SEO is the wider work, including technical fixes and on-page optimization, that helps your whole site rank. We build content with SEO in mind, but they are separate services."
         },
         {
-          "q": "How often should we publish content?",
-          "a": "Consistency matters more than volume — content calendar planning services typically map out a realistic, sustainable publishing schedule rather than an unsustainable burst followed by silence."
+          "q": "How often should we publish?",
+          "a": "Consistency matters more than volume. A realistic schedule you can keep, such as a few strong articles each month, beats a burst of posts followed by silence. We set the schedule during content calendar planning, based on your budget and goals."
         },
         {
-          "q": "Do you write content for a specific industry or niche?",
-          "a": "Yes. B2B content marketing services and general business content are both handled, with research done into your specific industry and audience before writing begins, so content speaks directly to the people who actually make buying decisions."
+          "q": "Do you offer B2B content marketing?",
+          "a": "Yes. B2B content must build trust with several decision-makers over a longer buying cycle. We research your industry and buyers first, then write guides and articles that answer the questions they ask before contacting a supplier."
         },
         {
-          "q": "Will content marketing help with paid ad campaigns too?",
-          "a": "Yes, indirectly. Strong content can support landing page quality and provide material for remarketing and social promotion, complementing paid campaigns rather than working in isolation."
+          "q": "Do you handle strategy or only writing?",
+          "a": "Both. Strategy comes first so every article has a clear purpose, audience and keyword target. We can also write to an existing strategy if your team already has one defined."
         },
         {
-          "q": "How long before content marketing shows results?",
-          "a": "Organic content typically takes 3–6 months to build meaningful traffic, since search engines need time to index and rank new content, with results compounding as more content is published and internally linked together."
+          "q": "How do I choose a content marketing agency in Kochi?",
+          "a": "Ask to see published work and results, check who will write and edit your content, and ask how topics are researched. Look for clear pricing and monthly reporting. Avoid agencies that promise page-one rankings by a fixed date."
         },
         {
-          "q": "Do you handle content strategy, or just the writing?",
-          "a": "Both. Content strategy development Kochi comes first, ensuring every piece written has a clear purpose and keyword target rather than being written without direction."
+          "q": "Will content marketing help my Google Ads?",
+          "a": "Yes, indirectly. Strong content supports landing page quality and gives you material for remarketing and social promotion, so paid campaigns and content work together."
+        },
+        {
+          "q": "Do you optimize content for ChatGPT, Gemini and Perplexity?",
+          "a": "Yes. We write clear, question-led sections with checkable facts so AI tools can quote them accurately. No agency can guarantee citations, but clear structure and trustworthy sources improve your chances."
         }
       ]
     },
     {
       "type": "cta",
       "bg": "cream",
-      "h2": "Ready to Start Your Content Marketing Project?",
+      "h2": "Ready to plan your content marketing?",
       "paragraphs": [
         {
-          "html": "If your content isn't building traffic or authority, the issue is usually strategy, not effort. Teknoppy's <strong>Content Marketing Agency Kochi</strong> team builds content designed to actually compound over time."
+          "html": "Content that brings in the right customers takes a plan. Tell us your goals and we will show you what a realistic content plan looks like for your business."
         }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
       "type": "byline",
       "bg": "white",
-      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Author: Sanal Edison, Digital Strategist · Reviewed: August 2026"
+      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Written by Sanal Edison, Digital Strategist · Reviewed: October 2026"
     }
   ],
   "devNotes": {
