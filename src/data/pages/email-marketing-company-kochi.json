@@ -1,31 +1,50 @@
 {
   "meta": {
-    "title": "Email Marketing Company Kochi | Teknoppy",
-    "description": "Need an Email Marketing Company Kochi businesses can rely on? Teknoppy builds automation that actually converts. Book a consultation."
+    "title": "Email Marketing Company in Kochi | Automation | Teknoppy",
+    "description": "Email marketing in Kochi by Teknoppy, Vyttila. Newsletters, welcome and abandoned-cart automation, list segmentation and monthly revenue reports."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Digital Marketing Company in Kochi", "href": "/digital-marketing-company-kochi/" },
-    { "name": "Email Marketing Company Kochi", "href": "/email-marketing-company-kochi/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "Digital Marketing in Kochi",
+      "href": "/digital-marketing-company-kochi/"
+    },
+    {
+      "name": "Email Marketing Company in Kochi",
+      "href": "/email-marketing-company-kochi/"
+    }
   ],
   "sections": [
     {
       "type": "hero",
       "badge": "Digital Marketing",
-      "h1Lead": "Email Marketing Company",
+      "h1Lead": "Email Marketing Company in",
       "h1Accent": "Kochi",
       "subhead": "Direct Access to Customers Who Already Chose to Hear From You",
       "body": [
         {
-          "html": "<strong>Email Marketing Company Kochi</strong> — that's what businesses search for when they want to build revenue from an audience they already own, rather than renting attention through ads every time. Teknoppy builds email campaigns and automation that turn subscribers into repeat customers, since email consistently delivers among the highest returns of any marketing channel when it's actually done well."
+          "html": "Teknoppy is an email marketing company in Kochi that turns subscribers into repeat customers with newsletters and automation. Rather than renting attention through ads every time, email consistently delivers among the highest returns of any marketing channel when it's done well."
         },
         {
-          "html": "Choosing the right <strong>Email Marketing Company Kochi</strong> partner matters because most businesses treat email as an afterthought — irregular blasts with no segmentation or automation waste an asset that, done properly, keeps generating revenue with almost no ongoing ad spend."
+          "html": "Choosing the right email marketing agency matters because most businesses treat email as an afterthought — irregular blasts with no segmentation or automation waste an asset that, done properly, keeps generating revenue with almost no ongoing ad spend."
         }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ],
       "trustline": "120+ Projects Delivered · In Kochi Since 2018 · Campaigns, Automation & Cart Recovery"
     },
@@ -38,19 +57,19 @@
       "items": [
         {
           "title": "Campaign Strategy & Management",
-          "html": "<strong>Email campaign management Kochi</strong> covers planning, scheduling, and executing campaigns tied to real business goals — promotions, announcements, and nurture sequences that actually move subscribers toward a purchase."
+          "html": "Our campaign management covers planning, scheduling and sending campaigns tied to real business goals — promotions, announcements, and nurture sequences that actually move subscribers toward a purchase. We work in Mailchimp, Brevo, Klaviyo and Zoho Campaigns and can take over your existing account."
         },
         {
           "title": "Newsletter & Template Design",
-          "html": "<strong>Newsletter design services Kochi</strong> and <strong>email template design services</strong> ensure every email looks professional and on-brand, built to render correctly across every inbox and device."
+          "html": "We design newsletter and email templates that look professional and on-brand, built to render correctly across every inbox and device."
         },
         {
           "title": "Automation & Drip Campaigns",
-          "html": "<strong>Email automation services</strong> and <strong>drip campaign setup services</strong> handle the sequences that run without manual effort — welcome series, nurture flows, and follow-ups triggered automatically by subscriber behavior."
+          "html": "Email automation and drip sequences handle flows that run without manual effort — welcome series, nurture flows, and abandoned cart emails triggered automatically by customer actions."
         },
         {
-          "title": "List Segmentation & Transactional Emails",
-          "html": "<strong>Email list segmentation services</strong> ensure the right message reaches the right subscriber, while <strong>transactional email setup services</strong> cover order confirmations, receipts, and account notifications that need to work flawlessly."
+          "title": "List Segmentation & Deliverability",
+          "html": "Email list segmentation ensures the right message reaches the right subscriber. Before sending, we configure SPF, DKIM and DMARC authentication on your domain so emails reliably reach the inbox."
         }
       ]
     },
@@ -62,7 +81,7 @@
       "items": [
         {
           "title": "Strategy & Audit",
-          "text": "We review your current list, past campaign performance, and business goals before building an email marketing strategy Kochi plan."
+          "text": "We review your current list, past campaign performance, and business goals before we build your email strategy."
         },
         {
           "title": "List Segmentation Setup",
@@ -78,7 +97,7 @@
         },
         {
           "title": "Performance Tracking & Optimization",
-          "text": "Email marketing analytics services track open rates, clicks, and conversions, guiding what to test and improve next."
+          "text": "We judge email by clicks, conversions and revenue per send, tracked with UTM tags in GA4, guiding what to test and improve next."
         }
       ]
     },
@@ -88,10 +107,18 @@
       "badge": "The Teknoppy Advantage",
       "h2": "Why Choose Teknoppy for Email Marketing in Kochi",
       "items": [
-        { "html": "<strong>We build automation that runs without constant oversight.</strong> Once sequences are set up correctly, they keep converting subscribers without needing a new campaign every week." },
-        { "html": "<strong>Segmentation-first strategy</strong>, since sending the same email to your entire list wastes the targeting potential email marketing actually offers." },
-        { "html": "<strong>Cart recovery automation built specifically for ecommerce clients</strong>, recovering sales that would otherwise be lost entirely." },
-        { "html": "<strong>Clear, honest reporting.</strong> You see open rates, click-through rates, and actual revenue attributed to email, not just vanity metrics." }
+        {
+          "html": "<strong>We build automation that runs without constant oversight.</strong> Once sequences are set up correctly, they keep converting subscribers without needing a new campaign every week."
+        },
+        {
+          "html": "<strong>Segmentation-first strategy</strong>, since sending the same email to your entire list wastes the targeting potential email marketing actually offers."
+        },
+        {
+          "html": "<strong>Cart recovery automation built specifically for ecommerce clients</strong>, recovering sales that would otherwise be lost entirely."
+        },
+        {
+          "html": "<strong>Clear, honest reporting.</strong> You see open rates, click-through rates, and actual revenue attributed to email, not just vanity metrics."
+        }
       ]
     },
     {
@@ -100,9 +127,18 @@
       "h2": "Who Needs Email Marketing Services",
       "intro": "This service fits businesses that are:",
       "items": [
-        { "text": "Sitting on an email list that isn't being used strategically, or at all" },
-        { "text": "Running an online store losing sales to abandoned carts with no recovery sequence in place" },
-        { "text": "Wanting a lower-cost, owned marketing channel to reduce dependence on paid ads" }
+        {
+          "text": "Online stores and Shopify brands losing sales to abandoned carts with no recovery sequence in place"
+        },
+        {
+          "text": "Sitting on an email list that isn't being used strategically, or at all"
+        },
+        {
+          "text": "Hotels, resorts, clinics and education institutions needing automated booking and admission reminders"
+        },
+        {
+          "text": "Wanting a lower-cost, owned marketing channel to reduce dependence on paid ads"
+        }
       ],
       "outro": [
         {
@@ -126,22 +162,39 @@
     {
       "type": "prose",
       "bg": "white",
-      "h2": "Email Marketing Pricing",
+      "h2": "Email Marketing Cost in Kochi",
       "paragraphs": [
         {
-          "html": "Email marketing is typically priced as a monthly retainer covering strategy, campaign management, and automation upkeep, scoped to list size and campaign frequency. For a tailored estimate, use our <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Cost Calculator</a> or <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a>."
+          "html": "Email marketing is typically priced as a monthly retainer covering strategy, campaign management, and automation upkeep, scoped to list size and campaign frequency. <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a free email review</a> or a tailored quote."
         }
       ]
     },
     {
       "type": "links",
       "bg": "soft",
-      "h2": "Related Services",
+      "h2": "Other digital marketing services in Kochi",
       "items": [
-        { "label": "Digital Marketing Company in Kochi", "href": "/digital-marketing-company-kochi/", "text": "our full digital marketing pillar" },
-        { "label": "Google Ads Management", "href": "/google-ads-company-kochi/" },
-        { "label": "Content Marketing", "href": "/content-marketing-agency-kochi/" },
-        { "label": "Social Media Marketing", "href": "/social-media-marketing-company-kochi/" }
+        {
+          "label": "Digital Marketing Company in Kochi",
+          "href": "/digital-marketing-company-kochi/",
+          "text": "our full digital marketing pillar"
+        },
+        {
+          "label": "Google Ads Management",
+          "href": "/google-ads-company-kochi/"
+        },
+        {
+          "label": "Content Marketing",
+          "href": "/content-marketing-agency-kochi/"
+        },
+        {
+          "label": "Social Media Marketing",
+          "href": "/social-media-marketing-company-kochi/"
+        },
+        {
+          "label": "CRM Development",
+          "href": "/crm-company-kochi/"
+        }
       ]
     },
     {
@@ -149,7 +202,7 @@
       "bg": "white",
       "center": true,
       "badge": "Have Questions?",
-      "h2": "Frequently Asked Questions — Email Marketing Company Kochi",
+      "h2": "Frequently Asked Questions — Email Marketing in Kochi",
       "items": [
         {
           "q": "How is email marketing different from other digital marketing channels?",
@@ -160,20 +213,28 @@
           "a": "Both. Email automation services handle recurring flows like welcome series and nurture sequences, while one-off campaigns cover promotions, announcements, and newsletters as needed."
         },
         {
+          "q": "How often should we send emails?",
+          "a": "Typically 2 to 4 newsletters a month plus automated event triggers. Consistency and value matter far more than spamming inboxes."
+        },
+        {
+          "q": "Why do our emails go to spam?",
+          "a": "Emails usually land in spam due to missing domain authentication (SPF, DKIM, DMARC), poor list hygiene with high bounce rates, or sending to unverified addresses. We set up full authentication and clean your list before sending."
+        },
+        {
+          "q": "Can you work with our existing Mailchimp, Brevo or Klaviyo account?",
+          "a": "Yes. We work inside your existing account in Mailchimp, Brevo, Klaviyo, Zoho Campaigns, or HubSpot, connecting it directly to your website or CRM."
+        },
+        {
+          "q": "How do we know if email marketing is actually working?",
+          "a": "We judge email by clicks, conversions and revenue per send, tracked with UTM tags in GA4. Open rates are a rough signal only, because privacy features in many inboxes inflate them."
+        },
+        {
           "q": "Can you help recover lost sales from abandoned carts?",
           "a": "Yes. Abandoned cart email automation is one of the highest-ROI sequences we build for ecommerce clients, automatically reminding shoppers who left items in their cart."
         },
         {
-          "q": "How is our email list segmented?",
-          "a": "Email list segmentation services group subscribers by behavior, purchase history, or interest, so campaigns feel relevant rather than generic to everyone on the list."
-        },
-        {
           "q": "Do you design the email templates too?",
-          "a": "Yes. Email template design services ensure every campaign looks professional and renders correctly across inboxes and devices, matched to your brand."
-        },
-        {
-          "q": "How do we know if email marketing is actually working?",
-          "a": "Email marketing analytics services track open rates, click-through rates, and revenue attribution, so you see real performance data rather than guessing at what's effective month to month."
+          "a": "Yes. Responsive email template design ensures every campaign looks professional and renders correctly across mobile, tablet, and desktop inboxes."
         }
       ]
     },
@@ -183,18 +244,24 @@
       "h2": "Ready to Start Your Email Marketing Project?",
       "paragraphs": [
         {
-          "html": "If your email list isn't generating revenue, you're leaving one of the most cost-effective marketing channels unused. Teknoppy's <strong>Email Marketing Company Kochi</strong> team builds campaigns and automation that turn subscribers into repeat customers."
+          "html": "Tell us your list size and what you sell. We will review your current emails and platform for free and send a written automation plan within 24 hours."
         }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
       "type": "byline",
       "bg": "white",
-      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Author: Sanal Edison, Digital Strategist · Reviewed: August 2026"
+      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Written by Sanal Edison, Digital Strategist · Reviewed: October 2026"
     }
   ],
   "devNotes": {
