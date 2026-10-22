@@ -1,31 +1,50 @@
 {
   "meta": {
-    "title": "WordPress Migration Services Kochi | Teknoppy",
-    "description": "Moving hosts or domains? Teknoppy's WordPress Migration Services Kochi ensure zero downtime, no data loss. Book a free migration consult."
+    "title": "WordPress Migration Services in Kochi | Teknoppy",
+    "description": "Move your WordPress site to a new host or domain, or from Wix, Squarespace or Shopify, with staging, redirect mapping and post-move testing. Kochi team."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "WordPress Development Company in Kochi", "href": "/wordpress-development-company-kochi/" },
-    { "name": "WordPress Migration Services Kochi", "href": "/wordpress-migration-services-kochi/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/web-design-company-kochi/"
+    },
+    {
+      "name": "WordPress Development",
+      "href": "/wordpress-development-company-kochi/"
+    },
+    {
+      "name": "WordPress Migration Services",
+      "href": "/wordpress-migration-services-kochi/"
+    }
   ],
   "sections": [
     {
       "type": "hero",
       "badge": "WordPress Development",
-      "h1Lead": "WordPress Migration Services",
+      "h1Lead": "WordPress Migration Services in",
       "h1Accent": "Kochi",
       "subhead": "Moving Your Site Without Losing Traffic, Rankings, or Data",
       "body": [
         {
-          "html": "<strong>WordPress Migration Services Kochi</strong> is what Teknoppy provides when a website needs to move — to a new host, a new domain, or onto WordPress from another platform entirely — without breaking anything along the way. A migration sounds simple until it isn't: a missed database table, a broken redirect, an email service that stops working mid-switch. We handle the move as a planned, tested process rather than a copy-paste job done live on production, so the site comes back up exactly as it should."
+          "html": "<strong>WordPress Migration Services in Kochi</strong> by Teknoppy moves your WordPress site to a new host or domain, and rebuilds Wix, Squarespace or Shopify sites on WordPress from our Kochi studio. Every move is planned for minimal downtime, with a full backup and rollback plan for every project. Most host moves take 2–4 days."
         },
         {
-          "html": "Businesses across Kochi usually need this for one of a few reasons — a hosting renewal that's become too expensive, a developer relationship that's ending, or outgrowing a builder platform that can't scale anymore. <strong>WordPress Migration Services Kochi</strong> work exists to make that transition invisible to your visitors and safe for your search rankings, instead of a stressful weekend of troubleshooting."
+          "html": "Businesses across Kochi and Kerala usually need this for one of a few reasons — a hosting renewal that has become too expensive, a developer relationship that is ending, or outgrowing a website builder that cannot scale. Our migration work ensures the transition is seamless for your visitors and safe for your search rankings."
         }
       ],
       "ctas": [
-        { "label": "Book a Free Migration Consult", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Free Migration Consult",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
@@ -49,7 +68,32 @@
         },
         {
           "title": "Platform-to-WordPress Migration",
-          "html": "If you're not already on WordPress, our team also handles <strong>website migration to WordPress</strong> from builders like Wix, Squarespace, or Shopify — rebuilding the content and structure natively rather than importing a messy export file."
+          "html": "If you're not already on WordPress, our team handles website migrations to WordPress from builders like Wix, Squarespace, or Shopify — rebuilding the content and structure natively. For online stores, see our <a href=\"/ecommerce-redesign-migration-kochi/\" class=\"text-primary font-semibold hover:underline\">Ecommerce Migration</a> services."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "columns": 2,
+      "badge": "Safeguards",
+      "h2": "How We Protect Your Rankings and Email",
+      "items": [
+        {
+          "title": "301 Redirect Mapping",
+          "text": "Every indexed URL is matched to its new address page-by-page so existing Google rankings and backlinks are preserved without dead 404 links."
+        },
+        {
+          "title": "Full Backup & Rollback Plan",
+          "text": "Before changing DNS or touching production, complete backups of all files and databases are taken, with a verified rollback procedure in place."
+        },
+        {
+          "title": "Search Console Address Change",
+          "text": "For domain migrations, we initiate the Google Search Console Change of Address tool and verify sitemaps to accelerate search indexing."
+        },
+        {
+          "title": "DNS & MX Record Preservation",
+          "text": "Mail exchange (MX), SPF, DKIM, and DMARC records are carefully separated from web DNS so your business email never suffers interruptions."
         }
       ]
     },
@@ -84,13 +128,23 @@
     {
       "type": "bullets",
       "bg": "soft",
-      "h2": "Who Needs This",
+      "h2": "Who Needs WordPress Migration",
       "items": [
-        { "text": "You're switching web hosts and don't want the downtime or data loss that comes with doing it yourself" },
-        { "text": "Your domain is changing and you need old URLs redirected properly to protect your search rankings" },
-        { "text": "Your current developer or agency is no longer available and the site needs a clean handover to a new host" },
-        { "html": "You need a <strong>WordPress server migration service</strong> because your current server can't handle current traffic" },
-        { "html": "You want <strong>zero downtime WordPress migration</strong> because the site generates leads or sales and can't afford to go offline" }
+        {
+          "text": "You're switching web hosts and want a smooth transition without losing database records or files"
+        },
+        {
+          "text": "Your domain is changing and you need old URLs redirected properly to protect your search rankings"
+        },
+        {
+          "text": "Your current developer or agency is no longer available and the site needs a clean handover to a new host"
+        },
+        {
+          "html": "You need a <strong>WordPress server migration service</strong> because your current server cannot handle rising traffic"
+        },
+        {
+          "html": "You want <strong>minimal downtime WordPress migration</strong> with an agreed maintenance window so leads and sales are uninterrupted"
+        }
       ],
       "outro": [
         {
@@ -117,7 +171,7 @@
       "h2": "WordPress Migration Pricing",
       "paragraphs": [
         {
-          "html": "Pricing depends on site size, the number of integrations involved, and whether it's a like-for-like WordPress move or a full platform switch. A small brochure site migration costs less than an ecommerce store with payment integrations and a large product catalog. For an estimate based on your specific site, use our <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Cost Calculator</a> or <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a>."
+          "html": "Pricing depends on site size, the number of integrations, and whether it's a host move or a full platform rebuild. Host or domain move: from Rs. 15,000 | Platform to WordPress (Wix, Squarespace): Rs. 30,000 - 1,20,000 | Store migrations: see our <a href=\"/ecommerce-redesign-migration-kochi/\" class=\"text-primary font-semibold hover:underline\">Ecommerce Migration</a> page. For an estimate based on your specific site, use our <a href=\"/website-cost-calculator-kerala/\" class=\"text-primary font-semibold hover:underline\">Website Cost Calculator</a> or <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a>."
         }
       ]
     },
@@ -126,10 +180,23 @@
       "bg": "white",
       "h2": "Related Services",
       "items": [
-        { "label": "WordPress Development Company in Kochi", "href": "/wordpress-development-company-kochi/", "text": "our full WordPress development pillar" },
-        { "label": "WordPress Maintenance Services", "href": "/wordpress-maintenance-services-kochi/" },
-        { "label": "WordPress Speed Optimization", "href": "/wordpress-speed-optimization-kochi/" },
-        { "label": "Custom WordPress Development Kochi", "href": "/custom-wordpress-development-kochi/" }
+        {
+          "label": "WordPress Development Company in Kochi",
+          "href": "/wordpress-development-company-kochi/",
+          "text": "our full WordPress development pillar"
+        },
+        {
+          "label": "WordPress Maintenance Services",
+          "href": "/wordpress-maintenance-services-kochi/"
+        },
+        {
+          "label": "WordPress Speed Optimization",
+          "href": "/wordpress-speed-optimization-kochi/"
+        },
+        {
+          "label": "Custom WordPress Development Kochi",
+          "href": "/custom-wordpress-development-kochi/"
+        }
       ]
     },
     {
@@ -140,37 +207,49 @@
       "h2": "Frequently Asked Questions — WordPress Migration Services Kochi",
       "items": [
         {
-          "q": "What does WordPress migration service include?",
-          "a": "It includes a full audit, staging setup, database and file transfer, DNS and redirect cutover, and post-migration testing — everything needed to move a site without losing data, rankings, or functionality."
+          "q": "What does our WordPress migration service include?",
+          "a": "It includes a pre-migration audit, staging setup, database and file transfer, DNS and 301 redirect cutover, and post-migration testing — everything needed to move a site without losing data, rankings, or functionality."
         },
         {
-          "q": "Can you migrate my website to WordPress Kochi businesses trust from another platform?",
-          "a": "Yes. If you want to migrate website to WordPress Kochi from Wix, Squarespace, Shopify, or another builder, we rebuild the site natively on WordPress rather than relying on an automated import."
+          "q": "Can you move my website to WordPress from Wix, Squarespace or Shopify?",
+          "a": "Yes. We rebuild the site natively on WordPress rather than relying on an automated export. Content, images, blog posts and page structures are moved across cleanly so you gain full control of your website."
         },
         {
           "q": "Will migration affect my Google rankings?",
-          "a": "Not if done correctly. A proper URL redirect map and unchanged content structure mean search engines follow the site to its new location without losing indexed rankings."
+          "a": "A well-run migration should not cause lasting ranking loss. Some movement for a few weeks is normal while Google re-crawls the new URLs. We keep it small with a page-by-page 301 redirect map and Search Console monitoring."
         },
         {
           "q": "Do you offer emergency migration support?",
-          "a": "Yes. Emergency website migration Kochi support is available if your current host is failing, your site is down, or you need to move on short notice."
+          "a": "Yes. Emergency migration support is available if your current host is failing, your site is down, or you need to move on short notice with minimal disruption."
         },
         {
           "q": "How long does a typical migration take?",
-          "a": "Most migrations are completed within a planned maintenance window of a few hours, though the audit and staging setup beforehand can take several days depending on site complexity."
+          "a": "Most standard host-to-host moves are completed within 2 to 4 days, including staging verification and cutover. Platform rebuilds (Wix or Shopify to WordPress) typically take 1 to 3 weeks depending on page count."
+        },
+        {
+          "q": "How much does WordPress migration cost in Kochi?",
+          "a": "A standard WordPress host or domain migration starts from Rs. 15,000. Rebuilding from platforms like Wix or Squarespace onto WordPress ranges from Rs. 30,000 to Rs. 1,20,000 depending on content volume and custom features."
         }
       ]
     },
     {
       "type": "cta",
       "bg": "white",
-      "h2": "Ready to Move Your Website Without the Risk?",
+      "h2": "Ready to Move Your Website Safely?",
       "paragraphs": [
-        { "text": "A poorly handled migration can cost you search rankings, broken forms, and days of downtime. Teknoppy's WordPress migration team plans the move, tests it on staging first, and verifies everything before calling it done." }
+        {
+          "text": "Tell us where your site is hosted now and where you want to move it. We reply within one business day with a migration plan, timeline and fixed quote."
+        }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
