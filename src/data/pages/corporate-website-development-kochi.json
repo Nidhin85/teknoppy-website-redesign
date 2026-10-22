@@ -4,9 +4,18 @@
     "description": "Corporate website development in Kochi: multi-department structure, brand governance, role-based CMS and stakeholder-ready pages. Request a quote."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Website Design Company in Kochi", "href": "/web-design-company-kochi/" },
-    { "name": "Corporate Website Development", "href": "/corporate-website-development-kochi/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Web Design",
+      "href": "/web-design-company-kochi/"
+    },
+    {
+      "name": "Corporate Website Development",
+      "href": "/corporate-website-development-kochi/"
+    }
   ],
   "sections": [
     {
@@ -26,8 +35,14 @@
         }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
@@ -145,9 +160,15 @@
       "h2": "Who Needs a Corporate Website?",
       "intro": "This service is tailored for organizations once a simple single-owner template site no longer reflects operational scale:",
       "items": [
-        { "text": "Your organization spans multiple departments, subsidiaries, or locations, each requiring a dedicated section" },
-        { "text": "Different internal teams need to manage their own content independently without creating bottlenecks" },
-        { "text": "Your website must meet stringent governance, compliance, and brand standards for investors, partners, and institutions" }
+        {
+          "text": "Your organization spans multiple departments, subsidiaries, or locations, each requiring a dedicated section"
+        },
+        {
+          "text": "Different internal teams need to manage their own content independently without creating bottlenecks"
+        },
+        {
+          "text": "Your website must meet stringent governance, compliance, and brand standards for investors, partners, and institutions"
+        }
       ],
       "outro": [
         {
@@ -173,10 +194,26 @@
       "bg": "cream",
       "h2": "Related Services",
       "items": [
-        { "label": "Website Design and Development", "href": "/web-design-company-kochi/", "text": "the parent service" },
-        { "label": "Business Website Development", "href": "/business-website-development-kochi/", "text": "for SMEs needing a focused lead-generation site" },
-        { "label": "CMS Website Development", "href": "/cms-website-development-kochi/", "text": "for the underlying content management platform" },
-        { "label": "Website Maintenance Services", "href": "/website-maintenance-services-kochi/", "text": "for ongoing security, updates, and SLAs" }
+        {
+          "label": "Website Design and Development",
+          "href": "/web-design-company-kochi/",
+          "text": "the parent service"
+        },
+        {
+          "label": "Business Website Development",
+          "href": "/business-website-development-kochi/",
+          "text": "for SMEs needing a focused lead-generation site"
+        },
+        {
+          "label": "CMS Website Development",
+          "href": "/cms-website-development-kochi/",
+          "text": "for the underlying content management platform"
+        },
+        {
+          "label": "Website Maintenance Services",
+          "href": "/website-maintenance-services-kochi/",
+          "text": "for ongoing security, updates, and SLAs"
+        }
       ]
     },
     {
@@ -226,17 +263,25 @@
       "bg": "cream",
       "h2": "Ready to Start Your Corporate Website Project?",
       "paragraphs": [
-        { "text": "Share your departments, approval process and timeline. We will reply within one business day to book a scoping call with your team." }
+        {
+          "text": "Share your departments, approval process and timeline. We will reply within one business day to book a scoping call with your team."
+        }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
       "type": "byline",
       "bg": "white",
-      "text": "Teknoppy · Second Floor, Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam, Kochi, Kerala 682019 · sales@teknoppy.com · +91 6282249224 — Reviewed: August 2026"
+      "text": "Teknoppy · Second Floor, Kaithakal Building, Door No 49, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam, Kochi, Kerala 682019 · sales@teknoppy.com · +91 6282249224 — Written by Sanal Edison, Digital Strategist · Reviewed: October 2026"
     }
   ],
   "devNotes": {
