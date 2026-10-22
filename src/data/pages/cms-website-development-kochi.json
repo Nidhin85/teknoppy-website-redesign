@@ -4,9 +4,18 @@
     "description": "Custom CMS website development in Kochi: full content control, easy publishing, staff training and secure admin access. Request a quote from Teknoppy."
   },
   "breadcrumb": [
-    { "name": "Home", "href": "/" },
-    { "name": "Website Design & Development", "href": "/web-design-company-kochi/" },
-    { "name": "CMS Website Development", "href": "/cms-website-development-kochi/" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Web Design",
+      "href": "/web-design-company-kochi/"
+    },
+    {
+      "name": "CMS Website Development",
+      "href": "/cms-website-development-kochi/"
+    }
   ],
   "sections": [
     {
@@ -24,8 +33,14 @@
         }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ],
       "trustline": "120+ Websites Delivered · In Kochi Since 2018 · Clients Across Kerala, UAE and Qatar"
     },
@@ -113,9 +128,15 @@
       "h2": "Who Needs CMS Website Development",
       "intro": "Any business that has outgrown a static, developer-dependent website will feel this immediately:",
       "items": [
-        { "text": "Businesses whose current website can only be updated by emailing an agency and waiting days for a simple text or image change" },
-        { "text": "Teams that publish frequent content — announcements, service updates, offers, and blog posts — and need instant publishing control" },
-        { "text": "Growing companies where multiple staff members need individual logins and distinct permission roles rather than one shared password" }
+        {
+          "text": "Businesses whose current website can only be updated by emailing an agency and waiting days for a simple text or image change"
+        },
+        {
+          "text": "Teams that publish frequent content — announcements, service updates, offers, and blog posts — and need instant publishing control"
+        },
+        {
+          "text": "Growing companies where multiple staff members need individual logins and distinct permission roles rather than one shared password"
+        }
       ],
       "outro": [
         {
@@ -154,10 +175,26 @@
       "bg": "soft",
       "h2": "Related Services",
       "items": [
-        { "label": "Website Design and Development", "href": "/web-design-company-kochi/", "text": "the parent pillar this page sits under" },
-        { "label": "Custom WordPress Development", "href": "/custom-wordpress-development-kochi/", "text": "for businesses choosing WordPress as their platform" },
-        { "label": "Website Redesign Services", "href": "/website-redesign-services-kochi/", "text": "for businesses upgrading an existing site into a proper CMS" },
-        { "label": "Website Maintenance Services", "href": "/website-maintenance-services-kochi/", "text": "for ongoing security, updates, and backups" }
+        {
+          "label": "Website Design and Development",
+          "href": "/web-design-company-kochi/",
+          "text": "the parent pillar this page sits under"
+        },
+        {
+          "label": "Custom WordPress Development",
+          "href": "/custom-wordpress-development-kochi/",
+          "text": "for businesses choosing WordPress as their platform"
+        },
+        {
+          "label": "Website Redesign Services",
+          "href": "/website-redesign-services-kochi/",
+          "text": "for businesses upgrading an existing site into a proper CMS"
+        },
+        {
+          "label": "Website Maintenance Services",
+          "href": "/website-maintenance-services-kochi/",
+          "text": "for ongoing security, updates, and backups"
+        }
       ]
     },
     {
@@ -199,17 +236,25 @@
       "bg": "cream",
       "h2": "Ready for a Website Your Team Can Update Itself?",
       "paragraphs": [
-        { "text": "Tell us who updates your site today and what slows them down. We reply within one business day with a CMS recommendation and quote." }
+        {
+          "text": "Tell us who updates your site today and what slows them down. We reply within one business day with a CMS recommendation and quote."
+        }
       ],
       "ctas": [
-        { "label": "Book a Consultation", "href": "/book-a-consultation/" },
-        { "label": "Request a Quote", "href": "/request-a-quote/" }
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Request a Quote",
+          "href": "/request-a-quote/"
+        }
       ]
     },
     {
       "type": "byline",
       "bg": "white",
-      "text": "Teknoppy · Kochi, Kerala · +91 6282249224 · sales@teknoppy.com"
+      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Written by Sanal Edison, Digital Strategist · Reviewed: October 2026"
     }
   ],
   "devNotes": {
