@@ -10,7 +10,7 @@ const isActive = (href: string) => {
   if (href === '/') return pathname === '/';
   if (href.startsWith('/#')) return false;
   const clean = href.replace(/\/$/, '');
-  return pathname === href || pathname === clean;
+  return pathname === href || pathname === clean || (href !== '/' && pathname.startsWith(clean + '/'));
 };
 
 const services = [
@@ -21,18 +21,25 @@ const services = [
   { name: 'Digital Marketing', href: '/digital-marketing-company-kochi/', desc: 'SEO, Ads, social & content' },
 ];
 
-const servicesActive = services.some(s => {
+const workItems = [
+  { name: 'Case Studies', href: '/case-study/', desc: 'Real client results & case studies' },
+  { name: 'Portfolio', href: '/portfolios/', desc: 'Visual project gallery & creative work' },
+];
+
+const servicesActive = pathname === '/services/' || pathname === '/services' || services.some(s => {
   const clean = s.href.replace(/\/$/, '');
   return pathname === s.href || pathname === clean;
 });
 
+const workActive = pathname.startsWith('/case-study') || pathname.startsWith('/case-studies') || pathname.startsWith('/portfolios');
+
 const links = [
   { name: 'Home', href: '/' },
-  { name: 'Services', href: '/services/', hasDropdown: true },
-  { name: 'About Us', href: '/about-us/' },
-  { name: 'Portfolio', href: '/portfolios/' },
-  { name: 'Case Studies', href: '/case-study/' },
+  { name: 'About', href: '/about-us/' },
+  { name: 'Services', href: '/services/', hasDropdown: true, dropdownType: 'services' },
+  { name: 'Work', href: '/case-study/', hasDropdown: true, dropdownType: 'work' },
   { name: 'Life@Teknoppy', href: '/life-at-teknoppy/' },
+  { name: 'Blog', href: '/blog/' },
   { name: 'Contact', href: '/contact-us/' },
 ];
 ---
@@ -54,29 +61,37 @@ const links = [
     </a>
 
     <!-- Desktop Nav -->
-    <nav class="hidden lg:flex items-center gap-5 xl:gap-8">
-      {links.map(link => (
-        link.hasDropdown ? (
+    <nav class="hidden lg:flex items-center gap-4 xl:gap-7" aria-label="Main Navigation">
+      {links.map(link => {
+        const isServices = link.dropdownType === 'services';
+        const isWork = link.dropdownType === 'work';
+        const isCurrentActive = link.hasDropdown
+          ? (isServices ? servicesActive : workActive)
+          : isActive(link.href);
+
+        return link.hasDropdown ? (
           <div class="relative group">
             <a
               href={link.href}
-              class={`relative py-1 text-[15px] xl:text-[16px] font-bold whitespace-nowrap transition-all duration-300 flex items-center gap-1 group-hover:text-primary ${
-                servicesActive ? 'text-primary' : 'text-neutral-700'
+              aria-expanded="false"
+              aria-haspopup="true"
+              class={`relative py-1 text-[15px] xl:text-[16px] font-bold whitespace-nowrap transition-all duration-300 flex items-center gap-1 group-hover:text-primary focus:text-primary focus:outline-none ${
+                isCurrentActive ? 'text-primary' : 'text-neutral-700'
               }`}
             >
               {link.name}
-              <svg class="w-3.5 h-3.5 text-neutral-450 mt-0.5 transition-transform duration-300 group-hover:rotate-180 group-hover:text-primary" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <svg class="w-3.5 h-3.5 text-neutral-450 mt-0.5 transition-transform duration-300 group-hover:rotate-180 group-focus-within:rotate-180 group-hover:text-primary" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
               </svg>
-              {servicesActive && (
+              {isCurrentActive && (
                 <span class="absolute -bottom-[2px] left-0 w-full h-[2px] bg-primary"></span>
               )}
             </a>
 
-            <!-- Services Dropdown Panel -->
-            <div class="absolute left-1/2 -translate-x-1/2 top-full pt-4 w-[330px] opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 ease-out z-50">
+            <!-- Dropdown Panel -->
+            <div class={`absolute left-1/2 -translate-x-1/2 top-full pt-4 ${isWork ? 'w-[280px]' : 'w-[330px]'} opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 transition-all duration-200 ease-out z-50 pointer-events-none group-hover:pointer-events-auto group-focus-within:pointer-events-auto`}>
               <div class="bg-white rounded-2xl border border-neutral-100 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.18)] p-2">
-                {services.map(svc => {
+                {isServices && services.map(svc => {
                   const active = pathname === svc.href || pathname === svc.href.replace(/\/$/, '');
                   return (
                     <a
@@ -91,10 +106,28 @@ const links = [
                     </a>
                   );
                 })}
-                <a href="/services/" class="flex items-center justify-center gap-1.5 mt-1 px-4 py-2.5 text-xs font-bold text-primary hover:bg-cream rounded-xl transition-colors border-t border-neutral-100">
-                  View all services
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                </a>
+                {isServices && (
+                  <a href="/services/" class="flex items-center justify-center gap-1.5 mt-1 px-4 py-2.5 text-xs font-bold text-primary hover:bg-cream rounded-xl transition-colors border-t border-neutral-100">
+                    View all services
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                )}
+
+                {isWork && workItems.map(item => {
+                  const active = pathname === item.href || pathname === item.href.replace(/\/$/, '') || pathname.startsWith(item.href);
+                  return (
+                    <a
+                      href={item.href}
+                      class={`flex items-start gap-3 px-4 py-3 rounded-xl transition-colors group/item ${active ? 'bg-cream' : 'hover:bg-cream'}`}
+                    >
+                      <span class="mt-[7px] w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>
+                      <span class="flex flex-col">
+                        <span class={`text-sm font-bold transition-colors ${active ? 'text-primary' : 'text-neutral-800 group-hover/item:text-primary'}`}>{item.name}</span>
+                        <span class="text-xs text-neutral-400 font-medium leading-snug mt-0.5">{item.desc}</span>
+                      </span>
+                    </a>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -102,18 +135,18 @@ const links = [
           <a
             href={link.href}
             class={`relative py-1 text-[15px] xl:text-[16px] font-bold whitespace-nowrap transition-all duration-300 flex items-center gap-1 ${
-              isActive(link.href)
+              isCurrentActive
                 ? 'text-primary'
                 : 'text-neutral-700 hover:text-primary'
             }`}
           >
             {link.name}
-            {isActive(link.href) && (
+            {isCurrentActive && (
               <span class="absolute -bottom-[2px] left-0 w-full h-[2px] bg-primary"></span>
             )}
           </a>
-        )
-      ))}
+        );
+      })}
     </nav>
 
     <!-- Right CTA -->
@@ -132,44 +165,70 @@ const links = [
   </div>
 </header>
 
-<!-- Mobile Dropdown Menu.
-     Deliberately a sibling of <header>, not a child. The header picks up
-     backdrop-blur-md on scroll, and an ancestor with a backdrop-filter becomes the
-     containing block for its position:fixed descendants — which collapsed this panel
-     into the header's own box and let the page show through behind it. Inner pages
-     never hit it because forceSolidBg skips the scroll handler entirely. -->
+<!-- Mobile Dropdown Menu -->
 <div
   id="mobile-menu"
   class="fixed inset-0 top-[64px] sm:top-[70px] lg:top-[75px] bg-white z-40 transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col border-t border-border"
   aria-hidden="true"
 >
-  <nav class="flex-1 min-h-0 overflow-y-auto overscroll-contain flex flex-col gap-3 px-8 pt-6 pb-6">
-      {links.map((link, idx) => (
-        link.hasDropdown ? (
+  <nav class="flex-1 min-h-0 overflow-y-auto overscroll-contain flex flex-col gap-2.5 px-8 pt-6 pb-6">
+      {links.map((link, idx) => {
+        const isServices = link.dropdownType === 'services';
+        const isWork = link.dropdownType === 'work';
+        const isAutoOpen = (isServices && servicesActive) || (isWork && workActive);
+
+        return link.hasDropdown ? (
           <div
-            class="mobile-link opacity-0 transform translate-y-4 transition-all duration-300 border-b border-border/40 pb-3"
-            style={`transition-delay: ${idx * 50}ms`}
+            class="mobile-link opacity-0 transform translate-y-4 transition-all duration-300 border-b border-border/40 pb-2.5"
+            style={`transition-delay: ${idx * 45}ms`}
           >
-            <span class="block text-2xl font-bold text-neutral-900 py-1.5">{link.name}</span>
-            <div class="flex flex-col gap-2.5 pl-4 pt-1">
-              {services.map(svc => (
-                <a href={svc.href} class="mobile-sublink text-base font-semibold text-neutral-500 hover:text-primary transition-colors flex items-center gap-2.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-primary/60 flex-shrink-0"></span>
-                  {svc.name}
-                </a>
-              ))}
+            <button
+              type="button"
+              class="mobile-accordion-toggle flex items-center justify-between w-full text-2xl font-bold text-neutral-900 py-1.5 text-left focus:outline-none"
+              aria-expanded={isAutoOpen ? "true" : "false"}
+              data-target={`submenu-${link.dropdownType}`}
+            >
+              <span>{link.name}</span>
+              <svg class={`w-5 h-5 text-neutral-400 transition-transform duration-300 accordion-arrow ${isAutoOpen ? 'rotate-180 text-primary' : ''}`} fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+            </button>
+            <div id={`submenu-${link.dropdownType}`} class={`mobile-submenu flex flex-col gap-2 pl-4 pt-2 ${isAutoOpen ? '' : 'hidden'}`}>
+              {isServices && (
+                <>
+                  {services.map(svc => (
+                    <a href={svc.href} class="mobile-sublink text-base font-semibold text-neutral-600 hover:text-primary transition-colors flex items-center gap-2.5 py-1">
+                      <span class="w-1.5 h-1.5 rounded-full bg-primary/60 flex-shrink-0"></span>
+                      {svc.name}
+                    </a>
+                  ))}
+                  <a href="/services/" class="mobile-sublink text-sm font-bold text-primary hover:underline flex items-center gap-2 pt-1.5">
+                    View all services →
+                  </a>
+                </>
+              )}
+              {isWork && (
+                <>
+                  {workItems.map(item => (
+                    <a href={item.href} class="mobile-sublink text-base font-semibold text-neutral-600 hover:text-primary transition-colors flex items-center gap-2.5 py-1">
+                      <span class="w-1.5 h-1.5 rounded-full bg-primary/60 flex-shrink-0"></span>
+                      {item.name}
+                    </a>
+                  ))}
+                </>
+              )}
             </div>
           </div>
         ) : (
           <a
             href={link.href}
             class="mobile-link text-2xl font-bold text-neutral-900 hover:text-primary transition-colors duration-300 py-1.5 border-b border-border/40 opacity-0 transform translate-y-4"
-            style={`transition-delay: ${idx * 50}ms`}
+            style={`transition-delay: ${idx * 45}ms`}
           >
             {link.name}
           </a>
-        )
-      ))}
+        );
+      })}
   </nav>
   <div class="shrink-0 px-8 pt-5 pb-[calc(2rem+env(safe-area-inset-bottom))] border-t border-border/60 bg-white opacity-0 transform translate-y-4 transition-all duration-300 delay-300 mobile-cta">
     <a href="/request-a-quote/" class="cta-pulse-strong flex items-center justify-center gap-2 w-full py-4 text-base font-bold text-white bg-primary hover:bg-primary/95 transition-colors duration-300 rounded-full">
@@ -222,16 +281,12 @@ const links = [
       menuIconOpen?.classList.replace('block', 'hidden');
       menuIconClose?.classList.replace('hidden', 'block');
 
-      // The panel is offset by the header's compact height, so pin the header solid
-      // while it is open rather than letting it sit tall and transparent over the links.
       if (!forceSolid) {
         header?.classList.add(...SOLID);
         header?.classList.remove(...TRANSPARENT);
       }
       if (header) header.style.backgroundColor = '#ffffff';
 
-      // iOS Safari ignores overflow:hidden on <body>, so lock by fixing the body at
-      // the current offset and restoring it on close.
       if (bottomBar) {
         bottomBar.style.opacity = '0';
         bottomBar.style.pointerEvents = 'none';
@@ -244,7 +299,6 @@ const links = [
       document.body.style.right = '0';
       document.body.style.width = '100%';
 
-      // Animate items in
       mobileLinks.forEach((link) => {
         link.classList.remove('opacity-0', 'translate-y-4');
         link.classList.add('opacity-100', 'translate-y-0');
@@ -273,7 +327,6 @@ const links = [
       window.scrollTo(0, lockedScrollY);
       applyScrollState();
 
-      // Reset item animations
       mobileLinks.forEach((link) => {
         link.classList.add('opacity-0', 'translate-y-4');
         link.classList.remove('opacity-100', 'translate-y-0');
@@ -285,15 +338,28 @@ const links = [
 
   mobileMenuBtn?.addEventListener('click', toggleMenu);
 
-  // Close menu when a link is clicked
-  mobileLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      if (isMenuOpen) toggleMenu();
+  // Mobile accordion toggle for Services & Work
+  document.querySelectorAll('.mobile-accordion-toggle').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const targetId = btn.getAttribute('data-target');
+      const submenu = targetId ? document.getElementById(targetId) : null;
+      const arrow = btn.querySelector('.accordion-arrow');
+      const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+
+      btn.setAttribute('aria-expanded', isExpanded ? 'false' : 'true');
+      if (submenu) {
+        submenu.classList.toggle('hidden');
+      }
+      if (arrow) {
+        arrow.classList.toggle('rotate-180');
+        arrow.classList.toggle('text-primary');
+      }
     });
   });
 
-  // Close menu when a Services sub-link is clicked
-  document.querySelectorAll('.mobile-sublink').forEach(link => {
+  // Close menu when a standard mobile link or submenu link is clicked
+  document.querySelectorAll('a.mobile-link, .mobile-sublink').forEach(link => {
     link.addEventListener('click', () => {
       if (isMenuOpen) toggleMenu();
     });
@@ -303,7 +369,6 @@ const links = [
     if (e.key === 'Escape' && isMenuOpen) toggleMenu();
   });
 
-  // Leaving mobile widths with the menu open would otherwise strand the body lock.
   window.matchMedia('(min-width: 1024px)').addEventListener('change', (e) => {
     if (e.matches && isMenuOpen) toggleMenu();
   });
