@@ -1,0 +1,515 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import site from '../data/site.json';
+import { ShieldCheck, Lock, Eye, Server, RefreshCw, Mail, Phone, MapPin, ChevronRight, CheckCircle2 } from 'lucide-react';
+
+const title = "Privacy Policy | Teknoppy";
+const description = "Learn how Teknoppy collects, uses, protects, and handles your personal information across our website and digital services. Transparent data practices and user privacy rights.";
+const canonical = "https://www.teknoppy.com/privacy-policy/";
+
+const lastUpdated = "October 23, 2026";
+const effectiveDate = "October 23, 2026";
+
+const sections = [
+  { id: "introduction", title: "1. Introduction & Scope" },
+  { id: "information-collected", title: "2. Information We Collect" },
+  { id: "how-we-use-information", title: "3. How We Use Your Information" },
+  { id: "cookies-and-tracking", title: "4. Cookies & Analytics Technologies" },
+  { id: "third-party-services", title: "5. Third-Party Services & Infrastructure" },
+  { id: "data-retention-security", title: "6. Data Storage, Security & Retention" },
+  { id: "data-sharing-disclosure", title: "7. Data Sharing & Disclosures" },
+  { id: "privacy-rights", title: "8. Your Privacy Rights" },
+  { id: "external-links", title: "9. External Links & Third-Party Platforms" },
+  { id: "children-privacy", title: "10. Children's Privacy" },
+  { id: "policy-updates", title: "11. Updates to This Policy" },
+  { id: "contact-grievance", title: "12. Contact & Grievance Redressal" }
+];
+
+const privacySchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.teknoppy.com/privacy-policy/#webpage",
+      "url": "https://www.teknoppy.com/privacy-policy/",
+      "name": "Privacy Policy | Teknoppy",
+      "description": description,
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://www.teknoppy.com/#website",
+        "url": "https://www.teknoppy.com/",
+        "name": "Teknoppy"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.teknoppy.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Privacy Policy",
+            "item": "https://www.teknoppy.com/privacy-policy/"
+          }
+        ]
+      }
+    }
+  ]
+};
+---
+
+<Layout
+  title={title}
+  description={description}
+  canonical={canonical}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(privacySchema)} />
+  </Fragment>
+
+  <Header forceSolidBg={true} />
+
+  <main class="min-h-screen bg-neutral-50/40 text-neutral-850 pt-24 pb-20 selection:bg-primary/20 selection:text-primary">
+    {/* Hero & Breadcrumb */}
+    <section class="bg-white border-b border-neutral-200/60 py-10 sm:py-14">
+      <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Breadcrumb */}
+        <nav class="flex items-center gap-2 text-xs font-semibold text-neutral-400 mb-6" aria-label="Breadcrumb">
+          <a href="/" class="hover:text-primary transition-colors">Home</a>
+          <ChevronRight className="w-3.5 h-3.5" />
+          <span class="text-neutral-700">Privacy Policy</span>
+        </nav>
+
+        <div class="max-w-3xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-[11px] font-bold tracking-wider uppercase mb-4">
+            <ShieldCheck className="w-3.5 h-3.5" />
+            Legal & Data Privacy
+          </div>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-neutral-900 tracking-tight leading-[1.15]">
+            Teknoppy Privacy Policy
+          </h1>
+          <p class="mt-4 text-base sm:text-lg text-neutral-600 font-medium leading-relaxed">
+            This Privacy Policy explains how Teknoppy collects, processes, and protects your personal data when you visit our website (<a href="https://www.teknoppy.com/" class="text-primary hover:underline">teknoppy.com</a>), submit enquiries, or communicate with our team.
+          </p>
+
+          <div class="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-neutral-500 font-medium pt-4 border-t border-neutral-100">
+            <span><strong>Effective Date:</strong> {effectiveDate}</span>
+            <span>&bull;</span>
+            <span><strong>Last Updated:</strong> {lastUpdated}</span>
+            <span>&bull;</span>
+            <span><strong>Scope:</strong> www.teknoppy.com</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Content Container */}
+    <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+        {/* Table of Contents Sticky Sidebar */}
+        <aside class="lg:col-span-4">
+          <div class="lg:sticky lg:top-28 bg-white border border-neutral-200/70 rounded-2xl p-6 shadow-sm">
+            <h2 class="text-xs font-bold uppercase tracking-wider text-neutral-400 mb-4">
+              Table of Contents
+            </h2>
+            <nav class="space-y-1.5" aria-label="Table of Contents">
+              {sections.map((section) => (
+                <a
+                  href={`#${section.id}`}
+                  class="block text-xs sm:text-sm font-semibold text-neutral-600 hover:text-primary hover:bg-neutral-50 rounded-lg px-2.5 py-1.5 transition-colors"
+                >
+                  {section.title}
+                </a>
+              ))}
+            </nav>
+
+            <div class="mt-8 pt-6 border-t border-neutral-100">
+              <h3 class="text-xs font-bold text-neutral-700 uppercase tracking-wider mb-2">
+                Privacy Enquiries
+              </h3>
+              <p class="text-xs text-neutral-500 mb-3 leading-relaxed">
+                Have questions regarding your personal data? Reach out directly to our privacy desk.
+              </p>
+              <a
+                href="mailto:sales@teknoppy.com?subject=Privacy%20Request"
+                class="inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:underline"
+              >
+                <Mail className="w-3.5 h-3.5" />
+                sales@teknoppy.com
+              </a>
+            </div>
+          </div>
+        </aside>
+
+        {/* Main Editorial Policy Body */}
+        <article class="lg:col-span-8 bg-white border border-neutral-200/70 rounded-2xl p-6 sm:p-10 shadow-sm space-y-12 text-sm sm:text-base leading-relaxed text-neutral-700">
+          
+          {/* Section 1 */}
+          <section id="introduction" class="scroll-mt-32">
+            <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight flex items-center gap-2.5 mb-4">
+              <span class="w-2 h-2 rounded-full bg-primary"></span>
+              1. Introduction & Scope
+            </h2>
+            <p class="mb-4">
+              <strong>Teknoppy</strong> ("we", "us", "our") is a web design, development, and digital marketing agency established in 2018 in Kochi, Kerala, India. We deliver digital solutions—including custom web design, WordPress and WooCommerce development, ecommerce platforms, web applications, and SEO services—to businesses across Kerala, India, and the GCC region.
+            </p>
+            <p class="mb-4">
+              We respect your right to privacy and are committed to transparent, lawful, and secure data handling practices. This Privacy Policy outlines the types of personal and technical information we collect through our website (<a href="https://www.teknoppy.com/" class="text-primary hover:underline font-semibold">https://www.teknoppy.com/</a>) and its associated landing pages, the purposes for which such data is processed, how it is safeguarded, and the rights available to you under applicable data protection laws, including the <em>Digital Personal Data Protection Act (DPDP Act), 2023</em> of India and relevant regional data protection frameworks.
+            </p>
+            <p>
+              By accessing our website, communicating with us, or submitting your details via our consultation or contact forms, you acknowledge and agree to the data collection and processing practices described in this document.
+            </p>
+          </section>
+
+          {/* Section 2 */}
+          <section id="information-collected" class="scroll-mt-32 pt-8 border-t border-neutral-100">
+            <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight flex items-center gap-2.5 mb-4">
+              <span class="w-2 h-2 rounded-full bg-primary"></span>
+              2. Information We Collect
+            </h2>
+            <p class="mb-4">
+              We collect information in two principal ways: information you directly provide to us, and technical data collected automatically during your visit.
+            </p>
+            
+            <h3 class="text-base font-bold text-neutral-850 mt-6 mb-2">A. Information You Voluntarily Provide</h3>
+            <p class="mb-3">
+              When you submit an enquiry through our contact forms, request a website audit or quote, or message us via WhatsApp or email, we may collect:
+            </p>
+            <ul class="list-disc pl-5 space-y-1.5 mb-6 text-neutral-600">
+              <li><strong>Contact Identification:</strong> Full name, business email address, and telephone or WhatsApp contact number.</li>
+              <li><strong>Project Details:</strong> Business name, current website URL, requirements (e.g., web design, ecommerce development, SEO), budget tier, and custom message notes.</li>
+              <li><strong>Referral & Attribution Context:</strong> Information indicating the landing page, service pillar, or marketing channel through which you connected with us.</li>
+              <li><strong>Direct Communications:</strong> The transcript of queries, project briefing materials, and correspondence sent to our team.</li>
+            </ul>
+
+            <h3 class="text-base font-bold text-neutral-850 mt-6 mb-2">B. Information Automatically Collected</h3>
+            <p class="mb-3">
+              When you browse our website, our servers and analytics infrastructure automatically capture standard technical log data:
+            </p>
+            <ul class="list-disc pl-5 space-y-1.5 mb-4 text-neutral-600">
+              <li><strong>Device & Browser Data:</strong> Browser type, operating system version, device category (mobile, tablet, desktop), screen resolution, and language preference.</li>
+              <li><strong>Usage & Navigation Metrics:</strong> Pages visited, scroll depth, session duration, referring website URL, and outbound link clicks.</li>
+              <li><strong>Network Identifiers:</strong> Internet Protocol (IP) address, used primarily for diagnostic monitoring, geographical aggregation, and cybersecurity protection.</li>
+            </ul>
+            <p class="text-xs bg-neutral-50 p-3 rounded-lg border border-neutral-200/60 text-neutral-500 font-medium">
+              <em>Note:</em> We do not knowingly collect sensitive personal data such as financial account credentials, credit card details, government identification numbers, biometrics, or personal health records through our public website.
+            </p>
+          </section>
+
+          {/* Section 3 */}
+          <section id="how-we-use-information" class="scroll-mt-32 pt-8 border-t border-neutral-100">
+            <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight flex items-center gap-2.5 mb-4">
+              <span class="w-2 h-2 rounded-full bg-primary"></span>
+              3. How We Use Your Information
+            </h2>
+            <p class="mb-4">
+              We process your personal information strictly for legitimate commercial, operational, and customer communication purposes:
+            </p>
+            <div class="grid sm:grid-cols-2 gap-4 my-6">
+              <div class="p-4 rounded-xl border border-neutral-100 bg-neutral-50/60">
+                <h4 class="text-sm font-bold text-neutral-900 mb-1 flex items-center gap-1.5">
+                  <CheckCircle2 className="w-4 h-4 text-primary" />
+                  Service Enquiries & Proposals
+                </h4>
+                <p class="text-xs text-neutral-600 leading-relaxed">
+                  Evaluating project requirements, preparing formal scopes of work, delivering fee estimates, and scheduling discovery calls.
+                </p>
+              </div>
+              <div class="p-4 rounded-xl border border-neutral-100 bg-neutral-50/60">
+                <h4 class="text-sm font-bold text-neutral-900 mb-1 flex items-center gap-1.5">
+                  <CheckCircle2 className="w-4 h-4 text-primary" />
+                  Client Account Management
+                </h4>
+                <p class="text-xs text-neutral-600 leading-relaxed">
+                  Communicating during active design and development projects, milestone deliveries, and post-launch maintenance cycles.
+                </p>
+              </div>
+              <div class="p-4 rounded-xl border border-neutral-100 bg-neutral-50/60">
+                <h4 class="text-sm font-bold text-neutral-900 mb-1 flex items-center gap-1.5">
+                  <CheckCircle2 className="w-4 h-4 text-primary" />
+                  Spam & Security Prevention
+                </h4>
+                <p class="text-xs text-neutral-600 leading-relaxed">
+                  Preventing automated bot spam submissions via honeypot filtering, protecting our infrastructure against DDoS threats and abuse.
+                </p>
+              </div>
+              <div class="p-4 rounded-xl border border-neutral-100 bg-neutral-50/60">
+                <h4 class="text-sm font-bold text-neutral-900 mb-1 flex items-center gap-1.5">
+                  <CheckCircle2 className="w-4 h-4 text-primary" />
+                  Performance Optimization
+                </h4>
+                <p class="text-xs text-neutral-600 leading-relaxed">
+                  Analyzing aggregated website usage to optimize page speed, resolve layout errors, and improve accessibility across devices.
+                </p>
+              </div>
+            </div>
+            <p class="font-medium text-neutral-800">
+              <strong>Our Commitment:</strong> Teknoppy never sells, rents, leases, or trades your personal information or contact details to third-party data brokers, marketing lists, or advertising networks.
+            </p>
+          </section>
+
+          {/* Section 4 */}
+          <section id="cookies-and-tracking" class="scroll-mt-32 pt-8 border-t border-neutral-100">
+            <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight flex items-center gap-2.5 mb-4">
+              <span class="w-2 h-2 rounded-full bg-primary"></span>
+              4. Cookies & Analytics Technologies
+            </h2>
+            <p class="mb-4">
+              Cookies are small text files placed on your device by your web browser when visiting websites. They facilitate basic site functionality, record preferences, and deliver anonymous analytics.
+            </p>
+
+            <h3 class="text-base font-bold text-neutral-850 mt-6 mb-2">A. Google Tag Manager (GTM)</h3>
+            <p class="mb-4">
+              Our website utilizes <strong>Google Tag Manager</strong> (Container ID: <code class="px-1.5 py-0.5 rounded bg-neutral-100 text-xs font-mono text-neutral-800">GTM-NHX2WJ39</code>) provided by Google LLC. GTM is a tag management framework that injects analytics and conversion tracking scripts dynamically. GTM itself does not collect personal data; rather, it coordinates the deployment of measurement tags across our platform.
+            </p>
+
+            <h3 class="text-base font-bold text-neutral-850 mt-6 mb-2">B. Google Analytics (GA4)</h3>
+            <p class="mb-4">
+              Via GTM, we deploy Google Analytics 4 to collect aggregated, pseudonymous information on how visitors discover and interact with our pages. These insights help us measure page load speeds, identify broken links, and determine which service guides provide the most value. IP anonymization protocols are applied to protect visitor identity.
+            </p>
+
+            <h3 class="text-base font-bold text-neutral-850 mt-6 mb-2">C. Managing & Disabling Cookies</h3>
+            <p class="mb-3">
+              You have the option to accept, restrict, or disable cookies at any time through your browser settings. Please consult your browser's official documentation for instructions:
+            </p>
+            <ul class="list-disc pl-5 space-y-1 mb-4 text-xs sm:text-sm text-neutral-600">
+              <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Google Chrome Cookie Settings</a></li>
+              <li><a href="https://support.apple.com/guide/safari/manage-cookies-sfri11471/mac" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Apple Safari Cookie Settings</a></li>
+              <li><a href="https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Mozilla Firefox Cookie Settings</a></li>
+              <li><a href="https://support.microsoft.com/en-us/windows/microsoft-edge-browsing-data-and-privacy-bb8174ba-9d73-dcf2-9b4a-c582b4e640dd" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Microsoft Edge Cookie Settings</a></li>
+            </ul>
+            <p class="text-xs text-neutral-500">
+              <em>Note:</em> Disabling cookies does not impair core page browsing on teknoppy.com because our primary static content does not require authenticated cookie sessions.
+            </p>
+          </section>
+
+          {/* Section 5 */}
+          <section id="third-party-services" class="scroll-mt-32 pt-8 border-t border-neutral-100">
+            <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight flex items-center gap-2.5 mb-4">
+              <span class="w-2 h-2 rounded-full bg-primary"></span>
+              5. Third-Party Services & Infrastructure
+            </h2>
+            <p class="mb-4">
+              To deliver a secure, high-speed experience, we engage reputable third-party technology providers under strict security criteria:
+            </p>
+            
+            <div class="space-y-4">
+              <div class="p-4 rounded-xl border border-neutral-200/80 bg-white">
+                <h4 class="text-sm font-bold text-neutral-900 mb-1">
+                  1. Vercel Inc. (Cloud Hosting & Serverless Functions)
+                </h4>
+                <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                  Our website is deployed on Vercel's global Content Delivery Network (CDN) and edge serverless environment. Vercel processes HTTP requests, enforces TLS encryption, and routes backend form submissions. Vercel adheres to enterprise-grade security standards including SOC 2 Type 2 compliance.
+                </p>
+              </div>
+
+              <div class="p-4 rounded-xl border border-neutral-200/80 bg-white">
+                <h4 class="text-sm font-bold text-neutral-900 mb-1">
+                  2. Resend Technologies Inc. (Transactional Email Processing)
+                </h4>
+                <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                  When you submit an enquiry on our consultation form, the payload is transmitted securely over an encrypted HTTPS connection to Resend's API (<code class="px-1 text-xs bg-neutral-100 text-neutral-800">api.resend.com</code>) to deliver the notification directly to our sales and management inboxes (<a href="mailto:sales@teknoppy.com" class="text-primary hover:underline">sales@teknoppy.com</a> and <a href="mailto:sanal@teknoppy.com" class="text-primary hover:underline">sanal@teknoppy.com</a>). Resend acts solely as a secure data processor for email dispatch.
+                </p>
+              </div>
+
+              <div class="p-4 rounded-xl border border-neutral-200/80 bg-white">
+                <h4 class="text-sm font-bold text-neutral-900 mb-1">
+                  3. Google Fonts (Google LLC)
+                </h4>
+                <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                  We load typography (Sora and Inter) via Google Fonts (<code class="px-1 text-xs bg-neutral-100 text-neutral-800">fonts.googleapis.com</code>). Google Fonts may log minimal technical requests necessary to serve the font files without associating them with authenticated user accounts.
+                </p>
+              </div>
+
+              <div class="p-4 rounded-xl border border-neutral-200/80 bg-white">
+                <h4 class="text-sm font-bold text-neutral-900 mb-1">
+                  4. WhatsApp (Meta Platforms Ireland Ltd. / WhatsApp LLC)
+                </h4>
+                <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                  Clicking on our floating WhatsApp button or chat links redirects you directly to WhatsApp's external messaging client. Any conversation conducted on WhatsApp is subject to WhatsApp's own end-to-end encryption and <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Privacy Policy</a>.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Section 6 */}
+          <section id="data-retention-security" class="scroll-mt-32 pt-8 border-t border-neutral-100">
+            <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight flex items-center gap-2.5 mb-4">
+              <span class="w-2 h-2 rounded-full bg-primary"></span>
+              6. Data Storage, Security & Retention
+            </h2>
+            <h3 class="text-base font-bold text-neutral-850 mb-2">Technical & Organizational Safeguards</h3>
+            <p class="mb-3">
+              We apply comprehensive technical, physical, and administrative measures to safeguard your personal data from unauthorized access, accidental alteration, disclosure, or destruction:
+            </p>
+            <ul class="list-disc pl-5 space-y-1.5 mb-6 text-neutral-600">
+              <li><strong>Transport Layer Security (TLS/HTTPS):</strong> All data transmitted between your browser and our web servers is protected using 256-bit TLS encryption.</li>
+              <li><strong>Zero Web Storage of Sensitive Credentials:</strong> We never collect or retain financial payment card information, banking PINs, or sensitive customer authentication secrets on our web servers.</li>
+              <li><strong>Access Control:</strong> Access to sales inboxes and enquiry databases is restricted strictly to authorized business development, strategy, and project management personnel who are bound by non-disclosure and confidentiality obligations.</li>
+            </ul>
+
+            <h3 class="text-base font-bold text-neutral-850 mb-2">Data Retention Schedule</h3>
+            <p class="mb-3">
+              We retain personal data only for the period required to achieve the purposes outlined in this policy:
+            </p>
+            <ul class="list-disc pl-5 space-y-1.5 text-neutral-600">
+              <li><strong>General Enquiries & Quotes:</strong> Retained for up to 24 months from the date of last communication to facilitate follow-ups and service scoping.</li>
+              <li><strong>Client Project Records:</strong> Retained for the duration of the commercial engagement and for a statutory period thereafter (typically 7–8 years) to comply with taxation, accounting, audit, and legal documentation standards in India.</li>
+              <li><strong>Analytics Data:</strong> Aggregated and anonymized metrics in GA4 are retained in accordance with standard data retention settings.</li>
+            </ul>
+          </section>
+
+          {/* Section 7 */}
+          <section id="data-sharing-disclosure" class="scroll-mt-32 pt-8 border-t border-neutral-100">
+            <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight flex items-center gap-2.5 mb-4">
+              <span class="w-2 h-2 rounded-full bg-primary"></span>
+              7. Data Sharing & Disclosures
+            </h2>
+            <p class="mb-4">
+              We do not share your personal information except in the following limited and clearly defined circumstances:
+            </p>
+            <ul class="list-disc pl-5 space-y-2 mb-4 text-neutral-600">
+              <li><strong>Subcontractors & Service Partners:</strong> Trusted contractors or infrastructure specialists who assist in hosting, server administration, or email dispatch, bound by contract to process data solely on our instructions.</li>
+              <li><strong>Legal Compliance & Statutory Requirements:</strong> When compelled by valid legal process, judicial order, law enforcement summons, or regulatory authorities under applicable Indian statutes (such as the Information Technology Act, 2000) or governing international jurisdictions.</li>
+              <li><strong>Protection of Rights & Safety:</strong> When disclosure is reasonably required to enforce our terms, investigate fraud, address security vulnerabilities, or protect the property, rights, and safety of Teknoppy, our clients, or the general public.</li>
+              <li><strong>Business Transitions:</strong> In the event of a merger, acquisition, corporate restructuring, or asset reorganization, customer information may be transferred to the successor entity under equivalent privacy protections.</li>
+            </ul>
+          </section>
+
+          {/* Section 8 */}
+          <section id="privacy-rights" class="scroll-mt-32 pt-8 border-t border-neutral-100">
+            <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight flex items-center gap-2.5 mb-4">
+              <span class="w-2 h-2 rounded-full bg-primary"></span>
+              8. Your Privacy Rights
+            </h2>
+            <p class="mb-4">
+              Depending on your jurisdiction and subject to applicable statutory limitations, you hold comprehensive rights regarding your personal data:
+            </p>
+            <div class="space-y-3 mb-6">
+              <div class="flex items-start gap-3 p-3 rounded-lg bg-neutral-50 border border-neutral-200/50">
+                <span class="font-bold text-primary text-xs uppercase px-2 py-0.5 rounded bg-primary/10 mt-0.5">Access</span>
+                <p class="text-xs sm:text-sm text-neutral-700">The right to obtain confirmation as to whether we process your data and receive a readable copy of your personal records.</p>
+              </div>
+              <div class="flex items-start gap-3 p-3 rounded-lg bg-neutral-50 border border-neutral-200/50">
+                <span class="font-bold text-primary text-xs uppercase px-2 py-0.5 rounded bg-primary/10 mt-0.5">Correction</span>
+                <p class="text-xs sm:text-sm text-neutral-700">The right to request immediate correction, updating, or rectification of inaccurate or incomplete personal data.</p>
+              </div>
+              <div class="flex items-start gap-3 p-3 rounded-lg bg-neutral-50 border border-neutral-200/50">
+                <span class="font-bold text-primary text-xs uppercase px-2 py-0.5 rounded bg-primary/10 mt-0.5">Erasure</span>
+                <p class="text-xs sm:text-sm text-neutral-700">The right to request deletion of your information when it is no longer necessary for the purposes for which it was gathered, subject to legal retention mandates.</p>
+              </div>
+              <div class="flex items-start gap-3 p-3 rounded-lg bg-neutral-50 border border-neutral-200/50">
+                <span class="font-bold text-primary text-xs uppercase px-2 py-0.5 rounded bg-primary/10 mt-0.5">Opt-Out</span>
+                <p class="text-xs sm:text-sm text-neutral-700">The right to withdraw your consent to direct commercial updates or promotional emails at any time.</p>
+              </div>
+            </div>
+            <p class="mb-4">
+              To exercise any of these rights, please submit a written request to <a href="mailto:sales@teknoppy.com?subject=Privacy%20Rights%20Request" class="text-primary font-semibold hover:underline">sales@teknoppy.com</a> with the subject line <strong>"Data Privacy Request"</strong>. We will acknowledge and respond to verified requests within thirty (30) business days.
+            </p>
+          </section>
+
+          {/* Section 9 */}
+          <section id="external-links" class="scroll-mt-32 pt-8 border-t border-neutral-100">
+            <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight flex items-center gap-2.5 mb-4">
+              <span class="w-2 h-2 rounded-full bg-primary"></span>
+              9. External Links & Third-Party Platforms
+            </h2>
+            <p class="mb-4">
+              Our website contains links to external websites, including client sites featured in our portfolio, case studies, social media platforms (LinkedIn, Instagram, X/Twitter), and review directories (Trustpilot, Google Business Profile).
+            </p>
+            <p>
+              Once you click on an external link and navigate away from <em>teknoppy.com</em>, this Privacy Policy no longer applies. We have no authority over and assume no legal responsibility for the content, security practices, or privacy policies of third-party platforms. We encourage you to review the privacy documentation of every third-party site you visit.
+            </p>
+          </section>
+
+          {/* Section 10 */}
+          <section id="children-privacy" class="scroll-mt-32 pt-8 border-t border-neutral-100">
+            <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight flex items-center gap-2.5 mb-4">
+              <span class="w-2 h-2 rounded-full bg-primary"></span>
+              10. Children's Privacy
+            </h2>
+            <p class="mb-4">
+              Teknoppy provides professional web design, technology, and digital marketing services strictly targeted at corporate businesses, enterprise managers, entrepreneurs, and adults aged 18 and older.
+            </p>
+            <p>
+              Our website is not designed for or directed toward children under 18 years of age. We do not intentionally or knowingly collect, solicit, or maintain personal information from minors. If you believe that a child has provided us with personal details without parental consent, please contact us at <a href="mailto:sales@teknoppy.com" class="text-primary hover:underline">sales@teknoppy.com</a> so we can promptly investigate and delete the information from our records.
+            </p>
+          </section>
+
+          {/* Section 11 */}
+          <section id="policy-updates" class="scroll-mt-32 pt-8 border-t border-neutral-100">
+            <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight flex items-center gap-2.5 mb-4">
+              <span class="w-2 h-2 rounded-full bg-primary"></span>
+              11. Updates to This Policy
+            </h2>
+            <p class="mb-4">
+              As technology evolves, our digital services expand, or statutory regulations change, we may periodically revise this Privacy Policy.
+            </p>
+            <p>
+              Any changes will be posted directly on this page with an updated "Last Updated" and "Effective Date" at the top of the document. For material changes that significantly affect how personal data is processed, we may also provide prominent notice across our website or notify existing clients directly where appropriate. We encourage you to check this page periodically to remain informed about our data protection standards.
+            </p>
+          </section>
+
+          {/* Section 12 */}
+          <section id="contact-grievance" class="scroll-mt-32 pt-8 border-t border-neutral-100">
+            <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight flex items-center gap-2.5 mb-4">
+              <span class="w-2 h-2 rounded-full bg-primary"></span>
+              12. Contact & Grievance Redressal
+            </h2>
+            <p class="mb-6">
+              If you have questions, feedback, concerns, or wish to exercise your data privacy rights, you can reach out directly to our designated privacy desk:
+            </p>
+
+            <div class="p-6 rounded-2xl bg-neutral-900 text-white space-y-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center text-primary">
+                  <ShieldCheck className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 class="text-base font-bold text-white">Teknoppy — Privacy Desk</h3>
+                  <p class="text-xs text-neutral-400">Attn: Data Protection & Grievance Officer</p>
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-4 pt-4 border-t border-neutral-800 text-xs sm:text-sm">
+                <div class="flex items-start gap-3">
+                  <MapPin className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                  <span class="text-neutral-300">
+                    {site.address}
+                  </span>
+                </div>
+                <div class="space-y-2">
+                  <div class="flex items-center gap-3">
+                    <Mail className="w-4 h-4 text-primary shrink-0" />
+                    <a href="mailto:sales@teknoppy.com" class="text-white hover:text-primary transition-colors">
+                      {site.email}
+                    </a>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <Phone className="w-4 h-4 text-primary shrink-0" />
+                    <a href={`tel:${site.phoneLink}`} class="text-white hover:text-primary transition-colors">
+                      {site.phone}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="mt-6 text-xs text-neutral-500">
+              In accordance with the Information Technology Act, 2000 and the Digital Personal Data Protection Act, 2023, grievances received will be acknowledged within 48 hours and addressed within thirty (30) days from the date of receipt.
+            </p>
+          </section>
+
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>

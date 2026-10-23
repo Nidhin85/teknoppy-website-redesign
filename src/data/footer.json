@@ -235,5 +235,10 @@
     }
   ],
   "serviceAreas": "Kochi · Thrissur · Kozhikode · Thiruvananthapuram · Palakkad · Kottayam · UAE · Qatar",
-  "legal": []
+  "legal": [
+    {
+      "label": "Privacy Policy",
+      "href": "/privacy-policy/"
+    }
+  ]
 }
