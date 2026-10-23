@@ -168,14 +168,25 @@
   .wl h2{font-size:clamp(1.8rem,3.6vw,2.8rem)}
   .wl p{color:#3B3B3B;margin-top:10px;max-width:560px;font-weight:500}
 
-  /* quote */
-  .quote{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;max-width:960px;margin:0 auto}
-  .quote img{width:120px;height:120px;border-radius:24px;object-fit:cover;background:var(--orange-s)}
-  .quote blockquote{font-family:"Space Grotesk",system-ui,sans-serif;font-size:clamp(1.4rem,2.8vw,2.1rem);font-weight:600;line-height:1.25;letter-spacing:-.02em;color:var(--black)}
+  /* quote & testimonials carousel */
+  .testi-carousel-container{position:relative;max-width:960px;margin:0 auto;overflow:hidden;padding:6px 0 16px}
+  .testi-slider{display:flex;transition:transform .45s cubic-bezier(0.25, 1, 0.5, 1);will-change:transform}
+  .testi-slide{flex:0 0 100%;width:100%;box-sizing:border-box;padding:0 4px}
+  .quote{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;max-width:960px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:28px;padding:36px 42px;box-shadow:0 12px 36px -18px rgba(0,0,0,.08)}
+  .quote img{width:120px;height:120px;border-radius:24px;object-fit:cover;background:var(--orange-s);flex-shrink:0}
+  .quote blockquote{font-family:"Space Grotesk",system-ui,sans-serif;font-size:clamp(1.25rem,2.6vw,1.9rem);font-weight:600;line-height:1.3;letter-spacing:-.02em;color:var(--black);margin:0}
   .quote blockquote::before{content:"“";color:var(--orange)}
   .quote blockquote::after{content:"”";color:var(--orange)}
-  .quote cite{display:block;font-style:normal;margin-top:16px;font-weight:700}
-  .quote cite small{color:var(--muted);font-weight:500}
+  .quote cite{display:block;font-style:normal;margin-top:16px;font-weight:700;font-size:1.05rem}
+  .quote cite small{color:var(--muted);font-weight:500;font-size:.92rem}
+
+  .testi-controls{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:20px}
+  .testi-btn{width:44px;height:44px;border-radius:50%;background:#fff;border:1.5px solid var(--line);color:var(--black);display:grid;place-items:center;cursor:pointer;transition:all .2s;box-shadow:0 4px 12px rgba(0,0,0,.04)}
+  .testi-btn:hover{background:var(--orange);border-color:var(--orange);color:#fff;transform:translateY(-2px);box-shadow:0 8px 18px rgba(255,107,0,.25)}
+  .testi-btn:active{transform:translateY(0)}
+  .testi-dots{display:flex;gap:8px;align-items:center}
+  .testi-dot{width:10px;height:10px;border-radius:999px;background:#D9D9D9;border:0;padding:0;cursor:pointer;transition:all .25s}
+  .testi-dot.active{width:26px;background:var(--orange)}
 
   /* faq */
   .faqg{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px}
@@ -621,6 +632,11 @@
     .geo-g{grid-template-columns:1fr 1fr}
     .intro-g{grid-template-columns:1fr;gap:20px}
     .ail{grid-template-columns:1fr 1fr}.aiw{padding:32px 24px}
+    .inc{grid-template-columns:1fr;gap:36px}
+    .inc p.l{max-width:100%}
+    .case{grid-template-columns:1fr}
+    .case .ct{padding:36px 28px}
+    .case .cv{padding:36px 24px}
   }
 
   @media (max-width:640px){
@@ -635,7 +651,31 @@
     .map{margin-top:20px}
     .mlabel{font-size:.6rem;padding:2px 6px}.mhome{font-size:.62rem;padding:4px 7px}
     .bento{grid-template-columns:1fr}.t-big,.t-3,.t-2{grid-column:span 1}
-    .quote{grid-template-columns:1fr;text-align:center}.quote img,.quote .qav{margin:0 auto}
+    .inc{grid-template-columns:1fr;gap:24px}
+    .inc p.l{max-width:100%;font-size:.96rem;margin-top:10px}
+    .inc .btn{display:inline-flex;width:auto;margin-top:18px}
+    .clist{grid-template-columns:1fr;gap:10px;width:100%}
+    .clist div{padding:14px 16px;border-radius:14px}
+    .clist b{font-size:.95rem}
+    .clist small{font-size:.84rem}
+
+    .case{grid-template-columns:1fr;border-radius:22px;overflow:hidden}
+    .case .ct{padding:26px 18px}
+    .case .ct h3{font-size:clamp(1.4rem,5.5vw,1.85rem);line-height:1.2;margin:8px 0 10px}
+    .case .ct p{font-size:.92rem;line-height:1.55}
+    .case .res{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 20px}
+    .case .res span{font-size:.8rem;padding:7px 11px;border-radius:8px}
+    .case .cv{padding:28px 16px;overflow:hidden}
+    .serp2{max-width:100%;width:100%;margin:0 auto;box-sizing:border-box}
+    .serp2 .q{font-size:.78rem;padding:7px 10px}
+    .serp2 .r{padding:8px 10px}
+    .serp2 .r b{font-size:.8rem}
+
+    .quote{grid-template-columns:1fr;text-align:center;padding:26px 18px;border-radius:22px;gap:18px}
+    .quote img{width:90px;height:90px;border-radius:20px;margin:0 auto}
+    .quote blockquote{font-size:clamp(1.1rem,4.5vw,1.35rem);line-height:1.35}
+    .quote cite{margin-top:12px;font-size:.95rem}
+    .testi-btn{width:40px;height:40px}
     .form{padding:24px 18px}
     .final{border-radius:26px 26px 0 0;padding:60px 0}
     .mbar{display:flex}.waf{display:none}
@@ -662,6 +702,14 @@
     .geo-g{grid-template-columns:1fr}
     .globe{width:130px;height:130px;margin-top:12px}
     .hbtns{flex-direction:column}.hbtns .btn{width:100%}
+  }
+
+  @media (max-width:360px){
+    .case .ct{padding:20px 14px}
+    .case .cv{padding:22px 12px}
+    .case .res span{width:100%;text-align:center}
+    .clist div{padding:12px 14px}
+    .quote{padding:20px 14px}
   }
 
   @media (prefers-reduced-motion:reduce){
@@ -1248,13 +1296,87 @@
     </div>
   </section>
 
-  <!-- TESTIMONIAL QUOTE -->
-  <section style="padding-top:20px">
-    <div class="wrap quote rv">
-      <img alt="Biju Thomas, CEO of Olives Resort" loading="lazy" src="/testimonials/biju-thomas.webp" onerror="this.onerror=null;this.src='https://www.teknoppy.com/testimonials/biju-thomas.webp';" />
-      <div>
-        <blockquote>We now rank at the top of Google for our keywords and get many direct booking calls due to better visibility.</blockquote>
-        <cite>Biju Thomas <small>· CEO, Olives Resort, Wayanad</small></cite>
+  <!-- CLIENT REVIEWS / TESTIMONIALS CAROUSEL -->
+  <section class="testi-sec" style="padding-top:20px" id="reviews">
+    <div class="wrap">
+      <div class="rv" style="text-align:center;margin-bottom:28px">
+        <span class="kicker">/ Verified Client Reviews</span>
+        <h2>What business leaders say about Teknoppy</h2>
+      </div>
+      <div class="testi-carousel-container rv">
+        <div class="testi-slider" id="testiSlider" role="region" aria-roledescription="carousel" aria-label="Client Reviews">
+          <!-- Slide 1: Biju Thomas -->
+          <div class="testi-slide" role="group" aria-roledescription="slide" aria-label="1 of 6">
+            <div class="quote">
+              <img alt="Biju Thomas, CEO of Olives Resort, Wayanad" loading="lazy" src="/testimonials/biju-thomas.webp" width="120" height="120" onerror="this.onerror=null;this.src='https://www.teknoppy.com/testimonials/biju-thomas.webp';" />
+              <div>
+                <blockquote>We now rank at the top of Google for our keywords and get many direct booking calls due to better visibility.</blockquote>
+                <cite>Biju Thomas <small>· CEO, Olives Resort, Wayanad</small></cite>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2: Dr. Asghar -->
+          <div class="testi-slide" role="group" aria-roledescription="slide" aria-label="2 of 6">
+            <div class="quote">
+              <img alt="Dr. Asghar, CEO of Greens Ayurveda, Calicut" loading="lazy" src="/testimonials/dr-asghar.webp" width="120" height="120" onerror="this.onerror=null;this.src='https://www.teknoppy.com/testimonials/dr-asghar.webp';" />
+              <div>
+                <blockquote>Mr. Sanal is exceptionally supportive and customer-friendly. I have worked with many IT teams, but I am 100% happy with Teknoppy. No doubt, I recommend them with 100% satisfaction.</blockquote>
+                <cite>Dr. Asghar <small>· CEO, Greens Ayurveda, Calicut</small></cite>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3: Vivek Menon -->
+          <div class="testi-slide" role="group" aria-roledescription="slide" aria-label="3 of 6">
+            <div class="quote">
+              <img alt="Vivek Menon, CTO of Evosyz, Kochi" loading="lazy" src="/testimonials/vivek-menon-portrait.webp" width="120" height="120" onerror="this.onerror=null;this.src='https://www.teknoppy.com/testimonials/vivek-menon-portrait.webp';" />
+              <div>
+                <blockquote>Being in the Fintech space, we needed a reliable partner. Teknoppy created an appealing website that represents our brand perfectly.</blockquote>
+                <cite>Vivek Menon <small>· CTO, Evosyz, Kochi</small></cite>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 4: Shainesh Prakashan -->
+          <div class="testi-slide" role="group" aria-roledescription="slide" aria-label="4 of 6">
+            <div class="quote">
+              <img alt="Shainesh Prakashan, CEO of Exacore IT, Infopark Kochi" loading="lazy" src="/testimonials/shainesh-prakashan.webp" width="120" height="120" onerror="this.onerror=null;this.src='https://www.teknoppy.com/testimonials/shainesh-prakashan.webp';" />
+              <div>
+                <blockquote>Teknoppy was very intuitive in understanding our requirements. They made great digital collateral and now we are getting good outreach to the market.</blockquote>
+                <cite>Shainesh Prakashan <small>· CEO, Exacore IT, Infopark Kochi</small></cite>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 5: Rincy -->
+          <div class="testi-slide" role="group" aria-roledescription="slide" aria-label="5 of 6">
+            <div class="quote">
+              <img alt="Rincy, Astrologer & Psychic Healer, Australia" loading="lazy" src="/testimonials/rincy.webp" width="120" height="120" onerror="this.onerror=null;this.src='https://www.teknoppy.com/testimonials/rincy.webp';" />
+              <div>
+                <blockquote>Thank you Teknoppy for a wonderful mobile app for my tarot channel. All functions work great and I am getting many subscribers.</blockquote>
+                <cite>Rincy <small>· Astrologer &amp; Psychic Healer, Australia</small></cite>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 6: Lenaa -->
+          <div class="testi-slide" role="group" aria-roledescription="slide" aria-label="6 of 6">
+            <div class="quote">
+              <img alt="Lenaa, Actor, Author & TEDx Speaker, Kerala" loading="lazy" src="/testimonials/lenaa.webp" width="120" height="120" onerror="this.onerror=null;this.src='https://www.teknoppy.com/testimonials/lenaa.webp';" />
+              <div>
+                <blockquote>Teknoppy did an exceptional job building my personal brand website and digital identity. Truly professional team, timely execution, and a seamless experience throughout.</blockquote>
+                <cite>Lenaa <small>· Actor, Author &amp; TEDx Speaker, Kerala</small></cite>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls: Prev Button, Indicators (Dots), Next Button -->
+        <div class="testi-controls">
+          <button type="button" class="testi-btn prev" id="testiPrev" aria-label="Previous review">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="testi-dots" id="testiDots" role="tablist" aria-label="Review pagination"></div>
+          <button type="button" class="testi-btn next" id="testiNext" aria-label="Next review">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
       </div>
     </div>
   </section>
@@ -1265,7 +1387,9 @@
       <div class="rv"><span class="kicker">/ Real people</span><h2>Meet your global SEO team</h2></div>
       <div class="team">
         <div class="pp rv">
-          <div class="av">SE</div>
+          <div class="av">
+            <img alt="Sanal Edison, Founder & Digital Strategist at Teknoppy" src="/team/sanal-edison.webp" width="96" height="96" loading="lazy" onerror="this.onerror=null;this.src='https://www.teknoppy.com/team/sanal-edison.webp';" />
+          </div>
           <div>
             <h3>Sanal Edison</h3>
             <div class="rl">Leads Teknoppy · Digital Strategist</div>
@@ -1625,6 +1749,136 @@
         (function loop(){var k=0;q.textContent='';a.classList.remove('show');
           var iv=setInterval(function(){q.textContent=txt.slice(0,++k);if(k>=txt.length){clearInterval(iv);setTimeout(function(){a.classList.add('show')},400);setTimeout(loop,7000)}},45)})();
       },{threshold:.4});io2.observe(q);}
+  })();
+
+  /* ===== Testimonials Carousel ===== */
+  (function() {
+    var slider = document.getElementById('testiSlider');
+    var dotsContainer = document.getElementById('testiDots');
+    var prevBtn = document.getElementById('testiPrev');
+    var nextBtn = document.getElementById('testiNext');
+    if (!slider || !dotsContainer) return;
+
+    var slides = slider.querySelectorAll('.testi-slide');
+    var total = slides.length;
+    var current = 0;
+    var timer = null;
+
+    dotsContainer.innerHTML = '';
+    for (var i = 0; i < total; i++) {
+      var dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'testi-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', 'Go to review ' + (i + 1));
+      dot.setAttribute('role', 'tab');
+      dot.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
+      (function(idx) {
+        dot.addEventListener('click', function() {
+          goTo(idx);
+          resetTimer();
+        });
+      })(i);
+      dotsContainer.appendChild(dot);
+    }
+
+    var dots = dotsContainer.querySelectorAll('.testi-dot');
+
+    function update() {
+      slider.style.transform = 'translateX(-' + (current * 100) + '%)';
+      dots.forEach(function(d, idx) {
+        if (idx === current) {
+          d.classList.add('active');
+          d.setAttribute('aria-selected', 'true');
+        } else {
+          d.classList.remove('active');
+          d.setAttribute('aria-selected', 'false');
+        }
+      });
+    }
+
+    function goTo(idx) {
+      current = (idx + total) % total;
+      update();
+    }
+
+    function next() {
+      goTo(current + 1);
+    }
+
+    function prev() {
+      goTo(current - 1);
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', function() {
+        next();
+        resetTimer();
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', function() {
+        prev();
+        resetTimer();
+      });
+    }
+
+    var startX = 0;
+    var startY = 0;
+    var distX = 0;
+    var distY = 0;
+
+    slider.addEventListener('touchstart', function(e) {
+      var t = e.touches[0];
+      startX = t.clientX;
+      startY = t.clientY;
+      distX = 0;
+      distY = 0;
+    }, { passive: true });
+
+    slider.addEventListener('touchmove', function(e) {
+      var t = e.touches[0];
+      distX = t.clientX - startX;
+      distY = t.clientY - startY;
+    }, { passive: true });
+
+    slider.addEventListener('touchend', function() {
+      if (Math.abs(distX) > 40 && Math.abs(distX) > Math.abs(distY)) {
+        if (distX < 0) {
+          next();
+        } else {
+          prev();
+        }
+        resetTimer();
+      }
+    });
+
+    function startTimer() {
+      if (!timer && !RM) {
+        timer = setInterval(next, 6500);
+      }
+    }
+
+    function stopTimer() {
+      if (timer) {
+        clearInterval(timer);
+        timer = null;
+      }
+    }
+
+    function resetTimer() {
+      stopTimer();
+      startTimer();
+    }
+
+    var container = slider.closest('.testi-carousel-container');
+    if (container) {
+      container.addEventListener('mouseenter', stopTimer);
+      container.addEventListener('mouseleave', startTimer);
+      container.addEventListener('touchstart', stopTimer, { passive: true });
+    }
+
+    startTimer();
   })();
 
   /* scroll reveal */
