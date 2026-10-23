@@ -653,7 +653,7 @@
 }
 
 .pf-card {
-  --sh: 270px;
+  --sh: 280px;
   position: relative;
   background: var(--pf-surface);
   border: 1px solid var(--pf-line);
@@ -662,6 +662,7 @@
   cursor: pointer;
   display: flex;
   flex-direction: column;
+  height: 100%;
   text-align: left;
   padding: 0;
   font: inherit;
@@ -806,11 +807,11 @@
 }
 
 .pf-cbody {
-  padding: 18px 22px 22px;
-  display: grid;
-  gap: 9px;
+  padding: 20px 22px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   flex: 1;
-  align-content: start;
 }
 .pf-ctags {
   display: flex;
@@ -843,7 +844,9 @@
   justify-content: space-between;
   align-items: center;
   gap: 12px;
-  margin-top: 4px;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
 }
 .pf-cfoot .loc {
   color: var(--pf-soft);
@@ -2133,6 +2136,10 @@
   }
   .pf-grid {
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .pf-card.wide {
+    --sh: 310px;
   }
   .pf-bawrap,
   .pf-tst,
@@ -2199,10 +2206,18 @@
   }
   .pf-grid {
     grid-template-columns: 1fr;
+    gap: 18px;
   }
+  .pf-card,
   .pf-card.wide {
     grid-column: auto;
-    --sh: 270px;
+    --sh: 240px;
+  }
+  .pf-cbody {
+    padding: 16px 18px 20px;
+  }
+  .pf-card h3 {
+    font-size: 18px;
   }
   .pf-mbox {
     grid-template-columns: 1fr;
@@ -2284,6 +2299,59 @@
   .pf-cta {
     padding: 44px 22px;
     border-radius: 28px;
+  }
+}
+
+@media (max-width: 360px) {
+  .wrap {
+    padding-inline: 14px;
+  }
+  .pf-card,
+  .pf-card.wide {
+    --sh: 205px;
+    border-radius: 20px;
+  }
+  .pf-shot {
+    margin: 8px 8px 0;
+    border-radius: 12px;
+  }
+  .pf-cbody {
+    padding: 14px 14px 16px;
+  }
+  .pf-cfoot {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .pf-go {
+    align-self: flex-end;
+    width: 36px;
+    height: 36px;
+  }
+  .pf-hstats div {
+    flex: 1 1 100%;
+    border-right: 0;
+    border-bottom: 1px solid var(--pf-line);
+  }
+  .pf-hstats div:last-child {
+    border-bottom: 0;
+  }
+  .pf-seg button {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+  .pf-dev {
+    min-height: 220px;
+  }
+  .pf-dev .lap {
+    right: 20px;
+  }
+  .pf-dev .lap .screen {
+    height: 160px;
+  }
+  .pf-dev .phone {
+    width: 82px;
+    height: 160px;
   }
 }
 
