@@ -1025,6 +1025,22 @@ header {
   z-index: 2;
 }
 
+/* Responsive presentation for wide banner & square project cards (Lenaa, Abrus, My PlantStore, Sun and Moon) */
+.work .shot img.fit-contain,
+.work.card-lenaa .shot img {
+  object-fit: contain;
+  object-position: center;
+  padding: 6px 10px;
+  background: #F4F6F9;
+}
+
+@media (max-width: 640px) {
+  .work .shot img.fit-contain,
+  .work.card-lenaa .shot img {
+    padding: 6px 8px;
+  }
+}
+
 .work:hover .shot img {
   transform: scale(1.06);
 }
