@@ -292,6 +292,14 @@ const schema = {
           body: JSON.stringify(payload)
         });
         if (!res.ok) throw new Error(String(res.status));
+        if (window.dataLayer) {
+          window.dataLayer.push({
+            event: 'lead_submit',
+            lead_source: payload.source || 'Footer consultation form',
+            form_id: 'footer-cta-form',
+            page_path: window.location.pathname
+          });
+        }
         form.reset();
         show('Thanks — your message is with us. A Teknoppy strategist will reply within one business day.', true);
       } catch {

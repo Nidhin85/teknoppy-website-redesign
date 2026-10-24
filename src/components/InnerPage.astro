@@ -853,6 +853,14 @@ const breadcrumbSchema = page.breadcrumb && {
           body: JSON.stringify(payload)
         });
         if (!res.ok) throw new Error(String(res.status));
+        if ((window as any).dataLayer) {
+          (window as any).dataLayer.push({
+            event: 'lead_submit',
+            lead_source: payload.source || 'Inner page form',
+            form_id: form.id || 'inner-lead-form',
+            page_path: window.location.pathname
+          });
+        }
         show(form.dataset.success || '', true);
         form.reset();
       } catch {

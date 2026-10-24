@@ -52,6 +52,13 @@ const displayBottomBar = (showBottomBar ?? isKochiPage) && !hideBottomBar;
 <!doctype html>
 <html lang={lang} class="scroll-smooth">
   <head>
+    <!-- Google Tag Manager -->
+    <script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NHX2WJ39');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
@@ -109,6 +116,10 @@ const displayBottomBar = (showBottomBar ?? isKochiPage) && !hideBottomBar;
     <slot name="head" />
   </head>
   <body id="top" class={`min-h-screen flex flex-col relative pb-20 md:pb-0 ${isHomePage ? 'is-homepage' : ''} ${isKochiPage ? 'is-kochi-page' : ''}`}>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHX2WJ39"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <slot />
 
     <!-- Sitewide Continuously Floating CTA System -->
@@ -230,5 +241,71 @@ const displayBottomBar = (showBottomBar ?? isKochiPage) && !hideBottomBar;
     </script>
     <MagneticTypography />
     <script src="../scripts/motion.js"></script>
+  
+    <!-- Google Tag Manager Global Interaction Tracking -->
+    <script is:inline>
+      (function() {
+        window.dataLayer = window.dataLayer || [];
+
+        function trackGtm(event, params) {
+          window.dataLayer.push(Object.assign({ event: event }, params));
+        }
+
+        // 1. Click tracking (WhatsApp, Phone call, Enquiry CTAs)
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+          var link = target && target.closest ? target.closest('a') : null;
+          if (!link) return;
+          var href = link.getAttribute('href') || '';
+
+          if (href.indexOf('wa.me/') !== -1 || href.indexOf('whatsapp.com/') !== -1) {
+            trackGtm('whatsapp_click', {
+              link_url: href,
+              link_text: (link.innerText || '').trim().slice(0, 50),
+              page_location: window.location.href
+            });
+          } else if (href.indexOf('tel:') === 0) {
+            trackGtm('call_click', {
+              link_url: href,
+              link_text: (link.innerText || '').trim().slice(0, 50),
+              page_location: window.location.href
+            });
+          } else if (
+            link.hasAttribute('data-gtm-cta') ||
+            href.indexOf('/request-a-quote') !== -1 ||
+            href.indexOf('/book-a-consultation') !== -1 ||
+            href.indexOf('/contact-us') !== -1 ||
+            href === '#contact' ||
+            href === '#audit'
+          ) {
+            trackGtm('cta_click', {
+              cta_label: (link.innerText || '').trim().slice(0, 50),
+              cta_url: href,
+              cta_id: link.getAttribute('data-gtm-cta') || link.id || 'enquiry_cta',
+              page_location: window.location.href
+            });
+          }
+        }, { passive: true });
+
+        // 2. Form start tracking (first input interaction in any enquiry form)
+        document.addEventListener('focusin', function(e) {
+          var form = e.target && e.target.form;
+          if (!form || form.dataset.gtmStarted) return;
+          form.dataset.gtmStarted = 'true';
+          trackGtm('form_start', {
+            form_id: form.id || form.getAttribute('name') || 'enquiry_form',
+            page_location: window.location.href
+          });
+        }, { passive: true });
+
+        // 3. Thank-you page conversion event
+        if (window.location.pathname.indexOf('thank-you') !== -1) {
+          trackGtm('thank_you_view', {
+            page_location: window.location.href,
+            page_path: window.location.pathname
+          });
+        }
+      })();
+    </script>
   </body>
 </html>

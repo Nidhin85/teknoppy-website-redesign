@@ -151,9 +151,10 @@ const links = [
 
     <!-- Right CTA -->
     <div class="flex items-center gap-4 relative z-50">
-      <a href="/request-a-quote/" class="cta-pulse-strong cta-pulse-delay-1 hidden lg:inline-flex items-center gap-2 px-5 xl:px-6 py-2.5 text-sm font-bold whitespace-nowrap text-white bg-primary hover:bg-primary/95 transition-all duration-300 rounded-full shadow-md shadow-primary/20 hover:-translate-y-0.5 group">
-        <span>Get Free Quote</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="cta-arrow group-hover:translate-x-1 transition-transform duration-300"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      <a href="/request-a-quote/" class="cta-pulse-strong cta-pulse-delay-1 inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 lg:px-5 xl:px-6 py-1.5 sm:py-2 lg:py-2.5 text-xs sm:text-sm font-bold whitespace-nowrap text-white bg-primary hover:bg-primary/95 transition-all duration-300 rounded-full shadow-md shadow-primary/20 hover:-translate-y-0.5 group" data-gtm-cta="header_enquire_now">
+        <span class="hidden min-[380px]:inline">Enquire Now</span>
+        <span class="inline min-[380px]:hidden">Enquire</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="cta-arrow group-hover:translate-x-1 transition-transform duration-300"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </a>
       
       <!-- Mobile Menu Toggle Button -->
@@ -231,7 +232,7 @@ const links = [
       })}
   </nav>
   <div class="shrink-0 px-8 pt-5 pb-[calc(2rem+env(safe-area-inset-bottom))] border-t border-border/60 bg-white opacity-0 transform translate-y-4 transition-all duration-300 delay-300 mobile-cta">
-    <a href="/request-a-quote/" class="cta-pulse-strong flex items-center justify-center gap-2 w-full py-4 text-base font-bold text-white bg-primary hover:bg-primary/95 transition-colors duration-300 rounded-full">
+    <a href="/request-a-quote/" class="cta-pulse-strong flex items-center justify-center gap-2 w-full py-4 text-base font-bold text-white bg-primary hover:bg-primary/95 transition-colors duration-300 rounded-full" data-gtm-cta="mobile_drawer_enquire_now">
       <span>Get Free Quote</span>
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="cta-arrow"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
     </a>
