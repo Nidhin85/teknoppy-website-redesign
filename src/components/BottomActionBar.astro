@@ -4,7 +4,7 @@ import site from '../data/site.json';
 ---
 
 <!-- Fixed 3-Part Bottom Action Bar (CALL NOW | WHATSAPP | FREE QUOTE) -->
-<div class="fixed-bottom-bar fixed bottom-0 left-0 right-0 w-full max-w-full z-40 flex items-stretch shadow-[0_-4px_25px_rgba(0,0,0,0.35)] overflow-hidden" role="region" aria-label="Quick Contact Actions">
+<div class="fixed-bottom-bar lg:hidden fixed bottom-0 left-0 right-0 w-full max-w-full z-40 flex items-stretch shadow-[0_-4px_25px_rgba(0,0,0,0.35)] overflow-hidden" role="region" aria-label="Quick Contact Actions">
   <!-- 1. CALL NOW (Yellow Treatment) -->
   <a
     href={`tel:${site.phoneLink}`}
@@ -70,17 +70,26 @@ import site from '../data/site.json';
     filter: brightness(0.92);
   }
 
-  /* Page bottom padding and FAB adjustment only when action bar is active on Kochi page */
-  :global(.is-kochi-page) {
-    padding-bottom: calc(56px + env(safe-area-inset-bottom, 0px)) !important;
+  /* Desktop view (1024px and above): Completely hide the bottom CTA bar and clear layout footprint */
+  @media (min-width: 1024px) {
+    .fixed-bottom-bar {
+      display: none !important;
+    }
   }
 
-  :global(.is-kochi-page .whatsapp-fab) {
-    bottom: calc(4.75rem + env(safe-area-inset-bottom, 0px)) !important;
-  }
+  /* Tablet and mobile view (below 1024px): Page bottom padding and FAB adjustment only when action bar is active on Kochi page */
+  @media (max-width: 1023px) {
+    :global(.is-kochi-page) {
+      padding-bottom: calc(56px + env(safe-area-inset-bottom, 0px)) !important;
+    }
 
-  :global(.is-kochi-page .global-floating-cta-wrap) {
-    bottom: calc(9.25rem + env(safe-area-inset-bottom, 0px)) !important;
+    :global(.is-kochi-page .whatsapp-fab) {
+      bottom: calc(4.75rem + env(safe-area-inset-bottom, 0px)) !important;
+    }
+
+    :global(.is-kochi-page .global-floating-cta-wrap) {
+      bottom: calc(9.25rem + env(safe-area-inset-bottom, 0px)) !important;
+    }
   }
 
   @media (max-width: 767px) {
