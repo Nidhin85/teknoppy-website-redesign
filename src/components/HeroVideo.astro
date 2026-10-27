@@ -1,9 +1,9 @@
 ---
 /**
- * Hero YouTube Video Component
+ * Clean Cinematic YouTube Hero Video Component
  * Embedded full-width responsive YouTube hero video
  * Video ID: E8i02o3GxC0
- * Clean, seamless, continuous looping hero background video without black screen or loading spinner
+ * Clean, seamless, continuous looping hero background video without controls, captions, or playlist overlays
  */
 interface Props {
   videoId?: string;
@@ -15,7 +15,8 @@ const {
   title = 'Teknoppy — Web Design Company in Kerala Hero Video'
 } = Astro.props;
 
-const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&controls=0&loop=1&playlist=${videoId}&playsinline=1&rel=0&enablejsapi=1`;
+// Clean embed URL suppressing controls, captions, annotations, keyboard events, and related videos
+const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&controls=0&loop=1&playlist=${videoId}&playsinline=1&rel=0&enablejsapi=1&cc_load_policy=0&iv_load_policy=3&disablekb=1&fs=0&modestbranding=1`;
 const posterUrl = `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
 ---
 
@@ -35,6 +36,8 @@ const posterUrl = `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
       class="hero-video-iframe absolute inset-0 w-full h-full border-0 pointer-events-none select-none"
       allow="autoplay; encrypted-media; picture-in-picture"
       allowfullscreen
+      tabindex="-1"
+      loading="eager"
     ></iframe>
   </div>
 </section>
@@ -88,12 +91,13 @@ const posterUrl = `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
             if (!player || typeof player.getCurrentTime !== 'function' || typeof player.getDuration !== 'function') return;
             var duration = player.getDuration();
             var currentTime = player.getCurrentTime();
-            // Seek seamlessly 0.3s before the video ends to prevent YouTube's black buffering screen
-            if (duration > 0 && currentTime >= duration - 0.3) {
+            // Seek seamlessly 0.35s before the video ends to prevent YouTube playlist UI, end screen, and buffering screen
+            if (duration > 0 && currentTime >= duration - 0.35) {
               player.seekTo(0, true);
+              player.playVideo();
             }
           } catch (e) {}
-        }, 200);
+        }, 150);
       }
 
       function stopLoopMonitor() {
@@ -111,6 +115,14 @@ const posterUrl = `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
               onReady: function (event) {
                 try {
                   event.target.mute();
+                  if (typeof event.target.setVolume === 'function') {
+                    event.target.setVolume(0);
+                  }
+                  // Explicitly unload and suppress closed captions to prevent [Music] text
+                  if (typeof event.target.unloadModule === 'function') {
+                    event.target.unloadModule('captions');
+                    event.target.unloadModule('cc');
+                  }
                   event.target.playVideo();
                 } catch (e) {}
               },
@@ -120,14 +132,14 @@ const posterUrl = `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
                   // Playing: activate seamless loop monitoring
                   startLoopMonitor(event.target);
                 } else if (event.data === 0) {
-                  // Ended fallback: immediate seek & play
+                  // Ended fallback: immediate seek & play to resume playback instantly
                   stopLoopMonitor();
                   try {
                     event.target.seekTo(0, true);
                     event.target.playVideo();
                   } catch (e) {}
                 } else if (event.data === 2) {
-                  // Paused: safely resume if background hero playback paused
+                  // Paused fallback: immediately resume playback so pause icon and side chevrons never persist
                   stopLoopMonitor();
                   try {
                     event.target.playVideo();
