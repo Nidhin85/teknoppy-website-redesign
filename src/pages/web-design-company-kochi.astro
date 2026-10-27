@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import HeroVideo from '../components/HeroVideo.astro';
 import FooterCTA from '../components/FooterCTA.astro';
 import Testimonials from '../components/Testimonials.tsx';
 import videoTestimonials from '../data/video-testimonials.json';
@@ -224,11 +225,14 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(kochiLocalBusinessSchema)} />
   </Fragment>
-  <Header />
+  <Header forceSolidBg={true} />
 
   <main class="overflow-hidden">
-    <!-- 1. HERO SECTION (MATCHING HOMEPAGE DESIGN SYSTEM) -->
-    <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-cover bg-center bg-no-repeat hero-bg">
+    <!-- 1. HERO VIDEO SECTION (MATCHING HOMEPAGE FULL-WIDTH HERO VIDEO) -->
+    <HeroVideo videoId="E8i02o3GxC0" title="Teknoppy — Web Design Company in Kochi Hero Video" />
+
+    <!-- 2. HERO CONTENT SECTION (MATCHING HOMEPAGE DESIGN SYSTEM) -->
+    <section id="hero-intro" class="relative py-12 sm:py-16 lg:py-20 overflow-hidden bg-cover bg-center bg-no-repeat hero-bg">
       <!-- Decorative Background Layer -->
       <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
         <!-- Fine grid pattern texture -->
@@ -1108,6 +1112,12 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
 </Layout>
 
 <style>
+  @media (min-width: 768px) {
+    .hero-bg {
+      background-image: url("/tekenoppyherobg.webp");
+    }
+  }
+
   /* FAQ Interactive styling matching homepage */
   .faq-group[open] {
     background-color: var(--color-white);
