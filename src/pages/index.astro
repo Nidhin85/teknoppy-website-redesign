@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import HeroVideo from '../components/HeroVideo.astro';
 import Hero from '../components/Hero.astro';
 import About from '../components/About.astro';
 import KeralaCities from '../components/KeralaCities.astro';
@@ -96,8 +97,9 @@ const testimonials = (await getCollection('testimonials'))
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(homepageSchema)} />
   </Fragment>
-  <Header />
+  <Header forceSolidBg={true} />
   <main>
+    <HeroVideo />
     <Hero />
     <About />
     <KeralaCities />

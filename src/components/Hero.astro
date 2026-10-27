@@ -4,7 +4,7 @@ import home from "../data/home.json";
 ---
 
 <section
-  class="relative pt-20 pb-20 md:pt-24 md:pb-28 overflow-hidden bg-cover bg-center bg-no-repeat hero-bg"
+  id="hero-intro" class="relative py-12 sm:py-16 lg:py-20 overflow-hidden bg-cover bg-center bg-no-repeat hero-bg"
 >
   <!-- Rich Decorative Background Layer -->
   <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
@@ -62,7 +62,7 @@ import home from "../data/home.json";
   >
     <!-- Content (Left Column) -->
     <div
-      class="hero-copy xl:col-span-5 flex flex-col items-center text-center xl:items-start xl:text-left pt-8 xl:pt-16 relative z-20"
+      class="hero-copy xl:col-span-5 flex flex-col items-center text-center xl:items-start xl:text-left pt-0 xl:pt-2 relative z-20"
     >
       <!-- Headline (H1) -->
       <h1
@@ -401,15 +401,13 @@ import home from "../data/home.json";
      markup without needing extra specificity. */
   @media (min-width: 1280px) {
     .hero-copy {
-      font-size: clamp(12.2px, calc(1.743vh - 0.7px), 16px);
-      padding-top: 4em; /* 64px at full scale */
+      font-size: 16px;
+      padding-top: 0;
     }
 
-    /* Matched to the copy column's scale so the block stays centred as it
-       shrinks, and the H1 keeps clearing the 105px fixed header. */
     .hero-bg {
-      padding-top: clamp(73px, calc(10.458vh - 4.2px), 96px);
-      padding-bottom: clamp(85px, calc(12.201vh - 4.9px), 112px);
+      padding-top: 3.5rem;
+      padding-bottom: 4.5rem;
     }
 
     .hero-h1 {
