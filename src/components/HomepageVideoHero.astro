@@ -1,18 +1,26 @@
 ---
 /**
- * Dedicated Homepage Video-Only Hero Section
+ * Dedicated Full-Width Video-Only Hero Section
+ * Used on Homepage and Web Design Company in Kochi page.
  *
- * Immersive, full-width, edge-to-edge video presentation (Finexx Travels model).
+ * Immersive, edge-to-edge native video presentation (Finexx Travels model).
  * Strictly video only: ZERO text, ZERO buttons, ZERO floating cards, ZERO overlays.
  * Video asset: /video/Teknoppy-Web-Banner.mp4 (native 1080p, matching YouTube E8i02o3GxC0)
  * Poster asset: /video/poster.jpg
  */
+interface Props {
+  ariaLabel?: string;
+}
+
+const {
+  ariaLabel = "Teknoppy Creative Agency Video"
+} = Astro.props;
 ---
 
 <section
   id="homepage-video-hero"
   class="homepage-video-hero relative w-full bg-neutral-950 overflow-hidden"
-  aria-label="Teknoppy Hero Video"
+  aria-label={ariaLabel}
 >
   <div class="video-container relative w-full h-[58svh] sm:h-[65svh] md:h-[75vh] lg:h-[82vh] xl:h-[88vh] overflow-hidden bg-neutral-950">
     <video
@@ -24,7 +32,7 @@
       preload="metadata"
       poster="/video/poster.jpg"
       class="hero-video-element w-full h-full object-cover object-center pointer-events-none select-none block"
-      aria-label="Teknoppy Creative Agency Video"
+      aria-label={ariaLabel}
     >
       <source src="/video/Teknoppy-Web-Banner.mp4" type="video/mp4" />
     </video>
@@ -61,11 +69,12 @@
       }
     }
 
-    // 2. Hide floating CTA & WhatsApp FAB while video hero is in view so the video remains completely unobstructed
+    // 2. Hide floating CTA, WhatsApp FAB & bottom action bar while video hero is in view so the video remains completely unobstructed
     function initFloatingObserver() {
       var hero = document.getElementById("homepage-video-hero");
       var floatingCta = document.getElementById("global-floating-cta-wrap");
       var whatsappFab = document.querySelector(".whatsapp-fab");
+      var bottomBar = document.querySelector(".fixed-bottom-bar");
 
       if (!hero) return;
 
@@ -83,6 +92,13 @@
           whatsappFab.style.transform = show ? "translateY(0)" : "translateY(24px)";
           whatsappFab.style.pointerEvents = show ? "auto" : "none";
           whatsappFab.style.visibility = show ? "visible" : "hidden";
+        }
+        if (bottomBar) {
+          bottomBar.style.transition = "opacity 0.35s ease, transform 0.35s ease, visibility 0.35s";
+          bottomBar.style.opacity = show ? "1" : "0";
+          bottomBar.style.transform = show ? "translateY(0)" : "translateY(100%)";
+          bottomBar.style.pointerEvents = show ? "auto" : "none";
+          bottomBar.style.visibility = show ? "visible" : "hidden";
         }
       };
 
