@@ -1,0 +1,157 @@
+---
+/**
+ * Dedicated Homepage Video-Only Hero Section
+ *
+ * Immersive, full-width, edge-to-edge video presentation (Finexx Travels model).
+ * Strictly video only: ZERO text, ZERO buttons, ZERO floating cards, ZERO overlays.
+ * Video asset: /video/Teknoppy-Web-Banner.mp4 (native 1080p, matching YouTube E8i02o3GxC0)
+ * Poster asset: /video/poster.jpg
+ */
+---
+
+<section
+  id="homepage-video-hero"
+  class="homepage-video-hero relative w-full bg-neutral-950 overflow-hidden"
+  aria-label="Teknoppy Hero Video"
+>
+  <div class="video-container relative w-full h-[58svh] sm:h-[65svh] md:h-[75vh] lg:h-[82vh] xl:h-[88vh] overflow-hidden bg-neutral-950">
+    <video
+      id="hero-bg-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      poster="/video/poster.jpg"
+      class="hero-video-element w-full h-full object-cover object-center pointer-events-none select-none block"
+      aria-label="Teknoppy Creative Agency Video"
+    >
+      <source src="/video/Teknoppy-Web-Banner.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Poster fallback for users who prefer reduced motion -->
+    <div
+      class="video-hero-fallback hidden absolute inset-0 bg-cover bg-center"
+      style="background-image: url('/video/poster.jpg');"
+      aria-hidden="true"
+    ></div>
+  </div>
+</section>
+
+<script is:inline>
+  (function () {
+    // 1. Ensure reliable autoplay on all browsers/devices
+    var video = document.getElementById("hero-bg-video");
+    if (video) {
+      video.muted = true;
+      video.defaultMuted = true;
+      var playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(function () {
+          var resume = function () {
+            video.play();
+            window.removeEventListener("touchstart", resume);
+            window.removeEventListener("scroll", resume);
+            window.removeEventListener("click", resume);
+          };
+          window.addEventListener("touchstart", resume, { passive: true });
+          window.addEventListener("scroll", resume, { passive: true });
+          window.addEventListener("click", resume, { passive: true });
+        });
+      }
+    }
+
+    // 2. Hide floating CTA & WhatsApp FAB while video hero is in view so the video remains completely unobstructed
+    function initFloatingObserver() {
+      var hero = document.getElementById("homepage-video-hero");
+      var floatingCta = document.getElementById("global-floating-cta-wrap");
+      var whatsappFab = document.querySelector(".whatsapp-fab");
+
+      if (!hero) return;
+
+      var setVisible = function (show) {
+        if (floatingCta) {
+          floatingCta.style.transition = "opacity 0.35s ease, transform 0.35s ease, visibility 0.35s";
+          floatingCta.style.opacity = show ? "1" : "0";
+          floatingCta.style.transform = show ? "translateY(0)" : "translateY(24px)";
+          floatingCta.style.pointerEvents = show ? "auto" : "none";
+          floatingCta.style.visibility = show ? "visible" : "hidden";
+        }
+        if (whatsappFab) {
+          whatsappFab.style.transition = "opacity 0.35s ease, transform 0.35s ease, visibility 0.35s";
+          whatsappFab.style.opacity = show ? "1" : "0";
+          whatsappFab.style.transform = show ? "translateY(0)" : "translateY(24px)";
+          whatsappFab.style.pointerEvents = show ? "auto" : "none";
+          whatsappFab.style.visibility = show ? "visible" : "hidden";
+        }
+      };
+
+      // Initially hide on top of page
+      if (window.scrollY < 150) {
+        setVisible(false);
+      }
+
+      if ("IntersectionObserver" in window) {
+        var observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting && entry.intersectionRatio > 0.15) {
+                setVisible(false);
+              } else {
+                setVisible(true);
+              }
+            });
+          },
+          { threshold: [0, 0.15, 0.5] }
+        );
+        observer.observe(hero);
+      } else {
+        window.addEventListener(
+          "scroll",
+          function () {
+            var rect = hero.getBoundingClientRect();
+            setVisible(rect.bottom <= 120);
+          },
+          { passive: true }
+        );
+      }
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initFloatingObserver);
+    } else {
+      initFloatingObserver();
+    }
+  })();
+</script>
+
+<style>
+  .homepage-video-hero {
+    /* Offset fixed header smoothly */
+    padding-top: 67px;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .homepage-video-hero {
+      padding-top: 73px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .homepage-video-hero {
+      padding-top: 77px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-video-element {
+      display: none !important;
+    }
+    .video-hero-fallback {
+      display: block !important;
+    }
+  }
+</style>
