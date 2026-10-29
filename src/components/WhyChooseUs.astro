@@ -7,21 +7,24 @@ const features = home.whyChooseUs.features;
 // Feature icons stay hardcoded here and are zipped with the JSON features by index.
 const icons = [SearchCheck, LineChart, BadgeDollarSign, MapPin, Rocket, LifeBuoy];
 
-// Trusted partner client logos across Kerala
+// Trusted partner client logos across Kerala including newly provided brands
 const partnerLogos = [
   { name: 'Abroad Career', src: '/client logos/Abroad-career-1.jpg' },
+  { name: 'Educareer', src: '/client logos/educareer-brand.png' },
   { name: 'Roja House Boat', src: '/client logos/roja-house-boat.png' },
   { name: 'Mount Bell Global Studies', src: '/client logos/mount-bell-global-studies.png' },
+  { name: 'Abrus Krishna Finance', src: '/client logos/abrus-krishna-finance-brand.png' },
+  { name: 'Cochin Suraksha', src: '/client logos/cochin-suraksha-brand.png' },
+  { name: 'Leema Engineering Works', src: '/client logos/leema-engineering-works-brand.png' },
+  { name: 'Olives The Boutique Resort', src: '/client logos/olives-resort-brand.png' },
+  { name: 'Direction North', src: '/client logos/direction-north.png' },
+  { name: 'Triqare', src: '/client logos/triqare.png' },
   { name: 'Abu Dhabi Business Hub', src: '/client logos/abu-dhabi.jpg' },
   { name: 'Al Coffee', src: '/client logos/al-coffee-1.jpg' },
   { name: 'Amster', src: '/client logos/amster.jpg' },
   { name: 'Laughing Waters', src: '/client logos/laughing-waters.jpg' },
-  { name: 'Olive Builders', src: '/client logos/olive.jpg' },
   { name: 'WestN Resorts', src: '/client logos/westn.jpg' },
-  { name: 'Abrus Krishna Finance', src: '/client logos/abrus-krishna-finance.jpg' },
-  { name: 'Cochin Suraksha', src: '/client logos/cochin-suraksha.webp' },
   { name: 'General Tech Services', src: '/client logos/general-tech-services.jpg' },
-  { name: 'Leema Engineering', src: '/client logos/leema-engineering.png' },
   { name: 'Kerala Dayz', src: '/client logos/kerala-dayz.png' },
   { name: 'Varma Ayurveda', src: '/client logos/varma-ayurveda.png' },
   { name: 'Edamanasserry Spine Hospital', src: '/client logos/edamanasserry-spine-hospital.jpg' },
@@ -66,14 +69,14 @@ const partnerLogos = [
                 <div class="marquee-content flex items-center gap-4 sm:gap-6 lg:gap-8 pr-4 sm:pr-6 lg:pr-8 shrink-0">
                   {partnerLogos.map((logo) => (
                     <div 
-                      class="logo-plate h-[68px] sm:h-[80px] lg:h-[92px] min-w-[105px] sm:min-w-[125px] px-4 sm:px-6 py-2 rounded-xl border border-neutral-200/80 bg-white/95 shadow-[0_2px_6px_rgba(0,0,0,0.03)] flex items-center justify-center shrink-0 hover:border-primary/40 hover:shadow-md transition-all duration-300"
+                      class="logo-plate h-[68px] sm:h-[80px] lg:h-[92px] min-w-[105px] sm:min-w-[125px] px-4 sm:px-6 py-2 rounded-xl border border-neutral-200/80 bg-white shadow-[0_2px_6px_rgba(0,0,0,0.03)] flex items-center justify-center shrink-0 hover:border-primary/40 hover:shadow-md transition-all duration-300 overflow-hidden"
                     >
                       <img 
                         src={logo.src} 
                         alt={`${logo.name} logo`} 
                         loading="lazy" 
                         decoding="async" 
-                        class="h-[52px] sm:h-[62px] lg:h-[74px] w-auto max-w-[140px] sm:max-w-[180px] lg:max-w-[220px] object-contain transition-all duration-300 mix-blend-multiply" 
+                        class="h-[52px] sm:h-[62px] lg:h-[74px] w-auto max-w-[140px] sm:max-w-[180px] lg:max-w-[220px] object-contain transition-all duration-300 rounded" 
                       />
                     </div>
                   ))}
@@ -81,13 +84,13 @@ const partnerLogos = [
                 <!-- Duplicate set for seamless continuous loop (hidden from screen readers) -->
                 <div class="marquee-content flex items-center gap-4 sm:gap-6 lg:gap-8 pr-4 sm:pr-6 lg:pr-8 shrink-0" aria-hidden="true">
                   {partnerLogos.map((logo) => (
-                    <div class="logo-plate h-[68px] sm:h-[80px] lg:h-[92px] min-w-[105px] sm:min-w-[125px] px-4 sm:px-6 py-2 rounded-xl border border-neutral-200/80 bg-white/95 shadow-[0_2px_6px_rgba(0,0,0,0.03)] flex items-center justify-center shrink-0 hover:border-primary/40 hover:shadow-md transition-all duration-300">
+                    <div class="logo-plate h-[68px] sm:h-[80px] lg:h-[92px] min-w-[105px] sm:min-w-[125px] px-4 sm:px-6 py-2 rounded-xl border border-neutral-200/80 bg-white shadow-[0_2px_6px_rgba(0,0,0,0.03)] flex items-center justify-center shrink-0 hover:border-primary/40 hover:shadow-md transition-all duration-300 overflow-hidden">
                       <img 
                         src={logo.src} 
                         alt="" 
                         loading="lazy" 
                         decoding="async" 
-                        class="h-[52px] sm:h-[62px] lg:h-[74px] w-auto max-w-[140px] sm:max-w-[180px] lg:max-w-[220px] object-contain transition-all duration-300 mix-blend-multiply" 
+                        class="h-[52px] sm:h-[62px] lg:h-[74px] w-auto max-w-[140px] sm:max-w-[180px] lg:max-w-[220px] object-contain transition-all duration-300 rounded" 
                       />
                     </div>
                   ))}
