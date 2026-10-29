@@ -7,80 +7,87 @@ const features = home.whyChooseUs.features;
 // Feature icons stay hardcoded here and are zipped with the JSON features by index.
 const icons = [SearchCheck, LineChart, BadgeDollarSign, MapPin, Rocket, LifeBuoy];
 
-// Existing homepage partner logos
+// Trusted partner client logos across Kerala
 const partnerLogos = [
   { name: 'Abroad Career', src: '/client logos/Abroad-career-1.jpg' },
+  { name: 'Roja House Boat', src: '/client logos/roja-house-boat.png' },
+  { name: 'Mount Bell Global Studies', src: '/client logos/mount-bell-global-studies.png' },
   { name: 'Abu Dhabi Business Hub', src: '/client logos/abu-dhabi.jpg' },
   { name: 'Al Coffee', src: '/client logos/al-coffee-1.jpg' },
-  { name: 'Amster', src: '/client logos/amster.jpg' }
+  { name: 'Amster', src: '/client logos/amster.jpg' },
+  { name: 'Laughing Waters', src: '/client logos/laughing-waters.jpg' },
+  { name: 'Olive Builders', src: '/client logos/olive.jpg' },
+  { name: 'WestN Resorts', src: '/client logos/westn.jpg' },
+  { name: 'Abrus Krishna Finance', src: '/client logos/abrus-krishna-finance.jpg' },
+  { name: 'Cochin Suraksha', src: '/client logos/cochin-suraksha.webp' },
+  { name: 'General Tech Services', src: '/client logos/general-tech-services.jpg' },
+  { name: 'Leema Engineering', src: '/client logos/leema-engineering.png' },
+  { name: 'Kerala Dayz', src: '/client logos/kerala-dayz.png' },
+  { name: 'Varma Ayurveda', src: '/client logos/varma-ayurveda.png' },
+  { name: 'Edamanasserry Spine Hospital', src: '/client logos/edamanasserry-spine-hospital.jpg' },
+  { name: 'Alankar Avenue', src: '/client logos/alankar-avenue.png' }
 ];
-
-// Repeat logos to provide a seamless continuous marquee loop matching the /web-design-company-kochi/ implementation
-const marqueeLogos = [...partnerLogos, ...partnerLogos, ...partnerLogos];
 ---
 
-<section class="py-24 md:py-32 bg-cream relative overflow-hidden">
+<section class="py-10 sm:py-12 md:py-16 bg-cream relative overflow-hidden">
   <!-- Dynamic background container to prevent overflow issues -->
   <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
     <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/tekenoppyadvantage.webp')] opacity-75"></div>
   </div>
   <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
-    <!-- gap applies between all 12 tracks, so lg:gap-24 alone spent 11x96px on gutters
-         and forced the row wider than the container below ~1164px. -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 xl:gap-24 items-start">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 xl:gap-20 items-start">
       
       <!-- Left Sticky Column -->
-      <div class="lg:col-span-5 lg:sticky lg:top-32 space-y-8">
+      <div class="lg:col-span-5 lg:sticky lg:top-28 space-y-6 sm:space-y-8">
         <div>
-          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F9AE42]/10 border border-[#F9AE42]/30 text-primary text-sm font-bold uppercase tracking-wider mb-6 shadow-sm transform -rotate-1">
+          <div class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-[#F9AE42]/10 border border-[#F9AE42]/30 text-primary text-xs sm:text-sm font-bold uppercase tracking-wider mb-4 sm:mb-6 shadow-sm transform -rotate-1">
             {home.whyChooseUs.badge}
           </div>
-          <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-neutral-900 leading-[1.15] mb-6" data-magnetic-heading>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-neutral-900 leading-[1.15] mb-4 sm:mb-6" data-magnetic-heading>
             {home.whyChooseUs.headingLead} <span class="text-primary">{home.whyChooseUs.headingAccent}</span> {home.whyChooseUs.headingRest}
           </h2>
-          <p class="text-neutral-600 text-base leading-relaxed">
+          <p class="text-neutral-600 text-sm sm:text-base leading-relaxed">
             {home.whyChooseUs.intro}
           </p>
         </div>
 
         <!-- Trusted Partner Continuous Scrolling Marquee -->
-        <div class="pt-8 space-y-4">
+        <div class="pt-4 sm:pt-6 space-y-3.5">
           <div>
             <p class="text-[12px] font-bold text-neutral-400 uppercase tracking-wider">Trusted Partner</p>
             <p class="text-sm font-semibold text-neutral-900 leading-tight">100+ Brands Across Kerala</p>
           </div>
 
           <!-- Marquee Track flanked by clean divider borders -->
-          <div class="border-y border-neutral-200/70 py-4 sm:py-5">
+          <div class="border-y border-neutral-200/70 py-3.5 sm:py-4">
             <div class="marquee-viewport relative w-full overflow-hidden marquee-mask py-1" aria-label="Trusted client brand logos">
               <div class="flex w-max">
-                <!-- First set of logos -->
-                <div class="marquee-content flex items-center gap-6 sm:gap-8 lg:gap-10 pr-6 sm:pr-8 lg:pr-10 shrink-0">
-                  {marqueeLogos.map((logo, idx) => (
+                <!-- First set of logos (announced once) -->
+                <div class="marquee-content flex items-center gap-4 sm:gap-6 lg:gap-8 pr-4 sm:pr-6 lg:pr-8 shrink-0">
+                  {partnerLogos.map((logo) => (
                     <div 
-                      class="logo-plate h-[72px] sm:h-[84px] lg:h-[98px] xl:h-[106px] min-w-[110px] sm:min-w-[130px] px-5 sm:px-7 py-2 rounded-xl border border-neutral-200/80 bg-white/95 shadow-[0_2px_6px_rgba(0,0,0,0.03)] flex items-center justify-center shrink-0 hover:border-primary/40 hover:shadow-md transition-all duration-300"
-                      aria-hidden={idx < partnerLogos.length ? undefined : "true"}
+                      class="logo-plate h-[68px] sm:h-[80px] lg:h-[92px] min-w-[105px] sm:min-w-[125px] px-4 sm:px-6 py-2 rounded-xl border border-neutral-200/80 bg-white/95 shadow-[0_2px_6px_rgba(0,0,0,0.03)] flex items-center justify-center shrink-0 hover:border-primary/40 hover:shadow-md transition-all duration-300"
                     >
                       <img 
                         src={logo.src} 
-                        alt={idx < partnerLogos.length ? `${logo.name} logo` : ""} 
+                        alt={`${logo.name} logo`} 
                         loading="lazy" 
                         decoding="async" 
-                        class="h-[56px] sm:h-[66px] lg:h-[80px] xl:h-[88px] w-auto max-w-[160px] sm:max-w-[200px] lg:max-w-[240px] xl:max-w-[270px] object-contain transition-all duration-300 mix-blend-multiply" 
+                        class="h-[52px] sm:h-[62px] lg:h-[74px] w-auto max-w-[140px] sm:max-w-[180px] lg:max-w-[220px] object-contain transition-all duration-300 mix-blend-multiply" 
                       />
                     </div>
                   ))}
                 </div>
-                <!-- Duplicate set for seamless continuous loop -->
-                <div class="marquee-content flex items-center gap-6 sm:gap-8 lg:gap-10 pr-6 sm:pr-8 lg:pr-10 shrink-0" aria-hidden="true">
-                  {marqueeLogos.map((logo) => (
-                    <div class="logo-plate h-[72px] sm:h-[84px] lg:h-[98px] xl:h-[106px] min-w-[110px] sm:min-w-[130px] px-5 sm:px-7 py-2 rounded-xl border border-neutral-200/80 bg-white/95 shadow-[0_2px_6px_rgba(0,0,0,0.03)] flex items-center justify-center shrink-0 hover:border-primary/40 hover:shadow-md transition-all duration-300">
+                <!-- Duplicate set for seamless continuous loop (hidden from screen readers) -->
+                <div class="marquee-content flex items-center gap-4 sm:gap-6 lg:gap-8 pr-4 sm:pr-6 lg:pr-8 shrink-0" aria-hidden="true">
+                  {partnerLogos.map((logo) => (
+                    <div class="logo-plate h-[68px] sm:h-[80px] lg:h-[92px] min-w-[105px] sm:min-w-[125px] px-4 sm:px-6 py-2 rounded-xl border border-neutral-200/80 bg-white/95 shadow-[0_2px_6px_rgba(0,0,0,0.03)] flex items-center justify-center shrink-0 hover:border-primary/40 hover:shadow-md transition-all duration-300">
                       <img 
                         src={logo.src} 
                         alt="" 
                         loading="lazy" 
                         decoding="async" 
-                        class="h-[56px] sm:h-[66px] lg:h-[80px] xl:h-[88px] w-auto max-w-[160px] sm:max-w-[200px] lg:max-w-[240px] xl:max-w-[270px] object-contain transition-all duration-300 mix-blend-multiply" 
+                        class="h-[52px] sm:h-[62px] lg:h-[74px] w-auto max-w-[140px] sm:max-w-[180px] lg:max-w-[220px] object-contain transition-all duration-300 mix-blend-multiply" 
                       />
                     </div>
                   ))}
@@ -90,7 +97,7 @@ const marqueeLogos = [...partnerLogos, ...partnerLogos, ...partnerLogos];
           </div>
 
           <!-- Trust-to-Action CTA: After Marquee (Side Slide-In from Right) -->
-          <div class="cta-slide-right pt-3 flex flex-col sm:flex-row lg:flex-col xl:flex-row items-start sm:items-center lg:items-start xl:items-center justify-between gap-2.5">
+          <div class="cta-slide-right pt-2.5 flex flex-col sm:flex-row lg:flex-col xl:flex-row items-start sm:items-center lg:items-start xl:items-center justify-between gap-2.5">
             <p class="text-xs text-neutral-600 font-medium">Join businesses building their digital presence with Teknoppy.</p>
             <a
               href="/request-a-quote/"
@@ -104,17 +111,17 @@ const marqueeLogos = [...partnerLogos, ...partnerLogos, ...partnerLogos];
       </div>
 
       <!-- Right Feature Cards Column -->
-      <div class="lg:col-span-7 space-y-6">
+      <div class="lg:col-span-7 space-y-5 sm:space-y-6">
         {features.map((feature, index) => {
           const Icon = icons[index];
           return (
           <div
-            class="relative bg-white border border-neutral-100/80 hover:border-primary/30 rounded-2xl p-8 transition-all duration-500 group flex flex-col justify-between shadow-sm hover:shadow-[0_20px_50px_rgba(240,90,44,0.06)] hover:-translate-y-1 advantage-card opacity-0 translate-y-8 w-full"
+            class="relative bg-white border border-neutral-100/80 hover:border-primary/30 rounded-2xl p-6 sm:p-8 transition-all duration-500 group flex flex-col justify-between shadow-sm hover:shadow-[0_20px_50px_rgba(240,90,44,0.06)] hover:-translate-y-1 advantage-card opacity-0 translate-y-8 w-full"
             style={`transition-delay: ${index * 60}ms`}
           >
             <div>
-              <div class="flex justify-between items-start mb-6">
-                <div class="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center transition-all duration-500 group-hover:bg-primary group-hover:scale-110 group-hover:shadow-[0_6px_15px_rgba(240,90,44,0.25)]">
+              <div class="flex justify-between items-start mb-5 sm:mb-6">
+                <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-primary/5 flex items-center justify-center transition-all duration-500 group-hover:bg-primary group-hover:scale-110 group-hover:shadow-[0_6px_15px_rgba(240,90,44,0.25)]">
                   <Icon className="w-5 h-5 text-primary group-hover:text-white transition-colors duration-500" />
                 </div>
                 
@@ -123,7 +130,7 @@ const marqueeLogos = [...partnerLogos, ...partnerLogos, ...partnerLogos];
                 </span>
               </div>
               
-              <h3 class="text-xl font-bold text-neutral-900 leading-snug mb-3 group-hover:text-primary transition-colors duration-300">
+              <h3 class="text-lg sm:text-xl font-bold text-neutral-900 leading-snug mb-2.5 sm:mb-3 group-hover:text-primary transition-colors duration-300">
                 {feature.title}
               </h3>
               
@@ -139,20 +146,20 @@ const marqueeLogos = [...partnerLogos, ...partnerLogos, ...partnerLogos];
     </div>
 
     <!-- Decision CTA: After Why Teknoppy Advantages (Standout Checkpoint) -->
-    <div class="cta-checkpoint mt-16 pt-12 border-t border-neutral-200/70">
-      <div class="bg-white rounded-2xl p-6 sm:p-8 lg:p-10 border border-neutral-200/80 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+    <div class="cta-checkpoint mt-10 sm:mt-12 md:mt-14 pt-8 sm:pt-10 border-t border-neutral-200/70">
+      <div class="bg-white rounded-2xl p-6 sm:p-8 lg:p-10 border border-neutral-200/80 shadow-sm flex flex-col md:flex-row items-center justify-between gap-5 sm:gap-6 text-center md:text-left">
         <div class="space-y-1.5 max-w-xl">
-          <h3 class="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight">
+          <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-neutral-900 tracking-tight">
             Ready to give your business an unfair digital advantage?
           </h3>
-          <p class="text-sm text-neutral-600 leading-relaxed font-normal">
+          <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed font-normal">
             Get a tailored strategy, realistic timeline, and transparent pricing scoped for your specific market.
           </p>
         </div>
         <a
           href="/request-a-quote/"
           data-magnetic-btn
-          class="cta-float-secondary cta-delay-11 cta-pulse-strong cta-pulse-delay-5 cta-shimmer-btn inline-flex items-center justify-center gap-2.5 px-8 py-4 text-sm sm:text-base font-bold text-white bg-primary rounded-full hover:bg-primary/95 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 shrink-0 group whitespace-nowrap"
+          class="w-full sm:w-auto cta-float-secondary cta-delay-11 cta-pulse-strong cta-pulse-delay-5 cta-shimmer-btn inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 text-xs sm:text-base font-bold text-white bg-primary rounded-full hover:bg-primary/95 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 shrink-0 group whitespace-nowrap"
         >
           <span>Why Wait? Let's Build Yours</span>
           <ArrowRight className="cta-arrow cta-arrow-invite w-4 h-4" />
@@ -177,7 +184,7 @@ const marqueeLogos = [...partnerLogos, ...partnerLogos, ...partnerLogos];
   }
 
   .marquee-content {
-    animation: marquee-scroll 30s linear infinite;
+    animation: marquee-scroll 45s linear infinite;
     will-change: transform;
   }
 

@@ -165,7 +165,7 @@ export default function Testimonials({
     : null;
 
   return (
-    <section className="py-24 md:py-32 bg-cream relative overflow-hidden" id="testimonials">
+    <section className="py-10 sm:py-12 md:py-16 bg-cream relative overflow-hidden" id="testimonials">
       {/* Background overlapping rings */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
         <div className="absolute top-10 left-10 w-96 h-96 rounded-full border border-[#F05A2C]/8 animate-float-slow"></div>
@@ -176,7 +176,7 @@ export default function Testimonials({
       <div className="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
         
         {/* Combined Section Header */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-8 sm:mb-10 md:mb-12">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F9AE42]/10 border border-[#F9AE42]/30 text-primary text-sm font-bold uppercase tracking-wider mb-6 shadow-sm transform -rotate-1">
               {badge}

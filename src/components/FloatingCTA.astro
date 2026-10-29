@@ -66,7 +66,7 @@ const resolvedHref = customHref || "/request-a-quote/";
 {shouldRender && (
   <div
     id="global-floating-cta-wrap"
-    class={`global-floating-cta-wrap fixed z-30 pointer-events-auto right-4 sm:right-5 md:right-6 bottom-20 md:bottom-24`}
+    class={`global-floating-cta-wrap fixed z-30 pointer-events-auto right-3.5 sm:right-5 md:right-6 bottom-5 sm:bottom-6 md:bottom-24`}
     role="region"
     aria-label="Quick Enquiry CTA"
   >
@@ -122,6 +122,10 @@ const resolvedHref = customHref || "/request-a-quote/";
 )}
 
 <style>
+  :global(body.is-kochi-page) #global-floating-cta-wrap {
+    bottom: 5rem;
+  }
+
   /* Container entrance on initial mount */
   .global-floating-cta-wrap {
     opacity: 0;
