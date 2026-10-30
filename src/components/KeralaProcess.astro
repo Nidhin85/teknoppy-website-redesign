@@ -62,19 +62,19 @@ const steps = [
       {steps.map((step) => {
         const StepIcon = step.icon;
         return (
-          <div class="neu-card neu-card-cream rounded-2xl p-4 sm:p-5 md:p-5.5 group flex flex-col justify-between h-full">
+          <div class="neu-card neu-card-cream rounded-2xl p-4.5 sm:p-5 md:p-5.5 lg:p-6 group flex flex-col justify-between h-full">
             <div>
-              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#FFF4ED] border border-[#FDE6D7] flex items-center justify-center text-primary mb-2.5 sm:mb-3 group-hover:bg-primary group-hover:border-primary group-hover:text-white transition-colors duration-300">
-                <StepIcon className="w-4.5 h-4.5 transition-transform duration-300 group-hover:scale-110" />
+              <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-[#FFF4ED] border border-[#FDE6D7] flex items-center justify-center text-primary mb-3 sm:mb-3.5 group-hover:bg-primary group-hover:border-primary group-hover:text-white transition-colors duration-300">
+                <StepIcon className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" />
               </div>
-              <h3 class="text-base sm:text-lg md:text-[1.125rem] font-bold text-neutral-900 mb-1.5 leading-snug group-hover:text-primary transition-colors duration-300">
+              <h3 class="text-lg sm:text-[1.1875rem] font-bold text-neutral-900 mb-2 leading-snug group-hover:text-primary transition-colors duration-300">
                 {step.h3}
               </h3>
-              <p class="text-xs sm:text-[0.84rem] text-neutral-600 leading-relaxed font-normal">
+              <p class="text-xs sm:text-[0.875rem] text-neutral-600 leading-relaxed font-normal">
                 {step.desc}
               </p>
             </div>
-            <div class="pt-2.5 mt-3 border-t border-neutral-100 flex items-center gap-1.5 text-[0.72rem] sm:text-xs font-semibold text-neutral-400">
+            <div class="pt-3.5 sm:pt-4 mt-3.5 sm:mt-4 border-t border-neutral-100 flex items-center gap-2 text-xs font-semibold text-neutral-400">
               <CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0" />
               <span>Milestone-verified delivery</span>
             </div>
