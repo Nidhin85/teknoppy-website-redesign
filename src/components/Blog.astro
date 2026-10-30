@@ -38,9 +38,9 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
     </div>
 
     <!-- Blog Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-7" data-stagger>
       {posts.map((post) => (
-        <article class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md hover:border-primary/30 border border-neutral-100/80 transition-all duration-300 flex flex-col h-full">
+        <article class="group neu-card rounded-2xl overflow-hidden flex flex-col h-full">
           <!-- Image Container -->
           <div class="overflow-hidden aspect-[16/10] bg-neutral-100 relative">
             <img 
@@ -51,7 +51,7 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
           </div>
 
           <!-- Card Content -->
-          <div class="p-6 md:p-8 flex flex-col flex-grow justify-between">
+          <div class="p-4.5 sm:p-5 md:p-6 flex flex-col flex-grow justify-between">
             <div class="space-y-4">
               <!-- Meta Info -->
               <div class="flex items-center gap-4 text-xs font-medium text-neutral-400">
@@ -77,7 +77,7 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
             </div>
 
             <!-- Read More CTA -->
-            <div class="pt-6 mt-6 border-t border-neutral-50">
+            <div class="pt-4 mt-4 border-t border-neutral-100">
               <a 
                 href={post.href} 
                 class="inline-flex items-center gap-2 text-sm font-bold text-neutral-850 hover:text-primary transition-colors duration-300"

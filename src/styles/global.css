@@ -862,3 +862,93 @@
 }
 
 
+
+
+/* ==========================================================================
+   Homepage Premium Neumorphism & Compact Grid Motion System
+   ========================================================================== */
+
+:root {
+  /* Subtle raised neumorphic dual-shadow for standard white grounds */
+  --neu-surface: #FFFFFF;
+  --neu-border: rgba(226, 232, 240, 0.85);
+  --neu-shadow: 
+    0 4px 16px -2px rgba(15, 23, 42, 0.04),
+    0 2px 6px -1px rgba(15, 23, 42, 0.02),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.95);
+  --neu-shadow-hover: 
+    0 16px 32px -4px rgba(240, 90, 44, 0.08),
+    0 6px 14px -2px rgba(15, 23, 42, 0.03),
+    inset 0 1px 1.5px 0 rgba(255, 255, 255, 1);
+  --neu-shadow-active: 
+    inset 0 2px 5px rgba(15, 23, 42, 0.06),
+    inset 0 -1px 2px rgba(255, 255, 255, 0.85);
+
+  /* Delicate warm-cream ground variant */
+  --neu-cream-border: rgba(243, 238, 230, 0.9);
+  --neu-cream-shadow: 
+    0 4px 18px -2px rgba(180, 160, 140, 0.09),
+    0 2px 6px -1px rgba(180, 160, 140, 0.04),
+    inset 0 1px 1.5px 0 rgba(255, 255, 255, 1);
+  --neu-cream-shadow-hover: 
+    0 16px 32px -4px rgba(240, 90, 44, 0.09),
+    0 6px 14px -2px rgba(180, 160, 140, 0.06),
+    inset 0 1px 1.5px 0 rgba(255, 255, 255, 1);
+}
+
+.neu-card {
+  background: var(--neu-surface);
+  border: 1px solid var(--neu-border);
+  box-shadow: var(--neu-shadow);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease;
+  will-change: transform, box-shadow;
+}
+
+.neu-card-cream {
+  background: var(--neu-surface);
+  border: 1px solid var(--neu-cream-border);
+  box-shadow: var(--neu-cream-shadow);
+}
+
+.neu-card:hover,
+[data-stagger].is-revealed > .neu-card:hover {
+  transform: translateY(-4px) !important;
+  border-color: rgba(240, 90, 44, 0.32);
+  box-shadow: var(--neu-shadow-hover);
+}
+
+.neu-card-cream:hover,
+[data-stagger].is-revealed > .neu-card-cream:hover {
+  transform: translateY(-4px) !important;
+  border-color: rgba(240, 90, 44, 0.35);
+  box-shadow: var(--neu-cream-shadow-hover);
+}
+
+.neu-card:active,
+.neu-card-cream:active,
+[data-stagger].is-revealed > .neu-card:active,
+[data-stagger].is-revealed > .neu-card-cream:active {
+  transform: translateY(0px) scale(0.995) !important;
+  box-shadow: var(--neu-shadow-active);
+  transition-duration: 0.1s;
+}
+
+.neu-card:focus-visible,
+.neu-card-cream:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .neu-card,
+  .neu-card-cream {
+    transition: none !important;
+    transform: none !important;
+  }
+  .neu-card:hover,
+  .neu-card-cream:hover {
+    transform: none !important;
+  }
+}

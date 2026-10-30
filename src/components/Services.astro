@@ -44,9 +44,9 @@ const icons = [
     </div>
 
     <!-- Redesigned Glassmorphic Services Grid (with mobile stacking scroll fixed) -->
-    <div class="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
+    <div class="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-4.5 sm:gap-5 md:gap-6 relative z-10" data-stagger>
       {services.map((service, index) => (
-        <div class="group relative services-card-sticky bg-white rounded-2xl p-8 md:p-10 border border-neutral-100/85 shadow-[0_10px_35px_rgba(240,90,44,0.04)] hover:border-primary/35 hover:shadow-[0_15px_40px_rgba(240,90,44,0.08)] hover:-translate-y-1.5 transition-all duration-500 flex flex-col justify-between h-full overflow-hidden" style={`--stack-idx: ${index};`}>
+        <div class="group relative services-card-sticky neu-card rounded-2xl p-5 sm:p-6 md:p-7 flex flex-col justify-between h-full overflow-hidden" style={`--stack-idx: ${index};`}>
           
           <!-- Hover Accent Glow (Permanent on mobile, hover on desktop) -->
           <div class="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-primary/10 md:from-primary/15 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-700 blur-xl md:blur-2xl -z-10"></div>
@@ -55,7 +55,7 @@ const icons = [
           <div class="absolute -right-6 -bottom-6 text-primary opacity-[0.02] group-hover:opacity-[0.05] group-hover:scale-110 pointer-events-none transition-all duration-700 select-none -z-10 [&>svg]:w-36 [&>svg]:h-36 [&>svg]:stroke-[0.8]" set:html={icons[index]}></div>
 
           <div>
-            <div class="flex justify-between items-start mb-8">
+            <div class="flex justify-between items-start mb-5 sm:mb-6">
               <div class="w-14 h-14 rounded-2xl bg-primary/5 border border-primary/10 flex items-center justify-center transition-all duration-300 group-hover:bg-primary group-hover:border-primary group-hover:shadow-[0_8px_20px_rgba(240,90,44,0.35)] text-primary group-hover:text-white" set:html={icons[index]}>
               </div>
               
@@ -67,22 +67,22 @@ const icons = [
               )}
             </div>
             
-            <h3 class="text-2xl font-black text-neutral-900 mb-4 leading-snug">
+            <h3 class="text-xl sm:text-2xl font-bold md:font-black text-neutral-900 mb-2.5 sm:mb-3 leading-snug">
               <a href={service.href} class="hover:text-primary transition-colors duration-300">
                 {service.title}
               </a>
             </h3>
             
-            <p class="text-neutral-600 text-base leading-relaxed font-medium">
+            <p class="text-xs sm:text-sm md:text-[0.9375rem] text-neutral-600 leading-relaxed font-normal">
               {service.description}
             </p>
           </div>
 
           <!-- Subtle Individual Service Conversion CTA: Directly to existing enquiry page -->
-          <div class="pt-6 mt-6 border-t border-neutral-100 flex items-center justify-between gap-3">
+          <div class="pt-4 sm:pt-5 mt-4 sm:mt-5 border-t border-neutral-100 flex items-center justify-between gap-3">
             <a
               href="/request-a-quote/"
-              class="service-cta-link cta-float-secondary cta-pulse-subtle inline-flex items-center gap-2 text-sm font-bold text-primary hover:text-neutral-900 transition-colors group/cta"
+              class="service-cta-link cta-float-secondary cta-pulse-subtle inline-flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-bold text-primary hover:text-neutral-900 transition-colors group/cta"
               style={`animation-delay: ${(0.4 + index * 0.4).toFixed(2)}s`}
             >
               <span>{serviceActionCtas[index]}</span>
