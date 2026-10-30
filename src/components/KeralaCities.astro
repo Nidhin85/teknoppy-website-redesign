@@ -68,11 +68,11 @@ const cities = [
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4.5 sm:gap-5 md:gap-6" data-stagger>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-4.5 md:gap-5" data-stagger>
       {cities.map((item) => (
-        <div class="group relative neu-card rounded-2xl p-5 sm:p-6 flex flex-col justify-between h-full">
+        <div class="group relative neu-card rounded-2xl p-4 sm:p-4.5 md:p-5 lg:p-5.5 flex flex-col justify-between h-full">
           <div>
-            <div class="flex items-center justify-between mb-3 sm:mb-3.5">
+            <div class="flex items-center justify-between mb-2.5 sm:mb-3">
               <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-white border border-neutral-200 text-neutral-700">
                 <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
                 {item.city}
@@ -84,7 +84,7 @@ const cities = [
               )}
             </div>
 
-            <h3 class="text-lg sm:text-xl md:text-2xl font-bold md:font-black text-neutral-900 mb-2 sm:mb-2.5 leading-snug group-hover:text-primary transition-colors">
+            <h3 class="text-base sm:text-lg md:text-[1.125rem] font-bold text-neutral-900 mb-1.5 leading-snug group-hover:text-primary transition-colors">
               {item.active ? (
                 <a href={item.link} class="hover:underline">
                   {item.h3}
@@ -94,12 +94,12 @@ const cities = [
               )}
             </h3>
 
-            <p class="text-neutral-600 text-xs sm:text-sm md:text-[0.9375rem] leading-relaxed font-normal">
+            <p class="text-xs sm:text-[0.84rem] text-neutral-600 leading-relaxed font-normal mb-1">
               {item.line}
             </p>
           </div>
 
-          <div class="pt-4 sm:pt-4.5 mt-4 sm:mt-5 border-t border-neutral-100 flex items-center justify-between">
+          <div class="pt-3 mt-3 border-t border-neutral-100 flex items-center justify-between">
             {item.active ? (
               <a
                 href={item.link}

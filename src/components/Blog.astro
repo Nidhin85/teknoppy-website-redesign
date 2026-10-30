@@ -38,7 +38,7 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
     </div>
 
     <!-- Blog Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-7" data-stagger>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-4.5 md:gap-5" data-stagger>
       {posts.map((post) => (
         <article class="group neu-card rounded-2xl overflow-hidden flex flex-col h-full">
           <!-- Image Container -->
@@ -51,8 +51,8 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
           </div>
 
           <!-- Card Content -->
-          <div class="p-4.5 sm:p-5 md:p-6 flex flex-col flex-grow justify-between">
-            <div class="space-y-4">
+          <div class="p-4 sm:p-4.5 md:p-5 flex flex-col flex-grow justify-between">
+            <div class="space-y-3 sm:space-y-3.5">
               <!-- Meta Info -->
               <div class="flex items-center gap-4 text-xs font-medium text-neutral-400">
                 <span class="flex items-center gap-1.5">
@@ -66,21 +66,21 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
               </div>
 
               <!-- Title -->
-              <h3 class="text-xl font-bold text-neutral-900 leading-snug group-hover:text-primary transition-colors duration-300">
+              <h3 class="text-base sm:text-lg md:text-[1.125rem] font-bold text-neutral-900 leading-snug group-hover:text-primary transition-colors duration-300">
                 <a href={post.href}>{post.title}</a>
               </h3>
 
               <!-- Excerpt -->
-              <p class="text-sm text-neutral-500 leading-relaxed font-medium">
+              <p class="text-xs sm:text-[0.84rem] text-neutral-500 leading-relaxed font-normal">
                 {post.excerpt}
               </p>
             </div>
 
             <!-- Read More CTA -->
-            <div class="pt-4 mt-4 border-t border-neutral-100">
+            <div class="pt-3 mt-3 border-t border-neutral-100">
               <a 
                 href={post.href} 
-                class="inline-flex items-center gap-2 text-sm font-bold text-neutral-850 hover:text-primary transition-colors duration-300"
+                class="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-neutral-850 hover:text-primary transition-colors duration-300"
               >
                 Read Article
                 <ArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />

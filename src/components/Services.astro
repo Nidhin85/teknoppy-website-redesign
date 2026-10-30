@@ -46,7 +46,7 @@ const icons = [
     <!-- Redesigned Glassmorphic Services Grid (with mobile stacking scroll fixed) -->
     <div class="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-4.5 sm:gap-5 md:gap-6 relative z-10" data-stagger>
       {services.map((service, index) => (
-        <div class="group relative services-card-sticky neu-card rounded-2xl p-5 sm:p-6 md:p-7 flex flex-col justify-between h-full overflow-hidden" style={`--stack-idx: ${index};`}>
+        <div class="group relative services-card-sticky neu-card rounded-2xl p-4 sm:p-4.5 md:p-5 lg:p-5.5 flex flex-col justify-between h-full overflow-hidden" style={`--stack-idx: ${index};`}>
           
           <!-- Hover Accent Glow (Permanent on mobile, hover on desktop) -->
           <div class="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-primary/10 md:from-primary/15 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-700 blur-xl md:blur-2xl -z-10"></div>
@@ -55,31 +55,31 @@ const icons = [
           <div class="absolute -right-6 -bottom-6 text-primary opacity-[0.02] group-hover:opacity-[0.05] group-hover:scale-110 pointer-events-none transition-all duration-700 select-none -z-10 [&>svg]:w-36 [&>svg]:h-36 [&>svg]:stroke-[0.8]" set:html={icons[index]}></div>
 
           <div>
-            <div class="flex justify-between items-start mb-5 sm:mb-6">
-              <div class="w-14 h-14 rounded-2xl bg-primary/5 border border-primary/10 flex items-center justify-center transition-all duration-300 group-hover:bg-primary group-hover:border-primary group-hover:shadow-[0_8px_20px_rgba(240,90,44,0.35)] text-primary group-hover:text-white" set:html={icons[index]}>
+            <div class="flex justify-between items-start mb-3.5 sm:mb-4.5">
+              <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-[#FFF4ED] border border-[#FDE6D7] flex items-center justify-center transition-all duration-300 group-hover:bg-primary group-hover:border-primary group-hover:shadow-[0_6px_16px_rgba(240,90,44,0.3)] text-primary group-hover:text-white [&>svg]:w-5 [&>svg]:h-5" set:html={icons[index]}>
               </div>
               
               <!-- Arrow indicator to service page -->
               {index !== 0 && (
-                <a href={service.href} aria-label={`Explore ${service.title}`} class="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center opacity-70 group-hover:opacity-100 hover:bg-primary/10 hover:border-primary/30 transition-all duration-300">
+                <a href={service.href} aria-label={`Explore ${service.title}`} class="w-7 h-7 sm:w-7.5 sm:h-7.5 rounded-full border border-neutral-200/80 flex items-center justify-center opacity-70 group-hover:opacity-100 hover:bg-primary/10 hover:border-primary/30 transition-all duration-300">
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-neutral-500 hover:text-primary transform -rotate-45 hover:rotate-0 transition-all duration-300"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                 </a>
               )}
             </div>
             
-            <h3 class="text-xl sm:text-2xl font-bold md:font-black text-neutral-900 mb-2.5 sm:mb-3 leading-snug">
+            <h3 class="text-base sm:text-lg md:text-[1.125rem] font-bold text-neutral-900 mb-1.5 sm:mb-2 leading-snug">
               <a href={service.href} class="hover:text-primary transition-colors duration-300">
                 {service.title}
               </a>
             </h3>
             
-            <p class="text-xs sm:text-sm md:text-[0.9375rem] text-neutral-600 leading-relaxed font-normal">
+            <p class="text-xs sm:text-[0.84rem] text-neutral-600 leading-relaxed font-normal">
               {service.description}
             </p>
           </div>
 
           <!-- Subtle Individual Service Conversion CTA: Directly to existing enquiry page -->
-          <div class="pt-4 sm:pt-5 mt-4 sm:mt-5 border-t border-neutral-100 flex items-center justify-between gap-3">
+          <div class="pt-3 mt-3 border-t border-neutral-100 flex items-center justify-between gap-3">
             <a
               href="/request-a-quote/"
               class="service-cta-link cta-float-secondary cta-pulse-subtle inline-flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-bold text-primary hover:text-neutral-900 transition-colors group/cta"
