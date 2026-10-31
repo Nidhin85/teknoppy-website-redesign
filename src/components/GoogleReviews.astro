@@ -1,0 +1,622 @@
+---
+import { 
+  TEKNOPPY_GOOGLE_PROFILE as profile, 
+  TEKNOPPY_GOOGLE_REVIEWS as rawReviews 
+} from '../data/googleReviews';
+
+// Prepare review cards with decorative clones to ensure seamless infinite looping track
+const minCardsForSeamlessScroll = 6;
+let group1Cards = [...rawReviews];
+if (group1Cards.length > 0 && group1Cards.length < minCardsForSeamlessScroll) {
+  const baseCards = [...group1Cards];
+  while (group1Cards.length < minCardsForSeamlessScroll) {
+    for (const c of baseCards) {
+      if (group1Cards.length >= minCardsForSeamlessScroll) break;
+      group1Cards.push({
+        ...c,
+        id: `${c.id}-clone-${group1Cards.length}`,
+        isDecorativeClone: true,
+      });
+    }
+  }
+}
+
+const totalDistinctReviews = rawReviews.length;
+---
+
+<section id="google-reviews" class="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-cream via-white to-white relative overflow-hidden">
+  <!-- Subtle background ambient glow -->
+  <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
+    <div class="absolute top-1/4 left-0 w-96 h-96 bg-primary/5 rounded-full blur-[100px]"></div>
+    <div class="absolute bottom-1/4 right-0 w-96 h-96 bg-blue-500/5 rounded-full blur-[100px]"></div>
+  </div>
+
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
+
+    <!-- Section Heading -->
+    <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-12 md:mb-14">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs sm:text-sm font-bold uppercase tracking-wider mb-4 shadow-sm transform -rotate-1">
+        <!-- Google 'G' Official 4-Color Icon -->
+        <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.66v3.04h3.88c2.28-2.09 3.66-5.17 3.66-9.14z"/>
+          <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.04c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.94H1.27v3.13C3.25 21.35 7.31 24 12 24z"/>
+          <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.6H1.27C.46 8.22 0 10.05 0 12s.46 3.78 1.27 5.4l4.01-3.13z"/>
+          <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.25 2.65 1.27 6.6l4.01 3.13c.95-2.84 3.6-4.98 6.72-4.98z"/>
+        </svg>
+        <span>Google & Verified Reviews</span>
+      </div>
+
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-neutral-900 tracking-tight leading-tight mb-3" data-magnetic-heading>
+        What Our Clients Say About <span class="text-primary">Teknoppy</span>
+      </h2>
+      <p class="text-neutral-600 text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-normal">
+        Real experiences from businesses that trust us with their digital growth.
+      </p>
+    </div>
+
+    <!-- Main Widget Container: Left Summary Card + Right Horizontal Scrolling Track -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
+
+      <!-- Left Column: Google Business Profile Summary Card -->
+      <div class="lg:col-span-4 xl:col-span-3.5 bg-white neu-card neu-card-cream rounded-3xl p-6 sm:p-7 border border-neutral-200/90 shadow-sm flex flex-col justify-between text-center relative overflow-hidden group">
+        <!-- Top Google Accent Bar -->
+        <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#4285F4] via-[#EA4335] via-[#FBBC05] to-[#34A853]"></div>
+
+        <div>
+          <!-- Business Brand Logo -->
+          <div class="w-20 h-20 mx-auto rounded-2xl bg-white border border-neutral-200/80 p-2 shadow-sm flex items-center justify-center mb-3 group-hover:scale-105 transition-transform duration-300">
+            <img
+              src="/logo.svg"
+              alt="Teknoppy"
+              width="72"
+              height="28"
+              class="w-full h-auto object-contain"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- Business Name & Subtitle -->
+          <h3 class="text-xl font-bold text-neutral-900 tracking-tight leading-snug">
+            {profile.name}
+          </h3>
+          <p class="text-xs text-neutral-500 font-medium mt-1 mb-3">
+            Google Business Profile • Kochi, Kerala
+          </p>
+
+          <!-- 5-Star Rating -->
+          <div class="flex items-center justify-center gap-1 text-[#FBBC04] text-xl mb-1.5" aria-label="5 out of 5 stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+
+          <!-- Rating Score & Review Count -->
+          <div class="space-y-0.5">
+            <div class="text-3xl font-black text-neutral-900 tracking-tight">
+              <span>{profile.ratingFormatted}</span> <span class="text-base font-bold text-neutral-400">/ 5</span>
+            </div>
+            <p class="text-xs text-neutral-600 font-medium">
+              Based on <span class="font-bold text-neutral-900">{profile.userRatingCountFormatted}</span> Google reviews
+            </p>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="mt-6 pt-5 border-t border-neutral-100 space-y-2.5">
+          <a
+            href={profile.writeReviewUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full py-2.5 px-4 rounded-xl border border-neutral-300 hover:border-primary text-neutral-800 hover:text-primary hover:bg-primary/5 text-xs font-bold transition-all duration-200 shadow-xs flex items-center justify-center gap-2 group/btn"
+          >
+            <svg class="w-4 h-4 text-primary group-hover/btn:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+            </svg>
+            <span>Write a review</span>
+          </a>
+
+          <a
+            href={profile.reviewsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center gap-1.5 text-xs font-bold text-primary hover:text-neutral-900 hover:underline transition-colors pt-1"
+          >
+            <span>Read all reviews on Google</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Continuous Horizontal Scrolling Reviews Track -->
+      <div class="lg:col-span-8 xl:col-span-8.5 flex flex-col justify-between min-w-0">
+
+        <!-- Panel Header: Customer Experiences Label, Badges & Navigation Arrows -->
+        <div class="flex items-center justify-between gap-3 mb-3.5 shrink-0 flex-wrap">
+          <div class="flex items-center gap-2 sm:gap-2.5">
+            <span class="text-xs font-bold uppercase tracking-wider text-neutral-500">Customer Experiences</span>
+            <span class="text-[11px] bg-primary/10 text-primary border border-primary/20 font-extrabold px-2.5 py-0.5 rounded-full">
+              4.9 ★ Verified
+            </span>
+            <span class="hidden sm:inline-block text-[11px] text-neutral-400 font-medium">
+              ({totalDistinctReviews} client reviews)
+            </span>
+          </div>
+
+          <!-- Navigation Controls: Arrows + Accessible Play/Pause Toggle -->
+          <div class="flex items-center gap-2">
+            <!-- Previous Button -->
+            <button
+              type="button"
+              id="reviews-prev-btn"
+              aria-label="Previous review"
+              class="w-8 h-8 rounded-full bg-white border border-neutral-200 text-neutral-600 hover:text-primary hover:border-primary/40 flex items-center justify-center shadow-xs hover:shadow-sm transition-all focus:outline-hidden focus:ring-2 focus:ring-primary/20 cursor-pointer"
+            >
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+
+            <!-- Next Button -->
+            <button
+              type="button"
+              id="reviews-next-btn"
+              aria-label="Next review"
+              class="w-8 h-8 rounded-full bg-white border border-neutral-200 text-neutral-600 hover:text-primary hover:border-primary/40 flex items-center justify-center shadow-xs hover:shadow-sm transition-all focus:outline-hidden focus:ring-2 focus:ring-primary/20 cursor-pointer"
+            >
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+
+            <!-- Accessible Play/Pause Toggle -->
+            <button
+              type="button"
+              id="reviews-horizontal-toggle"
+              aria-pressed="false"
+              aria-label="Pause automatic horizontal scrolling of reviews"
+              class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold text-neutral-600 bg-white border border-neutral-200 hover:bg-neutral-50 hover:text-primary transition-all duration-200 shadow-xs focus:outline-hidden focus:ring-2 focus:ring-primary/20 cursor-pointer"
+            >
+              <svg id="scroll-toggle-pause" class="w-3.5 h-3.5 text-neutral-500" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+              </svg>
+              <svg id="scroll-toggle-play" class="w-3.5 h-3.5 text-neutral-500 hidden" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+              <span id="scroll-toggle-text">Pause</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Horizontal Scrolling Viewport with Left & Right Gradient Fade Masks -->
+        <div
+          id="reviews-horizontal-viewport"
+          class="reviews-horizontal-viewport relative rounded-2xl w-full my-auto py-2 overflow-hidden"
+          role="region"
+          aria-label="Customer Google reviews horizontal carousel"
+          tabindex="0"
+        >
+          <!-- Left & Right Gradient Fade Masks (desktop only to prevent mobile touch blockage) -->
+          <div class="pointer-events-none absolute left-0 top-0 bottom-0 w-8 sm:w-14 bg-gradient-to-r from-white via-white/80 to-transparent z-10 hidden sm:block" aria-hidden="true"></div>
+          <div class="pointer-events-none absolute right-0 top-0 bottom-0 w-8 sm:w-14 bg-gradient-to-l from-white via-white/80 to-transparent z-10 hidden sm:block" aria-hidden="true"></div>
+
+          <!-- Horizontal Scrolling Track -->
+          <div id="reviews-horizontal-track" class="reviews-horizontal-track is-animated">
+            <!-- Group 1: Primary Reviews -->
+            <div class="reviews-horizontal-group flex flex-row gap-4 sm:gap-5 pr-4 sm:pr-5 shrink-0 items-stretch">
+              {group1Cards.map((card) => (
+                <article
+                  class="review-card w-[285px] sm:w-[325px] md:w-[350px] shrink-0 bg-white neu-card neu-card-cream rounded-2xl p-4.5 sm:p-5 border border-neutral-200/90 shadow-xs hover:shadow-md transition-all flex flex-col justify-between relative group/card"
+                  data-review-id={card.id}
+                  aria-hidden={card.isDecorativeClone ? 'true' : undefined}
+                >
+                  <!-- Card Header: Author Avatar, Name, Role & Google Badge -->
+                  <div>
+                    <div class="flex items-start justify-between gap-2.5 mb-2.5">
+                      <div class="flex items-center gap-3 min-w-0">
+                        {card.authorPhoto ? (
+                          <img
+                            src={card.authorPhoto}
+                            alt={card.isDecorativeClone ? '' : card.authorName}
+                            width="40"
+                            height="40"
+                            class="w-10 h-10 rounded-full object-cover shrink-0 shadow-xs border border-neutral-100"
+                            loading="lazy"
+                          />
+                        ) : (
+                          <div
+                            class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-xs shrink-0 shadow-xs select-none"
+                            style={`background-color: ${card.authorColor};`}
+                            aria-hidden="true"
+                          >
+                            {card.authorInitial}
+                          </div>
+                        )}
+
+                        <div class="min-w-0">
+                          <h4 class="font-bold text-sm text-neutral-900 truncate leading-tight group-hover/card:text-primary transition-colors">
+                            {card.authorName}
+                          </h4>
+                          <p class="text-[11px] text-neutral-500 font-medium mt-0.5 truncate">
+                            {card.roleOrLocation}
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Google Review Official Pill Badge -->
+                      <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-bold bg-[#E8F0FE] text-[#1A73E8] border border-[#D2E3FC] shrink-0 select-none" title="Public Google Review">
+                        <svg class="w-3 h-3 shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+                          <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.66v3.04h3.88c2.28-2.09 3.66-5.17 3.66-9.14z"/>
+                          <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.04c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.94H1.27v3.13C3.25 21.35 7.31 24 12 24z"/>
+                          <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.6H1.27C.46 8.22 0 10.05 0 12s.46 3.78 1.27 5.4l4.01-3.13z"/>
+                          <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.25 2.65 1.27 6.6l4.01 3.13c.95-2.84 3.6-4.98 6.72-4.98z"/>
+                        </svg>
+                        <span>Google Review</span>
+                      </span>
+                    </div>
+
+                    <!-- 5-Star Rating -->
+                    <div class="flex items-center gap-1 text-[#FBBC04] text-sm mb-2" aria-label={`${card.rating} out of 5 stars`}>
+                      {'★'.repeat(card.rating)}
+                    </div>
+
+                    <!-- Review Body with Line Clamp & Read More Toggle -->
+                    <div class="review-text-container text-xs sm:text-[0.84rem] text-neutral-600 leading-relaxed font-normal">
+                      <p class="review-text line-clamp-4">
+                        {card.text}
+                      </p>
+                      {card.text.length > 130 && (
+                        <button
+                          type="button"
+                          class="read-more-btn mt-1 text-xs font-bold text-primary hover:text-neutral-900 focus:outline-hidden transition-colors cursor-pointer"
+                          aria-expanded="false"
+                          tabindex={card.isDecorativeClone ? '-1' : '0'}
+                        >
+                          Read more
+                        </button>
+                      )}
+                    </div>
+                  </div>
+
+                  <!-- Card Footer: Sub Info / Link to Source -->
+                  <div class="mt-4 pt-3 border-t border-neutral-100 flex items-center justify-between text-[11px] text-neutral-400 font-medium">
+                    <span class="truncate pr-2">{card.subInfo}</span>
+                    <a
+                      href={card.googleMapsUri}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-primary hover:underline font-semibold shrink-0"
+                      tabindex={card.isDecorativeClone ? '-1' : '0'}
+                    >
+                      View on Google
+                    </a>
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            <!-- Group 2: Seamless Duplicate Clone for Continuous Infinite Loop -->
+            <div class="reviews-horizontal-group flex flex-row gap-4 sm:gap-5 pr-4 sm:pr-5 shrink-0 items-stretch" aria-hidden="true">
+              {group1Cards.map((card) => (
+                <article
+                  class="review-card w-[285px] sm:w-[325px] md:w-[350px] shrink-0 bg-white neu-card neu-card-cream rounded-2xl p-4.5 sm:p-5 border border-neutral-200/90 shadow-xs hover:shadow-md transition-all flex flex-col justify-between relative group/card"
+                >
+                  <!-- Card Header -->
+                  <div>
+                    <div class="flex items-start justify-between gap-2.5 mb-2.5">
+                      <div class="flex items-center gap-3 min-w-0">
+                        {card.authorPhoto ? (
+                          <img
+                            src={card.authorPhoto}
+                            alt=""
+                            width="40"
+                            height="40"
+                            class="w-10 h-10 rounded-full object-cover shrink-0 shadow-xs border border-neutral-100"
+                            loading="lazy"
+                          />
+                        ) : (
+                          <div
+                            class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-xs shrink-0 shadow-xs select-none"
+                            style={`background-color: ${card.authorColor};`}
+                          >
+                            {card.authorInitial}
+                          </div>
+                        )}
+
+                        <div class="min-w-0">
+                          <h4 class="font-bold text-sm text-neutral-900 truncate leading-tight group-hover/card:text-primary transition-colors">
+                            {card.authorName}
+                          </h4>
+                          <p class="text-[11px] text-neutral-500 font-medium mt-0.5 truncate">
+                            {card.roleOrLocation}
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Google Badge -->
+                      <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-bold bg-[#E8F0FE] text-[#1A73E8] border border-[#D2E3FC] shrink-0 select-none">
+                        <svg class="w-3 h-3 shrink-0" viewBox="0 0 24 24">
+                          <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.66v3.04h3.88c2.28-2.09 3.66-5.17 3.66-9.14z"/>
+                          <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.04c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.94H1.27v3.13C3.25 21.35 7.31 24 12 24z"/>
+                          <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.6H1.27C.46 8.22 0 10.05 0 12s.46 3.78 1.27 5.4l4.01-3.13z"/>
+                          <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.25 2.65 1.27 6.6l4.01 3.13c.95-2.84 3.6-4.98 6.72-4.98z"/>
+                        </svg>
+                        <span>Google Review</span>
+                      </span>
+                    </div>
+
+                    <!-- Stars -->
+                    <div class="flex items-center gap-1 text-[#FBBC04] text-sm mb-2">
+                      {'★'.repeat(card.rating)}
+                    </div>
+
+                    <!-- Text -->
+                    <div class="review-text-container text-xs sm:text-[0.84rem] text-neutral-600 leading-relaxed font-normal">
+                      <p class="review-text line-clamp-4">
+                        {card.text}
+                      </p>
+                      {card.text.length > 130 && (
+                        <button
+                          type="button"
+                          class="read-more-btn mt-1 text-xs font-bold text-primary hover:text-neutral-900 focus:outline-hidden transition-colors cursor-pointer"
+                          tabindex="-1"
+                        >
+                          Read more
+                        </button>
+                      )}
+                    </div>
+                  </div>
+
+                  <!-- Footer -->
+                  <div class="mt-4 pt-3 border-t border-neutral-100 flex items-center justify-between text-[11px] text-neutral-400 font-medium">
+                    <span class="truncate pr-2">{card.subInfo}</span>
+                    <a
+                      href={card.googleMapsUri}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-primary hover:underline font-semibold shrink-0"
+                      tabindex="-1"
+                    >
+                      View on Google
+                    </a>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Attribution & Link Row -->
+    <div class="mt-10 sm:mt-12 pt-6 border-t border-neutral-200/70 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
+      <div class="flex items-center gap-2">
+        <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.66v3.04h3.88c2.28-2.09 3.66-5.17 3.66-9.14z"/>
+          <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.04c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.94H1.27v3.13C3.25 21.35 7.31 24 12 24z"/>
+          <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.6H1.27C.46 8.22 0 10.05 0 12s.46 3.78 1.27 5.4l4.01-3.13z"/>
+          <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.25 2.65 1.27 6.6l4.01 3.13c.95-2.84 3.6-4.98 6.72-4.98z"/>
+        </svg>
+        <span>
+          Reviews from Google Business Profile • <strong>Teknoppy</strong> (Kochi, Kerala)
+        </span>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <a
+          href="/portfolios/"
+          class="font-bold text-neutral-700 hover:text-primary transition-colors"
+        >
+          View Client Projects
+        </a>
+        <span class="text-neutral-300">•</span>
+        <a
+          href={profile.reviewsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="font-bold text-primary hover:text-neutral-900 hover:underline inline-flex items-center gap-1.5"
+        >
+          <span>Read all {profile.userRatingCountFormatted} reviews on Google</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  :root {
+    --reviews-scroll-duration: 48s;
+  }
+
+  /* Continuous Horizontal Auto-scroll Animation (Smooth linear loop) */
+  @keyframes scrollHorizontalReviews {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .reviews-horizontal-viewport {
+    touch-action: pan-y;
+  }
+
+  .reviews-horizontal-track.is-animated {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    animation: scrollHorizontalReviews var(--reviews-scroll-duration, 48s) linear infinite;
+    will-change: transform;
+  }
+
+  /* Pause on hover anywhere within the horizontal scrolling area */
+  .reviews-horizontal-viewport:hover .reviews-horizontal-track.is-animated {
+    animation-play-state: paused;
+  }
+
+  /* Pause on keyboard focus anywhere within the viewport */
+  .reviews-horizontal-viewport:focus-within .reviews-horizontal-track.is-animated {
+    animation-play-state: paused;
+  }
+
+  /* Explicit paused state (toggle button, touch hold, arrow navigation, or expanded review) */
+  .reviews-horizontal-viewport.is-paused .reviews-horizontal-track.is-animated {
+    animation-play-state: paused !important;
+  }
+
+  /* Manual scroll mode when arrows are clicked or mobile swipe */
+  .reviews-horizontal-viewport.manual-mode {
+    overflow-x: auto !important;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+  .reviews-horizontal-viewport.manual-mode .reviews-horizontal-track.is-animated {
+    animation: none !important;
+  }
+
+  /* Respect reduced motion accessibility preferences */
+  @media (prefers-reduced-motion: reduce) {
+    .reviews-horizontal-track.is-animated {
+      animation: none !important;
+      transform: none !important;
+    }
+    .reviews-horizontal-viewport {
+      overflow-x: auto !important;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+</style>
+
+<script>
+  const initTeknoppyGoogleReviewsCarousel = () => {
+    const viewport = document.getElementById('reviews-horizontal-viewport');
+    const track = document.getElementById('reviews-horizontal-track');
+    const toggleBtn = document.getElementById('reviews-horizontal-toggle');
+    const pauseIcon = document.getElementById('scroll-toggle-pause');
+    const playIcon = document.getElementById('scroll-toggle-play');
+    const toggleText = document.getElementById('scroll-toggle-text');
+    const prevBtn = document.getElementById('reviews-prev-btn');
+    const nextBtn = document.getElementById('reviews-next-btn');
+
+    if (!viewport || !track) return;
+
+    let isUserPaused = false;
+    let expandedCount = 0;
+    let touchResumeTimer: ReturnType<typeof setTimeout> | null = null;
+
+    const updatePauseState = () => {
+      if (isUserPaused || expandedCount > 0) {
+        viewport.classList.add('is-paused');
+      } else {
+        viewport.classList.remove('is-paused');
+      }
+    };
+
+    // Toggle button handler
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        isUserPaused = !isUserPaused;
+        toggleBtn.setAttribute('aria-pressed', isUserPaused ? 'true' : 'false');
+        toggleBtn.setAttribute(
+          'aria-label',
+          isUserPaused ? 'Resume automatic horizontal scrolling of reviews' : 'Pause automatic horizontal scrolling of reviews'
+        );
+
+        if (pauseIcon && playIcon && toggleText) {
+          if (isUserPaused) {
+            pauseIcon.classList.add('hidden');
+            playIcon.classList.remove('hidden');
+            toggleText.textContent = 'Resume';
+          } else {
+            pauseIcon.classList.remove('hidden');
+            playIcon.classList.add('hidden');
+            toggleText.textContent = 'Pause';
+          }
+        }
+
+        updatePauseState();
+      });
+    }
+
+    // Previous & Next Arrow Buttons for manual scrolling
+    const stepCardScroll = (direction: 'prev' | 'next') => {
+      // Switch into manual-mode so native scrollLeft is used
+      viewport.classList.add('manual-mode', 'is-paused');
+      isUserPaused = true;
+      if (toggleBtn && pauseIcon && playIcon && toggleText) {
+        toggleBtn.setAttribute('aria-pressed', 'true');
+        pauseIcon.classList.add('hidden');
+        playIcon.classList.remove('hidden');
+        toggleText.textContent = 'Resume';
+      }
+
+      const card = viewport.querySelector('.review-card') as HTMLElement | null;
+      const step = card ? card.offsetWidth + 20 : 340;
+      if (direction === 'next') {
+        viewport.scrollBy({ left: step, behavior: 'smooth' });
+      } else {
+        viewport.scrollBy({ left: -step, behavior: 'smooth' });
+      }
+    };
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => stepCardScroll('prev'));
+    }
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => stepCardScroll('next'));
+    }
+
+    // Read More / Read Less handler
+    const readMoreBtns = viewport.querySelectorAll('.read-more-btn');
+    readMoreBtns.forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const p = btn.previousElementSibling as HTMLElement | null;
+        if (!p) return;
+
+        const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+        if (isExpanded) {
+          p.classList.add('line-clamp-4');
+          btn.textContent = 'Read more';
+          btn.setAttribute('aria-expanded', 'false');
+          expandedCount = Math.max(0, expandedCount - 1);
+        } else {
+          p.classList.remove('line-clamp-4');
+          btn.textContent = 'Read less';
+          btn.setAttribute('aria-expanded', 'true');
+          expandedCount++;
+        }
+
+        updatePauseState();
+      });
+    });
+
+    // Touch event handling for mobile devices
+    viewport.addEventListener(
+      'touchstart',
+      () => {
+        if (touchResumeTimer) clearTimeout(touchResumeTimer);
+        viewport.classList.add('is-paused');
+      },
+      { passive: true }
+    );
+
+    viewport.addEventListener(
+      'touchend',
+      () => {
+        if (touchResumeTimer) clearTimeout(touchResumeTimer);
+        touchResumeTimer = setTimeout(() => {
+          updatePauseState();
+        }, 3500);
+      },
+      { passive: true }
+    );
+  };
+
+  initTeknoppyGoogleReviewsCarousel();
+  document.addEventListener('astro:after-swap', initTeknoppyGoogleReviewsCarousel);
+</script>

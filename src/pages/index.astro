@@ -13,6 +13,7 @@ import KeralaIndustries from '../components/KeralaIndustries.astro';
 import Portfolio from '../components/Portfolio.astro';
 import Testimonials from '../components/Testimonials.tsx';
 import videoTestimonials from '../data/video-testimonials.json';
+import GoogleReviews from '../components/GoogleReviews.astro';
 import Blog from '../components/Blog.astro';
 import FAQ from '../components/FAQ.astro';
 import FooterCTA from '../components/FooterCTA.astro';
@@ -110,6 +111,7 @@ const testimonials = (await getCollection('testimonials'))
     <KeralaIndustries />
     <Portfolio />
     <Testimonials testimonials={testimonials} videos={videoTestimonials.videos} client:visible />
+    <GoogleReviews />
     <Blog />
     <FAQ />
   </main>
