@@ -1,15 +1,15 @@
 {
   "meta": {
-    "title": "WordPress Development Company in Kochi | Teknoppy",
-    "description": "Teknoppy builds fast, secure, SEO-ready WordPress websites for Kerala businesses. 120+ projects since 2018. Clear pricing. Get a free quote today."
+    "title": "WordPress Development Company Kochi | Custom WordPress Services – Teknoppy",
+    "description": "Teknoppy is a trusted WordPress development company Kochi delivering custom WordPress websites, WooCommerce development, and migration services for Kerala businesses. AWS certified developers since 2018."
   },
   "hero": {
-    "badge": "WordPress Developers in Kochi Since 2018",
+    "badge": "Kerala’s Premier Digital Studio",
     "heading": {
       "highlight": "WordPress",
       "after": "Development Company in Kochi"
     },
-    "body": "Teknoppy is a WordPress development company in Kochi, Kerala, founded in 2018. Our in-house team has delivered 120+ WordPress projects, from 5-page business sites to WooCommerce stores. Most websites launch in 3-5 weeks, and pricing starts at Rs. 40,000 with a written quote.",
+    "body": "Teknoppy is a professional WordPress development company Kochi delivering custom, mobile-first, SEO-ready WordPress solutions for businesses across Kerala. Since 2018, we have completed 120+ WordPress projects — from focused WordPress web design to large-scale enterprise WordPress development — helping Kerala brands build a strong digital presence and generate consistent leads online.",
     "ctaPrimary": {
       "label": "Book a Free Consultation",
       "href": "#contact"
@@ -35,7 +35,8 @@
         "value": "Kerala & GCC",
         "label": "Serving"
       }
-    ]
+    ],
+    "subheadline": "Custom · Mobile-First · SEO-Ready WordPress Solutions for Kerala Businesses Since 2018. We build WordPress platforms that rank, convert, and scale."
   },
   "introBand": {
     "paragraphs": [
@@ -445,12 +446,13 @@
   "author": {
     "badge": "Technical Leadership",
     "headingLead": "Meet",
-    "headingAccent": "Abilash KR",
-    "name": "Abilash KR",
-    "role": "Senior WordPress Developer, Teknoppy",
+    "headingAccent": "Sanal Edison",
+    "name": "Sanal Edison",
+    "role": "Founder & Digital Strategist, Teknoppy",
+    "photo": "/team/sanal-edison.webp",
     "email": "sales@teknoppy.com",
     "phone": "+91 6282249224",
-    "bio": "Abilash KR is an AWS-certified senior developer with 15+ years of WordPress expertise spanning custom theme development, plugin architecture, WooCommerce e-commerce, and enterprise WordPress solutions. He personally oversees all technical WordPress development ensuring security, performance, and scalability. Supported by Teknoppy’s in-house team of developers, designers, and SEO strategists.",
+    "bio": "Sanal Edison founded Teknoppy and has led 120+ web design and development projects across Kerala since 2018. His work includes SEO-first website architecture, conversion optimisation and digital strategy. He oversees projects from discovery through launch, supported by Teknoppy’s in-house team.",
     "reviewed": "Reviewed: October 2026",
     "profileHref": "/about-us/"
   },

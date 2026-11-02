@@ -65,7 +65,7 @@ export const wordpressSchema = {
         "height": 630
       },
       "reviewedBy": {
-        "@id": "https://teknoppy.com/wordpress-development-company-kochi/#abilash-kr"
+        "@id": "https://teknoppy.com/wordpress-development-company-kochi/#sanal-edison"
       },
       "inLanguage": "en-IN"
     },
@@ -95,17 +95,18 @@ export const wordpressSchema = {
     },
     {
       "@type": "Person",
-      "@id": "https://teknoppy.com/wordpress-development-company-kochi/#abilash-kr",
-      "name": "Abilash KR",
-      "jobTitle": "Senior WordPress Developer",
+      "@id": "https://teknoppy.com/wordpress-development-company-kochi/#sanal-edison",
+      "name": "Sanal Edison",
+      "jobTitle": "Founder & Digital Strategist",
       "worksFor": { "@id": "https://teknoppy.com/#organization" },
-      "description": "AWS-certified senior developer with 15+ years of WordPress expertise spanning custom theme development, plugin architecture, WooCommerce e-commerce, and enterprise WordPress solutions.",
+      "image": "https://teknoppy.com/team/sanal-edison.webp",
+      "description": "Sanal Edison founded Teknoppy and has led 120+ web design and development projects across Kerala since 2018. His work includes SEO-first website architecture, conversion optimisation and digital strategy.",
       "knowsAbout": [
         "WordPress Development",
-        "WooCommerce",
-        "Custom Theme Development",
-        "Plugin Development",
-        "Amazon Web Services"
+        "Website Architecture",
+        "Conversion Optimisation",
+        "Digital Strategy",
+        "SEO"
       ]
     },
     {
