@@ -90,7 +90,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
           <p class="text-base sm:text-lg lg:text-xl text-neutral-300 mb-5 max-w-2xl font-medium leading-relaxed">
             {page.hero.subheadline}
           </p>
-          <p class="text-sm sm:text-base text-neutral-400 mb-8 max-w-2xl font-medium leading-relaxed">
+          <p class="text-base sm:text-lg text-neutral-300 mb-8 max-w-2xl font-medium leading-relaxed">
             {page.hero.body}
           </p>
 
@@ -180,7 +180,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
               {page.whyTeknoppy.headingPre} <br />
               <span class="text-primary">{page.whyTeknoppy.headingHighlight}</span>
             </h2>
-            <p class="text-neutral-500 font-medium text-sm leading-relaxed max-w-sm">
+            <p class="text-neutral-600 font-medium text-base sm:text-[17px] leading-relaxed max-w-sm">
               {page.whyTeknoppy.intro}
             </p>
           </div>
@@ -193,7 +193,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
               <div>
                 <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-4">{page.whyTeknoppy.cards[0].tag}</span>
                 <h3 class="text-xl font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-3">{page.whyTeknoppy.cards[0].title}</h3>
-                <p class="text-neutral-500 text-xs leading-relaxed font-semibold">
+                <p class="text-neutral-600 text-[15px] sm:text-base leading-relaxed font-medium">
                   {page.whyTeknoppy.cards[0].description}
                 </p>
               </div>
@@ -204,7 +204,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
               <div>
                 <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-4">{page.whyTeknoppy.cards[1].tag}</span>
                 <h3 class="text-xl font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-3">{page.whyTeknoppy.cards[1].title}</h3>
-                <p class="text-neutral-500 text-xs leading-relaxed font-semibold">
+                <p class="text-neutral-600 text-[15px] sm:text-base leading-relaxed font-medium">
                   {page.whyTeknoppy.cards[1].description}
                 </p>
               </div>
@@ -215,7 +215,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
               <div>
                 <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-4">{page.whyTeknoppy.cards[2].tag}</span>
                 <h3 class="text-xl font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-3">{page.whyTeknoppy.cards[2].title}</h3>
-                <p class="text-neutral-500 text-xs leading-relaxed font-semibold">
+                <p class="text-neutral-600 text-[15px] sm:text-base leading-relaxed font-medium">
                   {page.whyTeknoppy.cards[2].description}
                 </p>
               </div>
@@ -226,7 +226,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
               <div>
                 <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-4">{page.whyTeknoppy.cards[3].tag}</span>
                 <h3 class="text-xl font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-3">{page.whyTeknoppy.cards[3].title}</h3>
-                <p class="text-neutral-500 text-xs leading-relaxed font-semibold">
+                <p class="text-neutral-600 text-[15px] sm:text-base leading-relaxed font-medium">
                   {page.whyTeknoppy.cards[3].description}
                 </p>
               </div>
@@ -271,7 +271,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
                   </div>
                   <h3 class:list={["text-base sm:text-[18px] font-black text-neutral-850 leading-snug", svc.href && "group-hover:text-primary transition-colors duration-300"]}>{svc.title}</h3>
                 </div>
-                <p class="text-neutral-500 text-xs leading-relaxed mt-4 font-semibold">{svc.desc}</p>
+                <p class="text-neutral-600 text-[15px] sm:text-base leading-relaxed font-medium mt-4">{svc.desc}</p>
                 {svc.href && (
                   <span class="inline-flex items-center gap-1.5 mt-5 text-xs font-bold text-primary">
                     Learn more <ArrowRight class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
@@ -308,7 +308,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
               >
                 <span class="min-w-0">
                   <span class="block text-[15px] font-black text-neutral-900 group-hover:text-primary transition-colors leading-snug">{item.title}</span>
-                  <span class="block text-neutral-500 text-xs font-semibold mt-1.5 leading-relaxed">{item.desc}</span>
+                  <span class="block text-neutral-600 text-sm font-medium mt-1.5 leading-relaxed">{item.desc}</span>
                 </span>
                 <ArrowRight class="w-4 h-4 text-primary flex-shrink-0 mt-0.5 transition-transform duration-300 group-hover:translate-x-1" />
               </a>
@@ -352,7 +352,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
                       <h3 class="text-base sm:text-[18px] font-black text-neutral-850 leading-snug mt-0.5 group-hover:text-primary transition-colors duration-300">{proc.title}</h3>
                     </div>
                   </div>
-                  <p class="text-neutral-500 text-xs leading-relaxed mt-5 font-semibold">{proc.desc}</p>
+                  <p class="text-neutral-600 text-[15px] sm:text-base leading-relaxed font-medium mt-5">{proc.desc}</p>
                 </div>
                 <div class="w-10 h-[3px] bg-primary/80 mt-6 rounded-full"></div>
 
@@ -410,7 +410,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
             </tbody>
           </table>
         </div>
-        <p class="text-neutral-500 text-xs mt-4 leading-relaxed max-w-3xl font-medium">
+        <p class="text-neutral-500 text-sm mt-4 leading-relaxed max-w-3xl font-medium">
           {page.pricing.footnote}
         </p>
       </div>
@@ -449,7 +449,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
                 </div>
                 <div>
                   <h3 class:list={["text-base font-bold text-white mb-2", ind.href && "group-hover:text-[#F9AE42] transition-colors duration-300"]}>{ind.name}</h3>
-                  <p class="text-neutral-400 text-xs leading-relaxed font-semibold">{ind.desc}</p>
+                  <p class="text-neutral-300 text-[15px] sm:text-base leading-relaxed font-normal">{ind.desc}</p>
                   {ind.href && (
                     <span class="inline-flex items-center gap-1.5 mt-3 text-[11px] font-black text-amber-400 uppercase tracking-wider">
                       Explore
@@ -495,10 +495,10 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
                   <span class="text-[11px] font-black text-primary bg-primary/5 px-2.5 py-1 rounded-full uppercase tracking-wider whitespace-nowrap">{cs.sector}</span>
                 </div>
                 <h3 class="text-xl sm:text-2xl font-black text-neutral-900 leading-snug group-hover:text-primary transition-colors">{cs.title}</h3>
-                <p class="text-neutral-600 text-sm leading-relaxed font-medium mt-3 flex-grow">{cs.text}</p>
+                <p class="text-neutral-600 text-base sm:text-[17px] leading-relaxed font-medium mt-3 flex-grow">{cs.text}</p>
                 <div class="bg-neutral-50/70 rounded-2xl p-4 border border-neutral-100 mt-6">
                   <span class="block text-[11px] font-black text-neutral-800 uppercase tracking-wider mb-1">Scope</span>
-                  <p class="text-neutral-500 text-xs font-semibold leading-relaxed">{cs.stack}</p>
+                  <p class="text-neutral-600 text-sm font-semibold leading-relaxed">{cs.stack}</p>
                 </div>
                 <span class="inline-flex items-center gap-1.5 mt-6 text-xs font-black text-primary uppercase tracking-wider">
                   Read the case study
@@ -655,7 +655,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
                 </p>
               </div>
               <div class="border-t border-neutral-100 pt-4 mt-auto">
-                <span class="block text-sm font-bold text-neutral-800">{item.author}</span>
+                <span class="block text-base font-bold text-neutral-800">{item.author}</span>
                 <span class="block text-[12px] text-neutral-400 font-bold uppercase tracking-wider mt-0.5">{item.role}</span>
               </div>
             </div>
@@ -689,10 +689,10 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
                   <h3 class="text-lg font-bold text-neutral-900">{proj.name}</h3>
                   <span class="text-[11px] font-black text-primary bg-primary/5 px-2 py-0.5 rounded-full uppercase tracking-wider">{proj.loc}</span>
                 </div>
-                <p class="text-neutral-600 text-xs leading-relaxed font-semibold mb-4">{proj.desc}</p>
+                <p class="text-neutral-600 text-[15px] sm:text-base leading-relaxed font-medium mb-4">{proj.desc}</p>
                 <div class="bg-neutral-50/50 rounded-2xl p-4 border border-neutral-100">
                   <span class="block text-[12px] font-black text-neutral-800 uppercase tracking-wider mb-1">Result</span>
-                  <p class="text-neutral-500 text-xs font-semibold leading-relaxed">{proj.result}</p>
+                  <p class="text-neutral-600 text-sm font-semibold leading-relaxed">{proj.result}</p>
                 </div>
               </div>
               <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-bold text-primary mt-6 hover:underline">
@@ -733,7 +733,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
                   </svg>
                 </span>
               </summary>
-              <div class="mt-4 pt-4 border-t border-neutral-100/60 text-xs sm:text-sm text-neutral-600 leading-relaxed font-semibold">
+              <div class="mt-4 pt-4 border-t border-neutral-100/60 text-base sm:text-[17px] text-neutral-600 leading-relaxed font-normal">
                 {faq.a}
               </div>
             </details>
@@ -796,7 +796,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
                       <a href={post.href}>{post.title}</a>
                     </h3>
 
-                    <p class="text-sm text-neutral-500 leading-relaxed font-medium">{post.excerpt}</p>
+                    <p class="text-neutral-600 text-[15px] sm:text-base leading-relaxed font-medium">{post.excerpt}</p>
                   </div>
 
                   <div class="pt-5 mt-5 border-t border-neutral-50">

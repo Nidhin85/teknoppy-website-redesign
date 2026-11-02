@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Software Development Company in Kochi | Teknoppy",
-    "description": "Custom business software, internal tools and legacy system upgrades built by a Kochi team - planned around how you work. Book a free consultation."
+    "title": "Software Development Company Kochi | Teknoppy",
+    "description": "Need a Software Development Company Kochi businesses can trust? Teknoppy builds custom, enterprise-ready systems. Book a consultation."
   },
   "breadcrumb": [
     {
@@ -20,17 +20,17 @@
   "sections": [
     {
       "type": "hero",
-      "badge": "Custom Software, Internal Tools & Legacy Upgrades",
-      "h1Lead": "Software Development Company in",
+      "badge": "App & Software Development",
+      "h1Lead": "Software Development Company",
       "h1Accent": "Kochi",
       "subheadTag": "p",
       "subhead": "Custom Software Built Around How Your Business Actually Operates",
       "body": [
         {
-          "text": "Teknoppy is a software development company in Kochi that builds custom business software - internal tools, workflow and reporting systems, software products and upgrades of old desktop or legacy systems. We plan the architecture first, build in stages, and hand over full documentation. Most projects take 8-20 weeks."
+          "text": "Software Development Company Kochi — that's what businesses search for when they need software built specifically around their operations, not a website, mobile app, or off-the-shelf tool stretched to fit. Teknoppy builds custom software for businesses whose processes have outgrown generic solutions, since forcing unique operations into a one-size-fits-all tool eventually costs more than building it right."
         },
         {
-          "text": "As an experienced software development agency in Kochi, we understand that forcing unique operational processes into rigid off-the-shelf software creates costly workarounds and duplicate data entry. We engineer bespoke software systems tailored to your established business workflows."
+          "text": "Choosing the right Software Development Company Kochi partner matters because custom software is a long-term asset — the technical decisions made early determine how easily it can grow, integrate, and be maintained years down the line."
         }
       ],
       "ctas": [
@@ -44,9 +44,18 @@
         }
       ],
       "stats": [
-        { "value": "120+", "label": "Projects Delivered" },
-        { "value": "Since 2018", "label": "In Kochi, Kerala" },
-        { "value": "Enterprise", "label": "Custom & Legacy Modernization" }
+        {
+          "value": "120+",
+          "label": "Projects Delivered"
+        },
+        {
+          "value": "Since 2018",
+          "label": "In Kochi, Kerala"
+        },
+        {
+          "value": "Enterprise",
+          "label": "Custom & Legacy Modernization"
+        }
       ]
     },
     {
@@ -58,19 +67,19 @@
       "items": [
         {
           "title": "Custom & Enterprise Software",
-          "html": "Bespoke business platforms designed specifically around your operational logic, approval chains, and data models, eliminating third-party subscription license creep."
+          "text": "Custom software development services and enterprise software development Kochi cover systems built specifically for your operations — whether replacing a collection of spreadsheets and manual steps or scaling a core business process into dedicated software."
         },
         {
           "title": "Business Software Solutions",
-          "html": "Specialized operational systems: <a href=\"/erp-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">ERP</a>, <a href=\"/crm-company-kochi/\" class=\"text-primary font-semibold hover:underline\">CRM</a>, <a href=\"/hrm-company-kochi/\" class=\"text-primary font-semibold hover:underline\">HRM</a>, and <a href=\"/inventory-management-software-kochi/\" class=\"text-primary font-semibold hover:underline\">inventory management software</a> engineered around your actual team routines."
+          "text": "Business software solutions Kochi address specific operational needs — inventory tracking, workflow automation, reporting dashboards, and internal team tools designed around how your staff actually works."
         },
         {
           "title": "Desktop & Legacy Modernization",
-          "html": "Modernizing legacy Windows desktop applications (Visual Basic, FoxPro, MS Access, older .NET) into secure, responsive cloud web applications with seamless data migration."
+          "text": "Desktop application development covers software that runs locally rather than in a browser, while legacy software modernization rebuilds outdated, unsupported systems onto modern frameworks without losing historic data or interrupting daily work."
         },
         {
           "title": "Consulting & Product Development",
-          "html": "Technical architecture consulting, feasibility studies, and building commercial software products to license or sell. For multi-tenant products, see <a href=\"/saas-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">SaaS Development</a>."
+          "text": "Software consulting services Kochi help define the right technical approach before development begins, while software product development supports businesses building a software product to sell, license, or offer to their own clients."
         }
       ]
     },
@@ -106,24 +115,24 @@
       "h2": "Our Software Development Process",
       "items": [
         {
-          "title": "1. Requirements & Technical Consulting (Weeks 1-2)",
-          "text": "We audit your business processes, interview key department users, and draft a comprehensive Software Requirements Specification (SRS)."
+          "title": "Requirements & Technical Consulting",
+          "text": "We map your actual business processes and technical needs before recommending an approach."
         },
         {
-          "title": "2. System Architecture & Database Design (Weeks 3-4)",
-          "text": "Entity-relationship modeling, API contracts, security protocols, and selecting cloud infrastructure tailored to your scale."
+          "title": "Architecture Planning",
+          "text": "The right technical foundation is chosen based on scale, integration needs, and long-term maintainability."
         },
         {
-          "title": "3. Bespoke Sprint-Based Development (Weeks 5-14)",
-          "text": "Iterative module coding with continuous integration, automated test suites, and bi-weekly milestone reviews with your stakeholders."
+          "title": "Bespoke Development",
+          "text": "Bespoke software development services are built incrementally, with regular check-ins rather than a single delivery at the end."
         },
         {
-          "title": "4. Integration & Legacy Data Migration (Weeks 15-17)",
-          "text": "Sanitizing and migrating legacy databases, configuring third-party accounting/ERP integrations, and conducting user acceptance testing (UAT)."
+          "title": "Integration & Testing",
+          "text": "Software integration services connect the new software with tools you already use, tested thoroughly for reliability."
         },
         {
-          "title": "5. Production Deployment & Team Training (Weeks 18-20)",
-          "text": "Scheduled zero-downtime cutover, hands-on user training workshops, and comprehensive administrative documentation handover."
+          "title": "Deployment & Handover",
+          "text": "Clean deployment, full source code ownership, and documentation so your team can use and maintain it confidently."
         }
       ]
     },
@@ -134,16 +143,24 @@
       "h2": "Why Choose Teknoppy for Software Development in Kochi",
       "items": [
         {
-          "html": "<strong>Architecture planned before code:</strong> We eliminate expensive project rework by validating database schemas and system architecture upfront."
+          "title": "We scope architecture before writing code",
+          "text": "Custom software projects fail most often when the technical foundation is wrong from day one — we get that right first."
         },
         {
-          "html": "<strong>In-house engineering team in Vyttila, Kochi:</strong> Work directly with our senior software architects and developers without intermediary layers."
+          "title": "Custom business software solutions built around your actual workflow",
+          "text": "Not adapted from a generic template pretending to be custom."
         },
         {
-          "html": "<strong>Zero recurring seat licenses:</strong> Own your enterprise software outright without compounding per-user monthly subscription fees."
+          "title": "Legacy modernization done carefully",
+          "text": "Rebuilding outdated systems without disrupting operations requires planning most rushed projects skip entirely."
         },
         {
-          "html": "<strong>Comprehensive post-launch SLA support:</strong> Dedicated maintenance agreements covering system monitoring, backups, and feature enhancements."
+          "title": "Full source code ownership",
+          "text": "You own what we build, with no vendor lock-in or proprietary dependencies holding your business back."
+        },
+        {
+          "title": "A team that talks straight",
+          "text": "Clear technical advice in plain language, with realistic assessments of what custom software will take to build and maintain."
         }
       ]
     },
@@ -151,16 +168,27 @@
       "type": "bullets",
       "bg": "white",
       "h2": "Who Needs Software Development Services",
-      "intro": "Custom software development is the right investment for organizations that are:",
+      "intro": "This service fits businesses that are:",
       "items": [
         {
-          "text": "Managing complex multi-department operations that standard packaged SaaS tools cannot support without messy workarounds."
+          "title": "Running operations too specific or complex",
+          "text": "for off-the-shelf software to handle properly"
         },
         {
-          "text": "Relying on fragile, unmaintained legacy desktop databases (VB6, FoxPro, Access) that pose critical operational continuity risks."
+          "title": "Maintaining outdated legacy systems",
+          "text": "that need modernizing without disrupting daily operations"
         },
         {
-          "text": "Building a proprietary software asset or commercial product requiring custom IP ownership and unique workflow automation."
+          "title": "Connecting multiple disjointed tools",
+          "text": "that need custom software integration services to work as one"
+        },
+        {
+          "title": "Building a software product to sell, license, or offer to their own market",
+          "text": ""
+        },
+        {
+          "title": "Outgrowing spreadsheets and manual workarounds",
+          "text": "that are creating errors and slowing the team down"
         }
       ],
       "outro": [
@@ -172,16 +200,10 @@
     {
       "type": "prose",
       "bg": "cream",
-      "h2": "Software Projects We've Delivered",
+      "h2": "Software Development Projects We've Delivered",
       "paragraphs": [
         {
-          "html": "<strong>Industrial Manufacturing & Dispatch Platform:</strong> Modernized an on-premise desktop production system into a responsive cloud application. Cut daily dispatch reporting time from 4 hours to 8 minutes across 45 concurrent shop-floor users with automated GST challan generation."
-        },
-        {
-          "html": "<strong>Multi-Branch Warehouse Logistics System:</strong> Built a bespoke inventory and order reconciliation platform unifying 12 regional depots, replacing manual spreadsheets with real-time barcode tracking and automated reorder alerts."
-        },
-        {
-          "html": "Explore more case studies on our <a href=\"/portfolios/\" class=\"text-primary font-semibold hover:underline\">Portfolio</a> and <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">Case Studies</a> pages."
+          "text": "Teknoppy has built custom software for businesses across Kochi and Kerala, from internal business tools to legacy system modernization projects handled without operational downtime. Explore our case studies to see real projects delivered."
         }
       ]
     },
@@ -191,25 +213,7 @@
       "h2": "Custom Software Development Cost in Kochi",
       "paragraphs": [
         {
-          "text": "Custom software pricing is scoped around business module count, user roles, legacy data migration, and third-party integrations:"
-        },
-        {
-          "html": "<strong>Technical Consulting & Architecture Audit:</strong> ₹25,000 – ₹60,000 (Delivery in 1–2 weeks). Comprehensive business process mapping, technical feasibility review, and SRS architecture roadmap."
-        },
-        {
-          "html": "<strong>Departmental Business Software / Internal Tool:</strong> ₹85,000 – ₹1,80,000 (Delivery in 8–12 weeks). Bespoke tool automating single-department workflows, reporting, and team access control."
-        },
-        {
-          "html": "<strong>Enterprise Multi-Module Software System:</strong> ₹2,00,000 – ₹5,50,000+ (Delivery in 12–20+ weeks). Multi-department ERP/operations platform with complex database models, role hierarchy, and accounting sync."
-        },
-        {
-          "html": "<strong>Legacy Desktop Modernization:</strong> ₹1,50,000 – ₹4,00,000 (Phased delivery). Database sanitation, cloud refactoring, and zero-downtime cutover from legacy desktop systems."
-        },
-        {
-          "html": "<strong>Ongoing Maintenance & DevOps Support:</strong> ₹15,000 – ₹40,000 / month. Proactive server monitoring, automated daily backups, security patches, and SLA support."
-        },
-        {
-          "html": "Ready to discuss your software project? <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">Request a Quote</a> or <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">Book a Consultation</a> (NDA signed on request)."
+          "text": "Custom software pricing depends heavily on scope, integration complexity, and whether existing systems need to be modernized alongside new development. We scope requirements in detail before providing a quote so you understand exactly what is included. Book a free consultation to talk through your project."
         }
       ]
     },
@@ -220,10 +224,22 @@
       "badge": "Summary",
       "h2": "Teknoppy Software at a Glance",
       "items": [
-        { "title": "Office Location", "text": "Vyttila, Kochi, Kerala. In-house software architects, backend engineers, and QA leads." },
-        { "title": "Core Services", "text": "Custom business software, legacy system cloud modernization, and multi-department operational tools." },
-        { "title": "Technology Stack", "text": ".NET Core, Java, Python (Django/FastAPI), Node.js, React, PostgreSQL, MS SQL, AWS, Azure." },
-        { "title": "Code Ownership", "text": "100% intellectual property and full source code handover with zero ongoing seat licensing fees." }
+        {
+          "title": "Office Location",
+          "text": "Vyttila, Kochi, Kerala. In-house software architects, backend engineers, and QA leads."
+        },
+        {
+          "title": "Core Services",
+          "text": "Custom business software, legacy system cloud modernization, and multi-department operational tools."
+        },
+        {
+          "title": "Technology Stack",
+          "text": ".NET Core, Java, Python (Django/FastAPI), Node.js, React, PostgreSQL, MS SQL, AWS, Azure."
+        },
+        {
+          "title": "Code Ownership",
+          "text": "100% intellectual property and full source code handover with zero ongoing seat licensing fees."
+        }
       ]
     },
     {
@@ -258,31 +274,31 @@
       "bg": "white",
       "center": true,
       "badge": "Have Questions?",
-      "h2": "Software Development FAQs",
+      "h2": "Frequently Asked Questions — Software Development Company Kochi",
       "items": [
         {
-          "q": "How is custom software development different from web application development?",
-          "a": "Custom software development covers a broader technical scope — enterprise systems, desktop modernization, internal workflow tools, and on-premise architectures — whereas web application development focuses specifically on browser-based cloud platforms. See our Web Application Development Company Kochi page."
+          "q": "How is this different from web application development?",
+          "a": "Software development covers a broader category — desktop applications, legacy systems, and custom business tools — while web application development specifically means software that runs in a browser. Teknoppy builds both, depending on what your operations require."
         },
         {
-          "q": "How much does custom software development cost in Kochi?",
-          "a": "Custom software projects typically range from ₹85,000 to ₹1,80,000 for focused departmental tools (8–12 weeks), and ₹2,00,000 to ₹5,50,000+ for enterprise multi-module platforms (12–20+ weeks). Legacy desktop modernizations typically cost between ₹1,50,000 and ₹4,00,000."
+          "q": "Do you build software as a product, or only internal tools?",
+          "a": "Both. Software product development supports businesses building software to sell or license, while other projects are internal tools built purely for the client's own team and operations."
         },
         {
-          "q": "Should we buy off-the-shelf software or build custom software?",
-          "a": "Buy off-the-shelf when standard SaaS covers at least 80% of your business requirements without major workarounds. Build custom software when your operations are unique, third-party user seat fees are escalating, or proprietary workflows give you a distinct competitive advantage."
+          "q": "Can you modernize our existing outdated system?",
+          "a": "Yes. Legacy software modernization rebuilds outdated systems onto current technology, planned carefully to avoid disrupting operations your business depends on daily."
         },
         {
-          "q": "Will we own the software source code and data?",
-          "a": "Yes, 100%. Upon final project completion, all source code, database architectures, documentation, and cloud infrastructure access are transferred entirely to your company with zero ongoing developer license fees."
+          "q": "Do you offer consulting without a full development commitment?",
+          "a": "Yes. Software consulting services Kochi help define the right technical approach and scope before you commit to building anything."
         },
         {
-          "q": "How do you migrate data from our existing legacy system?",
-          "a": "We audit your legacy database, sanitize records, create schema transformation scripts, and run parallel staging test runs. We schedule the final cutover during off-peak hours to guarantee zero operational downtime."
+          "q": "Will custom software integrate with systems we already use?",
+          "a": "Yes. Software integration services connect new development with your existing tools — CRMs, accounting systems, payment gateways, and databases."
         },
         {
-          "q": "Do you build software as a product, or only internal business tools?",
-          "a": "We build both. For founders and businesses commercializing software products with recurring subscription models, explore our specialized SaaS Development Company in Kochi services."
+          "q": "How long does a custom software project take?",
+          "a": "Timelines vary significantly by scope, typically ranging from 8 to 20+ weeks depending on complexity. We establish milestones during initial planning so progress is clear throughout."
         }
       ]
     },
@@ -290,10 +306,10 @@
       "type": "cta",
       "draft": true,
       "bg": "cream",
-      "h2": "Ready to Start Your Software Project?",
+      "h2": "Ready to Start Your Software Development Project?",
       "paragraphs": [
         {
-          "text": "Tell us how your business runs today and what is slowing it down. We will reply within one business day with next steps and an estimate range."
+          "text": "If off-the-shelf tools don't fit how your business actually operates, custom software built correctly is the better long-term investment. Teknoppy's Software Development Company Kochi team is ready to talk through what you need. Book a free consultation and let's map out the right approach."
         }
       ],
       "ctas": [
@@ -310,7 +326,7 @@
     {
       "type": "byline",
       "bg": "white",
-      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Author: Sanal Edison, Digital Strategist · Reviewed: October 2026"
+      "text": "Teknoppy · Vyttila, Kochi, Kerala · sales@teknoppy.com · +91 6282249224 — Author: Sanal Edison, Digital Strategist · Reviewed: August 2026. Note: We sign an NDA before reviewing proprietary software requirements."
     }
   ],
   "devNotes": {

@@ -1,22 +1,40 @@
 {
   "meta": {
-    "title": "Web Application Development Company in Kochi | Teknoppy",
-    "description": "Custom web apps, portals and dashboards built in Kochi for Kerala, India and GCC businesses. Clear pricing and timelines. Book a free consultation."
+    "title": "Web Application Development Company Kochi | Custom Web Apps — Teknoppy",
+    "description": "Teknoppy is a Kochi web application development company building scalable, secure, enterprise-grade custom web apps for Kerala, India and GCC businesses since 2018."
   },
   "hero": {
-    "badge": "Custom Web Apps Built in Kochi Since 2018",
+    "badge": "Kerala’s Web App Studio",
     "headingPre": "Web Application Development Company in",
     "headingHighlight": "Kochi",
     "headingPost": "",
-    "subheadline": "Enterprise-Grade Custom Web Applications, Portals, and Dashboards Engineered for Scale",
-    "body": "Teknoppy is a Kochi-based team that builds custom web applications - portals, dashboards, CRMs, booking systems and SaaS products - for businesses in Kerala, India and the GCC. We work in React, Node.js, Python and PostgreSQL. An MVP typically takes 2-3 months and starts from Rs. 3,00,000.",
-    "ctaPrimary": { "label": "Book a Free Consultation", "href": "#contact" },
-    "ctaSecondary": { "label": "Explore Our Services", "href": "#services" },
+    "subheadline": "Custom · Scalable · Secure web applications for Kerala, India and GCC businesses — engineered in Kochi since 2018, from MVP to enterprise.",
+    "body": "Teknoppy is a Kochi web application development company building scalable, secure, enterprise-grade custom web apps for Kerala, India and GCC businesses since 2018.",
+    "ctaPrimary": {
+      "label": "Book a Free Consultation",
+      "href": "#contact"
+    },
+    "ctaSecondary": {
+      "label": "Explore Our Services",
+      "href": "#services"
+    },
     "statCards": [
-      { "value": "120+", "label": "Projects Delivered" },
-      { "value": "2018", "label": "Established" },
-      { "value": "60+", "label": "Web Applications" },
-      { "value": "Kerala & GCC", "label": "Serving" }
+      {
+        "value": "120+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "2018",
+        "label": "Established"
+      },
+      {
+        "value": "60+",
+        "label": "Web Applications"
+      },
+      {
+        "value": "Kerala & GCC",
+        "label": "Serving"
+      }
     ]
   },
   "introBand": "We build with React, Node.js, Python and PostgreSQL, hosted on AWS or Azure, picking the optimal tech stack after reviewing your operational workflows. From single-purpose workflow tools to high-throughput multi-tenant SaaS platforms, our in-house engineering team delivers maintainable, clean-code web applications.",
@@ -166,12 +184,36 @@
     "headingPost": "",
     "intro": "From initial requirement analysis to production release, every project follows a disciplined engineering lifecycle. Need user interface design first? Explore our specialized Web App UI Design services.",
     "steps": [
-      { "step": "01", "title": "Discovery & Scoping (1–2 Wks)", "desc": "We analyze your business workflows, define user personas, draft technical requirements, and formulate database schemas." },
-      { "step": "02", "title": "UI/UX & Interactive Prototyping (2–3 Wks)", "desc": "Wireframing and Figma prototypes tested with real users to ensure frictionless ergonomics before writing code." },
-      { "step": "03", "title": "Full-Stack Engineering (4–8 Wks)", "desc": "Clean, test-driven backend API development in Node.js or Python paired with fast, responsive React or Next.js frontends." },
-      { "step": "04", "title": "Integration & Security Audits (1–2 Wks)", "desc": "API integrations with payment gateways, ERPs, and third-party tools, plus rigorous OWASP security and vulnerability scans." },
-      { "step": "05", "title": "Staging UAT & User Training (1 Wk)", "desc": "End-to-end user acceptance testing on dedicated staging environments, accompanied by team walkthroughs and documentation." },
-      { "step": "06", "title": "Cloud Launch & SLA Monitoring", "desc": "Automated CI/CD deployment to AWS or Azure, SSL setup, performance tuning, and 24/7 server health monitoring." }
+      {
+        "step": "01",
+        "title": "Discovery & Scoping (1–2 Wks)",
+        "desc": "We analyze your business workflows, define user personas, draft technical requirements, and formulate database schemas."
+      },
+      {
+        "step": "02",
+        "title": "UI/UX & Interactive Prototyping (2–3 Wks)",
+        "desc": "Wireframing and Figma prototypes tested with real users to ensure frictionless ergonomics before writing code."
+      },
+      {
+        "step": "03",
+        "title": "Full-Stack Engineering (4–8 Wks)",
+        "desc": "Clean, test-driven backend API development in Node.js or Python paired with fast, responsive React or Next.js frontends."
+      },
+      {
+        "step": "04",
+        "title": "Integration & Security Audits (1–2 Wks)",
+        "desc": "API integrations with payment gateways, ERPs, and third-party tools, plus rigorous OWASP security and vulnerability scans."
+      },
+      {
+        "step": "05",
+        "title": "Staging UAT & User Training (1 Wk)",
+        "desc": "End-to-end user acceptance testing on dedicated staging environments, accompanied by team walkthroughs and documentation."
+      },
+      {
+        "step": "06",
+        "title": "Cloud Launch & SLA Monitoring",
+        "desc": "Automated CI/CD deployment to AWS or Azure, SSL setup, performance tuning, and 24/7 server health monitoring."
+      }
     ]
   },
   "pricing": {
@@ -181,10 +223,26 @@
     "intro": "Below is an investment guide for custom web application development in Kochi by project scope. Every project receives a detailed scope document and milestone-based proposal before kickoff.",
     "footnote": "Final investment depends on user role complexity, third-party API integrations, and reporting requirements. Third-party cloud hosting fees (AWS/Azure) and payment gateway charges are billed directly to your account. GST applicable.",
     "rows": [
-      { "type": "MVP / Single-Purpose Tool", "price": "₹3,00,000 – ₹8,00,000", "timeline": "2–3 Months" },
-      { "type": "Standard Business Web App", "price": "₹8,00,000 – ₹15,00,000", "timeline": "3–4 Months" },
-      { "type": "Enterprise / Multi-Tenant SaaS", "price": "₹15,00,000 – ₹40,00,000+", "timeline": "4–6 Months" },
-      { "type": "Ongoing Maintenance & SLA", "price": "From ₹20,000 / month", "timeline": "Monthly" }
+      {
+        "type": "MVP / Single-Purpose Tool",
+        "price": "₹3,00,000 – ₹8,00,000",
+        "timeline": "2–3 Months"
+      },
+      {
+        "type": "Standard Business Web App",
+        "price": "₹8,00,000 – ₹15,00,000",
+        "timeline": "3–4 Months"
+      },
+      {
+        "type": "Enterprise / Multi-Tenant SaaS",
+        "price": "₹15,00,000 – ₹40,00,000+",
+        "timeline": "4–6 Months"
+      },
+      {
+        "type": "Ongoing Maintenance & SLA",
+        "price": "From ₹20,000 / month",
+        "timeline": "Monthly"
+      }
     ]
   },
   "industries": {
@@ -193,12 +251,36 @@
     "headingPost": "",
     "intro": "We build purpose-engineered digital platforms tailored to specific regulatory and operational environments:",
     "items": [
-      { "name": "E-Commerce Platforms", "desc": "Custom checkout pipelines, vendor dispatch portals, and high-concurrency flash sale engines.", "href": "/custom-ecommerce-development-kochi/" },
-      { "name": "Healthcare Systems", "desc": "Patient appointment booking, lab sample tracking, and clinic operations portals.", "href": "/web-design-for-hospitals-kerala/" },
-      { "name": "Fintech Applications", "desc": "Automated payment gateway routing, UPI intent checkouts, and escrow transaction tracking.", "href": "/payment-gateway-integration-kochi/" },
-      { "name": "SaaS Products", "desc": "Multi-tenant SaaS architectures with automated recurring billing and role-based access control.", "href": "/saas-development-company-kochi/" },
-      { "name": "Enterprise Operations", "desc": "Internal resource management, supply chain tracking, and real-time operational reporting.", "href": "/erp-development-company-kochi/" },
-      { "name": "Startup MVPs", "desc": "Lean digital products and waitlist validation funnels built to acquire early traction and investor backing.", "href": "/web-design-for-startups-kerala/" }
+      {
+        "name": "E-Commerce Platforms",
+        "desc": "Custom checkout pipelines, vendor dispatch portals, and high-concurrency flash sale engines.",
+        "href": "/custom-ecommerce-development-kochi/"
+      },
+      {
+        "name": "Healthcare Systems",
+        "desc": "Patient appointment booking, lab sample tracking, and clinic operations portals.",
+        "href": "/web-design-for-hospitals-kerala/"
+      },
+      {
+        "name": "Fintech Applications",
+        "desc": "Automated payment gateway routing, UPI intent checkouts, and escrow transaction tracking.",
+        "href": "/payment-gateway-integration-kochi/"
+      },
+      {
+        "name": "SaaS Products",
+        "desc": "Multi-tenant SaaS architectures with automated recurring billing and role-based access control.",
+        "href": "/saas-development-company-kochi/"
+      },
+      {
+        "name": "Enterprise Operations",
+        "desc": "Internal resource management, supply chain tracking, and real-time operational reporting.",
+        "href": "/erp-development-company-kochi/"
+      },
+      {
+        "name": "Startup MVPs",
+        "desc": "Lean digital products and waitlist validation funnels built to acquire early traction and investor backing.",
+        "href": "/web-design-for-startups-kerala/"
+      }
     ]
   },
   "featuredCaseStudies": {
@@ -225,7 +307,10 @@
         "href": "/case-studies/triqare-web-application-design/"
       }
     ],
-    "viewAll": { "label": "View all case studies", "href": "/case-study/" }
+    "viewAll": {
+      "label": "View all case studies",
+      "href": "/case-study/"
+    }
   },
   "blog": {
     "badge": "Insights",
@@ -233,7 +318,10 @@
     "headingHighlight": "Blog",
     "headingPost": "",
     "intro": "Engineering guides and architecture notes from our development team in Kochi.",
-    "viewAll": { "label": "Read all articles", "href": "/blog/" },
+    "viewAll": {
+      "label": "Read all articles",
+      "href": "/blog/"
+    },
     "fallbackNote": "Latest articles on modern web architecture, performance optimization, and digital technology."
   },
   "caseStudies": {
