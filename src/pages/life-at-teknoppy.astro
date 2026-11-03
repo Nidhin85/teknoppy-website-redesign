@@ -96,6 +96,21 @@ const team = [
   ["Sanal Edison", "sanal-edison"]
 ];
 
+const allEmployees = [
+  { name: "Sanal Edison", role: "Founder & Digital Strategist", slug: "sanal-edison" },
+  { name: "Vijayakala", role: "Business Development & Client Relations", slug: "vijayakala" },
+  { name: "Niya K K", role: "SEO Lead", slug: "niya-kk" },
+  { name: "Neha P", role: "SEO Analyst", slug: "neha-p" },
+  { name: "Nandana S Madhu", role: "Web Developer", slug: "nandana" },
+  { name: "Adithya K", role: "Social Media Content Strategist", slug: "adithya-k" },
+  { name: "Vaisakh Jayadev", role: "Videographer & Video Editor", slug: "vaisakh-jayadev" },
+  { name: "Nithya Sibi", role: "Jr. SEO Executive", slug: "nithya-sibi" },
+  { name: "Anjali Babu", role: "Jr. SEO Executive", slug: "anjali-babu" },
+  { name: "Anjana Babu", role: "Jr. SEO Executive", slug: "anjana-babu" },
+  { name: "Farsana A", role: "Jr. SEO Executive", slug: "farsana-a" },
+  { name: "Jyothsana P K", role: "Jr. SEO Executive", slug: "jyothsana-pk" }
+];
+
 const stats = [
   ["2018", "Founded in Kochi"],
   ["12", "People, all in-house"],
@@ -155,7 +170,7 @@ const voices = [
 const dayItems = [
   ["9:30", "Stand-up", "Ten minutes: what ships, what's blocked.", "teknoppy-individual-workstation-focus.png"],
   ["12:00", "Peer reviews", "Seniors review juniors side by side.", "teknoppy-side-by-side-review.jpg"],
-  ["1:00", "Lunch together", "Tea, conversation, a proper break.", "teknoppy-inhouse-team-group.jpg"],
+  ["1:00", "Lunch together", "Tea, conversation, a proper break.", "teknoppy-team-lunch-together.jpg"],
   ["2:00", "Client calls", "Kerala, UAE and Qatar, in person or on Gulf time.", "teknoppy-client-consultation-lenaa.webp"],
   ["5:00", "Wrap-up", "Commits merged, tomorrow planned.", "teknoppy-developer-workstation.jpg"]
 ];
@@ -165,7 +180,7 @@ const celebrateItems = [
   ["Pookkalam", "teknoppy-pookkalam-preparation.webp"],
   ["Project go-live", "teknoppy-project-launch-presentation.webp"],
   ["Team milestone", "teknoppy-team-client-milestone.webp"],
-  ["Client partnership", "teknoppy-client-partnership-handshake.webp"],
+  ["Client partnership", "teknoppy-client-partnership-meeting.jpg"],
   ["Behind the scenes", "teknoppy-behind-the-scenes-shoot.webp"],
   ["The whole team", "teknoppy-core-team-portrait.jpg"],
   ["Collaborative reviews", "teknoppy-side-by-side-review.jpg"]
@@ -184,7 +199,7 @@ const growItems = [
   ["Real projects from week one", "Juniors join live client work straight away, with a senior beside them.", "teknoppy-side-by-side-review.jpg"],
   ["Side-by-side mentorship", "Reviews happen at the desk, not over tickets.", "teknoppy-design-sprint-collaboration.jpg"],
   ["Friday knowledge-share", "Tools, technical SEO and development, shared every week.", "teknoppy-friday-knowledge-share.jpg"],
-  ["Lunch and tea together", "A proper break, most days, with the whole team.", "teknoppy-inhouse-team-group.jpg"]
+  ["Lunch and tea together", "A proper break, most days, with the whole team.", "teknoppy-team-lunch-together.jpg"]
 ];
 
 const bentoItems = [
@@ -281,7 +296,7 @@ const bentoItems = [
         <p class="sub rv">Real photos from our Vyttila studio.</p>
         <div class="mg">
           <figure class="big rv">
-            <img src="/images/life/teknoppy-inhouse-team-group.jpg" alt="The in-house Teknoppy team" loading="lazy" />
+            <img src="/images/life/teknoppy-inhouse-team-full-lineup.jpg" alt="The in-house Teknoppy team" loading="lazy" />
             <figcaption>The in-house team</figcaption>
           </figure>
           <figure class="rv" style="--d:.1s">
@@ -359,10 +374,13 @@ const bentoItems = [
         <h2 class="rv">The people behind the work</h2>
         <p class="sub rv">Client relations, SEO, design, development and content, together.</p>
         <div class="faces" id="faces">
-          {team.slice(0, 6).map((p, k) => (
-            <figure class="face rv" style={`--d:${k * 0.06}s`}>
-              <img src={`/team/${p[1]}.webp`} alt={p[0]} loading="lazy" />
-              <figcaption>{p[0]}</figcaption>
+          {allEmployees.map((p, k) => (
+            <figure class="face rv" style={`--d:${k * 0.05}s`}>
+              <img src={`/team/${p.slug}.webp`} alt={p.name} loading="lazy" />
+              <figcaption>
+                <span class="face-name">{p.name}</span>
+                <span class="face-role">{p.role}</span>
+              </figcaption>
             </figure>
           ))}
         </div>
@@ -411,10 +429,27 @@ const bentoItems = [
         <p class="sub rv">Work, craft and a little fun, all in one place.</p>
         <div class="bento" id="bento">
           {bentoItems.map((b) => (
-            <figure class={`${b[0]} rv`}>
-              <img src={`/images/life/${b[1]}`} alt={b[2]} loading="lazy" />
-              <figcaption>{b[2]}</figcaption>
-            </figure>
+            b[0] === "c" ? (
+              <figure class="c rv bento-video-wrap">
+                <div class="video-ambient-glow" aria-hidden="true"></div>
+                <video
+                  src="/videos/life/teknoppy-launch-day-reel.mp4"
+                  poster="/images/life/teknoppy-project-launch-presentation.webp"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="auto"
+                  class="bento-video"
+                ></video>
+                <figcaption>Launch day</figcaption>
+              </figure>
+            ) : (
+              <figure class={`${b[0]} rv`}>
+                <img src={`/images/life/${b[1]}`} alt={b[2]} loading="lazy" />
+                <figcaption>{b[2]}</figcaption>
+              </figure>
+            )
           ))}
         </div>
       </section>
@@ -577,9 +612,10 @@ const bentoItems = [
 .stat { padding: 26px; background: #fff; border: 1px solid var(--line); border-radius: 24px; }
 .stat b { display: block; font-family: var(--hd); font-size: clamp(38px, 5vw, 62px); font-weight: 800; color: var(--brand); line-height: 1; }
 .stat span { color: var(--mute); font-size: 14px; }
-.mg { display: grid; grid-template-columns: 1.4fr 1fr; grid-template-rows: 1fr 1fr; gap: 20px; margin-top: 40px; height: clamp(420px, 56vw, 620px); }
+.mg { display: grid; grid-template-columns: 1.6fr 1fr; grid-template-rows: 1fr 1fr; gap: 20px; margin-top: 40px; }
+.mg .big { grid-row: span 2; aspect-ratio: 1.5; border-radius: 28px; overflow: hidden; background: transparent; }
+.mg .big img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .mg figure, .belt figure, .face { position: relative; margin: 0; border-radius: 28px; overflow: hidden; }
-.mg .big { grid-row: span 2; }
 .mg figure { transition: transform 0.25s ease-out; }
 .mg img, .belt img, .face img { width: 100%; height: 100%; object-fit: cover; transition: scale 0.7s, filter 0.5s; }
 .mg figure:hover img, .belt figure:hover img { scale: 1.08; }
@@ -605,12 +641,15 @@ figcaption { position: absolute; left: 16px; bottom: 14px; z-index: 2; color: #f
 .founder img { grid-row: span 2; width: 96px; height: 96px; object-fit: cover; border-radius: 50%; border: 3px solid var(--brand); }
 .founder p { font-family: var(--hd); font-size: clamp(20px, 2.6vw, 32px); font-weight: 500; line-height: 1.2; }
 .founder cite { color: var(--brand2); font-style: normal; font-size: 14px; }
-.faces { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 18px; margin-top: 40px; }
-.face { aspect-ratio: 3/4; transition: transform 0.4s, border-radius 0.4s; }
-.face:nth-child(even) { margin-top: 34px; }
-.face img { filter: grayscale(0.85); object-fit: cover; object-position: top center; }
-.face:hover { transform: translateY(-10px) rotate(-1.5deg); border-radius: 44px; }
-.face:hover img { filter: none; scale: 1.07; }
+.faces { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 20px 18px; margin-top: 40px; }
+.face { aspect-ratio: 3/4; transition: transform 0.4s, border-radius 0.4s; background: #16181d; }
+.face:nth-child(even) { margin-top: 28px; }
+.face img { filter: grayscale(0.85); object-fit: cover; object-position: top center; width: 100%; height: 100%; }
+.face:hover { transform: translateY(-8px) rotate(-1deg); border-radius: 36px; }
+.face:hover img { filter: none; scale: 1.06; }
+.face figcaption { position: absolute; left: 14px; right: 14px; bottom: 12px; z-index: 2; display: flex; flex-direction: column; gap: 2px; }
+.face-name { font-weight: 700; font-size: 13.5px; color: #fff; line-height: 1.2; }
+.face-role { font-size: 11px; color: var(--brand2); font-weight: 600; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .vg { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 40px; }
 .vc { padding: 32px; background: #fff; border: 1px solid var(--line); border-radius: 28px; display: flex; flex-direction: column; justify-content: space-between; gap: 24px; transition: transform 0.4s, box-shadow 0.4s; }
 .vc:hover { transform: translateY(-6px) rotate(-0.6deg); box-shadow: 0 28px 60px -30px rgba(0, 0, 0, 0.3); }
@@ -627,11 +666,13 @@ figcaption { position: absolute; left: 16px; bottom: 14px; z-index: 2; color: #f
 .slot time { background: var(--brand); color: #fff; font-weight: 800; padding: 4px 14px; border-radius: 99px; font-size: 14px; }
 .slot h3 { font-size: 24px; margin: 12px 0 6px; }
 .slot p { color: var(--mute); font-size: 15px; }
-.marquee { margin: 40px -80px 0; overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
-.belt { display: flex; gap: 20px; width: max-content; animation: slide 60s linear infinite; }
+.marquee { margin: 40px -80px 0; padding: 10px 0 46px; overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+.belt { display: flex; gap: 20px; width: max-content; animation: slide 60s linear infinite; padding-bottom: 10px; }
 .marquee:hover .belt { animation-play-state: paused; }
-.belt figure { width: clamp(240px, 26vw, 340px); aspect-ratio: 4/5; }
-.belt figure:nth-child(even) { translate: 0 26px; }
+.belt figure { position: relative; width: clamp(240px, 26vw, 340px); aspect-ratio: 4/5; border-radius: 28px; overflow: hidden; background: #14161a; flex-shrink: 0; }
+.belt figure:nth-child(even) { translate: 0 24px; }
+.belt figure figcaption { position: absolute; left: 18px; right: 18px; bottom: 16px; z-index: 10; color: #fff; font-weight: 700; font-size: 14px; line-height: 1.3; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8); pointer-events: none; }
+.belt figure::after { content: ""; position: absolute; inset: 50% 0 0; background: linear-gradient(transparent, rgba(0, 0, 0, 0.85)); pointer-events: none; z-index: 5; }
 @keyframes slide { to { transform: translateX(-50%); } }
 .faq details { border-bottom: 1px solid var(--line); padding: 22px 0; }
 .faq summary { font-family: var(--hd); font-size: 22px; font-weight: 800; cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 20px; }
@@ -647,22 +688,98 @@ figcaption { position: absolute; left: 16px; bottom: 14px; z-index: 2; color: #f
 .tick div { display: flex; gap: 46px; width: max-content; animation: slide 40s linear infinite; font-family: var(--hd); font-size: clamp(22px, 3vw, 38px); font-weight: 800; }
 .tick span::after { content: "✦"; color: var(--brand); margin-left: 46px; }
 .grow { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(24px, 5vw, 70px); align-items: center; margin-top: 40px; }
-.gimg { position: relative; aspect-ratio: 4/4.4; border-radius: 36px; overflow: hidden; box-shadow: 0 40px 80px -40px rgba(0, 0, 0, 0.45); }
-.gimg img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; scale: 1.08; transition: opacity 0.6s, scale 1s; }
-.gimg img.on { opacity: 1; scale: 1; }
+.gimg { position: relative; aspect-ratio: 3/2; border-radius: 36px; overflow: hidden; box-shadow: 0 30px 60px -25px rgba(0, 0, 0, 0.25); background: transparent; }
+.gimg img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 25%; opacity: 0; transition: opacity 0.6s; }
+.gimg img.on { opacity: 1; }
 .gl { display: flex; flex-direction: column; gap: 12px; }
 .gi { padding: 22px 26px; border-radius: 24px; border: 1px solid var(--line); background: #fff; cursor: pointer; transition: all 0.4s; }
 .gi h3 { font-size: 24px; }
 .gi p { color: var(--mute); max-height: 0; overflow: hidden; opacity: 0; transition: all 0.5s; }
 .gi.on { background: var(--brand); color: #fff; border-color: var(--brand); transform: translateX(10px); }
 .gi.on p { max-height: 80px; opacity: 1; color: #fff; margin-top: 8px; }
-.bento { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 210px; gap: 16px; margin-top: 40px; }
-.bento figure { position: relative; margin: 0; border-radius: 26px; overflow: hidden; }
-.bento img { width: 100%; height: 100%; object-fit: cover; transition: scale 0.8s; }
-.bento figure:hover img { scale: 1.1; }
-.bento .a { grid-column: span 2; grid-row: span 2; }
-.bento .b { grid-row: span 2; }
-.bento .c { grid-column: span 2; }
+.bento {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 240px;
+  gap: 18px;
+  margin-top: 40px;
+}
+.bento figure {
+  position: relative;
+  margin: 0;
+  border-radius: 26px;
+  overflow: hidden;
+  background: #14161a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bento img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.6s ease;
+}
+.bento figure:hover img {
+  transform: scale(1.04);
+}
+.bento .a {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.bento .b {
+  grid-row: span 2;
+}
+.bento .c {
+  grid-column: 1 / -1;
+  min-height: 560px;
+  max-height: 660px;
+}
+.bento-video-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a0b0e;
+  overflow: hidden;
+  border-radius: 28px;
+}
+.video-ambient-glow {
+  position: absolute;
+  inset: -20px;
+  background: radial-gradient(ellipse at center, rgba(235, 94, 40, 0.16) 0%, rgba(10, 11, 14, 0.95) 72%);
+  pointer-events: none;
+  z-index: 1;
+}
+.bento-video {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  max-height: 630px;
+  width: auto;
+  aspect-ratio: 9/16;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  display: block;
+}
+.bento-video-wrap figcaption {
+  position: absolute;
+  left: 24px;
+  bottom: 22px;
+  z-index: 10;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 6px 16px;
+  border-radius: 99px;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
 .gulf { background: var(--ink); color: #fff; border-radius: 44px; margin: 30px clamp(14px, 4vw, 60px); padding: clamp(50px, 8vw, 100px) clamp(20px, 6vw, 80px); position: relative; overflow: hidden; }
 .gulf::before { content: ""; position: absolute; width: 500px; height: 500px; border-radius: 50%; background: var(--brand); filter: blur(120px); opacity: 0.25; right: -120px; top: -120px; }
 .gulf h2 { font-size: clamp(32px, 5vw, 58px); font-weight: 800; max-width: 16ch; position: relative; }
@@ -686,20 +803,41 @@ footer.f { text-align: center; color: var(--mute); font-size: 14px; padding: 0 2
   .hero { grid-template-columns: 1fr; text-align: center; padding-top: 90px; }
   .hero .cta, .lead { margin-inline: auto; justify-content: center; }
   .stats { grid-template-columns: 1fr 1fr; }
-  .mg { grid-template-columns: 1fr; grid-template-rows: none; height: auto; }
+  .mg { grid-template-columns: 1fr; grid-template-rows: none; height: auto; gap: 16px; }
+  .mg .big { aspect-ratio: 1.5; grid-row: auto; }
   .mg figure { aspect-ratio: 4/3; }
-  .mg .big { grid-row: auto; }
   .steps, .vg { grid-template-columns: 1fr; }
   .acc { flex-direction: column; height: auto; }
   .panel { padding: 24px; }
   .panel p { opacity: 1; transform: none; }
   .panel-img { opacity: 1; transform: none; height: 160px; }
   .panel:hover, .panel:focus { flex: 1; }
-  .marquee { margin-inline: -20px; }
   .founder { grid-template-columns: 1fr; }
   .grow, .visit { grid-template-columns: 1fr; }
-  .bento { grid-template-columns: 1fr 1fr; }
-  .bento .a { grid-column: span 2; }
+  .gimg { aspect-ratio: 3/2; width: 100%; }
+  .marquee { margin-inline: -20px; padding: 12px 0 50px; }
+  .bento { grid-template-columns: 1fr 1fr; grid-auto-rows: 200px; gap: 14px; }
+  .bento .a { grid-column: span 2; grid-row: span 2; }
+  .bento .b { grid-column: span 1; grid-row: span 1; }
+  .bento .c {
+    grid-column: span 2;
+    grid-row: auto;
+    min-height: 500px;
+    max-height: 80vh;
+    aspect-ratio: 9/16;
+    width: 100%;
+    margin-inline: auto;
+  }
+  .bento .c .bento-video {
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    border-radius: 26px;
+  }
+}
+@media (max-width: 640px) {
+  .faces { grid-template-columns: repeat(2, 1fr); gap: 16px 12px; }
+  .face:nth-child(even) { margin-top: 18px; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
@@ -785,6 +923,22 @@ footer.f { text-align: center; color: var(--mute); font-size: 14px; padding: 0 2
       el.style.transform = "";
     };
   });
+
+  // Autoplay video on scroll into view (muted & looping)
+  const v = document.querySelector(".bento-video");
+  if (v) {
+    v.muted = true;
+    const vObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          v.play().catch(() => {});
+        } else {
+          v.pause();
+        }
+      });
+    }, { threshold: 0.2 });
+    vObserver.observe(v);
+  }
 
   // Scroll listener for top progress bar and blob parallax
   addEventListener("scroll", () => {
