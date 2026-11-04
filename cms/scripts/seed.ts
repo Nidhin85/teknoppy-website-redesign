@@ -2,6 +2,7 @@
 //
 //   npm run seed                 # everything
 //   npm run seed -- pages posts  # only these collections/globals
+//   npm run seed -- posts only-new  # add missing posts, keep CMS edits to existing ones
 //
 // Overwrites CMS edits with what is on disk — it is for the first import and for
 // loading new content shapes, not for routine use once editors work in the CMS.
@@ -13,7 +14,10 @@ import generated from '../src/schema/generated.json'
 import { collectionFiles, contentMap, readContentFile, repoRoot } from './content-files.mjs'
 import { objectToPayload } from './transform.mjs'
 
-const only = process.argv.slice(2).filter((arg) => !arg.startsWith('-'))
+const only = process.argv.slice(2).filter((arg) => !arg.startsWith('-') && arg !== 'only-new')
+// only-new: create documents that are missing from the CMS, leave existing ones untouched.
+// A bare word, not a --flag: `payload run` drops every flag before the script sees argv.
+const onlyNew = process.argv.includes('only-new')
 const wanted = (slug: string) => only.length === 0 || only.includes(slug)
 const fieldsOf = (kind: 'collections' | 'globals', slug: string) =>
   (generated[kind] as unknown as Record<string, Field[]>)[slug]
@@ -36,7 +40,9 @@ for (const collection of contentMap.collections) {
   for (const { key, file } of collectionFiles(collection)) {
     const data = { slug: key, ...objectToPayload(readContentFile(file), fieldsOf('collections', collection.slug)) }
     const existing = await payload.find({ collection: slug, where: { slug: { equals: key } }, limit: 1, depth: 0 })
-    if (existing.docs[0]) {
+    if (existing.docs[0] && onlyNew) {
+      continue
+    } else if (existing.docs[0]) {
       await payload.update({ collection: slug, id: existing.docs[0].id, data: data as never, context })
       updated++
     } else {

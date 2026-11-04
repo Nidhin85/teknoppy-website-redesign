@@ -113,6 +113,966 @@
       "source": "/case-studies/abrus-krishna-finance-uiux/",
       "destination": "/case-studies/abrus-krishna-finance-ui-ux-design/",
       "permanent": false
+    },
+    {
+      "source": "/5-reasons-why-your-business-needs-a-website-redesign",
+      "destination": "/blog/5-reasons-why-your-business-needs-a-website-redesign/",
+      "permanent": true
+    },
+    {
+      "source": "/5-reasons-why-your-business-needs-a-website-redesign/",
+      "destination": "/blog/5-reasons-why-your-business-needs-a-website-redesign/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-citation-optimization-guide-chatgpt-gemini-claude",
+      "destination": "/blog/ai-citation-optimization-guide-chatgpt-gemini-claude/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-citation-optimization-guide-chatgpt-gemini-claude/",
+      "destination": "/blog/ai-citation-optimization-guide-chatgpt-gemini-claude/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-content-vs-human-writers-google-2026",
+      "destination": "/blog/ai-content-vs-human-writers-google-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-content-vs-human-writers-google-2026/",
+      "destination": "/blog/ai-content-vs-human-writers-google-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-marketing-automation-2026-tools-deliver-roi",
+      "destination": "/blog/ai-marketing-automation-2026-tools-deliver-roi/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-marketing-automation-2026-tools-deliver-roi/",
+      "destination": "/blog/ai-marketing-automation-2026-tools-deliver-roi/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-marketing-services-kochi-automation-guide-2026",
+      "destination": "/blog/ai-marketing-services-kochi-automation-guide-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-marketing-services-kochi-automation-guide-2026/",
+      "destination": "/blog/ai-marketing-services-kochi-automation-guide-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-powered-design-tools-website-development-2026-guide",
+      "destination": "/blog/ai-powered-design-tools-website-development-2026-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-powered-design-tools-website-development-2026-guide/",
+      "destination": "/blog/ai-powered-design-tools-website-development-2026-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-powered-keyword-optimization-user-intent-2025",
+      "destination": "/blog/ai-powered-keyword-optimization-user-intent-2025/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-powered-keyword-optimization-user-intent-2025/",
+      "destination": "/blog/ai-powered-keyword-optimization-user-intent-2025/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-powered-marketing-strategies-for-kerala-businesses-in-2026",
+      "destination": "/blog/ai-powered-marketing-strategies-for-kerala-businesses-in-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-powered-marketing-strategies-for-kerala-businesses-in-2026/",
+      "destination": "/blog/ai-powered-marketing-strategies-for-kerala-businesses-in-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-powered-seo-for-wordpress-chatgpt-voice-search",
+      "destination": "/blog/ai-powered-seo-for-wordpress-chatgpt-voice-search/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-powered-seo-for-wordpress-chatgpt-voice-search/",
+      "destination": "/blog/ai-powered-seo-for-wordpress-chatgpt-voice-search/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-powered-seo-strategies-2025-chatgpt-bard-reshaping-search",
+      "destination": "/blog/ai-powered-seo-strategies-2025-chatgpt-bard-reshaping-search/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-powered-seo-strategies-2025-chatgpt-bard-reshaping-search/",
+      "destination": "/blog/ai-powered-seo-strategies-2025-chatgpt-bard-reshaping-search/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-powered-web-design-future-digital-trends-2025",
+      "destination": "/blog/ai-powered-web-design-future-digital-trends-2025/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-powered-web-design-future-digital-trends-2025/",
+      "destination": "/blog/ai-powered-web-design-future-digital-trends-2025/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-search-content-marketing-website-optimization",
+      "destination": "/blog/ai-search-content-marketing-website-optimization/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-search-content-marketing-website-optimization/",
+      "destination": "/blog/ai-search-content-marketing-website-optimization/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-web-design-optimization-sge-chatgpt-guide",
+      "destination": "/blog/ai-web-design-optimization-sge-chatgpt-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-web-design-optimization-sge-chatgpt-guide/",
+      "destination": "/blog/ai-web-design-optimization-sge-chatgpt-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-web-design-trends-2025-innovations",
+      "destination": "/blog/ai-web-design-trends-2025-innovations/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-web-design-trends-2025-innovations/",
+      "destination": "/blog/ai-web-design-trends-2025-innovations/",
+      "permanent": true
+    },
+    {
+      "source": "/all-about-301-redirect",
+      "destination": "/blog/all-about-301-redirect/",
+      "permanent": true
+    },
+    {
+      "source": "/all-about-301-redirect/",
+      "destination": "/blog/all-about-301-redirect/",
+      "permanent": true
+    },
+    {
+      "source": "/analytics-and-measurement-strategy",
+      "destination": "/blog/analytics-and-measurement-strategy/",
+      "permanent": true
+    },
+    {
+      "source": "/analytics-and-measurement-strategy/",
+      "destination": "/blog/analytics-and-measurement-strategy/",
+      "permanent": true
+    },
+    {
+      "source": "/answer-engine-optimization-conversational-seo",
+      "destination": "/blog/answer-engine-optimization-conversational-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/answer-engine-optimization-conversational-seo/",
+      "destination": "/blog/answer-engine-optimization-conversational-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/anti-design-web-design-human-centered-authentic-experiences",
+      "destination": "/blog/anti-design-web-design-human-centered-authentic-experiences/",
+      "permanent": true
+    },
+    {
+      "source": "/anti-design-web-design-human-centered-authentic-experiences/",
+      "destination": "/blog/anti-design-web-design-human-centered-authentic-experiences/",
+      "permanent": true
+    },
+    {
+      "source": "/automation-tools-for-smes-productivity-guide",
+      "destination": "/blog/automation-tools-for-smes-productivity-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/automation-tools-for-smes-productivity-guide/",
+      "destination": "/blog/automation-tools-for-smes-productivity-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/best-reasons-to-enable-https-in-your-website",
+      "destination": "/blog/best-reasons-to-enable-https-in-your-website/",
+      "permanent": true
+    },
+    {
+      "source": "/best-reasons-to-enable-https-in-your-website/",
+      "destination": "/blog/best-reasons-to-enable-https-in-your-website/",
+      "permanent": true
+    },
+    {
+      "source": "/best-seo-company-in-kochi-2026-guide",
+      "destination": "/blog/best-seo-company-in-kochi-2026-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/best-seo-company-in-kochi-2026-guide/",
+      "destination": "/blog/best-seo-company-in-kochi-2026-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/best-web-design-services-in-kochi-business-guide",
+      "destination": "/blog/best-web-design-services-in-kochi-business-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/best-web-design-services-in-kochi-business-guide/",
+      "destination": "/blog/best-web-design-services-in-kochi-business-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-shopify-vs-woocommerce-vs-bigcommerce-comparison",
+      "destination": "/blog/blog-shopify-vs-woocommerce-vs-bigcommerce-comparison/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-shopify-vs-woocommerce-vs-bigcommerce-comparison/",
+      "destination": "/blog/blog-shopify-vs-woocommerce-vs-bigcommerce-comparison/",
+      "permanent": true
+    },
+    {
+      "source": "/build-e-e-a-t-for-your-website-in-2026-guide",
+      "destination": "/blog/build-e-e-a-t-for-your-website-in-2026-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/build-e-e-a-t-for-your-website-in-2026-guide/",
+      "destination": "/blog/build-e-e-a-t-for-your-website-in-2026-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/building-brand-awareness-with-organic-digital-marketing-and-your-website",
+      "destination": "/blog/building-brand-awareness-with-organic-digital-marketing-and-your-website/",
+      "permanent": true
+    },
+    {
+      "source": "/building-brand-awareness-with-organic-digital-marketing-and-your-website/",
+      "destination": "/blog/building-brand-awareness-with-organic-digital-marketing-and-your-website/",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-exacore-seo-organic-traffic-growth",
+      "destination": "/blog/case-study-exacore-seo-organic-traffic-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-exacore-seo-organic-traffic-growth/",
+      "destination": "/blog/case-study-exacore-seo-organic-traffic-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-shaapp-food-local-seo-restaurant-success",
+      "destination": "/blog/case-study-shaapp-food-local-seo-restaurant-success/",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-shaapp-food-local-seo-restaurant-success/",
+      "destination": "/blog/case-study-shaapp-food-local-seo-restaurant-success/",
+      "permanent": true
+    },
+    {
+      "source": "/color-psychology-in-web-design-conversions",
+      "destination": "/blog/color-psychology-in-web-design-conversions/",
+      "permanent": true
+    },
+    {
+      "source": "/color-psychology-in-web-design-conversions/",
+      "destination": "/blog/color-psychology-in-web-design-conversions/",
+      "permanent": true
+    },
+    {
+      "source": "/content-experience-how-to-create-content-that-converts",
+      "destination": "/blog/content-experience-how-to-create-content-that-converts/",
+      "permanent": true
+    },
+    {
+      "source": "/content-experience-how-to-create-content-that-converts/",
+      "destination": "/blog/content-experience-how-to-create-content-that-converts/",
+      "permanent": true
+    },
+    {
+      "source": "/content-writing-cost-2026-pricing-guide",
+      "destination": "/blog/content-writing-cost-2026-pricing-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/content-writing-cost-2026-pricing-guide/",
+      "destination": "/blog/content-writing-cost-2026-pricing-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/conversational-keywords-seo-2026-implementation-guide",
+      "destination": "/blog/conversational-keywords-seo-2026-implementation-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/conversational-keywords-seo-2026-implementation-guide/",
+      "destination": "/blog/conversational-keywords-seo-2026-implementation-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/core-web-vitals-2026-best-practices-faster-websites-india",
+      "destination": "/blog/core-web-vitals-2026-best-practices-faster-websites-india/",
+      "permanent": true
+    },
+    {
+      "source": "/core-web-vitals-2026-best-practices-faster-websites-india/",
+      "destination": "/blog/core-web-vitals-2026-best-practices-faster-websites-india/",
+      "permanent": true
+    },
+    {
+      "source": "/core-web-vitals-optimization-lcp-cls-inp-2026",
+      "destination": "/blog/core-web-vitals-optimization-lcp-cls-inp-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/core-web-vitals-optimization-lcp-cls-inp-2026/",
+      "destination": "/blog/core-web-vitals-optimization-lcp-cls-inp-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/custom-wordpress-development",
+      "destination": "/blog/custom-wordpress-development/",
+      "permanent": true
+    },
+    {
+      "source": "/custom-wordpress-development/",
+      "destination": "/blog/custom-wordpress-development/",
+      "permanent": true
+    },
+    {
+      "source": "/data-visualization-and-smart-video-content-delivery-guide",
+      "destination": "/blog/data-visualization-and-smart-video-content-delivery-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/data-visualization-and-smart-video-content-delivery-guide/",
+      "destination": "/blog/data-visualization-and-smart-video-content-delivery-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/digital-marketing-mistakes-in-india-small-business-guide",
+      "destination": "/blog/digital-marketing-mistakes-in-india-small-business-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/digital-marketing-mistakes-in-india-small-business-guide/",
+      "destination": "/blog/digital-marketing-mistakes-in-india-small-business-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/digital-marketing-strategy-framework",
+      "destination": "/blog/digital-marketing-strategy-framework/",
+      "permanent": true
+    },
+    {
+      "source": "/digital-marketing-strategy-framework/",
+      "destination": "/blog/digital-marketing-strategy-framework/",
+      "permanent": true
+    },
+    {
+      "source": "/e-commerce-security-best-practices-pci-compliance",
+      "destination": "/blog/e-commerce-security-best-practices-pci-compliance/",
+      "permanent": true
+    },
+    {
+      "source": "/e-commerce-security-best-practices-pci-compliance/",
+      "destination": "/blog/e-commerce-security-best-practices-pci-compliance/",
+      "permanent": true
+    },
+    {
+      "source": "/e-e-a-t-seo-2025-quality-content-signals",
+      "destination": "/blog/e-e-a-t-seo-2025-quality-content-signals/",
+      "permanent": true
+    },
+    {
+      "source": "/e-e-a-t-seo-2025-quality-content-signals/",
+      "destination": "/blog/e-e-a-t-seo-2025-quality-content-signals/",
+      "permanent": true
+    },
+    {
+      "source": "/e-e-a-t-seo-strategy-trust-authority-ai-era",
+      "destination": "/blog/e-e-a-t-seo-strategy-trust-authority-ai-era/",
+      "permanent": true
+    },
+    {
+      "source": "/e-e-a-t-seo-strategy-trust-authority-ai-era/",
+      "destination": "/blog/e-e-a-t-seo-strategy-trust-authority-ai-era/",
+      "permanent": true
+    },
+    {
+      "source": "/ecommerce-website-security-features",
+      "destination": "/blog/ecommerce-website-security-features/",
+      "permanent": true
+    },
+    {
+      "source": "/ecommerce-website-security-features/",
+      "destination": "/blog/ecommerce-website-security-features/",
+      "permanent": true
+    },
+    {
+      "source": "/entity-seo-strategy-how-google-understands-content-2026",
+      "destination": "/blog/entity-seo-strategy-how-google-understands-content-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/entity-seo-strategy-how-google-understands-content-2026/",
+      "destination": "/blog/entity-seo-strategy-how-google-understands-content-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/future-proof-e-commerce-website-development-2025-guide",
+      "destination": "/blog/future-proof-e-commerce-website-development-2025-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/future-proof-e-commerce-website-development-2025-guide/",
+      "destination": "/blog/future-proof-e-commerce-website-development-2025-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/generative-engine-optimization-2026-geo-vs-seo-guide",
+      "destination": "/blog/generative-engine-optimization-2026-geo-vs-seo-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/generative-engine-optimization-2026-geo-vs-seo-guide/",
+      "destination": "/blog/generative-engine-optimization-2026-geo-vs-seo-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/google-ai-overviews-optimization-guide-2025",
+      "destination": "/blog/google-ai-overviews-optimization-guide-2025/",
+      "permanent": true
+    },
+    {
+      "source": "/google-ai-overviews-optimization-guide-2025/",
+      "destination": "/blog/google-ai-overviews-optimization-guide-2025/",
+      "permanent": true
+    },
+    {
+      "source": "/google-business-profile-importance-guide",
+      "destination": "/blog/google-business-profile-importance-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/google-business-profile-importance-guide/",
+      "destination": "/blog/google-business-profile-importance-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/google-business-profile-optimization-2026-ranking-factors-guide",
+      "destination": "/blog/google-business-profile-optimization-2026-ranking-factors-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/google-business-profile-optimization-2026-ranking-factors-guide/",
+      "destination": "/blog/google-business-profile-optimization-2026-ranking-factors-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/google-business-profile-optimization-kochi-2026",
+      "destination": "/blog/google-business-profile-optimization-kochi-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/google-business-profile-optimization-kochi-2026/",
+      "destination": "/blog/google-business-profile-optimization-kochi-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/google-maps-seo-local-customers-guide",
+      "destination": "/blog/google-maps-seo-local-customers-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/google-maps-seo-local-customers-guide/",
+      "destination": "/blog/google-maps-seo-local-customers-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/google-search-updates-for-businesses",
+      "destination": "/blog/google-search-updates-for-businesses/",
+      "permanent": true
+    },
+    {
+      "source": "/google-search-updates-for-businesses/",
+      "destination": "/blog/google-search-updates-for-businesses/",
+      "permanent": true
+    },
+    {
+      "source": "/how-ai-search-chatgpt-google-sge-changing-seo-2026",
+      "destination": "/blog/how-ai-search-chatgpt-google-sge-changing-seo-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/how-ai-search-chatgpt-google-sge-changing-seo-2026/",
+      "destination": "/blog/how-ai-search-chatgpt-google-sge-changing-seo-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/how-ai-search-engines-are-changing-branding-for-businesses-in-kochi",
+      "destination": "/blog/how-ai-search-engines-are-changing-branding-for-businesses-in-kochi/",
+      "permanent": true
+    },
+    {
+      "source": "/how-ai-search-engines-are-changing-branding-for-businesses-in-kochi/",
+      "destination": "/blog/how-ai-search-engines-are-changing-branding-for-businesses-in-kochi/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-build-topical-authority-for-long-term-seo-growth",
+      "destination": "/blog/how-to-build-topical-authority-for-long-term-seo-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-build-topical-authority-for-long-term-seo-growth/",
+      "destination": "/blog/how-to-build-topical-authority-for-long-term-seo-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-choose-the-right-website-design-company-in-kerala",
+      "destination": "/blog/how-to-choose-the-right-website-design-company-in-kerala/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-choose-the-right-website-design-company-in-kerala/",
+      "destination": "/blog/how-to-choose-the-right-website-design-company-in-kerala/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-get-more-leads-from-your-website-cro-guide",
+      "destination": "/blog/how-to-get-more-leads-from-your-website-cro-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-get-more-leads-from-your-website-cro-guide/",
+      "destination": "/blog/how-to-get-more-leads-from-your-website-cro-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-maximize-revenue-with-a-well-planned-social-media-strategy",
+      "destination": "/blog/how-to-maximize-revenue-with-a-well-planned-social-media-strategy/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-maximize-revenue-with-a-well-planned-social-media-strategy/",
+      "destination": "/blog/how-to-maximize-revenue-with-a-well-planned-social-media-strategy/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-rank-1-on-google-maps-in-kochi-local-seo-guide-2026",
+      "destination": "/blog/how-to-rank-1-on-google-maps-in-kochi-local-seo-guide-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-rank-1-on-google-maps-in-kochi-local-seo-guide-2026/",
+      "destination": "/blog/how-to-rank-1-on-google-maps-in-kochi-local-seo-guide-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-start-selling-online-in-kerala",
+      "destination": "/blog/how-to-start-selling-online-in-kerala/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-start-selling-online-in-kerala/",
+      "destination": "/blog/how-to-start-selling-online-in-kerala/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-start-selling-online-in-kerala-a-step-by-step-guide-for-small-business-owners",
+      "destination": "/blog/how-to-start-selling-online-in-kerala-a-step-by-step-guide-for-small-business-owners/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-start-selling-online-in-kerala-a-step-by-step-guide-for-small-business-owners/",
+      "destination": "/blog/how-to-start-selling-online-in-kerala-a-step-by-step-guide-for-small-business-owners/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-write-blog-posts-that-rank",
+      "destination": "/blog/how-to-write-blog-posts-that-rank/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-write-blog-posts-that-rank/",
+      "destination": "/blog/how-to-write-blog-posts-that-rank/",
+      "permanent": true
+    },
+    {
+      "source": "/hyperlocal-seo-website-design-strategies-2026",
+      "destination": "/blog/hyperlocal-seo-website-design-strategies-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/hyperlocal-seo-website-design-strategies-2026/",
+      "destination": "/blog/hyperlocal-seo-website-design-strategies-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/kerala-tourism-seo-strategies-attract-visitors",
+      "destination": "/blog/kerala-tourism-seo-strategies-attract-visitors/",
+      "permanent": true
+    },
+    {
+      "source": "/kerala-tourism-seo-strategies-attract-visitors/",
+      "destination": "/blog/kerala-tourism-seo-strategies-attract-visitors/",
+      "permanent": true
+    },
+    {
+      "source": "/latest-web-design-trends-in-2026-modern-styles-and-techniques-that-convert",
+      "destination": "/blog/latest-web-design-trends-in-2026-modern-styles-and-techniques-that-convert/",
+      "permanent": true
+    },
+    {
+      "source": "/latest-web-design-trends-in-2026-modern-styles-and-techniques-that-convert/",
+      "destination": "/blog/latest-web-design-trends-in-2026-modern-styles-and-techniques-that-convert/",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-seo-optimization-2025-core-web-vitals-guide",
+      "destination": "/blog/mobile-seo-optimization-2025-core-web-vitals-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-seo-optimization-2025-core-web-vitals-guide/",
+      "destination": "/blog/mobile-seo-optimization-2025-core-web-vitals-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/product-page-optimization-ecommerce-sales",
+      "destination": "/blog/product-page-optimization-ecommerce-sales/",
+      "permanent": true
+    },
+    {
+      "source": "/product-page-optimization-ecommerce-sales/",
+      "destination": "/blog/product-page-optimization-ecommerce-sales/",
+      "permanent": true
+    },
+    {
+      "source": "/responsive-web-design-best-practices",
+      "destination": "/blog/responsive-web-design-best-practices/",
+      "permanent": true
+    },
+    {
+      "source": "/responsive-web-design-best-practices/",
+      "destination": "/blog/responsive-web-design-best-practices/",
+      "permanent": true
+    },
+    {
+      "source": "/responsive-web-design-guide-every-device",
+      "destination": "/blog/responsive-web-design-guide-every-device/",
+      "permanent": true
+    },
+    {
+      "source": "/responsive-web-design-guide-every-device/",
+      "destination": "/blog/responsive-web-design-guide-every-device/",
+      "permanent": true
+    },
+    {
+      "source": "/seo-content-writing-that-ranks-and-converts",
+      "destination": "/blog/seo-content-writing-that-ranks-and-converts/",
+      "permanent": true
+    },
+    {
+      "source": "/seo-content-writing-that-ranks-and-converts/",
+      "destination": "/blog/seo-content-writing-that-ranks-and-converts/",
+      "permanent": true
+    },
+    {
+      "source": "/seo-friendly-website-design-web-design-company-kochi",
+      "destination": "/blog/seo-friendly-website-design-web-design-company-kochi/",
+      "permanent": true
+    },
+    {
+      "source": "/seo-friendly-website-design-web-design-company-kochi/",
+      "destination": "/blog/seo-friendly-website-design-web-design-company-kochi/",
+      "permanent": true
+    },
+    {
+      "source": "/seo-trends-2026-ai-search-algorithm-updates",
+      "destination": "/blog/seo-trends-2026-ai-search-algorithm-updates/",
+      "permanent": true
+    },
+    {
+      "source": "/seo-trends-2026-ai-search-algorithm-updates/",
+      "destination": "/blog/seo-trends-2026-ai-search-algorithm-updates/",
+      "permanent": true
+    },
+    {
+      "source": "/social-media-marketing-increase-customer-engagement",
+      "destination": "/blog/social-media-marketing-increase-customer-engagement/",
+      "permanent": true
+    },
+    {
+      "source": "/social-media-marketing-increase-customer-engagement/",
+      "destination": "/blog/social-media-marketing-increase-customer-engagement/",
+      "permanent": true
+    },
+    {
+      "source": "/structured-data-ai-search-schema-markup-strategies-2026",
+      "destination": "/blog/structured-data-ai-search-schema-markup-strategies-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/structured-data-ai-search-schema-markup-strategies-2026/",
+      "destination": "/blog/structured-data-ai-search-schema-markup-strategies-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/the-top-5-seo-agency-in-kochi-kerala",
+      "destination": "/blog/the-top-5-seo-agency-in-kochi-kerala/",
+      "permanent": true
+    },
+    {
+      "source": "/the-top-5-seo-agency-in-kochi-kerala/",
+      "destination": "/blog/the-top-5-seo-agency-in-kochi-kerala/",
+      "permanent": true
+    },
+    {
+      "source": "/tiktok-marketing-for-businesses",
+      "destination": "/blog/tiktok-marketing-for-businesses/",
+      "permanent": true
+    },
+    {
+      "source": "/tiktok-marketing-for-businesses/",
+      "destination": "/blog/tiktok-marketing-for-businesses/",
+      "permanent": true
+    },
+    {
+      "source": "/top-benefits-custom-software-small-businesses-india",
+      "destination": "/blog/top-benefits-custom-software-small-businesses-india/",
+      "permanent": true
+    },
+    {
+      "source": "/top-benefits-custom-software-small-businesses-india/",
+      "destination": "/blog/top-benefits-custom-software-small-businesses-india/",
+      "permanent": true
+    },
+    {
+      "source": "/top-seo-companies-redefining-digital-success-ai-era",
+      "destination": "/blog/top-seo-companies-redefining-digital-success-ai-era/",
+      "permanent": true
+    },
+    {
+      "source": "/top-seo-companies-redefining-digital-success-ai-era/",
+      "destination": "/blog/top-seo-companies-redefining-digital-success-ai-era/",
+      "permanent": true
+    },
+    {
+      "source": "/ui-ux-design-principles-high-converting-websites",
+      "destination": "/blog/ui-ux-design-principles-high-converting-websites/",
+      "permanent": true
+    },
+    {
+      "source": "/ui-ux-design-principles-high-converting-websites/",
+      "destination": "/blog/ui-ux-design-principles-high-converting-websites/",
+      "permanent": true
+    },
+    {
+      "source": "/user-friendly-login-page-design",
+      "destination": "/blog/user-friendly-login-page-design/",
+      "permanent": true
+    },
+    {
+      "source": "/user-friendly-login-page-design/",
+      "destination": "/blog/user-friendly-login-page-design/",
+      "permanent": true
+    },
+    {
+      "source": "/voice-search-optimization-2026-strategies",
+      "destination": "/blog/voice-search-optimization-2026-strategies/",
+      "permanent": true
+    },
+    {
+      "source": "/voice-search-optimization-2026-strategies/",
+      "destination": "/blog/voice-search-optimization-2026-strategies/",
+      "permanent": true
+    },
+    {
+      "source": "/voice-search-visual-seo-2025-next-frontier-optimization",
+      "destination": "/blog/voice-search-visual-seo-2025-next-frontier-optimization/",
+      "permanent": true
+    },
+    {
+      "source": "/voice-search-visual-seo-2025-next-frontier-optimization/",
+      "destination": "/blog/voice-search-visual-seo-2025-next-frontier-optimization/",
+      "permanent": true
+    },
+    {
+      "source": "/web-design-and-seo-company-in-kerala-for-nris",
+      "destination": "/blog/web-design-and-seo-company-in-kerala-for-nris/",
+      "permanent": true
+    },
+    {
+      "source": "/web-design-and-seo-company-in-kerala-for-nris/",
+      "destination": "/blog/web-design-and-seo-company-in-kerala-for-nris/",
+      "permanent": true
+    },
+    {
+      "source": "/web-design-company-in-kochi-guide",
+      "destination": "/blog/web-design-company-in-kochi-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/web-design-company-in-kochi-guide/",
+      "destination": "/blog/web-design-company-in-kochi-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/web-design-mistakes-2025-expert-insights",
+      "destination": "/blog/web-design-mistakes-2025-expert-insights/",
+      "permanent": true
+    },
+    {
+      "source": "/web-design-mistakes-2025-expert-insights/",
+      "destination": "/blog/web-design-mistakes-2025-expert-insights/",
+      "permanent": true
+    },
+    {
+      "source": "/web-design-principles-and-best-practices-a-complete-guide-to-ux-design",
+      "destination": "/blog/web-design-principles-and-best-practices-a-complete-guide-to-ux-design/",
+      "permanent": true
+    },
+    {
+      "source": "/web-design-principles-and-best-practices-a-complete-guide-to-ux-design/",
+      "destination": "/blog/web-design-principles-and-best-practices-a-complete-guide-to-ux-design/",
+      "permanent": true
+    },
+    {
+      "source": "/web-design-trends-2026-essential-features-business-website",
+      "destination": "/blog/web-design-trends-2026-essential-features-business-website/",
+      "permanent": true
+    },
+    {
+      "source": "/web-design-trends-2026-essential-features-business-website/",
+      "destination": "/blog/web-design-trends-2026-essential-features-business-website/",
+      "permanent": true
+    },
+    {
+      "source": "/web-design-trends-2026-organic-ai-experiences",
+      "destination": "/blog/web-design-trends-2026-organic-ai-experiences/",
+      "permanent": true
+    },
+    {
+      "source": "/web-design-trends-2026-organic-ai-experiences/",
+      "destination": "/blog/web-design-trends-2026-organic-ai-experiences/",
+      "permanent": true
+    },
+    {
+      "source": "/web-designers-kochi-website-losing-customers",
+      "destination": "/blog/web-designers-kochi-website-losing-customers/",
+      "permanent": true
+    },
+    {
+      "source": "/web-designers-kochi-website-losing-customers/",
+      "destination": "/blog/web-designers-kochi-website-losing-customers/",
+      "permanent": true
+    },
+    {
+      "source": "/website-design-impacts-customer-trust-and-sales",
+      "destination": "/blog/website-design-impacts-customer-trust-and-sales/",
+      "permanent": true
+    },
+    {
+      "source": "/website-design-impacts-customer-trust-and-sales/",
+      "destination": "/blog/website-design-impacts-customer-trust-and-sales/",
+      "permanent": true
+    },
+    {
+      "source": "/website-development-in-kochi-business-guide-2026",
+      "destination": "/blog/website-development-in-kochi-business-guide-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/website-development-in-kochi-business-guide-2026/",
+      "destination": "/blog/website-development-in-kochi-business-guide-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/website-migration-strategy-without-losing-traffic",
+      "destination": "/blog/website-migration-strategy-without-losing-traffic/",
+      "permanent": true
+    },
+    {
+      "source": "/website-migration-strategy-without-losing-traffic/",
+      "destination": "/blog/website-migration-strategy-without-losing-traffic/",
+      "permanent": true
+    },
+    {
+      "source": "/website-navigation-best-practices-help-kerala-users-find-what-they-need",
+      "destination": "/blog/website-navigation-best-practices-help-kerala-users-find-what-they-need/",
+      "permanent": true
+    },
+    {
+      "source": "/website-navigation-best-practices-help-kerala-users-find-what-they-need/",
+      "destination": "/blog/website-navigation-best-practices-help-kerala-users-find-what-they-need/",
+      "permanent": true
+    },
+    {
+      "source": "/website-performance-optimization-2026-speed-strategies",
+      "destination": "/blog/website-performance-optimization-2026-speed-strategies/",
+      "permanent": true
+    },
+    {
+      "source": "/website-performance-optimization-2026-speed-strategies/",
+      "destination": "/blog/website-performance-optimization-2026-speed-strategies/",
+      "permanent": true
+    },
+    {
+      "source": "/website-redesign-seo-checklist-migration-guide",
+      "destination": "/blog/website-redesign-seo-checklist-migration-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/website-redesign-seo-checklist-migration-guide/",
+      "destination": "/blog/website-redesign-seo-checklist-migration-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/website-security-best-practices-2026-ssl-https-guide",
+      "destination": "/blog/website-security-best-practices-2026-ssl-https-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/website-security-best-practices-2026-ssl-https-guide/",
+      "destination": "/blog/website-security-best-practices-2026-ssl-https-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/wordpress-vs-wix-vs-squarespace-comprehensive-platform-comparison-2026",
+      "destination": "/blog/wordpress-vs-wix-vs-squarespace-comprehensive-platform-comparison-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/wordpress-vs-wix-vs-squarespace-comprehensive-platform-comparison-2026/",
+      "destination": "/blog/wordpress-vs-wix-vs-squarespace-comprehensive-platform-comparison-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/the-top-5-seo-company-in-kochi-kerala",
+      "destination": "/blog/the-top-5-seo-agency-in-kochi-kerala/",
+      "permanent": true
+    },
+    {
+      "source": "/the-top-5-seo-company-in-kochi-kerala/",
+      "destination": "/blog/the-top-5-seo-agency-in-kochi-kerala/",
+      "permanent": true
     }
   ],
   "headers": [
