@@ -115,7 +115,7 @@
           },
           {
             "name": "company",
-            "label": "Business",
+            "label": "Business Name",
             "type": "text",
             "required": true,
             "placeholder": "Your business name",
@@ -124,7 +124,7 @@
           },
           {
             "name": "email",
-            "label": "Email",
+            "label": "Email Address",
             "type": "email",
             "required": true,
             "placeholder": "name@company.com",
@@ -133,50 +133,12 @@
           },
           {
             "name": "phone",
-            "label": "Phone",
+            "label": "WhatsApp Number",
             "type": "tel",
             "required": true,
-            "placeholder": "+91 00000 00000",
+            "placeholder": "Enter your WhatsApp number",
             "autocomplete": "tel",
             "width": "half"
-          },
-          {
-            "name": "service",
-            "label": "The service you need",
-            "type": "select",
-            "required": true,
-            "placeholder": "Select a service",
-            "options": [
-              "Business website",
-              "WordPress",
-              "Ecommerce",
-              "Web application"
-            ],
-            "width": "half"
-          },
-          {
-            "name": "timeline",
-            "label": "Your timeline",
-            "type": "text",
-            "required": true,
-            "placeholder": "e.g. launch in 6 weeks",
-            "width": "half"
-          },
-          {
-            "name": "budget",
-            "label": "Your rough budget range",
-            "type": "text",
-            "required": true,
-            "placeholder": "A rough range is fine",
-            "hint": "A rough idea of business type and budget is enough to start."
-          },
-          {
-            "name": "message",
-            "label": "Anything else about the project",
-            "type": "textarea",
-            "required": false,
-            "rows": 4,
-            "placeholder": "Your current site if you have one, the pages you need, anything that matters."
           }
         ]
       },

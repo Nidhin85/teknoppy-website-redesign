@@ -82,11 +82,11 @@ const industries = [
     </div>
 
     <!-- Responsive Layout: Horizontal swipe carousel on mobile (<sm), 4-column grid on desktop -->
-    <div class="flex overflow-x-auto sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-5 -mx-6 px-6 sm:mx-0 sm:px-0 pb-4 pt-1 snap-x snap-mandatory sm:snap-none no-scrollbar" role="region" aria-label="Industries cards carousel">
+    <div class="industry-scroll-container flex items-stretch overflow-x-auto sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 -mx-6 px-6 sm:mx-0 sm:px-0 pb-3 pt-1.5 snap-x snap-mandatory sm:snap-none scroll-px-6" role="region" aria-label="Industries cards carousel" tabindex="0">
       {industries.map((item) => {
         const IconComponent = item.icon;
         return (
-          <div class="group relative neu-card neu-card-cream rounded-2xl p-4.5 sm:p-5 md:p-5.5 flex flex-col justify-between w-[80vw] max-w-[280px] shrink-0 sm:w-auto sm:shrink sm:max-w-none snap-start">
+          <div class="industry-card group relative neu-card neu-card-cream rounded-2xl p-5 sm:p-5 md:p-5.5 flex flex-col justify-between w-[76vw] min-w-[250px] max-w-[285px] shrink-0 sm:w-auto sm:min-w-0 sm:max-w-none snap-start self-stretch transition-all duration-300 select-none">
             <div>
               <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-primary/5 border border-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300 mb-3.5 sm:mb-4">
                 <IconComponent className="w-5 h-5" />
@@ -108,29 +108,215 @@ const industries = [
             </div>
 
             {item.link && (
-              <div class="pt-3.5 sm:pt-4 border-t border-neutral-100 mt-2">
+              <div class="pt-3.5 sm:pt-4 border-t border-neutral-200/70 mt-3">
                 <a
                   href={item.link}
-                  class="inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:text-neutral-900 transition-colors"
+                  class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-primary hover:text-neutral-900 transition-colors leading-snug"
                 >
                   <span>{item.linkText}</span>
-                  <ArrowUpRight className="w-3.5 h-3.5" />
+                  <ArrowUpRight className="w-3.5 h-3.5 shrink-0" />
                 </a>
               </div>
             )}
           </div>
         );
       })}
+      <!-- End spacing element for mobile carousel -->
+      <div class="w-1 shrink-0 sm:hidden" aria-hidden="true"></div>
+    </div>
+
+    <!-- Mobile Scroll Affordance: Swipe indicator, position dots & tap arrows -->
+    <div class="flex sm:hidden items-center justify-between pt-3.5 px-1" aria-label="Industries carousel controls">
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-[11px] font-bold">
+        <span>Swipe to explore</span>
+        <span class="text-xs">→</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <div class="flex items-center gap-1.5 mr-1" id="industry-dots" aria-hidden="true">
+          {industries.map((_, i) => (
+            <span class={`h-1.5 rounded-full transition-all duration-300 ${i === 0 ? 'w-5 bg-primary' : 'w-1.5 bg-neutral-300'}`}></span>
+          ))}
+        </div>
+        <button
+          type="button"
+          id="prev-industry-btn"
+          aria-label="Previous industry card"
+          class="w-7 h-7 rounded-full bg-white border border-neutral-200/90 shadow-xs flex items-center justify-center text-neutral-800 active:bg-cream active:text-primary active:scale-95 transition-all text-sm font-black disabled:opacity-30 select-none cursor-pointer"
+        >
+          ‹
+        </button>
+        <button
+          type="button"
+          id="next-industry-btn"
+          aria-label="Next industry card"
+          class="w-7 h-7 rounded-full bg-white border border-neutral-200/90 shadow-xs flex items-center justify-center text-neutral-800 active:bg-cream active:text-primary active:scale-95 transition-all text-sm font-black disabled:opacity-30 select-none cursor-pointer"
+        >
+          ›
+        </button>
+      </div>
     </div>
   </div>
 </section>
 
 <style>
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
+  @media (max-width: 639px) {
+    .industry-scroll-container {
+      display: flex !important;
+      flex-wrap: nowrap !important;
+      overflow-x: auto !important;
+      overflow-y: hidden !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      touch-action: pan-x pan-y !important;
+      -webkit-overflow-scrolling: touch !important;
+      scroll-snap-type: x mandatory !important;
+      scroll-padding-left: 1.5rem !important;
+      scroll-padding-right: 1.5rem !important;
+      cursor: grab;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(240, 90, 44, 0.4) transparent;
+    }
+
+    .industry-scroll-container:active {
+      cursor: grabbing;
+    }
+
+    .industry-scroll-container::-webkit-scrollbar {
+      height: 4px;
+      display: block;
+    }
+
+    .industry-scroll-container::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.05);
+      border-radius: 9999px;
+      margin: 0 1.5rem;
+    }
+
+    .industry-scroll-container::-webkit-scrollbar-thumb {
+      background: rgba(240, 90, 44, 0.45);
+      border-radius: 9999px;
+    }
+
+    .industry-scroll-container > .industry-card {
+      flex: 0 0 76% !important;
+      min-width: 250px !important;
+      max-width: 285px !important;
+      scroll-snap-align: start !important;
+    }
   }
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+
+  @media (min-width: 640px) {
+    .industry-scroll-container {
+      scroll-snap-type: none;
+      -webkit-overflow-scrolling: auto;
+      overscroll-behavior-x: auto;
+      scrollbar-width: none;
+    }
+    .industry-scroll-container::-webkit-scrollbar {
+      display: none;
+    }
   }
 </style>
+
+<script>
+  function initIndustryScroller() {
+    const container = document.querySelector('.industry-scroll-container');
+    const dots = document.querySelectorAll('#industry-dots span');
+    const prevBtn = document.getElementById('prev-industry-btn');
+    const nextBtn = document.getElementById('next-industry-btn');
+
+    if (container) {
+      // 1. Mouse drag-to-scroll for desktop browser responsive mode
+      let isDown = false;
+      let startX = 0;
+      let scrollStart = 0;
+      let hasDragged = false;
+
+      const onMouseDown = (e) => {
+        if (window.innerWidth >= 640) return;
+        isDown = true;
+        hasDragged = false;
+        const pageX = e.pageX || e.clientX;
+        startX = pageX - container.offsetLeft;
+        scrollStart = container.scrollLeft;
+        container.style.scrollSnapType = 'none';
+        container.style.scrollBehavior = 'auto';
+      };
+
+      const onMouseUp = () => {
+        if (!isDown) return;
+        isDown = false;
+        container.style.scrollSnapType = 'x mandatory';
+        container.style.scrollBehavior = 'smooth';
+      };
+
+      const onMouseMove = (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const pageX = e.pageX || e.clientX;
+        const x = pageX - container.offsetLeft;
+        const walk = (x - startX) * 1.5;
+        if (Math.abs(walk) > 4) hasDragged = true;
+        container.scrollLeft = scrollStart - walk;
+      };
+
+      container.addEventListener('mousedown', onMouseDown);
+      window.addEventListener('mouseup', onMouseUp);
+      container.addEventListener('mousemove', onMouseMove);
+
+      // Prevent link clicks if user was dragging
+      container.addEventListener('click', (e) => {
+        if (hasDragged) {
+          e.preventDefault();
+          e.stopPropagation();
+          hasDragged = false;
+        }
+      }, true);
+
+      // 2. Button tap controls for next / prev card
+      const getCardStep = () => {
+        const card = container.querySelector('.industry-card');
+        return card ? card.offsetWidth + 16 : 280;
+      };
+
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+          container.scrollBy({ left: -getCardStep(), behavior: 'smooth' });
+        });
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          container.scrollBy({ left: getCardStep(), behavior: 'smooth' });
+        });
+      }
+
+      // 3. Update dot indicators & button state on scroll
+      const updateControls = () => {
+        const scrollPos = container.scrollLeft;
+        const maxScroll = container.scrollWidth - container.clientWidth;
+        const step = getCardStep();
+        const activeIdx = Math.min(Math.round(scrollPos / step), (dots.length || 8) - 1);
+
+        if (dots.length > 0) {
+          dots.forEach((dot, idx) => {
+            if (idx === activeIdx) {
+              dot.className = 'h-1.5 rounded-full transition-all duration-300 w-5 bg-primary';
+            } else {
+              dot.className = 'h-1.5 rounded-full transition-all duration-300 w-1.5 bg-neutral-300';
+            }
+          });
+        }
+
+        if (prevBtn) prevBtn.disabled = scrollPos <= 10;
+        if (nextBtn) nextBtn.disabled = scrollPos >= maxScroll - 10;
+      };
+
+      container.addEventListener('scroll', updateControls, { passive: true });
+      updateControls();
+    }
+  }
+
+  initIndustryScroller();
+  document.addEventListener('astro:page-load', initIndustryScroller);
+</script>
