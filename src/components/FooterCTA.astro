@@ -94,16 +94,18 @@ const schema = {
           </p>
         </div>
 
-        <!-- Consultation Form -->
-        <div class="space-y-8 pt-4">
-          <h3 class="text-2xl font-bold text-white flex items-center gap-3">
-            <span class="w-8 h-1 bg-white rounded-full"></span>
-            Get a Consultation From Our Expert
-          </h3>
+        <!-- Consultation Form — Matched accurately to reference screenshot -->
+        <div class="space-y-5 pt-2">
+          <div class="flex items-start gap-3.5 mb-5">
+            <span class="w-8 h-1.5 bg-[#F9AE42] rounded-full inline-block mt-3 shrink-0"></span>
+            <h3 class="text-2xl sm:text-3xl lg:text-[34px] font-black text-white leading-[1.18] tracking-tight">
+              Get a Consultation From<br />Our Expert
+            </h3>
+          </div>
           
           <form
             id="footer-cta-form"
-            class="space-y-6"
+            class="bg-white/[0.08] backdrop-blur-md border border-white/20 rounded-[28px] sm:rounded-[32px] p-5 sm:p-7 md:p-8 space-y-5 shadow-2xl"
             method="POST"
             novalidate
             data-endpoint={formEndpoint}
@@ -114,61 +116,69 @@ const schema = {
               <label>Company website<input type="text" name="company_website" tabindex="-1" autocomplete="off" /></label>
             </div>
 
-            <!-- Full Name -->
+            <!-- 1. FULL NAME * -->
             <div class="space-y-2">
-              <label class="block text-[13px] font-bold text-white/80 uppercase tracking-widest">Full Name</label>
+              <label for="footer-name" class="block text-xs font-black text-white uppercase tracking-wider">FULL NAME <span class="text-[#F9AE42]">*</span></label>
               <input 
+                id="footer-name"
                 type="text" 
                 name="name" 
                 required 
-                placeholder="Enter your name"
-                class="w-full bg-white/10 border border-white/25 rounded-xl px-4 py-3 text-white placeholder-white/50 focus:border-white focus:bg-white/20 transition-all outline-none"
+                autocomplete="name"
+                placeholder="Enter your full name"
+                class="w-full bg-white/10 hover:bg-white/[0.14] focus:bg-white/20 border border-white/20 focus:border-[#F9AE42] focus:ring-2 focus:ring-[#F9AE42]/20 rounded-2xl px-5 py-3.5 sm:py-4 text-white placeholder-white/50 text-sm sm:text-base transition-all outline-none"
               />
             </div>
 
-            <!-- Email & Phone Side-by-Side -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div class="space-y-2">
-                <label class="block text-[13px] font-bold text-white/80 uppercase tracking-widest">Email Address</label>
-                <input 
-                  type="email" 
-                  name="email" 
-                  required 
-                  placeholder="name@company.com"
-                  class="w-full bg-white/10 border border-white/25 rounded-xl px-4 py-3 text-white placeholder-white/50 focus:border-white focus:bg-white/20 transition-all outline-none"
-                />
-              </div>
-              <div class="space-y-2">
-                <label class="block text-[13px] font-bold text-white/80 uppercase tracking-widest">Phone Number</label>
-                <input 
-                  type="tel" 
-                  name="phone" 
-                  required 
-                  placeholder="+91 0000000000"
-                  class="w-full bg-white/10 border border-white/25 rounded-xl px-4 py-3 text-white placeholder-white/50 focus:border-white focus:bg-white/20 transition-all outline-none"
-                />
-              </div>
+            <!-- 2. EMAIL ADDRESS * -->
+            <div class="space-y-2">
+              <label for="footer-email" class="block text-xs font-black text-white uppercase tracking-wider">EMAIL ADDRESS <span class="text-[#F9AE42]">*</span></label>
+              <input 
+                id="footer-email"
+                type="email" 
+                name="email" 
+                required 
+                autocomplete="email"
+                placeholder="name@company.com"
+                class="w-full bg-white/10 hover:bg-white/[0.14] focus:bg-white/20 border border-white/20 focus:border-[#F9AE42] focus:ring-2 focus:ring-[#F9AE42]/20 rounded-2xl px-5 py-3.5 sm:py-4 text-white placeholder-white/50 text-sm sm:text-base transition-all outline-none"
+              />
             </div>
 
-            <!-- Message -->
+            <!-- 3. PHONE NUMBER * -->
             <div class="space-y-2">
-              <label class="block text-[13px] font-bold text-white/80 uppercase tracking-widest">Message</label>
+              <label for="footer-phone" class="block text-xs font-black text-white uppercase tracking-wider">PHONE NUMBER <span class="text-[#F9AE42]">*</span></label>
+              <input 
+                id="footer-phone"
+                type="tel" 
+                name="phone" 
+                required 
+                autocomplete="tel"
+                placeholder="+91 98765 43210"
+                class="w-full bg-white/10 hover:bg-white/[0.14] focus:bg-white/20 border border-white/20 focus:border-[#F9AE42] focus:ring-2 focus:ring-[#F9AE42]/20 rounded-2xl px-5 py-3.5 sm:py-4 text-white placeholder-white/50 text-sm sm:text-base transition-all outline-none"
+              />
+            </div>
+
+            <!-- 4. MESSAGE * -->
+            <div class="space-y-2">
+              <label for="footer-message" class="block text-xs font-black text-white uppercase tracking-wider">MESSAGE <span class="text-[#F9AE42]">*</span></label>
               <textarea 
+                id="footer-message"
                 name="message" 
                 rows="4" 
                 required 
                 placeholder="Tell us about your project requirements..."
-                class="w-full bg-white/10 border border-white/25 rounded-xl px-4 py-3 text-white placeholder-white/50 focus:border-white focus:bg-white/20 transition-all outline-none resize-none"
+                class="w-full bg-white/10 hover:bg-white/[0.14] focus:bg-white/20 border border-white/20 focus:border-[#F9AE42] focus:ring-2 focus:ring-[#F9AE42]/20 rounded-2xl px-5 py-3.5 sm:py-4 text-white placeholder-white/50 text-sm sm:text-base transition-all outline-none resize-none"
               ></textarea>
             </div>
 
-            <!-- Submit Button -->
-            <div class="pt-4">
+            <!-- 5. Submit Request > (Full-width prominent button matching reference image) -->
+            <div class="pt-2">
               <button
                 type="submit"
-                class="cta-pulse-strong cta-pulse-delay-2 cta-shimmer-btn w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-bold text-primary bg-white hover:bg-cream rounded-xl shadow-[0_10px_30px_rgba(240,90,44,0.15)] hover:shadow-[0_10px_35px_rgba(240,90,44,0.25)] hover:-translate-y-0.5 transition-all duration-300 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
+                class="cta-pulse-strong cta-pulse-delay-2 cta-shimmer-btn w-full inline-flex items-center justify-center gap-2 py-4 px-6 text-base sm:text-lg font-black text-neutral-950 bg-[#F9AE42] hover:bg-[#E89F36] rounded-2xl shadow-[0_10px_30px_rgba(249,174,66,0.35)] hover:shadow-[0_12px_35px_rgba(249,174,66,0.5)] hover:-translate-y-0.5 active:scale-[0.99] transition-all duration-200 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                Submit Request
+                <span>Submit Request</span>
+                <span class="text-xl font-black leading-none ml-1">&gt;</span>
               </button>
             </div>
 
@@ -176,7 +186,7 @@ const schema = {
               id="footer-cta-status"
               role="status"
               aria-live="polite"
-              class="hidden text-sm font-semibold leading-relaxed rounded-xl px-4 py-3"
+              class="hidden text-sm font-semibold leading-relaxed rounded-2xl px-5 py-4 border transition-all"
             ></p>
           </form>
 
@@ -208,11 +218,16 @@ const schema = {
 
           <div class="pt-6 border-t border-white/20 space-y-4">
             <a
-              href={`tel:${site.phoneLink}`}
-              class="cta-pulse-medium cta-pulse-delay-3 flex items-center justify-center gap-3 w-full py-4 rounded-xl bg-[#F9AE42] hover:bg-[#E89F36] border border-[#F9AE42]/40 text-neutral-950 font-bold shadow-md hover:shadow-lg transition-all"
+              href={`https://wa.me/${businessInfo.whatsapp || '916282249224'}?text=${encodeURIComponent('Hi Teknoppy, I would like to enquire about your services.')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cta-pulse-medium cta-pulse-delay-3 flex items-center justify-center gap-2.5 w-full py-4 rounded-xl bg-[#F9AE42] hover:bg-[#E89F36] border border-[#F9AE42]/40 text-neutral-950 font-bold shadow-md hover:shadow-lg transition-all text-base"
+              aria-label="Chat with Teknoppy on WhatsApp"
             >
-              <Phone className="w-5 h-5 text-neutral-950" />
-              {businessInfo.phone}
+              <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.071.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.072.043.419-.101.824z" />
+              </svg>
+              <span>WhatsApp Me</span>
             </a>
             
             <a 
@@ -251,10 +266,12 @@ const schema = {
     const show = (msg: string, ok: boolean) => {
       status.textContent = msg;
       status.classList.remove('hidden');
-      status.classList.toggle('bg-white', ok);
-      status.classList.toggle('text-primary', ok);
-      status.classList.toggle('bg-black/25', !ok);
-      status.classList.toggle('text-white', !ok);
+      status.classList.toggle('bg-emerald-500/20', ok);
+      status.classList.toggle('border-emerald-400/40', ok);
+      status.classList.toggle('text-emerald-100', ok);
+      status.classList.toggle('bg-red-500/25', !ok);
+      status.classList.toggle('border-red-400/40', !ok);
+      status.classList.toggle('text-red-100', !ok);
     };
 
     form.addEventListener('submit', async (e) => {
