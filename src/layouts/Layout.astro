@@ -42,11 +42,14 @@ const canonicalURL = canonical
 // Social crawlers reject relative paths — always resolve against the site origin.
 const ogImageURL = new URL(image, Astro.site || 'https://www.teknoppy.com');
 
-// The 3-part Action Bar is page-specific: visible ONLY on /web-design-company-kochi/
+// The 3-part Mobile Bottom Action Bar is available sitewide on all public pages
 const currentPath = Astro.url.pathname.replace(/\/$/, '');
 const isKochiPage = currentPath === '/web-design-company-kochi';
 const isHomePage = currentPath === '' || currentPath === '/';
-const displayBottomBar = (showBottomBar ?? isKochiPage) && !hideBottomBar;
+const isAdminPage = currentPath.startsWith('/admin');
+const isLpPage = currentPath.startsWith('/lp');
+const isThankYouPage = currentPath.includes('thank-you');
+const displayBottomBar = (showBottomBar ?? (!isAdminPage && !isLpPage && !isThankYouPage)) && !hideBottomBar;
 ---
 
 <!doctype html>
@@ -115,7 +118,7 @@ const displayBottomBar = (showBottomBar ?? isKochiPage) && !hideBottomBar;
     <!-- Slot for additional head elements like Schema.org scripts -->
     <slot name="head" />
   </head>
-  <body id="top" class={`min-h-screen flex flex-col relative pb-20 md:pb-0 ${isHomePage ? 'is-homepage' : ''} ${isKochiPage ? 'is-kochi-page' : ''}`}>
+  <body id="top" class={`min-h-screen flex flex-col relative pb-20 md:pb-0 ${isHomePage ? 'is-homepage' : ''} ${isKochiPage ? 'is-kochi-page' : ''} ${displayBottomBar ? 'has-bottom-bar' : ''}`}>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHX2WJ39"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

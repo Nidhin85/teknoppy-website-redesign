@@ -61,11 +61,12 @@ export default async function handler(req, res) {
   if (body.company_website) return res.status(200).json({ ok: true });
 
   const name = String(body.name || '').trim();
-  const phone = String(body.phone || '').trim();
+  const phone = String(body.phone || body.whatsapp || '').trim();
+  const business = String(body.company || body.businessName || body.business || '').trim();
   const service = String(body.service || '').trim();
   const source = String(body.source || 'Website').trim();
   const email = String(body.email || '').trim() || (phone ? 'lead@teknoppy.com' : '');
-  const message = String(body.message || '').trim() || (service ? `Enquiry for ${service}` : (phone ? `Lead submission from ${phone}` : ''));
+  const message = String(body.message || '').trim() || (business ? `Quote request for ${business}` : (service ? `Enquiry for ${service}` : (phone ? `Lead submission from ${phone}` : 'Web design quote request.')));
 
   if (!name || (!email && !phone)) {
     return res.status(400).json({ error: 'Name and either email or phone are required' });
@@ -89,8 +90,9 @@ export default async function handler(req, res) {
 
   const rows = [
     ['Name', name],
+    ['Business Name', business],
     ['Email', email],
-    ['Phone', phone],
+    ['Phone / WhatsApp', phone],
     ['Service', service],
     ['Source', source]
   ].filter(([, v]) => v);
@@ -119,7 +121,7 @@ export default async function handler(req, res) {
     from: process.env.CONTACT_FROM || 'Teknoppy Website <website@teknoppy.com>',
     to: to.length ? to : ['sales@teknoppy.com'],
     reply_to: email,
-    subject: `New enquiry — ${name}${service ? ` (${service})` : ''}`,
+    subject: `New enquiry — ${name}${business ? ` (${business})` : (service ? ` (${service})` : '')}`,
     html
   };
   // Resend rejects an empty cc array — only include the key when there is one.

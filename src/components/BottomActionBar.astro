@@ -17,7 +17,7 @@ import site from '../data/site.json';
 
   <!-- 2. WHATSAPP (Green Treatment) -->
   <a
-    href={`https://wa.me/${site.whatsapp}`}
+    href={`https://wa.me/${site.whatsapp}?text=${encodeURIComponent(site.whatsappMessage)}`}
     target="_blank"
     rel="noopener noreferrer"
     class="bar-btn btn-whatsapp flex-1 flex items-center justify-center gap-1 sm:gap-2.5 px-1 min-[360px]:px-2 sm:px-4 py-3 sm:py-3.5 md:py-4 bg-[#25D366] hover:bg-[#20ba5a] text-white font-black text-[10px] min-[360px]:text-xs sm:text-sm md:text-base lg:text-[17px] uppercase tracking-wider transition-all duration-200 border-r border-white/20 select-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-inset whitespace-nowrap"
@@ -79,21 +79,21 @@ import site from '../data/site.json';
 
   /* Tablet and mobile view (below 1024px): Page bottom padding and FAB adjustment only when action bar is active on Kochi page */
   @media (max-width: 1023px) {
-    :global(.is-kochi-page) {
+    :global(body.has-bottom-bar), :global(.is-kochi-page) {
       padding-bottom: calc(56px + env(safe-area-inset-bottom, 0px)) !important;
     }
 
-    :global(.is-kochi-page .whatsapp-fab) {
+    :global(body.has-bottom-bar .whatsapp-fab), :global(.is-kochi-page .whatsapp-fab) {
       bottom: calc(4.75rem + env(safe-area-inset-bottom, 0px)) !important;
     }
 
-    :global(.is-kochi-page .global-floating-cta-wrap) {
+    :global(body.has-bottom-bar .global-floating-cta-wrap), :global(.is-kochi-page .global-floating-cta-wrap) {
       bottom: calc(9.25rem + env(safe-area-inset-bottom, 0px)) !important;
     }
   }
 
   @media (max-width: 767px) {
-    :global(.is-kochi-page .global-floating-cta-wrap) {
+    :global(body.has-bottom-bar .global-floating-cta-wrap), :global(.is-kochi-page .global-floating-cta-wrap) {
       bottom: calc(4.75rem + env(safe-area-inset-bottom, 0px)) !important;
     }
   }
