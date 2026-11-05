@@ -51,7 +51,7 @@ const projects = needsProjects
 // success message.
 const formEndpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT || '/api/contact';
 const fieldClass =
-  "w-full bg-white border border-neutral-200 rounded-xl px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none";
+  "w-full bg-white border border-neutral-200 rounded-xl px-4 py-3.5 text-neutral-900 placeholder-neutral-400 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none text-sm sm:text-base";
 const labelClass = "block text-[13px] font-black text-neutral-700 uppercase tracking-widest mb-2";
 
 const hero = sections.find((s: any) => s.type === 'hero');
@@ -91,7 +91,7 @@ const breadcrumbSchema = page.breadcrumb && {
 
 {/* FORM FIRST TOP SECTION — When page specifies formFirst={true} (e.g. Request a Quote) */}
 {formFirst && formSection && (
-  <section class="relative pt-28 sm:pt-32 md:pt-36 pb-12 sm:pb-16 bg-cream/30 border-b border-neutral-200/60 overflow-hidden" id="request-quote">
+  <section class="relative pt-24 sm:pt-28 md:pt-30 pb-12 sm:pb-16 bg-cream/30 border-b border-neutral-200/60 overflow-hidden" id="request-quote">
     <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
       {/* Breadcrumb Navigation */}
       {page.breadcrumb && (
@@ -109,24 +109,8 @@ const breadcrumbSchema = page.breadcrumb && {
         </nav>
       )}
 
-      {/* Header Heading & Subhead */}
-      <div class="max-w-3xl mb-8 sm:mb-10">
-        {(formSection.badge || hero?.badge) && (
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-xs font-bold text-primary uppercase tracking-wider mb-4">
-            <Zap class="w-3.5 h-3.5" />
-            {formSection.badge ?? hero?.badge}
-          </div>
-        )}
-        <h1 class="text-3xl sm:text-4xl lg:text-[48px] font-black leading-[1.15] tracking-tight text-neutral-900 mb-4">
-          Get a Web Design <span class="text-primary">Quote</span>
-        </h1>
-        <p class="text-base sm:text-lg text-neutral-600 font-medium leading-relaxed max-w-2xl">
-          {formSection.intro ?? hero?.subhead ?? "Tell us about your project. Get a real number back, not a sales pitch."}
-        </p>
-      </div>
-
-      {/* Two-Column Form & Aside Layout */}
-      <div class={formSection.aside ? "grid lg:grid-cols-12 gap-6 lg:gap-8 items-start" : "max-w-2xl"}>
+      {/* Two-Column Form & Aside Layout — Form is first prominent visible content */}
+      <div class={formSection.aside ? "grid lg:grid-cols-12 gap-6 lg:gap-8 items-start mt-2" : "max-w-2xl mt-2"}>
         
         {/* 1. Request Your Web Design Quote Form */}
         <div class={formSection.aside ? "lg:col-span-7 bg-white rounded-[2rem] border border-neutral-100 p-5 sm:p-7 md:p-8 shadow-[0_24px_60px_-30px_rgba(0,0,0,0.12)]" : "bg-white rounded-[2rem] border border-neutral-100 p-5 sm:p-7 md:p-8 shadow-[0_24px_60px_-30px_rgba(0,0,0,0.12)]"}>
@@ -135,7 +119,7 @@ const breadcrumbSchema = page.breadcrumb && {
               <span class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-primary/10 text-primary flex items-center justify-center border border-primary/15 flex-shrink-0">
                 <Send class="w-5 h-5" />
               </span>
-              <h2 class="text-xl sm:text-2xl font-black text-neutral-900 leading-tight">{formSection.form.heading}</h2>
+              <h1 class="text-xl sm:text-2xl font-black text-neutral-900 leading-tight">{formSection.form.heading}</h1>
             </div>
           )}
 
@@ -194,7 +178,7 @@ const breadcrumbSchema = page.breadcrumb && {
               ))}
             </div>
 
-            <button type="submit" class="w-full inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-white bg-primary rounded-xl shadow-[0_10px_30px_-8px_rgba(240,90,44,0.5)] hover:bg-primary/95 hover:-translate-y-0.5 transition-all duration-300 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed">
+            <button type="submit" class="w-full inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-4 text-base font-bold text-white bg-primary rounded-xl shadow-[0_12px_30px_-8px_rgba(240,90,44,0.5)] active:scale-[0.99] hover:bg-primary/95 hover:-translate-y-0.5 transition-all duration-300 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed">
               {formSection.form.submitLabel}
               <ArrowRight class="w-4 h-4" />
             </button>
