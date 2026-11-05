@@ -204,7 +204,8 @@ for (const global of contentMap.globals) {
 const protectedPages = new Set([
   'wordpress-migration-services-kochi',
   'wordpress-speed-optimization-kochi',
-  'wordpress-web-design-kochi'
+  'wordpress-web-design-kochi',
+  'request-a-quote'
 ]);
 
 for (const collection of contentMap.collections) {
