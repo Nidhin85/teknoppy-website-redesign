@@ -27,6 +27,8 @@ const logos = clients.logos;
             <img 
               src={logo.src} 
               alt={`${logo.name} logo`} 
+              loading="lazy"
+              decoding="async"
               class="max-h-full max-w-full object-contain mix-blend-multiply transition-transform duration-300"
             />
           </div>

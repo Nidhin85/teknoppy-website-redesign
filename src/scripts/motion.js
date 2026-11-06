@@ -22,27 +22,29 @@
       return;
     }
 
-    // 1. SPLIT WORDS
-    $$('[data-words]:not(.motion-processed)').forEach(function(el) {
-      el.classList.add('motion-processed');
-      var words = el.textContent.trim().split(/\s+/);
-      el.innerHTML = words.map(function(w, i) {
-        return '<span class="motion-word" style="--word-index: ' + i + '">' + w + '</span>';
-      }).join(' ');
-    });
-
-    // 2. SPLIT CHARACTERS
-    $$('[data-chars]:not(.motion-processed)').forEach(function(el) {
-      el.classList.add('motion-processed');
-      var k = 0;
-      el.innerHTML = el.innerHTML.replace(/(<span[^>]*>)?([^<]+)(<\/span>)?/g, function(m, openTag, text, closeTag) {
-        return (openTag || '') + text.split(' ').map(function(word) {
-          return word ? '<span style="white-space:nowrap;display:inline-block">' + word.split('').map(function(c) {
-            return '<span class="motion-char" style="--char-index: ' + (k++) + '">' + c + '</span>';
-          }).join('') + '</span>' : '';
-        }).join(' ') + (closeTag || '');
+    if (fine) {
+      // 1. SPLIT WORDS (Fine pointer only — preserves mobile DOM & CPU)
+      $$('[data-words]:not(.motion-processed)').forEach(function(el) {
+        el.classList.add('motion-processed');
+        var words = el.textContent.trim().split(/\s+/);
+        el.innerHTML = words.map(function(w, i) {
+          return '<span class="motion-word" style="--word-index: ' + i + '">' + w + '</span>';
+        }).join(' ');
       });
-    });
+
+      // 2. SPLIT CHARACTERS (Fine pointer only)
+      $$('[data-chars]:not(.motion-processed)').forEach(function(el) {
+        el.classList.add('motion-processed');
+        var k = 0;
+        el.innerHTML = el.innerHTML.replace(/(<span[^>]*>)?([^<]+)(<\/span>)?/g, function(m, openTag, text, closeTag) {
+          return (openTag || '') + text.split(' ').map(function(word) {
+            return word ? '<span style="white-space:nowrap;display:inline-block">' + word.split('').map(function(c) {
+              return '<span class="motion-char" style="--char-index: ' + (k++) + '">' + c + '</span>';
+            }).join('') + '</span>' : '';
+          }).join(' ') + (closeTag || '');
+        });
+      });
+    }
 
     // 3. SET STAGGER INDICES
     $$('[data-stagger]').forEach(function(parent) {
@@ -62,7 +64,7 @@
       }
     });
 
-    // 5. OBSERVE REVEALS & NUMBER COUNTERS
+    // 5. OBSERVE REVEALS & NUMBER COUNTERS (Pure IntersectionObserver — Zero forced reflows)
     if ('IntersectionObserver' in window) {
       var revealObserver = new IntersectionObserver(function(entries) {
         entries.forEach(function(entry) {
@@ -71,14 +73,10 @@
             revealObserver.unobserve(entry.target);
           }
         });
-      }, { threshold: 0.12 });
+      }, { threshold: 0.1 });
 
       $$('[data-reveal], [data-stagger], [data-words], [data-chars]').forEach(function(el) {
-        if (el.getBoundingClientRect().top < window.innerHeight) {
-          el.classList.add('is-revealed');
-        } else {
-          revealObserver.observe(el);
-        }
+        revealObserver.observe(el);
       });
 
       // Number counter observer
@@ -182,14 +180,36 @@
     });
   }
 
+  function scheduleSetup() {
+    var fine = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(pointer: fine)').matches;
+    if (fine) {
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(setupMotion);
+      } else {
+        setTimeout(setupMotion, 100);
+      }
+    } else {
+      var initDone = false;
+      function runOnce() {
+        if (initDone) return;
+        initDone = true;
+        setupMotion();
+      }
+      ['scroll', 'touchstart'].forEach(function(evt) {
+        window.addEventListener(evt, runOnce, { passive: true, once: true });
+      });
+      setTimeout(runOnce, 3500);
+    }
+  }
+
   // Bind to lifecycle events
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', setupMotion);
+  if (document.readyState === 'complete') {
+    scheduleSetup();
   } else {
-    setupMotion();
+    window.addEventListener('load', scheduleSetup);
   }
 
   // Support Astro view transitions
-  document.addEventListener('astro:page-load', setupMotion);
-  document.addEventListener('astro:after-swap', setupMotion);
+  document.addEventListener('astro:page-load', scheduleSetup);
+  document.addEventListener('astro:after-swap', scheduleSetup);
 })();

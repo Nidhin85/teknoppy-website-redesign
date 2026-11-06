@@ -387,6 +387,8 @@ export default function Testimonials({
                 <img 
                   src={logo.src} 
                   alt={`${logo.name} logo`} 
+                  loading="lazy"
+                  decoding="async"
                   className="max-h-full max-w-full object-contain mix-blend-multiply hover:scale-105 transition-transform duration-300"
                 />
               </div>
