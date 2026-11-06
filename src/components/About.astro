@@ -160,6 +160,9 @@ import home from "../data/home.json";
 </section>
 
 <script>
+  const isFine = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(pointer: fine)').matches;
+  const isReduced = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   // Intersection observer for scroll reveal animations and counting
   const observer = new IntersectionObserver(
     (entries) => {
@@ -167,24 +170,27 @@ import home from "../data/home.json";
         if (entry.isIntersecting) {
           entry.target.classList.remove("opacity-0", "translate-y-12");
 
-          // Start counter animation
-          const counters = entry.target.querySelectorAll(".counter");
-          counters.forEach((counter) => {
-            counter.innerText = "0";
-            const updateCount = () => {
+          // Start counter animation on desktop fine-pointer devices
+          if (isFine && !isReduced) {
+            const counters = entry.target.querySelectorAll(".counter");
+            counters.forEach((counter) => {
               const target = +counter.getAttribute("data-target")!;
-              const count = +counter.innerText;
-              const inc = target / 40; // Speed adjustment
-
-              if (count < target) {
-                counter.innerText = Math.ceil(count + inc).toString();
-                setTimeout(updateCount, 40);
-              } else {
-                counter.innerText = target.toString();
-              }
-            };
-            updateCount();
-          });
+              const duration = 1200;
+              let start: number | null = null;
+              const step = (timestamp: number) => {
+                if (!start) start = timestamp;
+                const progress = Math.min((timestamp - start) / duration, 1);
+                const current = Math.round(target * (1 - Math.pow(1 - progress, 3)));
+                counter.innerText = current.toString();
+                if (progress < 1) {
+                  requestAnimationFrame(step);
+                } else {
+                  counter.innerText = target.toString();
+                }
+              };
+              requestAnimationFrame(step);
+            });
+          }
 
           observer.unobserve(entry.target);
         }

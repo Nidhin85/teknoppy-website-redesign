@@ -461,10 +461,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       muted
       loop
       playsinline
-      preload="metadata"
-      poster="/video/poster.jpg">
-      <source src="/video/Teknoppy-Web-Banner.mp4" type="video/mp4">
-      <source src="/video/Teknoppy%20Web%20Banner%20final.mp4" type="video/mp4">
+      preload="none"
+      poster="/video/poster-mobile.webp"
+      data-src="/video/Teknoppy-Web-Banner.mp4">
+      <source data-src="/video/Teknoppy-Web-Banner.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
 
@@ -1043,6 +1043,43 @@ var playIcon = document.getElementById('playIcon');
 var playText = document.getElementById('playText');
 
 if (heroVid) {
+  function loadVideoSrc() {
+    var source = heroVid.querySelector('source');
+    var src = (source && source.getAttribute('data-src')) || heroVid.getAttribute('data-src');
+    if (src && (!source || !source.src)) {
+      if (source) source.src = src;
+      else heroVid.src = src;
+      heroVid.load();
+      if (!reduce) {
+        var p = heroVid.play();
+        if (p !== undefined) p.catch(function(){});
+      }
+    }
+  }
+
+  var isMobile = window.matchMedia && window.matchMedia('(max-width: 767px)').matches;
+  if (isMobile) {
+    var mobileStarted = false;
+    var triggerMobile = function() {
+      if (mobileStarted) return;
+      mobileStarted = true;
+      window.removeEventListener('touchstart', triggerMobile);
+      window.removeEventListener('scroll', triggerMobile);
+      window.removeEventListener('click', triggerMobile);
+      loadVideoSrc();
+    };
+    window.addEventListener('touchstart', triggerMobile, { passive: true });
+    window.addEventListener('scroll', triggerMobile, { passive: true });
+    window.addEventListener('click', triggerMobile, { passive: true });
+  } else if (!reduce) {
+    if (document.readyState === 'complete') {
+      setTimeout(loadVideoSrc, 800);
+    } else {
+      window.addEventListener('load', function() {
+        setTimeout(loadVideoSrc, 800);
+      });
+    }
+  }
   if (reduce) {
     heroVid.removeAttribute('autoplay');
     heroVid.pause();
@@ -1066,6 +1103,7 @@ if (heroVid) {
   if (playBtn) {
     playBtn.addEventListener('click', function(e) {
       e.stopPropagation();
+      loadVideoSrc();
       if (heroVid.paused) {
         heroVid.play();
         if (playIcon) playIcon.textContent = '⏸';

@@ -55,16 +55,30 @@ const displayBottomBar = (showBottomBar ?? (!isAdminPage && !isLpPage && !isThan
 <!doctype html>
 <html lang={lang} class="scroll-smooth">
   <head>
-    <!-- Google Tag Manager -->
-    <script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NHX2WJ39');</script>
-    <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
-    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <!-- Google Tag Manager (Optimized non-blocking deferral: preserves full dataLayer & conversion tracking) -->
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+      (function(w,d,s,l,i){
+        function initGtm() {
+          if (w._gtmInited) return;
+          w._gtmInited = true;
+          var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        }
+        ['scroll', 'touchstart', 'click', 'mousemove', 'keydown'].forEach(function(evt) {
+          w.addEventListener(evt, initGtm, { passive: true, once: true });
+        });
+        w.addEventListener('load', function() {
+          setTimeout(initGtm, 4500);
+        });
+      })(window,document,'script','dataLayer','GTM-NHX2WJ39');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta name="description" content={description} />
     <!-- The site is light-only. Declaring the single scheme keeps form controls,
          scrollbars and the address bar light even when the OS is set to dark. -->
     <meta name="color-scheme" content="light" />
@@ -101,19 +115,21 @@ const displayBottomBar = (showBottomBar ?? (!isAdminPage && !isLpPage && !isThan
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={ogImageURL} />
 
+    <!-- Preload critical hero assets (responsive: mobile loads only 47KB mobile poster, desktop loads 131KB poster) -->
+    {(isHomePage || isKochiPage) && (
+      <>
+        <link rel="preload" as="image" href="/video/poster-mobile.webp" type="image/webp" media="(max-width: 767px)" fetchpriority="high" />
+        <link rel="preload" as="image" href="/video/poster.webp" type="image/webp" media="(min-width: 768px)" fetchpriority="high" />
+      </>
+    )}
+
     <!-- Sora + Inter typography stack matching reference editorial clarity: display=swap -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
-      media="print"
-      onload="this.media='all'"
     />
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" />
-    </noscript>
     
     <!-- Slot for additional head elements like Schema.org scripts -->
     <slot name="head" />
@@ -149,8 +165,7 @@ const displayBottomBar = (showBottomBar ?? (!isAdminPage && !isLpPage && !isThan
     </style>
 
     <script is:inline>
-      document.addEventListener('DOMContentLoaded', () => {
-
+      function initLayoutObservers() {
         // CTA Scroll Reveal & Side-Slide Observer
         const ctaElements = document.querySelectorAll('.cta-reveal, .cta-slide-left, .cta-slide-right, .cta-checkpoint');
         if (ctaElements.length > 0) {
@@ -240,7 +255,23 @@ const displayBottomBar = (showBottomBar ?? (!isAdminPage && !isLpPage && !isThan
             });
           });
         }
-      });
+      }
+
+      if (document.readyState === 'complete') {
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(initLayoutObservers);
+        } else {
+          setTimeout(initLayoutObservers, 100);
+        }
+      } else {
+        window.addEventListener('load', function() {
+          if ('requestIdleCallback' in window) {
+            requestIdleCallback(initLayoutObservers);
+          } else {
+            setTimeout(initLayoutObservers, 100);
+          }
+        });
+      }
     </script>
     <MagneticTypography />
     <script src="../scripts/motion.js"></script>

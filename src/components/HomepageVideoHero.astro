@@ -23,36 +23,67 @@ const {
   aria-label={ariaLabel}
 >
   <div class="video-container relative w-full h-[58svh] sm:h-[65svh] md:h-[75vh] lg:h-[82vh] xl:h-[88vh] overflow-hidden bg-neutral-950">
+    <!-- Responsive Hero Poster (displays instantly while video is deferred: mobile gets 47KB poster, desktop gets 131KB poster) -->
+    <picture class="hero-poster-picture absolute inset-0 w-full h-full pointer-events-none select-none z-0">
+      <source srcset="/video/poster-mobile.webp" media="(max-width: 767px)" type="image/webp" />
+      <img
+        src="/video/poster.webp"
+        alt=""
+        aria-hidden="true"
+        width="1920"
+        height="1080"
+        fetchpriority="high"
+        decoding="sync"
+        class="w-full h-full object-cover object-center"
+      />
+    </picture>
+
     <video
       id="hero-bg-video"
       autoplay
       muted
       loop
       playsinline
-      preload="metadata"
-      poster="/video/poster.jpg"
-      class="hero-video-element w-full h-full object-cover object-center pointer-events-none select-none block"
+      preload="none"
+      class="hero-video-element relative z-10 w-full h-full object-cover object-center pointer-events-none select-none block"
       aria-label={ariaLabel}
+      data-src="/video/Teknoppy-Web-Banner.mp4"
     >
-      <source src="/video/Teknoppy-Web-Banner.mp4" type="video/mp4" />
+      <source data-src="/video/Teknoppy-Web-Banner.mp4" type="video/mp4" />
     </video>
-
-    <!-- Poster fallback for users who prefer reduced motion -->
-    <div
-      class="video-hero-fallback hidden absolute inset-0 bg-cover bg-center"
-      style="background-image: url('/video/poster.jpg');"
-      aria-hidden="true"
-    ></div>
   </div>
 </section>
 
 <script is:inline>
   (function () {
-    // 1. Ensure reliable autoplay on all browsers/devices
-    var video = document.getElementById("hero-bg-video");
-    if (video) {
+    // 1. Defer heavy background video until after critical page load (ensures FCP & LCP are instant)
+    function initHeroVideo() {
+      // Respect prefers-reduced-motion
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        return;
+      }
+      // If user has data saver enabled, keep the lightweight crisp poster
+      if (navigator.connection && (navigator.connection.saveData || /2g/.test(navigator.connection.effectiveType || ''))) {
+        return;
+      }
+
+      var video = document.getElementById("hero-bg-video");
+      if (!video) return;
+
+      var source = video.querySelector("source");
+      var videoSrc = (source && source.getAttribute("data-src")) || video.getAttribute("data-src");
+      if (!videoSrc) return;
+
+      if (source && !source.src) {
+        source.src = videoSrc;
+      } else if (!video.src) {
+        video.src = videoSrc;
+      }
+
       video.muted = true;
       video.defaultMuted = true;
+      video.load();
+
       var playPromise = video.play();
       if (playPromise !== undefined) {
         playPromise.catch(function () {
@@ -65,6 +96,42 @@ const {
           window.addEventListener("touchstart", resume, { passive: true });
           window.addEventListener("scroll", resume, { passive: true });
           window.addEventListener("click", resume, { passive: true });
+        });
+      }
+    }
+
+    var isMobile = window.matchMedia && window.matchMedia('(max-width: 767px)').matches;
+
+    if (isMobile) {
+      // Mobile: Defer heavy 36.8MB video until first user interaction (touch/scroll) or network idle
+      // Prevents saturating mobile data and throttling mobile CPU on initial paint
+      var mobileStarted = false;
+      var triggerMobileVideo = function() {
+        if (mobileStarted) return;
+        mobileStarted = true;
+        window.removeEventListener('touchstart', triggerMobileVideo);
+        window.removeEventListener('scroll', triggerMobileVideo);
+        window.removeEventListener('click', triggerMobileVideo);
+        initHeroVideo();
+      };
+      window.addEventListener('touchstart', triggerMobileVideo, { passive: true });
+      window.addEventListener('scroll', triggerMobileVideo, { passive: true });
+      window.addEventListener('click', triggerMobileVideo, { passive: true });
+    } else {
+      // Desktop: Start after critical page load & idle
+      if (document.readyState === 'complete') {
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(initHeroVideo, { timeout: 1500 });
+        } else {
+          setTimeout(initHeroVideo, 600);
+        }
+      } else {
+        window.addEventListener('load', function() {
+          if ('requestIdleCallback' in window) {
+            requestIdleCallback(initHeroVideo, { timeout: 1500 });
+          } else {
+            setTimeout(initHeroVideo, 600);
+          }
         });
       }
     }
@@ -165,9 +232,6 @@ const {
   @media (prefers-reduced-motion: reduce) {
     .hero-video-element {
       display: none !important;
-    }
-    .video-hero-fallback {
-      display: block !important;
     }
   }
 </style>

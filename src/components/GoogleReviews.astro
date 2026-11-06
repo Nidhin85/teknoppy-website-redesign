@@ -617,6 +617,20 @@ const totalDistinctReviews = rawReviews.length;
     );
   };
 
-  initTeknoppyGoogleReviewsCarousel();
+  if (document.readyState === 'complete') {
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(initTeknoppyGoogleReviewsCarousel);
+    } else {
+      setTimeout(initTeknoppyGoogleReviewsCarousel, 100);
+    }
+  } else {
+    window.addEventListener('load', function() {
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(initTeknoppyGoogleReviewsCarousel);
+      } else {
+        setTimeout(initTeknoppyGoogleReviewsCarousel, 100);
+      }
+    });
+  }
   document.addEventListener('astro:after-swap', initTeknoppyGoogleReviewsCarousel);
 </script>
