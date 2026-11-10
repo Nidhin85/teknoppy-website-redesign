@@ -1,0 +1,799 @@
+---
+import { celebrations, type CelebrationItem } from '../../data/celebrations';
+
+interface Props {
+  items?: CelebrationItem[];
+}
+
+const { items = celebrations } = Astro.props;
+
+// Category mapper for filter chips
+function getCategory(item: CelebrationItem): string {
+  const cap = item.caption.toLowerCase();
+  if (cap.includes('diwali')) return 'diwali';
+  if (cap.includes('halloween')) return 'halloween';
+  if (cap.includes('onam') || cap.includes('pookkalam')) return 'onam';
+  return 'milestones';
+}
+
+// Ensure at least 8 items per track before loop duplication so 1440px/1920px displays never have gaps
+function fillTrack(list: CelebrationItem[], min = 8) {
+  if (!list.length) return [];
+  let filled = [...list];
+  while (filled.length < min) {
+    filled = filled.concat(list);
+  }
+  return filled;
+}
+
+const trackItems = fillTrack(items, 8);
+
+const hasDiwali = items.some(i => getCategory(i) === 'diwali');
+const hasHalloween = items.some(i => getCategory(i) === 'halloween');
+const hasOnam = items.some(i => getCategory(i) === 'onam');
+const hasMilestones = items.some(i => getCategory(i) === 'milestones');
+
+const jsonItems = JSON.stringify(items);
+---
+
+<div class="celebrate-wrapper" data-celebrations={jsonItems}>
+  <!-- Top bar controls: counter, animated progress indicator, nudge arrows, pause toggle -->
+  <div class="celebrate-controls">
+    <div class="celebrate-meta">
+      <span class="celebrate-count">{items.length} moments</span>
+      <div class="celebrate-progress-bar" aria-hidden="true">
+        <div class="celebrate-progress-fill" style={`--duration: ${Math.max(28, items.length * 4.5)}s;`}></div>
+      </div>
+    </div>
+
+    <div class="celebrate-actions">
+      <!-- Nudge arrows (Desktop) -->
+      <div class="celebrate-arrows" aria-label="Carousel navigation">
+        <button
+          type="button"
+          class="celebrate-arrow-btn celebrate-prev"
+          aria-label="Nudge carousel previous"
+          data-direction="-1"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <button
+          type="button"
+          class="celebrate-arrow-btn celebrate-next"
+          aria-label="Nudge carousel next"
+          data-direction="1"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <!-- WCAG 2.2.2 Pause Toggle -->
+      <button
+        type="button"
+        class="celebrate-pause-btn"
+        aria-label="Pause celebrations animation"
+        data-paused="false"
+      >
+        <span class="celebrate-pause-icon" aria-hidden="true">
+          <svg class="icon-pause" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+          <svg class="icon-play" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <!-- CINEMATIC CELEBRATION REEL — UNUNCROPPED NATURAL ASPECT RATIOS -->
+  <div class="celebrate-stage">
+    <div class="celebrate-track-outer" id="celebrate-track-outer">
+      <div class="celebrate-track" style={`--duration: ${Math.max(28, trackItems.length * 4.5)}s;`}>
+        <div class="celebrate-group">
+          {trackItems.map((item, idx) => {
+            const globalIndex = items.indexOf(item);
+            const w = item.width || 1024;
+            const h = item.height || 682;
+            const aspect = (w / h).toFixed(4);
+            return (
+              <figure
+                class="celebrate-card"
+                style={`--aspect: ${aspect};`}
+                data-index={globalIndex}
+                role="button"
+                tabindex="0"
+                aria-label={`View celebration: ${item.caption}`}
+              >
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  width={w}
+                  height={h}
+                  loading={idx < 3 ? "eager" : "lazy"}
+                  decoding="async"
+                  class="celebrate-img"
+                />
+                <div class="celebrate-pill">
+                  {item.tag && <span class="celebrate-pill-tag">{item.tag}</span>}
+                  <figcaption class="celebrate-pill-caption">{item.caption}</figcaption>
+                </div>
+              </figure>
+            );
+          })}
+        </div>
+        <!-- Cloned group for seamless infinite right-to-left marquee -->
+        <div class="celebrate-group" aria-hidden="true">
+          {trackItems.map((item) => {
+            const globalIndex = items.indexOf(item);
+            const w = item.width || 1024;
+            const h = item.height || 682;
+            const aspect = (w / h).toFixed(4);
+            return (
+              <figure
+                class="celebrate-card"
+                style={`--aspect: ${aspect};`}
+                data-index={globalIndex}
+                tabindex="-1"
+              >
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  width={w}
+                  height={h}
+                  loading="lazy"
+                  decoding="async"
+                  class="celebrate-img"
+                />
+                <div class="celebrate-pill">
+                  {item.tag && <span class="celebrate-pill-tag">{item.tag}</span>}
+                  <figcaption class="celebrate-pill-caption">{item.caption}</figcaption>
+                </div>
+              </figure>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- "SEE ALL MOMENTS" EXPANDING MASONRY GRID WITH FILTER CHIPS -->
+  <div class="celebrate-expand-wrap">
+    <button
+      type="button"
+      class="celebrate-expand-btn"
+      id="celebrate-toggle-btn"
+      aria-expanded="false"
+      aria-controls="celebrate-masonry"
+    >
+      <span class="celebrate-expand-text">See all moments ({items.length})</span>
+      <svg class="celebrate-expand-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </button>
+
+    <div
+      id="celebrate-masonry"
+      class="celebrate-masonry"
+      aria-hidden="true"
+    >
+      <!-- Filter Chips -->
+      <div class="celebrate-filters" role="tablist" aria-label="Filter celebration moments">
+        <button type="button" class="celebrate-filter-chip is-active" data-filter="all">All</button>
+        {hasDiwali && <button type="button" class="celebrate-filter-chip" data-filter="diwali">Diwali</button>}
+        {hasHalloween && <button type="button" class="celebrate-filter-chip" data-filter="halloween">Halloween</button>}
+        {hasOnam && <button type="button" class="celebrate-filter-chip" data-filter="onam">Onam</button>}
+        {hasMilestones && <button type="button" class="celebrate-filter-chip" data-filter="milestones">Milestones</button>}
+      </div>
+
+      <!-- Masonry Grid with Natural Aspect Ratios -->
+      <div class="celebrate-masonry-grid" id="celebrate-masonry-grid">
+        {items.map((item, idx) => {
+          const category = getCategory(item);
+          const w = item.width || 1024;
+          const h = item.height || 682;
+          return (
+            <figure
+              class="celebrate-masonry-card rv"
+              data-index={idx}
+              data-category={category}
+              role="button"
+              tabindex="0"
+              aria-label={`View ${item.caption}`}
+            >
+              <img
+                src={item.src}
+                alt={item.alt}
+                width={w}
+                height={h}
+                loading="lazy"
+                decoding="async"
+                class="celebrate-masonry-img"
+              />
+              <div class="celebrate-pill">
+                {item.tag && <span class="celebrate-pill-tag">{item.tag}</span>}
+                <figcaption class="celebrate-pill-caption">{item.caption}</figcaption>
+              </div>
+            </figure>
+          );
+        })}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Scoped styles strictly prefixed with .celebrate-* */
+  .celebrate-wrapper {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    margin-top: 36px;
+    overflow: hidden;
+    padding: 10px 0 30px;
+  }
+
+  .celebrate-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto 24px;
+    padding: 0 clamp(20px, 6vw, 80px);
+    box-sizing: border-box;
+  }
+
+  .celebrate-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 13.5px;
+    color: #5d6370;
+    font-weight: 600;
+  }
+
+  .celebrate-count {
+    color: #16181d;
+    font-weight: 700;
+  }
+
+  /* Thin animated progress line showing position */
+  .celebrate-progress-bar {
+    width: clamp(70px, 12vw, 140px);
+    height: 4px;
+    background: #ecedf0;
+    border-radius: 999px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .celebrate-progress-fill {
+    width: 40%;
+    height: 100%;
+    background: #f26a1b;
+    border-radius: 999px;
+    animation: celebrateProgressAnim var(--duration, 40s) linear infinite;
+  }
+
+  @keyframes celebrateProgressAnim {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(250%); }
+  }
+
+  .celebrate-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .celebrate-arrows {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .celebrate-arrow-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #ecedf0;
+    color: #16181d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    transition: background 0.2s, border-color 0.2s, transform 0.2s;
+  }
+
+  .celebrate-arrow-btn:hover {
+    background: #f8f9fa;
+    border-color: #d1d5db;
+    transform: translateY(-1px);
+  }
+
+  .celebrate-pause-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #ecedf0;
+    color: #f26a1b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    transition: background 0.2s, border-color 0.2s, transform 0.2s;
+  }
+
+  .celebrate-pause-btn:hover {
+    background: #f8f9fa;
+    border-color: #d1d5db;
+    transform: translateY(-1px);
+  }
+
+  .celebrate-pause-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Carousel Stage */
+  .celebrate-stage {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 14px 0 24px;
+    mask-image: linear-gradient(90deg, transparent 0%, #000 clamp(20px, 5vw, 80px), #000 calc(100% - clamp(20px, 5vw, 80px)), transparent 100%);
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 clamp(20px, 5vw, 80px), #000 calc(100% - clamp(20px, 5vw, 80px)), transparent 100%);
+  }
+
+  .celebrate-track-outer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .celebrate-track {
+    display: flex;
+    width: max-content;
+    will-change: transform;
+    animation: celebrateMarqueeSlide var(--duration, 44s) linear infinite;
+  }
+
+  /* Pause on hover */
+  .celebrate-wrapper:hover .celebrate-track,
+  .celebrate-wrapper:hover .celebrate-progress-fill {
+    animation-play-state: paused;
+  }
+
+  /* Paused state */
+  .celebrate-wrapper[data-paused="true"] .celebrate-track,
+  .celebrate-wrapper[data-paused="true"] .celebrate-progress-fill {
+    animation-play-state: paused !important;
+  }
+
+  .celebrate-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 20px;
+    flex-shrink: 0;
+  }
+
+  /* UNUNCROPPED NATURAL ASPECT RATIO CARDS */
+  .celebrate-card {
+    position: relative;
+    margin: 0;
+    height: clamp(340px, 28vw, 420px);
+    aspect-ratio: var(--aspect, 1.5);
+    width: auto;
+    border-radius: 22px;
+    overflow: hidden;
+    background: #14161a;
+    box-shadow: 0 14px 34px -10px rgba(0, 0, 0, 0.16);
+    flex-shrink: 0;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .celebrate-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 50px -12px rgba(0, 0, 0, 0.28);
+    z-index: 10;
+  }
+
+  .celebrate-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .celebrate-card:hover .celebrate-img {
+    transform: scale(1.04);
+  }
+
+  /* Small glass pill at bottom-left — never covers faces or photo subjects */
+  .celebrate-pill {
+    position: absolute;
+    left: 14px;
+    bottom: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(18, 20, 24, 0.72);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    padding: 5px 12px;
+    border-radius: 999px;
+    z-index: 3;
+    pointer-events: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    max-width: calc(100% - 28px);
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .celebrate-card:hover .celebrate-pill {
+    transform: translateY(-3px);
+  }
+
+  .celebrate-pill-tag {
+    background: #f26a1b;
+    color: #fff;
+    font-size: 10.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 2px 7px;
+    border-radius: 999px;
+    flex-shrink: 0;
+  }
+
+  .celebrate-pill-caption {
+    margin: 0;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Animation */
+  @keyframes celebrateMarqueeSlide {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+
+  /* "See all moments" Button & Masonry Grid */
+  .celebrate-expand-wrap {
+    max-width: 1280px;
+    margin: 10px auto 0;
+    padding: 0 clamp(20px, 6vw, 80px);
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .celebrate-expand-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    border: 1.5px solid #ecedf0;
+    padding: 13px 26px;
+    border-radius: 999px;
+    font-size: 14.5px;
+    font-weight: 700;
+    color: #16181d;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .celebrate-expand-btn:hover {
+    border-color: #f26a1b;
+    color: #f26a1b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(242, 106, 27, 0.15);
+  }
+
+  .celebrate-expand-chevron {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .celebrate-expand-btn[aria-expanded="true"] .celebrate-expand-chevron {
+    transform: rotate(180deg);
+  }
+
+  /* Masonry Grid (collapsed by default) */
+  .celebrate-masonry {
+    display: none;
+    margin-top: 28px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .celebrate-masonry.is-open {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Filter Chips */
+  .celebrate-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .celebrate-filter-chip {
+    background: #fff;
+    border: 1px solid #ecedf0;
+    border-radius: 999px;
+    padding: 7px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #5d6370;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+
+  .celebrate-filter-chip:hover {
+    border-color: #d1d5db;
+    color: #16181d;
+  }
+
+  .celebrate-filter-chip.is-active {
+    background: #f26a1b;
+    border-color: #f26a1b;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(242, 106, 27, 0.3);
+  }
+
+  .celebrate-masonry-grid {
+    columns: 4;
+    column-gap: 18px;
+    text-align: left;
+  }
+
+  .celebrate-masonry-card {
+    position: relative;
+    margin: 0 0 18px;
+    break-inside: avoid;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #14161a;
+    box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+  }
+
+  .celebrate-masonry-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.28);
+  }
+
+  .celebrate-masonry-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .celebrate-masonry-card:hover .celebrate-masonry-img {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 1024px) {
+    .celebrate-masonry-grid {
+      columns: 3;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .celebrate-card {
+      height: 300px;
+      max-width: 85vw;
+    }
+
+    .celebrate-stage {
+      padding: 10px 0 20px;
+    }
+
+    .celebrate-arrows {
+      display: none;
+    }
+
+    .celebrate-masonry-grid {
+      columns: 2;
+      column-gap: 12px;
+    }
+
+    .celebrate-masonry-card {
+      margin-bottom: 12px;
+      border-radius: 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .celebrate-card {
+      height: 270px;
+      max-width: 88vw;
+    }
+
+    .celebrate-masonry-grid {
+      columns: 2;
+      column-gap: 10px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .celebrate-track,
+    .celebrate-progress-fill {
+      animation: none !important;
+    }
+
+    .celebrate-stage {
+      overflow-x: auto;
+    }
+
+    .celebrate-pause-btn {
+      display: none;
+    }
+  }
+</style>
+
+<script is:inline>
+  (() => {
+    const wrap = document.querySelector(".celebrate-wrapper");
+    if (!wrap) return;
+
+    let items = [];
+    try {
+      items = JSON.parse(wrap.getAttribute("data-celebrations") || "[]");
+    } catch (e) {
+      items = [];
+    }
+
+    // Lightbox click delegation on cards (carousel and masonry)
+    wrap.addEventListener("click", (e) => {
+      const card = e.target.closest(".celebrate-card, .celebrate-masonry-card");
+      if (!card) return;
+      const index = parseInt(card.getAttribute("data-index") || "0", 10);
+      if (typeof window.__openLifeLightbox === "function") {
+        window.__openLifeLightbox(items, index, card);
+      }
+    });
+
+    // Keyboard trigger (Enter / Space)
+    wrap.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        const card = e.target.closest(".celebrate-card, .celebrate-masonry-card");
+        if (card) {
+          e.preventDefault();
+          const index = parseInt(card.getAttribute("data-index") || "0", 10);
+          if (typeof window.__openLifeLightbox === "function") {
+            window.__openLifeLightbox(items, index, card);
+          }
+        }
+      }
+    });
+
+    // Pause / Resume toggle button
+    const pauseBtn = wrap.querySelector(".celebrate-pause-btn");
+    if (pauseBtn) {
+      pauseBtn.addEventListener("click", () => {
+        const isPaused = wrap.getAttribute("data-paused") === "true";
+        const nextState = !isPaused;
+        wrap.setAttribute("data-paused", String(nextState));
+        pauseBtn.setAttribute("data-paused", String(nextState));
+        pauseBtn.setAttribute("aria-label", nextState ? "Resume celebrations animation" : "Pause celebrations animation");
+
+        const iconPause = pauseBtn.querySelector(".icon-pause");
+        const iconPlay = pauseBtn.querySelector(".icon-play");
+
+        if (iconPause && iconPlay) {
+          iconPause.style.display = nextState ? "none" : "block";
+          iconPlay.style.display = nextState ? "block" : "none";
+        }
+      });
+    }
+
+    // Nudge arrows (Desktop)
+    const track = wrap.querySelector(".celebrate-track");
+    let currentNudge = 0;
+    const arrowBtns = wrap.querySelectorAll(".celebrate-arrow-btn");
+    arrowBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const dir = parseInt(btn.getAttribute("data-direction") || "1", 10);
+        const cardWidth = 360;
+        currentNudge += dir * cardWidth;
+        if (track) {
+          track.style.transition = "transform 0.4s ease";
+          track.style.transform = `translate3d(${-currentNudge}px, 0, 0)`;
+          setTimeout(() => {
+            track.style.transition = "";
+          }, 450);
+        }
+      });
+    });
+
+    // "See all moments" expand toggle
+    const toggleBtn = wrap.querySelector("#celebrate-toggle-btn");
+    const masonry = wrap.querySelector("#celebrate-masonry");
+    if (toggleBtn && masonry) {
+      toggleBtn.addEventListener("click", () => {
+        const isExpanded = toggleBtn.getAttribute("aria-expanded") === "true";
+        const next = !isExpanded;
+        toggleBtn.setAttribute("aria-expanded", String(next));
+        masonry.setAttribute("aria-hidden", String(!next));
+
+        if (next) {
+          masonry.classList.add("is-open");
+          masonry.querySelectorAll(".rv").forEach((el) => {
+            el.classList.add("in");
+          });
+        } else {
+          masonry.classList.remove("is-open");
+        }
+      });
+    }
+
+    // Filter chips logic
+    const filterChips = wrap.querySelectorAll(".celebrate-filter-chip");
+    const masonryCards = wrap.querySelectorAll(".celebrate-masonry-card");
+
+    filterChips.forEach((chip) => {
+      chip.addEventListener("click", () => {
+        filterChips.forEach((c) => c.classList.remove("is-active"));
+        chip.classList.add("is-active");
+
+        const filter = chip.getAttribute("data-filter") || "all";
+
+        masonryCards.forEach((card) => {
+          const cardCat = card.getAttribute("data-category") || "milestones";
+          if (filter === "all" || cardCat === filter) {
+            card.style.display = "block";
+            setTimeout(() => {
+              card.style.opacity = "1";
+            }, 30);
+          } else {
+            card.style.opacity = "0";
+            card.style.display = "none";
+          }
+        });
+      });
+    });
+
+    // Performance: Pause marquee when section is off screen
+    if ("IntersectionObserver" in window) {
+      const secObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            wrap.classList.add("celebrate-offscreen");
+          } else {
+            wrap.classList.remove("celebrate-offscreen");
+          }
+        });
+      }, { threshold: 0.05 });
+
+      secObserver.observe(wrap);
+    }
+  })();
+</script>
