@@ -1,0 +1,738 @@
+---
+import { studioGallery, type StudioGalleryItem } from '../../data/studioGallery';
+
+interface Props {
+  items?: StudioGalleryItem[];
+}
+
+const { items = studioGallery } = Astro.props;
+
+// Filter into raw row1 and row2
+const rawRow1 = items.filter((_, i) => i % 2 === 0);
+const rawRow2 = items.filter((_, i) => i % 2 !== 0);
+
+// Ensure a row has enough items to span > 2500px before duplicating for seamless infinite loop on 1440px and 1920px displays
+function fillRow(row: StudioGalleryItem[], minCount = 8) {
+  if (!row.length) return [];
+  let filled = [...row];
+  while (filled.length < minCount) {
+    filled = filled.concat(row);
+  }
+  return filled;
+}
+
+const row1 = fillRow(rawRow1, 8);
+const row2 = fillRow(rawRow2, 8);
+const mobileItems = fillRow(items, 8);
+
+// Pre-serialize items for lightbox triggers
+const jsonItems = JSON.stringify(items);
+---
+
+<div class="studio-gallery-wrapper" data-gallery-items={jsonItems}>
+  <!-- Top bar: item count and accessible WCAG 2.2.2 pause toggle -->
+  <div class="studio-gallery-controls">
+    <div class="studio-gallery-meta">
+      <span class="studio-gallery-count">{items.length} photos & videos</span>
+      <span class="studio-gallery-dot" aria-hidden="true">·</span>
+      <span class="studio-gallery-hint">Hover or swipe to explore</span>
+    </div>
+    <button
+      type="button"
+      class="studio-gallery-pause-btn"
+      aria-label="Pause gallery animation"
+      data-paused="false"
+    >
+      <span class="studio-gallery-pause-icon" aria-hidden="true">
+        <svg class="icon-pause" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+        <svg class="icon-play" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+      </span>
+      <span class="studio-gallery-pause-label">Pause</span>
+    </button>
+  </div>
+
+  <!-- DESKTOP DUAL-ROW MARQUEE -->
+  <div class="studio-gallery-desktop" aria-label="Studio up close gallery">
+    <!-- Row 1: Leftward infinite marquee -->
+    <div class="studio-gallery-row studio-gallery-row--1" style={`--duration: ${Math.max(28, row1.length * 5)}s;`}>
+      <div class="studio-gallery-track studio-gallery-track--left">
+        <div class="studio-gallery-group">
+          {row1.map((item, idx) => {
+            const globalIndex = items.indexOf(item);
+            return (
+              <figure
+                class={`studio-gallery-card studio-gallery-card--${item.size || 'standard'}`}
+                data-index={globalIndex}
+                role="button"
+                tabindex="0"
+                aria-label={`View ${item.caption} full screen`}
+              >
+                {item.type === "video" ? (
+                  <div class="studio-gallery-video-wrap">
+                    <video
+                      src={item.src}
+                      poster={item.poster}
+                      muted
+                      loop
+                      playsinline
+                      preload="none"
+                      class="studio-gallery-video"
+                    ></video>
+                    <div class="studio-gallery-play-badge" aria-hidden="true">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="7 4 19 12 7 20 7 4"></polygon></svg>
+                    </div>
+                  </div>
+                ) : (
+                  <img
+                    src={item.src}
+                    alt={item.alt}
+                    loading={idx < 3 ? "eager" : "lazy"}
+                    decoding="async"
+                    class="studio-gallery-img"
+                  />
+                )}
+                <figcaption class="studio-gallery-caption">
+                  <span>{item.caption}</span>
+                </figcaption>
+              </figure>
+            );
+          })}
+        </div>
+        <!-- Cloned track for 100% seamless infinite loop (aria-hidden) -->
+        <div class="studio-gallery-group" aria-hidden="true">
+          {row1.map((item) => {
+            const globalIndex = items.indexOf(item);
+            return (
+              <figure
+                class={`studio-gallery-card studio-gallery-card--${item.size || 'standard'}`}
+                data-index={globalIndex}
+                tabindex="-1"
+              >
+                {item.type === "video" ? (
+                  <div class="studio-gallery-video-wrap">
+                    <video
+                      src={item.src}
+                      poster={item.poster}
+                      muted
+                      loop
+                      playsinline
+                      preload="none"
+                      class="studio-gallery-video"
+                    ></video>
+                    <div class="studio-gallery-play-badge" aria-hidden="true">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="7 4 19 12 7 20 7 4"></polygon></svg>
+                    </div>
+                  </div>
+                ) : (
+                  <img
+                    src={item.src}
+                    alt={item.alt}
+                    loading="lazy"
+                    decoding="async"
+                    class="studio-gallery-img"
+                  />
+                )}
+                <figcaption class="studio-gallery-caption">
+                  <span>{item.caption}</span>
+                </figcaption>
+              </figure>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2: Rightward infinite marquee -->
+    <div class="studio-gallery-row studio-gallery-row--2" style={`--duration: ${Math.max(28, row2.length * 5)}s;`}>
+      <div class="studio-gallery-track studio-gallery-track--right">
+        <div class="studio-gallery-group">
+          {row2.map((item, idx) => {
+            const globalIndex = items.indexOf(item);
+            return (
+              <figure
+                class={`studio-gallery-card studio-gallery-card--${item.size || 'standard'}`}
+                data-index={globalIndex}
+                role="button"
+                tabindex="0"
+                aria-label={`View ${item.caption} full screen`}
+              >
+                {item.type === "video" ? (
+                  <div class="studio-gallery-video-wrap">
+                    <video
+                      src={item.src}
+                      poster={item.poster}
+                      muted
+                      loop
+                      playsinline
+                      preload="none"
+                      class="studio-gallery-video"
+                    ></video>
+                    <div class="studio-gallery-play-badge" aria-hidden="true">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="7 4 19 12 7 20 7 4"></polygon></svg>
+                    </div>
+                  </div>
+                ) : (
+                  <img
+                    src={item.src}
+                    alt={item.alt}
+                    loading={idx < 3 ? "eager" : "lazy"}
+                    decoding="async"
+                    class="studio-gallery-img"
+                  />
+                )}
+                <figcaption class="studio-gallery-caption">
+                  <span>{item.caption}</span>
+                </figcaption>
+              </figure>
+            );
+          })}
+        </div>
+        <div class="studio-gallery-group" aria-hidden="true">
+          {row2.map((item) => {
+            const globalIndex = items.indexOf(item);
+            return (
+              <figure
+                class={`studio-gallery-card studio-gallery-card--${item.size || 'standard'}`}
+                data-index={globalIndex}
+                tabindex="-1"
+              >
+                {item.type === "video" ? (
+                  <div class="studio-gallery-video-wrap">
+                    <video
+                      src={item.src}
+                      poster={item.poster}
+                      muted
+                      loop
+                      playsinline
+                      preload="none"
+                      class="studio-gallery-video"
+                    ></video>
+                    <div class="studio-gallery-play-badge" aria-hidden="true">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="7 4 19 12 7 20 7 4"></polygon></svg>
+                    </div>
+                  </div>
+                ) : (
+                  <img
+                    src={item.src}
+                    alt={item.alt}
+                    loading="lazy"
+                    decoding="async"
+                    class="studio-gallery-img"
+                  />
+                )}
+                <figcaption class="studio-gallery-caption">
+                  <span>{item.caption}</span>
+                </figcaption>
+              </figure>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOBILE SINGLE-ROW MARQUEE (78vw wide cards, smooth swipe, snap) -->
+  <div class="studio-gallery-mobile" aria-label="Studio gallery mobile scroller">
+    <div class="studio-gallery-mobile-scroll" style={`--duration: ${Math.max(28, mobileItems.length * 4)}s;`}>
+      <div class="studio-gallery-mobile-track">
+        <div class="studio-gallery-mobile-group">
+          {mobileItems.map((item, idx) => {
+            const globalIndex = items.indexOf(item);
+            return (
+              <figure
+                class="studio-gallery-card studio-gallery-card--mobile"
+                data-index={globalIndex}
+                role="button"
+                tabindex="0"
+                aria-label={`View ${item.caption} full screen`}
+              >
+                {item.type === "video" ? (
+                  <div class="studio-gallery-video-wrap">
+                    <video
+                      src={item.src}
+                      poster={item.poster}
+                      muted
+                      loop
+                      playsinline
+                      preload="none"
+                      class="studio-gallery-video"
+                    ></video>
+                    <div class="studio-gallery-play-badge" aria-hidden="true">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="7 4 19 12 7 20 7 4"></polygon></svg>
+                    </div>
+                  </div>
+                ) : (
+                  <img
+                    src={item.src}
+                    alt={item.alt}
+                    loading={idx < 2 ? "eager" : "lazy"}
+                    decoding="async"
+                    class="studio-gallery-img"
+                  />
+                )}
+                <figcaption class="studio-gallery-caption">
+                  <span>{item.caption}</span>
+                </figcaption>
+              </figure>
+            );
+          })}
+        </div>
+        <div class="studio-gallery-mobile-group" aria-hidden="true">
+          {mobileItems.map((item) => {
+            const globalIndex = items.indexOf(item);
+            return (
+              <figure
+                class="studio-gallery-card studio-gallery-card--mobile"
+                data-index={globalIndex}
+                tabindex="-1"
+              >
+                {item.type === "video" ? (
+                  <div class="studio-gallery-video-wrap">
+                    <video
+                      src={item.src}
+                      poster={item.poster}
+                      muted
+                      loop
+                      playsinline
+                      preload="none"
+                      class="studio-gallery-video"
+                    ></video>
+                    <div class="studio-gallery-play-badge" aria-hidden="true">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="7 4 19 12 7 20 7 4"></polygon></svg>
+                    </div>
+                  </div>
+                ) : (
+                  <img
+                    src={item.src}
+                    alt={item.alt}
+                    loading="lazy"
+                    decoding="async"
+                    class="studio-gallery-img"
+                  />
+                )}
+                <figcaption class="studio-gallery-caption">
+                  <span>{item.caption}</span>
+                </figcaption>
+              </figure>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Scoped styles strictly prefixed with .studio-gallery-* */
+  .studio-gallery-wrapper {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    margin-top: 36px;
+    overflow: hidden;
+    padding: 10px 0 20px;
+  }
+
+  .studio-gallery-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto 20px;
+    padding: 0 clamp(20px, 6vw, 80px);
+    box-sizing: border-box;
+  }
+
+  .studio-gallery-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13.5px;
+    color: #5d6370;
+    font-weight: 600;
+  }
+
+  .studio-gallery-count {
+    color: #16181d;
+    font-weight: 700;
+  }
+
+  .studio-gallery-dot {
+    opacity: 0.5;
+  }
+
+  .studio-gallery-pause-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #fff;
+    border: 1px solid #ecedf0;
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #16181d;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    transition: background 0.2s, border-color 0.2s, transform 0.2s;
+  }
+
+  .studio-gallery-pause-btn:hover {
+    background: #f8f9fa;
+    border-color: #d1d5db;
+    transform: translateY(-1px);
+  }
+
+  .studio-gallery-pause-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f26a1b;
+  }
+
+  /* Desktop Dual-Row Marquee */
+  .studio-gallery-desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    mask-image: linear-gradient(90deg, transparent 0%, #000 clamp(20px, 5vw, 80px), #000 calc(100% - clamp(20px, 5vw, 80px)), transparent 100%);
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 clamp(20px, 5vw, 80px), #000 calc(100% - clamp(20px, 5vw, 80px)), transparent 100%);
+  }
+
+  .studio-gallery-row {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .studio-gallery-track {
+    display: flex;
+    width: max-content;
+    will-change: transform;
+  }
+
+  .studio-gallery-track--left {
+    animation: studioMarqueeLeft var(--duration, 40s) linear infinite;
+  }
+
+  .studio-gallery-track--right {
+    animation: studioMarqueeRight var(--duration, 40s) linear infinite;
+  }
+
+  /* Pause on hover */
+  .studio-gallery-wrapper:hover .studio-gallery-track,
+  .studio-gallery-wrapper:hover .studio-gallery-mobile-track {
+    animation-play-state: paused;
+  }
+
+  /* Paused state when toggled */
+  .studio-gallery-wrapper[data-paused="true"] .studio-gallery-track,
+  .studio-gallery-wrapper[data-paused="true"] .studio-gallery-mobile-track {
+    animation-play-state: paused !important;
+  }
+
+  .studio-gallery-group {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding-right: 18px;
+    flex-shrink: 0;
+  }
+
+  /* Cards styling */
+  .studio-gallery-card {
+    position: relative;
+    margin: 0;
+    border-radius: 22px;
+    overflow: hidden;
+    background: #14161a;
+    box-shadow: 0 16px 36px -12px rgba(0, 0, 0, 0.14);
+    height: clamp(230px, 18vw, 280px);
+    flex-shrink: 0;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .studio-gallery-card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 24px 50px -12px rgba(0, 0, 0, 0.28);
+    z-index: 10;
+  }
+
+  .studio-gallery-card--wide {
+    width: clamp(360px, 26vw, 430px);
+  }
+
+  .studio-gallery-card--tall {
+    width: clamp(200px, 15vw, 240px);
+  }
+
+  .studio-gallery-card--square {
+    width: clamp(230px, 18vw, 280px);
+  }
+
+  .studio-gallery-card--standard {
+    width: clamp(290px, 22vw, 350px);
+  }
+
+  .studio-gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .studio-gallery-card:hover .studio-gallery-img {
+    transform: scale(1.08);
+  }
+
+  .studio-gallery-video-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #0f1115;
+  }
+
+  .studio-gallery-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .studio-gallery-card:hover .studio-gallery-video {
+    transform: scale(1.06);
+  }
+
+  .studio-gallery-play-badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: rgba(18, 20, 24, 0.65);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    pointer-events: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .studio-gallery-caption {
+    position: absolute;
+    left: 14px;
+    bottom: 14px;
+    z-index: 3;
+    pointer-events: none;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .studio-gallery-caption span {
+    display: inline-block;
+    background: rgba(18, 20, 24, 0.68);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 999px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    white-space: nowrap;
+  }
+
+  .studio-gallery-card:hover .studio-gallery-caption {
+    transform: translateY(-4px);
+  }
+
+  /* Keyframe animations */
+  @keyframes studioMarqueeLeft {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+
+  @keyframes studioMarqueeRight {
+    from {
+      transform: translate3d(-50%, 0, 0);
+    }
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  /* Mobile layout */
+  .studio-gallery-mobile {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .studio-gallery-desktop {
+      display: none;
+    }
+
+    .studio-gallery-mobile {
+      display: block;
+      mask-image: linear-gradient(90deg, transparent 0%, #000 16px, #000 calc(100% - 16px), transparent 100%);
+      -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 16px, #000 calc(100% - 16px), transparent 100%);
+    }
+
+    .studio-gallery-mobile-scroll {
+      width: 100%;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .studio-gallery-mobile-scroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .studio-gallery-mobile-track {
+      display: flex;
+      width: max-content;
+      animation: studioMarqueeLeft var(--duration, 45s) linear infinite;
+    }
+
+    .studio-gallery-mobile-group {
+      display: flex;
+      gap: 14px;
+      padding-right: 14px;
+    }
+
+    .studio-gallery-card--mobile {
+      width: 78vw;
+      max-width: 320px;
+      height: 360px;
+      scroll-snap-align: center;
+      border-radius: 20px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .studio-gallery-track--left,
+    .studio-gallery-track--right,
+    .studio-gallery-mobile-track {
+      animation: none !important;
+    }
+
+    .studio-gallery-desktop {
+      overflow-x: auto;
+      scrollbar-width: thin;
+    }
+
+    .studio-gallery-pause-btn {
+      display: none;
+    }
+  }
+</style>
+
+<script is:inline>
+  (() => {
+    const wrap = document.querySelector(".studio-gallery-wrapper");
+    if (!wrap) return;
+
+    let items = [];
+    try {
+      items = JSON.parse(wrap.getAttribute("data-gallery-items") || "[]");
+    } catch (e) {
+      items = [];
+    }
+
+    // Lightbox click delegation
+    wrap.addEventListener("click", (e) => {
+      const card = e.target.closest(".studio-gallery-card");
+      if (!card) return;
+      const index = parseInt(card.getAttribute("data-index") || "0", 10);
+      if (typeof window.__openLifeLightbox === "function") {
+        window.__openLifeLightbox(items, index, card);
+      }
+    });
+
+    // Keyboard trigger (Enter / Space)
+    wrap.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        const card = e.target.closest(".studio-gallery-card");
+        if (card) {
+          e.preventDefault();
+          const index = parseInt(card.getAttribute("data-index") || "0", 10);
+          if (typeof window.__openLifeLightbox === "function") {
+            window.__openLifeLightbox(items, index, card);
+          }
+        }
+      }
+    });
+
+    // Pause / Resume toggle button
+    const pauseBtn = wrap.querySelector(".studio-gallery-pause-btn");
+    if (pauseBtn) {
+      pauseBtn.addEventListener("click", () => {
+        const isPaused = wrap.getAttribute("data-paused") === "true";
+        const nextState = !isPaused;
+        wrap.setAttribute("data-paused", String(nextState));
+        pauseBtn.setAttribute("data-paused", String(nextState));
+        pauseBtn.setAttribute("aria-label", nextState ? "Resume gallery animation" : "Pause gallery animation");
+
+        const iconPause = pauseBtn.querySelector(".icon-pause");
+        const iconPlay = pauseBtn.querySelector(".icon-play");
+        const label = pauseBtn.querySelector(".studio-gallery-pause-label");
+
+        if (iconPause && iconPlay) {
+          iconPause.style.display = nextState ? "none" : "block";
+          iconPlay.style.display = nextState ? "block" : "none";
+        }
+        if (label) {
+          label.textContent = nextState ? "Resume" : "Pause";
+        }
+      });
+    }
+
+    // Autoplay inline video on scroll into view
+    const videos = wrap.querySelectorAll(".studio-gallery-video");
+    if (videos.length && "IntersectionObserver" in window) {
+      const vObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          const vid = entry.target;
+          if (entry.isIntersecting) {
+            vid.play().catch(() => {});
+          } else {
+            vid.pause();
+          }
+        });
+      }, { threshold: 0.25 });
+
+      videos.forEach((v) => vObserver.observe(v));
+    }
+
+    // Performance: Pause marquee when section is off screen
+    if ("IntersectionObserver" in window) {
+      const secObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            wrap.classList.add("studio-gallery-offscreen");
+          } else {
+            wrap.classList.remove("studio-gallery-offscreen");
+          }
+        });
+      }, { threshold: 0.05 });
+
+      secObserver.observe(wrap);
+    }
+  })();
+</script>
