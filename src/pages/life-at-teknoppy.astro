@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import StudioGallery from '../components/life/StudioGallery.astro';
 import Celebrations from '../components/life/Celebrations.astro';
 import LifeLightbox from '../components/life/LifeLightbox.astro';
@@ -200,8 +202,6 @@ const growItems = [
   description={description}
   canonical="https://www.teknoppy.com/life-at-teknoppy/"
   image="/images/life/teknoppy-core-team-portrait.jpg"
-  hideBottomBar={true}
-  hideFloatingCta={true}
 >
   <Fragment slot="head">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -212,15 +212,11 @@ const growItems = [
     <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   </Fragment>
 
+  <Header forceSolidBg={true} />
+
   <div class="life-container">
     <!-- Top Progress Bar -->
     <div class="bar" id="bar"></div>
-
-    <!-- Reference Navigation -->
-    <nav class="life-nav">
-      <a href="/"><b>Teknoppy</b></a>
-      <a class="q" href="/request-a-quote/">Get free quote</a>
-    </nav>
 
     <main class="life-main">
       <!-- 1. HERO SECTION -->
@@ -488,14 +484,11 @@ const growItems = [
       </section>
     </main>
 
-    <!-- Reference Footer -->
-    <footer class="f">
-      © 2026 Teknoppy · Kaithakal Building, Thykoodam, Vyttila, Kochi 682019 · +91 6282249224
-    </footer>
-
     <!-- Shared Fullscreen Lightbox for Life Galleries -->
     <LifeLightbox />
   </div>
+
+  <Footer />
 </Layout>
 
 <style>
@@ -526,9 +519,6 @@ const growItems = [
 .bar { position: fixed; top: 0; left: 0; height: 3px; width: 100%; background: var(--brand); transform-origin: 0; transform: scaleX(var(--p, 0)); z-index: 99; }
 .rv { opacity: 0; transform: translateY(34px); filter: blur(6px); transition: all 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) var(--d, 0s); }
 .rv.in { opacity: 1; transform: none; filter: none; }
-.life-nav { position: absolute; top: 0; left: 0; right: 0; display: flex; justify-content: space-between; align-items: center; padding: 20px clamp(20px, 6vw, 80px); z-index: 20; }
-.life-nav b { font-family: var(--hd); font-size: 24px; font-weight: 800; }
-.life-nav a.q { background: var(--ink); color: #fff; padding: 10px 20px; border-radius: 99px; font-weight: 600; font-size: 14px; }
 .hero { position: relative; min-height: 100svh; display: grid; grid-template-columns: 1.05fr 1fr; align-items: center; gap: 30px; padding: 110px clamp(20px, 6vw, 80px) 60px; max-width: 1400px; margin: auto; }
 .blob { position: absolute; border-radius: 50%; filter: blur(70px); opacity: 0.25; animation: fl 14s ease-in-out infinite; }
 .b1 { width: 380px; height: 380px; background: var(--brand); top: 8%; left: -6%; }
@@ -662,7 +652,6 @@ figcaption { position: absolute; left: 16px; bottom: 14px; z-index: 2; color: #f
 .vi div:hover { transform: translateX(8px); }
 .vi b { font-family: var(--hd); font-size: 20px; display: block; }
 .vi span { color: var(--mute); font-size: 15px; }
-footer.f { text-align: center; color: var(--mute); font-size: 14px; padding: 0 20px 40px; }
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; text-align: center; padding-top: 90px; }
   .hero .cta, .lead { margin-inline: auto; justify-content: center; }
