@@ -28,7 +28,7 @@
   "_socialNote": "Empty until Teknoppy's real profile URLs are supplied. Every consumer (Footer.astro, contact-us.astro, certifications.astro) skips a blank value, so no dead link renders and no fake sameAs is emitted in the Organization schema. Paste the live URLs in and the icons and schema appear automatically.",
   "social": {
     "twitter": "",
-    "linkedin": "",
-    "instagram": ""
+    "linkedin": "https://www.linkedin.com/company/teknoppy/",
+    "instagram": "https://www.instagram.com/teknoppy/"
   }
 }
