@@ -184,5 +184,48 @@
   "ctaHeadline": "Looking for an SEO partner who structures a site around how procurement buyers actually search?",
   "ctaPhoneText": "Teknoppy provides SEO strategy and site architecture services for industrial and manufacturing businesses operating across multiple markets. Call +91 6282249224",
   "ctaPhoneTel": "+916282249224",
-  "approach": "Topical & Entity SEO, Zero Cannibalization Structure"
+  "approach": "Topical & Entity SEO, Zero Cannibalization Structure",
+  "rankingKeywords": {
+    "lead": "Product-and-location keywords across the UAE, Bahrain and Qatar, each mapped to the page that owns it.",
+    "groups": [
+      {
+        "title": "Target keywords — Pipes & Flanges, UAE & GCC",
+        "badge": "One keyword per page",
+        "hasMap": false,
+        "note": "Product and location targeting across the UAE, Bahrain, and Qatar industrial procurement markets.",
+        "rows": [
+          {
+            "keyword": "pipe supplier in Sharjah",
+            "page": "Sharjah pipes page",
+            "position": "Target"
+          },
+          {
+            "keyword": "pipe supplier in Dubai & UAE",
+            "page": "Dubai & UAE pipes page",
+            "position": "Target"
+          },
+          {
+            "keyword": "trusted flanges supplier in UAE",
+            "page": "Flanges page",
+            "position": "Target"
+          },
+          {
+            "keyword": "pipe supplier in Bahrain",
+            "page": "Bahrain pipes page",
+            "position": "Target"
+          },
+          {
+            "keyword": "flanges supplier in Bahrain",
+            "page": "Bahrain flanges page",
+            "position": "Target"
+          },
+          {
+            "keyword": "pipe supplier in Qatar",
+            "page": "Qatar pipes page",
+            "position": "Target"
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -297,6 +297,9 @@
       "h2": "Our SEO Case Studies — Proven Results",
       "items": [
         {
+          "client": "Olives Resort",
+          "image": "/case-studies/olivesresort.webp",
+          "imageAlt": "Olives Boutique Resort Digital Marketing Case Study",
           "title": "Case Study 1 — Olives Resort: SEO That Converts Search Visibility Into Direct Bookings",
           "intro": [
             {
@@ -317,6 +320,206 @@
           "quote": "We now rank at the top of Google for our keywords and get many direct booking calls due to better visibility. Thank you Teknoppy for all the support.",
           "author": "— Biju Thomas, CEO, Olives Resort, Wayanad",
           "links": "Full case study: <a href=\"/case-studies/olives-boutique-resort-digital-marketing/\" class=\"text-primary font-semibold hover:underline\">Read the full Olives Resort case study →</a>"
+        },
+        {
+          "client": "Koojo Custom Powder Coating",
+          "image": "/case-studies/koojopowdercoating.webp",
+          "imageAlt": "Koojo Custom Powder Coating SEO Services Case Study",
+          "title": "Case Study 2 — Koojo Custom Powder Coating: Eliminating Keyword Cannibalization for a GTA Industrial Finisher",
+          "intro": [
+            {
+              "text": "Koojo Custom Powder Coating is an industrial metal finisher based in Milton, Ontario, serving manufacturing and automotive clients across the Greater Toronto Area (GTA) since 2012. Prior to Teknoppy's engagement, two competing pages targeted near-identical industrial powder coating keywords and a single location page attempted to rank for four separate cities at once — causing the site to compete against itself."
+            }
+          ],
+          "approach": [
+            "Competitor keyword research benchmarked against three direct GTA industrial powder coaters.",
+            "Structural consolidation merging two conflicting industrial pages into a single authoritative pillar page.",
+            "Dedicated city landing pages for Milton, Guelph, Cambridge, and Hamilton replacing a diluted combined page.",
+            "A repeatable 10-section content blueprint mapped across 48 total site pages."
+          ],
+          "results": [
+            "Page 1 and #1 rankings for high-intent B2B powder coating search terms across Milton and the GTA.",
+            "Complete elimination of internal keyword cannibalization and self-competition.",
+            "A clean entity structure that both traditional Google search and generative AI answer engines resolve accurately."
+          ],
+          "quote": "Teknoppy resolved the internal keyword conflicts that were diluting our rankings. The structured site architecture and dedicated city pages gave us clear visibility across our core GTA markets.",
+          "author": "— Management, Koojo Custom Powder Coating, Milton, Ontario",
+          "links": "Full case study: <a href=\"/case-studies/koojo-custom-powder-coating-seo/\" class=\"text-primary font-semibold hover:underline\">Read the full Koojo Custom Powder Coating case study →</a>"
+        },
+        {
+          "client": "Leema Engineering Works",
+          "image": "/case-studies/leemaeng.webp",
+          "imageAlt": "Leema Engineering Works SEO Case Study",
+          "title": "Case Study 3 — Leema Engineering Works: Topical and Entity SEO Restructure Across 66 Pages and 15 GCC Locations",
+          "intro": [
+            {
+              "text": "Leema Engineering Works (LEW) is an ISO 9001:2015 certified supplier of pipes, fittings, flanges, and valves based in Sharjah, UAE, backed by 50+ years of industrial manufacturing experience. Serving seven industrial sectors across the GCC, LEW required an entity-based SEO architecture to establish high-intent search visibility for procurement engineers in Saudi Arabia, UAE, and Bahrain without duplicate content risks."
+            }
+          ],
+          "approach": [
+            "Topical entity mapping establishing unambiguous relationships across pipes, fittings, and flanges.",
+            "15 dedicated GCC location pages capturing local procurement search queries across the UAE, Saudi Arabia, and Bahrain.",
+            "Explicit non-China origin positioning directly aligned with high-spec GCC engineering requirements.",
+            "Systematic technical SEO, structured data schemas (Organization, TechArticle), and procurement vetting signals."
+          ],
+          "results": [
+            "Dominant search presence across UAE and GCC industrial precision engineering and piping searches.",
+            "Substantial rise in qualified B2B RFQs and multi-ton supply inquiries from regional contractors.",
+            "Durable Page-1 rankings across both primary regional hubs and specialized engineering verticals."
+          ],
+          "quote": "Our website now communicates directly with industrial procurement buyers across the GCC. The structured location pages and technical clarity have driven substantial RFQs from Saudi Arabia and the UAE.",
+          "author": "— Engineering Leadership, Leema Engineering Works, UAE",
+          "links": "Full case study: <a href=\"/case-studies/leema-engineering-works-seo/\" class=\"text-primary font-semibold hover:underline\">Read the full Leema Engineering Works case study →</a>"
+        },
+        {
+          "client": "RJ Visakh — PMP Trainer",
+          "image": "/case-studies/visakh-rj-seo.webp",
+          "imageAlt": "RJ Visakh PMP Trainer SEO Case Study",
+          "title": "Case Study 4 — RJ Visakh: Entity SEO Strategy and Verifiable E-E-A-T Architecture for a PMP Trainer in India",
+          "intro": [
+            {
+              "text": "RJ Visakh is an authorized PMP trainer and professional educator with 15+ years of experience and 10,000+ professionals mentored. Competing against well-funded ed-tech aggregators, he needed an authoritative personal-brand entity structure to rank organically for high-intent PMP certification and project management training queries in India."
+            }
+          ],
+          "approach": [
+            "Entity disambiguation unifying brand signals, Lee Lambert co-founder endorsements, and credentials into Google's Knowledge Graph.",
+            "Intent-segmented page architecture addressing learning stages, exam prep, and PMC Conclave event validation.",
+            "Evidence-backed E-E-A-T content highlighting a verified 99% pass rate and verifiable student proof.",
+            "Structured FAQ schemas and semantic content layers optimized for Google AI Overviews and answer engines."
+          ],
+          "results": [
+            "#1 and Page-1 rankings across competitive PMP trainer and certification terms in India.",
+            "Continuous organic lead generation filling monthly training cohorts without paid ad dependency.",
+            "Rich snippet visibility and entity authority recognition across Google search results."
+          ],
+          "quote": "Teknoppy positioned my training practice as the premier PMP authority in India. Ranking organically for competitive certification terms has consistently filled our monthly training cohorts.",
+          "author": "— RJ Visakh, Authorized PMP Trainer & Mindset Alchemist, India",
+          "links": "Full case study: <a href=\"/case-studies/visakh-rj-pmp-trainer-seo/\" class=\"text-primary font-semibold hover:underline\">Read the full RJ Visakh case study →</a>"
+        },
+        {
+          "client": "Roja Houseboats Alleppey",
+          "image": "/case-studies/roja-houseboats.webp",
+          "imageAlt": "Roja Houseboats Alleppey SEO Case Study",
+          "title": "Case Study 5 — Roja Houseboats: Local Entity SEO and Audience-Specific Booking Pages in Alleppey",
+          "intro": [
+            {
+              "text": "Roja Houseboats is a family-run houseboat cruise operator in Alappuzha, Kerala, operating in one of India's most competitive local tourism markets. With travel platforms and aggregator OTAs dominating broad keyword searches, they engaged Teknoppy to build direct organic visibility and convert high-intent travelers into direct inquiries."
+            }
+          ],
+          "approach": [
+            "Local entity disambiguation tying fleet details, boarding points, and routes into Google Local Pack and Maps.",
+            "Audience-segmented landing pages tailored specifically for couples/honeymoons (1-bedroom) and families (3-bedroom).",
+            "Trust-first content highlighting authentic family ownership, local crew experience, and transparent itinerary specs.",
+            "Answer-first FAQ architecture optimized for travelers researching Alleppey cruise logistics on AI and mobile."
+          ],
+          "results": [
+            "Top 3 Google Local 3-Pack and organic Page-1 rankings for Alleppey houseboat cruise keywords.",
+            "Substantial surge in direct phone and WhatsApp booking inquiries, bypassing OTA commission fees.",
+            "Consistent year-round organic booking pipeline spanning peak, shoulder, and off-peak seasons."
+          ],
+          "quote": "Direct bookings have transformed our business margins. We now rank at the top of Google for Alleppey houseboat searches, and travelers call us directly instead of going through third-party booking portals.",
+          "author": "— Operations Team, Roja Houseboats, Alleppey, Kerala",
+          "links": "Full case study: <a href=\"/case-studies/roja-houseboats-alleppey-seo/\" class=\"text-primary font-semibold hover:underline\">Read the full Roja Houseboats case study →</a>"
+        },
+        {
+          "client": "Edamanasserry Spine Hospital",
+          "image": "/case-studies/edamanasserry-spine-hospital.webp",
+          "imageAlt": "Edamanasserry Spine Hospital SEO Case Study",
+          "title": "Case Study 6 — Edamanasserry Spine Hospital: Ayurvedic Hospital SEO and Doctor-Backed E-E-A-T Architecture",
+          "intro": [
+            {
+              "text": "Edamanasserry Spine Hospital is a multi-generational Ayurvedic hospital specializing in spine and musculoskeletal disorders in Tamil Nadu and Kerala. Operating in Google's strict Your Money or Your Life (YMYL) healthcare vertical, they required an evidence-backed medical SEO architecture that adhered strictly to Google's E-E-A-T medical search guidelines."
+            }
+          ],
+          "approach": [
+            "Rigorous medical E-E-A-T implementation with doctor-authored treatment pages and verified medical credentials.",
+            "Condition-specific content hubs for 17 distinct spinal ailments including sciatica, slip disc, and spondylosis.",
+            "MedicalWebPage, Hospital, and Physician schema markup establishing unambiguous institutional trust.",
+            "Answer-first clinical explanations structured for featured snippets and AI healthcare search queries."
+          ],
+          "results": [
+            "Dominant Google rankings across non-surgical spine care and Ayurvedic orthopedic keywords.",
+            "Marked increase in qualified patient consultation bookings from across South India and international NRI patients.",
+            "Complete algorithmic stability across Google Core and Medical Updates due to verified E-E-A-T compliance."
+          ],
+          "quote": "In healthcare, credibility is paramount. Teknoppy structured our clinical knowledge so that both search engines and prospective patients clearly see our hospital's doctor-led authenticity.",
+          "author": "— Medical Director, Edamanasserry Spine Hospital",
+          "links": "Full case study: <a href=\"/case-studies/edamanasserry-spine-hospital-seo/\" class=\"text-primary font-semibold hover:underline\">Read the full Edamanasserry Spine Hospital case study →</a>"
+        },
+        {
+          "client": "Creative Web Design Qatar",
+          "image": "/case-studies/webdesignqa.webp",
+          "imageAlt": "Creative Web Design Qatar SEO Case Study",
+          "title": "Case Study 7 — Creative Web Design Qatar: Ongoing SEO and Content Strategy for a GCC Agency",
+          "intro": [
+            {
+              "text": "Creative Web Design Qatar is a prominent Doha-based web design and digital agency operating since 2005. In a crowded agency landscape where organic rankings directly signal agency competence to enterprise clients, they partnered with Teknoppy to maintain dominant search visibility across Qatar and the GCC."
+            }
+          ],
+          "approach": [
+            "Strategic backlink acquisition program building authoritative domain signals from regional and industry sources.",
+            "Weekly long-form blog editorial calendar addressing enterprise web standards, UX, and GCC digital market trends.",
+            "Continuous Google Business Profile optimization and citation management for Doha map pack supremacy.",
+            "Structured monthly reporting and technical Core Web Vitals maintenance ensuring peak search performance."
+          ],
+          "results": [
+            "Consistently holding Top-3 and Page-1 positions for high-value web design and development searches in Qatar.",
+            "Sustained inflow of qualified enterprise RFQs and corporate website development leads.",
+            "Established status as one of Doha's most visible and trusted digital development agencies."
+          ],
+          "quote": "In a market like Qatar, your search visibility is the ultimate proof of your agency's capability. Teknoppy's ongoing SEO and weekly content strategy keep us consistently ahead of the competition.",
+          "author": "— Management, Creative Web Design Qatar, Doha",
+          "links": "Full case study: <a href=\"/case-studies/creative-web-design-qatar-seo-content/\" class=\"text-primary font-semibold hover:underline\">Read the full Creative Web Design Qatar case study →</a>"
+        },
+        {
+          "client": "Kerala Dayz",
+          "image": "/case-studies/keraladayz.webp",
+          "imageAlt": "Kerala Dayz SEO Case Study",
+          "title": "Case Study 8 — Kerala Dayz: SEO Strategy and GBP Cleanup for a Kochi Taxi and Tour Operator",
+          "intro": [
+            {
+              "text": "Kerala Dayz is a premier Kochi-based ground transport and tour operator providing airport transfers, tourist itineraries, and outstation trips across South India. Before Teknoppy's engagement, 3–4 duplicate Google profiles and fragmented NAP citations had depressed their GBP completeness score to 54–58/100 and caused widespread ranking cannibalization."
+            }
+          ],
+          "approach": [
+            "Complete NAP consolidation eliminating duplicate Google profiles and elevating GBP completeness to 100%.",
+            "8-pillar zero-cannibalization hub-and-spoke architecture separating routes, destinations, and fleet pages.",
+            "Local schema markup (TaxiService, TouristTrip) and transparent vehicle specification tables.",
+            "Script-verified keyword density and mobile-first call-to-action optimization for inbound travelers."
+          ],
+          "results": [
+            "#1 and Top-3 positions on Google Maps Local Pack for Kochi airport taxi and Kerala tour package searches.",
+            "Dramatic increase in direct phone and WhatsApp booking inquiries from arriving tourists.",
+            "Robust organic baseline insulating the business against seasonal tourism downturns."
+          ],
+          "quote": "Fixing our Google Business Profile and restructuring our tour pages made an immediate difference. We now receive direct taxi and tour inquiries daily from tourists searching on Google.",
+          "author": "— Managing Partner, Kerala Dayz, Kochi, Kerala",
+          "links": "Full case study: <a href=\"/case-studies/kerala-dayz-seo-services/\" class=\"text-primary font-semibold hover:underline\">Read the full Kerala Dayz case study →</a>"
+        },
+        {
+          "client": "General Tech Services",
+          "image": "/case-studies/generaltech.webp",
+          "imageAlt": "General Tech Services SEO Case Study",
+          "title": "Case Study 9 — General Tech Services: An SEO Strategy Built for 15 Calibration Disciplines Across the UAE",
+          "intro": [
+            {
+              "text": "General Tech Services is an EIAC & ENAS accredited ISO 17025 calibration laboratory and distributor for 50+ industrial brands in Dubai and Abu Dhabi. With a massive catalog spanning 15 distinct calibration disciplines, their previous single catch-all services page failed to rank for specialized industrial searches."
+            }
+          ],
+          "approach": [
+            "185-topic, 17-pillar content architecture with dedicated landing pages for each of the 15 calibration disciplines.",
+            "Systematic Google Business Profile optimization for multi-discipline technical laboratory operations in the UAE.",
+            "58-topic technical comparison and equipment guide strategy without duplicate content overlap.",
+            "B2B quotation funnels connecting technical engineers directly to ISO 17025 accredited calibration RFQs."
+          ],
+          "results": [
+            "Extensive Page-1 rankings across Dubai, Abu Dhabi, and Sharjah for industrial calibration keywords.",
+            "Measurable influx of high-value annual calibration contract RFQs from aviation and manufacturing facilities.",
+            "Firm entity recognition establishing the laboratory as an authoritative UAE metrology provider."
+          ],
+          "quote": "Teknoppy gave our 15 calibration services the precise search structure they needed. We now rank for specialized instrumentation terms that bring us direct industrial contracts.",
+          "author": "— Commercial Team, General Tech Services, UAE",
+          "links": "Full case study: <a href=\"/case-studies/general-tech-services-seo-services/\" class=\"text-primary font-semibold hover:underline\">Read the full General Tech Services case study →</a>"
         }
       ]
     },
