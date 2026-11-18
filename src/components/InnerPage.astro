@@ -944,8 +944,8 @@ const breadcrumbSchema = page.breadcrumb && {
   /**
    * Lead-form submit handling, shared by every `form` section on an InnerPage.
    *
-   * `api/contact.js` requires name, email and message. Lead-gen forms ask for
-   * things it has no column for (a website URL, a preferred slot), so anything
+   * Lead-gen forms ask for more than name, email and message (a website URL, a
+   * preferred slot), so anything
    * outside the known field set is appended to the message as "Label: value"
    * and nothing a visitor typed is dropped.
    */

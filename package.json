@@ -8,11 +8,10 @@
   "scripts": {
     "dev": "astro dev",
     "build": "npm run cms:pull && astro build",
-    "preview": "node scripts/preview.mjs",
+    "preview": "astro preview",
     "astro": "astro",
     "cms:pull": "node scripts/pull-cms.mjs",
-    "check:links": "node scripts/check-links.mjs",
-    "test:contact": "node scripts/test-contact-email.mjs"
+    "check:links": "node scripts/check-links.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^5.0.7",
