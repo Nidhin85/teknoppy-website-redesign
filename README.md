@@ -38,7 +38,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 | `npm run check:links`     | Audit every link in `dist/` after a build        |
-| `npm run test:contact`    | Send a real test enquiry through the contact form |
 
 ## 👀 Want to learn more?
 
@@ -61,53 +60,14 @@ files. Running the CMS, the content map and deployment are covered in
 
 ## ✉️ Contact form
 
-Both forms — the footer CTA and the contact page — POST JSON to `/api/contact`
-([`api/contact.js`](api/contact.js)), a Vercel serverless function that emails
-the enquiry through [Resend](https://resend.com).
+Every form posts JSON from the browser straight to
+[FormSubmit](https://formsubmit.co) at `https://formsubmit.co/ajax/sales@teknoppy.com`.
+FormSubmit emails the enquiry to **sales@teknoppy.com**, CC **sanal@teknoppy.com**
+(set per form with `_cc`, `_subject` and `_template: 'table'` in the request body).
+There is no server code and no API key.
 
-Enquiries go to **sales@teknoppy.com** with **sanal@teknoppy.com** on CC, and
-`reply_to` is set to the enquirer so hitting Reply answers them directly.
-
-### Setup
-
-The form needs exactly one secret. In **Vercel → Settings → Environment
-Variables** (Production), add:
-
-| Variable         | Required | Default                                  |
-| :--------------- | :------- | :--------------------------------------- |
-| `RESEND_API_KEY` | **yes**  | —                                        |
-| `CONTACT_FROM`   | no       | `website@teknoppy.com` (verified domain) |
-| `CONTACT_TO`     | no       | `sales@teknoppy.com`                     |
-| `CONTACT_CC`     | no       | `sanal@teknoppy.com` (`none` to disable) |
-
-Then redeploy — env vars are only picked up by a new deployment.
-
-Without `RESEND_API_KEY` the endpoint returns 500 and the forms show their
-"please call or email us" fallback. `CONTACT_TO` and `CONTACT_CC` accept
-comma-separated lists.
-
-### The sender must be on a verified domain
-
-**teknoppy.com is verified in Resend** (DKIM, SPF and MX in place), so the
-default sender `Teknoppy Website <website@teknoppy.com>` delivers to any
-recipient. Only override `CONTACT_FROM` with another address on that domain.
-
-Do not point it at Resend's shared `onboarding@resend.dev` sandbox sender. That
-address can only email the Resend account holder's own address; an enquiry to
-sales@teknoppy.com comes back **403**, the endpoint returns 502, and the form
-tells the visitor it could not send. That misconfiguration is what broke the
-live form before — it looked like "the form is not connected" from the browser,
-while the real failure was the sender address.
-
-Adding a DMARC record at `_dmarc.teknoppy.com` is recommended.
-
-### Testing it
-
-```sh
-npm run test:contact    # sends one real enquiry via Resend, reports what happened
-```
-
-Note that `npm run dev` **does not serve `/api/contact`** — Astro only serves
-`src/pages/`, while `api/` is deployed by Vercel. Submitting a form on the Astro
-dev server always fails. To exercise the form in a browser locally, use
-`vercel dev` instead, or test on a Vercel preview deployment.
+- FormSubmit answers HTTP 200 even when it refuses a post, so each form checks
+  `success === 'true'` in the JSON reply before showing thanks or redirecting.
+- The address was activated on 2026-11-18 by clicking the link FormSubmit emails
+  on the first submission. Changing the address means activating it again.
+- `PUBLIC_CONTACT_ENDPOINT` overrides the address for the forms that read it.
