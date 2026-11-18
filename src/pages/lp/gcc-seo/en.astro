@@ -1503,10 +1503,10 @@ if (auditForm) {
     };
 
     try {
-      var res = await fetch('/api/contact', {
+      var res = await fetch('https://formsubmit.co/ajax/sales@teknoppy.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify(payload)
+        body: JSON.stringify(Object.assign({}, payload, { _subject: 'New website enquiry: ' + payload.source, _cc: 'sanal@teknoppy.com', _template: 'table' }))
       });
 
       var data = null;
@@ -1516,8 +1516,8 @@ if (auditForm) {
         data = null;
       }
 
-      if (!res.ok || !data || data.ok !== true) {
-        var errorMsg = (data && data.error) ? data.error : 'Could not submit your request. Please try again.';
+      if (!res.ok || !data || String(data.success) !== 'true') {
+        var errorMsg = (data && data.message) ? data.message : 'Could not submit your request. Please try again.';
         throw new Error(errorMsg);
       }
 

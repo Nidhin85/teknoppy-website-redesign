@@ -9,10 +9,10 @@ import { contactUsSchema } from '../data/schemas/contactUsSchema';
 
 const icons: Record<string, any> = { phone: Phone, mail: Mail, map: MapPin, clock: Clock };
 
-// Submissions POST here. Defaults to the /api/contact handler that ships with
-// the site; PUBLIC_CONTACT_ENDPOINT only needs setting to point the form
+// Submissions POST here. Defaults to FormSubmit, which emails sales@ (no server needed) with
+// PUBLIC_CONTACT_ENDPOINT only needs setting to point the form
 // somewhere else.
-const formEndpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT || '/api/contact';
+const formEndpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT || 'https://formsubmit.co/ajax/sales@teknoppy.com';
 
 const fieldClass =
   "w-full bg-white border border-neutral-200 rounded-xl px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none";
@@ -314,10 +314,12 @@ const labelClass = "block text-[13px] font-black text-neutral-700 uppercase trac
           headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
           body: JSON.stringify({
             ...Object.fromEntries(new FormData(form)),
-            source: form.dataset.source || 'Website'
+            company_website: undefined,
+            source: form.dataset.source || 'Website',
+            _subject: `New website enquiry: ${form.dataset.source || 'Website'}`, _cc: 'sanal@teknoppy.com', _template: 'table'
           })
         });
-        if (!res.ok) throw new Error(String(res.status));
+        if (!res.ok || String((await res.json()).success) !== 'true') throw new Error(String(res.status)); // FormSubmit returns 200 even on refusal
         if (window.dataLayer) {
           window.dataLayer.push({
             event: 'lead_submit',

@@ -356,11 +356,12 @@ document.querySelectorAll('a[href="#enquiry"]').forEach(function(a){
       email: 'lead@teknoppy.com', // Default placeholder for lead forms where email is not in the short form
       service: svc,
       message: 'Service: ' + svc + '\nBudget: ' + bud + '\nSource: Web Design Kochi Landing Page',
-      source: 'Web Design Landing Page'
+      source: 'Web Design Landing Page',
+      _subject: 'New website enquiry: ' + 'Web Design Landing Page', _cc: 'sanal@teknoppy.com', _template: 'table'
     };
 
     try {
-      var res = await fetch('/api/contact', {
+      var res = await fetch('https://formsubmit.co/ajax/sales@teknoppy.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify(payload)
@@ -373,8 +374,8 @@ document.querySelectorAll('a[href="#enquiry"]').forEach(function(a){
         data = null;
       }
 
-      if (!res.ok || !data || data.ok !== true) {
-        var errorMsg = (data && data.error) ? data.error : 'Could not submit your request. Please try again.';
+      if (!res.ok || !data || String(data.success) !== 'true') {
+        var errorMsg = (data && data.message) ? data.message : 'Could not submit your request. Please try again.';
         throw new Error(errorMsg);
       }
 

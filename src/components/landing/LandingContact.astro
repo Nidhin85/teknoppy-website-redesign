@@ -1,5 +1,5 @@
 ---
-// Lead form — posts to /api/contact (see landing.js), which emails sales@.
+// Lead form — posts to FormSubmit (see landing.js), which emails sales@.
 import { site, tel, WA, PHONE, CLIP, MAIL } from './shared';
 
 interface Props {
@@ -17,7 +17,7 @@ interface Props {
 }
 
 const { sub, points, formTitle, submitLabel, source, service, wa, ml, redirectUrl } = Astro.props;
-const formEndpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT || '/api/contact';
+const formEndpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT || 'https://formsubmit.co/ajax/sales@teknoppy.com';
 ---
 
 <!-- ══════════ CONTACT FORM ══════════ -->

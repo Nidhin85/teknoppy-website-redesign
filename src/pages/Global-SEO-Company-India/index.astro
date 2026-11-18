@@ -4,7 +4,7 @@
  * Route: /Global-SEO-Company-India/
  * International SEO, AI SEO (AEO/GEO), multi-country ranking (USA, UK, Canada, Australia, GCC)
  * GTM Container: GTM-NHX2WJ39
- * Submission: /api/contact -> Redirect to /Global-SEO-Company-India/thank-you/
+ * Submission: FormSubmit -> Redirect to /Global-SEO-Company-India/thank-you/
  */
 ---
 <!DOCTYPE html>
@@ -1511,7 +1511,7 @@
   <script is:inline>
   /* ===== SETTINGS ===== */
   var WA='916282249224', EMAIL='sales@teknoppy.com';
-  var FORM_ENDPOINT='/api/contact';
+  var FORM_ENDPOINT='https://formsubmit.co/ajax/sales@teknoppy.com';
 
   /* ===== GLOBAL TARGETING ===== */
   var REGION='intl';
@@ -1550,7 +1550,7 @@
     });
   });
 
-  /* audit form with /api/contact integration and thank-you redirect */
+  /* audit form via FormSubmit and thank-you redirect */
   var lForm = document.getElementById('lf');
   if (lForm) {
     lForm.addEventListener('submit', async function(e){
@@ -1598,7 +1598,8 @@
         phone: phoneVal,
         service: 'Global SEO Audit (' + countryVal + ')',
         message: 'Website: ' + (websiteVal || 'Not provided') + '\nTarget Country: ' + countryVal + '\nEmail: ' + emailVal + '\nPhone: ' + (phoneVal || 'Not provided') + '\nSource: Global SEO Company India Landing Page',
-        source: 'Global SEO Company India Landing Page'
+        source: 'Global SEO Company India Landing Page',
+        _subject: 'New website enquiry: ' + 'Global SEO Company India Landing Page', _cc: 'sanal@teknoppy.com', _template: 'table'
       };
 
       try {
@@ -1611,17 +1612,12 @@
         var data = null;
         try { data = await res.json(); } catch(jsonErr) { data = null; }
 
-        if (res.ok && data && data.ok) {
+        if (res.ok && data && String(data.success) === 'true') {
           window.location.href = '/Global-SEO-Company-India/thank-you/';
           return;
         }
 
-        if (res.ok) {
-          window.location.href = '/Global-SEO-Company-India/thank-you/';
-          return;
-        }
-
-        var errorMsg = (data && data.error) ? data.error : 'Could not submit your request. Please try again or WhatsApp us directly.';
+        var errorMsg = (data && data.message) ? data.message : 'Could not submit your request. Please try again or WhatsApp us directly.';
         throw new Error(errorMsg);
       } catch (err) {
         console.error('Submission error:', err);
