@@ -49,7 +49,7 @@ const projects = needsProjects
 // Lead-gen pages carry a form. Same endpoint and same failure handling as the
 // contact page: a form that cannot reach the inbox says so rather than faking a
 // success message.
-const formEndpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT || '/api/contact';
+const formEndpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT || 'https://formsubmit.co/ajax/sales@teknoppy.com';
 const fieldClass =
   "w-full bg-white border border-neutral-200 rounded-xl px-4 py-3.5 text-neutral-900 placeholder-neutral-400 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none text-sm sm:text-base";
 const labelClass = "block text-[13px] font-black text-neutral-700 uppercase tracking-widest mb-2";
@@ -1018,9 +1018,9 @@ const breadcrumbSchema = page.breadcrumb && {
         const res = await fetch(endpoint, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify(payload)
+          body: JSON.stringify({ ...payload, _subject: `New website enquiry: ${payload.source || 'Website'}`, _cc: 'sanal@teknoppy.com', _template: 'table' })
         });
-        if (!res.ok) throw new Error(String(res.status));
+        if (!res.ok || String((await res.json()).success) !== 'true') throw new Error(String(res.status)); // FormSubmit returns 200 even on refusal
         if ((window as any).dataLayer) {
           (window as any).dataLayer.push({
             event: 'lead_submit',

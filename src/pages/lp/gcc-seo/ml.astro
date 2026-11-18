@@ -1395,10 +1395,10 @@ f.addEventListener('submit',async function(e){
   };
 
   try {
-    var res = await fetch('/api/contact', {
+    var res = await fetch('https://formsubmit.co/ajax/sales@teknoppy.com', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify(payload)
+      body: JSON.stringify(Object.assign({}, payload, { _subject: 'New website enquiry: ' + payload.source, _cc: 'sanal@teknoppy.com', _template: 'table' }))
     });
 
     var data = null;
@@ -1408,8 +1408,8 @@ f.addEventListener('submit',async function(e){
       data = null;
     }
 
-    if (!res.ok || !data || data.ok !== true) {
-      var errorMsg = (data && data.error) ? data.error : 'അഭ്യർത്ഥന സമർപ്പിക്കാൻ സാധിച്ചില്ല. ദയവായി വീണ്ടും ശ്രമിക്കുക.';
+    if (!res.ok || !data || String(data.success) !== 'true') {
+      var errorMsg = (data && data.message) ? data.message : 'അഭ്യർത്ഥന സമർപ്പിക്കാൻ സാധിച്ചില്ല. ദയവായി വീണ്ടും ശ്രമിക്കുക.';
       throw new Error(errorMsg);
     }
 

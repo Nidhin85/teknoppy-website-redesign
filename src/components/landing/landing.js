@@ -143,7 +143,7 @@ const attribution = (() => {
   return found;
 })();
 
-/* ══════════ Lead form → /api/contact ══════════ */
+/* ══════════ Lead form → FormSubmit (emails sales@) ══════════ */
 (() => {
   const form = document.getElementById('leadForm');
   if (!form) return;
@@ -194,7 +194,7 @@ const attribution = (() => {
       phone: d.phone.trim(),
       service: form.dataset.service || 'Website',
       source: attribution ? `${form.dataset.source} — ${attribution}` : form.dataset.source,
-      // /api/contact requires a message; the field is optional here
+      // keep a message line so the email is never blank; the field is optional here
       message: [
         d.message.trim() || '(No message left)',
         d.company.trim() && `Company / website: ${d.company.trim()}`
@@ -209,9 +209,9 @@ const attribution = (() => {
       const res = await fetch(form.dataset.endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(payload)
+        body: JSON.stringify({ ...payload, _subject: `New website enquiry: ${payload.source}`, _cc: 'sanal@teknoppy.com', _template: 'table' })
       });
-      if (!res.ok) throw new Error(String(res.status));
+      if (!res.ok || String((await res.json()).success) !== 'true') throw new Error(String(res.status)); // FormSubmit returns 200 even on refusal
       trackEvent('lead_submit', {
         lead_service: payload.service,
         lead_source: payload.source
