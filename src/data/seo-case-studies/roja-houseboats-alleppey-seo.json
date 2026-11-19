@@ -1,0 +1,162 @@
+{
+  "title": "Roja Houseboats Alleppey: SEO Case Study | Teknoppy",
+  "description": "How Teknoppy audited and optimized SEO for Roja Houseboats in Alleppey: answer-first FAQs, room-type keyword pages, local signals and E-E-A-T content.",
+  "canonical": "https://www.teknoppy.com/case-studies/roja-houseboats-alleppey-seo/",
+  "ogImage": "https://www.teknoppy.com/case-studies/rojahouseboats.webp",
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://www.teknoppy.com/case-studies/roja-houseboats-alleppey-seo/#article",
+          "headline": "Roja Houseboats: An SEO Services Case Study for an Alleppey Houseboat Operator",
+          "description": "How Teknoppy audited and optimized SEO for Roja Houseboats in Alleppey: answer-first FAQs, room-type keyword pages, local signals and E-E-A-T content.",
+          "image": "https://www.teknoppy.com/case-studies/rojahouseboats.webp",
+          "mainEntityOfPage": "https://www.teknoppy.com/case-studies/roja-houseboats-alleppey-seo/",
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Search engine optimization"
+            },
+            {
+              "@type": "Thing",
+              "name": "Local SEO"
+            },
+            {
+              "@type": "Thing",
+              "name": "Answer engine optimization"
+            },
+            {
+              "@type": "LocalBusiness",
+              "name": "Roja Houseboats",
+              "url": "https://rojahouseboats.com/",
+              "telephone": "+91 99478 77537",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Udayalayam, Ponnad (PO), Mannancherry",
+                "addressLocality": "Alappuzha",
+                "addressRegion": "Kerala",
+                "postalCode": "688538",
+                "addressCountry": "IN"
+              }
+            }
+          ],
+          "author": {
+            "@type": "Person",
+            "name": "Sanal Edison",
+            "jobTitle": "Digital Strategist",
+            "url": "https://www.teknoppy.com/sanal-edison-digital-strategist/",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Teknoppy"
+            }
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Teknoppy",
+            "url": "https://www.teknoppy.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.teknoppy.com/logo.svg"
+            }
+          },
+          "dateModified": "2026-10-20",
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.teknoppy.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Case Studies",
+              "item": "https://www.teknoppy.com/case-study/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Roja Houseboats",
+              "item": "https://www.teknoppy.com/case-studies/roja-houseboats-alleppey-seo/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What were the main SEO problems on the Roja Houseboats website?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The homepage H1 simply repeated the title tag, two different phone numbers appeared on the page, social links pointed to platform homepages instead of Roja's own profiles, FAQ answers did not open with a direct answer, and there was no founder or About section to show who runs the business."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How did Teknoppy organise the houseboat pages?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Each houseboat size has its own page and keyword: 1 bedroom, 2 bedroom and 3 bedroom houseboat Alleppey. The homepage targets houseboat booking in Alleppey, so no two pages compete for the same search."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What keyword density does Teknoppy recommend?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Teknoppy recommends roughly 1 to 1.5% for a primary keyword, supported by related terms such as Kerala houseboat, Alleppey backwaters and backwater cruise. Density of 2.5% or more reads as keyword stuffing and can hurt rankings."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How were the FAQs improved for answer engines?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Every FAQ answer was rewritten to open with a direct, standalone sentence, and two high-intent questions were added: how much a houseboat costs in Alleppey, and which houseboat operator is best in Alleppey. These target featured snippets, People Also Ask and Google AI Overviews."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why does NAP consistency matter for a houseboat business?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Name, address and phone details need to match everywhere so Google can trust which business and boarding point it is showing on Maps. Teknoppy recommended one phone number across the site, GPS coordinates in the contact section, and a Google Maps embed of the boarding point."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What E-E-A-T improvements were made?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Teknoppy added an About Roja Houseboats section with the founding story from Mannancherry, recommended a founder name and photo, Kerala Tourism licence details in the footer, and privacy, terms and cancellation policy pages."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Was content written for the room-type pages?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Teknoppy wrote keyword-focused paragraphs for the 3 bedroom houseboat Alleppey page in English and Malayalam, covering capacity, bedrooms, onboard chef, sun deck and booking, with the keyword used naturally."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does this approach work for other Kerala tourism businesses?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Any houseboat, resort or tour operator benefits from one keyword per page, answer-first FAQs, consistent contact details, and clear signals about who runs the business."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

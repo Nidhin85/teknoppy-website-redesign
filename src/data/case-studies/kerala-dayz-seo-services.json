@@ -1,6 +1,6 @@
 {
-  "metaTitle": "Kerala Dayz: An SEO Case Study for a Kochi Taxi & Tour Operator | Teknoppy",
-  "metaDescription": "How Teknoppy resolved NAP fragmentation, fixed a 54–58/100 GBP score, and built an 8-pillar zero-cannibalization SEO architecture for Kerala Dayz in Kochi.",
+  "metaTitle": "Kerala Dayz: Taxi SEO Services Case Study | Teknoppy",
+  "metaDescription": "How Teknoppy rebuilt the SEO structure for Kerala Dayz, a Kochi taxi and tour operator: one keyword per URL, route and destination pages, and E-E-A-T content.",
   "canonicalURL": "https://teknoppy.com/case-studies/kerala-dayz-seo-services/",
   "heroImage": "/case-studies/keraladayz.webp",
   "heroImageAlt": "Kerala Dayz Kochi Taxi and Tour Operator SEO Case Study",
@@ -16,203 +16,303 @@
   },
   "clientName": "Kerala Dayz",
   "categoryTag": "Local SEO, Google Business Profile & Site Architecture",
-  "tagBadge": "Kerala Tourism & Transport Case Study",
-  "title": "Kerala Dayz: A Search Engine Optimization (SEO) Case Study for a Kochi Taxi & Tour Operator",
-  "storyLead": "How Teknoppy consolidated fragmented local Google listings, resolved NAP inconsistencies, and built a zero-cannibalization 8-pillar hub-and-spoke architecture for a competitive Kochi transport business.",
-  "industry": "Ground Transportation & Tour Operations (Airport Transfers, Kerala Tour Packages)",
-  "location": "Nedumbassery, Kochi, Kerala — serving Kerala, Karnataka, and Tamil Nadu",
-  "services": "SEO Services, Local SEO / Google Business Profile Optimization, Site Structure Strategy",
-  "platform": "Astro, deployed on Vercel",
+  "tagBadge": "Travel & Taxi SEO Case Study",
+  "title": "Kerala Dayz: An SEO Services Case Study for a Kochi Taxi and Tour Operator",
+  "storyLead": "How Teknoppy rebuilt the site structure and keyword strategy for a Cochin Airport-based taxi company — giving every service, route and destination its own page, keeping every existing URL, and writing answer-first content that both Google and AI assistants can quote.",
+  "industry": "Taxi, tour packages & travel",
+  "location": "Nedumbassery, Kochi (near Cochin Airport)",
+  "services": "SEO strategy, site architecture, page content",
+  "platform": "WordPress (Elementor)",
   "liveWebsite": "keraladayz.com",
-  "liveWebsiteUrl": "https://keraladayz.com",
+  "liveWebsiteUrl": "https://keraladayz.com/",
   "heroHighlights": [
-    "NAP Fragmentation Resolved",
-    "8-Pillar Hub-and-Spoke",
-    "Zero-Cannibalization Matrix",
-    "Script-Verified Keyword Density"
+    "Competitor Gap Analysis",
+    "Pillar & Cluster Silos",
+    "Route & Destination Pages",
+    "13-Section Pillar Blueprint"
   ],
   "atAGlance": [
-    "NAP fragmentation fixed across 3–4 duplicate Google listings, including a similarly-named \"Kerala Holiday Taxi\" profile",
-    "GBP completeness addressed from an audited 54–58/100 baseline via a phased action plan",
-    "Zero-cannibalization architecture across 8 content pillars — routes, locations, fleet, pilgrim, and trust content",
-    "Every page benchmarked against named, real competitors before a word was written",
-    "Word count and keyword density script-verified against target bands, not estimated by eye"
+    "Competitor research against four Kerala taxi operators before any page was planned, showing that route pages and destination hubs were the biggest ranking gap",
+    "A full site structure rebuilt into pillar and cluster silos — taxi services, routes, destinations, tour packages, tempo traveller, pilgrim taxi, houseboats and a trust layer — with one primary keyword per URL",
+    "Every existing URL kept, with mismatched pages fixed by correcting their keyword rather than moving them",
+    "A fixed 13-section pillar page blueprint and a 10-section homepage structure, both written answer-first for AI Overviews and assistants",
+    "Ready-to-publish content for the Taxi Service in Kochi and One Way Taxi Kerala pillar pages and the About page, each written to a strict word count and keyword density"
   ],
   "aboutHeading": "About Kerala Dayz",
   "aboutParagraphs": [
-    "Kerala Dayz is a Nedumbassery, Kochi-based taxi and tour operator offering airport transfers, Kerala tour packages, pilgrim taxi services to Sabarimala, tempo traveller and fleet rentals, and outstation routes across Kerala, Karnataka, and Tamil Nadu.",
-    "The taxi and tour operator space in Kochi is genuinely crowded — multiple established local brands compete for the same searches every day. Before this engagement, Kerala Dayz's SEO problem wasn't a single obvious fix; it was two compounding issues at once: a local listing presence that was actively working against itself, and a site with no structural plan for how dozens of overlapping service and route pages should relate to one another."
+    "Kerala Dayz is a taxi and tour operator based in Nedumbassery, Kochi, a few minutes from Cochin International Airport. It runs airport transfers, outstation and one-way taxis, sightseeing and temple trips, corporate and MICE transfers, pilgrim taxis, tempo traveller and Urbania rentals, houseboats, and multi-day Kerala tour packages covering Munnar, Thekkady, Alleppey, Vagamon, Kovalam and Trivandrum, with routes extending into Tamil Nadu and Karnataka. The company holds a TripAdvisor Travelers' Choice badge.",
+    "Before this engagement, the website had grown one page at a time. Taxi services, tour packages and rentals sat side by side with no topical structure, the homepage's first heading read simply \"HOME\", and a menu item labelled \"Taxi service in Karnataka\" pointed to a Kerala URL. Competitors were winning searches like \"Cochin Airport to Munnar taxi\" with dedicated route and destination pages that Kerala Dayz did not have.",
+    "This case study covers the SEO strategy, site architecture and page content delivered by Teknoppy — how the site was restructured and how each page is written to answer a real traveller's search. It does not cover Kerala Dayz's fleet operations, driver management or pricing, which are the company's own domain."
   ],
-  "challengeLead": "Independent audits before this project surfaced problems that don't show up from a single glance at the website itself.",
+  "challengeLead": "Our first audit found five problems holding the site back.",
   "challenges": [
     {
       "number": 1,
-      "title": "Fragmented local presence",
-      "description": "Audits found NAP (Name, Address, Phone) inconsistencies across 3–4 separate Google listings, including a duplicate, similarly-named \"Kerala Holiday Taxi\" listing, splitting local ranking signals across multiple profiles instead of consolidating them into one."
+      "title": "No topical structure across many services",
+      "description": "Airport taxi, outstation trips, tour packages, houseboats, pilgrim taxis and tempo traveller rental had no pillar pages above them, so authority was spread thin and no page clearly owned its search."
     },
     {
       "number": 2,
-      "title": "Low Google Business Profile completeness",
-      "description": "Independent audits scored the GBP profile at 54–58 out of 100 across separate reviews, well behind what's needed to compete with established local competitors for the local map pack."
+      "title": "A URL and its topic did not match",
+      "description": "The page at /taxi-service-in-kerala-2/ was labelled Karnataka in the menu while its URL said Kerala, sending mixed signals and overlapping with the main Kerala taxi page."
     },
     {
       "number": 3,
-      "title": "No cannibalization-proof site structure",
-      "description": "With overlapping services — taxi services, tour packages, pilgrim taxi, tempo traveller rentals — spread across pages with no consistent architecture, the site risked its own pages competing against each other in search rather than each owning a distinct topic."
+      "title": "Missing route and destination pages",
+      "description": "Travellers search by route and place — \"Cochin Airport to Munnar taxi\", \"taxi in Alleppey\". Competitors had pages for these searches; Kerala Dayz had none, so it could not compete for them."
     },
     {
       "number": 4,
-      "title": "No competitor benchmarking",
-      "description": "Pages were built without checking what already ranked well for the same searches, missing the chance to identify gaps against direct competitors like Kochi Taxi 24X7, Pepper Kerala Holidays, and Mallu Cabs."
+      "title": "Weak E-E-A-T and trust signals",
+      "description": "Licensing, driver verification, fleet detail and founding history were not stated anywhere a search engine or a cautious international traveller could check them before booking."
     },
     {
       "number": 5,
-      "title": "No consistent content standard",
-      "description": "Word counts and keyword density varied page to page with no verifiable method behind them, creating a real risk of either thin, under-optimized pages or content so keyword-dense it reads unnaturally and can work against rankings rather than for them."
+      "title": "Content not written for answer engines",
+      "description": "Pages opened with generic welcome text rather than a direct answer, so neither featured snippets nor AI assistants had a clean passage to quote when a traveller asked which taxi company to use in Kerala."
     }
   ],
-  "objectiveLead": "Teknoppy's brief was to build an SEO foundation that could:",
+  "objectiveLead": "Teknoppy was engaged to restructure keraladayz.com around a topical, cannibalization-free SEO plan without changing any existing URL. The brief centred on:",
   "objectives": [
-    "Consolidate fragmented local listings and address the audited GBP completeness gap through a phased action plan",
-    "Build a zero-cannibalization, hub-and-spoke architecture across every service, location, and route",
-    "Benchmark every page against named, real competitors rather than generic template content",
-    "Apply a consistent, verifiable word count and keyword density standard across the entire site",
-    "Support real search intent for routes, locations, fleet options, and pilgrim travel with dedicated, distinct pages"
+    "Analysing Kerala taxi competitors to find the gaps worth closing first",
+    "Building a pillar and cluster site structure with one primary keyword locked to each URL",
+    "Adding route pages and destination hubs so the site can compete for location searches",
+    "Creating fixed homepage and pillar page structures that every new page follows",
+    "Writing SEO, AEO, GEO and E-E-A-T optimized content for the priority pillar and trust pages"
   ],
-  "approachLead": "How Teknoppy built a cannibalization-proof architecture grounded in empirical local auditing:",
+  "approachLead": "Six pillars took the site from a loose collection of pages to one clear, connected structure.",
   "approachPillars": [
     {
-      "title": "Auditing before building anything",
+      "title": "Competitor gap analysis before planning a single page",
       "paragraphs": [
-        "Discovery started with three separate rounds of Google Business Profile and local SEO auditing, rather than jumping straight into content. That established an accurate baseline — the exact listing fragmentation, the specific GBP completeness score, and where competitors were already positioned — before a single page was planned. Building an SEO strategy on an unverified assumption about the current state is one of the more common reasons local SEO work underperforms."
+        "Teknoppy studied Pepper Kerala Holidays, BCabs, Mallu Cabs and Anju Cabs. They won on route and destination pages, and on small trust details — Pepper Kerala states that fares include fuel, driver allowance and tolls, and BCabs explains how point-to-point and garage-to-garage billing differ. Those gaps shaped the new structure and page templates."
       ]
     },
     {
-      "title": "A hub-and-spoke architecture governed by one cannibalization matrix",
+      "title": "Pillar and cluster silos with one keyword per URL",
       "paragraphs": [
-        "Every pillar — routes, locations, fleet, pilgrim travel, and trust/E-E-A-T content — and every child page beneath it was mapped against a single consolidated cannibalization matrix, so no two pages target the same primary search intent. Route pages own specific origin-destination searches, location hub pages own city-level intent, and fleet pages own vehicle-specific intent, with cross-links connecting them rather than overlapping content trying to rank for all of it at once.",
-        "The architecture spans eight distinct pillars: core retargeted service pages, location hubs (Kochi, Trivandrum, Munnar, and others), route pages for specific airport-to-destination journeys, fleet and vehicle-type pages, pilgrim and purpose-based travel pages, a trust and E-E-A-T hub (drivers, testimonials, fare calculator, FAQ), and a knowledge-hub blog answering common pre-booking questions. Each pillar has a clearly defined job, so a new page always has an obvious home instead of blurring into whichever section happens to be easiest to add it to."
+        "The site was organised into pillars for taxi services, one-way taxi, routes, destination hubs, tour packages, tempo traveller, pilgrim taxi, houseboats and a trust layer, plus an informational blog. Each URL owns one primary keyword. The homepage links only to pillar hubs, and pillars link down to their own clusters, so authority flows downward without pages competing."
       ]
     },
     {
-      "title": "Competitor-benchmarked page structure",
+      "title": "Every existing URL kept, mismatches fixed by keyword",
       "paragraphs": [
-        "Pillar and child pages were built against a direct gap analysis of named competitors — including Kochi Taxi 24X7, J&J Taxi Service, Pepper Kerala Holidays, BCabs, Mallu Cabs, and Cochin Runway Cabs — rather than generic template content. Where competitor pages were found to be thin or missing structural elements entirely, that gap became the specification for what Kerala Dayz's own page needed to include."
+        "No live URL was changed. Where a URL and its topic disagreed — such as /taxi-service-in-kerala-2/, which serves Karnataka — the URL stayed and its primary keyword was corrected to \"Taxi Service in Karnataka\", ending the overlap with the main Kerala taxi page without losing any existing authority."
       ]
     },
     {
-      "title": "A script-verified content standard, not an estimated one",
+      "title": "Route pages and destination hubs",
       "paragraphs": [
-        "Word count and keyword density targets were set per page type, then checked with a script against the actual drafted content rather than estimated by eye. That check caught real problems early — keyword density running several times over target on early drafts, well past the point where content reads naturally to a visitor or safely to a search engine — and meant every published page could be verified against its target band rather than assumed to be compliant."
+        "New destination hubs for Munnar, Alleppey, Thekkady, Wayanad, Kovalam, Kumarakom and Kochi, plus route pages such as Cochin Airport to Munnar, give the site a page for each place-based search. Seater-specific tempo traveller pages and Sabarimala and Guruvayur pilgrim pages extend the same idea to group and pilgrim travel."
       ]
     },
     {
-      "title": "Real, source-verified facts instead of generic filler",
+      "title": "Fixed homepage and pillar page structures",
       "paragraphs": [
-        "Route pages use actual verified distances and landmarks along each highway corridor, fare-calculation content cites real government-regulated rate structures, and trust-page reviews are drawn from Kerala Dayz's own real customer feedback rather than generic placeholder testimonials. For a travel and transport business, specific, checkable details like a real landmark on the route or an accurate government fare band do more to earn a first-time visitor's trust than confident-sounding but generic copy."
+        "The homepage follows a 10-section order owning \"Taxi Service in Kerala\". Every pillar page follows a 13-section blueprint that opens with a 40–60 word answer block — naming the service, real places and one concrete differentiator — so it can be lifted directly into an AI Overview."
+      ]
+    },
+    {
+      "title": "Measured, answer-first page content",
+      "paragraphs": [
+        "Teknoppy wrote ready-to-publish content for the Taxi Service in Kochi and One Way Taxi Kerala pillar pages and the About page. Each was checked by script for word count and keyword density — the About page landed at 1,781 words with every one of its 35 secondary keywords present — and any fact not yet confirmed, such as licence numbers or founding year, was left as a clear placeholder instead of being guessed."
       ]
     }
   ],
   "deliverables": [
     {
-      "title": "Zero-cannibalization hub-and-spoke architecture",
-      "description": "A consolidated cannibalization matrix maps every pillar and child page — routes, locations, fleet, pilgrim, purpose, trust/E-E-A-T — so no two pages compete for the same search intent."
+      "title": "Competitor gap analysis",
+      "description": "Benchmarked against Pepper Kerala Holidays, BCabs, Mallu Cabs and Anju Cabs to set realistic structure and content targets."
     },
     {
-      "title": "A GBP and NAP cleanup roadmap",
-      "description": "A phased action plan addresses listing consolidation, GBP category and completeness fixes, and citation cleanup against the fragmented listings identified in audit."
+      "title": "A complete site structure plan",
+      "description": "Pillars, clusters, destination hubs, trust pages and blog, with one primary keyword and URL mapped for every page."
     },
     {
-      "title": "Competitor-benchmarked page structure",
-      "description": "Pillar and child pages were built against a direct gap analysis of named local and regional competitors, rather than generic template content."
+      "title": "A URL-safe keyword correction",
+      "description": "Mismatched pages fixed by realigning their primary keyword, keeping every live URL and its existing authority."
     },
     {
-      "title": "A verifiable content standard",
-      "description": "Word count and keyword density bands are set per page type and script-checked against the actual content, not estimated."
+      "title": "Homepage & pillar blueprints",
+      "description": "A 10-section homepage order and a 13-section pillar template, both built answer-first for AI search."
     },
     {
-      "title": "Real, checkable content throughout",
-      "description": "Verified route distances and landmarks, government-regulated fare information, and genuine customer reviews replace generic filler across the site."
+      "title": "Two pillar pages, ready to publish",
+      "description": "Taxi Service in Kochi and One Way Taxi Kerala, each written to a fixed word count and keyword density."
+    },
+    {
+      "title": "An E-E-A-T About page",
+      "description": "Story, mission, licensing, driver verification and FAQ content covering 35 trust-focused secondary keywords."
     }
   ],
-  "whyMattersHeading": "Why This Approach Matters for Local Travel SEO",
-  "whyMattersParagraphs": [
-    "Local search and generative AI answer tools both lean heavily on consistency and verifiability for exactly this kind of business. A consistent Name, Address, and Phone number across every listing is one of the clearest entity-resolution signals Google uses to confirm that \"Kerala Dayz\" in one place is the same business as \"Kerala Dayz\" everywhere else — fragmentation across multiple listings actively works against that, no matter how good the website itself is.",
-    "Cannibalization avoidance is a topical authority issue as much as a technical one. When a route page, a location hub, and a fleet page each own a distinct, non-overlapping search intent, the site builds depth across dozens of pages instead of several pages faintly competing for the same handful of terms. That structure is also what makes a site legible to AI research tools trying to answer a specific question — \"how much is a taxi from Cochin airport to Munnar\" has one clear page to draw from, not three competing, half-relevant ones.",
-    "Genuine, source-verified content also compounds over time in a way generic filler doesn't. A route page with a real, checkable landmark or an accurate fare reference stays useful and accurate months later; generic \"best taxi service in Kerala\" copy doesn't age any differently whether it's accurate or not, which is exactly why it does little to build lasting topical authority."
-  ],
-  "whyMattersCalloutHtml": "<p><strong>By fixing local listing fragmentation, building a cannibalization-proof architecture</strong>, and grounding every page in real, verifiable detail rather than generic filler, the Kerala Dayz SEO foundation is built to compete against established local operators on the terms that actually decide local search rankings. See more examples in Teknoppy's <a href=\"/case-study/\" class=\"underline font-bold text-[#F05A2C]\">full case study library</a> or our <a href=\"/seo-services/\" class=\"underline font-bold text-[#F05A2C]\">SEO services page</a>.</p>",
-  "faqs": [
-    {
-      "question": "What was the main SEO problem Kerala Dayz needed to solve?",
-      "answer": "A fragmented local listing presence — NAP inconsistencies across multiple Google listings — combined with a site structure where overlapping service pages risked competing against each other in search."
-    },
-    {
-      "question": "What does the new site structure look like?",
-      "answer": "A hub-and-spoke architecture with pillar pages for routes, locations, fleet, pilgrim travel, and trust/E-E-A-T content, each governed by a cannibalization matrix so no two pages target the same search intent."
-    },
-    {
-      "question": "Did the project address Google Business Profile issues?",
-      "answer": "Yes — audits identified a GBP completeness score in the 54–58/100 range and NAP fragmentation across multiple listings; a phased action plan was built to address both."
-    },
-    {
-      "question": "Who were the competitors this strategy was benchmarked against?",
-      "answer": "Kochi Taxi 24X7, J&J Taxi Service, Kerala Taxi, Pepper Kerala Holidays, BCabs, Mallu Cabs, and Cochin Runway Cabs, among others in the Kochi taxi and tour market."
-    },
-    {
-      "question": "What does \"keyword cannibalization\" mean, and why does it matter here?",
-      "answer": "It's when two pages on the same site unintentionally target the same search term, splitting ranking signals between them instead of one page building full authority for that term. With dozens of route and location pages, Kerala Dayz's structure was specifically mapped to keep every page's target intent distinct."
-    },
-    {
-      "question": "How is content checked to make sure keyword density is right?",
-      "answer": "Word count and keyword density are calculated with a script against each page's target band for its page type, rather than estimated. This caught early drafts running keyword density several times over target before they were corrected."
-    },
-    {
-      "question": "Does the site include real fare or distance information?",
-      "answer": "Yes — route pages use verified real distances and landmarks along each corridor, and fare-related content references actual government-regulated rate structures rather than invented figures."
-    },
-    {
-      "question": "What platform is the Kerala Dayz website built on?",
-      "answer": "The site runs on Astro, deployed on Vercel, giving it a fast, lightweight foundation to support the expanding pillar-and-route page structure."
-    }
-  ],
-  "ctaHeadline": "Need an SEO strategy that fixes a fragmented local presence and stops your own pages from competing with each other?",
   "rankingKeywords": {
-    "lead": "Verified Google search rankings for airport taxi, tour transfers, and vehicle rental services across Kerala.",
+    "eyebrow": "Keyword mapping",
+    "heading": "Target keywords",
+    "lead": "Primary keywords locked to their pages across Kochi, Kerala and the routes travellers search, so each search has exactly one page that owns it.",
     "groups": [
       {
-        "title": "Target keywords — Kerala Airport Taxi & Tour Fleet",
-        "badge": "Google Page 1",
+        "title": "Target keywords — Taxi Service Kochi & Kerala",
+        "badge": "One keyword per URL",
+        "label": "Keyword mapping",
+        "headers": [
+          "Primary keyword",
+          "Owning page",
+          "Status"
+        ],
         "hasMap": false,
-        "note": "High-volume tourism and transit search terms driving direct traveler bookings and airport transfers.",
+        "note": "Commercial travel searches from domestic and international visitors booking airport transfers, outstation trips and Kerala tours.",
         "rows": [
           {
-            "keyword": "Kerala Airport Taxi",
-            "page": "1",
-            "position": "6"
+            "keyword": "Taxi Service in Kerala",
+            "page": "/",
+            "position": "Tracked"
           },
           {
-            "keyword": "best taxi service in Kerala",
-            "page": "1",
-            "position": "7"
+            "keyword": "Taxi Service in Kochi",
+            "page": "/taxi-service-in-kochi/",
+            "position": "Tracked"
           },
           {
-            "keyword": "Trustable tour and taxi brand in kochi Bes",
-            "page": "1",
-            "position": "5"
+            "keyword": "One Way Taxi Kerala",
+            "page": "/one-way-taxi-kerala/",
+            "position": "Tracked"
           },
           {
-            "keyword": "Best Airport Taxi Service in Kerala",
-            "page": "1",
-            "position": "6"
+            "keyword": "Kochi Airport Taxi",
+            "page": "/airport-taxi/",
+            "position": "Tracked"
           },
           {
-            "keyword": "tempo traveller rental Kochi",
-            "page": "1",
-            "position": "7"
+            "keyword": "Tempo Traveller Rental in Kochi",
+            "page": "/tempo-traveler-rental-in-kochi/",
+            "position": "Tracked"
+          },
+          {
+            "keyword": "Taxi Service in Karnataka",
+            "page": "/taxi-service-in-kerala-2/",
+            "position": "Tracked"
           }
         ]
       }
     ]
+  },
+  "whyMattersHeading": "Why this structure matters",
+  "whyMattersParagraphs": [
+    "Travel and taxi sites grow fast and loosely — a new package here, a new rental page there — until several pages chase the same searches and none of them wins. Locking one keyword to each URL and linking in clear pillar-to-cluster silos lets authority build on the right page instead of leaking across near-duplicates. Doing it without changing any live URL means the site keeps every ranking and link it already earned.",
+    "The same structure is what AI-driven travel search rewards. When a traveller asks Google AI Overviews or ChatGPT for a taxi from Cochin Airport to Munnar, those tools look for a page that answers that exact question, names the company and the places, and states something concrete like a fixed, all-inclusive fare. Dedicated route and destination pages that open with a direct answer give them exactly that passage to quote."
+  ],
+  "whyMattersCalloutHtml": "<p class=\"font-semibold text-neutral-900 text-base sm:text-lg leading-relaxed\">Giving every service, route and destination one clearly scoped page — and opening each with a direct answer — is what lets search engines and AI assistants resolve Kerala Dayz as the specific answer for each trip a traveller plans, rather than one more general taxi website.</p><p class=\"mt-4 text-sm sm:text-base text-neutral-600\"><strong>This case study is part of Teknoppy's SEO services work for travel and local businesses in Kerala.</strong> Explore our <a href=\"/seo-services/\" class=\"underline font-bold text-[#F05A2C]\">SEO Services</a> or view <a href=\"/case-study/\" class=\"underline font-bold text-[#F05A2C]\">More Teknoppy Case Studies</a>.</p>",
+  "faqs": [
+    {
+      "question": "What was the main SEO problem with the Kerala Dayz website before this project?",
+      "answer": "The site had grown without a keyword plan. Taxi services, tour packages, houseboats and tempo traveller rental sat side by side with no clear pillar structure, the homepage H1 read only \"HOME\", and a page labelled Karnataka sat on a Kerala URL. Search engines had no clear signal for which page should rank for which search."
+    },
+    {
+      "question": "Did Teknoppy change any existing Kerala Dayz URLs?",
+      "answer": "No. Every existing URL was kept so the site would not lose the authority it had already built. Where a URL and its topic did not match, the page's primary keyword was corrected instead of moving the page."
+    },
+    {
+      "question": "Which competitors were analysed?",
+      "answer": "Teknoppy benchmarked Kerala taxi competitors including Pepper Kerala Holidays, BCabs, Mallu Cabs and Anju Cabs. The biggest gap was that competitors ranked with dedicated route pages and destination hubs, which Kerala Dayz did not have."
+    },
+    {
+      "question": "How does the new structure prevent keyword cannibalization?",
+      "answer": "Each URL owns one primary keyword. The homepage links only to pillar hubs, pillar hubs link down to their own cluster pages, and blog posts stay informational so they never compete with booking pages."
+    },
+    {
+      "question": "What structure do Kerala Dayz pillar pages follow?",
+      "answer": "Every pillar page follows the same 13-section order, starting with an answer-first hero block and including a trust strip, an all-inclusive fare promise, a billing explainer, a vehicle-to-group-size guide, a comparison table and an FAQ."
+    },
+    {
+      "question": "What word count and keyword density do the pages use?",
+      "answer": "Each page has its own target. For example, the One Way Taxi Kerala pillar page is written to 1,450 to 1,550 words at 1.8 to 2.0% keyword density, and the About page to 1,700 to 1,800 words at around 2%."
+    },
+    {
+      "question": "How does the strategy help Kerala Dayz appear in AI search tools?",
+      "answer": "Every page opens with a short, standalone answer that names Kerala Dayz, the service, the exact places it covers and one concrete differentiator. That gives Google AI Overviews, ChatGPT and other assistants a clear passage to quote when a traveller asks for a taxi in Kerala."
+    },
+    {
+      "question": "Does this approach work for other travel and taxi businesses?",
+      "answer": "Yes. Any travel or transport business with many services, routes and destinations benefits from one keyword per page, pillar and cluster linking, dedicated route and destination pages, and answer-first content."
+    }
+  ],
+  "ctaHeadline": "Need an SEO partner who builds structure first, then content that ranks?",
+  "kpis": [
+    {
+      "value": "4",
+      "label": "Competitors benchmarked",
+      "note": "Pepper Kerala, BCabs, Mallu Cabs, Anju Cabs"
+    },
+    {
+      "value": "7",
+      "label": "Destination hubs planned",
+      "note": "Munnar to Kumarakom"
+    },
+    {
+      "value": "13",
+      "label": "Section pillar blueprint",
+      "note": "Applied to every pillar hub"
+    },
+    {
+      "value": "0",
+      "label": "Existing URLs changed",
+      "note": "Keywords corrected, not URLs"
+    }
+  ],
+  "fixes": [
+    {
+      "title": "Fix 1: URL kept, keyword corrected",
+      "caption": "A Kerala URL serving Karnataka, fixed without moving the page.",
+      "before": [
+        "Menu: \"Karnataka\"",
+        "/taxi-service-in-kerala-2/"
+      ],
+      "after": [
+        "Taxi Service in Karnataka · locked"
+      ],
+      "keyword": "Same URL, one clear topic",
+      "tagBefore": "Mismatched",
+      "tagAfter": "Aligned ✓"
+    },
+    {
+      "title": "Fix 2: one taxi page, many places",
+      "caption": "Dedicated destination hubs for each place travellers search.",
+      "before": [
+        "One generic Kerala taxi page"
+      ],
+      "after": [
+        "Munnar",
+        "Alleppey",
+        "Thekkady",
+        "Wayanad"
+      ],
+      "keyword": "",
+      "tagBefore": "Missing",
+      "tagAfter": "Hubs ✓"
+    }
+  ],
+  "blueprint": {
+    "title": "The 13-section pillar page blueprint",
+    "items": [
+      "Hero answer block",
+      "Jump-to mini nav",
+      "Freshness note",
+      "Trust strip",
+      "All-inclusive fare promise",
+      "Core breakdown grid",
+      "How billing works",
+      "Vehicle-to-group-size guide",
+      "Comparison table",
+      "Why choose us",
+      "Real customer snippet",
+      "FAQ",
+      "Final call to action"
+    ],
+    "note": "Each pillar: 900–1,300 words baseline · one primary keyword · roughly 1.8–2.0% density · links only to its own cluster pages."
+  },
+  "liveSite": {
+    "heading": "The Kerala Dayz website",
+    "lead": "The new structure is being rolled out on keraladayz.com, with each service, route and destination moving to its own clearly targeted page.",
+    "caption": "keraladayz.com — Taxi service in Kerala, based near Cochin International Airport, Kochi."
   }
 }

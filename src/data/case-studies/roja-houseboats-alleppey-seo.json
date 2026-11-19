@@ -1,6 +1,6 @@
 {
-  "metaTitle": "Roja Houseboats Alleppey SEO Case Study | Teknoppy",
-  "metaDescription": "How Teknoppy structured SEO for Roja Houseboats in Alappuzha: local entity clarity, bedroom-based pages for couples and families, and answer-first content.",
+  "metaTitle": "Roja Houseboats Alleppey: SEO Case Study | Teknoppy",
+  "metaDescription": "How Teknoppy audited and optimized SEO for Roja Houseboats in Alleppey: answer-first FAQs, room-type keyword pages, local signals and E-E-A-T content.",
   "canonicalURL": "https://teknoppy.com/case-studies/roja-houseboats-alleppey-seo/",
   "heroImage": "/case-studies/roja-houseboats.webp",
   "heroImageAlt": "Roja Houseboats Alleppey SEO Case Study",
@@ -12,219 +12,300 @@
   },
   "clientName": "Roja Houseboats",
   "categoryTag": "Search Engine Optimization (SEO)",
-  "tagBadge": "Hospitality & Tourism SEO Case Study",
-  "title": "Roja Houseboats: An SEO Services Case Study for an Alleppey Houseboat Operator in Kerala",
-  "storyLead": "How Teknoppy organised the search presence of a family-run houseboat business in Alappuzha, so couples, families and groups each land on the page that answers their booking question, from a source that clearly shows who runs the boats.",
-  "industry": "Houseboat tourism and hospitality",
-  "location": "Alappuzha (Alleppey), Kerala, India",
-  "services": "SEO strategy, local entity setup, page and content architecture",
-  "platform": "WordPress responsive hospitality portal",
+  "tagBadge": "Tourism SEO Case Study",
+  "title": "Roja Houseboats: An SEO Services Case Study for an Alleppey Houseboat Operator",
+  "storyLead": "How Teknoppy audited a Kerala backwater houseboat website section by section — fixing local trust signals, giving each houseboat size its own keyword, and rewriting FAQs so Google and AI assistants can answer travellers' booking questions directly.",
+  "industry": "Houseboat cruises & backwater tourism",
+  "location": "Mannancherry, Alappuzha, Kerala",
+  "services": "SEO audit, on-page content, local SEO",
+  "platform": "WordPress (Elementor)",
   "liveWebsite": "rojahouseboats.com",
   "liveWebsiteUrl": "https://rojahouseboats.com/",
   "heroHighlights": [
-    "Bedroom-Based Mapping",
-    "Local Entity Authority",
-    "OTA Disintermediation",
-    "Answer-First FAQ Strategy"
+    "Section-by-Section Audit",
+    "Room-Type Keyword Pages",
+    "Answer-First FAQs",
+    "Local NAP Signals"
   ],
   "atAGlance": [
-    "Local entity disambiguation establishing Roja Houseboats with consistent name, address, and boarding details",
-    "Audience segmentation into dedicated 1-bedroom (couples/honeymoon) and 3-bedroom (family/groups) booking pages",
-    "Pre-booking trust engineering detailing authentic family ownership, local crews, and transparent routes",
-    "Answer-first question headings addressing boarding points, inclusions, and connectivity for AI search optimization",
-    "Direct inquiry funnel driving traveler confidence prior to committing advance booking payments"
+    "A section-by-section audit of the homepage, from hero to footer, with exact edit instructions for each section rather than general advice",
+    "One keyword per houseboat size — 1, 2 and 3 bedroom houseboat Alleppey — so room-type pages and the homepage never compete",
+    "Every FAQ answer rewritten to open with a direct answer, plus two new high-intent questions on houseboat cost and the best operator in Alleppey",
+    "Local trust fixes: one phone number everywhere, GPS coordinates and a Google Maps embed for the Mannancherry boarding point, and real social profile links",
+    "E-E-A-T content — an About Roja Houseboats section, founder details and licence information — plus room-type page copy in English and Malayalam"
   ],
   "aboutHeading": "About Roja Houseboats",
   "aboutParagraphs": [
-    "Roja Houseboats is a family-run houseboat operator in Alappuzha, Kerala, offering private backwater cruises on the Alleppey waterways. Its website describes options by bedroom count, including one-bedroom boats for couples and honeymooners and three-bedroom boats for families and groups, along with a premium category.",
-    "The business is based near the Alleppey Lighthouse, about 2 km from Alappuzha Railway Station and around 85 km from Cochin International Airport, as stated on its website. It presents itself as a family business rooted in the area's backwater heritage, with crews who have grown up on these waters.",
-    "This case study covers the SEO strategy, local entity setup and content architecture delivered by Teknoppy. It does not cover boat operations, crew practices, safety standards or pricing, which remain the responsibility of Roja Houseboats."
+    "Roja Houseboats is a houseboat operator on the Alappuzha backwaters, running since 2014 from its boarding point at Mannancherry, near Alleppey Lighthouse and a few minutes from Alappuzha railway station. It offers 1, 2 and 3 bedroom houseboats with day cruises, overnight stays, multi-day tours and special-event charters, with packages starting from ₹6,000 per couple for a day cruise. The business states Kerala Tourism Department certification and a 4.9 out of 5 guest rating.",
+    "The website, built on WordPress with Elementor, already had the right pages — a homepage and separate 1, 2 and 3 bedroom houseboat pages — but small on-page issues were holding it back. The H1 repeated the title tag, the page showed two different phone numbers, social icons linked to platform homepages, and the FAQs did not answer travellers' questions in the first sentence. Nothing told Google, or a cautious first-time visitor, who actually runs the boats.",
+    "This case study covers the SEO audit, on-page content and local SEO work delivered by Teknoppy. It does not cover Roja Houseboats' cruise operations, crew or pricing decisions, which are the company's own domain."
   ],
-  "challengeLead": "Navigating saturated tourism search, OTA platform domination, and traveler trust verification:",
+  "challengeLead": "Our audit found five problems holding the site back.",
   "challenges": [
     {
       "number": 1,
-      "title": "Search results crowded by travel platforms",
-      "description": "Searches such as 'houseboat in Alleppey' are dominated by large travel platforms and listing sites that show dozens of boats at once. A single operator needs pages specific enough to be the better answer for a defined type of traveller."
+      "title": "A weak, duplicated H1",
+      "description": "The homepage H1 was the full title tag repeated word for word, with no clear value statement, price signal or trust number for a traveller to see first."
     },
     {
       "number": 2,
-      "title": "Travellers search by group type, not by boat name",
-      "description": "A couple planning a honeymoon and a family of eight are asking different questions. One generic booking page cannot serve both, and searches such as '1 bedroom houseboat Alleppey' or '3 bedroom houseboat Alleppey' show that visitors think in bedrooms and occasions."
+      "title": "Inconsistent contact details",
+      "description": "Two different phone numbers appeared on the same page, one of them a placeholder. For a local business, mismatched contact details weaken Google Maps trust and can send a booking to a dead line."
     },
     {
       "number": 3,
-      "title": "Many operators use near-identical wording",
-      "description": "Descriptions of backwater views, Kerala meals and friendly crews appear across almost every houseboat site. Standing out means being specific: real address, real routes, real answers to practical questions."
+      "title": "FAQs that did not answer first",
+      "description": "Answers opened with background rather than a direct answer, and the two most-searched questions in the category — houseboat cost and best operator in Alleppey — were missing entirely."
     },
     {
       "number": 4,
-      "title": "Travellers worry about who they are booking with",
-      "description": "Houseboat guests often pay in advance for a place they have never seen. They look for proof that the operator is genuine, that the boat shown is the boat provided and that someone is reachable. E-E-A-T signals matter more here than in most categories."
+      "title": "No visible people behind the business",
+      "description": "There was no About section, founder story or licence detail, and social icons linked to Facebook and YouTube homepages rather than Roja's own profiles — leaving almost no E-E-A-T signal."
     },
     {
       "number": 5,
-      "title": "Local details need to be consistent everywhere",
-      "description": "Name, address, phone number and email must match across the website, the Google Business Profile and other listings. Differences confuse both search engines and customers."
+      "title": "Outdated keyword density advice",
+      "description": "The content had been planned around 2.5% keyword density, which reads as keyword stuffing today. The pages needed natural keyword use supported by related backwater and Kerala terms instead."
     }
   ],
-  "objectiveLead": "Teknoppy was engaged to help Roja Houseboats compete on relevance and trust rather than on platform-style volume. The brief centred on:",
+  "objectiveLead": "Teknoppy was engaged to make rojahouseboats.com SEO, AEO, GEO and E-E-A-T ready, and to turn more search visits into direct bookings. The brief centred on:",
   "objectives": [
-    "Establishing Roja Houseboats as a clear local entity in Alappuzha with consistent business details",
-    "Assigning each traveller intent (couples, families, groups, premium stays, general booking) to one dedicated page",
-    "Answering practical pre-booking questions in plain language, near the top of each page",
-    "Showing first-hand experience: who operates the boats, how to reach the jetty and what the trip involves",
-    "Keeping claims accurate and consistent so travellers and search engines can rely on them"
+    "Auditing the homepage section by section with exact, copy-ready edits",
+    "Keeping each houseboat size on its own page with its own keyword",
+    "Rewriting FAQs for featured snippets, People Also Ask and AI Overviews",
+    "Making name, address, phone and map details consistent for local search",
+    "Adding the trust and founder signals Google expects from a tourism business"
   ],
-  "approachLead": "How Teknoppy executed local entity SEO, audience-specific page segmentation, and traveler trust architecture:",
+  "approachLead": "Six pillars took the site from good pages with small leaks to a consistent, trustworthy booking site.",
   "approachPillars": [
     {
-      "title": "Reviewing what searchers actually see",
+      "title": "Section-by-section homepage audit",
       "paragraphs": [
-        "We studied the results for houseboat searches in Alleppey, noting which pages come from platforms, which from operators and which questions appear in related searches. This showed where a single operator's page could be more specific and more useful."
+        "Teknoppy reviewed every homepage section from the hero to the footer and wrote exact instructions for each — what to keep, what to edit and what to add — so the client's team could make each change in Elementor without interpreting general SEO advice."
       ]
     },
     {
-      "title": "One page for each traveller need",
+      "title": "One keyword per houseboat size",
       "paragraphs": [
-        "Pages were organised around how visitors describe their trip. The one-bedroom page speaks to couples, honeymoons and anniversaries. The three-bedroom page speaks to families and multi-generational groups. The home page gives the overview and directs visitors to the right page."
+        "The homepage owns \"houseboat booking in Alleppey\", while the 1, 2 and 3 bedroom pages each own their room-type keyword. Teknoppy set a natural density of roughly 1–1.5%, supported by related terms like Kerala houseboat, Alleppey backwaters and backwater cruise, replacing the earlier 2.5% target."
       ]
     },
     {
-      "title": "Stated scope for each page",
+      "title": "Answer-first FAQs",
       "paragraphs": [
-        "Each page owns one audience and one set of search terms, and links to the others instead of repeating them. This prevents the pages from competing for the same searches."
+        "Every FAQ answer now opens with a direct, standalone sentence — for example, that the best time for an Alleppey houseboat trip is October to February. Two new questions on houseboat cost in Alleppey and the best houseboat operator were added, written around the package prices and rating the site already states."
       ]
     },
     {
-      "title": "Local entity consistency",
+      "title": "Consistent NAP and a mapped boarding point",
       "paragraphs": [
-        "The business name, address near the Alleppey Lighthouse, phone number and email were written identically across the website and its business listings, with location details such as the railway station and airport distances placed where travellers look for them."
+        "One phone number was set for every button and section, the placeholder number was flagged for removal, and GPS coordinates, parking details and a Google Maps embed of the Mannancherry boarding point were added to the contact section, with transport times from Cochin Airport and Alappuzha station."
       ]
     },
     {
-      "title": "First-hand, verifiable content",
+      "title": "Real people and real credentials",
       "paragraphs": [
-        "Content describes the family-run background, the on-board crew and the practical details of a stay. Traveller reviews are shown as they were given, with no rewriting."
+        "A new About Roja Houseboats section tells the founding story from Mannancherry, with a recommended founder name and photo. The footer gains Kerala Tourism licence details, privacy, terms and cancellation policy links, and social icons pointing to Roja's actual profiles."
       ]
     },
     {
-      "title": "Answer-first structure for modern search",
+      "title": "Room-type page copy in two languages",
       "paragraphs": [
-        "Question-style headings such as connectivity on board, how to reach the boarding point and what a stay includes are followed by short, direct answers. Structured data is used only where the visible page content supports it."
+        "Teknoppy wrote keyword-focused paragraphs for the 3 bedroom houseboat Alleppey page — capacity for 6 to 8 guests, three AC bedrooms with attached bathrooms, sun deck and onboard chef — in several lengths, plus a Malayalam version for local travellers, each using the keyword naturally."
       ]
     }
   ],
   "deliverables": [
     {
-      "title": "Search-intent and keyword map",
-      "description": "A document linking each houseboat search group to a single page, with primary and supporting terms and the question each page answers."
+      "title": "Homepage audit & edit plan",
+      "description": "Fourteen sections reviewed with exact keep, edit and add instructions, ready for Elementor."
     },
     {
-      "title": "Dedicated audience pages",
-      "description": "Separate one-bedroom and three-bedroom pages written for their specific travellers, with a home page that guides visitors to the right option."
+      "title": "Keyword mapping",
+      "description": "Homepage and 1, 2 and 3 bedroom pages each mapped to one keyword, with a natural density target."
     },
     {
-      "title": "Local entity and trust framework",
-      "description": "A standard set of business details, contact points and trust elements used consistently on the website and business listings."
+      "title": "Ten answer-first FAQs",
+      "description": "Eight answers rewritten to lead with the answer, and two new questions on cost and best operator."
     },
     {
-      "title": "On-page optimisation",
-      "description": "Title tags, meta descriptions, headings, internal links and image alt text aligned to the intent map."
+      "title": "Local SEO fixes",
+      "description": "One phone number, GPS coordinates, parking details and a Google Maps embed for the boarding point."
     },
     {
-      "title": "Question-led FAQ content",
-      "description": "Clear answers to the questions travellers ask before booking, written in plain language and placed on the pages where they matter."
-    }
-  ],
-  "faqs": [
-    {
-      "q": "What was the main SEO challenge for Roja Houseboats?",
-      "a": "Standing out in a category where large travel platforms and many similar operators compete for the same searches, while giving travellers clear reasons to trust a single family-run operator."
+      "title": "E-E-A-T & trust content",
+      "description": "About section, founder details, licence information, policy links and real social profiles."
     },
     {
-      "q": "Why are there separate pages for one-bedroom and three-bedroom houseboats?",
-      "a": "Travellers search by group size and occasion. A dedicated page lets each audience see content written for their needs, such as privacy for couples or shared space for families."
-    },
-    {
-      "q": "How does local SEO help a houseboat business?",
-      "a": "It connects the business to its real location through a consistent name, address, phone number and listing profile, which helps searchers who look for houseboats in Alleppey find it and trust it."
-    },
-    {
-      "q": "What is E-E-A-T and why does it matter for houseboat bookings?",
-      "a": "E-E-A-T stands for experience, expertise, authoritativeness and trustworthiness. Guests commit money to a stay they cannot inspect beforehand, so signs of a genuine operator, such as clear ownership, contact details and honest reviews, directly support booking decisions."
-    },
-    {
-      "q": "How do question-led pages help with AI Overviews and assistants?",
-      "a": "Short direct answers under clear questions make it easier for search engines and AI tools to identify and cite the right information, such as how to reach the boarding point or what to expect on board."
-    },
-    {
-      "q": "Can SEO guarantee bookings or rankings?",
-      "a": "No. Rankings depend on competition, content quality, reviews and search engine changes, and no agency can guarantee them. Clear structure and accurate content improve the site's chances and its usefulness to visitors."
-    },
-    {
-      "q": "Does this approach work for other tourism businesses?",
-      "a": "Yes. Resorts, homestays, tour operators and boat services can use the same method: define the local entity, map each traveller intent to one page and support every claim with clear, checkable detail."
-    },
-    {
-      "q": "Is the website live?",
-      "a": "Yes. Roja Houseboats is live at rojahouseboats.com."
+      "title": "Room-type page copy",
+      "description": "3 bedroom houseboat Alleppey paragraphs in several lengths, in English and Malayalam."
     }
   ],
   "rankingKeywords": {
-    "lead": "Verified Google search rankings for couple and family houseboat packages across Alleppey backwaters.",
+    "eyebrow": "Keyword mapping",
+    "heading": "Target keywords",
+    "lead": "Booking, room-type and question keywords for Alleppey houseboats, each mapped to the page or FAQ that owns it.",
     "groups": [
       {
-        "title": "Target keywords — Alleppey Houseboat Packages",
-        "badge": "Google Page 1",
+        "title": "Target keywords — Houseboats in Alleppey",
+        "badge": "One keyword per page",
+        "label": "Keyword mapping",
+        "headers": [
+          "Keyword",
+          "Owning page",
+          "Status"
+        ],
         "hasMap": false,
-        "note": "High-intent search terms mapped to bedroom-specific landing pages for couples, families, and leisure travelers.",
+        "note": "Leisure travel searches from couples, families and groups in India and abroad planning a Kerala backwater trip.",
         "rows": [
           {
-            "keyword": "trusted family houseboat package alleppy",
-            "page": "2",
-            "position": "1",
-            "map": ""
+            "keyword": "houseboat booking in Alleppey",
+            "page": "/",
+            "position": "Target"
           },
           {
-            "keyword": "couple friendly best houseboat in kerala",
-            "page": "1",
-            "position": "9",
-            "map": ""
+            "keyword": "1 bedroom houseboat Alleppey",
+            "page": "/1-bedroom-houseboat-alleppey/",
+            "position": "Target"
           },
           {
-            "keyword": "best overnight houseboat alleppy couple package",
-            "page": "",
-            "position": "",
-            "map": ""
+            "keyword": "2 bedroom houseboat Alleppey",
+            "page": "/2-bedroom-houseboat-alleppey/",
+            "position": "Target"
           },
           {
-            "keyword": "romantic overnight houseboat alleppy couple package",
-            "page": "2",
-            "position": "1",
-            "map": ""
+            "keyword": "3 bedroom houseboat Alleppey",
+            "page": "/3-bedroom-houseboat-alleppey/",
+            "position": "Target"
           },
           {
-            "keyword": "overnight houseboat alleppy couple package 2026",
-            "page": "1",
-            "position": "8",
-            "map": ""
+            "keyword": "how much does a houseboat cost in Alleppey",
+            "page": "Homepage FAQ",
+            "position": "Target"
           },
           {
-            "keyword": "overnight houseboat alleppy couple package with candlelight dinner",
-            "page": "7",
-            "position": "9",
-            "map": ""
+            "keyword": "best time for houseboat in Alleppey",
+            "page": "Homepage FAQ",
+            "position": "Target"
           }
         ]
       }
     ]
   },
-  "deliverableLead": "Core deliverables engineered for direct booking conversions and regional search visibility:",
-  "impactLead": "Why This Structure Matters:",
-  "impactParagraphs": [
-    "In houseboat tourism, the traveller usually decides before contacting anyone. They compare several operators, read reviews and look for signs that the business is real and reachable. A website that names its location, explains who runs the boats and answers practical questions earns trust before the first message is sent.",
-    "Separating pages by traveller type also improves relevance. Couples looking for privacy and families looking for space have different priorities, and a page that speaks to one audience answers that search better than a page that tries to speak to everyone.",
-    "The same clarity helps AI assistants and answer engines. When someone asks for a family houseboat in Alleppey, these systems favour pages that state specific, consistent facts about the operator, the boat and the location. Rankings and bookings can never be guaranteed, so this work focuses on what we can control: accurate information, clear structure and genuinely helpful content."
-  ]
+  "whyMattersHeading": "Why these fixes matter",
+  "whyMattersParagraphs": [
+    "For a local tourism business, small inconsistencies cost real bookings. A wrong phone number on a Call Now button, a social icon that leads nowhere, or a Maps pin Google is unsure about each make a traveller hesitate — and a hesitating traveller books the next houseboat in the results. Making contact details consistent, mapping the boarding point and showing who runs the boats removes those doubts for both guests and Google.",
+    "Answer-first FAQs matter because travellers increasingly plan trips by asking. When someone asks Google AI Overviews or ChatGPT how much a houseboat costs in Alleppey or when to go, those tools quote the page that answers in its first sentence. Giving each room type its own page and each common question a direct answer gives Roja Houseboats more chances to be that quoted answer."
+  ],
+  "whyMattersCalloutHtml": "<p class=\"font-semibold text-neutral-900 text-base sm:text-lg leading-relaxed\">One verified phone number, one keyword per boat, and one direct answer per question — that consistency is what lets search engines and AI assistants trust Roja Houseboats as a clear, bookable answer for travellers planning an Alleppey backwater trip.</p><p class=\"mt-4 text-sm sm:text-base text-neutral-600\"><strong>This case study is part of Teknoppy's SEO services work for tourism and hospitality businesses in Kerala.</strong> Explore our <a href=\"/seo-services/\" class=\"underline font-bold text-[#F05A2C]\">SEO Services</a> or view <a href=\"/case-study/\" class=\"underline font-bold text-[#F05A2C]\">More Teknoppy Case Studies</a>.</p>",
+  "faqs": [
+    {
+      "question": "What were the main SEO problems on the Roja Houseboats website?",
+      "answer": "The homepage H1 simply repeated the title tag, two different phone numbers appeared on the page, social links pointed to platform homepages instead of Roja's own profiles, FAQ answers did not open with a direct answer, and there was no founder or About section to show who runs the business."
+    },
+    {
+      "question": "How did Teknoppy organise the houseboat pages?",
+      "answer": "Each houseboat size has its own page and keyword: 1 bedroom, 2 bedroom and 3 bedroom houseboat Alleppey. The homepage targets houseboat booking in Alleppey, so no two pages compete for the same search."
+    },
+    {
+      "question": "What keyword density does Teknoppy recommend?",
+      "answer": "Teknoppy recommends roughly 1 to 1.5% for a primary keyword, supported by related terms such as Kerala houseboat, Alleppey backwaters and backwater cruise. Density of 2.5% or more reads as keyword stuffing and can hurt rankings."
+    },
+    {
+      "question": "How were the FAQs improved for answer engines?",
+      "answer": "Every FAQ answer was rewritten to open with a direct, standalone sentence, and two high-intent questions were added: how much a houseboat costs in Alleppey, and which houseboat operator is best in Alleppey. These target featured snippets, People Also Ask and Google AI Overviews."
+    },
+    {
+      "question": "Why does NAP consistency matter for a houseboat business?",
+      "answer": "Name, address and phone details need to match everywhere so Google can trust which business and boarding point it is showing on Maps. Teknoppy recommended one phone number across the site, GPS coordinates in the contact section, and a Google Maps embed of the boarding point."
+    },
+    {
+      "question": "What E-E-A-T improvements were made?",
+      "answer": "Teknoppy added an About Roja Houseboats section with the founding story from Mannancherry, recommended a founder name and photo, Kerala Tourism licence details in the footer, and privacy, terms and cancellation policy pages."
+    },
+    {
+      "question": "Was content written for the room-type pages?",
+      "answer": "Yes. Teknoppy wrote keyword-focused paragraphs for the 3 bedroom houseboat Alleppey page in English and Malayalam, covering capacity, bedrooms, onboard chef, sun deck and booking, with the keyword used naturally."
+    },
+    {
+      "question": "Does this approach work for other Kerala tourism businesses?",
+      "answer": "Yes. Any houseboat, resort or tour operator benefits from one keyword per page, answer-first FAQs, consistent contact details, and clear signals about who runs the business."
+    }
+  ],
+  "ctaHeadline": "Is your tourism website losing bookings to small, fixable errors?",
+  "kpis": [
+    {
+      "value": "14",
+      "label": "Homepage sections audited",
+      "note": "Hero to footer"
+    },
+    {
+      "value": "3",
+      "label": "Room-type keyword pages",
+      "note": "1, 2 & 3 bedroom"
+    },
+    {
+      "value": "10",
+      "label": "Answer-first FAQs",
+      "note": "8 rewritten, 2 added"
+    },
+    {
+      "value": "1",
+      "label": "Phone number everywhere",
+      "note": "Consistent local NAP"
+    }
+  ],
+  "fixes": [
+    {
+      "title": "Fix 1: two phone numbers, one business",
+      "caption": "Mismatched contact details replaced with one verified number.",
+      "before": [
+        "+91 99478 77537",
+        "Placeholder number"
+      ],
+      "after": [
+        "One number on every button"
+      ],
+      "keyword": "Consistent local NAP",
+      "tagBefore": "Conflicting",
+      "tagAfter": "Consistent ✓"
+    },
+    {
+      "title": "Fix 2: one keyword per boat",
+      "caption": "Each room-type page owns its own search, the homepage owns booking.",
+      "before": [
+        "Every page chasing \"houseboat Alleppey\""
+      ],
+      "after": [
+        "1 Bedroom",
+        "2 Bedroom",
+        "3 Bedroom",
+        "Packages"
+      ],
+      "keyword": "",
+      "tagBefore": "Overlapping",
+      "tagAfter": "Mapped ✓"
+    }
+  ],
+  "blueprint": {
+    "title": "The 10-point homepage fix list",
+    "items": [
+      "New H1 with value & price",
+      "Answer-first intro",
+      "Trust badges under CTA",
+      "Links to room-type pages",
+      "Clear package pricing",
+      "Answer-first FAQ openers",
+      "2 new high-intent FAQs",
+      "GPS & Maps embed",
+      "One phone number",
+      "About & founder section"
+    ],
+    "note": "Each fix written as an exact edit — keep, change or add — with the reason behind it, ready to apply in Elementor."
+  },
+  "liveSite": {
+    "heading": "The Roja Houseboats website",
+    "lead": "The site runs on a clear structure — a booking homepage and dedicated 1, 2 and 3 bedroom houseboat pages — with the on-page fixes being applied section by section.",
+    "caption": "rojahouseboats.com — Houseboat booking in Alleppey, from the Mannancherry boarding point."
+  }
 }

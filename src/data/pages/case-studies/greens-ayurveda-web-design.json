@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "title": "Greens Ayurveda Website Case Study | Teknoppy",
+    "description": "How Teknoppy turned an outdated site into a calm, mobile-first, conversion-focused website for Greens Ayurveda, a Calicut Ayurvedic hospital and academy serving patients in India and abroad."
+  },
+  "breadcrumb": [
+    { "name": "Home", "href": "/" },
+    { "name": "Case Studies", "href": "/case-study/" },
+    { "name": "Greens Ayurveda — Website", "href": "/case-studies/greensayurveda/" }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Case Study",
+      "h1Lead": "Greens Ayurveda: From Digital Invisibility to a",
+      "h1Accent": "Lead-Generating Website",
+      "h1Rest": "",
+      "eyebrow": "Greens Ayurveda",
+      "meta": [
+        { "label": "Key Services", "value": "UI/UX Design, Website Development, Content Architecture, Local & Organic SEO" },
+        { "label": "Live Website", "value": "greensayurveda.com", "href": "https://greensayurveda.com" }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "About Client",
+      "paragraphs": [
+        { "text": "Greens Ayurveda is an Ayurvedic hospital and international academy based in Azhiyur, Calicut, Kerala. It offers Panchakarma therapies and practitioner training to patients and medical trainees across India and abroad." }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "h2": "Challenges",
+      "items": [
+        { "title": "An outdated digital presence", "text": "The existing website did not reflect the quality of the care Greens Ayurveda provides, so first-time visitors had little reason to trust it or to enquire." },
+        { "title": "Low discovery for specialised therapies", "text": "Panchakarma and treatment searches from India and overseas were not leading visitors to the site, limiting how many people could find the hospital and academy." },
+        { "title": "No clear path from interest to enquiry", "text": "Treatments, programmes and practitioners were not organised so a visitor could quickly find what they needed and take the next step." }
+      ],
+      "layout": "list"
+    },
+    {
+      "type": "prose",
+      "bg": "soft",
+      "h2": "Campaign Objective",
+      "paragraphs": [
+        { "text": "Teknoppy's goal was to transform an outdated digital presence into a credible, conversion-focused platform that serves two audiences at once — patients looking for authentic Ayurvedic treatment and professionals looking for practitioner training — wherever in the world they are searching from." }
+      ]
+    },
+    {
+      "type": "figure",
+      "bg": "white",
+      "h2": "Introduction",
+      "src": "/case-studies/greensayurveda.webp",
+      "url": "greensayurveda.com",
+      "alt": "Greens Ayurveda website homepage — greensayurveda.com",
+      "caption": "greensayurveda.com — homepage as it appears today."
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "h2": "A comprehensive range of services offered by Teknoppy and their outcomes",
+      "items": [
+        { "title": "UI/UX design", "text": "A calm, mobile-first layout with serene imagery that matches the healing ethos of the brand and works comfortably on a phone." },
+        { "title": "Content architecture", "text": "Treatment pages, programme listings, practitioner profiles, FAQs and a structured enquiry flow, so visitors can find the right treatment or course quickly." },
+        { "title": "Local and organic SEO", "text": "Targeted content for Ayurvedic treatment in Kerala and a Panchakarma centre in Calicut, supported by schema markup." },
+        { "title": "Conversion flow", "text": "Prominent appointment calls to action, enquiry forms and WhatsApp integration to capture enquiries, including from international visitors." }
+      ],
+      "layout": "list"
+    },
+    {
+      "type": "cards",
+      "bg": "soft",
+      "h2": "Greens Ayurveda's Outcome After Teknoppy's Work",
+      "items": [
+        { "title": "More enquiries, notably from abroad", "text": "A measurable rise in enquiries, particularly from international visitors." },
+        { "title": "Stronger engagement", "text": "Visitors spend more time on the page and bounce less." },
+        { "title": "Steady organic growth", "text": "Growing organic visibility for relevant wellness and treatment keywords." }
+      ],
+      "layout": "list"
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "paragraphs": [
+        { "lead": "Client feedback:", "text": "\"Mr. Sanal is exceptionally supportive and customer-friendly. I have worked with many IT teams, but I am 100% happy with Teknoppy. No doubt, I recommend them with 100% satisfaction.\" — Dr. Asghar, CEO, Greens Ayurveda, Calicut" }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "white",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "FAQ",
+      "items": [
+        { "q": "What was the main goal of the Greens Ayurveda project?", "a": "To replace an outdated website with a credible, conversion-focused platform that helps patients and medical trainees in India and abroad find Greens Ayurveda and get in touch." },
+        { "q": "What did Teknoppy deliver for Greens Ayurveda?", "a": "A calm, mobile-first website design, treatment and programme content architecture, local and organic SEO with schema markup, and a conversion flow built around appointment calls to action, enquiry forms and WhatsApp." },
+        { "q": "Who is the website built for?", "a": "Two audiences: patients seeking Panchakarma and other Ayurvedic treatments, and practitioners and medical trainees looking for the academy's training programmes." },
+        { "q": "Where is Greens Ayurveda based?", "a": "Azhiyur, Calicut, Kerala, serving clients across India and abroad." }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "cream",
+      "h2": "Other Case Studies",
+      "items": [
+        { "label": "Varma Ayurveda", "text": "WordPress website for an Ayurveda brand", "href": "/case-studies/varma-ayurveda-wordpress-development/" },
+        { "label": "Olives Boutique Resort", "text": "Digital marketing for a Wayanad eco-resort", "href": "/case-studies/olives-boutique-resort-digital-marketing/" },
+        { "label": "All case studies", "text": "Browse every Teknoppy project", "href": "/case-study/" }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "white",
+      "h2": "Related Service",
+      "items": [
+        { "label": "Web Design for Hospitals in Kerala", "text": "Teknoppy's matching service page", "href": "/web-design-for-hospitals-kerala/" }
+      ]
+    },
+    { "type": "byline", "bg": "white", "text": "Written by Sanal Edison, Digital Strategist at Teknoppy" },
+    {
+      "type": "cta",
+      "bg": "cream",
+      "paragraphs": [
+        { "text": "Need a website that builds trust and brings in enquiries for your healthcare or wellness brand? Talk to Teknoppy: +91 6282249224." }
+      ],
+      "ctas": [
+        { "label": "Talk to Teknoppy", "href": "tel:+916282249224" },
+        { "label": "Contact Us", "href": "/contact-us/" }
+      ]
+    }
+  ]
+}

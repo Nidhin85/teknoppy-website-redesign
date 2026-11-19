@@ -1,0 +1,159 @@
+{
+  "title": "Edamanasserry Spine Hospital: SEO Case Study | Teknoppy",
+  "description": "How Teknoppy restructured SEO for Edamanasserry Spine Hospital, an Ayurvedic spine hospital in Coimbatore: zero cannibalization and trustworthy medical content.",
+  "canonical": "https://www.teknoppy.com/case-studies/edamanasserry-spine-hospital-seo/",
+  "ogImage": "https://www.teknoppy.com/case-studies/espinehospital.webp",
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://www.teknoppy.com/case-studies/edamanasserry-spine-hospital-seo/#article",
+          "headline": "Edamanasserry Spine Hospital: An SEO Services Case Study for an Ayurvedic Spine Hospital in Coimbatore",
+          "description": "How Teknoppy restructured SEO for Edamanasserry Spine Hospital, an Ayurvedic spine hospital in Coimbatore: zero cannibalization and trustworthy medical content.",
+          "image": "https://www.teknoppy.com/case-studies/espinehospital.webp",
+          "mainEntityOfPage": "https://www.teknoppy.com/case-studies/edamanasserry-spine-hospital-seo/",
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Search engine optimization"
+            },
+            {
+              "@type": "Thing",
+              "name": "Healthcare SEO"
+            },
+            {
+              "@type": "Thing",
+              "name": "Keyword cannibalization"
+            },
+            {
+              "@type": "Hospital",
+              "name": "Edamanasserry Spine Hospital",
+              "url": "https://e-spinehospital.com/",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Coimbatore",
+                "addressRegion": "Tamil Nadu",
+                "addressCountry": "IN"
+              }
+            }
+          ],
+          "author": {
+            "@type": "Person",
+            "name": "Sanal Edison",
+            "jobTitle": "Digital Strategist",
+            "url": "https://www.teknoppy.com/sanal-edison-digital-strategist/",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Teknoppy"
+            }
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Teknoppy",
+            "url": "https://www.teknoppy.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.teknoppy.com/logo.svg"
+            }
+          },
+          "dateModified": "2026-10-20",
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.teknoppy.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Case Studies",
+              "item": "https://www.teknoppy.com/case-study/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Edamanasserry Spine Hospital",
+              "item": "https://www.teknoppy.com/case-studies/edamanasserry-spine-hospital-seo/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What was the main SEO problem with the Edamanasserry Spine Hospital website?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Three existing pages were all competing for \"ayurvedic back pain treatment Coimbatore\", splitting their ranking strength. The site also had no clear topical structure separating conditions, treatments and departments, so search engines could not tell which page answered which patient search."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Did Teknoppy change any existing hospital URLs?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. The homepage URL and its primary keyword were kept, and no existing URL was changed. All fixes were made through keyword reassignment, page structure and internal linking."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is the new site structure organised?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The site is organised into five content pillars: Ayurveda, Conditions, Treatments, Departments, and Trust and About. Each page has one clear job and one primary keyword, so pages no longer compete with each other."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why is medical SEO content handled differently?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Health content is treated by Google as Your Money or Your Life (YMYL) content, so accuracy and trust matter more than keyword volume. Teknoppy grounded every medical claim in clinical sources, avoided invented patient stories or success rates, and added disclaimers and doctor review recommendations."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What primary keyword does the homepage target?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The homepage owns \"Ayurvedic spine treatment in Coimbatore\". Teknoppy wrote ten meta descriptions and ten longer page descriptions around it, each mapped to the homepage, treatments, about, facilities, doctors or contact page."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How are blog posts structured for AI search?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Each post opens with a short quick-answer block, then gives a stage-by-stage explanation, a comparison table, an FAQ, a medical disclaimer and cited sources. This gives Google AI Overviews and assistants like ChatGPT an accurate passage to quote."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do the blogs link to the hospital's service pages?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Posts use contextual internal links to real department and treatment pages such as orthopaedics, musculoskeletal, physiotherapy, naturopathy and yoga, and traditional Ayurvedic treatment, plus doctors, reviews and appointment pages."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does this approach work for other hospitals and clinics?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Any hospital or clinic with many conditions, treatments and departments benefits from one keyword per page, a pillar structure, and medically accurate, answer-first content that builds trust rather than overstating results."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

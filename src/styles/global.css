@@ -71,6 +71,28 @@
   }
 }
 
+/* Phone type scale (< 640px). The scale above is sized for tablet/desktop and
+   read as oversized on phones: headings ate whole screens and body copy hit
+   17–21px. Every unprefixed text-* class reads these tokens, so redefining them
+   here shrinks phones only — sm:/md:/lg: variants switch on at 640px+, where
+   this block no longer applies, so tablet and desktop render exactly as before. */
+@media (max-width: 639px) {
+  :root {
+    --text-xs: 0.75rem;                /* 12px */
+    --text-sm: 0.875rem;               /* 14px */
+    --text-base: 0.9375rem;            /* 15px */
+    --text-lg: 1rem;                   /* 16px */
+    --text-xl: 1.125rem;               /* 18px */
+    --text-2xl: 1.25rem;               /* 20px */
+    --text-3xl: 1.5rem;                /* 24px */
+    --text-4xl: 1.75rem;               /* 28px */
+    --text-5xl: 2rem;                  /* 32px */
+    --text-6xl: 2.25rem;               /* 36px */
+    --text-7xl: 2.5rem;                /* 40px */
+    --text-8xl: 2.75rem;               /* 44px */
+  }
+}
+
 @layer base {
   html {
     -webkit-font-smoothing: antialiased;

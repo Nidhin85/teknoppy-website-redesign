@@ -1,6 +1,6 @@
 {
-  "metaTitle": "Creative Web Design Qatar: SEO & Content Case Study | Teknoppy",
-  "metaDescription": "How Teknoppy manages ongoing SEO, backlink acquisition, weekly blog publishing, and Google Business Profile optimization for Creative Web Design Qatar in Doha.",
+  "metaTitle": "Creative Web Design Qatar: SEO Content Case Study | Teknoppy",
+  "metaDescription": "How Teknoppy built schema markup, a 9-pillar blog plan and SEO content for Creative Web Design Qatar, a Doha web design agency founded in 2005.",
   "canonicalURL": "https://teknoppy.com/case-studies/creative-web-design-qatar-seo-content/",
   "heroImage": "/case-studies/webdesignqa.webp",
   "heroImageAlt": "Creative Web Design Qatar SEO and Content Case Study",
@@ -16,173 +16,302 @@
   },
   "clientName": "Creative Web Design Qatar",
   "categoryTag": "SEO, Backlink Building & Content Marketing",
-  "tagBadge": "GCC Agency Growth Case Study",
-  "title": "Creative Web Design Qatar: Ongoing SEO & Content Strategy for a GCC Agency",
-  "storyLead": "How Teknoppy executes ongoing technical SEO, quality backlink acquisition, weekly blog publishing, and Google Business Profile management for a prominent Doha web agency.",
-  "industry": "Web Design & Digital Marketing Agency",
-  "location": "Doha, Qatar — serving the wider GCC",
-  "services": "SEO, Backlink Building, Blog Content, Google Business Profile Management",
+  "tagBadge": "B2B Agency SEO Case Study",
+  "title": "Creative Web Design Qatar: An SEO Content Case Study for a Doha Web Design Agency",
+  "storyLead": "How Teknoppy cleaned up the structured data and built a pillar-based content plan for an established Doha agency — so its inner service pages can earn rankings of their own instead of leaning on the homepage.",
+  "industry": "Web design & digital services",
+  "location": "Doha Tower, Doha, Qatar",
+  "services": "Schema markup, content strategy, blog content",
+  "platform": "Static HTML website",
   "liveWebsite": "webdesign.qa",
-  "liveWebsiteUrl": "https://webdesign.qa",
+  "liveWebsiteUrl": "https://www.webdesign.qa/",
   "heroHighlights": [
-    "Weekly Editorial Cadence",
-    "Targeted Backlink Building",
-    "Doha Local GBP Management",
-    "Structured Reporting Loops"
+    "Connected Schema Graph",
+    "9-Pillar Content Plan",
+    "Service-Linked Blogs",
+    "Answer-First Writing"
   ],
   "atAGlance": [
-    "Disciplined weekly backlink acquisition strengthening domain authority and organic referral signals",
-    "Regular long-form blog content published on a weekly schedule across GCC commercial search terms",
-    "Systematic Google Business Profile optimization and updates supporting local map pack discovery in Doha",
-    "Structured weekly reporting maintaining transparent progress tracking against target search queries"
+    "A ranking check showing the homepage on page one for core web design terms, while inner service pages such as SEO and hosting were not ranking for their own head keywords",
+    "A connected schema markup set for the homepage and every service page — Organization, ProfessionalService, WebSite, WebPage, Service and breadcrumbs — built only from details verified on the live site",
+    "Six structured data issues fixed, including a wrong YouTube link, duplicate business entities and an unsupported site-search action",
+    "A 60+ topic blog plan across nine service pillars, with a keyword, intent, funnel stage, AEO question and target service page for every post",
+    "SEO, AEO, GEO and E-E-A-T optimized blog content, starting with a cloud hosting comparison for Qatar businesses"
   ],
   "aboutHeading": "About Creative Web Design Qatar",
   "aboutParagraphs": [
-    "Creative Web Design Qatar is a Doha-based web design agency operating since 2005, offering web design, hosting, SEO, ecommerce, and digital marketing to businesses across Qatar and the wider GCC — from corporate and retail clients to real estate, healthcare, education, and hospitality.",
-    "For an agency offering web design and search optimization, search visibility is not just a marketing channel — it is an active demonstration of competency. When commercial directors and marketing heads in Doha search for digital partners, the agency's own organic rankings serve as an immediate litmus test of capability."
+    "Creative Web Design Qatar is a web design and digital services agency founded in 2005 and based in Doha Tower on Al Asmak Street, Doha. It builds websites, eCommerce stores and mobile apps, and offers SEO, web hosting, domain and email hosting, logo design, social media marketing, Google Ads management, content writing, website maintenance, and Microsoft 365 and Google Workspace setup, for clients across corporate, retail, healthcare, real estate, education and hospitality sectors.",
+    "With an exact-match domain and two decades in the market, the agency already ranked for its core terms. The problem was depth. The homepage carried most of the visibility, inner service pages had little content of their own to rank with, and the structured data across the site contained errors and conflicting details that weakened the signals search engines and AI tools rely on.",
+    "This case study covers the schema markup, content strategy and blog content delivered by Teknoppy. It does not cover the agency's own design, development or hosting work for its clients, which is the company's own domain."
   ],
-  "challengeLead": "Sustaining high-visibility rankings in a competitive agency search ecosystem requires disciplined execution:",
+  "challengeLead": "Our first audit found five problems holding the site back.",
   "challenges": [
     {
       "number": 1,
-      "title": "No structured backlink program",
-      "description": "Domain authority and referral signals weren't being actively built through a consistent backlink strategy, leaving rankings vulnerable to more aggressive competitors."
+      "title": "The homepage was doing all the work",
+      "description": "The site appeared on page one for \"web design company Qatar\" and \"website design Doha Qatar\", but service pages such as SEO, hosting and logo design were not ranking for their own head terms."
     },
     {
       "number": 2,
-      "title": "Irregular blog publishing",
-      "description": "Content wasn't being published on a consistent cadence, limiting fresh, indexable topical authority in a highly competitive regional market."
+      "title": "Structured data with errors and duplicates",
+      "description": "Existing schema pointed to the wrong YouTube channel and declared the business twice, as both LocalBusiness and ProfessionalService, sending search engines two competing versions of the same entity."
     },
     {
       "number": 3,
-      "title": "Google Business Profile under-maintained",
-      "description": "Listing details weren't kept consistently updated, constraining local map pack visibility for commercial queries in Doha."
+      "title": "Conflicting facts across pages",
+      "description": "The homepage said the agency was founded in 2005 while service pages said 2001. Inconsistent facts like this weaken trust signals for both Google and AI answer engines."
+    },
+    {
+      "number": 4,
+      "title": "No content to support service pages",
+      "description": "There was no planned blog content feeding the service pages, so pages like SEO, hosting and eCommerce had nothing building topical authority or internal links around them."
+    },
+    {
+      "number": 5,
+      "title": "A crowded, competitive market",
+      "description": "Qatar web design and SEO searches are dominated by directories such as Clutch and many established agencies. Ranking higher meant out-answering competitors on the questions buyers actually ask, not just repeating service lists."
     }
   ],
-  "objectiveLead": "Teknoppy's objective was to run an ongoing, multi-faceted organic growth program that could:",
+  "objectiveLead": "Teknoppy was engaged to strengthen the site's technical trust signals and build a content engine that helps every service page rank on its own. The brief centred on:",
   "objectives": [
-    "Systematically build authoritative backlinks to strengthen core domain equity",
-    "Maintain a predictable weekly cadence of high-value industry blog content targeting GCC commercial queries",
-    "Keep Google Business Profile assets fully optimized to capture high-intent local agency searches",
-    "Deliver transparent weekly reporting linking tactical execution directly to organic ranking movements"
+    "Checking where the site actually ranked to find the real gaps",
+    "Building verified, connected schema markup for the homepage and every service page",
+    "Fixing errors, duplicates and conflicting facts in the existing structured data",
+    "Planning a pillar-based blog programme that supports each service page",
+    "Writing SEO, AEO, GEO and E-E-A-T optimized blog content for priority topics"
   ],
-  "approachLead": "How Teknoppy executes a consistent, four-part weekly optimization engine:",
+  "approachLead": "Six pillars took the site from homepage-only rankings to a structure where every service can compete.",
   "approachPillars": [
     {
-      "title": "Ongoing backlink acquisition",
+      "title": "A ranking check before any recommendation",
       "paragraphs": [
-        "A structured outreach and editorial placement program operates on a weekly rhythm, securing relevant contextual links that expand domain trust without risking algorithmic penalties."
+        "Teknoppy tested the site's core terms first. It appeared mid-page on page one for \"web design company Qatar\" and \"website design Doha Qatar\", behind directories and established competitors, and was not visible for \"SEO company Qatar Doha\". That showed the strength sat with the homepage and the exact-match domain, while inner pages needed their own support."
       ]
     },
     {
-      "title": "Consistent blog publishing cadence",
+      "title": "Every fact checked against the live site",
       "paragraphs": [
-        "In-depth, keyword-aligned articles addressing enterprise web design, ecommerce migration, and regional digital trends are published weekly, systematically capturing informational search queries across Qatar."
+        "Before writing any markup, Teknoppy confirmed the company name, address, both phone numbers, WhatsApp, email, founding year, social profiles and services directly from the live pages. Nothing went into the schema that the site itself did not state."
       ]
     },
     {
-      "title": "Proactive Google Business Profile management",
+      "title": "One connected entity across the whole site",
       "paragraphs": [
-        "Regular posts, service updates, and citation management keep the agency prominent on Google Maps and local search results across Doha."
+        "Three global blocks — Organization, ProfessionalService and WebSite — go on every page, linked by shared @id references. Each service page then adds its own Service and breadcrumb block, so search engines read the site as one company with a clear, connected list of services."
       ]
     },
     {
-      "title": "Structured weekly reporting cycles",
+      "title": "Six structured data issues resolved",
       "paragraphs": [
-        "Transparent weekly reports summarize indexing status, target keyword positions, and upcoming content briefs, keeping strategic priorities completely aligned."
+        "The wrong YouTube channel was replaced with the verified one. Duplicate LocalBusiness and ProfessionalService entities were merged into one. A site-search action that a static HTML site cannot support was removed. The 2005 versus 2001 founding-year conflict and the opening hours were flagged for the client to confirm, and FAQ markup was updated for Google's current rules."
+      ]
+    },
+    {
+      "title": "60+ blog topics across nine service pillars",
+      "paragraphs": [
+        "Blog topics were grouped into nine pillars that mirror the agency's services: website design, website development, eCommerce, SEO and AEO, mobile apps, digital marketing, hosting and maintenance, industry and location content, and branding and productivity. Each post has one keyword and one service page it supports, and high-priority topics such as website cost in Qatar were flagged to publish first."
+      ]
+    },
+    {
+      "title": "Answer-first blog content",
+      "paragraphs": [
+        "Posts are written to open with the primary keyword and answer the question directly, use secondary keywords naturally without stuffing, and carry a meta title, meta description and permalink within character limits. The first, a comparison of cloud and traditional hosting for Qatar businesses, was kept under 1,300 words and links back to the hosting service page."
       ]
     }
   ],
   "deliverables": [
     {
-      "title": "Continuous backlink development",
-      "description": "Steady acquisition of high-relevance contextual backlinks strengthening overall search engine authority."
+      "title": "Ranking gap check",
+      "description": "A directional review of where the site ranked for core and service terms, and where it was missing."
     },
     {
-      "title": "Weekly commercial blog publishing",
-      "description": "Researched, indexable editorial content published weekly targeting competitive GCC digital queries."
+      "title": "Homepage schema markup",
+      "description": "Organization, ProfessionalService, WebSite and WebPage blocks built from verified live-site details."
     },
     {
-      "title": "Local Google Business Profile upkeep",
-      "description": "Active updates, category optimization, and photo syndication supporting local map visibility."
+      "title": "Service page schema",
+      "description": "A Service and breadcrumb block for every service page, separated per page so developers can paste them easily."
     },
     {
-      "title": "Weekly executive performance reports",
-      "description": "Detailed visibility tracking providing transparency on search movements and execution milestones."
+      "title": "Six schema fixes",
+      "description": "Wrong links corrected, duplicates merged, unsupported markup removed, and conflicting facts flagged."
+    },
+    {
+      "title": "A 60+ topic content plan",
+      "description": "Nine service pillars with keyword, intent, funnel stage, AEO question and target page for every post."
+    },
+    {
+      "title": "Optimized blog content",
+      "description": "Answer-first posts with meta title, description and permalink, starting with cloud vs traditional hosting."
     }
   ],
-  "whyMattersHeading": "Why Agency Search Visibility Operates as Proof of Work",
-  "whyMattersParagraphs": [
-    "When enterprise procurement committees evaluate digital agencies, they instinctively search for the agency's primary keywords. If an agency promising first-page Google rankings cannot achieve them for its own brand in its home city, the prospective client loses confidence immediately.",
-    "A continuous, multi-vector SEO strategy combining fresh technical content, link acquisition, and active local signals demonstrates sustained mastery of modern search algorithms."
-  ],
-  "whyMattersCalloutHtml": "<p><strong>By maintaining disciplined weekly execution across content, links, and local profiles</strong>, Creative Web Design Qatar reinforces its positioning as one of Doha's most reliable web design partners. Learn more in our <a href=\"/case-study/\" class=\"underline font-bold text-[#F05A2C]\">case study library</a> or read about our <a href=\"/web-design-company-for-gcc-businesses/\" class=\"underline font-bold text-[#F05A2C]\">GCC web design services</a>.</p>",
-  "faqs": [
-    {
-      "question": "What was the main goal of the Creative Web Design Qatar engagement?",
-      "answer": "To run ongoing SEO, backlink, blog, and Google Business Profile work for a Doha web design agency competing in its own crowded local search category."
-    },
-    {
-      "question": "What does Creative Web Design Qatar offer?",
-      "answer": "Web design, hosting, domain registration, email hosting, SEO, ecommerce, and digital marketing services to businesses across Qatar and the wider GCC."
-    },
-    {
-      "question": "Did the engagement affect Creative Web Design Qatar's existing rankings?",
-      "answer": "The work was scoped to avoid keyword cannibalization across the agency's existing service pages — no overlapping targets were introduced."
-    },
-    {
-      "question": "Does this case study cover website design work for Creative Web Design Qatar?",
-      "answer": "No — this case study covers ongoing SEO, content, and GBP work. It does not cover website design or development for this client."
-    }
-  ],
-  "ctaHeadline": "Need ongoing SEO, content, and local visibility work that keeps you competitive in your own market?",
   "rankingKeywords": {
-    "lead": "Verified Google search rankings for agency, web development, and digital marketing services across Qatar.",
+    "eyebrow": "Keyword mapping",
+    "heading": "Ranking and target keywords",
+    "lead": "Core web design terms where the site already ranks on page one, and the service and content keywords the new plan targets across Doha and Qatar.",
     "groups": [
       {
-        "title": "Target keywords — Qatar Web Design & SEO",
-        "badge": "Google Top 10",
-        "hasMap": true,
-        "note": "Competitive agency keywords connecting GCC businesses with localized design and search engine optimization services.",
+        "title": "Keywords — Web Design Doha & Qatar",
+        "badge": "SEO · AEO · GEO",
+        "label": "Keyword mapping",
+        "headers": [
+          "Keyword",
+          "Page",
+          "Status"
+        ],
+        "hasMap": false,
+        "note": "\"Page 1\" reflects a directional search check in June 2026. B2B search terms targeting business owners, marketing managers and procurement teams in Doha and across Qatar.",
         "rows": [
           {
-            "keyword": "Web design in Qatar",
-            "page": "1",
-            "position": "1",
-            "map": "3"
+            "keyword": "web design company Qatar",
+            "page": "/",
+            "position": "Page 1"
           },
           {
-            "keyword": "Website design company Doha Qatar",
-            "page": "1",
-            "position": "1",
-            "map": "5"
+            "keyword": "website design Doha Qatar",
+            "page": "/",
+            "position": "Page 1"
           },
           {
-            "keyword": "Web design company Doha",
-            "page": "1",
-            "position": "1",
-            "map": "3"
+            "keyword": "SEO company Qatar",
+            "page": "/seo-company-qatar.html",
+            "position": "Target"
           },
           {
-            "keyword": "Website design company Qatar",
-            "page": "1",
-            "position": "1",
-            "map": "4"
+            "keyword": "web hosting Qatar",
+            "page": "/web-hosting-company-qatar.html",
+            "position": "Target"
           },
           {
-            "keyword": "Microsoft 365",
-            "page": "1",
-            "position": "1",
-            "map": "23"
+            "keyword": "website design cost Qatar",
+            "page": "Blog · Website design pillar",
+            "position": "Target"
           },
           {
-            "keyword": "Creative web design Qatar",
-            "page": "1",
-            "position": "1",
-            "map": "1"
+            "keyword": "cloud hosting services in Qatar",
+            "page": "Blog · Hosting pillar",
+            "position": "Target"
           }
         ]
       }
     ]
+  },
+  "whyMattersHeading": "Why this approach matters",
+  "whyMattersParagraphs": [
+    "An established site with an exact-match domain can rank its homepage for years while its service pages stay invisible. That leaves real revenue on the table, because buyers searching for SEO, hosting or eCommerce in Qatar land on competitors' dedicated pages instead. Building content pillars that feed each service page, and linking them carefully, lets authority spread from the homepage to the pages that actually match what buyers search for.",
+    "Clean structured data matters even more now that AI tools answer so many supplier questions. When ChatGPT, Gemini or Google AI Overviews look up a web design company in Doha, they lean on consistent facts — one entity, one founding year, one address, verified profiles — and on content that answers questions like how much a website costs in Qatar directly. Duplicate entities and conflicting details make an agency harder to recommend with confidence."
+  ],
+  "whyMattersCalloutHtml": "<p class=\"font-semibold text-neutral-900 text-base sm:text-lg leading-relaxed\">Giving search engines one verified, connected identity for Creative Web Design Qatar — and giving every service page its own pillar of answer-first content — is what turns a homepage that ranks into a whole site that competes.</p><p class=\"mt-4 text-sm sm:text-base text-neutral-600\"><strong>This case study is part of Teknoppy's SEO services work for agencies and B2B businesses in Qatar and the GCC.</strong> Explore our <a href=\"/seo-services/\" class=\"underline font-bold text-[#F05A2C]\">SEO Services</a> or view <a href=\"/case-study/\" class=\"underline font-bold text-[#F05A2C]\">More Teknoppy Case Studies</a>.</p>",
+  "faqs": [
+    {
+      "question": "What was the main SEO problem for Creative Web Design Qatar?",
+      "answer": "The homepage was doing almost all of the ranking work. It appeared on page one for core web design terms in Qatar, but inner service pages such as SEO, hosting and logo design were not ranking for their own head terms, and the structured data had conflicts and errors."
+    },
+    {
+      "question": "What schema markup did Teknoppy build?",
+      "answer": "Teknoppy built a connected set of Organization, ProfessionalService, WebSite, WebPage, Service and BreadcrumbList blocks. Global blocks go on every page, and each service page gets its own Service and breadcrumb block, all linked by shared @id references and verified against the live pages."
+    },
+    {
+      "question": "Which schema issues were fixed?",
+      "answer": "Teknoppy corrected a wrong YouTube channel link, merged duplicate LocalBusiness and ProfessionalService entities into one, removed a SearchAction that a static HTML site cannot support, flagged a 2005 versus 2001 founding-year conflict, flagged opening hours for verification, and updated FAQ markup handling for current Google rules."
+    },
+    {
+      "question": "How was the blog content plan structured?",
+      "answer": "The plan covers 60+ blog topics grouped into nine pillars that match the agency's services, from website design and development to SEO, hosting, mobile apps and branding. Every topic has a target keyword, search intent, funnel stage, format, an AEO question, a location, an E-E-A-T angle, the service page it supports, and a priority."
+    },
+    {
+      "question": "Why does each blog post link to a service page?",
+      "answer": "Blogs target informational and comparison searches, then pass relevance and internal links to the commercial service page they support. This builds topical authority around each service without the blog competing with the service page for the same buying keyword."
+    },
+    {
+      "question": "Where did Creative Web Design Qatar rank before the content push?",
+      "answer": "A directional search check in June 2026 found the site on page one for \"web design company Qatar\" and \"website design Doha Qatar\", mid-page in a crowded field. It was not visible for \"SEO company Qatar Doha\", which is one of the gaps the content plan targets."
+    },
+    {
+      "question": "How does this help the agency appear in AI search tools?",
+      "answer": "Clean, connected schema tells search engines and AI tools exactly who the company is, where it is and what it offers, while answer-first blog posts give ChatGPT, Gemini and Google AI Overviews direct passages to quote for questions like how much a website costs in Qatar."
+    },
+    {
+      "question": "Does this approach work for other agencies and service businesses?",
+      "answer": "Yes. Any established business whose homepage carries most of its rankings benefits from verified schema on every page and a pillar-based content plan that builds authority for each service page individually."
+    }
+  ],
+  "ctaHeadline": "Is your homepage ranking while your service pages stay invisible?",
+  "kpis": [
+    {
+      "value": "60+",
+      "label": "Blog topics planned",
+      "note": "Each mapped to a service page"
+    },
+    {
+      "value": "9",
+      "label": "Content pillars",
+      "note": "One per service area"
+    },
+    {
+      "value": "6",
+      "label": "Schema issues fixed",
+      "note": "Errors, conflicts & duplicates"
+    },
+    {
+      "value": "2",
+      "label": "Core terms on page 1",
+      "note": "Web design, Qatar & Doha"
+    }
+  ],
+  "fixes": [
+    {
+      "title": "Fix 1: two business entities, one company",
+      "caption": "Two competing schema entities merged into one connected identity.",
+      "before": [
+        "LocalBusiness",
+        "ProfessionalService"
+      ],
+      "after": [
+        "Creative Web Design Qatar · one entity"
+      ],
+      "keyword": "Shared @id on every page",
+      "tagBefore": "Duplicate",
+      "tagAfter": "Merged ✓"
+    },
+    {
+      "title": "Fix 2: homepage only, to every service",
+      "caption": "Blog pillars feeding authority into each service page.",
+      "before": [
+        "All rankings on the homepage"
+      ],
+      "after": [
+        "Web Design",
+        "SEO",
+        "Hosting",
+        "eCommerce"
+      ],
+      "keyword": "",
+      "tagBefore": "Homepage only",
+      "tagAfter": "4 pillars ✓"
+    }
+  ],
+  "blueprint": {
+    "title": "The 12-field blog brief",
+    "items": [
+      "Content pillar",
+      "Post title",
+      "Target keyword",
+      "Keyword difficulty",
+      "Search intent",
+      "Funnel stage",
+      "Content format",
+      "AEO question",
+      "GEO location",
+      "E-E-A-T angle",
+      "Linked service page",
+      "Publish priority"
+    ],
+    "note": "Every topic in the 60+ post plan carries all twelve fields, so each post has one job and one service page to support."
+  },
+  "liveSite": {
+    "heading": "The Creative Web Design Qatar website",
+    "lead": "The site now carries one connected, verified schema identity, with blog content building authority around each service page.",
+    "caption": "webdesign.qa — Web design company in Doha, Qatar, since 2005."
   }
 }

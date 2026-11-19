@@ -1,0 +1,159 @@
+{
+  "title": "Leema Engineering Works: SEO Case Study | Teknoppy",
+  "description": "How Teknoppy built GCC location SEO for Leema Engineering Works, a Sharjah pipes, fittings and flanges supplier: UAE, Bahrain and Qatar pages and buyer FAQs.",
+  "canonical": "https://www.teknoppy.com/case-studies/leema-engineering-works-seo/",
+  "ogImage": "https://www.teknoppy.com/case-studies/leemaeng.webp",
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://www.teknoppy.com/case-studies/leema-engineering-works-seo/#article",
+          "headline": "Leema Engineering Works: An SEO Services Case Study for a GCC Pipes, Fittings and Flanges Supplier",
+          "description": "How Teknoppy built GCC location SEO for Leema Engineering Works, a Sharjah pipes, fittings and flanges supplier: UAE, Bahrain and Qatar pages and buyer FAQs.",
+          "image": "https://www.teknoppy.com/case-studies/leemaeng.webp",
+          "mainEntityOfPage": "https://www.teknoppy.com/case-studies/leema-engineering-works-seo/",
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Search engine optimization"
+            },
+            {
+              "@type": "Thing",
+              "name": "Location page SEO"
+            },
+            {
+              "@type": "Thing",
+              "name": "B2B industrial SEO"
+            },
+            {
+              "@type": "Organization",
+              "name": "Leema Engineering Works",
+              "url": "https://leemaeng.com/",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Industrial Area 2, 27th Street, Old BMW Road",
+                "addressLocality": "Sharjah",
+                "addressCountry": "AE"
+              }
+            }
+          ],
+          "author": {
+            "@type": "Person",
+            "name": "Sanal Edison",
+            "jobTitle": "Digital Strategist",
+            "url": "https://www.teknoppy.com/sanal-edison-digital-strategist/",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Teknoppy"
+            }
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Teknoppy",
+            "url": "https://www.teknoppy.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.teknoppy.com/logo.svg"
+            }
+          },
+          "dateModified": "2026-10-20",
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.teknoppy.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Case Studies",
+              "item": "https://www.teknoppy.com/case-study/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Leema Engineering Works",
+              "item": "https://www.teknoppy.com/case-studies/leema-engineering-works-seo/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What was the main SEO challenge for Leema Engineering Works?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Leema supplies a very wide range of pipes, fittings, flanges and valves across the UAE and wider GCC. Without a clear plan, product and location pages risk chasing the same keywords, and buyers in Bahrain and Qatar had no pages written for their market."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How were the location pages organised?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Each page pairs one product line with one market, such as pipe supplier in Sharjah, flanges supplier in UAE, pipe supplier in Bahrain, flanges supplier in Bahrain and pipe supplier in Qatar. That gives every page its own keyword so they do not compete with each other."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What content did Teknoppy write for the Bahrain pages?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Teknoppy wrote page content and a buyer FAQ for the Bahrain pipes page, answering the questions procurement teams ask: which pipe types are available, which standards and certifications apply, what documentation comes with each order, how to request a quote, and whether supply covers oil and gas, marine and HDPE projects."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why are FAQs important for industrial suppliers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Procurement engineers search with specific questions about standards, grades and documentation. Answer-first FAQs give Google featured snippets and AI assistants a direct passage to quote, and they help buyers qualify a supplier before they call."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which trust signals were used in the content?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The content uses facts the company states on its own site: ISO 9001:2015 certification, a legacy of over 50 years, its non-China stockist position, product standards such as ASTM, ASME, ANSI, DIN, BS and JIS, and test reports and material certificates on request."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What keywords were researched for the UAE flanges page?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Teknoppy researched keywords around \"trusted flanges supplier in UAE\" covering short-tail, long-tail, location, product and industry angles, then wrote page paragraphs in several lengths naming each flange type, material and standard."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does this help Leema appear in AI search tools?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pages that name the company, products, grades, standards and locations explicitly — and answer buyer questions directly — give ChatGPT, Gemini and Google AI Overviews clear entity information to draw on when someone asks for a certified pipe supplier in a specific GCC market."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does this approach work for other industrial suppliers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Any distributor with many products and several markets benefits from pairing one product line with one location per page, writing answer-first FAQs around specifications and documentation, and using only verifiable trust signals."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

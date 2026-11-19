@@ -1,6 +1,6 @@
 {
-  "metaTitle": "General Tech Services: A Search Engine Optimization (SEO) Case Study for a UAE Calibration Lab | Teknoppy",
-  "metaDescription": "How Teknoppy built a 185-topic, 17-pillar SEO & Google Business Profile strategy covering 15 calibration disciplines and 50+ industrial brands for General Tech Services in the UAE.",
+  "metaTitle": "General Tech Services: SEO Services Case Study | Teknoppy",
+  "metaDescription": "How Teknoppy built an SEO, AEO and GEO strategy for General Tech Services, an ISO 17025 calibration lab in Sharjah, UAE: keywords, FAQ hub and product pages.",
   "canonicalURL": "https://teknoppy.com/case-studies/general-tech-services-seo-services/",
   "heroImage": "/case-studies/generaltech.webp",
   "heroImageAlt": "General Tech Services UAE Calibration Lab SEO Case Study",
@@ -14,222 +14,302 @@
       "country": "United Arab Emirates"
     }
   },
-  "clientName": "General Tech Services",
+  "clientName": "General Tech Services LLC",
   "categoryTag": "SEO & Google Business Profile Strategy",
-  "tagBadge": "UAE Industrial SEO Case Study",
-  "title": "General Tech Services: A Search Engine Optimization (SEO) Case Study for a UAE Calibration Lab",
-  "storyLead": "How Teknoppy architected a 185-topic, 17-pillar content and local SEO strategy covering 15 calibration disciplines and 50+ industrial equipment brands across the UAE.",
-  "industry": "ISO 17025 Calibration & Industrial Equipment Distribution",
-  "location": "United Arab Emirates",
-  "services": "SEO Services, Local SEO / Google Business Profile Optimization, Content Strategy",
+  "tagBadge": "B2B Industrial SEO Case Study",
+  "title": "General Tech Services: An SEO Services Case Study for a UAE ISO 17025 Calibration Laboratory and Industrial Supplier",
+  "storyLead": "How Teknoppy turned a generic brand name into a clear search identity for a Sharjah calibration laboratory and industrial equipment distributor — with a primary keyword strategy, a 50-keyword cluster, a 25-question answer-engine FAQ hub, and product pages rewritten for SEO, AEO and GEO.",
+  "industry": "Calibration, test & measurement, industrial supply",
+  "location": "Sharjah, UAE (serving the UAE & GCC)",
+  "services": "SEO, AEO & GEO strategy, content, product SEO",
+  "platform": "Corporate website + Shopify store",
   "liveWebsite": "generaltech.ae",
-  "liveWebsiteUrl": "https://generaltech.ae",
+  "liveWebsiteUrl": "https://www.generaltech.ae/",
   "heroHighlights": [
-    "185-Topic Pillar Strategy",
-    "15 Calibration Disciplines",
-    "Google Business Profile Optimization",
-    "58-Topic Comparison Strategy"
+    "Primary Keyword Strategy",
+    "50-Keyword Cluster",
+    "AEO FAQ Hub",
+    "Product Page SEO"
   ],
   "atAGlance": [
-    "185-topic, 17-pillar content strategy covering all 15 calibration disciplines",
-    "Google Business Profile built out systematically for a multi-service, multi-location business",
-    "Dedicated inner pages replacing one generic, catch-all \"services\" page",
-    "A 58-topic comparison strategy added later without duplicating existing content",
-    "Structured monthly reporting instead of untracked, ad hoc SEO activity"
+    "A single primary keyword that anchors the brand to its accreditation, its two core business lines, and the UAE — separating General Tech Services from similarly named companies",
+    "A 50-keyword set split into five clusters: brand core, calibration services, GEO locations, AEO questions, and E-E-A-T trust signals",
+    "A 25-question FAQ hub across seven topic sections, written answer-first for featured snippets, voice search and AI answer engines, with FAQPage schema",
+    "Homepage trust content naming EIAC and ENAS accreditation, all 15 calibration disciplines, and authorized brands such as Mitutoyo, WIKA and Norbar",
+    "170+ product pages on the generaltechshop.ae store rewritten from verified specifications, each with its own model-number keyword"
   ],
   "aboutHeading": "About General Tech Services",
   "aboutParagraphs": [
-    "General Tech Services is an EIAC & ENAS accredited ISO 17025 calibration laboratory and authorized distributor of 50+ industrial brands, operating across the UAE since 1998.",
-    "A calibration lab's credibility rests almost entirely on what it's accredited to do and how precisely it can say so. A technical buyer choosing a calibration provider isn't won over by broad claims — they're checking exactly which disciplines are covered under accreditation, and whether the lab actually demonstrates depth in the specific one they need. That's a different SEO problem than most local businesses face, and it shaped the whole approach here.",
-    "Adding to that complexity, General Tech Services isn't only a calibration lab — it's also an authorized distributor for more than 50 industrial brands. A content strategy for this business has to represent two distinct things well at once: deep, accredited technical service across 15 disciplines, and a genuinely wide product distribution range, without either side of the business diluting the other's search visibility.",
-    "This case study covers ongoing SEO, content, and Google Business Profile work specifically — a separate case study covers this client's one-time website design restructure."
+    "General Tech Services LLC is a calibration laboratory and industrial equipment supplier founded in 1998 by Mr. John Mathew and headquartered in Industrial Area 11, Sharjah, with an office in Abu Dhabi and sister companies in Dammam, Saudi Arabia and East Ahmadi, Kuwait. Its laboratory is ISO/IEC 17025 accredited through EIAC (LB-CAL-004) and ENAS (NAL 240), covering 15 calibration disciplines from dimensional, electrical and pressure to biomedical, NDT and gas detection, carried out on-site or in-lab.",
+    "The company runs three businesses under one name: accredited calibration, authorized distribution of more than 50 global brands including Mitutoyo, WIKA, Norbar, Snap-on and Control Techniques, and engineering services such as VFD repair, CMM inspection, PRV testing and live panel cleaning. It reports more than 33,000 calibrations a year, a team of 60+ engineers, and a 10,000 sq ft Sharjah facility.",
+    "That breadth created the SEO problem. \"General Tech\" is a generic name shared by unrelated companies, and one website had to explain three different businesses to search engines at once. This case study covers the keyword strategy, answer-engine content and product page SEO delivered by Teknoppy. It does not cover General Tech's calibration methods, laboratory procedures or accreditation process, which are the company's own domain."
   ],
-  "challengeLead": "A 15-discipline, 50+ brand technical business needs its site to reflect that breadth — the previous setup couldn't.",
+  "challengeLead": "Our first audit found five problems holding the site back.",
   "challenges": [
     {
       "number": 1,
-      "title": "No structured content strategy",
-      "description": "Only a handful of topics were covered, leaving most of the 15 calibration disciplines and dozens of services without dedicated content, and no plan in place to expand without risking overlap between new and existing pages."
+      "title": "A generic brand name with no qualifier",
+      "description": "\"General Tech\" returns unrelated IT firms and job listings. Without accreditation and location words attached to the brand, search engines and AI tools could not reliably tell which company a searcher meant."
     },
     {
       "number": 2,
-      "title": "Incomplete Google Business Profile",
-      "description": "Categories, service areas, and photos weren't fully built out, limiting local search visibility for a business operating across multiple UAE locations and service types."
+      "title": "Three businesses competing for one homepage",
+      "description": "Calibration, product supply and engineering services were all pulling the homepage in different directions, so no single business line sent a strong, focused relevance signal."
     },
     {
       "number": 3,
-      "title": "Generic service pages",
-      "description": "Services like thermal imaging, servo motor repair, custom tool boxes, mass calibration, PAT testing, and automation were bundled into one broad \"services\" page rather than given the dedicated coverage each actually needed."
+      "title": "Buyer questions went unanswered",
+      "description": "Procurement and quality teams ask direct questions: is the lab accredited, is on-site calibration available, what does it cost. The site had no structured answers that a featured snippet or AI assistant could lift."
     },
     {
       "number": 4,
-      "title": "No consistent reporting",
-      "description": "Performance wasn't tracked or delivered in a structured, recurring format, making it hard to see what was actually working from one month to the next."
+      "title": "Thin, manufacturer-copy product pages",
+      "description": "Store pages for instruments, drives and transmitters largely repeated manufacturer text, gave buyers no reason to choose General Tech, and risked competing with the store's own category pages for broad terms."
     },
     {
       "number": 5,
-      "title": "Accreditation scope not built out as findable content",
-      "description": "EIAC & ENAS ISO 17025 accreditation across 15 disciplines existed as a claim on the site, but wasn't structured as its own detailed, verifiable content — exactly the detail a technical buyer checks before choosing a calibration provider."
+      "title": "Trust signals buried instead of stated",
+      "description": "The strongest proof points — EIAC and ENAS accreditation numbers, 15 disciplines, authorized-distributor status, 28+ years in business — were not written into the content in a way search engines could read as E-E-A-T evidence."
     }
   ],
-  "objectiveLead": "Teknoppy's goal was to build an SEO and local search strategy that could:",
+  "objectiveLead": "Teknoppy was engaged to build an SEO, AEO, GEO and E-E-A-T strategy that makes General Tech Services the clear answer for accredited calibration and industrial supply searches in the UAE. The brief centred on:",
   "objectives": [
-    "Cover the genuinely wide service and product range — 15 calibration disciplines plus dozens of engineering services and product categories — without pages competing against each other",
-    "Strengthen the lab's Google Business Profile presence for local, service-based search",
-    "Replace bundled, generic service content with dedicated pages for real, individually searched services",
-    "Give accreditation and disciplinary scope their own structured, verifiable content",
-    "Track performance in a consistent, recurring reporting format"
+    "Defining one primary keyword that ties the brand to its accreditation, services and location",
+    "Building a supporting keyword set across brand, service, location, question and trust intent",
+    "Writing an answer-first FAQ hub that serves featured snippets, voice search and AI answer engines",
+    "Turning accreditation, scope and brand partnerships into readable E-E-A-T content on the homepage",
+    "Rewriting store product pages with a repeatable structure and one non-competing keyword each"
   ],
-  "approachLead": "How Teknoppy engineered a disciplined multi-pillar SEO roadmap for accredited technical authority:",
+  "approachLead": "Six pillars took the site from a generic name to one well-defined search identity.",
   "approachPillars": [
     {
-      "title": "A full roadmap before any content was built",
+      "title": "Anchoring the brand to accreditation and location",
       "paragraphs": [
-        "The engagement began with a branded 31-page SEO roadmap and a simplified 6-month forward plan, establishing scope across GBP optimization, pillar content, and inner-page builds before any individual page was written. For a business with this much genuine breadth, planning the full structure upfront was what made it possible to expand content later without creating overlap."
+        "Teknoppy set the primary keyword as \"General Tech Services — ISO 17025 Calibration Laboratory and Industrial Equipment Supplier UAE\". It joins the brand name to its accreditation, its two core business lines and its country, so the brand stays the identity anchor while every qualifier search engines need is attached to it. The phrase leads the homepage title, the first paragraph and the closing contact block."
       ]
     },
     {
-      "title": "A 185-topic, 17-pillar content structure",
+      "title": "A 50-keyword set in five intent clusters",
       "paragraphs": [
-        "Content was built out discipline-by-discipline and service-by-service against a 17-pillar, 185-topic structure covering the real breadth of General Tech's service range — not a handful of broad pages trying to represent 15 calibration disciplines at once, but dedicated depth for each one."
+        "Supporting keywords were grouped into five clusters of ten: brand core terms (General Tech Services Sharjah, EIAC accredited), calibration service terms (on-site calibration services UAE), GEO location terms (Dubai, Abu Dhabi, Ajman, Ras Al Khaimah, Fujairah, GCC), AEO question terms (where to buy Mitutoyo equipment in UAE), and E-E-A-T trust terms (authorized Norbar distributor UAE)."
       ]
     },
     {
-      "title": "Google Business Profile built out systematically",
+      "title": "Writing proof points into the homepage",
       "paragraphs": [
-        "Categories, service areas, a product strategy, and a photo brief were developed specifically to strengthen local search presence for a multi-service, multi-location business, rather than leaving the profile at whatever default setup it started with."
+        "An eight-point trust section now states the evidence directly: EIAC and ENAS accreditation, operation since 1998, authorized distribution for Mitutoyo, WIKA and Norbar, on-site calibration across all seven Emirates with a 20+ vehicle fleet, the sectors served, and every one of the 15 accredited disciplines named in full."
       ]
     },
     {
-      "title": "Dedicated inner pages for real service lines",
+      "title": "A 25-question answer-engine FAQ hub",
       "paragraphs": [
-        "Thermal imaging, servo motor repair, custom tool boxes, mass calibration, PAT testing, and automation services each received their own dedicated content, replacing the single bundled \"services\" page that previously tried to represent all of them at once."
+        "The FAQ page covers 25 buyer questions in seven sections — company, calibration services, ISO 17025 and EIAC, calibration types, certificates and traceability, repairs and rental, and location. Every answer opens by restating the question so it can be lifted as a standalone snippet, and the page carries FAQPage schema for rich results."
       ]
     },
     {
-      "title": "Extending coverage later without duplicating it",
+      "title": "Store product pages rebuilt from verified specs",
       "paragraphs": [
-        "A standalone 58-topic, 6-month Product & Brand Comparison strategy was added afterward — covering brand comparisons and product/equipment comparisons — specifically scoped to extend the existing 185-topic pillar structure without repeating any topic already covered."
+        "Product pages on generaltechshop.ae were rewritten with a fixed structure, each targeting a model-number keyword rather than a broad category term, so product pages never compete with the collection pages that own those terms. Specifications came only from the live product page or manufacturer datasheets, and discrepancies — such as a title that contradicted its model code — were flagged for the client instead of guessed."
       ]
     },
     {
-      "title": "Structured, recurring reporting",
+      "title": "Service keyword sets and regional profiles",
       "paragraphs": [
-        "Ongoing performance is now tracked and delivered in a consistent monthly SEO report format, so progress against the pillar structure and GBP work is visible month to month rather than assumed."
-      ]
-    },
-    {
-      "title": "Content built to answer specific procurement questions directly",
-      "paragraphs": [
-        "Technical buyers increasingly research suppliers through AI-assisted search as much as traditional queries — asking a direct question like \"who offers ISO 17025 accredited torque wrench calibration in the UAE\" rather than browsing a homepage. Dedicated, discipline-specific pages that state accreditation scope and service detail plainly are what let both a search engine and an AI research tool answer that kind of specific question with General Tech Services, rather than defaulting to a competitor with clearer, more specific content."
+        "Individual service pages, such as live panel cleaning, received their own keyword sets covering technical terms, compliance standards and trust signals, keeping each service distinct from the others. Teknoppy also audited the Saudi Arabia Google Business Profile against Google's guidelines and local Saudi requirements to support the company's GCC presence."
       ]
     }
   ],
   "deliverables": [
     {
-      "title": "A 185-topic pillar content strategy",
-      "description": "A full 17-pillar, 185-topic structure covers the breadth of General Tech's actual service range, later extended with a standalone 58-topic Product & Brand Comparison strategy without duplicating existing topics."
+      "title": "Primary keyword strategy",
+      "description": "One brand-plus-accreditation keyword placed in the homepage title, opening paragraph, trust section and contact block."
     },
     {
-      "title": "Google Business Profile built out systematically",
-      "description": "Categories, service areas, product strategy, and a photo brief were developed to strengthen local search presence for a multi-service, multi-location business."
+      "title": "A 50-keyword cluster",
+      "description": "Brand, service, location, question and trust keywords — ten in each cluster — mapped to the pages that should own them."
     },
     {
-      "title": "Inner-page content across real service lines",
-      "description": "Dedicated content built for specific services including thermal imaging, servo motor repair, custom tool boxes, mass calibration, PAT testing, and automation services, rather than one generic \"services\" page trying to cover all of them."
+      "title": "A 25-question FAQ hub",
+      "description": "Answer-first content across seven sections, ready for featured snippets and AI answers, with FAQPage schema guidance."
     },
     {
-      "title": "Structured monthly reporting",
-      "description": "Ongoing performance is tracked and delivered in a consistent monthly SEO report format, alongside the original branded 31-page SEO roadmap and 6-month forward plan."
+      "title": "Homepage E-E-A-T content",
+      "description": "Eight trust blocks stating accreditation numbers, 15 disciplines, brand partnerships, coverage and experience."
+    },
+    {
+      "title": "170+ product page rewrites",
+      "description": "Store pages for brands including Mitutoyo, Control Techniques, Dwyer and Hioki, each built from verified specifications."
+    },
+    {
+      "title": "Service keywords & GBP audit",
+      "description": "Dedicated keyword sets for service pages, plus a Google Business Profile audit for the Saudi Arabia operation."
     }
   ],
-  "whyMattersHeading": "Why This Approach Matters for a Technical, Accreditation-Led Business",
-  "whyMattersParagraphs": [
-    "For a calibration lab, accreditation isn't a marketing claim — it's a verifiable, auditable fact, and content that treats it that way earns more trust than content that gestures at it vaguely. Stating EIAC and ENAS accreditation clearly, alongside the specific 15 disciplines it covers, gives a technical buyer exactly what they're trying to verify before requesting a quote, and gives search engines and AI research tools a specific, checkable entity to associate with General Tech Services rather than a generic \"calibration company\" descriptor.",
-    "A 17-pillar structure also builds genuine topical authority in a way a handful of broad pages can't. When each calibration discipline, each engineering service, and each product category has its own dedicated page, the site demonstrates real depth across its actual specialism — which is exactly the signal that separates an established, accredited lab from a newer competitor with a thinner site trying to rank for the same broad terms.",
-    "Local search adds a further layer for a business like this. A calibration lab's customers often need service at their own site, not just a lab visit, which makes Google Business Profile completeness — accurate service areas, correct categories, real photos — as important a ranking factor as the content itself. Treating GBP as a systematic build-out rather than a one-time setup keeps that local signal aligned with the technical depth being built on the site."
-  ],
-  "whyMattersCalloutHtml": "<p><strong>By replacing bundled, generic service pages with dedicated content across 15 disciplines</strong>, building Google Business Profile out systematically, and extending coverage later without ever duplicating existing topics, the General Tech Services SEO foundation is built to be found by the specific technical buyers searching for exactly what it's accredited to do. See more examples in Teknoppy's <a href=\"/case-study/\" class=\"underline font-bold text-[#F05A2C]\">full case study library</a> or our <a href=\"/seo-services/\" class=\"underline font-bold text-[#F05A2C]\">SEO services page</a>.</p>",
-  "faqs": [
-    {
-      "question": "What does General Tech Services do?",
-      "answer": "General Tech Services is an EIAC & ENAS accredited ISO 17025 calibration laboratory and authorized distributor of 50+ industrial brands, operating across the UAE since 1998."
-    },
-    {
-      "question": "Is General Tech Services accredited?",
-      "answer": "Yes — EIAC & ENAS ISO 17025 accreditation, now built out as its own structured, findable content rather than a passing claim, covering 15 calibration disciplines."
-    },
-    {
-      "question": "How many calibration disciplines does General Tech Services cover?",
-      "answer": "15 disciplines, each represented with dedicated content as part of the site's 17-pillar, 185-topic structure."
-    },
-    {
-      "question": "How is content organized across such a wide service range?",
-      "answer": "Through a 185-topic, 17-pillar structure, later extended with a separate 58-topic product and brand comparison strategy, keeping every topic distinct so pages don't compete against each other."
-    },
-    {
-      "question": "Does this case study cover the same work as General Tech's website design case study?",
-      "answer": "No — this case study covers ongoing SEO, content, and GBP work. The website design case study for this client covers a separate, one-time structural rebuild of the site itself."
-    },
-    {
-      "question": "Does General Tech Services also supply and distribute equipment brands?",
-      "answer": "Yes — General Tech Services is an authorized distributor for 50+ industrial brands, alongside its accredited calibration services."
-    },
-    {
-      "question": "How do you decide what content topic to create next without duplicating existing pages?",
-      "answer": "New topics are scoped against the existing 185-topic pillar structure before they're written — the 58-topic comparison strategy, for example, was specifically checked to extend coverage rather than repeat any topic already live on the site."
-    },
-    {
-      "question": "How is SEO performance tracked over time?",
-      "answer": "Through a structured monthly SEO report format, giving visibility into what's working month to month rather than leaving performance untracked between larger reviews."
-    },
-    {
-      "question": "Is the content structured to work well with AI search tools, not just Google?",
-      "answer": "Yes — discipline-specific pages state accreditation scope and service detail plainly, which is what lets both traditional search engines and AI research tools answer a specific technical question with General Tech Services rather than a vaguer competitor page."
-    }
-  ],
-  "ctaHeadline": "Need an SEO strategy that covers a wide service range without your own pages competing with each other?",
   "rankingKeywords": {
-    "lead": "Verified Google search rankings for high-intent technical calibration and instrumentation terms across the UAE.",
+    "eyebrow": "Keyword mapping",
+    "heading": "Target keywords",
+    "lead": "Priority commercial and question-based keywords for calibration and industrial supply across Sharjah, Dubai, Abu Dhabi and the wider UAE, each mapped to the page that owns it.",
     "groups": [
       {
-        "title": "Target keywords — UAE Calibration Lab",
-        "badge": "Google #1",
-        "hasMap": true,
-        "note": "High-value commercial search terms where accredited calibration capability directly drives B2B procurement inquiries.",
+        "title": "Target keywords — Calibration & Industrial Supply UAE",
+        "badge": "SEO · AEO · GEO",
+        "label": "Keyword mapping",
+        "headers": [
+          "Target keyword",
+          "Mapped page",
+          "Status"
+        ],
+        "hasMap": false,
+        "note": "Industrial B2B search terms targeting quality managers, procurement teams, laboratories and maintenance engineers across the UAE and GCC.",
         "rows": [
           {
-            "keyword": "ISO 17025 Calibration UAE",
-            "page": "1",
-            "position": "1",
-            "map": ""
+            "keyword": "ISO 17025 calibration laboratory UAE",
+            "page": "Homepage",
+            "position": "Tracked"
           },
           {
-            "keyword": "Electrical Calibration UAE",
-            "page": "1",
-            "position": "1",
-            "map": "1"
+            "keyword": "calibration laboratory Sharjah",
+            "page": "Calibration",
+            "position": "Tracked"
           },
           {
-            "keyword": "Humidity Calibration UAE",
-            "page": "1",
-            "position": "1",
-            "map": "3"
+            "keyword": "on-site calibration services UAE",
+            "page": "Calibration",
+            "position": "Tracked"
           },
           {
-            "keyword": "Force Calibration UAE",
-            "page": "1",
-            "position": "1",
-            "map": ""
+            "keyword": "authorized Mitutoyo distributor UAE",
+            "page": "Mitutoyo products",
+            "position": "Tracked"
           },
           {
-            "keyword": "Dimensional Calibration UAE",
-            "page": "1",
-            "position": "1",
-            "map": "4"
+            "keyword": "calibration company in UAE",
+            "page": "FAQ hub",
+            "position": "Tracked"
+          },
+          {
+            "keyword": "live panel cleaning UAE",
+            "page": "Live panel cleaning",
+            "position": "Tracked"
           }
         ]
       }
     ]
+  },
+  "whyMattersHeading": "Why this strategy matters",
+  "whyMattersParagraphs": [
+    "A generic brand name is one of the hardest problems in B2B SEO. When the name alone could mean dozens of companies, search engines lean on the words around it to decide who you are. Attaching accreditation, service lines and location to the brand in a consistent primary keyword gives every page the same clear signal, so authority builds on one entity instead of spreading thin across an ambiguous name.",
+    "The same approach is what AI-driven search needs. When a procurement manager asks ChatGPT, Gemini, Perplexity or Google AI Overviews for an accredited calibration lab in Sharjah, those tools look for content that names the company, its accreditation numbers, its disciplines, its brands and its locations explicitly — and answers the question directly. An answer-first FAQ hub and entity-led trust content give them exactly that, which matters as more UAE businesses start supplier research by asking an AI tool."
+  ],
+  "whyMattersCalloutHtml": "<p class=\"font-semibold text-neutral-900 text-base sm:text-lg leading-relaxed\">Anchoring a generic name to its accreditation, its services and its location — then answering every buyer question directly — is what lets search engines and AI tools resolve General Tech Services as one clearly defined calibration and supply partner, rather than one of many companies with a similar name.</p><p class=\"mt-4 text-sm sm:text-base text-neutral-600\"><strong>This case study is part of Teknoppy's SEO services work for industrial and B2B clients in the UAE and GCC.</strong> Explore our <a href=\"/seo-services/\" class=\"underline font-bold text-[#F05A2C]\">SEO Services</a> or view <a href=\"/case-study/\" class=\"underline font-bold text-[#F05A2C]\">More Teknoppy Case Studies</a>.</p>",
+  "faqs": [
+    {
+      "question": "What was the main SEO problem with General Tech Services before this project?",
+      "answer": "The brand name \"General Tech\" is generic and shared by unrelated companies, and one website was trying to represent three different businesses: an accredited calibration lab, an authorized product distributor, and an engineering services team. Search engines had no single, clear signal for what General Tech Services actually is."
+    },
+    {
+      "question": "What primary keyword did Teknoppy choose for General Tech Services?",
+      "answer": "The primary keyword is \"General Tech Services — ISO 17025 Calibration Laboratory and Industrial Equipment Supplier UAE\". It ties the brand name to its accreditation, its two core business lines, and its country, so search engines and AI tools can tell it apart from similarly named companies."
+    },
+    {
+      "question": "How many keywords were mapped in the strategy?",
+      "answer": "Teknoppy built a 50-keyword set in five clusters of ten: brand core keywords, calibration service keywords, GEO location keywords, AEO question-based keywords, and E-E-A-T trust keywords."
+    },
+    {
+      "question": "What is AEO and how was it used for General Tech Services?",
+      "answer": "AEO, or answer engine optimization, means writing content that directly answers the questions buyers ask. Teknoppy built a 25-question FAQ hub across seven topic sections, where every answer opens by restating the question, and the page is marked up with FAQPage schema."
+    },
+    {
+      "question": "How were the generaltechshop.ae product pages optimized?",
+      "answer": "Each product page was rewritten from verified source data using a fixed structure: SEO title, meta title, short summary with a call-to-action, benefits, a specification table, buyer FAQ and meta description. Every page targets its own model-number keyword so product pages do not compete with category pages."
+    },
+    {
+      "question": "How does the strategy help General Tech Services appear in AI search tools?",
+      "answer": "The content names the company, its accreditation numbers (EIAC LB-CAL-004 and ENAS NAL 240), its 15 calibration disciplines, its brands and its locations explicitly. That entity-based language is what tools like ChatGPT, Gemini, Perplexity and Google AI Overviews use to summarize and recommend a supplier."
+    },
+    {
+      "question": "Is the new content live?",
+      "answer": "Yes. The homepage keyword strategy, trust content and FAQ content are live on generaltech.ae, and product page rewrites are being rolled out across the generaltechshop.ae store."
+    },
+    {
+      "question": "Does this approach work for other calibration labs or industrial distributors?",
+      "answer": "Yes. Any B2B business with a generic name, several service lines and a large product catalogue benefits from anchoring the brand to its accreditation and location, giving each service and product its own keyword, and answering buyer questions directly."
+    }
+  ],
+  "ctaHeadline": "Need an SEO partner who makes your business easy to find — for Google and AI?",
+  "kpis": [
+    {
+      "value": "50",
+      "label": "Keywords mapped",
+      "note": "5 clusters of 10"
+    },
+    {
+      "value": "25",
+      "label": "FAQ answers written",
+      "note": "7 sections, FAQPage schema"
+    },
+    {
+      "value": "15",
+      "label": "Calibration disciplines",
+      "note": "Named in entity-led content"
+    },
+    {
+      "value": "170+",
+      "label": "Product pages rewritten",
+      "note": "generaltechshop.ae"
+    }
+  ],
+  "fixes": [
+    {
+      "title": "Fix 1: generic name to clear entity",
+      "caption": "A generic brand anchored to accreditation, services and location.",
+      "before": [
+        "\"General Tech\"",
+        "\"General Technologies\""
+      ],
+      "after": [
+        "General Tech Services · ISO 17025 UAE"
+      ],
+      "keyword": "ISO 17025 calibration laboratory UAE",
+      "tagBefore": "Ambiguous",
+      "tagAfter": "Defined ✓"
+    },
+    {
+      "title": "Fix 2: one homepage, four focused paths",
+      "caption": "Each business line and buyer question given its own keyword set.",
+      "before": [
+        "Calibration · Products · Services · FAQ"
+      ],
+      "after": [
+        "Calibration",
+        "Products",
+        "Services",
+        "FAQ hub"
+      ],
+      "keyword": "",
+      "tagBefore": "Diluted",
+      "tagAfter": "4 paths ✓"
+    }
+  ],
+  "blueprint": {
+    "title": "The 10-part product page blueprint",
+    "items": [
+      "SEO product title",
+      "Meta title under 60 characters",
+      "Short summary with CTA",
+      "Main description",
+      "Key benefits + repeat CTA",
+      "Specification table",
+      "Who it's best for",
+      "How it works",
+      "Buyer FAQ",
+      "Meta description"
+    ],
+    "note": "Each page: 500–900 words · one model-level primary keyword · roughly 1–3% density · no invented specs, prices or claims."
+  },
+  "liveSite": {
+    "heading": "The optimized General Tech website, live",
+    "lead": "The homepage, trust content and FAQ hub are live on generaltech.ae, with calibration, products and services each given their own clear path.",
+    "caption": "generaltech.ae — EIAC and ENAS accredited ISO 17025 calibration laboratory and industrial supplier in Sharjah, UAE."
   }
 }

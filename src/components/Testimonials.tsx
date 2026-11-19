@@ -230,9 +230,9 @@ export default function Testimonials({
                       alt={`${current.name} — ${current.role}`}
                       width="80"
                       height="80"
-                      loading="lazy"
+                      loading="eager"
                       decoding="async"
-                      className="w-full h-full rounded-full object-cover object-top"
+                      className="w-full h-full rounded-full object-cover object-top bg-cream"
                     />
                   ) : (
                     <span className="w-full h-full rounded-full bg-primary/10 flex items-center justify-center text-base font-black text-primary">
@@ -406,10 +406,10 @@ export default function Testimonials({
             </a>
             <a
               href="/request-a-quote/"
-              className="cta-reveal cta-float-secondary cta-float-sway cta-delay-13 cta-pulse-medium cta-pulse-delay-2 inline-flex items-center gap-1.5 text-sm font-bold text-primary hover:text-primary-hover transition-colors group"
+              className="cta-reveal cta-float-secondary cta-float-sway cta-delay-13 cta-pulse-medium cta-pulse-delay-2 inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-bold text-white bg-primary hover:bg-primary-hover rounded-full shadow-md shadow-primary/25 whitespace-nowrap transition-colors group"
             >
               <span>Join Our Growing Client Network</span>
-              <ArrowRight className="cta-arrow cta-arrow-invite w-3.5 h-3.5" />
+              <ArrowRight className="cta-arrow cta-arrow-invite w-4 h-4" />
             </a>
           </div>
 

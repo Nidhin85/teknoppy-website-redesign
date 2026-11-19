@@ -1,0 +1,160 @@
+{
+  "title": "Creative Web Design Qatar: SEO Content Case Study | Teknoppy",
+  "description": "How Teknoppy built schema markup, a 9-pillar blog plan and SEO content for Creative Web Design Qatar, a Doha web design agency founded in 2005.",
+  "canonical": "https://www.teknoppy.com/case-studies/creative-web-design-qatar-seo-content/",
+  "ogImage": "https://www.teknoppy.com/case-studies/webdesignqa.webp",
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://www.teknoppy.com/case-studies/creative-web-design-qatar-seo-content/#article",
+          "headline": "Creative Web Design Qatar: An SEO Content Case Study for a Doha Web Design Agency",
+          "description": "How Teknoppy built schema markup, a 9-pillar blog plan and SEO content for Creative Web Design Qatar, a Doha web design agency founded in 2005.",
+          "image": "https://www.teknoppy.com/case-studies/webdesignqa.webp",
+          "mainEntityOfPage": "https://www.teknoppy.com/case-studies/creative-web-design-qatar-seo-content/",
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Search engine optimization"
+            },
+            {
+              "@type": "Thing",
+              "name": "Schema markup"
+            },
+            {
+              "@type": "Thing",
+              "name": "Content strategy"
+            },
+            {
+              "@type": "Organization",
+              "name": "Creative Web Design Qatar",
+              "url": "https://www.webdesign.qa/",
+              "foundingDate": "2005",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Doha Tower, 6th Floor, Office 604, A Ring Road, Al Asmak Street",
+                "addressLocality": "Doha",
+                "addressCountry": "QA"
+              }
+            }
+          ],
+          "author": {
+            "@type": "Person",
+            "name": "Sanal Edison",
+            "jobTitle": "Digital Strategist",
+            "url": "https://www.teknoppy.com/sanal-edison-digital-strategist/",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Teknoppy"
+            }
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Teknoppy",
+            "url": "https://www.teknoppy.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.teknoppy.com/logo.svg"
+            }
+          },
+          "dateModified": "2026-10-20",
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.teknoppy.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Case Studies",
+              "item": "https://www.teknoppy.com/case-study/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Creative Web Design Qatar",
+              "item": "https://www.teknoppy.com/case-studies/creative-web-design-qatar-seo-content/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What was the main SEO problem for Creative Web Design Qatar?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The homepage was doing almost all of the ranking work. It appeared on page one for core web design terms in Qatar, but inner service pages such as SEO, hosting and logo design were not ranking for their own head terms, and the structured data had conflicts and errors."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What schema markup did Teknoppy build?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Teknoppy built a connected set of Organization, ProfessionalService, WebSite, WebPage, Service and BreadcrumbList blocks. Global blocks go on every page, and each service page gets its own Service and breadcrumb block, all linked by shared @id references and verified against the live pages."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which schema issues were fixed?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Teknoppy corrected a wrong YouTube channel link, merged duplicate LocalBusiness and ProfessionalService entities into one, removed a SearchAction that a static HTML site cannot support, flagged a 2005 versus 2001 founding-year conflict, flagged opening hours for verification, and updated FAQ markup handling for current Google rules."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How was the blog content plan structured?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The plan covers 60+ blog topics grouped into nine pillars that match the agency's services, from website design and development to SEO, hosting, mobile apps and branding. Every topic has a target keyword, search intent, funnel stage, format, an AEO question, a location, an E-E-A-T angle, the service page it supports, and a priority."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why does each blog post link to a service page?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Blogs target informational and comparison searches, then pass relevance and internal links to the commercial service page they support. This builds topical authority around each service without the blog competing with the service page for the same buying keyword."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where did Creative Web Design Qatar rank before the content push?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A directional search check in June 2026 found the site on page one for \"web design company Qatar\" and \"website design Doha Qatar\", mid-page in a crowded field. It was not visible for \"SEO company Qatar Doha\", which is one of the gaps the content plan targets."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does this help the agency appear in AI search tools?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Clean, connected schema tells search engines and AI tools exactly who the company is, where it is and what it offers, while answer-first blog posts give ChatGPT, Gemini and Google AI Overviews direct passages to quote for questions like how much a website costs in Qatar."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does this approach work for other agencies and service businesses?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Any established business whose homepage carries most of its rankings benefits from verified schema on every page and a pillar-based content plan that builds authority for each service page individually."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

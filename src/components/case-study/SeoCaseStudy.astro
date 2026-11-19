@@ -1,0 +1,36 @@
+---
+/**
+ * SEO case study (2026 design). The markup, scoped CSS, behaviour script and
+ * meta/JSON-LD for each study live in src/data/seo-case-studies/<slug>.*
+ * All CSS is scoped under `.cs2`, so it cannot affect the rest of the site.
+ */
+import Layout from '../../layouts/Layout.astro';
+import Header from '../Header.astro';
+import Footer from '../Footer.astro';
+
+interface Props { slug: string }
+const { slug } = Astro.props;
+
+const base = '../../data/seo-case-studies/';
+const files = import.meta.glob('../../data/seo-case-studies/*', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
+const html = files[`${base}${slug}.html`];
+const css = files[`${base}${slug}.css`];
+const js = files[`${base}${slug}.js`];
+const meta = JSON.parse(files[`${base}${slug}.json`]);
+if (!html || !css || !js) throw new Error(`SEO case study "${slug}" is missing files in src/data/seo-case-studies/`);
+---
+
+<Layout title={meta.title} description={meta.description} canonical={meta.canonical} image={meta.ogImage}>
+  <Fragment slot="head">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" />
+    {meta.ld.map((block: unknown) => <script type="application/ld+json" set:html={JSON.stringify(block)} />)}
+  </Fragment>
+
+  <Header forceSolidBg={true} />
+  <style is:inline set:html={css}></style>
+  <Fragment set:html={html} />
+  <script is:inline set:html={js}></script>
+  <Footer />
+</Layout>

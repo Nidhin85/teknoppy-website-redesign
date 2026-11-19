@@ -126,6 +126,24 @@ const resolvedHref = customHref || "/request-a-quote/";
     bottom: 5rem;
   }
 
+  /* Fade the pill out while the footer is on screen so it never covers
+     footer links (toggled by the script below). */
+  :global(#global-floating-cta-wrap.is-over-footer) {
+    opacity: 0 !important;
+    visibility: hidden;
+    pointer-events: none !important;
+    transition: opacity 0.25s ease, visibility 0s linear 0.25s;
+  }
+
+  /* Colour toggle: while the pill sits over the orange contact section it
+     flips to white with orange text so it never blends into the background. */
+  :global(#global-floating-cta-wrap.is-over-orange .floating-cta),
+  :global(#global-floating-cta-wrap.is-over-orange .floating-cta:hover) {
+    background-color: #ffffff;
+    color: #F05A2C;
+    box-shadow: 0 10px 28px -6px rgba(120, 30, 0, 0.45);
+  }
+
   /* Container entrance on initial mount */
   .global-floating-cta-wrap {
     opacity: 0;
@@ -253,3 +271,39 @@ const resolvedHref = customHref || "/request-a-quote/";
     }
   }
 </style>
+
+<script>
+  // Hide the floating CTA while the site footer is visible so it doesn't sit
+  // on top of footer links (most noticeable on phones).
+  let footerObserver: IntersectionObserver | null = null;
+  function bindFloatingCtaFooterWatch() {
+    footerObserver?.disconnect();
+    const wrap = document.getElementById('global-floating-cta-wrap');
+    const footer = document.querySelector('footer');
+    if (!wrap || !footer || !('IntersectionObserver' in window)) return;
+    footerObserver = new IntersectionObserver(
+      ([entry]) => wrap.classList.toggle('is-over-footer', entry.isIntersecting),
+      { rootMargin: '0px 0px -40px 0px' }
+    );
+    footerObserver.observe(footer);
+  }
+  bindFloatingCtaFooterWatch();
+  document.addEventListener('astro:page-load', bindFloatingCtaFooterWatch);
+
+  // Toggle the pill's colour while it overlaps the orange #contact section
+  // (only the bottom 20% of the viewport, where the pill sits, is observed).
+  let orangeObserver: IntersectionObserver | null = null;
+  function bindFloatingCtaOrangeWatch() {
+    orangeObserver?.disconnect();
+    const wrap = document.getElementById('global-floating-cta-wrap');
+    const contact = document.getElementById('contact');
+    if (!wrap || !contact || !('IntersectionObserver' in window)) return;
+    orangeObserver = new IntersectionObserver(
+      ([entry]) => wrap.classList.toggle('is-over-orange', entry.isIntersecting),
+      { rootMargin: '-80% 0px 0px 0px' }
+    );
+    orangeObserver.observe(contact);
+  }
+  bindFloatingCtaOrangeWatch();
+  document.addEventListener('astro:page-load', bindFloatingCtaOrangeWatch);
+</script>

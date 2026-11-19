@@ -21,12 +21,12 @@
   "tagBadge": "B2B Industrial SEO Case Study",
   "title": "Koojo Custom Powder Coating: An SEO Services Case Study for a GTA Industrial Powder Coating Company",
   "storyLead": "How Teknoppy rebuilt the site architecture and keyword strategy for a Milton, Ontario powder coating company — resolving keyword cannibalization and structuring the site around how real GTA buyers actually search for powder coating services.",
-  "industry": "Industrial Powder Coating (Metal Finishing)",
+  "industry": "Industrial powder coating (metal finishing)",
   "location": "Milton, Ontario, Canada (serving the GTA)",
-  "services": "SEO Strategy, Site Architecture, Inner Page Content",
+  "services": "SEO strategy, site architecture, inner page content",
   "platform": "Modern responsive web build",
   "liveWebsite": "koojopowdercoating.com",
-  "liveWebsiteUrl": "https://koojopowdercoating.com/",
+  "liveWebsiteUrl": "https://www.koojopowdercoating.com/",
   "heroHighlights": [
     "Competitor Keyword Research",
     "Cannibalization Resolution",
@@ -46,7 +46,7 @@
     "Before this engagement, Koojo's website had grown page by page without a unifying keyword strategy, which had produced real, measurable problems: two separate pages both targeting variations of \"industrial powder coating,\" and a single combined page trying to rank for Milton, Guelph, Cambridge, and Hamilton at once — all of which meant the site was competing against itself in search rather than against outside competitors.",
     "This case study covers the SEO strategy, site architecture, and inner-page content work delivered by Teknoppy — how the site's keyword structure was rebuilt and how service, location, and industry content is organised to be found by a real GTA business searching for a powder coating provider. It does not cover Koojo's coating operations, equipment, or production process, which are the company's own domain."
   ],
-  "challengeLead": "Resolving structural keyword conflicts and architecting scalable local search visibility:",
+  "challengeLead": "Our first audit found five structural problems holding the site back.",
   "challenges": [
     {
       "number": 1,
@@ -82,7 +82,7 @@
     "Establishing a fixed, repeatable content structure for every service page going forward",
     "Mapping the full site — services, locations, industries, trust content — into a phased, trackable rewrite and launch plan"
   ],
-  "approachLead": "How Teknoppy executed topical SEO architecture and eliminated keyword cannibalization:",
+  "approachLead": "Six pillars took the site from competing with itself to one coherent structure.",
   "approachPillars": [
     {
       "title": "Competitor research before a single page was written",
@@ -99,7 +99,7 @@
     {
       "title": "A fixed content structure applied consistently",
       "paragraphs": [
-        "Every service page follows the same ten-section pattern — introduction, trust signals, parts covered, specialty and high-heat detail, custom colour options, process with timings, a direct-answer FAQ section, service area, a full FAQ section, and a final call to action — each targeted to 1,000-1,300 words at roughly 1.8-2.0% keyword density, so new pages extend the site predictably rather than each reinventing its own format."
+        "Every service page follows the same ten-section pattern, each targeted to 1,000–1,300 words at roughly 1.8–2.0% keyword density, so new pages extend the site predictably rather than each reinventing its own format."
       ]
     },
     {
@@ -139,7 +139,7 @@
       "description": "A fixed 10-section format applied across automotive, architectural, specialty, and bulk-order pages, each at a consistent word count and keyword density."
     },
     {
-      "title": "A complete Website Structure plan",
+      "title": "A complete website structure plan",
       "description": "A full site map covering services, locations, industries, trust content, and lead generation, organised into a phased launch order."
     },
     {
@@ -147,84 +147,166 @@
       "description": "Reviewed and revised with the client across several rounds, now live on koojopowdercoating.com."
     }
   ],
-  "whyMattersHeading": "Why This Structure Matters",
-  "whyMattersParagraphs": [
-    "Keyword cannibalization is one of the most common and most overlooked problems on a growing B2B site — two pages targeting the same term don't just compete with outside competitors, they compete with each other, splitting the authority that could have built one strong ranking page. Fixing this at the structural level, by merging or clearly separating pages, is foundational SEO work that has to happen before content quality or link building can do their job.",
-    "The same structure supports how AI-driven search and answer engines now handle local B2B service research. When each service and each location has one clear, dedicated page with specific, crawlable detail — rather than one term split across multiple competing pages — both traditional search and AI Overviews or assistant-style answers can resolve which page actually answers a given query, which matters as more GTA businesses start supplier research by asking an AI tool to find a powder coating provider in a specific city.",
-    "Keeping service, location, and industry content in clearly separated, non-overlapping pages, each with an explicit scope, is what lets search engines resolve Koojo Custom Powder Coating as one coherent entity with distinct, non-competing pages for each real search a GTA buyer actually runs — rather than several pages quietly working against each other."
-  ],
-  "whyMattersCalloutHtml": "<p><strong>This case study is part of Teknoppy's SEO services work for industrial and manufacturing clients.</strong> Explore our <a href=\"/seo-services/\" class=\"underline font-bold text-[#F05A2C]\">SEO Services</a> or view <a href=\"/case-study/\" class=\"underline font-bold text-[#F05A2C]\">More Teknoppy Case Studies</a>.</p>",
-  "faqs": [
-    {
-      "question": "What was the main SEO problem with Koojo's website before this project?",
-      "answer": "Two pages were both targeting near-identical \"industrial powder coating\" keywords, and a separate combined page was trying to rank for four different cities at once — both situations where the site was splitting its own ranking potential rather than competing effectively against outside competitors."
-    },
-    {
-      "question": "How many pages were involved in the site restructure?",
-      "answer": "The finalised structure covers 48 total site pages, combining new pages, rewrites of existing pages, and pages kept as-is, organised across services, locations, industries served, and core trust content."
-    },
-    {
-      "question": "Why were separate pages built for Milton, Guelph, Cambridge, and Hamilton instead of one combined page?",
-      "answer": "A single page trying to rank for four cities at once dilutes relevance for each one individually. Dedicated pages let each location be described with the specific detail that helps it rank for searches from that city."
-    },
-    {
-      "question": "What word count and structure do Koojo's service pages follow?",
-      "answer": "Each service page follows a fixed 10-section structure — from an introduction and trust signals through to a final call to action — targeted to 1,000-1,300 words at roughly 1.8-2.0% keyword density."
-    },
-    {
-      "question": "Did Teknoppy research competitors before building the new structure?",
-      "answer": "Yes — three direct GTA competitors were researched to benchmark realistic keyword targets and page structure before any new content was written."
-    },
-    {
-      "question": "How do overlapping pages like automotive, architectural, and bulk orders avoid competing with each other?",
-      "answer": "Each page states its scope directly in the content — for example, the bulk and commercial orders page explicitly defers part-type detail to the automotive, architectural, and industrial pages and focuses only on pricing and account structure."
-    },
-    {
-      "question": "Is the new site structure already live?",
-      "answer": "Yes — the restructured site is live on koojopowdercoating.com."
-    },
-    {
-      "question": "Does this kind of SEO restructuring work for other industrial or manufacturing businesses?",
-      "answer": "Yes — keyword cannibalization and inconsistent page structure are common on growing B2B and industrial sites, and the same approach of merging competing pages, separating locations, and applying a consistent content structure applies broadly."
-    }
-  ],
-  "ctaHeadline": "Looking for an SEO partner who fixes structural problems, not just writes content?",
   "rankingKeywords": {
+    "eyebrow": "Verified performance",
+    "heading": "Ranking keywords",
     "lead": "Verified Google search rankings for commercial and industrial powder coating across Milton, Ontario and the Greater Toronto Area (GTA).",
     "groups": [
       {
         "title": "Target keywords — Powder Coating Milton & GTA",
         "badge": "Google #1",
+        "label": "Verified performance",
+        "headers": [
+          "Ranking keyword",
+          "Page",
+          "Position"
+        ],
         "hasMap": false,
         "note": "Industrial B2B search terms targeting manufacturing facilities, fabricators, and commercial finishing clients in Ontario.",
         "rows": [
           {
             "keyword": "powder coating Milton Ontario",
             "page": "1",
-            "position": "1"
+            "position": "#1"
           },
           {
             "keyword": "industrial powder coating GTA",
             "page": "1",
-            "position": "1"
+            "position": "#1"
           },
           {
             "keyword": "Reliable Best Powder Coating Services GTA",
             "page": "1",
-            "position": "1"
+            "position": "#1"
           },
           {
             "keyword": "Custom Industrial Powder Coating GTA",
             "page": "1",
-            "position": "1"
+            "position": "#1"
           },
           {
             "keyword": "Powder Coating Milton Ontario Near Me",
             "page": "1",
-            "position": "3"
+            "position": "#3"
           }
         ]
       }
     ]
+  },
+  "whyMattersHeading": "Why this structure matters",
+  "whyMattersParagraphs": [
+    "Keyword cannibalization is one of the most common and most overlooked problems on a growing B2B site — two pages targeting the same term don't just compete with outside competitors, they compete with each other, splitting the authority that could have built one strong ranking page. Fixing this at the structural level, by merging or clearly separating pages, is foundational SEO work that has to happen before content quality or link building can do their job.",
+    "The same structure supports how AI-driven search and answer engines now handle local B2B service research. When each service and each location has one clear, dedicated page with specific, crawlable detail — rather than one term split across multiple competing pages — both traditional search and AI Overviews or assistant-style answers can resolve which page actually answers a given query, which matters as more GTA businesses start supplier research by asking an AI tool to find a powder coating provider in a specific city."
+  ],
+  "whyMattersCalloutHtml": "<p class=\"font-semibold text-neutral-900 text-base sm:text-lg leading-relaxed\">Keeping service, location, and industry content in clearly separated, non-overlapping pages, each with an explicit scope, is what lets search engines resolve Koojo Custom Powder Coating as one coherent entity with distinct, non-competing pages for each real search a GTA buyer actually runs — rather than several pages quietly working against each other.</p><p class=\"mt-4 text-sm sm:text-base text-neutral-600\"><strong>This case study is part of Teknoppy's SEO services work for industrial and manufacturing clients.</strong> Explore our <a href=\"/seo-services/\" class=\"underline font-bold text-[#F05A2C]\">SEO Services</a> or view <a href=\"/case-study/\" class=\"underline font-bold text-[#F05A2C]\">More Teknoppy Case Studies</a>.</p>",
+  "faqs": [
+    {
+      "question": "What was the main SEO problem with Koojo's website before this project?",
+      "answer": "Two pages were both targeting near-identical \"industrial powder coating\" keywords, and a separate combined page was trying to rank for four different cities at once. In both cases the site was splitting its own ranking potential instead of competing against outside competitors."
+    },
+    {
+      "question": "How many pages were involved in the site restructure?",
+      "answer": "The final agreed structure covers 48 total site pages: 16 existing pages rewritten and 32 new pages, organised into a phased launch order."
+    },
+    {
+      "question": "Why were separate pages built for Milton, Guelph, Cambridge, and Hamilton instead of one combined page?",
+      "answer": "One page cannot rank strongly for four different cities at once. A dedicated page for each city gives search engines one clear, relevant answer for each local search and removes the conflict with the combined page."
+    },
+    {
+      "question": "What word count and structure do Koojo's service pages follow?",
+      "answer": "Every service page follows the same ten-section structure and is written to 1,000 to 1,300 words at roughly 1.8 to 2.0% keyword density."
+    },
+    {
+      "question": "Did Teknoppy research competitors before building the new structure?",
+      "answer": "Yes. Teknoppy benchmarked three direct GTA competitors, Force Coating, Professional Powder Coating and Interspray, before any page was written."
+    },
+    {
+      "question": "How do overlapping pages like automotive, architectural, and bulk orders avoid competing with each other?",
+      "answer": "Each page states its scope directly in the content. For example, the bulk orders page covers pricing and account structure only, and points to the automotive, architectural and industrial pages for part-type detail."
+    },
+    {
+      "question": "Is the new site structure already live?",
+      "answer": "Yes. The new website is live on koojopowdercoating.com and the remaining pages are being rolled out in the agreed phase order."
+    },
+    {
+      "question": "Does this kind of SEO restructuring work for other industrial or manufacturing businesses?",
+      "answer": "Yes. Any B2B site that has grown page by page without a keyword plan is likely to have overlapping pages. Mapping one keyword to one page and separating service, location and industry content works for fabricators, manufacturers and other industrial service providers."
+    }
+  ],
+  "ctaHeadline": "Looking for an SEO partner who fixes structural problems, not just writes content?",
+  "kpis": [
+    {
+      "value": "48",
+      "label": "Site pages mapped",
+      "note": "16 rewritten, 32 new"
+    },
+    {
+      "value": "2",
+      "label": "Cannibalization conflicts fixed",
+      "note": "At the site-architecture level"
+    },
+    {
+      "value": "4",
+      "label": "Dedicated city pages",
+      "note": "Milton, Guelph, Cambridge, Hamilton"
+    },
+    {
+      "value": "#1",
+      "label": "For 4 target keywords",
+      "note": "Google, Milton & GTA"
+    }
+  ],
+  "fixes": [
+    {
+      "title": "Conflict 1: two pages, one keyword",
+      "caption": "Two competing pages merged into one strong pillar page.",
+      "before": [
+        "/industrial-powder-coating",
+        "/industrial-powder-coating-gta"
+      ],
+      "after": [
+        "Industrial Powder Coating GTA · pillar"
+      ],
+      "keyword": "industrial powder coating GTA",
+      "tagBefore": "Competing",
+      "tagAfter": "Merged ✓"
+    },
+    {
+      "title": "Conflict 2: one page, four cities",
+      "caption": "One combined page replaced by a dedicated page for each city.",
+      "before": [
+        "Milton · Guelph · Cambridge · Hamilton"
+      ],
+      "after": [
+        "Milton",
+        "Guelph",
+        "Cambridge",
+        "Hamilton"
+      ],
+      "keyword": "",
+      "tagBefore": "Diluted",
+      "tagAfter": "4 pages ✓"
+    }
+  ],
+  "blueprint": {
+    "title": "The 10-section service page blueprint",
+    "items": [
+      "Introduction",
+      "Trust signals",
+      "Parts covered",
+      "Specialty & high-heat detail",
+      "Custom colour options",
+      "Process with timings",
+      "Direct-answer FAQ section",
+      "Service area",
+      "Full FAQ section",
+      "Final call to action"
+    ],
+    "note": "Each page: 1,000–1,300 words · roughly 1.8–2.0% keyword density."
+  },
+  "liveSite": {
+    "heading": "The new Koojo website, live",
+    "lead": "The rebuilt site now runs on the new 48-page structure, with one dedicated page for each service, location and industry.",
+    "caption": "koojopowdercoating.com — Industrial powder coating in Milton, Ontario, serving the GTA."
   }
 }

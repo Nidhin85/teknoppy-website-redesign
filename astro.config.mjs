@@ -9,6 +9,8 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://www.teknoppy.com',
 
+  devToolbar: { enabled: false },
+
   vite: {
     plugins: [tailwindcss()]
   },

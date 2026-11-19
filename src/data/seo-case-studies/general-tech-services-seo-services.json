@@ -1,0 +1,159 @@
+{
+  "title": "General Tech Services: SEO Services Case Study | Teknoppy",
+  "description": "How Teknoppy built an SEO, AEO and GEO strategy for General Tech Services, an ISO 17025 calibration lab in Sharjah, UAE: keywords, FAQ hub and product pages.",
+  "canonical": "https://www.teknoppy.com/case-studies/general-tech-services-seo-services/",
+  "ogImage": "https://www.teknoppy.com/case-studies/generaltech.webp",
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://www.teknoppy.com/case-studies/general-tech-services-seo-services/#article",
+          "headline": "General Tech Services: An SEO Services Case Study for a UAE ISO 17025 Calibration Laboratory and Industrial Equipment Supplier",
+          "description": "How Teknoppy built an SEO, AEO and GEO strategy for General Tech Services, an ISO 17025 calibration lab in Sharjah, UAE: keywords, FAQ hub and product pages.",
+          "image": "https://www.teknoppy.com/case-studies/generaltech.webp",
+          "mainEntityOfPage": "https://www.teknoppy.com/case-studies/general-tech-services-seo-services/",
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Search engine optimization"
+            },
+            {
+              "@type": "Thing",
+              "name": "Answer engine optimization"
+            },
+            {
+              "@type": "Thing",
+              "name": "Generative engine optimization"
+            },
+            {
+              "@type": "Organization",
+              "name": "General Tech Services LLC",
+              "url": "https://www.generaltech.ae/",
+              "foundingDate": "1998",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Sharjah",
+                "addressCountry": "AE"
+              }
+            }
+          ],
+          "author": {
+            "@type": "Person",
+            "name": "Sanal Edison",
+            "jobTitle": "Digital Strategist",
+            "url": "https://www.teknoppy.com/sanal-edison-digital-strategist/",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Teknoppy"
+            }
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Teknoppy",
+            "url": "https://www.teknoppy.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.teknoppy.com/logo.svg"
+            }
+          },
+          "dateModified": "2026-10-20",
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.teknoppy.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Case Studies",
+              "item": "https://www.teknoppy.com/case-study/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "General Tech Services",
+              "item": "https://www.teknoppy.com/case-studies/general-tech-services-seo-services/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What was the main SEO problem with General Tech Services before this project?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The brand name \"General Tech\" is generic and shared by unrelated companies, and one website was trying to represent three different businesses: an accredited calibration lab, an authorized product distributor, and an engineering services team. Search engines had no single, clear signal for what General Tech Services actually is."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What primary keyword did Teknoppy choose for General Tech Services?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The primary keyword is \"General Tech Services — ISO 17025 Calibration Laboratory and Industrial Equipment Supplier UAE\". It ties the brand name to its accreditation, its two core business lines, and its country, so search engines and AI tools can tell it apart from similarly named companies."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How many keywords were mapped in the strategy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Teknoppy built a 50-keyword set in five clusters of ten: brand core keywords, calibration service keywords, GEO location keywords, AEO question-based keywords, and E-E-A-T trust keywords."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is AEO and how was it used for General Tech Services?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AEO, or answer engine optimization, means writing content that directly answers the questions buyers ask. Teknoppy built a 25-question FAQ hub across seven topic sections, where every answer opens by restating the question, and the page is marked up with FAQPage schema."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How were the generaltechshop.ae product pages optimized?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Each product page was rewritten from verified source data using a fixed structure: SEO title, meta title, short summary with a call-to-action, benefits, a specification table, buyer FAQ and meta description. Every page targets its own model-number keyword so product pages do not compete with category pages."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does the strategy help General Tech Services appear in AI search tools?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The content names the company, its accreditation numbers (EIAC LB-CAL-004 and ENAS NAL 240), its 15 calibration disciplines, its brands and its locations explicitly. That entity-based language is what tools like ChatGPT, Gemini, Perplexity and Google AI Overviews use to summarize and recommend a supplier."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the new content live?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. The homepage keyword strategy, trust content and FAQ content are live on generaltech.ae, and product page rewrites are being rolled out across the generaltechshop.ae store."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does this approach work for other calibration labs or industrial distributors?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Any B2B business with a generic name, several service lines and a large product catalogue benefits from anchoring the brand to its accreditation and location, giving each service and product its own keyword, and answering buyer questions directly."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

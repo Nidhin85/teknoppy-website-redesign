@@ -1,0 +1,159 @@
+{
+  "title": "Visakh RJ PMP Trainer: SEO Case Study | Teknoppy",
+  "description": "How Teknoppy built personal-brand SEO for Visakh RJ, a Mumbai PMP trainer: Person and Course schema, 132 mapped keywords and a backlink content kit.",
+  "canonical": "https://www.teknoppy.com/case-studies/visakh-rj-pmp-trainer-seo/",
+  "ogImage": "https://www.teknoppy.com/case-studies/rjvisakh.webp",
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://www.teknoppy.com/case-studies/visakh-rj-pmp-trainer-seo/#article",
+          "headline": "Visakh RJ: An SEO Services Case Study for a PMP Trainer's Personal Brand",
+          "description": "How Teknoppy built personal-brand SEO for Visakh RJ, a Mumbai PMP trainer: Person and Course schema, 132 mapped keywords and a backlink content kit.",
+          "image": "https://www.teknoppy.com/case-studies/rjvisakh.webp",
+          "mainEntityOfPage": "https://www.teknoppy.com/case-studies/visakh-rj-pmp-trainer-seo/",
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Search engine optimization"
+            },
+            {
+              "@type": "Thing",
+              "name": "Personal brand SEO"
+            },
+            {
+              "@type": "Thing",
+              "name": "Schema markup"
+            },
+            {
+              "@type": "Person",
+              "name": "Visakh RJ",
+              "jobTitle": "PMP Trainer & Coach",
+              "url": "https://www.rjvisakh.com/",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Mumbai",
+                "addressCountry": "IN"
+              }
+            }
+          ],
+          "author": {
+            "@type": "Person",
+            "name": "Sanal Edison",
+            "jobTitle": "Digital Strategist",
+            "url": "https://www.teknoppy.com/sanal-edison-digital-strategist/",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Teknoppy"
+            }
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Teknoppy",
+            "url": "https://www.teknoppy.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.teknoppy.com/logo.svg"
+            }
+          },
+          "dateModified": "2026-10-20",
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.teknoppy.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Case Studies",
+              "item": "https://www.teknoppy.com/case-study/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Visakh RJ",
+              "item": "https://www.teknoppy.com/case-studies/visakh-rj-pmp-trainer-seo/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What was the main SEO challenge for Visakh RJ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Visakh RJ is a person, not a company, competing for PMP training searches against large training platforms. The site needed search engines and AI tools to recognise him as a distinct expert, but it had no Course schema, no course or pricing page, and keyword coverage limited mainly to Mumbai."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What schema markup did Teknoppy build?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Teknoppy built a connected schema graph centred on a Person entity for Visakh RJ, with his job title, location, alma mater, awards, areas of expertise and social profiles, plus WebSite, WebPage and Organization blocks. It also added Course schema for the PMP certification training, which had been missing entirely."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How many keywords were researched?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Teknoppy reviewed the homepage, About page and all 101 blog posts and mapped 132 keywords. They were split into keywords the site already targets — brand, core training and blog topics such as the 2026 PMP exam changes — and keywords with a high chance to rank, such as city and course pages."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What gaps did the keyword research find?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The site only mentioned Mumbai, so city searches such as PMP training in Bangalore, Hyderabad, Pune, Chennai, Kochi and Delhi NCR had no landing pages. There was also no dedicated course or pricing page, a major gap for buyers comparing PMP training options."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What was in the backlink content kit?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The kit includes paragraphs built around the anchor \"PMP certification trainer India\", plain-text versions for sites that do not allow links, and a fresh rewrite for each submission. It recommends mixing branded anchors like \"Visakh RJ\" and URL anchors like \"rjvisakh.com\" so the link profile looks natural."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why is third-party proof important for a personal brand?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AI answer engines and Google trust endorsements from others more than self-claims. Visakh RJ's recognition as \"The PMP Production Machine\" by Lee R. Lambert and his India Book of Records entry were placed in the meta description and schema so they are the first things search engines read."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How was the meta description written?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The original description ran to 234 characters and would be cut off in search results. Teknoppy rewrote it to 158 characters, leading with the Lee R. Lambert endorsement and keeping the pass rate, experience and professionals-mentored figures."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does this approach work for other coaches and trainers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Any trainer, coach or consultant whose business is their name benefits from Person and Course schema, third-party proof placed up front, city and course landing pages, and a natural, varied backlink profile."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

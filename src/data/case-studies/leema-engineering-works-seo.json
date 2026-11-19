@@ -1,6 +1,6 @@
 {
-  "metaTitle": "Leema Engineering Works: An SEO Services Case Study | Teknoppy",
-  "metaDescription": "How Teknoppy rebuilt the keyword and site structure for Leema Engineering Works, mapping 66 pages across eight topical pillars and 15 GCC locations.",
+  "metaTitle": "Leema Engineering Works: SEO Case Study | Teknoppy",
+  "metaDescription": "How Teknoppy built GCC location SEO for Leema Engineering Works, a Sharjah pipes, fittings and flanges supplier: UAE, Bahrain and Qatar pages and buyer FAQs.",
   "canonicalURL": "https://teknoppy.com/case-studies/leema-engineering-works-seo/",
   "heroImage": "/case-studies/leemaeng.webp",
   "heroImageAlt": "Leema Engineering Works SEO Services Case Study",
@@ -14,185 +14,153 @@
       "country": "United Arab Emirates"
     }
   },
-  "clientName": "Leema Engineering Works (LEW)",
+  "clientName": "Leema Engineering Works",
   "categoryTag": "Search Engine Optimization (SEO)",
-  "tagBadge": "Industrial B2B SEO Case Study",
-  "title": "Leema Engineering Works: An SEO Services Case Study for a Sharjah Pipes, Fittings & Flanges Supplier",
-  "storyLead": "How Teknoppy rebuilt the keyword and site structure for a 50-year-old GCC industrial supplier — mapping 66 pages across eight topical pillars and 15 locations so real procurement teams can find exactly what they're sourcing.",
-  "industry": "Industrial Pipes, Fittings & Flanges Supply",
-  "location": "Sharjah, UAE (serving the GCC)",
-  "services": "SEO Strategy, Site Architecture, Keyword Mapping",
+  "tagBadge": "B2B Industrial SEO Case Study",
+  "title": "Leema Engineering Works: An SEO Services Case Study for a GCC Pipes, Fittings and Flanges Supplier",
+  "storyLead": "How Teknoppy helped a Sharjah industrial supplier reach procurement teams across the UAE, Bahrain and Qatar — pairing each product line with one market per page and answering the specification and documentation questions buyers ask before they request a quote.",
+  "industry": "Pipes, fittings, flanges & valves supply",
+  "location": "Sharjah & Abu Dhabi (serving the GCC)",
+  "services": "Keyword research, location pages, AEO content",
+  "platform": "WordPress (Elementor)",
   "liveWebsite": "leemaeng.com",
   "liveWebsiteUrl": "https://leemaeng.com/",
   "heroHighlights": [
-    "Full 66-Page Topical Structure",
-    "15 Dedicated GCC Location Pages",
-    "7 Distinct Industry Verticals",
-    "Non-China Origin Positioning"
+    "Product × Location Mapping",
+    "GCC Market Pages",
+    "Procurement FAQs",
+    "Verified Trust Signals"
   ],
   "atAGlance": [
-    "A full 66-page site structure mapped across eight topical pillars before a single page was rewritten",
-    "15 dedicated location pages, including Bahrain, built so each GCC market gets its own findable page instead of one shared regional listing",
-    "Competitor content checked and confirmed clear of keyword cannibalization risk before the structure was finalised",
-    "ISO 9001:2015 certification and 50 years of manufacturing and export history placed where a procurement buyer actually verifies a supplier",
-    "Seven industry verticals (Oil & Gas, Power, Steel, Marine, Water Treatment, Food, Mining) given distinct structural ownership rather than one combined \"industries\" page"
+    "A product-by-location keyword plan pairing each product line with one market, so UAE, Bahrain and Qatar pages never compete with each other",
+    "Keyword research for \"trusted flanges supplier in UAE\" across short-tail, long-tail, location, product and industry angles",
+    "Page content for the UAE flanges page in several lengths, naming each flange type, material and standard",
+    "Bahrain pipes page content with 18 answer-first buyer FAQs on pipe types, standards, documentation, sectors and quotes",
+    "Trust content built only from facts the company states — ISO 9001:2015, a 50+ year legacy, non-China stockist position and international product standards"
   ],
   "aboutHeading": "About Leema Engineering Works",
   "aboutParagraphs": [
-    "Leema Engineering Works (LEW) is an ISO 9001:2015 certified supplier of pipes, pipe fittings, flanges, valves, and industrial accessories, based in Sharjah, UAE, with more than 50 years of manufacturing and export experience behind it. The company serves seven industry verticals — Oil & Gas, Power, Steel, Marine, Water Treatment, Food, and Mining — supplying procurement teams, project engineers, and industrial contractors across the GCC.",
-    "LEW's core customer base spans Dubai, Abu Dhabi, and the wider Gulf region, and the company positions itself specifically as a non-China stockist alternative for Saudi buyers who need verified origin material rather than the lowest-cost option. That positioning only works in search if a Saudi procurement engineer searching for a specific product and origin requirement can actually find the page that answers it — which is where this engagement started.",
-    "This case study covers the SEO strategy and site architecture work delivered by Teknoppy — how LEW's keyword structure was mapped and how product, industry, and location content is organised to be found by a real GCC buyer sourcing pipes, fittings, or flanges. It does not cover LEW's manufacturing, stocking operations, or logistics, which are the company's own domain."
+    "Leema Engineering Works is a UAE-based industrial supplier with warehouses in Industrial Area 2, Sharjah and Al Danah, Abu Dhabi. It stocks pipes in PVC, UPVC, CPVC, HDPE, PPR, GI, MS, stainless steel, carbon steel, ductile iron and copper, alongside pipe fittings, flanges, valves and industrial accessories, and offers custom fabrication such as barred tees, pipe spooling and custom OD/ID flanges. The company is ISO 9001:2015 certified, describes itself as a non-China stockist with a legacy of over 50 years, and supplies to ASTM, ASME, ANSI, DIN, ISO, BS and JIS standards.",
+    "Its buyers are procurement teams, contractors and engineers in oil and gas, power, marine, construction, water treatment and manufacturing — people who search by product, grade, standard and location. With hundreds of product variations and markets beyond the UAE, the site needed a clear way to give each search one page that owns it.",
+    "This case study covers the keyword research, location page strategy and content delivered by Teknoppy. It does not cover Leema's sourcing, stock, inspection or delivery operations, which are the company's own domain."
   ],
-  "challengeLead": "Key challenges addressed during the SEO architecture engagement:",
+  "challengeLead": "Our review found five problems holding the site back.",
   "challenges": [
     {
       "number": 1,
-      "title": "A GCC-wide supplier needed GCC-wide findability",
-      "description": "A procurement engineer in Bahrain and one in Riyadh are running different searches, with different local qualifiers, so a site built around one generic \"locations we serve\" page couldn't capture either search specifically."
+      "title": "Many products, many locations",
+      "description": "Pipes, fittings, flanges and valves across several emirates and countries create dozens of possible keyword combinations. Without a plan, Sharjah, Dubai and UAE pages risk chasing the same terms."
     },
     {
       "number": 2,
-      "title": "Seven industries needed seven distinct entry points",
-      "description": "An Oil & Gas buyer and a Marine-sector buyer are sourcing against different specifications and standards, and folding all seven verticals into one combined industries page made the site harder to match to a specific search."
+      "title": "New GCC markets with no pages",
+      "description": "Buyers in Bahrain and Qatar search for suppliers in their own country. A UAE-focused site had nothing written specifically for their projects, standards or end users."
     },
     {
       "number": 3,
-      "title": "A 50-year track record and ISO certification needed to sit near the decision",
-      "description": "Procurement teams vet suppliers carefully before committing to an order, so certification and manufacturing history needed to be visible on the pages where a buyer is actually evaluating LEW, not confined to a single about page."
+      "title": "Generic headings",
+      "description": "Homepage headings such as \"Comprehensive Solutions\" said nothing about products or locations, wasting the strongest on-page signals."
     },
     {
       "number": 4,
-      "title": "The \"non-China origin\" positioning needed a clear home",
-      "description": "This is a specific, deliberate differentiator for Saudi buyers with origin requirements, and it only works if the content built around it is easy to find and doesn't compete with other pages for the same search terms."
+      "title": "Procurement questions unanswered",
+      "description": "Industrial buyers want to know which standards apply, what documentation comes with an order and how to get a quote. Those answers were not on the page in a form search engines could lift."
     },
     {
       "number": 5,
-      "title": "A 66-page structure needed to be built without creating keyword cannibalization",
-      "description": "Expanding from a handful of pages to 66 across pillars and locations carries a real risk of multiple pages competing for the same terms if the structure isn't checked before launch."
+      "title": "Differentiators not working hard enough",
+      "description": "ISO 9001:2015 certification, a 50+ year legacy and the non-China stockist position are real reasons to choose Leema, but they were not consistently written into product and location content."
     }
   ],
-  "objectiveLead": "Teknoppy was engaged to rebuild LEW's site architecture into a structure that could be found accurately across every product, industry, and GCC location the company serves. The brief centred on:",
+  "objectiveLead": "Teknoppy was engaged to help leemaeng.com rank for product and location searches across the UAE and GCC, and to turn those visits into quote requests. The brief centred on:",
   "objectives": [
-    "Mapping a complete 66-page site structure across eight topical pillars",
-    "Building 15 dedicated location pages, including Bahrain, instead of one shared regional page",
-    "Giving each of the seven industry verticals its own structural ownership",
-    "Checking the full structure against competitor content to confirm there was no keyword cannibalization risk before proceeding",
-    "Placing certification and track-record content where procurement buyers actually evaluate suppliers"
+    "Researching keywords for each product line and market",
+    "Pairing one product line with one location per page to prevent overlap",
+    "Writing content for the UAE flanges and Bahrain pipes pages",
+    "Answering procurement questions in an answer-first FAQ format",
+    "Using only verifiable trust signals the company itself states"
   ],
-  "approachLead": "How Teknoppy built an entity-first, cannibalization-free search architecture for B2B industrial procurement:",
+  "approachLead": "Six pillars took the site from a broad UAE catalogue to a clear set of market pages.",
   "approachPillars": [
     {
-      "title": "Eight topical pillars as the structural foundation",
+      "title": "Keywords by product, location and industry",
       "paragraphs": [
-        "Rather than growing the site page by page without a plan, Teknoppy mapped the full 66-page structure around eight topical pillars from the outset, giving every new page a defined place in the architecture and a clear relationship to the pages around it."
+        "Teknoppy researched keywords around each product line and market — for example \"trusted flanges supplier in UAE\" — across short-tail, long-tail, location, product and industry angles, targeting the procurement teams, contractors and engineers who actually buy."
       ]
     },
     {
-      "title": "Location pages built for how GCC buyers actually search",
+      "title": "One product, one market, one page",
       "paragraphs": [
-        "Instead of one combined \"GCC coverage\" page, 15 separate location pages were planned, including a dedicated Bahrain page, so a buyer searching with a specific country or city qualifier finds a page built for that search rather than one general regional page trying to rank for all of them at once."
+        "Each location page pairs one product line with one market: pipes and flanges in Sharjah, pipes in Dubai and the UAE, pipes and flanges in Bahrain, and pipes in Qatar. Each owns its own keyword, so the Sharjah, UAE and GCC pages support each other instead of competing."
       ]
     },
     {
-      "title": "Industry verticals given distinct structural ownership",
+      "title": "Flanges page copy in several lengths",
       "paragraphs": [
-        "Oil & Gas, Power, Steel, Marine, Water Treatment, Food, and Mining were each mapped as their own part of the structure, so an Oil & Gas procurement engineer and a Marine-sector buyer land on content built around their specific sourcing context rather than one generalised industries page."
+        "For the UAE flanges page, Teknoppy wrote paragraphs from short to long, each naming weld neck, slip-on, blind, socket weld, threaded, long weld neck and orifice flanges, the stainless, carbon, forged and galvanized steel options, the standards they meet, and the emirates and industries served."
       ]
     },
     {
-      "title": "Competitor content checked before finalising the structure",
+      "title": "A Bahrain page written for Bahrain buyers",
       "paragraphs": [
-        "Before the structure was confirmed, existing content was reviewed against competitor positioning to verify there was no overlap risk and no keyword cannibalization between LEW's own planned pages — a check that was completed and cleared before moving forward."
+        "The Bahrain pipes page covers what Bahrain procurement teams need: the full pipe range, grades and standards, documentation such as material test certificates and mill reports, sectors from oil and gas to marine and desalination, and how to send a BOQ for a quotation."
       ]
     },
     {
-      "title": "Certification and track record built into the structure itself",
+      "title": "18 answer-first buyer FAQs",
       "paragraphs": [
-        "ISO 9001:2015 certification and the company's 50 years of manufacturing and export history are planned as recurring trust content across product and industry pages, not confined to a single about page, so a procurement buyer sees LEW's credibility exactly where they're evaluating a specific product or industry fit."
+        "Each FAQ opens with a direct answer that names Leema Engineering Works and the market — which pipe types are available, which certifications a supplier needs, what documents come with an order, whether HDPE and marine-grade pipes are supplied, and how to get a quote — so featured snippets and AI assistants can quote it on its own."
       ]
     },
     {
-      "title": "The non-China origin positioning given dedicated, non-competing space",
+      "title": "Only verifiable trust signals",
       "paragraphs": [
-        "LEW's positioning as a non-China stockist alternative for Saudi buyers is treated as its own distinct content angle within the structure, kept separate from general product pages so it can be found directly by buyers with that specific origin requirement."
+        "Content leans on facts the company states and can back up: ISO 9001:2015, a 50+ year legacy, the non-China stockist position, international product standards, and test reports and certificates on request. Claims that cannot be verified are kept out, because procurement buyers check."
       ]
     }
   ],
   "deliverables": [
     {
-      "title": "A complete 66-page site structure",
-      "description": "Mapped across eight topical pillars as a full Markdown-documented restructure plan."
+      "title": "Product & location keyword research",
+      "description": "Short-tail, long-tail, location, product and industry keywords for each product line and market."
     },
     {
-      "title": "15 dedicated location pages",
-      "description": "Including a standalone Bahrain page, replacing one shared regional coverage page."
+      "title": "A product-by-location page map",
+      "description": "Six pages across Sharjah, Dubai and the UAE, Bahrain and Qatar, each with its own keyword."
     },
     {
-      "title": "Seven industry-vertical page structures",
-      "description": "Oil & Gas, Power, Steel, Marine, Water Treatment, Food, and Mining each given their own structural space."
+      "title": "UAE flanges page content",
+      "description": "Keyword paragraphs in several lengths covering flange types, materials, standards and industries."
     },
     {
-      "title": "A competitor-checked, cannibalization-free structure",
-      "description": "Content and keyword overlap reviewed and confirmed clear against competitor positioning before proceeding."
+      "title": "Bahrain pipes page content",
+      "description": "Market-specific copy covering pipe range, standards, documentation, sectors and quotes."
     },
     {
-      "title": "Certification and track-record content placement",
-      "description": "ISO 9001:2015 status and 50 years of manufacturing history mapped into product and industry pages as recurring trust content."
+      "title": "18 buyer FAQs",
+      "description": "Answer-first questions written for procurement searches, featured snippets and AI assistants."
     },
     {
-      "title": "A dedicated non-China origin positioning angle",
-      "description": "Structured as its own content space to reach Saudi buyers with specific origin requirements."
+      "title": "Trust signal guidance",
+      "description": "Content built on ISO certification, legacy, sourcing position and standards the company states."
     }
   ],
-  "whyMattersHeading": "Why This Structure Matters",
-  "whyMattersParagraphs": [
-    "Industrial procurement is a specification-driven, trust-first search category — a buyer sourcing flanges for an Oil & Gas project is searching with precise terms tied to standard, material, and origin, and they're vetting the supplier's certification and track record before ever picking up the phone. A site structured around broad, combined pages can't match that precision, which is why mapping distinct pillars for product, industry, and location is foundational SEO work rather than a cosmetic reorganisation.",
-    "The same structure supports how AI-driven search and answer engines now handle B2B industrial sourcing queries. When each industry vertical, location, and certification detail sits on its own clear, crawlable page rather than folded into one combined listing, both traditional search and AI Overviews or assistant-style answers can resolve exactly which page answers a specific sourcing query, which matters as more procurement teams start supplier research by asking an AI tool to identify verified suppliers for a specific product, standard, and region.",
-    "Keeping each of the eight pillars, 15 locations, and seven industry verticals in clearly separated, non-overlapping pages — checked against competitor content before launch — is what lets search engines resolve Leema Engineering Works as one coherent, GCC-wide supplier with a distinct page for each real sourcing search a procurement buyer actually runs, rather than a handful of pages competing against each other for the same terms."
-  ],
-  "whyMattersCalloutHtml": "<p>This case study is part of Teknoppy's SEO services work for industrial and manufacturing clients across the GCC. Explore more: <a href=\"/seo-services/\" class=\"underline font-bold text-[#F05A2C]\">SEO Services</a> · <a href=\"/case-studies/leema-engineering-web-design-gcc/\" class=\"underline font-bold text-[#F05A2C]\">Leema Engineering Web Design Case Study</a> · <a href=\"/case-study/\" class=\"underline font-bold text-[#F05A2C]\">More Teknoppy Case Studies</a></p>",
-  "faqs": [
-    {
-      "question": "What was the main SEO problem Teknoppy solved for Leema Engineering Works?",
-      "answer": "The site lacked a structure built for how GCC procurement buyers actually search — by specific product, industry vertical, and location. Teknoppy mapped a complete 66-page structure to fix that, built around eight topical pillars."
-    },
-    {
-      "question": "Why does a supplier need 15 separate location pages instead of one regional page?",
-      "answer": "A buyer in Bahrain and a buyer in Saudi Arabia are running different, location-specific searches. One shared regional page dilutes relevance for each individual market, while a dedicated page per location can be built with the specific detail that helps it rank for that market's searches."
-    },
-    {
-      "question": "How many industries does Leema Engineering Works serve, and how is that reflected on the website?",
-      "answer": "LEW serves seven industry verticals — Oil & Gas, Power, Steel, Marine, Water Treatment, Food, and Mining — each mapped as its own part of the site structure rather than combined into one generic industries page."
-    },
-    {
-      "question": "Was the new structure checked against competitors before launch?",
-      "answer": "Yes — the content and keyword structure were reviewed against competitor positioning to confirm there was no overlap or keyword cannibalization risk before the restructure moved forward."
-    },
-    {
-      "question": "Is Leema Engineering Works' ISO certification and experience visible on the website?",
-      "answer": "Yes — ISO 9001:2015 certification and the company's 50 years of manufacturing and export experience are placed on product and industry pages as recurring trust content, not confined to a single about page."
-    },
-    {
-      "question": "Does the site address sourcing from non-China origins specifically?",
-      "answer": "Yes — Leema Engineering Works' positioning as a non-China stockist alternative, aimed at Saudi buyers with specific origin requirements, is given its own dedicated space in the site structure."
-    },
-    {
-      "question": "Does this kind of SEO restructuring apply to other industrial suppliers?",
-      "answer": "Yes — mapping distinct pillars for product, industry, and location, and checking for keyword cannibalization before launch, is foundational SEO work that applies broadly to B2B and industrial suppliers operating across multiple markets."
-    }
-  ],
-  "ctaHeadline": "Looking for an SEO partner who structures a site around how procurement buyers actually search?",
-  "ctaPhoneText": "Teknoppy provides SEO strategy and site architecture services for industrial and manufacturing businesses operating across multiple markets. Call +91 6282249224",
-  "ctaPhoneTel": "+916282249224",
-  "approach": "Topical & Entity SEO, Zero Cannibalization Structure",
   "rankingKeywords": {
+    "eyebrow": "Keyword mapping",
+    "heading": "Target keywords",
     "lead": "Product-and-location keywords across the UAE, Bahrain and Qatar, each mapped to the page that owns it.",
     "groups": [
       {
         "title": "Target keywords — Pipes & Flanges, UAE & GCC",
         "badge": "One keyword per page",
+        "label": "Keyword mapping",
+        "headers": [
+          "Keyword",
+          "Owning page",
+          "Status"
+        ],
         "hasMap": false,
-        "note": "Product and location targeting across the UAE, Bahrain, and Qatar industrial procurement markets.",
+        "note": "B2B search terms from procurement managers, EPC and MEP contractors and engineers sourcing certified piping materials across the GCC.",
         "rows": [
           {
             "keyword": "pipe supplier in Sharjah",
@@ -227,5 +195,121 @@
         ]
       }
     ]
+  },
+  "whyMattersHeading": "Why this structure matters",
+  "whyMattersParagraphs": [
+    "Industrial distributors face a multiplication problem: every product line times every market is a potential keyword, and without a plan those pages blur into each other. Pairing one product with one location per page gives search engines a single, clear answer for \"flanges supplier in Bahrain\" or \"pipe supplier in Sharjah\", and gives buyers in each country a page written for their projects rather than a generic catalogue.",
+    "B2B buyers also reward precision and honesty. Procurement teams check certifications, standards and documentation before they shortlist a supplier, and AI tools increasingly do that first pass for them. Content that names grades, standards and documents explicitly — and sticks to claims the company can prove — is what earns both the buyer's call and a place in AI-generated supplier answers."
+  ],
+  "whyMattersCalloutHtml": "<p class=\"font-semibold text-neutral-900 text-base sm:text-lg leading-relaxed\">Giving every product line one clearly scoped page per GCC market — and answering procurement questions with verifiable facts — is what lets search engines and AI assistants resolve Leema Engineering Works as the specific supplier for each search a buyer runs.</p><p class=\"mt-4 text-sm sm:text-base text-neutral-600\"><strong>This case study is part of Teknoppy's SEO services work for industrial and B2B suppliers in the UAE and GCC.</strong> Explore our <a href=\"/seo-services/\" class=\"underline font-bold text-[#F05A2C]\">SEO Services</a> or view <a href=\"/case-study/\" class=\"underline font-bold text-[#F05A2C]\">More Teknoppy Case Studies</a>.</p>",
+  "faqs": [
+    {
+      "question": "What was the main SEO challenge for Leema Engineering Works?",
+      "answer": "Leema supplies a very wide range of pipes, fittings, flanges and valves across the UAE and wider GCC. Without a clear plan, product and location pages risk chasing the same keywords, and buyers in Bahrain and Qatar had no pages written for their market."
+    },
+    {
+      "question": "How were the location pages organised?",
+      "answer": "Each page pairs one product line with one market, such as pipe supplier in Sharjah, flanges supplier in UAE, pipe supplier in Bahrain, flanges supplier in Bahrain and pipe supplier in Qatar. That gives every page its own keyword so they do not compete with each other."
+    },
+    {
+      "question": "What content did Teknoppy write for the Bahrain pages?",
+      "answer": "Teknoppy wrote page content and a buyer FAQ for the Bahrain pipes page, answering the questions procurement teams ask: which pipe types are available, which standards and certifications apply, what documentation comes with each order, how to request a quote, and whether supply covers oil and gas, marine and HDPE projects."
+    },
+    {
+      "question": "Why are FAQs important for industrial suppliers?",
+      "answer": "Procurement engineers search with specific questions about standards, grades and documentation. Answer-first FAQs give Google featured snippets and AI assistants a direct passage to quote, and they help buyers qualify a supplier before they call."
+    },
+    {
+      "question": "Which trust signals were used in the content?",
+      "answer": "The content uses facts the company states on its own site: ISO 9001:2015 certification, a legacy of over 50 years, its non-China stockist position, product standards such as ASTM, ASME, ANSI, DIN, BS and JIS, and test reports and material certificates on request."
+    },
+    {
+      "question": "What keywords were researched for the UAE flanges page?",
+      "answer": "Teknoppy researched keywords around \"trusted flanges supplier in UAE\" covering short-tail, long-tail, location, product and industry angles, then wrote page paragraphs in several lengths naming each flange type, material and standard."
+    },
+    {
+      "question": "How does this help Leema appear in AI search tools?",
+      "answer": "Pages that name the company, products, grades, standards and locations explicitly — and answer buyer questions directly — give ChatGPT, Gemini and Google AI Overviews clear entity information to draw on when someone asks for a certified pipe supplier in a specific GCC market."
+    },
+    {
+      "question": "Does this approach work for other industrial suppliers?",
+      "answer": "Yes. Any distributor with many products and several markets benefits from pairing one product line with one location per page, writing answer-first FAQs around specifications and documentation, and using only verifiable trust signals."
+    }
+  ],
+  "ctaHeadline": "Selling into several markets — and need each one to find you?",
+  "kpis": [
+    {
+      "value": "6",
+      "label": "Product-location pages",
+      "note": "One keyword each"
+    },
+    {
+      "value": "3",
+      "label": "GCC markets",
+      "note": "UAE, Bahrain, Qatar"
+    },
+    {
+      "value": "18",
+      "label": "Buyer FAQs written",
+      "note": "Answer-first format"
+    },
+    {
+      "value": "7",
+      "label": "UAE emirates covered",
+      "note": "Plus Sharjah & Dubai zones"
+    }
+  ],
+  "fixes": [
+    {
+      "title": "Fix 1: overlapping pages, clear owners",
+      "caption": "Each location page given its own keyword instead of a shared one.",
+      "before": [
+        "Sharjah pipes page",
+        "Dubai & UAE pipes page"
+      ],
+      "after": [
+        "One location keyword per page"
+      ],
+      "keyword": "pipe supplier in Sharjah",
+      "tagBefore": "Overlapping",
+      "tagAfter": "Mapped ✓"
+    },
+    {
+      "title": "Fix 2: UAE only, to GCC markets",
+      "caption": "Market pages written for buyers in each GCC country.",
+      "before": [
+        "One UAE catalogue"
+      ],
+      "after": [
+        "Sharjah",
+        "Dubai",
+        "Bahrain",
+        "Qatar"
+      ],
+      "keyword": "",
+      "tagBefore": "UAE only",
+      "tagAfter": "GCC ✓"
+    }
+  ],
+  "blueprint": {
+    "title": "The 10-part GCC location page blueprint",
+    "items": [
+      "Answer-first intro",
+      "Product range",
+      "Materials & grades",
+      "Standards met",
+      "Documentation supplied",
+      "Industries served",
+      "Local project zones",
+      "Sourcing position",
+      "Buyer FAQ",
+      "BOQ quote CTA"
+    ],
+    "note": "Each page: one product-and-location keyword · named grades and standards · verifiable trust signals only · a direct route to request a quote."
+  },
+  "liveSite": {
+    "heading": "The Leema Engineering Works website",
+    "lead": "The site now has dedicated pages for each product line and market, from Sharjah and Dubai to Bahrain and Qatar.",
+    "caption": "leemaeng.com — Pipes, fittings, flanges and valves supplier in Sharjah, Dubai and the UAE."
   }
 }

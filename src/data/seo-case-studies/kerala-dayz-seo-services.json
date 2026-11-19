@@ -1,0 +1,162 @@
+{
+  "title": "Kerala Dayz: Taxi SEO Services Case Study | Teknoppy",
+  "description": "How Teknoppy rebuilt the SEO structure for Kerala Dayz, a Kochi taxi and tour operator: one keyword per URL, route and destination pages, and E-E-A-T content.",
+  "canonical": "https://www.teknoppy.com/case-studies/kerala-dayz-seo-services/",
+  "ogImage": "https://www.teknoppy.com/case-studies/keraladayz.webp",
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://www.teknoppy.com/case-studies/kerala-dayz-seo-services/#article",
+          "headline": "Kerala Dayz: An SEO Services Case Study for a Kochi Taxi and Tour Operator",
+          "description": "How Teknoppy rebuilt the SEO structure for Kerala Dayz, a Kochi taxi and tour operator: one keyword per URL, route and destination pages, and E-E-A-T content.",
+          "image": "https://www.teknoppy.com/case-studies/keraladayz.webp",
+          "mainEntityOfPage": "https://www.teknoppy.com/case-studies/kerala-dayz-seo-services/",
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Search engine optimization"
+            },
+            {
+              "@type": "Thing",
+              "name": "Topical SEO"
+            },
+            {
+              "@type": "Thing",
+              "name": "Keyword cannibalization"
+            },
+            {
+              "@type": "LocalBusiness",
+              "name": "Kerala Dayz",
+              "url": "https://keraladayz.com/",
+              "telephone": "+91 9947759971",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "VIP Panorama Arcade, 1st floor, 14/83, Near Airport Jn, Athani P.O",
+                "addressLocality": "Nedumbassery, Kochi",
+                "addressRegion": "Kerala",
+                "postalCode": "683585",
+                "addressCountry": "IN"
+              }
+            }
+          ],
+          "author": {
+            "@type": "Person",
+            "name": "Sanal Edison",
+            "jobTitle": "Digital Strategist",
+            "url": "https://www.teknoppy.com/sanal-edison-digital-strategist/",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Teknoppy"
+            }
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Teknoppy",
+            "url": "https://www.teknoppy.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.teknoppy.com/logo.svg"
+            }
+          },
+          "dateModified": "2026-10-20",
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.teknoppy.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Case Studies",
+              "item": "https://www.teknoppy.com/case-study/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kerala Dayz",
+              "item": "https://www.teknoppy.com/case-studies/kerala-dayz-seo-services/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What was the main SEO problem with the Kerala Dayz website before this project?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The site had grown without a keyword plan. Taxi services, tour packages, houseboats and tempo traveller rental sat side by side with no clear pillar structure, the homepage H1 read only \"HOME\", and a page labelled Karnataka sat on a Kerala URL. Search engines had no clear signal for which page should rank for which search."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Did Teknoppy change any existing Kerala Dayz URLs?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Every existing URL was kept so the site would not lose the authority it had already built. Where a URL and its topic did not match, the page's primary keyword was corrected instead of moving the page."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which competitors were analysed?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Teknoppy benchmarked Kerala taxi competitors including Pepper Kerala Holidays, BCabs, Mallu Cabs and Anju Cabs. The biggest gap was that competitors ranked with dedicated route pages and destination hubs, which Kerala Dayz did not have."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does the new structure prevent keyword cannibalization?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Each URL owns one primary keyword. The homepage links only to pillar hubs, pillar hubs link down to their own cluster pages, and blog posts stay informational so they never compete with booking pages."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What structure do Kerala Dayz pillar pages follow?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Every pillar page follows the same 13-section order, starting with an answer-first hero block and including a trust strip, an all-inclusive fare promise, a billing explainer, a vehicle-to-group-size guide, a comparison table and an FAQ."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What word count and keyword density do the pages use?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Each page has its own target. For example, the One Way Taxi Kerala pillar page is written to 1,450 to 1,550 words at 1.8 to 2.0% keyword density, and the About page to 1,700 to 1,800 words at around 2%."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does the strategy help Kerala Dayz appear in AI search tools?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Every page opens with a short, standalone answer that names Kerala Dayz, the service, the exact places it covers and one concrete differentiator. That gives Google AI Overviews, ChatGPT and other assistants a clear passage to quote when a traveller asks for a taxi in Kerala."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does this approach work for other travel and taxi businesses?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Any travel or transport business with many services, routes and destinations benefits from one keyword per page, pillar and cluster linking, dedicated route and destination pages, and answer-first content."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

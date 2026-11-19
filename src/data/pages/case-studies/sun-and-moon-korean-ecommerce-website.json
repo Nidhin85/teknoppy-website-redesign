@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Sun and Moon Korean Ecommerce Website Case Study | Teknoppy",
-    "description": "How Teknoppy shaped the content, SEO, and product experience for sunandmoonkorean.in, a Mumbai Korean kimchi and K-fashion ecommerce store."
+    "description": "How Teknoppy shaped the product storytelling, shop structure and trust signals for sunandmoonkorean.in, a Mumbai Korean kimchi and K-fashion ecommerce store."
   },
   "breadcrumb": [
     {
@@ -20,7 +20,7 @@
   "sections": [
     {
       "type": "hero",
-      "badge": "Case Study",
+      "badge": "Ecommerce Case Study",
       "h1Lead": "Sun and Moon Korean: Bringing an",
       "h1Accent": "Authentic Kimchi Brand",
       "h1Rest": "Online",
@@ -28,7 +28,7 @@
       "meta": [
         {
           "label": "Key Services",
-          "value": "Ecommerce Content & SEO, Product Page Strategy, Website Optimization"
+          "value": "Ecommerce Store Experience, Product Page Strategy, Catalogue Structure & Trust Signals"
         },
         {
           "label": "Live Website",
@@ -55,15 +55,6 @@
       ]
     },
     {
-      "type": "prose",
-      "bg": "white",
-      "paragraphs": [
-        {
-          "html": "<em>Note: this case study is scoped to content, SEO, and product experience work — not full site development.</em>"
-        }
-      ]
-    },
-    {
       "type": "cards",
       "bg": "white",
       "h2": "Challenges",
@@ -86,10 +77,10 @@
     {
       "type": "prose",
       "bg": "soft",
-      "h2": "Campaign Objective",
+      "h2": "Project Objective",
       "paragraphs": [
         {
-          "text": "Teknoppy's goal was to shape the ecommerce storefront's content, product presentation, and SEO so the site could sell an unfamiliar product category — authentic Korean kimchi — to an Indian audience, while connecting the online store to the restaurant's existing reputation and media coverage."
+          "text": "Teknoppy's goal was to shape the ecommerce storefront's content, product presentation and shop structure so the site could sell an unfamiliar product category — authentic Korean kimchi — to an Indian audience, while connecting the online store to the restaurant's existing reputation and media coverage."
         }
       ]
     },
@@ -128,7 +119,7 @@
       "paragraphs": [
         {
           "lead": "Approach:",
-          "text": "Discovery, content, and SEO work specific to this project — timeline and key decisions — should be pulled from the project intake and added here once confirmed."
+          "text": "Teknoppy started with the buyer: someone ordering kimchi online for the first time. Each product was explained before it could be bought, the food and fashion catalogues were separated into their own shops, and the restaurant's press coverage and customer reviews were brought onto the storefront so the brand was trusted at the point of purchase."
         }
       ]
     },
@@ -148,19 +139,19 @@
       "items": [
         {
           "q": "What was the main goal of the Sun and Moon Korean project?",
-          "a": "To help a Mumbai Korean restaurant sell an unfamiliar product — authentic fermented kimchi — online, with content and SEO that educate first-time buyers and build trust."
+          "a": "To help a Mumbai Korean restaurant sell an unfamiliar product — authentic fermented kimchi — online, with a store that educates first-time buyers and builds trust."
         },
         {
           "q": "What does Sun and Moon Korean sell online?",
-          "a": "Small-batch fermented kimchi in five varieties, and Korean fashion (K-fashion), shipped from their Worli, Mumbai base."
+          "a": "Small-batch fermented kimchi and Korean fashion (K-fashion), from their Worli, Mumbai base."
         },
         {
-          "q": "Did the project affect Sun and Moon Korean's existing rankings?",
-          "a": "The project was scoped to avoid keyword cannibalization against Sun and Moon Korean's existing product and category pages — no overlapping targets were introduced."
+          "q": "Are kimchi and K-fashion sold in the same shop?",
+          "a": "No. Kimchi and K-fashion are separated into their own shop sections, so the site does not blur a food brand with a fashion catalogue."
         },
         {
-          "q": "Does Sun and Moon Korean ship kimchi outside Mumbai?",
-          "a": "The website lists Mumbai (Worli) as the base of operations; shipping coverage should be confirmed with the client before publishing."
+          "q": "How does the store build trust with first-time buyers?",
+          "a": "Every kimchi variety carries its Korean name, phonetic English name and a short flavour and benefit description, and the homepage shows media coverage (Curly Tales, Pinkvilla Hallyutalk) and customer testimonials."
         }
       ]
     },
@@ -208,7 +199,7 @@
       "bg": "cream",
       "paragraphs": [
         {
-          "text": "Need content and SEO that help customers understand and trust a new product before they buy? Talk to Teknoppy: +91 6282249224."
+          "text": "Need an ecommerce store that helps customers understand and trust a new product before they buy? Talk to Teknoppy: +91 6282249224."
         }
       ],
       "ctas": [
@@ -236,6 +227,7 @@
     "pendingLinks": "\"Kaydenz\" has no case study page yet; it points at the Case Studies hub until that page is built.",
     "schema": "FAQPage + BreadcrumbList (auto-generated by InnerPage from the faq section and breadcrumb array)",
     "redesign2026_08_21": "Rearranged to match the live teknoppy.com/amster-case-study/ layout: results band, About Client, Challenges, Campaign Objective, Introduction screenshot, services-and-outcomes, results band repeated, FAQ, Other Case Studies, CTA. The Objective paragraph is split at \"Teknoppy's goal was\" into About Client / Campaign Objective — wording unchanged, only divided. Project Details moved into the hero meta strip ('— Visit Website' link boilerplate dropped, the strip renders its own link). BOTH stat bands are empty and therefore render nothing at all: no verified figures exist for this project. Add items as [{value, label, source}] to src/data/pages/case-studies/sun-and-moon-korean-ecommerce-website.json and both bands appear automatically.",
-    "screenshot": "Homepage capture of sunandmoonkorean.in. This machine's network cannot reach Hostinger-hosted sites, so it was captured through r.jina.ai's screenshot endpoint at 1280x1280 and rendered at a fixed 16/10 crop. Recapture directly for a full-width shot if the network allows."
+    "screenshot": "Homepage capture of sunandmoonkorean.in. This machine's network cannot reach Hostinger-hosted sites, so it was captured through r.jina.ai's screenshot endpoint at 1280x1280 and rendered at a fixed 16/10 crop. Recapture directly for a full-width shot if the network allows.",
+    "reframedAsEcommerce": "Reframed as an ecommerce case study: SEO wording removed from the meta description, hero services, objective, approach, FAQ and CTA; the internal scoping note and the placeholder approach/FAQ text were replaced with copy built only from facts already on this page. The hub card in src/pages/case-study.astro is tagged ecom + social only."
   }
 }

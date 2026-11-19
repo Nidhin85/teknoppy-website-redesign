@@ -1,6 +1,6 @@
 {
-  "metaTitle": "Edamanasserry Spine Hospital SEO Case Study | Teknoppy",
-  "metaDescription": "How Teknoppy structured SEO for Edamanasserry Spine Hospital, an Ayurvedic spine care hospital in Tamil Nadu: condition-led pages, doctor-backed E-E-A-T and clear entity signals.",
+  "metaTitle": "Edamanasserry Spine Hospital: SEO Case Study | Teknoppy",
+  "metaDescription": "How Teknoppy restructured SEO for Edamanasserry Spine Hospital, an Ayurvedic spine hospital in Coimbatore: zero cannibalization and trustworthy medical content.",
   "canonicalURL": "https://teknoppy.com/case-studies/edamanasserry-spine-hospital-seo/",
   "heroImage": "/case-studies/edamanasserry-spine-hospital.webp",
   "heroImageAlt": "Edamanasserry Spine Hospital SEO Case Study",
@@ -14,225 +14,302 @@
       "country": "India"
     }
   },
-  "clientName": "Edamanasserry Spine Hospital (ESH)",
+  "clientName": "Edamanasserry Spine Hospital",
   "categoryTag": "Search Engine Optimization (SEO)",
-  "tagBadge": "Ayurvedic Healthcare SEO Case Study",
-  "title": "Edamanasserry Spine Hospital: An SEO Services Case Study for an Ayurvedic Spine Care Hospital in Tamil Nadu",
-  "storyLead": "How Teknoppy structured the search presence of a family-founded Ayurvedic hospital, so patients searching for back, neck and joint pain answers find clear, doctor-backed pages built on visible trust signals.",
-  "industry": "Ayurvedic healthcare (spine and musculoskeletal care)",
-  "location": "Tamil Nadu, India",
-  "services": "SEO strategy, entity and E-E-A-T structure, page and content architecture",
-  "platform": "WordPress responsive medical portal",
+  "tagBadge": "Healthcare SEO Case Study",
+  "title": "Edamanasserry Spine Hospital: An SEO Services Case Study for an Ayurvedic Spine Hospital in Coimbatore",
+  "storyLead": "How Teknoppy untangled competing pages, rebuilt the site into five clear content pillars, and wrote medically accurate, answer-first content for a NABH-accredited Ayurvedic hospital — without changing a single existing URL.",
+  "industry": "Ayurvedic healthcare & spine care",
+  "location": "Coimbatore, Tamil Nadu, India",
+  "services": "SEO strategy, site architecture, medical content",
+  "platform": "Hospital website",
   "liveWebsite": "e-spinehospital.com",
   "liveWebsiteUrl": "https://e-spinehospital.com/",
   "heroHighlights": [
-    "Condition-Led Architecture",
-    "Doctor-Backed E-E-A-T",
-    "Topical Spine Mapping",
-    "Answer-First Content"
+    "Cannibalization Resolution",
+    "5 Content Pillars",
+    "YMYL Medical Content",
+    "Answer-First Blogs"
   ],
   "atAGlance": [
-    "Spine and musculoskeletal care established as the primary topical centre across all search signals",
-    "17 conditions mapped from the homepage into dedicated, patient-intent condition pages",
-    "Visible doctor authorship and review dates implemented for Google YMYL health compliance",
-    "Disambiguated hospital naming spellings (ESH, Edamanasserry, E-Spine) into one unified entity",
-    "Answer-first question headings optimized for Google AI Overviews and featured snippets"
+    "Competitor research and a full site audit before any structure was planned, finding three existing pages competing for the same back pain keyword",
+    "A rebuilt site structure organised into five content pillars — Ayurveda, Conditions, Treatments, Departments, and Trust and About — with one primary keyword per page",
+    "The homepage URL and primary keyword kept, and no existing URL changed; every fix made through keyword mapping, structure and internal links",
+    "Twenty page descriptions around \"Ayurvedic spine treatment in Coimbatore\" — ten meta descriptions and ten long-form descriptions mapped to specific pages",
+    "Medically accurate, answer-first blog content written to YMYL standards, with cited sources, disclaimers and no invented patient stories or success rates"
   ],
   "aboutHeading": "About Edamanasserry Spine Hospital",
   "aboutParagraphs": [
-    "Edamanasserry Spine Hospital is an Ayurvedic hospital focused on spine-related conditions. Its website explains that the treatment methods were developed by the Edamanasserry family from Kerala's Malabar region and passed down through generations. The site states 50+ years of experience, 60+ consultants, 40+ treatments and 30,000+ patients.",
-    "The hospital lists twelve departments, including Spine, Ortho, Musculo Skeletal, Neurology and Physiotherapy, along with facilities such as an Ayurveda pharmacy, laboratory, X-ray, a 24/7 doctor and nurse service, an ambulance service and online consultation. Its doctors are listed with their qualifications, and the site displays accreditation and certification logos.",
-    "This case study covers the SEO strategy, entity structure and content architecture delivered by Teknoppy. It does not cover clinical care, treatment decisions or medical advice, which remain the responsibility of the hospital's qualified doctors."
+    "Edamanasserry Spine Hospital is a NABH-accredited, AYUSH-certified Ayurvedic hospital in Coimbatore, Tamil Nadu, specialising in non-surgical treatment of spine and musculoskeletal conditions. Its methods come from the Edamanasserry family's traditional healing knowledge from the Malabar region of Kerala, practised for over five decades. The hospital reports more than 30,000 patients treated, 60+ consultants and 40+ specialised treatments, with departments covering spine, orthopaedics, neurology, musculoskeletal care, physiotherapy, naturopathy and yoga, alongside an in-house Ayurveda pharmacy, laboratory and X-ray facility.",
+    "The website had grown without a keyword plan. Three pages were competing for the same back pain search, conditions, treatments and departments overlapped without clear boundaries, and patient-facing content was not written to the standard Google expects from health information. For a hospital, that last point matters most: medical content is judged on accuracy and trust, not just relevance.",
+    "This case study covers the SEO strategy, site architecture and content delivered by Teknoppy. It does not cover the hospital's clinical practice, treatment protocols or patient outcomes, which are the hospital's own domain."
   ],
-  "challengeLead": "Healthcare search demands clear topical authority, patient-intent alignment, and strict E-E-A-T compliance:",
+  "challengeLead": "Our first audit found five problems holding the site back.",
   "challenges": [
     {
       "number": 1,
-      "title": "A broad hospital with a specific reputation",
-      "description": "Twelve departments, from spine care to gynaecology and cancer care, can blur what the hospital is known for. Search engines and patients both need to see spine and musculoskeletal care as the clear centre of the brand."
+      "title": "Three pages competing for one keyword",
+      "description": "Three existing pages all targeted \"ayurvedic back pain treatment Coimbatore\", splitting their relevance and authority so none of them could rank as strongly as one dedicated page would."
     },
     {
       "number": 2,
-      "title": "Patients search by symptom and condition",
-      "description": "People search for lower back pain, sciatica, neck pain or knee pain before they search for a hospital. At the time of our review, the homepage listed 17 conditions, but those items did not lead to dedicated pages that answer each search."
+      "title": "No topical structure",
+      "description": "Conditions, treatments and departments sat side by side without clear pillars, so search engines could not tell which page answered a condition search and which answered a treatment search."
     },
     {
       "number": 3,
-      "title": "Health content is held to a higher standard",
-      "description": "Health pages fall under Google's 'Your Money or Your Life' category, where accuracy and expertise matter most. Every page needs visible authorship, qualified review and careful wording around Ayurvedic treatment."
+      "title": "Medical content held to a higher bar",
+      "description": "Health pages are treated as Your Money or Your Life content. Claims about cures, success rates or patient stories have to be accurate and verifiable, or they damage trust with both Google and patients."
     },
     {
       "number": 4,
-      "title": "Overlapping departments and repeated copy",
-      "description": "Spine, Ortho and Musculo Skeletal cover related ground, and the same introduction appeared in more than one section of the homepage. Without clear scope for each page, the site risks competing with itself in search."
+      "title": "Strong trust signals not working hard enough",
+      "description": "NABH accreditation, AYUSH certification, five decades of practice and 30,000+ patients were real strengths, but they were not consistently written into page descriptions and content where search engines read them."
     },
     {
       "number": 5,
-      "title": "Several name spellings for one hospital",
-      "description": "The hospital appears as Edamanasserry Spine Hospital, ESH, E-Spine Hospital and Espine Hospital, and patients are likely to type other spellings. Consistent naming helps search engines treat these as one entity."
+      "title": "Content not written for patient questions",
+      "description": "People researching spine and joint conditions ask direct questions before they ever book. Without clear, answer-first content, the hospital had nothing for featured snippets or AI assistants to quote when those questions were asked."
     }
   ],
-  "objectiveLead": "Teknoppy was engaged to give Edamanasserry Spine Hospital a search structure built on how patients look for care, with health-content standards at its core. The brief centred on:",
+  "objectiveLead": "Teknoppy was engaged to restructure e-spinehospital.com around a topical, cannibalization-free SEO plan and to produce content that patients and search engines can trust. The brief centred on:",
   "objectives": [
-    "Making spine and musculoskeletal care the clear topical focus, with other departments supporting it",
-    "Assigning each condition, treatment and department a single page with its own search intent",
-    "Showing who wrote and who reviewed each health page, with the doctor's qualifications",
-    "Establishing the hospital as one consistent local entity across the website and public profiles",
-    "Writing careful, accurate content that does not promise cures or guaranteed outcomes"
+    "Analysing competitor hospital sites to set realistic structure targets",
+    "Resolving the three-way keyword conflict without changing any existing URL",
+    "Organising the site into clear content pillars with one primary keyword per page",
+    "Writing page descriptions that carry the hospital's real trust signals",
+    "Producing medically accurate, answer-first blog content that meets YMYL standards"
   ],
-  "approachLead": "How Teknoppy executed topical healthcare SEO, intent mapping, and clinical E-E-A-T:",
+  "approachLead": "Six pillars took the site from overlapping pages to one clear, trustworthy structure.",
   "approachPillars": [
     {
-      "title": "Intent research before page decisions",
+      "title": "Site audit and competitor analysis",
       "paragraphs": [
-        "We grouped searches into symptom and condition questions, treatment questions, hospital and doctor searches, local searches and appointment searches, then decided which page should answer each one."
+        "Teknoppy reviewed the live site and the Ayurvedic spine and back pain hospitals ranking in Coimbatore before planning anything. The audit found three existing pages competing for \"ayurvedic back pain treatment Coimbatore\" and no clear separation between conditions, treatments and departments."
       ]
     },
     {
-      "title": "A topical map centred on spine care",
+      "title": "Five content pillars, one job per page",
       "paragraphs": [
-        "The structure runs from spine and back pain at the centre, out to conditions, treatments, doctors and facilities. Other departments are kept as supporting pages, so the hospital's main expertise stays obvious."
+        "The site was organised into five pillars: Ayurveda, Conditions, Treatments, Departments, and Trust and About. Each page was given one primary keyword. The three competing pages were reassigned so that only one owns the back pain keyword and the others target their own distinct condition or treatment searches."
       ]
     },
     {
-      "title": "A repeatable condition-page format",
+      "title": "Every existing URL and the homepage keyword kept",
       "paragraphs": [
-        "Each condition page follows the same order: a short direct answer, common symptoms, when to see a doctor, how the hospital's Ayurvedic approach is used, what a first consultation involves and a link to book. This keeps depth consistent and suits patient questions."
+        "No URL was changed and the homepage kept its primary keyword, \"Ayurvedic spine treatment in Coimbatore\". All fixes were made through keyword reassignment, page structure and internal linking, so the site kept every ranking and link it had already earned."
       ]
     },
     {
-      "title": "Clear scope between overlapping pages",
+      "title": "Twenty descriptions mapped to specific pages",
       "paragraphs": [
-        "Spine, Ortho, Musculo Skeletal and Physiotherapy pages each state what they cover and link to each other instead of repeating the same introduction, which reduces internal competition."
+        "Teknoppy wrote ten 150–160 character meta descriptions and ten longer page descriptions around the homepage keyword, each with a distinct angle — heritage, non-surgical care, conditions treated, NABH accreditation, facilities, doctors and online consultation — and mapped each one to the page it belongs on, avoiding duplicate meta tags."
       ]
     },
     {
-      "title": "Expert attribution on health content",
+      "title": "Medically accurate, honest blog content",
       "paragraphs": [
-        "Pages are linked to the qualified doctors already listed on the site, with the qualification shown and a review date. Wording avoids cure claims and describes what the treatment aims to support, in line with Google's health content guidance and Indian rules on medical advertising."
+        "Blog posts such as \"Is Avascular Necrosis Reversible?\" were grounded in clinical literature and cited sources. Where the evidence points to orthopaedic or surgical care, the content says so, and positions the hospital's non-surgical care as supportive rather than a cure. No patient stories or success rates were invented; clear placeholders were left for real, consented patient experiences instead."
       ]
     },
     {
-      "title": "One name, one address, one set of details",
+      "title": "Answer-first structure and real internal links",
       "paragraphs": [
-        "The hospital name, address, phone number and social profile links were written consistently across the site and business listings, with spelling variants handled in the copy where patients are likely to search them."
-      ]
-    },
-    {
-      "title": "Answer-first content for modern search",
-      "paragraphs": [
-        "Question headings are followed by short direct answers, helping featured snippets, AI Overviews and assistant-style answers. Structured data for the hospital and its doctors is used only where the visible page content supports it."
+        "Each post opens with a short quick-answer block, followed by a stage-by-stage explanation, a comparison table, an FAQ, a medical disclaimer and sources. Contextual links point only to real hospital pages — departments, treatments, doctors, reviews and appointment booking — and Teknoppy recommended a BAMS-qualified doctor review and byline each post before publishing."
       ]
     }
   ],
   "deliverables": [
     {
-      "title": "Search-intent and keyword map",
-      "description": "Every condition, treatment and department search mapped to one page, with primary and supporting terms and the question each page answers."
+      "title": "Site audit & competitor research",
+      "description": "A review of the live site and ranking competitors, identifying the keyword conflict and structure gaps."
     },
     {
-      "title": "Topical map for spine and musculoskeletal care",
-      "description": "A content plan linking conditions, treatments, doctors and facilities around the hospital's core specialty."
+      "title": "A five-pillar site structure",
+      "description": "Every page mapped to a pillar, a topic, a primary keyword and its existing URL, with a full tree view."
     },
     {
-      "title": "Condition-page template",
-      "description": "A fixed structure for pages on back pain, neck pain, sciatica and other listed conditions, ready for doctor review."
+      "title": "A cannibalization fix",
+      "description": "Three competing pages reassigned to distinct keywords, with no URL changes."
     },
     {
-      "title": "E-E-A-T and entity framework",
-      "description": "Standard naming, doctor attribution, review-date rules, accreditation display and contact details used consistently across the site."
+      "title": "Twenty page descriptions",
+      "description": "Ten meta and ten long-form descriptions for \"Ayurvedic spine treatment in Coimbatore\", each mapped to a page."
     },
     {
-      "title": "On-page optimisation",
-      "description": "Title tags, meta descriptions, headings, internal links and image alt text aligned to the intent map, with repeated copy replaced by page-specific text."
-    }
-  ],
-  "faqs": [
-    {
-      "q": "What was the main SEO challenge for Edamanasserry Spine Hospital?",
-      "a": "The site covered many departments while its reputation centres on spine care. The challenge was to make that specialty clear, give each condition its own answer page and support every page with visible medical expertise."
+      "title": "YMYL-safe blog content",
+      "description": "Answer-first medical posts with clinical sources, disclaimers, FAQs and real internal links."
     },
     {
-      "q": "Why do condition pages matter for a hospital website?",
-      "a": "Patients often search for a symptom such as sciatica or neck pain before they look for a hospital. A dedicated page for each condition answers that search directly and leads naturally to an appointment."
-    },
-    {
-      "q": "What is E-E-A-T and why is it important for health websites?",
-      "a": "E-E-A-T stands for experience, expertise, authoritativeness and trustworthiness. For health topics, Google looks for accurate content from qualified people, so named doctors, qualifications and review dates matter."
-    },
-    {
-      "q": "How is Ayurvedic treatment described on health pages?",
-      "a": "Pages explain what the approach involves and what it aims to support, without promising cures or guaranteed results. Content is reviewed by the hospital's qualified doctors before publication."
-    },
-    {
-      "q": "How does SEO help patients find a hospital nearby?",
-      "a": "A consistent name, address, phone number and business listing connect the hospital to its real location, which helps local searches and gives patients dependable contact details."
-    },
-    {
-      "q": "How do question-led pages help with AI Overviews and assistants?",
-      "a": "Short direct answers under clear question headings make it easier for search engines and AI tools to identify the right information and attribute it to the right source."
-    },
-    {
-      "q": "Can SEO guarantee rankings or more patients?",
-      "a": "No. Rankings depend on competition, content quality, authority and search engine changes, and no agency can guarantee them. Clear structure and trustworthy content improve the site's chances and its usefulness to patients."
-    },
-    {
-      "q": "Does this approach work for other hospitals and clinics?",
-      "a": "Yes. Hospitals and clinics with several departments can use the same method: define the core specialty, give each condition and department one page, attribute content to qualified doctors and keep details consistent."
-    },
-    {
-      "q": "Is the website live?",
-      "a": "Yes. The website is live at e-spinehospital.com."
+      "title": "Medical schema & E-E-A-T guidance",
+      "description": "FAQ and MedicalWebPage schema for blog posts, plus doctor byline and consented-story recommendations."
     }
   ],
   "rankingKeywords": {
-    "lead": "Verified Google search rankings for Ayurvedic spine treatment and specialist clinical care in Coimbatore.",
+    "eyebrow": "Keyword mapping",
+    "heading": "Target keywords",
+    "lead": "Primary keywords mapped to the page that owns them, covering spine treatment, non-surgical care and patient questions in Coimbatore.",
     "groups": [
       {
         "title": "Target keywords — Ayurvedic Spine Care Coimbatore",
-        "badge": "Google #1",
-        "hasMap": true,
-        "note": "Local healthcare search terms connecting patients seeking non-surgical spine treatment with certified specialists.",
+        "badge": "One keyword per page",
+        "label": "Keyword mapping",
+        "headers": [
+          "Primary keyword",
+          "Owning page",
+          "Status"
+        ],
+        "hasMap": false,
+        "note": "Patient search terms from people with back pain, neck pain, sciatica, slipped discs and joint conditions looking for non-surgical Ayurvedic care in Coimbatore and Tamil Nadu.",
         "rows": [
           {
-            "keyword": "ayurvedic spine treatment coimbatore",
-            "page": "1",
-            "position": "1",
-            "map": "3"
+            "keyword": "Ayurvedic spine treatment in Coimbatore",
+            "page": "/",
+            "position": "Target"
           },
           {
-            "keyword": "spine disorder treatment coimbatore",
-            "page": "1",
-            "position": "4",
-            "map": "1"
+            "keyword": "ayurvedic back pain treatment Coimbatore",
+            "page": "Conditions pillar · one owner page",
+            "position": "Target"
           },
           {
-            "keyword": "ayurveda spine clinic near coimabtore",
-            "page": "1",
-            "position": "1",
-            "map": "2"
+            "keyword": "non-surgical spine treatment Coimbatore",
+            "page": "/non-surgical-solutions",
+            "position": "Target"
           },
           {
-            "keyword": "best ayurvedic spine doctor coimbatore",
-            "page": "1",
-            "position": "2",
-            "map": "1"
+            "keyword": "traditional Ayurvedic treatment Coimbatore",
+            "page": "/traditional-ayurvedic-treatment",
+            "position": "Target"
           },
           {
-            "keyword": "ayurvedic spine specialist hospital TN",
-            "page": "1",
-            "position": "1",
-            "map": "2"
+            "keyword": "physiotherapy Coimbatore",
+            "page": "/departments/physiotherapy/",
+            "position": "Target"
+          },
+          {
+            "keyword": "is avascular necrosis reversible",
+            "page": "Blog · Conditions pillar",
+            "position": "Target"
           }
         ]
       }
     ]
   },
-  "deliverableLead": "Core strategic deliverables engineered for long-term clinical visibility:",
-  "impactLead": "Why This Structure Matters:",
-  "impactParagraphs": [
-    "When someone searches for relief from back or neck pain, they want a clear answer and a reason to trust it. A page written for their exact concern, attributed to a named doctor, with clear next steps, meets both needs. Broad pages that try to cover everything usually meet neither.",
-    "Healthcare is also where search engines apply the strictest quality checks. Visible expertise, accurate wording and consistent facts about the hospital are the foundation of ranking well and, more importantly, of earning a patient's confidence before they call.",
-    "The same clarity helps AI assistants that answer health-related questions. They favour sources that state who wrote the content, who reviewed it and what it covers. Rankings and appointments can never be guaranteed, so this work focuses on accuracy, clarity and usefulness, which are within the hospital's control."
-  ]
+  "whyMattersHeading": "Why this approach matters",
+  "whyMattersParagraphs": [
+    "Keyword cannibalization hurts any site, but on a hospital site it also confuses patients — three pages saying slightly different things about the same condition make it harder to know where to start. Giving each condition, treatment and department one clear page lets ranking strength build in one place, and gives patients one clear answer. Doing it without changing URLs protects everything the site has already earned.",
+    "For health content, trust is the ranking factor that matters most. Google holds medical pages to a higher standard, and AI tools like Google AI Overviews and ChatGPT are cautious about which health sources they quote. Content that is accurate, cites its sources, admits when surgery is the right path, and never invents results is exactly what earns that trust — and what makes a hospital worth recommending."
+  ],
+  "whyMattersCalloutHtml": "<p class=\"font-semibold text-neutral-900 text-base sm:text-lg leading-relaxed\">Giving every condition and treatment one clearly scoped page — and writing it with medical honesty rather than marketing claims — is what lets search engines and AI assistants trust Edamanasserry Spine Hospital as a reliable answer for patients researching Ayurvedic spine care in Coimbatore.</p><p class=\"mt-4 text-sm sm:text-base text-neutral-600\"><strong>This case study is part of Teknoppy's SEO services work for healthcare and wellness providers in South India.</strong> Explore our <a href=\"/seo-services/\" class=\"underline font-bold text-[#F05A2C]\">SEO Services</a> or view <a href=\"/case-study/\" class=\"underline font-bold text-[#F05A2C]\">More Teknoppy Case Studies</a>.</p>",
+  "faqs": [
+    {
+      "question": "What was the main SEO problem with the Edamanasserry Spine Hospital website?",
+      "answer": "Three existing pages were all competing for \"ayurvedic back pain treatment Coimbatore\", splitting their ranking strength. The site also had no clear topical structure separating conditions, treatments and departments, so search engines could not tell which page answered which patient search."
+    },
+    {
+      "question": "Did Teknoppy change any existing hospital URLs?",
+      "answer": "No. The homepage URL and its primary keyword were kept, and no existing URL was changed. All fixes were made through keyword reassignment, page structure and internal linking."
+    },
+    {
+      "question": "How is the new site structure organised?",
+      "answer": "The site is organised into five content pillars: Ayurveda, Conditions, Treatments, Departments, and Trust and About. Each page has one clear job and one primary keyword, so pages no longer compete with each other."
+    },
+    {
+      "question": "Why is medical SEO content handled differently?",
+      "answer": "Health content is treated by Google as Your Money or Your Life (YMYL) content, so accuracy and trust matter more than keyword volume. Teknoppy grounded every medical claim in clinical sources, avoided invented patient stories or success rates, and added disclaimers and doctor review recommendations."
+    },
+    {
+      "question": "What primary keyword does the homepage target?",
+      "answer": "The homepage owns \"Ayurvedic spine treatment in Coimbatore\". Teknoppy wrote ten meta descriptions and ten longer page descriptions around it, each mapped to the homepage, treatments, about, facilities, doctors or contact page."
+    },
+    {
+      "question": "How are blog posts structured for AI search?",
+      "answer": "Each post opens with a short quick-answer block, then gives a stage-by-stage explanation, a comparison table, an FAQ, a medical disclaimer and cited sources. This gives Google AI Overviews and assistants like ChatGPT an accurate passage to quote."
+    },
+    {
+      "question": "Do the blogs link to the hospital's service pages?",
+      "answer": "Yes. Posts use contextual internal links to real department and treatment pages such as orthopaedics, musculoskeletal, physiotherapy, naturopathy and yoga, and traditional Ayurvedic treatment, plus doctors, reviews and appointment pages."
+    },
+    {
+      "question": "Does this approach work for other hospitals and clinics?",
+      "answer": "Yes. Any hospital or clinic with many conditions, treatments and departments benefits from one keyword per page, a pillar structure, and medically accurate, answer-first content that builds trust rather than overstating results."
+    }
+  ],
+  "ctaHeadline": "Need healthcare SEO that builds patient trust, not just traffic?",
+  "kpis": [
+    {
+      "value": "5",
+      "label": "Content pillars",
+      "note": "Ayurveda to Trust & About"
+    },
+    {
+      "value": "3",
+      "label": "Competing pages untangled",
+      "note": "One keyword, one owner"
+    },
+    {
+      "value": "20",
+      "label": "Page descriptions written",
+      "note": "10 meta · 10 long-form"
+    },
+    {
+      "value": "0",
+      "label": "Existing URLs changed",
+      "note": "Homepage keyword kept"
+    }
+  ],
+  "fixes": [
+    {
+      "title": "Fix 1: three pages, one keyword",
+      "caption": "Three competing pages reassigned so only one owns the keyword.",
+      "before": [
+        "Page 1 · back pain Coimbatore",
+        "Pages 2 & 3 · same keyword"
+      ],
+      "after": [
+        "One owner page per keyword"
+      ],
+      "keyword": "ayurvedic back pain treatment Coimbatore",
+      "tagBefore": "Competing",
+      "tagAfter": "Resolved ✓"
+    },
+    {
+      "title": "Fix 2: loose pages to clear pillars",
+      "caption": "Pages grouped under clear pillars, alongside the Ayurveda hub.",
+      "before": [
+        "Conditions, treatments, departments mixed"
+      ],
+      "after": [
+        "Conditions",
+        "Treatments",
+        "Departments",
+        "Trust"
+      ],
+      "keyword": "",
+      "tagBefore": "Overlapping",
+      "tagAfter": "Pillars ✓"
+    }
+  ],
+  "blueprint": {
+    "title": "The 10-part YMYL blog blueprint",
+    "items": [
+      "Quick-answer block",
+      "What the condition is",
+      "Stage-by-stage answer",
+      "Comparison table",
+      "Treatment options",
+      "Where non-surgical care fits",
+      "Consented patient stories only",
+      "When to see a doctor",
+      "Patient FAQ",
+      "Disclaimer, sources & CTA"
+    ],
+    "note": "Each post: primary keyword in the H1, first 100 words and meta description · cited clinical sources · links only to real hospital pages · doctor review before publishing."
+  },
+  "liveSite": {
+    "heading": "The Edamanasserry Spine Hospital website",
+    "lead": "The site is organised around five clear pillars, with each condition, treatment and department page owning its own search.",
+    "caption": "e-spinehospital.com — Ayurvedic spine treatment in Coimbatore, Tamil Nadu."
+  }
 }

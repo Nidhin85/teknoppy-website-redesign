@@ -1,6 +1,6 @@
 {
-  "metaTitle": "RJ Visakh PMP Trainer SEO Case Study | Teknoppy",
-  "metaDescription": "How Teknoppy structured the SEO for RJ Visakh, a PMP trainer in India: entity clarity, search-intent page mapping and evidence-backed E-E-A-T content.",
+  "metaTitle": "Visakh RJ PMP Trainer: SEO Case Study | Teknoppy",
+  "metaDescription": "How Teknoppy built personal-brand SEO for Visakh RJ, a Mumbai PMP trainer: Person and Course schema, 132 mapped keywords and a backlink content kit.",
   "canonicalURL": "https://teknoppy.com/case-studies/visakh-rj-pmp-trainer-seo/",
   "heroImage": "/case-studies/visakh-rj-seo.webp",
   "heroImageAlt": "RJ Visakh PMP Trainer SEO Case Study",
@@ -10,219 +10,302 @@
     "name": "RJ Visakh",
     "url": "https://www.rjvisakh.com/"
   },
-  "clientName": "RJ Visakh",
+  "clientName": "Visakh RJ",
   "categoryTag": "Search Engine Optimization (SEO)",
-  "tagBadge": "Personal-Brand & Education SEO Case Study",
-  "title": "RJ Visakh: An SEO Services Case Study for a PMP Trainer's Personal-Brand Website in India",
-  "storyLead": "How Teknoppy organised the search presence of an established PMP® trainer and event host, so the person, the certification, the events and the proof each have one clear page that answers what aspiring project managers actually search for.",
-  "industry": "Professional education (PMP® training and coaching)",
-  "location": "India (Mumbai listed on site)",
-  "services": "SEO strategy, entity and E-E-A-T structure, page and content architecture",
-  "platform": "Static-first build on Astro",
+  "tagBadge": "Personal Brand SEO Case Study",
+  "title": "Visakh RJ: An SEO Services Case Study for a PMP Trainer's Personal Brand",
+  "storyLead": "How Teknoppy helped a Mumbai PMP trainer compete with large training platforms — by defining him as a clear expert entity in schema, mapping 132 keywords across his site, and building a backlink content kit around his strongest third-party proof.",
+  "industry": "PMP training & leadership coaching",
+  "location": "Mumbai, India (serving India & globally)",
+  "services": "Schema, keyword research, meta, backlink content",
+  "platform": "Personal brand website + blog",
   "liveWebsite": "rjvisakh.com",
   "liveWebsiteUrl": "https://www.rjvisakh.com/",
   "heroHighlights": [
-    "Entity SEO & E-E-A-T",
-    "Search-Intent Mapping",
-    "Evidence-Backed Proof",
-    "Answer-First AI Content"
+    "Person & Course Schema",
+    "132-Keyword Map",
+    "City Page Gaps",
+    "Backlink Content Kit"
   ],
   "atAGlance": [
-    "Entity disambiguation establishing RJ Visakh as one unified educator and PMP authority across web signals",
-    "Search intent segmented across learning, comparing trainers, validating pass rates, and PMC Conclave events",
-    "Visible factual backing for core claims including 10,000+ mentored professionals and Lee Lambert endorsement",
-    "Textual semantic layering around rich media, YouTube lessons, and attendee video testimonials",
-    "Direct inquiry routes structured to convert corporate and institutional training leads without form friction"
+    "A connected schema graph defining Visakh RJ as a Person entity — job title, location, alma mater, awards, expertise and social profiles — plus Course schema for his PMP training, which had been missing entirely",
+    "A meta title and description rebuilt around his strongest third-party proof, with the description cut from 234 to 158 characters so it displays in full",
+    "132 keywords mapped from the homepage, About page and all 101 blog posts, split into current targets and high-chance opportunities",
+    "Clear gaps identified: no city landing pages beyond Mumbai, and no dedicated course or pricing page",
+    "A backlink content kit with anchored and plain-text paragraphs and a natural mix of keyword, branded and URL anchors"
   ],
-  "aboutHeading": "About RJ Visakh",
+  "aboutHeading": "About Visakh RJ",
   "aboutParagraphs": [
-    "RJ Visakh is a PMP® trainer, speaker and coach who works with mid-career professionals preparing for Project Management Professional certification. His website states 15+ years of industry experience, 10,000+ professionals mentored and a 99% PMP pass rate. It also records that Lee R. Lambert, co-founder of the PMP certification, called him 'The PMP Production Machine'.",
-    "Beyond training, he hosts the PMC Conclave, a project management event held at SIBM Bangalore on 6 April 2025 and at T-Hub on 7 February 2026, and publishes free PMP lessons on YouTube. The site is built on Astro and includes Home, About, Gallery, Events, Testimonials, Blog and Contact pages.",
-    "This case study covers the SEO strategy, entity structure and content architecture delivered by Teknoppy. It does not cover PMP course content, exam preparation methods or training delivery, which remain RJ Visakh's own expertise."
+    "Visakh RJ is a Mumbai-based PMP® trainer and leadership coach, and an alumnus of NIT Calicut. His site states 15+ years of global project experience, 10,000+ professionals mentored and a 99% pass rate, and highlights his recognition as \"The PMP Production Machine\" by Lee R. Lambert and an India Book of Records entry for the most PMP students cleared in a year. He teaches predictive, agile and hybrid project management, runs the teAchnology YouTube channel, and publishes a blog of more than 100 posts focused on the 2026 PMP exam changes, PMBOK updates and the PMP application process.",
+    "As a personal brand, he competes for searches like \"PMP trainer India\" against large training platforms such as StarAgile, ProThoughts, Henry Harvin and Simpliaxis. The site had real proof and deep content, but its structured data did not describe him or his course, its meta description was too long to display, and its keyword coverage stopped at Mumbai.",
+    "This case study covers the schema, keyword research, meta optimization and backlink content delivered by Teknoppy. It does not cover Visakh RJ's training curriculum or exam results, which are his own domain."
   ],
-  "challengeLead": "Personal-brand entity establishment, intent segmentation, and proof-first credibility architecture:",
+  "challengeLead": "Our first audit found five problems holding the site back.",
   "challenges": [
     {
       "number": 1,
-      "title": "One person, several names, one certification",
-      "description": "RJ Visakh is also searched as 'Visakh RJ', and is known by titles such as 'The PMP Production Machine' and 'Mindset Alchemist'. Search engines needed consistent signals to treat these as one person and one brand, separate from the general PMP topic."
+      "title": "A person competing with platforms",
+      "description": "Large training companies dominate PMP searches with hundreds of pages. A single trainer needs search engines to recognise him as a distinct, credible expert, not just another training listing."
     },
     {
       "number": 2,
-      "title": "PMP searches carry very different intents",
-      "description": "Someone asking what the PMP exam involves, someone comparing PMP trainers in India, and someone searching for a name they heard at an event are three different visitors. A single home page cannot answer all three well."
+      "title": "No Course schema",
+      "description": "The PMP training programme — the core offer — had no Course markup at all, so the site was missing the structured data most directly tied to what buyers search for."
     },
     {
       "number": 3,
-      "title": "Strong claims need visible evidence",
-      "description": "Figures such as 10,000+ professionals mentored and a 99% pass rate build trust only when the page shows where they come from. For Google's E-E-A-T guidelines, unsupported claims on a training website are a weakness, not a strength."
+      "title": "Meta tags too long to display",
+      "description": "The meta description ran to 234 characters, so search results cut it off before the strongest proof points could appear."
     },
     {
       "number": 4,
-      "title": "Proof lived mostly in video and photos",
-      "description": "Testimonials, event galleries and YouTube lessons are persuasive to people but carry little readable text for search engines and AI assistants unless they are surrounded by context."
+      "title": "Keyword coverage stopped at Mumbai",
+      "description": "The site only mentioned Mumbai, so searches for PMP training in Bangalore, Hyderabad, Pune, Chennai, Kochi or Delhi NCR had no page to land on — and there was no course or pricing page either."
     },
     {
       "number": 5,
-      "title": "Pages could repeat each other",
-      "description": "About, Events, Testimonials and Blog all touch the same achievements. Without stated boundaries, they risk competing for the same searches instead of supporting each other."
+      "title": "Few links pointing to the brand",
+      "description": "A personal site has fewer natural backlinks than a training company. It needed a steady, natural-looking link profile from directories and editorial sites, without over-repeating one exact-match anchor."
     }
   ],
-  "objectiveLead": "Teknoppy was engaged to give RJ Visakh's website a clear search structure built on real user intent and verifiable credibility. The brief centred on:",
+  "objectiveLead": "Teknoppy was engaged to make Visakh RJ the clear, credible answer for PMP trainer searches in India — for Google and for AI answer engines. The brief centred on:",
   "objectives": [
-    "Establishing RJ Visakh as one consistent entity across the website and his public profiles",
-    "Mapping PMP-related searches by intent (learning, comparing, verifying, finding events) and assigning each to one page",
-    "Attaching a source or named attribution to every credibility claim shown on the site",
-    "Making video, gallery and event content understandable through supporting text",
-    "Writing answers in a format that suits featured snippets, AI Overviews and assistant-style search"
+    "Defining Visakh RJ and his course as connected entities in schema markup",
+    "Rewriting the meta title and description around his third-party proof",
+    "Mapping every keyword the site targets, and the ones it should",
+    "Identifying the city and course pages that would open new search demand",
+    "Building backlink content that grows authority with a natural anchor mix"
   ],
-  "approachLead": "How Teknoppy executed entity SEO, intent mapping, and verifiable E-E-A-T content:",
+  "approachLead": "Six pillars took the site from strong content with weak signals to a clearly defined expert entity.",
   "approachPillars": [
     {
-      "title": "Intent research before page decisions",
+      "title": "A Person entity at the centre",
       "paragraphs": [
-        "We grouped PMP-related searches into informational, commercial, navigational and event-related sets, then checked how the current search results for each set are answered. Each set was assigned to a single page so the pages would not compete."
+        "Teknoppy built the schema around a Person block for Visakh RJ — job title, Mumbai location, NIT Calicut, areas of expertise from PMP to agile and hybrid project management, awards, languages and his LinkedIn, YouTube and Instagram profiles. WebSite, WebPage and Organization blocks reference it by @id, so every page points back to one clearly defined expert."
       ]
     },
     {
-      "title": "One consistent description of the entity",
+      "title": "Markup for the core offer",
       "paragraphs": [
-        "Name, role, experience and contact details were written the same way in title tags, meta descriptions, headings, the footer and the linked LinkedIn, YouTube and Instagram profiles. Consistency across these places is what allows search engines to connect them."
+        "Course schema was added for the PMP certification training — the highest-value structured data for the site and previously missing — describing the programme, its predictive, agile and hybrid coverage, and the three exam domains of People, Process and Business Environment."
       ]
     },
     {
-      "title": "Clear scope for every page",
+      "title": "Third-party proof first",
       "paragraphs": [
-        "The home page introduces the offer and points onward. The About page owns the biography. Events owns the PMC Conclave details. Testimonials owns student stories. The Blog owns question-led educational content. Each page links to the others instead of repeating them."
+        "The meta description was rewritten from 234 to 158 characters and now opens with the Lee R. Lambert recognition, followed by pass rate, experience and professionals mentored. Leading with what someone else said, rather than a self-claim, is the signal AI answer engines weigh most when asked who the best PMP trainer is."
       ]
     },
     {
-      "title": "Evidence placed next to claims",
+      "title": "132 keywords from 101 blog posts",
       "paragraphs": [
-        "Endorsements are attributed by name and role. Event pages carry date, venue and named guests. Statistics are worded as the trainer's own stated figures, so the page stays accurate about what it can and cannot prove."
+        "With Semrush data unavailable, Teknoppy went through the site by hand — homepage, About page and every blog post — and mapped 132 keywords into a spreadsheet. Section A covers terms the site already targets, from brand searches and \"PMP trainer India\" to blog topics like PMP exam changes 2026, PMBOK 8th edition and PMP application steps."
       ]
     },
     {
-      "title": "Media made readable",
+      "title": "City and course opportunities",
       "paragraphs": [
-        "Video testimonials and YouTube lessons were paired with descriptive headings and short written summaries, and images with meaningful alt text, so the substance of each item is available as text."
+        "Section B lists keywords with a high chance to rank but no page yet: PMP training in Bangalore, Hyderabad, Pune, Chennai, Kochi, Kerala and Delhi NCR, Navi Mumbai coaching, classroom training in Mumbai and a PMP bootcamp in India — plus course and pricing keywords that need a dedicated course page."
       ]
     },
     {
-      "title": "Answer-first content for modern search",
+      "title": "A natural backlink content kit",
       "paragraphs": [
-        "Question headings are followed by a short direct answer, then supporting detail. Structured data was applied only where the visible page content supports it, in line with Google's guidance."
+        "Teknoppy wrote paragraphs for directory and guest submissions around \"PMP certification trainer India\", in linked and plain-text versions, and fully rewritten for each site so no two submissions are identical. The kit mixes in branded anchors like \"Visakh RJ\", URL anchors like \"rjvisakh.com\", and long-tail and location anchors to keep the profile natural."
       ]
     }
   ],
   "deliverables": [
     {
-      "title": "Search-intent and keyword map",
-      "description": "A document linking each PMP-related search group to one page, with the primary and supporting terms for each."
+      "title": "Person & entity schema",
+      "description": "A connected Person, WebSite, WebPage and Organization graph describing Visakh RJ as one expert."
     },
     {
-      "title": "Entity and E-E-A-T framework",
-      "description": "Standard wording for the brand's name, credentials and profiles, plus rules for how claims, endorsements and figures are presented."
+      "title": "Course schema",
+      "description": "Structured data for the PMP certification training programme, previously missing."
     },
     {
-      "title": "Page architecture with scope statements",
-      "description": "A site structure covering Home, About, Events, Gallery, Testimonials, Blog and Contact, each with a written boundary."
+      "title": "Meta title & description",
+      "description": "Rebuilt around third-party proof, with the description cut to 158 characters."
     },
     {
-      "title": "On-page optimisation",
-      "description": "Title tags, meta descriptions, heading hierarchy, internal links and image alt text aligned to the intent map."
+      "title": "132-keyword spreadsheet",
+      "description": "Current targets and high-chance opportunities, mapped from 101 blog posts and core pages."
     },
     {
-      "title": "Question-led content framework",
-      "description": "A repeatable format for blog and FAQ content built around the questions PMP aspirants ask before enrolling."
-    }
-  ],
-  "faqs": [
-    {
-      "q": "What was the main SEO challenge for RJ Visakh's website?",
-      "a": "The site needed to present one person, one certification topic and several content types (training, events, testimonials, videos) in a way search engines could separate and understand, while every trust claim needed visible support."
+      "title": "City & course gap list",
+      "description": "Landing page opportunities across Indian cities, plus a missing course and pricing page."
     },
     {
-      "q": "Why does entity SEO matter for a personal brand?",
-      "a": "Search engines rank pages, but they also try to understand people and organisations. Consistent naming, credentials and profile links help them connect the site to the right person and reduce confusion with similar names."
-    },
-    {
-      "q": "How were searches for PMP training organised?",
-      "a": "By intent: learning about the PMP, comparing trainers, verifying a name or claim, and finding events. Each group was assigned to one page with a defined scope."
-    },
-    {
-      "q": "How are claims like pass rates and students mentored handled?",
-      "a": "They are presented as the trainer's stated figures and placed near supporting evidence such as attributed endorsements, event records and student testimonials. This keeps the content honest and aligned with E-E-A-T guidance."
-    },
-    {
-      "q": "Why do video testimonials and YouTube lessons need supporting text?",
-      "a": "Search engines and AI tools read text far more reliably than video. A written summary and clear heading make the content findable and quotable without replacing the video itself."
-    },
-    {
-      "q": "How does this help with AI Overviews and assistant-style answers?",
-      "a": "Question headings with short, direct answers and consistent facts about the entity make it easier for these systems to identify and cite the right page."
-    },
-    {
-      "q": "Can SEO guarantee rankings for a trainer's website?",
-      "a": "No. No agency can guarantee rankings. Results depend on competition, content quality, authority and search-engine changes. Structure and clarity improve the site's chances and its usefulness to visitors."
-    },
-    {
-      "q": "Does this approach work for other coaches and educators?",
-      "a": "Yes. Any expert-led business with several content types and trust claims can use the same method: define the entity, map intent to pages, set page boundaries and support every claim."
-    },
-    {
-      "q": "Is the site live?",
-      "a": "Yes. The website is live at rjvisakh.com."
+      "title": "Backlink content kit",
+      "description": "Anchored and plain-text paragraphs with a natural mix of keyword, brand and URL anchors."
     }
   ],
   "rankingKeywords": {
-    "lead": "Verified Google search rankings and AI Overview citations for PMP certification training and mentorship across India.",
+    "eyebrow": "Keyword mapping",
+    "heading": "Target keywords",
+    "lead": "A sample of the 132-keyword map: core training terms, blog topics the site already covers, and city opportunities that need their own pages.",
     "groups": [
       {
-        "title": "Target keywords — PMP Coach & Trainer India",
-        "badge": "Google #1",
-        "note": "Entity-backed professional training searches where authoritativeness and verifiable credentials determine rankings.",
+        "title": "Target keywords — PMP Training India",
+        "badge": "132 mapped",
+        "label": "Keyword mapping",
+        "headers": [
+          "Keyword",
+          "Page",
+          "Status"
+        ],
+        "hasMap": false,
+        "note": "Search terms from working professionals in India and abroad preparing for the PMP exam, comparing trainers and planning their application.",
         "rows": [
           {
-            "keyword": "PMP Coach India",
-            "page": "1",
-            "position": "1",
-            "ai": "1"
+            "keyword": "pmp trainer india",
+            "page": "/",
+            "position": "Target"
           },
           {
-            "keyword": "Best PMP Coach in India",
-            "page": "1",
-            "position": "4",
-            "ai": ""
+            "keyword": "best pmp trainer in india",
+            "page": "/",
+            "position": "Target"
           },
           {
-            "keyword": "Best PMP Trainer in India",
-            "page": "1",
-            "position": "5",
-            "ai": "2"
+            "keyword": "pmp training mumbai",
+            "page": "Core page",
+            "position": "Target"
           },
           {
-            "keyword": "Who is the best PMP trainer in India",
-            "page": "1",
-            "position": "5",
-            "ai": "3"
+            "keyword": "pmp exam changes 2026",
+            "page": "Blog",
+            "position": "Target"
           },
           {
-            "keyword": "PMP Trainer India",
-            "page": "1",
-            "position": "3",
-            "ai": "1"
+            "keyword": "pmp certification cost in india",
+            "page": "Blog",
+            "position": "Target"
+          },
+          {
+            "keyword": "pmp training bangalore",
+            "page": "New city page needed",
+            "position": "Opportunity"
           }
-        ],
-        "hasAi": true
+        ]
       }
     ]
   },
-  "deliverableLead": "Core deliverables engineered for entity authority and conversion:",
-  "impactLead": "Why This Structure Matters:",
-  "impactParagraphs": [
-    "For a personal-brand educator, the person is the product. If search engines cannot tell who RJ Visakh is, what he teaches and why he can be trusted, the site competes on weaker signals than the reputation behind it. Entity clarity and visible evidence are what turn a strong offline reputation into a strong online one.",
-    "Separating pages by intent also protects the site from competing with itself. A learner researching the PMP exam, a professional comparing trainers and a visitor who saw the PMC Conclave each land on the page written for that need, which also makes the page more useful once they arrive.",
-    "The same structure suits how people now research training. When an AI assistant is asked for a PMP trainer in India, it favours pages that state who the person is, what they do and how a claim is supported, in plain, specific language. Pages built that way are easier to quote accurately. Search results are never guaranteed, so this work focuses on the factors within our control: clarity, accuracy and helpfulness."
-  ]
+  "whyMattersHeading": "Why this approach matters",
+  "whyMattersParagraphs": [
+    "A personal brand cannot out-publish a national training platform page for page. What it can do is be unmistakably defined: one person, one course, one set of credentials, described the same way everywhere. Person and Course schema, connected by shared IDs, turns a name into an entity that search engines understand — and that is what lets one trainer stand next to companies in the results.",
+    "AI answer engines raise the stakes. When someone asks ChatGPT or Google AI Overviews who the best PMP trainer in India is, those tools lean on third-party proof and consistent facts rather than self-description. Putting an endorsement and a records entry first, keeping details consistent, and building a natural spread of links gives them good reason to name Visakh RJ in the answer."
+  ],
+  "whyMattersCalloutHtml": "<p class=\"font-semibold text-neutral-900 text-base sm:text-lg leading-relaxed\">Defining Visakh RJ as one clear expert entity — with his course, his credentials and his third-party proof connected in structured data — is what lets a single trainer compete with national platforms in both Google and AI search.</p><p class=\"mt-4 text-sm sm:text-base text-neutral-600\"><strong>This case study is part of Teknoppy's SEO services work for personal brands, coaches and education businesses.</strong> Explore our <a href=\"/seo-services/\" class=\"underline font-bold text-[#F05A2C]\">SEO Services</a> or view <a href=\"/case-study/\" class=\"underline font-bold text-[#F05A2C]\">More Teknoppy Case Studies</a>.</p>",
+  "faqs": [
+    {
+      "question": "What was the main SEO challenge for Visakh RJ?",
+      "answer": "Visakh RJ is a person, not a company, competing for PMP training searches against large training platforms. The site needed search engines and AI tools to recognise him as a distinct expert, but it had no Course schema, no course or pricing page, and keyword coverage limited mainly to Mumbai."
+    },
+    {
+      "question": "What schema markup did Teknoppy build?",
+      "answer": "Teknoppy built a connected schema graph centred on a Person entity for Visakh RJ, with his job title, location, alma mater, awards, areas of expertise and social profiles, plus WebSite, WebPage and Organization blocks. It also added Course schema for the PMP certification training, which had been missing entirely."
+    },
+    {
+      "question": "How many keywords were researched?",
+      "answer": "Teknoppy reviewed the homepage, About page and all 101 blog posts and mapped 132 keywords. They were split into keywords the site already targets — brand, core training and blog topics such as the 2026 PMP exam changes — and keywords with a high chance to rank, such as city and course pages."
+    },
+    {
+      "question": "What gaps did the keyword research find?",
+      "answer": "The site only mentioned Mumbai, so city searches such as PMP training in Bangalore, Hyderabad, Pune, Chennai, Kochi and Delhi NCR had no landing pages. There was also no dedicated course or pricing page, a major gap for buyers comparing PMP training options."
+    },
+    {
+      "question": "What was in the backlink content kit?",
+      "answer": "The kit includes paragraphs built around the anchor \"PMP certification trainer India\", plain-text versions for sites that do not allow links, and a fresh rewrite for each submission. It recommends mixing branded anchors like \"Visakh RJ\" and URL anchors like \"rjvisakh.com\" so the link profile looks natural."
+    },
+    {
+      "question": "Why is third-party proof important for a personal brand?",
+      "answer": "AI answer engines and Google trust endorsements from others more than self-claims. Visakh RJ's recognition as \"The PMP Production Machine\" by Lee R. Lambert and his India Book of Records entry were placed in the meta description and schema so they are the first things search engines read."
+    },
+    {
+      "question": "How was the meta description written?",
+      "answer": "The original description ran to 234 characters and would be cut off in search results. Teknoppy rewrote it to 158 characters, leading with the Lee R. Lambert endorsement and keeping the pass rate, experience and professionals-mentored figures."
+    },
+    {
+      "question": "Does this approach work for other coaches and trainers?",
+      "answer": "Yes. Any trainer, coach or consultant whose business is their name benefits from Person and Course schema, third-party proof placed up front, city and course landing pages, and a natural, varied backlink profile."
+    }
+  ],
+  "ctaHeadline": "Is your name your business — but search doesn't know it yet?",
+  "kpis": [
+    {
+      "value": "132",
+      "label": "Keywords mapped",
+      "note": "Current targets & opportunities"
+    },
+    {
+      "value": "101",
+      "label": "Blog posts reviewed",
+      "note": "Plus homepage & About"
+    },
+    {
+      "value": "13",
+      "label": "Schema blocks built",
+      "note": "Person, Course & more"
+    },
+    {
+      "value": "10",
+      "label": "City & format gaps found",
+      "note": "Bangalore to Delhi NCR"
+    }
+  ],
+  "fixes": [
+    {
+      "title": "Fix 1: name variants, one expert",
+      "caption": "Brand searches resolved to one connected Person and Course entity.",
+      "before": [
+        "\"Visakh RJ\"",
+        "\"RJ Visakh\""
+      ],
+      "after": [
+        "Person entity · PMP Trainer & Coach"
+      ],
+      "keyword": "pmp trainer india",
+      "tagBefore": "Unclear",
+      "tagAfter": "Defined ✓"
+    },
+    {
+      "title": "Fix 2: Mumbai only, to India-wide",
+      "caption": "City searches identified, each needing its own landing page.",
+      "before": [
+        "Mumbai only"
+      ],
+      "after": [
+        "Bangalore",
+        "Hyderabad",
+        "Pune",
+        "Kochi"
+      ],
+      "keyword": "",
+      "tagBefore": "One city",
+      "tagAfter": "Gaps mapped ✓"
+    }
+  ],
+  "blueprint": {
+    "title": "The 10-part backlink content kit",
+    "items": [
+      "Keyword anchor",
+      "Branded anchor",
+      "URL anchor",
+      "Linked paragraph",
+      "Plain-text paragraph",
+      "Long-tail anchors",
+      "Location anchors",
+      "Third-party proof line",
+      "Keyword used twice, naturally",
+      "Fresh rewrite per site"
+    ],
+    "note": "Every submission reads as a genuine editorial recommendation, not a repeated advert — which is what keeps a growing link profile safe."
+  },
+  "liveSite": {
+    "heading": "The Visakh RJ website",
+    "lead": "The site now describes Visakh RJ and his PMP course as clear entities, with a mapped keyword plan and a roadmap of city and course pages to add.",
+    "caption": "rjvisakh.com — PMP training and coaching by Visakh RJ, Mumbai."
+  }
 }

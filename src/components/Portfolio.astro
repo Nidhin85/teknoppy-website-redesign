@@ -24,22 +24,6 @@ const projects = [
     accent: "bg-amber-500"
   },
   {
-    client: "TriQare",
-    location: "Mumbai, India (Pan-India)",
-    title: "A Trust-First Pre-Launch Platform for a One-Tap Emergency SOS App",
-    industry: "Healthtech",
-    href: "/case-studies/triqare-web-application-design/",
-    imageDesktop: "/case-studies/triqare-desktop.webp",
-    imageMobile: "/case-studies/triqare-mobile.webp",
-    imageAlt: "TriQare website homepage screenshot — healthtech web application design project by Teknoppy",
-    summary: "A Mumbai-registered healthtech startup building India's first one-tap emergency ambulance SOS app, where the pre-launch site had to establish medical credibility before a single user had downloaded anything.",
-    services: "Web Design, Content Strategy, SEO",
-    liveLabel: "triqare.in",
-    liveUrl: "https://triqare.in",
-    color: "from-blue-500/20 to-cyan-500/20",
-    accent: "bg-blue-500"
-  },
-  {
     client: "Apolo Mattress",
     location: "Ernakulam, Kerala",
     title: "A Shopify Store Built to Answer Every Question Before Checkout",
@@ -56,22 +40,6 @@ const projects = [
     accent: "bg-purple-500"
   },
   {
-    client: "Greens Ayurveda",
-    location: "Azhiyur, Kozhikode, Kerala",
-    title: "Global Wellness & Ayurvedic Hospital Platform Driving International Patient Care",
-    industry: "Healthcare & Ayurveda",
-    href: "/case-study/",
-    imageDesktop: "/case-studies/greensayurveda.webp",
-    imageMobile: "/case-studies/greensayurveda.webp",
-    imageAlt: "Greens Ayurveda website homepage screenshot — wellness hospital website design by Teknoppy",
-    summary: "A calm, mobile-first wellness website for a prestigious Ayurvedic hospital in North Kerala, connecting international and domestic patients with verified treatment programs and direct inquiry forms.",
-    services: "Website Design, Content Architecture, Healthcare SEO",
-    liveLabel: "greensayurveda.com",
-    liveUrl: "https://greensayurveda.com",
-    color: "from-emerald-500/20 to-teal-500/20",
-    accent: "bg-emerald-500"
-  },
-  {
     client: "Olives Resort",
     location: "Wayanad, Kerala",
     title: "Immersive Hospitality Website with Direct Booking Integration & Interactive Route Maps",
@@ -86,6 +54,38 @@ const projects = [
     liveUrl: "https://www.instagram.com/olivesresortwayanad/",
     color: "from-lime-500/20 to-green-500/20",
     accent: "bg-lime-600"
+  },
+  {
+    client: "Abrus Krishna Finance",
+    location: "Guruvayoor, Kerala",
+    title: "Designing a Trust-First UI for a Regulated Lending Business",
+    industry: "Finance & Lending",
+    href: "/case-studies/abrus-krishna-finance-ui-ux-design/",
+    imageDesktop: "/case-studies/abruskrishna.webp",
+    imageMobile: "/case-studies/abruskrishna.webp",
+    imageAlt: "Abrus Krishna Finance website homepage screenshot — UI/UX design project by Teknoppy, Kerala",
+    summary: "A Kerala Money-Lenders Act (KML) registered lending company offering gold loans and a range of micro business, personal and home loans, needing a visually distinct, trust-first interface across its loan products.",
+    services: "UI/UX Design, Website Design, SEO",
+    liveLabel: "abruskrishna.com",
+    liveUrl: "https://abruskrishna.com",
+    color: "from-yellow-500/20 to-amber-500/20",
+    accent: "bg-amber-600"
+  },
+  {
+    client: "Visakh RJ",
+    location: "Mumbai, India",
+    title: "Personal Brand SEO for a PMP Trainer Competing with Large Training Platforms",
+    industry: "PMP Training & Leadership Coaching",
+    href: "/case-studies/visakh-rj-pmp-trainer-seo/",
+    imageDesktop: "/case-studies/visakh-rj-seo.webp",
+    imageMobile: "/case-studies/visakh-rj-seo.webp",
+    imageAlt: "Visakh RJ PMP trainer website screenshot — personal brand SEO case study by Teknoppy",
+    summary: "A Mumbai PMP trainer competing with large training platforms, supported with Person and Course schema, a 132-keyword map and a backlink content kit.",
+    services: "Schema, Keyword Research, Meta, Backlink Content",
+    liveLabel: "rjvisakh.com",
+    liveUrl: "https://www.rjvisakh.com/",
+    color: "from-sky-500/20 to-indigo-500/20",
+    accent: "bg-sky-500"
   }
 ];
 ---
@@ -108,7 +108,7 @@ const projects = [
           From startups and clinics to retail brands and corporate enterprises, our portfolio reflects the diversity of Kerala businesses we have helped build their digital presence. Every project is unique — and every result is measurable.
         </p>
       </div>
-      <a href="/portfolios/" class="group inline-flex items-center gap-3 px-8 py-4 text-sm font-bold text-white bg-primary rounded-full hover:bg-primary/95 transition-all flex-shrink-0 shadow-lg shadow-primary/20">
+      <a href="/portfolios/" class="group inline-flex items-center gap-3 px-8 py-4 text-sm font-bold text-white bg-primary rounded-full hover:bg-primary/95 hover:shadow-xl hover:-translate-y-0.5 transition-all flex-shrink-0 shadow-lg shadow-primary/20">
         View All Projects
         <ExternalLink className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
       </a>
@@ -210,7 +210,7 @@ const projects = [
                 </div>
               </div>
               
-              <a href={project.href} class="group/btn inline-flex items-center gap-1.5 sm:gap-2 text-[11px] min-[360px]:text-xs sm:text-sm font-bold text-neutral-800 bg-white border border-neutral-200 hover:border-primary/50 hover:bg-cream hover:text-primary px-3.5 py-1.5 min-[360px]:px-4 min-[360px]:py-2 sm:px-6 sm:py-3 rounded-full transition-all duration-300 shadow-sm">
+              <a href={project.href} class="group/btn inline-flex items-center gap-1.5 sm:gap-2 text-[11px] min-[360px]:text-xs sm:text-sm font-bold text-neutral-900 bg-white border border-neutral-200/90 hover:border-primary hover:text-primary hover:shadow hover:-translate-y-0.5 px-3.5 py-1.5 min-[360px]:px-4 min-[360px]:py-2 sm:px-6 sm:py-3 rounded-full transition-all duration-300 shadow-sm">
                 <span>View Case Study</span>
                 <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
               </a>
@@ -222,14 +222,14 @@ const projects = [
     </div>
 
     <!-- Regional Clients Strip -->
-    <div class="mt-20 py-5 px-8 rounded-2xl bg-[#fcfcfc] border border-neutral-200/80 text-center">
+    <div class="mt-12 sm:mt-14 py-5 px-8 rounded-2xl bg-[#fcfcfc] border border-neutral-200/80 text-center">
       <p class="text-sm md:text-base font-bold text-neutral-800 tracking-wide">
         Clients in Kochi · Kozhikode · Wayanad · Thrissur · Thiruvananthapuram
       </p>
     </div>
 
     <!-- Conversion CTA: After Project Cards (Standout Checkpoint) -->
-    <div class="cta-checkpoint mt-24 pt-12 border-t border-neutral-100 flex flex-col md:flex-row items-center justify-between gap-6 p-8 sm:p-10 rounded-2xl bg-cream/60 border border-neutral-200/70 text-center md:text-left">
+    <div class="cta-checkpoint mt-12 sm:mt-14 pt-8 border-t border-neutral-100 flex flex-col md:flex-row items-center justify-between gap-6 p-8 sm:p-10 rounded-2xl bg-cream/60 border border-neutral-200/70 text-center md:text-left">
       <div class="max-w-xl">
         <h3 class="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight">Want Results Like These?</h3>
         <p class="text-sm text-neutral-600 mt-1.5 leading-relaxed">Tell us what you're building and we'll suggest the right approach for your budget and timeline.</p>

@@ -1,0 +1,149 @@
+{
+  "title": "Koojo Custom Powder Coating: SEO Services Case Study | Teknoppy",
+  "description": "How Teknoppy rebuilt the site architecture and keyword strategy for Koojo Custom Powder Coating in Milton, Ontario — resolving keyword cannibalization across 48 pages.",
+  "canonical": "https://www.teknoppy.com/case-studies/koojo-custom-powder-coating-seo/",
+  "ogImage": "https://www.teknoppy.com/case-studies/koojopowdercoating.webp",
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://www.teknoppy.com/case-studies/koojo-custom-powder-coating-seo/#article",
+          "headline": "Koojo Custom Powder Coating: An SEO Services Case Study for a GTA Industrial Powder Coating Company",
+          "description": "How Teknoppy rebuilt the site architecture and keyword strategy for Koojo Custom Powder Coating in Milton, Ontario — resolving keyword cannibalization across 48 pages.",
+          "image": "https://www.teknoppy.com/case-studies/koojopowdercoating.webp",
+          "mainEntityOfPage": "https://www.teknoppy.com/case-studies/koojo-custom-powder-coating-seo/",
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Search engine optimization"
+            },
+            {
+              "@type": "Thing",
+              "name": "Keyword cannibalization"
+            },
+            {
+              "@type": "Organization",
+              "name": "Koojo Custom Powder Coating",
+              "url": "https://www.koojopowdercoating.com/"
+            }
+          ],
+          "author": {
+            "@type": "Person",
+            "name": "Sanal Edison",
+            "jobTitle": "Digital Strategist",
+            "url": "https://www.teknoppy.com/sanal-edison-digital-strategist/",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Teknoppy"
+            }
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Teknoppy",
+            "url": "https://www.teknoppy.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.teknoppy.com/logo.svg"
+            }
+          },
+          "dateModified": "2026-10-20",
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.teknoppy.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Case Studies",
+              "item": "https://www.teknoppy.com/case-study/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Koojo Custom Powder Coating",
+              "item": "https://www.teknoppy.com/case-studies/koojo-custom-powder-coating-seo/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What was the main SEO problem with Koojo's website before this project?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Two pages were both targeting near-identical \"industrial powder coating\" keywords, and a separate combined page was trying to rank for four different cities at once. In both cases the site was splitting its own ranking potential instead of competing against outside competitors."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How many pages were involved in the site restructure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The final agreed structure covers 48 total site pages: 16 existing pages rewritten and 32 new pages, organised into a phased launch order."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why were separate pages built for Milton, Guelph, Cambridge, and Hamilton instead of one combined page?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "One page cannot rank strongly for four different cities at once. A dedicated page for each city gives search engines one clear, relevant answer for each local search and removes the conflict with the combined page."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What word count and structure do Koojo's service pages follow?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Every service page follows the same ten-section structure and is written to 1,000 to 1,300 words at roughly 1.8 to 2.0% keyword density."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Did Teknoppy research competitors before building the new structure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Teknoppy benchmarked three direct GTA competitors, Force Coating, Professional Powder Coating and Interspray, before any page was written."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do overlapping pages like automotive, architectural, and bulk orders avoid competing with each other?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Each page states its scope directly in the content. For example, the bulk orders page covers pricing and account structure only, and points to the automotive, architectural and industrial pages for part-type detail."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the new site structure already live?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. The new website is live on koojopowdercoating.com and the remaining pages are being rolled out in the agreed phase order."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does this kind of SEO restructuring work for other industrial or manufacturing businesses?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Any B2B site that has grown page by page without a keyword plan is likely to have overlapping pages. Mapping one keyword to one page and separating service, location and industry content works for fabricators, manufacturers and other industrial service providers."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

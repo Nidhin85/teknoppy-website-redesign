@@ -1419,6 +1419,22 @@ mark {
 
 @media (max-width: 640px) {
   section { padding-block: 68px; }
+  /* Phone type scale: the desktop sizes above read oversized on a 390px screen. */
+  .crumb { font-size: 13px; }
+  .hero h1 { font-size: 32px; line-height: 1.12; letter-spacing: -.04em; margin-top: 18px; }
+  .hero .lead { font-size: 15px; line-height: 1.65; margin-top: 16px; }
+  .hint { font-size: 12.5px; }
+  .proof b { font-size: 15px; }
+  .head h2 { font-size: 26px; margin-top: 12px; }
+  .head p { font-size: 15px; }
+  .slide h3 { font-size: 22px; }
+  .slide p { font-size: 14.5px; }
+  .mets b { font-size: 24px; }
+  .measure h2 { font-size: 26px; }
+  .measure .txt > p { font-size: 15px; }
+  .cta h3 { font-size: 24px; }
+  .tabs b { font-size: 13px; }
+  .csc h3 { font-size: 17px; }
   .slide { padding: 28px 22px 20px; gap: 24px; }
   .slide .vis { min-height: 200px; }
   .slide .vis .chip { left: 10px; bottom: 12px; }
@@ -1435,7 +1451,21 @@ mark {
   .goal { padding: 18px; gap: 24px; }
   .goal b { font-size: 17px; }
   .goal span { font-size: 13.5px; }
-  .lib { grid-template-columns: 1fr; }
+  .lib { grid-template-columns: 1fr; gap: 24px; }
+  /* Phones: single-column cards sat white-on-near-white with a #eee hairline,
+     so the stack read as one continuous block. Give each card a defined edge
+     and a soft lift so it separates cleanly from its neighbours. */
+  .csc {
+    border-radius: 22px;
+    border-color: #e4e4e4;
+    box-shadow: 0 1px 2px rgba(17, 17, 17, .04), 0 12px 28px -18px rgba(17, 17, 17, .22);
+  }
+  .csc .meta { padding: 20px 20px 0; }
+  .csc .big { padding: 12px 20px 0; }
+  .csc h3 { padding: 14px 20px 0; }
+  .csc .flow { padding: 12px 20px 0; }
+  .csc .thumb { margin: 18px 12px 0; }
+  .csc .foot { padding: 16px 20px 20px; }
   .row1 .sel { flex: 1; }
   .row1 .sel select { width: 100%; }
   .lib.list .csc { grid-template-columns: 1fr; }
@@ -1523,7 +1553,7 @@ mark {
       ind: 'Industrial & Calibration',
       loc: 'Dubai & Sharjah, UAE',
       r: 'uae',
-      s: ['web', 'seo', 'ads'],
+      s: ['web', 'ads'],
       goal: ['leads', 'rank'],
       m: '+180%',
       ml: 'organic RFQ leads',
@@ -1542,7 +1572,7 @@ mark {
       ind: 'Hospitality & Travel',
       loc: 'Wayanad, Kerala',
       r: 'kerala',
-      s: ['web', 'seo', 'local'],
+      s: ['social'],
       goal: ['sales', 'rank'],
       m: '+65%',
       ml: 'direct booking calls',
@@ -1556,17 +1586,17 @@ mark {
       extra: [['#1', 'Google rank for target keywords'], ['3.2×', 'direct guest inquiries']]
     },
     {
-      t: 'An online K-beauty store built to sell luxury skincare across India',
+      t: 'An online store that sells authentic Korean kimchi and K-fashion to Indian buyers',
       client: 'Sun and Moon Korean',
       ind: 'Retail & E-commerce',
-      loc: 'Kerala & India',
+      loc: 'Worli, Mumbai',
       r: 'kerala',
-      s: ['ecom', 'seo', 'social'],
+      s: ['ecom', 'social'],
       goal: ['sales', 'brand'],
-      m: '₹18L+',
-      ml: 'monthly online sales',
-      ch: 'No direct-to-consumer e-commerce presence for Korean skincare lines',
-      so: 'Custom Shopify store, product catalog SEO, and social ads',
+      m: '2',
+      ml: 'shop categories: kimchi & K-fashion',
+      ch: 'An unfamiliar product with no educational content or visible trust signals',
+      so: 'Product storytelling, separate kimchi and K-fashion shops, press and review trust signals',
       d: '2025-09',
       read: 5,
       img: '/case-studies/sunandmoonkorean.webp',
@@ -1578,7 +1608,7 @@ mark {
       ind: 'Financial Services',
       loc: 'Guruvayoor, Kerala',
       r: 'kerala',
-      s: ['uiux', 'web', 'ads'],
+      s: ['uiux', 'ads'],
       goal: ['leads'],
       m: '3×',
       ml: 'qualified borrower applications',
@@ -1595,7 +1625,7 @@ mark {
       ind: 'Industrial Engineering',
       loc: 'Dubai, UAE & Qatar',
       r: 'uae',
-      s: ['web', 'seo'],
+      s: ['web'],
       goal: ['leads', 'rank'],
       m: '5×',
       ml: 'procurement RFQ requests',
@@ -1612,7 +1642,7 @@ mark {
       ind: 'Retail & E-commerce',
       loc: 'Kerala, India',
       r: 'kerala',
-      s: ['ecom', 'web', 'ads'],
+      s: ['ads'],
       goal: ['sales'],
       m: '+240%',
       ml: 'online store revenue growth',
@@ -1624,17 +1654,17 @@ mark {
       href: '/case-studies/apolo-mattress-shopify-ecommerce/'
     },
     {
-      t: 'How a Kerala Ayurveda retreat attracted patients from 20+ countries',
+      t: 'From digital invisibility to a lead-generating website for a Calicut Ayurvedic hospital',
       client: 'Greens Ayurveda',
       ind: 'Healthcare & Wellness',
       loc: 'Calicut, Kerala',
       r: 'kerala',
-      s: ['web', 'seo', 'local'],
+      s: ['seo', 'local'],
       goal: ['rank', 'leads'],
-      m: '3.4×',
-      ml: 'international patient bookings',
-      ch: 'Low global discovery for specialized Panchakarma therapies',
-      so: 'Treatment package architecture and international SEO',
+      m: '100%',
+      ml: 'client satisfaction — Dr. Asghar, CEO',
+      ch: 'Outdated website and low discovery for Panchakarma and academy searches',
+      so: 'Mobile-first redesign, treatment content architecture, local SEO and WhatsApp enquiry flow',
       d: '2024-09',
       read: 4,
       img: '/case-studies/greensayurveda.webp',
@@ -1663,12 +1693,12 @@ mark {
       ind: 'IT & Digital Services',
       loc: 'Doha, Qatar',
       r: 'qatar',
-      s: ['web', 'seo', 'brand'],
+      s: ['seo', 'brand'],
       goal: ['brand', 'rank'],
-      m: '4×',
-      ml: 'enterprise quotation requests',
-      ch: 'Entering Qatar\'s competitive corporate digital services market',
-      so: 'Bilingual Arabic/English corporate presence and technical SEO',
+      m: '60+',
+      ml: 'blog topics mapped to service pages',
+      ch: 'Homepage carrying the rankings while service pages stayed invisible',
+      so: 'Verified schema graph, 6 schema fixes and a 9-pillar content plan',
       d: '2024-08',
       read: 3,
       img: '/case-studies/creativewebdesignqatar.webp',
@@ -1680,7 +1710,7 @@ mark {
       ind: 'Retail & E-commerce',
       loc: 'Kochi, Kerala',
       r: 'kerala',
-      s: ['ecom', 'web', 'social'],
+      s: ['ecom', 'social'],
       goal: ['sales'],
       m: '3.2×',
       ml: 'monthly plant orders',
@@ -1697,7 +1727,7 @@ mark {
       ind: 'Healthcare & Wellness',
       loc: 'Kochi, Kerala',
       r: 'kerala',
-      s: ['uiux', 'web', 'brand'],
+      s: ['uiux', 'brand'],
       goal: ['leads', 'brand'],
       m: '99.8%',
       ml: 'system uptime & compliance',
@@ -1714,7 +1744,7 @@ mark {
       ind: 'Industrial & Manufacturing',
       loc: 'Milton, Ontario (GTA)',
       r: 'gcc',
-      s: ['seo', 'web'],
+      s: ['seo'],
       goal: ['rank', 'leads'],
       m: '#1',
       ml: 'Google rankings in GTA',
@@ -1726,102 +1756,102 @@ mark {
       href: '/case-studies/koojo-custom-powder-coating-seo/'
     },
     {
-      t: 'Topical and entity SEO restructure across 66 pages and 15 GCC locations',
+      t: 'GCC location SEO pairing one product line with one market per page',
       client: 'Leema Engineering Works',
       ind: 'Industrial & Engineering',
       loc: 'Sharjah, UAE (serving GCC)',
       r: 'uae',
-      s: ['seo', 'web'],
+      s: ['seo'],
       goal: ['rank', 'leads'],
-      m: '5×',
-      ml: 'GCC procurement RFQs',
-      ch: 'Multi-regional catalog lacking search findability in Saudi Arabia and UAE',
-      so: 'Entity-first topical architecture and 15 dedicated GCC location pages',
+      m: '6',
+      ml: 'product-location pages · UAE, Bahrain & Qatar',
+      ch: 'Many products and markets with no plan for which page owns which search',
+      so: 'Product-by-location keyword map and 18 answer-first buyer FAQs',
       d: '2025-04',
       read: 5,
       img: '/case-studies/leemaeng.webp',
       href: '/case-studies/leema-engineering-works-seo/'
     },
     {
-      t: 'Entity SEO strategy and verifiable E-E-A-T architecture for a PMP trainer',
-      client: 'RJ Visakh',
+      t: 'Personal-brand SEO with Person and Course schema for a PMP trainer',
+      client: 'Visakh RJ',
       ind: 'Education & Training',
-      loc: 'India',
+      loc: 'Mumbai, India',
       r: 'kerala',
       s: ['seo', 'brand'],
       goal: ['rank', 'leads'],
-      m: '#1',
-      ml: 'ranking for PMP trainer India',
-      ch: 'Crowded educational space dominated by global aggregators and ed-tech giants',
-      so: 'Personal-brand entity establishment and evidence-backed E-E-A-T proof',
+      m: '132',
+      ml: 'keywords mapped across 101 blog posts',
+      ch: 'One trainer competing with national PMP training platforms',
+      so: 'Person & Course schema, meta rewrite and a backlink content kit',
       d: '2025-08',
       read: 5,
       img: '/case-studies/visakh-rj-seo.webp',
       href: '/case-studies/visakh-rj-pmp-trainer-seo/'
     },
     {
-      t: 'Local entity SEO and audience-specific booking pages for an Alleppey operator',
+      t: 'Section-by-section SEO audit and answer-first FAQs for an Alleppey houseboat operator',
       client: 'Roja Houseboats',
       ind: 'Hospitality & Tourism',
       loc: 'Alleppey, Kerala',
       r: 'kerala',
-      s: ['seo', 'local', 'web'],
+      s: ['seo', 'local'],
       goal: ['sales', 'rank'],
-      m: 'Top 3',
-      ml: 'Google Maps Local Pack',
-      ch: 'Aggregator OTAs taking high commission on Alleppey backwater searches',
-      so: 'Local entity optimization and audience-specific bedroom booking pages',
+      m: '10',
+      ml: 'answer-first FAQs · 8 rewritten, 2 new',
+      ch: 'Duplicated H1, two phone numbers and FAQs that did not answer first',
+      so: 'One keyword per boat size, consistent NAP and E-E-A-T content',
       d: '2025-02',
       read: 4,
       img: '/case-studies/roja-houseboats.webp',
       href: '/case-studies/roja-houseboats-alleppey-seo/'
     },
     {
-      t: 'Ayurvedic hospital SEO and doctor-backed E-E-A-T architecture in Tamil Nadu',
+      t: 'Cannibalization-free SEO and YMYL-safe content for an Ayurvedic spine hospital',
       client: 'Edamanasserry Spine Hospital',
       ind: 'Healthcare & Wellness',
-      loc: 'Tamil Nadu & Kerala',
+      loc: 'Coimbatore, Tamil Nadu',
       r: 'kerala',
-      s: ['seo', 'web'],
+      s: ['seo'],
       goal: ['rank', 'leads'],
-      m: '3×',
-      ml: 'patient consultation leads',
-      ch: 'Strict Google YMYL medical compliance requiring verifiable doctor authority',
-      so: 'Condition-led medical architecture and Physician schema markup',
+      m: '5',
+      ml: 'content pillars · 0 URLs changed',
+      ch: 'Three pages competing for one back pain keyword',
+      so: 'Five-pillar site structure and medically accurate, answer-first content',
       d: '2025-05',
       read: 5,
       img: '/case-studies/edamanasserry-spine-hospital.webp',
       href: '/case-studies/edamanasserry-spine-hospital-seo/'
     },
     {
-      t: 'SEO strategy and GBP cleanup for a Kochi airport taxi and tour operator',
+      t: 'Pillar-and-cluster SEO structure for a Kochi airport taxi and tour operator',
       client: 'Kerala Dayz',
       ind: 'Travel & Transport',
       loc: 'Kochi, Kerala',
       r: 'kerala',
       s: ['seo', 'local'],
       goal: ['rank', 'leads'],
-      m: '#1',
-      ml: 'Kochi airport taxi rankings',
-      ch: 'NAP fragmentation across 3-4 duplicate listings and 54/100 GBP score',
-      so: 'Listing consolidation, 8-pillar hub-and-spoke and local schema',
+      m: '7',
+      ml: 'destination hubs planned · 0 URLs changed',
+      ch: 'Many services, routes and destinations with no topical structure',
+      so: 'One keyword per URL, route & destination pages and a 13-section pillar blueprint',
       d: '2025-01',
       read: 4,
       img: '/case-studies/keraladayz.webp',
       href: '/case-studies/kerala-dayz-seo-services/'
     },
     {
-      t: 'An SEO strategy built for 15 calibration disciplines across the UAE',
+      t: 'An SEO, AEO and GEO strategy for an ISO 17025 calibration lab in the UAE',
       client: 'General Tech Services — SEO',
       ind: 'Industrial & Calibration',
-      loc: 'Dubai & Sharjah, UAE',
+      loc: 'Sharjah, UAE',
       r: 'uae',
       s: ['seo', 'local'],
       goal: ['rank', 'leads'],
-      m: '30+',
-      ml: 'Page 1 rankings in UAE',
-      ch: 'Single catch-all services page failing to rank for 15 accredited disciplines',
-      so: '185-topic, 17-pillar SEO taxonomy and ISO 17025 accredited schemas',
+      m: '50',
+      ml: 'keywords mapped in 5 clusters',
+      ch: 'A generic brand name shared by unrelated companies',
+      so: 'Accreditation-anchored keyword, 25-question FAQ hub and 170+ product pages',
       d: '2025-03',
       read: 5,
       img: '/case-studies/generaltech.webp',
@@ -2173,7 +2203,32 @@ mark {
     });
   }
 
+  /* Keep the active filters in the URL so the browser Back button (and reloads or shared links)
+     return to the same filtered view, e.g. the SEO section, instead of the unfiltered hub. */
+  var FILTER_KEYS = ["q", "ind", "reg", "svc", "goal", "sort"];
+  var FILTER_DEFAULT = { q: "", ind: "all", reg: "all", svc: "all", goal: "all", sort: "new" };
+  function persistFilters() {
+    try {
+      var p = new URLSearchParams();
+      FILTER_KEYS.forEach(function(k) { if (state[k] && state[k] !== FILTER_DEFAULT[k]) p.set(k, state[k]); });
+      var qs = p.toString();
+      history.replaceState(null, "", location.pathname + (qs ? "?" + qs : "") + (qs ? "#library" : location.hash));
+    } catch (e) {}
+  }
+  function restoreFilters() {
+    try {
+      var p = new URLSearchParams(location.search);
+      FILTER_KEYS.forEach(function(k) { if (p.has(k)) state[k] = p.get(k); });
+      if (SVC[state.svc] === undefined) state.svc = "all";
+      sync();
+    } catch (e) {}
+  }
+  restoreFilters();
   render(0);
+  persistFilters();
+  var renderOnly = render;
+  render = function(anim) { renderOnly(anim); persistFilters(); };
+  window.addEventListener("pageshow", function(e) { if (e.persisted) { restoreFilters(); renderOnly(0); } });
 
   /* Reading Progress Bar */
   var prog = $('#progress');
