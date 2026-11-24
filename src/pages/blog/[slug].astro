@@ -46,7 +46,7 @@ const articleSchema = {
 <Layout title={pageTitle} description={excerpt}>
   <Header />
 
-  <main class="bg-white pt-28 pb-20">
+  <main class="ds-post bg-[#fcfaf7] pt-28 pb-20">
     <div class="max-w-[1280px] mx-auto px-6 lg:px-12 mt-8">
       <a href="/blog/" class="inline-flex items-center gap-2 text-sm font-bold text-neutral-500 hover:text-primary transition-colors mb-10 group">
         <ChevronLeft class="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
@@ -58,7 +58,7 @@ const articleSchema = {
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-neutral-900 leading-tight">
           {title}
         </h1>
-        <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium text-neutral-500 pt-2 border-b border-neutral-100 pb-6">
+        <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium text-neutral-500 pt-2 border-b border-primary/15 pb-6">
           <span class="flex items-center gap-2"><User class="w-4 h-4 text-primary" />By {author}</span>
           <span class="flex items-center gap-2"><Calendar class="w-4 h-4 text-primary" />Published {dateStr}</span>
           {updatedStr && (
@@ -70,7 +70,7 @@ const articleSchema = {
     </div>
 
     <div class="max-w-[1280px] mx-auto px-6 lg:px-12 my-12">
-      <div class="aspect-[21/9] w-full rounded-xl overflow-hidden bg-neutral-100 shadow-sm">
+      <div class="aspect-[21/9] w-full rounded-[1.75rem] overflow-hidden bg-neutral-100 border border-white shadow-[0_30px_60px_-34px_rgba(160,60,20,0.45)]">
         <img src={cover} alt={title} class="w-full h-full object-cover" />
       </div>
     </div>

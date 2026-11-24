@@ -78,15 +78,17 @@ const jsonLd = {
   <Header forceSolidBg={true} />
 
   <!-- Main Content -->
-  <main class="overflow-hidden bg-[#fcfcfc] text-[#1a1a1a] pt-16 sm:pt-20">
+  <main class="pf-page ds-ambient overflow-hidden bg-[#fcfaf7] text-[#1a1a1a] pt-16 sm:pt-20">
     <PortfolioHero />
     <PortfolioClientStrip />
     <PortfolioGrid />
     <PortfolioBeforeAfter />
     <PortfolioFeaturedStack />
     <PortfolioIndustries />
-    <PortfolioTestimonials />
-    <PortfolioFAQ />
+    <div class="pf-duo">
+      <PortfolioTestimonials />
+      <PortfolioFAQ />
+    </div>
     <PortfolioCTA />
   </main>
 

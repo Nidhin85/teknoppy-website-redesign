@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import FooterCTA from '../components/FooterCTA.astro';
-import { ArrowRight, Zap, Rocket, Users, Calendar, LayoutGrid, Star, Phone, Mail } from 'lucide-react';
+import { ArrowUpRight, Play, Rocket, Users, Calendar, LayoutGrid, Star, Phone, Mail, SearchCheck, Award, Wallet, MapPin, LifeBuoy } from 'lucide-react';
 import about from '../data/pages/about.json';
 import { aboutUsSchema } from '../data/schemas/aboutUsSchema';
 
@@ -46,6 +46,9 @@ const values = [
   }
 ];
 
+// decorative icons for the values cards (index-matched with values)
+const valueIcons = [SearchCheck, Award, Wallet, MapPin, Users, LifeBuoy];
+
 const testimonials = [
   {
     quote: "We now rank at the top of Google for our keywords and get many direct booking calls due to better visibility. Thank you Teknoppy for all the support.",
@@ -73,59 +76,202 @@ const testimonials = [
   <Header forceSolidBg={true} />
 
   <main class="overflow-hidden bg-cream/20">
-    <!-- DARK HERO SECTION -->
-    <section class="relative pt-32 pb-24 md:pt-36 md:pb-32 overflow-hidden theme-keep-light bg-neutral-950 text-white border-b border-white/5">
+    <!-- HERO SECTION (reference layout: text left, framed team photo right, stat cards row, wave) -->
+    <section class="ds-hero about-hero relative pt-28 pb-24 md:pt-36 md:pb-28 overflow-hidden bg-[#fff8f2] text-neutral-900">
       <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
-        <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/herodarkwebdesign.webp')]"></div>
+        <div class="ds-hero-glow absolute inset-0"></div>
       </div>
 
-      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10 grid xl:grid-cols-12 gap-12 items-center">
-        <!-- Hero Text -->
-        <div class="xl:col-span-7 flex flex-col items-center text-center xl:items-start xl:text-left">
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-bold text-primary uppercase tracking-widest mb-6">
-            <Zap class="w-3.5 h-3.5" />
-            About Us
-          </div>
-          <h1 class="text-4xl sm:text-5xl lg:text-[56px] font-black leading-[1.1] tracking-tight text-white mb-6">
-            About
-            <span class="relative inline-block text-primary">
-              Teknoppy
-              <svg class="absolute -bottom-2 left-0 w-full h-2 text-primary" viewBox="0 0 100 10" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 7C30 3 70 3 97 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
-              </svg>
-            </span>
-          </h1>
-          <p class="text-base sm:text-lg lg:text-xl text-neutral-300 mb-6 max-w-2xl font-medium leading-relaxed">
-            Kerala's Professional Web Design & Digital Agency — building high-performance websites that rank, convert, and grow, since 2018.
-          </p>
-          <p class="text-sm sm:text-base text-neutral-400 mb-8 max-w-2xl font-medium leading-relaxed">
-            Teknoppy Kerala is a full-service digital agency founded and headquartered in Kochi, serving businesses across Kerala, Thrissur, and South India. Led by Sanal and a dedicated team of designers, developers, and SEO strategists, we have been building high-performance websites since 2018.
-          </p>
+      <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12 relative z-10">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+          <!-- Hero Text -->
+          <div class="lg:col-span-6 flex flex-col items-start text-left">
+            <div class="ds-eyebrow uppercase tracking-[0.22em] text-sm mb-6">
+              About Us
+            </div>
+            <h1 class="text-[44px] sm:text-6xl lg:text-[64px] xl:text-[72px] font-black leading-[1.04] tracking-[-0.035em] text-neutral-900 mb-7">
+              About
+              <span class="relative inline-block text-primary">
+                Teknoppy
+                <svg class="absolute -bottom-3 left-0 w-full h-3 text-primary" viewBox="0 0 100 12" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M3 9C28 3 66 2 97 6" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" />
+                </svg>
+              </span>
+            </h1>
+            <p class="text-lg sm:text-xl lg:text-[22px] text-neutral-800 mb-5 max-w-xl font-semibold leading-snug">
+              Kerala's Professional Web Design & Digital Agency — building high-performance websites that rank, convert, and grow, since 2018.
+            </p>
+            <p class="text-[15px] sm:text-base text-neutral-500 mb-9 max-w-xl leading-relaxed">
+              Teknoppy Kerala is a full-service digital agency founded and headquartered in Kochi, serving businesses across Kerala, Thrissur, and South India. Led by Sanal and a dedicated team of designers, developers, and SEO strategists, we have been building high-performance websites since 2018.
+            </p>
 
-          <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-            <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center text-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.35)] hover:bg-primary/95 hover:-translate-y-0.5 transition-all duration-300 leading-snug sm:whitespace-nowrap">
-              Get in Touch
-              <ArrowRight class="w-4 h-4" />
-            </a>
-            <a href="#story" class="w-full sm:w-auto inline-flex items-center justify-center text-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 text-base font-bold text-white border border-white/20 rounded-full hover:bg-white/5 transition-all duration-300 shadow-sm leading-snug sm:whitespace-nowrap">
-              Our Story
-              <ArrowRight class="w-4 h-4" />
-            </a>
+            <div class="flex flex-col min-[420px]:flex-row items-stretch min-[420px]:items-center gap-3 sm:gap-4 w-full sm:w-auto">
+              <a href="#contact" class="inline-flex items-center justify-center gap-2.5 px-7 py-4 text-base font-bold text-white bg-primary rounded-full shadow-[0_10px_26px_-6px_rgba(240,90,44,0.55)] hover:bg-primary/95 hover:-translate-y-0.5 transition-all duration-300 leading-snug whitespace-nowrap">
+                Get in Touch
+                <ArrowUpRight class="w-4 h-4" />
+              </a>
+              <a href="#story" class="inline-flex items-center justify-center gap-3 pl-2.5 pr-7 py-2.5 text-base font-bold text-neutral-900 bg-white/70 border border-neutral-200 rounded-full hover:bg-white hover:border-primary/30 transition-all duration-300 shadow-sm leading-snug whitespace-nowrap">
+                <span class="w-9 h-9 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+                  <Play class="w-3.5 h-3.5 ml-0.5" fill="currentColor" size={14} />
+                </span>
+                Our Story
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Visual: team photo in an organic orange frame -->
+          <div class="lg:col-span-6">
+            <div class="about-visual relative mx-auto w-full max-w-[560px] lg:max-w-none">
+              <span class="about-blob about-blob--back" aria-hidden="true"></span>
+              <span class="about-blob about-blob--ring" aria-hidden="true"></span>
+              <span class="about-blob about-blob--dot" aria-hidden="true"></span>
+              <span class="about-blob about-blob--pill" aria-hidden="true"></span>
+              <div class="about-photo">
+                <img src="/images/life/teknoppy-core-team-portrait.jpg" alt="The Teknoppy team at the Kochi studio" width="1024" height="682" loading="eager" decoding="async" fetchpriority="high" />
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- Hero Stats Cards Grid -->
-        <div class="xl:col-span-5 grid grid-cols-2 gap-4 sm:gap-6">
+        <!-- Hero Stats Cards -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5 mt-16 lg:mt-20">
           {stats.map(stat => {
             const IconComp = stat.icon;
             return (
-              <div class="theme-keep-light bg-[#0c0c0e] border border-white/5 rounded-[2rem] p-8 shadow-2xl hover:border-primary/30 hover:shadow-[0_0_30px_rgba(240,90,44,0.12)] hover:-translate-y-1 transition-all duration-300 flex flex-col items-start min-h-[220px] group">
-                <div class="w-11 h-11 rounded-full border border-primary/30 flex items-center justify-center text-primary bg-primary/5 shadow-[0_0_15px_rgba(240,90,44,0.25)] mb-6 group-hover:scale-105 transition-transform">
-                  <IconComp class="w-5 h-5" />
+              <div class="bg-white border border-primary/10 rounded-[1.5rem] sm:rounded-[1.75rem] p-5 sm:p-7 shadow-[0_24px_50px_-30px_rgba(160,60,20,0.45)] hover:border-primary/25 hover:-translate-y-1 transition-all duration-300 flex flex-col sm:flex-row sm:items-center gap-4 group">
+                <div class="w-12 h-12 sm:w-14 sm:h-14 shrink-0 rounded-2xl flex items-center justify-center text-primary bg-gradient-to-br from-[#fff1e8] to-[#ffe0cc] group-hover:scale-105 transition-transform">
+                  <IconComp class="w-6 h-6" />
                 </div>
-                <span class="text-3xl font-black text-white block leading-none mb-2">{stat.value}</span>
-                <div class="w-8 h-[2px] bg-primary mb-4"></div>
-                <span class="text-[11px] font-black text-neutral-400 uppercase tracking-widest leading-normal">{stat.label}</span>
+                <div class="min-w-0">
+                  <span class="text-[26px] sm:text-3xl font-black text-neutral-900 block leading-none mb-2 tracking-tight">{stat.value}</span>
+                  <span class="text-[10.5px] sm:text-[11px] font-bold text-neutral-500 uppercase tracking-[0.14em] leading-snug block">{stat.label}</span>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <!-- Orange wave decoration -->
+      <svg class="about-wave absolute bottom-0 left-0 w-full h-16 sm:h-24 pointer-events-none" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="aboutWave" x1="0" x2="1" y1="0" y2="0">
+            <stop offset="0" stop-color="#ffb07c" stop-opacity="0.55" />
+            <stop offset="0.55" stop-color="#ff7a3d" stop-opacity="0.75" />
+            <stop offset="1" stop-color="#f05a2c" />
+          </linearGradient>
+        </defs>
+        <path d="M0 92C220 60 420 112 700 86C960 62 1180 30 1440 54V120H0Z" fill="url(#aboutWave)" opacity="0.35" />
+        <path d="M0 108C260 84 520 120 820 100C1060 84 1260 62 1440 78V120H0Z" fill="url(#aboutWave)" />
+      </svg>
+    </section>
+
+    <style>
+      .about-visual { aspect-ratio: 1.18 / 1; }
+      .about-photo {
+        position: absolute; inset: 6% 5% 7% 7%;
+        border-radius: 46% 54% 42% 58% / 38% 40% 60% 62%;
+        overflow: hidden;
+        transform: rotate(-3deg);
+        box-shadow: 0 40px 80px -36px rgba(160, 60, 20, 0.55), 0 0 0 6px rgba(255, 255, 255, 0.85);
+        z-index: 2;
+      }
+      .about-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; transform: rotate(3deg) scale(1.08); }
+      .about-blob { position: absolute; pointer-events: none; }
+      .about-blob--back {
+        inset: 0 0 2% 12%;
+        border-radius: 58% 42% 55% 45% / 45% 52% 48% 55%;
+        background: radial-gradient(120% 90% at 25% 20%, #ffd2b4 0%, #ff9a5c 38%, #f05a2c 72%, #c9421c 100%);
+        box-shadow: inset 0 18px 40px rgba(255, 255, 255, 0.45), inset 0 -24px 50px rgba(150, 40, 10, 0.35);
+        transform: rotate(8deg);
+        z-index: 1;
+      }
+      .about-blob--ring {
+        inset: 3% 2% 4% 4%;
+        border-radius: 44% 56% 40% 60% / 40% 42% 58% 60%;
+        border: 2px solid rgba(240, 90, 44, 0.35);
+        transform: rotate(-9deg);
+        z-index: 1;
+      }
+      .about-blob--dot {
+        width: 17%; aspect-ratio: 1; left: -1%; bottom: 6%;
+        border-radius: 50%;
+        background: radial-gradient(circle at 32% 28%, #fff3ea 0%, #ffb27f 30%, #f05a2c 70%, #b83a16 100%);
+        box-shadow: 0 18px 30px -12px rgba(200, 70, 20, 0.6);
+        z-index: 3;
+      }
+      .about-blob--pill {
+        width: 26%; height: 9%; right: 2%; top: 2%;
+        border-radius: 999px;
+        background: linear-gradient(120deg, #ffe1cc 0%, #ff8a4a 55%, #f05a2c 100%);
+        box-shadow: inset 0 4px 10px rgba(255, 255, 255, 0.6), 0 14px 26px -12px rgba(200, 70, 20, 0.55);
+        transform: rotate(-18deg);
+        z-index: 3;
+      }
+      @media (prefers-reduced-motion: no-preference) {
+        .about-blob--dot { animation: aboutFloat 7s ease-in-out infinite; }
+        .about-blob--pill { animation: aboutFloat 8s ease-in-out -3s infinite; }
+      }
+      @keyframes aboutFloat { 0%, 100% { translate: 0 0; } 50% { translate: 0 -10px; } }
+    </style>
+
+    <!-- STORY SECTION (reference: copy left, framed studio photo right) -->
+    <section id="story" class="ab-sec relative py-16 sm:py-20 lg:py-24 overflow-hidden">
+      <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/whoweare.webp')] opacity-30"></div>
+      </div>
+      <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12 relative z-10 grid lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+        <div class="lg:col-span-6">
+          <div class="ab-pill mb-5">Our Story</div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-[1.08] tracking-[-0.03em] mb-6">
+            Who We <span class="text-primary">Are</span>
+          </h2>
+          <div class="space-y-5">
+            <p class="text-neutral-700 font-medium text-base sm:text-[17px] leading-relaxed">
+              As a professional web design agency Kerala businesses have trusted since 2018, we bring together creative design and technical precision to deliver websites that rank, convert, and represent your brand with authority. From custom website design Kerala startups need to enterprise-level web development Kerala corporations demand — our work spans industries, project sizes, and business goals.
+            </p>
+            <p class="text-neutral-500 font-medium text-[15px] sm:text-base leading-relaxed">
+              We have delivered over 120 successful websites across healthcare, retail, hospitality, education, real estate, and manufacturing sectors. Every project begins with strategy and ends with measurable results.
+            </p>
+          </div>
+        </div>
+        <div class="lg:col-span-6">
+          <div class="story-visual relative mx-auto w-full max-w-[560px]">
+            <span class="story-back" aria-hidden="true"></span>
+            <div class="story-photo">
+              <img src="/images/life/teknoppy-team-inhouse-studio.webp" alt="The Teknoppy team in front of the Teknoppy logo wall at the Kochi studio" width="1024" height="682" loading="lazy" decoding="async" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUES SECTION (reference: 3x2 icon cards) -->
+    <section class="ab-sec-alt relative py-16 sm:py-20 lg:py-24 overflow-hidden">
+      <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/bgourservices.webp')]" style="opacity: 0.25;"></div>
+      </div>
+      <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12 relative z-10">
+        <div class="max-w-3xl mb-10 sm:mb-12">
+          <div class="ab-pill mb-5">Why Teknoppy</div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-[1.08] tracking-[-0.03em]">
+            Why Kerala Businesses <span class="text-primary">Choose Teknoppy</span>
+          </h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
+          {values.map((val, idx) => {
+            const VIcon = valueIcons[idx] ?? Rocket;
+            return (
+              <div class="ab-card p-6 sm:p-7 flex flex-col group">
+                <div class="flex items-center justify-between mb-5">
+                  <span class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#fff1e8] to-[#ffe0cc] text-primary flex items-center justify-center transition-colors duration-300 group-hover:from-primary group-hover:to-primary group-hover:text-white">
+                    <VIcon class="w-6 h-6" />
+                  </span>
+                  <span class="text-xs font-bold text-primary/60 tracking-widest">{String(idx + 1).padStart(2, '0')}</span>
+                </div>
+                <h3 class="text-lg font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-2.5 leading-snug">{val.title}</h3>
+                <p class="text-neutral-500 text-sm leading-relaxed">{val.desc}</p>
               </div>
             );
           })}
@@ -133,80 +279,24 @@ const testimonials = [
       </div>
     </section>
 
-    <!-- STORY SECTION -->
-    <section id="story" class="py-24 bg-cream/30 border-y border-neutral-100 relative">
+    <!-- TEAM SECTION (reference: founder feature card + member grid) -->
+    <section class="ab-sec relative py-16 sm:py-20 lg:py-24 overflow-hidden">
       <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
-        <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/whoweare.webp')] opacity-50"></div>
+        <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/tekenoppyadvantage.webp')]" style="opacity: 0.35;"></div>
       </div>
-      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
-        <div class="max-w-3xl">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-wider shadow-sm mb-5">
-            Our Story
-          </div>
-          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight mb-6">
-            Who We <span class="text-primary">Are</span>
-          </h2>
-          <div class="space-y-5">
-            <p class="text-neutral-600 font-medium text-base sm:text-lg leading-relaxed">
-              As a professional web design agency Kerala businesses have trusted since 2018, we bring together creative design and technical precision to deliver websites that rank, convert, and represent your brand with authority. From custom website design Kerala startups need to enterprise-level web development Kerala corporations demand — our work spans industries, project sizes, and business goals.
-            </p>
-            <p class="text-neutral-600 font-medium text-base sm:text-lg leading-relaxed">
-              We have delivered over 120 successful websites across healthcare, retail, hospitality, education, real estate, and manufacturing sectors. Every project begins with strategy and ends with measurable results.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- VALUES SECTION -->
-    <section class="py-24 bg-white border-t border-neutral-100 relative">
-      <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
-        <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/bgourservices.webp')]" style="opacity: 0.45;"></div>
-      </div>
-      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
-        <div class="max-w-3xl mb-16">
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-wider mb-4 shadow-sm">
-            Why Teknoppy
-          </div>
-          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
-            Why Kerala Businesses <span class="text-primary">Choose Teknoppy</span>
-          </h2>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {values.map((val, idx) => (
-            <div class="bg-white rounded-3xl border border-neutral-100 p-8 shadow-[0_12px_40px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col justify-between group">
-              <div>
-                <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-4">{String(idx + 1).padStart(2, '0')}</span>
-                <h3 class="text-lg font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-3 leading-snug">{val.title}</h3>
-                <p class="text-neutral-500 text-xs leading-relaxed font-semibold">{val.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    <!-- TEAM SECTION -->
-    <section class="py-24 bg-warm/40 border-t border-neutral-100 relative">
-      <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
-        <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/tekenoppyadvantage.webp')]" style="opacity: 0.8;"></div>
-      </div>
-      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-wider mb-4 shadow-sm">
-            {about.team.badge}
-          </div>
-          <h2 class="text-4xl sm:text-5xl font-black text-neutral-900 leading-tight">
+      <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12 relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
+          <div class="ab-pill mb-5">{about.team.badge}</div>
+          <h2 class="text-4xl sm:text-5xl font-black text-neutral-900 leading-[1.08] tracking-[-0.03em]">
             {about.team.heading} <span class="text-primary">{about.team.headingAccent}</span>
           </h2>
         </div>
 
         <div class="max-w-4xl mx-auto">
           <!-- Founder — featured card -->
-          <div class="bg-white rounded-3xl border border-neutral-100 p-8 sm:p-10 lg:p-12 shadow-[0_12px_40px_-15px_rgba(0,0,0,0.05)] flex flex-col md:flex-row items-center md:items-start gap-8 lg:gap-12">
+          <div class="ab-card p-5 sm:p-7 lg:p-8 flex flex-col md:flex-row items-center md:items-start gap-6 lg:gap-9">
             <!-- Founder Image — full portrait, falls back to the square headshot -->
-            <div class="relative w-52 sm:w-60 flex-shrink-0 aspect-[3/4] rounded-2xl overflow-hidden border border-neutral-100 bg-warm shadow-md flex items-center justify-center">
+            <div class="relative w-48 sm:w-56 flex-shrink-0 aspect-[3/4] rounded-2xl overflow-hidden bg-warm shadow-[0_18px_36px_-22px_rgba(120,40,10,0.55)] flex items-center justify-center">
               <span class="absolute text-5xl font-black text-primary/15 select-none">{initials(about.team.founder.name)}</span>
               <img
                 src={about.team.founder.photo}
@@ -219,10 +309,12 @@ const testimonials = [
             </div>
 
             <!-- Founder Content -->
-            <div class="flex-1 text-center md:text-left">
-              <h3 class="text-2xl font-black text-neutral-900 mb-1">{about.team.founder.name}</h3>
-              <p class="text-sm text-primary font-bold uppercase tracking-wider mb-3">{about.team.founder.role}</p>
-              <div class="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-3 sm:gap-6 mb-6">
+            <div class="flex-1 text-center md:text-left md:pt-2">
+              <div class="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-3 mb-3">
+                <h3 class="text-2xl sm:text-[28px] font-black text-neutral-900 tracking-tight">{about.team.founder.name}</h3>
+                <p class="text-sm text-primary font-semibold">{about.team.founder.role}</p>
+              </div>
+              <div class="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-2.5 sm:gap-5 mb-5">
                 <a href={`mailto:${about.team.founder.email}`} class="inline-flex items-center gap-2 text-xs font-bold text-neutral-600 hover:text-primary transition-colors">
                   <Mail class="w-4 h-4 text-primary" />
                   {about.team.founder.email}
@@ -232,8 +324,7 @@ const testimonials = [
                   {about.team.founder.phone}
                 </a>
               </div>
-              <div class="w-10 h-[3px] bg-primary/80 mb-6 rounded-full mx-auto md:mx-0"></div>
-              <p class="text-neutral-500 text-sm leading-relaxed font-semibold">
+              <p class="text-neutral-600 text-sm sm:text-[15px] leading-relaxed">
                 {about.team.founder.bio}
               </p>
             </div>
@@ -242,17 +333,17 @@ const testimonials = [
 
         <!-- The rest of the team -->
         {about.team.members?.length > 0 && (
-          <div class="max-w-6xl mx-auto mt-14">
+          <div class="mt-12 sm:mt-14">
             {about.team.membersHeading && (
-              <h3 class="text-center text-xs font-black text-neutral-400 uppercase tracking-[0.2em] mb-8">
+              <h3 class="text-center text-xs font-bold text-neutral-400 uppercase tracking-[0.2em] mb-7">
                 {about.team.membersHeading}
               </h3>
             )}
-            <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6">
+            <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-5">
                 {about.team.members.map((m: any) => (
-                  <div class="group bg-white rounded-3xl border border-neutral-100 overflow-hidden shadow-[0_12px_40px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col">
-                    <!-- Full portrait — object-contain so nothing is cropped -->
-                    <div class="relative w-full aspect-[3/4] bg-warm border-b border-neutral-100 flex items-center justify-center overflow-hidden">
+                  <div class="group ab-card overflow-hidden flex flex-col">
+                    <!-- Head-and-shoulders crop (reference layout), anchored near the top so faces stay in frame -->
+                    <div class="relative w-full aspect-square bg-gradient-to-b from-[#fbf3ec] to-[#f4e6da] flex items-center justify-center overflow-hidden">
                       <span class="absolute text-5xl font-black text-primary/15 select-none">{initials(m.name)}</span>
                       <img
                         src={m.photo}
@@ -260,14 +351,13 @@ const testimonials = [
                         loading="lazy"
                         decoding="async"
                         onerror="this.remove()"
-                        class="relative w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-500"
+                        class="relative w-full h-full object-cover object-[50%_12%] group-hover:scale-[1.03] transition-transform duration-500"
                       />
                     </div>
-                    <div class="p-7 flex flex-col flex-1">
-                      <h4 class="text-lg font-black text-neutral-900 leading-snug">{m.name}</h4>
-                      <p class="text-[13px] text-primary font-bold uppercase tracking-wider mt-1">{m.role}</p>
-                      <div class="w-8 h-[3px] bg-primary/80 rounded-full my-4"></div>
-                      <p class="text-neutral-500 text-xs leading-relaxed font-semibold">{m.bio}</p>
+                    <div class="p-4 sm:p-5 flex flex-col flex-1">
+                      <h4 class="text-[15px] sm:text-base font-bold text-neutral-900 leading-snug">{m.name}</h4>
+                      <p class="text-xs sm:text-[13px] text-primary font-semibold mt-1 leading-snug">{m.role}</p>
+                      <p class="text-neutral-500 text-xs leading-relaxed mt-3 pt-3 border-t border-neutral-100">{m.bio}</p>
                     </div>
                   </div>
             ))}
@@ -278,35 +368,33 @@ const testimonials = [
     </section>
 
     <!-- CLIENT TESTIMONIALS SECTION -->
-    <section class="py-20 bg-neutral-50/50 border-t border-neutral-100">
-      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-wider mb-4 shadow-sm">
-            Testimonials
-          </div>
-          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+    <section class="ab-sec-alt relative py-16 sm:py-20">
+      <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12">
+        <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
+          <div class="ab-pill mb-5">Testimonials</div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-[1.08] tracking-[-0.03em]">
             What Our <span class="text-primary">Clients Say</span> About Teknoppy
           </h2>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
           {testimonials.map(item => (
-            <div class="bg-white border border-neutral-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between">
+            <div class="ab-card p-6 sm:p-7 flex flex-col justify-between">
               <div>
                 <div class="flex gap-1 text-[#F9AE42] mb-4">
-                  <Star class="w-4 h-4 fill-current" />
-                  <Star class="w-4 h-4 fill-current" />
-                  <Star class="w-4 h-4 fill-current" />
-                  <Star class="w-4 h-4 fill-current" />
-                  <Star class="w-4 h-4 fill-current" />
+                  <Star class="w-4 h-4" fill="currentColor" />
+                  <Star class="w-4 h-4" fill="currentColor" />
+                  <Star class="w-4 h-4" fill="currentColor" />
+                  <Star class="w-4 h-4" fill="currentColor" />
+                  <Star class="w-4 h-4" fill="currentColor" />
                 </div>
-                <p class="text-xs text-neutral-600 font-medium italic leading-relaxed mb-6">
+                <p class="text-sm text-neutral-700 font-medium leading-relaxed mb-6">
                   "{item.quote}"
                 </p>
               </div>
               <div class="border-t border-neutral-100 pt-4 mt-auto">
-                <span class="block text-sm font-bold text-neutral-800">{item.author}</span>
-                <span class="block text-[12px] text-neutral-400 font-bold uppercase tracking-wider mt-0.5">{item.role}</span>
+                <span class="block text-sm font-bold text-neutral-900">{item.author}</span>
+                <span class="block text-xs text-primary font-semibold mt-0.5">{item.role}</span>
               </div>
             </div>
           ))}
@@ -316,13 +404,11 @@ const testimonials = [
     <!-- FAQ — questions reused from the pages that own them (see about.json).
          FAQPage schema is intentionally left with those source pages so the same
          Q&A entities are not marked up on two URLs. -->
-    <section class="py-20 bg-neutral-50/50 border-t border-neutral-100">
-      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-wider mb-4 shadow-sm">
-            {about.faq.badge}
-          </div>
-          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+    <section class="ab-sec relative py-16 sm:py-20">
+      <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12">
+        <div class="text-center max-w-3xl mx-auto mb-10">
+          <div class="ab-pill mb-5">{about.faq.badge}</div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-[1.08] tracking-[-0.03em]">
             {about.faq.heading}
           </h2>
           <p class="text-neutral-500 font-medium mt-3 text-base">
@@ -330,18 +416,18 @@ const testimonials = [
           </p>
         </div>
 
-        <div class="max-w-4xl mx-auto space-y-4">
+        <div class="max-w-3xl mx-auto ab-card overflow-hidden">
           {about.faq.items.map((faq: any) => (
-            <details class="group bg-white rounded-2xl border border-neutral-200/60 p-6 [&_summary::-webkit-details-marker]:hidden">
-              <summary class="flex items-center justify-between cursor-pointer focus:outline-none gap-4">
-                <h3 class="text-sm sm:text-base font-bold text-neutral-850">{faq.q}</h3>
-                <span class="transition-transform duration-300 group-open:-rotate-180 text-primary flex-shrink-0">
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            <details class="ab-faq group px-5 sm:px-7 [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex items-center justify-between cursor-pointer gap-4 py-4 sm:py-5 focus-visible:outline-2 focus-visible:outline-primary rounded-lg">
+                <h3 class="text-sm sm:text-[15px] font-bold text-neutral-900">{faq.q}</h3>
+                <span class="w-7 h-7 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 transition-transform duration-300 group-open:rotate-45" aria-hidden="true">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.6" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" d="M12 5v14M5 12h14" />
                   </svg>
                 </span>
               </summary>
-              <div class="mt-4 pt-4 border-t border-neutral-100/60 text-xs sm:text-sm text-neutral-600 leading-relaxed font-semibold">
+              <div class="pb-5 text-sm text-neutral-600 leading-relaxed">
                 {faq.aHtml ? <Fragment set:html={faq.aHtml} /> : faq.a}
               </div>
             </details>
@@ -349,6 +435,38 @@ const testimonials = [
         </div>
       </div>
     </section>
+
+    <style>
+      .ab-sec { background: linear-gradient(180deg, #fffaf6 0%, #fff6ef 100%); }
+      .ab-sec-alt { background: linear-gradient(180deg, #fff6ef 0%, #fffaf6 100%); }
+      .ab-pill {
+        display: inline-flex; align-items: center; padding: 0.35rem 0.9rem; border-radius: 999px;
+        background: #ffe8db; color: var(--color-primary); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.01em;
+      }
+      .ab-card {
+        background: #fff; border: 1px solid rgba(240, 90, 44, 0.09); border-radius: 1.5rem;
+        box-shadow: 0 24px 50px -34px rgba(160, 60, 20, 0.45);
+        transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+      }
+      .ab-card:is(.group):hover { transform: translateY(-3px); border-color: rgba(240, 90, 44, 0.22); box-shadow: 0 30px 56px -32px rgba(160, 60, 20, 0.5); }
+      .ab-faq + .ab-faq { border-top: 1px solid #f1ede9; }
+      .story-visual { aspect-ratio: 1.25 / 1; }
+      .story-back {
+        position: absolute; inset: 4% 0 0 8%;
+        border-radius: 2.25rem;
+        background: linear-gradient(135deg, #ffd2b4 0%, #ff9a5c 45%, #f05a2c 100%);
+        transform: rotate(6deg);
+        box-shadow: inset 0 14px 30px rgba(255, 255, 255, 0.4), 0 30px 60px -30px rgba(200, 70, 20, 0.6);
+      }
+      .story-photo {
+        position: absolute; inset: 2% 6% 6% 2%;
+        border-radius: 2rem; overflow: hidden;
+        transform: rotate(-3deg);
+        border: 6px solid #fff;
+        box-shadow: 0 34px 70px -34px rgba(120, 40, 10, 0.6);
+      }
+      .story-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; }
+    </style>
   </main>
 
   <FooterCTA

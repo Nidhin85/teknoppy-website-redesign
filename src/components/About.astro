@@ -1,163 +1,117 @@
 ---
-import { CheckCircle, ArrowRight } from "lucide-react";
+import { ArrowUpRight, Layers, Users, CalendarCheck, LayoutGrid } from "lucide-react";
 import home from "../data/home.json";
+
+// decorative icons for the four stat cards (index-matched with home.about.stats)
+const statIcons = [Layers, Users, CalendarCheck, LayoutGrid];
+const statSuffixColor = ["text-primary", "text-secondary", "text-primary", "text-primary"];
 ---
 
-<section id="about" class="py-10 sm:py-12 md:py-16 bg-cream relative overflow-hidden">
-  <!-- Subtle decorative background -->
-  <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
-    <div
-      class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/whoweare.webp')] opacity-30"
-    >
-    </div>
+<section id="about" class="home-about py-14 sm:py-16 md:py-20 lg:py-24 relative overflow-hidden">
+  <div class="absolute inset-0 overflow-hidden pointer-events-none z-0" aria-hidden="true">
+    <div class="home-about-glow"></div>
   </div>
 
   <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
-    <!-- Tier 1: Header & Key Message (Full width, centered on mobile, left-aligned on desktop) -->
-    <div
-      class="max-w-4xl flex flex-col items-center text-center lg:items-start lg:text-left mb-8 sm:mb-10 md:mb-12"
-    >
-      <!-- Badge -->
-      <div
-        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-bold uppercase tracking-wider mb-6 shadow-sm transform -rotate-1"
-      >
-        {home.about.badge}
-      </div>
+    <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 xl:gap-16 items-center">
+      <!-- Left: copy -->
+      <div class="lg:col-span-6 flex flex-col items-start text-left">
+        <div
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-bold uppercase tracking-wider mb-6 shadow-sm transform -rotate-1"
+        >
+          {home.about.badge}
+        </div>
 
-      <!-- Headline -->
-      <h2
-        class="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] text-black mb-4 sm:mb-6"
-        data-magnetic-heading
-      >
-        <span class="text-primary">{home.about.headingAccent}</span> {home.about.headingRest}
-      </h2>
+        <h2
+          class="text-4xl md:text-5xl lg:text-[3.4rem] font-black leading-[1.06] text-black mb-6"
+          data-magnetic-heading
+        >
+          <span class="text-primary">{home.about.headingAccent}</span> {home.about.headingRest}
+        </h2>
 
-      <!-- Main Intro Paragraph (Quote Style) -->
-      <p
-        class="text-xl md:text-2xl font-semibold text-black leading-snug pl-0 lg:pl-6 border-l-0 lg:border-l-4 border-secondary"
-      >
-        {home.about.intro}
-      </p>
-    </div>
-
-    <!-- Tier 2: Details & Stats Split (2 columns on desktop) -->
-    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-      <!-- Left Column: Detailed Copy (7 cols) -->
-      <div
-        class="lg:col-span-7 space-y-6 text-base md:text-lg text-muted text-center lg:text-left"
-      >
-        <p class="leading-relaxed">
-          {home.about.paragraphs[0]}
+        <p class="text-base md:text-lg font-semibold text-neutral-900 leading-relaxed pl-4 md:pl-5 border-l-[3px] border-primary mb-6">
+          {home.about.intro}
         </p>
-        <p class="leading-relaxed">
-          {home.about.paragraphs[1]}
-        </p>
-      </div>
 
-      <!-- Right Column: Stats Grid (5 cols) -->
-      <div class="lg:col-span-5 grid grid-cols-2 gap-3.5 sm:gap-4.5 w-full mt-4 lg:mt-0">
-        <!-- Websites -->
-        <div
-          class="stat-card opacity-0 translate-y-12 flex flex-col neu-card neu-card-cream p-4 sm:p-5 rounded-2xl transition-all duration-500 group"
-          style="transition-delay: 0ms;"
-        >
-          <h3
-            class="text-3xl sm:text-4xl lg:text-5xl font-black text-black tracking-tight leading-none flex items-baseline gap-0.5"
-          >
-            <span class="counter" data-target={home.about.stats[0].value}>{home.about.stats[0].value}</span>
-            <span class="text-primary font-bold">{home.about.stats[0].suffix}</span>
-          </h3>
-          <p
-            class="text-xs font-bold text-neutral-800 uppercase tracking-wider mt-3"
-          >
-            {home.about.stats[0].label}
-          </p>
-          <p class="text-xs text-muted mt-1 leading-normal">
-            {home.about.stats[0].sublabel}
-          </p>
+        <div class="space-y-4 text-sm md:text-[0.95rem] text-muted leading-relaxed">
+          <p>{home.about.paragraphs[0]}</p>
+          <p>{home.about.paragraphs[1]}</p>
         </div>
 
-        <!-- Clients -->
-        <div
-          class="stat-card opacity-0 translate-y-12 flex flex-col neu-card neu-card-cream p-4 sm:p-5 rounded-2xl transition-all duration-500 group"
-          style="transition-delay: 150ms;"
-        >
-          <h3
-            class="text-3xl sm:text-4xl lg:text-5xl font-black text-black tracking-tight leading-none flex items-baseline gap-0.5"
+        <!-- Contextual CTA: After Who We Are -->
+        <div class="cta-reveal mt-8 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-5">
+          <a
+            href="/request-a-quote/"
+            class="cta-float-secondary cta-delay-2 cta-pulse-medium cta-pulse-delay-2 cta-shimmer-btn inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-bold text-white bg-primary hover:bg-primary/95 rounded-full transition-all duration-300 shadow-[0_10px_24px_-8px_rgba(240,90,44,0.55)] hover:-translate-y-0.5 shrink-0 group self-start"
           >
-            <span class="counter" data-target={home.about.stats[1].value}>{home.about.stats[1].value}</span>
-            <span class="text-secondary font-bold">{home.about.stats[1].suffix}</span>
-          </h3>
-          <p
-            class="text-xs font-bold text-neutral-800 uppercase tracking-wider mt-3"
-          >
-            {home.about.stats[1].label}
-          </p>
-          <p class="text-xs text-muted mt-1 leading-normal">
-            {home.about.stats[1].sublabel}
-          </p>
-        </div>
-
-        <!-- Experience -->
-        <div
-          class="stat-card opacity-0 translate-y-12 flex flex-col neu-card neu-card-cream p-4 sm:p-5 rounded-2xl transition-all duration-500 group"
-          style="transition-delay: 300ms;"
-        >
-          <h3
-            class="text-3xl sm:text-4xl lg:text-5xl font-black text-black tracking-tight leading-none flex items-baseline gap-0.5"
-          >
-            <span class="counter" data-target={home.about.stats[2].value}>{home.about.stats[2].value}</span>
-            <span class="text-primary font-bold">{home.about.stats[2].suffix}</span>
-          </h3>
-          <p
-            class="text-xs font-bold text-neutral-800 uppercase tracking-wider mt-3"
-          >
-            {home.about.stats[2].label}
-          </p>
-          <p class="text-xs text-muted mt-1 leading-normal">
-            {home.about.stats[2].sublabel}
-          </p>
-        </div>
-
-        <!-- Industries -->
-        <div
-          class="stat-card opacity-0 translate-y-12 flex flex-col neu-card neu-card-cream p-4 sm:p-5 rounded-2xl transition-all duration-500 group"
-          style="transition-delay: 450ms;"
-        >
-          <h3
-            class="text-3xl sm:text-4xl lg:text-5xl font-black text-black tracking-tight leading-none flex items-baseline gap-0.5"
-          >
-            <span class="counter" data-target={home.about.stats[3].value}>{home.about.stats[3].value}</span>
-            <span class="text-primary font-bold">{home.about.stats[3].suffix}</span>
-          </h3>
-          <p
-            class="text-xs font-bold text-neutral-800 uppercase tracking-wider mt-3"
-          >
-            {home.about.stats[3].label}
-          </p>
-          <p class="text-xs text-muted mt-1 leading-normal">
-            {home.about.stats[3].sublabel}
-          </p>
+            <span>Talk to Our Experts</span>
+            <ArrowUpRight className="cta-arrow cta-arrow-invite w-4 h-4" />
+          </a>
+          <div class="max-w-xs">
+            <p class="text-sm font-bold text-neutral-900 tracking-tight">Have an idea in mind?</p>
+            <p class="text-xs text-neutral-600 mt-0.5">Have an idea in mind? Let's turn it into a digital experience.</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Contextual CTA: After Who We Are -->
-    <div class="cta-reveal mt-14 pt-8 border-t border-neutral-200/70 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
-      <div class="max-w-xl">
-        <p class="text-base font-bold text-neutral-900 tracking-tight">Have an idea in mind?</p>
-        <p class="text-sm text-neutral-600 mt-1">Have an idea in mind? Let's turn it into a digital experience.</p>
+      <!-- Right: 3D brand visual + stat cards -->
+      <div class="lg:col-span-6 relative">
+        <picture class="home-about-visual block">
+          <source media="(max-width: 767px)" srcset="/images/home/3d/about-logo-3d-900.webp" />
+          <img
+            src="/images/home/3d/about-logo-3d.webp"
+            alt="3D Teknoppy logo on a glass pedestal"
+            width="1600"
+            height="1200"
+            loading="lazy"
+            decoding="async"
+            class="w-full h-auto"
+          />
+        </picture>
+
+        <div class="grid grid-cols-2 gap-3 sm:gap-4 -mt-10 sm:-mt-16 relative z-10">
+          {home.about.stats.map((stat, i) => {
+            const Icon = statIcons[i] ?? Layers;
+            return (
+              <div
+                class="stat-card opacity-0 translate-y-12 flex flex-col bg-white/90 backdrop-blur-md border border-primary/10 p-4 sm:p-5 rounded-2xl shadow-[0_24px_48px_-30px_rgba(160,60,20,0.5)] transition-all duration-500 group hover:border-primary/25"
+                style={`transition-delay: ${i * 150}ms;`}
+              >
+                <div class="flex items-center gap-3">
+                  <span class="w-10 h-10 sm:w-11 sm:h-11 shrink-0 rounded-xl bg-gradient-to-br from-[#fff1e8] to-[#ffe0cc] text-primary flex items-center justify-center">
+                    <Icon className="w-5 h-5" />
+                  </span>
+                  <h3 class="text-3xl sm:text-4xl font-black text-black tracking-tight leading-none flex items-baseline gap-0.5">
+                    <span class="counter" data-target={stat.value}>{stat.value}</span>
+                    <span class={`${statSuffixColor[i] ?? 'text-primary'} font-bold`}>{stat.suffix}</span>
+                  </h3>
+                </div>
+                <p class="text-[11px] sm:text-xs font-bold text-neutral-800 uppercase tracking-wider mt-3">
+                  {stat.label}
+                </p>
+                <p class="text-xs text-muted mt-1 leading-normal">
+                  {stat.sublabel}
+                </p>
+              </div>
+            );
+          })}
+        </div>
       </div>
-      <a
-        href="/request-a-quote/"
-        class="cta-float-secondary cta-delay-2 cta-pulse-medium cta-pulse-delay-2 cta-shimmer-btn inline-flex items-center gap-2 px-6 py-3.5 text-sm font-bold text-primary bg-primary/10 hover:bg-primary hover:text-white border border-primary/25 rounded-full transition-all duration-300 shadow-2xs hover:shadow-md hover:-translate-y-0.5 shrink-0 group"
-      >
-        <span>Talk to Our Experts</span>
-        <ArrowRight className="cta-arrow cta-arrow-invite w-4 h-4" />
-      </a>
     </div>
   </div>
 </section>
+
+<style>
+  .home-about { background: linear-gradient(180deg, #fffaf6 0%, #fff4ec 100%); }
+  .home-about-glow {
+    position: absolute; right: -10%; top: 5%; width: 60%; height: 80%;
+    background: radial-gradient(closest-side, rgba(255, 150, 90, 0.22), rgba(255, 150, 90, 0));
+  }
+  .home-about-visual img {
+    -webkit-mask-image: radial-gradient(closest-side at 50% 48%, #000 70%, transparent 100%);
+            mask-image: radial-gradient(closest-side at 50% 48%, #000 70%, transparent 100%);
+  }
+</style>
 
 <script>
   const isFine = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(pointer: fine)').matches;

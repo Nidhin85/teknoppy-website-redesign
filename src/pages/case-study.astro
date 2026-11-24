@@ -65,27 +65,39 @@ const jsonLd = {
   <main class="case-study-hub" id="top">
     <!-- HERO SECTION -->
     <header class="hero">
-      <div class="wrap">
+      <span class="hero-blob hero-blob-l" aria-hidden="true"></span>
+      <span class="hero-blob hero-blob-r" aria-hidden="true"></span>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
         <div class="crumb fadeup" style="--d:1">
           <a href="/">Home</a><span>/</span><span>Case studies</span>
         </div>
         <span class="tag fadeup" style="--d:1">Case studies</span>
-        <h1 class="fadeup" style="--d:2">Real projects. <em>Real numbers.</em></h1>
+        <h1 class="fadeup" style="--d:2">Real projects. <em>Real numbers.<svg class="swoosh" viewBox="0 0 300 16" preserveAspectRatio="none" aria-hidden="true"><path d="M6 11C80 4 200 3 294 8" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg></em></h1>
         <p class="lead fadeup" style="--d:3">
           The brief, the work and the results behind our client projects in Kerala, the UAE and Qatar. Start with a featured story, or filter every case study by industry, service or region.
         </p>
         <div class="ctas fadeup" style="--d:4">
           <a class="btn btn-primary" href="#library">Explore all case studies <span class="arr">↓</span></a>
-          <a class="btn btn-ghost" href="/portfolios/">View portfolio <span class="arr">→</span></a>
+          <a class="btn btn-ghost btn-play" href="/portfolios/"><span class="pl" aria-hidden="true"></span>View portfolio <span class="arr">→</span></a>
         </div>
         <p class="hint fadeup" style="--d:4">
           Just want to see our designs? The portfolio shows 120+ websites at a glance.
         </p>
+        </div>
+        <!-- Hero visual: stacked browser mockups of real case-study screenshots -->
+        <div class="hero-art fadeup" style="--d:3" aria-hidden="true">
+          <span class="hero-arc"></span>
+          <span class="hero-spark"><i></i><i></i><i></i></span>
+          <div class="mock mock-b"><div class="mbar"><i></i><i></i><i></i></div><img src="/case-studies/generaltech.webp" alt="" loading="eager" decoding="async" /></div>
+          <div class="mock mock-c"><div class="mbar"><i></i><i></i><i></i></div><img src="/case-studies/olivesresort.webp" alt="" loading="eager" decoding="async" /></div>
+          <div class="mock mock-a"><div class="mbar"><i></i><i></i><i></i></div><img src="/case-studies/roja-houseboats.webp" alt="" loading="eager" decoding="async" /><span class="mplay"></span></div>
+        </div>
         <div class="proof fadeup" style="--d:5" aria-label="Case study highlights">
-          <span><b><span class="cnt" data-to="12">12</span></b> verified case studies</span>
-          <span><b><span class="cnt" data-to="8">8</span></b> industries</span>
-          <span><b><i class="fill">+<span class="cnt" data-to="180">180</span>%</i></b> average traffic growth</span>
-          <span><b><span class="cnt" data-to="3">3</span></b> countries: India, UAE, Qatar</span>
+          <span><i class="pi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg></i><b><span class="cnt" data-to="12">12</span></b> verified case studies</span>
+          <span><i class="pi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4M10 10h4M10 14h4M10 18h4"/></svg></i><b><span class="cnt" data-to="8">8</span></b> industries</span>
+          <span><i class="pi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></i><b><i class="fill">+<span class="cnt" data-to="180">180</span>%</i></b> average traffic growth</span>
+          <span><i class="pi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></i><b><span class="cnt" data-to="3">3</span></b> countries: India, UAE, Qatar</span>
         </div>
       </div>
     </header>
@@ -115,7 +127,7 @@ const jsonLd = {
         <div class="head rv">
           <div>
             <span class="tag">All case studies</span>
-            <h2>Explore every story</h2>
+            <h2>Explore every <span class="acc">story<svg viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true"><path d="M4 9C30 3 70 3 96 7" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></span></h2>
           </div>
           <p>
             Filter by industry, service or region. Each card shows the headline result first, so you can see what changed at a glance.
@@ -160,6 +172,9 @@ const jsonLd = {
           <div class="active" id="active"></div>
         </div>
         <div class="lib" id="lib"></div>
+        <div class="more-wrap" id="moreWrap" hidden>
+          <button type="button" class="btn btn-ghost" id="loadMore">Load More Case Studies <span class="arr">↓</span></button>
+        </div>
         <div class="empty" id="empty">
           <b>No case studies match that yet</b>
           <span>Try a different filter, or ask us for examples from your industry.</span>
@@ -174,7 +189,7 @@ const jsonLd = {
         <div class="head rv">
           <div>
             <span class="tag">Browse by goal</span>
-            <h2>What do you want more of?</h2>
+            <h2>What do you want <span class="acc">more of?<svg class="sw" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true"><path d="M4 9C30 3 70 3 96 7" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></span></h2>
           </div>
           <p>
             Not sure where to start? Pick the result you're after and we'll filter the case studies above to show where we delivered it.
@@ -189,7 +204,7 @@ const jsonLd = {
       <div class="wrap measure">
         <div class="txt rv">
           <span class="tag">How we report results</span>
-          <h2>Every number on this page can be checked</h2>
+          <h2>Every number on this page can be <span class="acc">checked<svg class="sw" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true"><path d="M4 9C30 3 70 3 96 7" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></span></h2>
           <p>
             We only publish figures the client has agreed to share, taken from their own analytics. Each case study names its data source and date range.
           </p>
@@ -197,6 +212,7 @@ const jsonLd = {
         <div class="steps">
           <div class="step rv">
             <i>01</i>
+            <span class="sic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span>
             <div>
               <b>A baseline before we start</b>
               <span>Traffic, rankings, leads and speed are recorded in week one, so there's an honest "before".</span>
@@ -204,6 +220,7 @@ const jsonLd = {
           </div>
           <div class="step rv" style="--d:1">
             <i>02</i>
+            <span class="sic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
             <div>
               <b>Goals agreed with the client</b>
               <span>Every project has two or three measurable targets, written down before design starts.</span>
@@ -211,6 +228,7 @@ const jsonLd = {
           </div>
           <div class="step rv" style="--d:2">
             <i>03</i>
+            <span class="sic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg></span>
             <div>
               <b>Data from the client's own tools</b>
               <span>Google Analytics 4, Search Console, Google Business Profile and ad dashboards, never our own estimates.</span>
@@ -218,6 +236,7 @@ const jsonLd = {
           </div>
           <div class="step rv" style="--d:3">
             <i>04</i>
+            <span class="sic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></span>
             <div>
               <b>Published with permission</b>
               <span>Clients review their case study before it goes live. Some prefer to stay anonymous, and we respect that.</span>
@@ -233,40 +252,43 @@ const jsonLd = {
         <div class="head rv">
           <div>
             <span class="tag">From our clients</span>
-            <h2>In their own words</h2>
+            <h2>In their <span class="acc">own words<svg class="sw" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true"><path d="M4 9C30 3 70 3 96 7" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></span></h2>
           </div>
           <p>Short quotes from the clients behind these case studies. Each one links to the full story.</p>
         </div>
         <div class="qwall">
           <div class="qc rv">
+            <span class="qstars" aria-hidden="true">★★★★★</span>
             <q>"We now rank at the top of Google for our keywords and get many direct booking calls due to better visibility. Thank you Teknoppy for all the support."</q>
             <div class="who">
               <span class="av"><img src="/testimonials/biju-thomas.webp" alt="Biju Thomas" loading="lazy" /></span>
               <div>
                 <b>Biju Thomas · CEO, Olives Resort</b>
-                <a href="/case-studies/olives-boutique-resort-digital-marketing/">Olives Resort case study →</a>
               </div>
             </div>
+            <a class="qlink" href="/case-studies/olives-boutique-resort-digital-marketing/"><span class="qth" aria-hidden="true"><img src="/case-studies/olivesresort.webp" alt="" loading="lazy" /></span><span class="ql">Olives Resort case study</span> <span class="ga">→</span></a>
           </div>
           <div class="qc rv" style="--d:1">
+            <span class="qstars" aria-hidden="true">★★★★★</span>
             <q>"Mr. Sanal is exceptionally supportive and customer-friendly. I have worked with many IT teams, but I am 100% happy with Teknoppy. No doubt, I recommend them with 100% satisfaction."</q>
             <div class="who">
               <span class="av"><img src="/testimonials/dr-asghar.webp" alt="Dr. Asghar" loading="lazy" /></span>
               <div>
                 <b>Dr. Asghar · CEO, Greens Ayurveda</b>
-                <a href="/portfolios/website-projects/">See the Greens Ayurveda website →</a>
               </div>
             </div>
+            <a class="qlink" href="/portfolios/website-projects/"><span class="qth" aria-hidden="true"><img src="/case-studies/greensayurveda.webp" alt="" loading="lazy" /></span><span class="ql">See the Greens Ayurveda website</span> <span class="ga">→</span></a>
           </div>
           <div class="qc rv" style="--d:2">
+            <span class="qstars" aria-hidden="true">★★★★★</span>
             <q>"Teknoppy did an exceptional job building my personal brand website and digital identity. Truly professional team, timely execution, and a seamless experience throughout."</q>
             <div class="who">
               <span class="av"><img src="/testimonials/lenaa.webp" alt="Lenaa" loading="lazy" /></span>
               <div>
                 <b>Lenaa · Actor, Author &amp; TEDx Speaker</b>
-                <a href="/lenaa-personal-brand-website-case-study/">Lenaa personal brand story →</a>
               </div>
             </div>
+            <a class="qlink" href="/lenaa-personal-brand-website-case-study/"><span class="qth" aria-hidden="true"><img src="/case-studies/lenaalife.webp" alt="" loading="lazy" /></span><span class="ql">Lenaa personal brand story</span> <span class="ga">→</span></a>
           </div>
         </div>
       </div>
@@ -276,11 +298,13 @@ const jsonLd = {
     <div class="wrap" id="contact" style="padding-bottom:90px">
       <div class="cta rv">
         <div class="l">
+          <span class="cic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4M10 10h4M10 14h4M10 18h4"/></svg></span>
           <h3>Don't see your industry?</h3>
           <p>We've worked with more businesses than we can publish here. Ask, and we'll share a project similar to yours.</p>
           <a class="btn btn-primary" href="/contact-us/">Ask for examples <span class="arr">→</span></a>
         </div>
         <div class="r">
+          <span class="cic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/></svg></span>
           <h3>Want to be our next case study?</h3>
           <p>Get a free audit of your website and Google presence. We reply within one business day.</p>
           <a class="btn" href="/request-a-quote/">Get a free audit <span class="arr">→</span></a>
@@ -1498,6 +1522,266 @@ mark {
     transition: none !important;
   }
 }
+
+/* ---- Case studies hub: reference hero (two columns + mockups + stat cards) ---- */
+.hero .wrap.hero-grid { text-align: left; display: grid; grid-template-columns: 1fr; gap: 36px; align-items: center; }
+.hero .crumb { justify-content: flex-start; }
+.hero h1 { margin-left: 0; margin-right: 0; font-size: clamp(38px, 5.6vw, 72px); }
+.hero .lead { margin-left: 0; margin-right: 0; font-size: 17px; }
+.hero .ctas { justify-content: flex-start; }
+.hero-art { position: relative; aspect-ratio: 1.3 / 1; width: 100%; max-width: 620px; margin: 0 auto; }
+.hero-arc {
+  position: absolute; inset: 2% -2% 6% 8%; border-radius: 50%;
+  border: 14px solid transparent; border-top-color: #ff8a3c; border-right-color: #f05a2c;
+  transform: rotate(-18deg); filter: drop-shadow(0 10px 24px rgba(240, 90, 44, .35)); opacity: .9;
+}
+.mock {
+  position: absolute; background: #fff; border-radius: 18px; overflow: hidden;
+  box-shadow: 0 30px 60px -28px rgba(120, 40, 10, .55), 0 0 0 1px rgba(240, 90, 44, .12);
+}
+.mock .mbar { height: 22px; background: #f6ece5; display: flex; gap: 5px; align-items: center; padding: 0 10px; }
+.mock .mbar i { width: 7px; height: 7px; border-radius: 50%; background: #f05a2c; }
+.mock .mbar i:nth-child(2) { background: #ff9a3c; }
+.mock .mbar i:nth-child(3) { background: #ffd2b6; }
+.mock img { display: block; width: 100%; height: calc(100% - 22px); object-fit: cover; object-position: top; }
+.mock-a { left: 16%; top: 12%; width: 62%; height: 70%; z-index: 3; transform: rotate(-3deg); }
+.mock-b { left: 0; top: 24%; width: 34%; height: 50%; z-index: 1; transform: rotate(-7deg); }
+.mock-c { right: 0; top: 22%; width: 34%; height: 52%; z-index: 2; transform: rotate(5deg); }
+.mplay { position: absolute; right: 7%; bottom: 9%; width: 44px; height: 44px; border-radius: 50%; background: #fff; box-shadow: 0 8px 20px rgba(0, 0, 0, .25); }
+.mplay::after { content: ""; position: absolute; left: 17px; top: 13px; border-left: 14px solid #1a1a1a; border-top: 9px solid transparent; border-bottom: 9px solid transparent; }
+.hero .proof { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 8px; justify-content: stretch; }
+.hero .proof > span {
+  display: grid; grid-template-columns: 44px minmax(0, 1fr); align-items: center; column-gap: 14px; row-gap: 2px;
+  border-radius: 18px; padding: 14px 16px; background: #fff; line-height: 1.3;
+  box-shadow: 0 20px 40px -30px rgba(160, 60, 20, .45);
+}
+.hero .proof > span .pi {
+  width: 44px; height: 44px; border-radius: 14px; flex: none; display: inline-flex; align-items: center; justify-content: center;
+  color: var(--orange); background: linear-gradient(135deg, #fff1e8, #ffe0cc); font-style: normal;
+}
+.hero .proof > span .pi svg { width: 22px; height: 22px; }
+.hero .proof > span .pi { grid-row: 1 / span 2; }
+.hero .proof > span b { align-self: end; }
+.hero .proof b { font-size: 22px; }
+#measure h2 em.acc { font-style: normal; color: var(--orange); }
+@media (min-width: 1024px) {
+  .hero .wrap.hero-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.02fr); gap: 40px; }
+  .hero .proof { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 18px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .mock-a { animation: csFloat 7s ease-in-out infinite; }
+}
+@keyframes csFloat { 0%, 100% { translate: 0 0; } 50% { translate: 0 -8px; } }
+
+/* ---- Case studies hero v2: white canvas, soft shapes, swoosh, layered showcase ---- */
+.hero { background: #fff; padding-block: 44px 56px; }
+.hero::before { background: radial-gradient(circle, rgba(241, 90, 36, .07), transparent 62%); }
+.hero-blob { position: absolute; border-radius: 50%; pointer-events: none; z-index: 0; }
+.hero-blob-l { left: -170px; top: 40px; width: 300px; height: 360px; background: radial-gradient(circle at 60% 40%, #ffe6d6, #fff3ea 70%, transparent 72%); }
+.hero-blob-r { right: -160px; bottom: -120px; width: 520px; height: 300px; background: radial-gradient(ellipse at 40% 40%, #ffe0cc, #fff1e7 60%, transparent 70%); }
+.hero .wrap { z-index: 1; }
+.hero h1 em { position: relative; display: inline-block; }
+.hero h1 .swoosh { position: absolute; left: 4%; right: 22%; bottom: -.18em; width: 74%; height: .16em; color: var(--orange); }
+.hero .lead { margin-top: 30px; }
+.btn-play { border: 1.5px solid var(--orange); background: #fff; gap: 10px; }
+.btn-play .pl { width: 24px; height: 24px; border-radius: 50%; background: var(--orange); position: relative; flex: none; }
+.btn-play .pl::after { content: ""; position: absolute; left: 9px; top: 7px; border-left: 8px solid #fff; border-top: 5px solid transparent; border-bottom: 5px solid transparent; }
+.btn-play .arr { display: none; }
+.hero-art { max-width: 660px; }
+.hero-arc { inset: -4% -6% 2% 4%; border-width: 26px; border-top-color: #ffc29e; border-right-color: #ffb07e; border-left-color: rgba(255, 194, 158, .35); filter: none; opacity: .75; }
+.hero-spark { position: absolute; right: 4%; top: 0; width: 46px; height: 46px; z-index: 4; }
+.hero-spark i { position: absolute; height: 4px; border-radius: 4px; background: var(--orange); }
+.hero-spark i:nth-child(1) { width: 18px; left: 0; top: 10px; transform: rotate(-70deg); }
+.hero-spark i:nth-child(2) { width: 24px; left: 14px; top: 16px; transform: rotate(-40deg); }
+.hero-spark i:nth-child(3) { width: 18px; left: 22px; top: 36px; transform: rotate(-8deg); }
+.mock { border: 6px solid #fff; border-radius: 20px; box-shadow: 0 36px 70px -30px rgba(120, 40, 10, .5), 0 0 0 1px rgba(240, 90, 44, .1); }
+.mock .mbar { background: #fff; }
+.mock-a { left: 14%; top: 8%; width: 66%; height: 76%; }
+.mock-b { top: 22%; width: 32%; height: 54%; }
+.mock-c { top: 20%; width: 32%; height: 56%; }
+.hero .proof > span { padding: 16px 18px; border: 1px solid #f6e7dc; }
+.hero .proof b { font-size: 26px; }
+.hero .proof .fill { border: 0; background: none; padding: 0; color: var(--orange); }
+@media (max-width: 640px) {
+  .hero .proof > span { grid-template-columns: minmax(0, 1fr); row-gap: 6px; padding: 14px; }
+  .hero .proof > span .pi { grid-row: auto; width: 40px; height: 40px; }
+  .hero .proof b { font-size: 22px; }
+  .hero-blob-l { width: 200px; height: 240px; left: -140px; }
+  .hero-blob-r { width: 320px; height: 200px; }
+  .hero-arc { border-width: 16px; }
+}
+
+/* ---- Case studies library: reference compact cards (grid view only; list view keeps full detail) ---- */
+#library .head h2 .acc { position: relative; display: inline-block; color: var(--orange); }
+#library .head h2 .acc svg { position: absolute; left: 0; bottom: -.14em; width: 100%; height: .16em; color: var(--orange); }
+.lib:not(.list) { gap: 20px; }
+.lib:not(.list) .csc {
+  display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr); grid-template-rows: auto auto 1fr auto;
+  min-height: 196px; padding: 0; overflow: hidden; border-radius: 20px;
+  background: linear-gradient(135deg, #fff 0%, #fff8f3 100%);
+  box-shadow: 0 22px 44px -32px rgba(160, 60, 20, .5);
+}
+.lib:not(.list) .csc .meta { grid-column: 1 / -1; grid-row: 1; position: relative; z-index: 2; padding: 16px 18px 0; }
+.lib:not(.list) .csc .big { grid-column: 1; grid-row: 2; position: relative; z-index: 2; padding: 8px 0 0 18px; }
+.lib:not(.list) .csc .big b { font-size: 30px; line-height: 1; }
+.lib:not(.list) .csc .big small { margin-top: 2px; font-size: 12.5px; }
+.lib:not(.list) .csc h3 { grid-column: 1; grid-row: 3; position: relative; z-index: 2; padding: 10px 0 0 18px; font-size: 16.5px; line-height: 1.25; }
+.lib:not(.list) .csc .flow,
+.lib:not(.list) .csc .svc { display: none; }
+.lib:not(.list) .csc .thumb {
+  grid-column: 2; grid-row: 2 / 5; margin: 0; height: auto; min-height: 150px; align-self: stretch;
+  border-radius: 60% 0 0 0 / 70% 0 0 0; background: var(--tint);
+}
+.lib:not(.list) .csc .foot { grid-column: 1; grid-row: 4; flex-direction: row; align-items: center; padding: 12px 0 16px 18px; gap: 0; position: relative; z-index: 2; }
+.lib:not(.list) .csc .read { padding: 0; border: 0; background: none; color: var(--orange); justify-content: flex-start; font-size: 13.5px; }
+.lib:not(.list) .csc:hover .read,
+.lib:not(.list) .csc:focus-visible .read { background: none; color: var(--orange); border: 0; }
+.lib:not(.list) .csc .new { top: auto; bottom: 14px; right: 14px; z-index: 3; }
+.lib:not(.list) .csc .meta { display: flex; justify-content: space-between; gap: 12px; font-size: 11px; }
+.lib:not(.list) .csc .meta span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.lib:not(.list) .csc .meta span:first-child { flex: 0 1 auto; }
+.lib:not(.list) .csc .meta span:last-child { flex: 0 1 auto; text-align: right; }
+.lib:not(.list) .csc .big b { color: var(--orange); }
+.lib:not(.list) .csc h3 { font-weight: 700; }
+@media (max-width: 420px) {
+  .lib:not(.list) .csc { grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); }
+  .lib:not(.list) .csc .big b { font-size: 26px; }
+}
+
+/* ---- Browse by goal + How we report: reference styling ---- */
+#goals h2 .acc, #measure h2 .acc { position: relative; display: inline-block; color: var(--orange); }
+#goals h2 .acc .sw, #measure h2 .acc .sw { position: absolute; left: 0; bottom: -.14em; width: 100%; height: .16em; }
+#measure h2 em.acc { color: inherit; }
+
+/* goal cards: tinted per goal, wave corner, sparkle, round arrow bottom-right */
+.goal { --gc: #f05a2c; --gt: #fff1e8; --gw: #ffd7bf; gap: 0; padding: 24px 24px 22px; min-height: 230px; align-content: start;
+  background: linear-gradient(160deg, #fff 30%, var(--gt) 100%); border-color: color-mix(in srgb, var(--gc) 16%, #fff);
+  box-shadow: 0 22px 44px -34px rgba(120, 50, 20, .45); }
+.goal:nth-child(2) { --gc: #7c3aed; --gt: #f4eefe; --gw: #ddd0fb; }
+.goal:nth-child(3) { --gc: #16a34a; --gt: #ecf9f0; --gw: #c9ecd5; }
+.goal:nth-child(4) { --gc: #1d6fd8; --gt: #edf4fd; --gw: #cfe1f8; }
+.goal::before { clip-path: none; inset: auto -10% -20% 35%; height: 70%; border-radius: 60% 40% 0 0; background: var(--gw); opacity: .55; z-index: -1; transition: opacity .4s; }
+.goal::after { content: ""; position: absolute; left: 84px; top: 14px; width: 18px; height: 18px;
+  background: linear-gradient(var(--gc), var(--gc)) 2px 0 / 3px 8px no-repeat, linear-gradient(var(--gc), var(--gc)) 10px 6px / 8px 3px no-repeat;
+  transform: rotate(20deg); opacity: .85; }
+.goal:hover, .goal:focus-visible { color: inherit; border-color: var(--gc); transform: translateY(-5px); }
+.goal:hover::before, .goal:focus-visible::before { clip-path: none; opacity: .85; }
+.goal .top { display: block; }
+.goal .ic { width: 52px; height: 52px; border-radius: 16px; background: var(--gt); color: var(--gc); margin-bottom: 16px; }
+.goal:hover .ic { background: var(--gt); color: var(--gc); }
+.goal .go { position: absolute; right: 22px; bottom: 22px; width: 38px; height: 38px; border: 0; background: var(--gc); color: #fff; font-weight: 800; box-shadow: 0 8px 18px -6px color-mix(in srgb, var(--gc) 70%, transparent); }
+.goal:hover .go { border: 0; transform: translateX(3px); }
+.goal b { font-size: 21px; }
+.goal span { display: block; margin-top: 6px; max-width: 22ch; color: var(--muted); }
+.goal:hover span { color: var(--muted); }
+.goal em { display: inline-block; margin-top: 16px; padding: 5px 12px; border-radius: 999px; background: #fff; color: var(--gc); border: 1px solid color-mix(in srgb, var(--gc) 22%, #fff); }
+.goal:hover em { color: var(--gc); }
+
+/* measure: soft peach band, timeline dots + numbers, icon tile per step */
+#measure { background: linear-gradient(180deg, #fff6ef, #fffaf6) !important; }
+.steps { position: relative; gap: 14px; }
+.step { grid-template-columns: 54px 56px minmax(0, 1fr); gap: 14px; align-items: center; padding: 14px 20px 14px 0; background: transparent; border: 0; position: relative; }
+.step::before { content: ""; position: absolute; left: 6px; top: 50%; width: 12px; height: 12px; border-radius: 50%; background: var(--orange); transform: translateY(-50%); box-shadow: 0 0 0 4px #ffe4d4; }
+.step:not(:last-child)::after { content: ""; position: absolute; left: 11px; top: calc(50% + 10px); height: calc(100% + 4px); border-left: 2px dashed #f6b48f; }
+.step:hover { transform: translateX(4px); border-color: transparent; }
+.step i { width: auto; height: auto; background: none; color: var(--orange); font-size: 22px; padding-left: 26px; justify-self: start; }
+.step .sic { width: 56px; height: 56px; border-radius: 16px; background: linear-gradient(135deg, #fff1e8, #ffe0cc); color: var(--orange); display: grid; place-items: center; }
+.step .sic svg { width: 26px; height: 26px; }
+.step > div { background: #fff; border: 1px solid #f6e7dc; border-radius: 16px; padding: 14px 18px; box-shadow: 0 18px 36px -30px rgba(160, 60, 20, .45); }
+.step span:not(.sic) { font-size: 14px; }
+@media (max-width: 640px) {
+  .goal { min-height: 0; padding: 18px 16px 64px; }
+  .goal::after { left: 70px; }
+  .goal .ic { width: 44px; height: 44px; margin-bottom: 12px; }
+  .goal b { font-size: 17px; }
+  .goal span { font-size: 13px; }
+  .goal .go { right: 14px; bottom: 14px; width: 32px; height: 32px; }
+  .goal em { font-size: 11.5px; padding: 4px 9px; }
+  .step { grid-template-columns: 40px 44px minmax(0, 1fr); gap: 10px; padding-right: 0; }
+  .step i { font-size: 17px; padding-left: 22px; }
+  .step .sic { width: 44px; height: 44px; border-radius: 13px; }
+  .step .sic svg { width: 21px; height: 21px; }
+  .step > div { padding: 12px 14px; }
+}
+
+/* ---- Headings: same heavy weight as the hero H1 ---- */
+.case-study-hub h2 { font-weight: 800; letter-spacing: -.035em; }
+.case-study-hub .slide h3 { font-weight: 800; }
+.case-study-hub .cta h3 { font-weight: 800; }
+
+/* Load more */
+.more-wrap { display: flex; justify-content: center; margin-top: 32px; }
+.more-wrap[hidden] { display: none; }
+.more-wrap .btn { background: #fff; border: 1.5px solid var(--orange); color: var(--orange); padding: 14px 28px; box-shadow: 0 12px 26px -16px rgba(240,90,44,.55); }
+.more-wrap .btn:hover { background: var(--orange); color: #fff; }
+
+/* ---- Testimonials: reference card design ---- */
+#voices { position: relative; }
+#voices h2 .acc { position: relative; display: inline-block; color: var(--orange); }
+#voices h2 .acc .sw { position: absolute; left: 0; bottom: -.14em; width: 100%; height: .16em; }
+.qwall { gap: 20px; align-items: stretch; }
+.qc { grid-template-rows: auto 1fr auto auto; align-content: stretch; gap: 0; padding: 26px 24px 20px; background: #fff; border: 1px solid #f1e6de; border-radius: 24px; box-shadow: 0 26px 50px -38px rgba(160,60,20,.55); transition: transform .35s var(--ease), box-shadow .35s; }
+.qc:hover { transform: translateY(-4px); box-shadow: 0 32px 60px -36px rgba(160,60,20,.6); }
+.qc::before { content: "\201C"; right: 20px; top: 2px; font-size: 96px; color: #ffd8c2; font-weight: 800; }
+.qc .qstars { color: var(--orange); letter-spacing: 3px; font-size: 17px; line-height: 1; margin-bottom: 16px; }
+.qc q { font-size: 16.5px; line-height: 1.6; font-weight: 500; color: #1a1a1a; padding-right: 26px; }
+.qc .who { margin-top: 22px; padding-top: 18px; border-top: 1px solid #f4ebe4; gap: 14px; }
+.qc .av { width: 52px; height: 52px; border: 2px solid #fff; box-shadow: 0 0 0 2px #ffd6bf; }
+.qc .who b { font-size: 14.5px; line-height: 1.35; font-weight: 800; }
+.qc .qlink { margin-top: 16px; display: grid; grid-template-columns: 76px minmax(0, 1fr) 34px; align-items: center; gap: 12px; padding: 8px 10px 8px 8px; border-radius: 16px; background: #fff6f0; border: 1px solid #ffe3d2; text-decoration: none; color: var(--ink); transition: background .3s, border-color .3s; }
+.qc .qlink:hover { background: #ffeee3; border-color: #ffcfb2; }
+.qc .qth { width: 76px; height: 46px; border-radius: 10px; overflow: hidden; background: var(--tint); }
+.qc .qth img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.qc .ql { font-family: var(--display); font-weight: 800; font-size: 13.5px; line-height: 1.3; color: var(--ink); }
+.qc .ga { width: 34px; height: 34px; border-radius: 50%; background: var(--orange); color: #fff; display: grid; place-items: center; font-weight: 800; transition: transform .3s; }
+.qc .qlink:hover .ga { transform: translateX(3px); }
+@media (max-width: 1024px) and (min-width: 721px) { .qwall { grid-template-columns: 1fr 1fr; } .qwall .qc:last-child { grid-column: 1 / -1; } }
+@media (max-width: 640px) { .qc { padding: 22px 18px 18px; } .qc::before { font-size: 80px; } }
+
+/* ---- Closing CTA: reference split banner ---- */
+#contact .cta { position: relative; grid-template-columns: 1fr 1fr; border: 1px solid #ffe0cd; border-radius: 30px; box-shadow: 0 34px 70px -44px rgba(160,60,20,.6); background: #fff4ec; }
+#contact .cta > div { display: grid; grid-template-columns: 60px minmax(0, 1fr); column-gap: 22px; row-gap: 10px; align-content: center; align-items: start; padding: 46px 44px; }
+#contact .cta > div > :not(.cic) { grid-column: 2; }
+#contact .cta .cic { grid-row: 1 / span 3; width: 60px; height: 60px; border-radius: 18px; display: grid; place-items: center; }
+#contact .cta .cic svg { width: 28px; height: 28px; }
+#contact .cta .l { background: linear-gradient(135deg, #fff7f1 0%, #ffeadd 100%); }
+#contact .cta .l .cic { background: #ffe2d0; color: var(--orange); }
+#contact .cta .l .btn { justify-self: start; background: #fff; color: var(--orange) !important; border: 1.5px solid var(--orange); box-shadow: none; margin-top: 8px; }
+#contact .cta .l .btn:hover { background: var(--orange); color: #fff !important; }
+#contact .cta .r { background: linear-gradient(120deg, #f26a2e 0%, #f05a2c 45%, #e8481c 100%); clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%); margin-left: -8%; padding-left: calc(44px + 8%); }
+#contact .cta .r .cic { background: rgba(255,255,255,.18); color: #fff; }
+#contact .cta .r .btn { justify-self: start; margin-top: 8px; box-shadow: 0 12px 26px -12px rgba(80,20,0,.55); }
+#contact .cta .r::before { border-width: 30px; border-color: rgba(255,255,255,.12); right: -120px; bottom: -150px; }
+#contact .cta .r::after { content: ""; position: absolute; right: -10%; bottom: -40%; width: 70%; height: 80%; border-radius: 50%; background: radial-gradient(closest-side, rgba(255,170,110,.35), transparent); z-index: -1; }
+#contact .cta h3 { font-size: clamp(26px, 2.8vw, 36px); line-height: 1.1; }
+#contact .cta p { font-size: 16px; line-height: 1.55; }
+@media (max-width: 900px) {
+  #contact .cta { grid-template-columns: 1fr; }
+  #contact .cta .r { clip-path: none; margin-left: 0; padding-left: 44px; }
+}
+@media (max-width: 640px) {
+  #contact .cta > div { grid-template-columns: 1fr; padding: 32px 22px; }
+  #contact .cta > div > :not(.cic) { grid-column: 1; }
+  #contact .cta .cic { grid-row: auto; width: 50px; height: 50px; border-radius: 15px; }
+  #contact .cta .r { padding-left: 22px; }
+}
+
+/* ---- Closing CTA v2: tighter to testimonials, reference proportions + soft waves ---- */
+#voices { padding-bottom: 40px; }
+#contact .cta { border-radius: 32px; }
+#contact .cta > div { grid-template-columns: 64px minmax(0, 1fr); padding: 40px 44px 44px; }
+#contact .cta .cic { width: 64px; height: 64px; border-radius: 18px; }
+#contact .cta .cic svg { width: 30px; height: 30px; }
+#contact .cta .l h3 { font-size: clamp(26px, 2.6vw, 36px); text-wrap: wrap; }
+#contact .cta .l p { max-width: 46ch; color: #4a4a4a; }
+#contact .cta .r h3 { font-size: clamp(26px, 2.6vw, 36px); max-width: 14ch; }
+#contact .cta .r .cic { background: rgba(255,255,255,.2); box-shadow: inset 0 0 0 1px rgba(255,255,255,.25); }
+#contact .cta .r::before { display: none; }
+#contact .cta .r::after { right: -18%; bottom: -55%; width: 90%; height: 110%; background:
+  radial-gradient(closest-side, transparent 78%, rgba(255,255,255,.16) 79%, rgba(255,255,255,.16) 82%, transparent 83%),
+  radial-gradient(closest-side, transparent 60%, rgba(255,255,255,.10) 61%, rgba(255,255,255,.10) 64%, transparent 65%); }
+#contact .cta .l::after { content: ""; position: absolute; left: -12%; bottom: -60%; width: 60%; height: 100%; border-radius: 50%; background: radial-gradient(closest-side, rgba(255,190,150,.35), transparent); z-index: -1; }
+@media (max-width: 640px) { #contact .cta > div { grid-template-columns: 1fr; padding: 30px 22px; } #contact .cta .r h3 { max-width: none; } }
 </style>
 
 <script is:inline>
@@ -1511,10 +1795,14 @@ mark {
   /* ---------- REAL VERIFIED DATA ARCHITECTURE ---------- */
   var SVC = {
     web: 'Web design',
+    wp: 'WordPress',
+    webapp: 'Web application',
     ecom: 'E-commerce',
+    shopify: 'Shopify',
     seo: 'SEO',
     local: 'Local SEO',
     social: 'Social media',
+    dm: 'Digital marketing',
     ads: 'Google & Meta ads',
     brand: 'Branding',
     uiux: 'UI/UX Design'
@@ -1591,7 +1879,7 @@ mark {
       ind: 'Retail & E-commerce',
       loc: 'Worli, Mumbai',
       r: 'kerala',
-      s: ['ecom', 'social'],
+      s: ['ecom'],
       goal: ['sales', 'brand'],
       m: '2',
       ml: 'shop categories: kimchi & K-fashion',
@@ -1642,7 +1930,7 @@ mark {
       ind: 'Retail & E-commerce',
       loc: 'Kerala, India',
       r: 'kerala',
-      s: ['ads'],
+      s: ['ads', 'shopify'],
       goal: ['sales'],
       m: '+240%',
       ml: 'online store revenue growth',
@@ -1654,21 +1942,21 @@ mark {
       href: '/case-studies/apolo-mattress-shopify-ecommerce/'
     },
     {
-      t: 'From digital invisibility to a lead-generating website for a Calicut Ayurvedic hospital',
+      t: 'Doctor-backed SEO for a Panchakarma hospital and Ayurveda school in Kerala',
       client: 'Greens Ayurveda',
       ind: 'Healthcare & Wellness',
-      loc: 'Calicut, Kerala',
+      loc: 'Azhiyur, Kozhikode, Kerala',
       r: 'kerala',
       s: ['seo', 'local'],
       goal: ['rank', 'leads'],
-      m: '100%',
-      ml: 'client satisfaction — Dr. Asghar, CEO',
-      ch: 'Outdated website and low discovery for Panchakarma and academy searches',
-      so: 'Mobile-first redesign, treatment content architecture, local SEO and WhatsApp enquiry flow',
+      m: '5/5',
+      ml: 'priority course keywords on Google page 1',
+      ch: 'Real clinical expertise with weak search signals, and treatment and course pages competing for the same searches',
+      so: 'One search intent per page, doctor-backed E-E-A-T, on-page optimisation, local entity clean-up and schema',
       d: '2024-09',
       read: 4,
-      img: '/case-studies/greensayurveda.webp',
-      href: '/portfolios/website-projects/'
+      img: '/case-studies/greensayurveda-seo.webp',
+      href: '/case-studies/greens-ayurveda-seo/'
     },
     {
       t: 'An education platform that moved career admissions fully online',
@@ -1676,7 +1964,7 @@ mark {
       ind: 'Education & EdTech',
       loc: 'Kochi, Kerala',
       r: 'kerala',
-      s: ['web', 'social', 'ads'],
+      s: ['web', 'ads'],
       goal: ['leads'],
       m: '600+',
       ml: 'verified online applications',
@@ -1710,7 +1998,7 @@ mark {
       ind: 'Retail & E-commerce',
       loc: 'Kochi, Kerala',
       r: 'kerala',
-      s: ['ecom', 'social'],
+      s: ['ecom'],
       goal: ['sales'],
       m: '3.2×',
       ml: 'monthly plant orders',
@@ -1727,7 +2015,7 @@ mark {
       ind: 'Healthcare & Wellness',
       loc: 'Kochi, Kerala',
       r: 'kerala',
-      s: ['uiux', 'brand'],
+      s: ['brand', 'webapp'],
       goal: ['leads', 'brand'],
       m: '99.8%',
       ml: 'system uptime & compliance',
@@ -1856,6 +2144,584 @@ mark {
       read: 5,
       img: '/case-studies/generaltech.webp',
       href: '/case-studies/general-tech-services-seo-services/'
+    },
+    {
+      t: 'Series-first navigation for an Australian off-road caravan manufacturer',
+      client: 'Hike RV Caravans',
+      ind: 'Automotive & RV Manufacturing',
+      loc: 'Campbellfield, Victoria, Australia',
+      r: 'gcc',
+      s: ['web'],
+      goal: [],
+      m: '5',
+      ml: 'caravan series · 7 named model pages',
+      ch: 'Five series and seven-plus models mixed into one undifferentiated catalogue',
+      so: 'Series-first navigation, model-level spec pages and one repeated enquiry path',
+      d: '2025-06',
+      read: 4,
+      img: '/case-studies/hike-rv-caravans.webp',
+      href: '/case-studies/hike-rv-caravans-web-design-development/'
+    },
+    {
+      t: 'A programme-first website for a Kochi hospital administration institute',
+      client: 'Sidhah Edutech',
+      ind: 'Education & Training',
+      loc: 'Kochi, Kerala',
+      r: 'kerala',
+      s: ['web'],
+      goal: [],
+      m: '2',
+      ml: 'diploma programmes presented as separate paths',
+      ch: 'Two programmes with different entry requirements blurred into one page',
+      so: 'Programme-first structure, named placements, certifications and eligibility content',
+      d: '2025-06',
+      read: 4,
+      img: '/case-studies/sidhah-edutech.webp',
+      href: '/case-studies/sidhah-edutech-website-design-development/'
+    },
+    {
+      t: 'A business-line-first website for a multi-city fresh produce supplier',
+      client: 'Aeden Fruits International',
+      ind: 'Food Supply & Cold Chain',
+      loc: 'Kochi, Bengaluru & Navi Mumbai',
+      r: 'kerala',
+      s: ['web'],
+      goal: [],
+      m: '3',
+      ml: 'business lines · 10 fruit varieties profiled',
+      ch: 'Retail, wholesale and cold chain folded into one generic services section',
+      so: 'Three distinct business-line paths, product profiles and a three-office structure',
+      d: '2025-06',
+      read: 4,
+      img: '/case-studies/aeden-fruits-international.webp',
+      href: '/case-studies/aeden-fruits-international-web-design-development/'
+    },
+    {
+      t: 'A fire-safety website that makes room for a new Civil & MEP line',
+      client: 'Cochin Suraksha',
+      ind: 'Fire & Safety Systems',
+      loc: 'Kochi, Kerala',
+      r: 'kerala',
+      s: ['web'],
+      goal: [],
+      m: '7',
+      ml: 'dedicated fire-safety service pages',
+      ch: 'Fire safety and Civil & MEP bundled together with no per-service pages',
+      so: 'Separate service pages, visible NOC consultancy and dedicated proof pages',
+      d: '2025-06',
+      read: 4,
+      img: '/case-studies/cochinsuraksha.webp',
+      href: '/case-studies/cochin-suraksha-web-design-development/'
+    },
+    {
+      t: 'A destination-by-destination website for a Kerala overseas education consultancy',
+      client: 'Mount Bell Global Studies',
+      ind: 'Education & Overseas Consultancy',
+      loc: 'Thrissur & Kochi, Kerala',
+      r: 'kerala',
+      s: ['web'],
+      goal: [],
+      m: '13',
+      ml: 'study-destination pages with their own content',
+      ch: 'No dedicated page per study destination and immigration blurred with study abroad',
+      so: 'Country pages, immigration as its own service and both offices surfaced',
+      d: '2025-06',
+      read: 4,
+      img: '/case-studies/mountbell.webp',
+      href: '/case-studies/mount-bell-global-studies-web-design-development/'
+    },
+    {
+      t: 'A destination-first, process-transparent website for a Trivandrum tour operator',
+      client: 'YatraBay',
+      ind: 'Travel & Tourism',
+      loc: 'Trivandrum, Kerala',
+      r: 'kerala',
+      s: ['web'],
+      goal: [],
+      m: '4',
+      ml: 'regional package sections · 4-step booking process',
+      ch: 'Packages across four regions combined into one hard-to-compare catalogue',
+      so: 'Region-first navigation, a visible booking process and pricing and visa details at the decision point',
+      d: '2025-06',
+      read: 4,
+      img: '/case-studies/yatrabay.webp',
+      href: '/case-studies/yatrabay/'
+    },
+    {
+      t: 'A track-first website for a Kollam BIM training and internship centre',
+      client: 'Parametx',
+      ind: 'Education & Training',
+      loc: 'Kollam, Kerala',
+      r: 'kerala',
+      s: ['web'],
+      goal: [],
+      m: '5',
+      ml: 'BIM training tracks with software detail per track',
+      ch: 'Five tracks and six audiences squeezed into one generic courses page',
+      so: 'Track-first structure, software detail per track and career outcomes beside each course',
+      d: '2025-06',
+      read: 4,
+      img: '/case-studies/parametx.webp',
+      href: '/case-studies/parametx-web-design-development/'
+    },
+    {
+      t: 'A service-first website for a Malappuram management consulting firm',
+      client: 'Uplift Global Solutions',
+      ind: 'Business Consulting',
+      loc: 'Malappuram, Kerala',
+      r: 'kerala',
+      s: ['web'],
+      goal: [],
+      m: '9',
+      ml: 'consulting services as distinct sections',
+      ch: 'Nine services and a four-stage process buried in one combined page',
+      so: 'Service-first navigation, a visible engagement process and one booking path',
+      d: '2025-06',
+      read: 4,
+      img: '/case-studies/uplift-global-solutions.webp',
+      href: '/case-studies/uplift-global-solutions-web-design-development/'
+    },
+    {
+      t: 'A destination-first, process-driven website for a study abroad consultancy',
+      client: 'U Scholar International',
+      ind: 'Education & Overseas Consultancy',
+      loc: 'Perinthalmanna, Kerala',
+      r: 'kerala',
+      s: ['web'],
+      goal: [],
+      m: '20+',
+      ml: 'study destinations organised for comparison',
+      ch: '20-plus destinations and an end-to-end service journey scattered across pages',
+      so: 'Destination-first structure, one visible service journey and track record at the decision point',
+      d: '2025-06',
+      read: 4,
+      img: '/case-studies/u-scholar-international.webp',
+      href: '/case-studies/uscholar-international-web-design-development/'
+    },
+    {
+      t: 'A personal-brand website for a PMP trainer with one clear path to enquire',
+      client: 'Visakh RJ',
+      ind: 'Education & Training',
+      loc: 'Mumbai, India',
+      r: 'kerala',
+      s: ['web'],
+      goal: [],
+      m: '6',
+      ml: 'dedicated pages: About, Gallery, Events, Testimonials, Blog, Contact',
+      ch: 'One person serving learners, companies, event guests and students from one site',
+      so: 'Story-led homepage, lightweight media handling and direct WhatsApp and phone enquiry',
+      d: '2025-06',
+      read: 4,
+      img: '/case-studies/visakh-rj-web-design.webp',
+      href: '/case-studies/visakh-rj-web-design/'
+    },
+    {
+      t: 'A cross-industry course store for a UK online certification platform',
+      client: 'GetSkill Online',
+      ind: 'Online Education & E-Learning',
+      loc: 'Blackburn, UK',
+      r: 'gcc',
+      s: ['ecom'],
+      goal: [],
+      m: '9',
+      ml: 'course categories · bundles & single courses',
+      ch: 'Unrelated course categories mixed together with one high-friction enrollment path',
+      so: 'Category structure, bundle purchasing, named testimonials and WhatsApp, lead form and direct enrollment',
+      d: '2025-06',
+      read: 4,
+      img: '/case-studies/getskillonline.webp',
+      href: '/case-studies/getskillonline-ecommerce-website-development/'
+    },
+    {
+      t: 'A compliance-first WordPress website for a KML-registered gold loan company',
+      client: 'Abrus Krishna Finance',
+      ind: 'Financial Services',
+      loc: 'Guruvayoor, Kerala',
+      r: 'kerala',
+      s: ['wp'],
+      goal: [],
+      m: '9',
+      ml: 'loan pages, each built around its own search intent',
+      ch: 'Nine loan products bundled together with no visible compliance or borrower journey',
+      so: 'Intent-based loan pages, a KML compliance page and a visible 15–30 minute approval process',
+      d: '2025-06',
+      read: 5,
+      img: '/case-studies/abruskrishna.webp',
+      href: '/case-studies/abrus-krishna-finance-wordpress-development/'
+    },
+    {
+      t: 'A multilingual WordPress website for a German Ayurvedic wellness retreat',
+      client: 'Varma Ayurveda',
+      ind: 'Healthcare & Wellness',
+      loc: 'Breisach am Rhein, Germany',
+      r: 'gcc',
+      s: ['wp'],
+      goal: [],
+      m: '4',
+      ml: 'languages · 10 treatments under one retreat structure',
+      ch: 'No genuine multilingual content, treatment structure or hotel-style booking flow',
+      so: 'German, French, Italian and Spanish content, treatment pages and a room-and-treatment booking form',
+      d: '2025-06',
+      read: 5,
+      img: '/case-studies/varmaayurveda.webp',
+      href: '/case-studies/varma-ayurveda-wordpress-development/'
+    },
+    {
+      t: 'A booking-focused WordPress website for an Alleppey houseboat operator',
+      client: 'Roja Houseboats',
+      ind: 'Hospitality & Tourism',
+      loc: 'Alleppey, Kerala',
+      r: 'kerala',
+      s: ['wp'],
+      goal: [],
+      m: '3',
+      ml: 'bedroom-based boat pages · premium page & planning guides',
+      ch: 'Boats listed in one block and first-time travellers unsure how booking works',
+      so: 'Pages by bedroom count, a premium page, a booking guide and an Alleppey vs Kumarakom comparison',
+      d: '2025-06',
+      read: 4,
+      img: '/case-studies/roja-houseboats.webp',
+      href: '/case-studies/roja-houseboats-wordpress-development/'
+    },
+    {
+      t: 'A calm, trust-first UI/UX for an Ayurvedic wellness retreat in Germany',
+      client: 'Varma Ayurveda',
+      ind: 'Healthcare & Wellness',
+      loc: 'Breisach am Rhein, Germany',
+      r: 'gcc',
+      s: ['uiux'],
+      goal: [],
+      m: '4',
+      ml: 'languages · 10 treatments in one visual structure',
+      ch: 'No visual hierarchy, wellness-appropriate design or layout built for four languages',
+      so: 'A calm visual system, a multilingual-ready component set, a consistent treatment pattern and a guided booking flow',
+      d: '2025-06',
+      read: 4,
+      img: '/case-studies/varmaayurveda.webp',
+      href: '/case-studies/varma-ayurveda-ui-ux-design/'
+    },
+    {
+      t: 'Instagram and Facebook campaigns for a Kerala plantation tea brand',
+      client: 'Harrisons Tea Town',
+      ind: 'Food & Beverage',
+      loc: 'Kochi, Kerala',
+      r: 'kerala',
+      s: ['social'],
+      goal: [],
+      m: '3',
+      ml: 'plantation estates behind the brand story',
+      ch: 'A wide tea range and a century of plantation heritage that a feed of random product shots could not explain',
+      so: 'Range-based content themes, certification proof, festive gifting campaigns and a clear route to the shop',
+      d: '2025-06',
+      read: 4,
+      img: '/case-studies/harrisons-tea-town.webp',
+      href: '/case-studies/harrisons-tea-town-social-media/'
+    },
+    {
+      t: 'Turning finished store installations into an Instagram and Facebook portfolio',
+      client: 'Direction North',
+      ind: 'Retail Display Manufacturing',
+      loc: 'Kochi, Kerala',
+      r: 'kerala',
+      s: ['social'],
+      goal: [],
+      m: '2',
+      ml: 'platforms run as one B2B portfolio',
+      ch: 'Best work delivered inside client stores where new buyers never see it',
+      so: 'A project showcase series, client-work credibility posts, an editorial calendar and enquiry handling',
+      d: '2025-06',
+      read: 4,
+      img: '/case-studies/direction-north.webp',
+      href: '/case-studies/direction-north-digital-marketing/'
+    },
+    {
+      t: 'A location-first Instagram and Facebook presence for a hotel near Cochin Airport',
+      client: 'Hotel Elite Palazzo',
+      ind: 'Hospitality & Travel',
+      loc: 'Angamaly, Kerala',
+      r: 'kerala',
+      s: ['social'],
+      goal: [],
+      m: '4',
+      ml: 'guest types served by one profile',
+      ch: 'Transit, business, pilgrim and event guests all looking at the same profile',
+      so: 'Airport and railway location up front, guest-type content and facilities shown in use',
+      d: '2025-06',
+      read: 4,
+      img: '/client logos/elite-palazzo.png',
+      href: '/case-studies/hotel-elite-palazzo-social-media/'
+    },
+    {
+      t: 'A dish-led Instagram and Facebook presence for a Vyttila Kerala restaurant',
+      client: 'Shaapp Food',
+      ind: 'Restaurant & Food',
+      loc: 'Vyttila, Kochi',
+      r: 'kerala',
+      s: ['social'],
+      goal: [],
+      m: '2013',
+      ml: 'serving Vyttila since',
+      ch: 'A long menu posted at random and opening hours that were hard to find',
+      so: 'Dish-based content themes, a trust-led profile and timings and location front and centre',
+      d: '2025-06',
+      read: 4,
+      img: '/client logos/shaapp-food.png',
+      href: '/case-studies/shaapp-food-social-media/'
+    },
+    {
+      t: 'A location-first social presence for a business hotel next to Vyttila Metro',
+      client: 'Alankar Avenue',
+      ind: 'Hospitality & Travel',
+      loc: 'Vyttila, Kochi',
+      r: 'kerala',
+      s: ['social'],
+      goal: [],
+      m: '200 m',
+      ml: 'from Vyttila Metro, stated up front',
+      ch: 'A strong metro-side location that visitors did not notice quickly',
+      so: 'Location-first profile, content for business and leisure guests and one clear enquiry route',
+      d: '2025-06',
+      read: 4,
+      img: '/client logos/alankar-avenue.png',
+      href: '/case-studies/alankar-avenue-social-media/'
+    },
+    {
+      t: 'Social media campaigns that turn retail display projects into a B2B portfolio',
+      client: 'Direction North',
+      ind: 'Retail Display Manufacturing',
+      loc: 'Kochi, Kerala',
+      r: 'kerala',
+      s: ['dm'],
+      goal: [],
+      m: '2',
+      ml: 'channels on one structured content calendar',
+      ch: 'Visual project work shared sporadically, with no system for turning enquiries into sales conversations',
+      so: 'A project showcase series, brand association content, a content calendar and community handling',
+      d: '2025-06',
+      read: 4,
+      img: '/case-studies/direction-north.webp',
+      href: '/case-studies/direction-north-digital-marketing-campaigns/'
+    },
+    {
+      t: 'Social media campaigns that turn guest praise into bookings for a Wayanad eco-resort',
+      client: 'Olives Boutique Resort',
+      ind: 'Hospitality & Travel',
+      loc: 'Wayanad, Kerala',
+      r: 'kerala',
+      s: ['dm'],
+      goal: [],
+      m: '3',
+      ml: 'bookable packages carried into social campaigns',
+      ch: 'Irregular posting with no link between social content and the resort\'s bookable packages',
+      so: 'A content calendar, package-linked campaigns, review-led storytelling and community handling',
+      d: '2025-06',
+      read: 4,
+      img: '/case-studies/olivesresort.webp',
+      href: '/case-studies/olives-boutique-resort-digital-marketing-campaigns/'
+    },
+    {
+      t: 'A problem-led Shopify store for an Indian hair care brand',
+      client: 'Nuelments',
+      ind: 'Retail & E-commerce',
+      loc: 'India',
+      r: 'kerala',
+      s: ['shopify'],
+      goal: [],
+      m: '1',
+      ml: 'tap to any product from the main menu',
+      ch: 'A crowded hair care category where shoppers start with a problem, not a product',
+      so: 'Problem-led merchandising, shoppable videos, ingredient badges and a short mobile checkout',
+      d: '2025-06',
+      read: 6,
+      img: '/case-studies/nuelments.webp',
+      href: '/case-studies/nuelments-shopify-ecommerce/'
+    },
+    {
+      t: 'A structured Shopify storefront for a UAE modest fashion brand',
+      client: 'Modestsisters',
+      ind: 'Retail & E-commerce',
+      loc: 'UAE',
+      r: 'uae',
+      s: ['shopify'],
+      goal: [],
+      m: '8',
+      ml: 'categories across Clothing, Accessories & Sunglasses',
+      ch: 'A flat catalog with no category split, hidden shipping terms and inconsistent sale pricing',
+      so: 'Clothing and Accessories categories, site-wide free UAE shipping, consistent sale pricing and Instagram support',
+      d: '2025-06',
+      read: 4,
+      img: '/case-studies/modestsisters.webp',
+      href: '/case-studies/modestsisters-shopify-ecommerce/'
+    },
+    {
+      t: 'One platform for six facilities service lines in Dubai',
+      client: 'Libra Group UAE',
+      ind: 'Facilities Management',
+      loc: 'Dubai, UAE',
+      r: 'uae',
+      s: ['webapp'],
+      goal: [],
+      m: '6',
+      ml: 'service lines, each with its own page',
+      ch: 'Six different B2B services on one undifferentiated homepage, with SIRA certification buried in copy',
+      so: 'A page per service line, SIRA certification as a trust signal, one consistent quote CTA and a single visual identity',
+      d: '2025-06',
+      read: 4,
+      img: '/case-studies/libragroupuae.webp',
+      href: '/case-studies/libra-group-uae-web-application-design/'
+    },
+    {
+      t: 'Direct-booking SEO for a desert safari and dune buggy tour operator in Dubai',
+      client: 'Expert Rangers',
+      ind: 'Hospitality & Tourism',
+      loc: 'Dubai, UAE',
+      r: 'uae',
+      s: ['seo'],
+      goal: [],
+      m: '20+',
+      ml: 'desert, city & sea tours, each mapped to one search',
+      ch: 'Travel marketplaces outranking the operator for its own tours',
+      so: 'One page per tour type, duplicate URL clean-up, entity clarity and TouristTrip schema',
+      d: '2025-06',
+      read: 6,
+      img: '/case-studies/expertrangers.webp',
+      href: '/case-studies/expert-rangers-seo/'
+    },
+    {
+      t: 'Multi-branch local SEO in English and Arabic for an Abu Dhabi tyre and car service centre',
+      client: 'Liberty Car Care',
+      ind: 'Automotive Services',
+      loc: 'Abu Dhabi, UAE',
+      r: 'uae',
+      s: ['seo'],
+      goal: [],
+      m: '7',
+      ml: 'branches with one consistent listing each',
+      ch: 'Seven branches with inconsistent details and a name shared with unrelated businesses',
+      so: 'One page per service, branch-level NAP alignment, entity disambiguation and bilingual on-page SEO',
+      d: '2025-06',
+      read: 6,
+      img: '/case-studies/libertycarcare.png',
+      href: '/case-studies/liberty-car-care-seo/'
+    },
+    {
+      t: 'Local SEO that took a KML-registered gold loan company in Guruvayoor to Google page 1',
+      client: 'Abrus Krishna Finance',
+      ind: 'Gold Loans & Micro Finance',
+      loc: 'Thaikad, Guruvayoor, Kerala',
+      r: 'kerala',
+      s: ['seo'],
+      goal: [],
+      m: '5/5',
+      ml: 'priority loan keywords on Google page 1, #1 for KML-registered lender',
+      ch: 'A new website with no search history in a crowded local lending market where trust comes before rates',
+      so: 'One page per loan type, KML trust and compliance pages, on-page optimisation, local SEO and schema',
+      d: '2025-06',
+      read: 6,
+      img: '/case-studies/abruskrishna.webp',
+      href: '/case-studies/abrus-krishna-finance-seo/'
+    },
+    {
+      t: 'A bilingual, tyre-first car service website with tyre size search and pay-after-fitting',
+      client: 'Liberty Car Care',
+      ind: 'Tyres, Batteries & Car Service',
+      loc: 'Abu Dhabi, UAE',
+      r: 'uae',
+      s: ['web'],
+      goal: [],
+      m: 'EN+AR',
+      ml: 'full bilingual site with one-click language toggle',
+      ch: 'Drivers rarely know their tyre size, and paying upfront for a tyre online feels risky',
+      so: 'Homepage tyre size search, home or branch fitting paths, guarantees above the fold and full English and Arabic',
+      d: '2025-06',
+      read: 6,
+      img: '/case-studies/libertycarcare-website.webp',
+      href: '/case-studies/liberty-car-care-website-design/'
+    },
+    {
+      t: 'A brand-led B2B website for a Kochi CCTV and networking products company',
+      client: 'TexaGlobal Technologies',
+      ind: 'CCTV, Networking & IT Products',
+      loc: 'Elamkulam, Kochi, Kerala',
+      r: 'kerala',
+      s: ['web'],
+      goal: [],
+      m: '5',
+      ml: 'product brands, each with its own browsing path',
+      ch: 'A wide, technical multi-brand catalogue in a crowded CCTV market full of unbranded imports',
+      so: 'Browse by product or by brand, STQC-certified cameras on the homepage, and quote, Contact Now and WhatsApp enquiries',
+      d: '2025-06',
+      read: 6,
+      img: '/case-studies/texaglobal.webp',
+      href: '/case-studies/texaglobal-technologies-website-design/'
+    },
+    {
+      t: 'A country-led website for a Kochi study abroad consultancy with 12 destinations',
+      client: 'Dream Abroad',
+      ind: 'Overseas Education Consultancy',
+      loc: 'Kaloor, Kochi, Kerala',
+      r: 'kerala',
+      s: ['web'],
+      goal: [],
+      m: '12',
+      ml: 'study destinations to compare in one scroll',
+      ch: 'Too many countries and courses for students, and parents who need proof before they call',
+      so: 'Country and course menus, destination cards with real numbers, Google reviews on the homepage and callback forms',
+      d: '2025-06',
+      read: 6,
+      img: '/case-studies/dreamabroad.webp',
+      href: '/case-studies/dream-abroad-website-design/'
+    },
+    {
+      t: 'A service-led WordPress website for an Ajman woodworking machinery supplier',
+      client: 'Novo Machineries',
+      ind: 'Woodworking Machinery Sales & Support',
+      loc: 'Mowaihat 1, Ajman, UAE',
+      r: 'uae',
+      s: ['web'],
+      goal: [],
+      m: '4',
+      ml: 'core services up front, sales to training',
+      ch: 'A full-service machinery partner whose offer looked like just a machine shop',
+      so: 'Service-first homepage, product lines by workshop type, slider and gallery, and one-tap calling',
+      d: '2025-06',
+      read: 6,
+      img: '/case-studies/novomachineries.webp',
+      href: '/case-studies/novo-machineries-website-design/'
+    },
+    {
+      t: 'A service-led website for a Dubai building maintenance, MEP and fit-out company',
+      client: 'Sriyas Technical Works',
+      ind: 'Maintenance, MEP & Fit-out',
+      loc: 'Al Garhoud, Dubai, UAE',
+      r: 'uae',
+      s: ['web'],
+      goal: [],
+      m: '11',
+      ml: 'technical services in one clear grid',
+      ch: 'Eleven services that risked looking scattered, for both homeowners and commercial clients',
+      so: 'Scannable service cards, projects, counters and client logos as proof, and contact on every page',
+      d: '2025-06',
+      read: 7,
+      img: '/case-studies/sriyasuae.webp',
+      href: '/case-studies/sriyas-website-design/'
+    },
+    {
+      t: 'A production-line website for a woodworking machinery supplier in the UAE and Saudi Arabia',
+      client: 'Al Qaisar Machinery',
+      ind: 'Woodworking Machinery Trading',
+      loc: 'Dubai, Sharjah & Riyadh',
+      r: 'gcc',
+      s: ['web'],
+      goal: [],
+      m: '3',
+      ml: 'production-line categories matching how buyers plan',
+      ch: 'A large technical range for buyers who plan whole factories across two countries',
+      so: 'Production-line navigation, machine product pages, featured brands, and quick enquiry and WhatsApp',
+      d: '2025-06',
+      read: 7,
+      img: '/case-studies/alqaisarmachinery.webp',
+      href: '/case-studies/al-qaisar-machinery-website-design/'
     }
   ];
 
@@ -1963,8 +2829,8 @@ mark {
   var gi = {
     leads: '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
     rank: '<circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4M8 12l2 2 4-5"/>',
-    sales: '<path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/>',
-    brand: '<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>'
+    sales: '<circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>',
+    brand: '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>'
   };
 
   var gd = {
@@ -2038,7 +2904,7 @@ mark {
         '<div><em>Our work</em><span>' + hl(c.so) + '</span></div>' +
       '</div>' +
       '<div class="thumb">' +
-        '<img src="' + c.img + '" alt="' + c.t + '" loading="lazy" />' +
+        '<img src="' + c.img + '" alt="' + c.t + '" loading="lazy" onerror="this.remove()" />' +
       '</div>' +
       '<div class="foot">' +
         '<div class="svc">' +
@@ -2050,7 +2916,12 @@ mark {
   }
 
   var lib = $('#lib');
-  function render(anim) {
+  // Pagination: show 9 cards, then 9 more per "Load More Projects" click.
+  // Any filter/search/sort change (render called without `keep`) resets to the first 9.
+  var PAGE = 9, shown = PAGE;
+  function render(anim, keep) {
+    var prevShown = keep ? shown - PAGE : 0;
+    if (!keep) shown = PAGE;
     if (!lib) return;
     var q = state.q.toLowerCase().trim();
     var list = C.filter(function(c) {
@@ -2067,18 +2938,23 @@ mark {
       return b.d.localeCompare(a.d);
     });
 
-    lib.innerHTML = list.map(card).join('');
+    var visible = list.slice(0, shown);
+    lib.innerHTML = visible.map(card).join('');
 
-    if (anim && !reduce) {
+    if ((anim || keep) && !reduce) {
       $$('.csc', lib).forEach(function(el, i) {
-        el.style.setProperty('--k', i);
+        if (i < prevShown) return;
+        el.style.setProperty('--k', i - prevShown);
         el.classList.add('pop');
       });
     }
 
+    var moreWrap = $('#moreWrap');
+    if (moreWrap) moreWrap.hidden = list.length <= shown;
+
     var countEl = $('#count');
     if (countEl) {
-      countEl.innerHTML = 'Showing <b>' + list.length + '</b> of <b>' + C.length + '</b> verified case studies';
+      countEl.innerHTML = 'Showing <b>' + visible.length + '</b> of <b>' + list.length + '</b> verified case studies';
     }
 
     var emptyEl = $('#empty');
@@ -2224,10 +3100,18 @@ mark {
     } catch (e) {}
   }
   restoreFilters();
+  var loadMoreBtn = $('#loadMore');
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', function() {
+      shown += PAGE;
+      render(0, true);
+    });
+  }
+
   render(0);
   persistFilters();
   var renderOnly = render;
-  render = function(anim) { renderOnly(anim); persistFilters(); };
+  render = function(anim, keep) { renderOnly(anim, keep); persistFilters(); };
   window.addEventListener("pageshow", function(e) { if (e.persisted) { restoreFilters(); renderOnly(0); } });
 
   /* Reading Progress Bar */

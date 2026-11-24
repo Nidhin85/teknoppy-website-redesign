@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b1309"/>
+      <stop offset=".45" stop-color="#8a3510"/>
+      <stop offset=".75" stop-color="#e0621c"/>
+      <stop offset="1" stop-color="#ff9a45"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".55" cy=".72" r=".5">
+      <stop offset="0" stop-color="#ffc27a" stop-opacity=".9"/>
+      <stop offset=".5" stop-color="#ff8a35" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#ff8a35" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a1a0c"/>
+      <stop offset="1" stop-color="#120905"/>
+    </linearGradient>
+    <linearGradient id="bld" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a1710"/>
+      <stop offset="1" stop-color="#160c08"/>
+    </linearGradient>
+    <pattern id="win" width="9" height="11" patternUnits="userSpaceOnUse">
+      <rect x="2" y="2" width="4" height="5" fill="#ffb562" opacity=".85"/>
+    </pattern>
+    <pattern id="win2" width="7" height="9" patternUnits="userSpaceOnUse">
+      <rect x="1.5" y="2" width="3" height="4" fill="#ffd08a" opacity=".7"/>
+    </pattern>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3"/></filter>
+    <g id="skyline">
+      <!-- background towers -->
+      <g fill="url(#bld)" opacity=".75">
+        <rect x="40" y="350" width="34" height="70"/><rect x="120" y="330" width="28" height="90"/>
+        <rect x="210" y="320" width="30" height="100"/><rect x="300" y="300" width="26" height="120"/>
+        <rect x="560" y="310" width="30" height="110"/><rect x="640" y="325" width="34" height="95"/>
+        <rect x="720" y="340" width="26" height="80"/><rect x="845" y="350" width="40" height="70"/>
+      </g>
+      <!-- main towers -->
+      <g fill="url(#bld)">
+        <rect x="10" y="372" width="40" height="48"/>
+        <rect x="58" y="330" width="34" height="90"/><path d="M58 330l17-14 17 14z"/>
+        <rect x="100" y="352" width="30" height="68"/>
+        <rect x="138" y="300" width="30" height="120"/><rect x="146" y="286" width="14" height="14"/>
+        <rect x="176" y="340" width="36" height="80"/>
+        <rect x="220" y="290" width="34" height="130"/><path d="M220 290h34l-17-22z"/>
+        <rect x="262" y="330" width="28" height="90"/>
+        <rect x="296" y="270" width="32" height="150"/><rect x="306" y="252" width="12" height="18"/>
+        <rect x="336" y="318" width="30" height="102"/>
+        <rect x="372" y="285" width="36" height="135"/>
+        <rect x="414" y="340" width="26" height="80"/>
+        <!-- Burj-style spire tower -->
+        <path d="M446 420V300h10v-60h8v-70h6v-60h3l3-70 3 70h3v60h6v70h8v60h10v120z"/>
+        <rect x="518" y="320" width="32" height="100"/>
+        <rect x="556" y="282" width="30" height="138"/><path d="M556 282h30l-15-18z"/>
+        <rect x="592" y="338" width="34" height="82"/>
+        <rect x="632" y="296" width="30" height="124"/><rect x="641" y="280" width="12" height="16"/>
+        <rect x="668" y="328" width="28" height="92"/>
+        <rect x="702" y="306" width="32" height="114"/>
+        <rect x="740" y="352" width="26" height="68"/>
+        <rect x="860" y="360" width="40" height="60"/>
+      </g>
+      <!-- windows -->
+      <g fill="url(#win)">
+        <rect x="60" y="336" width="30" height="84"/><rect x="140" y="304" width="26" height="116"/>
+        <rect x="222" y="294" width="30" height="126"/><rect x="298" y="276" width="28" height="144"/>
+        <rect x="374" y="290" width="32" height="130"/><rect x="558" y="288" width="26" height="132"/>
+        <rect x="634" y="300" width="26" height="120"/><rect x="704" y="310" width="28" height="110"/>
+      </g>
+      <g fill="url(#win2)">
+        <rect x="178" y="344" width="32" height="76"/><rect x="264" y="334" width="24" height="86"/>
+        <rect x="338" y="322" width="26" height="98"/><rect x="520" y="324" width="28" height="96"/>
+        <rect x="594" y="342" width="30" height="78"/><rect x="670" y="332" width="24" height="88"/>
+        <rect x="102" y="356" width="26" height="64"/><rect x="12" y="376" width="36" height="44"/>
+        <path d="M450 420V304h10v-60h8v-70h4v250z" opacity=".9"/>
+      </g>
+      <!-- sail-shaped hotel -->
+      <path d="M778 420V268c26 8 58 40 74 86 6 18 8 42 8 66z" fill="url(#bld)"/>
+      <path d="M778 268c40 14 70 60 76 120" fill="none" stroke="#ffb562" stroke-width="2.5" opacity=".9"/>
+      <path d="M790 300l50 120M790 340l34 80M790 380l20 40" stroke="#ffcf8f" stroke-width="1.2" opacity=".55"/>
+      <rect x="774" y="250" width="4" height="170" fill="#ffb562"/>
+    </g>
+  </defs>
+
+  <rect width="900" height="560" fill="url(#sky)"/>
+  <rect width="900" height="560" fill="url(#glow)"/>
+
+  <use href="#skyline"/>
+  <rect x="0" y="418" width="900" height="3" fill="#ff9b4a" opacity=".7"/>
+
+  <!-- water + reflection -->
+  <rect y="420" width="900" height="140" fill="url(#water)"/>
+  <g transform="translate(0 840) scale(1 -1)" opacity=".28" filter="url(#blur)"><use href="#skyline"/></g>
+  <g fill="#ffb562" opacity=".5">
+    <rect x="140" y="440" width="26" height="3" rx="1.5"/><rect x="300" y="452" width="40" height="3" rx="1.5"/>
+    <rect x="452" y="436" width="30" height="3" rx="1.5"/><rect x="460" y="470" width="44" height="3" rx="1.5"/>
+    <rect x="560" y="448" width="34" height="3" rx="1.5"/><rect x="700" y="462" width="30" height="3" rx="1.5"/>
+    <rect x="786" y="444" width="40" height="3" rx="1.5"/><rect x="230" y="480" width="24" height="3" rx="1.5"/>
+  </g>
+
+  <!-- flight path, plane, pin -->
+  <path d="M110 330C200 160 420 70 760 112" fill="none" stroke="#fff" stroke-width="2.5" stroke-dasharray="9 9" stroke-linecap="round" opacity=".9"/>
+  <g transform="translate(300 150) rotate(-28)" fill="#fff">
+    <path d="M-34 0c0-4 4-6 8-6h18l20-26h9l-10 26h20l9-10h6l-5 16 5 16h-6l-9-10h-20l10 26h-9L-8 6h-18c-4 0-8-2-8-6z"/>
+  </g>
+  <g transform="translate(776 108)">
+    <path d="M0 34C-14 16-22 6-22-6a22 22 0 0 1 44 0C22 6 14 16 0 34z" fill="#f26a1b" stroke="#fff" stroke-width="1.5"/>
+    <circle cy="-6" r="8" fill="#fff"/>
+  </g>
+</svg>

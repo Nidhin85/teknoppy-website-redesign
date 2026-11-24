@@ -1,372 +1,150 @@
 ---
-import { ArrowRight, Play, Globe2, Smile, Award, Star } from "lucide-react";
+import { ArrowUpRight, Play, Layers, Users, Award, MapPin } from "lucide-react";
 import home from "../data/home.json";
+
+// Stats strip icons, in the same order as home.hero.trustBar
+const statIcons = [Layers, Users, Award, MapPin];
 ---
 
-<section
-  id="hero-intro"
-  class="relative py-10 sm:py-12 lg:py-16 overflow-hidden bg-gradient-to-b from-[#FFFDF9] via-white to-white"
->
-  <!-- Rich Decorative Background Layer -->
-  <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
-    <!-- Fine grid pattern texture -->
-    <div
-      class="absolute inset-0 bg-[linear-gradient(to_right,rgba(240,90,44,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(240,90,44,0.02)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_at_center,white,transparent_85%)]"
-    >
-    </div>
+<section id="hero-intro" class="home-hero relative overflow-hidden">
+  <!-- Ambient light (decorative) -->
+  <div class="home-hero-bg absolute inset-0 pointer-events-none" aria-hidden="true"></div>
 
-    <!-- Glowing Orbs (Warm Agency Theme) -->
-    <div
-      class="absolute -top-32 -right-48 w-[600px] h-[600px] rounded-full bg-secondary/8 blur-[135px] animate-[pulse_8s_infinite_alternate]"
-    >
-    </div>
-    <div
-      class="absolute top-[25%] -left-48 w-[500px] h-[500px] rounded-full bg-primary/4 blur-[120px]"
-    >
-    </div>
-    <div
-      class="absolute -bottom-48 right-[10%] w-[500px] h-[500px] rounded-full bg-secondary/6 blur-[100px] animate-[pulse_6s_infinite_alternate_1s]"
-    >
-    </div>
+  <div class="relative z-10 max-w-[1320px] mx-auto px-5 sm:px-8 lg:px-12 pt-8 sm:pt-12 lg:pt-14">
+    <div class="grid lg:grid-cols-12 gap-8 lg:gap-6 items-center">
+      <!-- Copy -->
+      <div class="hero-copy lg:col-span-6 xl:col-span-6 flex flex-col items-center text-center lg:items-start lg:text-left relative z-20">
+        <h1 class="hero-h1 font-black text-neutral-950 tracking-[-0.035em] leading-[1.02] text-[2.65rem] min-[420px]:text-5xl sm:text-6xl lg:text-[4.1rem] xl:text-[4.6rem]" data-magnetic-heading>
+          {home.hero.h1Lead} <em class="hero-accent not-italic">{home.hero.h1Accent}</em>
+        </h1>
 
-    <!-- Office graphic concentric circular outlines -->
-    <svg
-      class="absolute right-0 top-12 w-[600px] h-[600px] opacity-15 text-primary pointer-events-none"
-      viewBox="0 0 200 200"
-      fill="none"
-    >
-      <circle
-        cx="120"
-        cy="80"
-        r="80"
-        stroke="currentColor"
-        stroke-width="0.3"
-        stroke-dasharray="2 2"></circle>
-      <circle cx="120" cy="80" r="60" stroke="currentColor" stroke-width="0.3"
-      ></circle>
-      <circle
-        cx="120"
-        cy="80"
-        r="40"
-        stroke="currentColor"
-        stroke-width="0.6"
-        stroke-dasharray="4 4"></circle>
-      <path
-        d="M20,100 C60,40 140,160 180,100"
-        stroke="currentColor"
-        stroke-width="0.3"></path>
-    </svg>
-  </div>
+        <h2 class="hero-h2 mt-5 sm:mt-6 text-lg sm:text-xl lg:text-[1.35rem] font-bold leading-snug tracking-tight text-neutral-800 max-w-xl">
+          {home.hero.subheadline.pre} <span class="text-primary">{home.hero.subheadline.a1}</span> {home.hero.subheadline.mid1} <span class="text-primary">{home.hero.subheadline.a2}</span> {home.hero.subheadline.mid2} <span class="text-primary">{home.hero.subheadline.a3}</span> {home.hero.subheadline.post}
+        </h2>
 
-  <div
-    class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-12 grid xl:grid-cols-12 gap-12 xl:gap-8 items-center relative z-10"
-  >
-    <!-- Content (Left Column) -->
-    <div
-      class="hero-copy xl:col-span-5 flex flex-col items-center text-center xl:items-start xl:text-left pt-0 xl:pt-2 relative z-20"
-    >
-      <!-- Headline (H1) -->
-      <h1
-        class="hero-h1 text-4xl sm:text-5xl lg:text-[48px] xl:text-[54px] font-black leading-[1.15] tracking-tight text-neutral-900 mb-4 sm:mb-5"
-        data-magnetic-heading
-      >
-        <span class="block"
-          >{home.hero.h1Lead} <span
-            class="inline-block bg-primary text-white px-4 py-0.5 rounded-[1.5rem] transform -rotate-1 mt-1 shadow-md"
-            >{home.hero.h1Accent}</span
-          ></span
-        >
-      </h1>
-
-      <!-- H2 — AEO Subheadline (keeps the signature pill motif) -->
-      <h2
-        class="hero-h2 text-lg sm:text-xl lg:text-[22px] font-bold leading-snug tracking-tight text-neutral-800 mb-4 sm:mb-6 max-w-xl mx-auto xl:mx-0"
-      >
-        {home.hero.subheadline.pre} <span
-          class="inline-block bg-[#F9AE42]/20 text-primary px-2 py-0.5 rounded-lg shadow-sm"
-          >{home.hero.subheadline.a1}</span
-        > {home.hero.subheadline.mid1} <span
-          class="inline-block bg-primary text-white px-2 py-0.5 rounded-lg shadow-sm"
-          >{home.hero.subheadline.a2}</span
-        > {home.hero.subheadline.mid2} <span
-          class="inline-block bg-cream border border-primary/20 text-primary px-2 py-0.5 rounded-lg shadow-sm"
-          >{home.hero.subheadline.a3}</span
-        > {home.hero.subheadline.post}
-      </h2>
-
-      <p
-        class="hero-body text-base lg:text-lg text-neutral-600 mb-6 sm:mb-8 max-w-lg mx-auto xl:mx-0 leading-relaxed font-medium"
-      >
-        {home.hero.body}<span id="hero-body-more">{" "}{home.hero.bodyMore}</span>{" "}<button
-          type="button"
-          id="hero-body-toggle"
-          class="hero-body-toggle inline-flex items-baseline gap-1 font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary transition-colors cursor-pointer"
-          aria-expanded="true"
-          aria-controls="hero-body-more"
-          data-more={home.hero.readMoreLabel}
-          data-less={home.hero.readLessLabel}
-          hidden
-        >
-          <span class="hero-toggle-label">{home.hero.readLessLabel}</span>
-          <svg
-            class="hero-toggle-chevron w-3.5 h-3.5 self-center transition-transform duration-200"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
+        <p class="hero-body mt-4 text-base lg:text-[1.0625rem] text-neutral-600 max-w-lg leading-relaxed font-medium">
+          {home.hero.body}<span id="hero-body-more">{" "}{home.hero.bodyMore}</span>{" "}<button
+            type="button"
+            id="hero-body-toggle"
+            class="hero-body-toggle inline-flex items-baseline gap-1 font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary transition-colors cursor-pointer"
+            aria-expanded="true"
+            aria-controls="hero-body-more"
+            data-more={home.hero.readMoreLabel}
+            data-less={home.hero.readLessLabel}
+            hidden
           >
-            <path d="m6 9 6 6 6-6"></path>
-          </svg>
-        </button>
-      </p>
+            <span class="hero-toggle-label">{home.hero.readLessLabel}</span>
+            <svg class="hero-toggle-chevron w-3.5 h-3.5 self-center transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+          </button>
+        </p>
 
-      <!-- Primary Action Area -->
-      <div
-        class="hero-ctas flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto mb-2"
-      >
-        <a
-          href={home.hero.primaryCta.href}
-          data-magnetic-btn
-          class="hero-cta-primary cta-pulse-strong cta-shimmer-btn group w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.25)] hover:bg-primary/95 hover:shadow-[0_6px_25px_rgba(240,90,44,0.35)] hover:-translate-y-0.5 transition-all duration-300 leading-snug sm:whitespace-nowrap text-center"
-        >
-          <span>{home.hero.primaryCta.label}</span>
-          <ArrowRight className="cta-arrow w-4 h-4" />
-        </a>
-        <a
-          href={home.hero.secondaryCta.href}
-          class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 text-base font-bold text-neutral-900 bg-white border border-neutral-200/90 rounded-full hover:border-primary hover:text-primary hover:shadow hover:-translate-y-0.5 transition-all duration-300 shadow-sm leading-snug sm:whitespace-nowrap text-center"
-        >
-          <span
-            class="flex items-center justify-center w-6 h-6 rounded-full border border-neutral-300 text-primary"
+        <div class="hero-ctas mt-7 flex flex-col min-[420px]:flex-row items-center gap-3 w-full min-[420px]:w-auto">
+          <a
+            href={home.hero.primaryCta.href}
+            data-magnetic-btn
+            class="hero-cta-primary cta-pulse-strong cta-shimmer-btn group w-full min-[420px]:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 text-[0.98rem] font-bold text-white bg-primary rounded-full hover:bg-primary/95 transition-all duration-300 leading-snug sm:whitespace-nowrap text-center"
           >
-            <Play className="w-2.5 h-2.5 fill-current ml-0.5" />
+            <span>{home.hero.primaryCta.label}</span>
+            <ArrowUpRight className="cta-arrow w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+          </a>
+          <a
+            href={home.hero.secondaryCta.href}
+            class="group w-full min-[420px]:w-auto inline-flex items-center justify-center gap-3 px-6 py-3 text-[0.98rem] font-bold text-neutral-900 bg-white/70 backdrop-blur border border-neutral-300/80 rounded-full hover:border-primary/60 hover:text-primary transition-all duration-300 leading-snug sm:whitespace-nowrap text-center"
+          >
+            <span class="flex items-center justify-center w-8 h-8 rounded-full border-2 border-neutral-900 group-hover:border-primary transition-colors">
+              <Play className="w-3 h-3 fill-current ml-0.5" />
+            </span>
+            {home.hero.secondaryCta.label}
+          </a>
+        </div>
+
+        <div class="cta-slide-left mt-5 flex flex-col sm:flex-row items-center gap-x-4 gap-y-1.5">
+          <span class="text-[13px] text-neutral-500 font-medium text-center sm:text-left">
+            Tell us what you need and we'll help you find the right solution.
           </span>
-          {home.hero.secondaryCta.label}
-        </a>
+          <a
+            href="/request-a-quote/"
+            class="cta-float-primary cta-float-sway cta-delay-1 cta-pulse-medium cta-pulse-delay-3 inline-flex items-center gap-1.5 text-[13px] font-bold text-primary hover:text-primary/80 whitespace-nowrap group transition-colors rounded-full"
+          >
+            <span>Let's Discuss Your Project</span>
+            <ArrowUpRight className="cta-arrow cta-arrow-invite w-3.5 h-3.5" />
+          </a>
+        </div>
       </div>
 
-      <!-- Trust Bar -->
-      <div
-        class="hero-trust mt-4 pt-5 border-t border-neutral-100/60 w-full grid grid-cols-2 sm:grid-cols-4 gap-y-4 gap-x-3 max-w-lg mx-auto xl:mx-0"
-      >
-        {home.hero.trustBar.map((stat) => (
-          <div class="flex flex-col items-center xl:items-start">
-            <span class="text-xl lg:text-2xl font-black text-neutral-900 leading-none">{stat.value}</span>
-            <span class="text-[13px] text-neutral-500 font-semibold mt-1.5 uppercase tracking-wide text-center xl:text-left leading-tight">{stat.label}</span>
+      <!-- 3D scene -->
+      <div class="hero-scene lg:col-span-6 xl:col-span-6 relative" aria-hidden="true">
+        <div class="hero-scene-frame relative">
+          <picture>
+            <source media="(max-width: 767px)" srcset="/images/home/3d/hero-laptop-glass-900.webp" />
+            <img
+              src="/images/home/3d/hero-laptop-glass.webp"
+              alt=""
+              width="1600"
+              height="1200"
+              fetchpriority="high"
+              decoding="async"
+              class="hero-scene-img w-full h-auto select-none"
+            />
+          </picture>
+
+          <!-- Floating glass chips (existing badge content) -->
+          <div class="hero-chip chip-a">
+            <span class="chip-ic"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg></span>
+            <span class="chip-tx"><b>120+ Projects</b><small>Delivered Globally</small></span>
           </div>
-        ))}
-      </div>
-
-      <!-- Subtle Conversion Opportunity: After Hero Trust Indicators (Side Slide-In) -->
-      <div class="cta-slide-left mt-4 pt-3.5 border-t border-neutral-100/60 flex flex-col sm:flex-row items-center justify-between gap-2.5 max-w-lg mx-auto xl:mx-0">
-        <span class="text-xs text-neutral-500 font-medium text-center sm:text-left">
-          Tell us what you need and we'll help you find the right solution.
-        </span>
-        <a
-          href="/request-a-quote/"
-          class="cta-float-primary cta-float-sway cta-delay-1 cta-pulse-medium cta-pulse-delay-3 inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:text-primary/80 whitespace-nowrap group transition-colors rounded-full px-3 py-1.5 -mx-3"
-        >
-          <span>Let's Discuss Your Project</span>
-          <ArrowRight className="cta-arrow cta-arrow-invite w-3.5 h-3.5" />
-        </a>
+          <div class="hero-chip chip-b">
+            <span class="chip-ic"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.36-1.86M17 20H7m10 0v-2c0-.66-.13-1.3-.36-1.86m0 0A5 5 0 0012 15a5 5 0 00-4.64 3.14M7 20H2v-2a3 3 0 015.36-1.86M7 20v-2c0-.66.13-1.3.36-1.86m0 0a5 5 0 014.64-3.14M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg></span>
+            <span class="chip-tx"><b>In-House Team</b><small>Design, Dev &amp; SEO</small></span>
+          </div>
+          <div class="hero-chip chip-c">
+            <span class="chip-ic"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></span>
+            <span class="chip-tx"><b>Serving All of Kerala</b><small>&amp; GCC Clients</small></span>
+          </div>
+          <div class="hero-chip chip-d">
+            <span class="chip-ic"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 2m6-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></span>
+            <span class="chip-tx"><b>24-Hr Response</b><small>IST, GST &amp; AST Hours</small></span>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Visual Presentation (Mockups with Warm Agency Highlights) -->
-    <!-- Device Showcase (position: relative) -->
-    <div
-      id="device-showcase"
-      class="xl:col-span-7 relative w-full h-[620px] hidden xl:flex items-center justify-center mt-6"
-    >
-      <!-- Central Background Glow -->
-      <div
-        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-secondary/15 rounded-full blur-[85px] -z-10"
-      >
-      </div>
-
-      <!-- Mockup Device Image Container -->
-      <div
-        class="hero-mockup w-full max-w-[750px] z-10 scale-160 xl:-translate-y-15 origin-center"
-      >
-        <!-- The container is `hidden xl:flex`, so lazy loading keeps this 145 KB off
-             every phone and tablet visit entirely; on xl it is in the viewport at
-             layout time and fetches straight away. -->
-        <img
-          src="/mockup.webp"
-          alt="Teknoppy Performance Dashboard Mockups"
-          width="1400"
-          height="933"
-          loading="lazy"
-          decoding="async"
-          class="w-full h-auto object-contain"
-        />
-      </div>
-
-      <!-- Projects Delivered (Top Left of laptop) -->
-      <div
-        class="absolute top-[8%] left-[20%] w-[185px] bg-white rounded-2xl border border-neutral-100/70 p-3 z-20 hover:-translate-y-1 transition-all duration-300 anim-float-1 shadow-[0_12px_35px_rgba(240,90,44,0.04)] flex items-center gap-3"
-      >
-        <div
-          class="w-9 h-9 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0"
-        >
-          <svg
-            class="w-4 h-4"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2.5"
-            ><path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M5 13l4 4L19 7"></path></svg
-          >
-        </div>
-        <div class="flex flex-col min-w-0">
-          <span
-            class="text-[15px] font-extrabold text-neutral-900 leading-tight"
-            >120+ Projects</span
-          >
-          <span
-            class="text-[12px] text-neutral-500 font-semibold leading-none mt-0.5"
-            >Delivered Globally</span
-          >
-        </div>
-      </div>
-
-      <!-- In-House Team Card (Left Center beside laptop) -->
-      <div
-        class="absolute top-[38%] left-[20%] w-[190px] bg-white rounded-2xl border border-neutral-100/70 p-3 z-20 hover:-translate-y-1 transition-all duration-300 anim-float-2 shadow-[0_12px_35px_rgba(240,90,44,0.04)] flex items-center gap-3"
-      >
-        <div
-          class="w-9 h-9 rounded-full bg-amber-50 text-amber-500 flex items-center justify-center flex-shrink-0"
-        >
-          <svg
-            class="w-4.5 h-4.5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2.2"
-            ><path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M17 20h5v-2a3 3 0 00-5.36-1.86M17 20H7m10 0v-2c0-.66-.13-1.3-.36-1.86m0 0A5 5 0 0012 15a5 5 0 00-4.64 3.14M7 20H2v-2a3 3 0 015.36-1.86M7 20v-2c0-.66.13-1.3.36-1.86m0 0a5 5 0 014.64-3.14M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-            ></path></svg
-          >
-        </div>
-        <div class="flex flex-col min-w-0">
-          <span
-            class="text-[15px] font-extrabold text-neutral-900 leading-tight"
-            >In-House Team</span
-          >
-          <span
-            class="text-[12px] text-neutral-500 font-semibold leading-none mt-0.5"
-            >Design, Dev &amp; SEO</span
-          >
-        </div>
-      </div>
-
-      <!-- Location Card (Top Right beside laptop) -->
-      <div
-        class="absolute top-[1%] right-[2%] w-[185px] bg-white rounded-2xl border border-neutral-100/70 p-3 z-20 hover:-translate-y-1 transition-all duration-300 anim-float-3 shadow-[0_12px_35px_rgba(240,90,44,0.04)] flex items-center gap-3"
-      >
-        <div
-          class="w-9 h-9 rounded-full bg-neutral-50 flex items-center justify-center flex-shrink-0 shadow-inner"
-        >
-          <svg
-            class="w-4.5 h-4.5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2.2"
-            ><path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-            ></path><path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-            ></path></svg
-          >
-        </div>
-        <div class="flex flex-col min-w-0">
-          <span
-            class="text-[15px] font-extrabold text-neutral-900 leading-tight"
-            >Serving All of Kerala</span
-          >
-          <span
-            class="text-[12px] text-neutral-500 font-semibold leading-none mt-0.5"
-            >&amp; GCC Clients</span
-          >
-        </div>
-      </div>
-
-      <!-- Response Time Card (Bottom Right beside phone) -->
-      <div
-        class="absolute bottom-[22%] right-[2%] w-[195px] bg-white rounded-2xl border border-neutral-100/70 p-3 z-20 hover:-translate-y-1 transition-all duration-300 anim-float-4 shadow-[0_12px_35px_rgba(240,90,44,0.04)] flex items-center gap-3"
-      >
-        <div
-          class="w-9 h-9 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0"
-        >
-          <svg
-            class="w-4 h-4"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2.2"
-            ><path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M12 8v4l3 2m6-2a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path></svg
-          >
-        </div>
-        <div class="flex flex-col min-w-0">
-          <span
-            class="text-[15px] font-extrabold text-neutral-900 leading-tight"
-            >24-Hr Response</span
-          >
-          <span
-            class="text-[12px] text-neutral-500 font-semibold leading-none mt-0.5"
-            >IST, GST &amp; AST Hours</span
-          >
-        </div>
-      </div>
+    <!-- Stats strip (existing trust bar) -->
+    <div class="hero-stats relative z-20 mt-8 lg:mt-10 mb-2" role="list">
+      {home.hero.trustBar.map((stat, i) => {
+        const Icon = statIcons[i] ?? Layers;
+        return (
+          <div class="hero-stat" role="listitem">
+            <Icon className="hero-stat-ic" strokeWidth={1.75} />
+            <div class="min-w-0">
+              <span class="hero-stat-v">{stat.value}</span>
+              <span class="hero-stat-l">{stat.label}</span>
+            </div>
+          </div>
+        );
+      })}
     </div>
   </div>
 </section>
 
 <script is:inline>
-  /* The back half of the hero paragraph is keyword-rich but long, and it was the
-     single biggest block of copy above the fold. Collapsing it behind a toggle
-     keeps the text in the DOM for crawlers while letting the CTAs and trust bar
-     sit higher on the page.
-
-     Deliberately inline (not a module) so it runs synchronously during parse:
-     the collapse happens before the first paint, with no flash of the full
-     paragraph. The markup therefore ships expanded with the button hidden —
-     that way a visitor without JS reads the whole paragraph and never sees a
-     toggle that cannot do anything. */
+  /* The back half of the hero paragraph is keyword-rich but long. Collapsing it
+     behind a toggle keeps the text in the DOM for crawlers while letting the CTAs
+     sit higher. Inline (not a module) so it runs during parse with no flash; the
+     markup ships expanded with the button hidden for visitors without JS. */
   (function () {
     var more = document.getElementById("hero-body-more");
     var btn = document.getElementById("hero-body-toggle");
     if (!more || !btn) return;
-
     var label = btn.querySelector(".hero-toggle-label");
-
     function setOpen(open) {
       more.hidden = !open;
       btn.setAttribute("aria-expanded", String(open));
       btn.classList.toggle("is-open", open);
       label.textContent = open ? btn.dataset.less : btn.dataset.more;
     }
-
     setOpen(false);
     btn.hidden = false;
-
     btn.addEventListener("click", function () {
       setOpen(btn.getAttribute("aria-expanded") !== "true");
     });
@@ -374,117 +152,163 @@ import home from "../data/home.json";
 </script>
 
 <style>
-  /* Fluid typography and spacing */
-  @media (min-width: 1280px) {
-    .hero-copy {
-      font-size: 16px;
-      padding-top: 0;
-    }
-
-    .hero-h1 {
-      font-size: 3.375em; /* 54px */
-      margin-bottom: 0.37em; /* 20px */
-    }
-    .hero-h1 :global(span span) {
-      padding-inline: 0.296em; /* 16px */
-      padding-block: 0.037em; /* 2px */
-      margin-top: 0.074em; /* 4px */
-    }
-
-    .hero-h2 {
-      font-size: 1.375em; /* 22px */
-      margin-bottom: 1.091em; /* 24px */
-      max-width: 26.182em; /* 576px */
-    }
-    .hero-h2 :global(span) {
-      padding-inline: 0.364em; /* 8px */
-      padding-block: 0.091em; /* 2px */
-    }
-
-    .hero-body {
-      font-size: 1.1875em; /* 19px */
-      margin-bottom: 1.684em; /* 32px */
-      max-width: 26.947em; /* 512px */
-    }
-
-    .hero-ctas {
-      gap: 0.75em; /* 12px */
-      margin-bottom: 0.5em; /* 8px */
-    }
-    .hero-ctas :global(> a) {
-      font-size: 1.0625em; /* 17px */
-      padding-block: 0.941em; /* 16px */
-      padding-inline: 1.882em; /* 32px */
-    }
-
-    .hero-trust {
-      margin-top: 1em; /* 16px */
-      padding-top: 1.25em; /* 20px */
-      max-width: 32em; /* 512px */
-      row-gap: 1em; /* 16px */
-      column-gap: 0.75em; /* 12px */
-    }
-    .hero-trust :global(span:first-child) {
-      font-size: 1.5em; /* 24px */
-    }
-    .hero-trust :global(span:last-child) {
-      font-size: 0.8125em; /* 13px */
-      margin-top: 0.462em; /* 6px */
-    }
+  .home-hero {
+    background: #fff6ef;
+  }
+  .home-hero-bg {
+    background:
+      radial-gradient(52rem 34rem at 78% 30%, rgba(255, 150, 95, 0.30), transparent 65%),
+      radial-gradient(38rem 26rem at 100% 85%, rgba(249, 174, 66, 0.20), transparent 70%),
+      radial-gradient(44rem 30rem at 0% 0%, rgba(255, 255, 255, 0.95), transparent 70%),
+      linear-gradient(180deg, #fffaf6 0%, #fff3ea 100%);
   }
 
-  .hero-body-toggle.is-open .hero-toggle-chevron {
-    transform: rotate(180deg);
+  /* Heading: accent word in orange italic, like the reference */
+  /* Solid fill on purpose: the magnetic-heading script wraps each letter in an
+     inline-block, will-change span (its own layer). A gradient with
+     background-clip:text on the parent does not paint into those layers while the
+     transparent text fill is inherited, so the word rendered invisible. */
+  .hero-accent {
+    font-style: italic;
+    color: var(--color-primary);
+    -webkit-text-fill-color: currentColor;
+    padding-right: 0.08em; /* room for the italic overhang */
+  }
+  .hero-accent :global(.mag-word),
+  .hero-accent :global(.mag-char) {
+    color: inherit;
+    -webkit-text-fill-color: currentColor;
   }
 
-  /* Custom Floating Callout Animations */
-  .anim-float-1 {
-    animation: float1 7s ease-in-out infinite;
+  /* 3D scene: render bleeds slightly past the column; edges feather into the hero */
+  .hero-scene-frame {
+    margin-inline: -4%;
   }
-  .anim-float-2 {
-    animation: float2 6s ease-in-out infinite;
+  .hero-scene-img {
+    -webkit-mask-image: radial-gradient(closest-side at 52% 50%, #000 66%, transparent 100%);
+            mask-image: radial-gradient(closest-side at 52% 50%, #000 66%, transparent 100%);
+    filter: saturate(1.04);
   }
-  .anim-float-3 {
-    animation: float3 8s ease-in-out infinite;
-  }
-  .anim-float-4 {
-    animation: float4 7.5s ease-in-out infinite;
+  @media (min-width: 1024px) {
+    .hero-scene-frame { margin-right: -12%; margin-left: -6%; margin-top: 2%; }
   }
 
-  @keyframes float1 {
-    0%,
-    100% {
-      transform: translateY(0) rotate(-3deg);
-    }
-    50% {
-      transform: translateY(-7px) rotate(-3deg);
+  /* Glass chips */
+  .hero-chip {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.7rem 1rem 0.7rem 0.75rem;
+    border-radius: 1.1rem;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.82), rgba(255, 244, 236, 0.62));
+    border: 1px solid rgba(255, 255, 255, 0.95);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) inset, 0 18px 40px -18px rgba(160, 60, 20, 0.45);
+    -webkit-backdrop-filter: blur(14px) saturate(1.3);
+            backdrop-filter: blur(14px) saturate(1.3);
+    white-space: nowrap;
+    z-index: 3;
+  }
+  .chip-ic {
+    flex: none;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 0.8rem;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    background: linear-gradient(145deg, #ff8a4c, #f05a2c);
+    box-shadow: 0 8px 18px -8px rgba(240, 90, 44, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+  }
+  .chip-ic svg { width: 1.05rem; height: 1.05rem; }
+  .chip-tx { display: flex; flex-direction: column; line-height: 1.15; }
+  .chip-tx b { font-size: 0.95rem; font-weight: 800; color: #171717; }
+  .chip-tx small { font-size: 0.75rem; font-weight: 600; color: #737373; margin-top: 0.15rem; }
+
+  .chip-a { top: 9%;  left: 12%; animation: chipFloat 7s ease-in-out infinite; }
+  .chip-b { top: 39%; left: 3%;  animation: chipFloat 6s ease-in-out infinite -2s; }
+  .chip-c { top: 6%;  right: 6%; animation: chipFloat 8s ease-in-out infinite -1s; }
+  .chip-d { top: 47%; right: 2%; animation: chipFloat 7.5s ease-in-out infinite -3s; }
+  @keyframes chipFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  /* Stats strip */
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    border-radius: 1.75rem;
+    padding: 1.4rem 0.5rem;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.78), rgba(255, 246, 239, 0.6));
+    border: 1px solid rgba(255, 255, 255, 0.95);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) inset, 0 24px 50px -30px rgba(160, 60, 20, 0.4);
+    -webkit-backdrop-filter: blur(16px);
+            backdrop-filter: blur(16px);
+  }
+  .hero-stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.4rem 1.25rem;
+    position: relative;
+  }
+  .hero-stat + .hero-stat::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 18%;
+    bottom: 18%;
+    width: 1.5px;
+    background: linear-gradient(180deg, transparent, rgba(240, 90, 44, 0.45), transparent);
+  }
+  :global(.hero-stat-ic) { flex: none; width: 2.6rem; height: 2.6rem; color: var(--color-primary); }
+  .hero-stat-v { display: block; font-size: 1.9rem; font-weight: 900; letter-spacing: -0.03em; color: #111; line-height: 1; }
+  .hero-stat-l { display: block; margin-top: 0.35rem; font-size: 0.9rem; font-weight: 600; color: #525252; line-height: 1.25; }
+
+  .hero-body-toggle.is-open .hero-toggle-chevron { transform: rotate(180deg); }
+
+  /* Tablet */
+  @media (max-width: 1023px) {
+    .hero-scene { max-width: 640px; margin-inline: auto; width: 100%; }
+    .chip-a { top: 6%; left: 2%; }
+    .chip-b { top: 44%; left: -1%; }
+    .chip-c { top: 3%; right: 1%; }
+    .chip-d { top: 52%; right: -1%; }
+  }
+  /* Stats strip: 2 x 2 below 900px */
+  @media (max-width: 899px) {
+    .hero-stats { grid-template-columns: 1fr 1fr; padding: 0.6rem 0.25rem; row-gap: 0.2rem; }
+    .hero-stat { justify-content: flex-start; padding: 0.85rem 1rem; gap: 0.8rem; }
+    .hero-stat + .hero-stat::before { display: none; }
+    .hero-stat:nth-child(odd)::after {
+      content: ""; position: absolute; right: 0; top: 22%; bottom: 22%; width: 1.5px;
+      background: linear-gradient(180deg, transparent, rgba(240, 90, 44, 0.4), transparent);
     }
   }
-  @keyframes float2 {
-    0%,
-    100% {
-      transform: translateY(0) rotate(2deg);
+  /* Phones: chips move into a tidy 2x2 grid under the scene; stats become 2x2 */
+  @media (max-width: 639px) {
+    .hero-scene-frame { display: flex; flex-direction: column; }
+    .hero-chip {
+      position: static;
+      animation: none;
+      white-space: normal;
+      padding: 0.6rem 0.7rem;
+      gap: 0.55rem;
     }
-    50% {
-      transform: translateY(-6px) rotate(2deg);
-    }
+    .hero-scene-frame :global(picture) { order: 0; }
+    .hero-scene-frame { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+    .hero-scene-frame :global(picture) { grid-column: 1 / -1; margin-inline: -6%; }
+    .chip-ic { width: 1.9rem; height: 1.9rem; border-radius: 0.65rem; }
+    .chip-tx b { font-size: 0.82rem; }
+    .chip-tx small { font-size: 0.7rem; }
+    :global(.hero-stat-ic) { width: 2rem; height: 2rem; }
+    .hero-stat-v { font-size: 1.45rem; }
+    .hero-stat-l { font-size: 0.78rem; }
   }
-  @keyframes float3 {
-    0%,
-    100% {
-      transform: translateY(0) rotate(1deg);
-    }
-    50% {
-      transform: translateY(-7px) rotate(1deg);
-    }
-  }
-  @keyframes float4 {
-    0%,
-    100% {
-      transform: translateY(0) rotate(-2deg);
-    }
-    50% {
-      transform: translateY(-6px) rotate(-2deg);
-    }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-chip { animation: none; }
   }
 </style>

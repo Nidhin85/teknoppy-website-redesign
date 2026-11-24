@@ -1,0 +1,153 @@
+{
+  "title": "Expert Rangers SEO Case Study Dubai | Teknoppy",
+  "description": "How Teknoppy's SEO helped Expert Rangers, a DTCM-licensed desert safari and dune buggy operator in Dubai, win more direct bookings from search.",
+  "canonical": "https://www.teknoppy.com/case-studies/expert-rangers-seo/",
+  "ogImage": "https://www.teknoppy.com/case-studies/expertrangers.webp",
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://www.teknoppy.com/case-studies/expert-rangers-seo/#article",
+          "headline": "Expert Rangers: An SEO Services Case Study for a Desert Safari and Dune Buggy Tour Operator in Dubai",
+          "description": "How Teknoppy's SEO helped Expert Rangers, a DTCM-licensed desert safari and dune buggy operator in Dubai, win more direct bookings from search.",
+          "image": "https://www.teknoppy.com/case-studies/expertrangers.webp",
+          "mainEntityOfPage": "https://www.teknoppy.com/case-studies/expert-rangers-seo/",
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Search engine optimization"
+            },
+            {
+              "@type": "Thing",
+              "name": "Tourism SEO"
+            },
+            {
+              "@type": "TravelAgency",
+              "name": "Expert Rangers Tourism",
+              "url": "https://www.expertrangers.com/",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Al Qusais, Dubai",
+                "addressCountry": "AE"
+              }
+            }
+          ],
+          "author": {
+            "@type": "Person",
+            "name": "Sanal Edison",
+            "jobTitle": "Digital Strategist",
+            "url": "https://www.teknoppy.com/sanal-edison-digital-strategist/",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Teknoppy"
+            }
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Teknoppy",
+            "url": "https://www.teknoppy.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.teknoppy.com/logo.svg"
+            }
+          },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.teknoppy.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Case Studies",
+              "item": "https://www.teknoppy.com/case-study/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Expert Rangers",
+              "item": "https://www.teknoppy.com/case-studies/expert-rangers-seo/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Where is Expert Rangers based?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In Al Qusais, Dubai, UAE. Its desert tours run mainly around Fossil Rock in the Malieha desert."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Expert Rangers a licensed tour operator?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Expert Rangers states that it is fully licensed by Dubai's Department of Tourism and Commerce Marketing (DTCM)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What tours does Expert Rangers offer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Dune buggy safaris, desert safaris, quad biking, Polaris RZR rides, camel treks, private desert dinners, Dubai and Abu Dhabi city tours, yacht trips and team-building tours."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is there a minimum age for dune buggy tours?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Self-drive buggy tours list a minimum age, for example 16 years for the 4-seater buggy safari. Check each tour page for its own limit."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is hotel pickup included?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Pickup and drop-off are included on all Expert Rangers tours."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What did Teknoppy do for Expert Rangers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SEO strategy, tour-page keyword mapping, technical SEO and duplicate URL clean-up, on-page optimisation, entity structure and schema markup."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why do tour operators need their own SEO if they sell on travel platforms?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Direct bookings avoid marketplace commission and build a lasting customer relationship."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Teknoppy offer SEO for tourism businesses in the UAE?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Teknoppy works with tourism and hospitality brands in the UAE, Qatar and Kerala."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

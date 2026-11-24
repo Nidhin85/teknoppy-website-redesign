@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { Phone, Mail, MapPin, Clock, Zap, ArrowRight, MessageCircle, Send } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, ArrowRight, MessageCircle, Send, ChevronDown, MessagesSquare, Zap } from 'lucide-react';
 import site from '../data/site.json';
 import page from '../data/pages/contact.json';
 import { contactUsSchema } from '../data/schemas/contactUsSchema';
@@ -16,7 +16,7 @@ const formEndpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT || 'https://formsub
 
 const fieldClass =
   "w-full bg-white border border-neutral-200 rounded-xl px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none";
-const labelClass = "block text-[13px] font-black text-neutral-700 uppercase tracking-widest mb-2";
+const labelClass = "block text-[12px] font-bold text-neutral-800 uppercase tracking-[0.14em] mb-2";
 ---
 
 <Layout title={page.meta.title} description={page.meta.description}>
@@ -25,54 +25,75 @@ const labelClass = "block text-[13px] font-black text-neutral-700 uppercase trac
   </Fragment>
   <Header forceSolidBg={true} />
 
-  <main class="overflow-hidden bg-cream/40">
-    <!-- COMPACT HERO — H1 and the one-business-day promise stay above the fold,
-         but the hero no longer fills the screen; the form starts right beneath it. -->
-    <section class="relative pt-32 pb-20 md:pt-36 md:pb-24 overflow-hidden theme-keep-light bg-neutral-950 text-white">
-      <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
-        <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/herodarkwebdesign.webp')]"></div>
-      </div>
-      <div class="absolute -bottom-24 -right-24 w-[420px] h-[420px] rounded-full bg-primary/15 blur-[120px] pointer-events-none"></div>
+  <main class="overflow-hidden bg-[#fffaf6]">
+    <!-- HERO — copy left, envelope illustration right (md+). Kept compact so the form starts near the fold. -->
+    <section class="relative pt-28 pb-20 md:pt-36 md:pb-28 overflow-hidden bg-gradient-to-b from-[#fff3ea] to-[#fffaf6] text-neutral-900">
+      <div class="absolute -top-24 -right-24 w-[520px] h-[520px] rounded-full bg-primary/10 blur-[120px] pointer-events-none"></div>
+      <div class="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(circle_at_70%_40%,rgba(240,90,44,0.10),transparent_60%)] pointer-events-none"></div>
 
-      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
-        <div class="max-w-3xl">
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-bold text-primary uppercase tracking-widest mb-6">
-            <Zap class="w-3.5 h-3.5" />
-            {page.hero.badge}
+      <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12 relative z-10">
+        <div class="grid md:grid-cols-12 gap-8 items-center">
+          <div class="md:col-span-7 lg:col-span-7">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-primary/20 shadow-sm text-[11px] sm:text-xs font-bold text-primary uppercase tracking-widest mb-6">
+              <Zap class="w-3.5 h-3.5" />
+              {page.hero.badge}
+            </div>
+            <h1 class="text-[34px] sm:text-5xl lg:text-[56px] font-black leading-[1.08] tracking-tight text-neutral-900 mb-6">
+              {page.hero.h1Lead}<br />
+              <span class="relative inline-block text-primary">
+                {page.hero.h1Accent}
+                <svg class="absolute -bottom-2 left-0 w-full h-2.5 text-primary" viewBox="0 0 100 10" preserveAspectRatio="none" fill="none" aria-hidden="true">
+                  <path d="M3 7C30 3 70 3 97 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                </svg>
+              </span>
+            </h1>
+            <p class="max-w-2xl text-base sm:text-lg text-neutral-600 font-medium leading-relaxed">
+              {page.hero.intro}
+            </p>
           </div>
-          <h1 class="text-4xl sm:text-5xl lg:text-[52px] font-black leading-[1.1] tracking-tight text-white mb-5">
-            {page.hero.h1Lead}{' '}
-            <span class="relative inline-block text-primary">
-              {page.hero.h1Accent}
-              <svg class="absolute -bottom-2 left-0 w-full h-2 text-primary" viewBox="0 0 100 10" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 7C30 3 70 3 97 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
-              </svg>
-            </span>
-          </h1>
-          <p class="text-base sm:text-lg text-neutral-300 font-medium leading-relaxed">
-            {page.hero.intro}
-          </p>
+
+          <!-- Decorative envelope + paper plane, inline so no extra asset ships -->
+          <div class="hidden md:flex md:col-span-5 justify-center lg:justify-end" aria-hidden="true">
+            <svg class="w-full max-w-[380px] h-auto drop-shadow-[0_30px_40px_rgba(240,90,44,0.25)]" viewBox="0 0 400 300" fill="none">
+              <circle cx="210" cy="170" r="125" fill="#FFE7D9" />
+              <path d="M40 230c40-10 50-60 95-60" stroke="#F05A2C" stroke-width="2.5" stroke-dasharray="7 8" stroke-linecap="round" opacity=".6" />
+              <circle cx="60" cy="215" r="14" stroke="#F05A2C" stroke-width="2" stroke-dasharray="4 5" opacity=".5" />
+              <path d="M300 95c40 10 60 40 45 75" stroke="#F05A2C" stroke-width="2.5" stroke-dasharray="7 8" stroke-linecap="round" opacity=".6" />
+              <!-- envelope back -->
+              <path d="M110 150 210 85l100 65v95a12 12 0 0 1-12 12H122a12 12 0 0 1-12-12z" fill="#E8501F" />
+              <!-- letter -->
+              <rect x="135" y="90" width="150" height="120" rx="10" transform="rotate(-6 210 150)" fill="#fff" />
+              <g transform="rotate(-6 210 150)" stroke="#C9CDD4" stroke-width="7" stroke-linecap="round">
+                <path d="M160 120h95" /><path d="M160 142h100" /><path d="M160 164h70" />
+              </g>
+              <!-- envelope front -->
+              <path d="M110 150l100 70 100-70v95a12 12 0 0 1-12 12H122a12 12 0 0 1-12-12z" fill="#F58439" />
+              <path d="M110 257l80-62M310 257l-80-62" stroke="#E8501F" stroke-width="3" opacity=".5" />
+              <!-- sparkle lines -->
+              <path d="M150 62l-8-18M175 55l2-20M125 75l-16-10" stroke="#F05A2C" stroke-width="4" stroke-linecap="round" />
+              <!-- paper plane -->
+              <path d="M290 40l85-25-40 75-14-28z" fill="#F05A2C" />
+              <path d="M321 62l54-47-68 39z" fill="#C2410C" />
+            </svg>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- SPLIT WORKSPACE — form and contact details side by side, so a visitor can
-         write to us or reach us directly without scrolling to choose. -->
-    <!-- The header's "Book a Free Consultation" button targets #contact, which on every
-         other page is the FooterCTA section. This page has no FooterCTA, so the anchor
-         points at the form instead. -->
+    <!-- SPLIT WORKSPACE — form and contact details side by side. -->
+    <!-- The header's CTA targets #contact, which on other pages is FooterCTA; here it points at the form. -->
     <span id="contact" class="block scroll-mt-28" aria-hidden="true"></span>
-    <section id="contact-form" class="relative -mt-10 pb-16 sm:pb-20 z-20">
-      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+    <section id="contact-form" class="relative -mt-10 md:-mt-14 pb-16 sm:pb-20 z-20 scroll-mt-24">
+      <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12">
         <div class="grid lg:grid-cols-12 gap-6 lg:gap-8 items-start">
 
-          <!-- FORM CARD — exactly six fields -->
-          <div class="lg:col-span-7 bg-white rounded-[2rem] border border-neutral-100 p-6 sm:p-10 shadow-[0_24px_60px_-30px_rgba(0,0,0,0.25)]">
-            <div class="flex items-center gap-3 mb-8">
-              <span class="w-11 h-11 rounded-2xl bg-primary/10 text-primary flex items-center justify-center border border-primary/15 flex-shrink-0">
+          <!-- FORM CARD -->
+          <div class="lg:col-span-7 bg-white rounded-[1.75rem] border border-neutral-100 p-6 sm:p-10 shadow-[0_30px_70px_-35px_rgba(0,0,0,0.25)]">
+            <div class="flex items-center gap-3.5 mb-8">
+              <span class="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
                 <Send class="w-5 h-5" />
               </span>
-              <h2 class="text-2xl sm:text-3xl font-black text-neutral-900 leading-tight">{page.form.heading}</h2>
+              <h2 class="text-2xl sm:text-[28px] font-black text-neutral-900 leading-tight tracking-tight">{page.form.heading}</h2>
             </div>
 
             <form id="contact-form-el" data-endpoint={formEndpoint} data-success={page.form.successMessage} data-error={page.form.errorMessage} data-source="Contact page" novalidate class="space-y-5">
@@ -81,44 +102,46 @@ const labelClass = "block text-[13px] font-black text-neutral-700 uppercase trac
                 <label>Company website<input type="text" name="company_website" tabindex="-1" autocomplete="off" /></label>
               </div>
 
-              <div>
-                <label for="cf-name" class={labelClass}>Name</label>
-                <input id="cf-name" name="name" type="text" required autocomplete="name" class={fieldClass} placeholder="Your full name" />
-              </div>
-
-              <div>
-                <label for="cf-email" class={labelClass}>Email</label>
-                <input id="cf-email" name="email" type="email" required autocomplete="email" aria-describedby="cf-email-err" class={fieldClass} placeholder="name@company.com" />
-                <p id="cf-email-err" class="hidden text-xs font-semibold text-red-600 mt-1.5" role="alert">Enter a valid email address.</p>
-              </div>
-
-              <div>
-                <label for="cf-phone" class={labelClass}>Phone</label>
-                <input id="cf-phone" name="phone" type="tel" required autocomplete="tel" aria-describedby="cf-phone-err" class={fieldClass} placeholder="+91 00000 00000" />
-                <p id="cf-phone-err" class="hidden text-xs font-semibold text-red-600 mt-1.5" role="alert">Enter a valid phone number.</p>
-              </div>
-
-              <div>
-                <label for="cf-company" class={labelClass}>
-                  Company <span class="text-neutral-400 font-bold normal-case tracking-normal">(optional)</span>
-                </label>
-                <input id="cf-company" name="company" type="text" autocomplete="organization" class={fieldClass} placeholder="Your company name" />
+              <div class="grid sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="cf-name" class={labelClass}>Name</label>
+                  <input id="cf-name" name="name" type="text" required autocomplete="name" class={fieldClass} placeholder="Your full name" />
+                </div>
+                <div>
+                  <label for="cf-email" class={labelClass}>Email</label>
+                  <input id="cf-email" name="email" type="email" required autocomplete="email" aria-describedby="cf-email-err" class={fieldClass} placeholder="name@company.com" />
+                  <p id="cf-email-err" class="hidden text-xs font-semibold text-red-600 mt-1.5" role="alert">Enter a valid email address.</p>
+                </div>
+                <div>
+                  <label for="cf-phone" class={labelClass}>Phone</label>
+                  <input id="cf-phone" name="phone" type="tel" required autocomplete="tel" aria-describedby="cf-phone-err" class={fieldClass} placeholder="+91 00000 00000" />
+                  <p id="cf-phone-err" class="hidden text-xs font-semibold text-red-600 mt-1.5" role="alert">Enter a valid phone number.</p>
+                </div>
+                <div>
+                  <label for="cf-company" class={labelClass}>
+                    Company <span class="text-neutral-400 font-semibold normal-case tracking-normal">(optional)</span>
+                  </label>
+                  <input id="cf-company" name="company" type="text" autocomplete="organization" class={fieldClass} placeholder="Your company name" />
+                </div>
               </div>
 
               <div>
                 <label for="cf-service" class={labelClass}>Service interested in</label>
-                <select id="cf-service" name="service" required class={fieldClass}>
-                  <option value="" disabled selected>Select a service</option>
-                  {page.form.serviceOptions.map((opt) => <option value={opt}>{opt}</option>)}
-                </select>
+                <div class="relative">
+                  <select id="cf-service" name="service" required class={`${fieldClass} appearance-none pr-11 cursor-pointer`}>
+                    <option value="" disabled selected>Select a service</option>
+                    {page.form.serviceOptions.map((opt) => <option value={opt}>{opt}</option>)}
+                  </select>
+                  <span class="absolute inset-y-0 right-4 flex items-center text-neutral-500 pointer-events-none"><ChevronDown class="w-4 h-4" /></span>
+                </div>
               </div>
 
               <div>
                 <label for="cf-message" class={labelClass}>Message</label>
-                <textarea id="cf-message" name="message" rows="5" required class={`${fieldClass} resize-none`} placeholder="What you need, your current site if you have one, and a rough timeline."></textarea>
+                <textarea id="cf-message" name="message" rows="5" required class={`${fieldClass} resize-y min-h-[130px]`} placeholder="What you need, your current site if you have one, and a rough timeline."></textarea>
               </div>
 
-              <button type="submit" class="w-full inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-white bg-primary rounded-xl shadow-[0_10px_30px_-8px_rgba(240,90,44,0.5)] hover:bg-primary/95 hover:-translate-y-0.5 transition-all duration-300 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed">
+              <button type="submit" class="w-full inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-bold text-white bg-gradient-to-r from-primary to-[#F58439] rounded-xl shadow-[0_12px_30px_-10px_rgba(240,90,44,0.6)] hover:shadow-[0_16px_36px_-10px_rgba(240,90,44,0.7)] hover:-translate-y-0.5 transition-all duration-300 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed disabled:translate-y-0 focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/30">
                 {page.form.submitLabel}
                 <ArrowRight class="w-4 h-4" />
               </button>
@@ -127,24 +150,24 @@ const labelClass = "block text-[13px] font-black text-neutral-700 uppercase trac
             </form>
           </div>
 
-          <!-- CONTACT RAIL — dark card echoing the hero, sticky alongside the form -->
-          <aside class="lg:col-span-5 lg:sticky lg:top-28 space-y-6">
-            <div class="theme-keep-light bg-neutral-950 text-white rounded-[2rem] p-6 sm:p-8 shadow-[0_24px_60px_-30px_rgba(0,0,0,0.4)] relative overflow-hidden">
-              <div class="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-primary/20 blur-[80px] pointer-events-none"></div>
+          <!-- CONTACT RAIL -->
+          <aside class="lg:col-span-5 lg:sticky lg:top-28 grid md:grid-cols-2 lg:grid-cols-1 gap-6">
+            <div class="theme-keep-light bg-neutral-950 text-white rounded-[1.75rem] p-6 sm:p-8 shadow-[0_30px_70px_-35px_rgba(0,0,0,0.5)] relative overflow-hidden">
+              <div class="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-primary/25 blur-[80px] pointer-events-none"></div>
 
-              <h2 class="text-xl font-black text-white mb-6 relative z-10">{page.reachUs.heading}</h2>
+              <h2 class="text-xl sm:text-2xl font-black text-white mb-6 relative z-10 tracking-tight">{page.reachUs.heading}</h2>
 
-              <address class="not-italic relative z-10">
+              <address class="not-italic relative z-10 space-y-5">
                 {page.reachUs.items.map((item) => {
                   const IconComp = icons[item.icon];
                   const row = (
-                    <div class="flex items-start gap-4 py-4 border-t border-white/10 first:border-t-0 first:pt-0">
-                      <span class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 text-primary">
-                        <IconComp class="w-4 h-4" />
+                    <div class="flex items-start gap-4">
+                      <span class="w-11 h-11 rounded-full bg-primary/15 ring-1 ring-primary/40 flex items-center justify-center flex-shrink-0 text-primary">
+                        <IconComp class="w-[18px] h-[18px]" />
                       </span>
-                      <span class="pt-0.5">
-                        <span class="block text-[12px] font-black text-neutral-500 uppercase tracking-widest mb-1">{item.label}</span>
-                        <span class="block text-sm font-bold text-white leading-snug">{item.value}</span>
+                      <span class="pt-0.5 min-w-0">
+                        <span class="block text-[11px] font-bold text-neutral-400 uppercase tracking-[0.18em] mb-1">{item.label}</span>
+                        <span class="block text-[15px] font-bold text-white leading-snug break-words">{item.value}</span>
                       </span>
                     </div>
                   );
@@ -158,24 +181,24 @@ const labelClass = "block text-[13px] font-black text-neutral-700 uppercase trac
                 href={`https://wa.me/${site.whatsapp}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="relative z-10 mt-6 w-full inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-[#25D366] text-white text-sm font-bold hover:bg-[#20bd5a] transition-colors"
+                class="relative z-10 mt-7 w-full inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-[#25D366] text-white text-sm font-bold shadow-[0_10px_25px_-10px_rgba(37,211,102,0.6)] hover:bg-[#20bd5a] hover:-translate-y-0.5 transition-all"
               >
-                <MessageCircle class="w-4 h-4" />
+                <MessageCircle class="w-5 h-5" />
                 {page.reachUs.whatsappLabel}
               </a>
             </div>
 
-            <!-- Map sits directly under the NAP block, as the doc specifies -->
-            <div class="rounded-[2rem] overflow-hidden border border-neutral-200 shadow-sm bg-white">
+            <!-- MAP — live embed with quick actions on top -->
+            <div class="relative rounded-[1.75rem] overflow-hidden border border-neutral-200 shadow-[0_20px_50px_-30px_rgba(0,0,0,0.3)] bg-white min-h-[280px]">
               <iframe
                 src={`https://www.google.com/maps?q=${encodeURIComponent(page.map.query)}&output=embed`}
                 width="100%"
-                height="300"
+                height="100%"
                 style="border:0;"
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
                 title={page.map.title}
-                class="w-full block"
+                class="absolute inset-0 w-full h-full block"
               ></iframe>
             </div>
           </aside>
@@ -183,24 +206,32 @@ const labelClass = "block text-[13px] font-black text-neutral-700 uppercase trac
       </div>
     </section>
 
-    <!-- WHERE WE WORK + WHAT HAPPENS NEXT — paired cards rather than two full bands -->
-    <section class="py-16 sm:py-20 bg-white border-t border-neutral-100">
-      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
-        <div class="grid lg:grid-cols-2 gap-6 lg:gap-8">
-          <div class="relative overflow-hidden bg-cream/60 rounded-[2rem] border border-neutral-100 p-7 sm:p-9">
-            <div class="absolute left-0 top-0 bottom-0 w-[4px] bg-gradient-to-b from-primary via-[#F58439] to-[#FFE2D1]"></div>
-            <h2 class="text-2xl sm:text-3xl font-black text-neutral-900 leading-tight mb-4">{page.whereWeWork.heading}</h2>
-            <p class="text-neutral-600 text-sm sm:text-base leading-relaxed font-medium" set:html={page.whereWeWork.html} />
+    <!-- WHERE WE WORK + WHAT HAPPENS NEXT -->
+    <section class="pb-16 sm:pb-24">
+      <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12">
+        <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+          <div class="relative overflow-hidden bg-white rounded-[1.75rem] border border-neutral-100 border-l-4 border-l-primary p-7 sm:p-9 shadow-[0_20px_50px_-35px_rgba(0,0,0,0.25)]">
+            <div class="flex items-center gap-3.5 mb-5">
+              <span class="w-11 h-11 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+                <MapPin class="w-5 h-5" />
+              </span>
+              <h2 class="text-xl sm:text-2xl font-black text-neutral-900 leading-tight tracking-tight">{page.whereWeWork.heading}</h2>
+            </div>
+            <p class="text-neutral-600 text-[15px] sm:text-base leading-relaxed font-medium" set:html={page.whereWeWork.html} />
           </div>
 
-          <div class="relative overflow-hidden bg-cream/60 rounded-[2rem] border border-neutral-100 p-7 sm:p-9">
-            <div class="absolute left-0 top-0 bottom-0 w-[4px] bg-gradient-to-b from-primary via-[#F58439] to-[#FFE2D1]"></div>
-            <h2 class="text-2xl sm:text-3xl font-black text-neutral-900 leading-tight mb-4">{page.afterSubmit.heading}</h2>
+          <div class="relative overflow-hidden bg-white rounded-[1.75rem] border border-neutral-100 border-l-4 border-l-primary p-7 sm:p-9 shadow-[0_20px_50px_-35px_rgba(0,0,0,0.25)]">
+            <div class="flex items-center gap-3.5 mb-5">
+              <span class="w-11 h-11 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+                <MessagesSquare class="w-5 h-5" />
+              </span>
+              <h2 class="text-xl sm:text-2xl font-black text-neutral-900 leading-tight tracking-tight">{page.afterSubmit.heading}</h2>
+            </div>
             <div class="space-y-4">
               {page.afterSubmit.paragraphs.map((p: any) => (
                 p.html
-                  ? <p class="text-neutral-600 text-sm sm:text-base leading-relaxed font-medium" set:html={p.html} />
-                  : <p class="text-neutral-600 text-sm sm:text-base leading-relaxed font-medium">{p.text}</p>
+                  ? <p class="text-neutral-600 text-[15px] sm:text-base leading-relaxed font-medium" set:html={p.html} />
+                  : <p class="text-neutral-600 text-[15px] sm:text-base leading-relaxed font-medium">{p.text}</p>
               ))}
             </div>
           </div>
@@ -208,23 +239,22 @@ const labelClass = "block text-[13px] font-black text-neutral-700 uppercase trac
       </div>
     </section>
 
-    <!-- FAQ — two columns on desktop so six questions read without a long scroll -->
-    <section class="py-16 sm:py-20 bg-cream/40 border-t border-neutral-100">
-      <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
-        <h2 class="text-3xl sm:text-4xl md:text-[42px] font-black text-neutral-900 leading-tight mb-10 text-center">{page.faq.heading}</h2>
+    <!-- FAQ -->
+    <section class="pb-16 sm:pb-24">
+      <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12">
+        <div class="text-center mb-10 sm:mb-12">
+          <h2 class="text-3xl sm:text-4xl md:text-[44px] font-black text-neutral-900 leading-tight tracking-tight">{page.faq.heading}</h2>
+          <span class="block w-14 h-1 rounded-full bg-primary mx-auto mt-4" aria-hidden="true"></span>
+        </div>
 
         <div class="grid md:grid-cols-2 gap-4 max-w-5xl mx-auto items-start">
           {page.faq.items.map((faq) => (
-            <details class="group bg-white rounded-2xl border border-neutral-200/60 p-6 [&_summary::-webkit-details-marker]:hidden">
-              <summary class="flex items-center justify-between cursor-pointer focus:outline-none gap-4">
-                <h3 class="text-sm sm:text-base font-bold text-neutral-850">{faq.q}</h3>
-                <span class="transition-transform duration-300 group-open:-rotate-180 text-primary flex-shrink-0">
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                  </svg>
-                </span>
+            <details class="group bg-white rounded-2xl border border-neutral-100 shadow-[0_10px_30px_-20px_rgba(0,0,0,0.2)] open:shadow-[0_16px_40px_-20px_rgba(240,90,44,0.35)] open:border-primary/20 transition-shadow [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex items-center justify-between cursor-pointer list-none gap-4 px-5 sm:px-6 py-5 rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40">
+                <h3 class="text-sm sm:text-[15px] font-bold text-neutral-900">{faq.q}</h3>
+                <ChevronDown class="w-4 h-4 text-primary flex-shrink-0 transition-transform duration-300 group-open:-rotate-180" />
               </summary>
-              <div class="mt-4 pt-4 border-t border-neutral-100/60 text-xs sm:text-sm text-neutral-600 leading-relaxed font-semibold">
+              <div class="px-5 sm:px-6 pb-5 -mt-1 text-sm text-neutral-600 leading-relaxed font-medium">
                 {faq.a}
               </div>
             </details>
@@ -235,21 +265,25 @@ const labelClass = "block text-[13px] font-black text-neutral-700 uppercase trac
       </div>
     </section>
 
-    <!-- CLOSING CTA — full-bleed brand band -->
-    <section class="theme-keep-light py-14 sm:py-16 bg-primary relative overflow-hidden">
-      <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.15),transparent_45%)] pointer-events-none"></div>
-      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          {page.closingCtas.map((cta, i) => (
-            <a
-              href={cta.href}
-              class={i === 0
-                ? "w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-bold text-primary bg-white rounded-full shadow-[0_10px_30px_-10px_rgba(0,0,0,0.3)] hover:-translate-y-0.5 transition-all duration-300"
-                : "w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white border border-white/40 rounded-full hover:bg-white/10 transition-all duration-300"}
-            >
-              {cta.label}
-            </a>
-          ))}
+    <!-- CLOSING CTA — rounded brand card -->
+    <section class="pb-16 sm:pb-20">
+      <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12">
+        <div class="theme-keep-light relative overflow-hidden rounded-[1.75rem] bg-gradient-to-r from-primary to-[#F58439] px-7 py-10 sm:px-12 sm:py-12 shadow-[0_30px_60px_-30px_rgba(240,90,44,0.7)]">
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_90%_20%,rgba(255,255,255,0.18),transparent_45%)] pointer-events-none"></div>
+          <div class="relative z-10 flex justify-center">
+            <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+              {page.closingCtas.map((cta, i) => (
+                <a
+                  href={cta.href}
+                  class={i === 0
+                    ? "w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-bold text-primary bg-white rounded-full shadow-[0_10px_30px_-10px_rgba(0,0,0,0.3)] hover:-translate-y-0.5 transition-all duration-300"
+                    : "w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white border-2 border-white/60 rounded-full hover:bg-white/10 hover:border-white transition-all duration-300"}
+                >
+                  {cta.label}
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

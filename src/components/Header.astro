@@ -6,6 +6,8 @@ interface Props {
 const { forceSolidBg = false } = Astro.props;
 
 const pathname = Astro.url.pathname;
+// Homepage redesign preview: diagonal arrow on the Enquire Now button. Other pages unchanged until approved.
+const isHomeRedesign = pathname === '/';
 const isActive = (href: string) => {
   if (href === '/') return pathname === '/';
   if (href.startsWith('/#')) return false;
@@ -154,7 +156,7 @@ const links = [
       <a href="/request-a-quote/" class="cta-pulse-strong cta-pulse-delay-1 inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 lg:px-5 xl:px-6 py-1.5 sm:py-2 lg:py-2.5 text-xs sm:text-sm font-bold whitespace-nowrap text-white bg-primary hover:bg-primary/95 transition-all duration-300 rounded-full shadow-md shadow-primary/20 hover:-translate-y-0.5 group" data-gtm-cta="header_enquire_now">
         <span class="hidden min-[380px]:inline">Enquire Now</span>
         <span class="inline min-[380px]:hidden">Enquire</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="cta-arrow group-hover:translate-x-1 transition-transform duration-300"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="cta-arrow group-hover:translate-x-1 transition-transform duration-300">{isHomeRedesign ? (<><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></>) : (<><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></>)}</svg>
       </a>
       
       <!-- Mobile Menu Toggle Button -->

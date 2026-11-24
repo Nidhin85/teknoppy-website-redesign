@@ -1,0 +1,166 @@
+{
+  "title": "Greens Ayurveda SEO Case Study | Teknoppy",
+  "description": "How Teknoppy's SEO helped a Kerala Panchakarma hospital and Ayurveda school rank for treatment and course searches and win more international enquiries.",
+  "canonical": "https://www.teknoppy.com/case-studies/greens-ayurveda-seo/",
+  "ogImage": "https://www.teknoppy.com/case-studies/greensayurveda.webp",
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://www.teknoppy.com/case-studies/greens-ayurveda-seo/#article",
+          "headline": "Greens Ayurveda: An SEO Services Case Study for a Panchakarma Hospital and Ayurveda School in Kerala",
+          "description": "How Teknoppy's SEO helped a Kerala Panchakarma hospital and Ayurveda school rank for treatment and course searches and win more international enquiries.",
+          "image": "https://www.teknoppy.com/case-studies/greensayurveda.webp",
+          "mainEntityOfPage": "https://www.teknoppy.com/case-studies/greens-ayurveda-seo/",
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Search engine optimization"
+            },
+            {
+              "@type": "Thing",
+              "name": "E-E-A-T"
+            },
+            {
+              "@type": "Thing",
+              "name": "Keyword cannibalisation"
+            },
+            {
+              "@type": "MedicalClinic",
+              "name": "Greens Ayurveda",
+              "url": "https://ayugreen.com/",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Azhiyur, Kozhikode",
+                "addressRegion": "Kerala",
+                "addressCountry": "IN"
+              }
+            }
+          ],
+          "author": {
+            "@type": "Person",
+            "name": "Sanal Edison",
+            "jobTitle": "Digital Strategist",
+            "url": "https://www.teknoppy.com/sanal-edison-digital-strategist/",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Teknoppy"
+            }
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Teknoppy",
+            "url": "https://www.teknoppy.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.teknoppy.com/logo.svg"
+            }
+          },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.teknoppy.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Case Studies",
+              "item": "https://www.teknoppy.com/case-study/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Greens Ayurveda",
+              "item": "https://www.teknoppy.com/case-studies/greens-ayurveda-seo/"
+            }
+          ]
+        },
+        {
+          "@type": "VideoObject",
+          "name": "Dr. Asghar talks about working with Teknoppy",
+          "description": "Dr. C. P. Asghar, Founder and Chief Physician of Greens Ayurveda, talks about working with Teknoppy.",
+          "thumbnailUrl": "https://i.ytimg.com/vi/4Jn93FfiEX4/hqdefault.jpg",
+          "embedUrl": "https://www.youtube.com/embed/4Jn93FfiEX4",
+          "contentUrl": "https://youtu.be/4Jn93FfiEX4"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Where is Greens Ayurveda located?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Greens Ayurveda is in Azhiyur, Kozhikode (Calicut) district, Kerala, India, near Mahe."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Who leads the medical team at Greens Ayurveda?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Dr. C. P. Asghar, BAMS (Kottakkal), PGDYT (KMC Manipal), the founder and Chief Physician."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What treatments and courses does Greens Ayurveda offer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Panchakarma, Kerala massages, Shirodhara, Marma and yoga therapy, plus courses of 10 days to 4 weeks."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What services did Teknoppy provide for Greens Ayurveda?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SEO strategy, keyword mapping, E-E-A-T and entity structure, on-page optimisation, local SEO and schema markup."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Did Teknoppy redesign the Greens Ayurveda website?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. This was an SEO project on the existing WordPress website, ayugreen.com."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How did Teknoppy avoid keyword cannibalisation?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We mapped every keyword to one page and gave treatments and courses separate search targets."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why does E-E-A-T matter for Ayurveda websites?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Health is a \"Your Money or Your Life\" topic, so Google favours pages that show who the doctors are and what qualifies them."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Teknoppy do SEO for other Ayurveda centres in Kerala?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We work with Ayurveda hospitals, resorts and wellness brands across Kerala, the UAE and Qatar."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

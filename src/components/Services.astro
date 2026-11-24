@@ -1,5 +1,5 @@
 ---
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import home from "../data/home.json";
 
 const services = home.services.cards;
@@ -22,85 +22,86 @@ const icons = [
   `<svg class="w-6 h-6 stroke-[1.5]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><circle cx="11" cy="11" r="8" /><path d="M21 21l-4.3-4.3M11 7v8M8 11h6" /></svg>`,
   `<svg class="w-6 h-6 stroke-[1.5]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" /></svg>`
 ];
+
+// Rendered 3D glass objects, one per service (decorative, same order as the cards)
+const renders = [
+  "/images/home/3d/service-web-design.webp",
+  "/images/home/3d/service-wordpress.webp",
+  "/images/home/3d/service-ecommerce.webp",
+  "/images/home/3d/service-web-app.webp",
+  "/images/home/3d/service-seo.webp",
+  "/images/home/3d/service-ui-ux.webp"
+];
 ---
 
-<section id="services" class="py-10 sm:py-12 md:py-16 bg-white relative">
-  <!-- Dynamic background container to prevent overflow issues without breaking sticky scroll -->
+<section id="services" class="svc-section py-14 sm:py-16 md:py-20 relative">
+  <!-- Decorative background (kept), softened behind the new layout -->
   <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
-    <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/whatwedo.webp')] opacity-50"></div>
+    <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/whatwedo.webp')] opacity-25"></div>
   </div>
 
-  <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
-    <div class="max-w-3xl mx-auto text-center flex flex-col items-center mb-8 sm:mb-10 md:mb-12">
-      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F9AE42]/10 border border-[#F9AE42]/30 text-primary text-sm font-bold uppercase tracking-wider mb-6 shadow-sm transform -rotate-1 backdrop-blur-sm">
-        {home.services.badge}
+  <div class="max-w-[1320px] mx-auto px-5 sm:px-8 lg:px-12 relative z-10">
+    <div class="grid lg:grid-cols-12 gap-10 lg:gap-10 items-start">
+      <!-- Intro column -->
+      <div class="lg:col-span-4 lg:sticky lg:top-28 flex flex-col items-center text-center lg:items-start lg:text-left">
+        <span class="ds-eyebrow">{home.services.badge}</span>
+        <h2 class="mt-4 text-[2.15rem] sm:text-5xl lg:text-[3.1rem] font-black leading-[1.05] tracking-[-0.03em] text-neutral-950" data-magnetic-heading>
+          {home.services.headingLead} <span class="text-primary">{home.services.headingAccent1}</span> {home.services.headingMid} <span class="text-primary">{home.services.headingAccent2}</span> {home.services.headingRest}
+        </h2>
+        <p class="mt-5 text-base sm:text-lg text-neutral-600 leading-relaxed font-medium max-w-xl">
+          {home.services.intro}
+        </p>
       </div>
-      <h2 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-neutral-900 mb-3 sm:mb-4" data-magnetic-heading>
-        {home.services.headingLead} <span class="text-primary">{home.services.headingAccent1}</span> {home.services.headingMid} <br class="hidden md:block" /> <span class="text-primary">{home.services.headingAccent2}</span> {home.services.headingRest}
-      </h2>
-      <p class="text-xl text-neutral-600 leading-relaxed font-medium">
-        {home.services.intro}
-      </p>
-    </div>
 
-    <!-- Redesigned Glassmorphic Services Grid (with mobile stacking scroll fixed) -->
-    <div class="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-4.5 sm:gap-5 md:gap-6 relative z-10" data-stagger>
-      {services.map((service, index) => (
-        <div class="group relative services-card-sticky neu-card rounded-2xl p-4.5 sm:p-5 md:p-5.5 lg:p-6 flex flex-col justify-between h-full overflow-hidden" style={`--stack-idx: ${index};`}>
-          
-          <!-- Hover Accent Glow (Permanent on mobile, hover on desktop) -->
-          <div class="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-primary/10 md:from-primary/15 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-700 blur-xl md:blur-2xl -z-10"></div>
-          
-          <!-- Large Background Watermark Icon -->
-          <div class="absolute -right-6 -bottom-6 text-primary opacity-[0.02] group-hover:opacity-[0.05] group-hover:scale-110 pointer-events-none transition-all duration-700 select-none -z-10 [&>svg]:w-36 [&>svg]:h-36 [&>svg]:stroke-[0.8]" set:html={icons[index]}></div>
-
-          <div>
-            <div class="flex justify-between items-start mb-3.5 sm:mb-4.5">
-              <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-[#FFF4ED] border border-[#FDE6D7] flex items-center justify-center transition-all duration-300 group-hover:bg-primary group-hover:border-primary group-hover:shadow-[0_6px_16px_rgba(240,90,44,0.3)] text-primary group-hover:text-white [&>svg]:w-5 [&>svg]:h-5" set:html={icons[index]}>
-              </div>
-              
-              <!-- Arrow indicator to service page -->
-              {index !== 0 && (
-                <a href={service.href} aria-label={`Explore ${service.title}`} class="w-7 h-7 sm:w-7.5 sm:h-7.5 rounded-full border border-neutral-200/80 flex items-center justify-center opacity-70 group-hover:opacity-100 hover:bg-primary/10 hover:border-primary/30 transition-all duration-300">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-neutral-500 hover:text-primary transform -rotate-45 hover:rotate-0 transition-all duration-300"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                </a>
-              )}
+      <!-- 3 x 2 card grid -->
+      <div class="lg:col-span-8 flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-5" data-stagger>
+        {services.map((service, index) => (
+          <div class="group svc-card services-card-sticky" style={`--stack-idx: ${index};`}>
+            <div class="svc-visual" aria-hidden="true">
+              <img src={renders[index]} alt="" width="640" height="512" loading="lazy" decoding="async" class="svc-render" />
             </div>
-            
-            <h3 class="text-lg sm:text-[1.1875rem] font-bold text-neutral-900 mb-2 sm:mb-2.5 leading-snug">
-              <a href={service.href} class="hover:text-primary transition-colors duration-300">
-                {service.title}
-              </a>
-            </h3>
-            
-            <p class="text-xs sm:text-[0.875rem] text-neutral-600 leading-relaxed font-normal">
-              {service.description}
-            </p>
-          </div>
 
-          <!-- Subtle Individual Service Conversion CTA: Directly to existing enquiry page -->
-          <div class="pt-3.5 sm:pt-4 mt-3.5 sm:mt-4 border-t border-neutral-100 flex flex-wrap items-center justify-between gap-x-3 gap-y-1">
-            <a
-              href="/request-a-quote/"
-              class="service-cta-link cta-float-secondary cta-pulse-subtle inline-flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-bold text-primary hover:text-neutral-900 transition-colors group/cta whitespace-nowrap rounded-full px-3 py-1.5 -mx-3"
-              style={`animation-delay: ${(0.4 + index * 0.4).toFixed(2)}s`}
-            >
-              <span>{serviceActionCtas[index]}</span>
-              <ArrowRight className="service-cta-arrow w-4 h-4 transition-transform duration-200 group-hover/cta:translate-x-1.5 group-focus-visible/cta:translate-x-1.5" />
-            </a>
-            <a
-              href={service.href}
-              class="text-xs font-semibold text-neutral-400 hover:text-neutral-700 transition-colors hidden sm:inline-block whitespace-nowrap"
-            >
-              Learn more
-            </a>
+            <div class="svc-body">
+              <div class="flex justify-between items-center mb-3">
+                <div class="svc-icon [&>svg]:w-5 [&>svg]:h-5" set:html={icons[index]}></div>
+                {index !== 0 && (
+                  <a href={service.href} aria-label={`Explore ${service.title}`} class="svc-go">
+                    <ArrowUpRight className="w-4 h-4" />
+                  </a>
+                )}
+              </div>
+
+              <h3 class="text-[1.15rem] font-extrabold text-neutral-950 leading-snug tracking-tight">
+                <a href={service.href} class="hover:text-primary transition-colors duration-300">
+                  {service.title}
+                </a>
+              </h3>
+
+              <p class="mt-2 text-[0.875rem] text-neutral-600 leading-relaxed">
+                {service.description}
+              </p>
+
+              <div class="svc-foot">
+                <a
+                  href="/request-a-quote/"
+                  class="service-cta-link cta-float-secondary cta-pulse-subtle inline-flex items-center gap-1.5 text-[0.84rem] font-bold text-primary hover:text-neutral-900 transition-colors group/cta whitespace-nowrap rounded-full"
+                  style={`animation-delay: ${(0.4 + index * 0.4).toFixed(2)}s`}
+                >
+                  <span>{serviceActionCtas[index]}</span>
+                  <ArrowRight className="service-cta-arrow w-4 h-4 transition-transform duration-200 group-hover/cta:translate-x-1.5 group-focus-visible/cta:translate-x-1.5" />
+                </a>
+                <a href={service.href} class="text-xs font-semibold text-neutral-500 hover:text-neutral-800 transition-colors whitespace-nowrap">
+                  Learn more
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
 
     <!-- Strong Conversion CTA: After Services (Standout Checkpoint) -->
-    <div class="cta-checkpoint mt-14 pt-8 border-t border-neutral-100 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left bg-neutral-50/70 rounded-2xl p-6 sm:p-8 border border-neutral-200/70 shadow-xs">
+    <div class="svc-checkpoint cta-checkpoint mt-12 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left rounded-[1.75rem] p-6 sm:p-8">
       <div class="max-w-xl">
         <h3 class="text-xl font-bold text-neutral-900 tracking-tight">Tell Us What You Need</h3>
         <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Have a specific project scope or digital need? Tell us what you're looking for and our team will prepare a tailored solution.</p>
@@ -109,29 +110,184 @@ const icons = [
         <a
           href="/request-a-quote/"
           data-magnetic-btn
-          class="cta-float-secondary cta-delay-9 cta-pulse-strong cta-pulse-delay-4 cta-shimmer-btn w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 text-sm font-bold text-white bg-primary hover:bg-primary/95 rounded-full shadow-md shadow-primary/20 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 group"
+          class="cta-float-secondary cta-delay-9 cta-pulse-strong cta-pulse-delay-4 cta-shimmer-btn w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 text-sm font-bold text-white bg-primary hover:bg-primary/95 rounded-full transition-all duration-300 group"
         >
           <span>Find the Right Solution</span>
           <ArrowRight className="cta-arrow cta-arrow-invite w-4 h-4" />
         </a>
         <a
           href="/services/"
-          class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-bold text-neutral-900 bg-white border border-neutral-200/90 rounded-full hover:border-primary hover:text-primary hover:shadow hover:-translate-y-0.5 transition-all duration-300 shadow-sm"
+          class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-bold text-neutral-900 bg-white/80 border border-neutral-300/80 rounded-full hover:border-primary hover:text-primary transition-all duration-300"
         >
           <span>Explore All Services</span>
+          <ArrowUpRight className="w-4 h-4" />
         </a>
       </div>
     </div>
   </div>
 </section>
 
+<script>
+  // Touch devices have no hover: show the orange state while the card is touched, then fade back.
+  document.querySelectorAll<HTMLElement>('.svc-card').forEach((card) => {
+    let timer: number | undefined;
+    card.addEventListener('pointerdown', (e) => {
+      if (e.pointerType === 'mouse') return;
+      document.querySelectorAll('.svc-card.is-active').forEach((c) => c !== card && c.classList.remove('is-active'));
+      card.classList.add('is-active');
+      window.clearTimeout(timer);
+    });
+    const release = (e: PointerEvent) => {
+      if (e.pointerType === 'mouse') return;
+      window.clearTimeout(timer);
+      timer = window.setTimeout(() => card.classList.remove('is-active'), 900);
+    };
+    card.addEventListener('pointerup', release);
+    card.addEventListener('pointercancel', release);
+  });
+</script>
+
 <style>
+  .svc-section {
+    background:
+      radial-gradient(40rem 26rem at 100% 10%, rgba(240, 90, 44, 0.08), transparent 70%),
+      radial-gradient(36rem 24rem at 0% 90%, rgba(249, 174, 66, 0.08), transparent 70%),
+      #fcfaf7;
+  }
+
+  /* Card: glass panel with the 3D object on top */
+  .svc-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.6rem;
+    overflow: hidden;
+    background: linear-gradient(170deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 247, 241, 0.92) 100%);
+    border: 1px solid rgba(240, 90, 44, 0.10);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) inset, 0 22px 46px -30px rgba(140, 50, 15, 0.38);
+    transition: transform 0.45s cubic-bezier(.2, .8, .2, 1), box-shadow 0.45s, border-color 0.35s;
+  }
+  /* Orange gradient layer: hidden by default, fades in on hover / focus / tap */
+  .svc-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    border-radius: inherit;
+    background: linear-gradient(165deg, #ffd8bf 0%, #ffb88f 55%, #ff9a66 100%);
+    opacity: 0;
+    transition: opacity 0.45s ease;
+    pointer-events: none;
+  }
+  .svc-card > * { position: relative; z-index: 1; }
+  /* the render blends with the card colour layer, so it must not isolate its own stacking context */
+  .svc-card > .svc-visual { z-index: auto; }
+  .svc-card.is-active,
+  .svc-card:focus-within {
+    transform: translateY(-6px);
+    border-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset, 0 28px 56px -26px rgba(240, 90, 44, 0.6);
+  }
+  .svc-card.is-active::before,
+  .svc-card:focus-within::before { opacity: 1; }
+  @media (hover: hover) and (pointer: fine) {
+    .svc-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset, 0 28px 56px -26px rgba(240, 90, 44, 0.6);
+    }
+    .svc-card:hover::before { opacity: 1; }
+  }
+
+  .svc-visual {
+    position: relative;
+    aspect-ratio: 5 / 3.4;
+    overflow: hidden;
+  }
+  .svc-render {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 45%;
+    transform: scale(1.04);
+    transition: transform 0.9s cubic-bezier(.2, .8, .2, 1);
+    -webkit-mask-image: linear-gradient(180deg, #000 70%, transparent 100%);
+            mask-image: linear-gradient(180deg, #000 70%, transparent 100%);
+  }
+  .svc-render { mix-blend-mode: multiply; }
+  .svc-card.is-active .svc-render, .svc-card:focus-within .svc-render { transform: scale(1.1) translateY(-2%); }
+  @media (hover: hover) and (pointer: fine) { .svc-card:hover .svc-render { transform: scale(1.1) translateY(-2%); } }
+
+  .svc-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 1.35rem 1.25rem;
+    margin-top: -0.75rem;
+    position: relative;
+  }
+  .svc-icon {
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 0.85rem;
+    display: grid;
+    place-items: center;
+    color: var(--color-primary);
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(240, 90, 44, 0.16);
+    box-shadow: 0 8px 18px -12px rgba(240, 90, 44, 0.7);
+    transition: all 0.3s;
+  }
+  .svc-card.is-active .svc-icon, .svc-card:focus-within .svc-icon { background: var(--color-primary); color: #fff; border-color: var(--color-primary); }
+  @media (hover: hover) and (pointer: fine) { .svc-card:hover .svc-icon { background: var(--color-primary); color: #fff; border-color: var(--color-primary); } }
+  .svc-go {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 9999px;
+    display: grid;
+    place-items: center;
+    color: var(--color-primary);
+    border: 1.5px solid rgba(240, 90, 44, 0.45);
+    background: rgba(255, 255, 255, 0.6);
+    transition: all 0.3s;
+  }
+  .svc-go:hover { background: var(--color-primary); color: #fff; }
+
+  .svc-foot {
+    margin-top: auto;
+    padding-top: 0.95rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.35rem 0.75rem;
+  }
+  .svc-foot { border-top: 1px solid rgba(240, 90, 44, 0.10); transition: border-color 0.45s ease; }
+  .svc-card .svc-body > p { margin-bottom: 0.9rem; }
+  .svc-card .service-cta-link { transition: color 0.35s ease; }
+  .svc-card.is-active .svc-foot, .svc-card:focus-within .svc-foot { border-top-color: rgba(255, 255, 255, 0.6); }
+  .svc-card.is-active .service-cta-link, .svc-card:focus-within .service-cta-link { color: #9a2e0b; }
+  @media (hover: hover) and (pointer: fine) {
+    .svc-card:hover .svc-foot { border-top-color: rgba(255, 255, 255, 0.6); }
+    .svc-card:hover .service-cta-link { color: #9a2e0b; }
+  }
+
+  .svc-checkpoint {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.82), rgba(255, 244, 236, 0.66));
+    border: 1px solid rgba(255, 255, 255, 0.95);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) inset, 0 24px 50px -32px rgba(160, 60, 20, 0.4);
+  }
+
   @media (max-width: 767px) {
     .services-card-sticky {
       position: sticky;
       top: calc(90px + var(--stack-idx) * 16px);
-      /* Add slight dimming effect as they stack */
       z-index: var(--stack-idx);
     }
+    .svc-visual { aspect-ratio: 5 / 2.6; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .svc-card, .svc-render, .svc-card::before { transition: none; }
+    .svc-card:hover, .svc-card.is-active, .svc-card:focus-within { transform: none; }
   }
 </style>

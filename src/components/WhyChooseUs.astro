@@ -74,22 +74,20 @@ const partnerLogos = [
           const Icon = icons[index];
           return (
           <div
-            class="neu-card neu-card-cream rounded-2xl p-5 sm:p-4.5 md:p-5 transition-all duration-500 group flex flex-col justify-between advantage-card opacity-0 translate-y-8 w-full h-full"
+            class="bg-white/90 backdrop-blur-sm border border-primary/10 shadow-[0_22px_44px_-30px_rgba(160,60,20,0.5)] hover:border-primary/25 hover:-translate-y-0.5 rounded-2xl p-5 md:p-6 transition-all duration-500 group flex flex-col justify-start advantage-card opacity-0 translate-y-8 w-full h-full"
             style={`transition-delay: ${index * 60}ms`}
           >
-            <div>
-              <div class="w-10 h-10 sm:w-10 sm:h-10 rounded-xl bg-[#FFF4ED] border border-[#FDE6D7] flex items-center justify-center transition-all duration-300 group-hover:bg-primary group-hover:border-primary group-hover:shadow-[0_4px_12px_rgba(240,90,44,0.25)] mb-3 sm:mb-3">
-                <Icon className="w-5 h-5 sm:w-4.5 sm:h-4.5 text-primary group-hover:text-white transition-colors duration-300" />
+            <div class="flex items-center gap-4 mb-3">
+              <div class="w-12 h-12 shrink-0 rounded-2xl bg-gradient-to-br from-[#fff1e8] to-[#ffe0cc] flex items-center justify-center transition-all duration-300 group-hover:from-primary group-hover:to-primary group-hover:shadow-[0_4px_12px_rgba(240,90,44,0.25)]">
+                <Icon className="w-5 h-5 text-primary group-hover:text-white transition-colors duration-300" />
               </div>
-              
-              <h3 class="text-base sm:text-[0.9375rem] md:text-base font-bold text-neutral-900 leading-snug mb-2 sm:mb-1.5 group-hover:text-primary transition-colors duration-300">
+              <h3 class="text-base sm:text-[0.9375rem] md:text-base font-bold text-neutral-900 leading-snug group-hover:text-primary transition-colors duration-300">
                 {feature.title}
               </h3>
-              
-              <p class="text-neutral-600 text-sm sm:text-[0.8125rem] md:text-[0.875rem] leading-relaxed font-normal">
+            </div>
+            <p class="text-neutral-600 text-sm sm:text-[0.8125rem] md:text-[0.875rem] leading-relaxed font-normal">
                 {feature.description}
               </p>
-            </div>
           </div>
           );
         })}
@@ -98,14 +96,14 @@ const partnerLogos = [
     </div>
 
     <!-- Trusted Partner 100+ Brands Across Kerala — Continuous Rightward Logo Carousel (White Background) -->
-    <div class="mt-12 sm:mt-14 md:mt-16 bg-white rounded-3xl p-6 sm:p-8 lg:p-10 border border-neutral-200/80 shadow-sm relative z-10 overflow-hidden">
-      <div class="text-center md:text-left mb-6 sm:mb-8">
+    <div class="mt-12 sm:mt-14 md:mt-16 bg-white rounded-[1.75rem] p-5 sm:p-6 lg:p-7 border border-primary/10 shadow-[0_24px_50px_-34px_rgba(160,60,20,0.45)] relative z-10 overflow-hidden flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-8">
+      <div class="text-center lg:text-left lg:w-60 shrink-0 lg:pr-8 lg:border-r lg:border-neutral-200/80">
         <p class="text-xs sm:text-sm font-bold text-primary uppercase tracking-wider mb-1.5">Trusted Partner</p>
-        <h3 class="text-2xl sm:text-3xl md:text-4xl font-black text-neutral-900 tracking-tight">100+ Brands Across Kerala</h3>
+        <h3 class="text-xl sm:text-2xl font-black text-neutral-900 tracking-tight leading-tight">100+ Brands Across Kerala</h3>
       </div>
 
       <!-- Marquee Carousel Viewport (Moving Rightward) -->
-      <div class="marquee-viewport relative w-full overflow-hidden marquee-mask py-1.5" aria-label="Trusted client brand logos">
+      <div class="marquee-viewport relative w-full min-w-0 overflow-hidden marquee-mask py-1.5" aria-label="Trusted client brand logos">
         <div class="flex w-max">
           <!-- Primary Logo Sequence (Announced once for accessibility) -->
           <div class="marquee-track flex items-center gap-3.5 sm:gap-5 lg:gap-6 pr-3.5 sm:pr-5 lg:pr-6 shrink-0">

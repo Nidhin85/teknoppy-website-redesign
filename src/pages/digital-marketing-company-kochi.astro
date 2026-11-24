@@ -11,6 +11,13 @@ const description = page.meta.description;
 
 // Icons are zipped by index onto the JSON-driven content (design is hardcoded).
 const heroStatIcons = [Rocket, Calendar, TrendingUp, Globe2];
+const whyIcons = [TrendingUp, Award, ShieldCheck, Heart];
+
+// Heading colours: highlight one phrase in orange (same words, split for styling only; falls back to plain text).
+const splitAccent = (t: string, phrase: string) => { const i = (t ?? '').indexOf(phrase); return i < 0 ? null : [t.slice(0, i), phrase, t.slice(i + phrase.length)]; };
+// Hero heading colours match the Ecommerce hero: service name + "in Kochi" orange (same words, split for styling only).
+const heroLeadMatch = page.hero.heading.lead.match(/^(Digital Marketing)\s+(.*)$/);
+const heroLead = heroLeadMatch ? { key: heroLeadMatch[1], rest: heroLeadMatch[2] } : null;
 const serviceIcons = [Search, TrendingUp, Network, Edit, Zap, Award, LayoutGrid, Gauge];
 const processIcons = [Search, Compass, Activity, Rocket, TrendingUp, Gauge];
 const industryIcons = [Rocket, Activity, Home, Utensils, GraduationCap, Compass, Briefcase, Building2];
@@ -42,67 +49,79 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
 
   <Header forceSolidBg={true} />
 
-  <main class="overflow-hidden bg-cream/20">
-    <!-- HERO SECTION WITH OFFICE CIRCLING SVG (DARK VERSION) -->
-    <section class="relative pt-32 pb-24 md:pt-36 md:pb-32 overflow-hidden theme-keep-light bg-neutral-950 text-white border-b border-white/5">
-      <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
-        <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/herodarkwebdesign.webp')]"></div>
+  <main class="dmd-page overflow-hidden bg-[#fffaf6]">
+    <!-- HERO (reference layout: dark band, copy left, glowing 3D marketing-analytics visual right, stats strip below) -->
+    <section class="dmd-hero theme-keep-light relative pt-28 sm:pt-32 lg:pt-36 pb-14 sm:pb-16 lg:pb-20 overflow-hidden text-white">
+      <div class="absolute inset-0 pointer-events-none overflow-hidden z-0" aria-hidden="true">
+        <div class="dmd-hero-glow"></div>
       </div>
 
-      <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10 grid xl:grid-cols-12 gap-12 items-center">
-        <!-- Hero Text -->
-        <div class="xl:col-span-7 flex flex-col items-center text-center xl:items-start xl:text-left">
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-bold text-primary uppercase tracking-widest mb-6">
-            <Zap class="w-3.5 h-3.5" />
-            {page.hero.badge}
-          </div>
-          <h1 class="text-4xl sm:text-5xl lg:text-[56px] font-black leading-[1.1] tracking-tight text-white mb-6">
-            {page.hero.heading.lead}
-            <span class="relative inline-block text-primary">
-              {page.hero.heading.highlight}
-              <svg class="absolute -bottom-2 left-0 w-full h-2 text-primary" viewBox="0 0 100 10" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 7C30 3 70 3 97 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
-              </svg>
-            </span>
-            <br class="hidden sm:block" />
-            {page.hero.heading.tail}
-          </h1>
-          <p class="text-base sm:text-lg lg:text-xl text-neutral-300 mb-6 max-w-2xl font-medium leading-relaxed">
-            {page.hero.subheadline}
-          </p>
-          <p class="text-base sm:text-lg text-neutral-300 mb-8 max-w-2xl font-medium leading-relaxed">
-            {page.hero.body}
-          </p>
+      <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12 relative z-10">
+        <div class="grid lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+          <!-- Hero Text -->
+          <div class="lg:col-span-6 flex flex-col items-start text-left">
+            <nav class="flex flex-wrap items-center gap-2 text-xs font-medium text-white/60 mb-5" aria-label="Breadcrumb">
+              <a href="/" class="hover:text-white transition-colors">Home</a>
+              <span class="text-white/30">›</span>
+              <a href="/services/" class="hover:text-white transition-colors">Services</a>
+              <span class="text-white/30">›</span>
+              <span class="text-white font-semibold">Digital Marketing Company in Kochi</span>
+            </nav>
+            <div class="dmd-badge mb-5">
+              <Zap class="w-3.5 h-3.5 shrink-0" />
+              <span>{page.hero.badge}</span>
+            </div>
+            <h1 class="text-[34px] sm:text-[48px] lg:text-[46px] xl:text-[54px] font-black leading-[1.06] tracking-[-0.035em] text-white mb-6">
+              {heroLead ? (<><span class="text-[#ff7a3d]">{heroLead.key}</span> {heroLead.rest}</>) : page.hero.heading.lead} <span class="text-[#ff7a3d]">{page.hero.heading.highlight}</span>{page.hero.heading.tail && ` ${page.hero.heading.tail}`}
+            </h1>
+            <p class="text-base sm:text-lg text-white/90 mb-4 max-w-xl font-semibold leading-snug">
+              {page.hero.subheadline}
+            </p>
+            <p class="text-[15px] sm:text-base text-white/65 mb-8 max-w-xl font-medium leading-relaxed">
+              {page.hero.body}
+            </p>
 
-          <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-            <a href={page.hero.ctaPrimary.href} class="w-full sm:w-auto inline-flex items-center justify-center text-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.35)] hover:bg-primary/95 hover:-translate-y-0.5 transition-all duration-300 leading-snug sm:whitespace-nowrap">
-              {page.hero.ctaPrimary.label}
-              <ArrowRight class="w-4 h-4" />
-            </a>
-            <a href={page.hero.ctaSecondary.href} class="w-full sm:w-auto inline-flex items-center justify-center text-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 text-base font-bold text-white border border-white/20 rounded-full hover:bg-white/5 transition-all duration-300 shadow-sm leading-snug sm:whitespace-nowrap">
-              {page.hero.ctaSecondary.label}
-              <ArrowRight class="w-4 h-4" />
-            </a>
+            <div class="flex flex-col min-[420px]:flex-row items-stretch min-[420px]:items-center gap-3 sm:gap-4 w-full sm:w-auto">
+              <a href={page.hero.ctaPrimary.href} class="inline-flex items-center justify-center gap-2.5 px-7 py-4 text-sm sm:text-base font-bold text-white bg-primary rounded-full shadow-[0_10px_30px_-6px_rgba(240,90,44,0.7)] hover:bg-primary/95 hover:-translate-y-0.5 transition-all duration-300 leading-snug whitespace-nowrap">
+                {page.hero.ctaPrimary.label}
+                <ArrowRight class="w-4 h-4" />
+              </a>
+              <a href={page.hero.ctaSecondary.href} class="inline-flex items-center justify-center gap-3 pl-7 pr-2.5 py-2.5 text-sm sm:text-base font-bold text-neutral-900 bg-white rounded-full hover:-translate-y-0.5 transition-all duration-300 shadow-sm leading-snug whitespace-nowrap">
+                {page.hero.ctaSecondary.label}
+                <span class="flex items-center justify-center w-9 h-9 rounded-full bg-primary text-white shrink-0">
+                  <Play class="w-3.5 h-3.5 ml-0.5" fill="currentColor" />
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero visual: analytics browser, glowing orange sphere and floating channel labels -->
+          <div class="lg:col-span-6">
+            <div class="dmd-visual relative mx-auto w-full max-w-[600px] lg:max-w-none xl:w-[110%]">
+              <picture>
+                <source media="(max-width: 767px)" srcset="/images/home/3d/dm-hero-3d-900.webp" />
+                <img src="/images/home/3d/dm-hero-3d.webp" alt="3D browser window showing a rising growth chart and pie chart in front of a glowing orange sphere, with labels for SEO optimization, social media marketing, Google Ads (PPC) and content marketing" width="1500" height="1030" loading="eager" decoding="async" fetchpriority="high" class="w-full h-auto" />
+              </picture>
+            </div>
           </div>
         </div>
 
-        <!-- Hero Graphic (Redesigned Stats Cards Grid) -->
-        <div class="xl:col-span-5 grid grid-cols-2 gap-4 sm:gap-6">
-
+        <!-- Stats strip -->
+        <div class="dmd-stats mt-12 lg:mt-14 grid grid-cols-2 lg:grid-cols-4">
           {page.hero.statCards.map((card, i) => {
-            const StatIcon = heroStatIcons[i];
+            const IconComp = heroStatIcons[i];
             return (
-              <div class="theme-keep-light bg-[#0c0c0e] border border-white/5 rounded-[2rem] p-8 shadow-2xl hover:border-primary/30 hover:shadow-[0_0_30px_rgba(240,90,44,0.12)] hover:-translate-y-1 transition-all duration-300 flex flex-col items-start min-h-[220px] group">
-                <div class="w-11 h-11 rounded-full border border-primary/30 flex items-center justify-center text-primary bg-primary/5 shadow-[0_0_15px_rgba(240,90,44,0.25)] mb-6 group-hover:scale-105 transition-transform">
-                  <StatIcon class="w-5 h-5" />
+              <div class="flex items-center gap-3.5 px-4 sm:px-6 py-4 sm:py-5">
+                <span class="w-11 h-11 sm:w-12 sm:h-12 shrink-0 rounded-2xl bg-gradient-to-br from-[#fff1e8] to-[#ffe0cc] text-primary flex items-center justify-center">
+                  <IconComp class="w-5 h-5" />
+                </span>
+                <div class="min-w-0">
+                  <span class="block text-xl sm:text-2xl font-black text-neutral-900 leading-none tracking-tight">{card.value}</span>
+                  <span class="block text-xs sm:text-[13px] text-neutral-500 font-medium mt-1.5 leading-snug">{card.label}</span>
                 </div>
-                <span class="text-3xl font-black text-white block leading-none mb-2">{card.value}</span>
-                <div class="w-8 h-[2px] bg-primary mb-4"></div>
-                <span class="text-[11px] font-black text-neutral-400 uppercase tracking-widest leading-normal">{card.label}</span>
               </div>
             );
           })}
-
         </div>
       </div>
     </section>
@@ -114,39 +133,33 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
         <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/whoweare.webp')] opacity-50"></div>
       </div>
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-
-          <!-- Left Column (Sticky Panel) -->
-          <div class="lg:col-span-5 lg:sticky lg:top-32 space-y-6">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-wider shadow-sm">
+        <div class="grid lg:grid-cols-12 gap-6 lg:gap-12 items-end mb-10 sm:mb-12">
+          <div class="lg:col-span-7">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-wider shadow-sm mb-5">
               {page.whyTeknoppy.badge}
             </div>
             <h2 class="text-4xl sm:text-5xl font-black text-neutral-900 leading-tight">
-              {page.whyTeknoppy.heading.lead} <br />
-              <span class="text-primary">{page.whyTeknoppy.heading.highlight}</span>
+              {page.whyTeknoppy.heading.lead} <br class="hidden sm:inline" />
+              {(() => { const w = splitAccent(page.whyTeknoppy.heading.highlight, "Digital Marketing Company in Kochi"); return w ? (<>{w[0]}<span class="text-primary">{w[1]}</span>{w[2]}</>) : <span class="text-primary">{page.whyTeknoppy.heading.highlight}</span>; })()}
             </h2>
-            <p class="text-neutral-600 font-medium text-base sm:text-[17px] leading-relaxed max-w-sm">
-              {page.whyTeknoppy.intro}
-            </p>
           </div>
+          <p class="lg:col-span-5 text-neutral-600 font-medium text-base sm:text-[17px] leading-relaxed">
+            {page.whyTeknoppy.intro}
+          </p>
+        </div>
 
-          <!-- Right Column (Premium Custom Cards Grid) -->
-          <div class="lg:col-span-7 grid sm:grid-cols-2 gap-6 lg:gap-8">
-
-            {page.whyTeknoppy.cards.map(card => (
-              <div class="bg-white rounded-3xl border border-neutral-100 p-8 shadow-[0_12px_40px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col justify-between group">
-                <div>
-                  <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-4">{card.tag}</span>
-                  <h3 class="text-xl font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-3">{card.title}</h3>
-                  <p class="text-neutral-500 text-xs leading-relaxed font-semibold">
-                    {card.description}
-                  </p>
-                </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+          {page.whyTeknoppy.cards.map((card, i) => {
+            const WIcon = whyIcons[i] ?? Zap;
+            return (
+              <div class="dmd-card group p-6 sm:p-7 flex flex-col">
+                <span class="dmd-icon mb-5"><WIcon class="w-6 h-6" /></span>
+                <span class="text-[11px] font-bold text-primary uppercase tracking-widest block mb-2">{card.tag}</span>
+                <h3 class="text-lg font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-2.5 leading-snug">{card.title}</h3>
+                <p class="text-neutral-600 text-sm leading-relaxed">{card.description}</p>
               </div>
-            ))}
-
-          </div>
-
+            );
+          })}
         </div>
       </div>
     </section>
@@ -158,36 +171,32 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
         <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/bgourservices.webp')]" style="opacity: 0.45;"></div>
       </div>
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
-        <div class="max-w-3xl mb-16">
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-wider mb-4 shadow-sm">
-            {page.services.badge}
+        <div class="grid lg:grid-cols-12 gap-6 lg:gap-12 items-end mb-10 sm:mb-12">
+          <div class="lg:col-span-7">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+              {page.services.badge}
+            </div>
+            <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+              {page.services.heading.lead} <span class="text-primary">{page.services.heading.highlight}</span> {page.services.heading.tail}
+            </h2>
           </div>
-          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
-            {page.services.heading.lead} <span class="text-primary">{page.services.heading.highlight}</span> {page.services.heading.tail}
-          </h2>
-          <p class="text-neutral-500 font-medium mt-3 text-base sm:text-lg">
+          <p class="lg:col-span-5 text-neutral-600 font-medium text-base sm:text-lg leading-relaxed">
             {page.services.intro}
           </p>
         </div>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
           {page.services.cards.map((svc, i) => {
             const IconComp = serviceIcons[i];
-            const Card = svc.href ? 'a' : 'div';
+            const Card = svc.linkHref ? 'a' : 'div';
             return (
-              <Card href={svc.href} class="group relative overflow-hidden bg-white rounded-3xl border border-neutral-100 p-6 sm:p-7 shadow-[0_12px_30px_-15px_rgba(0,0,0,0.03)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.06)] transition-all duration-300 flex flex-col">
-                <!-- Left Gradient Stroke -->
-                <div class="absolute left-0 top-0 bottom-0 w-[4px] bg-gradient-to-b from-primary via-[#F58439] to-[#FFE2D1]"></div>
-                <div class="flex items-center gap-4">
-                  <div class="w-14 h-14 bg-primary/5 text-primary rounded-2xl flex items-center justify-center flex-shrink-0 border border-primary/10 shadow-inner">
-                    <IconComp class="w-6 h-6" />
-                  </div>
-                  <h3 class:list={["text-base sm:text-[18px] font-black text-neutral-850 leading-snug", svc.href && "group-hover:text-primary transition-colors duration-300"]}>{svc.title}</h3>
-                </div>
-                <p class="text-neutral-600 text-[15px] sm:text-base leading-relaxed font-medium mt-4">{svc.desc}</p>
-                {svc.href && (
-                  <span class="inline-flex items-center gap-1.5 mt-5 text-xs font-bold text-primary">
-                    {svc.linkLabel ?? 'Learn more'} <ArrowRight class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+              <Card href={svc.linkHref} class="dmd-card group p-6 flex flex-col">
+                <span class="dmd-icon mb-5"><IconComp class="w-6 h-6" /></span>
+                <h3 class:list={["text-lg font-bold text-neutral-900 leading-snug mb-2.5", svc.linkHref && "group-hover:text-primary transition-colors duration-300"]}>{svc.title}</h3>
+                <p class="text-neutral-600 text-sm leading-relaxed">{svc.description}</p>
+                {svc.linkHref && (
+                  <span class="inline-flex items-center gap-1.5 mt-auto pt-5 text-[13px] font-bold text-primary">
+                    {svc.linkText ?? 'Learn more'} <ArrowRight class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
                   </span>
                 )}
               </Card>
@@ -216,37 +225,21 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
           </p>
         </div>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-6 lg:gap-x-8 relative z-10">
+        <ol class="dmd-process relative grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-4 gap-y-9 sm:gap-x-6 lg:gap-x-4 z-10">
           {page.process.steps.map((proc, idx) => {
             const IconComponent = processIcons[idx];
             return (
-              <div class="relative bg-white rounded-3xl border border-neutral-100 p-8 shadow-[0_10px_30px_rgba(0,0,0,0.02)] hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.06)] transition-all duration-300 flex flex-col justify-between group min-h-[260px]">
-                <div>
-                  <div class="flex items-center gap-4">
-                    <div class="w-14 h-14 bg-primary/5 text-primary rounded-2xl flex items-center justify-center flex-shrink-0 border border-primary/10 shadow-inner">
-                      <IconComponent class="w-6 h-6" />
-                    </div>
-                    <div>
-                      <span class="block text-[11px] font-black text-primary uppercase tracking-widest">Step {proc.step}</span>
-                      <h3 class="text-base sm:text-[18px] font-black text-neutral-850 leading-snug mt-0.5 group-hover:text-primary transition-colors duration-300">{proc.title}</h3>
-                    </div>
-                  </div>
-                  <p class="text-neutral-600 text-[15px] sm:text-base leading-relaxed font-medium mt-5">{proc.desc}</p>
+              <li class="group relative flex flex-col items-center text-center">
+                <div class="relative z-10 w-16 h-16 rounded-full bg-white border border-primary/15 shadow-[0_18px_36px_-20px_rgba(160,60,20,0.55)] flex items-center justify-center text-primary mb-4 transition-all duration-300 group-hover:bg-primary group-hover:text-white group-hover:-translate-y-1">
+                  <IconComponent class="w-6 h-6" />
                 </div>
-                <div class="w-10 h-[3px] bg-primary/80 mt-6 rounded-full"></div>
-
-                {/* Horizontal Connector Arrow */}
-                {idx % 3 !== 2 && (
-                  <div class="hidden lg:flex absolute right-[-20px] top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-primary text-white items-center justify-center shadow-md shadow-primary/20 z-20 transition-transform duration-300 group-hover:scale-110">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="3.5" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                )}
-              </div>
+                <span class="text-[11px] font-bold text-primary uppercase tracking-[0.14em] mb-1">Step {proc.number}</span>
+                <h3 class="text-base sm:text-lg font-bold text-neutral-900 leading-snug mb-1.5 group-hover:text-primary transition-colors duration-300">{proc.title}</h3>
+                <p class="text-neutral-600 text-xs sm:text-[0.84rem] leading-relaxed max-w-[15rem]">{proc.description}</p>
+              </li>
             );
           })}
-        </div>
+        </ol>
       </div>
     </section>
 
@@ -257,39 +250,44 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
         <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/pricingbg.webp')] opacity-75"></div>
       </div>
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
-        <div class="max-w-3xl mb-12">
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-wider mb-4 shadow-sm">
-            {page.pricing.badge}
+        <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div class="lg:col-span-5">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+              {page.pricing.badge}
+            </div>
+            <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight mb-4">
+              {page.pricing.heading.lead} <span class="text-primary">{page.pricing.heading.highlight}</span>
+            </h2>
+            <p class="text-neutral-600 font-medium text-base max-w-md">
+              {page.pricing.intro}
+            </p>
           </div>
-          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight mb-4">
-            {page.pricing.heading.lead} <span class="text-primary">{page.pricing.heading.highlight}</span>
-          </h2>
-          <p class="text-neutral-500 font-medium text-base">
-            {page.pricing.intro}
-          </p>
+          <div class="lg:col-span-7">
+            <div class="bg-white rounded-[1.75rem] border border-primary/10 overflow-hidden shadow-[0_30px_60px_-36px_rgba(160,60,20,0.45)]">
+              <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                  <thead>
+                    <tr class="border-b border-neutral-100">
+                      <th class="pt-5 pb-3 px-4 sm:px-7 text-[11px] sm:text-xs font-bold text-neutral-400 uppercase tracking-[0.14em]">Service</th>
+                      <th class="pt-5 pb-3 px-4 sm:px-7 text-[11px] sm:text-xs font-bold text-neutral-400 uppercase tracking-[0.14em] text-right">Estimated Investment</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-neutral-100">
+                    {page.pricing.rows.map((priceItem) => (
+                      <tr class="hover:bg-[#fff8f3] transition-colors">
+                        <td class="py-3.5 sm:py-4 px-4 sm:px-7 font-bold text-neutral-900 text-xs sm:text-[0.95rem]">{priceItem.service}</td>
+                        <td class="py-3.5 sm:py-4 px-4 sm:px-7 text-right font-bold text-primary text-xs sm:text-[0.95rem] whitespace-nowrap">{priceItem.price}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <p class="text-neutral-500 text-xs sm:text-sm mt-4 leading-relaxed font-medium">
+              {page.pricing.footnote}
+            </p>
+          </div>
         </div>
-
-        <div class="bg-white rounded-3xl border border-neutral-200/60 overflow-hidden shadow-sm">
-          <table class="w-full text-left border-collapse">
-            <thead>
-              <tr class="bg-primary text-white font-bold text-sm sm:text-base border-b border-primary/20">
-                <th class="p-4 sm:p-5">Service</th>
-                <th class="p-4 sm:p-5 text-right">Estimated Investment</th>
-              </tr>
-            </thead>
-            <tbody>
-              {page.pricing.rows.map((priceItem, idx) => (
-                <tr class={`border-b border-neutral-100 hover:bg-neutral-50/50 transition-colors ${idx % 2 === 0 ? 'bg-white' : 'bg-neutral-50/20'}`}>
-                  <td class="p-4 sm:p-5 font-bold text-neutral-800 text-sm sm:text-base">{priceItem.type}</td>
-                  <td class="p-4 sm:p-5 text-right font-black text-primary text-sm sm:text-base">{priceItem.price}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <p class="text-neutral-500 text-sm mt-4 leading-relaxed max-w-3xl font-medium">
-          {page.pricing.footnote}
-        </p>
       </div>
     </section>
 
@@ -300,33 +298,34 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
         <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/industriesbg.webp')] opacity-75"></div>
       </div>
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/20 border border-amber-500/30 text-amber-400 text-[12px] font-bold uppercase tracking-wider mb-4 shadow-sm">
-            {page.industries.badge}
+        <div class="grid lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+          <div class="lg:col-span-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/20 border border-amber-500/30 text-amber-400 text-[12px] font-bold uppercase tracking-wider mb-4 shadow-sm">
+              {page.industries.badge}
+            </div>
+            <h2 class="text-3xl md:text-4xl font-black text-white leading-tight">
+              <span class="text-[#F9AE42]">{page.industries.heading.highlight}</span> {page.industries.heading.tail}
+            </h2>
+            <p class="text-neutral-400 font-medium mt-3 text-base">
+              {page.industries.intro}
+            </p>
           </div>
-          <h2 class="text-4xl md:text-5xl font-black text-white leading-tight">
-            <span class="text-[#F9AE42]">{page.industries.heading.highlight}</span> {page.industries.heading.tail}
-          </h2>
-          <p class="text-neutral-400 font-medium mt-3 text-base">
-            {page.industries.intro}
-          </p>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {page.industries.items.map((ind, i) => {
-            const IconComponent = industryIcons[i];
-            return (
-              <div class="bg-neutral-900/60 border border-amber-500/10 p-6 rounded-3xl shadow-lg hover:border-amber-500/40 hover:-translate-y-1 transition-all duration-300 flex items-start gap-4">
-                <div class="w-10 h-10 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <IconComponent class="w-5 h-5" />
+          <div class="lg:col-span-8 grid sm:grid-cols-2 gap-3 sm:gap-4">
+            {page.industries.items.map((ind, i) => {
+              const IconComponent = industryIcons[i];
+              return (
+                <div class="bg-white/[0.04] border border-white/10 p-4 sm:p-5 rounded-2xl hover:border-amber-500/40 hover:bg-white/[0.07] transition-all duration-300 flex items-start gap-3.5">
+                  <div class="w-10 h-10 rounded-xl bg-primary/20 text-[#ff9a5c] flex items-center justify-center flex-shrink-0">
+                    <IconComponent class="w-5 h-5" />
+                  </div>
+                  <div class="min-w-0">
+                    <h3 class="text-[15px] font-bold text-white mb-1">{ind.title}</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed">{ind.description}</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 class="text-base font-bold text-white mb-2">{ind.name}</h3>
-                  <p class="text-neutral-300 text-[15px] sm:text-base leading-relaxed font-normal">{ind.desc}</p>
-                </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
@@ -431,11 +430,12 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
     <!-- CLIENT TESTIMONIALS SECTION -->
     <section class="py-20 bg-neutral-50/50 border-t border-neutral-100">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
-        <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="grid lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+          <div class="lg:col-span-4 lg:sticky lg:top-28">
           <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-wider mb-4 shadow-sm">
             {page.testimonials.badge}
           </div>
-          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+          <h2 class="text-3xl md:text-4xl font-black text-neutral-900 leading-tight">
             {page.testimonials.heading.lead} <span class="text-primary">{page.testimonials.heading.highlight}</span> {page.testimonials.heading.tail}
           </h2>
           <p class="text-neutral-500 font-medium mt-3 text-base">
@@ -443,16 +443,17 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
           </p>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="lg:col-span-8">
+        <div class="grid md:grid-cols-3 gap-4 sm:gap-5">
           {page.testimonials.items.map(item => (
-            <div class="bg-white border border-neutral-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between">
+            <div class="dmd-card p-6 flex flex-col justify-between">
               <div>
                 <div class="flex gap-1 text-[#F9AE42] mb-4">
-                  <Star class="w-4 h-4 fill-current" />
-                  <Star class="w-4 h-4 fill-current" />
-                  <Star class="w-4 h-4 fill-current" />
-                  <Star class="w-4 h-4 fill-current" />
-                  <Star class="w-4 h-4 fill-current" />
+                  <Star class="w-4 h-4" fill="currentColor" />
+                  <Star class="w-4 h-4" fill="currentColor" />
+                  <Star class="w-4 h-4" fill="currentColor" />
+                  <Star class="w-4 h-4" fill="currentColor" />
+                  <Star class="w-4 h-4" fill="currentColor" />
                 </div>
                 <p class="text-xs text-neutral-600 font-medium italic leading-relaxed mb-6">
                   "{item.quote}"
@@ -465,17 +466,20 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
             </div>
           ))}
         </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- FEATURED PROJECTS LIST -->
     <section class="py-20 bg-white border-t border-neutral-100">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
-        <div class="max-w-3xl mb-16">
+        <div class="grid lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+          <div class="lg:col-span-4 lg:sticky lg:top-28">
           <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-wider mb-4 shadow-sm">
             {page.projects.badge}
           </div>
-          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+          <h2 class="text-3xl md:text-4xl font-black text-neutral-900 leading-tight">
             {page.projects.heading.lead} <span class="text-primary">{page.projects.heading.highlight}</span> {page.projects.heading.tail}
           </h2>
           <p class="text-neutral-500 font-medium mt-3 text-base">
@@ -483,15 +487,16 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
           </p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+          <div class="lg:col-span-8">
+        <div class="grid md:grid-cols-3 gap-4 sm:gap-5">
           {page.projects.items.map(proj => (
-            <div class="bg-white rounded-3xl border border-neutral-200/60 p-6 shadow-sm flex flex-col justify-between">
+            <div class="dmd-card p-5 sm:p-6 flex flex-col justify-between">
               <div>
-                <div class="flex items-center justify-between mb-4">
+                <div class="flex flex-col items-start gap-2 mb-4">
                   <h3 class="text-lg font-bold text-neutral-900">{proj.name}</h3>
                   <span class="text-[11px] font-black text-primary bg-primary/5 px-2 py-0.5 rounded-full uppercase tracking-wider">{proj.loc}</span>
                 </div>
-                <p class="text-neutral-600 text-[15px] sm:text-base leading-relaxed font-medium mb-4">{proj.desc}</p>
+                <p class="text-neutral-600 text-sm leading-relaxed mb-4">{proj.desc}</p>
                 <div class="bg-neutral-50/50 rounded-2xl p-4 border border-neutral-100">
                   <span class="block text-[12px] font-black text-neutral-800 uppercase tracking-wider mb-1">Result</span>
                   <p class="text-neutral-600 text-sm font-semibold leading-relaxed">{proj.result}</p>
@@ -503,26 +508,30 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
             </div>
           ))}
         </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- LATEST INSIGHTS SECTION -->
     <section class="py-20 bg-cream/30 border-t border-neutral-100">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
-        <div class="max-w-3xl mb-12">
+        <div class="grid lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+          <div class="lg:col-span-4 lg:sticky lg:top-28">
           <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-wider mb-4 shadow-sm">
             {page.insights.badge}
           </div>
-          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+          <h2 class="text-3xl md:text-4xl font-black text-neutral-900 leading-tight">
             {page.insights.heading.lead} <span class="text-primary">{page.insights.heading.highlight}</span> {page.insights.heading.tail}
           </h2>
         </div>
 
-        <div class="max-w-4xl divide-y divide-neutral-100">
+          <div class="lg:col-span-8">
+        <div class="dmd-card px-6 sm:px-7 py-5 divide-y divide-neutral-100">
           {page.insights.items.map(post => (
-            <a href={post.href} class="group block py-5 first:pt-0">
+            <a href={post.href} class="group block py-4 first:pt-1">
               <h3 class="text-base sm:text-lg font-black text-neutral-900 group-hover:text-primary transition-colors leading-snug">{post.title}</h3>
-              <p class="text-neutral-600 text-[15px] sm:text-base leading-relaxed font-medium mt-2">{post.text}</p>
+              <p class="text-neutral-600 text-sm leading-relaxed mt-1.5">{post.text}</p>
             </a>
           ))}
           <a href={page.insights.viewAll.href} class="inline-flex items-center gap-1.5 text-xs font-black text-primary uppercase tracking-wider pt-5 hover:underline">
@@ -530,17 +539,20 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
             <ArrowRight class="w-3.5 h-3.5" />
           </a>
         </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- FAQS SECTION -->
     <section class="py-20 bg-neutral-50/50 border-t border-neutral-100">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
-        <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="grid lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+          <div class="lg:col-span-4 lg:sticky lg:top-28">
           <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-wider mb-4 shadow-sm">
             {page.faqs.badge}
           </div>
-          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-tight">
+          <h2 class="text-3xl md:text-4xl font-black text-neutral-900 leading-tight">
             {page.faqs.heading.lead} <span class="text-primary">{page.faqs.heading.highlight}</span>
           </h2>
           <p class="text-neutral-500 font-medium mt-3 text-base">
@@ -548,24 +560,25 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
           </p>
         </div>
 
-        <div class="max-w-4xl mx-auto space-y-4">
+          <div class="lg:col-span-8">
+        <div class="space-y-3">
           {page.faqs.items.map(faq => (
-            <details class="group bg-white rounded-2xl border border-neutral-200/60 p-6 [&_summary::-webkit-details-marker]:hidden">
-              <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
+            <details class="dmd-faq group [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex items-center justify-between gap-4 cursor-pointer px-5 sm:px-6 py-4 sm:py-5 rounded-2xl focus-visible:outline-2 focus-visible:outline-primary">
                 <h3 class="text-sm sm:text-base font-bold text-neutral-850 pr-4">
                   {faq.q}
                 </h3>
-                <span class="transition-transform duration-300 group-open:-rotate-180 text-primary flex-shrink-0">
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                  </svg>
+                <span class="w-7 h-7 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 transition-transform duration-300 group-open:rotate-45" aria-hidden="true">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.6" viewBox="0 0 24 24"><path stroke-linecap="round" d="M12 5v14M5 12h14" /></svg>
                 </span>
               </summary>
-              <div class="mt-4 pt-4 border-t border-neutral-100/60 text-base sm:text-[17px] text-neutral-600 leading-relaxed font-normal">
+              <div class="px-5 sm:px-6 pb-5 text-sm sm:text-[15px] text-neutral-600 leading-relaxed font-normal">
                 {faq.a}
               </div>
             </details>
           ))}
+        </div>
+          </div>
         </div>
       </div>
     </section>
@@ -577,3 +590,70 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
     description="Tell us your goal — more calls, leads or sales. We will audit your website, search visibility and ad accounts for free, and send a written plan with pricing within 24 hours."
   />
 </Layout>
+
+<style>
+  /* ---- Digital Marketing: reference design layer (page-scoped) ---- */
+  .dmd-hero { background: radial-gradient(120% 90% at 78% 30%, #3a1608 0%, #1a0b05 45%, #0d0705 100%); }
+  .dmd-hero-glow {
+    position: absolute; right: -8%; top: 4%; width: 62%; height: 92%;
+    background: radial-gradient(closest-side, rgba(255, 98, 30, 0.38), rgba(255, 98, 30, 0.12) 55%, transparent 100%);
+    filter: blur(10px);
+  }
+  .dmd-hero::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 30%; pointer-events: none;
+    background: linear-gradient(180deg, transparent, rgba(240, 90, 44, 0.10));
+  }
+  .dmd-badge {
+    display: inline-flex; align-items: center; gap: 0.5rem; max-width: 100%;
+    padding: 0.4rem 0.9rem; border-radius: 999px;
+    background: var(--color-primary); color: #fff; font-size: 0.8rem; font-weight: 700;
+    box-shadow: 0 8px 22px -8px rgba(240, 90, 44, 0.8);
+  }
+  .dmd-visual img { filter: drop-shadow(0 30px 50px rgba(255, 90, 20, 0.28)); }
+  @media (prefers-reduced-motion: no-preference) {
+    .dmd-visual picture { display: block; animation: dmdFloat 7s ease-in-out infinite; }
+  }
+  @keyframes dmdFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+  .dmd-stats {
+    position: relative; z-index: 2; background: #fff; border: 1px solid rgba(240, 90, 44, 0.1); border-radius: 1.5rem;
+    box-shadow: 0 24px 50px -34px rgba(160, 60, 20, 0.45);
+  }
+  .dmd-stats > div + div { border-left: 1px solid #f3ebe5; }
+  @media (max-width: 1023px) {
+    .dmd-stats > div:nth-child(3) { border-left: 0; }
+    .dmd-stats > div:nth-child(n+3) { border-top: 1px solid #f3ebe5; }
+  }
+  .dmd-card {
+    background: #fff; border: 1px solid rgba(240, 90, 44, 0.09); border-radius: 1.5rem;
+    box-shadow: 0 24px 50px -34px rgba(160, 60, 20, 0.45);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .dmd-card.group:hover { transform: translateY(-3px); border-color: rgba(240, 90, 44, 0.25); box-shadow: 0 30px 56px -30px rgba(160, 60, 20, 0.5); }
+  .dmd-icon {
+    width: 3rem; height: 3rem; border-radius: 1rem; display: inline-flex; align-items: center; justify-content: center;
+    color: var(--color-primary); background: linear-gradient(135deg, #fff1e8, #ffe0cc);
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  .dmd-card.group:hover .dmd-icon { background: var(--color-primary); color: #fff; }
+  .dmd-faq {
+    background: #fff; border: 1px solid rgba(240, 90, 44, 0.09); border-radius: 1rem;
+    box-shadow: 0 18px 40px -32px rgba(160, 60, 20, 0.45);
+  }
+  .dmd-faq[open] { border-color: rgba(240, 90, 44, 0.22); }
+  @media (min-width: 1024px) {
+    .dmd-process::before {
+      content: ""; position: absolute; top: 2rem; left: 8%; right: 8%;
+      border-top: 2px dashed rgba(240, 90, 44, 0.28);
+    }
+  }
+  /* section label pills -> "— Label" eyebrows, as in the reference */
+  .dmd-page :global(:is(div, span).rounded-full.uppercase:is(.text-primary, .text-amber-400)[class*="tracking-"][class*="mb-"]) {
+    background: none; border: 0; box-shadow: none; transform: none; padding: 0;
+    gap: 0.75rem; text-transform: none; letter-spacing: -0.005em; font-size: 1.05rem; font-weight: 700;
+  }
+  .dmd-page :global(:is(div, span).rounded-full.uppercase:is(.text-primary, .text-amber-400)[class*="tracking-"][class*="mb-"]::before) {
+    content: ""; flex: none; width: 1.9rem; height: 2.5px; border-radius: 2px; background: currentColor;
+  }
+  .dmd-page :global(section h2.font-black) { letter-spacing: -0.032em; line-height: 1.08; }
+</style>
+

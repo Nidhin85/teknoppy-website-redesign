@@ -90,154 +90,103 @@ const projects = [
 ];
 ---
 
-<section id="portfolio" class="py-12 sm:py-14 md:py-20 bg-white overflow-hidden text-neutral-900 relative">
-  <!-- Dynamic warm background elements -->
-  <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-secondary/10 rounded-full blur-[150px] -z-10"></div>
-  <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-primary/8 rounded-full blur-[150px] -z-10"></div>
-  
-  <div class="max-w-[1280px] mx-auto px-3.5 sm:px-6 lg:px-12">
-    <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 sm:gap-10 mb-10 sm:mb-12 md:mb-14">
-      <div class="max-w-3xl relative">
-        <div class="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-bold uppercase tracking-wider mb-8 shadow-sm transform -rotate-1">
-          Proven Results
-        </div>
-        <h2 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-neutral-900 mb-6" data-magnetic-heading>
+<section id="portfolio" class="feat-band relative overflow-hidden text-white">
+  <!-- Rendered mountain range (decorative) -->
+  <div class="feat-mountains" aria-hidden="true"></div>
+  <div class="feat-glow" aria-hidden="true"></div>
+
+  <div class="relative z-10 max-w-[1320px] mx-auto px-5 sm:px-8 lg:px-12 pt-16 sm:pt-20 lg:pt-24 pb-16 sm:pb-20">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-10 sm:mb-12">
+      <div class="max-w-3xl">
+        <span class="ds-eyebrow is-dark">Proven Results</span>
+        <h2 class="mt-4 text-[2.2rem] sm:text-5xl lg:text-[3.6rem] font-black leading-[1.03] tracking-[-0.035em] text-white" data-magnetic-heading>
           Our Recent Website Design <br class="hidden lg:block"/> Projects in Kerala
         </h2>
-        <p class="text-xl text-neutral-600 font-medium leading-relaxed max-w-2xl">
+        <p class="mt-5 text-base sm:text-lg text-white/70 font-medium leading-relaxed max-w-2xl">
           From startups and clinics to retail brands and corporate enterprises, our portfolio reflects the diversity of Kerala businesses we have helped build their digital presence. Every project is unique — and every result is measurable.
         </p>
       </div>
-      <a href="/portfolios/" class="group inline-flex items-center gap-3 px-8 py-4 text-sm font-bold text-white bg-primary rounded-full hover:bg-primary/95 hover:shadow-xl hover:-translate-y-0.5 transition-all flex-shrink-0 shadow-lg shadow-primary/20">
+      <a href="/portfolios/" class="group inline-flex items-center gap-3 px-7 py-3.5 text-sm font-bold text-white bg-primary rounded-full hover:bg-primary/95 transition-all flex-shrink-0 self-center lg:self-auto">
         View All Projects
         <ExternalLink className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
       </a>
     </div>
 
-    <!-- Case Study Showcase Layout -->
-    <div class="space-y-4 sm:space-y-8 lg:space-y-12">
+    <!-- Image-led project cards -->
+    <div class="feat-grid">
       {projects.map((project, index) => (
-        <article class="case-study-card rounded-2xl sm:rounded-3xl border border-primary/50 bg-white p-2.5 min-[360px]:p-3.5 sm:p-6 lg:p-8 xl:p-10 shadow-[0_4px_24px_rgba(240,90,44,0.04)] hover:border-primary hover:shadow-[0_8px_30px_rgba(240,90,44,0.12)] transition-all duration-500 relative overflow-hidden group scroll-mt-20 sm:scroll-mt-24">
-          <div class={`flex flex-col ${index % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-2.5 min-[360px]:gap-3 sm:gap-6 lg:gap-10 xl:gap-14`}>
-            
-            <!-- Image Mockup Container -->
-            <div class="w-full lg:w-[48%] xl:w-[50%] relative z-10">
-              <!-- Background Glow -->
-              <div class={`absolute inset-0 bg-gradient-to-tr ${project.color} rounded-2xl transform ${index % 2 !== 0 ? 'rotate-1' : '-rotate-1'} scale-105 opacity-0 group-hover:opacity-100 transition-all duration-700 blur-xl`}></div>
-              
-              <!-- Main Desktop Window -->
-              <div class="relative bg-white rounded-xl sm:rounded-2xl shadow-[0_10px_30px_rgba(240,90,44,0.06)] border border-neutral-200/80 overflow-hidden transform group-hover:-translate-y-1 transition-all duration-500 z-20">
-                <div class="h-5 min-[360px]:h-6 sm:h-9 bg-neutral-50 border-b border-neutral-200/80 flex items-center px-2 min-[360px]:px-2.5 sm:px-4 gap-1 sm:gap-2">
-                  <div class="w-1.5 h-1.5 min-[360px]:w-2 min-[360px]:h-2 sm:w-3 sm:h-3 rounded-full bg-[#FF5F56]"></div>
-                  <div class="w-1.5 h-1.5 min-[360px]:w-2 min-[360px]:h-2 sm:w-3 sm:h-3 rounded-full bg-[#FFBD2E]"></div>
-                  <div class="w-1.5 h-1.5 min-[360px]:w-2 min-[360px]:h-2 sm:w-3 sm:h-3 rounded-full bg-[#27C93F]"></div>
-                </div>
-                
-                <div class="aspect-[16/9] sm:aspect-[16/10] bg-cream relative overflow-hidden">
-                  <img
-                    src={project.imageDesktop}
-                    alt={project.imageAlt}
-                    width="1600"
-                    height="1000"
-                    loading="lazy"
-                    decoding="async"
-                    class="w-full h-full object-cover object-top group-hover:scale-102 transition-transform duration-700"
-                  />
-                </div>
+        <article class={`feat-card group scroll-mt-24 ${index < 3 ? 'is-top' : 'is-bottom'}`}>
+          <div class="feat-media">
+            <img
+              src={project.imageDesktop}
+              alt={project.imageAlt}
+              width="1600"
+              height="1000"
+              loading="lazy"
+              decoding="async"
+              class="feat-shot"
+            />
+            <div class="feat-scrim" aria-hidden="true"></div>
+            <div class="feat-overlay">
+              <div class="min-w-0">
+                <h3 class="feat-client">{project.client}</h3>
+                <p class="feat-industry"><span class={`w-1.5 h-1.5 rounded-full ${project.accent}`}></span>{project.industry}</p>
               </div>
-              
-              <!-- Floating Mobile Mockup (Tablet & Desktop) -->
-              <div class={`absolute -bottom-6 ${index % 2 !== 0 ? '-left-6' : '-right-6'} w-[32%] aspect-[9/19] bg-white rounded-xl sm:rounded-2xl shadow-xl border-3 border-neutral-900 overflow-hidden transform group-hover:-translate-y-4 ${index % 2 !== 0 ? 'group-hover:translate-x-2 rotate-4' : 'group-hover:-translate-x-2 -rotate-4'} transition-all duration-500 hidden md:block z-30`}>
-                 <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[38%] h-3 bg-neutral-900 rounded-b-lg z-10"></div>
-                 <img
-                   src={project.imageMobile}
-                   alt=""
-                   aria-hidden="true"
-                   width="430"
-                   height="932"
-                   loading="lazy"
-                   decoding="async"
-                   class="w-full h-full object-cover object-top bg-cream"
-                 />
-              </div>
-            </div>
-
-            <!-- Project Information -->
-            <div class={`w-full lg:w-[52%] xl:w-[50%] flex flex-col items-start pt-1 sm:pt-2 lg:pt-0 relative z-20`}>
-              <div class="w-full flex items-center justify-between gap-2 mb-1 sm:mb-3">
-                <div class="px-2.5 sm:px-4 py-0.5 sm:py-1.5 rounded-full bg-primary/10 border border-primary/20 text-[10px] min-[360px]:text-[11px] sm:text-xs font-bold text-primary flex items-center gap-1.5">
-                  <span class={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full ${project.accent}`}></span>
-                  <span>{project.industry}</span>
-                </div>
-                <span class="text-[10px] min-[360px]:text-[11px] sm:hidden font-bold text-primary">
-                  {project.location}
-                </span>
-              </div>
-              
-              <h3 class="text-base min-[360px]:text-lg sm:text-2xl lg:text-3xl font-black text-neutral-900 mb-0.5 sm:mb-1 leading-tight group-hover:text-primary transition-colors duration-300">
-                {project.client}
-              </h3>
-
-              <p class="hidden sm:block text-[11px] sm:text-xs font-bold text-primary mb-2">
-                Location: {project.location}
-              </p>
-
-              <h4 class="text-[11px] min-[360px]:text-xs sm:text-sm md:text-base font-bold text-neutral-800 mb-1 min-[360px]:mb-1.5 sm:mb-2.5 leading-snug">
-                {project.title}
-              </h4>
-
-              <p class="text-[10.5px] min-[360px]:text-[11.5px] sm:text-sm text-neutral-600 mb-1.5 min-[360px]:mb-2.5 sm:mb-4 leading-normal sm:leading-relaxed font-normal">
-                {project.summary}
-              </p>
-              
-              <!-- Project facts: What We Delivered & Live Site -->
-              <div class="grid grid-cols-2 gap-2 sm:gap-4 w-full mb-2 min-[360px]:mb-2.5 sm:mb-5 p-2 min-[360px]:p-2.5 sm:p-4 rounded-xl bg-cream/70 border border-neutral-200/60">
-                <div>
-                  <p class="text-[9px] min-[360px]:text-[10px] sm:text-xs font-bold text-gray-500 uppercase tracking-wider mb-0.5 sm:mb-1">What We Delivered</p>
-                  <p class="text-[10px] min-[360px]:text-[11px] sm:text-sm font-black text-neutral-900 leading-tight sm:leading-snug">{project.services}</p>
-                </div>
-                <div>
-                  <p class="text-[9px] min-[360px]:text-[10px] sm:text-xs font-bold text-gray-500 uppercase tracking-wider mb-0.5 sm:mb-1">Live Site</p>
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="inline-flex items-center gap-1 text-[10px] min-[360px]:text-[11px] sm:text-sm font-black text-primary hover:underline break-all"
-                  >
-                    <span>{project.liveLabel}</span>
-                    <ExternalLink className="w-2.5 h-2.5 sm:w-3 sm:h-3 flex-shrink-0" />
-                  </a>
-                </div>
-              </div>
-              
-              <a href={project.href} class="group/btn inline-flex items-center gap-1.5 sm:gap-2 text-[11px] min-[360px]:text-xs sm:text-sm font-bold text-neutral-900 bg-white border border-neutral-200/90 hover:border-primary hover:text-primary hover:shadow hover:-translate-y-0.5 px-3.5 py-1.5 min-[360px]:px-4 min-[360px]:py-2 sm:px-6 sm:py-3 rounded-full transition-all duration-300 shadow-sm">
-                <span>View Case Study</span>
-                <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+              <a href={project.href} class="feat-go" aria-label={`View ${project.client} case study`}>
+                <ArrowUpRight className="w-4 h-4" />
               </a>
             </div>
+            <div class="feat-phone hidden md:block" aria-hidden="true">
+              <div class="feat-notch"></div>
+              <img src={project.imageMobile} alt="" aria-hidden="true" width="430" height="932" loading="lazy" decoding="async" class="w-full h-full object-cover object-top" />
+            </div>
+          </div>
 
+          <div class="feat-body">
+            <p class="text-xs font-bold text-[#ff9a66]">Location: {project.location}</p>
+            <h4 class="mt-1.5 text-[0.98rem] sm:text-base font-bold text-white leading-snug">{project.title}</h4>
+            <p class="mt-2 text-[0.85rem] text-white/65 leading-relaxed">{project.summary}</p>
+
+            <div class="feat-facts">
+              <div>
+                <p class="feat-k">What We Delivered</p>
+                <p class="text-[0.82rem] font-bold text-white leading-snug">{project.services}</p>
+              </div>
+              <div>
+                <p class="feat-k">Live Site</p>
+                <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[0.82rem] font-bold text-[#ff9a66] hover:underline break-all">
+                  <span>{project.liveLabel}</span>
+                  <ExternalLink className="w-3 h-3 flex-shrink-0" />
+                </a>
+              </div>
+            </div>
+
+            <a href={project.href} class="group/btn feat-cta">
+              <span>View Case Study</span>
+              <ArrowUpRight className="w-4 h-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+            </a>
           </div>
         </article>
       ))}
     </div>
 
     <!-- Regional Clients Strip -->
-    <div class="mt-12 sm:mt-14 py-5 px-8 rounded-2xl bg-[#fcfcfc] border border-neutral-200/80 text-center">
-      <p class="text-sm md:text-base font-bold text-neutral-800 tracking-wide">
+    <div class="mt-10 sm:mt-12 py-5 px-6 rounded-2xl feat-glass text-center">
+      <p class="text-sm md:text-base font-bold text-white/85 tracking-wide">
         Clients in Kochi · Kozhikode · Wayanad · Thrissur · Thiruvananthapuram
       </p>
     </div>
 
     <!-- Conversion CTA: After Project Cards (Standout Checkpoint) -->
-    <div class="cta-checkpoint mt-12 sm:mt-14 pt-8 border-t border-neutral-100 flex flex-col md:flex-row items-center justify-between gap-6 p-8 sm:p-10 rounded-2xl bg-cream/60 border border-neutral-200/70 text-center md:text-left">
+    <div class="cta-checkpoint mt-6 flex flex-col md:flex-row items-center justify-between gap-6 p-7 sm:p-9 rounded-[1.75rem] feat-glass text-center md:text-left">
       <div class="max-w-xl">
-        <h3 class="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight">Want Results Like These?</h3>
-        <p class="text-sm text-neutral-600 mt-1.5 leading-relaxed">Tell us what you're building and we'll suggest the right approach for your budget and timeline.</p>
+        <h3 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Want Results Like These?</h3>
+        <p class="text-sm text-white/65 mt-1.5 leading-relaxed">Tell us what you're building and we'll suggest the right approach for your budget and timeline.</p>
       </div>
       <a
         href="/request-a-quote/"
         data-magnetic-btn
-        class="cta-float-primary cta-delay-12 cta-pulse-strong cta-pulse-delay-3 cta-shimmer-btn inline-flex items-center justify-center gap-2.5 px-8 py-4 text-sm font-bold text-white bg-primary rounded-full hover:bg-primary/95 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 shrink-0 group whitespace-nowrap"
+        class="cta-float-primary cta-delay-12 cta-pulse-strong cta-pulse-delay-3 cta-shimmer-btn inline-flex items-center justify-center gap-2.5 px-8 py-4 text-sm font-bold text-white bg-primary rounded-full hover:bg-primary/95 transition-all shrink-0 group whitespace-nowrap"
       >
         <span>Want Results Like These? Let's Talk</span>
         <ArrowRight className="cta-arrow cta-arrow-invite w-4 h-4" />
@@ -245,3 +194,164 @@ const projects = [
     </div>
   </div>
 </section>
+
+<style>
+  .feat-band {
+    background: linear-gradient(180deg, #1a1411 0%, #120f0e 45%, #0f0d0c 100%);
+  }
+  .feat-mountains {
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: min(46vw, 560px);
+    background: url('/images/home/3d/featured-mountains.webp') center top / cover no-repeat;
+    -webkit-mask-image: linear-gradient(180deg, #000 55%, transparent 100%);
+            mask-image: linear-gradient(180deg, #000 55%, transparent 100%);
+    opacity: 0.95;
+  }
+  .feat-glow {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(40rem 22rem at 10% 0%, rgba(255, 120, 50, 0.20), transparent 70%),
+      radial-gradient(36rem 22rem at 95% 30%, rgba(255, 150, 80, 0.10), transparent 70%);
+    pointer-events: none;
+  }
+  .feat-grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+  .feat-card.is-top { grid-column: span 2; }
+  .feat-card.is-bottom { grid-column: span 3; }
+  .feat-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.6rem;
+    overflow: hidden;
+    background: linear-gradient(170deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.025));
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.07) inset, 0 30px 60px -36px rgba(0, 0, 0, 0.9);
+    transition: transform 0.45s cubic-bezier(.2, .8, .2, 1), border-color 0.35s, box-shadow 0.45s;
+  }
+  .feat-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255, 138, 82, 0.45);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.09) inset, 0 36px 70px -34px rgba(240, 90, 44, 0.45);
+  }
+  .feat-media {
+    position: relative;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    margin: 0.55rem 0.55rem 0;
+    border-radius: 1.15rem;
+  }
+  .feat-card.is-bottom .feat-media { aspect-ratio: 16 / 8.2; }
+  .feat-shot {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.9s cubic-bezier(.2, .8, .2, 1);
+  }
+  .feat-card:hover .feat-shot { transform: scale(1.05); }
+  .feat-scrim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(10, 8, 7, 0.82) 0%, rgba(10, 8, 7, 0.35) 34%, transparent 58%);
+  }
+  .feat-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem 1.05rem;
+  }
+  .feat-client { font-size: 1.2rem; font-weight: 800; letter-spacing: -0.02em; color: #fff; line-height: 1.15; }
+  .feat-industry { margin-top: 0.3rem; display: flex; align-items: center; gap: 0.45rem; font-size: 0.78rem; font-weight: 600; color: rgba(255, 255, 255, 0.82); }
+  .feat-go {
+    flex: none;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 9999px;
+    display: grid;
+    place-items: center;
+    color: #1a1a1a;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s;
+  }
+  .feat-go:hover, .feat-card:hover .feat-go { background: var(--color-primary); color: #fff; transform: rotate(-8deg); }
+  .feat-phone {
+    position: absolute;
+    right: 4%;
+    bottom: -8%;
+    width: 22%;
+    aspect-ratio: 9 / 19;
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 3px solid #141414;
+    background: #fff;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.75);
+    transform: rotate(-4deg);
+    transition: transform 0.5s cubic-bezier(.2, .8, .2, 1);
+  }
+  .feat-card:hover .feat-phone { transform: rotate(-4deg) translateY(-8px); }
+  .feat-notch { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 38%; height: 0.55rem; background: #141414; border-radius: 0 0 0.45rem 0.45rem; z-index: 2; }
+  .feat-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.15rem 1.25rem 1.3rem;
+  }
+  .feat-facts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+    margin-top: 0.95rem;
+    padding: 0.8rem 0.9rem;
+    border-radius: 0.95rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .feat-k { font-size: 0.66rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255, 255, 255, 0.45); margin-bottom: 0.25rem; }
+  .feat-cta {
+    margin-top: 1rem;
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.62rem 1.15rem;
+    border-radius: 9999px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    transition: all 0.3s;
+  }
+  .feat-cta:hover { border-color: #ff8a52; color: #ff9a66; }
+  .feat-glass {
+    background: linear-gradient(160deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.025));
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset;
+  }
+  @media (max-width: 1023px) {
+    .feat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .feat-card.is-top, .feat-card.is-bottom { grid-column: span 1; }
+    .feat-card.is-bottom .feat-media { aspect-ratio: 16 / 10; }
+    .feat-card:last-child { grid-column: 1 / -1; }
+    .feat-card:last-child .feat-media { aspect-ratio: 16 / 8; }
+  }
+  @media (max-width: 639px) {
+    .feat-grid { grid-template-columns: 1fr; gap: 1rem; }
+    .feat-card:last-child .feat-media { aspect-ratio: 16 / 10; }
+    .feat-mountains { height: 260px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .feat-card, .feat-shot, .feat-phone { transition: none; }
+    .feat-card:hover { transform: none; }
+  }
+</style>

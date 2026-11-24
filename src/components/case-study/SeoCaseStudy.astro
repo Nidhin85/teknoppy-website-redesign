@@ -30,6 +30,8 @@ if (!html || !css || !js) throw new Error(`SEO case study "${slug}" is missing f
 
   <Header forceSolidBg={true} />
   <style is:inline set:html={css}></style>
+  <!-- Section headings match the hero weight used across the case study pages -->
+  <style is:inline>.cs2 h2{font-weight:800}</style>
   <Fragment set:html={html} />
   <script is:inline set:html={js}></script>
   <Footer />

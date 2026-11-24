@@ -3,10 +3,10 @@ import { Phone, Mail, MapPin, Zap } from 'lucide-react';
 import site from '../data/site.json';
 import Footer from './Footer.astro';
 
-// Shared with the contact page. Defaults to FormSubmit, which emails sales@ (no server needed)
-// — PUBLIC_CONTACT_ENDPOINT only needs setting to point the form
+// Shared with the contact page. Defaults to the /api/contact handler that ships
+// with the site; PUBLIC_CONTACT_ENDPOINT only needs setting to point the form
 // somewhere else.
-const formEndpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT || 'https://formsubmit.co/ajax/sales@teknoppy.com';
+const formEndpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT || '/api/contact';
 
 interface Props {
   includeSchema?: boolean;
@@ -105,7 +105,7 @@ const schema = {
           
           <form
             id="footer-cta-form"
-            class="bg-[#FFE2D0] border border-[#FFC9AB] rounded-[28px] p-6 sm:p-8 md:p-10 space-y-5 shadow-[0_30px_70px_-20px_rgba(120,30,0,0.5)]"
+            class="bg-cream border border-white/70 rounded-[28px] p-6 sm:p-8 md:p-10 space-y-5 shadow-[0_30px_70px_-20px_rgba(120,30,0,0.5)]"
             method="POST"
             novalidate
             data-endpoint={formEndpoint}
@@ -127,7 +127,7 @@ const schema = {
                 required 
                 autocomplete="name"
                 placeholder="Enter your full name"
-                class="w-full bg-[#FFF5EE] border border-[#F7B896] hover:border-primary/60 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/15 rounded-xl px-4 py-3 text-neutral-900 placeholder-neutral-400 text-sm sm:text-base transition-all outline-none"
+                class="w-full bg-white border border-primary/20 hover:border-primary/40 focus:border-primary focus:ring-4 focus:ring-primary/15 rounded-xl px-4 py-3 text-neutral-900 placeholder-neutral-400 text-sm sm:text-base transition-all outline-none"
               />
             </div>
 
@@ -141,7 +141,7 @@ const schema = {
                 required 
                 autocomplete="email"
                 placeholder="name@company.com"
-                class="w-full bg-[#FFF5EE] border border-[#F7B896] hover:border-primary/60 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/15 rounded-xl px-4 py-3 text-neutral-900 placeholder-neutral-400 text-sm sm:text-base transition-all outline-none"
+                class="w-full bg-white border border-primary/20 hover:border-primary/40 focus:border-primary focus:ring-4 focus:ring-primary/15 rounded-xl px-4 py-3 text-neutral-900 placeholder-neutral-400 text-sm sm:text-base transition-all outline-none"
               />
             </div>
 
@@ -157,7 +157,7 @@ const schema = {
                 required 
                 autocomplete="tel"
                 placeholder="+91 98765 43210"
-                class="w-full bg-[#FFF5EE] border border-[#F7B896] hover:border-primary/60 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/15 rounded-xl px-4 py-3 text-neutral-900 placeholder-neutral-400 text-sm sm:text-base transition-all outline-none"
+                class="w-full bg-white border border-primary/20 hover:border-primary/40 focus:border-primary focus:ring-4 focus:ring-primary/15 rounded-xl px-4 py-3 text-neutral-900 placeholder-neutral-400 text-sm sm:text-base transition-all outline-none"
               />
             </div>
 
@@ -170,7 +170,7 @@ const schema = {
                 rows="4" 
                 required 
                 placeholder="Tell us about your project requirements..."
-                class="w-full bg-[#FFF5EE] border border-[#F7B896] hover:border-primary/60 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/15 rounded-xl px-4 py-3 text-neutral-900 placeholder-neutral-400 text-sm sm:text-base transition-all outline-none resize-none"
+                class="w-full bg-white border border-primary/20 hover:border-primary/40 focus:border-primary focus:ring-4 focus:ring-primary/15 rounded-xl px-4 py-3 text-neutral-900 placeholder-neutral-400 text-sm sm:text-base transition-all outline-none resize-none"
               ></textarea>
             </div>
 
@@ -199,7 +199,7 @@ const schema = {
 
       <!-- Right Column: Business Development & Client Relations Expert Profile Card -->
       <div class="lg:col-span-5 w-full lg:sticky lg:top-32">
-        <div class="bg-[#FFE2D0] border border-[#FFC9AB] rounded-[28px] p-6 sm:p-8 md:p-10 text-center space-y-8 shadow-[0_30px_70px_-20px_rgba(120,30,0,0.5)] relative overflow-hidden group">
+        <div class="bg-cream border border-white/70 rounded-[28px] p-6 sm:p-8 md:p-10 text-center space-y-8 shadow-[0_30px_70px_-20px_rgba(120,30,0,0.5)] relative overflow-hidden group">
           <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-secondary/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-700 blur-2xl"></div>
           
           <div class="relative w-36 h-36 mx-auto">
@@ -219,7 +219,7 @@ const schema = {
             </p>
           </div>
 
-          <div class="pt-6 border-t border-[#F7B896] space-y-3">
+          <div class="pt-6 border-t border-primary/15 space-y-3">
             <a
               href={`https://wa.me/${businessInfo.whatsapp || '916282249224'}?text=${encodeURIComponent('Hi Teknoppy, I would like to enquire about your services.')}`}
               target="_blank"
@@ -235,7 +235,7 @@ const schema = {
             
             <a 
               href={`mailto:${businessInfo.email}`} 
-              class="flex items-center justify-center gap-3 w-full py-4 rounded-full bg-[#FFF5EE] border border-[#F7B896] text-neutral-800 font-semibold hover:border-primary hover:text-primary transition-colors"
+              class="flex items-center justify-center gap-3 w-full py-4 rounded-full bg-white border border-primary/25 text-neutral-800 font-semibold hover:border-primary hover:text-primary transition-colors"
             >
               <Mail className="w-4 h-4" />
               {businessInfo.email}
@@ -305,14 +305,13 @@ const schema = {
 
       try {
         const payload = Object.fromEntries(new FormData(form));
-        delete payload.company_website;
         payload.source = form.dataset.source || 'Website';
         const res = await fetch(endpoint, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify({ ...payload, _subject: `New website enquiry: ${payload.source}`, _cc: 'sanal@teknoppy.com', _template: 'table' })
+          body: JSON.stringify(payload)
         });
-        if (!res.ok || String((await res.json()).success) !== 'true') throw new Error(String(res.status)); // FormSubmit returns 200 even on refusal
+        if (!res.ok) throw new Error(String(res.status));
         if (window.dataLayer) {
           window.dataLayer.push({
             event: 'lead_submit',

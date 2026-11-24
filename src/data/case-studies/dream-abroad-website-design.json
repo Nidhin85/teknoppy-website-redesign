@@ -1,0 +1,182 @@
+{
+  "metaTitle": "Dream Abroad Website Design Case Study Kochi | Teknoppy",
+  "metaDescription": "How Teknoppy designed a country-led website for Dream Abroad, a Kochi study abroad consultancy, with 12 destinations, course pages, reviews and callback forms.",
+  "canonicalURL": "https://www.teknoppy.com/case-studies/dream-abroad-website-design/",
+  "heroImage": "/case-studies/dreamabroad.webp",
+  "heroImageAlt": "Dream Abroad Kochi study abroad consultant website homepage designed by Teknoppy",
+  "schemaType": "TechArticle",
+  "schemaAbout": {
+    "type": "EducationalOrganization",
+    "name": "Dream Abroad Educational Consultants",
+    "address": {
+      "locality": "Kochi",
+      "region": "Kerala",
+      "country": "IN"
+    }
+  },
+  "clientName": "Dream Abroad",
+  "categoryTag": "Web Design & Development",
+  "tagBadge": "Kochi Education Case Study",
+  "title": "Dream Abroad: A Website Design and Development Case Study for a Study Abroad Consultancy in Kochi",
+  "storyLead": "How Teknoppy designed a country-led website for a Kerala overseas education consultancy, helping students and parents in Kochi compare twelve study destinations, explore courses, read real reviews and request a callback from the nearest office.",
+  "industry": "Overseas education consultancy",
+  "location": "Kaloor, Kochi + Changanassery, Kollam",
+  "services": "Web design, UI/UX, callback flow, reviews",
+  "platform": "Responsive business website",
+  "liveWebsite": "dreamabroad.org",
+  "liveWebsiteUrl": "https://dreamabroad.org/",
+  "heroHighlights": [
+    "12 Study Destinations",
+    "Country & Course Navigation",
+    "Google Reviews on Page",
+    "Three Kerala Offices"
+  ],
+  "atAGlance": [
+    "Dream Abroad guides Kerala students to universities in twelve countries, from the UK and Canada to Germany, Ireland and Malta",
+    "The study abroad consultant website is organised around the two questions students ask first: where can I study, and what can I study?",
+    "Country pages show the number of universities and courses available, so students can compare destinations quickly",
+    "A live Google review widget and student testimonials build trust before the first call",
+    "Enquiry and callback forms, plus three office addresses, connect students in Kochi, Changanassery and Kollam with a counsellor"
+  ],
+  "aboutHeading": "About Dream Abroad",
+  "aboutParagraphs": [
+    "Dream Abroad Educational Consultants is an overseas education consultancy with its main office on the second floor of Puthussery Building, near Kaloor Stadium at Deshabhimani Junction, Kochi. It also runs offices in Changanassery and Kollam, serving students across central and southern Kerala.",
+    "The consultancy helps students study in the UK, Canada, Australia, New Zealand, Ireland, France, Germany, Poland, Sweden, Bulgaria, Malta and Latvia. Course areas include business and management, health and medicine, accounting and finance, hospitality and tourism, engineering and technology, social care, IT and pharmaceutical science.",
+    "Its services cover career counselling, admissions, visa and documentation support, scholarship assistance and education loan assistance. At the time of writing, Dream Abroad shows a 4.9-star Google rating from 456 reviews on its website, and it is listed by Yocket among study abroad consultants in Ernakulam. Teknoppy was brought in to turn this reputation into enquiries."
+  ],
+  "challengeLead": "Five problems shaped the design brief.",
+  "challenges": [
+    {
+      "number": 1,
+      "title": "Too many choices for students",
+      "description": "Twelve countries and hundreds of courses can overwhelm a student. The site needed a simple way to compare."
+    },
+    {
+      "number": 2,
+      "title": "Parents are part of the decision",
+      "description": "Studying abroad is a family decision and a major expense. Parents look for proof that a consultant is reliable before they call."
+    },
+    {
+      "number": 3,
+      "title": "A crowded Kochi market",
+      "description": "Kochi has many study abroad consultants, from national chains to local agencies. Dream Abroad needed to stand out in seconds."
+    },
+    {
+      "number": 4,
+      "title": "Three offices, one brand",
+      "description": "Students in Kochi, Changanassery and Kollam needed to know which office to visit without confusion."
+    },
+    {
+      "number": 5,
+      "title": "Turning interest into a conversation",
+      "description": "Many students research on their phones, often outside office hours. The site had to capture their details and arrange a callback easily."
+    }
+  ],
+  "objectiveLead": "The goal was a clear, trustworthy education consultancy website that helps Kerala students explore options and book a counselling call.",
+  "objectives": [
+    "Let students browse by country and by course",
+    "Show universities and course numbers for each destination",
+    "Put real student reviews on the homepage",
+    "Make enquiry and callback requests quick on mobile",
+    "Present all three Kerala offices with full addresses and hours"
+  ],
+  "approachLead": "Six design pillars that answer \"where\", \"what\" and \"who can I trust\".",
+  "approachPillars": [
+    {
+      "title": "Country-first navigation",
+      "paragraphs": [
+        "The main menu includes a Countries dropdown and a Courses dropdown alongside About, Services, Assistance and Gallery. A student who has chosen a country and a student who has chosen a subject both find their path immediately."
+      ]
+    },
+    {
+      "title": "Destination cards with real numbers",
+      "paragraphs": [
+        "A \"Top Countries to Study\" section shows each destination with its number of universities and courses, such as 90 universities and 4,500 courses in the UK and 48 universities in Canada, giving students a quick, factual comparison."
+      ]
+    },
+    {
+      "title": "Courses by career area",
+      "paragraphs": [
+        "A \"Most Featured Courses\" section groups programmes into career areas such as Business and Management, Engineering and Technology, and Health and Medicine, helping students think about outcomes, not just countries."
+      ]
+    },
+    {
+      "title": "Reviews where decisions are made",
+      "paragraphs": [
+        "A Google review widget and a \"Reviews From Students\" section sit on the homepage, so parents and students see real feedback before they enquire."
+      ]
+    },
+    {
+      "title": "Callback and enquiry forms",
+      "paragraphs": [
+        "\"Request a Call back\" buttons and enquiry forms appear throughout the page, so every student enquiry is captured the moment interest appears."
+      ]
+    },
+    {
+      "title": "Three offices, clearly listed",
+      "paragraphs": [
+        "The footer lists the Kochi, Changanassery and Kollam offices with full addresses, phone numbers and working hours, helping families choose the nearest branch."
+      ]
+    }
+  ],
+  "deliverables": [
+    {
+      "title": "Country and course navigation",
+      "description": "Twelve destinations and career-based course categories."
+    },
+    {
+      "title": "Trust-led homepage",
+      "description": "Google reviews, testimonials, university logos and FAQs."
+    },
+    {
+      "title": "Lead capture flow",
+      "description": "Enquiry forms and callback requests across the site."
+    },
+    {
+      "title": "Multi-office contact and blog",
+      "description": "Three Kerala offices and destination guides for students."
+    }
+  ],
+  "whyMattersHeading": "Why clear website design wins study abroad enquiries in Kochi",
+  "whyMattersParagraphs": [
+    "Choosing to study abroad is one of the biggest financial and personal decisions a Kerala family makes. Students compare destinations online for weeks before they speak to anyone, and parents want reassurance that the consultant is reliable. A website that answers \"where\", \"what\" and \"who can I trust\" in a few scrolls turns that research into a counselling appointment.",
+    "Trust signals carry extra weight in this sector. Real reviews, clear office addresses and transparent services separate an established consultancy from the many agencies competing for the same students. Putting a 4.9-star Google rating and student testimonials on the homepage does more than any slogan.",
+    "Local presence matters too. Many families in Ernakulam, Kottayam and Kollam prefer to visit an office in person before committing. Listing every branch with its landmark, such as near Kaloor Stadium, makes the first visit easy."
+  ],
+  "whyMattersCalloutHtml": "<p><strong>For a study abroad consultancy, the website is the first counsellor a family meets: it has to be clear, honest and easy to talk to.</strong></p><p class=\"mt-3\">See more of our work for Kerala businesses in the <a class=\"underline font-bold text-[#F05A2C]\" href=\"/case-studies/edamanasserry-spine-hospital-seo/\">Edamanasserry Spine Hospital SEO case study</a> and the <a class=\"underline font-bold text-[#F05A2C]\" href=\"/case-studies/texaglobal-technologies-website-design/\">TexaGlobal Technologies website design case study</a>, explore our <a class=\"underline font-bold text-[#F05A2C]\" href=\"/web-design-company-kochi/\">website design services in Kochi</a>, or <a class=\"underline font-bold text-[#F05A2C]\" href=\"/case-study/\">explore more in our case study library</a>.</p>",
+  "faqs": [
+    {
+      "question": "What does Dream Abroad do?",
+      "answer": "It is an overseas education consultancy that helps students choose a country, course and university, with support for admissions, visas, scholarships and education loans."
+    },
+    {
+      "question": "Which countries does Dream Abroad cover?",
+      "answer": "The UK, Canada, Australia, New Zealand, Ireland, France, Germany, Poland, Sweden, Bulgaria, Malta and Latvia."
+    },
+    {
+      "question": "Where are Dream Abroad's offices?",
+      "answer": "In Kochi (Puthussery Building, near Kaloor Stadium, Deshabhimani Junction), Changanassery and Kollam."
+    },
+    {
+      "question": "Does Dream Abroad help with scholarships and loans?",
+      "answer": "Yes. Scholarship assistance and education loan assistance are part of its services."
+    },
+    {
+      "question": "Can students with study gaps apply through Dream Abroad?",
+      "answer": "Yes. Dream Abroad matches destinations to each student's profile, including students with educational gaps or budget limits."
+    },
+    {
+      "question": "What did Teknoppy do for Dream Abroad?",
+      "answer": "Website design and development, UI/UX design, country and course page structure, the enquiry and callback flow, and Google reviews integration."
+    },
+    {
+      "question": "What should a study abroad consultant website include?",
+      "answer": "Country and course pages, real reviews, clear services, office addresses with hours and quick enquiry or callback forms."
+    },
+    {
+      "question": "Does Teknoppy design websites for education consultancies in Kochi?",
+      "answer": "Yes. Teknoppy designs education, consultancy and lead generation websites for businesses in Kochi, Ernakulam and across Kerala, as well as the UAE and Qatar."
+    }
+  ],
+  "ctaHeadline": "Need a website that turns student searches into counselling calls?"
+}

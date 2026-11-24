@@ -51,21 +51,33 @@ const cities = [
     active: false
   }
 ];
+
+// Homepage passes the office video into this slot so it sits beside the section intro (reference layout)
+const hasMedia = Astro.slots.has('media');
 ---
 
-<section id="kerala-cities" class="py-10 sm:py-12 md:py-16 bg-white relative overflow-hidden">
+<section id="kerala-cities" class:list={["py-10 sm:py-12 md:py-16 relative overflow-hidden", hasMedia ? "home-cities" : "bg-white"]}>
   <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
-    <div class="max-w-3xl mx-auto text-center flex flex-col items-center mb-8 sm:mb-10 md:mb-12">
-      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-bold uppercase tracking-wider mb-6 shadow-sm transform -rotate-1">
-        <MapPin className="w-3.5 h-3.5" />
-        Regional Hub
+    <div class:list={[hasMedia ? "grid lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-10 sm:mb-12 md:mb-14" : ""]}>
+      {hasMedia && (
+        <div class="lg:col-span-7">
+          <div class="home-video-frame">
+            <slot name="media" />
+          </div>
+        </div>
+      )}
+      <div class:list={[hasMedia ? "lg:col-span-5 flex flex-col items-start text-left" : "max-w-3xl mx-auto text-center flex flex-col items-center mb-8 sm:mb-10 md:mb-12"]}>
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-bold uppercase tracking-wider mb-6 shadow-sm transform -rotate-1">
+          <MapPin className="w-3.5 h-3.5" />
+          Regional Hub
+        </div>
+        <h2 class:list={["font-black leading-tight text-neutral-900 mb-3 sm:mb-4", hasMedia ? "text-3xl md:text-4xl xl:text-[2.75rem]" : "text-3xl md:text-5xl"]} data-magnetic-heading>
+          Web Design Company in Kerala by City
+        </h2>
+        <p class:list={["text-neutral-600 leading-relaxed font-medium", hasMedia ? "text-base md:text-lg" : "text-lg md:text-xl"]}>
+          We design websites for businesses across Kerala. Find your city below.
+        </p>
       </div>
-      <h2 class="text-3xl md:text-5xl font-black leading-tight text-neutral-900 mb-3 sm:mb-4" data-magnetic-heading>
-        Web Design Company in Kerala by City
-      </h2>
-      <p class="text-lg md:text-xl text-neutral-600 leading-relaxed font-medium">
-        We design websites for businesses across Kerala. Find your city below.
-      </p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-4.5 md:gap-5" data-stagger>
@@ -119,3 +131,10 @@ const cities = [
     </div>
   </div>
 </section>
+
+<style>
+  .home-cities { background: linear-gradient(180deg, #fff4ec 0%, #fffaf6 100%); }
+  .home-cities :global(.home-video-frame) { box-shadow: 0 1px 0 rgb(255 255 255 / 0.8) inset, 0 30px 60px -34px rgb(120 40 10 / 0.5), 0 0 0 6px rgb(255 255 255 / 0.6); }
+  /* homepage: the MapPin inside the eyebrow is replaced by the dash */
+  .home-cities [class*="tracking-"] > :global(svg) { display: none; }
+</style>

@@ -1,0 +1,186 @@
+{
+  "metaTitle": "TexaGlobal Website Design Case Study Kochi | Teknoppy",
+  "metaDescription": "How Teknoppy designed a brand-led B2B website for TexaGlobal, a Kochi CCTV and networking company, with product and brand browsing and quote enquiries.",
+  "canonicalURL": "https://www.teknoppy.com/case-studies/texaglobal-technologies-website-design/",
+  "heroImage": "/case-studies/texaglobal.webp",
+  "heroImageAlt": "TexaGlobal Technologies Kochi CCTV and networking website homepage designed by Teknoppy",
+  "schemaType": "TechArticle",
+  "schemaAbout": {
+    "type": "Organization",
+    "name": "TexaGlobal Technologies",
+    "address": {
+      "locality": "Kochi",
+      "region": "Kerala",
+      "country": "IN"
+    }
+  },
+  "clientName": "TexaGlobal Technologies",
+  "categoryTag": "Web Design & Development",
+  "tagBadge": "Kochi Electronic Security Case Study",
+  "title": "TexaGlobal Technologies: A Website Design and Development Case Study for a CCTV and Networking Products Company in Kochi",
+  "storyLead": "How Teknoppy designed a brand-led B2B website for a Kochi electronic security company, helping dealers, installers and businesses across Kerala find the right CCTV camera, cable or PoE switch, compare brands and request a quote in a few clicks.",
+  "industry": "CCTV, networking & IT products",
+  "location": "Elamkulam, Kochi + Jamnagar",
+  "services": "Web design, UI/UX, brand navigation",
+  "platform": "WordPress (Elementor)",
+  "liveWebsite": "texaglobaltechnologies.com",
+  "liveWebsiteUrl": "https://texaglobaltechnologies.com/",
+  "heroHighlights": [
+    "Browse by Product or Brand",
+    "Five Product Brands",
+    "Quote & WhatsApp Enquiries",
+    "Built for Kerala Dealers"
+  ],
+  "atAGlance": [
+    "TexaGlobal supplies CCTV cameras, accessories, cables, PoE switches, network products and IT peripherals from its head office in Kochi",
+    "The CCTV company website has two ways in: browse by product type or browse by brand",
+    "Five brands, PRIZOR, SPARSH, AXIVO, FYBER and GTX, each get a clear place in the navigation",
+    "Certified products are highlighted on the homepage to build trust with professional buyers",
+    "\"Request a quote\", \"Contact Now\" and WhatsApp turn product interest into dealer and project enquiries"
+  ],
+  "aboutHeading": "About TexaGlobal Technologies",
+  "aboutParagraphs": [
+    "TexaGlobal Technologies is an electronic security and networking company headquartered at Elamkulam Junction, on Chilavannoor Road in Kochi, near Metro Pillar 813. It also operates a branch office in Jamnagar, Gujarat, and describes itself as a manufacturer, distributor and complete solution provider.",
+    "Its range covers CCTV cameras and DVRs, CCTV accessories, CCTV SMPS power supplies, CAT6 and CCTV cables, managed and unmanaged PoE switches, routers and network adapters, and IT peripherals. Products are sold under five brands: PRIZOR, SPARSH, AXIVO, FYBER and GTX.",
+    "TexaGlobal highlights BIS-ER (STQC) certified CCTV cameras, including what it presents as India's first STQC-certified Sparsh CCTV camera. It works with CCTV dealers, installers and system integrators. Teknoppy was brought in to design and build a website that presents this range clearly to professional buyers in Kochi, across Kerala and beyond."
+  ],
+  "challengeLead": "Five problems shaped the design brief.",
+  "challenges": [
+    {
+      "number": 1,
+      "title": "A wide, technical catalogue",
+      "description": "Cameras, cables, switches, power supplies and peripherals all have different buyers and specifications. The site needed order, not a long list."
+    },
+    {
+      "number": 2,
+      "title": "Five brands under one company",
+      "description": "Dealers often search by brand name. Each brand needed its own path without confusing the parent company's identity."
+    },
+    {
+      "number": 3,
+      "title": "Trust in a crowded CCTV market",
+      "description": "Kerala's CCTV market has many competing brands and unbranded imports. Certified, branded equipment needed to stand out at first glance."
+    },
+    {
+      "number": 4,
+      "title": "B2B buyers want prices and stock fast",
+      "description": "Installers and dealers usually want to ask for a quote or check availability before they order."
+    },
+    {
+      "number": 5,
+      "title": "Two locations, one brand",
+      "description": "The site had to present a Kochi head office and a Gujarat branch without splitting the brand."
+    }
+  ],
+  "objectiveLead": "The goal was a professional electronics distributor website that helps Kerala dealers and businesses find TexaGlobal products and send enquiries.",
+  "objectives": [
+    "Organise the full catalogue into clear product categories",
+    "Give each of the five brands its own browsing path",
+    "Put certified products and trust signals on the homepage",
+    "Make quote requests and WhatsApp contact one click away",
+    "Show the Kochi head office clearly for local buyers"
+  ],
+  "approachLead": "Six decisions built around how dealers and installers buy.",
+  "approachPillars": [
+    {
+      "title": "Two ways to browse: product or brand",
+      "paragraphs": [
+        "The main menu offers Products (CCTV Cameras, CCTV Accessories, Cables, PoE Switches and Network Products) and a separate \"Browse by Brands\" menu. A dealer who knows the brand and an installer who knows the product type both reach the right page fast."
+      ]
+    },
+    {
+      "title": "Certified products up front",
+      "paragraphs": [
+        "The homepage opens with BIS-ER (STQC) certified CCTV cameras and the Sparsh certification story, giving professional buyers an immediate reason to trust the range."
+      ]
+    },
+    {
+      "title": "Clear positioning in one line",
+      "paragraphs": [
+        "A \"Manufacturer, Distributor, Complete Solution Provider\" banner and a dedicated CCTV SMPS section explain what TexaGlobal does and where it is strongest."
+      ]
+    },
+    {
+      "title": "Enquiry paths built for B2B",
+      "paragraphs": [
+        "\"Request a quote\" and \"Contact Now\" buttons appear across the site, with a WhatsApp chat link for quick questions about stock, pricing and project requirements."
+      ]
+    },
+    {
+      "title": "Local trust for Kochi buyers",
+      "paragraphs": [
+        "The full Elamkulam address, with the nearby metro pillar landmark, phone numbers and email appear in the footer, so Kochi customers know exactly where to find the team."
+      ]
+    },
+    {
+      "title": "A flexible WordPress build",
+      "paragraphs": [
+        "Built on WordPress with Elementor, the site lets TexaGlobal's team add new products, brands and certifications without a developer, and keeps a newsletter sign-up to stay in touch with dealers."
+      ]
+    }
+  ],
+  "deliverables": [
+    {
+      "title": "Product and brand navigation",
+      "description": "Five product categories and five brand menus."
+    },
+    {
+      "title": "Trust-led homepage",
+      "description": "Certified CCTV cameras, positioning and SMPS highlights."
+    },
+    {
+      "title": "B2B enquiry flow",
+      "description": "Quote requests, contact forms, WhatsApp and newsletter."
+    },
+    {
+      "title": "Responsive WordPress website",
+      "description": "Easy to update, clean on desktop and mobile."
+    }
+  ],
+  "whyMattersHeading": "Why brand-led website design wins CCTV dealers in Kerala",
+  "whyMattersParagraphs": [
+    "For a security systems company in Kerala, the market is dealer-driven. Installers and system integrators choose which brands to stock, and they compare suppliers on certification, range, price and support. A multi-brand website that lets them browse by brand, check certified products and ask for a quote in one click becomes part of their daily workflow.",
+    "Certification is a strong selling point. Buyers are careful about the cameras they install in homes, offices and public spaces, and certified equipment answers that concern directly. Putting it on the homepage, rather than in a brochure, turns compliance into a competitive advantage.",
+    "Being clearly local also counts. Many Kochi dealers prefer suppliers they can visit, call and collect from. A visible Elamkulam address, with a landmark buyers recognise, makes TexaGlobal feel close and dependable, while the Gujarat branch shows reach beyond Kerala."
+  ],
+  "whyMattersCalloutHtml": "<p><strong>For a B2B electronics brand, the website should work like a good sales rep: know the range, prove the quality and make the next step easy.</strong></p><p class=\"mt-3\">See more of our work for Kerala businesses in the <a class=\"underline font-bold text-[#F05A2C]\" href=\"/case-studies/edamanasserry-spine-hospital-seo/\">Edamanasserry Spine Hospital SEO case study</a> and the <a class=\"underline font-bold text-[#F05A2C]\" href=\"/case-studies/harrisons-tea-town-social-media/\">Harrisons Tea Town case study</a>, explore our <a class=\"underline font-bold text-[#F05A2C]\" href=\"/web-design-company-kochi/\">website design services in Kochi</a>, or <a class=\"underline font-bold text-[#F05A2C]\" href=\"/case-study/\">explore more in our case study library</a>.</p>",
+  "faqs": [
+    {
+      "question": "What does TexaGlobal Technologies sell?",
+      "answer": "CCTV cameras and DVRs, CCTV accessories and SMPS power supplies, CAT6 and CCTV cables, PoE switches, network products and IT peripherals."
+    },
+    {
+      "question": "Where is TexaGlobal Technologies located?",
+      "answer": "Its head office is at Elamkulam Junction, Chilavannoor Road, Kochi, Kerala 682020, with a branch in Jamnagar, Gujarat."
+    },
+    {
+      "question": "Which brands does TexaGlobal offer?",
+      "answer": "PRIZOR, SPARSH, AXIVO, FYBER and GTX."
+    },
+    {
+      "question": "Does TexaGlobal sell certified CCTV cameras?",
+      "answer": "Yes. It highlights BIS-ER (STQC) certified CCTV cameras, including its Sparsh range."
+    },
+    {
+      "question": "How can dealers request a quote?",
+      "answer": "Through the \"Request a quote\" and \"Contact Now\" buttons on the website, or by WhatsApp."
+    },
+    {
+      "question": "Does TexaGlobal have offices outside Kerala?",
+      "answer": "Yes. Alongside its Kochi head office, it runs a branch office in Jamnagar, Gujarat."
+    },
+    {
+      "question": "What did Teknoppy do for TexaGlobal Technologies?",
+      "answer": "Website design and development on WordPress, UI/UX design, product and brand navigation, and the quote, contact and WhatsApp enquiry flow."
+    },
+    {
+      "question": "What should a CCTV or networking company website include?",
+      "answer": "Clear product categories, brand pages, certifications, a visible address and quick quote and WhatsApp contact."
+    },
+    {
+      "question": "Does Teknoppy design websites for B2B and electronics companies in Kochi?",
+      "answer": "Yes. Teknoppy builds B2B, distributor, networking products and product catalogue websites for businesses in Kochi, Ernakulam and across Kerala, as well as the UAE and Qatar."
+    }
+  ],
+  "ctaHeadline": "Need a website that turns dealers' searches into enquiries?"
+}

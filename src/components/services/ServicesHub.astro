@@ -1,0 +1,259 @@
+---
+/**
+ * Services hub (/services/) — dedicated layout following the services reference design.
+ * Renders the same sections as InnerPage did for this page (hero, cards, prose, faq, cta)
+ * from src/data/pages/services.json, with the same schema output, so copy, links and
+ * SEO structure are unchanged. InnerPage itself is untouched (other pages still use it).
+ */
+import {
+  Monitor, Globe, ShoppingCart, Layers, Search, Megaphone,
+  PenTool, Smartphone, Code2, Sparkles
+} from 'lucide-react';
+
+const { page } = Astro.props;
+const sections: any[] = page.sections ?? [];
+const hero = sections.find((s) => s.type === 'hero');
+const cards = sections.find((s) => s.type === 'cards');
+const prose = sections.find((s) => s.type === 'prose');
+const faq = sections.find((s) => s.type === 'faq');
+const cta = sections.find((s) => s.type === 'cta');
+
+// decorative icons, index-matched with the 9 service cards
+const cardIcons = [Monitor, Globe, ShoppingCart, Layers, Search, Megaphone, PenTool, Smartphone, Code2];
+
+// "Why Teknoppy" -> "Why <accent>Teknoppy</accent>" (same words, accent on the brand)
+const whyParts = (prose?.h2 ?? '').split(/(Teknoppy)/);
+
+// Heading colours: highlight one phrase in orange (same words, split for styling only; falls back to plain text).
+const splitAccent = (t: string, phrase: string) => { const i = (t ?? '').indexOf(phrase); return i < 0 ? null : [t.slice(0, i), phrase, t.slice(i + phrase.length)]; };
+
+const faqSchema = faq && {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faq.items.map((f: any) => ({
+    "@type": "Question",
+    "name": f.q,
+    "acceptedAnswer": { "@type": "Answer", "text": f.a }
+  }))
+};
+const breadcrumbSchema = page.breadcrumb && {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": page.breadcrumb.map((c: any, i: number) => ({
+    "@type": "ListItem",
+    "position": i + 1,
+    "name": c.name,
+    "item": `https://teknoppy.com${c.href}`
+  }))
+};
+---
+
+<!-- HERO -->
+{hero && (
+  <section class="svh-hero relative pt-28 pb-16 sm:pt-32 md:pt-36 md:pb-24 overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none overflow-hidden z-0" aria-hidden="true">
+      <div class="ds-hero-glow absolute inset-0"></div>
+    </div>
+    <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12 relative z-10 grid lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+      <div class="lg:col-span-6">
+        {page.breadcrumb && (
+          <nav class="flex flex-wrap items-center gap-2 text-xs font-medium text-neutral-500 mb-5" aria-label="Breadcrumb">
+            {page.breadcrumb.map((crumb: any, i: number) => (
+              <div class="flex items-center gap-2">
+                {i > 0 && <span class="text-neutral-300">/</span>}
+                {i === page.breadcrumb.length - 1 ? (
+                  <span class="text-neutral-800 font-semibold">{crumb.name}</span>
+                ) : (
+                  <a href={crumb.href} class="hover:text-primary transition-colors">{crumb.name}</a>
+                )}
+              </div>
+            ))}
+          </nav>
+        )}
+        {hero.badge && <div class="svh-eyebrow mb-5">{hero.badge}</div>}
+        <h1 class="text-[40px] sm:text-6xl lg:text-[60px] xl:text-[66px] font-black leading-[1.04] tracking-[-0.035em] text-neutral-900 mb-6">
+          {hero.h1Lead}{hero.h1Lead && ' '}
+          <span class="text-primary">{hero.h1Accent}</span>
+        </h1>
+        {(hero.body ?? []).map((p: any) => (
+          p.html
+            ? <p class="text-[15px] sm:text-[17px] text-neutral-600 leading-relaxed max-w-xl" set:html={p.html} />
+            : <p class="text-[15px] sm:text-[17px] text-neutral-600 leading-relaxed max-w-xl">{p.text ?? p}</p>
+        ))}
+      </div>
+
+      <!-- 3D visual: browser window with an orange ring and six orbiting service cards -->
+      <div class="lg:col-span-6">
+        <div class="svh-visual relative mx-auto w-full max-w-[600px] lg:max-w-none">
+          <picture>
+            <!-- each file is colour-matched to the hero background at that layout -->
+            <source media="(max-width: 1023px)" srcset="/images/home/3d/services-cards-3d-900.webp" />
+            <source media="(max-width: 1279px)" srcset="/images/home/3d/services-cards-3d-md.webp" />
+            <img src="/images/home/3d/services-cards-3d.webp" alt="3D browser window surrounded by service cards: Web Design, Development, Digital Marketing, SEO, UI/UX Design and Maintenance" width="1366" height="950" loading="eager" decoding="async" fetchpriority="high" class="w-full h-auto" />
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+)}
+
+<!-- OUR SERVICES (cards) -->
+{cards && (
+  <section id={cards.id} class="svh-sec relative py-16 sm:py-20 lg:py-24">
+    <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12">
+      <div class="grid lg:grid-cols-12 gap-4 lg:gap-10 items-end mb-10 sm:mb-12">
+        <div class="lg:col-span-7">
+          {cards.badge && <div class="svh-eyebrow mb-4">{cards.badge}</div>}
+          <p class="text-4xl md:text-5xl font-black text-neutral-900 leading-[1.06] tracking-[-0.03em]">Our <span class="text-primary">Services</span></p>
+        </div>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
+        {cards.items.map((item: any, i: number) => {
+          const Icon = cardIcons[i] ?? Sparkles;
+          return (
+            <div class="svh-card group p-6 sm:p-7 flex flex-col">
+              <span class="svh-icon mb-5"><Icon class="w-6 h-6" /></span>
+              {cards.itemHeading === 'h2'
+                ? <h2 class="text-lg sm:text-[19px] font-bold text-neutral-900 leading-snug mb-2.5 group-hover:text-primary transition-colors">{item.title}</h2>
+                : <h3 class="text-lg sm:text-[19px] font-bold text-neutral-900 leading-snug mb-2.5 group-hover:text-primary transition-colors">{item.title}</h3>}
+              {item.html
+                ? <p class="text-neutral-600 text-sm leading-relaxed" set:html={item.html} />
+                : <p class="text-neutral-600 text-sm leading-relaxed">{item.text}</p>}
+              {item.linkText && (
+                <a href={item.href} class="mt-auto pt-5 inline-flex items-center gap-1.5 text-[13px] font-bold text-primary hover:gap-2.5 transition-all">
+                  {item.linkText}
+                </a>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+)}
+
+<!-- WHY TEKNOPPY (prose) -->
+{prose && (
+  <section id={prose.id} class="svh-sec-alt relative py-16 sm:py-20">
+    <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12 grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+      <div class="lg:col-span-5">
+        <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-[1.06] tracking-[-0.03em]">
+          {whyParts.map((part: string) => part === 'Teknoppy' ? <span class="text-primary">{part}</span> : part)}
+        </h2>
+      </div>
+      <div class="lg:col-span-7 svh-card p-6 sm:p-8 svh-prose">
+        {prose.paragraphs.map((p: any) => (
+          <p class="text-neutral-600 text-[15px] sm:text-base leading-[1.8]">
+            {p.lead && <strong class="font-black text-neutral-900">{p.lead}</strong>}
+            {p.lead && ' '}
+            {p.html ? <Fragment set:html={p.html} /> : (p.text ?? p)}
+          </p>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+
+<!-- FAQ -->
+{faq && (
+  <section id={faq.id} class="svh-sec relative py-16 sm:py-20">
+    <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        {faq.badge && <div class="svh-eyebrow justify-center mb-4">{faq.badge}</div>}
+        {faq.h2 && <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-[1.06] tracking-[-0.03em]">{(() => { const t = splitAccent(faq.h2, "Questions"); return t ? (<>{t[0]}<span class="text-primary">{t[1]}</span>{t[2]}</>) : faq.h2; })()}</h2>}
+      </div>
+      <div class="max-w-3xl mx-auto space-y-3">
+        {faq.items.map((f: any) => (
+          <details class="svh-faq group [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex items-center justify-between cursor-pointer gap-4 px-5 sm:px-6 py-4 sm:py-5 rounded-2xl focus-visible:outline-2 focus-visible:outline-primary">
+              <h3 class="text-sm sm:text-[15px] font-bold text-neutral-900">{f.q}</h3>
+              <span class="w-7 h-7 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 transition-transform duration-300 group-open:rotate-45" aria-hidden="true">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.6" viewBox="0 0 24 24"><path stroke-linecap="round" d="M12 5v14M5 12h14" /></svg>
+              </span>
+            </summary>
+            <div class="px-5 sm:px-6 pb-5 text-sm text-neutral-600 leading-relaxed">
+              {f.aHtml ? <Fragment set:html={f.aHtml} /> : f.a}
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+
+<!-- CLOSING CTA -->
+{cta && (
+  <section id={cta.id} class="svh-sec relative pb-16 sm:pb-20">
+    <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12">
+      <div class="svh-cta rounded-[1.75rem] px-6 py-8 sm:px-10 sm:py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div>
+          {cta.h2 && <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-neutral-900 leading-tight tracking-[-0.02em]">{(() => { const t = splitAccent(cta.h2, "your project?"); return t ? (<>{t[0]}<span class="text-primary">{t[1]}</span>{t[2]}</>) : cta.h2; })()}</h2>}
+          {(cta.paragraphs ?? []).map((p: any) => (
+            p.html ? <p class="text-neutral-600 text-base mt-3" set:html={p.html} /> : <p class="text-neutral-600 text-base mt-3">{p.text ?? p}</p>
+          ))}
+        </div>
+        <div class="flex flex-col sm:flex-row flex-wrap gap-3 w-full md:w-auto">
+          {cta.ctas.map((c: any, i: number) => (
+            <a href={c.href} class={i === 0
+              ? "inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-primary text-white font-bold text-sm sm:text-base shadow-[0_12px_28px_-10px_rgba(240,90,44,0.6)] hover:bg-primary/95 hover:-translate-y-0.5 transition-all whitespace-nowrap"
+              : "inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full border border-primary/30 text-primary font-bold text-sm sm:text-base hover:bg-primary/5 transition-all whitespace-nowrap"}>
+              {c.label}
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+)}
+
+{faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+{breadcrumbSchema && <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />}
+{(Array.isArray(page.schema) ? page.schema : page.schema ? [page.schema] : []).map((sc: any) => (
+  <script type="application/ld+json" set:html={JSON.stringify(sc)} />
+))}
+
+<style>
+  .svh-hero { background: linear-gradient(180deg, #fff6ef 0%, #fffaf6 100%); }
+  .svh-sec { background: #fffaf6; }
+  .svh-sec-alt { background: linear-gradient(180deg, #fff4ec 0%, #fffaf6 100%); }
+  .svh-eyebrow {
+    display: flex; align-items: center; gap: 0.75rem;
+    color: var(--color-primary); font-weight: 700; font-size: 0.95rem;
+  }
+  .svh-eyebrow::before { content: ""; width: 1.9rem; height: 2.5px; border-radius: 2px; background: currentColor; }
+  .svh-card {
+    background: #fff; border: 1px solid rgba(240, 90, 44, 0.09); border-radius: 1.5rem;
+    box-shadow: 0 24px 50px -34px rgba(160, 60, 20, 0.45);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .svh-card.group:hover { transform: translateY(-3px); border-color: rgba(240, 90, 44, 0.25); box-shadow: 0 30px 56px -30px rgba(160, 60, 20, 0.5); }
+  .svh-icon {
+    width: 3rem; height: 3rem; border-radius: 1rem; display: inline-flex; align-items: center; justify-content: center;
+    color: var(--color-primary); background: linear-gradient(135deg, #fff1e8, #ffe0cc);
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  .svh-card.group:hover .svh-icon { background: var(--color-primary); color: #fff; }
+  .svh-prose :global(a) { color: var(--color-primary); font-weight: 600; }
+  .svh-prose :global(a:hover) { text-decoration: underline; }
+  .svh-faq {
+    background: #fff; border: 1px solid rgba(240, 90, 44, 0.09); border-radius: 1rem;
+    box-shadow: 0 18px 40px -32px rgba(160, 60, 20, 0.45);
+  }
+  .svh-faq[open] { border-color: rgba(240, 90, 44, 0.22); }
+  .svh-cta {
+    background: radial-gradient(90% 160% at 100% 0%, rgba(255, 154, 92, 0.22) 0%, transparent 60%), #fff;
+    border: 1px solid rgba(240, 90, 44, 0.12); border-left: 5px solid var(--color-primary);
+    box-shadow: 0 24px 50px -34px rgba(160, 60, 20, 0.45);
+  }
+  .svh-visual img {
+    /* the image's backdrop is colour-matched to this hero, so only light edge fades are needed */
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 2.5%, #000 95%, transparent 100%), linear-gradient(to bottom, transparent 0, #000 8%, #000 84%, transparent 100%);
+    -webkit-mask-composite: source-in;
+            mask-image: linear-gradient(to right, transparent 0, #000 2.5%, #000 95%, transparent 100%), linear-gradient(to bottom, transparent 0, #000 8%, #000 84%, transparent 100%);
+            mask-composite: intersect;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .svh-visual picture { display: block; animation: svhFloat 7s ease-in-out infinite; }
+  }
+  @keyframes svhFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+</style>

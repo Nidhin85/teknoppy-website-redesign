@@ -10,7 +10,7 @@
  * internal link, the entry uses `html` instead of `text`; the wording itself is
  * unchanged, only anchors are added.
  */
-import { ArrowRight, Zap, Check, Star, Send, Phone } from 'lucide-react';
+import { ArrowRight, Zap, Check, Star, Send, Phone, Info, ChevronDown, Users, Layers, Laptop, Coins, Calculator, Quote, ShieldCheck } from 'lucide-react';
 import { getCollection } from 'astro:content';
 import CostCalculator from './CostCalculator.tsx';
 
@@ -66,6 +66,18 @@ const body = sections.filter((s: any) =>
   s.draft !== true
 );
 
+// Form-first layout (Request a Quote): heading split for the accent colour, phone label split
+// into two lines, and decorative stat icons. Presentation only; the text is unchanged.
+const headingWords = (formSection?.form?.heading ?? "").split(" ");
+const headingAccent = headingWords.length > 3 ? headingWords.slice(-3).join(" ") : headingWords.join(" ");
+const headingLead = headingWords.length > 3 ? headingWords.slice(0, -3).join(" ") : "";
+const phoneSplit = (formSection?.aside?.phoneLabel ?? "").match(/^(.+?)\s+(Call .+)$/);
+const statIcons = [Users, Layers, Zap];
+const linkIcons = [Laptop, Coins, Calculator];
+const firstFieldClass =
+  "w-full bg-white border border-neutral-200 rounded-xl px-4 py-3.5 text-[15px] text-neutral-900 placeholder-neutral-400 hover:border-neutral-300 focus:border-primary focus:ring-4 focus:ring-primary/15 transition-all outline-none";
+const firstLabelClass = "block text-[12px] font-bold text-neutral-800 uppercase tracking-[0.14em] mb-2";
+
 const faqSection = sections.find((s: any) => s.type === 'faq');
 const faqSchema = faqSection && {
   "@context": "https://schema.org",
@@ -91,11 +103,14 @@ const breadcrumbSchema = page.breadcrumb && {
 
 {/* FORM FIRST TOP SECTION — When page specifies formFirst={true} (e.g. Request a Quote) */}
 {formFirst && formSection && (
-  <section class="relative pt-24 sm:pt-28 md:pt-30 pb-12 sm:pb-16 bg-cream/30 border-b border-neutral-200/60 overflow-hidden" id="request-quote">
-    <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
+  <section class="relative pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 bg-gradient-to-b from-[#fff3ea] via-[#fff8f3] to-white overflow-hidden" id="request-quote">
+    <div class="absolute -top-32 -right-32 w-[560px] h-[560px] rounded-full bg-primary/10 blur-[120px] pointer-events-none"></div>
+    <div class="absolute top-40 -left-40 w-[420px] h-[420px] rounded-full bg-[#F58439]/10 blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12 relative z-10">
       {/* Breadcrumb Navigation */}
       {page.breadcrumb && (
-        <nav class="flex flex-wrap items-center gap-2 text-xs font-medium text-neutral-500 mb-4" aria-label="Breadcrumb">
+        <nav class="flex flex-wrap items-center gap-2 text-xs sm:text-[13px] font-medium text-neutral-500 mb-5" aria-label="Breadcrumb">
           {page.breadcrumb.map((crumb: any, i: number) => (
             <div class="flex items-center gap-2">
               {i > 0 && <span class="text-neutral-400">/</span>}
@@ -109,20 +124,52 @@ const breadcrumbSchema = page.breadcrumb && {
         </nav>
       )}
 
-      {/* Two-Column Form & Aside Layout — Form is first prominent visible content */}
-      <div class={formSection.aside ? "grid lg:grid-cols-12 gap-6 lg:gap-8 items-start mt-2" : "max-w-2xl mt-2"}>
-        
-        {/* 1. Request Your Web Design Quote Form */}
-        <div class={formSection.aside ? "lg:col-span-7 bg-white rounded-[2rem] border border-neutral-100 p-5 sm:p-7 md:p-8 shadow-[0_24px_60px_-30px_rgba(0,0,0,0.12)]" : "bg-white rounded-[2rem] border border-neutral-100 p-5 sm:p-7 md:p-8 shadow-[0_24px_60px_-30px_rgba(0,0,0,0.12)]"}>
-          {formSection.form.heading && (
-            <div class="flex items-center gap-3 mb-6 sm:mb-7">
-              <span class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-primary/10 text-primary flex items-center justify-center border border-primary/15 flex-shrink-0">
-                <Send class="w-5 h-5" />
-              </span>
-              <h1 class="text-xl sm:text-2xl font-black text-neutral-900 leading-tight">{formSection.form.heading}</h1>
-            </div>
-          )}
+      {/* Heading row — the form heading is the page H1; illustration is decorative (md+) */}
+      {formSection.form.heading && (
+        <div class="grid md:grid-cols-12 gap-6 items-center mb-8 sm:mb-10">
+          <h1 class="md:col-span-8 text-[34px] sm:text-5xl lg:text-[58px] font-black leading-[1.06] tracking-tight text-neutral-900">
+            {headingLead}{headingLead && <br />}
+            <span class="relative inline-block text-primary">
+              {headingAccent}
+              <svg class="absolute -bottom-2 right-0 w-1/2 h-2.5 text-primary" viewBox="0 0 100 10" preserveAspectRatio="none" fill="none" aria-hidden="true">
+                <path d="M3 7C30 3 70 3 97 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+              </svg>
+            </span>
+          </h1>
+          <div class="hidden md:flex md:col-span-4 justify-end" aria-hidden="true">
+            <svg class="w-full max-w-[260px] h-auto drop-shadow-[0_30px_40px_rgba(240,90,44,0.22)]" viewBox="0 0 360 260" fill="none">
+              <ellipse cx="180" cy="135" rx="150" ry="110" fill="#FFE7D9" />
+              <!-- clipboard -->
+              <g transform="rotate(10 170 135)">
+                <rect x="105" y="40" width="140" height="185" rx="16" fill="#F05A2C" />
+                <rect x="118" y="58" width="114" height="155" rx="8" fill="#fff" />
+                <rect x="145" y="28" width="60" height="26" rx="8" fill="#F58439" />
+                <circle cx="175" cy="30" r="9" fill="#fff" stroke="#F58439" stroke-width="5" />
+                <g stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="132" y="80" width="20" height="20" rx="4" stroke="#F58439" stroke-width="3" />
+                  <path d="M136 90l5 5 12-14" stroke="#F05A2C" stroke-width="4" />
+                  <rect x="132" y="118" width="20" height="20" rx="4" stroke="#F58439" stroke-width="3" />
+                  <path d="M136 128l5 5 12-14" stroke="#F05A2C" stroke-width="4" />
+                  <rect x="132" y="156" width="20" height="20" rx="4" stroke="#F58439" stroke-width="3" />
+                  <path d="M164 88h50M164 98h36M164 126h50M164 136h40M164 164h50M164 174h30" stroke="#C9CDD4" stroke-width="5" />
+                </g>
+              </g>
+              <!-- sparks -->
+              <path d="M78 70l-16-6M88 52l-6-16M74 92l-18 2" stroke="#F05A2C" stroke-width="5" stroke-linecap="round" />
+              <!-- paper plane -->
+              <path d="M262 112l78-30-30 66-15-22z" fill="#F05A2C" />
+              <path d="M295 126l45-44-60 36z" fill="#C2410C" />
+              <path d="M262 150c-20 10-30 30-12 34s14-20-4-14" stroke="#F05A2C" stroke-width="2.5" stroke-dasharray="5 6" stroke-linecap="round" opacity=".6" />
+            </svg>
+          </div>
+        </div>
+      )}
 
+      {/* Two-Column Form & Aside Layout */}
+      <div class={formSection.aside ? "grid lg:grid-cols-12 gap-6 lg:gap-8 items-start" : "max-w-2xl"}>
+
+        {/* 1. Form card */}
+        <div class={`${formSection.aside ? "lg:col-span-7 " : ""}bg-white rounded-[1.75rem] border border-neutral-100 p-5 sm:p-8 md:p-9 shadow-[0_30px_70px_-35px_rgba(0,0,0,0.25)]`}>
           <form
             data-lead-form
             data-endpoint={formEndpoint}
@@ -131,19 +178,19 @@ const breadcrumbSchema = page.breadcrumb && {
             data-success={formSection.form.successMessage}
             data-error={formSection.form.errorMessage}
             novalidate
-            class="space-y-4 sm:space-y-5"
+            class="space-y-5 sm:space-y-6"
           >
             {/* Honeypot */}
             <div class="absolute -left-[9999px] w-px h-px overflow-hidden" aria-hidden="true">
               <label>Company website<input type="text" name="company_website" tabindex="-1" autocomplete="off" /></label>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
               {formSection.form.fields.map((f: any) => (
                 <div class={f.width === 'half' ? 'col-span-1' : 'col-span-1 sm:col-span-2'}>
-                  <label for={`lf-first-${f.name}`} class={labelClass}>
+                  <label for={`lf-first-${f.name}`} class={firstLabelClass}>
                     {f.label}
-                    {!f.required && <span class="text-neutral-400 font-bold normal-case tracking-normal"> (optional)</span>}
+                    {!f.required && <span class="text-neutral-400 font-semibold normal-case tracking-normal"> (optional)</span>}
                   </label>
                   {f.type === 'textarea' ? (
                     <textarea
@@ -153,13 +200,16 @@ const breadcrumbSchema = page.breadcrumb && {
                       required={f.required}
                       placeholder={f.placeholder}
                       data-label={f.label}
-                      class={`${fieldClass} resize-none`}
+                      class={`${firstFieldClass} resize-y min-h-[120px]`}
                     />
                   ) : f.type === 'select' ? (
-                    <select id={`lf-first-${f.name}`} name={f.name} required={f.required} data-label={f.label} class={fieldClass}>
-                      <option value="" disabled selected>{f.placeholder ?? 'Select an option'}</option>
-                      {f.options.map((opt: string) => <option value={opt}>{opt}</option>)}
-                    </select>
+                    <div class="relative">
+                      <select id={`lf-first-${f.name}`} name={f.name} required={f.required} data-label={f.label} class={`${firstFieldClass} appearance-none pr-11 cursor-pointer`}>
+                        <option value="" disabled selected>{f.placeholder ?? 'Select an option'}</option>
+                        {f.options.map((opt: string) => <option value={opt}>{opt}</option>)}
+                      </select>
+                      <span class="absolute inset-y-0 right-4 flex items-center text-neutral-500 pointer-events-none"><ChevronDown className="w-4 h-4" /></span>
+                    </div>
                   ) : (
                     <input
                       id={`lf-first-${f.name}`}
@@ -170,7 +220,7 @@ const breadcrumbSchema = page.breadcrumb && {
                       autocomplete={f.autocomplete}
                       min={f.min}
                       data-label={f.label}
-                      class={fieldClass}
+                      class={firstFieldClass}
                     />
                   )}
                   {f.hint && <p class="text-xs text-neutral-400 font-semibold mt-1.5 leading-relaxed">{f.hint}</p>}
@@ -178,43 +228,57 @@ const breadcrumbSchema = page.breadcrumb && {
               ))}
             </div>
 
-            <button type="submit" class="w-full inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-4 text-base font-bold text-white bg-primary rounded-xl shadow-[0_12px_30px_-8px_rgba(240,90,44,0.5)] active:scale-[0.99] hover:bg-primary/95 hover:-translate-y-0.5 transition-all duration-300 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed">
+            <button type="submit" class="w-full inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-4 text-base font-bold text-white bg-gradient-to-r from-[#F58439] to-primary rounded-xl shadow-[0_14px_30px_-10px_rgba(240,90,44,0.6)] hover:shadow-[0_18px_36px_-10px_rgba(240,90,44,0.7)] active:scale-[0.99] hover:-translate-y-0.5 transition-all duration-300 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed disabled:translate-y-0 focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/30">
               {formSection.form.submitLabel}
               <ArrowRight class="w-4 h-4" />
             </button>
 
             <p data-lead-status role="status" aria-live="polite" class="hidden text-sm font-semibold rounded-xl px-4 py-3"></p>
 
-            {formSection.form.note && <p class="text-xs text-neutral-500 font-semibold leading-relaxed">{formSection.form.note}</p>}
+            {formSection.form.note && (
+              <p class="flex items-start gap-3 rounded-xl bg-[#fff4ec] border border-primary/10 px-4 py-3.5 text-[13px] text-neutral-600 font-medium leading-relaxed">
+                <Info className="w-5 h-5 text-primary flex-shrink-0 mt-px" />
+                <span>{formSection.form.note}</span>
+              </p>
+            )}
           </form>
         </div>
 
-        {/* 2. Before You Request a Quote Aside Panel */}
+        {/* 2. Aside panel */}
         {formSection.aside && (
           <aside class="lg:col-span-5 lg:sticky lg:top-28">
-            <div class="theme-keep-light bg-neutral-950 text-white rounded-[2rem] p-5 sm:p-7 md:p-8 shadow-[0_24px_60px_-30px_rgba(0,0,0,0.4)] relative overflow-hidden">
-              <div class="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-primary/20 blur-[80px] pointer-events-none"></div>
+            <div class="theme-keep-light bg-neutral-950 text-white rounded-[1.75rem] p-6 sm:p-8 shadow-[0_30px_70px_-35px_rgba(0,0,0,0.5)] relative overflow-hidden">
+              <div class="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-primary/25 blur-[90px] pointer-events-none"></div>
               <div class="relative z-10">
-                {formSection.aside.heading && <h3 class="text-lg font-black text-white mb-6">{formSection.aside.heading}</h3>}
-                <ul class="space-y-5">
+                {formSection.aside.heading && <h3 class="text-xl sm:text-2xl font-black text-white tracking-tight mb-6">{formSection.aside.heading}</h3>}
+                <ul class="space-y-6">
                   {(formSection.aside.items ?? []).map((item: any) => (
-                    <li>
-                      <span class="flex items-start gap-3">
-                        <span class="w-5 h-5 rounded-full bg-primary/15 text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
-                          <Check class="w-3 h-3" />
-                        </span>
-                        <span class="min-w-0">
-                          <span class="block text-sm font-bold text-white leading-snug">{item.title}</span>
-                          {item.text && <span class="block text-xs font-semibold text-neutral-400 mt-1 leading-relaxed">{item.text}</span>}
-                        </span>
+                    <li class="flex items-start gap-3.5">
+                      <span class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 mt-0.5 shadow-[0_0_0_4px_rgba(240,90,44,0.18)]">
+                        <Check className="w-3.5 h-3.5" strokeWidth={3} />
+                      </span>
+                      <span class="min-w-0">
+                        <span class="block text-[15px] font-bold text-white leading-snug">{item.title}</span>
+                        {item.text && <span class="block text-sm font-medium text-neutral-400 mt-1.5 leading-relaxed">{item.text}</span>}
                       </span>
                     </li>
                   ))}
                 </ul>
                 {formSection.aside.phone && (
-                  <a href={`tel:${formSection.aside.phone.replace(/\s/g, '')}`} class="inline-flex items-center gap-2.5 mt-7 pt-6 border-t border-white/10 text-sm font-bold text-primary hover:underline w-full">
-                    <Phone class="w-4 h-4" />
-                    {formSection.aside.phoneLabel ?? formSection.aside.phone}
+                  <a href={`tel:${formSection.aside.phone.replace(/\s/g, '')}`} class="group flex items-center gap-4 mt-8 pt-6 border-t border-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 rounded-lg">
+                    <span class="w-11 h-11 rounded-full bg-primary/15 ring-1 ring-primary/40 text-primary flex items-center justify-center flex-shrink-0">
+                      <Phone className="w-5 h-5" />
+                    </span>
+                    <span class="min-w-0">
+                      {phoneSplit ? (
+                        <>
+                          <span class="block text-sm font-bold text-primary">{phoneSplit[1]}</span>
+                          <span class="block text-lg font-black text-white group-hover:text-primary transition-colors">{phoneSplit[2]}</span>
+                        </>
+                      ) : (
+                        <span class="block text-base font-bold text-white group-hover:text-primary transition-colors">{formSection.aside.phoneLabel ?? formSection.aside.phone}</span>
+                      )}
+                    </span>
                   </a>
                 )}
                 {formSection.aside.footnote && <p class="text-xs text-neutral-500 font-semibold italic mt-5 leading-relaxed">{formSection.aside.footnote}</p>}
@@ -223,26 +287,30 @@ const breadcrumbSchema = page.breadcrumb && {
           </aside>
         )}
       </div>
-    </div>
-  </section>
-)}
 
-{/* If formFirst is true and hero has stats, render the stats trustline banner below the form */}
-{formFirst && hero && hero.stats && (
-  <section class="py-8 sm:py-10 bg-white border-b border-neutral-200/70">
-    <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-12">
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
-        {hero.stats.map((stat: any) => (
-          <div class="p-5 sm:p-6 rounded-2xl bg-cream/40 border border-neutral-200/70 text-center">
-            <p class="text-2xl sm:text-3xl font-black text-primary mb-1">{stat.value}</p>
-            <p class="text-xs font-bold text-neutral-600 uppercase tracking-wider">{stat.label}</p>
+      {/* Stats strip — one card, three columns */}
+      {hero && hero.stats && (
+        <div class="mt-8 sm:mt-10">
+          <div class="bg-white rounded-[1.75rem] border border-neutral-100 shadow-[0_20px_50px_-35px_rgba(0,0,0,0.25)] grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-neutral-200/80">
+            {hero.stats.map((stat: any, i: number) => {
+              const StatIcon = statIcons[i % statIcons.length];
+              return (
+                <div class="flex items-center justify-center gap-4 px-6 py-6 sm:py-7">
+                  <StatIcon className="w-9 h-9 text-primary flex-shrink-0" strokeWidth={1.75} />
+                  <div>
+                    <p class="text-3xl sm:text-[34px] font-black text-primary leading-none tracking-tight">{stat.value}</p>
+                    <p class="mt-1.5 text-xs font-bold text-neutral-700 uppercase tracking-wider">{stat.label}</p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
-        ))}
-      </div>
-      {hero.trustline && (
-        <p class="text-center text-xs font-bold text-neutral-400 uppercase tracking-wider mt-5">
-          {hero.trustline}
-        </p>
+          {hero.trustline && (
+            <p class="text-center text-xs font-bold text-neutral-400 uppercase tracking-wider mt-5">
+              {hero.trustline}
+            </p>
+          )}
+        </div>
       )}
     </div>
   </section>
@@ -250,21 +318,22 @@ const breadcrumbSchema = page.breadcrumb && {
 
 <!-- HERO -->
 {!formFirst && hero && (
-  <section class="relative pt-32 pb-24 md:pt-36 md:pb-28 overflow-hidden theme-keep-light bg-neutral-950 text-white border-b border-white/5">
+  <section class="ds-hero relative pt-32 pb-24 md:pt-36 md:pb-28 overflow-hidden bg-[#fff8f2] text-neutral-900 border-b border-primary/10">
     <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
-      <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/herodarkwebdesign.webp')]"></div>
+      <div class="ds-hero-glow absolute inset-0"></div>
+      <div class="ds-hero-orbit absolute hidden lg:block"></div>
     </div>
 
     <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
       <div class={hero.stats ? "grid xl:grid-cols-12 gap-12 items-center" : ""}>
         <div class={hero.stats ? "xl:col-span-7 flex flex-col items-center text-center xl:items-start xl:text-left" : "max-w-4xl"}>
           {page.breadcrumb && (
-            <nav class="flex flex-wrap items-center gap-2 text-xs font-medium text-white/70 mb-4" aria-label="Breadcrumb">
+            <nav class="flex flex-wrap items-center gap-2 text-xs font-medium text-neutral-500 mb-4" aria-label="Breadcrumb">
               {page.breadcrumb.map((crumb: any, i: number) => (
                 <div class="flex items-center gap-2">
-                  {i > 0 && <span class="text-white/40">/</span>}
+                  {i > 0 && <span class="text-neutral-300">/</span>}
                   {i === page.breadcrumb.length - 1 ? (
-                    <span class="text-white/90 font-semibold">{crumb.name}</span>
+                    <span class="text-neutral-800 font-semibold">{crumb.name}</span>
                   ) : (
                     <a href={crumb.href} class="hover:text-primary transition-colors">{crumb.name}</a>
                   )}
@@ -275,17 +344,17 @@ const breadcrumbSchema = page.breadcrumb && {
           {(hero.badge || hero.eyebrow) && (
             <div class="flex flex-wrap items-center gap-3 mb-6">
               {hero.badge && (
-                <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-bold text-primary uppercase tracking-widest">
+                <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/80 border border-primary/20 text-xs font-bold text-primary uppercase tracking-widest shadow-[0_8px_20px_-12px_rgba(240,90,44,0.5)] backdrop-blur">
                   <Zap class="w-3.5 h-3.5" />
                   {hero.badge}
                 </span>
               )}
               {hero.eyebrow && (
-                <span class="text-xs font-black text-white/70 uppercase tracking-[0.2em]">{hero.eyebrow}</span>
+                <span class="text-xs font-black text-neutral-500 uppercase tracking-[0.2em]">{hero.eyebrow}</span>
               )}
             </div>
           )}
-          <h1 class="text-4xl sm:text-5xl lg:text-[54px] font-black leading-[1.1] tracking-tight text-white mb-6">
+          <h1 class="text-4xl sm:text-5xl lg:text-[54px] font-black leading-[1.1] tracking-tight text-neutral-900 mb-6">
             {hero.h1Lead}{hero.h1Lead && ' '}
             <span class="relative inline-block text-primary">
               {hero.h1Accent}
@@ -297,11 +366,11 @@ const breadcrumbSchema = page.breadcrumb && {
 
           {hero.subhead && (
             hero.subheadTag === 'p' ? (
-              <p class="text-lg sm:text-xl lg:text-2xl font-bold text-white/90 mb-6 leading-snug max-w-3xl">
+              <p class="text-lg sm:text-xl lg:text-2xl font-bold text-neutral-800 mb-6 leading-snug max-w-3xl">
                 {hero.subhead}
               </p>
             ) : (
-              <h2 class="text-lg sm:text-xl lg:text-2xl font-bold text-white/90 mb-6 leading-snug max-w-3xl">
+              <h2 class="text-lg sm:text-xl lg:text-2xl font-bold text-neutral-800 mb-6 leading-snug max-w-3xl">
                 {hero.subhead}
               </h2>
             )
@@ -309,8 +378,8 @@ const breadcrumbSchema = page.breadcrumb && {
 
           {(hero.body ?? []).map((p: any) => (
             p.html
-              ? <p class="text-base sm:text-lg text-neutral-300 mb-6 max-w-3xl font-medium leading-relaxed" set:html={p.html} />
-              : <p class="text-base sm:text-lg text-neutral-300 mb-6 max-w-3xl font-medium leading-relaxed">{p.text ?? p}</p>
+              ? <p class="text-base sm:text-lg text-neutral-600 mb-6 max-w-3xl font-medium leading-relaxed" set:html={p.html} />
+              : <p class="text-base sm:text-lg text-neutral-600 mb-6 max-w-3xl font-medium leading-relaxed">{p.text ?? p}</p>
           ))}
 
           {hero.ctas && (
@@ -320,7 +389,7 @@ const breadcrumbSchema = page.breadcrumb && {
                   href={cta.href}
                   class={i === 0
                     ? "w-full sm:w-auto inline-flex items-center justify-center text-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.35)] hover:bg-primary/95 hover:-translate-y-0.5 transition-all duration-300 leading-snug sm:whitespace-nowrap"
-                    : "w-full sm:w-auto inline-flex items-center justify-center text-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 text-base font-bold text-white border border-white/20 rounded-full hover:bg-white/5 transition-all duration-300 shadow-sm leading-snug sm:whitespace-nowrap"}
+                    : "w-full sm:w-auto inline-flex items-center justify-center text-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 text-base font-bold text-neutral-900 bg-white/80 backdrop-blur border border-neutral-200 rounded-full hover:border-primary/40 hover:text-primary transition-all duration-300 shadow-sm leading-snug sm:whitespace-nowrap"}
                 >
                   {cta.label}
                   <ArrowRight class="w-4 h-4" />
@@ -330,11 +399,11 @@ const breadcrumbSchema = page.breadcrumb && {
           )}
 
           {hero.meta && (
-            <dl class="flex flex-wrap gap-x-10 gap-y-5 mt-8 pt-8 border-t border-white/10 max-w-3xl">
+            <dl class="flex flex-wrap gap-x-10 gap-y-5 mt-8 pt-8 border-t border-primary/15 max-w-3xl">
               {hero.meta.map((m: any) => (
                 <div class="min-w-0">
                   <dt class="text-[11px] font-black text-neutral-500 uppercase tracking-[0.18em] mb-1.5">{m.label}</dt>
-                  <dd class="text-sm font-bold text-white/90 leading-snug">
+                  <dd class="text-sm font-bold text-neutral-800 leading-snug">
                     {m.href
                       ? <a href={m.href} class="inline-flex items-center gap-1.5 text-primary hover:underline" target={m.href.startsWith('http') ? '_blank' : undefined} rel={m.href.startsWith('http') ? 'noopener noreferrer' : undefined}>{m.value}<ArrowRight class="w-3 h-3" /></a>
                       : m.value}
@@ -345,7 +414,7 @@ const breadcrumbSchema = page.breadcrumb && {
           )}
 
           {hero.trustline && (
-            <p class="text-xs sm:text-sm text-neutral-400 font-semibold italic mt-8 max-w-2xl leading-relaxed">
+            <p class="text-xs sm:text-sm text-neutral-500 font-semibold italic mt-8 max-w-2xl leading-relaxed">
               {hero.trustline}
             </p>
           )}
@@ -354,10 +423,10 @@ const breadcrumbSchema = page.breadcrumb && {
         {hero.stats && (
           <div class={`xl:col-span-5 grid gap-4 sm:gap-6 ${hero.stats.length === 3 ? 'grid-cols-3 xl:grid-cols-1' : 'grid-cols-2'}`}>
             {hero.stats.map((stat: any) => (
-              <div class="theme-keep-light bg-[#0c0c0e] border border-white/5 rounded-[2rem] p-6 sm:p-8 shadow-2xl hover:border-primary/30 hover:shadow-[0_0_30px_rgba(240,90,44,0.12)] hover:-translate-y-1 transition-all duration-300 flex flex-col items-start group">
-                <span class="text-3xl font-black text-white block leading-none mb-2">{stat.value}</span>
+              <div class="ds-glass bg-white/70 backdrop-blur-md border border-white rounded-[1.5rem] sm:rounded-[2rem] p-4 min-[400px]:p-5 sm:p-8 min-w-0 shadow-[0_24px_50px_-28px_rgba(160,60,20,0.45)] hover:border-primary/30 hover:shadow-[0_28px_60px_-26px_rgba(240,90,44,0.45)] hover:-translate-y-1 transition-all duration-300 flex flex-col items-start group">
+                <span class="text-xl min-[400px]:text-2xl sm:text-3xl font-black text-neutral-900 block leading-tight sm:leading-none mb-2 break-words">{stat.value}</span>
                 <div class="w-8 h-[2px] bg-primary mb-4"></div>
-                <span class="text-[11px] font-black text-neutral-400 uppercase tracking-widest leading-normal">{stat.label}</span>
+                <span class="text-[11px] font-black text-neutral-500 uppercase tracking-widest leading-normal">{stat.label}</span>
               </div>
             ))}
           </div>
@@ -368,7 +437,7 @@ const breadcrumbSchema = page.breadcrumb && {
 )}
 
 <!-- BODY SECTIONS -->
-{body.map((s: any) => (
+{!formFirst && body.map((s: any) => (
   <section id={s.id} class={`py-16 sm:py-20 border-t border-neutral-100 relative ${bgOf(s)}`}>
     <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
 
@@ -933,6 +1002,222 @@ const breadcrumbSchema = page.breadcrumb && {
     </div>
   </section>
 ))}
+
+{/* FORM-FIRST BODY (Request a Quote) — same JSON content as the generic loop above,
+    laid out to match the form-first hero. Covers the section types that page uses;
+    the generic loop is skipped for formFirst pages. */}
+{formFirst && (() => {
+  let bulletIdx = 0;
+  return body.map((s: any) => {
+    const badge = s.badge && (
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-primary/20 shadow-sm text-primary text-[11px] sm:text-xs font-bold uppercase tracking-widest mb-4">
+        {s.badge}
+      </div>
+    );
+
+    // BULLETS — first list as a card grid, later lists as a dark band
+    if (s.type === 'bullets') {
+      const dark = bulletIdx++ > 0;
+      if (!dark) return (
+        <section id={s.id} class="py-16 sm:py-24 bg-white relative">
+          <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12 grid lg:grid-cols-12 gap-10 lg:gap-12">
+            <div class="lg:col-span-4">
+              <div class="lg:sticky lg:top-28">
+                {badge}
+                {s.h2 && <h2 class="text-3xl sm:text-4xl lg:text-[44px] font-black text-neutral-900 leading-[1.1] tracking-tight">{s.h2}</h2>}
+                <span class="block w-14 h-1 rounded-full bg-primary mt-5" aria-hidden="true"></span>
+              </div>
+            </div>
+            <ul class="lg:col-span-8 grid sm:grid-cols-2 gap-4 sm:gap-5">
+              {s.items.map((item: any, i: number) => (
+                <li class={`group relative bg-gradient-to-br from-white to-[#fff7f1] rounded-2xl border border-neutral-100 p-6 shadow-[0_16px_40px_-28px_rgba(0,0,0,0.25)] hover:border-primary/25 hover:-translate-y-0.5 transition-all duration-300 ${s.items.length % 2 === 1 && i === s.items.length - 1 ? 'sm:col-span-2' : ''}`}>
+                  <span class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-[0_0_0_5px_rgba(240,90,44,0.12)]">
+                    <Check className="w-5 h-5" strokeWidth={3} />
+                  </span>
+                  {item.html
+                    ? <p class="text-neutral-700 text-[15px] leading-relaxed font-medium" set:html={item.html} />
+                    : <p class="text-neutral-700 text-[15px] leading-relaxed font-medium">{item.text ?? item}</p>}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      );
+      return (
+        <section id={s.id} class="py-6 sm:py-10 bg-white">
+          <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12">
+            <div class="theme-keep-light relative overflow-hidden bg-neutral-950 rounded-[1.75rem] px-6 py-10 sm:p-12 lg:p-14 shadow-[0_30px_70px_-35px_rgba(0,0,0,0.5)]">
+              <div class="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-primary/25 blur-[100px] pointer-events-none"></div>
+              <div class="absolute -bottom-24 -left-24 w-72 h-72 rounded-full bg-[#F58439]/10 blur-[100px] pointer-events-none"></div>
+              <div class="relative z-10">
+                {s.badge && <div class="inline-flex items-center px-3.5 py-1.5 rounded-full bg-primary/15 border border-primary/30 text-primary text-[11px] sm:text-xs font-bold uppercase tracking-widest mb-4">{s.badge}</div>}
+                {s.h2 && <h2 class="max-w-3xl text-3xl sm:text-4xl lg:text-[44px] font-black text-white leading-[1.1] tracking-tight mb-10">{s.h2}</h2>}
+                <ul class={`grid gap-5 ${s.items.length >= 3 ? 'md:grid-cols-3' : 'md:grid-cols-2'}`}>
+                  {s.items.map((item: any) => (
+                    <li class="rounded-2xl bg-white/[0.04] border border-white/10 p-6 hover:bg-white/[0.07] hover:border-primary/30 transition-colors">
+                      <span class="w-11 h-11 rounded-full bg-primary/15 ring-1 ring-primary/40 text-primary flex items-center justify-center mb-4">
+                        <ShieldCheck className="w-5 h-5" />
+                      </span>
+                      {item.html
+                        ? <p class="text-neutral-300 text-[15px] leading-relaxed font-medium" set:html={item.html} />
+                        : <p class="text-neutral-300 text-[15px] leading-relaxed font-medium">{item.text ?? item}</p>}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      );
+    }
+
+    // PROSE — heading left, story card right
+    if (s.type === 'prose') return (
+      <section id={s.id} class="py-16 sm:py-24 bg-white">
+        <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12 grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          <div class="lg:col-span-4">
+            {badge}
+            {s.h2 && <h2 class="text-3xl sm:text-4xl lg:text-[44px] font-black text-neutral-900 leading-[1.1] tracking-tight">{s.h2}</h2>}
+            <span class="block w-14 h-1 rounded-full bg-primary mt-5" aria-hidden="true"></span>
+          </div>
+          <div class="lg:col-span-8 relative bg-gradient-to-br from-[#fff4ec] to-white rounded-[1.75rem] border border-primary/10 border-l-4 border-l-primary p-7 sm:p-10 shadow-[0_20px_50px_-35px_rgba(240,90,44,0.4)]">
+            <Quote className="absolute top-6 right-6 w-12 h-12 text-primary/15" aria-hidden="true" />
+            <div class="space-y-5 relative pr-10 sm:pr-14">
+              {s.paragraphs.map((p: any) => (
+                <p class="text-neutral-700 text-base sm:text-lg leading-relaxed font-medium">
+                  {p.lead && <strong class="font-black text-neutral-900">{p.lead}</strong>}
+                  {p.lead && ' '}
+                  {p.html ? <Fragment set:html={p.html} /> : (p.text ?? p)}
+                </p>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+
+    // LINKS — icon cards
+    if (s.type === 'links') {
+      const words = (s.h2 ?? '').split(' ');
+      const h2Accent = words.length > 1 ? words.pop() : '';
+      return (
+      <section id={s.id} class="relative py-16 sm:py-24 bg-gradient-to-b from-white via-[#fff8f3] to-[#fff4ec] overflow-hidden">
+        <div class="absolute -left-40 -top-40 w-[520px] h-[520px] rounded-full border-[40px] border-primary/[0.04] pointer-events-none" aria-hidden="true"></div>
+        <div class="absolute right-0 top-0 w-64 h-64 bg-[radial-gradient(rgba(240,90,44,0.18)_1.5px,transparent_1.5px)] [background-size:16px_16px] [mask-image:radial-gradient(circle_at_top_right,black,transparent_70%)] pointer-events-none" aria-hidden="true"></div>
+        <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12 relative z-10">
+          <div class="mb-10 sm:mb-12 max-w-3xl">
+            {s.badge && (
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-primary/15 shadow-sm text-primary text-xs sm:text-[13px] font-bold uppercase tracking-wider mb-5">
+                <Layers className="w-4 h-4" />
+                {s.badge}
+              </div>
+            )}
+            {s.h2 && (
+              <h2 class="text-3xl sm:text-4xl lg:text-[52px] font-black text-neutral-900 leading-[1.08] tracking-tight">
+                {words.join(' ')}{h2Accent && ' '}
+                {h2Accent && (
+                  <span class="relative inline-block text-primary">
+                    {h2Accent}
+                    <svg class="absolute -bottom-2 left-0 w-full h-2.5 text-primary" viewBox="0 0 100 10" preserveAspectRatio="none" fill="none" aria-hidden="true">
+                      <path d="M3 7C30 3 70 3 97 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                    </svg>
+                  </span>
+                )}
+              </h2>
+            )}
+          </div>
+          <div class={`grid gap-5 lg:gap-7 ${s.items.length >= 3 ? 'md:grid-cols-3' : 'sm:grid-cols-2'}`}>
+            {s.items.map((item: any, i: number) => {
+              const LinkIcon = linkIcons[i % linkIcons.length];
+              return (
+                <a href={item.href} class="group relative overflow-hidden flex flex-col bg-white rounded-[1.75rem] border border-neutral-100 p-7 sm:p-8 shadow-[0_20px_50px_-30px_rgba(0,0,0,0.25)] hover:border-primary/25 hover:shadow-[0_28px_60px_-30px_rgba(240,90,44,0.45)] hover:-translate-y-1 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/50">
+                  <svg class="absolute right-0 bottom-0 w-3/4 h-24 text-primary/[0.07] pointer-events-none" viewBox="0 0 300 100" preserveAspectRatio="none" fill="currentColor" aria-hidden="true">
+                    <path d="M0 100C120 95 220 60 300 0v100z" />
+                  </svg>
+                  <span class="relative w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                    <LinkIcon className="w-7 h-7" />
+                  </span>
+                  <span class="relative block text-xl sm:text-[22px] font-black text-neutral-900 leading-snug tracking-tight">{item.label}</span>
+                  {item.text && <span class="relative block text-neutral-600 text-[15px] sm:text-base font-medium mt-3 leading-relaxed">{item.text}</span>}
+                  <span class="relative mt-auto pt-8 flex justify-end" aria-hidden="true">
+                    <span class="w-11 h-11 rounded-full bg-primary text-white flex items-center justify-center shadow-[0_10px_20px_-8px_rgba(240,90,44,0.6)] group-hover:translate-x-1 transition-transform duration-300">
+                      <ArrowRight className="w-5 h-5" />
+                    </span>
+                  </span>
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+      );
+    }
+
+    // FAQ — centred, soft cards
+    if (s.type === 'faq') return (
+      <section id={s.id} class="py-16 sm:py-24 bg-[#fff8f3]">
+        <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12">
+          <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
+            {badge}
+            {s.h2 && <h2 class="text-3xl sm:text-4xl lg:text-[44px] font-black text-neutral-900 leading-[1.1] tracking-tight">{s.h2}</h2>}
+            <span class="block w-14 h-1 rounded-full bg-primary mx-auto mt-5" aria-hidden="true"></span>
+          </div>
+          <div class="max-w-3xl mx-auto space-y-4">
+            {s.items.map((faq: any) => (
+              <details class="group bg-white rounded-2xl border border-neutral-100 shadow-[0_10px_30px_-20px_rgba(0,0,0,0.2)] open:border-primary/20 open:shadow-[0_16px_40px_-20px_rgba(240,90,44,0.35)] transition-shadow [&_summary::-webkit-details-marker]:hidden">
+                <summary class="flex items-center justify-between gap-4 cursor-pointer list-none px-5 sm:px-7 py-5 rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40">
+                  <h3 class="text-[15px] sm:text-base font-bold text-neutral-900">{faq.q}</h3>
+                  <span class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 transition-transform duration-300 group-open:-rotate-180">
+                    <ChevronDown className="w-4 h-4" />
+                  </span>
+                </summary>
+                <div class="px-5 sm:px-7 pb-6 -mt-1 text-[15px] text-neutral-600 leading-relaxed font-medium">
+                  {faq.aHtml ? <Fragment set:html={faq.aHtml} /> : faq.a}
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+    );
+
+    // CTA — orange brand card
+    if (s.type === 'cta') return (
+      <section id={s.id} class="py-16 sm:py-20 bg-white">
+        <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12">
+          <div class="theme-keep-light relative overflow-hidden rounded-[1.75rem] bg-gradient-to-r from-primary to-[#F58439] px-7 py-10 sm:px-12 sm:py-14 shadow-[0_30px_60px_-30px_rgba(240,90,44,0.7)]">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_90%_10%,rgba(255,255,255,0.2),transparent_45%)] pointer-events-none"></div>
+            <div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-8 text-center lg:text-left">
+              <div class="max-w-2xl mx-auto lg:mx-0">
+                {s.h2 && <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-tight tracking-tight">{s.h2}</h2>}
+                {(s.paragraphs ?? []).map((p: any) => (
+                  p.html
+                    ? <p class="mt-3 text-white/90 text-base sm:text-lg font-medium leading-relaxed" set:html={p.html} />
+                    : <p class="mt-3 text-white/90 text-base sm:text-lg font-medium leading-relaxed">{p.text ?? p}</p>
+                ))}
+              </div>
+              <div class="flex flex-col sm:flex-row items-center justify-center gap-4 flex-shrink-0">
+                {s.ctas.map((cta: any, i: number) => (
+                  <a
+                    href={cta.href}
+                    class={i === 0
+                      ? "w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 text-base font-bold text-primary bg-white rounded-full shadow-[0_10px_30px_-10px_rgba(0,0,0,0.3)] hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap"
+                      : "w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 text-base font-bold text-white border-2 border-white/60 rounded-full hover:bg-white/10 hover:border-white transition-all duration-300 whitespace-nowrap"}
+                  >
+                    {cta.label}
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+
+    return null;
+  });
+})()}
 
 {!disableDefaultSchema && faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 {!disableDefaultSchema && breadcrumbSchema && <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />}

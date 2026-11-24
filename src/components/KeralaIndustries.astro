@@ -86,13 +86,14 @@ const industries = [
       {industries.map((item) => {
         const IconComponent = item.icon;
         return (
-          <div class="industry-card group relative neu-card neu-card-cream rounded-2xl p-5 sm:p-5 md:p-5.5 flex flex-col justify-between w-[76vw] min-w-[250px] max-w-[285px] shrink-0 sm:w-auto sm:min-w-0 sm:max-w-none snap-start self-stretch transition-all duration-300 select-none">
-            <div>
-              <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-primary/5 border border-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300 mb-3.5 sm:mb-4">
+          <div class="industry-card group relative bg-white border border-primary/10 shadow-[0_20px_40px_-30px_rgba(160,60,20,0.5)] hover:border-primary/25 hover:-translate-y-0.5 rounded-2xl p-4 sm:p-5 flex flex-col justify-between w-[76vw] min-w-[250px] max-w-[285px] shrink-0 sm:w-auto sm:min-w-0 sm:max-w-none snap-start self-stretch transition-all duration-300 select-none">
+            <div class="flex items-start gap-3.5">
+              <div class="w-11 h-11 shrink-0 rounded-xl bg-gradient-to-br from-[#fff1e8] to-[#ffe0cc] flex items-center justify-center text-primary group-hover:from-primary group-hover:to-primary group-hover:text-white transition-colors duration-300">
                 <IconComponent className="w-5 h-5" />
               </div>
+              <div class="min-w-0">
 
-              <h3 class="text-base sm:text-lg font-bold md:font-black text-neutral-900 mb-1.5 sm:mb-2 leading-snug group-hover:text-primary transition-colors">
+              <h3 class="text-[0.95rem] sm:text-base font-bold text-neutral-900 mb-1 leading-snug group-hover:text-primary transition-colors">
                 {item.link ? (
                   <a href={item.link} class="hover:underline">
                     {item.h3}
@@ -102,13 +103,14 @@ const industries = [
                 )}
               </h3>
 
-              <p class="text-neutral-600 text-xs sm:text-[0.875rem] leading-relaxed font-normal mb-3">
+              <p class="text-neutral-600 text-xs sm:text-[0.82rem] leading-relaxed font-normal">
                 {item.line}
               </p>
+              </div>
             </div>
 
             {item.link && (
-              <div class="pt-3.5 sm:pt-4 border-t border-neutral-200/70 mt-3">
+              <div class="pt-3 border-t border-neutral-100 mt-3.5">
                 <a
                   href={item.link}
                   class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-primary hover:text-neutral-900 transition-colors leading-snug"

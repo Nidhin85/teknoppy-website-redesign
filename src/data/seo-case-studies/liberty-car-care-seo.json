@@ -1,0 +1,162 @@
+{
+  "title": "Liberty Car Care SEO Case Study Abu Dhabi | Teknoppy",
+  "description": "How Teknoppy's SEO helped Liberty Car Care, a seven-branch tyre and car service centre in Abu Dhabi, rank for local searches in English and Arabic.",
+  "canonical": "https://www.teknoppy.com/case-studies/liberty-car-care-seo/",
+  "ogImage": "https://www.teknoppy.com/case-studies/libertycarcare.jpg",
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://www.teknoppy.com/case-studies/liberty-car-care-seo/#article",
+          "headline": "Liberty Car Care: An SEO Services Case Study for a Multi-Branch Tyre and Car Service Centre in Abu Dhabi",
+          "description": "How Teknoppy's SEO helped Liberty Car Care, a seven-branch tyre and car service centre in Abu Dhabi, rank for local searches in English and Arabic.",
+          "image": "https://www.teknoppy.com/case-studies/libertycarcare.jpg",
+          "mainEntityOfPage": "https://www.teknoppy.com/case-studies/liberty-car-care-seo/",
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Local SEO"
+            },
+            {
+              "@type": "Thing",
+              "name": "Multi-location SEO"
+            },
+            {
+              "@type": "AutoRepair",
+              "name": "Liberty Car Care",
+              "url": "https://www.libertycarcare.com/en",
+              "foundingDate": "2009",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Abu Dhabi",
+                "addressCountry": "AE"
+              }
+            }
+          ],
+          "author": {
+            "@type": "Person",
+            "name": "Sanal Edison",
+            "jobTitle": "Digital Strategist",
+            "url": "https://www.teknoppy.com/sanal-edison-digital-strategist/",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Teknoppy"
+            }
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Teknoppy",
+            "url": "https://www.teknoppy.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.teknoppy.com/logo.svg"
+            }
+          },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.teknoppy.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Case Studies",
+              "item": "https://www.teknoppy.com/case-study/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Liberty Car Care",
+              "item": "https://www.teknoppy.com/case-studies/liberty-car-care-seo/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Where is Liberty Car Care located?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In Abu Dhabi, UAE, with service centres in Mussafah M-10, Muroor, Al Mushrif, Al Manasir, Motor World (Shamkha), Al Falah and Riyadh City."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What services does Liberty Car Care offer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tyre sales and fitting, battery replacement, wheel alignment and balancing, puncture repair, oil change, vehicle inspection and car repairs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Liberty Car Care fit tyres at home?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. It offers same-day mobile tyre fitting across Abu Dhabi, with payment after installation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Liberty Car Care offer roadside assistance?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Roadside assistance is listed among its services, alongside mobile tyre and battery replacement."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "When was Liberty Car Care founded?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Liberty Car Care has served drivers in Abu Dhabi since 2009."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find the nearest Liberty Car Care branch?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Search \"Liberty Car Care\" with your area, such as Mussafah or Al Mushrif, on Google Maps, or call the main number to book mobile fitting."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What did Teknoppy do for Liberty Car Care?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SEO strategy, service-intent keyword mapping, multi-branch local SEO, bilingual on-page SEO, entity structure and schema markup."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why does a multi-branch business need local SEO?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "So Google can match each search to the nearest branch. Inconsistent details make every branch weaker."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Teknoppy offer SEO for businesses in the UAE?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Teknoppy works with businesses in the UAE, Qatar and Kerala."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

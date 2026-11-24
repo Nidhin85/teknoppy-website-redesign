@@ -1,0 +1,157 @@
+{
+  "title": "Abrus Krishna Finance SEO Case Study | Teknoppy",
+  "description": "How Teknoppy took a KML-registered gold loan company in Guruvayoor to Google page 1 for all five priority loan searches, including #1 for KML-registered lender searches.",
+  "canonical": "https://www.teknoppy.com/case-studies/abrus-krishna-finance-seo/",
+  "ogImage": "https://www.teknoppy.com/case-studies/abruskrishna.webp",
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://www.teknoppy.com/case-studies/abrus-krishna-finance-seo/#article",
+          "headline": "Abrus Krishna Finance: A Local SEO Case Study for a KML-Registered Gold Loan Company in Guruvayoor",
+          "description": "How Teknoppy took a KML-registered gold loan company in Guruvayoor to Google page 1 for all five priority loan searches, including #1 for KML-registered lender searches.",
+          "image": "https://www.teknoppy.com/case-studies/abruskrishna.webp",
+          "mainEntityOfPage": "https://www.teknoppy.com/case-studies/abrus-krishna-finance-seo/",
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Local SEO"
+            },
+            {
+              "@type": "Thing",
+              "name": "Gold loan marketing"
+            },
+            {
+              "@type": "FinancialService",
+              "name": "Abrus Krishna Finance",
+              "url": "https://abruskrishna.com/",
+              "telephone": "+91 8086155888",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Sreekrishna Enclave, Thaikad (PO)",
+                "addressLocality": "Guruvayoor",
+                "postalCode": "680508",
+                "addressRegion": "Kerala",
+                "addressCountry": "IN"
+              }
+            }
+          ],
+          "author": {
+            "@type": "Person",
+            "name": "Sanal Edison",
+            "jobTitle": "Digital Strategist",
+            "url": "https://www.teknoppy.com/sanal-edison-digital-strategist/",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Teknoppy"
+            }
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Teknoppy",
+            "url": "https://www.teknoppy.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.teknoppy.com/logo.svg"
+            }
+          },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.teknoppy.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Case Studies",
+              "item": "https://www.teknoppy.com/case-study/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Abrus Krishna Finance",
+              "item": "https://www.teknoppy.com/case-studies/abrus-krishna-finance-seo/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Where is Abrus Krishna Finance located?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sreekrishna Enclave, Thaikad (PO), Guruvayoor 680508, Kerala."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abrus Krishna Finance KML-registered?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. It is registered under the Kerala Money-Lenders Act, 1958 (KML)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What loans does Abrus Krishna Finance offer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Gold loans, doorstep gold loans, business loans, micro enterprise loans, micro personal loans, micro home loans, micro finance and consumer goods loans."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does the doorstep gold loan work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A field executive values the gold at the customer's home and seals it for the branch vault. The customer then signs the agreement at the branch, as the KML Act requires, and the loan is paid out."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What did Teknoppy do for Abrus Krishna Finance?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Website design, SEO strategy, one page per loan type, KML trust pages, on-page optimisation, local SEO and schema markup."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Google rankings did Abrus Krishna Finance achieve?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "All five priority keywords rank on Google page 1, including #1 for \"kml registered loan company guruvayoor\" and #2 for \"gold doorstep service in guruvayoor\"."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why give every loan type its own page?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "So each search has one clear page to rank, and gold loan, doorstep and micro finance pages do not compete with each other."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can Teknoppy do the same for my loan company?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Talk to us about local SEO for gold loan, micro finance and KML-registered lending businesses in Kerala."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

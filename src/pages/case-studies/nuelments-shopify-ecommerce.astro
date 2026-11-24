@@ -1,17 +1,8 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
-import FooterCTA from '../../components/FooterCTA.astro';
-import InnerPage from '../../components/InnerPage.astro';
-import page from '../../data/pages/case-studies/nuelments-shopify-ecommerce.json';
+import CaseStudyTemplate, { type CaseStudyProps } from '../../components/case-study/CaseStudyTemplate.astro';
+import data from '../../data/case-studies/nuelments-shopify-ecommerce.json';
+
+const props = data as CaseStudyProps;
 ---
 
-<Layout title={page.meta.title} description={page.meta.description}>
-  <Header forceSolidBg={true} />
-
-  <main class="overflow-hidden bg-cream/20">
-    <InnerPage page={page} />
-  </main>
-
-  <FooterCTA />
-</Layout>
+<CaseStudyTemplate {...props} />

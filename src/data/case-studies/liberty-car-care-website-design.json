@@ -1,0 +1,186 @@
+{
+  "metaTitle": "Liberty Car Care Website Design Case Study | Teknoppy",
+  "metaDescription": "How Teknoppy designed a bilingual tyre and car service website for Liberty Car Care in Abu Dhabi, with tyre size search, home fitting and pay after service.",
+  "canonicalURL": "https://www.teknoppy.com/case-studies/liberty-car-care-website-design/",
+  "heroImage": "/case-studies/libertycarcare-website.webp",
+  "heroImageAlt": "Liberty Car Care Abu Dhabi tyre and car service website design case study by Teknoppy",
+  "schemaType": "TechArticle",
+  "schemaAbout": {
+    "type": "AutoRepair",
+    "name": "Liberty Car Care LLC",
+    "address": {
+      "locality": "Abu Dhabi",
+      "region": "",
+      "country": "AE"
+    }
+  },
+  "clientName": "Liberty Car Care",
+  "categoryTag": "Web Design & Development",
+  "tagBadge": "UAE Automotive Ecommerce Case Study",
+  "title": "Liberty Car Care: A Website Design and Development Case Study for a Tyre and Car Service Company in Abu Dhabi",
+  "storyLead": "How Teknoppy designed a bilingual, tyre-first car service website for an Abu Dhabi car care business, letting drivers find the right tyre size, order online, choose fitting at home or at a branch, and pay only after the job is done.",
+  "industry": "Tyres, batteries & car service",
+  "location": "Abu Dhabi, UAE",
+  "services": "Web design, UI/UX, tyre search & ordering",
+  "platform": "Bilingual website (EN + AR)",
+  "liveWebsite": "libertycarcare.com",
+  "liveWebsiteUrl": "https://www.libertycarcare.com/en",
+  "heroHighlights": [
+    "Tyre Size Search",
+    "Fit at Home or Branch",
+    "English & Arabic",
+    "Pay After Fitting"
+  ],
+  "atAGlance": [
+    "Liberty Car Care sells and fits tyres and batteries across Abu Dhabi through branches and mobile installers",
+    "A driver can search by tyre size, order online and book fitting at home or at a branch",
+    "The site works in English and Arabic, so both of Abu Dhabi's main customer groups feel at home",
+    "Pay-after-fitting, free delivery and a one-year tyre warranty are shown upfront to remove the risk of ordering online",
+    "Service packages, reviews and FAQs answer buyers' questions before they call"
+  ],
+  "aboutHeading": "About Liberty Car Care",
+  "aboutParagraphs": [
+    "Liberty Car Care is a tyre, battery and car service company that has served Abu Dhabi drivers since 2009. It runs service centres across the city, including Mussafah, Muroor, Al Mushrif, Al Manasir, Motor World, Al Falah and Riyadh City, several of them at ADNOC stations.",
+    "Alongside its branches, Liberty runs a network of mobile installers who deliver and fit tyres at a customer's home or office, often on the same day. Its services include tyre fitting, wheel alignment and balancing, puncture repair, battery replacement, oil changes, vehicle inspection, general repairs and roadside assistance.",
+    "Liberty offers premium and budget tyre brands, free delivery, a one-year warranty on tyres, a best price guarantee, and a pay-after-service option. Teknoppy was brought in to turn this offer into a simple online experience: find the tyre, choose where to fit it, and book."
+  ],
+  "challengeLead": "Five problems shaped the design brief.",
+  "challenges": [
+    {
+      "number": 1,
+      "title": "Tyres are hard to shop for online",
+      "description": "Most drivers don't know their tyre size. The site had to guide them, not just list products."
+    },
+    {
+      "number": 2,
+      "title": "Ordering online feels risky",
+      "description": "Drivers worry about paying upfront for a part they cannot see fitted. The website needed to remove that risk clearly."
+    },
+    {
+      "number": 3,
+      "title": "Two ways to get the job done",
+      "description": "Some customers want a mobile installer at home; others prefer a branch. Both paths had to be equally easy."
+    },
+    {
+      "number": 4,
+      "title": "A bilingual city",
+      "description": "Abu Dhabi customers browse in English and Arabic. Both versions needed to feel native, not translated."
+    },
+    {
+      "number": 5,
+      "title": "Urgent, mobile-first moments",
+      "description": "Flat tyres and dead batteries happen on the road. The site had to load fast and put call and WhatsApp within reach on a phone."
+    }
+  ],
+  "objectiveLead": "The goal was a fast, trustworthy tyre shop and car service website that turns Abu Dhabi drivers' searches into tyre orders and bookings.",
+  "objectives": [
+    "Help drivers find the right tyre by size in a few taps",
+    "Make home fitting and branch fitting equally simple to choose",
+    "Remove online-ordering risk with clear guarantees",
+    "Serve English and Arabic speakers equally well",
+    "Keep call and WhatsApp contact one tap away on mobile"
+  ],
+  "approachLead": "Six decisions that take a driver from tyre size to booked fitting.",
+  "approachPillars": [
+    {
+      "title": "A tyre size search on the homepage",
+      "paragraphs": [
+        "Drivers search by width, height and rim size straight from the homepage, the same numbers printed on every tyre sidewall. An FAQ explains where to find them."
+      ]
+    },
+    {
+      "title": "A clear promise above the fold",
+      "paragraphs": [
+        "The opening message, premium tyres delivered and fitted at your door, is followed immediately by same-day mobile tyre fitting across Abu Dhabi, so visitors understand the service in one glance."
+      ]
+    },
+    {
+      "title": "Risk removed at every step",
+      "paragraphs": [
+        "Free delivery, a one-year tyre warranty, a best price guarantee and pay-after-service appear as clear trust points, answering the biggest objection to buying tyres online."
+      ]
+    },
+    {
+      "title": "Navigation built around what drivers need",
+      "paragraphs": [
+        "The main menu follows the customer's task: Tyre Brands, Battery, Services, FAQ and Contact. Standard and Premium service packages are offered as downloadable guides for drivers who want maintenance, not just tyres."
+      ]
+    },
+    {
+      "title": "English and Arabic as equals",
+      "paragraphs": [
+        "A language toggle switches the whole experience between English and Arabic, giving Abu Dhabi's Arabic-speaking drivers a site that feels built for them, not translated for them."
+      ]
+    },
+    {
+      "title": "Social proof and quick answers",
+      "paragraphs": [
+        "A Trusted Brands section, verified customer reviews that name the technicians who helped, and an FAQ build confidence before a driver books or calls."
+      ]
+    }
+  ],
+  "deliverables": [
+    {
+      "title": "A tyre-first homepage",
+      "description": "Tyre size search, clear promise and trust points above the fold."
+    },
+    {
+      "title": "An online ordering and fitting flow",
+      "description": "Choose a tyre, then choose fitting at home or at a branch."
+    },
+    {
+      "title": "A bilingual website",
+      "description": "Full English and Arabic versions with a language toggle."
+    },
+    {
+      "title": "Service, brand and support sections",
+      "description": "Battery, services, packages, reviews, FAQ and contact."
+    }
+  ],
+  "whyMattersHeading": "Why tyre-first website design wins car service customers in the UAE",
+  "whyMattersParagraphs": [
+    "Car owners in the UAE are used to ordering almost everything online, and tyre ecommerce with online booking is catching up. A website that lets a driver find the right tyre, see a clear price and book fitting at home in minutes captures that customer before they drive to the nearest workshop.",
+    "Trust decides the sale. Paying for a tyre online only feels safe when the guarantees are obvious, so pay-after-service, warranty and genuine products are not small print on this site; they are part of the main message.",
+    "Language matters just as much: in Abu Dhabi, a bilingual website is a basic expectation, not an extra. The design also supports Liberty's search work, covered in a separate SEO case study."
+  ],
+  "whyMattersCalloutHtml": "<p><strong>For a tyre business, the best website does what the best fitter does: finds the right tyre fast and removes every worry about the job.</strong></p><p class=\"mt-3\">Read how we structured its search presence in the <a class=\"underline font-bold text-[#F05A2C]\" href=\"/case-studies/liberty-car-care-seo/\">Liberty Car Care SEO case study</a>, see our <a class=\"underline font-bold text-[#F05A2C]\" href=\"/case-studies/expert-rangers-seo/\">Expert Rangers SEO case study</a> and <a class=\"underline font-bold text-[#F05A2C]\" href=\"/case-studies/apolo-mattress-shopify-ecommerce/\">Apolo Mattress ecommerce case study</a>, explore our <a class=\"underline font-bold text-[#F05A2C]\" href=\"/web-design-company-kochi/\">website design services</a>, or <a class=\"underline font-bold text-[#F05A2C]\" href=\"/case-study/\">explore more in our case study library</a>.</p>",
+  "faqs": [
+    {
+      "question": "What does Liberty Car Care offer?",
+      "answer": "Tyres and fitting, batteries, wheel alignment, puncture repair, oil change, inspection, repairs and roadside assistance in Abu Dhabi."
+    },
+    {
+      "question": "Can I order tyres online from Liberty Car Care?",
+      "answer": "Yes. Drivers can search by tyre size, order online and choose fitting at their location or at a branch."
+    },
+    {
+      "question": "Does Liberty Car Care fit tyres at home?",
+      "answer": "Yes. Its mobile installers offer same-day fitting across Abu Dhabi."
+    },
+    {
+      "question": "Do I pay before or after fitting?",
+      "answer": "Liberty offers a pay-after-service option, so customers can pay once the installation is complete."
+    },
+    {
+      "question": "Is the Liberty Car Care website available in Arabic?",
+      "answer": "Yes. The website has full English and Arabic versions with a language toggle."
+    },
+    {
+      "question": "What did Teknoppy do for Liberty Car Care?",
+      "answer": "Website design and development, UI/UX design, the tyre search and ordering flow, service package sections and the bilingual English and Arabic layouts."
+    },
+    {
+      "question": "Did Teknoppy also handle Liberty Car Care's SEO?",
+      "answer": "Yes. The search work is covered in a separate Liberty Car Care SEO case study."
+    },
+    {
+      "question": "What should a tyre or car service website include?",
+      "answer": "A tyre size search, clear prices and guarantees, home and branch fitting options, reviews, an FAQ and one-tap call and WhatsApp."
+    },
+    {
+      "question": "Does Teknoppy design bilingual websites for businesses in the UAE?",
+      "answer": "Yes. Teknoppy designs English and Arabic websites for automotive, retail and service businesses in Abu Dhabi, Dubai and the wider UAE, including car service centres across the GCC."
+    }
+  ],
+  "ctaHeadline": "Need a website that turns drivers' searches into bookings?"
+}
