@@ -1,0 +1,542 @@
+{
+  "meta": {
+    "title": "SEO Company for GCC Businesses in the Gulf | Teknoppy",
+    "description": "SEO company for GCC businesses in the UAE, Saudi Arabia, Qatar, Kuwait, Bahrain and Oman. Gulf-hours support, USD pricing. Get a free GCC SEO audit."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "SEO Services",
+      "href": "/seo-services/"
+    },
+    {
+      "name": "SEO Company for GCC Businesses",
+      "href": "/seo-company-for-gcc-businesses/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "GCC SEO",
+      "h1Lead": "SEO Company for",
+      "h1Accent": "GCC Businesses",
+      "body": [
+        {
+          "text": "Teknoppy is an SEO company for GCC businesses that helps brands in the UAE, Saudi Arabia, Qatar, Kuwait, Bahrain and Oman rank on Google, win more enquiries and get found in AI search. Whether your company is based in the Gulf or entering it from abroad, our GCC SEO services give every country its own keywords, pages and monthly report."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Free GCC SEO Audit",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp us",
+          "href": "https://wa.me/916282249224"
+        },
+        {
+          "label": "Book a Gulf-hours call",
+          "href": "/book-a-consultation/"
+        }
+      ],
+      "stats": [
+        {
+          "value": "4.9/5",
+          "label": "Google, 60+ reviews"
+        },
+        {
+          "value": "120+",
+          "label": "Projects delivered"
+        },
+        {
+          "value": "2018",
+          "label": "Working with clients since"
+        }
+      ],
+      "trustline": "Google rating 4.9 from 60+ reviews · 120+ projects delivered · Working with clients since 2018"
+    },
+    {
+      "type": "prose",
+      "badge": "GCC SEO",
+      "h2": "What Is GCC SEO, and Why Choose Teknoppy?",
+      "paragraphs": [
+        {
+          "text": "GCC SEO is search engine optimisation planned for the six Gulf countries at once, with separate keywords, pages and tracking for each market. Teknoppy is an SEO agency GCC brands choose when they want one team, one plan and clear reporting for each country."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "cards",
+      "badge": "Our Services",
+      "h2": "What Our GCC SEO Services Include",
+      "layout": "list",
+      "intro": "We are a full-service GCC SEO company. Every plan combines five parts, shaped to your market and budget.",
+      "items": [
+        {
+          "title": "Technical SEO",
+          "text": "We fix what stops Google from ranking your site: slow pages, broken links, duplicate content and missing schema. For multi-country websites, we also set up hreflang tags and country folders correctly, following Google's guidance on multi-regional sites."
+        },
+        {
+          "title": "Local SEO",
+          "text": "We optimise your Google Business Profile, local citations and location pages so you appear in Google Maps in Dubai, Riyadh, Doha and other cities. Local SEO is often the fastest win for SEO services for GCC B2B companies and service businesses."
+        },
+        {
+          "title": "Content and On-Page SEO",
+          "text": "We research English and Arabic search terms, map one keyword set to each page, and write or rewrite service pages that answer real buyer questions. This is how SEO services for GCC ecommerce brands turn product and category pages into steady sales."
+        },
+        {
+          "title": "Link Building",
+          "text": "We earn links from GCC business directories, regional media and industry sites, never from paid link networks."
+        },
+        {
+          "title": "Reporting",
+          "text": "A monthly report shows rankings, traffic and leads for each country, plus a short review call."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "table",
+      "badge": "Where We Work",
+      "h2": "Which GCC Countries Do We Serve?",
+      "intro": "We work as an SEO company for GCC businesses across the whole region, with SEO support for businesses in all six GCC countries. Each market has its own cities, currency and data rules, so each has its own page with full details.",
+      "headers": [
+        "Country",
+        "Key cities",
+        "Currency",
+        "Data-protection law",
+        "Learn more"
+      ],
+      "rows": [
+        [
+          "UAE",
+          "Dubai, Abu Dhabi, Sharjah",
+          "AED",
+          "Federal Decree-Law No. 45 of 2021 (PDPL)",
+          "<a href=\"/seo-company-dubai/\" class=\"text-primary font-semibold hover:underline\">SEO company in Dubai</a>"
+        ],
+        [
+          "Saudi Arabia",
+          "Riyadh, Jeddah, Dammam",
+          "SAR",
+          "Personal Data Protection Law (in force since September 2024)",
+          "<a href=\"/seo-company-saudi-arabia/\" class=\"text-primary font-semibold hover:underline\">SEO company in Saudi Arabia</a>"
+        ],
+        [
+          "Qatar",
+          "Doha, Lusail, Al Wakrah",
+          "QAR",
+          "Law No. 13 of 2016 (PDPPL)",
+          "<a href=\"/seo-company-qatar/\" class=\"text-primary font-semibold hover:underline\">SEO company in Qatar</a>"
+        ],
+        [
+          "Kuwait",
+          "Kuwait City, Hawalli, Salmiya",
+          "KWD",
+          "No single law; E-Transactions Law and CITRA rules",
+          "<a href=\"/seo-company-kuwait/\" class=\"text-primary font-semibold hover:underline\">SEO company in Kuwait</a>"
+        ],
+        [
+          "Bahrain",
+          "Manama, Muharraq, Riffa",
+          "BHD",
+          "Law No. 30 of 2018 (PDPL)",
+          "<a href=\"/seo-company-bahrain/\" class=\"text-primary font-semibold hover:underline\">SEO company in Bahrain</a>"
+        ],
+        [
+          "Oman",
+          "Muscat, Sohar, Salalah",
+          "OMR",
+          "Royal Decree No. 6/2022 (PDPL)",
+          "<a href=\"/seo-company-oman/\" class=\"text-primary font-semibold hover:underline\">SEO company in Oman</a>"
+        ]
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        {
+          "html": "<strong>UAE:</strong> the most competitive market, led by real estate and retail."
+        },
+        {
+          "html": "<strong>Saudi Arabia:</strong> fast-growing and mobile-first, with heavy Arabic search."
+        },
+        {
+          "html": "<strong>Qatar:</strong> smaller but high-value searches, especially in B2B."
+        },
+        {
+          "html": "<strong>Kuwait, Bahrain and Oman:</strong> lower competition, so pages can rank faster."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "cards",
+      "badge": "Multi-Country",
+      "h2": "Multi-Country SEO for Gulf Brands",
+      "layout": "list",
+      "intro": "Most Gulf companies sell in more than one country. With multi-country SEO, GCC brands keep each market separate, so your UAE page never competes with your Saudi page.",
+      "items": [
+        {
+          "title": "Multi-Country SEO for UAE and Saudi Arabia",
+          "text": "The UAE and Saudi Arabia are the two biggest search markets in the Gulf. Multi-country SEO for UAE and Saudi Arabia usually means one website with two country folders, each with its own currency, cities, phone number and keywords."
+        },
+        {
+          "title": "SEO for Companies Expanding into the GCC",
+          "text": "If you are based outside the Gulf, SEO for companies expanding into the GCC starts with international SEO GCC research: which country to enter first, what buyers search for, and what local competitors already rank for."
+        },
+        {
+          "title": "How We Rank a Website Across GCC Countries",
+          "text": "To rank a website across GCC countries, we set up hreflang tags, build country pages with unique local facts, earn links from each market and track every country separately in Google Search Console."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "table",
+      "badge": "Pricing",
+      "h2": "How Much Does SEO Cost for a GCC Business?",
+      "intro": "The SEO cost in GCC markets depends on how many countries you target, how competitive your industry is and how much content your site needs. Our GCC SEO packages are priced in USD, and we can invoice in your local currency.",
+      "headers": [
+        "Package",
+        "Best for"
+      ],
+      "rows": [
+        [
+          "Starter",
+          "One country, small business"
+        ],
+        [
+          "Growth",
+          "Two or three countries"
+        ],
+        [
+          "Regional",
+          "Four to six GCC countries"
+        ]
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "Not sure which package fits? Message us on WhatsApp and we will suggest one. Every package includes a one-time SEO audit GCC report in month one. Looking for affordable SEO services GCC companies can scale? Start with one country, then add more as results come in."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "Why Outsource SEO for Your GCC Business?",
+      "paragraphs": [
+        {
+          "text": "When you outsource SEO for your GCC business, you get strategists, writers and developers for less than one in-house hire in Dubai or Riyadh."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "table",
+      "badge": "Timeline",
+      "h2": "How Long Does SEO Take in the Gulf?",
+      "intro": "Most GCC businesses see early ranking gains in three to four months and steady leads in six to twelve months. Results depend on competition, your site's age and how fast changes go live.",
+      "headers": [
+        "Timeline",
+        "What happens",
+        "What you see"
+      ],
+      "rows": [
+        [
+          "Month 1",
+          "Audit, keyword research, technical fixes",
+          "Clear plan and fixed errors"
+        ],
+        [
+          "Months 2–3",
+          "New and improved pages, local SEO setup",
+          "First keywords moving up"
+        ],
+        [
+          "Months 4–6",
+          "Link building, content growth",
+          "Page-one rankings for key terms"
+        ],
+        [
+          "Months 6–12",
+          "Scaling to more countries and keywords",
+          "Steady organic leads"
+        ]
+      ],
+      "note": "The monthly SEO services Gulf clients receive from us include this roadmap, updated every month.",
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "badge": "AI Search",
+      "h2": "Getting Found in AI Search Across the Gulf",
+      "paragraphs": [
+        {
+          "html": "Gulf buyers now ask ChatGPT, Gemini and Perplexity which supplier to choose, and Google shows AI Overviews for many searches. We structure your pages with direct answers, FAQs and schema so AI tools can quote you. For a dedicated plan, see our <a href=\"/ai-seo-services-gcc/\" class=\"text-primary font-semibold hover:underline\">AI SEO services for GCC businesses</a>."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "badge": "Results",
+      "h2": "GCC SEO Results We Have Delivered",
+      "paragraphs": [
+        {
+          "html": "Our job as an SEO company for GCC businesses is simple: ranking Gulf companies on Google for searches that bring enquiries, not just traffic. Want results like this? <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">Book a free Gulf-hours call</a>."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "badge": "How We Work",
+      "h2": "How We Work With Gulf Clients",
+      "paragraphs": [
+        {
+          "lead": "Our team and location:",
+          "text": "Teknoppy's Gulf SEO team works from Kochi, India. We do not have a GCC office, and we say so openly."
+        },
+        {
+          "lead": "Gulf-hours support:",
+          "text": "Kochi is 1.5 hours ahead of the UAE and Oman, and 2.5 hours ahead of Saudi Arabia, Qatar, Kuwait and Bahrain. Our team works across both Sunday-to-Thursday and Monday-to-Friday weeks."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "steps",
+      "intro": "Our process:",
+      "items": [
+        {
+          "title": "Discovery call",
+          "text": "we learn your goals, markets and competitors."
+        },
+        {
+          "title": "Audit",
+          "text": "a full technical, content and competitor audit."
+        },
+        {
+          "title": "Strategy",
+          "text": "a keyword map and page plan for each country."
+        },
+        {
+          "title": "Implementation",
+          "text": "fixes, new pages, local SEO and links."
+        },
+        {
+          "title": "Reporting",
+          "text": "a monthly report and call."
+        },
+        {
+          "title": "Scaling",
+          "text": "adding countries, languages and services as results grow."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "bullets",
+      "h2": "Who We Work With",
+      "items": [
+        {
+          "html": "<strong>SMEs:</strong> if you need the best SEO company for GCC SMEs, judge any agency on reporting, honesty and results, not promises."
+        },
+        {
+          "html": "<strong>Startups:</strong> we are an SEO agency for Gulf startups that need early visibility on a tight budget."
+        },
+        {
+          "html": "<strong>B2B firms:</strong> manufacturers and logistics firms with long sales cycles that need an SEO company for businesses in the Gulf."
+        },
+        {
+          "html": "<strong>Ecommerce brands:</strong> stores on Shopify, WooCommerce and Magento."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "bullets",
+      "badge": "Why Teknoppy",
+      "h2": "Why Choose Teknoppy as Your SEO Company for GCC Businesses?",
+      "items": [
+        {
+          "html": "<strong>Senior-led work:</strong> every account has a named SEO consultant Middle East clients can call directly."
+        },
+        {
+          "html": "<strong>Honest reporting:</strong> real numbers by country, never vanity metrics."
+        },
+        {
+          "html": "<strong>One team for SEO and websites:</strong> we also build sites through our <a href=\"/web-design-company-for-gcc-businesses/\" class=\"text-primary font-semibold hover:underline\">Web Design Company for GCC Businesses</a> service."
+        },
+        {
+          "html": "<strong>Clear pricing:</strong> no long lock-in contracts."
+        }
+      ],
+      "outro": [
+        {
+          "html": "Teknoppy GCC SEO services follow this regional SEO guide on every project: one country, one set of keywords, one clear owner. That is how we deliver SEO across the Gulf without pages competing with each other. Want to hire an SEO company GCC teams trust? <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">Talk to us</a>. For SEO in India and worldwide, see our <a href=\"/seo-services/\" class=\"text-primary font-semibold hover:underline\">SEO services</a>."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "faq",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Do you have an office in the GCC?",
+          "a": "No. Teknoppy is an SEO company for GCC businesses based in Kochi, India, serving all six GCC countries remotely. We work in Gulf business hours, hold regular video calls and reply on WhatsApp. Many Gulf companies choose a remote GCC SEO agency because it gives them senior expertise at a lower monthly cost."
+        },
+        {
+          "q": "How much does SEO cost for a Gulf business?",
+          "a": "We can quote in AED, SAR, QAR, KWD, BHD or OMR."
+        },
+        {
+          "q": "Can one SEO plan cover several GCC countries?",
+          "a": "Yes. One plan can cover two to six countries. We give each country its own pages, keywords and tracking, so your markets do not compete with each other. Most clients start with the UAE or Saudi Arabia and add more countries after the first three to six months."
+        },
+        {
+          "q": "How long until we see results?",
+          "a": "Most clients see keywords move up within three to four months and steady leads within six to twelve months. Bahrain and Oman often move faster; Dubai and Riyadh take longer."
+        },
+        {
+          "q": "Do you report in local currency and Gulf hours?",
+          "a": "Yes. Reports can show revenue and lead values in your local currency, and review calls are booked during your working day. We support both Sunday-to-Thursday and Monday-to-Friday weeks."
+        },
+        {
+          "q": "Are you an SEO agency for Middle East markets outside the GCC?",
+          "a": "Our focus is the six GCC countries. As an SEO agency Middle East brands work with, we plan every campaign country by country, and the SEO services Middle East clients receive from us always start with the Gulf markets that matter most to them."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "bullets",
+      "badge": "Free Audit",
+      "h2": "Get Your Free GCC SEO Audit",
+      "intro": "Send us your website and target countries. Within five working days, you get a free audit covering:",
+      "items": [
+        {
+          "text": "technical errors holding your site back"
+        },
+        {
+          "text": "keywords you could rank for in each GCC country"
+        },
+        {
+          "text": "what your top three competitors do better"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "cta",
+      "paragraphs": [
+        {
+          "text": "No sales pitch and no obligation, just a clear picture from an SEO company for GCC businesses that shows its work."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Get my free audit",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp",
+          "href": "https://wa.me/916282249224"
+        },
+        {
+          "label": "Book a Gulf-hours call",
+          "href": "/book-a-consultation/"
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "byline",
+      "text": "Reviewed by Sanal Edison, Founder, Teknoppy. Last updated: 13 November 2026.",
+      "bg": "white"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "SEO Company for GCC Businesses",
+      "serviceType": "Search engine optimisation",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "United Arab Emirates",
+        "Saudi Arabia",
+        "Qatar",
+        "Kuwait",
+        "Bahrain",
+        "Oman"
+      ],
+      "url": "https://teknoppy.com/seo-company-for-gcc-businesses/"
+    }
+  ],
+  "devNotes": {
+    "source": "Teknoppy_A1_SEO_Company_for_GCC_Businesses_v3.pdf",
+    "primaryKeyword": "SEO company for GCC businesses",
+    "permalink": "/seo-company-for-gcc-businesses/",
+    "secondaryKeywords": [
+      "GCC SEO services",
+      "SEO agency GCC",
+      "GCC SEO company",
+      "multi-country SEO",
+      "SEO cost in GCC",
+      "GCC SEO packages",
+      "SEO audit GCC",
+      "affordable SEO services GCC",
+      "outsource SEO for your GCC business",
+      "international SEO GCC",
+      "SEO consultant Middle East",
+      "SEO agency Middle East"
+    ],
+    "stats": "1,795 words (target 1,700–1,800); primary density 1.95%; 7 primary uses; 32 keywords; 0 cannibalisation conflicts",
+    "imageAlt": [
+      "gcc-seo-performance-report.webp · ALT: SEO company for GCC businesses: performance report prepared by Teknoppy"
+    ],
+    "internalLinks": [
+      "/seo-services/",
+      "/web-design-company-for-gcc-businesses/",
+      "/ai-seo-services-gcc/",
+      "/seo-company-dubai/",
+      "/seo-company-saudi-arabia/",
+      "/seo-company-qatar/",
+      "/seo-company-kuwait/",
+      "/seo-company-bahrain/",
+      "/seo-company-oman/",
+      "/book-a-consultation/"
+    ],
+    "schemaNote": "Service + FAQPage + BreadcrumbList (Home › Services › SEO Services › SEO Company for GCC Businesses). FAQPage/BreadcrumbList auto-generated; LocalBusiness site-wide.",
+    "heldPlaceholders": [
+      "Trust strip: Google rating [add rating] · [add number] projects delivered · Working with clients since 2018 (filled from site canon: 4.9 / 60+ reviews, 120+ projects)",
+      "Pricing table \"Monthly price (USD)\" / \"Approx. in AED / SAR\" columns: Starter [USD 500–900] [AED 1,850–3,300 / SAR 1,900–3,400]; Growth [USD 1,000–1,800] [AED 3,700–6,600 / SAR 3,750–6,750]; Regional [USD 2,000–3,500] [AED 7,350–12,850 / SAR 7,500–13,100] (columns dropped)",
+      "Case study: [Client name, country] [Add one real result with a number, for example: \"Grew organic enquiries by X% in Y months\" or \"Ranked for Z commercial keywords on page one.\" Include the industry, the starting point and the timeframe.]",
+      "FAQ \"How much does SEO cost for a Gulf business?\": Our plans start at [USD 500] per month for one country and go up to [USD 3,500] for all six GCC markets. (sentence dropped)",
+      "Byline: Written by [writer name], SEO Content Lead · Reviewed by [reviewer name], Head of SEO · Last reviewed: 13 November 2026 (replaced with standard Sanal Edison byline)"
+    ],
+    "corrections": [],
+    "linkNote": "Country table \"Learn more\" cells link to the six A2–A7 country pages. \"Talk to us\" → /book-a-consultation/.",
+    "requiredBeforePublishing": "Doc section 4: real GCC case study (Creative Qatar), confirm prices / 5-day audit / no lock-in / Arabic keyword research / named consultant, Google rating, writer+reviewer, real hero screenshot, 4-field form, WhatsApp prefill, GA4 tracking."
+  }
+}

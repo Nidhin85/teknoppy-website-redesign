@@ -1,0 +1,387 @@
+{
+  "meta": {
+    "title": "Vue JS Development Company Kochi | Vue & Nuxt | Teknoppy",
+    "description": "Teknoppy is a Vue JS development company Kochi teams hire for fast web apps, Nuxt sites and Vue 3 migration for India and GCC clients. Get a quote today."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "Web Application Development",
+      "href": "/web-application-development-company-kochi/"
+    },
+    {
+      "name": "Vue.js Development",
+      "href": "/vuejs-development-company-kochi/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Web Application Development",
+      "h1Lead": "Vue JS Development Company Kochi:",
+      "h1Accent": "Lightweight Web Apps and Nuxt Sites",
+      "body": [
+        {
+          "html": "Teknoppy is a Vue JS development company Kochi businesses and overseas clients hire for fast, <a href=\"/web-application-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">lightweight web interfaces</a> and search-friendly Nuxt websites. Vue.js is a progressive JavaScript framework that is quick to learn, easy to maintain and well suited to projects that need to launch without a large team."
+        },
+        {
+          "text": "Our in-house developers work from Thykoodam in Kochi and serve clients across Kerala, India, the UAE and Qatar."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp +91 6282249224",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "2018",
+          "label": "Since"
+        },
+        {
+          "value": "120+",
+          "label": "Websites delivered"
+        },
+        {
+          "value": "4.9/5",
+          "label": "Google, 60+ reviews"
+        },
+        {
+          "value": "12",
+          "label": "In-house staff"
+        }
+      ],
+      "trustline": "Reviewed by Sanal Edison, Founder, Teknoppy. Last updated: 16 November 2026."
+    },
+    {
+      "type": "bullets",
+      "badge": "At a Glance",
+      "h2": "Key facts at a glance",
+      "items": [
+        {
+          "text": "Company: Teknoppy, Thykoodam, Kochi, Kerala, India"
+        },
+        {
+          "text": "Service: Vue.js web apps, Nuxt websites, migrations and support"
+        },
+        {
+          "text": "Established: 2018, with 120+ websites delivered"
+        },
+        {
+          "text": "Team: 12 in-house staff, no outsourced code"
+        },
+        {
+          "text": "Rating: 4.9/5 on Google from 60+ reviews"
+        },
+        {
+          "text": "Typical timeline: 4 to 12 weeks for most Vue projects"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "What Is Vue JS Used For?",
+      "paragraphs": [
+        {
+          "text": "Vue.js is an open-source framework created by Evan You and first released in 2014. Businesses use it to build interactive screens such as quote calculators, client areas, product configurators and internal tools, as well as complete single page applications. In the 2025 Stack Overflow Developer Survey, about 18% of developers reported using Vue.js."
+        },
+        {
+          "text": "Vue can be added to one part of an existing site or used for a whole application. That flexibility makes it a practical choice for growing businesses."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "cards",
+      "badge": "What We Offer",
+      "h2": "What Vue.js Development Services Does Teknoppy Offer?",
+      "intro": "Our vue.js development services cover new applications, search-friendly websites and upgrades of older Vue code. Each can be booked alone or combined.",
+      "layout": "list",
+      "items": [
+        {
+          "title": "Vue JS Web App Development",
+          "text": "Vue JS web app development turns a slow manual process into a clear, responsive tool. Custom Vue JS development Kochi companies order from us often starts with one screen, such as a quotation builder, and grows into a full system over later phases."
+        },
+        {
+          "title": "Vue JS Single Page Application",
+          "text": "A Vue JS single page application loads once and then updates instantly as users click, filter and type. It suits client areas, booking back offices and tools where staff spend most of their day on one screen."
+        },
+        {
+          "title": "Lightweight Vue JS Front End",
+          "text": "A lightweight Vue JS front end can sit on top of your existing PHP, Python or Node.js backend. You keep your current server logic, and users get a faster, cleaner interface without a full rebuild."
+        },
+        {
+          "title": "Nuxt JS Development",
+          "text": "Nuxt JS development builds Vue websites that render on the server, so visitors and search engines receive complete pages immediately. A Nuxt SEO website suits company sites, product catalogues and content hubs that must rank well while still offering interactive features."
+        },
+        {
+          "title": "Vuetify UI Development",
+          "text": "Vuetify UI development gives your application ready-made, accessible components such as tables, forms, date pickers and dialogs, styled to your brand. It speeds up delivery and keeps every screen consistent, even when several developers work on the project."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "Modern Vue: Composition API, Pinia and Vite",
+      "paragraphs": [
+        {
+          "text": "We build every new project with Vue 3 and the Vue Composition API, which groups related logic together and makes large components easier to read and reuse. Vue JS with TypeScript is our default, because types catch errors while the code is written."
+        },
+        {
+          "text": "Pinia state management keeps shared data, such as the logged-in user or a shopping basket, consistent across every screen. Vite build tooling starts the development server in seconds and produces small, fast production files, which shortens both development time and page loading time."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "cards",
+      "badge": "Who We Serve",
+      "h2": "Who Does Teknoppy Build Vue.js Applications For?",
+      "columns": 2,
+      "items": [
+        {
+          "title": "Businesses in Kerala and Across India",
+          "text": "Vue JS development services Kerala businesses book with us are handled by one in-house team. The Vue JS developers Kochi clients meet at kickoff are the people who write, test and support the code. If you need to hire Vue JS developers for an existing product, our monthly plans place developers inside your sprints and repository."
+        },
+        {
+          "title": "International Clients in the GCC and Beyond",
+          "text": "Vue JS development for GCC businesses is a regular part of our work, and Teknoppy already serves clients in the UAE and Qatar. We build bilingual Arabic and English interfaces with right-to-left layouts and work during hours that overlap with Gulf offices. International clients choose a Vue JS development company Kochi offers for lower costs than Gulf or European agencies, a stable team and written progress updates after every sprint."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "cards",
+      "badge": "Why Teknoppy",
+      "h2": "Why Teknoppy Is the Vue JS Development Company Kochi Clients Shortlist",
+      "intro": "Choosing a Vue JS development company in Kerala means trusting one team with software your customers or staff use every day. These are the facts behind ours.",
+      "columns": 2,
+      "items": [
+        {
+          "title": "Experienced Vue Developers Kerala Clients Can Meet",
+          "text": "The experienced Vue developers Kerala clients work with are on our payroll, and no code is outsourced. Knowledge of your system stays inside one team."
+        },
+        {
+          "title": "Vue JS Code Review and Vue JS Unit Testing",
+          "text": "Every pull request receives a Vue JS code review by a second developer. Vue JS unit testing covers critical components and shared logic, and tests run automatically before each release."
+        },
+        {
+          "title": "Proof You Can Check",
+          "text": "Each Vue JS case study Kerala clients approve for publishing shows the problem, the approach and the result. Vivek Menon, CTO of Evosyz in Kochi, says Teknoppy \"created an appealing website that represents our brand perfectly.\""
+        },
+        {
+          "title": "Founder-Led Accountability",
+          "text": "Founder Sanal Edison, Digital Strategist, sets the direction and architecture of every client project. Teknoppy has worked from Kochi since 2018."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "h2": "Vue 2 to Vue 3 Migration",
+      "paragraphs": [
+        {
+          "text": "Vue 2 reached its end of life at the end of 2023 and no longer receives security fixes. Applications still running it face growing risk as browsers and libraries move on."
+        },
+        {
+          "text": "Vue 2 to Vue 3 migration moves your application to the current version in planned steps. We start with a code audit, update shared components first, replace libraries that no longer work with Vue 3, and test each area before release. Most small and mid-size applications can be migrated in 3 to 8 weeks while your users keep working."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "steps",
+      "badge": "How We Work",
+      "h2": "What Is Teknoppy's Vue.js Process and Timeline?",
+      "items": [
+        {
+          "title": "Discovery (3 to 5 working days)",
+          "text": "We agree on users, screens, integrations and success measures."
+        },
+        {
+          "title": "Design (1 to 2 weeks)",
+          "text": "You approve clickable screens before coding starts."
+        },
+        {
+          "title": "Development sprints (2-week cycles)",
+          "text": "You test working features at the end of every sprint."
+        },
+        {
+          "title": "Testing and launch (1 week)",
+          "text": "We run automated and manual tests on real devices, then deploy."
+        },
+        {
+          "title": "Support (ongoing)",
+          "text": "Vue JS maintenance Kochi clients choose covers updates, fixes and small improvements, with plans from Rs. 3,000 per month."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "Typical totals: 4 to 6 weeks for a focused tool or single page application, 8 to 12 weeks for a larger application or Nuxt website, and 3 to 8 weeks for a Vue 2 to Vue 3 migration."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "Vue vs React and Nuxt vs Next JS",
+      "paragraphs": [
+        {
+          "html": "Vue vs React: Both build fast, modern interfaces. Vue includes more built-in features and uses templates that look close to plain HTML, which makes it quicker for small teams to learn. React has a larger ecosystem and hiring pool. For a React-based project, see our <a href=\"/react-js-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">React JS development page</a>."
+        },
+        {
+          "html": "Nuxt vs Next JS: Nuxt is to Vue what <a href=\"/nextjs-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Next.js</a> is to React. Both add server rendering, routing and SEO features. Choose Nuxt if your team prefers Vue, and Next.js if your team already works in React."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "h2": "How Much Does Vue JS Development Cost in India?",
+      "paragraphs": [
+        {
+          "text": "How much does Vue JS development cost in India? It depends on the number of screens, user roles, integrations and whether existing code must be migrated."
+        },
+        {
+          "text": "Projects are quoted per scope after discovery. Every quote from our Vue JS development company Kochi office is fixed for the agreed scope and lists exactly what is included."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "faq",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Vue.js Development FAQs",
+      "items": [
+        {
+          "q": "Is Vue JS good for small businesses?",
+          "a": "Yes. Vue is quick to build with, easy to maintain and can be added to an existing website one feature at a time. Small businesses get modern, interactive screens without paying for a large team or a full rebuild."
+        },
+        {
+          "q": "Why choose Vue JS over React?",
+          "a": "Choose Vue if you want a framework that is faster to learn, includes routing and state tools by default, and keeps code close to plain HTML. React may suit you better if you need its larger library ecosystem or already have React developers."
+        },
+        {
+          "q": "How long does a Vue JS project take?",
+          "a": "A focused tool or single page application usually takes 4 to 6 weeks. A larger application or Nuxt website takes 8 to 12 weeks. We confirm your timeline in writing after discovery."
+        },
+        {
+          "q": "Can Teknoppy take over an existing Vue.js application?",
+          "a": "Yes. We start with a code audit and a written report, fix urgent issues first and then agree on a plan for improvements or migration. Your application keeps running throughout the handover."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "links",
+      "h2": "Related Services",
+      "items": [
+        {
+          "label": "Web Application Development",
+          "href": "/web-application-development-company-kochi/",
+          "text": "Our web application development hub"
+        },
+        {
+          "label": "Angular Development",
+          "href": "/angular-development-company-kochi/",
+          "text": "Structured Angular apps for large teams"
+        },
+        {
+          "label": "Next.js Development",
+          "href": "/nextjs-development-company-kochi/",
+          "text": "Server-rendered React websites"
+        },
+        {
+          "label": "Laravel Development",
+          "href": "/laravel-development-company-kochi/",
+          "text": "Laravel backends for Vue front ends"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "cta",
+      "h2": "Start Your Vue.js Project With Teknoppy",
+      "paragraphs": [
+        {
+          "text": "Start with Teknoppy, the Vue JS development company Kochi businesses can visit at our Thykoodam office and international clients can work with fully online. Share your idea, and we will reply with a clear scope, timeline and fixed quote."
+        },
+        {
+          "html": "Call or WhatsApp +91 6282249224, email sales@teknoppy.com, or <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">book a consultation</a> at teknoppy.com."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp Us",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "bg": "cream"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Vue JS Development Company Kochi: Lightweight Web Apps and Nuxt Sites",
+      "serviceType": "Vue.js Development",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "Kochi",
+        "Kerala",
+        "India",
+        "UAE",
+        "Qatar"
+      ],
+      "url": "https://teknoppy.com/vuejs-development-company-kochi/"
+    }
+  ],
+  "devNotes": {
+    "source": "Teknoppy_Vuejs_Development.pdf",
+    "primaryKeyword": "vue js development company kochi",
+    "permalink": "/vuejs-development-company-kochi/",
+    "imageAlt": [
+      "Vue.js web app interface built by Teknoppy",
+      "Vue 2 to Vue 3 migration checklist",
+      "Nuxt website built by Teknoppy for a Kochi business"
+    ],
+    "internalLinks": [
+      "/web-application-development-company-kochi/",
+      "/angular-development-company-kochi/",
+      "/nextjs-development-company-kochi/",
+      "/laravel-development-company-kochi/",
+      "/book-a-consultation/"
+    ],
+    "schemaNote": "Service (Vue.js Development) + LocalBusiness + FAQPage + BreadcrumbList (Home › Services › Web Application Development › Vue.js Development).",
+    "heldPlaceholders": [],
+    "corrections": [
+      "Contact email sales@teknoppy.com → sales@teknoppy.com (site canon)"
+    ],
+    "linkNote": "All targets valid; also linked \"React JS development page\" (doc names it) to /react-js-development-company-kochi/. Source note: link Stack Overflow 2025 stat and Vue 2 EOL (vuejs.org) on the live page."
+  }
+}

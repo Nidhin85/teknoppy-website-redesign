@@ -1,0 +1,406 @@
+{
+  "meta": {
+    "title": "Astro Website Development in Kochi | Fast Sites | Teknoppy",
+    "description": "Astro website development by Teknoppy, Kochi: fast, SEO-friendly marketing and content sites for India and GCC businesses. Get a clear, fixed quote today."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "Web Design",
+      "href": "/web-design-company-kochi/"
+    },
+    {
+      "name": "Astro Website Development",
+      "href": "/astro-website-development-kochi/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Web Design",
+      "h1Lead": "Astro Website Development in Kochi:",
+      "h1Accent": "Fast Content and Marketing Sites",
+      "body": [
+        {
+          "text": "Astro website development at Teknoppy gives businesses fast, search-friendly websites that load almost instantly on any phone or connection. We use Astro, an open-source web framework that sends plain HTML to the browser and adds JavaScript only where a page truly needs it."
+        },
+        {
+          "text": "Our in-house team in Thykoodam, Kochi, builds Astro sites for clients across Kerala, India, the UAE and Qatar."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp +91 6282249224",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "2018",
+          "label": "Since"
+        },
+        {
+          "value": "120+",
+          "label": "Websites delivered"
+        },
+        {
+          "value": "4.9/5",
+          "label": "Google, 60+ reviews"
+        },
+        {
+          "value": "12",
+          "label": "In-house staff"
+        }
+      ],
+      "trustline": "Reviewed by Sanal Edison, Founder, Teknoppy. Last updated: 16 November 2026."
+    },
+    {
+      "type": "bullets",
+      "h2": "Key facts at a glance",
+      "items": [
+        {
+          "text": "Company: Teknoppy, Thykoodam, Kochi, Kerala, India"
+        },
+        {
+          "text": "Service: Astro marketing sites, content sites, blogs and microsites"
+        },
+        {
+          "text": "Established: 2018, with 120+ websites delivered"
+        },
+        {
+          "text": "Team: 12 in-house staff, no outsourced code"
+        },
+        {
+          "text": "Rating: 4.9/5 on Google from 60+ reviews"
+        },
+        {
+          "text": "Typical timeline: 3 to 8 weeks for most Astro websites"
+        }
+      ],
+      "badge": "At a Glance",
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "What Is Astro JS?",
+      "paragraphs": [
+        {
+          "text": "Astro is a web framework built for content-driven websites. Instead of sending a large JavaScript bundle with every page, it builds pages into static HTML ahead of time and ships zero JavaScript by default. Interactive parts, such as a search box or a booking widget, load on their own when needed."
+        },
+        {
+          "text": "This makes Astro website development a strong fit for company sites, blogs, documentation and campaign pages, where fast loading and clear content matter more than complex app features."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "cards",
+      "h2": "What Astro Services Does Teknoppy Offer?",
+      "layout": "list",
+      "items": [
+        {
+          "title": "Astro Marketing Website",
+          "html": "An Astro marketing website suits companies that rely on search and ads for enquiries. Pages load quickly, layouts stay stable while loading, and every page carries its own title, description and structured data. As an Astro <a href=\"/web-design-company-kochi/\" class=\"text-primary font-semibold hover:underline\">web design company</a>, we design each page around one clear action, such as a call, a form or a WhatsApp message."
+        },
+        {
+          "title": "Astro Content Site and Blog Development",
+          "text": "An Astro content site handles hundreds of articles, guides or product pages without slowing down. Astro blog development uses Astro content collections, which check every post for a title, date, author and summary before the site is built, so missing details are caught early. Posts can also be grouped by topic, author or date without any extra plugins."
+        },
+        {
+          "title": "Astro Documentation Site",
+          "text": "An Astro documentation site gives software companies and manufacturers fast, searchable manuals and help pages. Readers find answers quickly, and your support team receives fewer repeat questions."
+        },
+        {
+          "title": "Astro Microsite Development",
+          "text": "Astro microsite development suits product launches, events and campaigns that need a separate, fast site for a short period. Microsites can be live within days and removed cleanly afterwards."
+        }
+      ],
+      "badge": "What We Build",
+      "intro": "Our Astro JS development services cover four kinds of site. Each can be booked alone or combined.",
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "Fast Static Website Development Explained",
+      "paragraphs": [
+        {
+          "text": "Fast static website development means pages are built once and served as ready-made files from a global network. There is no database to query when a visitor arrives, so pages appear almost instantly and are much harder to attack."
+        },
+        {
+          "text": "Astro islands architecture is what keeps this speed when you need interactive features. Each interactive part, such as a pricing calculator or an image gallery, is an \"island\" that loads by itself while the rest of the page stays as plain HTML. Astro view transitions add smooth page-to-page animations without turning the site into a heavy app."
+        },
+        {
+          "text": "We style sites using Astro with Tailwind CSS, which keeps design consistent across every page and produces very small stylesheets."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "cards",
+      "h2": "Who Does Teknoppy Build Astro Websites For?",
+      "layout": "list",
+      "items": [
+        {
+          "title": "Businesses in Kerala and Across India",
+          "text": "Astro website development Kochi businesses order from us is run by one in-house team. Our Astro developers Kerala clients meet at kickoff are the people who design, build and launch the site. An Astro website for B2B companies works especially well for manufacturers, exporters and consultancies that publish detailed service and product pages."
+        },
+        {
+          "title": "International Clients in the GCC and Beyond",
+          "html": "An Astro website for GCC businesses can serve English and Arabic versions side by side. An Astro multilingual website gives each language its own URLs, correct hreflang tags and right-to-left layouts where needed. Teknoppy already serves clients in the UAE and Qatar, and we work during hours that overlap with the Gulf.<br><br>For international clients, Astro website development from Kochi offers lower costs than Gulf or European agencies, a stable team and written updates after every stage."
+        }
+      ],
+      "badge": "Who We Serve",
+      "bg": "white"
+    },
+    {
+      "type": "cards",
+      "h2": "Why Choose Teknoppy for Astro Website Development?",
+      "items": [
+        {
+          "title": "Experienced Astro Developers, All In-House",
+          "text": "Our experienced Astro developers are on our payroll, and no work is passed to freelancers. The same team that builds your site supports it after launch."
+        },
+        {
+          "title": "Clean Handover",
+          "text": "Astro code handover and documentation are part of every project. You receive the full source code, a written guide to editing content and a list of every service the site uses, so you are never locked in."
+        },
+        {
+          "title": "Proof You Can Check",
+          "text": "Ask for our Astro website portfolio and see each Astro case study clients have approved for publishing. Vivek Menon, CTO of Evosyz in Kochi, says Teknoppy \"created an appealing website that represents our brand perfectly.\""
+        },
+        {
+          "title": "Founder-Led Accountability",
+          "text": "Founder Sanal Edison, Digital Strategist, sets the direction and site architecture of every client project. Teknoppy has worked from Kochi since 2018."
+        }
+      ],
+      "badge": "Why Teknoppy",
+      "columns": 2,
+      "bg": "cream"
+    },
+    {
+      "type": "steps",
+      "h2": "What Is Teknoppy's Astro Process and Timeline?",
+      "items": [
+        {
+          "title": "Discovery (2 to 4 working days)",
+          "text": "We agree on goals, pages, languages and the editing tool your team will use."
+        },
+        {
+          "title": "Content and design (1 to 2 weeks)",
+          "text": "You approve page designs before any code is written."
+        },
+        {
+          "title": "Build (1 to 3 weeks)",
+          "text": "We build pages, connect forms and set up content editing."
+        },
+        {
+          "title": "Testing and launch (3 to 5 days)",
+          "text": "We check speed, SEO tags, forms and links on real devices, then go live."
+        },
+        {
+          "title": "Support (ongoing)",
+          "text": "Astro website maintenance covers framework updates, content help and small improvements, with plans from Rs. 3,000 per month."
+        }
+      ],
+      "badge": "How We Work",
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "Typical totals: 3 to 4 weeks for a 10 page marketing site, and 6 to 8 weeks for a large content site or multilingual project. When content is moved from an existing site, Astro website development usually needs one extra week for every few hundred pages, because each page is checked for broken links, images and redirects."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "Astro vs Next JS and Astro vs WordPress",
+      "paragraphs": [
+        {
+          "lead": "Astro vs Next JS:",
+          "html": "Both are modern frameworks. Astro is built for content sites and sends little or no JavaScript. Next.js is built for sites that also behave like applications, with logins and live data. If your site is mostly pages to read, Astro is usually faster and simpler. If you need app features, see our <a href=\"/nextjs-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Next.js development page</a>."
+        },
+        {
+          "lead": "Astro vs WordPress:",
+          "html": "WordPress is a content management system with themes and plugins that run on every visit. Astro website development produces pre-built pages with no plugins to update, which cuts security risks and maintenance time. Content can still be edited through <a href=\"/headless-cms-development-kochi/\" class=\"text-primary font-semibold hover:underline\">a simple editor</a> connected to your site."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "h2": "How Much Does an Astro Website Cost?",
+      "paragraphs": [
+        {
+          "text": "How much does an Astro website cost? It depends on the number of pages, languages, integrations and custom features. A 10 page marketing site costs far less than a multilingual content site with hundreds of articles."
+        },
+        {
+          "text": "Every project is quoted after discovery, and the quote is fixed for the agreed scope. Hosting for static Astro sites is usually very low, because pages are served as files rather than from a busy server. Over three to five years, Astro website development often costs less to own than a plugin-heavy site, because there are fewer updates, fewer security fixes and smaller hosting bills."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "faq",
+      "center": true,
+      "badge": "Have Questions?",
+      "items": [
+        {
+          "q": "Is Astro good for SEO?",
+          "a": "Yes. Astro sends complete HTML that search engines and AI crawlers can read immediately, and its pages load fast, which supports good Core Web Vitals scores. Every page can carry its own metadata, structured data and clean URLs."
+        },
+        {
+          "q": "Why is Astro faster than WordPress?",
+          "a": "WordPress builds each page on request using PHP, a database and plugins. Astro builds pages in advance and serves them as ready-made files with little or no JavaScript, so there is far less work to do when a visitor arrives."
+        },
+        {
+          "q": "How long does an Astro website take to build?",
+          "a": "A 10 page marketing site usually takes 3 to 4 weeks. A large content site or multilingual project takes 6 to 8 weeks. We confirm your timeline in writing after discovery."
+        },
+        {
+          "q": "Can Astro use React components?",
+          "a": "Yes. Astro can use components written in React, Vue, Svelte and other frameworks on the same page. Each component loads only when it is needed, so existing React work can be reused without slowing the site down."
+        },
+        {
+          "q": "Can my team edit an Astro website without a developer?",
+          "a": "Yes. We connect your Astro site to a simple content editor, so your team can add pages, publish blog posts and change images through a browser. The site rebuilds automatically within a minute or two, and layout and design stay protected."
+        }
+      ],
+      "h2": "Astro Website FAQs",
+      "bg": "cream"
+    },
+    {
+      "type": "links",
+      "h2": "Related Services",
+      "items": [
+        {
+          "label": "Headless CMS Development",
+          "href": "/headless-cms-development-kochi/",
+          "text": "Choose and model the right CMS"
+        },
+        {
+          "label": "Next.js Development",
+          "href": "/nextjs-development-company-kochi/",
+          "text": "Sites that behave like applications"
+        },
+        {
+          "label": "Webflow Development",
+          "href": "/webflow-development-company-kochi/",
+          "text": "Visual, no-code marketing sites"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "cta",
+      "h2": "Start Your Astro Website With Teknoppy",
+      "paragraphs": [
+        {
+          "text": "Talk to Teknoppy about Astro website development for your business. Kochi clients are welcome at our Thykoodam office, and international clients can work with us fully online. Share your goals, and we will reply with a clear scope, timeline and fixed quote."
+        },
+        {
+          "html": "Call or WhatsApp +91 6282249224, email sales@teknoppy.com, or <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">book a consultation</a> at teknoppy.com."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp Us",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "bg": "soft"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Astro Website Development in Kochi: Fast Content and Marketing Sites",
+      "serviceType": "Astro Development",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "Kochi",
+        "Kerala",
+        "India",
+        "UAE",
+        "Qatar"
+      ],
+      "url": "https://teknoppy.com/astro-website-development-kochi/"
+    }
+  ],
+  "devNotes": {
+    "source": "Teknoppy_Astro_Development.pdf",
+    "primaryKeyword": "astro website development",
+    "secondaryKeywords": [
+      "astro js development",
+      "fast static website development",
+      "astro content site",
+      "astro website development kochi",
+      "astro developers kerala",
+      "astro web design company",
+      "astro marketing website",
+      "astro blog development",
+      "astro documentation site",
+      "astro microsite development",
+      "astro website for b2b companies",
+      "astro multilingual website",
+      "astro website maintenance",
+      "astro website for gcc businesses",
+      "what is astro js",
+      "is astro good for seo",
+      "why is astro faster than wordpress",
+      "how much does an astro website cost",
+      "how long does an astro website take to build",
+      "can astro use react components",
+      "astro vs next js",
+      "astro vs wordpress",
+      "astro islands architecture",
+      "astro content collections",
+      "astro with tailwind css",
+      "astro view transitions",
+      "astro website portfolio",
+      "astro case study",
+      "experienced astro developers",
+      "astro code handover and documentation"
+    ],
+    "imageAlt": [
+      "Astro marketing website built by Teknoppy loading on mobile",
+      "Astro islands architecture diagram for a business website",
+      "Teknoppy team planning an Astro content site in Kochi"
+    ],
+    "internalLinks": [
+      "/web-design-company-kochi/",
+      "/nextjs-development-company-kochi/",
+      "/headless-cms-development-kochi/",
+      "/webflow-development-company-kochi/",
+      "/book-a-consultation/"
+    ],
+    "schemaNote": "Service (serviceType: Astro Development, areaServed: Kochi, Kerala, India, UAE, Qatar) + LocalBusiness (Thykoodam address, +91 6282249224) + FAQPage (all FAQs on this page) + BreadcrumbList (Home › Services › Web Design › Astro Website Development).",
+    "sourceNotes": "Company facts (2018, 120+ websites, 4.9/5 from 60+ Google reviews, 12 in-house staff, Rs. 3,000/month maintenance, client quotes) are from teknoppy.com. Astro facts (zero JavaScript by default, islands, content collections, view transitions): Astro official documentation (docs.astro.build). No usage statistic used. Link stats to their source on the live page.",
+    "permalink": "/astro-website-development-kochi/",
+    "heldPlaceholders": [],
+    "corrections": [
+      "Contact email sanal@teknoppy.com → sales@teknoppy.com (site canon)"
+    ],
+    "linkNote": "Webflow had no naming words in body copy; placed in Related Services. Breadcrumb follows doc (Web Design parent), not the Headless CMS cluster pillar."
+  }
+}

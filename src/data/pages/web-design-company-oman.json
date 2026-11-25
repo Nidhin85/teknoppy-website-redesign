@@ -1,0 +1,511 @@
+{
+  "meta": {
+    "title": "Web Design Company in Oman | Muscat Websites | Teknoppy",
+    "description": "Web design company in Oman building fast, mobile-first websites for Muscat businesses, with VAT-ready pricing in OMR and local card payments. Free quote."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "GCC",
+      "href": "/web-design-company-for-gcc-businesses/"
+    },
+    {
+      "name": "Web Design Company in Oman",
+      "href": "/web-design-company-oman/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "GCC Web Design",
+      "h1Lead": "Web Design Company in",
+      "h1Accent": "Oman",
+      "body": [
+        {
+          "text": "Teknoppy is a web design company in Oman trading firms, hotels, clinics and retailers hire for fast, mobile-first websites that bring in calls, bookings and orders. From head offices in Al Khuwair and Qurum to branches in Sohar and Salalah, we build bilingual sites with OMR pricing, 5% VAT display and local card payments built in."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Get a free website quote",
+          "href": "/request-a-quote/"
+        },
+        {
+          "label": "WhatsApp us",
+          "href": "https://wa.me/916282249224"
+        },
+        {
+          "label": "Book a call in Oman hours",
+          "href": "/book-a-consultation/"
+        }
+      ],
+      "stats": [
+        {
+          "value": "4.9/5",
+          "label": "Google, 60+ reviews"
+        },
+        {
+          "value": "120+",
+          "label": "Websites delivered"
+        },
+        {
+          "value": "2018",
+          "label": "Building websites since"
+        }
+      ],
+      "trustline": "Google rating 4.9 from 60+ reviews · 120+ websites delivered · Building websites since 2018"
+    },
+    {
+      "type": "prose",
+      "badge": "Oman Web Design",
+      "h2": "What Does a Web Design Company in Oman Do?",
+      "paragraphs": [
+        {
+          "text": "An Oman web design partner plans, designs and builds a website that represents your business well, works on every phone and makes it easy for customers to contact you, visit a branch or pay online. Many Omani companies have several locations, so a good site also helps customers find the right branch quickly. Teknoppy works as a website development company Oman businesses use for fixed quotes, clear timelines and one senior project lead."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "cards",
+      "badge": "Our Services",
+      "h2": "Website Design Services for Oman Businesses",
+      "layout": "list",
+      "intro": "Most Oman clients choose one of these five services, shaped to their goals and budget.",
+      "items": [
+        {
+          "title": "Corporate Websites",
+          "text": "Corporate website design Muscat companies need includes service and product pages, management profiles, certifications, project galleries and enquiry forms that reach the right department."
+        },
+        {
+          "title": "Ecommerce Stores",
+          "text": "Our ecommerce website design Oman projects use Shopify, WooCommerce or custom builds, with Arabic and English product pages, OMR pricing, delivery areas by governorate and a fast checkout."
+        },
+        {
+          "title": "Landing Pages",
+          "text": "Landing page design Muscat marketing teams use for seasonal offers, events and Ramadan campaigns: one offer, one form and fast loading."
+        },
+        {
+          "title": "Website Redesign",
+          "text": "Our website redesign Oman service updates older sites, keeps the pages that already bring traffic and moves content safely to a modern design that works on every screen."
+        },
+        {
+          "title": "Maintenance and Support",
+          "text": "Website maintenance services Oman clients choose cover updates, backups, security patches and small content changes every month."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "table",
+      "badge": "Pricing",
+      "h2": "What Does a Website Cost in Oman?",
+      "intro": "The website design cost in Oman depends on the number of pages, languages, branches and features such as online payments. Here is a typical guide:",
+      "headers": [
+        "Project",
+        "Best for",
+        "Timeline"
+      ],
+      "rows": [
+        [
+          "Business website",
+          "Small firms, 5–10 pages",
+          "3–5 weeks"
+        ],
+        [
+          "Corporate or multi-branch website",
+          "Larger companies, Arabic and English",
+          "5–8 weeks"
+        ],
+        [
+          "Ecommerce store",
+          "Online shops with local cards",
+          "6–10 weeks"
+        ]
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "html": "Prices exclude 5% VAT where it applies. Every business website package Oman clients buy includes hosting setup, basic page settings and a training session. Looking for affordable website design Oman startups can manage? Start with a business website and add online payments later. For an exact figure, request a <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">free website development quote</a> Oman businesses receive within two working days."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "bullets",
+      "badge": "Payments",
+      "h2": "Local Card Payments and OMR Pricing",
+      "intro": "Omani shoppers like to pay with cards issued by local banks. A website with local card payments Oman customers trust connects through a payment provider that supports:",
+      "items": [
+        {
+          "text": "OmanNet debit cards from local banks"
+        },
+        {
+          "text": "Visa, Mastercard and Apple Pay"
+        },
+        {
+          "text": "Cash on delivery, where it suits your business"
+        }
+      ],
+      "outro": [
+        {
+          "text": "We test every payment method, including refunds, before launch. Prices show in OMR with three decimals, the local format (for example, OMR 12.500), and delivery fees are clear before checkout, which reduces abandoned carts."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "bullets",
+      "badge": "Compliance",
+      "h2": "VAT Display and Data Privacy",
+      "intro": "Oman websites need to handle two legal details clearly:",
+      "items": [
+        {
+          "html": "<strong>5% VAT display:</strong> final prices shown clearly, with VAT listed on invoices. Oman introduced VAT in April 2021; see the <a href=\"https://www.taxoman.gov.om\" class=\"text-primary font-semibold hover:underline\" target=\"_blank\" rel=\"noopener\">Oman Tax Authority</a> for current rules."
+        },
+        {
+          "html": "<strong>Data privacy:</strong> Oman's Personal Data Protection Law, issued by Royal Decree No. 6/2022, requires care with personal data. We add a consent banner, a plain privacy notice, secure HTTPS and forms that ask only for what you need."
+        }
+      ],
+      "outro": [
+        {
+          "text": "We are not tax or legal advisers, so your accountant should confirm your VAT setup."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "bullets",
+      "badge": "Multi-Branch",
+      "h2": "Websites for Multi-Branch Businesses",
+      "intro": "Many Omani companies, from supermarkets and pharmacies to car dealers and clinics, operate several branches. A website for multi-branch businesses Oman customers find easy to use includes:",
+      "items": [
+        {
+          "text": "A branch finder with maps, phone numbers and opening hours for every location"
+        },
+        {
+          "text": "One page per branch, with real photos, services and directions"
+        },
+        {
+          "text": "Central content control, so head office updates offers once for every branch"
+        },
+        {
+          "text": "Branch-level forms, so enquiries go straight to the right team"
+        },
+        {
+          "text": "Shared booking or ordering, where customers choose their nearest branch"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "cards",
+      "layout": "list",
+      "items": [
+        {
+          "title": "Website Design for Oman Tourism Businesses",
+          "text": "Website design for Oman tourism businesses, such as hotels, desert camps, dive centres and tour operators, combines striking photography, clear packages, availability and online booking. We plan content for both the winter season and Salalah's Khareef season, when visitor interest peaks. This is how we build websites for Omani tourism and trading firms that work all year."
+        },
+        {
+          "title": "Sohar and Salalah",
+          "text": "Need a web design company in Sohar for an industrial, logistics or port-related business? We build B2B sites with product catalogues, certifications, safety records and request-for-quote forms that procurement teams can complete quickly on any device. In Salalah, we focus on hospitality and retail sites that load fast for visitors on mobile."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "bullets",
+      "badge": "Industries",
+      "h2": "Industries We Design For in Oman",
+      "intro": "Each sector has different visitors and goals, so we plan each site around the decisions your customers make:",
+      "items": [
+        {
+          "html": "<strong>Trading and distribution:</strong> product catalogues by brand, dealer enquiry forms and downloadable price lists."
+        },
+        {
+          "html": "<strong>Healthcare and pharmacies:</strong> service pages, doctor profiles, branch timings and appointment requests."
+        },
+        {
+          "html": "<strong>Real estate and construction:</strong> project galleries, unit details, progress updates and brochure downloads."
+        },
+        {
+          "html": "<strong>Restaurants and cafés:</strong> mobile menus, branch locations, delivery links and catering enquiries."
+        },
+        {
+          "html": "<strong>Education and training:</strong> course pages, schedules, registration and fee payment."
+        }
+      ],
+      "outro": [
+        {
+          "text": "For every industry, we write content that answers real customer questions in clear Arabic and English. That helps visitors decide faster and makes your website easier for AI assistants such as ChatGPT and Gemini to describe accurately when people ask about businesses like yours."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "badge": "Bilingual",
+      "h2": "Bilingual Design for Omani Audiences",
+      "paragraphs": [
+        {
+          "text": "Omani customers often browse in Arabic, while expatriate customers usually prefer English. Our bilingual website design Oman service mirrors menus, icons and forms for right-to-left Arabic, uses clear Arabic fonts and keeps both versions in step. As a web design company Muscat businesses can work with remotely, we test every site on popular phones before launch. Every site also includes WhatsApp and click-to-call buttons, maps for each location and an editor your team can use to change offers and prices in minutes."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "steps",
+      "badge": "How We Work",
+      "h2": "Our Design and Build Process",
+      "intro": "We follow six clear steps, so you always know what happens next:",
+      "items": [
+        {
+          "title": "Discovery call",
+          "text": "goals, branches, products, languages and payments."
+        },
+        {
+          "title": "Sitemap and wireframes",
+          "text": "page structure before any design."
+        },
+        {
+          "title": "Design",
+          "text": "homepage and key pages for your approval."
+        },
+        {
+          "title": "Build",
+          "text": "WordPress, Shopify, WooCommerce or a custom stack."
+        },
+        {
+          "title": "Testing",
+          "text": "speed, mobile, forms, payments and right-to-left checks."
+        },
+        {
+          "title": "Launch and training",
+          "text": "go-live, a short training session and 30 days of support."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Project type",
+        "Typical timeline"
+      ],
+      "rows": [
+        [
+          "Landing page",
+          "1–2 weeks"
+        ],
+        [
+          "Business website",
+          "3–5 weeks"
+        ],
+        [
+          "Corporate or multi-branch website",
+          "5–8 weeks"
+        ],
+        [
+          "Ecommerce store",
+          "6–10 weeks"
+        ]
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "Our website developers Muscat clients work with also handle hosting, domains and email, with daily backups, uptime monitoring and a clear handover document, so your team always knows where everything is."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "badge": "Our Work",
+      "h2": "Oman Website Projects",
+      "paragraphs": [
+        {
+          "html": "Want a site like this? See our Oman website work on a <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">free call</a>."
+        }
+      ],
+      "bg": "cream",
+      "draft": true
+    },
+    {
+      "type": "bullets",
+      "badge": "Why Teknoppy",
+      "h2": "Why Choose Teknoppy as Your Web Design Company in Oman?",
+      "items": [
+        {
+          "html": "<strong>Senior-led projects:</strong> the Teknoppy Oman web design team is led by a named project manager who joins every review."
+        },
+        {
+          "html": "<strong>Honest location:</strong> Teknoppy's Muscat web team works from Kochi, India, just 1.5 hours ahead of Oman. We do not have an Oman office and say so openly."
+        },
+        {
+          "html": "<strong>Fixed quotes:</strong> clear scope, price and timeline before work starts."
+        },
+        {
+          "html": "<strong>Built to be found:</strong> clean code and fast pages. For ongoing growth, see our <a href=\"/seo-company-oman/\" class=\"text-primary font-semibold hover:underline\">SEO company in Oman</a> page."
+        }
+      ],
+      "outro": [
+        {
+          "html": "Comparing agencies for the best web design company in Oman? Ask for live examples, a written timeline and who maintains the site after launch. As a web design agency Oman firms can rely on, we create websites for Oman businesses of every size, offer website design Oman support for Arabic-only sites and focus on building fast websites for Muscat businesses. Our Muscat web design work always starts with your customers. Ready to hire web designer Muscat teams recommend? <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">Talk to us</a>. Also see our <a href=\"/web-design-company-bahrain/\" class=\"text-primary font-semibold hover:underline\">web design company in Bahrain</a>, <a href=\"/web-design-company-saudi-arabia/\" class=\"text-primary font-semibold hover:underline\">web design company in Saudi Arabia</a> and <a href=\"/web-design-company-for-gcc-businesses/\" class=\"text-primary font-semibold hover:underline\">Web Design Company for GCC Businesses</a> pages."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "faq",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Can prices show in OMR with VAT?",
+          "a": "Yes. Your site can show VAT-inclusive prices in OMR with three decimals, list VAT at checkout and add VAT details to invoices. Your accountant should confirm the setup."
+        },
+        {
+          "q": "Which payment gateways work in Oman?",
+          "a": "We use payment providers that support OmanNet debit cards, Visa, Mastercard and Apple Pay. We help you choose one based on your bank, fees and products, then test every method before launch."
+        },
+        {
+          "q": "How long does a website take?",
+          "a": "Most business websites take three to five weeks, corporate and multi-branch sites five to eight weeks and online stores six to ten weeks, depending on content and approvals."
+        },
+        {
+          "q": "Will people find our new website on Google?",
+          "a": "Every site we build has clean code, fast pages, correct titles and a sitemap, so Google can understand it from launch. Competitive rankings need ongoing work, which our SEO company in Oman team can handle."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "bullets",
+      "badge": "Free Quote",
+      "h2": "Get Your Free Website Quote",
+      "intro": "Tell us about your business and the website you need. Within two working days, you get:",
+      "items": [
+        {
+          "text": "a suggested sitemap and feature list"
+        },
+        {
+          "text": "a fixed price in OMR and a timeline"
+        },
+        {
+          "text": "examples of similar websites we have built"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "cta",
+      "paragraphs": [
+        {
+          "text": "No sales pitch and no obligation, just a clear plan from a web design company in Oman that shows its work."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Get my free quote",
+          "href": "/request-a-quote/"
+        },
+        {
+          "label": "WhatsApp",
+          "href": "https://wa.me/916282249224"
+        },
+        {
+          "label": "Book a call in Oman hours",
+          "href": "/book-a-consultation/"
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "byline",
+      "text": "Reviewed by Sanal Edison, Founder, Teknoppy. Last updated: 13 November 2026.",
+      "bg": "white"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Web Design Company in Oman",
+      "serviceType": "Web design",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "Oman",
+        "Muscat",
+        "Sohar",
+        "Salalah"
+      ],
+      "url": "https://teknoppy.com/web-design-company-oman/"
+    }
+  ],
+  "devNotes": {
+    "source": "Teknoppy_B4_Web_Design_Company_in_Oman.pdf",
+    "primaryKeyword": "web design company in Oman",
+    "permalink": "/web-design-company-oman/",
+    "secondaryKeywords": [
+      "website development company Oman",
+      "corporate website design Muscat",
+      "ecommerce website design Oman",
+      "landing page design Muscat",
+      "website redesign Oman",
+      "website maintenance services Oman",
+      "website design cost in Oman",
+      "business website package Oman",
+      "affordable website design Oman",
+      "website development quote Oman",
+      "website with local card payments Oman",
+      "website for multi-branch businesses Oman",
+      "website design for Oman tourism businesses",
+      "web design company in Sohar",
+      "bilingual website design Oman",
+      "web design company Muscat",
+      "website developers Muscat",
+      "best web design company in Oman",
+      "web design agency Oman",
+      "hire web designer Muscat"
+    ],
+    "imageAlt": [
+      "web-design-company-oman-muscat.webp · ALT: Web design company in Oman: business website designed for a Muscat company"
+    ],
+    "internalLinks": [
+      "/web-design-company-for-gcc-businesses/",
+      "/web-design-company-bahrain/",
+      "/web-design-company-saudi-arabia/",
+      "/seo-company-oman/",
+      "/request-a-quote/",
+      "/book-a-consultation/"
+    ],
+    "schemaNote": "Service + FAQPage + BreadcrumbList (Home › GCC › Web Design Company in Oman). \"GCC\" crumb → live GCC web design hub. External link: Oman Tax Authority (https://www.taxoman.gov.om) from doc section 4.",
+    "heldPlaceholders": [
+      "Trust strip: Google rating [add rating] · [add number] websites delivered · Building websites since 2018 (filled from site canon: 4.9 / 60+ reviews, 120+ websites)",
+      "Pricing table \"Price (OMR)\" / \"Approx. USD\" columns: Business website [OMR 310.000–575.000] [USD 800–1,500]; Corporate or multi-branch website [OMR 575.000–1,345.000] [USD 1,500–3,500]; Ecommerce store [OMR 1,155.000–2,690.000] [USD 3,000–7,000] (columns dropped)",
+      "Project: [Client name, city] [Add one real website with a screenshot and a result, e.g. \"Online bookings up X% in Y months\" or \"Mobile load time cut from X to Y seconds\".]",
+      "FAQ (whole item dropped, its only answer sentence is a placeholder) — Q: How much does a website cost in Oman? A: Business websites start at [OMR 310.000], corporate and multi-branch sites usually cost [OMR 575.000–1,345.000] and online stores start at [OMR 1,155.000], plus 5% VAT where it applies.",
+      "Byline: Written by [writer name], Web Content Lead · Reviewed by [reviewer name], Head of Design · Last reviewed: 13 November 2026 (replaced with standard Sanal Edison byline)"
+    ],
+    "corrections": [
+      "Doc schema serviceType \"Search engine optimisation\" is a copy-paste slip on a web design page → \"Web design\""
+    ],
+    "linkNote": "All internal-link targets are live or in this batch. Quote CTAs → /request-a-quote/; call CTAs and \"Talk to us\" → /book-a-consultation/.",
+    "requiredBeforePublishing": "Doc section 4: real Oman/GCC website with screenshot + result, confirm prices / OmanNet gateway / 2-day quote / 30 days support / Arabic+English copywriting / hours, Google rating, writer+reviewer, 4-field form, GA4 + consent banner. Restore the cost FAQ once real prices are confirmed.",
+    "heldSections": [
+      "\"Oman Website Projects\" set draft:true — its case study was a [bracket] placeholder, leaving only a CTA line under the heading. Add a real case study and remove draft to publish."
+    ]
+  }
+}

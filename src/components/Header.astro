@@ -21,19 +21,32 @@ const services = [
   { name: 'Ecommerce Development', href: '/ecommerce-website-development-company-kochi/', desc: 'Online stores built to sell' },
   { name: 'Web Application Development', href: '/web-application-development-company-kochi/', desc: 'Scalable custom web apps' },
   { name: 'Digital Marketing', href: '/digital-marketing-company-kochi/', desc: 'SEO, Ads, social & content' },
+  { name: 'AI Automation', href: '/ai-automation-services-kochi/', desc: 'Chatbots, AI agents & workflows' },
+  { name: 'ERPNext Implementation', href: '/erpnext-implementation-company-kochi/', desc: 'ERPNext & Frappe for Kerala and GCC' },
+  { name: 'GCC Services', href: '/web-design-company-for-gcc-businesses/', desc: 'Web, SEO & software for the Gulf' },
 ];
+
+const caseStudyActive = pathname.startsWith('/case-study') || pathname.startsWith('/case-studies') || pathname.startsWith('/lenaa-personal-brand-website-case-study');
+const portfolioActive = pathname.startsWith('/portfolios');
 
 const workItems = [
-  { name: 'Case Studies', href: '/case-study/', desc: 'Real client results & case studies' },
-  { name: 'Portfolio', href: '/portfolios/', desc: 'Visual project gallery & creative work' },
+  { name: 'Case Studies', href: '/case-study/', desc: 'Real client results & case studies', active: caseStudyActive },
+  { name: 'Portfolio', href: '/portfolios/', desc: 'Visual project gallery & creative work', active: portfolioActive },
 ];
 
-const servicesActive = pathname === '/services/' || pathname === '/services' || services.some(s => {
-  const clean = s.href.replace(/\/$/, '');
-  return pathname === s.href || pathname === clean;
-});
+const isServiceItemActive = (href: string) => pathname === href || pathname === href.replace(/\/$/, '');
 
-const workActive = pathname.startsWith('/case-study') || pathname.startsWith('/case-studies') || pathname.startsWith('/portfolios');
+// Service pages share no folder; their slugs end in a location (e.g. /shopify-development-company-kochi/).
+// shortcut: slug pattern, not a page list; add a new non-service location slug to the exclusions below.
+const nonServiceSlugs = ['/free-website-audit-kerala', '/website-cost-calculator-kerala', '/web-design-pricing-kerala'];
+const cleanPath = pathname.replace(/\/$/, '');
+// GCC-country and ERPNext service pages sit at the top level only (keeps /case-studies/*-gcc out).
+const isGulfOrErpService = /^\/[^/]+$/.test(cleanPath) && (/-(gcc|dubai|saudi-arabia|oman|bahrain|kuwait)$/.test(cleanPath) || cleanPath.includes('erpnext'));
+const isServicePage = (/-(kochi|kerala|uae|qatar|businesses)$/.test(cleanPath) || cleanPath === '/seo-services' || isGulfOrErpService) && !nonServiceSlugs.includes(cleanPath);
+
+const servicesActive = cleanPath === '/services' || isServicePage;
+
+const workActive = caseStudyActive || portfolioActive;
 
 const links = [
   { name: 'Home', href: '/' },
@@ -94,10 +107,11 @@ const links = [
             <div class={`absolute left-1/2 -translate-x-1/2 top-full pt-4 ${isWork ? 'w-[280px]' : 'w-[330px]'} opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 transition-all duration-200 ease-out z-50 pointer-events-none group-hover:pointer-events-auto group-focus-within:pointer-events-auto`}>
               <div class="bg-white rounded-2xl border border-neutral-100 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.18)] p-2">
                 {isServices && services.map(svc => {
-                  const active = pathname === svc.href || pathname === svc.href.replace(/\/$/, '');
+                  const active = isServiceItemActive(svc.href);
                   return (
                     <a
                       href={svc.href}
+                      aria-current={active ? 'page' : undefined}
                       class={`flex items-start gap-3 px-4 py-3 rounded-xl transition-colors group/item ${active ? 'bg-cream' : 'hover:bg-cream'}`}
                     >
                       <span class="mt-[7px] w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>
@@ -116,10 +130,11 @@ const links = [
                 )}
 
                 {isWork && workItems.map(item => {
-                  const active = pathname === item.href || pathname === item.href.replace(/\/$/, '') || pathname.startsWith(item.href);
+                  const active = item.active;
                   return (
                     <a
                       href={item.href}
+                      aria-current={active ? 'page' : undefined}
                       class={`flex items-start gap-3 px-4 py-3 rounded-xl transition-colors group/item ${active ? 'bg-cream' : 'hover:bg-cream'}`}
                     >
                       <span class="mt-[7px] w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>
@@ -136,6 +151,7 @@ const links = [
         ) : (
           <a
             href={link.href}
+            aria-current={isCurrentActive ? 'page' : undefined}
             class={`relative py-1 text-[15px] xl:text-[16px] font-bold whitespace-nowrap transition-all duration-300 flex items-center gap-1 ${
               isCurrentActive
                 ? 'text-primary'
@@ -182,12 +198,12 @@ const links = [
 
         return link.hasDropdown ? (
           <div
-            class="mobile-link opacity-0 transform translate-y-4 transition-all duration-300 border-b border-border/40"
+            class={`mobile-link opacity-0 transform translate-y-4 transition-all duration-300 border-b ${isAutoOpen ? 'border-primary/50' : 'border-border/40'}`}
             style={`transition-delay: ${idx * 45}ms`}
           >
             <button
               type="button"
-              class="mobile-accordion-toggle flex items-center justify-between w-full text-2xl font-bold text-neutral-900 py-1.5 text-left focus:outline-none"
+              class={`mobile-accordion-toggle flex items-center justify-between w-full text-2xl font-bold py-1.5 text-left focus:outline-none ${isAutoOpen ? 'text-primary' : 'text-neutral-900'}`}
               aria-expanded={isAutoOpen ? "true" : "false"}
               data-target={`submenu-${link.dropdownType}`}
             >
@@ -199,12 +215,15 @@ const links = [
             <div id={`submenu-${link.dropdownType}`} class={`mobile-submenu flex flex-col gap-2 pl-4 pt-2 pb-3 ${isAutoOpen ? '' : 'hidden'}`}>
               {isServices && (
                 <>
-                  {services.map(svc => (
-                    <a href={svc.href} class="mobile-sublink text-base font-semibold text-neutral-600 hover:text-primary transition-colors flex items-center gap-2.5 py-1">
-                      <span class="w-1.5 h-1.5 rounded-full bg-primary/60 flex-shrink-0"></span>
-                      {svc.name}
-                    </a>
-                  ))}
+                  {services.map(svc => {
+                    const active = isServiceItemActive(svc.href);
+                    return (
+                      <a href={svc.href} aria-current={active ? 'page' : undefined} class={`mobile-sublink text-base font-semibold transition-colors flex items-center gap-2.5 py-1 px-2 -mx-2 rounded-lg ${active ? 'text-primary bg-primary/5' : 'text-neutral-600 hover:text-primary'}`}>
+                        <span class={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${active ? 'bg-primary' : 'bg-primary/60'}`}></span>
+                        {svc.name}
+                      </a>
+                    );
+                  })}
                   <a href="/services/" class="mobile-sublink text-sm font-bold text-primary hover:underline flex items-center gap-2 pt-1.5">
                     View all services →
                   </a>
@@ -213,8 +232,8 @@ const links = [
               {isWork && (
                 <>
                   {workItems.map(item => (
-                    <a href={item.href} class="mobile-sublink text-base font-semibold text-neutral-600 hover:text-primary transition-colors flex items-center gap-2.5 py-1">
-                      <span class="w-1.5 h-1.5 rounded-full bg-primary/60 flex-shrink-0"></span>
+                    <a href={item.href} aria-current={item.active ? 'page' : undefined} class={`mobile-sublink text-base font-semibold transition-colors flex items-center gap-2.5 py-1 px-2 -mx-2 rounded-lg ${item.active ? 'text-primary bg-primary/5' : 'text-neutral-600 hover:text-primary'}`}>
+                      <span class={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${item.active ? 'bg-primary' : 'bg-primary/60'}`}></span>
                       {item.name}
                     </a>
                   ))}
@@ -225,7 +244,8 @@ const links = [
         ) : (
           <a
             href={link.href}
-            class="mobile-link text-2xl font-bold text-neutral-900 hover:text-primary transition-colors duration-300 py-1.5 border-b border-border/40 opacity-0 transform translate-y-4"
+            aria-current={isActive(link.href) ? 'page' : undefined}
+            class={`mobile-link text-2xl font-bold transition-colors duration-300 py-1.5 border-b opacity-0 transform translate-y-4 ${isActive(link.href) ? 'text-primary border-primary/50' : 'text-neutral-900 hover:text-primary border-border/40'}`}
             style={`transition-delay: ${idx * 45}ms`}
           >
             {link.name}

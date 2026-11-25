@@ -1,0 +1,455 @@
+{
+  "meta": {
+    "title": "AI Agent Development Company Kochi | Teknoppy",
+    "description": "Teknoppy is an AI agent development company in Kochi building custom AI agents with tool calling, MCP servers, approvals and monitoring. Book a consultation."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "AI Automation",
+      "href": "/ai-automation-services-kochi/"
+    },
+    {
+      "name": "AI Agent Development",
+      "href": "/ai-agent-development-company-kochi/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "AI Automation",
+      "h1Lead": "AI Agent Development Company in Kochi:",
+      "h1Accent": "Custom AI Agents That Complete Real Work",
+      "body": [
+        {
+          "text": "Teknoppy is an AI agent development company that builds custom AI agents for business, software assistants that can plan steps, use your tools, look up information and complete multi-step tasks with the level of human oversight you choose. We design, build, test and monitor agents that fit your systems, data and rules."
+        },
+        {
+          "text": "Our in-house team works from Thykoodam, Kochi, for clients in Kerala, across India and overseas."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp +91 6282249224",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "2018",
+          "label": "Since"
+        },
+        {
+          "value": "120+",
+          "label": "Websites delivered"
+        },
+        {
+          "value": "4.9/5",
+          "label": "Google, 60+ reviews"
+        },
+        {
+          "value": "12",
+          "label": "In-house staff"
+        }
+      ],
+      "trustline": "Reviewed by Sanal Edison, Founder, Teknoppy. Last updated: 17 November 2026."
+    },
+    {
+      "type": "bullets",
+      "badge": "At a Glance",
+      "h2": "Quick facts",
+      "items": [
+        {
+          "text": "Teknoppy: web, software and automation studio in Thykoodam, Kochi, since 2018"
+        },
+        {
+          "text": "Agent work: customer service, operations and research agents, tool calling, MCP servers, approvals and monitoring"
+        },
+        {
+          "text": "120+ websites delivered; 4.9/5 on Google from 60+ reviews"
+        },
+        {
+          "text": "12 in-house staff; no outsourced work"
+        },
+        {
+          "text": "Typical timeline: 4 to 10 weeks"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "What Is an AI Agent?",
+      "paragraphs": [
+        {
+          "text": "An AI agent is software powered by a large language model that can decide what to do next to reach a goal. Instead of only answering a question, it can break a task into steps, call tools such as your CRM, database, calendar or email, check the results and continue until the job is done or a person needs to step in."
+        },
+        {
+          "text": "Agentic AI development is the practice of designing these systems safely, with clear goals, limited permissions, reliable tools and checks at every important step."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "h2": "AI Agent vs Chatbot",
+      "paragraphs": [
+        {
+          "html": "AI agent vs chatbot is a common question. A <a href=\"/ai-chatbot-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">chatbot</a> mainly answers questions in a conversation, usually from a fixed knowledge base. An agent can also take action: create a ticket, update an order, book an appointment, prepare a report or send a follow-up, often across several systems."
+        },
+        {
+          "text": "In short, chatbots talk and agents work. Many businesses start with a chatbot and later add agent capabilities as trust and needs grow."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "cards",
+      "columns": 2,
+      "badge": "Use Cases",
+      "h2": "What Can AI Agents Do for Business?",
+      "intro": "What can AI agents do for business? Here are the types of agents we build most often.",
+      "items": [
+        {
+          "title": "AI Customer Service Agent",
+          "text": "An AI customer service agent answers customer questions, checks order or booking status in your systems, updates details, processes simple requests and hands complex cases to staff with a full summary. Customers get faster service, and your team handles fewer repetitive tickets."
+        },
+        {
+          "title": "AI Operations Agent",
+          "text": "An AI operations agent handles internal tasks such as checking stock levels, preparing purchase suggestions, reconciling records, chasing pending approvals and producing daily status summaries for managers."
+        },
+        {
+          "title": "AI Research Agent",
+          "text": "An AI research agent gathers information from approved sources, such as websites, documents and internal databases, compares it and produces structured summaries. Sales teams use research agents to prepare for meetings, and managers use them to track competitors or market changes."
+        },
+        {
+          "title": "Autonomous AI Agents for Back-Office Tasks",
+          "text": "Autonomous AI agents can run on a schedule or react to events, for example processing new enquiries overnight or monitoring a shared inbox. We set firm limits on what they can do alone and what needs approval."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "cards",
+      "layout": "list",
+      "badge": "How We Build",
+      "h2": "How We Build Agents",
+      "items": [
+        {
+          "title": "AI Agents With Tool Calling",
+          "html": "AI agents with tool calling connect to your software through <a href=\"/api-integration-services-kochi/\" class=\"text-primary font-semibold hover:underline\">secure APIs</a>. Each tool has a narrow, clearly defined job, such as \"look up order by number\" or \"create draft invoice,\" which makes agents more predictable and easier to test."
+        },
+        {
+          "title": "MCP Server Development",
+          "text": "MCP server development uses the Model Context Protocol, an open standard for connecting AI models to tools and data. We build MCP servers that expose your systems to AI agents in a controlled, reusable way, so the same connections can serve several agents or AI assistants."
+        },
+        {
+          "title": "Multi-Agent Systems",
+          "text": "Multi-agent systems split complex work between specialised agents, for example one agent that gathers information, another that drafts a response and a third that checks it against your rules. This often produces more reliable results than a single agent trying to do everything."
+        },
+        {
+          "title": "Human-in-the-Loop AI Agents",
+          "text": "Human-in-the-loop AI agents pause for approval before sensitive actions, such as sending money, emailing important clients or changing records. Staff review, edit or approve with one click, and the agent continues."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "Are AI Agents Reliable?",
+      "paragraphs": [
+        {
+          "text": "Are AI agents reliable? They can be, when they are designed carefully. Reliability comes from narrow goals, well-defined tools, clear instructions, testing against real examples and approval steps for high-risk actions. Agents given broad, vague goals with unlimited access are the ones that fail."
+        },
+        {
+          "text": "We test every agent against a set of real scenarios before launch, including unusual and tricky cases, and we keep measuring accuracy after it goes live. When an agent cannot complete a task confidently, it records what it tried, explains where it got stuck and passes the case to a named person, so nothing is left half-finished or hidden from your team."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "h2": "AI Agent Security and Permissions",
+      "paragraphs": [
+        {
+          "text": "AI agent security and permissions are built in from the start. Each agent receives only the access it needs, using separate credentials, read-only access where possible and spending or action limits. Every action is logged, so you can see what the agent did and why. Sensitive data can stay within your own systems, and we choose AI providers with clear data-handling policies."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "AI Agent Monitoring",
+      "paragraphs": [
+        {
+          "text": "AI agent monitoring tracks every run, tool call, error and outcome. Dashboards show how many tasks agents complete, how often they ask for help and where they struggle. Alerts notify our team and yours if something goes wrong, and we use monitoring data to improve instructions and tools each month."
+        }
+      ],
+      "bg": "warm"
+    },
+    {
+      "type": "cards",
+      "columns": 3,
+      "badge": "Why Teknoppy",
+      "h2": "Why Choose Teknoppy as Your AI Agent Development Company?",
+      "items": [
+        {
+          "title": "Software Engineering First",
+          "text": "Agents are software. Our team brings years of web and application development experience to agent projects, including version control, testing, documentation and secure deployment."
+        },
+        {
+          "title": "Practical Scope",
+          "text": "We start with one clearly defined agent that solves a real problem, prove its value and expand from there, instead of promising a fully autonomous business on day one."
+        },
+        {
+          "title": "Local and Global",
+          "text": "As an AI agent development company Kochi businesses can meet in person, we also deliver AI agent development services India and overseas clients use online. Our AI agent developers Kerala team handles every project in-house. Vivek Menon, CTO of Evosyz, says Teknoppy \"created an appealing website that represents our brand perfectly,\" and we apply the same attention to detail to agent work."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "bullets",
+      "h2": "What to Look For in an AI Agent Development Company",
+      "intro": "Choosing an AI agent development company is different from buying an off-the-shelf tool. Before you sign, ask a few practical questions:",
+      "items": [
+        {
+          "html": "<strong>Do they test against real scenarios?</strong> Ask how accuracy is measured before and after launch."
+        },
+        {
+          "html": "<strong>How are permissions handled?</strong> Agents should never receive more access than their task needs."
+        },
+        {
+          "html": "<strong>Who owns the code and prompts?</strong> You should be able to keep, move or extend what is built."
+        },
+        {
+          "html": "<strong>What happens when the agent is unsure?</strong> Good agents hand over to people instead of guessing."
+        },
+        {
+          "html": "<strong>Is monitoring included?</strong> Agents need ongoing review, not a one-time delivery."
+        }
+      ],
+      "outro": [
+        {
+          "text": "A reliable development partner will answer these clearly and in writing. We include all five in every proposal, so you know exactly how your agent will behave, who can change it and how it will be supported after launch."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "steps",
+      "badge": "Process",
+      "h2": "Our AI Agent Development Process and Timeline",
+      "items": [
+        {
+          "title": "Discovery (3 to 5 days)",
+          "text": "We define the task, success measures, systems and risks."
+        },
+        {
+          "title": "Design (3 to 7 days)",
+          "text": "We plan tools, permissions, approval steps and test scenarios."
+        },
+        {
+          "title": "Build (2 to 5 weeks)",
+          "text": "We build the agent, tools and integrations in a safe test environment."
+        },
+        {
+          "title": "Testing (1 to 2 weeks)",
+          "text": "We run real scenarios, measure accuracy and refine instructions."
+        },
+        {
+          "title": "Pilot launch (1 to 2 weeks)",
+          "text": "The agent runs with close human review on live work."
+        },
+        {
+          "title": "Full launch and monitoring (ongoing)",
+          "text": "We widen its scope gradually and report monthly."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "paragraphs": [
+        {
+          "text": "A single focused agent is typically ready in 4 to 6 weeks. Multi-agent systems connected to several business tools usually take 8 to 10 weeks."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "h2": "How Much Does an AI Agent Cost?",
+      "paragraphs": [
+        {
+          "text": "How much does an AI agent cost? It depends on the number of tools and systems involved, the complexity of decisions, approval steps and expected usage. Costs include a one-time design and build fee, AI model usage charges that grow with volume, hosting, and optional monthly monitoring and improvement."
+        },
+        {
+          "text": "We provide a clear estimate after discovery, along with expected time savings, so you can compare the investment with the value it should deliver."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "h2": "AI Agent Case Study",
+      "paragraphs": [
+        {
+          "text": "Ask us for an AI agent case study relevant to your industry or use case. We share project details only with client approval, and we are happy to demonstrate example agents on a call."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "faq",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Which AI models do you use?",
+          "a": "We work with leading commercial models and open-source options, choosing based on accuracy, cost, speed, language needs and data requirements for each project."
+        },
+        {
+          "q": "Can an agent work in Malayalam or Arabic?",
+          "a": "Yes. Modern models handle Malayalam, Arabic, Hindi and English well. We test each language with real examples before launch."
+        },
+        {
+          "q": "Will the agent make decisions without us?",
+          "a": "Only the ones you allow. You decide which actions are automatic and which need approval, and you can change those limits at any time."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "links",
+      "h2": "Related Services",
+      "items": [
+        {
+          "label": "AI Automation Services",
+          "href": "/ai-automation-services-kochi/",
+          "text": "Our AI automation hub"
+        },
+        {
+          "label": "AI Chatbot Development",
+          "href": "/ai-chatbot-development-company-kochi/",
+          "text": "AI chatbots for websites and Instagram"
+        },
+        {
+          "label": "AI Voice Agent Development",
+          "href": "/ai-voice-agent-development-kochi/",
+          "text": "Voice agents that answer and make calls"
+        },
+        {
+          "label": "n8n Automation Services",
+          "href": "/n8n-automation-agency-kochi/",
+          "text": "n8n workflows, AI agents and self-hosting"
+        },
+        {
+          "label": "API Integration Services",
+          "href": "/api-integration-services-kochi/",
+          "text": "Secure API connections between your systems"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "cta",
+      "h2": "Talk to Teknoppy, Your AI Agent Development Company",
+      "paragraphs": [
+        {
+          "text": "Talk to Teknoppy about custom agents for your business. As an AI agent development company with an in-house team, we can take you from idea to a working, monitored agent. Kochi clients are welcome at our Thykoodam office, and international clients can work with us online."
+        },
+        {
+          "html": "Call or WhatsApp +91 6282249224, email sales@teknoppy.com, or <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">book a consultation</a> at teknoppy.com."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp Us",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "bg": "warm"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "AI Agent Development Company in Kochi: Custom AI Agents That Complete Real Work",
+      "serviceType": "AI Agent Development",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "Kochi",
+        "Kerala",
+        "India",
+        "UAE",
+        "Qatar"
+      ],
+      "url": "https://teknoppy.com/ai-agent-development-company-kochi/"
+    }
+  ],
+  "devNotes": {
+    "permalink": "/ai-agent-development-company-kochi/",
+    "heldPlaceholders": [],
+    "corrections": [
+      "Contact email sanal@teknoppy.com → sales@teknoppy.com (site canon)"
+    ],
+    "designLabels": "Badges, 'Related Services' heading, CTA button labels and hero stat labels are design chrome, not doc copy.",
+    "source": "Teknoppy_AI06_AI_Agent_Development.pdf",
+    "primaryKeyword": "ai agent development company",
+    "secondaryKeywords": [
+      "agentic ai development",
+      "custom ai agents for business",
+      "autonomous ai agents",
+      "ai agent development company kochi",
+      "ai agent developers kerala",
+      "ai agent development services india",
+      "multi-agent systems",
+      "ai agents with tool calling",
+      "ai research agent",
+      "ai customer service agent",
+      "ai operations agent",
+      "human-in-the-loop ai agents",
+      "ai agent security and permissions",
+      "ai agent vs chatbot",
+      "what can ai agents do for business",
+      "how much does an ai agent cost",
+      "are ai agents reliable",
+      "mcp server development",
+      "ai agent monitoring",
+      "ai agent case study"
+    ],
+    "imageAlt": [
+      "AI agent development company workflow diagram with tool calling",
+      "Human-in-the-loop approval screen for an AI agent action",
+      "AI agent monitoring dashboard showing runs and errors"
+    ],
+    "internalLinks": [
+      "/ai-automation-services-kochi/",
+      "/ai-chatbot-development-company-kochi/",
+      "/ai-voice-agent-development-kochi/",
+      "/n8n-automation-agency-kochi/",
+      "/api-integration-services-kochi/",
+      "/book-a-consultation/"
+    ],
+    "schemaNote": "Service (serviceType: AI Agent Development, areaServed: Kochi, Kerala, India, UAE, Qatar) + LocalBusiness + FAQPage + BreadcrumbList (Home › Services › AI Automation › AI Agent Development). LocalBusiness is emitted site-wide.",
+    "sourceNote": "Model Context Protocol: modelcontextprotocol.io (doc source note)."
+  }
+}

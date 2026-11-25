@@ -1,0 +1,520 @@
+{
+  "meta": {
+    "title": "ERPNext UAE E-Invoicing Compliance 2027 | Teknoppy",
+    "description": "ERPNext UAE e-invoicing readiness: required invoice fields, accredited service provider connection, data cleaning and testing before your 2027 go-live date."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "ERPNext Development",
+      "href": "/erp-development-company-kochi/"
+    },
+    {
+      "name": "ERPNext in GCC",
+      "href": "/erpnext-implementation-company-gcc/"
+    },
+    {
+      "name": "UAE E-Invoicing",
+      "href": "/erpnext-uae-e-invoicing/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "ERPNext in GCC",
+      "h1Lead": "ERPNext UAE",
+      "h1Accent": "E-Invoicing Compliance",
+      "body": [
+        {
+          "text": "ERPNext UAE e-invoicing readiness from Teknoppy prepares your ERPNext system for the UAE's mandatory e-invoicing regime, so every B2B and B2G invoice is sent in the right format, through an accredited service provider, before your deadline. We clean your data, add the required fields, connect ERPNext to your provider and test everything before your phase begins in 2027."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a free UAE e-invoicing readiness check",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Talk to our team on WhatsApp",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "2018",
+          "label": "Since"
+        },
+        {
+          "value": "120+",
+          "label": "Digital projects delivered"
+        },
+        {
+          "value": "4.9★",
+          "label": "From 60+ Google reviews"
+        }
+      ],
+      "trustline": "Since 2018 · 120+ digital projects delivered · 4.9★ from 60+ Google reviews · Support in Gulf Standard Time"
+    },
+    {
+      "type": "prose",
+      "badge": "The Mandate",
+      "h2": "What Is the UAE E-Invoicing Mandate?",
+      "paragraphs": [
+        {
+          "text": "Under UAE electronic invoicing, the UAE is replacing PDF and paper tax invoices with structured electronic invoices for most business-to-business and business-to-government sales. Invoices travel between accredited service providers (ASPs) on a Peppol-based network, and invoice data is reported to the Federal Tax Authority (FTA) at the same time. Large businesses must go live on 1 January 2027, and other VAT-registered businesses on 1 July 2027."
+        },
+        {
+          "html": "For ERPNext users, ERPNext e-invoicing UAE compliance means your system must produce invoice data in the UAE standard, send it to your ASP and record the result. Our UAE e-invoicing compliance work covers all three. For official guidance, see the UAE Ministry of Finance and the Federal Tax Authority."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "table",
+      "h2": "When Does Your Business Need to Comply?",
+      "headers": [
+        "Group",
+        "Appoint an ASP by",
+        "Go-live"
+      ],
+      "rows": [
+        [
+          "Revenue of AED 50 million or more",
+          "30 October 2026",
+          "1 January 2027"
+        ],
+        [
+          "Revenue below AED 50 million",
+          "31 March 2027",
+          "1 July 2027"
+        ],
+        [
+          "Government entities",
+          "31 March 2027",
+          "1 October 2027"
+        ]
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "If your business is in the first group, the ASP deadline has passed and go-live is weeks away. If you are in the second group, now is the right time to start. UAE e-invoicing 2027 projects that begin early have time for clean data, proper testing and staff training. An ERPNext UAE e-invoicing project typically takes 6–10 weeks from review to live sending."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "steps",
+      "badge": "Five Corners",
+      "h2": "How the UAE E-Invoicing Model Works",
+      "intro": "The UAE uses a five-corner model built on Peppol:",
+      "items": [
+        {
+          "title": "Corner 1",
+          "text": "Your ERPNext system creates the invoice."
+        },
+        {
+          "title": "Corner 2",
+          "text": "Your ASP checks it, converts it to the UAE format and sends it."
+        },
+        {
+          "title": "Corner 3",
+          "text": "The buyer's ASP receives it."
+        },
+        {
+          "title": "Corner 4",
+          "text": "The buyer's system receives the invoice."
+        },
+        {
+          "title": "Corner 5",
+          "text": "Invoice data is reported to the FTA."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "Peppol e-invoicing ERPNext setups handle corner 1 and the link to corner 2. The UAE format is based on the Peppol PINT AE specification, so ERPNext PINT AE data must be complete and correct before your ASP can send it."
+        },
+        {
+          "text": "Because both sides use the same network, buyers receive invoices straight into their own systems, which speeds up approvals and payment. For your finance team, that usually means fewer calls asking for a copy of an invoice and fewer disputes over what was billed."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "table",
+      "h2": "How Does ERPNext Connect to the UAE System?",
+      "intro": "ERPNext does not send invoices to the FTA directly. Instead, ERPNext ASP integration connects your invoices to your chosen accredited provider through its API. ERPNext Peppol integration then follows four steps:",
+      "headers": [
+        "Step",
+        "What happens in ERPNext"
+      ],
+      "rows": [
+        [
+          "1. Invoice created",
+          "Sales invoice submitted with all required fields"
+        ],
+        [
+          "2. Data sent",
+          "Structured invoice data sent to your ASP automatically"
+        ],
+        [
+          "3. Validation",
+          "The ASP checks the data and returns accepted or rejected"
+        ],
+        [
+          "4. Status saved",
+          "The result is saved on the invoice, with errors flagged"
+        ]
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "ERPNext Peppol UAE connections work for invoices and credit notes alike. ERPNext ASP UAE setup includes credentials, test and live endpoints and a log of every message, so you can prove what was sent and when. This UAE e-invoicing integration keeps your team working in ERPNext as usual. Our ERPNext FTA e-invoicing setups follow FTA and Ministry of Finance guidance as it is updated."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "table",
+      "badge": "Our Process",
+      "h2": "Our Readiness Process",
+      "headers": [
+        "Step",
+        "What happens",
+        "Typical time"
+      ],
+      "rows": [
+        [
+          "1. Readiness review",
+          "ERPNext version, VAT setup, invoice types and data quality",
+          "3–5 days"
+        ],
+        [
+          "2. ASP choice",
+          "Compare providers and appoint one before your deadline",
+          "1–2 weeks"
+        ],
+        [
+          "3. Data cleaning",
+          "Customer TRNs, addresses, item codes and tax categories",
+          "1–2 weeks"
+        ],
+        [
+          "4. Field setup",
+          "Add and map every required invoice field",
+          "1–2 weeks"
+        ],
+        [
+          "5. Connection",
+          "Link ERPNext to the ASP's API, test and live",
+          "1–2 weeks"
+        ],
+        [
+          "6. Testing",
+          "Invoices, credit notes, exports and edge cases",
+          "1–2 weeks"
+        ],
+        [
+          "7. Go-live",
+          "Switch on live sending and watch results",
+          "30 days"
+        ]
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "This UAE e-invoicing setup keeps billing running throughout. During testing, your team keeps issuing normal invoices while we send copies to the provider's test environment, so nothing changes for customers until the live switch. Our UAE e-invoicing implementation includes written documentation of every field and mapping. Each UAE e-invoicing project ends with a sign-off from your finance team."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "How to Compare Service Providers",
+      "paragraphs": [
+        {
+          "text": "Every business must appoint its own accredited service provider, and the choice affects cost, reliability and support for years. When comparing providers, check their fees per invoice or per month, how their API handles errors and retries, whether they support credit notes and exports fully, and how quickly they respond in UAE hours. ERPNext e-invoice UAE connections are similar across providers, so we stay neutral and help you compare. A good ERPNext UAE e-invoicing partner should explain these trade-offs before you sign with anyone."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "h2": "What Your Invoices Must Contain",
+      "paragraphs": [
+        {
+          "text": "UAE e-invoices carry more structured data than a typical PDF invoice. Common gaps we fix include missing buyer TRNs, incomplete addresses, unclear item descriptions, missing tax category codes and inconsistent units of measure. Fixing these before go-live is the single biggest factor in avoiding rejected invoices, which is why every ERPNext UAE e-invoicing project we run starts here. UAE e-invoicing readiness therefore starts with your customer and item masters, not with the connection itself."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "Special Cases We Set Up",
+      "paragraphs": [
+        {
+          "text": "Some invoices need extra care. Sales to customers outside the UAE, sales to government entities, invoices between free zone and mainland companies, and deemed supplies each carry different data. Self-billing arrangements and invoices with mixed tax rates need their own checks too. We list every invoice type your business issues, then test each one with your provider. Any ERPNext UAE e-invoicing project that skips these cases risks rejections in the first month."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "h2": "Record Keeping After Go-Live",
+      "paragraphs": [
+        {
+          "text": "Every invoice sent, every response from your provider and every correction stays linked in ERPNext, with timestamps. Your accountant and the FTA can trace any invoice from creation to acceptance. Good ERPNext e-invoicing compliance UAE practice also means reviewing rejected invoices weekly in the first months, which our ERPNext UAE e-invoicing support includes."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "bullets",
+      "h2": "What Happens If You Miss Your Deadline?",
+      "intro": "Cabinet Decision No. 106 of 2025 sets administrative penalties once your phase begins, including:",
+      "items": [
+        {
+          "text": "AED 5,000 per month for not implementing e-invoicing or not appointing an ASP on time"
+        },
+        {
+          "text": "AED 100 per invoice or credit note not issued electronically, capped at AED 5,000 per month"
+        },
+        {
+          "text": "AED 1,000 per day for not notifying the FTA of a system failure, or not updating your ASP with changed company details"
+        }
+      ],
+      "outro": [
+        {
+          "text": "These amounts add up quickly for busy businesses, which is why starting your ERPNext UAE e-invoicing project early costs far less than being late."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "h2": "Who Needs to Prepare?",
+      "paragraphs": [
+        {
+          "text": "UAE e-invoicing for SMEs follows the same rules as for large companies, just six months later. Free zone companies, mainland companies, exporters and businesses selling to government entities all need to plan. ERPNext e-invoicing Dubai and ERPNext e-invoicing Abu Dhabi projects follow the same process, whatever the emirate. The UAE e-invoicing mandate applies to VAT-registered businesses across all seven emirates. Our UAE e-invoicing phases planning makes sure each group company starts on the right date. Groups often have one company above the AED 50 million line and others below it, so each entity may go live six months apart. We plan both dates from the start, so the second launch reuses everything built for the first."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "bullets",
+      "badge": "Why Teknoppy",
+      "h2": "Choosing an ERPNext UAE E-Invoicing Partner",
+      "items": [
+        {
+          "html": "<strong>Data-first approach.</strong> Masters are cleaned before connection."
+        },
+        {
+          "html": "<strong>Provider-neutral advice.</strong> We help you compare ASPs, not sell one."
+        },
+        {
+          "html": "<strong>Support in UAE hours.</strong> We work in Gulf Standard Time."
+        }
+      ],
+      "outro": [
+        {
+          "text": "As a UAE e-invoicing partner and UAE e-invoicing consultant, we combine ERPNext setup with UAE rules. Our UAE e-invoicing solution is built inside the ERPNext system you already use, so staff do not learn a new tool. UAE e-invoicing experts on our team track every update from the Ministry of Finance, and our UAE e-invoicing support continues after go-live, covering rejected invoices and rule changes."
+        },
+        {
+          "html": "For full ERPNext setup in the UAE, see <a href=\"/erpnext-implementation-company-kochi/\" class=\"text-primary font-semibold hover:underline\">ERPNext implementation company in UAE</a>."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "faq",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "When must my business start?",
+          "a": "Businesses with revenue of AED 50 million or more go live on 1 January 2027. Others go live on 1 July 2027, and must appoint an accredited service provider by 31 March 2027. Government entities follow on 1 October 2027."
+        },
+        {
+          "q": "Does ERPNext support UAE e-invoicing?",
+          "a": "ERPNext can produce the structured invoice data the UAE system needs and connect to an accredited service provider through its API. We add the required fields, clean your data and test the connection before go-live."
+        },
+        {
+          "q": "Do we need a service provider?",
+          "a": "Yes. UAE e-invoices must be sent through an accredited service provider. ERPNext connects to the provider you appoint, and we help you compare options."
+        },
+        {
+          "q": "What happens if we are late?",
+          "a": "Penalties include AED 5,000 per month for not implementing e-invoicing or not appointing a provider on time, and AED 100 per invoice not issued electronically, capped at AED 5,000 per month."
+        },
+        {
+          "q": "Does this cover credit notes?",
+          "a": "Yes. Credit notes follow the same e-invoicing rules as invoices. We set up and test credit notes, partial returns and corrections before go-live."
+        },
+        {
+          "q": "Is this different from ZATCA in Saudi Arabia?",
+          "a": "Yes. Saudi Arabia's ZATCA uses direct clearance with the tax authority, while the UAE uses accredited service providers on a Peppol network. Our uae e-invoicing erpnext setups follow UAE rules, and our ERPNext ZATCA e-invoicing service covers Saudi requirements. Many people search for \"UAE einvoicing\" help without knowing the difference, so we explain it in the first call."
+        },
+        {
+          "q": "How long does it take?",
+          "a": "Most ERPNext users need 6–10 weeks, depending on data quality and the number of companies. Starting three to six months before your go-live date leaves time for proper testing. Every UAE e-invoicing training session for your team is included."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "links",
+      "h2": "Related Services",
+      "items": [
+        {
+          "label": "ERPNext ZATCA E-Invoicing (Saudi Arabia)",
+          "href": "/erpnext-zatca-e-invoicing-saudi-arabia/",
+          "text": "Saudi ZATCA Phase 2 integration for ERPNext"
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "cta",
+      "h2": "Book a Free UAE E-Invoicing Readiness Check",
+      "paragraphs": [
+        {
+          "text": "We review your ERPNext version, VAT setup and customer data, then tell you what needs fixing before your go-live date. There is no obligation."
+        },
+        {
+          "text": "Teknoppy's ERPNext UAE e-invoicing service gives UAE businesses a tested, documented route to compliance inside the system they already use."
+        },
+        {
+          "html": "<strong>Teknoppy</strong><br>Second Floor, Kaithakal Building, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam, Kochi, Kerala 682019<br>Phone +91 6282249224 · Support in Gulf Standard Time"
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a free UAE e-invoicing readiness check",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp +91 6282249224",
+          "href": "https://wa.me/916282249224"
+        },
+        {
+          "label": "sales@teknoppy.com",
+          "href": "mailto:sales@teknoppy.com"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "byline",
+      "bg": "white",
+      "text": "Written by: Sanal Edison, Digital Strategist, Teknoppy. Last reviewed: 12 November 2026 · Dates and penalties checked against published guidance; review quarterly."
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "ERPNext UAE E-Invoicing Compliance",
+      "serviceType": "ERPNext UAE e-invoicing readiness",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "United Arab Emirates"
+      ],
+      "url": "https://teknoppy.com/erpnext-uae-e-invoicing/"
+    }
+  ],
+  "devNotes": {
+    "source": "21-ERPNext-UAE-E-Invoicing-Page.pdf",
+    "primaryKeyword": "erpnext uae e-invoicing",
+    "permalink": "/erpnext-uae-e-invoicing/",
+    "secondaryKeywords": [
+      "uae e-invoicing erpnext",
+      "erpnext peppol uae",
+      "erpnext fta e-invoicing",
+      "erpnext e-invoicing uae",
+      "erpnext e-invoicing dubai",
+      "erpnext e-invoicing abu dhabi",
+      "erpnext e-invoicing compliance uae",
+      "uae e-invoicing compliance",
+      "erpnext asp integration",
+      "erpnext asp uae",
+      "erpnext peppol integration",
+      "peppol e-invoicing erpnext",
+      "uae e-invoicing readiness",
+      "uae e-invoicing implementation",
+      "uae e-invoicing partner",
+      "uae e-invoicing consultant",
+      "uae e-invoicing solution",
+      "uae e-invoicing integration",
+      "uae e-invoicing 2027",
+      "uae e-invoicing phases",
+      "uae e-invoicing for smes",
+      "uae e-invoicing setup",
+      "erpnext e-invoice uae",
+      "uae electronic invoicing",
+      "uae einvoicing",
+      "uae e-invoicing mandate",
+      "uae e-invoicing support",
+      "erpnext pint ae",
+      "uae e-invoicing project",
+      "uae e-invoicing experts"
+    ],
+    "parentPage": "ERPNext in UAE (doc breadcrumb) — no UAE ERPNext page in this batch; crumb dropped (nearest hub is ERPNext in GCC, already the previous crumb)",
+    "imageAlt": [
+      "ERPNext sales invoice prepared for UAE e-invoicing with TRN and structured data · File: erpnext-uae-einvoice-ready-invoice.webp",
+      "Five-corner flow from ERPNext through two accredited service providers to the buyer and the FTA · File: uae-einvoicing-five-corner-erpnext.webp"
+    ],
+    "internalLinks": [
+      "/erpnext-implementation-company-kochi/",
+      "/erpnext-zatca-e-invoicing-saudi-arabia/",
+      "/book-a-consultation/"
+    ],
+    "schemaNote": "Doc schema: Service (serviceType \"ERPNext UAE e-invoicing readiness\", areaServed United Arab Emirates) + BreadcrumbList (Home › Services › ERPNext Development › ERPNext in GCC › ERPNext in UAE › UAE E-Invoicing) + FAQPage + WebPage. FAQPage/BreadcrumbList auto-generated; WebPage not emitted.",
+    "heldPlaceholders": [
+      "A named lead. Your project is led by [Lead Frappe Developer name] , with [X] years on ERPNext.",
+      "Recent E-Invoicing Project (heading) — [Client name] , [industry] , [emirate] : prepared ERPNext for UAE e-invoicing in [X] weeks, with [number] customers' data cleaned and [ASP name] connected. Result: [one measurable outcome] . [Read the case study] .",
+      "Phone +91 6282249224 · UAE contact: [GCC phone or WhatsApp number] · … (the \"UAE contact\" item dropped from the contact line)",
+      "Technical review: [Lead Frappe Developer name] , ERPNext and Frappe developer · [LinkedIn] (whole line held)"
+    ],
+    "detailsNeeded": [
+      "Shared: lead Frappe developer — name · photo · years on ERPNext · LinkedIn",
+      "Shared: GCC phone or WhatsApp number — shown on every GCC page",
+      "Shared: languages your team speaks — GCC page says English, Malayalam and Hindi; confirm",
+      "Shared: Arabic print formats delivered? — every GCC page promises bilingual documents",
+      "Shared: Gulf travel policy — when you visit on site, and who pays travel",
+      "E-invoicing readiness projects delivered — number and ASPs connected",
+      "ASPs you can connect to — names of accredited providers you have tested",
+      "Confirm timing — 6–10 weeks from review to live sending",
+      "Approve permalink change — /erpnext-uae-e-invoicing/ instead of /erpnext-e-invoicing-uae/",
+      "Screenshots — invoice with UAE fields · five-corner diagram"
+    ],
+    "corrections": [
+      "Contact email: doc CTA already used sales@teknoppy.com; kept (site canon).",
+      "pdftotext spacing artefacts fixed (\"E-Invoicing ?\" → \"E-Invoicing?\", \"] .\" → \"].\").",
+      "\"[LinkedIn]\" markers after the byline names dropped (no URL supplied)."
+    ],
+    "linkNote": "[ERPNext implementation company in UAE] → /erpnext-implementation-company-kochi/ (no UAE ERPNext implementation page in this batch; nearest live ERPNext implementation page). [UAE Ministry of Finance] and [Federal Tax Authority] (external) kept as plain text. FAQ answer marker [ERPNext ZATCA e-invoicing] rendered as plain text (FAQ answers are plain text); that target added as a \"Related Services\" link card instead. Breadcrumb crumb \"ERPNext in UAE\" (/erpnext-implementation-company-uae/, no page) dropped. Hero/CTA \"Book a free UAE e-invoicing readiness check\" → /book-a-consultation/.",
+    "designLabels": "Badges, \"Related Services\" heading and link card text, step titles (\"Corner 1\"…), hero stat labels and CTA button labels are design chrome."
+  }
+}

@@ -1,0 +1,433 @@
+{
+  "meta": {
+    "title": "n8n Automation Agency in Kochi | Teknoppy",
+    "description": "Teknoppy is an n8n automation agency in Kochi: n8n workflow development, AI agent workflows, self-hosted n8n setup, Zapier migrations and maintenance."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "AI Automation",
+      "href": "/ai-automation-services-kochi/"
+    },
+    {
+      "name": "n8n Automation Services",
+      "href": "/n8n-automation-agency-kochi/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "AI Automation",
+      "h1Lead": "n8n Automation Agency in Kochi:",
+      "h1Accent": "n8n Workflows, AI Agents and Self-Hosting",
+      "body": [
+        {
+          "html": "Teknoppy is an n8n automation agency that designs, builds, hosts and maintains n8n workflows for businesses that want powerful automation without per-task pricing limits. From simple integrations to <a href=\"/ai-agent-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">AI agent</a> workflows and self-hosted servers, our team handles the full setup so your automations run reliably."
+        },
+        {
+          "text": "Our in-house team works from Thykoodam, Kochi, for clients in Kerala, across India and overseas."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp +91 6282249224",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "2018",
+          "label": "Since"
+        },
+        {
+          "value": "120+",
+          "label": "Websites delivered"
+        },
+        {
+          "value": "4.9/5",
+          "label": "Google, 60+ reviews"
+        },
+        {
+          "value": "12",
+          "label": "In-house staff"
+        }
+      ],
+      "trustline": "Reviewed by Sanal Edison, Founder, Teknoppy. Last updated: 17 November 2026."
+    },
+    {
+      "type": "bullets",
+      "bg": "white",
+      "badge": "At a Glance",
+      "h2": "Quick facts",
+      "items": [
+        {
+          "text": "Teknoppy: web, software and automation studio in Thykoodam, Kochi, since 2018"
+        },
+        {
+          "text": "n8n work: workflow builds, self-hosting, AI workflows, custom nodes, migrations and maintenance"
+        },
+        {
+          "text": "120+ websites delivered; 4.9/5 on Google from 60+ reviews"
+        },
+        {
+          "text": "12 in-house staff; no outsourced work"
+        },
+        {
+          "text": "Typical timeline: 1 to 6 weeks"
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "cream",
+      "h2": "What Is n8n?",
+      "paragraphs": [
+        {
+          "text": "What is n8n? It is a workflow automation platform that connects apps, databases and APIs through a visual editor, with the option to add code where needed. Each workflow is made of nodes, small building blocks that trigger, fetch, transform or send data. n8n offers hundreds of ready-made integrations and can connect to almost any system with an API."
+        },
+        {
+          "text": "What sets n8n apart is flexibility. You can run it on n8n's cloud or host it yourself, write JavaScript or Python inside workflows, and build AI agents directly on the canvas."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "Is n8n Free?",
+      "paragraphs": [
+        {
+          "text": "Is n8n free? The self-hosted Community Edition is free to use for your own internal business processes under n8n's fair-code licence, though you pay for the server it runs on. n8n Cloud and the paid business and enterprise plans add hosting, collaboration and advanced features for a monthly fee."
+        },
+        {
+          "text": "How much does n8n cost in practice? For self-hosting, mainly server costs and setup or maintenance time. For n8n Cloud, a monthly plan based on executions and features. We help you compare both options against your expected workflow volume before you decide."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "soft",
+      "h2": "n8n Cloud vs Self-Hosted",
+      "paragraphs": [
+        {
+          "text": "n8n cloud vs self-hosted depends on your priorities. n8n Cloud is fastest to start and needs no server management. Self-hosting gives you full control over data location, unlimited workflows within your server's capacity and lower costs at high volumes, but someone must manage updates, backups and security."
+        },
+        {
+          "text": "Our self-hosted n8n setup covers server selection, installation with Docker, a secure domain with SSL, database configuration, backups, monitoring and updates. We also offer n8n server hosting and management for clients who want self-hosting benefits without handling the server themselves."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "badge": "What We Build",
+      "h2": "What Our n8n Automation Agency Builds",
+      "layout": "list",
+      "items": [
+        {
+          "title": "n8n Workflow Development",
+          "html": "n8n workflow development is the core of our work. We build workflows that sync data between your CRM, website, accounting, email, WhatsApp and spreadsheets, handle enquiries, generate reports and automate approvals, with error handling built in."
+        },
+        {
+          "title": "n8n AI Agent Workflows",
+          "text": "n8n AI agent workflows use n8n's built-in AI nodes to read emails, classify requests, summarise documents, answer questions from your knowledge base and decide which steps to run next. Our n8n with OpenAI builds connect GPT models, and we also work with other model providers, including Anthropic and Google, depending on your needs."
+        },
+        {
+          "title": "n8n Integration Services",
+          "text": "Our n8n integration services connect tools that lack ready-made nodes, using HTTP requests and APIs. This is useful for Indian software such as Tally, local payment gateways and industry-specific platforms."
+        },
+        {
+          "title": "n8n Webhook Automation",
+          "text": "n8n webhook automation lets other systems trigger workflows instantly, for example when a form is submitted, a payment succeeds or an order is placed. We secure webhooks with authentication and validation so only genuine requests run."
+        },
+        {
+          "title": "n8n Custom Nodes",
+          "text": "n8n custom nodes package repeated logic or private integrations into reusable building blocks. Custom nodes keep workflows tidy and make it easier for your team to build on them later."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "cream",
+      "h2": "n8n vs Zapier",
+      "paragraphs": [
+        {
+          "html": "n8n vs Zapier is a common comparison. <a href=\"/zapier-make-automation-services-kochi/\" class=\"text-primary font-semibold hover:underline\">Zapier</a> is very easy to use and has a huge app library, but costs grow with each task, and complex logic can become expensive. n8n handles complex branching, loops, code and AI agents more freely, and self-hosting removes per-task fees. Zapier suits small, simple automations, while n8n suits growing volumes, complex logic and data control."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "Move Workflows From Zapier to n8n",
+      "paragraphs": [
+        {
+          "text": "Many clients ask us to move workflows from Zapier to n8n when task bills rise. We audit existing Zaps, rebuild them in n8n, run both side by side during testing and switch over once results match. Migrations of ten to twenty typical workflows usually take two to four weeks."
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "bg": "soft",
+      "h2": "n8n Security Best Practices",
+      "intro": "We follow n8n security best practices on every project:",
+      "items": [
+        {
+          "text": "Credentials stored in n8n's encrypted credential store, never inside workflow nodes"
+        },
+        {
+          "text": "User access limited by role, with two-factor login enabled"
+        },
+        {
+          "text": "Self-hosted servers behind firewalls, with SSL and regular updates"
+        },
+        {
+          "text": "Webhooks protected with authentication"
+        },
+        {
+          "text": "Regular backups of workflows and the database"
+        },
+        {
+          "text": "Execution logs reviewed for errors and unusual activity"
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "n8n Workflow Maintenance",
+      "paragraphs": [
+        {
+          "text": "n8n workflow maintenance keeps automations working as connected apps change their APIs, credentials expire and business needs evolve. Our support plans include monitoring, error fixes, n8n version updates, server care and small improvements, starting from Rs. 3,000 per month."
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "bg": "cream",
+      "h2": "When to Hire an n8n Automation Agency",
+      "intro": "n8n is approachable, and many teams build their first workflows themselves. Bringing in an n8n automation agency makes sense when:",
+      "items": [
+        {
+          "text": "Workflows touch important data, such as payments, customer records or invoices"
+        },
+        {
+          "text": "You need self-hosting but have no one to manage servers, backups and updates"
+        },
+        {
+          "text": "Automations keep failing silently and nobody knows why"
+        },
+        {
+          "text": "You want AI agent workflows but lack experience with prompts, models and testing"
+        },
+        {
+          "text": "Your team has outgrown simple tools and needs complex logic, loops or code"
+        }
+      ],
+      "outro": [
+        {
+          "text": "A good n8n automation agency also leaves you independent. We document what we build, use clear naming and offer training, so you are never locked in to us."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "Common n8n Use Cases",
+      "paragraphs": [
+        {
+          "html": "Typical workflows we build include website enquiries sent to a CRM with an instant WhatsApp reply, daily sales summaries from accounting software, invoice details extracted by AI and posted to a sheet, new orders pushed to delivery partners, and support emails classified and routed automatically. Each starts small and grows as your team gains confidence. We also add simple dashboards or summary emails, so managers can see how many tasks each workflow completed and how much manual time it saved every month."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "soft",
+      "badge": "Why Teknoppy",
+      "h2": "Why Choose Teknoppy as Your n8n Automation Agency?",
+      "columns": 3,
+      "items": [
+        {
+          "title": "Developers, Not Just Builders",
+          "text": "Our team writes code every day, so we are comfortable with the parts of n8n that need JavaScript, APIs, databases and servers. That means fewer workarounds and more reliable workflows."
+        },
+        {
+          "title": "Honest Platform Advice",
+          "text": "We will tell you if n8n is not the right fit. Some businesses are better served by a simpler tool or a small custom script."
+        },
+        {
+          "title": "Local n8n Expert Team",
+          "text": "Our n8n automation agency Kochi team works in-house at Thykoodam, and we support clients looking for an n8n expert India-wide or an n8n developer for overseas projects. You can also hire us as an n8n consultant to review existing workflows or train your team. Vivek Menon, CTO of Evosyz, says Teknoppy \"created an appealing website that represents our brand perfectly.\""
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "bg": "white",
+      "badge": "How We Work",
+      "h2": "Our n8n Process and Timeline",
+      "items": [
+        {
+          "title": "Discovery (2 to 4 days)",
+          "text": "We review your processes, tools, volumes and hosting needs."
+        },
+        {
+          "title": "Plan (1 to 2 days)",
+          "text": "We agree on workflows, hosting choice, timeline and costs."
+        },
+        {
+          "title": "Setup (1 to 3 days)",
+          "text": "We configure n8n Cloud or a self-hosted server."
+        },
+        {
+          "title": "Build (1 to 4 weeks)",
+          "text": "We build and document workflows in a test environment."
+        },
+        {
+          "title": "Testing (3 to 5 days)",
+          "text": "We test with real data and edge cases."
+        },
+        {
+          "title": "Launch and handover (1 to 2 days)",
+          "text": "We go live, train your team and share documentation."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "paragraphs": [
+        {
+          "text": "Simple projects take one to two weeks. Larger builds with AI workflows and self-hosting take four to six weeks."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "cream",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Can my team edit the workflows later?",
+          "a": "Yes. n8n's visual editor is easy to follow, and we document every workflow and offer training so your team can make small changes confidently."
+        },
+        {
+          "q": "Where should we host n8n?",
+          "a": "We usually recommend a reputable cloud provider with a data centre close to you. For Indian clients, a Mumbai or Hyderabad region keeps data in India and speeds up responses."
+        },
+        {
+          "q": "What if a workflow fails at night?",
+          "a": "Error workflows send alerts by email or WhatsApp, and failed executions can be retried once the issue is fixed."
+        },
+        {
+          "q": "Can n8n connect to our older software?",
+          "a": "Often, yes. If the software has an API, database access or can export files, n8n can usually work with it. For older systems without these options, we look at workarounds such as scheduled exports, email parsing or a small custom connector, and explain the trade-offs before building."
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "soft",
+      "h2": "Related Services",
+      "items": [
+        {
+          "label": "AI Automation Services",
+          "href": "/ai-automation-services-kochi/",
+          "text": "Our AI automation hub"
+        },
+        {
+          "label": "AI Workflow Automation",
+          "href": "/ai-workflow-automation-services-kochi/",
+          "text": "Tool-neutral workflow automation"
+        },
+        {
+          "label": "Zapier & Make Automation",
+          "href": "/zapier-make-automation-services-kochi/",
+          "text": "Zapier and Make builds and fixes"
+        },
+        {
+          "label": "AI Agent Development",
+          "href": "/ai-agent-development-company-kochi/",
+          "text": "Custom AI agents for business"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "white",
+      "h2": "Work With Teknoppy's n8n Automation Agency",
+      "paragraphs": [
+        {
+          "text": "Talk to Teknoppy, the n8n automation agency with an in-house development team in Kochi. Tell us which tasks you want to automate and whether you prefer cloud or self-hosting, and we will reply with a clear plan, timeline and quote. International clients can work with us entirely online."
+        },
+        {
+          "html": "Call or WhatsApp +91 6282249224, email sales@teknoppy.com, or <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">book a consultation</a> at teknoppy.com."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp Us",
+          "href": "https://wa.me/916282249224"
+        }
+      ]
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "n8n Automation Agency in Kochi: n8n Workflows, AI Agents and Self-Hosting",
+      "serviceType": "n8n Automation Services",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "Kochi",
+        "Kerala",
+        "India",
+        "UAE",
+        "Qatar"
+      ],
+      "url": "https://teknoppy.com/n8n-automation-agency-kochi/"
+    }
+  ],
+  "devNotes": {
+    "source": "Teknoppy_AI08_n8n_Automation_Services.pdf (Drive folder 1Bjl_uhdxNRPP1BRYEc4D3272ePCfRnK8)",
+    "primaryKeyword": "n8n automation agency",
+    "permalink": "/n8n-automation-agency-kochi/",
+    "imageAlt": [
+      "n8n automation agency workflow canvas with AI agent nodes",
+      "Self-hosted n8n server setup with Docker",
+      "n8n error workflow sending alerts"
+    ],
+    "internalLinks": [
+      "/ai-automation-services-kochi/",
+      "/zapier-make-automation-services-kochi/",
+      "/ai-workflow-automation-services-kochi/",
+      "/ai-agent-development-company-kochi/",
+      "/book-a-consultation/"
+    ],
+    "schemaNote": "Service + LocalBusiness + FAQPage + BreadcrumbList (Home › Services › AI Automation › n8n Automation Services). LocalBusiness is emitted site-wide by FooterCTA.",
+    "heldPlaceholders": [],
+    "corrections": [
+      "Contact email sanal@teknoppy.com → sales@teknoppy.com (site canon)"
+    ],
+    "designLabels": "Badges, 'Related Services' heading, CTA button labels and hero stat labels are design chrome, not doc copy."
+  }
+}

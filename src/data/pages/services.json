@@ -93,7 +93,481 @@
       "h2": "Why Teknoppy",
       "paragraphs": [
         {
-          "html": "Design, development, and SEO sit inside one team, so nothing gets lost in handoffs between vendors. We work with businesses across Kerala and <a href=\"/web-design-company-for-gcc-businesses/\" class=\"text-primary font-semibold hover:underline\">the GCC</a>, and every project starts with research: competitors, keywords, and what your audience is actually searching for. <a href=\"/about-us/\" class=\"text-primary font-semibold hover:underline\">More about Teknoppy →</a> · <a href=\"/sanal-edison-digital-strategist/\" class=\"text-primary font-semibold hover:underline\">Meet our founder →</a> · <a href=\"/certifications/\" class=\"text-primary font-semibold hover:underline\">Certifications &amp; client reviews →</a>"
+          "html": "Design, development, and SEO sit inside one team, so nothing gets lost in handoffs between vendors. We work with businesses across Kerala and <a href=\"/web-design-company-for-gcc-businesses/\" class=\"text-primary font-semibold hover:underline\">the GCC</a>, and every project starts with research: competitors, keywords, and what your audience is actually searching for. <a href=\"/about-us/\" class=\"block sm:inline mt-2 text-primary font-semibold hover:underline\">More about Teknoppy&nbsp;→</a><span class=\"hidden sm:inline\"> · </span><a href=\"/sanal-edison-digital-strategist/\" class=\"block sm:inline mt-2 text-primary font-semibold hover:underline\">Meet our founder&nbsp;→</a><span class=\"hidden sm:inline\"> · </span><a href=\"/certifications/\" class=\"block sm:inline mt-2 text-primary font-semibold hover:underline\">Certifications &amp; client reviews&nbsp;→</a>"
+        }
+      ]
+    },
+    {
+      "type": "linkGroups",
+      "groups": [
+        {
+          "id": "nov26-ai",
+          "h2": "AI Automation",
+          "items": [
+            {
+              "title": "AI Automation",
+              "text": "AI automation services Kochi businesses trust: chatbots, WhatsApp, workflows, AI agents and document automation by Teknoppy's in-house team. Get a plan today.",
+              "href": "/ai-automation-services-kochi/"
+            },
+            {
+              "title": "AI Chatbot Development",
+              "text": "Teknoppy is an AI chatbot development company Kochi businesses hire for website, Instagram and Malayalam AI chatbots that answer and capture leads. Get a quote.",
+              "href": "/ai-chatbot-development-company-kochi/"
+            },
+            {
+              "title": "WhatsApp AI Automation",
+              "text": "WhatsApp automation services by Teknoppy, Kochi: official API setup, AI chatbots, auto replies, order updates, payment reminders, lead follow-up. Get a quote.",
+              "href": "/whatsapp-automation-services-kochi/"
+            },
+            {
+              "title": "AI Workflow Automation",
+              "text": "AI workflow automation services by Teknoppy, Kochi: automate data entry, approvals, email triage, reports and HR onboarding with reliable, monitored workflows.",
+              "href": "/ai-workflow-automation-services-kochi/"
+            },
+            {
+              "title": "AI Agent Development",
+              "text": "Teknoppy is an AI agent development company in Kochi building custom AI agents with tool calling, MCP servers, approvals and monitoring. Book a consultation.",
+              "href": "/ai-agent-development-company-kochi/"
+            },
+            {
+              "title": "AI Voice Agent Development",
+              "text": "AI voice agent development by Teknoppy, Kochi: AI receptionists and calling agents in Malayalam, English and Arabic that book, answer and log every call.",
+              "href": "/ai-voice-agent-development-kochi/"
+            },
+            {
+              "title": "n8n Automation Services",
+              "text": "Teknoppy is an n8n automation agency in Kochi: n8n workflow development, AI agent workflows, self-hosted n8n setup, Zapier migrations and maintenance.",
+              "href": "/n8n-automation-agency-kochi/"
+            },
+            {
+              "title": "Zapier & Make Automation",
+              "text": "Zapier automation services by Teknoppy, Kochi: Zapier and Make.com workflow setup, integrations, AI steps, broken Zap fixes, cost reviews and support.",
+              "href": "/zapier-make-automation-services-kochi/"
+            },
+            {
+              "title": "AI Sales Automation",
+              "text": "AI sales automation by Teknoppy, Kochi: lead capture, instant follow-up, AI lead scoring, Zoho and HubSpot CRM automation and pipeline reports for sales teams.",
+              "href": "/ai-sales-automation-services-kochi/"
+            },
+            {
+              "title": "AI Document Processing",
+              "text": "AI document processing by Teknoppy, Kochi: extract data from invoices, POs, receipts, contracts and KYC files into Tally, Zoho or your ERP, with human review.",
+              "href": "/ai-document-processing-services-kochi/"
+            },
+            {
+              "title": "AI Integration Services",
+              "text": "AI integration services by Teknoppy, Kochi: add ChatGPT, Claude and Gemini features to your ERP, CRM, website or app securely, without rebuilding software.",
+              "href": "/ai-integration-services-kochi/"
+            },
+            {
+              "title": "AI Automation for Healthcare",
+              "text": "AI automation for healthcare by Teknoppy, Kochi: appointments, patient reminders, report delivery, billing and insurance workflows for Kerala hospitals.",
+              "href": "/ai-automation-for-healthcare-kerala/"
+            },
+            {
+              "title": "AI Automation for Real Estate",
+              "text": "AI automation for real estate by Teknoppy, Kochi: instant lead replies, chatbots, WhatsApp follow-up, site visit booking and CRM workflows for builders.",
+              "href": "/ai-automation-for-real-estate-kerala/"
+            },
+            {
+              "title": "AI Automation UAE / Dubai",
+              "text": "Teknoppy is an AI automation company Dubai businesses hire remotely for Arabic and English chatbots, WhatsApp automation, workflows and AI agents in the UAE.",
+              "href": "/ai-automation-company-dubai/"
+            },
+            {
+              "title": "AI SEO / GEO",
+              "text": "Generative engine optimization services by Teknoppy, Kochi: get your brand cited in ChatGPT, Gemini, Perplexity and Google AI Overviews with GEO and AEO.",
+              "href": "/generative-engine-optimization-services-kerala/"
+            },
+            {
+              "title": "Free AI Automation Audit",
+              "text": "Book a free AI automation audit from Teknoppy, Kochi: process review, ROI estimate and a written AI roadmap for your business, with no obligation to buy.",
+              "href": "/free-ai-automation-audit-kerala/"
+            }
+          ]
+        },
+        {
+          "id": "nov26-erp",
+          "h2": "ERPNext",
+          "items": [
+            {
+              "title": "ERPNext Implementation",
+              "text": "ERPNext implementation company Kochi for module setup, data import, user roles, training and go-live, planned in phases so daily work keeps running.",
+              "href": "/erpnext-implementation-company-kochi/"
+            },
+            {
+              "title": "ERPNext Customization",
+              "text": "ERPNext customization company Kochi for custom fields, print formats, approval workflows, reports and modules, built upgrade-safe for Kerala and GCC firms.",
+              "href": "/erpnext-customization-company-kochi/"
+            },
+            {
+              "title": "Frappe Development",
+              "text": "Frappe development company Kochi building custom Frappe apps, modules, portals and APIs on the framework behind ERPNext. You own the code. Free scoping call.",
+              "href": "/frappe-development-company-kochi/"
+            },
+            {
+              "title": "ERPNext Integration",
+              "text": "ERPNext integration services Kochi: connect ERPNext to WooCommerce, Shopify, Razorpay, WhatsApp and any API so orders and payments sync without manual entry.",
+              "href": "/erpnext-integration-services-kochi/"
+            },
+            {
+              "title": "ERPNext Support",
+              "text": "ERPNext support services Kochi: hosting, daily backups, upgrades, bug fixes and training on monthly plans with written response times. Free health check.",
+              "href": "/erpnext-support-services-kochi/"
+            },
+            {
+              "title": "ERPNext Data Migration",
+              "text": "ERPNext data migration services: move masters, balances and history from Tally, QuickBooks, Busy or spreadsheets to ERPNext, checked line by line at go-live.",
+              "href": "/erpnext-data-migration-services-kochi/"
+            },
+            {
+              "title": "ERPNext for Manufacturing",
+              "text": "ERPNext for manufacturing: BOMs, production planning, work orders, shop-floor tracking and production cost, set up by a Kochi team for Kerala and GCC firms.",
+              "href": "/erpnext-for-manufacturing/"
+            },
+            {
+              "title": "ERPNext for Trading",
+              "text": "ERPNext for trading companies: multi-warehouse stock, import costing, price lists and credit control for wholesalers and distributors in Kerala and the GCC.",
+              "href": "/erpnext-for-trading-companies/"
+            },
+            {
+              "title": "ERPNext for Construction",
+              "text": "ERPNext for construction companies: project costing, progress billing, retention, subcontractors and site stock for contractors in Kerala, India and the GCC.",
+              "href": "/erpnext-for-construction-companies/"
+            },
+            {
+              "title": "ERPNext GST E-Invoicing",
+              "text": "ERPNext GST e-invoicing setup for Indian businesses: IRN, signed QR codes, e-way bills and accurate GST returns configured in ERPNext. Free compliance check.",
+              "href": "/erpnext-gst-e-invoicing-setup-kochi/"
+            },
+            {
+              "title": "Free ERPNext Health Check",
+              "text": "Free ERPNext health check: we review setup, speed, data, custom code and tax settings, then send a short report with the top fixes. No obligation. Book a slot.",
+              "href": "/free-erpnext-health-check/"
+            },
+            {
+              "title": "ERPNext in GCC",
+              "text": "ERPNext implementation company GCC: VAT-ready, e-invoicing-ready ERPNext for the UAE, Saudi Arabia, Qatar, Oman, Bahrain and Kuwait, supported in Gulf hours.",
+              "href": "/erpnext-implementation-company-gcc/"
+            },
+            {
+              "title": "ERPNext in Saudi Arabia",
+              "text": "ERPNext implementation company Saudi Arabia: 15% VAT, ZATCA Phase 2, Zakat records, Arabic invoices and GOSI payroll for Riyadh, Jeddah and Dammam firms.",
+              "href": "/erpnext-implementation-company-saudi-arabia/"
+            },
+            {
+              "title": "ERPNext in Qatar",
+              "text": "ERPNext implementation company Qatar: QAR accounting, project costing, WPS payroll and Arabic invoices for Doha contractors, traders and FM firms. Free check.",
+              "href": "/erpnext-implementation-company-qatar/"
+            },
+            {
+              "title": "ERPNext in Oman",
+              "text": "ERPNext implementation company Oman: 5% VAT, three-decimal OMR, Fawtara e-invoicing readiness, WPS payroll and Arabic invoices for Muscat and Sohar firms.",
+              "href": "/erpnext-implementation-company-oman/"
+            },
+            {
+              "title": "ERPNext in Bahrain",
+              "text": "ERPNext implementation company Bahrain: 10% VAT, NBR return figures, three-decimal BHD, SIO payroll and Arabic invoices for Manama, Muharraq and Riffa firms.",
+              "href": "/erpnext-implementation-company-bahrain/"
+            },
+            {
+              "title": "ERPNext in Kuwait",
+              "text": "ERPNext implementation company Kuwait: three-decimal KWD, Zakat and NLST records, contractor tax retention, PIFSS payroll and Arabic invoices. Free check.",
+              "href": "/erpnext-implementation-company-kuwait/"
+            },
+            {
+              "title": "UAE E-Invoicing",
+              "text": "ERPNext UAE e-invoicing readiness: required invoice fields, accredited service provider connection, data cleaning and testing before your 2027 go-live date.",
+              "href": "/erpnext-uae-e-invoicing/"
+            },
+            {
+              "title": "ZATCA E-Invoicing",
+              "text": "ERPNext ZATCA e-invoicing setup for Saudi businesses: Phase 2 integration with Fatoora, XML invoices, QR codes, onboarding and fixes for rejected invoices.",
+              "href": "/erpnext-zatca-e-invoicing-saudi-arabia/"
+            },
+            {
+              "title": "HR and Payroll",
+              "text": "ERPNext HR & payroll GCC setup: WPS salary files, end-of-service gratuity, GOSI and social insurance, leave and air tickets for UAE, Saudi and Gulf employers.",
+              "href": "/erpnext-hr-payroll-gcc/"
+            }
+          ]
+        },
+        {
+          "id": "nov26-webdev",
+          "h2": "Web Development Technologies",
+          "items": [
+            {
+              "title": "React JS Development",
+              "text": "Teknoppy is a React JS development company Kochi teams trust for fast SPAs, React web apps and migrations for India and GCC clients. Get a free quote today.",
+              "href": "/react-js-development-company-kochi/"
+            },
+            {
+              "title": "Next.js Development",
+              "text": "Teknoppy is a Next JS development company Kochi brands hire for fast, SEO-ready websites and web apps for India and GCC clients. Get a fixed quote today.",
+              "href": "/nextjs-development-company-kochi/"
+            },
+            {
+              "title": "PHP Development",
+              "text": "Teknoppy is a PHP development company Kochi businesses trust for custom PHP builds, PHP 8 upgrades and support for India and GCC clients. Get a quote today.",
+              "href": "/php-development-company-kochi/"
+            },
+            {
+              "title": "Laravel Development",
+              "text": "Teknoppy is a Laravel development company Kochi teams hire for web apps, APIs and admin panels for India and GCC clients. Get a fixed quote today.",
+              "href": "/laravel-development-company-kochi/"
+            },
+            {
+              "title": "Node.js Development",
+              "text": "Teknoppy is a Node JS development company Kochi teams hire for backends, APIs and real-time apps for India and GCC clients. Get a fixed quote today.",
+              "href": "/nodejs-development-company-kochi/"
+            },
+            {
+              "title": "MERN Stack Development",
+              "text": "Teknoppy is a MERN stack development company in Kochi building full-stack JavaScript web apps with MongoDB, React and Node.js for India and GCC. Get a quote.",
+              "href": "/mern-stack-development-company-kochi/"
+            },
+            {
+              "title": "MEAN Stack Development",
+              "text": "Teknoppy is a MEAN stack development company in Kochi building structured Angular and Node.js enterprise apps for India and GCC teams. Get a fixed quote today.",
+              "href": "/mean-stack-development-company-kochi/"
+            },
+            {
+              "title": "Angular Development",
+              "text": "Teknoppy is an Angular development company Kochi teams hire for enterprise web apps, upgrades and AngularJS migration for India and GCC. Get a quote today.",
+              "href": "/angular-development-company-kochi/"
+            },
+            {
+              "title": "Vue.js Development",
+              "text": "Teknoppy is a Vue JS development company Kochi teams hire for fast web apps, Nuxt sites and Vue 3 migration for India and GCC clients. Get a quote today.",
+              "href": "/vuejs-development-company-kochi/"
+            },
+            {
+              "title": "PWA Development",
+              "text": "Teknoppy is a PWA development company in Kochi building installable, offline-ready progressive web apps for India and GCC businesses. Get a fixed quote today.",
+              "href": "/pwa-development-company-kochi/"
+            },
+            {
+              "title": "Python Django Development",
+              "text": "Teknoppy is a Django development company Kochi teams hire for secure Python web apps, APIs and reporting for India and GCC clients. Get a quote today.",
+              "href": "/django-development-company-kochi/"
+            },
+            {
+              "title": "ASP.NET / .NET Development",
+              "text": "Teknoppy is a dot net development company Kochi teams hire for ASP.NET Core web apps, APIs and .NET Framework migration for India and GCC. Get a quote today.",
+              "href": "/dotnet-development-company-kochi/"
+            },
+            {
+              "title": "Java Spring Boot Development",
+              "text": "Teknoppy is a Java development company Kochi teams hire for Spring Boot apps, REST APIs and legacy Java modernisation for India and GCC. Get a quote today.",
+              "href": "/java-development-company-kochi/"
+            },
+            {
+              "title": "AI Web Application Development",
+              "text": "AI web application development by Teknoppy, Kochi: AI chatbots, RAG knowledge search, document processing and AI agents for India and GCC. Get a quote today.",
+              "href": "/ai-web-application-development-kochi/"
+            },
+            {
+              "title": "Cloud and DevOps Services",
+              "text": "DevOps services Kochi teams trust: AWS, Azure and Google Cloud setup, CI/CD pipelines, Docker, monitoring and cost control for India and GCC. Get a quote.",
+              "href": "/cloud-devops-services-kochi/"
+            },
+            {
+              "title": "Directory and Listing Website Development",
+              "text": "Directory website development by Teknoppy, Kochi: searchable business, job and classifieds directories with maps and paid plans for India and GCC. Get a quote.",
+              "href": "/directory-website-development-kochi/"
+            },
+            {
+              "title": "Headless CMS Development",
+              "text": "Headless CMS development by Teknoppy, Kochi: platform selection, content modelling and Strapi, Sanity or Contentful builds for India and GCC. Get a quote today.",
+              "href": "/headless-cms-development-kochi/"
+            },
+            {
+              "title": "Astro Website Development",
+              "text": "Astro website development by Teknoppy, Kochi: fast, SEO-friendly marketing and content sites for India and GCC businesses. Get a clear, fixed quote today.",
+              "href": "/astro-website-development-kochi/"
+            },
+            {
+              "title": "Webflow Development",
+              "text": "Teknoppy is a Webflow development company in Kochi building fast, editable Webflow websites for India and GCC businesses. Get a clear, fixed quote today.",
+              "href": "/webflow-development-company-kochi/"
+            },
+            {
+              "title": "Wix Development",
+              "text": "Teknoppy is a Wix website design company in Kochi creating professional, easy-to-edit Wix sites for small businesses in India and the GCC. Get a quote today.",
+              "href": "/wix-website-development-kochi/"
+            },
+            {
+              "title": "Framer Website Development",
+              "text": "Framer website development by Teknoppy, Kochi: animated, design-led startup and launch sites with CMS and SEO setup for India and GCC. Get a quote today.",
+              "href": "/framer-website-development-kochi/"
+            },
+            {
+              "title": "Website Migration Services",
+              "text": "Website migration services by Teknoppy, Kochi: SEO-safe platform, domain, hosting and HTTPS moves with redirect mapping for India and GCC. Get a quote today.",
+              "href": "/website-migration-services-kochi/"
+            },
+            {
+              "title": "Membership Website Development",
+              "text": "Membership website development by Teknoppy, Kochi: paid subscriptions, gated content, renewals and member dashboards for India and GCC. Get a fixed quote today.",
+              "href": "/membership-website-development-kochi/"
+            },
+            {
+              "title": "Headless WordPress Development",
+              "text": "Headless WordPress development by Teknoppy, Kochi: keep the WordPress editor and get a fast Next.js front end for India and GCC brands. Get a quote today.",
+              "href": "/headless-wordpress-development-kochi/"
+            },
+            {
+              "title": "Magento / Adobe Commerce Development",
+              "text": "Teknoppy is a Magento development company Kochi brands hire for large-catalogue and B2B stores, Hyva themes and upgrades for India and GCC. Get a quote today.",
+              "href": "/magento-development-company-kochi/"
+            },
+            {
+              "title": "Headless Shopify Development",
+              "text": "Headless Shopify development by Teknoppy, Kochi: Hydrogen and Next.js storefronts for D2C and GCC brands, with Shopify checkout. Get a fixed quote today.",
+              "href": "/headless-shopify-development-kochi/"
+            }
+          ]
+        },
+        {
+          "id": "nov26-gcc",
+          "h2": "GCC Services",
+          "items": [
+            {
+              "title": "Web Design Company in Saudi Arabia",
+              "text": "Web design company in Saudi Arabia building fast, bilingual websites for Riyadh and Jeddah businesses, with VAT, Mada and PDPL-ready features. Free quote.",
+              "href": "/web-design-company-saudi-arabia/"
+            },
+            {
+              "title": "Web Design Company in Kuwait",
+              "text": "Web design company in Kuwait building fast, mobile-first websites for Kuwait City businesses, with KNET payments and KWD pricing. Get a free website quote.",
+              "href": "/web-design-company-kuwait/"
+            },
+            {
+              "title": "Web Design Company in Bahrain",
+              "text": "Web design company in Bahrain creating websites for Manama finance, professional services and retail firms, with BenefitPay, VAT and PDPL-ready builds.",
+              "href": "/web-design-company-bahrain/"
+            },
+            {
+              "title": "Web Design Company in Oman",
+              "text": "Web design company in Oman building fast, mobile-first websites for Muscat businesses, with VAT-ready pricing in OMR and local card payments. Free quote.",
+              "href": "/web-design-company-oman/"
+            },
+            {
+              "title": "Ecommerce Website Development in UAE",
+              "text": "Ecommerce website development company in UAE building Shopify and WooCommerce stores with AED pricing, VAT, Tabby, Tamara and cash on delivery. Free quote.",
+              "href": "/ecommerce-website-development-company-uae/"
+            },
+            {
+              "title": "Web Application Development in UAE",
+              "text": "Web application development company in UAE building portals, booking systems, dashboards and SaaS products for Dubai businesses, with UAE data hosting.",
+              "href": "/web-application-development-company-uae/"
+            },
+            {
+              "title": "Real Estate Website Design in Dubai",
+              "text": "Real estate website design in Dubai for brokers and developers: off-plan project pages, listings, WhatsApp enquiries and CRM sync. Get a free quote.",
+              "href": "/real-estate-website-design-dubai/"
+            },
+            {
+              "title": "SEO Company for GCC Businesses",
+              "text": "SEO company for GCC businesses in the UAE, Saudi Arabia, Qatar, Kuwait, Bahrain and Oman. Gulf-hours support, USD pricing. Get a free GCC SEO audit.",
+              "href": "/seo-company-for-gcc-businesses/"
+            },
+            {
+              "title": "SEO Company in Dubai",
+              "text": "SEO company in Dubai for UAE businesses: Google rankings, Maps and technical SEO for Dubai, Abu Dhabi and Sharjah, priced in AED. Get a free SEO audit.",
+              "href": "/seo-company-dubai/"
+            },
+            {
+              "title": "SEO Company in Saudi Arabia",
+              "text": "SEO company in Saudi Arabia for Riyadh, Jeddah and Dammam businesses: technical, local and content SEO with SAR pricing. Book a free Saudi SEO audit.",
+              "href": "/seo-company-saudi-arabia/"
+            },
+            {
+              "title": "SEO Company in Qatar",
+              "text": "SEO company in Qatar helping Doha businesses rank on Google: technical, local and content SEO, QAR pricing and clear monthly reports. Free Qatar SEO audit.",
+              "href": "/seo-company-qatar/"
+            },
+            {
+              "title": "SEO Company in Kuwait",
+              "text": "SEO company in Kuwait for Kuwait City, Salmiya and Hawalli businesses: Google rankings, local SEO and KWD pricing with Gulf-hours support. Free SEO audit.",
+              "href": "/seo-company-kuwait/"
+            },
+            {
+              "title": "SEO Company in Bahrain",
+              "text": "SEO company in Bahrain for Manama and Muharraq businesses: technical and local SEO for finance and professional services, with BHD pricing. Free SEO audit.",
+              "href": "/seo-company-bahrain/"
+            },
+            {
+              "title": "SEO Company in Oman",
+              "text": "SEO company in Oman helping Muscat, Sohar and Salalah businesses rank on Google and Maps, with OMR pricing and Gulf-hours support. Free Oman SEO audit.",
+              "href": "/seo-company-oman/"
+            },
+            {
+              "title": "GCC",
+              "text": "AI SEO services for GCC businesses: get your brand cited in ChatGPT, Gemini, Perplexity and Google AI Overviews across the Gulf. Free AI visibility check.",
+              "href": "/ai-seo-services-gcc/"
+            },
+            {
+              "title": "Dubai",
+              "text": "AI SEO services in Dubai: help UAE customers find your brand in ChatGPT, Gemini, Perplexity and Google AI Overviews, with prompt tracking and AED pricing.",
+              "href": "/ai-seo-services-dubai/"
+            },
+            {
+              "title": "Saudi Arabia",
+              "text": "AI SEO services in Saudi Arabia: get Riyadh and Jeddah brands cited in ChatGPT, Gemini, Perplexity and Google AI Overviews, with SAR pricing. Free check.",
+              "href": "/ai-seo-services-saudi-arabia/"
+            },
+            {
+              "title": "Qatar",
+              "text": "AI SEO services in Qatar: help Doha brands get cited in ChatGPT, Gemini, Perplexity and Google AI Overviews, with prompt tracking and QAR pricing.",
+              "href": "/ai-seo-services-qatar/"
+            },
+            {
+              "title": "React JS Development Company for GCC Businesses",
+              "text": "Teknoppy is a React JS development company GCC businesses hire for bilingual React web apps in the UAE, Saudi Arabia and Qatar. Get a fixed quote today.",
+              "href": "/react-js-development-company-gcc/"
+            },
+            {
+              "title": "Laravel & PHP Development Company for GCC Businesses",
+              "text": "Teknoppy is a Laravel development company GCC businesses hire for Laravel and PHP systems, VAT and ZATCA e-invoicing for UAE and Saudi clients. Get a quote.",
+              "href": "/laravel-development-company-gcc/"
+            },
+            {
+              "title": "Node.js Development Company for GCC Businesses",
+              "text": "Teknoppy is a Node JS development company GCC teams hire for backends, APIs, real-time apps and mada or KNET payments across the Gulf. Get a fixed quote today.",
+              "href": "/nodejs-development-company-gcc/"
+            },
+            {
+              "title": "Angular Development Company for GCC Businesses",
+              "text": "Teknoppy is an Angular development company GCC organisations hire for enterprise apps, Arabic RTL interfaces and AngularJS migration in the Gulf. Get a quote.",
+              "href": "/angular-development-company-gcc/"
+            },
+            {
+              "title": "Dot NET Development Company for GCC Businesses",
+              "text": "Teknoppy is a dot NET development company GCC firms hire for ASP.NET Core apps, Azure hosting and ZATCA e-invoicing in the UAE and Saudi. Get a quote today.",
+              "href": "/dotnet-development-company-gcc/"
+            },
+            {
+              "title": "Java Development Company for GCC Businesses",
+              "text": "Teknoppy is a Java development company GCC enterprises hire for Spring Boot systems, banking integration and Java modernisation in the Gulf. Get a quote today.",
+              "href": "/java-development-company-gcc/"
+            },
+            {
+              "title": "Python Django Development Company for GCC Businesses",
+              "text": "Teknoppy is a Django development company GCC businesses hire for Python web apps, reporting and data platforms in the UAE, Saudi Arabia and Qatar. Get a quote.",
+              "href": "/django-development-company-gcc/"
+            },
+            {
+              "title": "Magento Development Company for GCC Businesses",
+              "text": "Teknoppy is a Magento development company GCC retailers hire for Arabic English stores, Tabby, Tamara and mada payments and Gulf VAT setup. Get a quote today.",
+              "href": "/magento-development-company-gcc/"
+            },
+            {
+              "title": "Cloud & DevOps Services for GCC Businesses",
+              "text": "DevOps services GCC businesses trust: Gulf-region AWS, Azure and Google Cloud hosting, CI/CD, Kubernetes and data residency planning. Get a fixed quote today.",
+              "href": "/cloud-devops-services-gcc/"
+            }
+          ]
         }
       ]
     },

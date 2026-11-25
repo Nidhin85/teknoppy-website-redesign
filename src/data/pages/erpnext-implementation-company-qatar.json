@@ -1,0 +1,515 @@
+{
+  "meta": {
+    "title": "ERPNext Implementation Company Qatar, Doha | Teknoppy",
+    "description": "ERPNext implementation company Qatar: QAR accounting, project costing, WPS payroll and Arabic invoices for Doha contractors, traders and FM firms. Free check."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "ERPNext Development",
+      "href": "/erp-development-company-kochi/"
+    },
+    {
+      "name": "ERPNext in GCC",
+      "href": "/erpnext-implementation-company-gcc/"
+    },
+    {
+      "name": "ERPNext in Qatar",
+      "href": "/erpnext-implementation-company-qatar/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "ERPNext in GCC",
+      "h1Lead": "ERPNext Implementation Company",
+      "h1Accent": "Qatar",
+      "body": [
+        {
+          "text": "As an ERPNext implementation company Qatar businesses can reach in their own working day, Teknoppy sets up, customises and supports ERPNext for companies in Doha, Lusail, Al Rayyan and across the country. We configure QAR accounting, corporate and withholding tax records, WPS payroll and Arabic documents, and we prepare your system for Qatar's coming e-invoicing law."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a free ERPNext health check",
+          "href": "/free-erpnext-health-check/"
+        },
+        {
+          "label": "Talk to our team on WhatsApp",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "2018",
+          "label": "Since"
+        },
+        {
+          "value": "120+",
+          "label": "Digital projects delivered"
+        },
+        {
+          "value": "4.9★",
+          "label": "From 60+ Google reviews"
+        }
+      ],
+      "trustline": "Since 2018 · 120+ digital projects delivered · 4.9★ from 60+ Google reviews · Support in Arabia Standard Time"
+    },
+    {
+      "type": "prose",
+      "badge": "Why ERPNext",
+      "h2": "Why Do Qatar Businesses Choose ERPNext?",
+      "paragraphs": [
+        {
+          "text": "ERPNext is an open-source ERP with no licence fee per user, covering accounts, stock, buying, selling, projects, manufacturing and HR in one system. That suits Qatar's contracting, facility management and trading companies, which often need project costing, multi-currency buying and large payrolls in one place. A typical Qatar implementation takes 8–12 weeks for a single company."
+        },
+        {
+          "text": "As an ERPNext implementation company Qatar firms can work with remotely or on site, we plan each project around your tax year, payroll cycle and largest customers. Our ERPNext implementation Qatar projects begin with a workshop on how your business actually runs."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "table",
+      "badge": "Services",
+      "h2": "ERPNext Services in Qatar",
+      "headers": [
+        "Service",
+        "What it covers",
+        "Typical time"
+      ],
+      "rows": [
+        [
+          "Implementation",
+          "Modules, QAR accounting, users and go-live",
+          "8–14 weeks"
+        ],
+        [
+          "Customization",
+          "Arabic print formats, approvals and reports",
+          "1–4 weeks"
+        ],
+        [
+          "Data migration",
+          "Tally, QuickBooks or Excel to ERPNext",
+          "1–3 weeks"
+        ],
+        [
+          "Integration",
+          "Banks, payment gateways and WhatsApp",
+          "1–4 weeks"
+        ],
+        [
+          "Payroll",
+          "WPS salary files, end-of-service and leave",
+          "3–6 weeks"
+        ],
+        [
+          "Support",
+          "Hosting, upgrades, fixes and training",
+          "Monthly"
+        ]
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "Our ERPNext customization Qatar work covers bilingual layouts and approval rules, and every ERPNext developer Qatar project uses upgrade-safe methods."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "bullets",
+      "h2": "Qatar Tax Rules and Your ERPNext Setup",
+      "intro": "Qatar has not introduced VAT, but businesses still have tax records to keep:",
+      "items": [
+        {
+          "text": "Corporate income tax applies to the share of profits owned by foreign shareholders, while Qatari and GCC-owned shares are generally exempt"
+        },
+        {
+          "text": "Withholding tax applies to certain payments to non-resident service providers, such as royalties, technical fees and commissions"
+        },
+        {
+          "text": "Tax returns and audited accounts must be supported by clean, traceable records"
+        },
+        {
+          "text": "Large multinational groups may also fall under the global minimum tax rules"
+        }
+      ],
+      "outro": [
+        {
+          "html": "ERPNext corporate tax Qatar setups tag ownership, withholding tax on supplier payments and related-party transactions, so your adviser can prepare returns from clean data. Always confirm current rules with the General Tax Authority or your tax adviser."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "h2": "Getting Ready for Qatar E-Invoicing",
+      "paragraphs": [
+        {
+          "text": "On 6 May 2026, Qatar's Cabinet approved a draft e-invoicing law and its executive regulations. Detailed requirements and dates have not yet been published, but a phased rollout is expected. Businesses that clean their customer data, standardise invoice fields and run on a system that can connect to a national platform will move fastest. Credit notes, debit notes and invoice numbering rules are likely to matter too, so we set these up consistently from the start. An ERPNext implementation company Qatar clients hire now should build with this in mind, and we do."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "Payroll and WPS in ERPNext",
+      "paragraphs": [
+        {
+          "html": "Qatar's Wage Protection System requires salaries to be paid through banks with a salary file. ERPNext's HR app handles attendance, leave, overtime and salary components, then produces the WPS file your bank needs. End-of-service gratuity is calculated under Qatar's labour law, which sets a minimum of three weeks' basic wage for each year of service. Annual leave, sick leave and unpaid leave are tracked per employee, and air ticket entitlements can be accrued monthly so the cost appears in the right period. Visa, Qatar ID and passport expiry dates trigger reminders well before renewal is due. For the full setup, see <a href=\"/erpnext-hr-payroll-gcc/\" class=\"text-primary font-semibold hover:underline\">ERPNext HR and payroll for the GCC</a>."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "table",
+      "badge": "Industries",
+      "h2": "Industries We Serve in Qatar",
+      "headers": [
+        "Industry",
+        "What ERPNext handles"
+      ],
+      "rows": [
+        [
+          "Contracting",
+          "Project budgets, progress billing, retention and subcontractors"
+        ],
+        [
+          "Facility management",
+          "Service contracts, site visits, staff costing and recurring invoices"
+        ],
+        [
+          "Trading and import",
+          "Multi-currency buying, landed cost and stock across warehouses"
+        ],
+        [
+          "Food distribution",
+          "Batches, expiry dates, route deliveries and credit control"
+        ],
+        [
+          "Engineering",
+          "Job-based quotations, purchases and timesheets"
+        ]
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "ERPNext for Qatar contractors relies on project costing and retention tracking. ERPNext job costing Qatar setups show profit per project before you invoice. ERPNext for Qatar traders focuses on landed cost and stock control. Our ERPNext solutions Qatar clients all use the same core system, configured for their sector."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "h2": "Facility Management in ERPNext",
+      "paragraphs": [
+        {
+          "text": "Facility management is one of Qatar's largest service sectors, and it is hard to run on spreadsheets. ERPNext tracks each service contract, its sites, its staff and its recurring invoices. Technicians log visits and materials used, managers see cost and margin per contract, and invoices go out automatically each month. Many FM firms also need manpower supply contracts billed by hours worked, which ERPNext handles with timesheets. An ERPNext implementation company Qatar FM firms hire should understand both service contracts and large payrolls, because the two drive profit together."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "QAR and Multi-Currency Accounting",
+      "paragraphs": [
+        {
+          "text": "ERPNext Qatar riyal accounting keeps every report in QAR, while purchases in USD, EUR, AED or INR post at the correct exchange rate. Exchange gains and losses are calculated automatically when payments are made, so your books stay accurate without manual adjustments. Bank accounts in different currencies can be reconciled inside ERPNext, and month-end revaluation of foreign balances runs in a few clicks."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "h2": "Arabic Documents for Qatar Clients",
+      "paragraphs": [
+        {
+          "text": "Government buyers, banks and many customers expect Arabic, so any ERPNext implementation company Qatar businesses shortlist should design these documents early. ERPNext Arabic documents Qatar setups include bilingual invoices, quotations, delivery notes and statements, with Arabic laid out from right to left."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "Moving From Your Current Software",
+      "paragraphs": [
+        {
+          "html": "Most Qatar clients come from Tally, QuickBooks or spreadsheets. We move customers, suppliers, items, opening balances and open invoices, and your old system stays live until the trial balance matches. An ERPNext implementation company Qatar finance teams trust should finish every migration with a signed balance check. See <a href=\"/erpnext-data-migration-services-kochi/\" class=\"text-primary font-semibold hover:underline\">ERPNext data migration</a>."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "table",
+      "badge": "How We Work",
+      "h2": "How We Work With Qatar Clients",
+      "headers": [
+        "Step",
+        "What happens",
+        "Typical time"
+      ],
+      "rows": [
+        [
+          "1. Discovery",
+          "Video workshops with each department, in Qatar hours",
+          "1–2 weeks"
+        ],
+        [
+          "2. Design",
+          "Companies, tax records, roles and reports agreed",
+          "1 week"
+        ],
+        [
+          "3. Setup",
+          "Configuration, Arabic print formats and testing",
+          "3–5 weeks"
+        ],
+        [
+          "4. Data and training",
+          "Data import, role-based training and parallel run",
+          "2–4 weeks"
+        ],
+        [
+          "5. Go-live",
+          "Launch with 30 days of close support",
+          "30 days"
+        ]
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "Most Qatar projects run remotely. Kochi is 2.5 hours ahead of Doha, so our working day overlaps well with yours, and we travel for workshops or go-live when the scope needs it. The ERPNext team for Qatar clients stays the same from discovery to support."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "bullets",
+      "badge": "Why Teknoppy",
+      "h2": "Choosing an ERPNext Implementation Company Qatar Businesses Can Trust",
+      "items": [
+        {
+          "html": "<strong>Project costing first.</strong> Contracting and FM setups built around job profit."
+        },
+        {
+          "html": "<strong>Bilingual documents.</strong> Arabic and English for every customer-facing document."
+        },
+        {
+          "html": "<strong>You own everything.</strong> Data, server access and documentation stay with you."
+        }
+      ],
+      "outro": [
+        {
+          "text": "As an ERPNext implementation partner Qatar businesses can call in their own hours, we act as one team for setup, changes and support. Our ERPNext consultant Qatar clients speak to understand both ERPNext and local rules, and our ERPNext support Qatar plans cover upgrades and fixes after launch."
+        },
+        {
+          "text": "We work as an ERPNext service provider Qatar-wide and an ERPNext company Qatar owners can reach in one call. ERPNext for Qatar businesses and ERPNext for Qatar SMEs follow the same process, scaled to size. ERPNext hosting Qatar options include Frappe Cloud and Gulf cloud regions when data location matters."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "Where We Work in Qatar",
+      "paragraphs": [
+        {
+          "lead": "Doha.",
+          "text": "Our ERPNext Doha clients include contractors, traders and FM companies. As an ERPNext partner Doha firms can reach easily, we offer ERPNext implementation Doha-wide, from single offices in West Bay to groups with sites across the city."
+        },
+        {
+          "text": "Looking for an ERPNext company in Doha? Our ERPNext consultants Doha clients meet run workshops online in your working day. After go-live, every ERPNext developer Doha task and ERPNext customization Doha request goes to the same team that built your system, so you never have to explain your setup twice. The ERPNext experts Doha businesses rely on should stay with you after launch, and we do."
+        },
+        {
+          "lead": "Lusail, Al Rayyan and Al Wakrah.",
+          "text": "ERPNext Lusail and ERPNext Al Wakrah clients follow the same process, with ERPNext Qatar setups tailored to each company's sites and teams."
+        },
+        {
+          "html": "For other Gulf countries, see <a href=\"/erpnext-implementation-company-gcc/\" class=\"text-primary font-semibold hover:underline\">ERPNext implementation in the GCC</a>."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "faq",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Is ERPNext used in Qatar?",
+          "a": "Yes. ERPNext is used by Qatar businesses in contracting, trading, facility management and services. It suits companies that want one system for accounts, projects, stock and payroll without per-user licence fees."
+        },
+        {
+          "q": "Can ERPNext handle WPS salary files?",
+          "a": "Yes. ERPNext's HR app calculates salaries and produces the WPS file your bank needs. We set up salary components, allowances and deductions, then test a full payroll run before go-live."
+        },
+        {
+          "q": "Does Qatar have VAT?",
+          "a": "Not yet. Qatar has not introduced VAT, so ERPNext is set up without VAT templates. If VAT is introduced later, ERPNext can add it without a new system."
+        },
+        {
+          "q": "Is ERPNext ready for Qatar e-invoicing?",
+          "a": "The detailed rules have not been published yet. ERPNext already produces structured invoice data and connects to e-invoicing platforms in other Gulf countries, so it is well placed to adapt once Qatar's requirements are released."
+        },
+        {
+          "q": "How long does an ERPNext project take in Qatar?",
+          "a": "A single company usually goes live in 8–12 weeks. Contractors with many active projects take 12–14 weeks. A good ERPNext implementation company Qatar clients hire will give these dates in writing."
+        },
+        {
+          "q": "What does an ERPNext project cost in Qatar?",
+          "a": "The price depends on users, companies, modules and payroll size. ERPNext itself has no licence fee. After a short discovery call, an ERPNext implementation company Qatar clients can trust should send a fixed quote with every line item, and ours does."
+        },
+        {
+          "q": "Can you support us from India?",
+          "a": "Yes. Kochi is 2.5 hours ahead of Doha, so our working day overlaps well with yours. Most work runs remotely, with on-site visits when the project needs them."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "cta",
+      "h2": "Book a Free ERPNext Health Check",
+      "paragraphs": [
+        {
+          "text": "Already on ERPNext, or planning a move? Our free health check reviews your setup, payroll and data, then sends a short report with the top fixes."
+        },
+        {
+          "html": "Teknoppy is the ERPNext implementation company Qatar businesses call when they want project costing that works, Arabic documents and support in their own working hours. Explore every service on the <a href=\"/erp-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">ERPNext development company in Kochi</a> page."
+        },
+        {
+          "html": "<strong>Teknoppy</strong><br>Second Floor, Kaithakal Building, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam, Kochi, Kerala 682019<br>Phone +91 6282249224 · Support in Arabia Standard Time"
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a free ERPNext health check",
+          "href": "/free-erpnext-health-check/"
+        },
+        {
+          "label": "WhatsApp +91 6282249224",
+          "href": "https://wa.me/916282249224"
+        },
+        {
+          "label": "sales@teknoppy.com",
+          "href": "mailto:sales@teknoppy.com"
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "byline",
+      "bg": "white",
+      "text": "Written by: Sanal Edison, Digital Strategist, Teknoppy. Last reviewed: 12 November 2026."
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "ERPNext Implementation Company Qatar",
+      "serviceType": "ERPNext implementation",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "Qatar",
+        "Doha"
+      ],
+      "url": "https://teknoppy.com/erpnext-implementation-company-qatar/"
+    }
+  ],
+  "devNotes": {
+    "source": "17-ERPNext-Qatar-Page.pdf",
+    "primaryKeyword": "erpnext implementation company qatar",
+    "permalink": "/erpnext-implementation-company-qatar/",
+    "secondaryKeywords": [
+      "erpnext doha",
+      "erpnext customization qatar",
+      "erpnext developer qatar",
+      "erpnext qatar",
+      "erpnext implementation qatar",
+      "erpnext implementation doha",
+      "erpnext company qatar",
+      "erpnext company in doha",
+      "erpnext consultant qatar",
+      "erpnext consultants doha",
+      "erpnext support qatar",
+      "erpnext service provider qatar",
+      "erpnext solutions qatar",
+      "erpnext experts doha",
+      "erpnext implementation partner qatar",
+      "erpnext for qatar businesses",
+      "erpnext lusail",
+      "erpnext al wakrah",
+      "erpnext for qatar contractors",
+      "erpnext for qatar traders",
+      "erpnext qatar riyal accounting",
+      "erpnext hosting qatar",
+      "erpnext for qatar smes",
+      "erpnext arabic documents qatar",
+      "erpnext job costing qatar",
+      "erpnext partner doha",
+      "erpnext developer doha",
+      "erpnext customization doha",
+      "erpnext team for qatar",
+      "erpnext corporate tax qatar"
+    ],
+    "parentPage": "ERPNext in GCC (GCC main page)",
+    "imageAlt": [
+      "ERPNext project costing for a Doha contractor · erpnext-project-costing-doha.webp",
+      "ERPNext WPS salary file summary for a Qatar contracting company · erpnext-qatar-wps-payroll.webp"
+    ],
+    "internalLinks": [
+      "/erpnext-hr-payroll-gcc/",
+      "/erpnext-data-migration-services-kochi/",
+      "/erpnext-implementation-company-gcc/",
+      "/erp-development-company-kochi/",
+      "/free-erpnext-health-check/"
+    ],
+    "schemaNote": "Doc schema: Service (serviceType \"ERPNext implementation\", areaServed Qatar, Doha) + BreadcrumbList (Home › Services › ERPNext Development › ERPNext in GCC › ERPNext in Qatar) + FAQPage + WebPage. FAQPage/BreadcrumbList auto-generated; WebPage not emitted.",
+    "heldPlaceholders": [
+      "A named lead. Your project is led by [Lead Frappe Developer name] , with [X] years on ERPNext.",
+      "Recent Qatar Project (heading) — [Client name] , [industry] , [city] : went live on ERPNext in [X] weeks, with [number] users and [number] active projects. Result: [one measurable outcome] . [Read the case study] .",
+      "Phone +91 6282249224 · Qatar contact: [GCC phone or WhatsApp number] · … (the \"Qatar contact\" item dropped from the contact line)",
+      "Technical review: [Lead Frappe Developer name] , ERPNext and Frappe developer · [LinkedIn] (whole line held)"
+    ],
+    "detailsNeeded": [
+      "Shared: lead Frappe developer — name · photo · years on ERPNext · LinkedIn",
+      "Shared: GCC phone or WhatsApp number — shown on every GCC page",
+      "Shared: languages your team speaks — GCC page says English, Malayalam and Hindi; confirm",
+      "Shared: Arabic print formats delivered? — every GCC page promises bilingual documents",
+      "Shared: Gulf travel policy — when you visit on site, and who pays travel",
+      "Qatar ERPNext clients delivered? — publish only with at least one real client",
+      "One real Qatar project — Doha · industry · users · weeks · one result",
+      "Confirm timings — single company 8–12 weeks · groups 12–16 weeks",
+      "On-site visits to Qatar offered?",
+      "Screenshots — two real ERPNext screens with client data blurred",
+      "Facility management clients served? — page has a full FM section (kept as written)"
+    ],
+    "corrections": [
+      "Contact email: doc CTA already used sales@teknoppy.com; kept (site canon).",
+      "pdftotext spacing artefacts fixed (\"E-Invoicing ?\" → \"E-Invoicing?\", \"] .\" → \"].\").",
+      "\"[LinkedIn]\" markers after the byline names dropped (no URL supplied)."
+    ],
+    "linkNote": "[General Tax Authority] (external) kept as plain text. [ERPNext development company in Kochi] → /erp-development-company-kochi/ (pillar has no doc). Breadcrumb \"ERPNext Development\" → /erp-development-company-kochi/.",
+    "designLabels": "Badges, hero stat labels and CTA button labels are design chrome. Area lead-ins in \"Where We Work in Qatar\" rendered as bold leads."
+  }
+}

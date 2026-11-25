@@ -1,0 +1,502 @@
+{
+  "meta": {
+    "title": "Frappe Development Company Kochi, Kerala | Teknoppy",
+    "description": "Frappe development company Kochi building custom Frappe apps, modules, portals and APIs on the framework behind ERPNext. You own the code. Free scoping call."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "ERPNext Development",
+      "href": "/erp-development-company-kochi/"
+    },
+    {
+      "name": "Frappe Development",
+      "href": "/frappe-development-company-kochi/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "ERPNext Development",
+      "h1Lead": "Frappe Development Company",
+      "h1Accent": "Kochi",
+      "body": [
+        {
+          "text": "As a Frappe development company Kochi businesses and CTOs work with, Teknoppy builds custom apps, modules, portals and APIs on the Frappe Framework, the open-source Python framework behind ERPNext. We work for companies across Kerala, India and the GCC, and every app we build is yours to own, extend and host where you choose."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a free technical scoping call",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Talk to our team on WhatsApp",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "2018",
+          "label": "Since"
+        },
+        {
+          "value": "120+",
+          "label": "Digital projects delivered"
+        },
+        {
+          "value": "4.9★",
+          "label": "From 60+ Google reviews"
+        }
+      ],
+      "trustline": "Since 2018 · 120+ digital projects delivered · 4.9★ from 60+ Google reviews · Support in IST, GST and AST hours"
+    },
+    {
+      "type": "table",
+      "badge": "Scope",
+      "h2": "What Does Frappe Development Include?",
+      "intro": "Frappe development means building business software on the Frappe Framework, either as a new standalone app or as an extension that runs alongside ERPNext. It covers data models, forms, workflows, reports, APIs and web portals. A focused app usually takes 6–12 weeks, and a large multi-module app takes 3–6 months. Our Frappe development services cover five types of work:",
+      "headers": [
+        "Type of work",
+        "Example",
+        "Typical time"
+      ],
+      "rows": [
+        [
+          "Custom apps",
+          "Rental, service or lab management systems",
+          "6–12 weeks"
+        ],
+        [
+          "ERPNext extensions",
+          "New modules that share ERPNext data and users",
+          "3–8 weeks"
+        ],
+        [
+          "APIs",
+          "Connections to mobile apps, stores or partner systems",
+          "1–4 weeks"
+        ],
+        [
+          "Portals",
+          "Customer, supplier or dealer self-service pages",
+          "3–6 weeks"
+        ],
+        [
+          "Upgrades and fixes",
+          "Moving older apps to the current Frappe version",
+          "1–4 weeks"
+        ]
+      ],
+      "note": "As a Frappe development company Kochi firms can visit in person, we start every project with a technical scoping call, so the data model is right before we write code.",
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "badge": "Why Frappe",
+      "h2": "Why Build on the Frappe Framework?",
+      "paragraphs": [
+        {
+          "text": "Frappe gives developers ready-made building blocks: DocTypes for data, role-based permissions, a REST API, background jobs, reports, print formats and a web interface. Because these are built in, Frappe framework development is often faster than starting from an empty Python or JavaScript project."
+        },
+        {
+          "text": "Five reasons our clients choose Frappe:"
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        {
+          "html": "<strong>1. Faster delivery.</strong> Forms, lists, permissions and APIs come ready, so effort goes into your business logic."
+        },
+        {
+          "html": "<strong>2. Open source.</strong> Frappe is released under the MIT licence, with no fee per user."
+        },
+        {
+          "html": "<strong>3. Works with ERPNext.</strong> Your app can share customers, items and users with ERPNext."
+        },
+        {
+          "html": "<strong>4. Python and JavaScript.</strong> Skills are widely available, so you are never tied to one vendor."
+        },
+        {
+          "html": "<strong>5. Flexible hosting.</strong> Run it on Frappe Cloud, AWS or your own server."
+        }
+      ],
+      "outro": [
+        {
+          "text": "That is why a Frappe development company Kochi startups and SMEs hire can usually deliver a first working version in weeks, not months."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "bullets",
+      "badge": "Custom Apps",
+      "h2": "Custom Frappe Apps We Build",
+      "intro": "Custom Frappe app development suits processes that standard software cannot handle well. Our Frappe application development work includes:",
+      "items": [
+        {
+          "html": "<strong>Operations apps:</strong> equipment rental, service contracts, fleet tracking and maintenance schedules"
+        },
+        {
+          "html": "<strong>Industry apps:</strong> lab sample registers, school fee management and clinic workflows"
+        },
+        {
+          "html": "<strong>Sales tools:</strong> dealer ordering, quotation builders and commission tracking"
+        },
+        {
+          "html": "<strong>Internal tools:</strong> approval desks, document registers and task boards"
+        }
+      ],
+      "outro": [
+        {
+          "text": "Each project uses Frappe module development practices: clean DocTypes, clear permissions and tests for core logic. Our Frappe software development follows the same standards whether the app has two forms or twenty."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "badge": "APIs & Portals",
+      "h2": "APIs, Portals and Web Apps",
+      "paragraphs": [
+        {
+          "html": "Many projects connect Frappe to the outside world. Frappe API development lets mobile apps, online stores and partner systems read and write data securely. For connecting ERPNext to WooCommerce, Shopify or payment gateways, see our <a href=\"/erpnext-integration-services-kochi/\" class=\"text-primary font-semibold hover:underline\">ERPNext integration services</a> page."
+        },
+        {
+          "text": "Frappe portal development gives customers, suppliers or dealers their own login to place orders, download invoices or raise requests. For full browser-based tools, our Frappe web app development uses Frappe UI and Vue for modern, fast screens."
+        },
+        {
+          "html": "Mobile access is possible too. We build progressive web apps on Frappe, or connect a native app through the API. For native app builds, our <a href=\"/mobile-app-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Mobile App Development</a> team works with the Frappe team."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "table",
+      "badge": "How We Work",
+      "h2": "How We Build and Hand Over Your App",
+      "headers": [
+        "Step",
+        "What happens",
+        "Output",
+        "Typical time"
+      ],
+      "rows": [
+        [
+          "1. Technical scoping",
+          "Users, data, integrations and risks",
+          "Scope and estimate",
+          "1 week"
+        ],
+        [
+          "2. Data model design",
+          "DocTypes, relationships and permissions",
+          "Approved design",
+          "1–2 weeks"
+        ],
+        [
+          "3. Build in sprints",
+          "Two-week sprints with a demo after each",
+          "Working features",
+          "3–12 weeks"
+        ],
+        [
+          "4. Testing",
+          "Automated tests plus user acceptance testing",
+          "Signed test report",
+          "1–2 weeks"
+        ],
+        [
+          "5. Deployment",
+          "Release to Frappe Cloud, AWS or your server",
+          "Live app",
+          "2–5 days"
+        ],
+        [
+          "6. Handover",
+          "Code, documentation and training",
+          "Full ownership",
+          "1 week"
+        ]
+      ],
+      "note": "Our Frappe development team demos progress every two weeks, so you see working software early and can change direction before it becomes expensive. Any Frappe development company Kochi businesses hire should work in short cycles like this.",
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "badge": "Dedicated Developers",
+      "h2": "Dedicated Frappe Developers for Your Team",
+      "paragraphs": [
+        {
+          "text": "If you already run ERPNext or Frappe and have an internal IT lead, you can add Frappe dedicated developers by the month. They join your stand-ups, use your Git repository and follow your review process."
+        },
+        {
+          "text": "Our Frappe framework developers have experience with DocTypes, hooks, server scripts, background jobs and the REST API. Every Frappe Python developer on our team works in Python and JavaScript, and each Frappe ERP developer also understands accounting, stock and selling flows in ERPNext. That mix matters, because most business apps touch financial data."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "badge": "Ownership",
+      "h2": "Code Ownership and Upgrade Safety",
+      "paragraphs": [
+        {
+          "text": "You own everything we build. Your contract states that the code, the database and the documentation belong to you from day one. We keep custom work in separate apps and never edit Frappe or ERPNext core code, so upgrades stay safe."
+        },
+        {
+          "html": "This is the standard a Frappe development company Kochi clients trust should commit to in writing. For changes inside an existing ERPNext setup, such as fields, workflows or print formats, see <a href=\"/erpnext-customization-company-kochi/\" class=\"text-primary font-semibold hover:underline\">ERPNext customization</a>."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "table",
+      "badge": "Pricing Factors",
+      "h2": "What Affects the Price of a Frappe Project?",
+      "headers": [
+        "Cost factor",
+        "Why it matters"
+      ],
+      "rows": [
+        [
+          "Number of DocTypes and screens",
+          "Each form, list and report takes design and testing"
+        ],
+        [
+          "Integrations",
+          "External APIs need mapping, security and error handling"
+        ],
+        [
+          "Users and roles",
+          "More roles mean more permission rules to test"
+        ],
+        [
+          "Portals and mobile access",
+          "Public-facing screens need extra design and security"
+        ],
+        [
+          "Data migration",
+          "Moving records from old systems adds checking time"
+        ]
+      ],
+      "note": "Every quote is fixed-scope for a defined phase, or monthly for dedicated developers. You see the full price before work starts.",
+      "bg": "soft"
+    },
+    {
+      "type": "bullets",
+      "badge": "Why Teknoppy",
+      "h2": "Choosing a Frappe Development Company Kochi Teams Can Rely On",
+      "items": [
+        {
+          "html": "<strong>Short cycles.</strong> Demos every two weeks, not one big reveal at the end."
+        },
+        {
+          "html": "<strong>Written ownership.</strong> Code, data and documentation are yours."
+        },
+        {
+          "html": "<strong>Support after launch.</strong> Fixes, upgrades and small changes on a monthly plan."
+        }
+      ],
+      "outro": [
+        {
+          "text": "As Frappe framework experts, we also offer Frappe consulting services for teams that want an architecture review or a second opinion before they build. Unlike a general Frappe development agency that also sells websites and ads, our Frappe work sits with a dedicated team."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "badge": "Locations",
+      "h2": "Where We Work",
+      "paragraphs": [
+        {
+          "lead": "Kerala.",
+          "text": "Our Frappe developer Kochi team works from Vyttila, so clients can meet the people writing their code. We are a Frappe framework company with Frappe developers Kerala businesses can sit down with, and a Frappe development company, Kerala-based, that keeps key workshops face to face. Teams searching for Frappe framework Kochi expertise can visit for a technical session."
+        },
+        {
+          "lead": "India.",
+          "text": "As a Frappe development company, India-wide, we run remote sprints with screen-shared demos. Our Frappe developers India-wide work in IST, with overlap for GCC teams."
+        },
+        {
+          "lead": "The GCC.",
+          "html": "For a Frappe development company, Kochi sits close to the Gulf in time zone, which keeps GCC projects moving. See <a href=\"/erpnext-implementation-company-gcc/\" class=\"text-primary font-semibold hover:underline\">ERPNext implementation in the GCC</a>."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "faq",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "What is Frappe used for?",
+          "a": "Frappe is used to build business software such as ERP systems, CRMs, helpdesks, HR tools and custom operations apps. ERPNext itself is built on Frappe, so any Frappe app development can share data with ERPNext."
+        },
+        {
+          "q": "Can you build a separate app that runs with ERPNext?",
+          "a": "Yes. We build custom apps that install alongside ERPNext and share its customers, items, users and permissions. Because the app is separate, ERPNext upgrades do not overwrite it."
+        },
+        {
+          "q": "Do we own the code?",
+          "a": "Yes. The code, database and documentation belong to you, and this is written into the contract. You can host the app anywhere and work with any developer later."
+        },
+        {
+          "q": "Do you offer monthly Frappe developers?",
+          "a": "Yes. You can add one or more dedicated developers by the month. They work in your Git repository and join your team's meetings and reviews."
+        },
+        {
+          "q": "How long does a custom Frappe app take?",
+          "a": "A focused app with a few forms and reports takes 6–12 weeks. Larger apps with portals, integrations and many roles take 3–6 months. We break big projects into phases so you can use the first release early."
+        },
+        {
+          "q": "Is Frappe a better choice than a fully custom build?",
+          "a": "For most business apps, yes. Frappe already handles logins, permissions, forms, reports and APIs, so you pay only for your own logic. A good Frappe development company Kochi teams consult should still tell you when a different stack fits better, and we do."
+        },
+        {
+          "q": "Can you take over an existing Frappe app?",
+          "a": "Yes. We review the code, document how it works, fix urgent issues and move any core edits into a proper custom app. Then we can continue development or support it monthly."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "cta",
+      "h2": "Book a Free Technical Scoping Call",
+      "paragraphs": [
+        {
+          "text": "In one call, we review your idea, sketch the data model and give you a realistic timeline and budget range. There is no obligation."
+        },
+        {
+          "text": "Teknoppy is the Frappe development company Kochi and GCC teams call when they want business software built properly, owned fully and supported after launch."
+        },
+        {
+          "html": "<strong>Teknoppy</strong><br>Second Floor, Kaithakal Building, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam, Kochi, Kerala 682019"
+        },
+        {
+          "text": "Phone +91 6282249224 · Mon–Sat, IST, GST and AST hours"
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a free technical scoping call",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp +91 6282249224",
+          "href": "https://wa.me/916282249224"
+        },
+        {
+          "label": "sales@teknoppy.com",
+          "href": "mailto:sales@teknoppy.com"
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "byline",
+      "text": "Written by: Sanal Edison, Digital Strategist, Teknoppy. Last reviewed: 12 November 2026",
+      "bg": "soft"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Frappe Development Company Kochi",
+      "serviceType": "Frappe Framework app development",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "Kochi",
+        "Kerala",
+        "India",
+        "GCC"
+      ],
+      "url": "https://teknoppy.com/frappe-development-company-kochi/"
+    }
+  ],
+  "devNotes": {
+    "source": "04-Frappe-Development-Page.pdf",
+    "primaryKeyword": "frappe development company kochi",
+    "permalink": "/frappe-development-company-kochi/",
+    "stats": "1,661 words · 9 primary keyword uses · 2.17% density (Rank Math 0.54%) · 25/25 secondary keywords",
+    "secondaryKeywords": [
+      "frappe developer kochi",
+      "custom frappe app development",
+      "frappe framework development",
+      "frappe erp developer",
+      "frappe development company kerala",
+      "frappe development company india",
+      "frappe developers kerala",
+      "frappe developers india",
+      "frappe development services",
+      "frappe framework developers",
+      "frappe app development",
+      "frappe application development",
+      "frappe framework company",
+      "frappe python developer",
+      "frappe software development",
+      "frappe module development",
+      "frappe api development",
+      "frappe web app development",
+      "frappe portal development",
+      "frappe framework experts",
+      "frappe development team",
+      "frappe dedicated developers",
+      "frappe consulting services",
+      "frappe development agency",
+      "frappe framework kochi"
+    ],
+    "imageAlt": [
+      "Custom Frappe app module built on the Frappe Framework by the Teknoppy team · File: custom-frappe-app-module-kochi.webp",
+      "Frappe dealer portal showing order history for a Kerala distributor · File: frappe-dealer-portal-kerala.webp"
+    ],
+    "internalLinks": [
+      "/erpnext-integration-services-kochi/",
+      "/mobile-app-development-company-kochi/",
+      "/erpnext-customization-company-kochi/",
+      "/erpnext-implementation-company-gcc/",
+      "/book-a-consultation/"
+    ],
+    "schemaNote": "Doc graph: Service (serviceType \"Frappe Framework app development\") + BreadcrumbList (Home › Services › ERPNext Development › Frappe Development) + FAQPage + WebPage (author Sanal Edison, reviewedBy [Lead Frappe Developer name]).",
+    "heldPlaceholders": [
+      "Choosing… bullet: \"A named lead. Projects are led by [Lead Frappe Developer name] , with [X] years on Frappe and ERPNext.\"",
+      "Recent Frappe Project block (H3 + text): \"[Client name] , [industry] , [city] : we built [app name] , a Frappe app for [process] , in [X] weeks, used by [number] staff. Result: [one measurable outcome] . [Read the case study] .\"",
+      "Byline: \"Technical review: [Lead Frappe Developer name] , ERPNext and Frappe developer · [LinkedIn]\"; \"[LinkedIn]\" marker after Sanal Edison dropped"
+    ],
+    "detailsNeeded": [
+      "Lead Frappe developer: name, photo, years on ERPNext, LinkedIn link (fills \"[Lead Frappe Developer name]\" / \"[X] years\" and technical-review byline)",
+      "Sanal Edison's LinkedIn link (byline [LinkedIn] marker dropped)",
+      "ERPNext / Frappe team size",
+      "Support hours and days (currently \"Mon–Sat, IST, GST and AST\")",
+      "GCC phone or WhatsApp number",
+      "Client logos and one testimonial from ERPNext clients",
+      "Frappe partner status (listed or certified? badge link if yes)",
+      "Publish date per page (for schema datePublished)",
+      "One real Frappe app project: app name, process, weeks, users, result",
+      "Confirm timings and method: focused app 6–12 weeks, large app 3–6 months, two-week sprints with demos",
+      "Monthly dedicated developers offered?",
+      "Code ownership written into contracts?",
+      "Screenshots: custom app module, dealer or customer portal"
+    ],
+    "corrections": [
+      "Contact email sanal@teknoppy.com → sales@teknoppy.com (site canon)"
+    ],
+    "linkNote": "[Mobile App Development] → live /mobile-app-development-company-kochi/. Pillar → /erp-development-company-kochi/ (breadcrumb).",
+    "designLabels": "Badges, hero stat labels and CTA hrefs are design chrome. Numbered \"Five reasons\" list rendered as a headless bullets section after the prose. H3 \"Where We Work\" rendered as section heading."
+  }
+}

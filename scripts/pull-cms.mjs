@@ -172,6 +172,13 @@ for (const global of contentMap.globals) {
     }
   }
 
+  // Guard: pillar child-page directories (subServices) are maintained in git; they list the
+  // sub-pages built from the client's Nov 2026 page PDFs, which the CMS has no record of.
+  if (['webDesignPage', 'wordpressPage', 'ecommercePage', 'webApplicationPage'].includes(global.slug) && fs.existsSync(file)) {
+    const local = safeReadContentFile(file);
+    if (local?.subServices) content.subServices = local.subServices;
+  }
+
   if (global.slug === 'footer' && fs.existsSync(file)) {
     const local = safeReadContentFile(file);
     if (local) {
@@ -205,7 +212,12 @@ const protectedPages = new Set([
   'wordpress-migration-services-kochi',
   'wordpress-speed-optimization-kochi',
   'wordpress-web-design-kochi',
-  'request-a-quote'
+  'request-a-quote',
+  // Hubs that link down to the Nov 2026 new service pages (not yet in the CMS).
+  'services',
+  'seo-services',
+  'web-design-company-for-gcc-businesses',
+  'erp-development-company-kochi'
 ]);
 
 for (const collection of contentMap.collections) {

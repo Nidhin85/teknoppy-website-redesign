@@ -1,0 +1,395 @@
+{
+  "meta": {
+    "title": "Dot Net Development Company Kochi | ASP.NET Core",
+    "description": "Teknoppy is a dot net development company Kochi teams hire for ASP.NET Core web apps, APIs and .NET Framework migration for India and GCC. Get a quote today."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "Web Application Development",
+      "href": "/web-application-development-company-kochi/"
+    },
+    {
+      "name": "ASP.NET / .NET Development",
+      "href": "/dotnet-development-company-kochi/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Web Application Development",
+      "h1Lead": "Dot Net Development Company Kochi:",
+      "h1Accent": "Secure Business Software on the Microsoft Stack",
+      "body": [
+        {
+          "html": "Teknoppy is a dot net development company Kochi businesses and international organisations hire to build <a href=\"/web-application-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">secure web applications</a>, APIs and internal systems with ASP.NET Core and C#. .NET suits companies that rely on Microsoft tools, SQL Server and Windows or Azure infrastructure, and that need software built to last for many years."
+        },
+        {
+          "text": "Our in-house team works from Thykoodam, Kochi, for clients in Kerala, across India and in the GCC."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp +91 6282249224",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "2018",
+          "label": "Since"
+        },
+        {
+          "value": "120+",
+          "label": "Websites delivered"
+        },
+        {
+          "value": "4.9/5",
+          "label": "Google, 60+ reviews"
+        },
+        {
+          "value": "12",
+          "label": "In-house staff"
+        }
+      ],
+      "trustline": "Reviewed by Sanal Edison, Founder, Teknoppy. Last updated: 16 November 2026."
+    },
+    {
+      "type": "bullets",
+      "badge": "At a Glance",
+      "h2": "Summary",
+      "items": [
+        {
+          "text": "Teknoppy: web and software studio in Thykoodam, Kochi, since 2018"
+        },
+        {
+          "text": ".NET work: ASP.NET Core web apps, APIs, Blazor interfaces, SQL Server systems, upgrades and support"
+        },
+        {
+          "text": "120+ websites delivered; 4.9/5 on Google from 60+ reviews"
+        },
+        {
+          "text": "12 in-house staff; no outsourced code"
+        },
+        {
+          "text": "Typical timeline: 8 to 20 weeks"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "What Is .NET Used For?",
+      "paragraphs": [
+        {
+          "text": "What is .NET used for? .NET is Microsoft's free, open-source development platform for building web applications, APIs, desktop software, cloud services and background systems, mainly in the C# language. Modern .NET runs on Windows, Linux and macOS, and Microsoft releases a long-term support version every two years."
+        },
+        {
+          "text": "ASP.NET Core is the part of .NET used for websites and web APIs. In the 2025 Stack Overflow Developer Survey, about 19% of developers reported using ASP.NET Core, making it one of the most widely used web frameworks in business software."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "h2": "Is .NET Good for Enterprise Applications?",
+      "paragraphs": [
+        {
+          "text": "Is .NET good for enterprise applications? Yes, it is one of the platform's main strengths. .NET offers strong typing, mature security features, excellent performance, deep integration with Microsoft products such as Active Directory, Office 365 and SQL Server, and long-term support from Microsoft. Banks, insurers, logistics companies and government suppliers have relied on it for decades. Its tooling also makes large codebases easier to test and refactor safely."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "cards",
+      "badge": "What We Offer",
+      "h2": "What .NET Services Does Teknoppy Offer?",
+      "layout": "list",
+      "items": [
+        {
+          "title": "ASP.NET Core Development",
+          "text": "ASP.NET Core development covers new web applications built on Microsoft's modern, cross-platform framework. As a .NET web application development team, we plan users, screens and data first, then build in two-week sprints with a working demo at the end of each."
+        },
+        {
+          "title": "Custom .NET Software Development",
+          "text": "Custom .NET software development replaces spreadsheets, paper processes and ageing desktop tools with secure, browser-based systems. Typical projects include approval workflows, inventory and job tracking, finance tools and staff management systems."
+        },
+        {
+          "title": ".NET API Development",
+          "text": ".NET API development connects your systems to mobile apps, partner platforms, payment providers and accounting software. Every endpoint is documented, secured with token-based authentication and covered by automated tests. Sample requests are shared with your partners, so integration work can start in the first week."
+        },
+        {
+          "title": "Blazor Development",
+          "text": "Blazor development lets us build interactive web interfaces in C#, the same language used on the server. For organisations with existing C# skills, Blazor keeps the whole application in one language, which simplifies maintenance and hiring. Where a richer front end is needed, we pair .NET APIs with Angular or React instead."
+        },
+        {
+          "title": "C# Development Services and SQL Server Development",
+          "text": "Our C# development services cover business logic, background processing, integrations and reporting. SQL Server development includes database design, stored procedures, performance tuning, backups and reporting queries, using Entity Framework Core where it fits."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "h2": ".NET Systems We Commonly Build",
+      "paragraphs": [
+        {
+          "text": "Typical projects include claims and policy servicing tools for insurance teams, shipment and warehouse systems for logistics firms, approval and procurement workflows for manufacturers, staff and payroll support tools for HR departments, and reporting portals that pull data from several SQL Server databases into one view. Most need strict permissions, detailed audit logs and reliable integration with Microsoft tools."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "Hosting on Azure, Windows or Linux",
+      "paragraphs": [
+        {
+          "html": "Modern .NET applications can run on Microsoft Azure, on your own Windows servers or on lower-cost Linux hosting. We recommend the option that fits your existing infrastructure, security rules and budget, and set up <a href=\"/cloud-devops-services-kochi/\" class=\"text-primary font-semibold hover:underline\">automated deployments, backups and monitoring</a> for each."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "h2": ".NET Framework to .NET Core Migration",
+      "paragraphs": [
+        {
+          "text": "Many business systems still run on the older .NET Framework, which is Windows-only and no longer receives new features. .NET Framework to .NET Core migration moves these applications to modern .NET, which is faster, runs on Linux or Windows, and supports current hosting, containers and cloud services."
+        },
+        {
+          "text": "We migrate in planned stages: a code audit first, then shared libraries, then each module, with full testing in a staging copy before every release. Your staff keep working throughout, and we document every change, so future developers are never starting blind."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "cards",
+      "badge": "Who We Serve",
+      "h2": "Who Does Teknoppy Build .NET Software For?",
+      "columns": 2,
+      "items": [
+        {
+          "title": "Businesses in Kerala and Across India",
+          "text": "Dot net development services Kerala businesses book with us are handled by one in-house team. The .NET developers Kochi clients meet at kickoff are the people who build and support their system. As an ASP.NET development company in Kerala, we also offer monthly plans if you want to hire dot net developers to support an existing application."
+        },
+        {
+          "title": "GCC and International Clients",
+          "text": ".NET development for GCC businesses is a regular part of our work. Many Gulf organisations run Microsoft-based infrastructure, and .NET fits naturally into those environments. We build Arabic and English interfaces with right-to-left layouts, and Teknoppy already serves clients in the UAE and Qatar. International clients choose a dot net development company Kochi offers for lower costs than Gulf or European firms, working hours that overlap with Gulf offices and written progress updates after every sprint."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "cards",
+      "badge": "Why Teknoppy",
+      "h2": "Why Teknoppy Is the Dot Net Development Company Kochi Teams Shortlist",
+      "columns": 3,
+      "items": [
+        {
+          "title": "Experienced .NET Developers Kerala Clients Can Meet",
+          "text": "The experienced .NET developers Kerala clients work with are all on our payroll. Knowledge of your system stays inside one team, which keeps future changes fast and affordable."
+        },
+        {
+          "title": ".NET Code Review and Testing",
+          "text": "Every pull request goes through a .NET code review by a second developer, and critical business rules are covered by automated tests that run before each release."
+        },
+        {
+          "title": "Proof and Accountability",
+          "text": "Shainesh Prakashan, CEO of Exacore IT at Infopark Kochi, says Teknoppy \"was very intuitive in understanding our requirements.\" Founder Sanal Edison reviews the architecture and scope of every project before development begins."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": ".NET vs Java for Enterprise",
+      "paragraphs": [
+        {
+          "html": ".NET vs Java for enterprise is a common decision for large systems. Both are mature, fast, secure and well supported. .NET fits best where an organisation already uses Microsoft tools, SQL Server, Azure or Office 365, and offers a highly productive developer experience with C#. <a href=\"/java-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Java suits organisations</a> standardised on Java tools and Linux-based enterprise platforms."
+        },
+        {
+          "text": "For most businesses in India and the GCC that already run Microsoft infrastructure, .NET usually means faster delivery and simpler integration."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "steps",
+      "badge": "How We Work",
+      "h2": "What Is Teknoppy's .NET Process and Timeline?",
+      "items": [
+        {
+          "title": "Discovery or code audit (1 week)",
+          "text": "We map users, workflows, integrations and success measures, or review existing code."
+        },
+        {
+          "title": "Architecture and design (1 to 3 weeks)",
+          "text": "You approve the data model, API plan and clickable screens."
+        },
+        {
+          "title": "Development sprints (2-week cycles)",
+          "text": "You test working features at the end of every sprint."
+        },
+        {
+          "title": "Testing and launch (1 to 2 weeks)",
+          "text": "Automated tests, security checks and deployment to Azure, Windows or Linux servers."
+        },
+        {
+          "title": "Support (ongoing)",
+          "text": ".NET maintenance and support Kochi clients choose covers updates, security patches, monitoring and improvements, with plans from Rs. 3,000 per month."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "Typical totals: 8 to 12 weeks for a focused application, 14 to 20 weeks for a large multi-module system, and 6 to 16 weeks for a .NET Framework migration depending on size."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "h2": "How Much Does .NET Development Cost in India?",
+      "paragraphs": [
+        {
+          "text": "How much does .NET development cost in India? It depends on the number of modules, user roles, integrations and reports, and on whether existing code must be migrated. Licensing can also matter: SQL Server and Windows hosting carry costs, while modern .NET on Linux with open-source databases can reduce them."
+        },
+        {
+          "text": "Every project is quoted after discovery. Each quote from our dot net development company Kochi office is fixed for the agreed scope and lists exactly what is included."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "faq",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": ".NET Development FAQs",
+      "items": [
+        {
+          "q": "Why choose .NET for business software?",
+          "a": ".NET combines strong performance, mature security, long-term Microsoft support and deep integration with tools many businesses already use. C# code is structured and easy to maintain, which keeps the cost of future changes low."
+        },
+        {
+          "q": "How long does a .NET project take?",
+          "a": "A focused application usually takes 8 to 12 weeks. Large multi-module systems take 14 to 20 weeks. We confirm the timeline in writing after discovery."
+        },
+        {
+          "q": "Can Teknoppy take over an existing .NET application?",
+          "a": "Yes. We begin with a code audit and a written report, fix urgent security and stability issues first, then plan upgrades and improvements. Your application keeps running throughout."
+        },
+        {
+          "q": "Do I own the code?",
+          "a": "Yes. You own all source code, databases and documentation. We hand over repository access and deployment details at launch, so you are never locked in."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "links",
+      "h2": "Related Services",
+      "items": [
+        {
+          "label": "Web Application Development",
+          "href": "/web-application-development-company-kochi/",
+          "text": "Our web application development hub"
+        },
+        {
+          "label": "Java Spring Boot Development",
+          "href": "/java-development-company-kochi/",
+          "text": "Enterprise Java systems"
+        },
+        {
+          "label": "MEAN Stack Development",
+          "href": "/mean-stack-development-company-kochi/",
+          "text": "Open-source full-stack JavaScript"
+        },
+        {
+          "label": "Cloud and DevOps Services",
+          "href": "/cloud-devops-services-kochi/",
+          "text": "Hosting, deployments and monitoring"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "cta",
+      "h2": "Start Your .NET Project With Teknoppy",
+      "paragraphs": [
+        {
+          "text": "Talk to Teknoppy, the dot net development company Kochi businesses can visit in Thykoodam and international clients can work with fully online. Share your requirements, and we will reply with a clear scope, timeline and fixed quote."
+        },
+        {
+          "html": "Call or WhatsApp +91 6282249224, email sales@teknoppy.com, or <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">book a consultation</a> at teknoppy.com."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp Us",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "bg": "soft"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Dot Net Development Company Kochi: Secure Business Software on the Microsoft Stack",
+      "serviceType": "ASP.NET / .NET",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "Kochi",
+        "Kerala",
+        "India",
+        "UAE",
+        "Qatar"
+      ],
+      "url": "https://teknoppy.com/dotnet-development-company-kochi/"
+    }
+  ],
+  "devNotes": {
+    "source": "Teknoppy_ASPNET_NET.pdf",
+    "primaryKeyword": "dot net development company kochi",
+    "permalink": "/dotnet-development-company-kochi/",
+    "imageAlt": [
+      "ASP.NET Core business application built by Teknoppy",
+      "Blazor interface for an internal approval workflow",
+      ".NET Framework to .NET migration plan"
+    ],
+    "internalLinks": [
+      "/web-application-development-company-kochi/",
+      "/java-development-company-kochi/",
+      "/mean-stack-development-company-kochi/",
+      "/cloud-devops-services-kochi/",
+      "/book-a-consultation/"
+    ],
+    "schemaNote": "Service (ASP.NET / .NET) + LocalBusiness + FAQPage + BreadcrumbList (Home › Services › Web Application Development › ASP.NET / .NET Development).",
+    "heldPlaceholders": [],
+    "corrections": [
+      "Contact email sales@teknoppy.com → sales@teknoppy.com (site canon)"
+    ],
+    "linkNote": "All targets valid. Source note: link Stack Overflow 2025 ASP.NET Core stat on the live page."
+  }
+}

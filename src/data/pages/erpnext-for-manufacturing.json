@@ -1,0 +1,500 @@
+{
+  "meta": {
+    "title": "ERPNext for Manufacturing Companies in Kerala | Teknoppy",
+    "description": "ERPNext for manufacturing: BOMs, production planning, work orders, shop-floor tracking and production cost, set up by a Kochi team for Kerala and GCC firms."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "ERPNext Development",
+      "href": "/erp-development-company-kochi/"
+    },
+    {
+      "name": "ERPNext for Manufacturing",
+      "href": "/erpnext-for-manufacturing/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "ERPNext Development",
+      "h1Lead": "ERPNext for",
+      "h1Accent": "Manufacturing",
+      "body": [
+        {
+          "text": "ERPNext for manufacturing gives factories one system for bills of materials, production planning, work orders, shop-floor tracking, quality checks and true production cost. Teknoppy sets it up for manufacturers across Kerala, India and the GCC, from small workshops to multi-plant groups, so the office and the shop floor finally work from the same numbers."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a free ERPNext health check",
+          "href": "/free-erpnext-health-check/"
+        },
+        {
+          "label": "Talk to our team on WhatsApp",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "2018",
+          "label": "Since"
+        },
+        {
+          "value": "120+",
+          "label": "Digital projects delivered"
+        },
+        {
+          "value": "4.9★",
+          "label": "From 60+ Google reviews"
+        }
+      ],
+      "trustline": "Since 2018 · 120+ digital projects delivered · 4.9★ from 60+ Google reviews · Support in IST, GST and AST hours"
+    },
+    {
+      "type": "table",
+      "badge": "How It Works",
+      "h2": "How Does ERPNext Run a Factory?",
+      "intro": "ERPNext connects every step from sales order to dispatch. A sales order creates a production plan, the plan raises work orders and material requests, the shop floor records progress, and finished goods move to stock with their real cost. Setting up ERPNext for manufacturing usually takes 10–16 weeks for a single plant. The ERPNext manufacturing module covers:",
+      "headers": [
+        "Area",
+        "What it handles"
+      ],
+      "rows": [
+        [
+          "Bills of materials",
+          "Raw materials, sub-assemblies, operations and scrap for each product"
+        ],
+        [
+          "Production planning",
+          "What to make, when, and what materials to buy"
+        ],
+        [
+          "Work orders",
+          "Instructions for each batch, with materials issued from stock"
+        ],
+        [
+          "Shop floor",
+          "Job cards for each operation, with time and quantity"
+        ],
+        [
+          "Quality",
+          "Inspection checks on incoming, in-process and finished goods"
+        ],
+        [
+          "Costing",
+          "Material, labour and overhead cost per unit"
+        ]
+      ],
+      "note": "Because accounts, stock and buying live in the same system, ERPNext for manufacturers removes the gap between what the factory makes and what the books show.",
+      "bg": "white"
+    },
+    {
+      "type": "bullets",
+      "badge": "Readiness",
+      "h2": "Signs Your Factory Is Ready for ERPNext",
+      "items": [
+        {
+          "text": "Production cost is estimated, not measured"
+        },
+        {
+          "text": "Stores and accounts disagree on stock every month"
+        },
+        {
+          "text": "Planners use spreadsheets to decide what to make next"
+        },
+        {
+          "text": "Late orders are discovered by the customer, not by you"
+        },
+        {
+          "text": "Nobody can say quickly how much material is with job workers"
+        }
+      ],
+      "outro": [
+        {
+          "text": "If three or more apply, ERPNext for manufacturing usually pays for itself through less waste, fewer stock-outs and faster month-end closing."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "badge": "Planning",
+      "h2": "Bills of Materials and Production Planning",
+      "paragraphs": [
+        {
+          "text": "A good bill of materials is the base of everything. We set up single-level and multi-level BOMs, with alternate materials, operations, workstations and expected scrap. When a product changes, the new version is tracked so past costs stay correct."
+        },
+        {
+          "text": "ERPNext production planning turns sales orders and forecasts into a plan. It checks stock on hand, shows what is short and raises material requests for purchasing. Planners see what to make this week, which work orders are late and which materials will run out. Reorder levels and lead times for each raw material can be set, so purchasing gets an early warning instead of a last-minute rush order."
+        },
+        {
+          "text": "ERPNext for manufacturing works for both make-to-order and make-to-stock businesses, and for mixed models where standard items are stocked and special items are built to order."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "badge": "Shop Floor",
+      "h2": "Work Orders and Shop-Floor Tracking",
+      "paragraphs": [
+        {
+          "text": "ERPNext work order management gives each batch a clear set of instructions and a materials list. Stores issue materials against the work order, so stock records stay accurate."
+        },
+        {
+          "text": "ERPNext shop floor management uses job cards for each operation. Operators or supervisors record time and quantity on a tablet or desktop, and managers see progress live. This ERPNext production tracking shows where each order is, which workstation is busy and where delays build up."
+        },
+        {
+          "text": "For work sent to outside job workers, ERPNext tracks materials sent out, finished goods received and job-work charges, so nothing goes missing between your plant and theirs."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "badge": "Quality & Cost",
+      "h2": "Quality, Costing and Reports",
+      "paragraphs": [
+        {
+          "text": "Quality checks can be set at goods receipt, between operations and before dispatch. Failed items are held, so they cannot be sold or used by mistake. Each check records who inspected, what was measured and why an item passed or failed, which helps with customer audits and ISO records."
+        },
+        {
+          "text": "Costing is where many factories finally see the truth. With ERPNext for manufacturing, each finished unit carries its real material, labour and overhead cost, so you can compare actual cost with your selling price. Our ERPNext manufacturing reports then show margin by product, scrap by operation, late orders and stock ageing."
+        },
+        {
+          "text": "ERPNext inventory for manufacturing keeps raw materials, work in progress and finished goods in separate warehouses, with batch and serial numbers where you need them."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "table",
+      "badge": "Fit",
+      "h2": "Which Manufacturers Is ERPNext Right For?",
+      "headers": [
+        "Type",
+        "Typical use"
+      ],
+      "rows": [
+        [
+          "Discrete manufacturing",
+          "Machines, furniture, fabricated parts, assemblies"
+        ],
+        [
+          "Process manufacturing",
+          "Food, chemicals, cosmetics, batches with expiry"
+        ],
+        [
+          "Engineering workshops",
+          "Job-based work, quotations per job, project costing"
+        ],
+        [
+          "Contract manufacturing",
+          "Customer-supplied materials and job-work charges"
+        ]
+      ],
+      "note": "ERPNext for discrete manufacturing relies on multi-level BOMs and serial numbers. ERPNext for process manufacturing relies on batches, expiry dates and yield tracking. We set up whichever fits, or both.<br><br>Common sectors we set up include ERPNext for food manufacturers, ERPNext for furniture manufacturers and ERPNext for packaging manufacturers. Each needs different reports and checks, so we configure ERPNext for manufacturing around your products, not a generic template.",
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "badge": "Engineering",
+      "h2": "ERPNext for Engineering Companies",
+      "paragraphs": [
+        {
+          "text": "ERPNext for engineering companies combines manufacturing with project work. Each job gets its own quotation, BOM, work orders, purchases and timesheets, so you can see profit per job before you invoice. This suits fabrication shops, machine builders and panel makers that rarely make the same thing twice. Estimators can copy a past job as a starting point, so quotations for similar work take minutes instead of hours."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "table",
+      "badge": "How We Work",
+      "h2": "How We Set Up ERPNext in Your Factory",
+      "headers": [
+        "Step",
+        "What happens",
+        "Typical time"
+      ],
+      "rows": [
+        [
+          "1. Factory walk-through",
+          "Products, routes, workstations and pain points",
+          "1–2 weeks"
+        ],
+        [
+          "2. Design",
+          "BOM structure, warehouses, costing method and reports",
+          "1–2 weeks"
+        ],
+        [
+          "3. Setup",
+          "Items, BOMs, workstations, operations and quality checks",
+          "3–5 weeks"
+        ],
+        [
+          "4. Data and testing",
+          "Opening stock and trial production runs",
+          "2–3 weeks"
+        ],
+        [
+          "5. Training",
+          "Planners, stores, supervisors and accounts",
+          "1–2 weeks"
+        ],
+        [
+          "6. Go-live",
+          "Launch with 30 days of close support",
+          "30 days"
+        ]
+      ],
+      "note": "Our ERPNext manufacturing implementation usually starts with one product line, then expands once the team is confident. Setting up ERPNext for manufacturing this way keeps risk low and lets the shop floor adjust gradually.",
+      "bg": "soft"
+    },
+    {
+      "type": "table",
+      "badge": "Pricing Factors",
+      "h2": "What Affects the Price?",
+      "headers": [
+        "Cost factor",
+        "Why it matters"
+      ],
+      "rows": [
+        [
+          "Number of products and BOM levels",
+          "More BOMs mean more setup and testing"
+        ],
+        [
+          "Plants and warehouses",
+          "Each site needs its own stock and reports"
+        ],
+        [
+          "Shop-floor tracking depth",
+          "Job cards per operation take more training"
+        ],
+        [
+          "Quality checks",
+          "Each inspection template needs design"
+        ],
+        [
+          "Integrations",
+          "Machines, barcode scanners or biometric devices"
+        ]
+      ],
+      "note": "ERPNext for small manufacturers with one plant and simple BOMs costs far less than a multi-plant rollout. We send a fixed quote after a factory walk-through.",
+      "bg": "white"
+    },
+    {
+      "type": "bullets",
+      "badge": "Why Teknoppy",
+      "h2": "Why Choose Teknoppy?",
+      "items": [
+        {
+          "html": "<strong>Factory-first approach.</strong> We walk your shop floor before designing anything."
+        },
+        {
+          "html": "<strong>Costing you can trust.</strong> Production cost is checked against your accounts."
+        },
+        {
+          "html": "<strong>Upgrade-safe changes.</strong> Any custom work lives in a separate app."
+        }
+      ],
+      "outro": [
+        {
+          "text": "As an ERPNext manufacturing consultant and ERPNext manufacturing partner, we cover setup, changes and support in one team. Our ERPNext manufacturing solution is the standard ERPNext system, configured carefully, rather than heavy custom code. That is what makes ERPNext for manufacturing affordable to run over many years."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "badge": "Locations",
+      "h2": "Where We Work",
+      "paragraphs": [
+        {
+          "lead": "Kerala.",
+          "text": "Factories in Ernakulam, Palakkad and Thrissur use our ERPNext manufacturing Kochi team, with on-site walk-throughs. Our ERPNext manufacturing Kerala clients include engineering, food and packaging plants."
+        },
+        {
+          "lead": "India.",
+          "text": "We deliver ERPNext manufacturing India-wide, with GST, e-way bills and job-work rules built in."
+        },
+        {
+          "lead": "The GCC.",
+          "html": "For Gulf manufacturers, we set up VAT, multi-currency purchasing and Arabic documents. See <a href=\"/erpnext-implementation-company-gcc/\" class=\"text-primary font-semibold hover:underline\">ERPNext implementation in the GCC</a>."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "faq",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Can ERPNext handle job work?",
+          "a": "Yes. ERPNext tracks materials sent to outside job workers, finished goods received back and the job-work charges, so you always know what is with whom."
+        },
+        {
+          "q": "Does ERPNext track production cost?",
+          "a": "Yes. Each finished unit carries the cost of materials, labour and overheads used. You can compare actual cost with standard cost and see margin by product."
+        },
+        {
+          "q": "Can ERPNext run several plants?",
+          "a": "Yes. Each plant can have its own warehouses, workstations and reports, while management sees a combined view across all sites."
+        },
+        {
+          "q": "Is ERPNext good for small factories?",
+          "a": "Yes. ERPNext manufacturing software has no licence fee per user, so small factories can start with core features and add shop-floor tracking later. Many go live in 10–12 weeks."
+        },
+        {
+          "q": "How long does it take to set up ERPNext in a factory?",
+          "a": "A single plant with one product line usually goes live in 10–12 weeks. Multi-plant groups or complex BOMs take 14–20 weeks. Rolling out ERPNext for manufacturing one line at a time keeps production running throughout."
+        },
+        {
+          "q": "Do operators need computers on the shop floor?",
+          "a": "Not necessarily. Supervisors can update job cards on a tablet or phone, or record progress at the end of each shift from a desktop."
+        },
+        {
+          "q": "Can it work for food and batch production?",
+          "a": "Yes. ERPNext for factories making food or chemicals uses batch numbers, expiry dates, yield tracking and quality checks, so every batch can be traced back to its raw materials."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "cta",
+      "h2": "Book a Free ERPNext Health Check",
+      "paragraphs": [
+        {
+          "text": "Already running ERPNext in your factory, or planning a move? Our free health check reviews your BOMs, stock and costing setup, then sends a short report with the top fixes."
+        },
+        {
+          "html": "Teknoppy sets up ERPNext for manufacturing for Kerala and GCC factories that want one system from sales order to dispatch. Our ERPNext production management setups are built to last. Start with <a href=\"/erpnext-implementation-company-kochi/\" class=\"text-primary font-semibold hover:underline\">ERPNext implementation</a> or see the <a href=\"/erp-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">ERPNext development company in Kochi</a> page for all services."
+        },
+        {
+          "html": "<strong>Teknoppy</strong><br>Second Floor, Kaithakal Building, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam, Kochi, Kerala 682019"
+        },
+        {
+          "text": "Phone +91 6282249224 · Mon–Sat, IST, GST and AST hours"
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a free ERPNext health check",
+          "href": "/free-erpnext-health-check/"
+        },
+        {
+          "label": "WhatsApp +91 6282249224",
+          "href": "https://wa.me/916282249224"
+        },
+        {
+          "label": "sales@teknoppy.com",
+          "href": "mailto:sales@teknoppy.com"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "byline",
+      "text": "Written by: Sanal Edison, Digital Strategist, Teknoppy. Last reviewed: 12 November 2026",
+      "bg": "white"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "ERPNext for Manufacturing",
+      "serviceType": "ERPNext implementation for manufacturers",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "Kerala",
+        "India",
+        "GCC"
+      ],
+      "url": "https://teknoppy.com/erpnext-for-manufacturing/"
+    }
+  ],
+  "devNotes": {
+    "source": "09-ERPNext-Manufacturing-Page.pdf",
+    "primaryKeyword": "erpnext for manufacturing",
+    "permalink": "/erpnext-for-manufacturing/",
+    "publishGate": "Details checklist item 40: \"One real manufacturing client — Required before publishing (strategy rule)\". Do not publish until supplied.",
+    "stats": "1,651 words · 11 primary keyword uses · 2.0% density (Rank Math 0.67%) · 25/25 secondary keywords",
+    "secondaryKeywords": [
+      "erpnext manufacturing module",
+      "erpnext for engineering companies",
+      "erpnext production planning",
+      "erpnext for manufacturers",
+      "erpnext manufacturing kerala",
+      "erpnext manufacturing india",
+      "erpnext manufacturing software",
+      "erpnext manufacturing implementation",
+      "erpnext for factories",
+      "erpnext work order management",
+      "erpnext shop floor management",
+      "erpnext production management",
+      "erpnext manufacturing solution",
+      "erpnext for small manufacturers",
+      "erpnext for process manufacturing",
+      "erpnext for discrete manufacturing",
+      "erpnext manufacturing kochi",
+      "erpnext for food manufacturers",
+      "erpnext for furniture manufacturers",
+      "erpnext for packaging manufacturers",
+      "erpnext manufacturing consultant",
+      "erpnext manufacturing partner",
+      "erpnext inventory for manufacturing",
+      "erpnext production tracking",
+      "erpnext manufacturing reports"
+    ],
+    "imageAlt": [
+      "ERPNext production dashboard for a Kerala engineering manufacturer · File: erpnext-production-dashboard-kerala.webp",
+      "Job cards showing operation progress on a factory tablet in ERPNext · File: erpnext-shop-floor-tablet.webp"
+    ],
+    "internalLinks": [
+      "/free-erpnext-health-check/",
+      "/erpnext-implementation-company-gcc/",
+      "/erpnext-implementation-company-kochi/",
+      "/erp-development-company-kochi/"
+    ],
+    "schemaNote": "Doc graph: Service (serviceType \"ERPNext implementation for manufacturers\", areaServed Kerala, India, GCC) + BreadcrumbList (Home › Services › ERPNext Development › ERPNext for Manufacturing) + FAQPage + WebPage.",
+    "heldPlaceholders": [
+      "Why Choose Teknoppy bullet: \"A named lead. [Lead Frappe Developer name] runs your project, with [X] years on ERPNext.\"",
+      "Recent Manufacturing Project block (H3 + text): \"[Client name] , [industry] , [city] : went live on ERPNext for manufacturing in [X] weeks across [number] product lines. Result: [one measurable outcome, such as late orders cut by X%] . [Read the case study] .\"",
+      "Byline: \"Technical review: [Lead Frappe Developer name] , ERPNext and Frappe developer · [LinkedIn]\"; \"[LinkedIn]\" marker after Sanal Edison dropped"
+    ],
+    "detailsNeeded": [
+      "Lead Frappe developer: name, photo, years on ERPNext, LinkedIn link (fills \"[Lead Frappe Developer name]\" / \"[X] years\" and technical-review byline)",
+      "Sanal Edison's LinkedIn link (byline [LinkedIn] marker dropped)",
+      "ERPNext / Frappe team size",
+      "Support hours and days (currently \"Mon–Sat, IST, GST and AST\")",
+      "GCC phone or WhatsApp number",
+      "Client logos and one testimonial from ERPNext clients",
+      "Frappe partner status (listed or certified? badge link if yes)",
+      "Publish date per page (for schema datePublished)",
+      "One real manufacturing client — required before publishing (strategy rule)",
+      "Sectors actually served: food, furniture, packaging, engineering, other (copy names food, furniture, packaging, engineering)",
+      "Confirm timings: single plant 10–16 weeks, one line 10–12 weeks, multi-plant 14–20 weeks",
+      "Screenshots: production dashboard, job cards on a tablet",
+      "Blog plan: Manufacturing blog #2 focus should change from \"erpnext production planning\" (now owned by this page) to \"production planning in erpnext\""
+    ],
+    "corrections": [
+      "Contact email sanal@teknoppy.com → sales@teknoppy.com (site canon)"
+    ],
+    "linkNote": "[ERPNext development company in Kochi] → /erpnext-development-company-kochi/ has no doc; linked live /erp-development-company-kochi/. Pillar crumb same.",
+    "designLabels": "Badges, hero stat labels and CTA hrefs are design chrome. Two paragraphs after the \"Which Manufacturers\" table sit in the table note (joined with <br><br>). H3 \"Where We Work\" rendered as section heading."
+  }
+}

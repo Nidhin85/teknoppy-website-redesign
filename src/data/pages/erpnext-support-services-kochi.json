@@ -1,0 +1,497 @@
+{
+  "meta": {
+    "title": "ERPNext Support Services Kochi, Kerala | Teknoppy",
+    "description": "ERPNext support services Kochi: hosting, daily backups, upgrades, bug fixes and training on monthly plans with written response times. Free health check."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "ERPNext Development",
+      "href": "/erp-development-company-kochi/"
+    },
+    {
+      "name": "ERPNext Support",
+      "href": "/erpnext-support-services-kochi/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "ERPNext Development",
+      "h1Lead": "ERPNext Support Services",
+      "h1Accent": "Kochi",
+      "body": [
+        {
+          "text": "Reliable ERPNext support services Kochi businesses can count on keep your system fast, backed up, upgraded and safe. Teknoppy supports ERPNext for companies across Kerala, India and the GCC, including systems that another partner built. You get named engineers, clear response times and monthly plans with no surprises."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a free ERPNext health check",
+          "href": "/free-erpnext-health-check/"
+        },
+        {
+          "label": "Talk to our team on WhatsApp",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "2018",
+          "label": "Since"
+        },
+        {
+          "value": "120+",
+          "label": "Digital projects delivered"
+        },
+        {
+          "value": "4.9★",
+          "label": "From 60+ Google reviews"
+        }
+      ],
+      "trustline": "Since 2018 · 120+ digital projects delivered · 4.9★ from 60+ Google reviews · Support in IST, GST and AST hours"
+    },
+    {
+      "type": "table",
+      "badge": "Coverage",
+      "h2": "What Does ERPNext Support Cover?",
+      "intro": "ERPNext support is an ongoing service that keeps your system running after go-live. It covers hosting, backups, version upgrades, bug fixes, user questions, small changes and refresher training. Critical issues get a response within 2 hours on our priority plan, and normal requests within one working day. Our ERPNext maintenance services cover seven areas:",
+      "headers": [
+        "Area",
+        "What we do",
+        "How often"
+      ],
+      "rows": [
+        [
+          "Hosting and servers",
+          "Uptime, security patches and server health",
+          "Continuous"
+        ],
+        [
+          "Backups",
+          "Daily backups, stored off-server, tested monthly",
+          "Daily"
+        ],
+        [
+          "Upgrades",
+          "Minor patches and major version upgrades",
+          "Monthly and yearly"
+        ],
+        [
+          "Bug fixing",
+          "Errors in reports, scripts, print formats or workflows",
+          "As needed"
+        ],
+        [
+          "User help",
+          "How-to questions from your team",
+          "As needed"
+        ],
+        [
+          "Small changes",
+          "New fields, report tweaks and print changes",
+          "Within plan hours"
+        ],
+        [
+          "Health review",
+          "Speed, errors, storage and security check",
+          "Quarterly"
+        ]
+      ],
+      "note": "As a provider of ERPNext support services Kochi firms can visit in person, we also run on-site sessions when a problem is easier to solve at your desk than over a call.",
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "badge": "Hosting",
+      "h2": "ERPNext Hosting and Backups",
+      "paragraphs": [
+        {
+          "text": "ERPNext cloud hosting keeps your system online without a server room. We offer ERPNext Frappe Cloud hosting for most clients, and AWS or DigitalOcean when you need a specific region or setup. Our ERPNext hosting services include SSL, firewalls, monitoring and daily off-server backups."
+        },
+        {
+          "text": "If you prefer your own hardware, our ERPNext server management covers on-premise servers too: operating system updates, database tuning, disk space alerts and backup checks. Every backup is restored to a test copy once a month, so we know it works before you ever need it."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "bullets",
+      "badge": "Upgrades",
+      "h2": "Version Upgrades Without Downtime",
+      "intro": "ERPNext releases a major version every year and smaller patches every few weeks. Our ERPNext upgrade services move you forward safely:",
+      "items": [
+        {
+          "html": "<strong>1.</strong> Check custom apps against the new version on a copy of your system."
+        },
+        {
+          "html": "<strong>2.</strong> Fix conflicts in scripts, reports or print formats before anything goes live."
+        },
+        {
+          "html": "<strong>3.</strong> Test with your team on real documents for two to three days."
+        },
+        {
+          "html": "<strong>4.</strong> Upgrade out of hours, with a full backup taken just before."
+        }
+      ],
+      "outro": [
+        {
+          "text": "A typical major upgrade takes one to two weeks of preparation and less than two hours of downtime, scheduled at night or on a weekend."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "badge": "Performance",
+      "h2": "Bug Fixes and Performance",
+      "paragraphs": [
+        {
+          "text": "Slow screens, failed reports and error messages cost your team time every day. ERPNext bug fixing covers errors in standard features, custom scripts, print formats and integrations. Each fix is tested on a copy before release."
+        },
+        {
+          "text": "ERPNext performance optimization tackles slow lists and reports with database indexes, background jobs, cleaner scripts and right-sized servers. Most clients see heavy reports run several times faster after tuning."
+        },
+        {
+          "text": "We also set up monitoring that alerts our team when the site is down, a backup fails, a scheduled job stops or disk space runs low. Many problems are fixed before your staff notice them."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "badge": "Year-End",
+      "h2": "Year-End and Audit Support",
+      "paragraphs": [
+        {
+          "text": "Year-end is when small setup errors become expensive. Before closing, we check open documents, stock valuation, depreciation, tax accounts and period-closing entries, then lock the year once your accountant signs off. During audits, we pull the reports your auditor asks for and explain how each figure was built. This is a standard part of the ERPNext support services Kochi clients get from us each March, and in December for GCC clients on a calendar year."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "badge": "Security",
+      "h2": "Security and Access Reviews",
+      "paragraphs": [
+        {
+          "text": "Every quarter, we review who can log in, remove former staff, check role permissions and confirm two-factor login is on for admin users. We also apply security patches as soon as they are released. Good ERPNext support services, Kochi or elsewhere, should treat security as routine work, not an emergency task."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "bullets",
+      "badge": "Training",
+      "h2": "Training Your Team",
+      "intro": "Staff change, and people forget features they rarely use. Our ERPNext training keeps everyone confident:",
+      "items": [
+        {
+          "text": "ERPNext staff training for new joiners, by role"
+        },
+        {
+          "text": "Refresher sessions before year-end closing and audits"
+        },
+        {
+          "text": "Short how-to notes for repeat questions"
+        },
+        {
+          "text": "Sessions on new features after each major upgrade"
+        }
+      ],
+      "outro": [
+        {
+          "text": "Training is delivered online or at your office. Plan hours can be used for training as well as fixes."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "table",
+      "badge": "Plans",
+      "h2": "Support Plans and Response Times",
+      "intro": "ERPNext support plans are monthly, with a set number of hours and guaranteed response times.",
+      "headers": [
+        "Plan",
+        "Best for",
+        "Critical issue response",
+        "Normal request response"
+      ],
+      "rows": [
+        [
+          "Essential",
+          "Small teams, one company",
+          "8 working hours",
+          "2 working days"
+        ],
+        [
+          "Standard",
+          "Growing teams with branches",
+          "4 working hours",
+          "1 working day"
+        ],
+        [
+          "Priority",
+          "Multi-company or 24/7 operations",
+          "2 hours",
+          "4 working hours"
+        ]
+      ],
+      "note": "Response time means a named engineer starts working on your issue. Resolution time depends on the problem, and we update you at every step. Our ERPNext technical support works in IST for Indian clients and in GST and AST hours for GCC clients.",
+      "bg": "soft"
+    },
+    {
+      "type": "table",
+      "badge": "Takeovers",
+      "h2": "Taking Over From Another Partner",
+      "intro": "Many clients come to us when their original partner stopped responding. An ERPNext support takeover follows four steps:",
+      "headers": [
+        "Step",
+        "What happens",
+        "Typical time"
+      ],
+      "rows": [
+        [
+          "1. Access and backup",
+          "Secure server access and a full backup",
+          "1–2 days"
+        ],
+        [
+          "2. Review",
+          "Document custom apps, scripts and integrations",
+          "3–5 days"
+        ],
+        [
+          "3. Stabilise",
+          "Fix urgent errors and failed backups",
+          "1–2 weeks"
+        ],
+        [
+          "4. Monthly support",
+          "Move to a support plan",
+          "Ongoing"
+        ]
+      ],
+      "note": "Any provider of ERPNext support services Kochi businesses switch to should start with a written review like this. If you are unsure what state your system is in, start with a <a href=\"/free-erpnext-health-check/\" class=\"text-primary font-semibold hover:underline\">free ERPNext health check</a>.",
+      "bg": "white"
+    },
+    {
+      "type": "bullets",
+      "badge": "Why Teknoppy",
+      "h2": "Choosing ERPNext Support Services Kochi Teams Can Rely On",
+      "items": [
+        {
+          "text": "Written response times in every plan."
+        },
+        {
+          "text": "Tested backups, restored monthly to prove they work."
+        },
+        {
+          "html": "<strong>No lock-in.</strong> Your data, server access and documentation stay with you."
+        }
+      ],
+      "outro": [
+        {
+          "text": "As an ERPNext support company and ERPNext support partner, we cover the whole system, from the server to the custom apps. That makes our ERPNext managed services simpler than splitting hosting, fixes and training across vendors. Our ERPNext application support also covers integrations and reports built by others, once we have reviewed them."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "badge": "Locations",
+      "h2": "Where We Work",
+      "paragraphs": [
+        {
+          "lead": "Kerala.",
+          "text": "Clients use our ERPNext support in Kochi with visits from our Vyttila office. We provide ERPNext maintenance Kerala-wide, with ERPNext support Kerala clients in Ernakulam, Thrissur and Kozhikode able to book ERPNext on-site support when needed."
+        },
+        {
+          "lead": "India.",
+          "text": "We provide ERPNext support India-wide through ERPNext remote support, with screen sharing and a ticket system."
+        },
+        {
+          "lead": "The GCC.",
+          "html": "For Gulf clients, ERPNext support services, Kochi-based, run in GST and AST working hours, with on-site visits when the scope needs them. See <a href=\"/erpnext-implementation-company-gcc/\" class=\"text-primary font-semibold hover:underline\">ERPNext implementation in the GCC</a>."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "faq",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Can you support an ERPNext system someone else built?",
+          "a": "Yes. We start with a written review of the server, custom apps, scripts and integrations. After fixing urgent issues, we move you onto a monthly support plan."
+        },
+        {
+          "q": "How fast do you respond?",
+          "a": "It depends on your plan. Critical issues get a response within 2 hours on the Priority plan, 4 working hours on Standard and 8 working hours on Essential. Every ticket has a named engineer."
+        },
+        {
+          "q": "Do you upgrade to new ERPNext versions?",
+          "a": "Yes. We test every major upgrade on a copy of your system, fix any conflicts with your custom apps, and upgrade out of hours with a full backup taken first."
+        },
+        {
+          "q": "Where is our data hosted?",
+          "a": "You choose. Most clients use Frappe Cloud, and some prefer AWS, DigitalOcean or their own server. You keep full access to your data and backups wherever it is hosted."
+        },
+        {
+          "q": "What is ERPNext maintenance, and do we need it?",
+          "a": "ERPNext maintenance covers backups, updates, security patches and monitoring. Without it, small problems such as a full disk or a failed backup can turn into lost data or downtime. Any business running ERPNext daily needs it."
+        },
+        {
+          "q": "What does an ERPNext support plan cost?",
+          "a": "The price depends on your plan, the number of users and whether hosting is included. Essential plans suit small teams on a tight budget, and Priority plans suit businesses that cannot afford downtime. We send a fixed monthly quote after a short review of your system."
+        },
+        {
+          "q": "Do you offer weekend or after-hours support?",
+          "a": "Yes, on the Priority plan. Critical issues such as a system outage are covered outside working hours. Upgrades and server work are scheduled at night or on weekends on every plan, so your team is not interrupted. Teams choosing ERPNext support services Kochi and GCC offices both use should check this before signing."
+        },
+        {
+          "q": "Do unused plan hours carry forward?",
+          "a": "Hours can be used for fixes, small changes or training."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "cta",
+      "h2": "Book a Free ERPNext Health Check",
+      "paragraphs": [
+        {
+          "text": "Not sure what state your system is in? Our free health check reviews speed, backups, errors, security and custom code, then sends a short report with the top fixes."
+        },
+        {
+          "text": "Teknoppy provides the ERPNext support services Kochi and GCC businesses rely on when they want a system that stays fast, safe and up to date."
+        },
+        {
+          "html": "<strong>Teknoppy</strong><br>Second Floor, Kaithakal Building, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam, Kochi, Kerala 682019"
+        },
+        {
+          "text": "Phone +91 6282249224 · Mon–Sat, IST, GST and AST hours"
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a free ERPNext health check",
+          "href": "/free-erpnext-health-check/"
+        },
+        {
+          "label": "WhatsApp +91 6282249224",
+          "href": "https://wa.me/916282249224"
+        },
+        {
+          "label": "sales@teknoppy.com",
+          "href": "mailto:sales@teknoppy.com"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "byline",
+      "text": "Written by: Sanal Edison, Digital Strategist, Teknoppy. Last reviewed: 12 November 2026",
+      "bg": "white"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "ERPNext Support Services Kochi",
+      "serviceType": "ERPNext support and maintenance",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "Kochi",
+        "Kerala",
+        "India",
+        "GCC"
+      ],
+      "url": "https://teknoppy.com/erpnext-support-services-kochi/"
+    }
+  ],
+  "devNotes": {
+    "source": "06-ERPNext-Support-Page.pdf",
+    "primaryKeyword": "erpnext support services kochi",
+    "permalink": "/erpnext-support-services-kochi/",
+    "stats": "1,662 words · 9 primary keyword uses · 2.17% density (Rank Math 0.54%) · 25/25 secondary keywords",
+    "secondaryKeywords": [
+      "erpnext maintenance",
+      "erpnext cloud hosting",
+      "erpnext upgrade services",
+      "erpnext training",
+      "erpnext support kerala",
+      "erpnext support india",
+      "erpnext support company",
+      "erpnext support partner",
+      "erpnext maintenance services",
+      "erpnext technical support",
+      "erpnext support plans",
+      "erpnext managed services",
+      "erpnext hosting services",
+      "erpnext bug fixing",
+      "erpnext performance optimization",
+      "erpnext server management",
+      "erpnext staff training",
+      "erpnext support in kochi",
+      "erpnext maintenance kerala",
+      "erpnext application support",
+      "erpnext support team",
+      "erpnext support takeover",
+      "erpnext remote support",
+      "erpnext frappe cloud hosting",
+      "erpnext on site support"
+    ],
+    "imageAlt": [
+      "ERPNext support ticket dashboard managed by the Teknoppy support team · File: erpnext-support-dashboard-kochi.webp",
+      "ERPNext server monitoring with uptime and response time alerts · File: erpnext-server-monitoring.webp"
+    ],
+    "internalLinks": [
+      "/free-erpnext-health-check/",
+      "/erpnext-implementation-company-gcc/"
+    ],
+    "schemaNote": "Doc graph: Service (serviceType \"ERPNext support and maintenance\") + BreadcrumbList (Home › Services › ERPNext Development › ERPNext Support) + FAQPage + WebPage.",
+    "heldPlaceholders": [
+      "Support plans table: \"Monthly hours\" column removed — every cell was \"[X]\" (Essential [X] · Standard [X] · Priority [X])",
+      "Choosing… bullet: \"A named team. Your account is handled by [Lead Frappe Developer name] and the ERPNext support team, not an anonymous queue.\"",
+      "Recent Support Takeover block (H3 + text): \"[Client name] , [industry] , [city] : we took over an ERPNext system from a previous partner in [X] weeks, fixed [number] open issues and restored daily backups. Result: [one measurable outcome] . [Read the case study] .\"",
+      "FAQ \"Do unused plan hours carry forward?\" first sentence: \"[Confirm policy, for example: unused hours carry forward for one month.]\" (rest of the answer kept)",
+      "Byline: \"Technical review: [Lead Frappe Developer name] , ERPNext and Frappe developer · [LinkedIn]\"; \"[LinkedIn]\" marker after Sanal Edison dropped"
+    ],
+    "detailsNeeded": [
+      "Lead Frappe developer: name, photo, years on ERPNext, LinkedIn link (fills \"[Lead Frappe Developer name]\" / \"[X] years\" and technical-review byline)",
+      "Sanal Edison's LinkedIn link (byline [LinkedIn] marker dropped)",
+      "ERPNext / Frappe team size",
+      "Support hours and days (currently \"Mon–Sat, IST, GST and AST\")",
+      "GCC phone or WhatsApp number",
+      "Client logos and one testimonial from ERPNext clients",
+      "Frappe partner status (listed or certified? badge link if yes)",
+      "Publish date per page (for schema datePublished)",
+      "Plan names and monthly hours: Essential, Standard, Priority — [X] hours each",
+      "Confirm response times: critical 8 / 4 / 2 hours; normal 2 days / 1 day / 4 hours",
+      "After-hours support on Priority?",
+      "Unused hours policy: carry forward or not (FAQ answer incomplete until confirmed)",
+      "Monthly backup restore tests? (copy claims monthly restores)",
+      "One support takeover case: issues fixed, weeks, result",
+      "Approve permalink change: /erpnext-support-services-kochi/ instead of /erpnext-support-maintenance-kochi/ (built at /erpnext-support-services-kochi/)",
+      "Screenshots: support ticket dashboard, server monitoring"
+    ],
+    "corrections": [
+      "Contact email sanal@teknoppy.com → sales@teknoppy.com (site canon)"
+    ],
+    "linkNote": "Pillar → /erp-development-company-kochi/ (breadcrumb). Hero/CTA \"Book a free ERPNext health check\" → /free-erpnext-health-check/ (batch page).",
+    "designLabels": "Badges, hero stat labels and CTA hrefs are design chrome. H3 \"Where We Work\" rendered as section heading."
+  }
+}

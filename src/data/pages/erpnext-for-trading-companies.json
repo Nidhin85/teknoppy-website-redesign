@@ -1,0 +1,512 @@
+{
+  "meta": {
+    "title": "ERPNext for Trading Companies & Distributors | Teknoppy",
+    "description": "ERPNext for trading companies: multi-warehouse stock, import costing, price lists and credit control for wholesalers and distributors in Kerala and the GCC."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "ERPNext Development",
+      "href": "/erp-development-company-kochi/"
+    },
+    {
+      "name": "ERPNext for Trading",
+      "href": "/erpnext-for-trading-companies/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "ERPNext Development",
+      "h1Lead": "ERPNext for",
+      "h1Accent": "Trading Companies",
+      "body": [
+        {
+          "text": "ERPNext for trading companies brings purchasing, multi-warehouse stock, price lists, customer credit and accounts into one system, so traders and distributors know exactly what they have, what it cost and who owes them money. Teknoppy sets it up for wholesalers, importers and distributors across Kerala, India and the GCC."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a free ERPNext health check",
+          "href": "/free-erpnext-health-check/"
+        },
+        {
+          "label": "Talk to our team on WhatsApp",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "2018",
+          "label": "Since"
+        },
+        {
+          "value": "120+",
+          "label": "Digital projects delivered"
+        },
+        {
+          "value": "4.9★",
+          "label": "From 60+ Google reviews"
+        }
+      ],
+      "trustline": "Since 2018 · 120+ digital projects delivered · 4.9★ from 60+ Google reviews · Support in IST, GST and AST hours"
+    },
+    {
+      "type": "prose",
+      "badge": "Why ERPNext",
+      "h2": "Why Do Traders Choose ERPNext?",
+      "paragraphs": [
+        {
+          "text": "Trading margins are thin, so small errors in stock, pricing or credit hurt quickly. ERPNext puts every purchase, sale, transfer and payment in one place, with no licence fee per user. A typical trading setup goes live in 6–10 weeks for a single company and 10–16 weeks for groups with several branches or countries."
+        },
+        {
+          "text": "Traders choose ERPNext for trading companies for five reasons:"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        {
+          "html": "<strong>1.</strong> Accurate stock across every warehouse, branch and van"
+        },
+        {
+          "html": "<strong>2.</strong> True landed cost, including freight, duty and clearing charges"
+        },
+        {
+          "html": "<strong>3.</strong> Controlled credit, with alerts or blocks when customers go over their limit"
+        },
+        {
+          "html": "<strong>4.</strong> Flexible pricing, with customer-wise price lists and discount rules"
+        },
+        {
+          "html": "<strong>5.</strong> One set of books, updated the moment goods move"
+        }
+      ],
+      "outro": [
+        {
+          "text": "As ERPNext trading software, it replaces the mix of billing tools, Excel sheets and accounting packages that most growing traders end up with."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "bullets",
+      "badge": "Readiness",
+      "h2": "Signs Your Trading Business Has Outgrown Its Tools",
+      "items": [
+        {
+          "text": "Stock in the system rarely matches the warehouse"
+        },
+        {
+          "text": "Margins are calculated in Excel after the month ends"
+        },
+        {
+          "text": "Salespeople give prices from memory or old lists"
+        },
+        {
+          "text": "Overdue customers keep getting new deliveries"
+        },
+        {
+          "text": "Each branch keeps its own records and sends them by email"
+        }
+      ],
+      "outro": [
+        {
+          "text": "If three or more sound familiar, ERPNext for trading companies usually recovers its cost through better margins and faster collections within the first year."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "badge": "Warehouses",
+      "h2": "Stock Across Every Warehouse",
+      "paragraphs": [
+        {
+          "text": "ERPNext warehouse management tracks quantity and value in each warehouse, branch, showroom and delivery van. Stock transfers between locations are recorded with the person, date and vehicle, so nothing disappears in transit."
+        },
+        {
+          "text": "ERPNext inventory for trading also supports batches with expiry dates, serial numbers, multiple units of measure and barcode scanning. Reorder levels raise purchase requests automatically, and stock ageing reports show slow-moving items before they become dead stock."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "badge": "Pricing & Credit",
+      "h2": "Price Lists, Discounts and Customer Credit",
+      "paragraphs": [
+        {
+          "text": "Most traders sell the same item at different prices to dealers, retailers and walk-in customers. ERPNext stores separate price lists for each group, and pricing rules apply discounts by quantity, season or customer, without manual overrides."
+        },
+        {
+          "text": "Credit control is built in. Each customer has a credit limit and payment terms. When a new order would push them over the limit, ERPNext warns the salesperson or blocks the order until a manager approves it. Overdue reports by customer and salesperson help your collections team chase the right accounts first. Payment reminders can go out by email or WhatsApp on a schedule, so customers are nudged before an invoice becomes seriously overdue."
+        },
+        {
+          "text": "Getting pricing and credit right is often the biggest win when moving to ERPNext for trading companies, because it protects margin on every invoice."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "badge": "Imports",
+      "h2": "Import Costing and Multi-Currency Buying",
+      "paragraphs": [
+        {
+          "text": "ERPNext for importers handles purchases in USD, EUR, AED or any currency, posted at the correct exchange rate. Freight, customs duty, clearing and insurance are added to the cost of the goods in that shipment, so your stock value and margins reflect what the items really cost."
+        },
+        {
+          "text": "ERPNext for import export business owners also get shipment tracking against purchase orders and export documents in the right currency. ERPNext for exporters supports packing lists, multi-currency invoices and bank realisation tracking."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "badge": "Orders",
+      "h2": "Sales Team, Orders and Delivery",
+      "paragraphs": [
+        {
+          "text": "ERPNext order management follows each order from quotation to delivery and payment. Partial deliveries, back orders and returns are all tracked against the original order. Damaged or returned goods go to a separate warehouse, so they never appear as sellable stock."
+        },
+        {
+          "text": "For field sales, salespeople can create orders on a phone or tablet, and managers see targets and performance by person and region. ERPNext dealer management handles dealer price lists, schemes and outstanding balances. For ERPNext for B2B distributors that deliver on fixed routes, we set up route-wise delivery lists and collection tracking."
+        },
+        {
+          "text": "This is where ERPNext distribution management pays off: orders, stock, delivery and collections all update one record."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "table",
+      "badge": "Fit",
+      "h2": "Which Traders Is ERPNext Right For?",
+      "headers": [
+        "Business type",
+        "What matters most",
+        "How ERPNext helps"
+      ],
+      "rows": [
+        [
+          "Wholesalers",
+          "Volume pricing and credit",
+          "Price lists and credit limits per customer"
+        ],
+        [
+          "FMCG distributors",
+          "Batches, routes and schemes",
+          "Batch tracking, route lists and discount rules"
+        ],
+        [
+          "Pharma distributors",
+          "Expiry dates and licences",
+          "Batch expiry alerts and licence fields"
+        ],
+        [
+          "Electronics and hardware traders",
+          "Serial numbers and warranties",
+          "Serial tracking from purchase to sale"
+        ],
+        [
+          "Importers",
+          "Landed cost and currencies",
+          "Cost added per shipment, multi-currency books"
+        ]
+      ],
+      "note": "ERPNext for wholesalers and ERPNext wholesale distribution setups share the same core, configured for your products. We also set up ERPNext for FMCG distributors, ERPNext for pharma distributors, ERPNext for electronics traders and ERPNext for hardware traders, each with the reports that sector needs.",
+      "bg": "white"
+    },
+    {
+      "type": "table",
+      "badge": "How We Work",
+      "h2": "How We Set Up ERPNext for Your Trading Business",
+      "headers": [
+        "Step",
+        "What happens",
+        "Typical time"
+      ],
+      "rows": [
+        [
+          "1. Discovery",
+          "Warehouses, pricing, credit rules and reports",
+          "1–2 weeks"
+        ],
+        [
+          "2. Design",
+          "Item structure, price lists, roles and approvals",
+          "1 week"
+        ],
+        [
+          "3. Setup",
+          "Items, warehouses, tax, pricing rules and print formats",
+          "2–4 weeks"
+        ],
+        [
+          "4. Data",
+          "Opening stock, open invoices and customer balances",
+          "1–2 weeks"
+        ],
+        [
+          "5. Training",
+          "Sales, stores, purchase and accounts teams",
+          "1–2 weeks"
+        ],
+        [
+          "6. Go-live",
+          "Launch with 30 days of close support",
+          "30 days"
+        ]
+      ],
+      "note": "Most distributors go live with sales, buying, stock and accounts first, then add field sales and route tracking. Rolling out ERPNext for trading companies in this order means invoices and stock are right from week one.",
+      "bg": "soft"
+    },
+    {
+      "type": "table",
+      "badge": "Pricing Factors",
+      "h2": "What Affects the Price?",
+      "headers": [
+        "Cost factor",
+        "Why it matters"
+      ],
+      "rows": [
+        [
+          "Number of items and warehouses",
+          "More stock locations need more setup and checks"
+        ],
+        [
+          "Pricing complexity",
+          "Many price lists and schemes take time to configure"
+        ],
+        [
+          "Branches and companies",
+          "Each needs its own books and approvals"
+        ],
+        [
+          "Field sales and mobile use",
+          "Extra setup and training for sales teams"
+        ],
+        [
+          "Integrations",
+          "Online stores, courier APIs or barcode hardware"
+        ]
+      ],
+      "note": "We send a fixed quote after a short discovery call.",
+      "bg": "white"
+    },
+    {
+      "type": "bullets",
+      "badge": "Why Teknoppy",
+      "h2": "Why Choose Teknoppy for Your Trading Setup?",
+      "items": [
+        {
+          "html": "<strong>Margin-first setup.</strong> Pricing, landed cost and credit are configured and tested first."
+        },
+        {
+          "html": "<strong>Clean opening stock.</strong> Quantities and values are checked before go-live."
+        },
+        {
+          "html": "<strong>Support after launch.</strong> Monthly plans for fixes, changes and training."
+        }
+      ],
+      "outro": [
+        {
+          "text": "As an ERPNext trading company Kochi businesses can visit, we know how Kerala and GCC traders work: credit-heavy sales, mixed currencies and stock spread across many locations. That is why ERPNext for trading companies set up by our team starts with pricing and credit, not just billing."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "badge": "Locations",
+      "h2": "Where We Work",
+      "paragraphs": [
+        {
+          "lead": "Kerala.",
+          "text": "Distributors across Ernakulam and central Kerala use our ERPNext distribution Kochi team. We provide ERPNext trading Kerala-wide, with workshops at our Vyttila office."
+        },
+        {
+          "lead": "India.",
+          "text": "As an ERPNext trading company India-wide partner, we set up GST, e-way bills and multi-state branches correctly from the start."
+        },
+        {
+          "lead": "The GCC.",
+          "html": "Gulf traders get VAT-ready setups, re-export documents and AED, SAR or QAR accounting. ERPNext for trading companies in the Gulf also needs Arabic invoices, which we design as standard. See <a href=\"/erpnext-implementation-company-gcc/\" class=\"text-primary font-semibold hover:underline\">ERPNext implementation in the GCC</a>."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "faq",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Can ERPNext handle many warehouses?",
+          "a": "Yes. Each warehouse, branch, showroom or van can be its own stock location. Transfers between them are recorded, and reports show quantity and value per location or across the whole business."
+        },
+        {
+          "q": "Can it add import costs to stock?",
+          "a": "Yes. Freight, customs duty, clearing and insurance can be added to the items in each shipment, so your stock value and margins reflect the real cost."
+        },
+        {
+          "q": "Does it support customer credit limits?",
+          "a": "Yes. Each customer can have a credit limit and payment terms. ERPNext warns or blocks new orders that go over the limit until a manager approves them."
+        },
+        {
+          "q": "Is ERPNext good for small traders?",
+          "a": "Yes. ERPNext for traders has no licence fee per user, so small businesses can start with billing, stock and accounts, then add field sales and approvals later. Many go live in 6–8 weeks."
+        },
+        {
+          "q": "How long does it take to move a trading business to ERPNext?",
+          "a": "A single company with one or two warehouses usually goes live in 6–10 weeks. Groups with several branches, currencies or companies take 10–16 weeks. Setting up ERPNext for trading companies in phases keeps billing running every day of the project."
+        },
+        {
+          "q": "Can salespeople take orders on mobile?",
+          "a": "Yes. Salespeople can check stock, create orders and record collections on a phone or tablet, and managers see the results immediately."
+        },
+        {
+          "q": "How does ERPNext help with stock and purchase planning?",
+          "a": "ERPNext stock management for traders uses reorder levels, lead times and sales history to suggest what to buy. ERPNext sales and purchase management keeps orders, deliveries and supplier bills linked, so buyers order the right quantity at the right time."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "cta",
+      "h2": "Book a Free ERPNext Health Check",
+      "paragraphs": [
+        {
+          "text": "Already using ERPNext, or planning a move? Our free health check reviews your stock, pricing and credit setup, then sends a short report with the top fixes."
+        },
+        {
+          "html": "Teknoppy sets up ERPNext for trading companies that want accurate stock, protected margins and faster collections. Our ERPNext for distributors and ERPNext for trading business setups cover Kerala, India and the GCC. See <a href=\"/erpnext-implementation-company-kochi/\" class=\"text-primary font-semibold hover:underline\">ERPNext implementation</a> or the <a href=\"/erp-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">ERPNext development company in Kochi</a> page for all services."
+        },
+        {
+          "html": "<strong>Teknoppy</strong><br>Second Floor, Kaithakal Building, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam, Kochi, Kerala 682019"
+        },
+        {
+          "text": "Phone +91 6282249224 · Mon–Sat, IST, GST and AST hours"
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a free ERPNext health check",
+          "href": "/free-erpnext-health-check/"
+        },
+        {
+          "label": "WhatsApp +91 6282249224",
+          "href": "https://wa.me/916282249224"
+        },
+        {
+          "label": "sales@teknoppy.com",
+          "href": "mailto:sales@teknoppy.com"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "byline",
+      "text": "Written by: Sanal Edison, Digital Strategist, Teknoppy. Last reviewed: 12 November 2026",
+      "bg": "white"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "ERPNext for Trading Companies",
+      "serviceType": "ERPNext implementation for trading and distribution",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "Kerala",
+        "India",
+        "GCC"
+      ],
+      "url": "https://teknoppy.com/erpnext-for-trading-companies/"
+    }
+  ],
+  "devNotes": {
+    "source": "10-ERPNext-Trading-Page.pdf",
+    "primaryKeyword": "erpnext for trading companies",
+    "permalink": "/erpnext-for-trading-companies/",
+    "publishGate": "Details checklist item 44: \"One real trading client — Required before publishing (strategy rule)\". Do not publish until supplied.",
+    "stats": "1,667 words · 9 primary keyword uses · 2.16% density (Rank Math 0.54%) · 25/25 secondary keywords",
+    "secondaryKeywords": [
+      "erpnext wholesale distribution",
+      "erpnext for distributors",
+      "erpnext inventory for trading",
+      "erpnext for wholesalers",
+      "erpnext for traders",
+      "erpnext trading software",
+      "erpnext distribution management",
+      "erpnext for import export business",
+      "erpnext for importers",
+      "erpnext trading kerala",
+      "erpnext trading company india",
+      "erpnext for fmcg distributors",
+      "erpnext for pharma distributors",
+      "erpnext for electronics traders",
+      "erpnext for hardware traders",
+      "erpnext stock management for traders",
+      "erpnext sales and purchase management",
+      "erpnext for trading business",
+      "erpnext distribution kochi",
+      "erpnext trading company kochi",
+      "erpnext for exporters",
+      "erpnext order management",
+      "erpnext warehouse management",
+      "erpnext for b2b distributors",
+      "erpnext dealer management"
+    ],
+    "imageAlt": [
+      "ERPNext stock and receivables dashboard for a Kochi trading company · File: erpnext-trading-dashboard-kochi.webp",
+      "ERPNext purchase invoice in USD with freight and duty added to item cost · File: erpnext-import-costing-usd.webp"
+    ],
+    "internalLinks": [
+      "/free-erpnext-health-check/",
+      "/erpnext-implementation-company-gcc/",
+      "/erpnext-implementation-company-kochi/",
+      "/erp-development-company-kochi/"
+    ],
+    "schemaNote": "Doc graph: Service (serviceType \"ERPNext implementation for trading and distribution\", areaServed Kerala, India, GCC) + BreadcrumbList (Home › Services › ERPNext Development › ERPNext for Trading) + FAQPage + WebPage.",
+    "heldPlaceholders": [
+      "Why Choose Teknoppy bullet: \"A named lead. [Lead Frappe Developer name] runs your project, with [X] years on ERPNext.\"",
+      "Recent Trading Project block (H3 + text): \"[Client name] , [industry] , [city] : moved [number] items across [number] warehouses to ERPNext in [X] weeks. Result: [one measurable outcome, such as overdue receivables cut by X%] . [Read the case study] .\"",
+      "Byline: \"Technical review: [Lead Frappe Developer name] , ERPNext and Frappe developer · [LinkedIn]\"; \"[LinkedIn]\" marker after Sanal Edison dropped"
+    ],
+    "detailsNeeded": [
+      "Lead Frappe developer: name, photo, years on ERPNext, LinkedIn link (fills \"[Lead Frappe Developer name]\" / \"[X] years\" and technical-review byline)",
+      "Sanal Edison's LinkedIn link (byline [LinkedIn] marker dropped)",
+      "ERPNext / Frappe team size",
+      "Support hours and days (currently \"Mon–Sat, IST, GST and AST\")",
+      "GCC phone or WhatsApp number",
+      "Client logos and one testimonial from ERPNext clients",
+      "Frappe partner status (listed or certified? badge link if yes)",
+      "Publish date per page (for schema datePublished)",
+      "One real trading client — required before publishing (strategy rule)",
+      "Sectors actually served: FMCG, pharma, electronics, hardware, importers (copy names all)",
+      "Mobile sales and route tracking delivered? (copy claims both)",
+      "Approve permalink change: /erpnext-for-trading-companies/ instead of /erpnext-for-trading-distribution/ (built at /erpnext-for-trading-companies/)",
+      "Screenshots: trading dashboard, USD import invoice with costs"
+    ],
+    "corrections": [
+      "Contact email sanal@teknoppy.com → sales@teknoppy.com (site canon)"
+    ],
+    "linkNote": "[ERPNext development company in Kochi] → /erpnext-development-company-kochi/ has no doc; linked live /erp-development-company-kochi/. Pillar crumb same.",
+    "designLabels": "Badges, hero stat labels and CTA hrefs are design chrome. Numbered \"five reasons\" list rendered as a headless bullets section. H3 \"Where We Work\" rendered as section heading."
+  }
+}

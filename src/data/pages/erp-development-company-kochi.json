@@ -194,6 +194,74 @@
       ]
     },
     {
+      "type": "links",
+      "id": "nov26-erpnext",
+      "bg": "soft",
+      "h2": "ERPNext Implementation and Support",
+      "items": [
+        {
+          "label": "ERPNext Implementation",
+          "href": "/erpnext-implementation-company-kochi/",
+          "text": "ERPNext implementation company Kochi for module setup, data import, user roles, training and go-live, planned in phases so daily work keeps running."
+        },
+        {
+          "label": "ERPNext Customization",
+          "href": "/erpnext-customization-company-kochi/",
+          "text": "ERPNext customization company Kochi for custom fields, print formats, approval workflows, reports and modules, built upgrade-safe for Kerala and GCC firms."
+        },
+        {
+          "label": "Frappe Development",
+          "href": "/frappe-development-company-kochi/",
+          "text": "Frappe development company Kochi building custom Frappe apps, modules, portals and APIs on the framework behind ERPNext. You own the code. Free scoping call."
+        },
+        {
+          "label": "ERPNext Integration",
+          "href": "/erpnext-integration-services-kochi/",
+          "text": "ERPNext integration services Kochi: connect ERPNext to WooCommerce, Shopify, Razorpay, WhatsApp and any API so orders and payments sync without manual entry."
+        },
+        {
+          "label": "ERPNext Support",
+          "href": "/erpnext-support-services-kochi/",
+          "text": "ERPNext support services Kochi: hosting, daily backups, upgrades, bug fixes and training on monthly plans with written response times. Free health check."
+        },
+        {
+          "label": "ERPNext Data Migration",
+          "href": "/erpnext-data-migration-services-kochi/",
+          "text": "ERPNext data migration services: move masters, balances and history from Tally, QuickBooks, Busy or spreadsheets to ERPNext, checked line by line at go-live."
+        },
+        {
+          "label": "ERPNext for Manufacturing",
+          "href": "/erpnext-for-manufacturing/",
+          "text": "ERPNext for manufacturing: BOMs, production planning, work orders, shop-floor tracking and production cost, set up by a Kochi team for Kerala and GCC firms."
+        },
+        {
+          "label": "ERPNext for Trading",
+          "href": "/erpnext-for-trading-companies/",
+          "text": "ERPNext for trading companies: multi-warehouse stock, import costing, price lists and credit control for wholesalers and distributors in Kerala and the GCC."
+        },
+        {
+          "label": "ERPNext for Construction",
+          "href": "/erpnext-for-construction-companies/",
+          "text": "ERPNext for construction companies: project costing, progress billing, retention, subcontractors and site stock for contractors in Kerala, India and the GCC."
+        },
+        {
+          "label": "ERPNext GST E-Invoicing",
+          "href": "/erpnext-gst-e-invoicing-setup-kochi/",
+          "text": "ERPNext GST e-invoicing setup for Indian businesses: IRN, signed QR codes, e-way bills and accurate GST returns configured in ERPNext. Free compliance check."
+        },
+        {
+          "label": "Free ERPNext Health Check",
+          "href": "/free-erpnext-health-check/",
+          "text": "Free ERPNext health check: we review setup, speed, data, custom code and tax settings, then send a short report with the top fixes. No obligation. Book a slot."
+        },
+        {
+          "label": "ERPNext in GCC",
+          "href": "/erpnext-implementation-company-gcc/",
+          "text": "ERPNext implementation company GCC: VAT-ready, e-invoicing-ready ERPNext for the UAE, Saudi Arabia, Qatar, Oman, Bahrain and Kuwait, supported in Gulf hours."
+        }
+      ]
+    },
+    {
       "type": "faq",
       "bg": "white",
       "center": true,

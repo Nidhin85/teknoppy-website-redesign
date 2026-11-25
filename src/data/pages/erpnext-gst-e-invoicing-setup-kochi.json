@@ -1,0 +1,482 @@
+{
+  "meta": {
+    "title": "ERPNext GST E-Invoicing Setup in Kochi, Kerala | Teknoppy",
+    "description": "ERPNext GST e-invoicing setup for Indian businesses: IRN, signed QR codes, e-way bills and accurate GST returns configured in ERPNext. Free compliance check."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "ERPNext Development",
+      "href": "/erp-development-company-kochi/"
+    },
+    {
+      "name": "ERPNext GST E-Invoicing",
+      "href": "/erpnext-gst-e-invoicing-setup-kochi/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "ERPNext Development",
+      "h1Lead": "ERPNext GST",
+      "h1Accent": "E-Invoicing Setup",
+      "body": [
+        {
+          "text": "ERPNext GST e-invoicing setup from Teknoppy gets your ERPNext system generating IRNs, signed QR codes, e-way bills and accurate GST returns, all from the invoice your team already creates. We configure GST correctly for businesses across Kerala and India, and fix setups that are causing errors or notices."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a free GST compliance check",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Talk to our team on WhatsApp",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "2018",
+          "label": "Since"
+        },
+        {
+          "value": "120+",
+          "label": "Digital projects delivered"
+        },
+        {
+          "value": "4.9★",
+          "label": "From 60+ Google reviews"
+        }
+      ],
+      "trustline": "Since 2018 · 120+ digital projects delivered · 4.9★ from 60+ Google reviews · Support in IST working hours"
+    },
+    {
+      "type": "table",
+      "badge": "Who Must Comply",
+      "h2": "Who Must Use GST E-Invoicing?",
+      "intro": "Under GST rules, businesses whose aggregate annual turnover (AATO) has crossed ₹5 crore in any financial year since 2017-18 must issue e-invoices for B2B sales, exports and certain other supplies. Each invoice is reported to the Invoice Registration Portal (IRP), which returns an Invoice Reference Number (IRN) and a signed QR code. Two timing rules matter most:",
+      "headers": [
+        "Rule",
+        "Who it applies to",
+        "What it means"
+      ],
+      "rows": [
+        [
+          "E-invoicing",
+          "AATO above ₹5 crore",
+          "B2B invoices must be reported to the IRP"
+        ],
+        [
+          "30-day reporting limit",
+          "AATO of ₹10 crore or more",
+          "Invoices older than 30 days are rejected by the IRP"
+        ]
+      ],
+      "note": "ERPNext e-invoicing India setups handle both rules automatically, so invoices are reported the moment they are submitted. For official details, see the <a href=\"https://einvoice1.gst.gov.in/\" class=\"text-primary font-semibold hover:underline\" target=\"_blank\" rel=\"noopener\">GST e-invoice portal</a>.",
+      "bg": "white"
+    },
+    {
+      "type": "bullets",
+      "badge": "Why It Matters",
+      "h2": "Why Set Up ERPNext GST E-Invoicing Properly?",
+      "intro": "A careless setup creates problems that surface months later, often during an assessment. Wrong tax types, missing HSN codes or unreported invoices lead to mismatches between your books and the GST portal. A correct setup gives you:",
+      "items": [
+        {
+          "text": "One invoice that updates the IRP and e-way bill portal automatically"
+        },
+        {
+          "text": "Fewer mismatches between GSTR-1, GSTR-2B and your books"
+        },
+        {
+          "text": "Faster month-end, because returns data is ready from ERPNext"
+        },
+        {
+          "text": "A clear audit trail for every invoice, cancellation and credit note"
+        }
+      ],
+      "outro": [
+        {
+          "text": "That is why ERPNext GST e-invoicing is worth doing right the first time."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "table",
+      "badge": "Setup",
+      "h2": "What We Set Up for GST in ERPNext",
+      "intro": "ERPNext handles Indian GST through the India Compliance app, an open-source Frappe app built for GST, e-invoicing and e-way bills. Our ERPNext GST setup covers:",
+      "headers": [
+        "Area",
+        "What we configure",
+        "Typical time"
+      ],
+      "rows": [
+        [
+          "Company and GSTINs",
+          "Each registration, state code and address",
+          "1–2 days"
+        ],
+        [
+          "Tax templates",
+          "CGST, SGST, IGST, cess and exempt categories",
+          "1–2 days"
+        ],
+        [
+          "Items and services",
+          "HSN and SAC codes, tax rates and units",
+          "2–4 days"
+        ],
+        [
+          "Customers and suppliers",
+          "GSTINs, addresses and registration types",
+          "2–5 days"
+        ],
+        [
+          "E-invoicing",
+          "IRP credentials, auto-generation and cancellation",
+          "2–3 days"
+        ],
+        [
+          "E-way bills",
+          "Auto-generation, vehicle updates and cancellation",
+          "2–3 days"
+        ],
+        [
+          "Returns",
+          "GSTR-1 and GSTR-3B data checks",
+          "2–3 days"
+        ]
+      ],
+      "note": "ERPNext India compliance depends on clean masters. That is why ERPNext HSN setup and ERPNext GSTIN setup come before anything else.",
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "badge": "IRN & E-Way Bills",
+      "h2": "E-Invoicing and E-Way Bills",
+      "paragraphs": [
+        {
+          "text": "Once configured, ERPNext e-invoice setup works in the background. When a B2B invoice is submitted, ERPNext sends it to the IRP, receives the IRN and signed QR code, and prints them on the invoice. ERPNext e-invoice portal integration also handles cancellations within the allowed window."
+        },
+        {
+          "text": "ERPNext e-way bill generation follows the same flow, using the same credentials and the same invoice data, so details never have to be typed twice. For goods movements that need an e-way bill, generally consignments above ₹50,000, ERPNext creates it from the invoice or delivery note. ERPNext ewaybill integration also updates vehicle details and extends validity when a delivery is delayed."
+        },
+        {
+          "text": "Every ERPNext GST invoice then carries the IRN, QR code and e-way bill number, ready to print or share."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "badge": "Returns",
+      "h2": "GST Returns From ERPNext",
+      "paragraphs": [
+        {
+          "text": "ERPNext GST returns support starts with accurate invoice data. ERPNext prepares GSTR-1 data from your sales and helps reconcile purchase invoices with GSTR-2B, so you claim the input tax credit you are entitled to. ERPNext GST reports also show tax liability by rate, state and month, which makes GSTR-3B faster and safer."
+        },
+        {
+          "text": "TDS and TCS can also be set up in ERPNext, with deductions calculated on payments and invoices and reports ready for quarterly returns. Portal security is covered too: two-factor login on the e-invoice portal is part of our setup checklist."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "badge": "Multi-State",
+      "h2": "Several States, SEZ and Export Supplies",
+      "paragraphs": [
+        {
+          "text": "Businesses with branches in more than one state need a separate GSTIN for each, with stock transfers between them invoiced correctly. We set up each registration as its own company or branch in ERPNext, with the right tax templates and e-way bill rules. Exports and supplies to SEZ units are configured as zero-rated, with or without payment of IGST, and shown correctly on the e-invoice. Any ERPNext GST e-invoicing setup for a growing business should plan for this from the start."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "bullets",
+      "badge": "Fixes",
+      "h2": "Common GST Errors We Fix",
+      "intro": "ERPNext GST error fixing usually starts with one of these problems:",
+      "items": [
+        {
+          "text": "Wrong place of supply, so IGST is charged instead of CGST and SGST"
+        },
+        {
+          "text": "Missing or wrong HSN codes, causing e-invoice rejections"
+        },
+        {
+          "text": "Customers marked as unregistered when they have a GSTIN"
+        },
+        {
+          "text": "Old tax templates still in use after a rate change"
+        },
+        {
+          "text": "Invoices not reported to the IRP within 30 days"
+        }
+      ],
+      "outro": [
+        {
+          "text": "Each fix is tested on a copy of your system first, and we explain every change to your CA in writing, so the accounts team knows exactly what moved and why. Any ERPNext GST e-invoicing project should include a check of past invoices, so hidden errors are found before an assessment, not after."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "table",
+      "badge": "How We Work",
+      "h2": "Our GST Setup Process",
+      "headers": [
+        "Step",
+        "What happens",
+        "Typical time"
+      ],
+      "rows": [
+        [
+          "1. Review",
+          "Current setup, GSTINs, templates and master data",
+          "2–3 days"
+        ],
+        [
+          "2. Cleaning",
+          "Fix HSN codes, GSTINs and customer types",
+          "3–5 days"
+        ],
+        [
+          "3. Configuration",
+          "India Compliance app, templates and IRP credentials",
+          "3–5 days"
+        ],
+        [
+          "4. Testing",
+          "Sandbox e-invoices, e-way bills and returns data",
+          "3–5 days"
+        ],
+        [
+          "5. Go-live",
+          "Switch to live IRP and e-way bill portal",
+          "1 day"
+        ],
+        [
+          "6. Support",
+          "Watch errors and help with the first return",
+          "30 days"
+        ]
+      ],
+      "note": "A complete ERPNext GST implementation usually takes two to four weeks. Our ERPNext GST configuration is documented, so your accountant knows exactly how each tax is set up. With ERPNext GST e-invoicing in place, your team creates one invoice and the portals are updated automatically.",
+      "bg": "soft"
+    },
+    {
+      "type": "bullets",
+      "badge": "Why Teknoppy",
+      "h2": "Choosing an ERPNext GST E-Invoicing Partner",
+      "items": [
+        {
+          "html": "<strong>Accountant-friendly.</strong> We work with your CA, not around them."
+        },
+        {
+          "html": "<strong>Clean data first.</strong> Masters are fixed before e-invoicing goes live."
+        },
+        {
+          "html": "<strong>Support after go-live.</strong> Help with the first GST return and any rejections."
+        }
+      ],
+      "outro": [
+        {
+          "text": "As an ERPNext GST consultant and ERPNext GST partner, we cover setup, fixes and ongoing ERPNext GST support. ERPNext GST compliance is not a one-time job, because rates, rules and portal requirements change, and we keep your setup current."
+        },
+        {
+          "text": "ERPNext GST for SME businesses is often the first real benefit of moving off Tally or spreadsheets: one invoice, reported once, with returns data ready at month-end. As ERPNext GST software, it needs no separate e-invoicing tool."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "badge": "Locations",
+      "h2": "Where We Work",
+      "paragraphs": [
+        {
+          "lead": "Kerala.",
+          "text": "Businesses across Ernakulam use our ERPNext GST Kochi team, with workshops at our Vyttila office. We provide ERPNext GST Kerala-wide for traders, manufacturers and service firms."
+        },
+        {
+          "lead": "India.",
+          "html": "Our ERPNext GST India-wide service runs remotely, including multi-state businesses with several GSTINs. For GCC VAT and e-invoicing, see <a href=\"/erpnext-implementation-company-gcc/\" class=\"text-primary font-semibold hover:underline\">ERPNext implementation in the GCC</a>."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "faq",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Does ERPNext support GST e-invoicing?",
+          "a": "Yes. With the India Compliance app, ERPNext generates IRNs and signed QR codes automatically when B2B invoices are submitted. It also handles cancellations and e-way bills."
+        },
+        {
+          "q": "Can ERPNext file GST returns?",
+          "a": "ERPNext prepares GSTR-1 data and helps reconcile purchases with GSTR-2B. Filing itself is done on the GST portal, either directly or through a GSP, with the data ERPNext produces."
+        },
+        {
+          "q": "Can you fix wrong GST settings?",
+          "a": "Yes. We review templates, HSN codes, customer types and place-of-supply rules, fix the errors and check past invoices so problems are not carried forward."
+        },
+        {
+          "q": "Do we need e-invoicing if our turnover is below ₹5 crore?",
+          "a": "Not yet. E-invoicing applies once AATO crosses ₹5 crore in any financial year since 2017-18. Many businesses still set it up early in ERPNext, so the change is painless when they cross the limit."
+        },
+        {
+          "q": "How long does GST setup in ERPNext take?",
+          "a": "Two to four weeks for most businesses, depending on the number of GSTINs, items and customers, and how clean the existing data is."
+        },
+        {
+          "q": "What does GST setup in ERPNext cost?",
+          "a": "The price depends on the number of GSTINs, items and customers, and how much cleaning the data needs. A single-GSTIN business with clean masters costs far less than a multi-state group. We send a fixed quote after a free review of your ERPNext GST e-invoicing readiness."
+        },
+        {
+          "q": "Does ERPNext handle e-way bills too?",
+          "a": "Yes. ERPNext creates e-way bills from invoices or delivery notes, updates vehicle details and extends validity when needed, all without leaving the system."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "cta",
+      "h2": "Book a Free GST Compliance Check",
+      "paragraphs": [
+        {
+          "text": "We review your ERPNext GST setup, find errors that could lead to notices and send a short report with the top fixes. There is no obligation."
+        },
+        {
+          "html": "Teknoppy's ERPNext GST e-invoicing setup gives Indian businesses one invoice, reported correctly, with returns data ready on time. For full ERPNext setup, see <a href=\"/erpnext-implementation-company-kochi/\" class=\"text-primary font-semibold hover:underline\">ERPNext implementation</a>, or the <a href=\"/erp-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">ERPNext development company in Kochi</a> page for all services. ERPNext einvoice support is included in every monthly plan."
+        },
+        {
+          "html": "<strong>Teknoppy</strong><br>Second Floor, Kaithakal Building, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam, Kochi, Kerala 682019"
+        },
+        {
+          "text": "Phone +91 6282249224 · Mon–Sat, IST working hours"
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a free GST compliance check",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp +91 6282249224",
+          "href": "https://wa.me/916282249224"
+        },
+        {
+          "label": "sales@teknoppy.com",
+          "href": "mailto:sales@teknoppy.com"
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "byline",
+      "text": "Written by: Sanal Edison, Digital Strategist, Teknoppy. Last reviewed: 12 November 2026",
+      "bg": "soft"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "ERPNext GST E-Invoicing Setup",
+      "serviceType": "ERPNext GST and e-invoicing setup",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "Kochi",
+        "Kerala",
+        "India"
+      ],
+      "url": "https://teknoppy.com/erpnext-gst-e-invoicing-setup-kochi/"
+    }
+  ],
+  "devNotes": {
+    "source": "13-ERPNext-GST-Page.pdf",
+    "primaryKeyword": "erpnext gst e-invoicing",
+    "permalink": "/erpnext-gst-e-invoicing-setup-kochi/",
+    "stats": "1,615 words · 9 primary keyword uses · 2.23% density (Rank Math 0.56%) · 25/25 secondary keywords",
+    "secondaryKeywords": [
+      "erpnext gst setup",
+      "erpnext e-way bill",
+      "erpnext india compliance",
+      "erpnext gst kochi",
+      "erpnext gst kerala",
+      "erpnext gst india",
+      "erpnext e-invoicing india",
+      "erpnext gst returns",
+      "erpnext gst configuration",
+      "erpnext gst compliance",
+      "erpnext e-invoice setup",
+      "erpnext gst software",
+      "erpnext gst consultant",
+      "erpnext gst implementation",
+      "erpnext einvoice",
+      "erpnext gst reports",
+      "erpnext gstin setup",
+      "erpnext gst invoice",
+      "erpnext e-invoice portal integration",
+      "erpnext gst support",
+      "erpnext gst error fixing",
+      "erpnext gst for sme",
+      "erpnext gst partner",
+      "erpnext ewaybill integration",
+      "erpnext hsn setup"
+    ],
+    "imageAlt": [
+      "ERPNext sales invoice with IRN and signed QR code for a Kochi distributor · File: erpnext-gst-einvoice-irn-kochi.webp",
+      "E-way bill created from an ERPNext delivery note with vehicle details · File: erpnext-ewaybill-delivery-note.webp"
+    ],
+    "internalLinks": [
+      "https://einvoice1.gst.gov.in/",
+      "/erpnext-implementation-company-gcc/",
+      "/erpnext-implementation-company-kochi/",
+      "/erp-development-company-kochi/",
+      "/book-a-consultation/"
+    ],
+    "schemaNote": "Doc graph: Service (serviceType \"ERPNext GST and e-invoicing setup\", areaServed Kochi, Kerala, India) + BreadcrumbList (Home › Services › ERPNext Development › ERPNext GST E-Invoicing) + FAQPage + WebPage.",
+    "heldPlaceholders": [
+      "Choosing… bullet: \"A named lead. [Lead Frappe Developer name] runs your project, with [X] years on ERPNext.\"",
+      "Recent GST Project block (H3 + text): \"[Client name] , [industry] , [city] : set up GST e-invoicing and e-way bills in ERPNext in [X] weeks, across [number] GSTINs. Result: [one measurable outcome, such as zero IRP rejections after week one] . [Read the case study] .\"",
+      "Byline: \"Technical review: [Lead Frappe Developer name] , ERPNext and Frappe developer · [LinkedIn]\"; \"[LinkedIn]\" marker after Sanal Edison dropped"
+    ],
+    "detailsNeeded": [
+      "Lead Frappe developer: name, photo, years on ERPNext, LinkedIn link (fills \"[Lead Frappe Developer name]\" / \"[X] years\" and technical-review byline)",
+      "Sanal Edison's LinkedIn link (byline [LinkedIn] marker dropped)",
+      "ERPNext / Frappe team size",
+      "Support hours and days (currently \"Mon–Sat, IST, GST and AST\")",
+      "GCC phone or WhatsApp number",
+      "Client logos and one testimonial from ERPNext clients",
+      "Frappe partner status (listed or certified? badge link if yes)",
+      "Publish date per page (for schema datePublished)",
+      "GST e-invoicing setups delivered: number of clients and GSTINs",
+      "E-way bill integration delivered?",
+      "Confirm timing: setup 2–4 weeks",
+      "One real GST project: GSTINs, weeks, result",
+      "Screenshots: invoice with IRN and QR, e-way bill from delivery note",
+      "Blog plan: GST blog #3 focus should change from \"erpnext e-way bill\" (now owned by this page) to \"e-way bill errors in erpnext\""
+    ],
+    "corrections": [
+      "Contact email sanal@teknoppy.com → sales@teknoppy.com (site canon)"
+    ],
+    "linkNote": "[GST e-invoice portal] → external https://einvoice1.gst.gov.in/ (official IRP portal; confirm preferred URL). [ERPNext development company in Kochi] → /erpnext-development-company-kochi/ has no doc; linked live /erp-development-company-kochi/. Pillar crumb same. Trust strip and phone line use this doc's \"IST working hours\" wording (India-only page).",
+    "designLabels": "Badges, hero stat labels and CTA hrefs are design chrome. H3 \"Where We Work\" rendered as section heading."
+  }
+}

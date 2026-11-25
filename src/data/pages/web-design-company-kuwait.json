@@ -1,0 +1,515 @@
+{
+  "meta": {
+    "title": "Web Design Company in Kuwait | Website Design | Teknoppy",
+    "description": "Web design company in Kuwait building fast, mobile-first websites for Kuwait City businesses, with KNET payments and KWD pricing. Get a free website quote."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "GCC",
+      "href": "/web-design-company-for-gcc-businesses/"
+    },
+    {
+      "name": "Web Design Company in Kuwait",
+      "href": "/web-design-company-kuwait/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "GCC Web Design",
+      "h1Lead": "Web Design Company in",
+      "h1Accent": "Kuwait",
+      "body": [
+        {
+          "text": "Teknoppy is a web design company in Kuwait shops, restaurants and service firms hire for fast, mobile-first websites that turn visitors into orders and enquiries. From boutiques in Salmiya to suppliers in Shuwaikh and offices in Kuwait City, we build sites in Arabic and English with KNET payments, prices in KWD and simple tools to update your own content."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Get a free website quote",
+          "href": "/request-a-quote/"
+        },
+        {
+          "label": "WhatsApp us",
+          "href": "https://wa.me/916282249224"
+        },
+        {
+          "label": "Book a call in Kuwait hours",
+          "href": "/book-a-consultation/"
+        }
+      ],
+      "stats": [
+        {
+          "value": "4.9/5",
+          "label": "Google, 60+ reviews"
+        },
+        {
+          "value": "120+",
+          "label": "Websites delivered"
+        },
+        {
+          "value": "2018",
+          "label": "Building websites since"
+        }
+      ],
+      "trustline": "Google rating 4.9 from 60+ reviews · 120+ websites delivered · Building websites since 2018"
+    },
+    {
+      "type": "prose",
+      "badge": "Kuwait Web Design",
+      "h2": "What Does a Web Design Company in Kuwait Do?",
+      "paragraphs": [
+        {
+          "text": "A Kuwait web design partner plans, designs and builds a website that looks professional, works perfectly on phones and makes it easy for customers to call, order or book. In Kuwait, that usually means a bilingual layout, KNET checkout, clear delivery areas and fast loading on mobile data. Teknoppy works as a website development company Kuwait businesses use for fixed quotes, clear timelines and one senior project lead."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "cards",
+      "badge": "Our Services",
+      "h2": "Website Design Services for Kuwait Businesses",
+      "layout": "list",
+      "intro": "Most Kuwait clients choose one of these five services, shaped to their goals and budget.",
+      "items": [
+        {
+          "title": "Corporate Websites",
+          "text": "Corporate website design Kuwait City firms need includes clear service pages, team and project pages, company profile downloads and enquiry forms that reach the right person."
+        },
+        {
+          "title": "Ecommerce Stores",
+          "text": "Our ecommerce website design Kuwait projects use Shopify, WooCommerce or custom builds, with Arabic product pages, delivery areas by governorate, KWD pricing and a quick checkout. A website for Kuwait retail stores also needs stock updates that are easy for your staff to manage."
+        },
+        {
+          "title": "Landing Pages",
+          "text": "Landing page design Kuwait marketing teams use for Instagram, Snapchat and Google Ads campaigns: one offer, one form and fast loading."
+        },
+        {
+          "title": "Website Redesign",
+          "text": "Our website redesign Kuwait service refreshes outdated sites, keeps the pages that already bring traffic and moves your content safely to a modern, mobile-first design."
+        },
+        {
+          "title": "Maintenance and Support",
+          "text": "Website maintenance services Kuwait clients choose cover updates, backups, security checks and small content changes every month."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "table",
+      "badge": "Pricing",
+      "h2": "What Does a Website Cost in Kuwait?",
+      "intro": "The website design cost in Kuwait depends on the number of pages, languages and features such as online payments. Here is a typical guide:",
+      "headers": [
+        "Project",
+        "Best for",
+        "Timeline"
+      ],
+      "rows": [
+        [
+          "Business website",
+          "Shops and small firms, 5–10 pages",
+          "3–5 weeks"
+        ],
+        [
+          "Corporate bilingual website",
+          "Larger companies, Arabic and English",
+          "5–8 weeks"
+        ],
+        [
+          "Ecommerce store",
+          "Online shops with KNET",
+          "6–10 weeks"
+        ]
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "html": "Kuwait has no VAT in force, so these prices carry no VAT. Every business website package Kuwait clients buy includes hosting setup, basic page settings and a training session. Looking for affordable website design Kuwait startups can manage? Start with a business website and add online payments later. For an exact figure, request a <a href=\"/request-a-quote/\" class=\"text-primary font-semibold hover:underline\">free website development quote</a> Kuwait businesses receive within two working days."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "bullets",
+      "badge": "Payments",
+      "h2": "KNET and Card Payments",
+      "intro": "KNET is Kuwait's national debit card network, and most local shoppers expect to see it at checkout. A website with KNET payment gateway support is part of every store we build. We connect your site through a payment provider that supports:",
+      "items": [
+        {
+          "text": "KNET debit cards"
+        },
+        {
+          "text": "Visa, Mastercard and Apple Pay"
+        },
+        {
+          "text": "Cash on delivery, where it suits your business"
+        }
+      ],
+      "outro": [
+        {
+          "text": "We test every payment method before launch, show prices in KWD with three decimals (for example, KWD 12.500) and make delivery fees and areas clear before checkout. This is how we build KNET-ready websites for Kuwait shops that customers trust."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "badge": "Bilingual",
+      "h2": "Bilingual Layouts for Kuwait Audiences",
+      "paragraphs": [
+        {
+          "text": "Kuwait has a large Arabic-speaking population and a big expatriate community, so many businesses need both languages. Our bilingual website design Kuwait service mirrors menus, icons and forms for right-to-left Arabic, uses clear Arabic fonts and keeps both versions in step."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "cards",
+      "layout": "list",
+      "items": [
+        {
+          "title": "Restaurants and Cafés",
+          "text": "Mobile website design for Kuwait restaurants focuses on what hungry customers need: a fast mobile menu with photos, branch locations, opening hours, delivery app links and table booking. Pages load quickly even on busy evenings, and we can add a simple offers page that your staff update in minutes."
+        },
+        {
+          "title": "Retail and Fashion",
+          "text": "For retail brands, we design clear category pages, size guides, product photos and WhatsApp buttons, so customers can ask a question before they buy."
+        },
+        {
+          "title": "Kuwait City and Salmiya",
+          "text": "As a web design company Kuwait City offices and showrooms can work with remotely, we focus on trust: clear contact details, maps, credentials and real photos. Looking for a web development company Salmiya retailers recommend? Our team supports shops and cafés there with fast mobile sites and easy updates. Our Kuwait City web design work always starts from how your customers decide."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "bullets",
+      "badge": "Industries",
+      "h2": "Industries We Build Websites For",
+      "intro": "Each sector in Kuwait has its own buying habits, so we design around how your customers decide:",
+      "items": [
+        {
+          "html": "<strong>Clinics and salons:</strong> service menus, prices, staff profiles and online booking linked to WhatsApp."
+        },
+        {
+          "html": "<strong>Real estate and property:</strong> listings, floor plans, area guides and enquiry forms for each project."
+        },
+        {
+          "html": "<strong>Education and training centres:</strong> course pages, timetables, registration and payment."
+        },
+        {
+          "html": "<strong>B2B and oil and gas suppliers:</strong> product catalogues, specifications, certificates and request-for-quote forms."
+        },
+        {
+          "html": "<strong>Car rental and services:</strong> fleet pages, price lists and simple booking."
+        },
+        {
+          "html": "<strong>Startups:</strong> clear product pages, pricing tables and fast campaign pages."
+        }
+      ],
+      "outro": [
+        {
+          "text": "We also write page content that answers the questions customers actually ask, which makes your site easier to understand for both people and AI assistants such as ChatGPT and Gemini."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "bullets",
+      "h2": "What Every Kuwait Website Needs",
+      "intro": "Whatever your sector, we include these essentials as standard:",
+      "items": [
+        {
+          "text": "a WhatsApp button and click-to-call on every page"
+        },
+        {
+          "text": "clear opening hours, locations and delivery areas"
+        },
+        {
+          "text": "fast-loading images and pages under three seconds on mobile"
+        },
+        {
+          "text": "an easy content editor, so your team can update offers and prices"
+        },
+        {
+          "text": "basic page titles, descriptions and image tags, so search engines understand your site from day one"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "badge": "Privacy & Hosting",
+      "h2": "Data Privacy and Hosting",
+      "paragraphs": [
+        {
+          "html": "Kuwait does not yet have one general data protection law. The Data Privacy Protection Regulation issued by CITRA applies mainly to licensed telecom and internet providers. Even so, we follow good practice on every site: a clear consent banner, a plain privacy notice, secure HTTPS and forms that ask only for what you need. See <a href=\"https://www.citra.gov.kw\" class=\"text-primary font-semibold hover:underline\" target=\"_blank\" rel=\"noopener\">CITRA's website</a> for official guidance."
+        },
+        {
+          "text": "We host on fast cloud servers with a content delivery network that has servers close to Kuwait, so pages load quickly for local visitors. Backups run daily, and we monitor uptime around the clock."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "steps",
+      "badge": "How We Work",
+      "h2": "Our Design and Build Process",
+      "intro": "We follow six clear steps, so you always know what happens next:",
+      "items": [
+        {
+          "title": "Discovery call",
+          "text": "goals, products, languages and payment needs."
+        },
+        {
+          "title": "Sitemap and wireframes",
+          "text": "page structure before any design."
+        },
+        {
+          "title": "Design",
+          "text": "homepage and key pages in Arabic and English for your approval."
+        },
+        {
+          "title": "Build",
+          "text": "WordPress, Shopify, WooCommerce or a custom stack."
+        },
+        {
+          "title": "Testing",
+          "text": "speed, mobile, forms, KNET and right-to-left checks."
+        },
+        {
+          "title": "Launch and training",
+          "text": "go-live, a short training session and 30 days of support."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Project type",
+        "Typical timeline"
+      ],
+      "rows": [
+        [
+          "Landing page",
+          "1–2 weeks"
+        ],
+        [
+          "Business website",
+          "3–5 weeks"
+        ],
+        [
+          "Corporate bilingual website",
+          "5–8 weeks"
+        ],
+        [
+          "Ecommerce store",
+          "6–10 weeks"
+        ]
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "Before we start, we ask for your logo, brand colours, photos and product details. If you need help, our writers can prepare Arabic and English copy. Our website developers Kuwait clients work with also handle hosting, domains and email setup."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "badge": "Our Work",
+      "h2": "Kuwait Website Projects",
+      "paragraphs": [
+        {
+          "html": "Want a site like this? See our Kuwait website work on a <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">free call</a>."
+        }
+      ],
+      "bg": "cream",
+      "draft": true
+    },
+    {
+      "type": "bullets",
+      "badge": "Why Teknoppy",
+      "h2": "Why Choose Teknoppy as Your Web Design Company in Kuwait?",
+      "items": [
+        {
+          "html": "<strong>Senior-led projects:</strong> the Teknoppy Kuwait web design team is led by a named project manager who joins every review."
+        },
+        {
+          "html": "<strong>Honest location:</strong> Teknoppy's Kuwait web team works from Kochi, India, 2.5 hours ahead of Kuwait. We do not have a Kuwait office and say so openly. Our team can discuss your project in English or Malayalam."
+        },
+        {
+          "html": "<strong>Fixed quotes:</strong> clear scope, price and timeline before work starts."
+        },
+        {
+          "html": "<strong>Built to be found:</strong> clean code and fast pages. For ongoing growth, see our <a href=\"/seo-company-kuwait/\" class=\"text-primary font-semibold hover:underline\">SEO company in Kuwait</a> page."
+        }
+      ],
+      "outro": [
+        {
+          "html": "Comparing agencies for the best web design company in Kuwait? Ask for live examples, a written timeline and who will look after the site after launch. As a web design agency Kuwait firms can rely on, we design websites for Kuwait businesses of every size and focus on building fast websites for Kuwait firms. Ready to hire web designer Kuwait businesses recommend? <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">Talk to us</a>. We also offer website design Kuwait support for Arabic-only sites. Also see our <a href=\"/web-design-company-bahrain/\" class=\"text-primary font-semibold hover:underline\">web design company in Bahrain</a>, <a href=\"/web-design-company-saudi-arabia/\" class=\"text-primary font-semibold hover:underline\">web design company in Saudi Arabia</a> and <a href=\"/web-design-company-for-gcc-businesses/\" class=\"text-primary font-semibold hover:underline\">Web Design Company for GCC Businesses</a> pages."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "faq",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "How much does a website cost in Kuwait?",
+          "a": "The final price depends on pages, languages and features such as KNET payments."
+        },
+        {
+          "q": "Can you integrate KNET?",
+          "a": "Yes. We connect KNET through a supported payment provider, test every transaction and show clear payment and delivery details at checkout."
+        },
+        {
+          "q": "Can our site show prices in KWD?",
+          "a": "Yes. Prices display in KWD with three decimals, the local format, and you can add a second currency if you sell to customers outside Kuwait."
+        },
+        {
+          "q": "How long does a website take?",
+          "a": "Most business websites take three to five weeks, bilingual corporate sites five to eight weeks and online stores six to ten weeks, depending on content and approvals."
+        },
+        {
+          "q": "Will my new website show up on Google?",
+          "a": "Every site we build has clean code, fast pages, correct page titles and a sitemap, so Google can find and understand it from launch. Ranking for competitive searches takes ongoing work, which our SEO company in Kuwait team can handle if you need it."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "bullets",
+      "badge": "Free Quote",
+      "h2": "Get Your Free Website Quote",
+      "intro": "Tell us about your business and the website you need. Within two working days, you get:",
+      "items": [
+        {
+          "text": "a suggested sitemap and feature list"
+        },
+        {
+          "text": "a fixed price in KWD and a timeline"
+        },
+        {
+          "text": "examples of similar websites we have built"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "cta",
+      "paragraphs": [
+        {
+          "text": "No sales pitch and no obligation, just a clear plan from a web design company in Kuwait that shows its work."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Get my free quote",
+          "href": "/request-a-quote/"
+        },
+        {
+          "label": "WhatsApp",
+          "href": "https://wa.me/916282249224"
+        },
+        {
+          "label": "Book a call in Kuwait hours",
+          "href": "/book-a-consultation/"
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "byline",
+      "text": "Reviewed by Sanal Edison, Founder, Teknoppy. Last updated: 13 November 2026.",
+      "bg": "white"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Web Design Company in Kuwait",
+      "serviceType": "Web design",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "Kuwait",
+        "Kuwait City",
+        "Salmiya",
+        "Hawalli"
+      ],
+      "url": "https://teknoppy.com/web-design-company-kuwait/"
+    }
+  ],
+  "devNotes": {
+    "source": "Teknoppy_B2_Web_Design_Company_in_Kuwait.pdf",
+    "primaryKeyword": "web design company in Kuwait",
+    "permalink": "/web-design-company-kuwait/",
+    "secondaryKeywords": [
+      "website development company Kuwait",
+      "corporate website design Kuwait City",
+      "ecommerce website design Kuwait",
+      "website for Kuwait retail stores",
+      "landing page design Kuwait",
+      "website redesign Kuwait",
+      "website maintenance services Kuwait",
+      "website design cost in Kuwait",
+      "business website package Kuwait",
+      "affordable website design Kuwait",
+      "website development quote Kuwait",
+      "website with KNET payment gateway",
+      "bilingual website design Kuwait",
+      "mobile website design for Kuwait restaurants",
+      "web design company Kuwait City",
+      "web development company Salmiya",
+      "website developers Kuwait",
+      "best web design company in Kuwait",
+      "web design agency Kuwait",
+      "hire web designer Kuwait"
+    ],
+    "imageAlt": [
+      "web-design-company-kuwait.webp · ALT: Web design company in Kuwait: mobile website designed for a Kuwait City retailer"
+    ],
+    "internalLinks": [
+      "/web-design-company-for-gcc-businesses/",
+      "/web-design-company-bahrain/",
+      "/web-design-company-saudi-arabia/",
+      "/seo-company-kuwait/",
+      "/request-a-quote/",
+      "/book-a-consultation/"
+    ],
+    "schemaNote": "Service + FAQPage + BreadcrumbList (Home › GCC › Web Design Company in Kuwait). \"GCC\" crumb → live GCC web design hub. External link: CITRA (https://www.citra.gov.kw) from doc section 4.",
+    "heldPlaceholders": [
+      "Trust strip: Google rating [add rating] · [add number] websites delivered · Building websites since 2018 (filled from site canon: 4.9 / 60+ reviews, 120+ websites)",
+      "Pricing table \"Price (KWD)\" / \"Approx. USD\" columns: Business website [KWD 245.000–460.000] [USD 800–1,500]; Corporate bilingual website [KWD 460.000–1,075.000] [USD 1,500–3,500]; Ecommerce store [KWD 920.000–2,150.000] [USD 3,000–7,000] (columns dropped)",
+      "Project: [Client name, area] [Add one real website with a screenshot and a result, e.g. \"Online orders up X% in Y months\" or \"Mobile load time cut from X to Y seconds\".]",
+      "FAQ \"How much does a website cost in Kuwait?\": Business websites start at [KWD 245.000], bilingual corporate sites usually cost [KWD 460.000–1,075.000] and online stores start at [KWD 920.000]. (sentence dropped)",
+      "Byline: Written by [writer name], Web Content Lead · Reviewed by [reviewer name], Head of Design · Last reviewed: 13 November 2026 (replaced with standard Sanal Edison byline)"
+    ],
+    "corrections": [
+      "Doc schema serviceType \"Search engine optimisation\" is a copy-paste slip on a web design page → \"Web design\""
+    ],
+    "linkNote": "All internal-link targets are live or in this batch. Quote CTAs → /request-a-quote/; call CTAs and \"Talk to us\" → /book-a-consultation/.",
+    "requiredBeforePublishing": "Doc section 4: real Kuwait/GCC website with screenshot + result, confirm prices / KNET gateway / 2-day quote / 30 days support / Arabic+English copywriting / hours, Google rating, writer+reviewer, 4-field form, GA4 + consent banner.",
+    "heldSections": [
+      "\"Kuwait Website Projects\" set draft:true — its case study was a [bracket] placeholder, leaving only a CTA line under the heading. Add a real case study and remove draft to publish."
+    ]
+  }
+}

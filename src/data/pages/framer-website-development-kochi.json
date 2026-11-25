@@ -1,0 +1,413 @@
+{
+  "meta": {
+    "title": "Framer Website Development in Kochi | Teknoppy",
+    "description": "Framer website development by Teknoppy, Kochi: animated, design-led startup and launch sites with CMS and SEO setup for India and GCC. Get a quote today."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "Web Design",
+      "href": "/web-design-company-kochi/"
+    },
+    {
+      "name": "Framer Website Development",
+      "href": "/framer-website-development-kochi/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Web Design",
+      "h1Lead": "Framer Website Development in Kochi:",
+      "h1Accent": "Animated, Design-Led Sites for Startups and Launches",
+      "body": [
+        {
+          "text": "Framer website development at Teknoppy gives startups, product teams and brands polished, animated websites that launch quickly and stay easy to update. Framer is a visual website builder made for designers, and we use it to turn bold ideas into fast, responsive sites without the limits of standard templates."
+        },
+        {
+          "text": "Our in-house team works from Thykoodam, Kochi, for clients in Kerala, across India and in the GCC."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp +91 6282249224",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "2018",
+          "label": "Since"
+        },
+        {
+          "value": "120+",
+          "label": "Websites delivered"
+        },
+        {
+          "value": "4.9/5",
+          "label": "Google, 60+ reviews"
+        },
+        {
+          "value": "12",
+          "label": "In-house staff"
+        }
+      ],
+      "trustline": "Reviewed by Sanal Edison, Founder, Teknoppy. Last updated: 16 November 2026."
+    },
+    {
+      "type": "bullets",
+      "h2": "The short version",
+      "items": [
+        {
+          "text": "Teknoppy: web design and development studio in Thykoodam, Kochi, since 2018"
+        },
+        {
+          "text": "Framer work: startup sites, product launches, CMS setup, animations, localization and care plans"
+        },
+        {
+          "text": "120+ websites delivered; 4.9/5 on Google from 60+ reviews"
+        },
+        {
+          "text": "12 in-house designers and developers"
+        },
+        {
+          "text": "Typical timeline: 2 to 6 weeks"
+        }
+      ],
+      "badge": "At a Glance",
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "What Is Framer?",
+      "paragraphs": [
+        {
+          "text": "What is Framer? Framer is a website platform built for designers. Pages are laid out visually, much like in a design tool, and published directly as live, responsive websites with hosting included. It includes a content management system, built-in animations, localization and SEO settings, so many sites need no separate developer tools at all. Framer began as a prototyping tool for product designers, which is why its layout and motion controls feel so natural to design teams."
+        },
+        {
+          "text": "Framer website development is a strong fit when design quality and speed to launch matter most: startup and product sites, campaign pages, portfolios and company sites that change often."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "cards",
+      "h2": "What Framer Services Does Teknoppy Offer?",
+      "layout": "list",
+      "items": [
+        {
+          "title": "Framer Website Design",
+          "html": "Framer <a href=\"/web-design-company-kochi/\" class=\"text-primary font-semibold hover:underline\">website design</a> starts with your audience, product and the one action you want visitors to take. We create a clear page structure, a type and colour system, and layouts that work on desktop, tablet and mobile."
+        },
+        {
+          "title": "Framer Startup Website",
+          "text": "A Framer startup website suits founders who need a credible site for launch, fundraising or hiring in days or weeks, not months. Sections can be duplicated, reordered and reworded as the product evolves, without waiting for a developer. Investor, careers and product pages can all live on the same site and share one consistent design system."
+        },
+        {
+          "title": "Figma to Framer",
+          "text": "If your designs already exist in Figma, our Figma to Framer service turns them into a live, responsive Framer site. We rebuild layouts properly rather than pasting static images, so text stays editable, images stay sharp and pages stay fast."
+        },
+        {
+          "title": "Framer Animations and Interactions",
+          "text": "Framer animations and interactions add scroll effects, hover states, page transitions and subtle motion that make a brand feel premium. Our Framer developers keep motion purposeful and light, test it on low-end phones, and reduce it for visitors who prefer less movement."
+        },
+        {
+          "title": "Framer CMS Setup",
+          "text": "Framer CMS setup structures blog posts, case studies, team profiles, job openings and changelogs as collections, so every new item uses the right layout automatically. Your team adds new content through simple, clearly labelled forms, and new entries appear on the site as soon as they are published."
+        },
+        {
+          "title": "Framer Localization",
+          "text": "Framer localization serves English, Arabic and other languages from one project, with translated pages and URLs. It suits startups and brands selling to India and the Gulf from one site."
+        }
+      ],
+      "badge": "What We Do",
+      "intro": "As a Framer agency India and GCC clients work with, we cover design, build, launch and ongoing care.",
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "Is Framer Good for SEO?",
+      "paragraphs": [
+        {
+          "text": "Is Framer good for SEO? Yes, when it is set up properly. Framer publishes fast, server-rendered pages and supports custom titles, descriptions, clean URLs, redirects, sitemaps and social sharing images."
+        },
+        {
+          "text": "Our Framer SEO setup covers metadata for every page, heading structure, image alt text, redirects from any old site, structured data and Google Search Console connection. We also keep animations from hiding text from search engines, which is a common problem on design-heavy sites."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "h2": "When Framer Is Not the Right Choice",
+      "paragraphs": [
+        {
+          "text": "Framer is not ideal for every project. Large online stores, sites with hundreds of complex content types, or projects that need deep custom integrations are usually better served by other platforms. During discovery we tell you honestly whether Framer website development fits your plans for the next two to three years, not only for launch day."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "Framer vs Webflow and Framer vs WordPress",
+      "paragraphs": [
+        {
+          "lead": "Framer vs Webflow:",
+          "html": "Both are visual website builders with hosting and CMS included. Framer is faster for design-led marketing sites and feels closer to a design tool. Webflow offers more detailed control over structure, CMS logic and ecommerce. For content-heavy or more complex sites, see our <a href=\"/webflow-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Webflow development page</a>."
+        },
+        {
+          "lead": "Framer vs WordPress:",
+          "text": "WordPress relies on themes and plugins that need regular updates. Framer includes design, hosting, security and updates in one platform, which suits small teams that want low upkeep. WordPress suits large content libraries and sites that depend on specific plugins."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "cards",
+      "h2": "Who Does Teknoppy Build Framer Websites For?",
+      "layout": "list",
+      "items": [
+        {
+          "title": "Framer Websites We Commonly Build",
+          "text": "Typical Framer website development projects include launch sites for software startups, product pages for new apps, portfolios for studios and architects, event and campaign microsites, and company sites for agencies and consultancies that update their messaging often."
+        },
+        {
+          "title": "Businesses in Kerala and Across India",
+          "text": "Our Framer website development Kochi clients book is handled by one in-house team. The Framer designer Kerala clients meet at kickoff is the person who designs and launches their site. If you need ongoing changes after launch, you can hire Framer developer time on a simple monthly plan."
+        },
+        {
+          "title": "GCC and International Clients",
+          "text": "Teknoppy already serves clients in the UAE and Qatar and schedules calls during hours that overlap with Gulf offices. Design reviews happen on shared preview links, so nobody needs to travel. International clients choose Framer website development from Kochi for lower costs than Gulf or European agencies and a stable team."
+        }
+      ],
+      "badge": "Who We Serve",
+      "bg": "white"
+    },
+    {
+      "type": "cards",
+      "h2": "Why Choose Teknoppy for Framer Website Development?",
+      "items": [
+        {
+          "title": "Designers and Developers on One Team",
+          "text": "As a Framer agency, our designers and developers sit in the same studio, so design ideas are tested for speed, SEO and editing from the start rather than fixed later."
+        },
+        {
+          "title": "Proof You Can Check",
+          "text": "Ask to see our Framer website portfolio and live client sites before you decide. Vivek Menon, CTO of Evosyz in Kochi, says Teknoppy \"created an appealing website that represents our brand perfectly.\""
+        },
+        {
+          "title": "Founder Oversight",
+          "text": "Sanal Edison, founder and digital strategist, reviews the page structure and search plan of every site before design begins."
+        }
+      ],
+      "badge": "Why Teknoppy",
+      "columns": 3,
+      "bg": "soft"
+    },
+    {
+      "type": "steps",
+      "h2": "What Is Teknoppy's Framer Process and Timeline?",
+      "items": [
+        {
+          "title": "Discovery (1 to 3 working days)",
+          "text": "We agree on goals, pages, languages and who will edit the site."
+        },
+        {
+          "title": "Design (3 to 7 days)",
+          "text": "You approve the homepage and key layouts, either in Figma or directly in Framer."
+        },
+        {
+          "title": "Build (1 to 3 weeks)",
+          "text": "We build pages, CMS collections, forms and animations."
+        },
+        {
+          "title": "Review and launch (2 to 4 days)",
+          "text": "You test on your own devices, we fix any issues, set up SEO and go live."
+        },
+        {
+          "title": "Training and care (ongoing)",
+          "text": "We train your team, and Framer website maintenance plans start from Rs. 3,000 per month."
+        }
+      ],
+      "badge": "How We Work",
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "Typical totals: 2 to 3 weeks for a startup or landing-style site, and 4 to 6 weeks for a larger CMS or multilingual site."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "How Much Does a Framer Website Cost?",
+      "paragraphs": [
+        {
+          "text": "How much does a Framer website cost? It depends on the number of pages, CMS collections, languages and custom animations. Framer also charges its own monthly or yearly site plan for hosting and features, billed directly by Framer."
+        },
+        {
+          "text": "Every project is quoted after a short discovery call, and the quote is fixed for the agreed scope. Each quote for Framer website development lists exactly what is included."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "faq",
+      "center": true,
+      "badge": "Have Questions?",
+      "items": [
+        {
+          "q": "Can my team edit a Framer website?",
+          "a": "Yes. Your team can change text, images and CMS items directly in Framer, and publish with one click. We set up layouts so edits do not break the design, and we train your team at launch."
+        },
+        {
+          "q": "How long does a Framer website take?",
+          "a": "A startup or landing-style site usually takes 2 to 3 weeks. A larger CMS or multilingual site takes 4 to 6 weeks. We confirm the timeline in writing after discovery."
+        },
+        {
+          "q": "Do I own my Framer website?",
+          "a": "Yes. The project is created in your Framer account or transferred to you at launch, and you control the domain, content and billing."
+        },
+        {
+          "q": "Is a Framer website secure?",
+          "a": "Yes. Framer manages hosting, security certificates and platform updates, so there are no plugins or servers for you to patch. We add two-step login and give each team member only the access they need."
+        },
+        {
+          "q": "What do we receive at handover?",
+          "a": "You receive full access to the Framer project, a short written editing guide, a recorded training session and a list of every integration and setting used. Nothing is held back, so simple changes never depend on us."
+        }
+      ],
+      "h2": "Framer Website FAQs",
+      "bg": "white"
+    },
+    {
+      "type": "links",
+      "h2": "Related Services",
+      "items": [
+        {
+          "label": "Web Design",
+          "href": "/web-design-company-kochi/",
+          "text": "Our web design services hub"
+        },
+        {
+          "label": "Webflow Development",
+          "href": "/webflow-development-company-kochi/",
+          "text": "Designer-led Webflow websites"
+        },
+        {
+          "label": "Wix Development",
+          "href": "/wix-website-development-kochi/",
+          "text": "Easy-to-edit Wix websites"
+        },
+        {
+          "label": "UI/UX Design",
+          "href": "/ui-ux-design-company-in-kochi/",
+          "text": "Research-led interface design"
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "cta",
+      "h2": "Start Your Framer Website With Teknoppy",
+      "paragraphs": [
+        {
+          "text": "Talk to Teknoppy about Framer website development for your startup or brand. Kochi clients are welcome at our Thykoodam office, and international clients can work with us entirely online. Share your goals, and we will reply with a clear scope, timeline and fixed quote."
+        },
+        {
+          "html": "Call or WhatsApp +91 6282249224, email sales@teknoppy.com, or <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">book a consultation</a> at teknoppy.com."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp Us",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "bg": "white"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Framer Website Development in Kochi: Animated, Design-Led Sites for Startups and Launches",
+      "serviceType": "Framer Development",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "Kochi",
+        "Kerala",
+        "India",
+        "UAE",
+        "Qatar"
+      ],
+      "url": "https://teknoppy.com/framer-website-development-kochi/"
+    }
+  ],
+  "devNotes": {
+    "source": "Teknoppy_Framer_Development.pdf",
+    "primaryKeyword": "framer website development",
+    "secondaryKeywords": [
+      "framer website design",
+      "framer agency",
+      "framer developers",
+      "framer website development kochi",
+      "framer designer kerala",
+      "framer agency india",
+      "hire framer developer",
+      "framer startup website",
+      "framer cms setup",
+      "framer animations and interactions",
+      "framer seo setup",
+      "framer localization",
+      "framer website maintenance",
+      "figma to framer",
+      "what is framer",
+      "is framer good for seo",
+      "how much does a framer website cost",
+      "framer vs webflow",
+      "framer vs wordpress",
+      "framer website portfolio"
+    ],
+    "imageAlt": [
+      "Framer startup website designed by Teknoppy",
+      "Framer animations on a product launch page",
+      "Teknoppy designers building a Framer site in Kochi"
+    ],
+    "internalLinks": [
+      "/web-design-company-kochi/",
+      "/webflow-development-company-kochi/",
+      "/wix-website-development-kochi/",
+      "/ui-ux-design-company-in-kochi/",
+      "/book-a-consultation/"
+    ],
+    "schemaNote": "Service (serviceType: Framer Development, areaServed: Kochi, Kerala, India, UAE, Qatar) + LocalBusiness (Thykoodam address, +91 6282249224) + FAQPage (all FAQs on this page) + BreadcrumbList (Home › Services › Web Design › Framer Website Development).",
+    "sourceNotes": "Company facts (2018, 120+ websites, 4.9/5 from 60+ Google reviews, 12 in-house staff, Rs. 3,000/month maintenance, client quotes) are from teknoppy.com. Framer platform facts (CMS, localization, hosting, prototyping origins): framer.com. No usage statistic used. Link stats to their source on the live page.",
+    "permalink": "/framer-website-development-kochi/",
+    "heldPlaceholders": [],
+    "corrections": [
+      "Contact email sanal@teknoppy.com → sales@teknoppy.com (site canon)"
+    ],
+    "linkNote": "Doc link /ui-ux-design-company-kochi/ → live /ui-ux-design-company-in-kochi/. Wix and UI/UX had no naming words in body copy; placed in Related Services."
+  }
+}

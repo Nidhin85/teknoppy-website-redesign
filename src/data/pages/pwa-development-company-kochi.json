@@ -1,0 +1,394 @@
+{
+  "meta": {
+    "title": "PWA Development Company in Kochi | Offline Web Apps",
+    "description": "Teknoppy is a PWA development company in Kochi building installable, offline-ready progressive web apps for India and GCC businesses. Get a fixed quote today."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "Web Application Development",
+      "href": "/web-application-development-company-kochi/"
+    },
+    {
+      "name": "PWA Development",
+      "href": "/pwa-development-company-kochi/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Web Application Development",
+      "h1Lead": "PWA Development Company in Kochi:",
+      "h1Accent": "App-Like Web Apps That Work Offline",
+      "body": [
+        {
+          "text": "Teknoppy is a PWA development company that builds progressive web apps: websites that install on a phone's home screen, open full-screen like an app, send notifications and keep working with weak or no internet. One PWA serves Android, iPhone and desktop users from a single codebase, without app store delays."
+        },
+        {
+          "text": "Our in-house team works from Thykoodam, Kochi, for clients in Kerala, across India and in the GCC."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp +91 6282249224",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "2018",
+          "label": "Since"
+        },
+        {
+          "value": "120+",
+          "label": "Websites delivered"
+        },
+        {
+          "value": "4.9/5",
+          "label": "Google, 60+ reviews"
+        },
+        {
+          "value": "12",
+          "label": "In-house staff"
+        }
+      ],
+      "trustline": "Reviewed by Sanal Edison, Founder, Teknoppy. Last updated: 16 November 2026."
+    },
+    {
+      "type": "bullets",
+      "badge": "At a Glance",
+      "h2": "Quick facts",
+      "items": [
+        {
+          "text": "Teknoppy: web and app studio in Thykoodam, Kochi, since 2018"
+        },
+        {
+          "text": "PWA work: new PWAs, website-to-PWA conversion, offline features, push notifications and Play Store listing"
+        },
+        {
+          "text": "120+ websites delivered; 4.9/5 on Google from 60+ reviews"
+        },
+        {
+          "text": "12 in-house staff; no outsourced code"
+        },
+        {
+          "text": "Typical timeline: 3 to 12 weeks"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "What Is a Progressive Web App?",
+      "paragraphs": [
+        {
+          "text": "What is a progressive web app? It is a website built with modern web features that let it behave like an installed app. Users open it from a link, tap \"Add to Home Screen\" or \"Install\", and from then on it launches from an icon, opens full-screen and loads instantly."
+        },
+        {
+          "text": "Two technologies make this possible. A web app manifest tells the phone the app's name, icon and colours. A service worker is a small script that saves key files and data on the device, so the app opens quickly and keeps working offline. As a PWA development company, our job is to plan which screens and data must work offline, then build that reliably."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "cards",
+      "badge": "What We Offer",
+      "h2": "What PWA Services Does Teknoppy Offer?",
+      "intro": "Our <a href=\"/web-application-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">progressive web app development services</a> cover new builds, conversions of existing websites and ongoing support.",
+      "introHtml": true,
+      "layout": "list",
+      "items": [
+        {
+          "title": "Installable Web App Development",
+          "text": "An installable web app gives customers or staff an app icon, full-screen view and fast loading, without downloading anything from an app store. Updates reach every user the next time they open it, with no store approval needed."
+        },
+        {
+          "title": "Offline Web App Development",
+          "text": "Offline web app development lets users keep working when the signal drops. Forms, checklists, orders and notes are saved on the device and sent automatically when the connection returns. This is essential for teams working in warehouses, rural areas, construction sites or on the road."
+        },
+        {
+          "title": "Service Worker Development",
+          "text": "Service worker development decides what the app stores, for how long and how it updates. Good caching rules make the app fast without showing outdated prices or stock. Poor ones cause the stale-content problems many PWAs suffer from, so we test this layer carefully."
+        },
+        {
+          "title": "PWA Push Notifications",
+          "text": "PWA push notifications remind users about orders, appointments, offers or tasks, directly on their phone or desktop. Users choose whether to allow them, and we keep messages useful."
+        },
+        {
+          "title": "Convert Website to PWA",
+          "html": "If you already have a good website, we can convert the website to a PWA without a full rebuild. We add the manifest, service worker, offline pages and install prompts, and fix any <a href=\"/website-speed-optimization-services-kochi/\" class=\"text-primary font-semibold hover:underline\">speed or layout issues</a> that would hurt the app experience."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "PWAs We Commonly Build",
+      "paragraphs": [
+        {
+          "text": "Typical projects from our PWA development company include ordering apps for distributors and their retailers, job and inspection apps for service technicians, booking and loyalty apps for restaurants and salons, and learning apps for training institutes whose students rely on mobile data."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "h2": "PWAs for Ecommerce, Field Teams and Low-Data Users",
+      "paragraphs": [
+        {
+          "text": "A PWA for ecommerce helps shoppers return to your store from a home-screen icon, browse quickly on slow networks and receive back-in-stock or order updates. Many shoppers skip store apps but will add a PWA in one tap."
+        },
+        {
+          "text": "A PWA for field teams gives sales staff, technicians and inspectors one tool for orders, job sheets, photos and signatures, even without network coverage. Data syncs automatically once they are back online."
+        },
+        {
+          "text": "A low data mode web app compresses images, loads only essential content and works on older phones, which matters for customers in areas with expensive or patchy mobile data."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "Can a PWA Work Offline?",
+      "paragraphs": [
+        {
+          "text": "Can a PWA work offline? Yes. Pages, images and data saved by the service worker remain available without a connection. Users can browse saved content, fill forms and queue actions, which are sent when the connection returns. We decide during planning exactly which parts must work offline and which need a live connection, such as payments."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "h2": "Does a PWA Work on iPhone?",
+      "paragraphs": [
+        {
+          "text": "Does a PWA work on iPhone? Yes. iPhone and iPad users can add a PWA to the home screen from Safari, and Apple added web push notifications for home-screen web apps in iOS 16.4. Some device features still work more fully on Android, so we check every feature you need on both platforms before the build begins."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "PWA vs Native App",
+      "paragraphs": [
+        {
+          "text": "PWA vs native app comes down to budget, reach and device features. A PWA is one codebase for all devices, needs no app store approval, updates instantly and is usually far cheaper to build and maintain. A native app has deeper access to device hardware, background tasks and app store visibility."
+        },
+        {
+          "html": "If you need heavy device features, see our <a href=\"/mobile-app-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">Flutter, Android and iOS app pages</a>. If you mainly need fast access, offline use and notifications, a PWA usually delivers most of the value at a fraction of the cost."
+        },
+        {
+          "text": "Trusted Web Activity Play Store listing: a PWA can also be published on Google Play using Trusted Web Activity, so users who search the store can still find and install it."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "cards",
+      "badge": "Who We Serve",
+      "h2": "Who Does Teknoppy Build PWAs For?",
+      "columns": 2,
+      "items": [
+        {
+          "title": "Businesses in Kerala and Across India",
+          "text": "As a PWA development company Kochi businesses can visit at our Thykoodam office, we work with retailers, distributors, service companies, clinics and training institutes. The PWA developers Kerala clients meet at the first workshop are the people who build and support their app."
+        },
+        {
+          "title": "GCC and International Clients",
+          "text": "PWA development for GCC businesses often includes Arabic and English interfaces with right-to-left layouts. Teknoppy already serves clients in the UAE and Qatar and schedules calls during hours that overlap with Gulf offices. International clients choose a PWA development company in Kochi for lower costs than Gulf or European agencies and a stable team."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "cards",
+      "badge": "Why Teknoppy",
+      "h2": "Why Choose Teknoppy for Your PWA?",
+      "columns": 3,
+      "items": [
+        {
+          "title": "Experienced PWA Developers Kerala Clients Can Meet",
+          "text": "The experienced PWA developers Kerala clients work with are all on our payroll. The same team plans the offline strategy, builds the app and supports it after launch."
+        },
+        {
+          "title": "A PWA Audit for Existing Apps",
+          "text": "If you already have a PWA that feels slow, shows old content or fails to install, a PWA audit checks the manifest, service worker, caching rules, offline behaviour and speed, and gives you a written, prioritised list of fixes."
+        },
+        {
+          "title": "Proof and Accountability",
+          "text": "Shainesh Prakashan, CEO of Exacore IT at Infopark Kochi, says Teknoppy \"was very intuitive in understanding our requirements.\" Founder Sanal Edison reviews the scope and offline plan of every project before development begins."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "steps",
+      "badge": "How We Work",
+      "h2": "What Is Teknoppy's PWA Process and Timeline?",
+      "items": [
+        {
+          "title": "Discovery (3 to 5 working days)",
+          "text": "We agree on users, screens, offline needs and notifications."
+        },
+        {
+          "title": "Design (1 to 2 weeks)",
+          "text": "You approve app screens and the install experience."
+        },
+        {
+          "title": "Build sprints (2-week cycles)",
+          "text": "We build features, offline storage and sync."
+        },
+        {
+          "title": "Testing (1 week)",
+          "text": "We test installation, offline use and notifications on Android and iPhone."
+        },
+        {
+          "title": "Launch and support (ongoing)",
+          "text": "Maintenance plans start from Rs. 3,000 per month."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "Typical totals: 3 to 4 weeks to convert an existing website, 6 to 8 weeks for a new customer-facing PWA, and 10 to 12 weeks for a field app with offline sync."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "h2": "How Much Does a PWA Cost in India?",
+      "paragraphs": [
+        {
+          "text": "How much does a PWA cost in India? It depends on the number of screens, offline requirements, integrations and notifications. A website conversion costs far less than a new field app with offline sync. A PWA is usually much cheaper than building separate Android and iOS apps."
+        },
+        {
+          "text": "Every project is quoted after discovery. Each quote from our PWA development company is fixed for the agreed scope and lists exactly what is included."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "faq",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "PWA FAQs",
+      "items": [
+        {
+          "q": "How long does a PWA take to build?",
+          "a": "Converting an existing website usually takes 3 to 4 weeks. A new customer-facing PWA takes 6 to 8 weeks, and a field app with offline sync takes 10 to 12 weeks. We confirm the timeline in writing after discovery."
+        },
+        {
+          "q": "Is a PWA good for SEO?",
+          "a": "Yes. A PWA is still a website, so its pages can be indexed by Google when they render content properly. PWAs also tend to load faster, which supports better search performance and user experience."
+        },
+        {
+          "q": "How do I choose a PWA development company?",
+          "a": "Ask to install and test apps the team has already built, check how they handle offline data and updates, and confirm that developers are in-house. A reliable PWA development company gives a fixed written scope and tests on both Android and iPhone."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "links",
+      "h2": "Related Services",
+      "items": [
+        {
+          "label": "Web Application Development",
+          "href": "/web-application-development-company-kochi/",
+          "text": "Our web application development hub"
+        },
+        {
+          "label": "Mobile App Development",
+          "href": "/mobile-app-development-company-kochi/",
+          "text": "Flutter, Android and iOS apps"
+        },
+        {
+          "label": "Website Speed Optimization",
+          "href": "/website-speed-optimization-services-kochi/",
+          "text": "Faster pages on slow networks"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "cta",
+      "h2": "Start Your PWA With Teknoppy",
+      "paragraphs": [
+        {
+          "text": "Talk to Teknoppy, the PWA development company Kochi businesses can visit in Thykoodam and international clients can work with fully online. Tell us who will use the app and where, and we will reply with a clear scope, timeline and fixed quote."
+        },
+        {
+          "html": "Call or WhatsApp +91 6282249224, email sales@teknoppy.com, or <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">book a consultation</a> at teknoppy.com."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp Us",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "bg": "soft"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "PWA Development Company in Kochi: App-Like Web Apps That Work Offline",
+      "serviceType": "PWA Development",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "Kochi",
+        "Kerala",
+        "India",
+        "UAE",
+        "Qatar"
+      ],
+      "url": "https://teknoppy.com/pwa-development-company-kochi/"
+    }
+  ],
+  "devNotes": {
+    "source": "Teknoppy_PWA_Development.pdf",
+    "primaryKeyword": "pwa development company",
+    "permalink": "/pwa-development-company-kochi/",
+    "imageAlt": [
+      "Progressive web app installed on an Android home screen",
+      "Offline field app syncing job sheets when back online",
+      "PWA push notification on an iPhone"
+    ],
+    "internalLinks": [
+      "/web-application-development-company-kochi/",
+      "/flutter-app-development-company-kochi/",
+      "/mobile-app-development-company-kochi/",
+      "/website-speed-optimization-services-kochi/",
+      "/book-a-consultation/"
+    ],
+    "schemaNote": "Service (PWA Development) + LocalBusiness + FAQPage + BreadcrumbList (Home › Services › Web Application Development › PWA Development).",
+    "heldPlaceholders": [],
+    "corrections": [
+      "Contact email sales@teknoppy.com → sales@teknoppy.com (site canon)"
+    ],
+    "linkNote": "/flutter-app-development-company-kochi/ does not exist → \"Flutter, Android and iOS app pages\" linked to /mobile-app-development-company-kochi/. Source note: cite Apple WebKit iOS 16.4 web push and TWA docs on the live page."
+  }
+}

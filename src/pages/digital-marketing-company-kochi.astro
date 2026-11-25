@@ -188,15 +188,19 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
           {page.services.cards.map((svc, i) => {
             const IconComp = serviceIcons[i];
-            const Card = svc.linkHref ? 'a' : 'div';
+            // Committed JSON uses linkHref/description/linkText; cms:pull writes href/desc (CMS schema).
+            const href = svc.linkHref ?? svc.href;
+            const description = svc.description ?? svc.desc;
+            const label = svc.linkText ?? svc.linkLabel ?? 'Learn more';
+            const Card = href ? 'a' : 'div';
             return (
-              <Card href={svc.linkHref} class="dmd-card group p-6 flex flex-col">
+              <Card href={href} class="dmd-card group p-6 flex flex-col">
                 <span class="dmd-icon mb-5"><IconComp class="w-6 h-6" /></span>
-                <h3 class:list={["text-lg font-bold text-neutral-900 leading-snug mb-2.5", svc.linkHref && "group-hover:text-primary transition-colors duration-300"]}>{svc.title}</h3>
-                <p class="text-neutral-600 text-sm leading-relaxed">{svc.description}</p>
-                {svc.linkHref && (
+                <h3 class:list={["text-lg font-bold text-neutral-900 leading-snug mb-2.5", href && "group-hover:text-primary transition-colors duration-300"]}>{svc.title}</h3>
+                <p class="text-neutral-600 text-sm leading-relaxed">{description}</p>
+                {href && (
                   <span class="inline-flex items-center gap-1.5 mt-auto pt-5 text-[13px] font-bold text-primary">
-                    {svc.linkText ?? 'Learn more'} <ArrowRight class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+                    {label} <ArrowRight class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
                   </span>
                 )}
               </Card>
@@ -250,7 +254,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
         <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/pricingbg.webp')] opacity-75"></div>
       </div>
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
-        <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           <div class="lg:col-span-5">
             <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-wider mb-4 shadow-sm">
               {page.pricing.badge}
@@ -276,7 +280,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
                     {page.pricing.rows.map((priceItem) => (
                       <tr class="hover:bg-[#fff8f3] transition-colors">
                         <td class="py-3.5 sm:py-4 px-4 sm:px-7 font-bold text-neutral-900 text-xs sm:text-[0.95rem]">{priceItem.service}</td>
-                        <td class="py-3.5 sm:py-4 px-4 sm:px-7 text-right font-bold text-primary text-xs sm:text-[0.95rem] whitespace-nowrap">{priceItem.price}</td>
+                        <td class="py-3.5 sm:py-4 px-4 sm:px-7 text-right font-bold text-primary text-xs sm:text-[0.95rem] sm:whitespace-nowrap">{priceItem.price}</td>
                       </tr>
                     ))}
                   </tbody>

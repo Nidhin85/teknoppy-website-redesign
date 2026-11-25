@@ -1,0 +1,538 @@
+{
+  "meta": {
+    "title": "ERPNext for Construction Companies & Contractors | Teknoppy",
+    "description": "ERPNext for construction companies: project costing, progress billing, retention, subcontractors and site stock for contractors in Kerala, India and the GCC."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "ERPNext Development",
+      "href": "/erp-development-company-kochi/"
+    },
+    {
+      "name": "ERPNext for Construction",
+      "href": "/erpnext-for-construction-companies/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "ERPNext",
+      "h1Lead": "ERPNext for",
+      "h1Accent": "Construction Companies",
+      "body": [
+        {
+          "text": "ERPNext for construction companies brings budgets, progress billing, retention, subcontractors, site stock and labour costs into one system, so contractors can see profit on every project before the final invoice. Teknoppy sets it up for civil, MEP, fit-out and infrastructure contractors across Kerala, India and the GCC."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a free ERPNext health check",
+          "href": "/free-erpnext-health-check/"
+        },
+        {
+          "label": "Talk to our team on WhatsApp",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "2018",
+          "label": "Since"
+        },
+        {
+          "value": "120+",
+          "label": "Digital projects delivered"
+        },
+        {
+          "value": "4.9★",
+          "label": "From 60+ Google reviews"
+        }
+      ],
+      "trustline": "Since 2018 · 120+ digital projects delivered · 4.9★ from 60+ Google reviews · Support in IST, GST and AST hours"
+    },
+    {
+      "type": "prose",
+      "badge": "Quick Answer",
+      "h2": "Can ERPNext Run Contracting Projects?",
+      "paragraphs": [
+        {
+          "text": "Yes. ERPNext links every purchase, timesheet, subcontractor bill and client invoice to a project, so cost and revenue build up as work happens. Budgets come from your bill of quantities, progress bills follow your measurements, and retention is tracked on both sides. Setting up ERPNext for construction companies usually takes 10–14 weeks for a contractor with several live projects."
+        },
+        {
+          "text": "ERPNext for contracting companies replaces the mix of spreadsheets, site registers and accounting software that most contractors rely on. As ERPNext construction software, it has no licence fee per user, so site engineers, storekeepers and project managers can all log in without extra cost."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "bullets",
+      "h2": "Signs Your Projects Need a Better System",
+      "items": [
+        {
+          "text": "Project profit is only known after the final account"
+        },
+        {
+          "text": "Site stores and head office disagree on material balances"
+        },
+        {
+          "text": "Running bills take more than a week to prepare"
+        },
+        {
+          "text": "Nobody can say quickly how much retention is owed to you"
+        },
+        {
+          "text": "Subcontractor bills are approved without checking measured work"
+        }
+      ],
+      "outro": [
+        {
+          "text": "If three or more apply, ERPNext for construction companies usually pays for itself through tighter cost control and faster billing within the first year."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "badge": "Costing",
+      "h2": "Project Costing and Budgets",
+      "paragraphs": [
+        {
+          "text": "ERPNext project costing shows actual cost against budget for every project, broken down by material, labour, subcontract, equipment and overheads. When a purchase order or timesheet is approved, the cost lands on the project straight away, not at month-end."
+        },
+        {
+          "text": "ERPNext BOQ management turns your bill of quantities into budget lines, so each item has a target cost and quantity. ERPNext job costing construction reports then show margin per project, per BOQ item and per phase. Owners finally see which projects make money while there is still time to act."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Report",
+        "What it shows"
+      ],
+      "rows": [
+        [
+          "Budget vs actual",
+          "Cost per BOQ item against its budget"
+        ],
+        [
+          "Project profitability",
+          "Billed revenue minus all costs to date"
+        ],
+        [
+          "Cost to complete",
+          "Remaining budget and expected final cost"
+        ],
+        [
+          "Committed cost",
+          "Purchase orders and subcontracts not yet billed"
+        ]
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "h2": "Progress Billing and Retention",
+      "paragraphs": [
+        {
+          "text": "ERPNext progress billing creates running bills from measured quantities or percentage complete, with the previous billed amount, this period's work and the cumulative total. Advance payments are recovered automatically from each bill, and ERPNext retention money is deducted and tracked until it is released at handover or after the defects period."
+        },
+        {
+          "text": "Retention works both ways. ERPNext tracks what your client holds back from you and what you hold back from subcontractors, so you always know what is due, from whom and when. ERPNext contract billing also handles variation orders, so approved changes are added to the contract value and billed correctly."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "Advances, Guarantees and Cash Position",
+      "paragraphs": [
+        {
+          "text": "Contractors often receive mobilisation advances, give performance and advance-payment guarantees, and wait months for retention. ERPNext records each advance and recovers it from running bills, tracks guarantee amounts and expiry dates, and lists expected receipts by project. Finance teams see how much cash is tied up in retention and unbilled work, which helps plan the next tender. Any partner setting up ERPNext for construction companies should include this view, because cash, not profit, is what usually stops a growing contractor."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "h2": "Subcontractors and Labour",
+      "paragraphs": [
+        {
+          "text": "ERPNext subcontractor billing records each subcontract with its scope, rates and retention. Subcontractor bills are checked against measured work before approval, so you never pay for work that has not been done. Back-charges for materials supplied, damage or delays are deducted on the same bill, with the reason recorded for any later dispute."
+        },
+        {
+          "html": "ERPNext timesheets construction setups capture labour hours by project and activity, from site supervisors on mobile or from biometric devices. Labour cost then flows to each project at the correct rate, including overtime. For contractors with large workforces in the Gulf, payroll and WPS can run in the same system; see <a href=\"/erpnext-hr-payroll-gcc/\" class=\"text-primary font-semibold hover:underline\">ERPNext HR and payroll for the GCC</a>."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "Site Stock and Equipment",
+      "paragraphs": [
+        {
+          "text": "ERPNext material management construction setups give each site its own store. Materials are issued against the project and activity, transfers between sites are recorded, and unused stock is returned. Storekeepers can work from a tablet, and managers see what is on each site without a phone call. Material requests from site go to purchasing with the project and BOQ item attached, so buyers know exactly what the order is for and which budget it uses."
+        },
+        {
+          "text": "Owned and hired equipment is tracked by project, with usage hours charged to each job. Fuel, operator costs and repairs are booked against the machine and the project it was working on, so you know the true cost of every crane, excavator and generator. Maintenance schedules and hire agreements keep machines working and costs visible. ERPNext site management brings materials, equipment and labour together for each location."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "h2": "ERPNext Project Management for Construction",
+      "paragraphs": [
+        {
+          "text": "ERPNext project management construction setups break each project into phases and tasks, with planned dates, owners and progress. Site engineers update progress on mobile, and the same progress feeds billing and cost-to-complete reports. ERPNext construction management therefore links what is happening on site with what is happening in the accounts."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "table",
+      "badge": "Who It Suits",
+      "h2": "Which Contractors Is ERPNext Right For?",
+      "headers": [
+        "Contractor type",
+        "What matters most"
+      ],
+      "rows": [
+        [
+          "Civil and building",
+          "BOQ budgets, progress billing and retention"
+        ],
+        [
+          "MEP",
+          "Material control, subcontractors and variation orders"
+        ],
+        [
+          "Fit-out and interiors",
+          "Fast quotations, purchase control and short projects"
+        ],
+        [
+          "Infrastructure",
+          "Long projects, equipment, advances and guarantees"
+        ],
+        [
+          "Engineering contractors",
+          "Job costing, fabrication and installation"
+        ]
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "We set up ERPNext for civil contractors, ERPNext for MEP contractors, ERPNext for fit-out companies and ERPNext for interior contractors, each with the reports that type of work needs. Larger groups use ERPNext for infrastructure companies and ERPNext for engineering contractors setups with multi-company accounting. ERPNext for builders working on residential projects follows the same approach."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "table",
+      "badge": "How We Work",
+      "h2": "How We Set Up ERPNext for Your Projects",
+      "headers": [
+        "Step",
+        "What happens",
+        "Typical time"
+      ],
+      "rows": [
+        [
+          "1. Discovery",
+          "Live projects, BOQ format, billing and retention rules",
+          "1–2 weeks"
+        ],
+        [
+          "2. Design",
+          "Project structure, cost codes, approvals and reports",
+          "1–2 weeks"
+        ],
+        [
+          "3. Setup",
+          "Projects, budgets, sites, stores and print formats",
+          "3–5 weeks"
+        ],
+        [
+          "4. Data",
+          "Open projects, billed amounts, retentions and stock",
+          "2–3 weeks"
+        ],
+        [
+          "5. Training",
+          "Project managers, site teams, stores and accounts",
+          "1–2 weeks"
+        ],
+        [
+          "6. Go-live",
+          "Launch with 30 days of close support",
+          "30 days"
+        ]
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "Our ERPNext construction implementation usually starts with one or two live projects, then adds the rest once teams are confident. Rolling out ERPNext for construction companies this way protects billing on projects already running."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "table",
+      "h2": "What Affects the Price?",
+      "headers": [
+        "Cost factor",
+        "Why it matters"
+      ],
+      "rows": [
+        [
+          "Number of live projects",
+          "Each needs budgets, open balances and retentions brought in"
+        ],
+        [
+          "BOQ detail",
+          "Detailed BOQs take longer to load and map"
+        ],
+        [
+          "Sites and stores",
+          "Each site store needs setup and training"
+        ],
+        [
+          "Billing rules",
+          "Complex measurement or client formats need custom print formats"
+        ],
+        [
+          "Payroll and WPS",
+          "Large workforces add payroll setup time"
+        ]
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "We send a fixed quote after a short discovery call. Any partner setting up ERPNext for construction companies should price per phase, so you see value before committing to everything."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "bullets",
+      "badge": "Why Teknoppy",
+      "h2": "Why Choose Teknoppy?",
+      "items": [
+        {
+          "html": "<strong>Contractor-first design.</strong> Built around BOQs, running bills and retention, not generic projects."
+        },
+        {
+          "html": "<strong>Site-ready.</strong> Mobile updates for engineers and storekeepers."
+        },
+        {
+          "html": "<strong>You own everything.</strong> Data, settings and documentation stay with you."
+        }
+      ],
+      "outro": [
+        {
+          "text": "As an ERPNext construction consultant, we combine project controls with ERPNext construction accounting, so the site and the office use the same numbers. That is what makes ERPNext for construction companies worth the change."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "h2": "Where We Work",
+      "paragraphs": [
+        {
+          "lead": "Kerala.",
+          "text": "Contractors in Ernakulam and across the state use our ERPNext construction Kochi team, with workshops at our Vyttila office. We provide ERPNext construction Kerala-wide for building, civil and interior contractors."
+        },
+        {
+          "lead": "India.",
+          "text": "Our ERPNext construction India setups include GST on works contracts, TDS on contractor payments and e-way bills for material moves."
+        },
+        {
+          "lead": "The GCC.",
+          "html": "ERPNext construction UAE and ERPNext construction GCC setups add VAT, retention practice common in the Gulf, Arabic documents and WPS payroll for large site workforces. See <a href=\"/erpnext-implementation-company-gcc/\" class=\"text-primary font-semibold hover:underline\">ERPNext implementation in the GCC</a>."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "faq",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Can ERPNext handle progress billing?",
+          "a": "Yes. ERPNext creates running bills from measured quantities or percentage complete, showing previous, current and cumulative values, with advance recovery and retention deducted automatically."
+        },
+        {
+          "q": "Can it track retention?",
+          "a": "Yes. ERPNext tracks retention held by your clients and retention you hold from subcontractors, with release dates, so you always know what is due and when."
+        },
+        {
+          "q": "Does it work on site from mobile?",
+          "a": "Yes. Site engineers can update progress and timesheets, and storekeepers can issue materials, from phones or tablets. Managers see the updates immediately."
+        },
+        {
+          "q": "Can ERPNext manage subcontractors?",
+          "a": "Yes. Each subcontract is recorded with its scope, rates and retention, and subcontractor bills are checked against measured work before approval."
+        },
+        {
+          "q": "How long does setup take for a contractor?",
+          "a": "A contractor with a handful of live projects usually goes live in 10–14 weeks. Larger groups with many sites take 14–20 weeks. We start with one or two projects to keep billing safe."
+        },
+        {
+          "q": "What does ERPNext cost for a contractor?",
+          "a": "The price depends on the number of live projects, sites, users and how detailed your BOQs are. ERPNext itself has no licence fee. A partner setting up ERPNext for construction companies should send a phased, fixed quote after a short discovery call, and ours lists every line item."
+        },
+        {
+          "q": "Is ERPNext suitable for small contractors?",
+          "a": "Yes. ERPNext for contractors has no licence fee per user, so small firms can start with project costing and billing, then add site stores and payroll later."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "cta",
+      "h2": "Start With a Free Health Check",
+      "paragraphs": [
+        {
+          "text": "Already using ERPNext on projects, or planning a move? Our free health check reviews your project setup, billing and retention tracking, then sends a short report with the top fixes."
+        },
+        {
+          "html": "Teknoppy sets up ERPNext for construction companies that want to see profit on every project while there is still time to protect it. See <a href=\"/erpnext-implementation-company-kochi/\" class=\"text-primary font-semibold hover:underline\">ERPNext implementation</a> or the <a href=\"/erp-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">ERPNext development company in Kochi</a> page for all services."
+        },
+        {
+          "html": "<strong>Teknoppy</strong><br>Second Floor, Kaithakal Building, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam, Kochi, Kerala 682019<br>Phone +91 6282249224 · Mon–Sat, IST, GST and AST hours"
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a free ERPNext health check",
+          "href": "/free-erpnext-health-check/"
+        },
+        {
+          "label": "WhatsApp +91 6282249224",
+          "href": "https://wa.me/916282249224"
+        },
+        {
+          "label": "sales@teknoppy.com",
+          "href": "mailto:sales@teknoppy.com"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "byline",
+      "bg": "white",
+      "text": "Written by: Sanal Edison, Digital Strategist, Teknoppy. Last reviewed: 12 November 2026."
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "ERPNext for Construction Companies",
+      "serviceType": "ERPNext implementation for construction and contracting",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "Kerala",
+        "India",
+        "GCC"
+      ],
+      "url": "https://teknoppy.com/erpnext-for-construction-companies/"
+    }
+  ],
+  "devNotes": {
+    "source": "23-ERPNext-Construction-Page.pdf",
+    "primaryKeyword": "erpnext for construction companies",
+    "permalink": "/erpnext-for-construction-companies/",
+    "secondaryKeywords": [
+      "erpnext for contracting companies",
+      "erpnext project costing",
+      "erpnext progress billing",
+      "erpnext for contractors",
+      "erpnext construction management",
+      "erpnext for builders",
+      "erpnext for civil contractors",
+      "erpnext for mep contractors",
+      "erpnext for fit-out companies",
+      "erpnext retention money",
+      "erpnext subcontractor billing",
+      "erpnext boq management",
+      "erpnext site management",
+      "erpnext construction kerala",
+      "erpnext construction india",
+      "erpnext construction gcc",
+      "erpnext construction uae",
+      "erpnext construction kochi",
+      "erpnext project management construction",
+      "erpnext job costing construction",
+      "erpnext construction accounting",
+      "erpnext construction software",
+      "erpnext construction implementation",
+      "erpnext for interior contractors",
+      "erpnext for infrastructure companies",
+      "erpnext contract billing",
+      "erpnext for engineering contractors",
+      "erpnext timesheets construction",
+      "erpnext material management construction",
+      "erpnext construction consultant"
+    ],
+    "parentPage": "ERPNext Development (pillar) — substituted by /erp-development-company-kochi/",
+    "imageAlt": [
+      "ERPNext project cost dashboard for a GCC contractor · File: erpnext-construction-project-dashboard.webp",
+      "ERPNext progress bill showing cumulative value, advance recovery and retention · File: erpnext-progress-bill-retention.webp"
+    ],
+    "internalLinks": [
+      "/erpnext-hr-payroll-gcc/",
+      "/erpnext-implementation-company-gcc/",
+      "/erpnext-implementation-company-kochi/",
+      "/erp-development-company-kochi/",
+      "/free-erpnext-health-check/"
+    ],
+    "schemaNote": "Doc schema: Service (serviceType \"ERPNext implementation for construction and contracting\", areaServed Kerala, India, GCC) + BreadcrumbList (Home › Services › ERPNext Development › ERPNext for Construction) + FAQPage + WebPage. FAQPage/BreadcrumbList auto-generated; WebPage not emitted.",
+    "heldPlaceholders": [
+      "A named lead. [Lead Frappe Developer name] runs your project, with [X] years on ERPNext.",
+      "Recent Construction Project (heading) — [Client name] , [contractor type] , [city] : went live on ERPNext for construction companies in [X] weeks across [number] live projects. Result: [one measurable outcome, such as billing cycle cut from 15 days to 5] . [Read the case study] .",
+      "Technical review: [Lead Frappe Developer name] , ERPNext and Frappe developer · [LinkedIn] (whole line held)"
+    ],
+    "detailsNeeded": [
+      "Shared: lead Frappe developer — name · photo · years on ERPNext · LinkedIn",
+      "Shared: GCC phone or WhatsApp number",
+      "Shared: languages your team speaks; Arabic print formats delivered? (page promises Arabic documents for GCC); Gulf travel policy",
+      "One real construction client — REQUIRED before publishing (strategy rule)",
+      "Contractor types served — civil · MEP · fit-out · interiors · infrastructure",
+      "Confirm timings — 10–14 weeks · large groups 14–20 weeks",
+      "Approve permalink change — /erpnext-for-construction-companies/ instead of /erpnext-for-construction-contracting/",
+      "Screenshots — project cost dashboard · progress bill with retention",
+      "Blog plan: Construction blog #2 — change focus from \"erpnext project costing\" (now owned by this page) to \"project costing in erpnext\""
+    ],
+    "corrections": [
+      "Contact email: doc CTA already used sales@teknoppy.com; kept (site canon).",
+      "pdftotext spacing artefacts fixed (\"E-Invoicing ?\" → \"E-Invoicing?\", \"] .\" → \"].\").",
+      "\"[LinkedIn]\" markers after the byline names dropped (no URL supplied)."
+    ],
+    "linkNote": "[ERPNext development company in Kochi] → /erp-development-company-kochi/ (pillar has no doc). [ERPNext implementation] → /erpnext-implementation-company-kochi/. Breadcrumb \"ERPNext Development\" → /erp-development-company-kochi/.",
+    "designLabels": "Badges, hero stat labels and CTA button labels are design chrome. Region lead-ins in \"Where We Work\" rendered as bold leads."
+  }
+}

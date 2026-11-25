@@ -1,0 +1,441 @@
+{
+  "meta": {
+    "title": "Free ERPNext Health Check and Audit | Teknoppy Kochi",
+    "description": "Free ERPNext health check: we review setup, speed, data, custom code and tax settings, then send a short report with the top fixes. No obligation. Book a slot."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "ERPNext Development",
+      "href": "/erp-development-company-kochi/"
+    },
+    {
+      "name": "Free ERPNext Health Check",
+      "href": "/free-erpnext-health-check/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "ERPNext Development",
+      "h1Lead": "Free ERPNext",
+      "h1Accent": "Health Check",
+      "body": [
+        {
+          "text": "Book a free ERPNext health check and find out what is slowing your system down, what is set up wrong and what to fix first. Teknoppy reviews your setup, speed, data, customizations and tax settings, then sends a short written report with the top fixes. It takes about 30 minutes of your time, and there is no obligation."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book your free ERPNext health check",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Talk to our team on WhatsApp",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "2018",
+          "label": "Since"
+        },
+        {
+          "value": "120+",
+          "label": "Digital projects delivered"
+        },
+        {
+          "value": "4.9★",
+          "label": "From 60+ Google reviews"
+        }
+      ],
+      "trustline": "Since 2018 · 120+ digital projects delivered · 4.9★ from 60+ Google reviews · Slots in IST, GST and AST hours"
+    },
+    {
+      "type": "prose",
+      "badge": "Overview",
+      "h2": "What Is an ERPNext Health Check?",
+      "paragraphs": [
+        {
+          "text": "An ERPNext health check is a structured review of how your ERPNext system is set up and how well it is working. We look at speed, data quality, accounting and stock settings, user permissions, custom code, backups and tax configuration. You receive a written report within 3–5 working days, with every issue ranked by risk and effort."
+        },
+        {
+          "text": "It is useful whether ERPNext went live last month or five years ago, and whether we built it or another partner did. In short, it is an ERPNext setup review written for business owners, not just developers."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "table",
+      "badge": "Checklist",
+      "h2": "What We Check",
+      "intro": "Every review starts with your busiest screens and reports, then moves through each area below.",
+      "headers": [
+        "Area",
+        "What we look at"
+      ],
+      "rows": [
+        [
+          "Speed",
+          "Slow screens, heavy reports, background jobs and server size"
+        ],
+        [
+          "Accounts",
+          "Chart of accounts, opening balances, period closing and tax accounts"
+        ],
+        [
+          "Stock",
+          "Valuation method, negative stock, warehouse setup and ageing"
+        ],
+        [
+          "Data quality",
+          "Duplicate customers, suppliers and items; missing tax numbers"
+        ],
+        [
+          "Users and access",
+          "Roles, permissions, inactive users and admin access"
+        ],
+        [
+          "Custom code",
+          "Scripts and apps, especially changes made to core code"
+        ],
+        [
+          "Backups and security",
+          "Backup frequency, restore tests, updates and two-factor login"
+        ],
+        [
+          "Tax settings",
+          "GST or VAT templates, e-invoicing readiness and tax reports"
+        ]
+      ],
+      "note": "This ERPNext system audit covers both the technical side and the business side, because most problems sit where the two meet. The speed checks work as an ERPNext performance review, and the data checks act as an ERPNext data quality check for your masters and balances. We finish with an ERPNext configuration review of tax templates, naming and approval rules.",
+      "bg": "cream"
+    },
+    {
+      "type": "bullets",
+      "badge": "Who It Is For",
+      "h2": "Who Is the Health Check For?",
+      "intro": "A free ERPNext health check is a good fit if:",
+      "items": [
+        {
+          "text": "Reports do not match your books, or month-end takes too long"
+        },
+        {
+          "text": "ERPNext feels slow, especially for large reports"
+        },
+        {
+          "text": "Your original partner has stopped responding"
+        },
+        {
+          "text": "You are several versions behind and unsure about upgrading"
+        },
+        {
+          "text": "Staff work around ERPNext in Excel because they do not trust it"
+        },
+        {
+          "text": "You are about to add a new company, branch or country"
+        }
+      ],
+      "outro": [
+        {
+          "text": "It also works as an ERPNext second opinion before you commit to a big customization or a full reimplementation."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "table",
+      "badge": "How It Works",
+      "h2": "How It Works in 3 Steps",
+      "headers": [
+        "Step",
+        "What happens",
+        "Time"
+      ],
+      "rows": [
+        [
+          "1. Book a call",
+          "A 30-minute call to understand your business and concerns",
+          "30 minutes"
+        ],
+        [
+          "2. Review",
+          "Read-only access to your system for our team to check every area",
+          "2–3 working days"
+        ],
+        [
+          "3. Report",
+          "A written report and a 30-minute walkthrough of the findings",
+          "3–5 working days from the call"
+        ]
+      ],
+      "note": "The first call works like a free ERPNext consultation: you explain what worries you, and we tell you what we will look at. After that, we only need a read-only user account. We do not change anything during the review, and you can remove our access the moment the report is delivered.",
+      "bg": "soft"
+    },
+    {
+      "type": "bullets",
+      "badge": "Your Report",
+      "h2": "What You Receive",
+      "intro": "Your ERPNext assessment comes as a short, plain-language report:",
+      "items": [
+        {
+          "text": "Overall score for speed, data, accounts, stock, security and code"
+        },
+        {
+          "text": "Top 10 issues, each ranked by risk and effort"
+        },
+        {
+          "text": "Quick fixes your team can make in a day"
+        },
+        {
+          "text": "Larger fixes with an estimated time and cost"
+        },
+        {
+          "text": "Upgrade advice if you are behind the current version"
+        }
+      ],
+      "outro": [
+        {
+          "text": "It shows where the problems are and what each fix involves. Many clients use the report as an ERPNext gap analysis for budgeting, even if they fix everything in-house."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "bullets",
+      "badge": "Common Findings",
+      "h2": "What We Often Find",
+      "intro": "These issues come up again and again, even in systems that seem to work well:",
+      "items": [
+        {
+          "text": "Stock valued at the wrong rate because of negative stock entries"
+        },
+        {
+          "text": "Duplicate customers splitting sales history and credit limits"
+        },
+        {
+          "text": "Former staff who can still log in"
+        },
+        {
+          "text": "Backups that run but have never been tested"
+        },
+        {
+          "text": "Custom changes made directly in core code, which block upgrades"
+        },
+        {
+          "text": "Tax templates that no longer match current GST or VAT rules"
+        }
+      ],
+      "outro": [
+        {
+          "text": "Most of these take less than a day to fix once they are found. The hard part is knowing where to look, and that is exactly what a free ERPNext health check is for."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "badge": "Next Steps",
+      "h2": "What Happens After the Check?",
+      "paragraphs": [
+        {
+          "html": "You decide. Some clients fix the quick wins themselves. Others ask us to handle the larger items through <a href=\"/erpnext-customization-company-kochi/\" class=\"text-primary font-semibold hover:underline\">ERPNext customization</a> or move to a monthly <a href=\"/erpnext-support-services-kochi/\" class=\"text-primary font-semibold hover:underline\">ERPNext support</a> plan. Either way, the report is yours to keep and share."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "badge": "No Catch",
+      "h2": "Why Is It Free?",
+      "paragraphs": [
+        {
+          "text": "Because most businesses we help started with a small problem they could not explain. A clear review is the fastest way to show how we work. There is no sales pressure: if your system is healthy, we will tell you that too."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "badge": "Locations",
+      "h2": "Where We Offer It",
+      "paragraphs": [
+        {
+          "text": "Our ERPNext health check service is available online everywhere, and in person in Kochi."
+        },
+        {
+          "lead": "Kerala.",
+          "text": "Book an ERPNext health check Kochi businesses can attend in person at our Vyttila office, or online. Our ERPNext health check Kerala clients include traders, manufacturers and service firms."
+        },
+        {
+          "lead": "India.",
+          "text": "The ERPNext health check India-wide service runs fully online, with GST settings reviewed in detail."
+        },
+        {
+          "lead": "The GCC.",
+          "text": "The ERPNext health check GCC service covers VAT, Arabic print formats and e-invoicing readiness, with slots in Gulf working hours."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "faq",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Is the ERPNext health check really free?",
+          "a": "Yes. This free ERPNext review includes the call, the review and the written report at no cost, and there is no obligation to hire us afterwards. We offer a limited number of slots each month, so booking early helps."
+        },
+        {
+          "q": "What access do you need?",
+          "a": "A read-only user account for your ERPNext system. For a speed review, we may also ask for read-only server details. We never change data during the check, and you can remove access at any time."
+        },
+        {
+          "q": "How long does it take?",
+          "a": "Your team spends about an hour in total: a 30-minute call at the start and a 30-minute walkthrough at the end. The written report arrives within 3–5 working days of the first call."
+        },
+        {
+          "q": "Do we have to hire you afterwards?",
+          "a": "No. The report is yours to keep. Many clients fix the quick wins themselves, and some ask us for help with the larger items."
+        },
+        {
+          "q": "Is this the same as a full ERPNext audit?",
+          "a": "It covers the most important checks in a short time, which is why many people call it a free ERPNext audit. A paid, deeper ERPNext audit services engagement adds full transaction testing and detailed fixes, if you need it after the free review."
+        },
+        {
+          "q": "Can you check a system another partner built?",
+          "a": "Yes. That is one of the most common requests. An ERPNext implementation review of another partner's work shows what is solid, what is risky and what needs fixing."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "cta",
+      "h2": "Book Your Free ERPNext Health Check",
+      "paragraphs": [
+        {
+          "text": "Pick a slot that suits you, in Indian or Gulf working hours. We will confirm by email and WhatsApp within one working day."
+        },
+        {
+          "html": "Teknoppy's free ERPNext health check is the first step to a faster, cleaner and safer ERPNext system. To see everything we do, visit the <a href=\"/erp-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">ERPNext development company in Kochi</a> page."
+        },
+        {
+          "html": "<strong>Teknoppy</strong><br>Second Floor, Kaithakal Building, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam, Kochi, Kerala 682019"
+        },
+        {
+          "text": "Phone +91 6282249224 · Mon–Sat, IST, GST and AST hours"
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book your free ERPNext health check",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp +91 6282249224",
+          "href": "https://wa.me/916282249224"
+        },
+        {
+          "label": "sales@teknoppy.com",
+          "href": "mailto:sales@teknoppy.com"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "byline",
+      "text": "Written by: Sanal Edison, Digital Strategist, Teknoppy. Last reviewed: 12 November 2026",
+      "bg": "white"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Free ERPNext Health Check",
+      "serviceType": "ERPNext health check and audit",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "Kochi",
+        "Kerala",
+        "India",
+        "GCC"
+      ],
+      "url": "https://teknoppy.com/free-erpnext-health-check/"
+    }
+  ],
+  "devNotes": {
+    "source": "11-Free-ERPNext-Health-Check-Page.pdf",
+    "primaryKeyword": "free erpnext health check",
+    "permalink": "/free-erpnext-health-check/",
+    "stats": "1,313 words · 7 primary keyword uses · 2.13% density (Rank Math 0.53%) · 20/20 secondary keywords (lead page target 1,000–1,200)",
+    "secondaryKeywords": [
+      "erpnext health check",
+      "erpnext performance review",
+      "free erpnext audit",
+      "erpnext audit",
+      "erpnext system audit",
+      "erpnext setup review",
+      "erpnext configuration review",
+      "free erpnext review",
+      "erpnext health check kochi",
+      "erpnext health check kerala",
+      "erpnext health check india",
+      "erpnext audit services",
+      "erpnext implementation review",
+      "free erpnext consultation",
+      "erpnext assessment",
+      "erpnext gap analysis",
+      "erpnext second opinion",
+      "erpnext health check gcc",
+      "erpnext data quality check",
+      "erpnext health check service"
+    ],
+    "imageAlt": [
+      "Sample page from a Teknoppy ERPNext health check, client data hidden · File: erpnext-health-check-sample-page.webp"
+    ],
+    "internalLinks": [
+      "/erpnext-customization-company-kochi/",
+      "/erpnext-support-services-kochi/",
+      "/erp-development-company-kochi/",
+      "/book-a-consultation/"
+    ],
+    "schemaNote": "Doc graph: Service (serviceType \"ERPNext health check and audit\") with an Offer (free) + BreadcrumbList (Home › Services › ERPNext Development › Free ERPNext Health Check) + FAQPage + WebPage. Offer node not emitted (no price markup); only Service.",
+    "formNote": "Doc hero note \"[Booking form: name, company, email, phone, ERPNext version, number of users, country, main concern]\" — no form built (per brief); hero and final CTA buttons go to /book-a-consultation/. Build the form once the client confirms tool, fields and lead destination (details item 49).",
+    "heldPlaceholders": [
+      "Hero: \"[Booking form: name, company, email, phone, ERPNext version, number of users, country, main concern]\" (form spec, not copy — replaced by CTA to /book-a-consultation/)",
+      "Byline: \"Technical review: [Lead Frappe Developer name] , ERPNext and Frappe developer · [LinkedIn]\"; \"[LinkedIn]\" marker after Sanal Edison dropped"
+    ],
+    "detailsNeeded": [
+      "Lead Frappe developer: name, photo, years on ERPNext, LinkedIn link (fills \"[Lead Frappe Developer name]\" / \"[X] years\" and technical-review byline)",
+      "Sanal Edison's LinkedIn link (byline [LinkedIn] marker dropped)",
+      "ERPNext / Frappe team size",
+      "Support hours and days (currently \"Mon–Sat, IST, GST and AST\")",
+      "GCC phone or WhatsApp number",
+      "Client logos and one testimonial from ERPNext clients",
+      "Frappe partner status (listed or certified? badge link if yes)",
+      "Publish date per page (for schema datePublished)",
+      "Booking form: tool used, fields, and where leads go (CRM, WhatsApp, email)",
+      "Confirm timings: 30-minute call, report in 3–5 working days, 30-minute walkthrough",
+      "Monthly slot limit? (FAQ says \"a limited number of slots each month\")",
+      "Sample report page (one page, client data hidden) for the image slot",
+      "Paid deeper audit offered? (mentioned in FAQ \"Is this the same as a full ERPNext audit?\")"
+    ],
+    "corrections": [
+      "Contact email sanal@teknoppy.com → sales@teknoppy.com (site canon)"
+    ],
+    "linkNote": "[ERPNext development company in Kochi] → /erpnext-development-company-kochi/ has no doc; linked live /erp-development-company-kochi/. Pillar crumb same.",
+    "designLabels": "Badges, hero stat labels and CTA hrefs are design chrome. H3 \"Where We Offer It\" rendered as section heading."
+  }
+}

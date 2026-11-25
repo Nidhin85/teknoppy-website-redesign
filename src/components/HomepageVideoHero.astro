@@ -56,7 +56,7 @@ const {
 
 <script is:inline>
   (function () {
-    // 1. Defer heavy background video until after critical page load (ensures FCP & LCP are instant)
+    // 1. Attach the video source and autoplay it (muted + playsinline, so mobile browsers allow it)
     function initHeroVideo() {
       // Respect prefers-reduced-motion
       if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -100,41 +100,9 @@ const {
       }
     }
 
-    var isMobile = window.matchMedia && window.matchMedia('(max-width: 767px)').matches;
-
-    if (isMobile) {
-      // Mobile: Defer heavy 36.8MB video until first user interaction (touch/scroll) or network idle
-      // Prevents saturating mobile data and throttling mobile CPU on initial paint
-      var mobileStarted = false;
-      var triggerMobileVideo = function() {
-        if (mobileStarted) return;
-        mobileStarted = true;
-        window.removeEventListener('touchstart', triggerMobileVideo);
-        window.removeEventListener('scroll', triggerMobileVideo);
-        window.removeEventListener('click', triggerMobileVideo);
-        initHeroVideo();
-      };
-      window.addEventListener('touchstart', triggerMobileVideo, { passive: true });
-      window.addEventListener('scroll', triggerMobileVideo, { passive: true });
-      window.addEventListener('click', triggerMobileVideo, { passive: true });
-    } else {
-      // Desktop: Start after critical page load & idle
-      if (document.readyState === 'complete') {
-        if ('requestIdleCallback' in window) {
-          requestIdleCallback(initHeroVideo, { timeout: 1500 });
-        } else {
-          setTimeout(initHeroVideo, 600);
-        }
-      } else {
-        window.addEventListener('load', function() {
-          if ('requestIdleCallback' in window) {
-            requestIdleCallback(initHeroVideo, { timeout: 1500 });
-          } else {
-            setTimeout(initHeroVideo, 600);
-          }
-        });
-      }
-    }
+    // Start immediately on desktop and mobile; the poster stays visible until the first frame plays.
+    // This inline script runs right after the <video> markup, so the element already exists.
+    initHeroVideo();
 
     // 2. Hide floating CTA, WhatsApp FAB & bottom action bar while video hero is in view so the video remains completely unobstructed
     function initFloatingObserver() {

@@ -466,5 +466,47 @@
     "metricNote": "caseStudies.blocks[].metric ('+150%' franchise leads, 'Global' patient bookings) are not in the source doc and are unverified. Replace with client-confirmed figures or drop the metric tile.",
     "seoAudit": "The doc's closing 'SEO Implementation & On-Page Audit' tables (3,390 words, 0.75% primary density, 98/100 ranking-factor scorecard) are a build blueprint for the developer, not page copy — deliberately not rendered.",
     "schemaNote": "Doc schema stack: LocalBusiness · Organisation · Service · FAQPage · BreadcrumbList · AggregateRating · Person. LocalBusiness/Organisation come from FooterCTA + Layout; FAQPage, BreadcrumbList, Service and Person are emitted by this page. AggregateRating is omitted on purpose — it needs a real review count and rating value from the client's Google Business Profile; fabricating one risks a Google structured-data penalty."
+  },
+  "subServices": {
+    "badge": "Specialist Builds",
+    "heading": "More Web Design Services",
+    "intro": "Each service below has its own dedicated page:",
+    "items": [
+      {
+        "title": "Headless CMS Development",
+        "desc": "Headless CMS development by Teknoppy, Kochi: platform selection, content modelling and Strapi, Sanity or Contentful builds for India and GCC. Get a quote today.",
+        "href": "/headless-cms-development-kochi/"
+      },
+      {
+        "title": "Astro Website Development",
+        "desc": "Astro website development by Teknoppy, Kochi: fast, SEO-friendly marketing and content sites for India and GCC businesses. Get a clear, fixed quote today.",
+        "href": "/astro-website-development-kochi/"
+      },
+      {
+        "title": "Webflow Development",
+        "desc": "Teknoppy is a Webflow development company in Kochi building fast, editable Webflow websites for India and GCC businesses. Get a clear, fixed quote today.",
+        "href": "/webflow-development-company-kochi/"
+      },
+      {
+        "title": "Wix Development",
+        "desc": "Teknoppy is a Wix website design company in Kochi creating professional, easy-to-edit Wix sites for small businesses in India and the GCC. Get a quote today.",
+        "href": "/wix-website-development-kochi/"
+      },
+      {
+        "title": "Framer Website Development",
+        "desc": "Framer website development by Teknoppy, Kochi: animated, design-led startup and launch sites with CMS and SEO setup for India and GCC. Get a quote today.",
+        "href": "/framer-website-development-kochi/"
+      },
+      {
+        "title": "Website Migration Services",
+        "desc": "Website migration services by Teknoppy, Kochi: SEO-safe platform, domain, hosting and HTTPS moves with redirect mapping for India and GCC. Get a quote today.",
+        "href": "/website-migration-services-kochi/"
+      },
+      {
+        "title": "Membership Website Development",
+        "desc": "Membership website development by Teknoppy, Kochi: paid subscriptions, gated content, renewals and member dashboards for India and GCC. Get a fixed quote today.",
+        "href": "/membership-website-development-kochi/"
+      }
+    ]
   }
 }

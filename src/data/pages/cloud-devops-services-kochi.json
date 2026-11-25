@@ -1,0 +1,429 @@
+{
+  "meta": {
+    "title": "DevOps Services Kochi | Cloud, CI/CD & AWS | Teknoppy",
+    "description": "DevOps services Kochi teams trust: AWS, Azure and Google Cloud setup, CI/CD pipelines, Docker, monitoring and cost control for India and GCC. Get a quote."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "Web Application Development",
+      "href": "/web-application-development-company-kochi/"
+    },
+    {
+      "name": "Cloud and DevOps Services",
+      "href": "/cloud-devops-services-kochi/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "Web Application Development",
+      "h1Lead": "DevOps Services Kochi:",
+      "h1Accent": "Cloud Hosting, CI/CD and Reliable Deployments",
+      "body": [
+        {
+          "text": "Teknoppy provides DevOps services Kochi businesses and international teams use to host, deploy and run their web applications reliably on AWS, Azure and Google Cloud. We automate releases, set up monitoring and backups, control cloud costs and keep systems secure, so your developers ship faster and your users see fewer outages."
+        },
+        {
+          "text": "Our in-house team works from Thykoodam, Kochi, for clients in Kerala, across India and in the GCC."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp +91 6282249224",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "2018",
+          "label": "Since"
+        },
+        {
+          "value": "120+",
+          "label": "Websites delivered"
+        },
+        {
+          "value": "4.9/5",
+          "label": "Google, 60+ reviews"
+        },
+        {
+          "value": "12",
+          "label": "In-house staff"
+        }
+      ],
+      "trustline": "Reviewed by Sanal Edison, Founder, Teknoppy. Last updated: 16 November 2026."
+    },
+    {
+      "type": "bullets",
+      "h2": "Quick overview",
+      "items": [
+        {
+          "text": "Teknoppy: web, software and cloud studio in Thykoodam, Kochi, since 2018"
+        },
+        {
+          "text": "DevOps work: cloud setup, CI/CD, containers, Kubernetes, monitoring, backups and cost control"
+        },
+        {
+          "text": "120+ websites delivered; 4.9/5 on Google from 60+ reviews"
+        },
+        {
+          "text": "12 in-house staff; no outsourced work"
+        },
+        {
+          "text": "Typical timeline: 1 to 8 weeks depending on scope"
+        }
+      ],
+      "badge": "At a Glance",
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "What Is DevOps, and Why Does It Matter?",
+      "paragraphs": [
+        {
+          "text": "DevOps is the practice of automating how software is built, tested, released and run. Instead of developers copying files to a server by hand, every change passes through automated checks and is deployed the same way every time. Problems are caught earlier, releases become routine, and systems recover faster when something fails."
+        },
+        {
+          "text": "For a growing business, good DevOps services Kochi teams can rely on mean fewer late-night emergencies, faster feature releases and predictable cloud bills."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "h2": "What Is CI/CD?",
+      "paragraphs": [
+        {
+          "text": "What is CI/CD? CI stands for continuous integration: every code change is automatically built and tested as soon as it is pushed. CD stands for continuous delivery or deployment: changes that pass the tests are released to staging or live servers automatically, often several times a day."
+        },
+        {
+          "text": "Our CI/CD pipeline setup uses tools such as GitHub Actions, GitLab CI or Azure DevOps. Each pipeline runs tests, security checks and builds, then deploys with a clear approval step for live releases and a one-click rollback if something goes wrong."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "cards",
+      "h2": "What DevOps and Cloud Services Does Teknoppy Offer?",
+      "layout": "list",
+      "items": [
+        {
+          "title": "AWS Deployment Services",
+          "text": "Our AWS deployment services cover servers, managed databases, storage, load balancers, content delivery and security groups on Amazon Web Services. We design for your real traffic and budget, not for the largest possible setup."
+        },
+        {
+          "title": "Azure Cloud Services",
+          "text": "Azure cloud services suit organisations already using Microsoft 365, Active Directory or .NET applications. We set up app services, databases, networking and identity on Microsoft Azure, with access controls matched to your team."
+        },
+        {
+          "title": "Google Cloud Deployment",
+          "text": "Google Cloud deployment suits data-heavy and container-based applications. We use managed services wherever possible, so there are fewer servers for your team to look after."
+        },
+        {
+          "title": "Docker Containerization Services",
+          "text": "Docker containerization services package each application with everything it needs to run, so it behaves the same on a developer laptop, a test server and production. In the 2025 Stack Overflow Developer Survey, about 71% of developers reported using Docker, making it a standard part of modern deployment."
+        },
+        {
+          "title": "Kubernetes Setup and Management",
+          "text": "Kubernetes setup and management suits larger systems with many services that need automatic scaling and self-healing. We recommend Kubernetes only where it pays off, because simpler container platforms are often cheaper and easier to run."
+        },
+        {
+          "title": "Infrastructure as Code With Terraform",
+          "text": "Infrastructure as code with Terraform describes your entire cloud setup in version-controlled files. Environments can be recreated in minutes, every change is reviewed like code, and nothing depends on one person remembering how a server was configured."
+        }
+      ],
+      "badge": "What We Do",
+      "bg": "soft"
+    },
+    {
+      "type": "cards",
+      "h2": "Monitoring, Backups and Security",
+      "layout": "list",
+      "items": [
+        {
+          "title": "Cloud Server Monitoring",
+          "text": "Cloud server monitoring tracks uptime, response times, errors, disk space and unusual activity around the clock. Alerts reach the right person by email, SMS or chat, so issues are fixed before most users notice."
+        },
+        {
+          "title": "Automated Backups and Disaster Recovery",
+          "text": "Automated backups and disaster recovery protect your databases and files with scheduled, encrypted backups stored in a separate location. We test restores regularly and document exactly how to recover, with agreed recovery time targets."
+        },
+        {
+          "title": "DevSecOps Practices",
+          "text": "DevSecOps practices build security into every step: dependency scanning, secret management, least-privilege access, encrypted traffic, regular patching and audit logs. Security becomes part of the daily pipeline rather than a yearly check."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "Cloud Cost Optimization",
+      "paragraphs": [
+        {
+          "text": "Cloud cost optimization reviews what you pay for and what you actually use. Common savings come from right-sizing oversized servers, switching off idle test environments at night, using reserved or committed pricing for steady workloads, and cleaning up forgotten storage. Every recommendation comes with an estimated monthly saving before any change is made."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "h2": "DevOps Projects We Commonly Handle",
+      "paragraphs": [
+        {
+          "text": "Typical work from our DevOps services Kochi team includes moving manual deployments to automated pipelines, containerising older applications, setting up staging environments that mirror production, adding monitoring after an outage, and cutting cloud bills that grew faster than the business."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "cards",
+      "h2": "Who Do We Provide DevOps Services For?",
+      "layout": "list",
+      "items": [
+        {
+          "title": "Teams and Businesses in Kerala and Across India",
+          "text": "As a DevOps company Kerala businesses can visit at our Thykoodam office, we support startups, software teams, ecommerce businesses and organisations with internal systems. The DevOps engineers Kochi clients meet at kickoff are the people who set up and support their infrastructure. If you need ongoing help, you can hire DevOps engineer time on a monthly plan."
+        },
+        {
+          "title": "GCC and International Clients",
+          "text": "DevOps for GCC businesses often includes hosting in Gulf cloud regions for speed and data residency, plus bilingual monitoring dashboards. Teknoppy already serves clients in the UAE and Qatar and schedules maintenance windows during your quietest local hours. International clients choose our DevOps services Kochi team for lower costs than Gulf or European providers and a stable team."
+        }
+      ],
+      "badge": "Who We Serve",
+      "bg": "soft"
+    },
+    {
+      "type": "cards",
+      "h2": "Why Choose Teknoppy for Cloud and DevOps Consulting?",
+      "items": [
+        {
+          "title": "Developers and DevOps on One Team",
+          "html": "Our cloud and DevOps consulting comes from the same in-house team that builds <a href=\"/web-application-development-company-kochi/\" class=\"text-primary font-semibold hover:underline\">web applications</a>. We understand how your code behaves, which makes deployments, scaling and troubleshooting faster."
+        },
+        {
+          "title": "A DevOps Audit Before Any Change",
+          "text": "Every engagement starts with a DevOps audit of your current hosting, deployments, security, backups and costs. You receive a written, prioritised plan showing quick wins and longer-term improvements."
+        },
+        {
+          "title": "Proof and Accountability",
+          "text": "Shainesh Prakashan, CEO of Exacore IT at Infopark Kochi, says Teknoppy \"was very intuitive in understanding our requirements.\" Founder Sanal Edison reviews the scope and risks of every engagement before work begins."
+        }
+      ],
+      "badge": "Why Teknoppy",
+      "columns": 3,
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "AWS vs Azure for Small Businesses",
+      "paragraphs": [
+        {
+          "text": "AWS vs Azure for small businesses usually comes down to existing tools. AWS offers the widest range of services and a large community, which suits most web applications and startups. Azure fits best when a business already relies on Microsoft 365, Windows servers or .NET software, because identity and billing integrate neatly. Google Cloud is a strong option for data-heavy and container-based workloads. We recommend one in writing after the audit."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "steps",
+      "h2": "What Is Teknoppy's DevOps Process and Timeline?",
+      "items": [
+        {
+          "title": "DevOps audit (3 to 5 working days)",
+          "text": "We review hosting, deployments, security, backups and costs."
+        },
+        {
+          "title": "Plan (2 to 3 days)",
+          "text": "You approve a prioritised plan with estimated costs and savings."
+        },
+        {
+          "title": "Setup (1 to 6 weeks)",
+          "text": "We build pipelines, containers, infrastructure code, monitoring and backups."
+        },
+        {
+          "title": "Handover (2 to 3 days)",
+          "text": "Documentation, runbooks and training for your team."
+        },
+        {
+          "title": "Support (ongoing)",
+          "text": "Monitoring, patching and improvements, with plans from Rs. 3,000 per month."
+        }
+      ],
+      "badge": "How We Work",
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "Typical totals: 1 to 2 weeks for CI/CD and monitoring on an existing app, 3 to 4 weeks for a new cloud setup, and 6 to 8 weeks for containerisation with Kubernetes."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "How Much Do DevOps Services Cost in India?",
+      "paragraphs": [
+        {
+          "text": "How much do DevOps services cost in India? It depends on the number of applications and environments, the cloud platform, security requirements and whether you need one-time setup or ongoing support. Cloud provider charges are billed separately by AWS, Azure or Google."
+        },
+        {
+          "text": "Every engagement is quoted after the audit, and the quote is fixed for the agreed scope. Quotes for our DevOps services Kochi clients list exactly what is included, from pipelines to monitoring."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "faq",
+      "center": true,
+      "badge": "Have Questions?",
+      "items": [
+        {
+          "q": "Do we need DevOps if we are a small team?",
+          "a": "Yes, at a basic level. Even a two-person team benefits from automated deployments, backups and monitoring. We scale the setup to your size, so you avoid both manual risk and unnecessary complexity."
+        },
+        {
+          "q": "Will moving to CI/CD cause downtime?",
+          "a": "No. Pipelines are built and tested alongside your current process, and switched on only when they are proven. Live releases then become safer than manual ones."
+        },
+        {
+          "q": "What do DevOps services Kochi clients receive each month?",
+          "a": "Monthly support includes uptime and error monitoring, security patching, backup checks, a short report on incidents and costs, and a set number of hours for improvements. Urgent issues are handled first, whatever the plan size. These DevOps services Kochi clients choose can be adjusted as your systems grow."
+        },
+        {
+          "q": "Do we own the cloud accounts and configuration?",
+          "a": "Yes. Cloud accounts stay in your name, and all infrastructure code, pipelines and documentation are handed over to you."
+        }
+      ],
+      "h2": "DevOps FAQs",
+      "bg": "white"
+    },
+    {
+      "type": "links",
+      "h2": "Related Services",
+      "items": [
+        {
+          "label": "Web Application Development",
+          "href": "/web-application-development-company-kochi/",
+          "text": "Our web application development hub"
+        },
+        {
+          "label": "Java Spring Boot Development",
+          "href": "/java-development-company-kochi/",
+          "text": "Enterprise Java and Spring Boot apps"
+        },
+        {
+          "label": "Website Migration Services",
+          "href": "/website-migration-services-kochi/",
+          "text": "Move platforms without losing traffic"
+        },
+        {
+          "label": "Website Maintenance Services",
+          "href": "/website-maintenance-services-kochi/",
+          "text": "Ongoing care for your website"
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "cta",
+      "h2": "Start With Teknoppy's DevOps Services Kochi Team",
+      "paragraphs": [
+        {
+          "text": "Talk to Teknoppy about DevOps services Kochi businesses can review in person at our Thykoodam office and international clients can use entirely online. Tell us about your applications and hosting, and we will reply with an audit plan, timeline and fixed quote."
+        },
+        {
+          "html": "Call or WhatsApp +91 6282249224, email sales@teknoppy.com, or <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">book a consultation</a> at teknoppy.com."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp Us",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "bg": "white"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "DevOps Services Kochi: Cloud Hosting, CI/CD and Reliable Deployments",
+      "serviceType": "Cloud and DevOps",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "Kochi",
+        "Kerala",
+        "India",
+        "UAE",
+        "Qatar"
+      ],
+      "url": "https://teknoppy.com/cloud-devops-services-kochi/"
+    }
+  ],
+  "devNotes": {
+    "source": "Teknoppy_Cloud_and_DevOps.pdf",
+    "primaryKeyword": "devops services kochi",
+    "secondaryKeywords": [
+      "aws deployment services",
+      "ci/cd pipeline setup",
+      "azure cloud services",
+      "devops company kerala",
+      "cloud and devops consulting",
+      "devops engineers kochi",
+      "hire devops engineer",
+      "docker containerization services",
+      "kubernetes setup and management",
+      "infrastructure as code with terraform",
+      "cloud cost optimization",
+      "cloud server monitoring",
+      "automated backups and disaster recovery",
+      "google cloud deployment",
+      "devsecops practices",
+      "devops for gcc businesses",
+      "what is ci/cd",
+      "how much do devops services cost in india",
+      "aws vs azure for small businesses",
+      "devops audit"
+    ],
+    "imageAlt": [
+      "CI/CD pipeline diagram for a web application",
+      "Cloud monitoring dashboard set up by Teknoppy",
+      "Teknoppy DevOps engineers planning an AWS setup in Kochi"
+    ],
+    "internalLinks": [
+      "/web-application-development-company-kochi/",
+      "/java-development-company-kochi/",
+      "/website-migration-services-kochi/",
+      "/website-maintenance-services-kochi/",
+      "/book-a-consultation/"
+    ],
+    "schemaNote": "Service (serviceType: Cloud and DevOps, areaServed: Kochi, Kerala, India, UAE, Qatar) + LocalBusiness + FAQPage + BreadcrumbList (Home › Services › Web Application Development › Cloud and DevOps Services).",
+    "sourceNotes": "Docker usage (about 71%): Stack Overflow Developer Survey 2025 (71.1%). Doc asks to link stats to their source on the live page; no source URL supplied.",
+    "permalink": "/cloud-devops-services-kochi/",
+    "heldPlaceholders": [],
+    "corrections": [
+      "Contact email sanal@teknoppy.com → sales@teknoppy.com (site canon)"
+    ],
+    "linkNote": "Java, Website Migration and Website Maintenance had no naming words in body copy; placed in Related Services."
+  }
+}

@@ -1,0 +1,501 @@
+{
+  "meta": {
+    "title": "ERPNext HR & Payroll GCC: WPS, Gratuity, GOSI | Teknoppy",
+    "description": "ERPNext HR & payroll GCC setup: WPS salary files, end-of-service gratuity, GOSI and social insurance, leave and air tickets for UAE, Saudi and Gulf employers."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "ERPNext Development",
+      "href": "/erp-development-company-kochi/"
+    },
+    {
+      "name": "ERPNext in GCC",
+      "href": "/erpnext-implementation-company-gcc/"
+    },
+    {
+      "name": "HR and Payroll",
+      "href": "/erpnext-hr-payroll-gcc/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "ERPNext in GCC",
+      "h1Lead": "ERPNext HR and Payroll for",
+      "h1Accent": "GCC Businesses",
+      "body": [
+        {
+          "text": "ERPNext HR & payroll GCC employers rely on should get every rule right: WPS salary files, end-of-service gratuity, GOSI and other social insurance, leave, air tickets and document expiry. Teknoppy sets up ERPNext's HR and payroll for companies in the UAE, Saudi Arabia, Qatar, Oman, Bahrain and Kuwait, so salaries go out on time and every final settlement is correct."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a free payroll setup review",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Talk to our team on WhatsApp",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "2018",
+          "label": "Since"
+        },
+        {
+          "value": "120+",
+          "label": "Digital projects delivered"
+        },
+        {
+          "value": "4.9★",
+          "label": "From 60+ Google reviews"
+        }
+      ],
+      "trustline": "Since 2018 · 120+ digital projects delivered · 4.9★ from 60+ Google reviews · Support in GST and AST working hours"
+    },
+    {
+      "type": "prose",
+      "badge": "Overview",
+      "h2": "What Does ERPNext HR and Payroll Cover?",
+      "paragraphs": [
+        {
+          "text": "ERPNext handles HR and payroll through Frappe HR, an open-source app that runs alongside ERPNext's accounts. It covers employee records, attendance, leave, salary structures, payroll runs, loans, expense claims and final settlements, with every payroll posted straight to the books. A typical Gulf payroll setup takes 3–6 weeks for one country and 6–10 weeks for several."
+        },
+        {
+          "text": "Frappe HR GCC setups add the rules each Gulf country needs. Our ERPNext HR GCC projects start with your labour contracts, salary components and bank, not with screens. ERPNext payroll setup GCC work is tested with a full parallel payroll run before your first live month."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "Why Gulf Payroll Breaks on Spreadsheets",
+      "paragraphs": [
+        {
+          "text": "Gulf payroll mixes several rules at once: different leave entitlements per contract, overtime at different rates, gratuity based on years of service and reason for leaving, social insurance only for nationals, and bank files that reject a single wrong digit. Spreadsheets handle each rule separately, so errors appear at the worst time, usually in a final settlement. ERPNext HR & payroll GCC setups apply every rule from one set of employee records, so the numbers agree everywhere."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "table",
+      "badge": "Country Rules",
+      "h2": "GCC Payroll Rules We Set Up",
+      "headers": [
+        "Country",
+        "Salary payment",
+        "Social insurance",
+        "End-of-service"
+      ],
+      "rows": [
+        [
+          "UAE",
+          "WPS salary file through your bank",
+          "GPSSA for UAE nationals",
+          "Gratuity on basic wage"
+        ],
+        [
+          "Saudi Arabia",
+          "Mudad salary file",
+          "GOSI",
+          "End-of-service award"
+        ],
+        [
+          "Qatar",
+          "WPS salary file",
+          "GRSIA for Qatari nationals",
+          "Minimum three weeks per year"
+        ],
+        [
+          "Oman",
+          "WPS salary file",
+          "Social Protection Fund",
+          "End-of-service for non-Omanis"
+        ],
+        [
+          "Bahrain",
+          "Bank salary file",
+          "SIO",
+          "End-of-service under labour law"
+        ],
+        [
+          "Kuwait",
+          "Bank salary file",
+          "PIFSS",
+          "End-of-service indemnity"
+        ]
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "Each country's setup follows its own labour law, inside one system. ERPNext payroll UAE and ERPNext payroll Saudi Arabia setups are the most common, because those two countries have the largest private-sector workforces. ERPNext payroll Qatar and ERPNext payroll Oman projects add their own WPS formats, while ERPNext payroll Bahrain and ERPNext payroll Kuwait setups focus on social insurance for nationals and end-of-service for expatriate staff. Always confirm rates and rules with your adviser, because Gulf labour regulations are updated often."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "h2": "WPS Salary Files",
+      "paragraphs": [
+        {
+          "text": "Most Gulf countries require private-sector salaries to be paid through a Wage Protection System. ERPNext WPS setups calculate net pay, then export the salary file your bank or exchange house needs. For the UAE, ERPNext WPS UAE produces the Salary Information File, also called the ERPNext SIF file, with employee IDs, bank details and salary breakdown."
+        },
+        {
+          "text": "Every ERPNext WPS file is checked before release for missing labour card numbers, wrong IBANs and mismatched salary amounts, which are the most common causes of bank rejections. For Saudi Arabia, ERPNext Mudad setups produce the salary file in the format Mudad expects."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "bullets",
+      "h2": "End-of-Service Gratuity",
+      "intro": "ERPNext gratuity calculation follows each country's rules, based on length of service, basic wage and the reason for leaving.",
+      "items": [
+        {
+          "text": "UAE: 21 days' basic wage for each of the first five years, then 30 days for each further year, capped at two years' total wage. ERPNext gratuity UAE setups apply this automatically."
+        },
+        {
+          "text": "Saudi Arabia: half a month's wage for each of the first five years and a full month for each year after, reduced on resignation according to length of service."
+        },
+        {
+          "text": "Qatar: at least three weeks' basic wage for each year of service."
+        }
+      ],
+      "outro": [
+        {
+          "text": "ERPNext EOSB calculation also accrues the liability every month, so your balance sheet always shows what you owe. ERPNext end of service GCC reports list each employee's entitlement on any date, which helps with budgeting and audits."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "h2": "Final Settlements Without Surprises",
+      "paragraphs": [
+        {
+          "text": "When an employee leaves, ERPNext brings together unpaid salary, leave encashment, gratuity, air ticket entitlement, loan balances and any deductions into one settlement statement. HR reviews it, finance approves it and the payment is posted with the right accounting entries. Every ERPNext HR & payroll GCC project we run tests final settlements for resignation, termination and end of contract before go-live, because these are the cases most likely to lead to disputes."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "GOSI and Social Insurance",
+      "paragraphs": [
+        {
+          "text": "ERPNext GOSI setups calculate employer and employee contributions for Saudi and non-Saudi staff, with contribution reports ready for each month. The same approach covers GPSSA in the UAE, the Social Protection Fund in Oman, SIO in Bahrain, PIFSS in Kuwait and GRSIA in Qatar for nationals. Rates are stored as settings, so when a rate changes, it is updated once and applied to the next payroll. Contribution history stays on each employee record, which makes audits and disputes far easier to handle."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "table",
+      "h2": "Leave, Air Tickets and Documents",
+      "headers": [
+        "Area",
+        "What ERPNext handles"
+      ],
+      "rows": [
+        [
+          "Annual leave",
+          "Accrual, balances, carry-forward and leave salary"
+        ],
+        [
+          "Other leave",
+          "Sick, unpaid, maternity and Hajj leave with the right pay rules"
+        ],
+        [
+          "Air tickets",
+          "Entitlement per contract, accrued monthly"
+        ],
+        [
+          "Overtime",
+          "Normal, night and holiday rates from attendance"
+        ],
+        [
+          "Documents",
+          "Visa, labour card, passport and ID expiry reminders"
+        ]
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "ERPNext leave management GCC setups follow each contract's rules. ERPNext attendance GCC imports punches from biometric devices or mobile check-ins, so overtime and absences flow straight to payroll. ERPNext air ticket allowance accrues each month, and ERPNext visa expiry tracking sends reminders weeks before renewal is due."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "h2": "Running Payroll for Several Countries",
+      "paragraphs": [
+        {
+          "text": "Many groups employ staff in two or three Gulf countries, often with a team in India too. Each company keeps its own payroll rules, currency and bank file, while HR managers see one employee list and group-wide reports. Transfers between group companies keep the employee's service history, so gratuity is calculated on the full period where the contract says it should be. ERPNext payroll GCC setups make month-end payroll one process instead of six spreadsheets. Our ERPNext payroll middle east clients use the same structure across borders."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "Loans, Advances and Payroll Accounting",
+      "paragraphs": [
+        {
+          "text": "Salary advances and staff loans are recorded with their repayment schedules, and instalments are deducted automatically each month. Every payroll run posts to the right expense, liability and bank accounts, split by department, project or cost centre. Managers see payroll cost by site or project, which matters for contractors and facility management firms that bill clients for manpower. Choosing ERPNext HR & payroll GCC finance teams can audit means every figure on the payslip can be traced back to its source."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "table",
+      "badge": "How We Work",
+      "h2": "How We Set Up Your Payroll",
+      "headers": [
+        "Step",
+        "What happens",
+        "Typical time"
+      ],
+      "rows": [
+        [
+          "1. Review",
+          "Contracts, salary components, allowances and banks",
+          "3–5 days"
+        ],
+        [
+          "2. Design",
+          "Salary structures, leave policies and approval flows",
+          "1 week"
+        ],
+        [
+          "3. Setup",
+          "Employees, opening leave balances and gratuity history",
+          "1–2 weeks"
+        ],
+        [
+          "4. Parallel run",
+          "One full payroll run alongside your current method",
+          "1 payroll cycle"
+        ],
+        [
+          "5. Go-live",
+          "First live payroll with close support",
+          "1 payroll cycle"
+        ]
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "Opening gratuity balances matter most, and they are where an ERPNext HR & payroll GCC project is won or lost. We carry forward each employee's joining date and past service, so final settlements are correct from the first day. This ERPNext HR implementation GCC process keeps salaries on time throughout."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "bullets",
+      "badge": "Why Teknoppy",
+      "h2": "Choosing an ERPNext HR & Payroll GCC Partner",
+      "items": [
+        {
+          "html": "<strong>Parallel payroll first.</strong> No live month without a matching test run."
+        },
+        {
+          "html": "<strong>You own everything.</strong> Data, settings and documentation stay with you."
+        }
+      ],
+      "outro": [
+        {
+          "text": "As an ERPNext HR payroll partner and ERPNext payroll consultant GCC employers can call in their own hours, we handle setup, changes and monthly support. ERPNext payroll Dubai and ERPNext payroll Riyadh clients follow the same process, adapted to local law."
+        },
+        {
+          "html": "For custom HR systems built from scratch, see our <a href=\"/hrm-company-kochi/\" class=\"text-primary font-semibold hover:underline\">HRM Software Development</a> page. For the wider ERPNext setup in each country, see <a href=\"/erpnext-implementation-company-gcc/\" class=\"text-primary font-semibold hover:underline\">ERPNext implementation in the GCC</a>."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "faq",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Can ERPNext create WPS files?",
+          "a": "Yes. ERPNext produces salary files in the format your bank needs for the Wage Protection System, including the UAE Salary Information File and Saudi Mudad files. Each file is checked for common errors before release."
+        },
+        {
+          "q": "Does ERPNext calculate gratuity?",
+          "a": "Yes. Gratuity is calculated from each employee's joining date, basic wage and reason for leaving, following the rules of their country. The liability is also accrued monthly in your accounts."
+        },
+        {
+          "q": "Can ERPNext handle GOSI?",
+          "a": "Yes. ERPNext calculates GOSI contributions for Saudi and non-Saudi employees and produces monthly contribution reports. Rates are stored as settings, so changes are applied once."
+        },
+        {
+          "q": "Can staff apply for leave on mobile?",
+          "a": "Yes. Employees can apply for leave, check balances, download payslips and submit expense claims from their phones, and managers approve requests the same way."
+        },
+        {
+          "q": "Can one system run payroll for several Gulf countries?",
+          "a": "Yes. Each company keeps its own payroll rules, currency and bank file, while HR sees one combined view. Many groups also run Indian payroll in the same ERPNext system."
+        },
+        {
+          "q": "What does payroll setup cost?",
+          "a": "The price depends on the number of countries, employees and salary components, and on how much history needs to be carried forward. ERPNext and Frappe HR have no licence fee. Any ERPNext HR & payroll GCC partner should send a fixed quote after reviewing your contracts, and we do."
+        },
+        {
+          "q": "How long does payroll setup take?",
+          "a": "One country usually takes 3–6 weeks, including a parallel payroll run. Groups with several countries take 6–10 weeks. A reliable ERPNext HR & payroll GCC partner will commit to these dates in writing."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "cta",
+      "h2": "Book a Free Payroll Setup Review",
+      "paragraphs": [
+        {
+          "text": "We review your contracts, salary components and current payroll method, then send a short report on what ERPNext can automate and what to fix first. There is no obligation."
+        },
+        {
+          "text": "Teknoppy sets up ERPNext HR & payroll GCC employers trust, with WPS files, gratuity and social insurance handled correctly every month."
+        },
+        {
+          "html": "<strong>Teknoppy</strong><br>Second Floor, Kaithakal Building, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam, Kochi, Kerala 682019<br>Phone +91 6282249224 · Support in GST and AST working hours"
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a free payroll setup review",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp +91 6282249224",
+          "href": "https://wa.me/916282249224"
+        },
+        {
+          "label": "sales@teknoppy.com",
+          "href": "mailto:sales@teknoppy.com"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "byline",
+      "bg": "white",
+      "text": "Written by: Sanal Edison, Digital Strategist, Teknoppy. Last reviewed: 12 November 2026."
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "ERPNext HR and Payroll for GCC Businesses",
+      "serviceType": "ERPNext HR and payroll setup",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "United Arab Emirates",
+        "Saudi Arabia",
+        "Qatar",
+        "Oman",
+        "Bahrain",
+        "Kuwait"
+      ],
+      "url": "https://teknoppy.com/erpnext-hr-payroll-gcc/"
+    }
+  ],
+  "devNotes": {
+    "source": "22-ERPNext-HR-Payroll-GCC-Page.pdf",
+    "primaryKeyword": "erpnext hr payroll gcc",
+    "permalink": "/erpnext-hr-payroll-gcc/",
+    "secondaryKeywords": [
+      "erpnext payroll uae",
+      "erpnext wps",
+      "erpnext gratuity calculation",
+      "erpnext gosi",
+      "erpnext hr gcc",
+      "erpnext payroll gcc",
+      "erpnext payroll saudi arabia",
+      "erpnext payroll qatar",
+      "erpnext payroll oman",
+      "erpnext payroll bahrain",
+      "erpnext payroll kuwait",
+      "frappe hr gcc",
+      "erpnext wps uae",
+      "erpnext wps file",
+      "erpnext sif file",
+      "erpnext end of service gcc",
+      "erpnext leave management gcc",
+      "erpnext attendance gcc",
+      "erpnext payroll setup gcc",
+      "erpnext hr implementation gcc",
+      "erpnext payroll dubai",
+      "erpnext payroll riyadh",
+      "erpnext mudad",
+      "erpnext gratuity uae",
+      "erpnext eosb calculation",
+      "erpnext air ticket allowance",
+      "erpnext visa expiry tracking",
+      "erpnext payroll consultant gcc",
+      "erpnext hr payroll partner",
+      "erpnext payroll middle east"
+    ],
+    "parentPage": "ERPNext in GCC",
+    "imageAlt": [
+      "ERPNext payroll run with WPS salary file for a Dubai company · File: erpnext-payroll-wps-dubai.webp",
+      "ERPNext end-of-service gratuity calculation for a UAE employee · File: erpnext-gratuity-calculation-uae.webp"
+    ],
+    "internalLinks": [
+      "/hrm-company-kochi/",
+      "/erpnext-implementation-company-gcc/",
+      "/book-a-consultation/"
+    ],
+    "schemaNote": "Doc schema: Service (serviceType \"ERPNext HR and payroll setup\", areaServed six GCC countries) + BreadcrumbList (Home › Services › ERPNext Development › ERPNext in GCC › HR and Payroll) + FAQPage + WebPage. FAQPage/BreadcrumbList auto-generated; WebPage not emitted.",
+    "heldPlaceholders": [
+      "A named lead. Your project is led by [Lead Frappe Developer name] , with [X] years on ERPNext.",
+      "Rules reviewed by experts. Gratuity and leave formulas checked by [HR or payroll expert name] .",
+      "Recent Payroll Project (heading) — [Client name] , [industry] , [country] : moved payroll for [number] employees to ERPNext in [X] weeks, with WPS files accepted by the bank in the first live month. Result: [one measurable outcome] . [Read the case study] .",
+      "Payroll rules reviewed by: [HR or payroll expert name and qualification] (byline line held)",
+      "Phone +91 6282249224 · GCC contact: [GCC phone or WhatsApp number] · … (the \"GCC contact\" item dropped from the contact line)",
+      "Technical review: [Lead Frappe Developer name] , ERPNext and Frappe developer · [LinkedIn] (whole line held)"
+    ],
+    "detailsNeeded": [
+      "Shared: lead Frappe developer — name · photo · years on ERPNext · LinkedIn",
+      "Shared: GCC phone or WhatsApp number — shown on every GCC page",
+      "Shared: languages your team speaks — GCC page says English, Malayalam and Hindi; confirm",
+      "Shared: Arabic print formats delivered? — every GCC page promises bilingual documents",
+      "Shared: Gulf travel policy — when you visit on site, and who pays travel",
+      "Payroll expert reviewer — name and qualification; strategy requires gratuity formulas reviewed",
+      "Countries where payroll is delivered — UAE · Saudi · Qatar · Oman · Bahrain · Kuwait",
+      "WPS / Mudad files delivered — banks and formats tested",
+      "One real payroll project — employees · weeks · first-month bank acceptance",
+      "Confirm timings — one country 3–6 weeks · several 6–10 weeks",
+      "Screenshots — WPS payroll run · gratuity calculation"
+    ],
+    "corrections": [
+      "Contact email: doc CTA already used sales@teknoppy.com; kept (site canon).",
+      "pdftotext spacing artefacts fixed (\"E-Invoicing ?\" → \"E-Invoicing?\", \"] .\" → \"].\").",
+      "\"[LinkedIn]\" markers after the byline names dropped (no URL supplied)."
+    ],
+    "linkNote": "[HRM Software Development] → /hrm-company-kochi/ (live HRM page). Breadcrumb \"ERPNext Development\" → /erp-development-company-kochi/. Hero/CTA \"Book a free payroll setup review\" → /book-a-consultation/.",
+    "designLabels": "Badges, hero stat labels and CTA button labels are design chrome."
+  }
+}

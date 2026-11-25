@@ -1,0 +1,544 @@
+{
+  "meta": {
+    "title": "ERPNext Data Migration Services Kochi | Tally to ERPNext",
+    "description": "ERPNext data migration services: move masters, balances and history from Tally, QuickBooks, Busy or spreadsheets to ERPNext, checked line by line at go-live."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "ERPNext Development",
+      "href": "/erp-development-company-kochi/"
+    },
+    {
+      "name": "ERPNext Data Migration",
+      "href": "/erpnext-data-migration-services-kochi/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "ERPNext Development",
+      "h1Lead": "ERPNext Data",
+      "h1Accent": "Migration Services",
+      "body": [
+        {
+          "text": "Teknoppy's ERPNext data migration services move your customers, suppliers, items, balances and history from Tally, QuickBooks, Zoho Books, Busy, Marg, SAP or spreadsheets into ERPNext, checked at every step. We work with companies across Kerala, India and the GCC, and your old system keeps running until the new figures match."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a free migration assessment",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Talk to our team on WhatsApp",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "2018",
+          "label": "Since"
+        },
+        {
+          "value": "120+",
+          "label": "Digital projects delivered"
+        },
+        {
+          "value": "4.9★",
+          "label": "From 60+ Google reviews"
+        }
+      ],
+      "trustline": "Since 2018 · 120+ digital projects delivered · 4.9★ from 60+ Google reviews · Support in IST, GST and AST hours"
+    },
+    {
+      "type": "prose",
+      "badge": "Overview",
+      "h2": "What Is ERPNext Data Migration?",
+      "paragraphs": [
+        {
+          "text": "ERPNext data migration is the process of extracting records from your current software, cleaning them, importing them into ERPNext and checking that every balance matches. A typical migration for a small business takes 1–2 weeks, and a larger multi-company move takes 3–6 weeks. Nothing is switched off until your accountant confirms the figures."
+        },
+        {
+          "text": "As a provider of ERPNext data migration services working from Kochi, we treat migration as an accounting task, not just a file upload. Every trial balance, stock value and outstanding invoice is checked against your old system before go-live."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "table",
+      "badge": "Data Types",
+      "h2": "What Data Can We Move to ERPNext?",
+      "headers": [
+        "Data type",
+        "Examples",
+        "Usually moved?"
+      ],
+      "rows": [
+        [
+          "Masters",
+          "Customers, suppliers, items, price lists, chart of accounts",
+          "Always"
+        ],
+        [
+          "Opening balances",
+          "Ledger balances, bank balances and stock values",
+          "Always"
+        ],
+        [
+          "Open documents",
+          "Unpaid invoices, pending orders and advances",
+          "Always"
+        ],
+        [
+          "Stock details",
+          "Batch numbers, serial numbers and warehouse quantities",
+          "When used"
+        ],
+        [
+          "History",
+          "Past invoices and transactions",
+          "Optional, often summarised"
+        ],
+        [
+          "HR records",
+          "Employees, salary structures and leave balances",
+          "When HR is in scope"
+        ]
+      ],
+      "note": "Our ERPNext master data migration includes cleaning duplicates and fixing missing details such as GSTIN, VAT numbers and addresses. ERPNext balance migration then brings in opening figures as at your chosen cut-off date.",
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "badge": "Tally",
+      "h2": "Tally to ERPNext Migration",
+      "paragraphs": [
+        {
+          "text": "Tally is the most common starting point for our clients. Tally to ERPNext migration covers ledgers, groups, stock items, godowns, outstanding bills and GST details. We also handle Tally Prime to ERPNext moves and older Tally ERP 9 data."
+        },
+        {
+          "text": "Our Tally to ERPNext migration services follow a set order:"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        {
+          "html": "<strong>1.</strong> Export ledgers, items and outstanding bills from Tally."
+        },
+        {
+          "html": "<strong>2.</strong> Map Tally groups to the ERPNext chart of accounts."
+        },
+        {
+          "html": "<strong>3.</strong> Clean duplicate ledgers and missing tax details."
+        },
+        {
+          "html": "<strong>4.</strong> Import masters first, then balances and open bills."
+        },
+        {
+          "html": "<strong>5.</strong> Match the trial balance and stock summary line by line."
+        }
+      ],
+      "outro": [
+        {
+          "text": "Many Tally to ERPNext Kerala clients keep Tally read-only for past years, so auditors can still check history. An ERPNext migration from Tally Prime usually takes one to two weeks for a single company."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "bullets",
+      "badge": "Other Sources",
+      "h2": "Other Systems We Migrate From",
+      "intro": "We also move data from QuickBooks, Zoho Books, Busy, Marg, SAP Business One, Odoo and custom-built software.",
+      "items": [
+        {
+          "text": "Busy to ERPNext migration and Marg to ERPNext migration are common for traders and pharma distributors."
+        },
+        {
+          "text": "SAP to ERPNext migration suits companies leaving high licence costs behind."
+        },
+        {
+          "text": "Custom software to ERPNext migration covers in-house systems, read directly from their database or exports."
+        },
+        {
+          "text": "Excel and Google Sheets data is cleaned and structured before import."
+        }
+      ],
+      "outro": [
+        {
+          "text": "Whatever the source, ERPNext data conversion turns each record into ERPNext's format, so items, taxes and accounts work correctly from day one. Units of measure, item groups and price lists are mapped too, so your first sales order in ERPNext looks familiar to your team."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "table",
+      "badge": "Checks",
+      "h2": "How Do We Check Your Data Is Right?",
+      "intro": "Checking is the most important part of any migration. Our ERPNext migration experts run five checks before you go live:",
+      "headers": [
+        "Check",
+        "What we compare",
+        "Who signs off"
+      ],
+      "rows": [
+        [
+          "Trial balance",
+          "Every ledger balance, old system vs ERPNext",
+          "Your accountant"
+        ],
+        [
+          "Stock summary",
+          "Quantity and value per item and warehouse",
+          "Store manager"
+        ],
+        [
+          "Receivables",
+          "Each customer's unpaid invoices",
+          "Accounts team"
+        ],
+        [
+          "Payables",
+          "Each supplier's unpaid bills",
+          "Accounts team"
+        ],
+        [
+          "Tax details",
+          "GSTIN or VAT numbers and tax accounts",
+          "Finance head"
+        ]
+      ],
+      "note": "If a number does not match, we trace it to the source record and fix it before go-live. Any provider of ERPNext data migration services you consider should give you this sign-off sheet, and ours is part of every project.",
+      "bg": "white"
+    },
+    {
+      "type": "bullets",
+      "badge": "Mistakes",
+      "h2": "Common Migration Mistakes We Prevent",
+      "items": [
+        {
+          "html": "<strong>Duplicate customers and items</strong> that split sales history across two records"
+        },
+        {
+          "html": "<strong>Wrong opening stock values</strong> that distort profit for the whole year"
+        },
+        {
+          "html": "<strong>Missing tax numbers</strong> that cause errors on the first GST or VAT return"
+        },
+        {
+          "html": "<strong>Unmatched advances</strong> where customer payments show as unpaid invoices"
+        },
+        {
+          "html": "<strong>Rushed cut-offs</strong> where transactions are entered in both systems"
+        }
+      ],
+      "outro": [
+        {
+          "text": "Each mistake is cheap to prevent and expensive to fix after go-live. That is why ERPNext data migration services should always include a cleaning step and a trial import, never a single direct upload."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "table",
+      "badge": "Timeline",
+      "h2": "Migration Timeline",
+      "headers": [
+        "Step",
+        "What happens",
+        "Typical time"
+      ],
+      "rows": [
+        [
+          "1. Assessment",
+          "Review source data, volume and quality",
+          "2–3 days"
+        ],
+        [
+          "2. Mapping",
+          "Match old fields and accounts to ERPNext",
+          "2–4 days"
+        ],
+        [
+          "3. Cleaning",
+          "Remove duplicates and fill missing details",
+          "2–5 days"
+        ],
+        [
+          "4. Trial import",
+          "Import into a test system and check",
+          "3–5 days"
+        ],
+        [
+          "5. Final import",
+          "Import at the cut-off date",
+          "1–2 days"
+        ],
+        [
+          "6. Sign-off",
+          "Balances matched and approved",
+          "1–2 days"
+        ]
+      ],
+      "note": "For a single company with clean data, the full ERPNext data transfer takes about two weeks. Multi-company groups or messy data take three to six weeks. Your old system stays live until sign-off.",
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "badge": "Cut-Off",
+      "h2": "When Is the Best Time to Migrate?",
+      "paragraphs": [
+        {
+          "text": "The start of a financial year is the simplest cut-off, because opening balances are clean and reports start fresh. A mid-year move also works well: we import balances as at the end of a month or quarter, then bring in open documents. Whichever date you choose, ERPNext data migration services should include a clear cut-off plan agreed in writing."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "table",
+      "badge": "Pricing Factors",
+      "h2": "What Affects the Price of a Migration?",
+      "headers": [
+        "Cost factor",
+        "Why it matters"
+      ],
+      "rows": [
+        [
+          "Source system",
+          "Some systems export cleanly, others need custom extraction"
+        ],
+        [
+          "Data volume",
+          "More items, customers and history mean more checking"
+        ],
+        [
+          "Data quality",
+          "Duplicates and missing tax details take time to fix"
+        ],
+        [
+          "Number of companies",
+          "Each company needs its own books and checks"
+        ],
+        [
+          "History required",
+          "Summarised history costs less than full transaction history"
+        ]
+      ],
+      "note": "We send a fixed quote after the free assessment, so you know the full price before work begins.",
+      "bg": "white"
+    },
+    {
+      "type": "bullets",
+      "badge": "Why Teknoppy",
+      "h2": "Choosing ERPNext Data Migration Services You Can Trust",
+      "items": [
+        {
+          "html": "<strong>Accounting-first checks.</strong> Every balance is signed off by your team."
+        },
+        {
+          "html": "<strong>No data loss.</strong> Your old system stays available until sign-off."
+        },
+        {
+          "html": "<strong>Clear documentation.</strong> You get a record of every mapping and correction."
+        }
+      ],
+      "outro": [
+        {
+          "text": "As an ERPNext migration company and ERPNext migration partner, we handle extraction, cleaning, import and checking in one team. Our ERPNext migration consultants also advise on how much history to move, which often saves time and cost. After go-live, ERPNext migration support covers any corrections your accountant raises in the first month."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "badge": "Locations",
+      "h2": "Where We Work",
+      "paragraphs": [
+        {
+          "lead": "Kerala.",
+          "text": "Clients across Ernakulam use ERPNext migration in Kochi, with ERPNext data migration Kochi workshops at our Vyttila office. We provide ERPNext data migration Kerala-wide for traders, manufacturers and service firms."
+        },
+        {
+          "lead": "India.",
+          "text": "Our ERPNext data migration India-wide service runs remotely, with GST details carried across correctly."
+        },
+        {
+          "lead": "The GCC.",
+          "html": "For Gulf businesses, our ERPNext migration services bring across VAT numbers, multi-currency balances and Arabic names. Our ERPNext data migration services run in GST and AST hours for GCC clients. See <a href=\"/erpnext-implementation-company-gcc/\" class=\"text-primary font-semibold hover:underline\">ERPNext implementation in the GCC</a>."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "faq",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Will we lose any data?",
+          "a": "No. Your old system stays untouched and available until your team signs off the new figures. Every import is tested first on a copy of ERPNext, so mistakes are caught before the final move."
+        },
+        {
+          "q": "How much history should we move?",
+          "a": "Most clients move masters, opening balances and open documents, then keep the old system read-only for history. Full history can be moved too, but it adds time and cost. We help you decide based on your audit and reporting needs."
+        },
+        {
+          "q": "Can we keep using Tally during the migration?",
+          "a": "Yes. Your team keeps working in Tally until the cut-off date. We then import the final balances and open bills, and you switch to ERPNext once the figures match."
+        },
+        {
+          "q": "How long does it take to migrate to ERPNext?",
+          "a": "A single company with clean data usually takes about two weeks. Larger groups, multiple companies or poor-quality data take three to six weeks."
+        },
+        {
+          "q": "Who needs to be involved from our side?",
+          "a": "Usually your accountant, one person from stores and one decision-maker. They confirm the cut-off date, answer questions during cleaning and sign off the final balances. Good ERPNext data migration services need only a few hours a week from them."
+        },
+        {
+          "q": "Do you migrate the database directly?",
+          "a": "For some systems, yes. ERPNext database migration reads directly from the old database when exports are limited. For most accounting software, we use exports and ERPNext's import tools, which are easier to check."
+        },
+        {
+          "q": "What happens to GST or VAT details?",
+          "a": "We carry across GSTIN, VAT numbers, tax categories and HSN codes for every customer, supplier and item. Missing or wrong tax details are flagged for your team to confirm during cleaning."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "cta",
+      "h2": "Book a Free Migration Assessment",
+      "paragraphs": [
+        {
+          "text": "Send us a sample export from your current system, and we will review its quality, suggest a cut-off date and give you a timeline and fixed quote. There is no obligation."
+        },
+        {
+          "html": "Teknoppy provides the ERPNext data migration services Kerala and GCC businesses rely on when they cannot afford to lose a single balance. Moving is also the right time to set up ERPNext properly, so see our <a href=\"/erpnext-implementation-company-kochi/\" class=\"text-primary font-semibold hover:underline\">ERPNext implementation</a> service."
+        },
+        {
+          "html": "<strong>Teknoppy</strong><br>Second Floor, Kaithakal Building, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam, Kochi, Kerala 682019"
+        },
+        {
+          "text": "Phone +91 6282249224 · Mon–Sat, IST, GST and AST hours"
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a free migration assessment",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp +91 6282249224",
+          "href": "https://wa.me/916282249224"
+        },
+        {
+          "label": "sales@teknoppy.com",
+          "href": "mailto:sales@teknoppy.com"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "byline",
+      "text": "Written by: Sanal Edison, Digital Strategist, Teknoppy. Last reviewed: 12 November 2026",
+      "bg": "white"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "ERPNext Data Migration Services",
+      "serviceType": "ERPNext data migration",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "Kochi",
+        "Kerala",
+        "India",
+        "GCC"
+      ],
+      "url": "https://teknoppy.com/erpnext-data-migration-services-kochi/"
+    }
+  ],
+  "devNotes": {
+    "source": "07-ERPNext-Data-Migration-Page.pdf",
+    "primaryKeyword": "erpnext data migration services",
+    "permalink": "/erpnext-data-migration-services-kochi/",
+    "stats": "1,665 words · 9 primary keyword uses · 2.16% density (Rank Math 0.54%) · 25/25 secondary keywords",
+    "secondaryKeywords": [
+      "tally to erpnext migration",
+      "erpnext database migration",
+      "migrate to erpnext",
+      "erpnext data migration kochi",
+      "erpnext data migration kerala",
+      "erpnext data migration india",
+      "erpnext migration services",
+      "erpnext migration partner",
+      "erpnext migration experts",
+      "tally to erpnext kerala",
+      "tally to erpnext migration services",
+      "sap to erpnext migration",
+      "erpnext data transfer",
+      "erpnext master data migration",
+      "erpnext balance migration",
+      "erpnext migration from tally prime",
+      "tally prime to erpnext",
+      "erpnext migration company",
+      "custom software to erpnext migration",
+      "erpnext data conversion",
+      "erpnext migration consultants",
+      "erpnext migration support",
+      "busy to erpnext migration",
+      "marg to erpnext migration",
+      "erpnext migration in kochi"
+    ],
+    "imageAlt": [
+      "Tally ledger balances matched in ERPNext after migration · File: tally-erpnext-balances-matched.webp",
+      "ERPNext trial balance compared with the old system during migration checks · File: erpnext-trial-balance-check.webp"
+    ],
+    "internalLinks": [
+      "/erpnext-implementation-company-gcc/",
+      "/erpnext-implementation-company-kochi/",
+      "/book-a-consultation/"
+    ],
+    "schemaNote": "Doc graph: Service (name \"ERPNext Data Migration Services\", serviceType \"ERPNext data migration\") + BreadcrumbList (Home › Services › ERPNext Development › ERPNext Data Migration) + FAQPage + WebPage.",
+    "heldPlaceholders": [
+      "Choosing… bullet: \"A named team. Migrations are led by [Lead Frappe Developer name] , with [X] years on ERPNext.\"",
+      "Recent Migration Project block (H3 + text): \"[Client name] , [industry] , [city] : we moved [number] years of data from [source system] to ERPNext in [X] weeks, with [number] ledgers and [number] items. Result: the trial balance matched on the first sign-off. [Read the case study] .\"",
+      "Byline: \"Technical review: [Lead Frappe Developer name] , ERPNext and Frappe developer · [LinkedIn]\"; \"[LinkedIn]\" marker after Sanal Edison dropped"
+    ],
+    "detailsNeeded": [
+      "Lead Frappe developer: name, photo, years on ERPNext, LinkedIn link (fills \"[Lead Frappe Developer name]\" / \"[X] years\" and technical-review byline)",
+      "Sanal Edison's LinkedIn link (byline [LinkedIn] marker dropped)",
+      "ERPNext / Frappe team size",
+      "Support hours and days (currently \"Mon–Sat, IST, GST and AST\")",
+      "GCC phone or WhatsApp number",
+      "Client logos and one testimonial from ERPNext clients",
+      "Frappe partner status (listed or certified? badge link if yes)",
+      "Publish date per page (for schema datePublished)",
+      "Source systems actually migrated (tick): Tally Prime / ERP 9, QuickBooks, Zoho Books, Busy, Marg, SAP B1, Odoo, custom software — copy names all of them",
+      "Confirm timings: single company about 2 weeks, groups 3–6 weeks",
+      "One real migration project: source, years of data, ledgers, items, weeks",
+      "Screenshots: Tally balances matched in ERPNext, trial balance check"
+    ],
+    "corrections": [
+      "Contact email sanal@teknoppy.com → sales@teknoppy.com (site canon)"
+    ],
+    "linkNote": "Pillar → /erp-development-company-kochi/ (breadcrumb).",
+    "designLabels": "Badges, hero stat labels and CTA hrefs are design chrome. Bold lead-ins on the \"mistakes\" bullets are a design emphasis of the doc words. H3 \"Where We Work\" rendered as section heading."
+  }
+}

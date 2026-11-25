@@ -1,0 +1,439 @@
+{
+  "meta": {
+    "title": "AI Integration Services in Kochi | Teknoppy",
+    "description": "AI integration services by Teknoppy, Kochi: add ChatGPT, Claude and Gemini features to your ERP, CRM, website or app securely, without rebuilding software."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "AI Automation",
+      "href": "/ai-automation-services-kochi/"
+    },
+    {
+      "name": "AI Integration Services",
+      "href": "/ai-integration-services-kochi/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "AI Automation",
+      "h1Lead": "AI Integration Services in Kochi:",
+      "h1Accent": "Add AI to the Software You Already Use",
+      "body": [
+        {
+          "text": "AI integration services from Teknoppy add practical AI features, such as smart search, summaries, drafting, classification and assistants, to your existing website, CRM, ERP, mobile app or internal tools. Instead of replacing systems your team relies on, we connect them securely to leading AI models from OpenAI, Anthropic and Google."
+        },
+        {
+          "text": "Our in-house team works from Thykoodam, Kochi, for clients in Kerala, across India and overseas."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp +91 6282249224",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "2018",
+          "label": "Since"
+        },
+        {
+          "value": "120+",
+          "label": "Websites delivered"
+        },
+        {
+          "value": "4.9/5",
+          "label": "Google, 60+ reviews"
+        },
+        {
+          "value": "12",
+          "label": "In-house staff"
+        }
+      ],
+      "trustline": "Reviewed by Sanal Edison, Founder, Teknoppy. Last updated: 17 November 2026."
+    },
+    {
+      "type": "bullets",
+      "bg": "white",
+      "badge": "At a Glance",
+      "h2": "Quick facts",
+      "items": [
+        {
+          "text": "Teknoppy: web, software and automation studio in Thykoodam, Kochi, since 2018"
+        },
+        {
+          "text": "Integration work: ChatGPT, Claude and Gemini APIs, Azure OpenAI, ERP and CRM AI features, mobile apps, WordPress plugins and private models"
+        },
+        {
+          "text": "120+ websites delivered; 4.9/5 on Google from 60+ reviews"
+        },
+        {
+          "text": "12 in-house staff; no outsourced work"
+        },
+        {
+          "text": "Typical timeline: 2 to 8 weeks"
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "cream",
+      "h2": "What Is AI Integration?",
+      "paragraphs": [
+        {
+          "text": "What is AI integration? It is the work of connecting an AI model to your existing software so that the AI can use your data and your users can benefit from it inside tools they already know. A sales manager might get an AI summary of a customer's history inside the CRM. An accounts team might see suggested ledger codes in the ERP. Customers might search your product catalogue in plain language."
+        },
+        {
+          "text": "The AI model is only one part. Good integration also covers data access, prompts, user interface, security, cost control, error handling and monitoring."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "Why Integrate AI Instead of Buying New Software?",
+      "paragraphs": [
+        {
+          "html": "Many businesses have invested years in their software and data. Replacing systems to get AI features is expensive and disruptive. Our approach is to integrate AI into existing software through <a href=\"/api-integration-services-kochi/\" class=\"text-primary font-semibold hover:underline\">APIs</a>, plugins and small services, so your team gains new capabilities without retraining on a new platform."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "soft",
+      "badge": "What We Integrate",
+      "h2": "What Our AI Integration Services Cover",
+      "layout": "list",
+      "items": [
+        {
+          "title": "ChatGPT Integration Services",
+          "text": "ChatGPT integration services connect OpenAI's models to your applications for drafting, summarising, answering questions and extracting information. We use the official API, which offers business data controls, rather than consumer chat accounts."
+        },
+        {
+          "title": "Claude API Integration and Gemini API Integration",
+          "text": "Claude API integration and Gemini API integration give you alternatives with different strengths in reasoning, long documents, speed, multilingual support and cost. We often test several models on your real tasks before recommending one."
+        },
+        {
+          "title": "Azure OpenAI Integration",
+          "text": "Azure OpenAI integration suits organisations already using Microsoft Azure or needing enterprise controls, regional data hosting and Microsoft's compliance framework."
+        },
+        {
+          "title": "LLM Integration Services for Custom Needs",
+          "text": "Our LLM integration services cover open-source models too, along with private LLM deployment on your own cloud or servers when data must stay fully within your control."
+        },
+        {
+          "title": "AI Integration for ERP",
+          "text": "AI integration for ERP adds features such as natural-language reports, smart search across records, purchase suggestions, anomaly alerts and automatic categorisation, working alongside systems like Odoo, ERPNext, SAP Business One and custom ERPs."
+        },
+        {
+          "title": "AI Integration for CRM",
+          "text": "AI integration for CRM summarises customer histories, drafts follow-up emails, suggests next actions and highlights at-risk accounts inside Zoho, HubSpot, Salesforce or a custom CRM."
+        },
+        {
+          "title": "AI Integration in Mobile Apps",
+          "text": "AI integration in mobile apps adds in-app assistants, voice input, image understanding, smart search and personalised suggestions to Android, iOS and Flutter apps, with server-side handling to protect API keys."
+        },
+        {
+          "title": "AI Plugin for WordPress",
+          "text": "An AI plugin for WordPress can add content assistance for editors, smarter site search, product description drafts for WooCommerce or a knowledge assistant for visitors, built to your requirements instead of a generic plugin."
+        },
+        {
+          "title": "AI Copilot for Internal Tools",
+          "text": "An AI copilot for internal tools helps staff ask questions about company policies, procedures, products or past projects and get answers with links to the source documents."
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "bg": "white",
+      "h2": "Where AI Integration Services Deliver the Most Value",
+      "intro": "AI integration services pay back fastest where staff repeatedly read, search, summarise or write inside the same system. Common examples include:",
+      "items": [
+        {
+          "html": "<strong>Customer support tools:</strong> Suggested replies and instant summaries of long ticket histories"
+        },
+        {
+          "html": "<strong>Sales and CRM:</strong> Meeting notes turned into follow-up emails and next steps"
+        },
+        {
+          "html": "<strong>Ecommerce:</strong> Product descriptions, smarter search and personalised recommendations"
+        },
+        {
+          "html": "<strong>HR and policies:</strong> Staff questions answered from handbooks and procedures"
+        },
+        {
+          "html": "<strong>Operations:</strong> Plain-language questions about stock, orders and performance data"
+        },
+        {
+          "html": "<strong>Content teams:</strong> Draft outlines, translations and metadata inside the CMS"
+        }
+      ],
+      "outro": [
+        {
+          "text": "We usually start with one feature that saves the most time for the most people, then add others once it proves useful."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "cream",
+      "h2": "Our Approach to Integration",
+      "paragraphs": [
+        {
+          "text": "Our AI integration services follow a simple rule: AI should fit the way your team already works. We place AI features where people need them, keep a person in control of important decisions and make it easy to see where each answer came from. Every feature includes a way for users to flag poor results, which we review to improve prompts, data and model choices."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "AI Integration Security",
+      "paragraphs": [
+        {
+          "text": "AI integration security is planned from the start. We keep API keys on secure servers, never in browsers or apps; limit what data each AI request receives; remove personal details where possible; log requests for auditing; and use providers whose business terms state that API data is not used to train their models by default. For sensitive data, private deployment is an option."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "soft",
+      "h2": "AI API Cost Optimization",
+      "paragraphs": [
+        {
+          "text": "AI API cost optimization keeps running costs predictable. We choose the right model for each task, since smaller models often handle simple jobs well at a fraction of the cost; cache repeated answers; keep prompts efficient; set usage limits and alerts; and report monthly usage. Many clients are surprised how affordable well-designed AI features are. For high-volume features, we also compare per-request costs across providers every few months and switch models when a cheaper option performs just as well."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "badge": "Why Teknoppy",
+      "h2": "Why Choose Teknoppy for AI Integration Services?",
+      "columns": 3,
+      "items": [
+        {
+          "title": "Developers Who Know Your Stack",
+          "text": "We build in PHP, Laravel, Node.js, React, Python, .NET, Java and Flutter, so we can work directly inside your existing codebase rather than bolting on a separate tool."
+        },
+        {
+          "title": "Model-Neutral Advice",
+          "text": "We are not tied to any single AI provider. We test options against your real tasks and recommend based on accuracy, speed, cost and data needs."
+        },
+        {
+          "title": "Local and Global Delivery",
+          "text": "Our AI integration services Kochi clients book are delivered by our own team in Thykoodam, and as an AI integration company Kerala businesses and overseas clients rely on, we handle the work end to end. Vivek Menon, CTO of Evosyz, says Teknoppy \"created an appealing website that represents our brand perfectly.\""
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "bg": "cream",
+      "badge": "How We Work",
+      "h2": "AI Integration Timeline",
+      "intro": "The AI integration timeline depends on how many features and systems are involved:",
+      "items": [
+        {
+          "title": "Discovery (3 to 5 days)",
+          "text": "We review your software, data, users and goals."
+        },
+        {
+          "title": "Model testing (3 to 7 days)",
+          "text": "We test candidate models on real examples and compare results."
+        },
+        {
+          "title": "Design (2 to 5 days)",
+          "text": "We plan the interface, data flow, security and cost controls."
+        },
+        {
+          "title": "Build (1 to 5 weeks)",
+          "text": "We integrate AI features into your software in a test environment."
+        },
+        {
+          "title": "User testing (1 week)",
+          "text": "Your team tests with real tasks and gives feedback."
+        },
+        {
+          "title": "Launch and monitoring (ongoing)",
+          "text": "We go live, monitor quality and costs, and improve monthly."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "cream",
+      "paragraphs": [
+        {
+          "text": "A single AI feature in an existing app is often live in two to three weeks. Larger integrations across several systems take six to eight weeks."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "How Much Does AI Integration Cost?",
+      "paragraphs": [
+        {
+          "text": "How much does AI integration cost? Costs include a one-time development fee based on the number of features and systems, ongoing AI usage charges that depend on volume and model choice, and optional monthly support. We provide a written estimate after discovery, including expected monthly AI costs at your usage levels."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "soft",
+      "h2": "AI Integration Case Study",
+      "paragraphs": [
+        {
+          "text": "Ask us for an AI integration case study relevant to your software or industry. We share client details only with permission and can demonstrate example integrations on a call."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "white",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Do we need to rebuild our software?",
+          "a": "No. In most cases we add AI through APIs, plugins or small services that work alongside your existing code."
+        },
+        {
+          "q": "Will our data be used to train AI models?",
+          "a": "Major providers state that business API data is not used for training by default. We confirm the current terms for your chosen provider and configure settings accordingly."
+        },
+        {
+          "q": "Can you integrate AI into old or custom software?",
+          "a": "Usually yes, if the software has a database, API or can be extended. We assess this during discovery."
+        },
+        {
+          "q": "Which AI model is best?",
+          "a": "There is no single best model. Some are stronger at reasoning, some at long documents, some at speed or low cost, and some at Malayalam, Arabic or Hindi. We compare models on your actual tasks and can switch providers later without rebuilding the whole feature."
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "soft",
+      "h2": "Related Services",
+      "items": [
+        {
+          "label": "AI Automation Services",
+          "href": "/ai-automation-services-kochi/",
+          "text": "Our AI automation hub"
+        },
+        {
+          "label": "AI Web Application Development",
+          "href": "/ai-web-application-development-kochi/",
+          "text": "Custom AI-powered web apps"
+        },
+        {
+          "label": "AI Agent Development",
+          "href": "/ai-agent-development-company-kochi/",
+          "text": "Custom AI agents for business"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "white",
+      "h2": "Start With Teknoppy's AI Integration Services",
+      "paragraphs": [
+        {
+          "text": "Talk to Teknoppy about AI integration services for your website, app or business software. Kochi clients are welcome at our Thykoodam office, and international clients can work with us online. Tell us which system you use and what you want AI to do, and we will reply with a clear plan, timeline and quote."
+        },
+        {
+          "html": "Call or WhatsApp +91 6282249224, email sales@teknoppy.com, or <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">book a consultation</a> at teknoppy.com."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp Us",
+          "href": "https://wa.me/916282249224"
+        }
+      ]
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "AI Integration Services in Kochi: Add AI to the Software You Already Use",
+      "serviceType": "AI Integration Services",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "Kochi",
+        "Kerala",
+        "India",
+        "UAE",
+        "Qatar"
+      ],
+      "url": "https://teknoppy.com/ai-integration-services-kochi/"
+    }
+  ],
+  "devNotes": {
+    "source": "Teknoppy_AI15_AI_Integration_Services.pdf",
+    "primaryKeyword": "ai integration services",
+    "permalink": "/ai-integration-services-kochi/",
+    "secondaryKeywords": [
+      "azure openai integration",
+      "chatgpt integration services",
+      "llm integration services",
+      "ai integration services kochi",
+      "ai integration company kerala",
+      "integrate ai into existing software",
+      "ai integration for erp",
+      "ai integration for crm",
+      "ai integration in mobile apps",
+      "claude api integration",
+      "gemini api integration",
+      "ai copilot for internal tools",
+      "ai plugin for wordpress",
+      "private llm deployment",
+      "ai api cost optimization",
+      "ai integration security",
+      "what is ai integration",
+      "how much does ai integration cost",
+      "ai integration timeline",
+      "ai integration case study"
+    ],
+    "imageAlt": [
+      "AI integration services adding an assistant to an existing CRM",
+      "AI summary panel inside an ERP screen",
+      "AI copilot answering staff questions from internal documents"
+    ],
+    "internalLinks": [
+      "/ai-automation-services-kochi/",
+      "/ai-web-application-development-kochi/",
+      "/ai-agent-development-company-kochi/",
+      "/api-integration-services-kochi/",
+      "/book-a-consultation/"
+    ],
+    "schemaNote": "Service (serviceType: AI Integration Services, areaServed: Kochi, Kerala, India, UAE, Qatar) + LocalBusiness + FAQPage + BreadcrumbList (Home › Services › AI Automation › AI Integration Services). LocalBusiness is emitted site-wide.",
+    "heldPlaceholders": [],
+    "corrections": [
+      "Contact email sanal@teknoppy.com → sales@teknoppy.com (site canon)"
+    ],
+    "linkNote": "API Integration Services linked on 'APIs' (Why Integrate AI section); hub, AI web app and AI agent in Related Services. No substitutions.",
+    "designLabels": "Badges, 'Related Services' heading, CTA button labels and hero stat labels are design chrome, not doc copy."
+  }
+}

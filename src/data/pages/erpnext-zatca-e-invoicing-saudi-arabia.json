@@ -1,0 +1,516 @@
+{
+  "meta": {
+    "title": "ERPNext ZATCA E-Invoicing Phase 2 Setup | Teknoppy",
+    "description": "ERPNext ZATCA e-invoicing setup for Saudi businesses: Phase 2 integration with Fatoora, XML invoices, QR codes, onboarding and fixes for rejected invoices."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "ERPNext Development",
+      "href": "/erp-development-company-kochi/"
+    },
+    {
+      "name": "ERPNext in GCC",
+      "href": "/erpnext-implementation-company-gcc/"
+    },
+    {
+      "name": "ERPNext in Saudi Arabia",
+      "href": "/erpnext-implementation-company-saudi-arabia/"
+    },
+    {
+      "name": "ZATCA E-Invoicing",
+      "href": "/erpnext-zatca-e-invoicing-saudi-arabia/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "ERPNext",
+      "h1Lead": "ERPNext ZATCA",
+      "h1Accent": "E-Invoicing Setup",
+      "body": [
+        {
+          "text": "ERPNext ZATCA e-invoicing setup from Teknoppy connects your ERPNext system to ZATCA's Fatoora platform, so every tax invoice is generated, signed, cleared or reported exactly as Saudi rules require. We handle onboarding, XML invoices, QR codes, cryptographic stamps and testing for businesses across Saudi Arabia, working in Arabia Standard Time."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a free ZATCA readiness check",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "Talk to our team on WhatsApp",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "2018",
+          "label": "Since"
+        },
+        {
+          "value": "120+",
+          "label": "Digital projects delivered"
+        },
+        {
+          "value": "4.9★",
+          "label": "From 60+ Google reviews"
+        }
+      ],
+      "trustline": "Since 2018 · 120+ digital projects delivered · 4.9★ from 60+ Google reviews · Support in AST working hours"
+    },
+    {
+      "type": "prose",
+      "badge": "The Rules",
+      "h2": "What Does ZATCA Require?",
+      "paragraphs": [
+        {
+          "text": "ZATCA, the Zakat, Tax and Customs Authority, requires VAT-registered businesses in Saudi Arabia to issue electronic invoices from a compliant system. Phase 1, the generation phase, started on 4 December 2021. Phase 2, the integration phase, connects your system directly to ZATCA's Fatoora platform and is being rolled out in waves."
+        },
+        {
+          "text": "Under Phase 2, every invoice must:"
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        {
+          "text": "Be created in a structured XML format (UBL 2.1)"
+        },
+        {
+          "text": "Carry a cryptographic stamp and a unique identifier"
+        },
+        {
+          "text": "Include a QR code with the required tax details"
+        },
+        {
+          "text": "Be cleared by ZATCA before sharing (standard B2B invoices) or reported to ZATCA within 24 hours (simplified B2C invoices)"
+        }
+      ],
+      "outro": [
+        {
+          "text": "ERPNext ZATCA compliance means your system does all of this automatically, with no manual uploads."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "bullets",
+      "h2": "Who Needs ERPNext ZATCA E-Invoicing?",
+      "intro": "Any VAT-registered business in Saudi Arabia that issues invoices from ERPNext needs Phase 2 integration once its wave is announced. That includes:",
+      "items": [
+        {
+          "text": "Distributors and traders issuing standard B2B invoices"
+        },
+        {
+          "text": "Retailers and restaurants issuing simplified invoices at the counter"
+        },
+        {
+          "text": "Contractors issuing progress invoices and credit notes"
+        },
+        {
+          "text": "Groups with several branches, each acting as its own invoicing unit"
+        }
+      ],
+      "outro": [
+        {
+          "text": "If ERPNext is already your billing system, ERPNext ZATCA e-invoicing is usually faster and cheaper than adding a separate e-invoicing tool, because invoices never leave the system that created them."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "table",
+      "h2": "Which Wave Is Your Business In?",
+      "intro": "ZATCA names each wave by revenue and gives at least six months' notice. The latest announced wave is:",
+      "headers": [
+        "Wave",
+        "Who is included",
+        "Integration deadline"
+      ],
+      "rows": [
+        [
+          "Wave 25",
+          "VAT-able revenue above SAR 187,500 in 2022, 2023, 2024 or 2025",
+          "1 February 2027"
+        ]
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "html": "If your business is in ERPNext ZATCA wave 25, the deadline is close. Earlier waves covered larger businesses, and most of them must already be integrated. Check your notification on the Fatoora portal or ask your tax adviser, then plan at least 8–12 weeks for setup and testing. Moving to a ZATCA Phase 2 ERP setup late is the most common cause of rushed, error-prone go-lives. For official guidance, see ZATCA e-invoicing."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "table",
+      "h2": "What Changed From Phase 1 to Phase 2?",
+      "headers": [
+        "Requirement",
+        "Phase 1 (generation)",
+        "Phase 2 (integration)"
+      ],
+      "rows": [
+        [
+          "Electronic invoices",
+          "Required",
+          "Required"
+        ],
+        [
+          "QR code",
+          "Required on simplified invoices",
+          "Required, with more data"
+        ],
+        [
+          "Structured XML",
+          "Not required",
+          "Required (UBL 2.1)"
+        ],
+        [
+          "Cryptographic stamp",
+          "Not required",
+          "Required"
+        ],
+        [
+          "Connection to ZATCA",
+          "None",
+          "Clearance or reporting through Fatoora"
+        ]
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "ERPNext ZATCA Phase 2 setup closes every gap in the right-hand column. Our ZATCA Phase 2 integration ERPNext work keeps your existing invoice process, adding the technical layer underneath. Most ZATCA e-invoicing ERPNext projects we see start from a Phase 1 setup that only prints a QR code."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "steps",
+      "badge": "How It Works",
+      "h2": "How Does ERPNext Connect to Fatoora?",
+      "intro": "ERPNext connects to ZATCA through a Frappe app that adds the XML, signing, QR and API connection. Our ERPNext ZATCA integration keeps this app separate from ERPNext's core, so upgrades stay safe. ERPNext Fatoora integration works in four parts:",
+      "items": [
+        {
+          "title": "Onboarding",
+          "text": "Your ERPNext system gets its own cryptographic certificate from ZATCA, one per invoicing unit or branch."
+        },
+        {
+          "title": "Invoice creation",
+          "text": "Each sales invoice is converted to UBL 2.1 XML, signed and given its QR code."
+        },
+        {
+          "title": "Clearance or reporting",
+          "text": "Standard invoices are sent for clearance before you share them. Simplified invoices are reported within 24 hours."
+        },
+        {
+          "title": "Response handling",
+          "text": "ZATCA's response is saved on the invoice. Rejected invoices are flagged with the reason, so your team can correct and resend them."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "ERPNext ZATCA clearance happens in seconds for most invoices, so billing is not slowed down. The ERPNext ZATCA app we configure is chosen and tested for your ERPNext version."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "table",
+      "badge": "Our Process",
+      "h2": "Our ZATCA Setup Steps",
+      "headers": [
+        "Step",
+        "What happens",
+        "Typical time"
+      ],
+      "rows": [
+        [
+          "1. Readiness review",
+          "Check ERPNext version, VAT setup, customer data and branches",
+          "2–3 days"
+        ],
+        [
+          "2. Data cleaning",
+          "Fix VAT numbers, addresses and Arabic names",
+          "3–5 days"
+        ],
+        [
+          "3. App setup",
+          "Install and configure the ZATCA app and invoice fields",
+          "1–2 weeks"
+        ],
+        [
+          "4. Onboarding",
+          "Generate certificates for each invoicing unit",
+          "2–3 days"
+        ],
+        [
+          "5. Testing",
+          "Run test invoices, credit notes and edge cases",
+          "1–2 weeks"
+        ],
+        [
+          "6. Go-live",
+          "Switch on production clearance and reporting",
+          "1 day"
+        ],
+        [
+          "7. Monitoring",
+          "Watch responses and fix rejections",
+          "30 days"
+        ]
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "prose",
+      "paragraphs": [
+        {
+          "text": "Our ERPNext ZATCA setup follows this order, and your ERPNext ZATCA onboarding is done with your team present, so you understand each certificate and where it lives. A complete ERPNext ZATCA implementation usually takes 4–8 weeks. As part of every ERPNext ZATCA e-invoicing project, we document each setting for your auditors."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "What If You Miss Your Deadline?",
+      "paragraphs": [
+        {
+          "text": "ZATCA can issue fines to businesses that do not integrate on time or keep issuing non-compliant invoices. Late projects also tend to be rushed, which leads to more rejections in the first weeks. Starting ERPNext ZATCA e-invoicing work three months before your deadline leaves time for clean data, proper testing and staff training."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "prose",
+      "h2": "Fixing Rejected Invoices",
+      "paragraphs": [
+        {
+          "text": "Rejections usually come from bad master data, not the software: a missing buyer VAT number, an incomplete address, rounding differences or a wrong invoice type. We map every rejection reason to a fix, clean the data at the source and add validation rules so the same error cannot happen again. For example, ERPNext can block a standard invoice from being submitted if the buyer's VAT number or building number is missing, so the problem is caught before it ever reaches ZATCA."
+        },
+        {
+          "text": "ERPNext ZATCA support after go-live covers rejected invoices, new branches and ERPNext upgrades that affect the ZATCA app. ERPNext Fatoora certificates are renewed before they expire, so clearance never stops."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "Arabic Invoices, Credit Notes and QR Codes",
+      "paragraphs": [
+        {
+          "text": "Saudi tax invoices must show key details in Arabic. We design bilingual print formats with Arabic and English, the seller and buyer VAT numbers, and the ERPNext ZATCA QR in the right place. Credit and debit notes follow the same clearance and reporting rules as invoices, and we test each one before go-live. Clear bilingual layouts are a core part of ERPNext Saudi e-invoicing."
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "bullets",
+      "badge": "Why Teknoppy",
+      "h2": "Choosing an ERPNext ZATCA E-Invoicing Partner",
+      "items": [
+        {
+          "html": "<strong>Clean data first.</strong> We fix master data before switching on clearance."
+        },
+        {
+          "html": "<strong>Saudi hours.</strong> Support in Arabia Standard Time."
+        }
+      ],
+      "outro": [
+        {
+          "text": "As a ZATCA integration partner and ERPNext ZATCA consultant, we combine ERPNext setup with ZATCA rules. Our ZATCA e-invoice integration services cover single companies, branches and VAT groups. A good ERPNext ZATCA e-invoicing partner should show you real cleared invoices from past projects, and we do."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "prose",
+      "h2": "For Saudi Businesses",
+      "paragraphs": [
+        {
+          "html": "ERPNext e-invoicing Saudi Arabia clients include distributors, contractors and service firms in Riyadh, Jeddah and Dammam. Our ERPNext e-invoicing KSA setups also cover multi-branch businesses with several invoicing units. For full ERPNext setup in the Kingdom, see <a href=\"/erpnext-implementation-company-saudi-arabia/\" class=\"text-primary font-semibold hover:underline\">ERPNext implementation in Saudi Arabia</a>."
+        },
+        {
+          "text": "ERPNext ZATCA Saudi Arabia projects run mostly remotely from Kochi, which is 2.5 hours ahead of Riyadh, so our working days overlap well."
+        }
+      ],
+      "bg": "soft"
+    },
+    {
+      "type": "faq",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Is ERPNext ZATCA-approved?",
+          "a": "ZATCA does not approve or certify specific software brands. Instead, each business's invoicing system must pass ZATCA's compliance checks during onboarding. With the right app and setup, ERPNext passes these checks and produces ZATCA ready ERPNext invoices."
+        },
+        {
+          "q": "Which wave is my business in?",
+          "a": "ZATCA notifies each business on the Fatoora portal at least six months before its deadline. The latest announced wave, Wave 25, covers VAT-able revenue above SAR 187,500 and must integrate by 1 February 2027."
+        },
+        {
+          "q": "Can you fix rejected invoices?",
+          "a": "Yes. Most rejections come from missing or wrong data such as VAT numbers or addresses. We find the cause, fix the source data and add checks so it does not happen again."
+        },
+        {
+          "q": "Do invoices need Arabic?",
+          "a": "Yes. Saudi tax invoices must show key details in Arabic. We design bilingual Arabic and English print formats that meet ZATCA rules and still look professional."
+        },
+        {
+          "q": "How long does ERPNext ZATCA setup take?",
+          "a": "Most projects take 4–8 weeks from review to go-live, depending on data quality and the number of branches. We recommend starting at least three months before your wave deadline."
+        },
+        {
+          "q": "Will ZATCA integration work with our current ERPNext version?",
+          "a": "Usually, yes. The ZATCA app supports recent ERPNext versions. If you are on a very old version, we upgrade first, then set up ERPNext ZATCA e-invoicing on the new version, so you are not stuck on unsupported software."
+        },
+        {
+          "q": "Does this work for point-of-sale invoices?",
+          "a": "Yes. Simplified invoices from ERPNext's point of sale are reported to ZATCA within 24 hours. We test the full flow, including returns, before go-live."
+        }
+      ],
+      "bg": "white"
+    },
+    {
+      "type": "cta",
+      "h2": "Book a Free ZATCA Readiness Check",
+      "paragraphs": [
+        {
+          "text": "We review your ERPNext version, VAT setup and customer data, then tell you what needs fixing before your wave deadline. There is no obligation."
+        },
+        {
+          "text": "Teknoppy's ERPNext ZATCA e-invoicing service gives Saudi businesses a tested, documented ZATCA e-invoicing solution inside the ERPNext system they already use."
+        },
+        {
+          "html": "<strong>Teknoppy</strong><br>Second Floor, Kaithakal Building, Kaithakal Lane, Thykoodam, Vyttila, Ernakulam, Kochi, Kerala 682019<br>Phone +91 6282249224 · Support in AST working hours"
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a free ZATCA readiness check",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp +91 6282249224",
+          "href": "https://wa.me/916282249224"
+        },
+        {
+          "label": "sales@teknoppy.com",
+          "href": "mailto:sales@teknoppy.com"
+        }
+      ],
+      "bg": "cream"
+    },
+    {
+      "type": "byline",
+      "bg": "white",
+      "text": "Written by: Sanal Edison, Digital Strategist, Teknoppy. Last reviewed: 12 November 2026."
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "ERPNext ZATCA E-Invoicing Setup",
+      "serviceType": "ERPNext ZATCA e-invoicing integration",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "Saudi Arabia"
+      ],
+      "url": "https://teknoppy.com/erpnext-zatca-e-invoicing-saudi-arabia/"
+    }
+  ],
+  "devNotes": {
+    "source": "12-ERPNext-ZATCA-Page.pdf",
+    "primaryKeyword": "erpnext zatca e-invoicing",
+    "permalink": "/erpnext-zatca-e-invoicing-saudi-arabia/",
+    "secondaryKeywords": [
+      "zatca e-invoicing erpnext",
+      "erpnext zatca phase 2",
+      "erpnext zatca integration",
+      "erpnext zatca saudi arabia",
+      "erpnext zatca setup",
+      "erpnext zatca compliance",
+      "erpnext fatoora integration",
+      "erpnext fatoora",
+      "zatca phase 2 integration erpnext",
+      "erpnext e-invoicing saudi arabia",
+      "erpnext e-invoicing ksa",
+      "erpnext zatca app",
+      "zatca integration partner",
+      "zatca e-invoicing solution",
+      "zatca phase 2 erp",
+      "erpnext zatca qr",
+      "erpnext saudi e-invoicing",
+      "zatca e-invoice integration services",
+      "erpnext zatca implementation",
+      "erpnext zatca consultant",
+      "erpnext zatca support",
+      "zatca ready erpnext",
+      "erpnext zatca onboarding",
+      "erpnext zatca clearance",
+      "erpnext zatca wave 25"
+    ],
+    "parentPage": "ERPNext in Saudi Arabia (country page)",
+    "imageAlt": [
+      "ERPNext tax invoice with ZATCA QR code for a Riyadh distributor · erpnext-zatca-invoice-riyadh.webp",
+      "ERPNext sales invoice showing ZATCA clearance status and response · erpnext-zatca-clearance-status.webp"
+    ],
+    "internalLinks": [
+      "/erpnext-implementation-company-saudi-arabia/",
+      "/book-a-consultation/"
+    ],
+    "schemaNote": "Doc schema: Service (serviceType \"ERPNext ZATCA e-invoicing integration\", areaServed Saudi Arabia) + BreadcrumbList (Home › Services › ERPNext Development › ERPNext in GCC › ERPNext in Saudi Arabia › ZATCA E-Invoicing) + FAQPage + WebPage (author Sanal Edison, reviewedBy [Lead Frappe Developer name], datePublished [publish date], dateModified 2026-11-12). FAQPage/BreadcrumbList auto-generated; WebPage not emitted (needs publish date and reviewer).",
+    "heldPlaceholders": [
+      "A named lead. [Lead Frappe Developer name] runs your project, with [X] years on ERPNext.",
+      "Delivered experience. [Number] ZATCA Phase 2 integrations completed on ERPNext.",
+      "Recent ZATCA Project (heading) — [Client name] , [industry] , [city] : integrated ERPNext with Fatoora in [X] weeks across [number] branches. Result: [number] invoices cleared in the first month with [X] % rejections after week one. [Read the case study] .",
+      "Phone +91 6282249224 · Saudi contact: [GCC phone or WhatsApp number] · … (the \"Saudi contact\" item dropped from the contact line)",
+      "Technical review: [Lead Frappe Developer name] , ERPNext and Frappe developer · [LinkedIn] (whole line held)"
+    ],
+    "detailsNeeded": [
+      "Shared: lead Frappe developer (name, photo, years on ERPNext, LinkedIn)",
+      "Shared: Sanal Edison's LinkedIn link",
+      "Shared: GCC phone or WhatsApp number (needed on the ZATCA page)",
+      "Shared: support hours and days (currently \"Mon–Sat, IST, GST and AST\")",
+      "Shared: publish date (for schema)",
+      "ZATCA Phase 2 integrations delivered — strategy gate: publish only after at least one. How many?",
+      "ZATCA app used on ERPNext — name and version",
+      "One real ZATCA project — branches · weeks · invoices cleared · rejection rate",
+      "Confirm timing — setup 4–8 weeks",
+      "Screenshots — invoice with ZATCA QR · clearance status"
+    ],
+    "corrections": [
+      "Contact email: doc CTA already used sales@teknoppy.com; kept (site canon).",
+      "pdftotext spacing artefacts fixed (\"E-Invoicing ?\" → \"E-Invoicing?\", \"] .\" → \"].\").",
+      "\"[LinkedIn]\" markers after the byline names dropped (no URL supplied)."
+    ],
+    "linkNote": "Doc link markers [ZATCA e-invoicing] (official ZATCA guidance, external) kept as plain text, no internal target. \"ERPNext Development\" crumb → /erp-development-company-kochi/ (pillar /erpnext-development-company-kochi/ has no doc). Hero CTA \"Book a free ZATCA readiness check\" → /book-a-consultation/.",
+    "designLabels": "Badges, hero stat labels, step titles' trailing periods removed, and CTA button labels are design chrome."
+  }
+}

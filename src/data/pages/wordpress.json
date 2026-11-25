@@ -460,5 +460,17 @@
     "sourceDoc": "WordPress Development Page Audit & Action Plan (Oct 2026)",
     "primaryKeyword": "WordPress development company in Kochi",
     "permalink": "/wordpress-development-company-kochi/"
+  },
+  "subServices": {
+    "badge": "Specialist Builds",
+    "heading": "More WordPress Services",
+    "intro": "Each service below has its own dedicated page:",
+    "items": [
+      {
+        "title": "Headless WordPress Development",
+        "desc": "Headless WordPress development by Teknoppy, Kochi: keep the WordPress editor and get a fast Next.js front end for India and GCC brands. Get a quote today.",
+        "href": "/headless-wordpress-development-kochi/"
+      }
+    ]
   }
 }

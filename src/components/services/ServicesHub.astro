@@ -7,7 +7,7 @@
  */
 import {
   Monitor, Globe, ShoppingCart, Layers, Search, Megaphone,
-  PenTool, Smartphone, Code2, Sparkles
+  PenTool, Smartphone, Code2, Sparkles, ArrowRight
 } from 'lucide-react';
 
 const { page } = Astro.props;
@@ -15,6 +15,7 @@ const sections: any[] = page.sections ?? [];
 const hero = sections.find((s) => s.type === 'hero');
 const cards = sections.find((s) => s.type === 'cards');
 const prose = sections.find((s) => s.type === 'prose');
+const linkGroups = sections.find((s) => s.type === 'linkGroups');
 const faq = sections.find((s) => s.type === 'faq');
 const cta = sections.find((s) => s.type === 'cta');
 
@@ -154,6 +155,35 @@ const breadcrumbSchema = page.breadcrumb && {
   </section>
 )}
 
+<!-- SERVICE LINK GROUPS (AI Automation, ERPNext, Web Development Technologies, GCC Services), styled like the hub's "Our Services" -->
+{linkGroups?.groups.map((g: any, gi: number) => {
+  // accent the last word of the heading, as the other hub headings do ("ERPNext" stays whole)
+  const k = g.h2.lastIndexOf(' ');
+  return (
+    <section id={g.id} class:list={["relative py-16 sm:py-20 lg:py-24", gi % 2 ? "svh-sec" : "svh-sec-alt"]}>
+      <div class="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12">
+        <div class="mb-10 sm:mb-12">
+          <div class="svh-eyebrow mb-4">{g.items.length} services</div>
+          <h2 class="text-4xl md:text-5xl font-black text-neutral-900 leading-[1.06] tracking-[-0.03em]">
+            {k < 0 ? <span class="text-primary">{g.h2}</span> : <>{g.h2.slice(0, k + 1)}<span class="text-primary">{g.h2.slice(k + 1)}</span></>}
+          </h2>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
+          {g.items.map((item: any) => (
+            <a href={item.href} class="svh-card group p-5 sm:p-6 flex flex-col">
+              <span class="flex items-start justify-between gap-3 mb-2.5">
+                <span class="text-base sm:text-[17px] font-bold text-neutral-900 leading-snug group-hover:text-primary transition-colors">{item.title}</span>
+                <span class="svh-go" aria-hidden="true"><ArrowRight class="w-4 h-4" /></span>
+              </span>
+              <span class="text-neutral-600 text-sm leading-relaxed">{item.text}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+})}
+
 <!-- FAQ -->
 {faq && (
   <section id={faq.id} class="svh-sec relative py-16 sm:py-20">
@@ -233,6 +263,13 @@ const breadcrumbSchema = page.breadcrumb && {
     transition: background 0.3s ease, color 0.3s ease;
   }
   .svh-card.group:hover .svh-icon { background: var(--color-primary); color: #fff; }
+  .svh-go {
+    flex-shrink: 0; width: 2rem; height: 2rem; border-radius: 9999px; display: inline-flex; align-items: center; justify-content: center;
+    color: var(--color-primary); background: rgba(240, 90, 44, 0.1);
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  .svh-card.group:hover .svh-go, .svh-card.group:focus-visible .svh-go { background: var(--color-primary); color: #fff; }
+  a.svh-card:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; }
   .svh-prose :global(a) { color: var(--color-primary); font-weight: 600; }
   .svh-prose :global(a:hover) { text-decoration: underline; }
   .svh-faq {

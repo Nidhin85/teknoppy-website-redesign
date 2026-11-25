@@ -314,7 +314,8 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
         <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/pricingbg.webp')] opacity-75"></div>
       </div>
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
-        <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        <!-- grid-cols-1 = minmax(0,1fr): lets the column shrink so the 520px table scrolls instead of widening the page -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           <div class="lg:col-span-4">
             <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-wider mb-4 shadow-sm">
               {page.pricing.badge}
@@ -329,20 +330,24 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
           <div class="lg:col-span-8">
             <div class="bg-white rounded-[1.75rem] border border-primary/10 overflow-hidden shadow-[0_30px_60px_-36px_rgba(160,60,20,0.45)]">
               <div class="overflow-x-auto">
-                <table class="w-full text-left border-collapse min-w-[520px]">
+                <!-- Below sm the Timeline column folds under the price so the table fits a phone without scrolling -->
+                <table class="w-full text-left border-collapse sm:min-w-[520px]">
                   <thead>
                     <tr class="border-b border-neutral-100">
                       <th class="pt-5 pb-3 px-4 sm:px-6 text-[11px] sm:text-xs font-bold text-neutral-400 uppercase tracking-[0.14em]">Service Type</th>
                       <th class="pt-5 pb-3 px-4 sm:px-6 text-[11px] sm:text-xs font-bold text-neutral-400 uppercase tracking-[0.14em] text-right">Estimated Investment</th>
-                      <th class="pt-5 pb-3 px-4 sm:px-6 text-[11px] sm:text-xs font-bold text-neutral-400 uppercase tracking-[0.14em] text-right">Timeline</th>
+                      <th class="hidden sm:table-cell pt-5 pb-3 px-4 sm:px-6 text-[11px] sm:text-xs font-bold text-neutral-400 uppercase tracking-[0.14em] text-right">Timeline</th>
                     </tr>
                   </thead>
                   <tbody class="divide-y divide-neutral-100">
                     {page.pricing.rows.map((priceItem) => (
                       <tr class="hover:bg-[#fff8f3] transition-colors">
                         <td class="py-3.5 sm:py-4 px-4 sm:px-6 font-bold text-neutral-900 text-xs sm:text-[0.95rem]">{priceItem.type}</td>
-                        <td class="py-3.5 sm:py-4 px-4 sm:px-6 text-right font-bold text-primary text-xs sm:text-[0.95rem] whitespace-nowrap">{priceItem.price}</td>
-                        <td class="py-3.5 sm:py-4 px-4 sm:px-6 text-right font-semibold text-neutral-600 text-xs sm:text-[0.95rem] whitespace-nowrap">{priceItem.timeline}</td>
+                        <td class="py-3.5 sm:py-4 px-4 sm:px-6 text-right font-bold text-primary text-xs sm:text-[0.95rem] sm:whitespace-nowrap">
+                          {priceItem.price}
+                          <span class="sm:hidden block mt-1 font-semibold text-neutral-600">{priceItem.timeline}</span>
+                        </td>
+                        <td class="hidden sm:table-cell py-3.5 sm:py-4 px-4 sm:px-6 text-right font-semibold text-neutral-600 text-xs sm:text-[0.95rem] whitespace-nowrap">{priceItem.timeline}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -423,15 +428,15 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
             </p>
           </div>
 
-          <div class="grid gap-6 lg:grid-cols-2">
+          <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
             {page.featuredCaseStudies.items.map((cs) => (
               <a
                 href={cs.href}
                 class="wad-card group p-7 sm:p-8 flex flex-col"
               >
-                <div class="flex items-center justify-between gap-3 mb-4">
+                <div class="flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 mb-4">
                   <span class="text-[15px] font-black text-neutral-900">{cs.client}</span>
-                  <span class="text-[11px] font-black text-primary bg-primary/5 px-2.5 py-1 rounded-full uppercase tracking-wider whitespace-nowrap">{cs.sector}</span>
+                  <span class="text-[11px] font-black text-primary bg-primary/5 px-2.5 py-1 rounded-full uppercase tracking-wider sm:whitespace-nowrap">{cs.sector}</span>
                 </div>
                 <h3 class="text-xl sm:text-2xl font-black text-neutral-900 leading-snug group-hover:text-primary transition-colors">{cs.title}</h3>
                 <p class="text-neutral-600 text-[15px] sm:text-base leading-relaxed mt-3 flex-grow">{cs.text}</p>

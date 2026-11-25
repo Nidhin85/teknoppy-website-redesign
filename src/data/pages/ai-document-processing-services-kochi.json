@@ -1,0 +1,475 @@
+{
+  "meta": {
+    "title": "AI Document Processing Services Kochi | Teknoppy",
+    "description": "AI document processing by Teknoppy, Kochi: extract data from invoices, POs, receipts, contracts and KYC files into Tally, Zoho or your ERP, with human review."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Services",
+      "href": "/services/"
+    },
+    {
+      "name": "AI Automation",
+      "href": "/ai-automation-services-kochi/"
+    },
+    {
+      "name": "AI Document Processing",
+      "href": "/ai-document-processing-services-kochi/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "badge": "AI Automation",
+      "h1Lead": "AI Document Processing Services in Kochi:",
+      "h1Accent": "Turn Invoices, Forms and PDFs Into Clean Data",
+      "body": [
+        {
+          "text": "AI document processing from Teknoppy reads invoices, purchase orders, receipts, contracts, ID documents and forms, extracts the details you need and sends them straight into your accounting, ERP or CRM software. Staff stop retyping data, errors drop, and documents are processed in minutes instead of days."
+        },
+        {
+          "text": "Our in-house team works from Thykoodam, Kochi, for clients in Kerala, across India and overseas."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp +91 6282249224",
+          "href": "https://wa.me/916282249224"
+        }
+      ],
+      "stats": [
+        {
+          "value": "2018",
+          "label": "Since"
+        },
+        {
+          "value": "120+",
+          "label": "Websites delivered"
+        },
+        {
+          "value": "4.9/5",
+          "label": "Google, 60+ reviews"
+        },
+        {
+          "value": "12",
+          "label": "In-house staff"
+        }
+      ],
+      "trustline": "Reviewed by Sanal Edison, Founder, Teknoppy. Last updated: 17 November 2026."
+    },
+    {
+      "type": "bullets",
+      "bg": "white",
+      "badge": "At a Glance",
+      "h2": "Quick facts",
+      "items": [
+        {
+          "text": "Teknoppy: web, software and automation studio in Thykoodam, Kochi, since 2018"
+        },
+        {
+          "text": "Document work: invoices, purchase orders, receipts, contracts, KYC documents, handwritten forms and Arabic documents"
+        },
+        {
+          "text": "120+ websites delivered; 4.9/5 on Google from 60+ reviews"
+        },
+        {
+          "text": "12 in-house staff; no outsourced work"
+        },
+        {
+          "text": "Typical timeline: 3 to 8 weeks"
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "cream",
+      "h2": "What Is Intelligent Document Processing?",
+      "paragraphs": [
+        {
+          "text": "Intelligent document processing, often shortened to IDP, combines OCR, which turns images of text into machine-readable text, with AI that understands what the text means. It can tell an invoice number from a GST number, find the total even when layouts differ and match line items to purchase orders."
+        },
+        {
+          "text": "The result is structured, checked data ready for your business systems, not just a block of scanned text."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "IDP vs OCR",
+      "paragraphs": [
+        {
+          "text": "IDP vs OCR is an important difference. Basic OCR data extraction reads characters but does not understand them, so it usually needs a fixed template for each document layout. When a supplier changes its invoice design, the template breaks."
+        },
+        {
+          "text": "Intelligent document processing uses AI to understand documents by meaning, so it handles new layouts, multiple languages and messy scans far better. It also checks results, flags uncertain fields and learns from corrections."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "soft",
+      "badge": "What We Automate",
+      "h2": "Documents We Automate",
+      "layout": "list",
+      "items": [
+        {
+          "title": "Invoice Automation",
+          "text": "Invoice automation captures supplier name, invoice number, dates, GST details, line items, taxes and totals from PDF or scanned invoices, checks them against purchase orders and sends them for approval or posting."
+        },
+        {
+          "title": "Invoice to Tally Automation",
+          "text": "Invoice to Tally automation posts extracted invoice data into Tally as vouchers, with the right ledgers and tax details, removing one of the most time-consuming tasks for Indian accounts teams. We also connect to Zoho Books, QuickBooks and other accounting tools."
+        },
+        {
+          "title": "Purchase Order Processing",
+          "text": "Purchase order processing reads incoming customer POs, extracts items, quantities, prices and delivery dates, and creates sales orders in your system for review."
+        },
+        {
+          "title": "Receipt and Expense Scanning",
+          "text": "Receipt and expense scanning lets employees photograph receipts on their phones. AI extracts the vendor, date, amount and tax, categorises the expense and adds it to the claim."
+        },
+        {
+          "title": "Contract Data Extraction",
+          "text": "Contract data extraction pulls key terms, such as parties, dates, renewal periods, payment terms and obligations, into a searchable register with reminders for important dates."
+        },
+        {
+          "title": "KYC Document Verification",
+          "text": "KYC document verification reads details from ID cards, passports and address proofs, checks them against application data and flags mismatches or missing documents for staff review."
+        },
+        {
+          "title": "Handwritten Form Extraction",
+          "text": "Handwritten form extraction reads filled paper forms, such as applications, delivery notes and inspection checklists. Accuracy depends on handwriting quality, so we always include human review for uncertain fields."
+        },
+        {
+          "title": "Arabic OCR",
+          "text": "Arabic OCR supports businesses handling documents from Gulf customers and suppliers, including mixed Arabic and English invoices, trade licences and shipping documents."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "Document Classification AI",
+      "paragraphs": [
+        {
+          "text": "Document classification AI sorts incoming documents automatically, identifying whether each file is an invoice, PO, receipt, delivery note or contract, and sends it to the right process. This is especially useful for shared inboxes that receive many document types every day."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "cream",
+      "h2": "How Accurate Is AI Document Processing?",
+      "paragraphs": [
+        {
+          "text": "How accurate is AI document processing? On clear, typed documents, field-level accuracy is typically very high. Accuracy falls with poor scans, unusual layouts and handwriting. Rather than promising perfection, we measure accuracy on your own sample documents before launch and design the workflow around the results."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "Human Review for Extracted Data",
+      "paragraphs": [
+        {
+          "text": "Human review for extracted data is built into every project. Each extracted field receives a confidence score. High-confidence fields pass through automatically, while uncertain fields are highlighted for a staff member to check in a simple review screen. Corrections are recorded and used to improve future results."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "soft",
+      "h2": "Document Data Security",
+      "paragraphs": [
+        {
+          "text": "Document data security is critical, since invoices, contracts and ID documents contain sensitive information. We use encrypted storage and transfer, role-based access, audit logs and providers with clear data-processing terms. Documents can be deleted automatically after processing, and setups can be designed to keep data in India where needed."
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "bg": "white",
+      "h2": "Signs Your Team Needs Document Automation",
+      "intro": "Document automation pays back fastest when:",
+      "items": [
+        {
+          "text": "Staff spend several hours a day typing data from PDFs and scans into software"
+        },
+        {
+          "text": "Month-end closing is delayed because invoices are still being entered"
+        },
+        {
+          "text": "Typing errors cause wrong payments, tax mismatches or customer complaints"
+        },
+        {
+          "text": "Documents arrive by email, WhatsApp and courier, and some get lost"
+        },
+        {
+          "text": "Your volumes are growing faster than your accounts or operations team"
+        }
+      ],
+      "outro": [
+        {
+          "text": "Even a few hundred documents a month can justify automation if each one takes several minutes to process by hand."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "cream",
+      "badge": "Industries",
+      "h2": "Industries We Serve",
+      "layout": "list",
+      "items": [
+        {
+          "title": "AI Document Processing for Logistics",
+          "text": "AI document processing for logistics handles bills of lading, airway bills, commercial invoices, packing lists, delivery notes and customs documents, where speed and accuracy affect shipment times and costs."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "cream",
+      "paragraphs": [
+        {
+          "text": "Accounting firms, manufacturers, distributors, hospitals, banks, insurance agents and educational institutions also process large volumes of documents that benefit from automation."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "bg": "white",
+      "badge": "Why Teknoppy",
+      "h2": "Why Choose Teknoppy for AI Document Processing?",
+      "columns": 3,
+      "items": [
+        {
+          "title": "Built Around Your Documents",
+          "text": "We start with samples of your real documents, not demo files, so the solution is designed for your formats, languages and quality."
+        },
+        {
+          "title": "Connected to Your Systems",
+          "text": "Extracted data goes directly into Tally, Zoho, ERPs, CRMs or spreadsheets, with approval steps where needed."
+        },
+        {
+          "title": "Local Team",
+          "text": "Our AI document processing services Kochi clients book are delivered by our own team in Thykoodam, and we support document automation Kerala businesses need in English, Malayalam and Arabic. Shainesh Prakashan, CEO of Exacore IT at Infopark Kochi, says Teknoppy \"was very intuitive in understanding our requirements.\""
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "bg": "soft",
+      "badge": "How We Work",
+      "h2": "Our Process and Timeline",
+      "items": [
+        {
+          "title": "Document review (3 to 5 days)",
+          "text": "We study sample documents, volumes and target systems."
+        },
+        {
+          "title": "Accuracy test (3 to 5 days)",
+          "text": "We test extraction on your samples and share results."
+        },
+        {
+          "title": "Build (1 to 4 weeks)",
+          "text": "We build extraction, validation, review screens and integrations."
+        },
+        {
+          "title": "User testing (1 week)",
+          "text": "Your team processes real documents and gives feedback."
+        },
+        {
+          "title": "Launch and tuning (ongoing)",
+          "text": "We go live and improve accuracy monthly."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "soft",
+      "paragraphs": [
+        {
+          "text": "A single document type, such as supplier invoices, is often live in three to four weeks. Multi-document setups take six to eight weeks."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "white",
+      "h2": "How Much Does Document Processing Automation Cost?",
+      "paragraphs": [
+        {
+          "text": "How much does document processing automation cost? It depends on document types, monthly volumes, layout variety, languages and integrations. Costs include a one-time setup fee, per-page AI processing charges and optional monthly support. We give you an estimate after testing your samples, along with expected time saved. For steady monthly volumes, a fixed monthly plan is also possible, which makes monthly budgeting much simpler for finance teams."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "bg": "cream",
+      "h2": "Document Processing Case Study",
+      "paragraphs": [
+        {
+          "text": "Ask us for a document processing case study relevant to your industry. We share details only with client approval and can demonstrate extraction on your own sample documents."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "bg": "white",
+      "center": true,
+      "badge": "Have Questions?",
+      "h2": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "What file formats can you process?",
+          "a": "We handle PDFs, scanned images, phone photos, Word files, Excel sheets and email attachments. Documents can be collected automatically from a shared inbox, a cloud folder, WhatsApp or an upload page."
+        },
+        {
+          "q": "Do we need to scan documents in a special way?",
+          "a": "No special equipment is needed. Clear phone photos and standard office scans work well. We share simple tips, such as good lighting and flat pages, to keep accuracy high."
+        },
+        {
+          "q": "Can the system handle documents from new suppliers?",
+          "a": "Yes. Because the AI reads documents by meaning rather than fixed templates, new layouts are usually handled without extra setup. Any uncertain fields go to human review, and the system improves as corrections are made."
+        },
+        {
+          "q": "What happens to documents after processing?",
+          "a": "You decide. Documents can be stored securely in your cloud drive or document system, linked to the related record, or deleted automatically after a set period."
+        },
+        {
+          "q": "Can extracted data be exported to Excel?",
+          "a": "Yes. Alongside direct posting to your software, extracted data can be exported to Excel or Google Sheets on demand or on a schedule, which helps with audits, reconciliations and management reports."
+        },
+        {
+          "q": "How quickly is each document processed?",
+          "a": "Most documents are read and validated within seconds to a minute after they arrive. The total time then depends on whether any fields need human review and how quickly your team approves them. Many clients clear the previous day's documents before lunch instead of spending several days catching up at month end."
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "bg": "soft",
+      "h2": "Related Services",
+      "items": [
+        {
+          "label": "AI Automation Services",
+          "href": "/ai-automation-services-kochi/",
+          "text": "Our AI automation hub"
+        },
+        {
+          "label": "AI Workflow Automation",
+          "href": "/ai-workflow-automation-services-kochi/",
+          "text": "Tool-neutral workflow automation"
+        },
+        {
+          "label": "AI Web Application Development",
+          "href": "/ai-web-application-development-kochi/",
+          "text": "Custom AI-powered web apps"
+        },
+        {
+          "label": "API Integration Services",
+          "href": "/api-integration-services-kochi/",
+          "text": "Connect your business systems"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "bg": "white",
+      "h2": "Get Started With AI Document Processing",
+      "paragraphs": [
+        {
+          "text": "Talk to Teknoppy about AI document processing for your business. Kochi clients are welcome at our Thykoodam office, and international clients can work with us online. Send us a few sample documents with sensitive details removed, and we will reply with a plan, timeline and quote."
+        },
+        {
+          "html": "Call or WhatsApp +91 6282249224, email sales@teknoppy.com, or <a href=\"/book-a-consultation/\" class=\"text-primary font-semibold hover:underline\">book a consultation</a> at teknoppy.com."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Book a Consultation",
+          "href": "/book-a-consultation/"
+        },
+        {
+          "label": "WhatsApp Us",
+          "href": "https://wa.me/916282249224"
+        }
+      ]
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "AI Document Processing Services in Kochi: Turn Invoices, Forms and PDFs Into Clean Data",
+      "serviceType": "AI Document Processing",
+      "provider": {
+        "@id": "https://teknoppy.com/#localbusiness"
+      },
+      "areaServed": [
+        "Kochi",
+        "Kerala",
+        "India",
+        "UAE",
+        "Qatar"
+      ],
+      "url": "https://teknoppy.com/ai-document-processing-services-kochi/"
+    }
+  ],
+  "devNotes": {
+    "source": "Teknoppy_AI11_AI_Document_Processing.pdf",
+    "primaryKeyword": "ai document processing",
+    "permalink": "/ai-document-processing-services-kochi/",
+    "secondaryKeywords": [
+      "invoice automation",
+      "intelligent document processing",
+      "ocr data extraction",
+      "ai document processing services kochi",
+      "document automation kerala",
+      "purchase order processing",
+      "receipt and expense scanning",
+      "contract data extraction",
+      "kyc document verification",
+      "arabic ocr",
+      "handwritten form extraction",
+      "document classification ai",
+      "invoice to tally automation",
+      "idp vs ocr",
+      "how accurate is ai document processing",
+      "how much does document processing automation cost",
+      "ai document processing for logistics",
+      "human review for extracted data",
+      "document data security",
+      "document processing case study"
+    ],
+    "imageAlt": [
+      "AI document processing extracting invoice fields with confidence scores",
+      "Human review screen for extracted document data",
+      "Invoice data posted to Tally automatically"
+    ],
+    "internalLinks": [
+      "/ai-automation-services-kochi/",
+      "/ai-workflow-automation-services-kochi/",
+      "/ai-web-application-development-kochi/",
+      "/api-integration-services-kochi/",
+      "/book-a-consultation/"
+    ],
+    "schemaNote": "Service (serviceType: AI Document Processing, areaServed: Kochi, Kerala, India, UAE, Qatar) + LocalBusiness + FAQPage + BreadcrumbList (Home › Services › AI Automation › AI Document Processing). LocalBusiness is emitted site-wide.",
+    "heldPlaceholders": [],
+    "corrections": [
+      "Contact email sanal@teknoppy.com → sales@teknoppy.com (site canon)"
+    ],
+    "linkNote": "No copy words name the hub/workflow/AI web app/API pages, so all four are in Related Services; book-a-consultation linked in contact line. No substitutions.",
+    "designLabels": "Badges, 'Related Services' heading, CTA button labels and hero stat labels are design chrome, not doc copy."
+  }
+}
