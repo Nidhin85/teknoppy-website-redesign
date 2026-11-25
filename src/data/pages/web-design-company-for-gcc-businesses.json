@@ -109,7 +109,7 @@
       "type": "prose",
       "bg": "white",
       "paragraphs": [
-        { "html": "View all projects: <a href=\"/portfolios/\" class=\"text-primary font-semibold hover:underline\">teknoppy.com/portfolios/</a>" }
+        { "html": "<a href=\"/portfolios/\" class=\"ip-portfolio-btn\">View all projects<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></a>" }
       ]
     },
     {
@@ -146,7 +146,7 @@
           ],
           "quote": "I am very happy to have associated with Teknoppy. Being in the fintech space, we needed a reliable partner who could cater to our specific requirements. Teknoppy has done a great job creating an appealing website that represents our brand perfectly.",
           "author": "— Vivek Menon, CTO, Evosyz",
-          "links": "Video: <a href=\"https://youtube.com/watch?v=E7HfgGOHjYE\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary font-semibold hover:underline\">youtube.com/watch?v=E7HfgGOHjYE</a> · Full case study: <a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">teknoppy.com/evosyz-case-study/</a>"
+          "links": "<a href=\"https://youtube.com/watch?v=E7HfgGOHjYE\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary font-semibold hover:underline\">Video</a><a href=\"/case-study/\" class=\"text-primary font-semibold hover:underline\">Full case study</a>"
         }
       ]
     },

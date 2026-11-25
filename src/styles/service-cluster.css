@@ -1,0 +1,1132 @@
+/* ==========================================================================
+   Service cluster design: AI Automation, ERPNext and GCC service pages.
+   Brings the InnerPage-rendered pages in line with the redesigned service
+   pillars (dark hero, dash eyebrows, warm glass cards, two-column heads).
+
+   Presentation only: no content, order or markup depends on this file.
+   Every rule is gated on `main.svc-cluster`, which only those pages set, so
+   all other InnerPage pages render exactly as before. Unlayered on purpose,
+   so it overrides the Tailwind utilities InnerPage sets inline.
+   ========================================================================== */
+
+/* --- Hero: dark band with orange light (as on the redesigned pillars) ------ */
+main.svc-cluster .ip-hero {
+  background-color: #140d0a;
+  background-image:
+    radial-gradient(46rem 30rem at 88% 0%, rgb(240 90 44 / 0.30), transparent 65%),
+    radial-gradient(34rem 24rem at 0% 100%, rgb(249 174 66 / 0.12), transparent 65%),
+    linear-gradient(170deg, #1d130e 0%, #120d0a 60%, #170e09 100%);
+  border-bottom-color: rgb(240 90 44 / 0.22);
+}
+main.svc-cluster .ip-hero .ds-hero-glow {
+  background-image: radial-gradient(rgb(255 255 255 / 0.045) 1px, transparent 1px);
+  background-size: 22px 22px;
+  background-repeat: repeat;
+}
+main.svc-cluster .ip-hero-copy > h1 { color: #fff; letter-spacing: -0.03em; }
+main.svc-cluster .ip-hero-copy > h1 > span { color: #ff7a3d; }
+main.svc-cluster .ip-hero-copy > :is(h2, p).text-neutral-800 { color: rgb(255 255 255 / 0.92); }
+main.svc-cluster .ip-hero-copy > p.text-neutral-600 { color: rgb(255 255 255 / 0.78); }
+main.svc-cluster .ip-hero-copy > p.text-neutral-500 { color: rgb(255 255 255 / 0.55); }
+main.svc-cluster .ip-hero-copy > p a { color: #ff8a52; }
+main.svc-cluster .ip-hero-copy nav { color: rgb(255 255 255 / 0.6); }
+main.svc-cluster .ip-hero-copy nav .text-neutral-800 { color: #fff; }
+main.svc-cluster .ip-hero-copy nav .text-neutral-300 { color: rgb(255 255 255 / 0.3); }
+main.svc-cluster .ip-hero-copy nav a:hover { color: #ff8a52; }
+main.svc-cluster .ip-hero-copy > div > span.text-neutral-500 { color: rgb(255 255 255 / 0.6); }
+main.svc-cluster .ip-hero-copy dl { border-top-color: rgb(255 255 255 / 0.12); }
+main.svc-cluster .ip-hero-copy dt { color: rgb(255 255 255 / 0.55); }
+main.svc-cluster .ip-hero-copy dd { color: #fff; }
+/* secondary hero buttons: solid white pills on the dark band */
+main.svc-cluster .ip-hero-copy a.bg-white\/80 { background-color: #fff; border-color: #fff; }
+/* solid orange badge, as on the pillar heroes */
+main.svc-cluster .ip-hero-badge {
+  background: var(--color-primary);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 12px 28px -12px rgb(240 90 44 / 0.8);
+}
+/* stats read as bright cards on the dark band */
+main.svc-cluster .ip-hero-stats > div {
+  background: #fff;
+  border-color: transparent;
+  box-shadow: 0 24px 50px -26px rgb(0 0 0 / 0.6);
+}
+
+/* --- Section labels: pill -> orange dash eyebrow ---------------------------- */
+main.svc-cluster .ip-badge {
+  background: none;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+  gap: 0.75rem;
+  text-transform: none;
+  letter-spacing: -0.005em;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+main.svc-cluster .ip-badge::before {
+  content: "";
+  flex: none;
+  width: 1.9rem;
+  height: 2.5px;
+  border-radius: 2px;
+  background: currentColor;
+}
+main.svc-cluster .ip-head.text-center .ip-badge { justify-content: center; }
+
+/* --- Section headings ------------------------------------------------------- */
+main.svc-cluster .ip-h2 { letter-spacing: -0.032em; line-height: 1.08; }
+@media (min-width: 1024px) {
+  main.svc-cluster .ip-h2 { font-size: 2.85rem; }
+}
+
+/* Heading + intro side by side on desktop (pillar layout) */
+@media (min-width: 1024px) {
+  main.svc-cluster .ip-sec:not([data-type="prose"]) .ip-head:not(.text-center):has(.ip-intro) {
+    max-width: none;
+    display: grid;
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    /* extra height from a long intro goes above the label, keeping label and heading together */
+    grid-template-rows: 1fr auto;
+    column-gap: 4rem;
+    align-items: end;
+  }
+  main.svc-cluster .ip-sec:not([data-type="prose"]) .ip-head:not(.text-center):has(.ip-intro) > :not(.ip-intro) { grid-column: 1; justify-self: start; }
+  main.svc-cluster .ip-sec:not([data-type="prose"]) .ip-head:not(.text-center):has(.ip-intro):not(:has(.ip-badge)) > .ip-h2 { grid-row: 1 / span 2; }
+  main.svc-cluster .ip-sec:not([data-type="prose"]) .ip-head:not(.text-center):has(.ip-intro) > .ip-intro {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-self: end;
+    margin-top: 0;
+  }
+}
+
+/* --- Text sections: sticky heading left, text card right -------------------- */
+main.svc-cluster .ip-prose {
+  background: linear-gradient(160deg, rgb(255 255 255 / 0.97) 0%, rgb(255 248 242 / 0.94) 100%);
+  border: 1px solid rgb(240 90 44 / 0.09);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 24px 50px -34px rgb(160 60 20 / 0.45);
+}
+@media (min-width: 640px) { main.svc-cluster .ip-prose { padding: 2rem 2.25rem; } }
+@media (min-width: 1024px) {
+  main.svc-cluster .ip-sec[data-type="prose"] .ip-wrap:has(> .ip-head) {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    column-gap: 4rem;
+    align-items: start;
+  }
+  main.svc-cluster .ip-sec[data-type="prose"] .ip-wrap:has(> .ip-head) > .ip-head {
+    margin-bottom: 0;
+    position: sticky;
+    top: 7rem;
+  }
+  main.svc-cluster .ip-sec[data-type="prose"] .ip-wrap:has(> .ip-head) > .ip-prose { max-width: none; }
+}
+
+/* --- Cards: pillar card with a numbered gradient tile ----------------------- */
+main.svc-cluster .ip-cards { counter-reset: ip-card; }
+main.svc-cluster .ip-card {
+  counter-increment: ip-card;
+  border-radius: 1.5rem;
+  border-color: rgb(240 90 44 / 0.09);
+  box-shadow: 0 24px 50px -34px rgb(160 60 20 / 0.45);
+}
+main.svc-cluster .ip-card-bar { display: none; }
+main.svc-cluster .ip-card::before {
+  content: counter(ip-card, decimal-leading-zero);
+  content: counter(ip-card, decimal-leading-zero) / "";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1.25rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #fff1e8, #ffe0cc);
+  color: var(--color-primary);
+  font-weight: 800;
+  font-size: 0.95rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+main.svc-cluster .ip-card:hover::before { background: var(--color-primary); color: #fff; }
+
+/* numbered service rows: warmer dividers and a tile behind the number */
+main.svc-cluster .ip-list,
+main.svc-cluster .ip-list > div { border-color: rgb(240 90 44 / 0.12); }
+main.svc-cluster .ip-list > div > div:first-child > span:first-child {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  margin-top: -0.25rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, #fff1e8, #ffe0cc);
+}
+
+/* --- Check-lists: two columns from tablet up -------------------------------- */
+main.svc-cluster .ip-bullets { max-width: none; }
+main.svc-cluster .ip-bullets li {
+  border-radius: 1rem;
+  border-color: rgb(240 90 44 / 0.09);
+}
+main.svc-cluster .ip-bullets li > span:first-child {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 0;
+  background: linear-gradient(135deg, #fff1e8, #ffe0cc);
+}
+@media (min-width: 768px) {
+  main.svc-cluster .ip-bullets ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.875rem 1rem;
+  }
+  main.svc-cluster .ip-bullets ul > li { margin: 0; }
+}
+
+/* --- Process steps -------------------------------------------------------- */
+main.svc-cluster .ip-step {
+  border-radius: 1.5rem;
+  border-color: rgb(240 90 44 / 0.09);
+  box-shadow: 0 24px 50px -34px rgb(160 60 20 / 0.45);
+}
+main.svc-cluster .ip-step-num {
+  width: 2.75rem;
+  height: 2.75rem;
+  font-size: 0.95rem;
+  box-shadow: 0 0 0 6px rgb(240 90 44 / 0.12);
+  margin-bottom: 1.25rem;
+}
+
+/* --- Tables: light header, as on the pillar pricing tables ------------------- */
+main.svc-cluster .ip-table { max-width: 64rem; }
+main.svc-cluster .ip-table > div:first-child {
+  border-radius: 1.5rem;
+  border-color: rgb(240 90 44 / 0.1);
+  box-shadow: 0 24px 50px -34px rgb(160 60 20 / 0.45);
+}
+main.svc-cluster .ip-sec[data-type="pricing"] table { border-radius: 1.5rem; }
+main.svc-cluster .ip-sec[data-type="pricing"] .overflow-x-auto {
+  border-radius: 1.5rem;
+  border-color: rgb(240 90 44 / 0.1);
+  box-shadow: 0 24px 50px -34px rgb(160 60 20 / 0.45);
+}
+main.svc-cluster :is(.ip-table, .ip-sec[data-type="pricing"]) thead tr {
+  background: linear-gradient(180deg, #fff6ef, #ffefe4);
+  color: #9a4a28;
+}
+
+/* --- Related links: three columns, arrow in a circle ------------------------- */
+main.svc-cluster .ip-links { max-width: none; }
+@media (min-width: 1024px) {
+  main.svc-cluster .ip-links.sm\:grid-cols-2 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+main.svc-cluster .ip-link {
+  border-radius: 1.25rem;
+  border-color: rgb(240 90 44 / 0.09);
+  align-items: center;
+}
+main.svc-cluster .ip-link > svg {
+  flex-shrink: 0;
+  box-sizing: border-box;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  margin-top: 0;
+  border-radius: 9999px;
+  background: rgb(240 90 44 / 0.1);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+main.svc-cluster .ip-link:hover > svg { background: var(--color-primary); color: #fff; }
+
+/* --- FAQ -------------------------------------------------------------------- */
+main.svc-cluster .ip-faq details {
+  border-radius: 1rem;
+  border-color: rgb(240 90 44 / 0.09);
+}
+main.svc-cluster .ip-faq details[open] { border-color: rgb(240 90 44 / 0.25); }
+
+/* --- Closing call to action: highlighted card --------------------------------- */
+main.svc-cluster .ip-sec[data-type="cta"] .ip-wrap {
+  width: calc(100% - 2.5rem);
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+  border-radius: 1.75rem;
+  border: 1px solid rgb(240 90 44 / 0.12);
+  border-left: 5px solid var(--color-primary);
+  background: radial-gradient(90% 160% at 100% 0%, rgb(255 154 92 / 0.22) 0%, transparent 60%), #fff;
+  box-shadow: 0 24px 50px -34px rgb(160 60 20 / 0.45);
+}
+@media (min-width: 1024px) {
+  main.svc-cluster .ip-sec[data-type="cta"] .ip-wrap { width: calc(100% - 6rem); padding-top: 3rem; padding-bottom: 3rem; }
+}
+
+/* ==========================================================================
+   Pillar layout (InnerPage `pillar` prop): AI Automation, ERPNext and GCC hubs.
+   Mirrors the redesigned service pillars (e.g. Web Application Development):
+   same hero gradient, badge, stats strip, cards, process timeline and dark band.
+   ========================================================================== */
+
+/* --- Hero ------------------------------------------------------------------- */
+main.svc-cluster .ip-pillar-hero {
+  background: radial-gradient(120% 90% at 78% 30%, #3a1608 0%, #1a0b05 45%, #0d0705 100%);
+  padding-bottom: 3.5rem;
+}
+@media (min-width: 1024px) { main.svc-cluster .ip-pillar-hero { padding-bottom: 5rem; } }
+main.svc-cluster .ip-pillar-hero::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 30%; pointer-events: none;
+  background: linear-gradient(180deg, transparent, rgb(240 90 44 / 0.10));
+}
+main.svc-cluster .ip-pillar-hero .ds-hero-orbit { display: none; }
+main.svc-cluster .ip-pillar-hero .ip-hero-badge {
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.8rem;
+  padding: 0.4rem 0.9rem;
+  box-shadow: 0 8px 22px -8px rgb(240 90 44 / 0.8);
+}
+main.svc-cluster .ip-pillar-hero .ip-hero-copy > h1 { letter-spacing: -0.035em; line-height: 1.06; }
+@media (min-width: 1280px) { main.svc-cluster .ip-pillar-hero .ip-hero-copy > h1 { font-size: 3.25rem; } }
+main.svc-cluster .ip-pillar-hero .ip-hero-copy > h1 > span svg { display: none; }
+
+/* stats strip (as .wad-stats) */
+main.svc-cluster .ip-strip {
+  position: relative; z-index: 2;
+  background: #fff;
+  border: 1px solid rgb(240 90 44 / 0.1);
+  border-radius: 1.5rem;
+  box-shadow: 0 24px 50px -34px rgb(160 60 20 / 0.45);
+}
+main.svc-cluster .ip-strip > div + div { border-left: 1px solid #f3ebe5; }
+@media (max-width: 1023px) {
+  main.svc-cluster .ip-strip > div:nth-child(odd) { border-left: 0; }
+  main.svc-cluster .ip-strip > div:nth-child(n+3) { border-top: 1px solid #f3ebe5; }
+  main.svc-cluster .ip-strip > div:last-child:nth-child(odd) { grid-column: 1 / -1; }
+}
+/* narrow phones: one stat per row so labels never clip */
+@media (max-width: 479px) {
+  main.svc-cluster .ip-strip { grid-template-columns: minmax(0, 1fr); }
+  main.svc-cluster .ip-strip > div { border-left: 0; }
+  main.svc-cluster .ip-strip > div + div { border-top: 1px solid #f3ebe5; }
+}
+
+/* decorative hero visual: glowing ring, glass browser window, floating icon tiles */
+main.svc-cluster .ipv {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  margin-inline: auto;
+  aspect-ratio: 6 / 5;
+}
+main.svc-cluster .ipv-glow {
+  position: absolute; inset: 4% 2%;
+  background: radial-gradient(closest-side, rgb(255 98 30 / 0.38), rgb(255 98 30 / 0.12) 55%, transparent 100%);
+  filter: blur(10px);
+}
+main.svc-cluster .ipv-ring {
+  position: absolute; left: 6%; right: 6%; top: 12%; bottom: 12%;
+  border-radius: 50%;
+  background: conic-gradient(from 210deg, #ff9a5c, #f05a2c 25%, #ffb27a 45%, #e14a1d 70%, #ff8a4c 90%, #ff9a5c);
+  -webkit-mask: radial-gradient(closest-side, transparent 80%, #000 81.5%, #000 95%, transparent 96.5%);
+          mask: radial-gradient(closest-side, transparent 80%, #000 81.5%, #000 95%, transparent 96.5%);
+  transform: rotate(-14deg) scaleY(0.62);
+  filter: drop-shadow(0 18px 30px rgb(255 90 20 / 0.45));
+}
+main.svc-cluster .ipv-window {
+  position: absolute; left: 22%; right: 22%; top: 24%; bottom: 22%;
+  border-radius: 1.25rem;
+  background: linear-gradient(160deg, #fffaf6 0%, #fff1e7 100%);
+  border: 1px solid rgb(255 255 255 / 0.8);
+  box-shadow: 0 30px 60px -20px rgb(0 0 0 / 0.55), 0 0 0 6px rgb(255 140 80 / 0.18);
+  transform: rotate(-4deg);
+  overflow: hidden;
+}
+main.svc-cluster .ipv-bar { display: flex; gap: 0.35rem; padding: 0.7rem 0.85rem; border-bottom: 1px solid #f6e3d6; }
+main.svc-cluster .ipv-bar i { width: 0.55rem; height: 0.55rem; border-radius: 9999px; background: #ffb48a; }
+main.svc-cluster .ipv-bar i:first-child { background: #f05a2c; }
+main.svc-cluster .ipv-body { display: grid; grid-template-columns: 1fr auto 0.8fr; gap: 0.9rem; align-items: center; padding: 1rem 1.1rem; height: calc(100% - 2.2rem); }
+main.svc-cluster .ipv-lines, main.svc-cluster .ipv-side { display: grid; gap: 0.5rem; }
+main.svc-cluster .ipv-lines b, main.svc-cluster .ipv-side b { display: block; height: 0.45rem; border-radius: 9999px; background: #f4e2d6; }
+main.svc-cluster .ipv-lines b:first-child { background: #ffc8a8; width: 70%; }
+main.svc-cluster .ipv-lines b:nth-child(3) { width: 80%; }
+main.svc-cluster .ipv-side b { height: 1.6rem; border-radius: 0.5rem; background: #ffe2d0; }
+main.svc-cluster .ipv-tile {
+  width: 5.5rem; height: 5.5rem; border-radius: 1.4rem;
+  display: flex; align-items: center; justify-content: center; color: #fff;
+  background: linear-gradient(145deg, #ff8a4c, #f05a2c 55%, #d9461a);
+  box-shadow: 0 18px 30px -12px rgb(240 90 44 / 0.7), inset 0 1px 0 rgb(255 255 255 / 0.35);
+}
+main.svc-cluster .ipv-chip {
+  position: absolute;
+  width: 3.4rem; height: 3.4rem; border-radius: 1.1rem;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--color-primary);
+  background: linear-gradient(160deg, #fff, #fff3ea);
+  box-shadow: 0 20px 36px -16px rgb(0 0 0 / 0.6), 0 0 0 1px rgb(255 255 255 / 0.6);
+}
+main.svc-cluster .ipv-chip-1 { left: 4%; top: 10%; }
+main.svc-cluster .ipv-chip-2 { right: 6%; top: 6%; }
+main.svc-cluster .ipv-chip-3 { left: 8%; bottom: 10%; }
+main.svc-cluster .ipv-chip-4 { right: 4%; bottom: 14%; }
+@media (max-width: 639px) {
+  main.svc-cluster .ipv-tile { width: 3.75rem; height: 3.75rem; border-radius: 1rem; }
+  main.svc-cluster .ipv-tile svg { width: 2rem; height: 2rem; }
+  main.svc-cluster .ipv-chip { width: 2.6rem; height: 2.6rem; border-radius: 0.85rem; }
+  main.svc-cluster .ipv-chip svg { width: 1.1rem; height: 1.1rem; }
+  main.svc-cluster .ipv-body { padding: 0.7rem; gap: 0.6rem; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  main.svc-cluster .ipv-window { animation: ipvFloat 7s ease-in-out infinite; }
+  main.svc-cluster .ipv-chip { animation: ipvFloat 6s ease-in-out infinite; }
+  main.svc-cluster .ipv-chip-2, main.svc-cluster .ipv-chip-3 { animation-delay: -3s; }
+}
+@keyframes ipvFloat { 0%, 100% { translate: 0 0; } 50% { translate: 0 -8px; } }
+
+/* --- AI hub hero (mockup): sphere + window + labelled tags ------------------- */
+main.svc-cluster .ip-hero-v2 {
+  background:
+    radial-gradient(60rem 40rem at 100% 100%, rgb(240 90 44 / 0.35), transparent 60%),
+    radial-gradient(120% 90% at 78% 30%, #2e1207 0%, #160a05 50%, #0d0705 100%);
+}
+/* H1: "AI Automation" orange, "Services" white, "Kochi:" orange; tagline white with orange end */
+main.svc-cluster .ip-hero-v2 .ip-hero-copy > h1 { margin-bottom: 1.5rem; }
+main.svc-cluster .ip-hero-v2 .ip-hero-copy > h1 > span.ip-h1-lead { color: #fff; }
+main.svc-cluster .ip-hero-v2 .ip-h1-key {
+  background: linear-gradient(180deg, #ff9442 0%, #ff6a2b 55%, #f05a2c 100%);
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent;
+}
+main.svc-cluster .ip-hero-v2 .ip-hero-copy > h1 > span.relative {
+  display: block;
+  margin-top: 0.6rem;
+  color: #fff;
+  font-size: 1.65rem;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  font-weight: 800;
+}
+@media (min-width: 640px) { main.svc-cluster .ip-hero-v2 .ip-hero-copy > h1 > span.relative { font-size: 2.1rem; } }
+@media (min-width: 1280px) { main.svc-cluster .ip-hero-v2 .ip-hero-copy > h1 > span.relative { font-size: 2.45rem; } }
+main.svc-cluster .ip-hero-v2 .ip-hero-copy > p.text-neutral-600 { font-size: 1rem; line-height: 1.7; }
+/* buttons: no arrows; orange primary with calendar, white secondaries with brand icons */
+main.svc-cluster .ip-hero-v2 .ip-hero-copy > div:has(> a) { gap: 0.85rem; }
+@media (min-width: 640px) {
+  main.svc-cluster .ip-hero-v2 .ip-hero-copy > div:has(> a) { flex-direction: row; flex-wrap: wrap; justify-content: flex-start; }
+}
+main.svc-cluster .ip-hero-v2 .ip-hero-copy > div:has(> a) > a {
+  gap: 0.65rem; padding: 0.95rem 1.6rem; font-size: 1rem;
+}
+main.svc-cluster .ip-hero-v2 .ip-hero-copy > div:has(> a) > a:not(:first-child) {
+  background: #fff; border-color: #fff; color: #1c1917;
+}
+main.svc-cluster .ip-hero-v2 .ip-hero-copy > div:has(> a) > a:not(:first-child):hover { color: var(--color-primary); translate: 0 -2px; }
+main.svc-cluster .ip-hero-v2 .ip-cta-ic { flex: none; }
+@media (max-width: 639px) {
+  main.svc-cluster .ip-hero-v2 .ip-hero-copy > div:has(> a) > a { padding: 0.85rem 1.1rem; font-size: 0.95rem; white-space: nowrap; }
+}
+@media (max-width: 1023px) {
+  main.svc-cluster .ip-hero-v2 .ipv2 { max-width: 460px; }
+}
+main.svc-cluster .ip-hero-v2 .ip-cta-bolt { color: var(--color-primary); }
+
+/* stats strip: warm cream */
+main.svc-cluster .ip-strip-v2 { background: #fffaf6; border-color: rgb(255 255 255 / 0.6); }
+
+main.svc-cluster .ipv2 {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+  aspect-ratio: 6 / 5;
+}
+main.svc-cluster .ipv2-sphere {
+  position: absolute; left: 18%; top: 5%; width: 68%; aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle at 38% 32%, #ffb070 0%, #ff7a2e 38%, #e8521d 70%, #b8360f 100%);
+  box-shadow: 0 0 80px 20px rgb(255 100 30 / 0.45), inset -18px -24px 50px rgb(120 30 5 / 0.35);
+}
+/* glowing orbit ring and pedestal under the window */
+main.svc-cluster .ipv2-ring {
+  position: absolute; left: 14%; right: 4%; top: 22%; bottom: 30%;
+  border-radius: 50%;
+  border: 3px solid #ffa04a;
+  box-shadow: 0 0 18px rgb(255 140 50 / 0.8), inset 0 0 14px rgb(255 140 50 / 0.5);
+  transform: rotate(-8deg);
+  opacity: 0.9;
+}
+main.svc-cluster .ipv2-base {
+  position: absolute; left: 22%; right: 10%; bottom: 6%; height: 14%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at 50% 30%, #ff9a4a 0%, #e8521d 30%, #3a1a10 62%, #1c0d07 100%);
+  box-shadow: 0 0 50px 8px rgb(255 100 30 / 0.45), 0 14px 26px rgb(0 0 0 / 0.6);
+}
+main.svc-cluster .ipv2-window {
+  position: absolute; left: 25%; right: 13%; top: 27%; bottom: 25%;
+  border-radius: 1rem;
+  background: linear-gradient(165deg, #fff9f4 0%, #ffece0 100%);
+  box-shadow: 0 30px 60px -18px rgb(0 0 0 / 0.55);
+  transform: perspective(900px) rotateY(-12deg) rotate(-3deg);
+  overflow: hidden;
+}
+main.svc-cluster .ipv2-bar {
+  display: flex; gap: 0.4rem; padding: 0.6rem 0.85rem;
+  background: linear-gradient(90deg, #f05a2c, #ff7a3d);
+}
+main.svc-cluster .ipv2-bar i { width: 0.55rem; height: 0.55rem; border-radius: 9999px; background: rgb(255 255 255 / 0.9); }
+main.svc-cluster .ipv2-body {
+  display: grid; grid-template-columns: 1fr auto 1fr; gap: 0.9rem; align-items: center;
+  height: calc(100% - 1.75rem); padding: 0.9rem 1rem;
+}
+main.svc-cluster .ipv2-lines { display: grid; gap: 0.7rem; }
+main.svc-cluster .ipv2-lines b { display: block; height: 0.5rem; border-radius: 9999px; background: #ffc9a6; }
+main.svc-cluster .ipv2-lines b:nth-child(2n) { width: 75%; background: #ffd9c2; }
+/* AI chip: orange square with pins and an "AI" label (decorative, CSS text) */
+main.svc-cluster .ipv2-chip {
+  position: relative;
+  width: 5.25rem; height: 5.25rem;
+  display: flex; align-items: center; justify-content: center;
+  background:
+    repeating-linear-gradient(90deg, #ff7a3d 0 4px, transparent 4px 10px) top / 70% 9px no-repeat,
+    repeating-linear-gradient(90deg, #ff7a3d 0 4px, transparent 4px 10px) bottom / 70% 9px no-repeat,
+    repeating-linear-gradient(0deg, #ff7a3d 0 4px, transparent 4px 10px) left / 9px 70% no-repeat,
+    repeating-linear-gradient(0deg, #ff7a3d 0 4px, transparent 4px 10px) right / 9px 70% no-repeat;
+}
+main.svc-cluster .ipv2-chip-core {
+  width: 76%; height: 76%;
+  border-radius: 0.9rem;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(145deg, #ff8a4c, #f05a2c 55%, #d9461a);
+  box-shadow: 0 0 30px rgb(255 110 40 / 0.65), inset 0 1px 0 rgb(255 255 255 / 0.35);
+}
+main.svc-cluster .ipv2-chip-core::after {
+  content: "AI"; content: "AI" / "";
+  color: #fff; font-weight: 900; font-size: 1.6rem; letter-spacing: -0.02em;
+}
+main.svc-cluster .ipv2-tag {
+  position: absolute;
+  display: inline-flex; align-items: center; gap: 0.7rem;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  color: var(--color-primary);
+  background: linear-gradient(160deg, #fffaf6, #ffeadc);
+  box-shadow: 0 18px 34px -14px rgb(0 0 0 / 0.6), 0 0 0 1px rgb(255 255 255 / 0.7);
+}
+main.svc-cluster .ipv2-tag > svg { flex: none; }
+main.svc-cluster .ipv2-tag::after {
+  content: attr(data-label);
+  max-width: 7.5rem;
+  color: #1c1917; font-weight: 800; font-size: 0.95rem; line-height: 1.15;
+}
+main.svc-cluster .ipv2-tag-1 { left: 10%; top: 4%; transform: rotate(3deg); }
+main.svc-cluster .ipv2-tag-2 { right: 0; top: 0; transform: rotate(-4deg); }
+main.svc-cluster .ipv2-tag-3 { left: 6%; bottom: 20%; transform: rotate(2deg); }
+main.svc-cluster .ipv2-tag-4 { right: 0; bottom: 14%; }
+@media (prefers-reduced-motion: no-preference) {
+  main.svc-cluster .ipv2-window { animation: ipvFloat 7s ease-in-out infinite; }
+  main.svc-cluster .ipv2-tag { animation: ipvFloat 6s ease-in-out infinite; }
+  main.svc-cluster .ipv2-tag-2, main.svc-cluster .ipv2-tag-3 { animation-delay: -3s; }
+}
+@media (max-width: 639px) {
+  main.svc-cluster .ipv2-tag { padding: 0.45rem 0.6rem; gap: 0.4rem; border-radius: 0.75rem; }
+  main.svc-cluster .ipv2-tag > svg { width: 1rem; height: 1rem; }
+  main.svc-cluster .ipv2-tag::after { font-size: 0.7rem; max-width: 5.25rem; }
+  main.svc-cluster .ipv2-chip { width: 3.5rem; height: 3.5rem; }
+  main.svc-cluster .ipv2-chip-core::after { font-size: 1.05rem; }
+  main.svc-cluster .ipv2-body { gap: 0.5rem; padding: 0.6rem; }
+  main.svc-cluster .ipv2-lines { gap: 0.45rem; }
+}
+
+/* --- AI hub services band: dark glowing cards (as the reference) --------------- */
+main.svc-cluster .ip-svc-band .ip-head { text-align: center; margin-inline: auto; max-width: 48rem; display: block; }
+main.svc-cluster .ip-svc-band .ip-head .ip-badge { justify-content: center; }
+main.svc-cluster .ip-svc-band .ip-head .ip-badge::after {
+  content: ""; flex: none; width: 1.9rem; height: 2.5px; border-radius: 2px; background: currentColor;
+}
+main.svc-cluster .ip-svc-band .ip-head .ip-intro { margin-top: 1rem; }
+main.svc-cluster .ip-svc-band .ip-list {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 1.25rem;
+  border: 0;
+}
+main.svc-cluster .ip-svc-band .ip-list > div {
+  display: flex; flex-direction: column; gap: 0.75rem;
+  flex: 1 1 100%;
+  padding: 1.6rem 1.5rem;
+  border: 1px solid rgb(240 90 44 / 0.45);
+  border-radius: 1.25rem;
+  background: linear-gradient(160deg, rgb(255 120 50 / 0.14) 0%, rgb(40 18 10 / 0.6) 60%);
+  box-shadow: 0 0 0 1px rgb(255 255 255 / 0.03) inset, 0 24px 50px -30px rgb(240 90 44 / 0.55);
+  transition: translate 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+main.svc-cluster .ip-svc-band .ip-list > div:hover {
+  translate: 0 -4px; border-color: rgb(255 140 70 / 0.8);
+  box-shadow: 0 0 0 1px rgb(255 255 255 / 0.05) inset, 0 28px 60px -26px rgb(240 90 44 / 0.75);
+}
+@media (min-width: 768px) { main.svc-cluster .ip-svc-band .ip-list > div { flex-basis: calc(50% - 0.625rem); max-width: calc(50% - 0.625rem); } }
+@media (min-width: 1024px) { main.svc-cluster .ip-svc-band .ip-list > div { flex-basis: calc(33.333% - 0.84rem); max-width: calc(33.333% - 0.84rem); } }
+main.svc-cluster .ip-svc-band .ip-list > div > div:first-child { flex-direction: column; gap: 1rem; }
+main.svc-cluster .ip-svc-band .ip-list > div > div:last-child { padding: 0; }
+main.svc-cluster .ip-svc-band .ip-list :is(h2, h3) { color: #fff; font-size: 1.15rem; }
+main.svc-cluster .ip-svc-band .ip-list p { color: rgb(255 255 255 / 0.72); }
+main.svc-cluster .ip-svc-band .ip-list a { color: #ffa25c; }
+main.svc-cluster .ip-sec.ip-svc-band:not([data-type="prose"]) .ip-head:not(.text-center):has(.ip-intro) {
+  display: block; max-width: 48rem; margin-inline: auto; text-align: center;
+}
+main.svc-cluster .ip-svc-band .ip-list > div > div:first-child > span.ip-svc-ic {
+  width: auto; height: auto; margin: 0; padding: 0; background: none; border-radius: 0;
+}
+main.svc-cluster .ip-svc-ic { color: #ff7a3d; display: inline-flex; filter: drop-shadow(0 0 10px rgb(255 110 40 / 0.55)); }
+
+/* --- Icon tiles on cards (replace the number tile) ---------------------------- */
+main.svc-cluster .ip-icon {
+  width: 3rem; height: 3rem; border-radius: 1rem;
+  display: inline-flex; align-items: center; justify-content: center;
+  color: var(--color-primary);
+  background: linear-gradient(135deg, #fff1e8, #ffe0cc);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+main.svc-cluster .ip-card:has(.ip-icon)::before { display: none; }
+main.svc-cluster .ip-card:hover .ip-icon { background: var(--color-primary); color: #fff; }
+
+/* --- Process timeline (as .wad-process) ---------------------------------------- */
+main.svc-cluster .ip-sec:has(.ip-process) .ip-head { text-align: center; margin-inline: auto; max-width: 48rem; margin-bottom: 4rem; }
+main.svc-cluster .ip-sec:has(.ip-process) .ip-badge { justify-content: center; }
+@media (min-width: 1024px) {
+  main.svc-cluster .ip-process::before {
+    content: ""; position: absolute; top: 2rem; left: 8%; right: 8%;
+    border-top: 2px dashed rgb(240 90 44 / 0.28);
+  }
+}
+
+/* --- Tables and pricing: heading left, table right (as the pillar pricing) ----- */
+@media (min-width: 1024px) {
+  main.svc-cluster:has(.ip-pillar-hero) .ip-sec:is([data-type="table"], [data-type="pricing"]) .ip-wrap:has(> .ip-head) {
+    display: grid;
+    grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+    column-gap: 3rem;
+    align-items: center;
+  }
+  main.svc-cluster:has(.ip-pillar-hero) .ip-sec:is([data-type="table"], [data-type="pricing"]) .ip-wrap:has(> .ip-head) > .ip-head {
+    display: block;
+    margin-bottom: 0;
+  }
+  main.svc-cluster:has(.ip-pillar-hero) .ip-sec:is([data-type="table"], [data-type="pricing"]) .ip-wrap:has(> .ip-head) > .ip-head > .ip-intro { margin-top: 1rem; }
+  main.svc-cluster:has(.ip-pillar-hero) .ip-sec:is([data-type="table"], [data-type="pricing"]) .ip-wrap:has(> .ip-head) > :not(.ip-head) { max-width: none; }
+}
+
+/* --- "View all projects" button (GCC hub): no card around a lone button -------- */
+main.svc-cluster .ip-prose:has(.ip-portfolio-btn) {
+  background: none; border: 0; box-shadow: none; padding: 0; max-width: none;
+  display: flex; justify-content: center;
+}
+main.svc-cluster .ip-sec:has(.ip-portfolio-btn) { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+main.svc-cluster a.ip-portfolio-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem;
+  width: 100%; max-width: 22rem;
+  padding: 0.95rem 2rem; border-radius: 9999px;
+  background: var(--color-primary); color: #fff;
+  font-size: 1rem; font-weight: 700; line-height: 1.2; text-decoration: none;
+  box-shadow: 0 12px 28px -14px rgb(240 90 44 / 0.85);
+  transition: translate 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+@media (min-width: 640px) { main.svc-cluster a.ip-portfolio-btn { width: auto; } }
+main.svc-cluster a.ip-portfolio-btn svg { width: 1.1rem; height: 1.1rem; flex: none; transition: translate 0.3s ease; }
+main.svc-cluster a.ip-portfolio-btn:hover { background-color: #e14a1d; translate: 0 -2px; box-shadow: 0 18px 34px -14px rgb(240 90 44 / 0.95); }
+main.svc-cluster a.ip-portfolio-btn:hover svg { translate: 4px 0; }
+main.svc-cluster a.ip-portfolio-btn:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  main.svc-cluster a.ip-portfolio-btn, main.svc-cluster a.ip-portfolio-btn svg { transition: none; }
+}
+
+/* --- Case study testimonial + Video / Full case study links -------------------- */
+main.svc-cluster .ip-cs-quote {
+  position: relative;
+  margin-top: 1.75rem;
+  padding: 1.5rem 1.5rem 1.35rem 1.75rem;
+  border: 1px solid rgb(240 90 44 / 0.12);
+  border-left: 4px solid var(--color-primary);
+  border-radius: 1.25rem;
+  background: radial-gradient(90% 140% at 100% 0%, rgb(255 154 92 / 0.16) 0%, transparent 60%), #fff8f3;
+  box-shadow: 0 18px 40px -32px rgb(160 60 20 / 0.45);
+}
+main.svc-cluster .ip-cs-quote::before {
+  content: "\201C";
+  content: "\201C" / "";
+  position: absolute; top: 0.35rem; right: 1.1rem;
+  font-size: 4.5rem; line-height: 1; font-weight: 900;
+  color: rgb(240 90 44 / 0.18);
+  pointer-events: none;
+}
+main.svc-cluster .ip-cs-quote > p {
+  position: relative;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #4b4542;
+  padding-right: 2.5rem;
+}
+main.svc-cluster .ip-cs-quote > span {
+  display: block;
+  margin-top: 0.9rem;
+  font-size: 0.85rem; font-weight: 800;
+}
+@media (min-width: 640px) {
+  main.svc-cluster .ip-cs-quote { padding: 1.75rem 2rem 1.5rem 2.25rem; }
+  main.svc-cluster .ip-cs-quote > p { font-size: 1rem; padding-right: 3.5rem; }
+}
+
+main.svc-cluster .ip-cs-links {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 0.75rem;
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgb(240 90 44 / 0.12);
+  font-size: 0.85rem; font-weight: 700; color: #78716c;
+}
+main.svc-cluster .ip-cs-links a {
+  display: inline-flex; align-items: center; gap: 0.45rem;
+  max-width: 100%;
+  padding: 0.55rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid rgb(240 90 44 / 0.25);
+  background: rgb(240 90 44 / 0.06);
+  color: var(--color-primary);
+  font-weight: 700; text-decoration: none;
+  overflow-wrap: anywhere;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, translate 0.3s ease;
+}
+main.svc-cluster .ip-cs-links a::after {
+  content: "\2197";
+  content: "\2197" / "";
+  font-size: 0.9em; line-height: 1;
+}
+main.svc-cluster .ip-cs-links a:hover {
+  background: var(--color-primary); border-color: var(--color-primary); color: #fff;
+  translate: 0 -2px; text-decoration: none;
+}
+main.svc-cluster .ip-cs-links a:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { main.svc-cluster .ip-cs-links a { transition: none; } }
+
+/* --- Dark amber band (industries), as on the pillars --------------------------- */
+main.svc-cluster .ip-sec.ip-dark {
+  background-color: #0f0d0c;
+  background-image:
+    radial-gradient(44rem 28rem at 88% 0%, rgb(240 90 44 / 0.22), transparent 70%),
+    radial-gradient(38rem 26rem at 0% 100%, rgb(249 174 66 / 0.10), transparent 70%),
+    linear-gradient(180deg, #17120f 0%, #0f0d0c 100%);
+  background-size: auto;
+  border-top-color: rgb(255 255 255 / 0.05);
+}
+main.svc-cluster .ip-dark .ip-h2 { color: #fff; }
+main.svc-cluster .ip-dark .ip-intro { color: rgb(255 255 255 / 0.65); }
+main.svc-cluster .ip-dark .ip-badge { color: #F9AE42; }
+main.svc-cluster .ip-dark :is(.ip-card, .ip-prose) {
+  background: rgb(255 255 255 / 0.04);
+  border-color: rgb(255 255 255 / 0.1);
+  box-shadow: 0 1px 0 rgb(255 255 255 / 0.06) inset, 0 24px 50px -30px rgb(0 0 0 / 0.8);
+}
+main.svc-cluster .ip-dark .ip-card:hover { border-color: rgb(249 174 66 / 0.4); background: rgb(255 255 255 / 0.07); }
+main.svc-cluster .ip-dark :is(.ip-card, .ip-prose) :is(h2, h3) { color: #fff; }
+main.svc-cluster .ip-dark :is(.ip-card, .ip-prose) p { color: rgb(255 255 255 / 0.68); }
+main.svc-cluster .ip-dark :is(.ip-card, .ip-prose) p strong { color: #fff; }
+main.svc-cluster .ip-dark :is(.ip-card, .ip-prose) a { color: #F9AE42; }
+main.svc-cluster .ip-dark .ip-icon { background: rgb(240 90 44 / 0.2); color: #ff9a5c; }
+main.svc-cluster .ip-dark .ip-card:hover .ip-icon { background: var(--color-primary); color: #fff; }
+
+/* ==========================================================================
+   AI hub illustration — premium 3D treatment (overrides the flat version above).
+   Same elements: .ipv2-ring = back half of a glossy orange torus, .ipv2-base =
+   its front half (drawn over the window), .ipv2-sphere = soft ambient glow.
+   ========================================================================== */
+main.svc-cluster .ipv2 { isolation: isolate; }
+main.svc-cluster .ipv2-sphere {
+  left: 10%; top: 8%; width: 80%;
+  background: radial-gradient(closest-side, rgb(255 110 35 / 0.55), rgb(255 90 20 / 0.18) 55%, transparent 100%);
+  box-shadow: none;
+  filter: blur(18px);
+  z-index: 0;
+}
+/* torus: elliptical radial bands shade the tube (dark rim, bright core, highlight line) */
+main.svc-cluster :is(.ipv2-ring, .ipv2-base) {
+  position: absolute; left: 3%; right: 1%; top: 18%; bottom: 22%; height: auto;
+  border: 0; border-radius: 50%;
+  background: radial-gradient(farthest-side,
+    transparent 72%,
+    #7a2208 73.5%, #c2410c 76%, #f26a1e 79%, #ff9a4a 81.5%,
+    #ffe0b8 83%, #ffb46a 84.5%, #f05a2c 88%, #b8360f 92.5%, #5e1a06 95%,
+    transparent 96.5%);
+  box-shadow: none;
+  transform: rotate(-9deg);
+  opacity: 1;
+}
+main.svc-cluster .ipv2-ring {
+  z-index: 1;
+  filter: drop-shadow(0 0 22px rgb(255 120 40 / 0.65)) drop-shadow(0 18px 24px rgb(0 0 0 / 0.55));
+}
+main.svc-cluster .ipv2-base {
+  z-index: 3;
+  clip-path: inset(62% 0 0 0);
+  filter: drop-shadow(0 0 16px rgb(255 120 40 / 0.6)) drop-shadow(0 10px 14px rgb(0 0 0 / 0.45));
+}
+/* browser window: thick bevelled glass slab with an orange glossy title bar */
+main.svc-cluster .ipv2-window {
+  z-index: 2;
+  left: 22%; right: 17%; top: 19%; bottom: 27%;
+  border-radius: 1.1rem;
+  background:
+    linear-gradient(115deg, rgb(255 255 255 / 0.55) 0%, rgb(255 255 255 / 0) 38%),
+    linear-gradient(165deg, #fffaf6 0%, #ffeee2 60%, #ffdcc6 100%);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.95),
+    inset 0 -3px 6px rgb(200 90 40 / 0.25),
+    0 2px 0 #f6cfb6, 0 5px 0 #eba987, 0 8px 0 #d9835a,
+    0 10px 2px rgb(120 40 10 / 0.5),
+    0 34px 60px -14px rgb(0 0 0 / 0.75),
+    0 0 40px rgb(255 120 40 / 0.35);
+  transform: perspective(1000px) rotateY(-14deg) rotateX(6deg) rotate(-2deg);
+}
+main.svc-cluster .ipv2-bar {
+  background: linear-gradient(180deg, #ff9a52 0%, #f05a2c 70%, #d9461a 100%);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.5), 0 2px 4px rgb(160 50 10 / 0.35);
+}
+main.svc-cluster .ipv2-bar i { background: radial-gradient(circle at 35% 30%, #fff, #ffe3cf 70%); box-shadow: 0 1px 2px rgb(120 30 0 / 0.4); }
+main.svc-cluster .ipv2-lines b {
+  height: 0.55rem;
+  background: linear-gradient(180deg, #ffb27a, #f5823e);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.5), 0 1px 2px rgb(180 60 10 / 0.3);
+}
+main.svc-cluster .ipv2-lines b:nth-child(2n) { background: linear-gradient(180deg, #ffd0ad, #ffb07c); }
+/* AI chip: raised glossy die with bevel and metallic pins */
+main.svc-cluster .ipv2-chip {
+  background:
+    repeating-linear-gradient(90deg, #ffb070 0 4px, transparent 4px 10px) top / 66% 10px no-repeat,
+    repeating-linear-gradient(90deg, #ffb070 0 4px, transparent 4px 10px) bottom / 66% 10px no-repeat,
+    repeating-linear-gradient(0deg, #ffb070 0 4px, transparent 4px 10px) left / 10px 66% no-repeat,
+    repeating-linear-gradient(0deg, #ffb070 0 4px, transparent 4px 10px) right / 10px 66% no-repeat;
+  filter: drop-shadow(0 6px 6px rgb(150 45 10 / 0.45));
+}
+main.svc-cluster .ipv2-chip-core {
+  border-radius: 0.95rem;
+  background:
+    linear-gradient(145deg, rgb(255 255 255 / 0.45) 0%, rgb(255 255 255 / 0) 42%),
+    linear-gradient(150deg, #ffa052 0%, #f26a1e 45%, #d2410f 100%);
+  box-shadow:
+    inset 0 2px 1px rgb(255 255 255 / 0.55),
+    inset 0 -4px 6px rgb(120 30 0 / 0.45),
+    inset 0 0 0 2px rgb(255 190 140 / 0.5),
+    0 4px 0 #b5370c, 0 6px 0 #8e2a08,
+    0 0 34px rgb(255 120 40 / 0.85);
+}
+main.svc-cluster .ipv2-chip-core::after { text-shadow: 0 2px 0 rgb(140 40 5 / 0.55), 0 0 12px rgb(255 220 180 / 0.6); }
+/* floating cards: bevelled cream tiles with an orange glossy icon tile */
+main.svc-cluster .ipv2-tag {
+  z-index: 4;
+  background:
+    linear-gradient(120deg, rgb(255 255 255 / 0.7) 0%, rgb(255 255 255 / 0) 45%),
+    linear-gradient(165deg, #fffaf5 0%, #ffe9da 100%);
+  box-shadow:
+    inset 0 1px 0 #fff,
+    inset 0 -3px 5px rgb(210 110 60 / 0.25),
+    0 3px 0 #f0c3a5, 0 6px 0 #d98a5e,
+    0 8px 2px rgb(110 35 10 / 0.45),
+    0 24px 36px -12px rgb(0 0 0 / 0.7),
+    0 0 26px rgb(255 120 40 / 0.25);
+}
+main.svc-cluster .ipv2-tag > svg {
+  box-sizing: content-box;
+  padding: 0.45rem;
+  border-radius: 0.7rem;
+  color: #fff;
+  background: linear-gradient(150deg, #ffa052 0%, #f26a1e 55%, #d2410f 100%);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.55), inset 0 -2px 3px rgb(120 30 0 / 0.4), 0 3px 6px rgb(200 70 20 / 0.45);
+}
+@media (max-width: 639px) {
+  main.svc-cluster .ipv2-tag > svg { padding: 0.3rem; border-radius: 0.5rem; }
+  main.svc-cluster .ipv2-tag { box-shadow: inset 0 1px 0 #fff, 0 2px 0 #f0c3a5, 0 4px 0 #d98a5e, 0 14px 22px -10px rgb(0 0 0 / 0.7); }
+  main.svc-cluster .ipv2-window { box-shadow: inset 0 1px 0 #fff, 0 2px 0 #f6cfb6, 0 4px 0 #eba987, 0 6px 0 #d9835a, 0 22px 40px -12px rgb(0 0 0 / 0.75); }
+}
+
+/* ==========================================================================
+   AI hub hero — aligned with the Digital Marketing pillar hero (reference):
+   same gradient, heading scale, white sub-headline, muted body, button style,
+   and a glowing orange sphere behind the window instead of the orbit ring.
+   ========================================================================== */
+main.svc-cluster .ip-hero-v2 {
+  background: radial-gradient(120% 90% at 78% 30%, #3a1608 0%, #1a0b05 45%, #0d0705 100%);
+}
+main.svc-cluster .ip-hero-v2 .ip-hero-copy > h1 {
+  font-size: 34px; line-height: 1.06; letter-spacing: -0.035em; margin-bottom: 1.5rem;
+}
+@media (min-width: 640px) { main.svc-cluster .ip-hero-v2 .ip-hero-copy > h1 { font-size: 48px; } }
+@media (min-width: 1024px) { main.svc-cluster .ip-hero-v2 .ip-hero-copy > h1 { font-size: 46px; } }
+@media (min-width: 1280px) { main.svc-cluster .ip-hero-v2 .ip-hero-copy > h1 { font-size: 54px; } }
+main.svc-cluster .ip-hero-v2 .ip-h1-key { background: none; color: #ff7a3d; -webkit-text-fill-color: currentColor; }
+/* sub-headline (the H1's second part): white, semibold, like the reference */
+main.svc-cluster .ip-hero-v2 .ip-hero-copy > h1 > span.relative {
+  margin-top: 1.5rem;
+  max-width: 36rem;
+  font-size: 1rem; line-height: 1.35; font-weight: 600; letter-spacing: 0;
+  color: rgb(255 255 255 / 0.9);
+}
+@media (min-width: 640px) { main.svc-cluster .ip-hero-v2 .ip-hero-copy > h1 > span.relative { font-size: 1.125rem; } }
+@media (min-width: 1280px) { main.svc-cluster .ip-hero-v2 .ip-hero-copy > h1 > span.relative { font-size: 1.125rem; } }
+main.svc-cluster .ip-hero-v2 .ip-hero-copy > h1 > span.relative .ip-h1-key { color: rgb(255 255 255 / 0.9); }
+main.svc-cluster .ip-hero-v2 .ip-hero-copy > p.text-neutral-600 {
+  font-size: 15px; line-height: 1.65; color: rgb(255 255 255 / 0.65); max-width: 36rem; margin-bottom: 1rem;
+}
+@media (min-width: 640px) { main.svc-cluster .ip-hero-v2 .ip-hero-copy > p.text-neutral-600 { font-size: 16px; } }
+/* buttons as on the reference: orange pill, white pills with the icon in a circle on the right */
+main.svc-cluster .ip-hero-v2 .ip-hero-copy > div:has(> a) { margin-top: 1rem; gap: 0.75rem 1rem; }
+main.svc-cluster .ip-hero-v2 .ip-hero-copy > div:has(> a) > a:first-child {
+  padding: 1rem 1.75rem; box-shadow: 0 10px 30px -6px rgb(240 90 44 / 0.7);
+}
+main.svc-cluster .ip-hero-v2 .ip-hero-copy > div:has(> a) > a:not(:first-child) {
+  padding: 0.6rem 0.6rem 0.6rem 1.75rem; gap: 0.75rem;
+}
+main.svc-cluster .ip-hero-v2 .ip-hero-copy > div:has(> a) > a:not(:first-child) > .ip-cta-ic { order: 2; }
+main.svc-cluster .ip-hero-v2 .ip-cta-bolt {
+  box-sizing: content-box; width: 1rem; height: 1rem; padding: 0.6rem;
+  border-radius: 9999px; background: var(--color-primary); color: #fff;
+}
+main.svc-cluster .ip-hero-v2 .ip-cta-wa { width: 2.25rem; height: 2.25rem; }
+@media (max-width: 639px) {
+  main.svc-cluster .ip-hero-v2 .ip-hero-copy > div:has(> a) > a:first-child { padding: 0.9rem 1.25rem; }
+  main.svc-cluster .ip-hero-v2 .ip-hero-copy > div:has(> a) > a:not(:first-child) { padding: 0.5rem 0.5rem 0.5rem 1.25rem; }
+}
+
+/* illustration: glowing orange sphere behind the window (as the reference), no ring */
+main.svc-cluster .ip-hero-v2 :is(.ipv2-ring, .ipv2-base) { display: none; }
+main.svc-cluster .ip-hero-v2 .ipv2-sphere {
+  left: 24%; top: 6%; width: 64%;
+  background: radial-gradient(circle at 36% 30%, #ff9d5c 0%, #ff6a2b 40%, #e8501b 72%, #b8360f 100%);
+  box-shadow: 0 0 90px 26px rgb(255 95 25 / 0.45), inset -20px -26px 60px rgb(110 25 5 / 0.35);
+  filter: none;
+}
+main.svc-cluster .ip-hero-v2 .ipv2-window { left: 24%; right: 20%; top: 26%; bottom: 22%; transform: perspective(1000px) rotateY(-10deg) rotate(-2deg); }
+main.svc-cluster .ip-hero-v2 .ipv2-tag {
+  background: linear-gradient(165deg, #ffffff 0%, #fff3ea 100%);
+  box-shadow: inset 0 1px 0 #fff, 0 3px 0 #f1d6c4, 0 20px 34px -12px rgb(0 0 0 / 0.65);
+}
+main.svc-cluster .ip-hero-v2 .ipv2-tag > svg {
+  padding: 0; border-radius: 0; background: none; box-shadow: none; color: var(--color-primary);
+  width: 1.75rem; height: 1.75rem;
+}
+main.svc-cluster .ip-hero-v2 .ipv2-tag-1 { left: 6%; top: 6%; transform: rotate(2deg); }
+main.svc-cluster .ip-hero-v2 .ipv2-tag-2 { right: 0; top: 10%; transform: rotate(-3deg); }
+main.svc-cluster .ip-hero-v2 .ipv2-tag-3 { left: 2%; bottom: 18%; transform: rotate(-2deg); }
+main.svc-cluster .ip-hero-v2 .ipv2-tag-4 { right: 4%; bottom: 8%; transform: rotate(2deg); }
+@media (max-width: 639px) {
+  main.svc-cluster .ip-hero-v2 .ipv2-tag > svg { width: 1.1rem; height: 1.1rem; }
+}
+
+/* ==========================================================================
+   ERPNext hub hero (pillar="erp"): 3D dashboard window, glowing orbital ring
+   (back + front half), lit pedestal and four 3D module tiles.
+   Heading: "ERPNext Implementation" orange, "Company" white, "Kochi" orange.
+   ========================================================================== */
+main.svc-cluster .ip-hero-erp .ip-hero-copy > h1 > span.relative {
+  display: inline; margin: 0; max-width: none;
+  font-size: inherit; font-weight: inherit; line-height: inherit; letter-spacing: inherit;
+  color: #ff7a3d;
+}
+/* buttons: icon on the left, as in the reference */
+main.svc-cluster .ip-hero-erp .ip-hero-copy > div:has(> a) > a:not(:first-child) > .ip-cta-ic { order: 0; }
+main.svc-cluster .ip-hero-erp .ip-hero-copy > div:has(> a) > a:not(:first-child) { padding: 0.7rem 1.75rem 0.7rem 0.9rem; }
+main.svc-cluster .ip-hero-erp .ip-cta-wa { width: 2rem; height: 2rem; }
+
+/* illustration */
+main.svc-cluster .ip-hero-erp :is(.ipv2-ring, .ipv2-sphere) {
+  display: block;
+  position: absolute; left: 0; right: 0; top: 22%; bottom: 32%; width: auto; height: auto; aspect-ratio: auto;
+  border: 0; border-radius: 50%;
+  background: radial-gradient(farthest-side,
+    transparent 76%,
+    #7a2208 77.5%, #c2410c 80%, #f26a1e 83%, #ff9a4a 85.5%,
+    #ffe0b8 87%, #ffb46a 88.5%, #f05a2c 91.5%, #b8360f 95%, #5e1a06 97%,
+    transparent 98.5%);
+  box-shadow: none;
+  transform: rotate(-12deg);
+}
+main.svc-cluster .ip-hero-erp .ipv2-ring { z-index: 1; filter: drop-shadow(0 0 22px rgb(255 120 40 / 0.7)) drop-shadow(0 16px 22px rgb(0 0 0 / 0.5)); }
+/* front arc: the same ring, masked to its lower-left segment so it passes in front of the window */
+main.svc-cluster .ip-hero-erp .ipv2-sphere {
+  z-index: 3;
+  -webkit-mask: linear-gradient(200deg, transparent 58%, #000 66%);
+          mask: linear-gradient(200deg, transparent 58%, #000 66%);
+  filter: drop-shadow(0 0 16px rgb(255 120 40 / 0.6));
+}
+@media (max-width: 639px) {
+  main.svc-cluster .ip-hero-erp .ip-hero-copy > div:has(> a) > a { white-space: normal; text-align: left; }
+}
+/* pedestal */
+main.svc-cluster .ip-hero-erp .ipv2-base {
+  display: block;
+  position: absolute; left: 24%; right: 20%; top: auto; bottom: 4%; height: 15%;
+  clip-path: none; transform: none; z-index: 0;
+  border-radius: 50%;
+  background:
+    radial-gradient(ellipse 70% 38% at 50% 34%, #ffd6a8 0%, #ff8a3a 32%, rgb(240 90 44 / 0) 70%),
+    linear-gradient(180deg, #3c1d12 0%, #2a130b 55%, #170a05 100%);
+  box-shadow: inset 0 -6px 10px rgb(0 0 0 / 0.5), 0 0 60px 10px rgb(255 100 30 / 0.4), 0 20px 30px rgb(0 0 0 / 0.6);
+  filter: none;
+}
+/* dashboard window */
+main.svc-cluster .ip-hero-erp .ipv2-window {
+  left: 20%; right: 17%; top: 15%; bottom: 30%;
+  transform: perspective(1000px) rotateY(-16deg) rotateX(6deg) rotate(-3deg);
+}
+main.svc-cluster .ipv2-dash { display: grid; grid-template-columns: 0.32fr 1fr; gap: 0.8rem; height: calc(100% - 1.75rem); padding: 0.9rem; }
+main.svc-cluster .ipv2-dash .ipv2-side { display: grid; align-content: start; gap: 0.55rem; padding-top: 0.2rem; }
+main.svc-cluster .ipv2-dash .ipv2-side b { display: block; height: 0.45rem; border-radius: 9999px; background: #f2dccd; }
+main.svc-cluster .ipv2-dash .ipv2-side b:nth-child(2), main.svc-cluster .ipv2-dash .ipv2-side b:nth-child(3) { background: linear-gradient(90deg, #ffb07a, #f5823e); }
+main.svc-cluster .ipv2-main { display: grid; grid-template-rows: auto 1fr auto; gap: 0.6rem; min-width: 0; }
+main.svc-cluster .ipv2-brand { display: inline-flex; align-items: center; gap: 0.45rem; font-weight: 900; color: #2a1710; font-size: 1.05rem; letter-spacing: -0.01em; }
+main.svc-cluster .ipv2-brand::before {
+  content: "E"; content: "E" / "";
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 1.7rem; height: 1.7rem; border-radius: 0.45rem;
+  color: #fff; font-size: 1rem;
+  background: linear-gradient(150deg, #ff7a3d, #e0451a);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.5), 0 3px 6px rgb(200 60 15 / 0.45);
+}
+main.svc-cluster .ipv2-brand::after { content: "ERPNext"; content: "ERPNext" / ""; }
+main.svc-cluster .ipv2-panels { display: grid; grid-template-columns: 1.15fr 1fr; gap: 0.6rem; min-height: 0; }
+main.svc-cluster :is(.ipv2-bars, .ipv2-donut) {
+  border-radius: 0.7rem;
+  background: linear-gradient(165deg, #fff, #fff1e7);
+  box-shadow: inset 0 1px 0 #fff, 0 6px 14px -6px rgb(180 70 20 / 0.45);
+}
+main.svc-cluster .ipv2-bars { display: flex; align-items: flex-end; justify-content: center; gap: 12%; padding: 18% 12% 14%; }
+main.svc-cluster .ipv2-bars i {
+  flex: 1; border-radius: 0.2rem 0.2rem 0 0;
+  background: linear-gradient(180deg, #ffa052, #e8521d);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.5);
+}
+main.svc-cluster .ipv2-bars i:nth-child(1) { height: 32%; opacity: 0.6; }
+main.svc-cluster .ipv2-bars i:nth-child(2) { height: 55%; }
+main.svc-cluster .ipv2-bars i:nth-child(3) { height: 74%; }
+main.svc-cluster .ipv2-bars i:nth-child(4) { height: 100%; }
+main.svc-cluster .ipv2-donut { position: relative; }
+main.svc-cluster .ipv2-donut::after {
+  content: ""; position: absolute; inset: 14%;
+  margin: auto; aspect-ratio: 1; max-width: 72%; max-height: 72%;
+  border-radius: 50%;
+  background: conic-gradient(#f05a2c 0 62%, #ffb27a 62% 84%, #f3d9c8 84% 100%);
+  -webkit-mask: radial-gradient(closest-side, transparent 52%, #000 54%);
+          mask: radial-gradient(closest-side, transparent 52%, #000 54%);
+  filter: drop-shadow(0 3px 4px rgb(180 60 15 / 0.35));
+}
+main.svc-cluster .ipv2-foot { display: block; height: 0.6rem; border-radius: 9999px; background: #f2dccd; }
+/* module tiles: icon-only bevelled 3D squares */
+main.svc-cluster .ip-hero-erp .ipv2-tag {
+  width: 4.6rem; height: 4.6rem; padding: 0; gap: 0;
+  justify-content: center; border-radius: 1.2rem;
+  background:
+    linear-gradient(125deg, rgb(255 255 255 / 0.8) 0%, rgb(255 255 255 / 0) 50%),
+    linear-gradient(165deg, #fffaf5 0%, #ffe4d2 100%);
+  box-shadow:
+    inset 0 1px 0 #fff, inset 0 -3px 6px rgb(210 110 60 / 0.3),
+    0 3px 0 #f0c3a5, 0 6px 0 #d98a5e, 0 8px 2px rgb(110 35 10 / 0.45),
+    0 24px 36px -12px rgb(0 0 0 / 0.7), 0 0 26px rgb(255 120 40 / 0.3);
+}
+main.svc-cluster .ip-hero-erp .ipv2-tag::after { display: none; }
+main.svc-cluster .ip-hero-erp .ipv2-tag > svg { width: 2.2rem; height: 2.2rem; color: #f05a2c; filter: drop-shadow(0 2px 2px rgb(180 60 15 / 0.35)); }
+main.svc-cluster .ip-hero-erp .ipv2-tag-1 { left: 6%; top: 6%; transform: rotate(-6deg); }
+main.svc-cluster .ip-hero-erp .ipv2-tag-2 { right: 6%; top: 0; transform: rotate(6deg); }
+main.svc-cluster .ip-hero-erp .ipv2-tag-3 { left: 2%; bottom: 22%; transform: rotate(4deg); }
+main.svc-cluster .ip-hero-erp .ipv2-tag-4 { right: 4%; bottom: 20%; transform: rotate(-4deg); }
+@media (max-width: 639px) {
+  main.svc-cluster .ip-hero-erp .ipv2-tag { width: 3rem; height: 3rem; border-radius: 0.8rem; }
+  main.svc-cluster .ip-hero-erp .ipv2-tag > svg { width: 1.4rem; height: 1.4rem; }
+  main.svc-cluster .ipv2-dash { padding: 0.5rem; gap: 0.45rem; }
+  main.svc-cluster .ipv2-brand { font-size: 0.7rem; gap: 0.25rem; }
+  main.svc-cluster .ipv2-brand::before { width: 1.1rem; height: 1.1rem; font-size: 0.7rem; border-radius: 0.3rem; }
+  main.svc-cluster .ipv2-dash .ipv2-side { gap: 0.35rem; }
+  main.svc-cluster .ipv2-dash .ipv2-side b { height: 0.3rem; }
+}
+@media (max-width: 1023px) { main.svc-cluster .ip-hero-erp .ipv2 { max-width: 460px; } }
+/* Pricing tables on phones: stack service above price so nothing scrolls sideways */
+@media (max-width: 639px) {
+  main.svc-cluster .ip-sec[data-type="pricing"] table { min-width: 0; }
+  main.svc-cluster .ip-sec[data-type="pricing"] thead tr {
+    display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.25rem 1rem;
+    padding: 0.9rem 1.25rem;
+  }
+  main.svc-cluster .ip-sec[data-type="pricing"] thead th { padding: 0; font-size: 0.68rem; }
+  main.svc-cluster .ip-sec[data-type="pricing"] tbody tr {
+    display: flex; flex-direction: column; gap: 0.3rem;
+    padding: 0.95rem 1.25rem;
+    border-top: 1px solid rgb(240 90 44 / 0.08);
+  }
+  main.svc-cluster .ip-sec[data-type="pricing"] tbody td {
+    padding: 0; border: 0; white-space: normal;
+  }
+  main.svc-cluster .ip-sec[data-type="pricing"] tbody td:first-child { font-size: 0.95rem; }
+  main.svc-cluster .ip-sec[data-type="pricing"] tbody td + td { font-size: 1rem; }
+}
+
+/* Comparison tables on phones: each row becomes a card; first column is the title,
+   the other values carry their column name (data-label) above them */
+@media (max-width: 639px) {
+  main.svc-cluster .ip-table table { min-width: 0; }
+  main.svc-cluster .ip-table thead { display: none; }
+  main.svc-cluster .ip-table tbody tr {
+    display: flex; flex-direction: column; gap: 0.7rem;
+    padding: 1.1rem 1.25rem;
+    border-top: 1px solid rgb(240 90 44 / 0.1);
+  }
+  main.svc-cluster .ip-table tbody tr:first-child { border-top: 0; }
+  main.svc-cluster .ip-table tbody td { padding: 0; border: 0; }
+  main.svc-cluster .ip-table tbody td:first-child { font-size: 1rem; line-height: 1.35; color: #1c1917; }
+  main.svc-cluster .ip-table tbody td + td[data-label]::before {
+    content: attr(data-label);
+    display: block; margin-bottom: 0.2rem;
+    font-size: 0.68rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;
+    color: #9a4a28;
+  }
+}
+
+/* ERPNext hero image: soft edges blend its dark background into the hero */
+main.svc-cluster .ip-hero-art { width: 100%; max-width: 560px; margin-inline: auto; }
+main.svc-cluster .ip-hero-art img {
+  display: block; width: 100%; height: auto;
+  -webkit-mask: linear-gradient(90deg, transparent 0, #000 12%, #000 88%, transparent 100%), linear-gradient(180deg, transparent 0, #000 10%, #000 88%, transparent 100%);
+  -webkit-mask-composite: source-in;
+          mask: linear-gradient(90deg, transparent 0, #000 12%, #000 88%, transparent 100%), linear-gradient(180deg, transparent 0, #000 10%, #000 88%, transparent 100%);
+          mask-composite: intersect;
+}
+@media (max-width: 1023px) { main.svc-cluster .ip-hero-art { max-width: 460px; } }
+@media (prefers-reduced-motion: no-preference) {
+  main.svc-cluster .ip-hero-art img { animation: ipvFloat 7s ease-in-out infinite; }
+}
+
+/* ==========================================================================
+   GCC hub hero (pillar="gcc"), as the Digital Marketing reference:
+   "Web Design" orange, "Company for" white, "GCC Businesses" orange; white
+   semibold sub-headline; orange sphere behind a web dashboard; four labelled tags.
+   ========================================================================== */
+main.svc-cluster .ip-hero-gcc .ip-hero-copy > h1 > span.relative {
+  display: inline; margin: 0; max-width: none;
+  font-size: inherit; font-weight: inherit; line-height: inherit; letter-spacing: inherit;
+  color: #ff7a3d;
+}
+main.svc-cluster .ip-hero-gcc .ip-hero-copy > :is(h2, p).text-neutral-800 {
+  font-size: 1rem; line-height: 1.4; font-weight: 600; letter-spacing: 0;
+  color: rgb(255 255 255 / 0.92); max-width: 36rem; margin-bottom: 1.25rem;
+}
+@media (min-width: 640px) { main.svc-cluster .ip-hero-gcc .ip-hero-copy > :is(h2, p).text-neutral-800 { font-size: 1.125rem; } }
+main.svc-cluster .ip-hero-gcc .ipv2-brand::before { content: "W"; content: "W" / ""; }
+main.svc-cluster .ip-hero-gcc .ipv2-brand::after { content: "GCC Websites"; content: "GCC Websites" / ""; }
+main.svc-cluster .ip-hero-gcc .ipv2-window { left: 24%; right: 18%; top: 26%; bottom: 24%; }
+@media (max-width: 639px) {
+  main.svc-cluster .ipv2-dash { padding: 0.5rem; gap: 0.45rem; }
+  main.svc-cluster .ipv2-brand { font-size: 0.7rem; gap: 0.25rem; }
+  main.svc-cluster .ipv2-brand::before { width: 1.1rem; height: 1.1rem; font-size: 0.7rem; border-radius: 0.3rem; }
+  main.svc-cluster .ipv2-dash .ipv2-side { gap: 0.35rem; }
+  main.svc-cluster .ipv2-dash .ipv2-side b { height: 0.3rem; }
+}
+@media (max-width: 1023px) { main.svc-cluster .ip-hero-gcc .ipv2 { max-width: 460px; } }
+
+main.svc-cluster .ip-hero-gcc .ipv2-tag-4 { bottom: 18%; }
