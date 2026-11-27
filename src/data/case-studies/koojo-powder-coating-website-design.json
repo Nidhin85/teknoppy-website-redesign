@@ -1,0 +1,189 @@
+{
+  "metaTitle": "Koojo Powder Coating: Website Design Case Study | Teknoppy",
+  "metaDescription": "See how Teknoppy designed a fast, photo-led website for Koojo Powder Coating with a finish gallery, WhatsApp quotes and clear service pages.",
+  "canonicalURL": "https://www.teknoppy.com/case-studies/koojo-powder-coating-website-design/",
+  "heroImage": "/case-studies/koojopowdercoating.webp",
+  "heroImageAlt": "Koojo Powder Coating homepage designed by Teknoppy",
+  "schemaType": "TechArticle",
+  "schemaAbout": {
+    "type": "Organization",
+    "name": "Koojo Powder Coating"
+  },
+  "clientName": "Koojo Powder Coating",
+  "categoryTag": "Web Design",
+  "tagBadge": "Metal Finishing Website Case Study",
+  "title": "Koojo Powder Coating: A Website That Shows the Finish Before the Job",
+  "storyLead": "How Teknoppy designed a fast, photo-led website for a powder coating company, so builders, fabricators and homeowners can see the quality, pick a finish and request a quote in one tap.",
+  "industry": "Metal finishing",
+  "location": "Local & regional market",
+  "services": "UX and UI design, website development, content structure, on-page SEO setup",
+  "platform": "Hosted on Vercel",
+  "liveWebsite": "koojopowdercoating.com",
+  "liveWebsiteUrl": "https://www.koojopowdercoating.com/",
+  "heroHighlights": [
+    "Photo-First Layout",
+    "Colours & Finishes Made Simple",
+    "WhatsApp, Call & Get a Quote",
+    "Fast Vercel Hosting"
+  ],
+  "atAGlance": [
+    "Teknoppy designed and built koojopowdercoating.com, the website of Koojo Powder Coating, a powder coating company",
+    "The site presents its coating services with real project photos, a colour and finish gallery, the materials it coats and the industries it serves",
+    "WhatsApp, call and \"Get a Quote\" stay on every screen",
+    "It is a fast, mobile-first build hosted on Vercel"
+  ],
+  "aboutHeading": "About Koojo Powder Coating",
+  "aboutParagraphs": [
+    "Powder coating is a visual business. Customers want to see the finish, the colour and the quality before they send a single gate, window frame or batch of parts. Koojo Powder Coating needed a website that shows that quality at a glance and makes it easy to ask for a price.",
+    "Koojo Powder Coating gives metal products a tough, even and long-lasting finish. Powder coating resists scratches, rust and fading far better than ordinary paint, which is why fabricators, builders and furniture makers rely on it for gates, grills, railings, aluminium profiles and machine parts.",
+    "Like most coating businesses, Koojo has built its name through word of mouth and repeat customers. The website had to turn that reputation into enquiries from new customers who have never seen its work."
+  ],
+  "challengeLead": "Three problems shaped the design brief.",
+  "challenges": [
+    {
+      "number": 1,
+      "title": "Quality is hard to explain in words",
+      "description": "Every coating company says \"high quality\". Customers believe what they can see: smooth finishes, sharp colours and clean edges on real jobs."
+    },
+    {
+      "number": 2,
+      "title": "Buyers need quick answers on colour, material and price",
+      "description": "A fabricator wants to know if Koojo coats aluminium or MS, which colours are available, how long it takes and roughly what it costs. If the site does not answer fast, they call someone else."
+    },
+    {
+      "number": 3,
+      "title": "Most visitors are on mobile",
+      "description": "Contractors and site supervisors look up suppliers on their phones, often on the move. The site had to load fast and put the call and WhatsApp buttons within thumb reach."
+    }
+  ],
+  "objectiveLead": "Build a fast, mobile-first, photo-led website that proves Koojo's finish quality, answers the common questions about materials, colours and turnaround, and turns visitors into WhatsApp messages, calls and quote requests.",
+  "objectives": [
+    "Prove Koojo's finish quality with real photos",
+    "Answer common questions about materials, colours and turnaround",
+    "Turn visitors into WhatsApp messages, calls and quote requests"
+  ],
+  "approachLead": "Five design pillars, and a page order that answers each customer question in turn.",
+  "approachPillars": [
+    {
+      "title": "A photo-first layout",
+      "paragraphs": [
+        "The homepage leads with large photos of finished work. A project gallery groups jobs by type, such as gates and grills, aluminium profiles, furniture and industrial parts, so visitors find work like theirs."
+      ]
+    },
+    {
+      "title": "Colours and finishes made simple",
+      "paragraphs": [
+        "A finish section shows the main options, such as matt, gloss, textured, metallic and wood finish, with real samples. Visitors can name a colour or finish when they ask for a quote, which saves back-and-forth."
+      ]
+    },
+    {
+      "title": "Clear service and material pages",
+      "paragraphs": [
+        "Each service has its own short page that explains what is coated, the process from cleaning and pre-treatment to curing, and typical uses. This answers buyer questions and gives Google clear pages to rank."
+      ]
+    },
+    {
+      "title": "Enquiries in one tap",
+      "paragraphs": [
+        "WhatsApp and call buttons stay visible on every page, and \"Get a Quote\" opens a short form. Customers can share photos of the items, the quantity and the colour they need."
+      ]
+    },
+    {
+      "title": "Speed and trust",
+      "paragraphs": [
+        "The site is a light, modern build hosted on Vercel, so pages load quickly on mobile data. The address, map, working hours and customer reviews sit near the footer to show Koojo is real and local."
+      ]
+    },
+    {
+      "title": "How the website guides a customer",
+      "paragraphs": [
+        "Hero with photo and quote button: Is this a powder coating company near me?",
+        "Services and materials: Do they coat what I need?",
+        "Finish and colour section: Can I get the colour and look I want?",
+        "Project gallery: Is their work good enough?",
+        "Process steps: How is it done, and how long does it take?",
+        "Reviews and FAQ: Can I trust them, and what will it cost?",
+        "Contact, map and WhatsApp: How do I send my job now?"
+      ]
+    },
+    {
+      "title": "What makes a powder coating website convert",
+      "paragraphs": [
+        "Real photos beat stock images. Customers can tell the difference and trust real work more.",
+        "Finish names help quoting. When visitors can say \"matt black\" or \"wood finish\", quotes are faster.",
+        "Contact must be one tap away. Site supervisors will not search a page for a phone number.",
+        "Process builds confidence. Showing cleaning, pre-treatment and curing proves the finish will last."
+      ]
+    }
+  ],
+  "deliverables": [
+    {
+      "title": "Photo-first homepage",
+      "description": "Quality is visible in seconds."
+    },
+    {
+      "title": "Project gallery by job type",
+      "description": "Customers see work like their own."
+    },
+    {
+      "title": "Finish and colour section",
+      "description": "Faster, clearer quote requests."
+    },
+    {
+      "title": "Service and material pages",
+      "description": "Answers questions and supports SEO."
+    },
+    {
+      "title": "Sticky WhatsApp and call buttons",
+      "description": "One-tap contact on mobile."
+    },
+    {
+      "title": "Quote form with photo upload",
+      "description": "All job details in one message."
+    },
+    {
+      "title": "Fast Vercel hosting",
+      "description": "Quick loading on mobile data."
+    },
+    {
+      "title": "Map, hours and reviews",
+      "description": "Local trust and visibility."
+    }
+  ],
+  "whyMattersHeading": "Why design matters for powder coating businesses",
+  "whyMattersParagraphs": [
+    "In metal finishing, the website is the showroom. A customer who cannot see good work, or cannot reach the owner quickly, simply moves on to the next name on Google.",
+    "With real photos, clear finishes and one-tap contact, Koojo's site now does the selling before the first call.",
+    "Next for the website: add before-and-after photos for popular jobs such as gates and window frames, add a simple colour chart with the most requested RAL shades, publish short job stories with photos for each industry served, and track WhatsApp clicks, calls and form submissions in GA4 every month. Each of these makes the site more useful for customers and gives Google more fresh, original content to rank."
+  ],
+  "whyMattersCalloutHtml": "<p><strong>Real photos, clear finishes and one-tap contact: the website does the selling before the first call.</strong></p><p class=\"mt-3\">See also the <a href=\"/case-studies/koojo-custom-powder-coating-seo/\" class=\"text-primary font-semibold underline\">Koojo Powder Coating SEO case study</a>, our <a href=\"/seo-services/\" class=\"text-primary font-semibold underline\">SEO services</a> and <a href=\"/case-study/\" class=\"text-primary font-semibold underline\">all case studies</a>.</p>",
+  "faqs": [
+    {
+      "question": "What should a powder coating company website include?",
+      "answer": "Photos of finished work, services and materials coated, colour and finish options, the process, reviews, a map, and quick WhatsApp, call and quote buttons."
+    },
+    {
+      "question": "Why is a photo gallery important for a coating business?",
+      "answer": "Customers judge finish quality with their eyes. A gallery of real jobs builds trust faster than any written claim."
+    },
+    {
+      "question": "Can customers send photos of their items through the website?",
+      "answer": "Yes. The quote form and WhatsApp button let customers share photos, sizes and quantities so the team can price the job quickly."
+    },
+    {
+      "question": "Is a fast website important for a local business?",
+      "answer": "Yes. Most local customers search on mobile. A fast site keeps them on the page and helps Google rankings."
+    },
+    {
+      "question": "How long does a small business website take?",
+      "answer": "It depends on pages and content. Teknoppy gives a written timeline and fixed quote after a free consultation."
+    },
+    {
+      "question": "Does Teknoppy design websites for manufacturing businesses?",
+      "answer": "Yes. Teknoppy is a web design and SEO company in Kochi, Kerala, building websites for manufacturers and service businesses in India, the UAE, Qatar and the GCC."
+    }
+  ],
+  "authorName": "the Teknoppy Web Design Team",
+  "authorRole": "Kochi, Kerala · Published 26 November 2026",
+  "ctaHeadline": "Want a website that shows your quality before the first call?"
+}

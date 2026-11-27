@@ -1,0 +1,193 @@
+{
+  "metaTitle": "Technip Hughes Qatar: Website Design Case Study | Teknoppy",
+  "metaDescription": "See how Teknoppy designed a fast Astro website for Technip Hughes, a Doha facility management company, with WhatsApp enquiries and 6 service pages.",
+  "canonicalURL": "https://www.teknoppy.com/case-studies/technip-hughes-qatar-website-design/",
+  "heroImage": "/case-studies/technip-hughes-web.webp",
+  "heroImageAlt": "Technip Hughes homepage designed by Teknoppy — facility management company in Qatar website hero",
+  "schemaType": "TechArticle",
+  "schemaAbout": {
+    "type": "Organization",
+    "name": "Technip Hughes Services",
+    "address": {
+      "locality": "Salwa Road, Doha",
+      "region": "",
+      "country": "QA"
+    }
+  },
+  "clientName": "Technip Hughes",
+  "categoryTag": "Web Design",
+  "tagBadge": "Qatar Facility Management Case Study",
+  "title": "Technip Hughes: A Premium Facility Management Website for Qatar",
+  "storyLead": "How Teknoppy designed a fast, modern website for a Doha facility management company, built to win proposals from building owners and property managers across Qatar.",
+  "industry": "Integrated facility management, hard and soft FM",
+  "location": "Salwa Road, Doha, Qatar",
+  "services": "UX and UI design, website development, content structure, on-page SEO setup",
+  "platform": "Astro framework, WebP images, hosted on Vercel",
+  "liveWebsite": "technip-web.vercel.app",
+  "liveWebsiteUrl": "https://technip-web.vercel.app/",
+  "heroHighlights": [
+    "Premium, Restrained Look",
+    "6 Services · 5 Sectors",
+    "Call, WhatsApp & Get an Estimate",
+    "Fast Astro Build"
+  ],
+  "atAGlance": [
+    "Teknoppy designed and built the website for Technip Hughes Services, a facility management company on Salwa Road, Doha",
+    "The site presents six FM services and five property sectors, and leads with the keyword-rich H1 \"Facility Management Company in Qatar\"",
+    "Call, WhatsApp and \"Get an Estimate\" stay on every screen",
+    "Built with the Astro framework for fast loading",
+    "Technip Hughes' own published figures: 10+ years of experience, 2,000+ clients served, 200+ professionals and 6 core services"
+  ],
+  "aboutHeading": "About Technip Hughes",
+  "aboutParagraphs": [
+    "Technip Hughes manages buildings across Qatar, from MEP and fire safety to cleaning, security, pools and landscaping. Its buyers are building owners, property managers and procurement teams who compare FM providers carefully before signing a long contract.",
+    "Technip Hughes is a Doha-based facility management company with more than a decade of operational experience. It positions itself as a single accountable partner: one account manager, one help desk and one invoice for every service a building needs.",
+    "It runs CAFM-based, data-driven maintenance, plans around Qatar's summer heat and dust, and aligns energy efficiency with Qatar National Vision 2030. Its services cover integrated FM, MEP maintenance, soft FM, fire safety, security, pools and landscaping, for commercial offices, residential, hospitality and retail, government and education, and industrial sites."
+  ],
+  "challengeLead": "Three problems shaped the design brief.",
+  "challenges": [
+    {
+      "number": 1,
+      "title": "Six services that must feel like one partner",
+      "description": "MEP, cleaning, fire safety, security and landscaping are often bought from different vendors. The site had to show each service clearly while selling the idea of one integrated provider."
+    },
+    {
+      "number": 2,
+      "title": "A high-value, low-frequency purchase",
+      "description": "FM contracts are long and expensive. Buyers research for weeks and compare several providers, so the site had to build confidence and give them an easy, low-risk next step."
+    },
+    {
+      "number": 3,
+      "title": "Standing out in a crowded Qatar market",
+      "description": "Many FM companies in Doha look the same online. Technip Hughes needed a premium look and a clear message to be remembered on the shortlist."
+    }
+  ],
+  "objectiveLead": "Design a premium, fast and mobile-friendly facility management website that explains six services and five sectors clearly, proves experience with real numbers, and turns visits into proposal requests by phone, WhatsApp and the enquiry form.",
+  "objectives": [
+    "Explain six services and five sectors clearly",
+    "Prove experience with real numbers",
+    "Turn visits into proposal requests by phone, WhatsApp and the enquiry form"
+  ],
+  "approachLead": "Five design pillars, plus a homepage ordered like a sales conversation.",
+  "approachPillars": [
+    {
+      "title": "A premium, restrained look",
+      "paragraphs": [
+        "We used a deep teal palette, full-width photography of real building types and a formal, confident tone. The result feels like a corporate partner, not a cleaning contractor, which matches the value of an FM contract."
+      ]
+    },
+    {
+      "title": "Clear structure for services and sectors",
+      "paragraphs": [
+        "The main menu has dropdowns for each service. The homepage shows six service cards that link to detail pages, and five sector cards with images for offices, residences, hospitality and retail, government and industrial sites."
+      ]
+    },
+    {
+      "title": "Proof before the pitch",
+      "paragraphs": [
+        "A stats bar under the hero shows 10+ years, 2,000+ clients, 200+ professionals and 6+ markets. \"The Technip Hughes Advantage\" sets out five principles, followed by quality and safety standards, a portfolio and a client section."
+      ]
+    },
+    {
+      "title": "Easy, low-risk enquiries",
+      "paragraphs": [
+        "A top bar shows office hours with call and WhatsApp links. \"Get an Estimate\" stays in the header, \"Request a Proposal\" opens a prefilled WhatsApp message, and a four-step approach explains that a site assessment comes before any commitment."
+      ]
+    },
+    {
+      "title": "Speed, accessibility and SEO",
+      "paragraphs": [
+        "Built with Astro, the site ships very little JavaScript, so pages load fast on mobile. Images are WebP, there is a skip-to-content link, one H1 with clear H2 and H3 headings, descriptive link text and a six-question FAQ."
+      ]
+    },
+    {
+      "title": "How the homepage guides a buyer",
+      "paragraphs": [
+        "We ordered the homepage like a sales conversation, so each section answers the next question a buyer has. Because every section ends close to a call or WhatsApp button, a buyer can act the moment they feel ready.",
+        "Hero with H1 and two CTAs: Is this an FM company in Qatar, and how do I contact them?",
+        "Stats bar: Are they big and experienced enough?",
+        "About and six service cards: Can they handle everything my building needs?",
+        "Technip Hughes Advantage: Why choose them over other FM companies?",
+        "Sectors: Do they work with buildings like mine?",
+        "Four-step approach: What happens after I get in touch?",
+        "Quality, portfolio and clients: Can I trust their standards and track record?",
+        "Coverage and FAQ: Do they cover my area, and what will it cost?",
+        "Contact section: How do I request a proposal now?"
+      ]
+    }
+  ],
+  "deliverables": [
+    {
+      "title": "Premium visual design",
+      "description": "Builds confidence for a high-value contract."
+    },
+    {
+      "title": "Dropdown menu + 6 service cards",
+      "description": "Any service in one or two clicks."
+    },
+    {
+      "title": "5 sector cards",
+      "description": "Owners see their own building type."
+    },
+    {
+      "title": "Stats bar and Advantage section",
+      "description": "Quick proof of scale and experience."
+    },
+    {
+      "title": "Top bar, call and WhatsApp buttons",
+      "description": "Instant contact on any device."
+    },
+    {
+      "title": "Prefilled WhatsApp proposal request",
+      "description": "Fewer steps to start a conversation."
+    },
+    {
+      "title": "4-step approach section",
+      "description": "Clear, low-risk path to a proposal."
+    },
+    {
+      "title": "Astro build with WebP images",
+      "description": "Fast loading on mobile data."
+    },
+    {
+      "title": "FAQ, headings and meta setup",
+      "description": "Ready to rank for FM searches in Qatar."
+    }
+  ],
+  "whyMattersHeading": "Why design matters for facility management in Qatar",
+  "whyMattersParagraphs": [
+    "An FM company is trusted with a building's safety, comfort and running costs. Buyers judge that trust first by the website. A dated or confusing site quietly removes a provider from the shortlist.",
+    "With a premium look, clear services, real proof and easy enquiries, Technip Hughes now has a website that works like its best account manager. That is what a strong web design company in Qatar should deliver.",
+    "Next for the website: move from the Vercel preview address to the final company domain, add descriptive alt text to all photos, create a dedicated page for each sector, and add an Arabic version for Arabic-speaking decision makers."
+  ],
+  "whyMattersCalloutHtml": "<p><strong>A premium look, clear services, real proof and easy enquiries win the FM shortlist.</strong></p><p class=\"mt-3\">See our <a href=\"/case-studies/dawar-qatar-industrial-website-design/\" class=\"text-primary font-semibold underline\">Dawar Qatar website design case study</a>, our <a href=\"/web-design-company-for-gcc-businesses/\" class=\"text-primary font-semibold underline\">web design for GCC businesses</a> and <a href=\"/case-study/\" class=\"text-primary font-semibold underline\">all case studies</a>.</p>",
+  "faqs": [
+    {
+      "question": "What should a facility management website include?",
+      "answer": "Clear service pages, sectors served, proof such as years, clients and team size, safety standards, a portfolio, FAQs and easy contact by phone, WhatsApp and form."
+    },
+    {
+      "question": "Why use Astro for a company website?",
+      "answer": "Astro sends very little JavaScript to the browser, so pages load fast. Speed helps both user experience and Google rankings, especially on mobile."
+    },
+    {
+      "question": "Why add a prefilled WhatsApp message to a website?",
+      "answer": "It saves the visitor from typing and starts the conversation instantly. In Qatar, many buyers prefer WhatsApp for first contact."
+    },
+    {
+      "question": "Can Teknoppy build bilingual English and Arabic websites?",
+      "answer": "Yes. Teknoppy builds multilingual websites and can add an Arabic version with right-to-left layout."
+    },
+    {
+      "question": "How long does a corporate website project take?",
+      "answer": "It depends on pages, content and integrations. Teknoppy gives a written timeline and fixed quote after a free consultation."
+    },
+    {
+      "question": "Does Teknoppy design websites for businesses in Qatar?",
+      "answer": "Yes. Teknoppy is a web design and SEO company in Kochi, Kerala, building websites for clients in Qatar, the UAE and across the GCC."
+    }
+  ],
+  "authorName": "the Teknoppy Web Design Team",
+  "authorRole": "Kochi, Kerala · Published 26 November 2026",
+  "ctaHeadline": "Need a website that wins proposals from building owners?"
+}

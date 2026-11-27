@@ -103,75 +103,8 @@ const {
     // This inline script runs right after the <video> markup, so the element already exists.
     initHeroVideo();
 
-    // 2. Hide floating CTA, WhatsApp FAB & bottom action bar while video hero is in view so the video remains completely unobstructed
-    function initFloatingObserver() {
-      var hero = document.getElementById("homepage-video-hero");
-      var floatingCta = document.getElementById("global-floating-cta-wrap");
-      var whatsappFab = document.querySelector(".whatsapp-fab");
-      var bottomBar = document.querySelector(".fixed-bottom-bar");
-
-      if (!hero) return;
-
-      var setVisible = function (show) {
-        if (floatingCta) {
-          floatingCta.style.transition = "opacity 0.35s ease, transform 0.35s ease, visibility 0.35s";
-          floatingCta.style.opacity = show ? "1" : "0";
-          floatingCta.style.transform = show ? "translateY(0)" : "translateY(24px)";
-          floatingCta.style.pointerEvents = show ? "auto" : "none";
-          floatingCta.style.visibility = show ? "visible" : "hidden";
-        }
-        if (whatsappFab) {
-          whatsappFab.style.transition = "opacity 0.35s ease, transform 0.35s ease, visibility 0.35s";
-          whatsappFab.style.opacity = show ? "1" : "0";
-          whatsappFab.style.transform = show ? "translateY(0)" : "translateY(24px)";
-          whatsappFab.style.pointerEvents = show ? "auto" : "none";
-          whatsappFab.style.visibility = show ? "visible" : "hidden";
-        }
-        if (bottomBar) {
-          bottomBar.style.transition = "opacity 0.35s ease, transform 0.35s ease, visibility 0.35s";
-          bottomBar.style.opacity = show ? "1" : "0";
-          bottomBar.style.transform = show ? "translateY(0)" : "translateY(100%)";
-          bottomBar.style.pointerEvents = show ? "auto" : "none";
-          bottomBar.style.visibility = show ? "visible" : "hidden";
-        }
-      };
-
-      // Initially hide on top of page
-      if (window.scrollY < 150) {
-        setVisible(false);
-      }
-
-      if ("IntersectionObserver" in window) {
-        var observer = new IntersectionObserver(
-          function (entries) {
-            entries.forEach(function (entry) {
-              if (entry.isIntersecting && entry.intersectionRatio > 0.15) {
-                setVisible(false);
-              } else {
-                setVisible(true);
-              }
-            });
-          },
-          { threshold: [0, 0.15, 0.5] }
-        );
-        observer.observe(hero);
-      } else {
-        window.addEventListener(
-          "scroll",
-          function () {
-            var rect = hero.getBoundingClientRect();
-            setVisible(rect.bottom <= 120);
-          },
-          { passive: true }
-        );
-      }
-    }
-
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", initFloatingObserver);
-    } else {
-      initFloatingObserver();
-    }
+    // The floating Let's Talk CTA, WhatsApp button and mobile contact bar stay visible from page load
+    // (they used to be hidden while this hero was on screen).
   })();
 </script>
 
@@ -193,15 +126,6 @@ const {
   @media (min-width: 1024px) {
     .homepage-video-hero {
       padding-top: 77px;
-    }
-  }
-
-  /* Phones: size the frame to the landscape video (16:9) so the whole picture shows,
-     no crop and no letterbox. Tablet/desktop heights (md: and up) are untouched. */
-  @media (max-width: 767px) {
-    .video-container {
-      height: auto;
-      aspect-ratio: 16 / 9;
     }
   }
 

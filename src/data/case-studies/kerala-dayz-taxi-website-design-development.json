@@ -1,0 +1,192 @@
+{
+  "metaTitle": "Kerala Dayz: Web Design & Development Case Study | Teknoppy",
+  "metaDescription": "How Teknoppy designed and built Kerala Dayz, a Kochi taxi and tour website on Astro, with a map booking form, fleet rates and WhatsApp booking.",
+  "canonicalURL": "https://www.teknoppy.com/case-studies/kerala-dayz-taxi-website-design-development/",
+  "heroImage": "/case-studies/keraladayz-web.webp",
+  "heroImageAlt": "Kerala Dayz homepage designed and developed by Teknoppy — taxi booking form",
+  "schemaType": "TechArticle",
+  "schemaAbout": {
+    "type": "TravelAgency",
+    "name": "Kerala Dayz",
+    "address": {
+      "locality": "Athani, Nedumbassery, Kochi",
+      "region": "Kerala",
+      "country": "IN"
+    }
+  },
+  "clientName": "Kerala Dayz",
+  "categoryTag": "Web Design & Development",
+  "tagBadge": "Taxi & Tours Website Case Study",
+  "title": "Kerala Dayz: A Taxi and Tour Website Built to Book in One Tap",
+  "storyLead": "How Teknoppy designed and developed a fast Astro website for a Kochi taxi operator, with a map-based booking form, fleet rates and WhatsApp booking for airport, outstation and tour trips.",
+  "industry": "Taxi & tours",
+  "location": "Athani, near Cochin International Airport, Nedumbassery, Kochi, Kerala",
+  "services": "UX and UI design, Astro development, booking form and map picker, content structure, on-page SEO",
+  "platform": "Astro framework with view transitions",
+  "liveWebsite": "keraladayz.com",
+  "liveWebsiteUrl": "https://keraladayz.com/",
+  "heroHighlights": [
+    "Booking Form in the Hero",
+    "Map Location Picker",
+    "Fleet Rates + WhatsApp Booking",
+    "Fast Astro Build"
+  ],
+  "atAGlance": [
+    "Teknoppy designed and developed keraladayz.com, the website of Kerala Dayz, a chauffeur-driven taxi and tour operator in Athani near Cochin International Airport, running since 2008",
+    "Built with the Astro framework, the site has a booking form with a map-based location picker",
+    "Fleet cards show rates and WhatsApp links, alongside service and destination pages, tour packages, reviews and a 24/7 contact flow",
+    "Kerala Dayz' own published figures: 4.9/5 from 1,359 Google reviews, 10,000+ travellers served, 50+ verified drivers, in business since 2008"
+  ],
+  "aboutHeading": "About Kerala Dayz",
+  "aboutParagraphs": [
+    "Travellers landing at Cochin airport, families planning a Munnar trip and pilgrims heading to Sabarimala all want the same thing: a safe, fairly priced taxi booked in minutes. Kerala Dayz needed a website that proves it is trustworthy and makes booking almost effortless on a phone.",
+    "Kerala Dayz was founded in 2008 by Antony Liston, an approved Incredible India Tourist Facilitator. It runs airport taxi, outstation and one-way trips, pilgrim taxi, corporate and wedding taxi, car rental with driver and tour packages.",
+    "Its fleet includes sedans, family SUVs, Innova Crysta, Tempo Traveller, a luxury coach and a 35-seater AC bus, covering Kochi, Munnar, Alleppey, Thekkady, Wayanad, Kumarakom, Varkala, Kovalam and more, plus Tamil Nadu and Karnataka."
+  ],
+  "challengeLead": "Three problems shaped the design brief.",
+  "challenges": [
+    {
+      "number": 1,
+      "title": "Booking a taxi must take seconds",
+      "description": "Many visitors are standing at an airport or planning on the move. Long forms or unclear pickup points send them to an app or a rival operator."
+    },
+    {
+      "number": 2,
+      "title": "Price and safety worries",
+      "description": "Tourists fear hidden charges and unknown drivers. The site had to show fixed fares, driver vetting and real credentials before asking for a booking."
+    },
+    {
+      "number": 3,
+      "title": "A wide range of trips and vehicles",
+      "description": "Airport drops, multi-day tours, pilgrim routes, weddings and 35-seater buses all need to be easy to find without making the site feel cluttered."
+    }
+  ],
+  "objectiveLead": "The goal was a taxi website built for speed, trust and one-tap booking.",
+  "objectives": [
+    "Fast booking: let guests book with a few taps, even on slow mobile data",
+    "Clear prices: show fleet rates and what is included before the booking",
+    "Proof of trust: put ratings, credentials and driver vetting up front",
+    "Easy discovery: organise services, fleet, destinations and packages so every trip has a page"
+  ],
+  "approachLead": "How Teknoppy ran the project, designed the site and developed it.",
+  "approachPillars": [
+    {
+      "title": "Our process",
+      "paragraphs": [
+        "1. Discovery: Mapped traveller types, trip types, fleet and booking steps with the Kerala Dayz team",
+        "2. Sitemap: Planned service, fleet, destination, route and package pages with a mega menu",
+        "3. UI/UX design: Designed a green, card-based layout with the booking form in the hero",
+        "4. Development: Built the site in Astro with the booking form, map picker and carousels",
+        "5. Content: Added fleet rates, credentials, packages, FAQs and blog posts",
+        "6. Testing and launch: Tested forms, map picker, WhatsApp links and mobile layouts"
+      ]
+    },
+    {
+      "title": "Booking in the hero",
+      "paragraphs": [
+        "The hero pairs a headline and vehicle photo with a quick booking form, so guests can start booking the moment the page loads. \"Book a Taxi\" also stays in the header."
+      ]
+    },
+    {
+      "title": "Trust before the ask",
+      "paragraphs": [
+        "An accreditation strip shows Tripadvisor, Ministry of Tourism, KRT and Google rating badges right under the hero, followed by six feature points on verified drivers, fixed pricing and 24/7 support."
+      ]
+    },
+    {
+      "title": "Fleet cards that sell",
+      "paragraphs": [
+        "Six fleet cards show each vehicle with its rate details and a WhatsApp booking link, so guests can compare and book the right car in one step."
+      ]
+    },
+    {
+      "title": "Every trip has a place",
+      "paragraphs": [
+        "Service cards, seven destination cards, three tour packages, a four-step \"How Booking Works\" section and an internal link directory for cities and routes help guests find exactly what they need."
+      ]
+    },
+    {
+      "title": "Design decisions that mattered most",
+      "paragraphs": [
+        "Booking form inside the hero: Visitors ready to book never have to scroll or search",
+        "Map picker for pickup points: Exact locations mean fewer calls and missed pickups",
+        "Rates shown on every fleet card: Clear prices remove the fear of hidden charges",
+        "Credentials right under the hero: Trust is built before the booking is asked for",
+        "WhatsApp as the confirmation step: Most Kerala travellers already use it every day"
+      ]
+    },
+    {
+      "title": "How Teknoppy developed the website",
+      "paragraphs": [
+        "We chose the Astro framework because it sends very little JavaScript to the browser. Pages load fast on mobile data, which matters for travellers checking the site at an airport or on the road.",
+        "Booking form: Name, pickup and drop, dates, passengers and vehicle type, with required-field validation",
+        "Map location picker: Modal map with search and popular-location shortcuts for exact pickup points",
+        "WhatsApp booking: Prefilled WhatsApp messages from the form and every fleet card",
+        "Page transitions: Astro view transitions for smooth movement between pages",
+        "Media: Review carousel, photo gallery and embedded videos",
+        "SEO setup: Keyword-led title and meta, canonical tag, Open Graph and Twitter cards, internal link directory"
+      ]
+    }
+  ],
+  "deliverables": [
+    {
+      "title": "Hero booking form + map picker",
+      "description": "Book with an exact pickup point in seconds."
+    },
+    {
+      "title": "Fleet cards with rates",
+      "description": "Compare cars and prices before booking."
+    },
+    {
+      "title": "Accreditation strip and reviews",
+      "description": "Trust before the first message."
+    },
+    {
+      "title": "Prefilled WhatsApp links",
+      "description": "Confirm bookings without typing."
+    },
+    {
+      "title": "Fast Astro build",
+      "description": "Quick loading on mobile data."
+    },
+    {
+      "title": "City, route and service links",
+      "description": "Every trip type has its own page."
+    }
+  ],
+  "whyMattersHeading": "How success is measured",
+  "whyMattersParagraphs": [
+    "We judge the site by bookings, not just visits. The numbers tracked each month are booking form submissions, WhatsApp chats, calls to the 24/7 line, mobile page speed, and which services and routes bring the most bookings.",
+    "Next for the website: match passenger numbers on fleet cards and the booking form, remove repeated reviews and the duplicate rate note, use one name for each vehicle model across the site, and add online payment for advance booking."
+  ],
+  "whyMattersCalloutHtml": "<p><strong>Key takeaways: put the booking form where the visitor lands, show the price and the proof before the ask, let WhatsApp do the confirming, and build on a fast framework.</strong></p><p class=\"mt-3\">Read next: <a href=\"/case-studies/olives-boutique-resort-website-design-development/\" class=\"text-primary font-semibold underline\">a resort website designed and developed for Wayanad</a>. See also the <a href=\"/case-studies/kerala-dayz-seo-services/\" class=\"text-primary font-semibold underline\">Kerala Dayz SEO case study</a>, our <a href=\"/seo-services/\" class=\"text-primary font-semibold underline\">SEO services</a> and <a href=\"/case-study/\" class=\"text-primary font-semibold underline\">all case studies</a>.</p>",
+  "faqs": [
+    {
+      "question": "What should a taxi service website include?",
+      "answer": "A quick booking form, fleet with prices, services and routes, reviews, credentials, a clear contact line and WhatsApp booking."
+    },
+    {
+      "question": "Why add a map location picker to a booking form?",
+      "answer": "It lets guests set an exact pickup point, which reduces calls and missed pickups, especially for hotels and homes."
+    },
+    {
+      "question": "Why build a travel website with Astro?",
+      "answer": "Astro sends very little JavaScript, so pages load fast. Speed keeps mobile visitors on the page and helps rankings."
+    },
+    {
+      "question": "Can bookings be confirmed on WhatsApp?",
+      "answer": "Yes. The booking form and fleet cards open WhatsApp with the trip details filled in, so confirmation takes one tap."
+    },
+    {
+      "question": "How long does a travel website project take?",
+      "answer": "It depends on pages, booking features and content. Teknoppy gives a written timeline and fixed quote after a free consultation."
+    },
+    {
+      "question": "Does Teknoppy build websites for travel and taxi businesses?",
+      "answer": "Yes. Teknoppy is a web design and development company in Kochi, Kerala, building websites for taxi operators, tour companies, resorts and businesses across Kerala and the GCC."
+    }
+  ],
+  "authorName": "the Teknoppy Web Design Team",
+  "authorRole": "Kochi, Kerala · Published 26 November 2026",
+  "ctaHeadline": "Want a travel website that turns visitors into passengers?"
+}

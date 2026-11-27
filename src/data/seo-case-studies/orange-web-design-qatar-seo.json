@@ -1,0 +1,130 @@
+{
+  "title": "Orange Qatar: Web Agency SEO Case Study | Teknoppy",
+  "description": "How Teknoppy took Orange Web Design Qatar to #1 on Google for web design studio Doha and to page one for five web design keywords in Qatar.",
+  "canonical": "https://www.teknoppy.com/case-studies/orange-web-design-qatar-seo/",
+  "ogImage": "https://www.teknoppy.com/case-studies/orangeqatar-seo.webp",
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://www.teknoppy.com/case-studies/orange-web-design-qatar-seo/#article",
+          "headline": "Orange Qatar: SEO for a Web Design and Hosting Agency in Doha",
+          "description": "How Teknoppy took Orange Web Design Qatar to #1 on Google for web design studio Doha and to page one for five web design keywords in Qatar.",
+          "image": "https://www.teknoppy.com/case-studies/orangeqatar-seo.webp",
+          "mainEntityOfPage": "https://www.teknoppy.com/case-studies/orange-web-design-qatar-seo/",
+          "datePublished": "2026-11-26",
+          "dateModified": "2026-11-26",
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Search engine optimization"
+            },
+            {
+              "@type": "Organization",
+              "name": "Orange Web Design Qatar",
+              "url": "https://orangeqatar.com/",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Doha",
+                "addressCountry": "QA"
+              }
+            }
+          ],
+          "author": {
+            "@type": "Organization",
+            "name": "Teknoppy SEO Team",
+            "url": "https://www.teknoppy.com/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Teknoppy",
+            "url": "https://www.teknoppy.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.teknoppy.com/logo.svg"
+            }
+          },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.teknoppy.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Case Studies",
+              "item": "https://www.teknoppy.com/case-study/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Orange Web Design Qatar",
+              "item": "https://www.teknoppy.com/case-studies/orange-web-design-qatar-seo/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Which keywords does Orange Web Design Qatar rank for?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Orange ranks #1 on Google for \"web design studio Doha\", #3 for \"web development agency Qatar\" and \"website builders in Qatar\", and #5 for \"web design consultancy Qatar\" and \"website designers near me Doha\"."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does SEO take in a competitive market like Qatar?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Service and long-tail searches often move in 3 to 6 months. Head terms like \"web design company in Qatar\" take longer and need steady work."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Should each hosting and domain service have its own page?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. People search for each service differently, so focused pages rank better than one general services page."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do testimonials and client logos help SEO?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "They help trust and conversions, and real proof of experience supports how Google judges a business."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does an Arabic version help SEO in Qatar?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Many searches in Qatar are in Arabic. A proper Arabic version with hreflang can reach those buyers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Teknoppy offer SEO services in Qatar?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Teknoppy is an SEO and web design company in Kochi, Kerala, running SEO for businesses in Qatar, the UAE and across the GCC."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

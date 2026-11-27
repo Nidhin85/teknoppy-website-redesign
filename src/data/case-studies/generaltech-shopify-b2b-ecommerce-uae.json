@@ -1,0 +1,181 @@
+{
+  "metaTitle": "GeneralTech UAE: Shopify B2B Ecommerce Case Study | Teknoppy",
+  "metaDescription": "See how Teknoppy built GeneralTech's Shopify B2B store in the UAE: 80+ industrial brands, quote-based pricing, trade accounts and SEO-ready collections.",
+  "canonicalURL": "https://www.teknoppy.com/case-studies/generaltech-shopify-b2b-ecommerce-uae/",
+  "heroImage": "/case-studies/generaltechshop-shopify.webp",
+  "heroImageAlt": "generaltechshop.ae Shopify B2B homepage designed by Teknoppy",
+  "schemaType": "TechArticle",
+  "schemaAbout": {
+    "type": "Organization",
+    "name": "General Tech Services LLC",
+    "address": {
+      "locality": "",
+      "region": "",
+      "country": "AE"
+    }
+  },
+  "clientName": "GeneralTech UAE",
+  "categoryTag": "Shopify B2B Ecommerce",
+  "tagBadge": "UAE Industrial Supply Case Study",
+  "title": "GeneralTech UAE: A Shopify B2B Store Built for Engineers Who Buy on Specs",
+  "storyLead": "How Teknoppy turned a 25-year industrial supplier's catalogue of 80+ global brands into a quote-ready, SEO-structured Shopify store at generaltechshop.ae.",
+  "industry": "Industrial tools, measuring instruments, automation and calibration",
+  "location": "United Arab Emirates (UAE and GCC trade buyers)",
+  "services": "Shopify design and development, B2B buying flow, on-page SEO",
+  "platform": "Shopify, set up for B2B quote-based buying",
+  "liveWebsite": "generaltechshop.ae",
+  "liveWebsiteUrl": "https://www.generaltechshop.ae/",
+  "heroHighlights": [
+    "4 Catalogue Pillars · 80+ Brands",
+    "Get a Quote & Contact for Price",
+    "VAT & Trade Licence Verification",
+    "SEO in Every Collection"
+  ],
+  "atAGlance": [
+    "Teknoppy built generaltechshop.ae, a Shopify B2B ecommerce store for General Tech Services LLC, a UAE industrial supplier founded in 1998",
+    "The store organises 80+ brands such as Mitutoyo and Omron into searchable collections",
+    "\"Get a Quote\" replaces retail checkout, and trade buyers are verified by VAT certificate and trade licence",
+    "SEO is built into every collection page",
+    "GeneralTech's own published company stats: 25+ years in UAE industry, 80+ global brands listed, 1500+ clients across the GCC and 4 service lines online"
+  ],
+  "aboutHeading": "About GeneralTech",
+  "aboutParagraphs": [
+    "General Tech Services LLC has supplied UAE industry with precision measuring instruments, automation parts and calibration services since 1998. Its buyers are QA managers, maintenance engineers and procurement teams who search by part number, brand and specification. Teknoppy built generaltechshop.ae as a Shopify B2B ecommerce store that lets those buyers find the exact instrument, verify they are buying genuine stock from an authorised Mitutoyo distributor in the UAE, and request a trade quote in a few clicks.",
+    "Founded by an engineer with more than three decades in testing and calibration, GeneralTech grew from a calibration lab into a full industrial supplier. Today it represents brands such as Mitutoyo, Control Techniques, Omron, Milwaukee, Wika, Vaisala, Hioki and Mahr, across four catalogue pillars: automation and control, measurement and testing instruments, hand tools and industrial power tools. Alongside products, it runs an EIAC-accredited ISO 17025 calibration lab in the UAE, CMM inspection, PRV testing and VFD repair.",
+    "Most of that business used to run on phone calls, emails and printed catalogues. The goal was not to replace the sales team, but to give every enquiry a cleaner starting point."
+  ],
+  "challengeLead": "Three problems shaped the build.",
+  "challenges": [
+    {
+      "number": 1,
+      "title": "A catalogue too deep for a standard store",
+      "description": "Thousands of SKUs span micrometers, gauge blocks, PLCs, pressure transmitters, VFD drives and air impact wrenches. A flat Shopify menu would bury them. Engineers needed to drill down by category, sub-category and brand without losing their place."
+    },
+    {
+      "number": 2,
+      "title": "B2B buying does not fit a 'Buy Now' button",
+      "description": "Industrial prices depend on volume, project and account terms, and UAE trade buyers must provide a VAT certificate and trade licence. Public retail pricing and instant checkout would have created wrong expectations and lost margin."
+    },
+    {
+      "number": 3,
+      "title": "Trust and search visibility",
+      "description": "Counterfeit instruments are a real concern in the region. Buyers wanted proof of authorised distribution, while Google needed clear signals to rank GeneralTech for high-intent searches such as buy Mitutoyo calipers in Dubai, VFD drive supplier UAE and calibration services in Dubai."
+    }
+  ],
+  "objectiveLead": "Build a fast, mobile-friendly Shopify store for an industrial supplier that organises 80+ brands into searchable collections, converts visits into qualified quote requests from verified trade accounts, and creates an SEO foundation that ranks for product, brand and service keywords across the UAE and GCC.",
+  "objectives": [
+    "Organise 80+ brands into searchable collections",
+    "Convert visits into qualified quote requests from verified trade accounts",
+    "Create an SEO foundation for product, brand and service keywords across the UAE and GCC"
+  ],
+  "approachLead": "Four pillars, plus the tools and methods behind the build.",
+  "approachPillars": [
+    {
+      "title": "Information architecture for engineers",
+      "paragraphs": [
+        "We mapped the catalogue into four top-level pillars with a full mega menu, twelve featured category tiles on the homepage and dedicated brand collections. Search, filters and a product compare tool help buyers shortlist by specification rather than scrolling."
+      ]
+    },
+    {
+      "title": "Quote-first B2B commerce on Shopify",
+      "paragraphs": [
+        "Product cards show 'Contact for Price' and 'Get a Quote' instead of retail checkout. New accounts upload a VAT certificate and trade licence before ordering, so the sales team receives enquiries from verified businesses. WhatsApp support and a sticky 'Talk to Us' bar keep a human one tap away on mobile."
+      ]
+    },
+    {
+      "title": "Trust architecture",
+      "paragraphs": [
+        "We put authorisation front and centre: a 'Top Picks from Trusted Brands' section, partner logo strips, USP tiles for genuine products, pre-dispatch testing and certified technical support, plus customer testimonials and company stats on the homepage."
+      ]
+    },
+    {
+      "title": "SEO built in from day one",
+      "paragraphs": [
+        "Every collection received a keyword-led H1, unique Shopify SEO meta titles and descriptions, clean hyphenated URLs and internal links between products, brands and services. Service pages for calibration, CMM, PRV and VFD repair capture enquiry searches, and a blog supports informational queries."
+      ]
+    },
+    {
+      "title": "Tools and methods",
+      "paragraphs": [
+        "Platform: Shopify with a custom B2B theme, collections and tags for brands and categories.",
+        "Buying flow: quote requests, account-based pricing and document upload for VAT and trade licence.",
+        "SEO: keyword mapping per collection, meta data, breadcrumbs and FAQs.",
+        "Quality checks: Google PageSpeed Insights and Core Web Vitals, mobile testing, Google Search Console indexing checks.",
+        "Tracking: Google Analytics 4 events for quote clicks, WhatsApp taps and contact form submissions."
+      ]
+    }
+  ],
+  "deliverables": [
+    {
+      "title": "Custom Shopify B2B theme",
+      "description": "Industrial look, fast loading and easy browsing on site and on mobile."
+    },
+    {
+      "title": "Mega menu + 12 category tiles",
+      "description": "Two clicks from homepage to the right instrument family."
+    },
+    {
+      "title": "80+ brand collections",
+      "description": "Brand-first shoppers land straight on Mitutoyo, Omron or Milwaukee ranges."
+    },
+    {
+      "title": "Get a Quote + Contact for Price",
+      "description": "Accurate trade pricing without retail checkout friction."
+    },
+    {
+      "title": "VAT and trade licence verification",
+      "description": "Only verified UAE businesses reach checkout."
+    },
+    {
+      "title": "Product compare + smart search",
+      "description": "Faster spec-to-spec shortlisting for engineers."
+    },
+    {
+      "title": "Service landing pages",
+      "description": "Calibration, CMM, PRV testing and VFD repair enquiries online."
+    },
+    {
+      "title": "WhatsApp + sticky call bar",
+      "description": "Instant help for site teams on mobile."
+    },
+    {
+      "title": "On-page SEO framework",
+      "description": "Meta data, headings, clean URLs and image alt text."
+    }
+  ],
+  "whyMattersHeading": "Why quote-ready Shopify wins industrial B2B",
+  "whyMattersParagraphs": [
+    "Industrial buyers rarely purchase on the first visit. They compare specifications, check that the seller is authorised, and often need sign-off before raising a PO. A store that rushes them to checkout loses them. A store that answers 'Is this genuine? Is it in stock? Who can I talk to?' earns the enquiry.",
+    "By pairing Shopify's speed and reliability with a quote-first flow, verified accounts and an SEO-structured catalogue, GeneralTech now has a B2B ecommerce website in the UAE that works for its sales team instead of around it: fewer vague enquiries, better-qualified leads, and a site that keeps earning search visibility for every brand it represents."
+  ],
+  "whyMattersCalloutHtml": "<p><strong>A store that answers \"Is this genuine? Is it in stock? Who can I talk to?\" earns the enquiry.</strong></p><p class=\"mt-3\">Explore our <a href=\"/shopify-development-company-kochi/\" class=\"text-primary font-semibold underline\">Shopify development services</a>, <a href=\"/seo-services/\" class=\"text-primary font-semibold underline\">SEO services</a>, <a href=\"/web-design-company-uae/\" class=\"text-primary font-semibold underline\">web design in the UAE</a> and <a href=\"/web-design-company-for-gcc-businesses/\" class=\"text-primary font-semibold underline\">web design for GCC businesses</a>, or browse <a href=\"/case-study/\" class=\"text-primary font-semibold underline\">all case studies</a> and <a href=\"/contact-us/\" class=\"text-primary font-semibold underline\">book a free consultation</a>.</p>",
+  "faqs": [
+    {
+      "question": "Can Shopify handle B2B ecommerce for industrial suppliers?",
+      "answer": "Yes. With quote requests, hidden or account-based pricing, trade account verification and deep collections, Shopify works well for B2B catalogues with thousands of SKUs, as generaltechshop.ae shows."
+    },
+    {
+      "question": "How do you structure SEO for a store with 80+ brands?",
+      "answer": "We give each category and brand its own collection with a unique H1, meta title, meta description and clean URL, then link products, brands and service pages so search engines understand the full catalogue."
+    },
+    {
+      "question": "Can customers request a quote instead of paying online?",
+      "answer": "Yes. 'Get a Quote' and 'Contact for Price' replace instant checkout, and enquiries route to the sales team with the product details already attached."
+    },
+    {
+      "question": "Is Shopify good for a store with thousands of industrial products?",
+      "answer": "Yes. Shopify handles large catalogues well when products are grouped into clear collections with tags, filters and search, and when each collection page is written for the keywords buyers actually use."
+    },
+    {
+      "question": "How long does a Shopify B2B store project take?",
+      "answer": "It depends on catalogue size and integrations. Teknoppy shares a written timeline and quote after a free discovery call, so the client knows the scope before work starts."
+    },
+    {
+      "question": "Does Teknoppy build Shopify stores for UAE and GCC businesses?",
+      "answer": "Yes. Teknoppy is a Shopify development company based in Kochi, Kerala, building and optimising stores for clients in the UAE, Qatar and across the GCC."
+    }
+  ],
+  "authorName": "the Teknoppy Shopify & SEO Team",
+  "authorRole": "Kochi, Kerala · Published 26 November 2026",
+  "ctaHeadline": "Need a Shopify B2B store that turns engineers into qualified enquiries?"
+}

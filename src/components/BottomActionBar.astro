@@ -92,6 +92,13 @@ import site from '../data/site.json';
     }
   }
 
+  /* Tablet: the bar grows to ~61px (md: padding + text), so reserve a little more room */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    :global(body.has-bottom-bar), :global(.is-kochi-page) {
+      padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px)) !important;
+    }
+  }
+
   @media (max-width: 767px) {
     :global(body.has-bottom-bar .global-floating-cta-wrap), :global(.is-kochi-page .global-floating-cta-wrap) {
       bottom: calc(4.75rem + env(safe-area-inset-bottom, 0px)) !important;

@@ -1148,6 +1148,19 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
   .wdk-page > .home-video-band { padding-top: calc(67px + clamp(1rem, 3vw, 2.5rem)); }
   @media (min-width: 640px) { .wdk-page > .home-video-band { padding-top: calc(73px + clamp(1rem, 3vw, 2.5rem)); } }
   @media (min-width: 1024px) { .wdk-page > .home-video-band { padding-top: calc(77px + clamp(1rem, 3vw, 2.5rem)); } }
+  /* Phones only: present the video exactly as the homepage does (full width under the header,
+     58svh / 65svh tall, no band or frame). Undoes the framed 16:9 styling from design-system.css
+     below 768px; tablet and desktop keep the framed version. */
+  @media (max-width: 767px) {
+    .wdk-page > .home-video-band { padding: 0 !important; background: none; }
+    .wdk-page .home-video-frame { max-width: none; border: 0; border-radius: 0; box-shadow: none; }
+    .wdk-page .home-video-frame :global(.homepage-video-hero) { padding-top: 67px !important; }
+    .wdk-page .home-video-frame :global(.video-container) { height: 58svh !important; aspect-ratio: auto; }
+  }
+  @media (min-width: 640px) and (max-width: 767px) {
+    .wdk-page .home-video-frame :global(.homepage-video-hero) { padding-top: 73px !important; }
+    .wdk-page .home-video-frame :global(.video-container) { height: 65svh !important; }
+  }
   .wdk-hero-glow {
     position: absolute; right: -6%; top: 6%; width: 60%; height: 88%;
     background: radial-gradient(closest-side, rgba(255, 98, 30, 0.42), rgba(255, 98, 30, 0.12) 55%, transparent 100%);

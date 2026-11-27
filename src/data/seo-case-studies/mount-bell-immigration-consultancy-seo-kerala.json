@@ -1,0 +1,130 @@
+{
+  "title": "Mount Bell Kerala: Immigration SEO Case Study | Teknoppy",
+  "description": "How Teknoppy runs SEO for Mount Bell, a licensed immigration consultancy in Kochi, with district pages, PR calculators, FAQs and trust content.",
+  "canonical": "https://www.teknoppy.com/case-studies/mount-bell-immigration-consultancy-seo-kerala/",
+  "ogImage": "https://www.teknoppy.com/case-studies/mountbell-seo.webp",
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://www.teknoppy.com/case-studies/mount-bell-immigration-consultancy-seo-kerala/#article",
+          "headline": "Mount Bell: Trust-First SEO for an Immigration Consultancy in Kerala",
+          "description": "How Teknoppy runs SEO for Mount Bell, a licensed immigration consultancy in Kochi, with district pages, PR calculators, FAQs and trust content.",
+          "image": "https://www.teknoppy.com/case-studies/mountbell-seo.webp",
+          "mainEntityOfPage": "https://www.teknoppy.com/case-studies/mount-bell-immigration-consultancy-seo-kerala/",
+          "datePublished": "2026-11-26",
+          "dateModified": "2026-11-26",
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Search engine optimization"
+            },
+            {
+              "@type": "Organization",
+              "name": "Mount Bell Global Studies",
+              "url": "https://mountbell.com/",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Kochi",
+                "addressCountry": "IN"
+              }
+            }
+          ],
+          "author": {
+            "@type": "Organization",
+            "name": "Teknoppy SEO Team",
+            "url": "https://www.teknoppy.com/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Teknoppy",
+            "url": "https://www.teknoppy.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.teknoppy.com/logo.svg"
+            }
+          },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.teknoppy.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Case Studies",
+              "item": "https://www.teknoppy.com/case-study/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Mount Bell",
+              "item": "https://www.teknoppy.com/case-studies/mount-bell-immigration-consultancy-seo-kerala/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Why is trust so important for immigration SEO?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Google treats immigration as high-stakes advice. Sites that show licences, real people, clear fees and honest disclaimers are more likely to rank."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do district pages help a consultancy rank across Kerala?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, when each page is useful and specific. They help Google show the firm to people searching in districts without an office."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do free calculators help SEO?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Points and eligibility calculators answer a common question, bring repeat visitors and earn natural links."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does SEO take for an immigration consultant?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most see first ranking movement in 3 to 6 months. Country and test searches with less competition usually move first."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Should a consultancy write blog posts about visa rule changes?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Timely updates answer urgent questions, keep the site fresh and show expertise."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Teknoppy offer SEO for consultancies in Kerala?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Teknoppy is an SEO and web design company in Kochi, running SEO for consultancies, manufacturers and service businesses across Kerala and the GCC."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

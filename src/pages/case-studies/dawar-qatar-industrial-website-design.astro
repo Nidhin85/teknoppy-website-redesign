@@ -1,0 +1,8 @@
+---
+import CaseStudyTemplate, { type CaseStudyProps } from '../../components/case-study/CaseStudyTemplate.astro';
+import data from '../../data/case-studies/dawar-qatar-industrial-website-design.json';
+
+const props = data as CaseStudyProps;
+---
+
+<CaseStudyTemplate {...props} />

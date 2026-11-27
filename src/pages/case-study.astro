@@ -7,6 +7,20 @@ const metaTitle = "Case Studies | Website, SEO & Marketing Results | Teknoppy Ko
 const metaDescription = "Read Teknoppy case studies: real website, SEO, e-commerce and social media projects for clients in Kerala, the UAE and Qatar, with the problem, the work and the results.";
 const canonicalURL = "https://www.teknoppy.com/case-study/";
 
+// Hero showcase: genuine homepage screenshots of client websites, each paired with its client name.
+const heroShowcase = [
+  { name: "Roja Houseboats", img: "/case-studies/rojahouseboats-site.webp" },
+  { name: "GeneralTech", img: "/case-studies/generaltech.webp" },
+  { name: "Olives Boutique Resort", img: "/case-studies/olivesresort.webp" },
+  { name: "Kerala Dayz", img: "/case-studies/keraladayz-web.webp" },
+  { name: "Dawar Qatar", img: "/case-studies/dawarqatar-seo.webp" },
+  { name: "Technip Hughes", img: "/case-studies/technip-hughes-web.webp" },
+  { name: "Apolo Mattress", img: "/case-studies/apolomattress.webp" },
+  { name: "Lenaa", img: "/case-studies/lenaalife.webp" },
+  { name: "Mount Bell", img: "/case-studies/mountbell-seo.webp" },
+];
+const heroSlot = (i: number) => i === 0 ? 'mock-a' : i === 1 ? 'mock-c' : i === heroShowcase.length - 1 ? 'mock-b' : 'mock-h';
+
 // Schema.org Structured Data
 const jsonLd = {
   "@context": "https://schema.org",
@@ -86,13 +100,59 @@ const jsonLd = {
         </p>
         </div>
         <!-- Hero visual: stacked browser mockups of real case-study screenshots -->
-        <div class="hero-art fadeup" style="--d:3" aria-hidden="true">
-          <span class="hero-arc"></span>
-          <span class="hero-spark"><i></i><i></i><i></i></span>
-          <div class="mock mock-b"><div class="mbar"><i></i><i></i><i></i></div><img src="/case-studies/generaltech.webp" alt="" loading="eager" decoding="async" /></div>
-          <div class="mock mock-c"><div class="mbar"><i></i><i></i><i></i></div><img src="/case-studies/olivesresort.webp" alt="" loading="eager" decoding="async" /></div>
-          <div class="mock mock-a"><div class="mbar"><i></i><i></i><i></i></div><img src="/case-studies/roja-houseboats.webp" alt="" loading="eager" decoding="async" /><span class="mplay"></span></div>
+        <!-- Rotating showcase: centre = featured project, left/right = previous/next; cards slide between slots -->
+        <div class="hero-art hs fadeup" style="--d:3" id="heroShow" role="region" aria-roledescription="carousel" aria-label="Featured client projects">
+          <span class="hero-arc" aria-hidden="true"></span>
+          <span class="hero-spark" aria-hidden="true"><i></i><i></i><i></i></span>
+          {heroShowcase.map((p, i) => (
+            <figure class={`mock ${heroSlot(i)}`} data-i={i} aria-hidden={i === 0 ? 'false' : 'true'}>
+              <div class="mbar" aria-hidden="true"><i></i><i></i><i></i></div>
+              <img src={p.img} alt={`${p.name} website homepage`} width="1200" height="630" loading={i < 2 || i === heroShowcase.length - 1 ? 'eager' : 'lazy'} decoding="async" />
+              <figcaption class="hs-name"><span class="hs-dot" aria-hidden="true"></span>{p.name}</figcaption>
+            </figure>
+          ))}
+          <div class="hs-ctrl">
+            <button type="button" class="hs-btn" data-dir="-1" aria-label="Previous project">‹</button>
+            <span class="hs-dots" aria-hidden="true">{heroShowcase.map((_, i) => <i class={i === 0 ? 'on' : ''}></i>)}</span>
+            <button type="button" class="hs-btn" data-dir="1" aria-label="Next project">›</button>
+          </div>
+          <p class="hs-live" aria-live="polite">Featured project: {heroShowcase[0].name}</p>
         </div>
+        <script is:inline>
+          (function () {
+            var root = document.getElementById('heroShow'); if (!root) return;
+            var cards = [].slice.call(root.querySelectorAll('.mock')), dots = [].slice.call(root.querySelectorAll('.hs-dots i'));
+            var live = root.querySelector('.hs-live'), n = cards.length, cur = 0, timer = null, paused = false;
+            function show(k) {
+              cur = (k + n) % n;
+              cards.forEach(function (c, i) {
+                var d = (i - cur + n) % n;
+                c.classList.remove('mock-a', 'mock-b', 'mock-c', 'mock-h');
+                c.classList.add(d === 0 ? 'mock-a' : d === 1 ? 'mock-c' : d === n - 1 ? 'mock-b' : 'mock-h');
+                c.setAttribute('aria-hidden', d === 0 ? 'false' : 'true');
+              });
+              dots.forEach(function (dt, i) { dt.classList.toggle('on', i === cur); });
+              live.textContent = 'Featured project: ' + cards[cur].querySelector('.hs-name').textContent;
+            }
+            // Always auto-rotates (reduced-motion visitors get a short fade instead of the slide, via CSS).
+            function start() { stop(); if (!paused) timer = setInterval(function () { show(cur + 1); }, 3000); }
+            function stop() { if (timer) { clearInterval(timer); timer = null; } }
+            root.querySelectorAll('.hs-btn').forEach(function (b) {
+              b.addEventListener('click', function () { show(cur + (+b.dataset.dir)); start(); });
+            });
+            // clicking a side card brings it to the centre
+            cards.forEach(function (c, i) { c.addEventListener('click', function () { if (i !== cur) { show(i); start(); } }); });
+            // Hover-pause for a real mouse only. Touch taps fire mouseenter with no mouseleave,
+            // which used to leave the carousel paused for good after one tap on a phone.
+            root.addEventListener('pointerenter', function (e) { if (e.pointerType === 'mouse') { paused = true; stop(); } });
+            root.addEventListener('pointerleave', function (e) { if (e.pointerType === 'mouse') { paused = false; start(); } });
+            // Pause for keyboard focus only; a mouse click on an arrow must not leave the carousel paused.
+            root.addEventListener('focusin', function (e) { if (e.target.matches(':focus-visible')) { paused = true; stop(); } });
+            root.addEventListener('focusout', function () { if (!root.matches(':hover')) { paused = false; start(); } });
+            document.addEventListener('visibilitychange', function () { document.hidden ? stop() : start(); });
+            start();
+          })();
+        </script>
         <div class="proof fadeup" style="--d:5" aria-label="Case study highlights">
           <span><i class="pi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg></i><b><span class="cnt" data-to="12">12</span></b> verified case studies</span>
           <span><i class="pi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4M10 10h4M10 14h4M10 18h4"/></svg></i><b><span class="cnt" data-to="8">8</span></b> industries</span>
@@ -1599,6 +1659,44 @@ mark {
 .mock-a { left: 14%; top: 8%; width: 66%; height: 76%; }
 .mock-b { top: 22%; width: 32%; height: 54%; }
 .mock-c { top: 20%; width: 32%; height: 56%; }
+/* rotating showcase: cards glide between the three existing slots; extra cards wait hidden behind the centre */
+.hs .mock { margin: 0; cursor: pointer; transition: left .8s cubic-bezier(.22,.8,.24,1), top .8s cubic-bezier(.22,.8,.24,1), width .8s cubic-bezier(.22,.8,.24,1), height .8s cubic-bezier(.22,.8,.24,1), transform .8s cubic-bezier(.22,.8,.24,1), opacity .6s ease; }
+.hs .mock-a { cursor: default; }
+/* every client logo sits top-left in its screenshot: anchor the crop there so it is never cut off */
+.hs .mock img { object-position: left top; }
+.hs .mock-b { left: 0; right: auto; }
+.hs .mock-c { left: 68%; right: auto; }
+.hs .mock-h { left: 30%; top: 26%; width: 40%; height: 46%; z-index: 0; opacity: 0; transform: scale(.88); pointer-events: none; }
+.hs-name {
+  position: absolute; left: 10px; bottom: 10px; z-index: 2; max-width: calc(100% - 20px);
+  display: inline-flex; align-items: center; gap: 7px; padding: 6px 12px 6px 10px; border-radius: 999px;
+  background: rgba(255, 255, 255, .94); color: #1a1411; font-weight: 800; font-size: 14px; line-height: 1.2; letter-spacing: -.01em;
+  box-shadow: 0 8px 20px -10px rgba(120, 40, 10, .55); border: 1px solid rgba(240, 90, 44, .18);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; transition: font-size .6s, padding .6s;
+}
+.hs-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--orange); flex: none; }
+.hs .mock-b .hs-name, .hs .mock-c .hs-name { font-size: 11px; padding: 4px 9px 4px 7px; left: 7px; bottom: 7px; max-width: calc(100% - 14px); }
+.hs-ctrl { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); z-index: 5; display: flex; align-items: center; gap: 12px; }
+.hs-btn {
+  width: 38px; height: 38px; border-radius: 50%; border: 1px solid rgba(240, 90, 44, .25); background: #fff; color: var(--orange);
+  font-size: 22px; line-height: 1; display: grid; place-items: center; padding-bottom: 2px; cursor: pointer;
+  box-shadow: 0 10px 22px -12px rgba(120, 40, 10, .55); transition: background .2s, color .2s;
+}
+.hs-btn:hover, .hs-btn:focus-visible { background: var(--orange); color: #fff; outline: none; }
+.hs-dots { display: flex; gap: 6px; }
+.hs-dots i { width: 7px; height: 7px; border-radius: 99px; background: #f3d3c0; transition: width .3s, background .3s; }
+.hs-dots i.on { width: 20px; background: var(--orange); }
+.hs-live { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+@media (max-width: 640px) {
+  .hs-name { font-size: 12px; padding: 5px 10px 5px 8px; left: 7px; bottom: 7px; }
+  .hs .mock-b .hs-name, .hs .mock-c .hs-name { font-size: 9px; padding: 3px 6px; gap: 4px; }
+  .hs .mock-b .hs-dot, .hs .mock-c .hs-dot { display: none; }
+  .hs-btn { width: 34px; height: 34px; font-size: 20px; }
+  .hs-dots { gap: 4px; }
+  .hs-dots i { width: 6px; height: 6px; }
+  .hs-dots i.on { width: 14px; }
+}
+@media (prefers-reduced-motion: reduce) { .hs .mock { transition: opacity .2s; } }
 .hero .proof > span { padding: 16px 18px; border: 1px solid #f6e7dc; }
 .hero .proof b { font-size: 26px; }
 .hero .proof .fill { border: 0; background: none; padding: 0; color: var(--orange); }
@@ -2722,6 +2820,196 @@ mark {
       read: 7,
       img: '/case-studies/alqaisarmachinery.webp',
       href: '/case-studies/al-qaisar-machinery-website-design/'
+    },
+    /* SEO case studies added 26 Nov 2026 (source: Teknoppy SEO case study PDFs) */
+    {
+      t: 'SEO that puts an industrial supplier in Qatar in front of buyers',
+      client: 'Dawar Qatar',
+      ind: 'Industrial Supply',
+      loc: 'Doha, Qatar',
+      r: 'qatar',
+      s: ['seo', 'local'],
+      goal: ['rank'],
+      m: '12',
+      ml: 'product lines mapped to their own pages',
+      ch: 'Thousands of part-number searches and a crowded head keyword',
+      so: 'Four-layer keyword map, 8-question FAQ, buying guides and local SEO for Qatar industrial zones',
+      d: '2026-11',
+      read: 8,
+      img: '/case-studies/dawarqatar-seo.webp',
+      href: '/case-studies/dawar-qatar-industrial-seo/'
+    },
+    {
+      t: 'SEO for a stainless steel fabrication company built in Sharjah',
+      client: 'TKM Techs UAE',
+      ind: 'Industrial Fabrication',
+      loc: 'Sharjah, UAE',
+      r: 'uae',
+      s: ['seo', 'local'],
+      goal: ['rank'],
+      m: '7 + GCC',
+      ml: 'emirates and countries targeted',
+      ch: 'Technical buyers who need proof, across many products and countries',
+      so: 'Keyword map, E-E-A-T trust content, 8-question FAQ and service areas for all seven emirates and the GCC',
+      d: '2026-11',
+      read: 8,
+      img: '/case-studies/tkmtechs-seo.webp',
+      href: '/case-studies/tkm-techs-industrial-fabrication-seo-uae/'
+    },
+    {
+      t: '#1 on Google for "web design studio Doha" for a web design and hosting agency',
+      client: 'Orange Web Design Qatar',
+      ind: 'IT & Digital Services',
+      loc: 'Doha, Qatar',
+      r: 'qatar',
+      s: ['seo', 'local'],
+      goal: ['rank'],
+      m: '#1',
+      ml: 'Google, "web design studio Doha"',
+      ch: 'Some of the most contested web design and hosting searches in Qatar',
+      so: 'One page per service, proof sections, 8-question FAQ, blog and local SEO for Doha',
+      d: '2026-11',
+      read: 8,
+      img: '/case-studies/orangeqatar-seo.webp',
+      href: '/case-studies/orange-web-design-qatar-seo/'
+    },
+    {
+      t: 'SEO for a retail display maker across every major city in Kerala',
+      client: 'Direction North',
+      ind: 'Retail Display Manufacturing',
+      loc: 'Kochi, Kerala',
+      r: 'kerala',
+      s: ['seo', 'local'],
+      goal: ['rank'],
+      m: '11',
+      ml: 'buyer FAQs answered',
+      ch: 'Many products, two audiences and B2B buyers across the whole state',
+      so: 'Product, event, gifting and city keyword map, technical SEO, FAQ and local SEO across Kerala',
+      d: '2026-11',
+      read: 8,
+      img: '/case-studies/directionnorth-seo.webp',
+      href: '/case-studies/direction-north-retail-display-seo-kerala/'
+    },
+    {
+      t: 'Trust-first SEO for an MEA-licensed immigration consultancy in Kerala',
+      client: 'Mount Bell',
+      ind: 'Immigration Consultancy',
+      loc: 'Kochi & Thrissur, Kerala',
+      r: 'kerala',
+      s: ['seo', 'local'],
+      goal: ['rank'],
+      m: '9',
+      ml: 'district pages across Kerala',
+      ch: 'A high-trust decision in a crowded market of visa agents',
+      so: 'Licence, fees and disclaimer content, free calculators, district pages and an 8-question FAQ',
+      d: '2026-11',
+      read: 8,
+      img: '/case-studies/mountbell-seo.webp',
+      href: '/case-studies/mount-bell-immigration-consultancy-seo-kerala/'
+    },
+    /* Web Design case studies added 26 Nov 2026 (source: Teknoppy web design case study PDFs) */
+    {
+      t: 'An image-led resort website that lets guests feel Wayanad first',
+      client: 'Olives Boutique Resort',
+      ind: 'Hospitality & Travel',
+      loc: 'Kalpetta, Wayanad',
+      r: 'kerala',
+      s: ['web'],
+      goal: ['leads'],
+      m: '12',
+      ml: 'hero slider images leading to a booking enquiry form',
+      ch: 'Booking sites take a cut of every stay, and three guest types need different answers',
+      so: '12-image hero, enquiry form above the fold, a page for every guest, WhatsApp, map and virtual tour',
+      d: '2026-11',
+      read: 7,
+      img: '/case-studies/olivesresort.webp',
+      href: '/case-studies/olives-boutique-resort-website-design-development/'
+    },
+    {
+      t: 'A premium facility management website built to win proposals in Qatar',
+      client: 'Technip Hughes',
+      ind: 'Facilities Management',
+      loc: 'Doha, Qatar',
+      r: 'qatar',
+      s: ['web'],
+      goal: ['leads'],
+      m: '6',
+      ml: 'FM services and 5 property sectors, clearly structured',
+      ch: 'Six services that must feel like one partner, in a crowded Qatar FM market',
+      so: 'Premium look, service and sector cards, proof before the pitch and prefilled WhatsApp proposal requests on a fast Astro build',
+      d: '2026-11',
+      read: 7,
+      img: '/case-studies/technip-hughes-web.webp',
+      href: '/case-studies/technip-hughes-qatar-website-design/'
+    },
+    {
+      t: 'A taxi and tour website built to book in one tap',
+      client: 'Kerala Dayz',
+      ind: 'Travel & Transport',
+      loc: 'Kochi, Kerala',
+      r: 'kerala',
+      s: ['web'],
+      goal: ['leads'],
+      m: '1 tap',
+      ml: 'WhatsApp booking from the form and every fleet card',
+      ch: 'Booking a taxi must take seconds, with no fear of hidden charges',
+      so: 'Astro build with a hero booking form, map location picker, fleet cards with rates and prefilled WhatsApp booking',
+      d: '2026-11',
+      read: 7,
+      img: '/case-studies/keraladayz-web.webp',
+      href: '/case-studies/kerala-dayz-taxi-website-design-development/'
+    },
+    {
+      t: 'A photo-led website that shows the finish before the job',
+      client: 'Koojo Powder Coating',
+      ind: 'Industrial & Manufacturing',
+      loc: 'Local & regional',
+      r: 'intl',
+      s: ['web'],
+      goal: ['leads'],
+      m: '1 tap',
+      ml: 'WhatsApp, call and quote on every screen',
+      ch: 'Finish quality is hard to explain in words, and most visitors are on mobile',
+      so: 'Photo-first layout, colour and finish section, service and material pages and a quote form with photo upload',
+      d: '2026-11',
+      read: 7,
+      img: '/case-studies/koojopowdercoating.webp',
+      href: '/case-studies/koojo-powder-coating-website-design/'
+    },
+    {
+      t: 'An industrial supply website built to win more RFQs',
+      client: 'Dawar Qatar',
+      ind: 'Industrial Supply',
+      loc: 'Doha, Qatar',
+      r: 'qatar',
+      s: ['web'],
+      goal: ['leads'],
+      m: '12',
+      ml: 'product lines reachable in two clicks',
+      ch: 'Twelve very different product lines, and buyers who want to send an RFQ, not fill a cart',
+      so: 'Mega menu, hero quick-quote box with BOQ upload, sticky WhatsApp and quote buttons, trust bar and industry sections',
+      d: '2026-11',
+      read: 7,
+      img: '/case-studies/dawarqatar-seo.webp',
+      href: '/case-studies/dawar-qatar-industrial-website-design/'
+    },
+    /* Shopify case study added 26 Nov 2026 (source: GeneralTech Shopify B2B case study PDF) */
+    {
+      t: 'A Shopify B2B store built for engineers who buy on specs',
+      client: 'GeneralTech UAE',
+      ind: 'Industrial & Calibration',
+      loc: 'UAE & GCC',
+      r: 'uae',
+      s: ['shopify'],
+      goal: ['sales', 'leads'],
+      m: '80+',
+      ml: 'global brands in searchable collections',
+      ch: 'A catalogue too deep for a standard store, and B2B buyers who need a quote, not a Buy Now button',
+      so: 'Four-pillar mega menu, brand collections, Get a Quote and Contact for Price, VAT and trade licence verification and SEO-ready collections',
+      d: '2026-11',
+      read: 7,
+      img: '/case-studies/generaltechshop-shopify.webp',
+      href: '/case-studies/generaltech-shopify-b2b-ecommerce-uae/'
     }
   ];
 

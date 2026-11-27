@@ -1,0 +1,195 @@
+{
+  "metaTitle": "Olives Resort Web Design & Development Case Study | Teknoppy",
+  "metaDescription": "How Teknoppy designed and developed the Olives Boutique Resort website in Wayanad with a booking enquiry form, WhatsApp chat and a virtual tour.",
+  "canonicalURL": "https://www.teknoppy.com/case-studies/olives-boutique-resort-website-design-development/",
+  "heroImage": "/case-studies/olivesresort.webp",
+  "heroImageAlt": "Olives Boutique Resort Wayanad homepage designed by Teknoppy",
+  "schemaType": "TechArticle",
+  "schemaAbout": {
+    "type": "LodgingBusiness",
+    "name": "Olives Boutique Resort",
+    "address": {
+      "locality": "Kalpetta, Wayanad",
+      "region": "Kerala",
+      "country": "IN"
+    }
+  },
+  "clientName": "Olives Boutique Resort",
+  "categoryTag": "Web Design & Development",
+  "tagBadge": "Resort Website Case Study",
+  "title": "Olives Boutique Resort: A Website That Lets Guests Feel Wayanad First",
+  "storyLead": "How Teknoppy designed an image-led resort website for Olives Boutique Resort in Kalpetta, so families and couples can see the rooms, check tariffs and send a booking enquiry in minutes.",
+  "industry": "Hospitality: family-run, eco-friendly boutique resort",
+  "location": "Carolina Gardens, Kalpetta, Wayanad, Kerala",
+  "services": "Strategy, sitemap, UI/UX design, custom development, content, on-page SEO",
+  "platform": "Custom PHP-based website",
+  "liveWebsite": "olivesresort.in",
+  "liveWebsiteUrl": "https://www.olivesresort.in/",
+  "heroHighlights": [
+    "12-Image Hero Slider",
+    "Booking Enquiry Form Above the Fold",
+    "WhatsApp, Map & Virtual Tour",
+    "A Page for Every Guest"
+  ],
+  "atAGlance": [
+    "Teknoppy designed and developed olivesresort.in, the site of Olives Boutique Resort in Carolina Gardens, Kalpetta, Wayanad",
+    "The site opens with a 12-image hero slider and places a booking enquiry form high on the page",
+    "Each part of the stay has its own page: rooms and tariff, packages, workation, Wayanad and a photo and video gallery",
+    "WhatsApp chat, click-to-call, a map and a virtual tour make it easy to enquire",
+    "From the live olivesresort.in homepage: 12 hero slider images, 8 main menu sections, 5 TripAdvisor badges and 1 virtual tour"
+  ],
+  "aboutHeading": "About Olives Boutique Resort",
+  "aboutParagraphs": [
+    "Families and couples choose a resort with their eyes first. Olives Boutique Resort in Kalpetta needed a website that shows its suites, pool, food and mountain views in seconds, and turns that first look into a direct booking enquiry instead of a booking-site reservation.",
+    "Olives is a family-run boutique resort in Kalpetta, the gateway town of Wayanad, run by owners Biju and Raji. It offers Mountain View Honeymoon Suites, Olives Wayanad Suites and premium rooms, with a swimming pool, gardens, dining, Ayurveda treatments and a workation option for people who want to work from the hills.",
+    "Its guests are families, honeymoon couples and remote workers. Key pages: Home, Workation, Boutique Resort, Rooms and Tariff, Packages, Wayanad, Gallery and Contact."
+  ],
+  "challengeLead": "Three problems shaped the design brief.",
+  "challenges": [
+    {
+      "number": 1,
+      "title": "Three kinds of guest, three different questions",
+      "description": "Couples look for privacy and views, families check the pool and room size, and remote workers want a quiet place to work. One generic page cannot answer all three."
+    },
+    {
+      "number": 2,
+      "title": "Booking sites take a cut of every stay",
+      "description": "Independent resorts lose a commission on every booking-site reservation. The website had to give guests a reason and an easy way to enquire directly."
+    },
+    {
+      "number": 3,
+      "title": "First-time visitors need reassurance",
+      "description": "Most guests have never been to Wayanad. They look for awards, real photos, an address and a map before trusting a smaller resort."
+    }
+  ],
+  "objectiveLead": "The goal was a resort website built around photos, a clear page for each guest and easy contact.",
+  "objectives": [
+    "Show the stay: let real photos of rooms, pool, food and views do the selling",
+    "Grow direct enquiries: capture dates, rooms and guests in one simple form",
+    "Guide each guest: give couples, families and remote workers their own path",
+    "Build trust: make awards, location and contact details impossible to miss"
+  ],
+  "approachLead": "How Teknoppy ran the project, designed the site and developed it.",
+  "approachPillars": [
+    {
+      "title": "Our process",
+      "paragraphs": [
+        "1. Discovery: Learned the resort's guests, seasons, room types and what makes Olives different",
+        "2. Sitemap: Planned eight menu sections so every guest type and question has a home",
+        "3. Visual direction: Chose a calm, image-led look that lets Wayanad's greenery and views lead",
+        "4. UI/UX design: Placed the enquiry form under the hero and kept contact one tap away",
+        "5. Content and photos: Selected 12 hero images and wrote room, package and workation content",
+        "6. Development: Coded the custom site, forms, galleries and integrations",
+        "7. Testing and launch: Checked forms, mobile layouts and links before going live"
+      ]
+    },
+    {
+      "title": "Photos first",
+      "paragraphs": [
+        "A full-width slider of rooms, dining, views and wellness sets the mood, and image cards lead into the gallery."
+      ]
+    },
+    {
+      "title": "An enquiry form above the fold",
+      "paragraphs": [
+        "The booking enquiry form sits right under the hero, so interested guests can send their dates at once."
+      ]
+    },
+    {
+      "title": "A page for every guest",
+      "paragraphs": [
+        "Workation, Boutique Resort, Rooms and Tariff, Packages and Wayanad pages give each type of guest a clear path, and a featured link takes families straight to the pool."
+      ]
+    },
+    {
+      "title": "Trust and contact built in",
+      "paragraphs": [
+        "TripAdvisor badges, a Google Map and the full Kalpetta address show Olives is real, and contact is one tap away."
+      ]
+    },
+    {
+      "title": "How Teknoppy developed the website",
+      "paragraphs": [
+        "Design gets a guest interested. Development makes sure every click, form and photo works on any phone. Teknoppy built the site as a custom, PHP-based website, which keeps it light and gives the resort full control without paying for a heavy theme or plugins.",
+        "Enquiry form: Custom form for dates, rooms, adults, children and ages, with CAPTCHA to block spam",
+        "Gallery: Separate photo and video gallery pages linked from homepage image cards",
+        "Hero slider: Lightweight 12-image slider for rooms, dining, views and wellness",
+        "Integrations: Embedded Google Map, tourism video, virtual tour and prefilled WhatsApp link",
+        "Contact links: Click-to-call, email and social links to TripAdvisor, Facebook and YouTube",
+        "SEO setup: Keyword-led title and meta, canonical tag, image alt text and Search Console verification"
+      ]
+    },
+    {
+      "title": "Design decisions that mattered most",
+      "paragraphs": [
+        "Form directly under the hero: Guests who like what they see can enquire without scrolling",
+        "Children's ages in the form: Families get the right room and price the first time",
+        "Separate Workation page: Remote workers search differently from holiday guests",
+        "Prefilled WhatsApp greeting: Starting a chat takes one tap and no typing",
+        "Virtual tour link: Builds confidence for guests who have never visited"
+      ]
+    }
+  ],
+  "deliverables": [
+    {
+      "title": "12-image hero slider",
+      "description": "Rooms, dining, views and wellness set the mood in seconds."
+    },
+    {
+      "title": "Booking enquiry form",
+      "description": "Dates, rooms, adults, children and ages in one form, with CAPTCHA."
+    },
+    {
+      "title": "A page for each guest",
+      "description": "Workation, Boutique Resort, Rooms and Tariff, Packages and Wayanad."
+    },
+    {
+      "title": "Photo and video gallery",
+      "description": "Separate gallery pages linked from homepage image cards."
+    },
+    {
+      "title": "Trust and contact",
+      "description": "TripAdvisor badges, Google Map, click-to-call and prefilled WhatsApp."
+    },
+    {
+      "title": "On-page SEO setup",
+      "description": "Keyword-led title and meta, canonical tag, alt text and Search Console."
+    }
+  ],
+  "whyMattersHeading": "Why design matters for resorts in Kerala",
+  "whyMattersParagraphs": [
+    "Every direct enquiry saves a booking-site commission and starts a relationship with the guest. With photos up front, a form that captures every detail and a page for each kind of guest, Olives' website works like a front desk that never closes. That is what a good web design company in Kerala should deliver for independent resorts.",
+    "How success is measured: we judge the site by guest actions, not just visits. The numbers tracked each month are enquiry form submissions, WhatsApp chats, calls from the site, virtual tour views and the share of bookings that come direct rather than through booking sites.",
+    "Next for the website: add an online booking engine for instant confirmation and payment, refresh the award badges with the latest reviews, allow pinch-to-zoom on mobile so guests can enlarge photos, and add guides to nearby Wayanad attractions."
+  ],
+  "whyMattersCalloutHtml": "<p><strong>Key takeaways: show the stay before you sell it, ask for the booking details in one simple form, give each type of guest their own page, and keep a human one tap away.</strong></p><p class=\"mt-3\">Read next: <a href=\"/case-studies/olives-boutique-resort-digital-marketing/\" class=\"text-primary font-semibold underline\">how Teknoppy shaped Olives' Instagram and Facebook presence</a>, or see our <a href=\"/seo-services/\" class=\"text-primary font-semibold underline\">SEO services</a> and <a href=\"/case-study/\" class=\"text-primary font-semibold underline\">all case studies</a>.</p>",
+  "faqs": [
+    {
+      "question": "What should a resort website include?",
+      "answer": "Large photos, rooms and tariffs, packages, a booking enquiry form, a gallery, location map, reviews or awards, and quick contact by WhatsApp and phone."
+    },
+    {
+      "question": "Why put the enquiry form near the top of a resort website?",
+      "answer": "Guests who already like what they see can send their dates right away, without scrolling or searching for a contact page."
+    },
+    {
+      "question": "Do resorts need a separate page for workation stays?",
+      "answer": "Yes, if they offer it. Remote workers search for different things, such as Wi-Fi and long stays, so a dedicated page speaks to them directly."
+    },
+    {
+      "question": "Should a resort use a custom website or a theme?",
+      "answer": "A custom build stays light and fast and avoids paying for unused theme features. A theme can be quicker to start but is often slower and harder to change."
+    },
+    {
+      "question": "Can a resort website take direct bookings?",
+      "answer": "Yes. A booking engine can be added so guests choose dates, see prices and confirm online, reducing reliance on booking sites."
+    },
+    {
+      "question": "Does Teknoppy design websites for hotels and resorts?",
+      "answer": "Yes. Teknoppy is a web design and SEO company in Kochi, Kerala, building websites for resorts, homestays and hotels across Kerala and for businesses in the GCC."
+    }
+  ],
+  "authorName": "the Teknoppy Web Design Team",
+  "authorRole": "Kochi, Kerala · Published 26 November 2026",
+  "ctaHeadline": "Want a resort website designed and built to win direct bookings?"
+}

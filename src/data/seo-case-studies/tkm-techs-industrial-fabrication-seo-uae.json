@@ -1,0 +1,130 @@
+{
+  "title": "TKM Techs: Industrial Fabrication SEO Case Study | Teknoppy",
+  "description": "How Teknoppy runs SEO for TKM Technical Services in Sharjah to rank for stainless steel tanks, hygienic piping and conveyors across the UAE.",
+  "canonical": "https://www.teknoppy.com/case-studies/tkm-techs-industrial-fabrication-seo-uae/",
+  "ogImage": "https://www.teknoppy.com/case-studies/tkmtechs-seo.webp",
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://www.teknoppy.com/case-studies/tkm-techs-industrial-fabrication-seo-uae/#article",
+          "headline": "TKM Techs UAE: SEO for a Steel Fabrication Company Built in Sharjah",
+          "description": "How Teknoppy runs SEO for TKM Technical Services in Sharjah to rank for stainless steel tanks, hygienic piping and conveyors across the UAE.",
+          "image": "https://www.teknoppy.com/case-studies/tkmtechs-seo.webp",
+          "mainEntityOfPage": "https://www.teknoppy.com/case-studies/tkm-techs-industrial-fabrication-seo-uae/",
+          "datePublished": "2026-11-26",
+          "dateModified": "2026-11-26",
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Search engine optimization"
+            },
+            {
+              "@type": "Organization",
+              "name": "TKM Technical Services LLC",
+              "url": "https://tkmtechs.ae/",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Al Sajaa Industrial Oasis, Sharjah",
+                "addressCountry": "AE"
+              }
+            }
+          ],
+          "author": {
+            "@type": "Organization",
+            "name": "Teknoppy SEO Team",
+            "url": "https://www.teknoppy.com/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Teknoppy",
+            "url": "https://www.teknoppy.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.teknoppy.com/logo.svg"
+            }
+          },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.teknoppy.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Case Studies",
+              "item": "https://www.teknoppy.com/case-study/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "TKM Techs UAE",
+              "item": "https://www.teknoppy.com/case-studies/tkm-techs-industrial-fabrication-seo-uae/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How long does SEO take for a manufacturing company in the UAE?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most B2B sites see first ranking movement in 3 to 6 months. Long-tail product searches usually move first."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What keywords should a fabrication company target?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A mix of broad terms such as \"industrial fabrication company UAE\", product terms such as \"food grade tanks UAE\", industry terms such as \"dairy processing tanks\", and location terms such as \"fabrication company Sharjah\"."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why does E-E-A-T matter for industrial websites?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Buyers and Google both look for proof. Certificates, material grades, test documents and real projects make a page more trustworthy."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can a Sharjah company rank in Abu Dhabi, Saudi Arabia or Oman?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Service-area content and location pages help Google show a company in the areas it serves."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does an SEO audit include?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Meta titles, headings, alt text, internal links, speed, indexing, local details and content gaps."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Teknoppy offer SEO services in the UAE?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Teknoppy is an SEO and web design company in Kochi, Kerala, running SEO for businesses in the UAE, Qatar and across the GCC."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
