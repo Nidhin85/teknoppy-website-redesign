@@ -201,6 +201,18 @@ const serviceIcons = [MonitorSmartphone, Briefcase, Building2, Rocket, Edit, Shi
 const processIcons = [Search, Network, LayoutGrid, Code, Gauge, Rocket];
 const industryIcons = [Rocket, Activity, Home, Utensils, GraduationCap, Compass, Briefcase, Factory, Languages];
 
+// Featured-project previews: homepage screenshots of each client's live site, already in
+// /case-studies/ and used by their case studies (evosyz.com, greensayurveda.com, olivesresort.in,
+// dreamabroad.org, mountbell.com). Keyed by project name because web-design.json is CMS-synced;
+// a CMS-provided `image` on the item takes priority.
+const projectImages: Record<string, string> = {
+  "Evosyz": "/case-studies/evosyz.webp",
+  "Greens Ayurveda": "/case-studies/greensayurveda.webp",
+  "Olives Resort": "/case-studies/olivesresort.webp",
+  "Dream Abroad": "/case-studies/dreamabroad.webp",
+  "Mountbell": "/case-studies/mountbell.webp",
+};
+
 // Case-study accent colour classes
 const caseAccents: Record<string, { glow: string; mesh: string; label: string }> = {
   blue: {
@@ -238,7 +250,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
     </section>
 
     <!-- 1. HERO (reference layout: copy left, 3D browser visual right, stats strip below) -->
-    <section id="hero-intro" class="wdk-hero theme-keep-light relative pt-28 sm:pt-32 lg:pt-36 pb-14 sm:pb-16 lg:pb-20 overflow-hidden text-white">
+    <section id="hero-intro" class="wdk-hero theme-keep-light relative pt-10 sm:pt-12 lg:pt-14 pb-14 sm:pb-16 lg:pb-20 overflow-hidden text-white">
       <div class="absolute inset-0 pointer-events-none overflow-hidden z-0" aria-hidden="true">
         <div class="wdk-hero-glow"></div>
         <div class="wdk-hero-arc"></div>
@@ -261,12 +273,12 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
             </div>
 
             <!-- Headline (H1) -->
-            <h1 class="text-[40px] sm:text-6xl lg:text-[58px] xl:text-[64px] font-black leading-[1.04] tracking-[-0.035em] text-white mb-6">
+            <h1 class="text-[2.65rem] min-[420px]:text-5xl sm:text-6xl lg:text-[4.1rem] xl:text-[4.6rem] font-black leading-[1.02] tracking-[-0.035em] text-white mb-6">
               <span class="text-[#ff7a3d]">{page.hero.headingLead}</span>{" "}{page.hero.headingAccent}{" "}<span class="text-[#ff7a3d]">{page.hero.headingRest}</span>
             </h1>
 
             <!-- Body -->
-            <p class="text-base sm:text-lg text-white/85 mb-8 max-w-xl font-medium leading-relaxed">
+            <p class="text-base lg:text-[1.0625rem] text-white/85 mb-8 max-w-xl font-medium leading-relaxed">
               {page.hero.body}
             </p>
 
@@ -274,16 +286,16 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
             <div class="flex flex-col min-[420px]:flex-row items-stretch min-[420px]:items-center gap-3 sm:gap-4 w-full sm:w-auto">
               <a
                 href={page.hero.ctaPrimary.href}
-                class="inline-flex items-center justify-center gap-2.5 px-7 py-4 text-sm sm:text-base font-bold text-white bg-primary rounded-full shadow-[0_10px_30px_-6px_rgba(240,90,44,0.75)] hover:bg-primary/95 hover:-translate-y-0.5 transition-all duration-300 leading-snug whitespace-nowrap"
+                class="cta-shimmer-btn inline-flex items-center justify-center gap-2.5 px-7 py-3.5 text-[0.98rem] font-bold text-white bg-primary rounded-full shadow-[0_10px_30px_-6px_rgba(240,90,44,0.75)] hover:bg-primary/95 hover:-translate-y-0.5 transition-all duration-300 leading-snug whitespace-nowrap"
               >
                 <span>{page.hero.ctaPrimary.label}</span>
                 <ArrowRight class="w-4 h-4 text-white shrink-0" />
               </a>
               <a
                 href={page.hero.ctaSecondary.href}
-                class="inline-flex items-center justify-center gap-3 pl-2.5 pr-7 py-2.5 text-sm sm:text-base font-bold text-neutral-900 bg-white border border-white rounded-full hover:text-primary transition-all duration-300 shadow-sm leading-snug whitespace-nowrap"
+                class="group inline-flex items-center justify-center gap-3 pl-2 pr-6 py-2 text-[0.98rem] font-bold text-white bg-white/10 backdrop-blur border border-white/25 rounded-full hover:bg-white hover:text-neutral-900 transition-all duration-300 leading-snug whitespace-nowrap"
               >
-                <span class="flex items-center justify-center w-9 h-9 rounded-full bg-primary/10 text-primary shrink-0">
+                <span class="flex items-center justify-center w-9 h-9 rounded-full border-2 border-current shrink-0 transition-colors group-hover:text-primary">
                   <Play class="w-3.5 h-3.5 ml-0.5" fill="currentColor" />
                 </span>
                 <span>{page.hero.ctaSecondary.label}</span>
@@ -323,20 +335,21 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
     </section>
 
     <!-- 2. INTRO BAND SECTION (MATCHING ABOUT.ASTRO DESIGN SYSTEM) -->
-    <section class="py-12 sm:py-14 md:py-16 bg-cream relative overflow-hidden">
+    <section class="wdk-band-warm py-12 sm:py-14 md:py-16 relative overflow-hidden">
       <!-- Subtle decorative background -->
       <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
         <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/whoweare.webp')] opacity-30"></div>
       </div>
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
-        <div class="max-w-4xl space-y-4 sm:space-y-6">
-          <p class="text-[1.0625rem] sm:text-xl md:text-2xl font-medium sm:font-semibold text-neutral-800 sm:text-neutral-900 leading-[1.6] sm:leading-snug tracking-[-0.01em] pl-4 sm:pl-0 lg:pl-6 border-l-[3px] sm:border-l-0 lg:border-l-4 border-secondary">
+        <div class="grid lg:grid-cols-12 gap-6 lg:gap-12 items-center">
+          <p class="wdk-lead lg:col-span-7 text-base md:text-lg font-semibold text-neutral-900 leading-relaxed pl-5 sm:pl-6 border-l-4 border-primary">
             {page.introBand[0]}
           </p>
-          <p class="text-[0.9375rem] sm:text-base md:text-lg text-neutral-600 leading-[1.7] sm:leading-relaxed font-normal sm:font-medium pl-0 lg:pl-7">
+          <div class="wdk-card lg:col-span-5 p-6 sm:p-7">
+          <p class="text-sm md:text-[0.95rem] text-neutral-600 leading-relaxed font-medium">
             {page.introBand[1]}
           </p>
-          <div class="pt-2 pl-0 lg:pl-7">
+          <div class="pt-5">
             <a
               href="/request-a-quote/"
               class="inline-flex items-center gap-2 px-6 sm:px-7 py-3 sm:py-3.5 text-sm font-bold text-neutral-900 bg-white border border-neutral-200/90 rounded-full hover:border-primary hover:text-primary hover:shadow hover:-translate-y-0.5 transition-all duration-300 shadow-sm"
@@ -344,6 +357,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
               Talk About My Website
               <ArrowRight class="w-4 h-4 text-primary transition-transform duration-300" />
             </a>
+          </div>
           </div>
         </div>
       </div>
@@ -440,20 +454,20 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
           <!-- Right Column (Custom Feature Cards Grid) -->
           <div class="lg:col-span-7 grid sm:grid-cols-2 gap-6 min-w-0 w-full">
             {page.whyTeknoppy.cards.map((card, idx) => (
-              <div class="relative bg-white border border-neutral-100/90 hover:border-primary/30 rounded-2xl p-6 sm:p-7 transition-all duration-500 group flex flex-col justify-between shadow-sm hover:shadow-[0_15px_40px_rgba(240,90,44,0.06)] hover:-translate-y-1">
+              <div class="wdk-card wdk-accent relative p-6 sm:p-7 group flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-center mb-6">
-                    <span class="text-xs font-mono font-bold text-primary bg-primary/10 px-2.5 py-1 rounded-full uppercase tracking-wider">
+                    <span class="text-xs font-bold text-primary bg-primary/10 px-2.5 py-1 rounded-full uppercase tracking-wider">
                       {card.tag}
                     </span>
-                    <span class="text-xs font-mono font-bold text-neutral-300 group-hover:text-primary transition-colors">
+                    <span class="text-2xl font-black tabular-nums leading-none text-primary/20 group-hover:text-primary/60 transition-colors">
                       0{idx + 1}
                     </span>
                   </div>
-                  <h3 class="text-xl font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-3 leading-snug">
+                  <h3 class="text-base sm:text-[0.9375rem] md:text-base font-bold text-neutral-900 group-hover:text-primary transition-colors duration-300 mb-3 leading-snug">
                     {card.title}
                   </h3>
-                  <p class="text-neutral-600 text-sm leading-relaxed font-normal">
+                  <p class="text-neutral-600 text-sm sm:text-[0.8125rem] md:text-[0.875rem] leading-relaxed font-normal">
                     {card.description}
                   </p>
                 </div>
@@ -476,10 +490,10 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
           <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F9AE42]/10 border border-[#F9AE42]/30 text-primary text-sm font-bold uppercase tracking-wider mb-6 shadow-sm transform -rotate-1">
             {page.services.badge}
           </div>
-          <h2 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-neutral-900 mb-6">
+          <h2 class="text-4xl md:text-5xl font-black leading-tight text-neutral-900 mb-6">
             {page.services.headingLead} <span class="text-primary">{page.services.headingAccent}</span> {page.services.headingRest}
           </h2>
-          <p class="text-lg md:text-xl text-neutral-600 leading-relaxed font-medium">
+          <p class="text-base sm:text-lg text-neutral-600 leading-relaxed font-medium">
             {page.services.intro}
           </p>
         </div>
@@ -491,13 +505,13 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
             return (
               <Card 
                 href={svc.href} 
-                class="group relative bg-white rounded-2xl p-6 sm:p-7 border border-neutral-100/90 shadow-[0_10px_35px_rgba(240,90,44,0.04)] hover:border-primary/35 hover:shadow-[0_15px_40px_rgba(240,90,44,0.08)] hover:-translate-y-1.5 transition-all duration-500 flex flex-col justify-between overflow-hidden h-full"
+                class="wdk-card group relative p-6 sm:p-7 flex flex-col justify-between overflow-hidden h-full"
               >
                 <!-- Hover Accent Glow -->
                 <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-xl -z-10"></div>
                 <div>
                   <div class="flex justify-between items-start mb-6">
-                    <div class="w-13 h-13 rounded-2xl bg-[#FFF4ED] border border-[#FDE6D7] flex items-center justify-center transition-all duration-300 group-hover:bg-primary group-hover:border-primary group-hover:shadow-[0_8px_20px_rgba(240,90,44,0.35)] text-primary group-hover:text-white">
+                    <div class="wdk-icon w-13 h-13 rounded-2xl flex items-center justify-center">
                       <IconComp class="w-6 h-6" />
                     </div>
                     {svc.href && (
@@ -506,10 +520,10 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
                       </div>
                     )}
                   </div>
-                  <h3 class:list={["text-xl font-bold text-neutral-900 mb-3 leading-snug", svc.href && "group-hover:text-primary transition-colors duration-300"]}>
+                  <h3 class:list={["text-[1.15rem] font-bold text-neutral-900 mb-3 leading-snug", svc.href && "group-hover:text-primary transition-colors duration-300"]}>
                     {svc.title}
                   </h3>
-                  <p class="text-neutral-600 text-sm leading-relaxed font-normal">
+                  <p class="text-neutral-600 text-[0.875rem] leading-relaxed font-normal">
                     {svc.desc}
                   </p>
                 </div>
@@ -527,7 +541,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
         <div class="mt-10 sm:mt-12 text-center max-w-xl mx-auto flex flex-col items-center">
           <a 
             href="/request-a-quote/" 
-            class="inline-flex items-center justify-center gap-2.5 px-7 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.25)] hover:bg-primary/95 hover:shadow-[0_8px_25px_rgba(240,90,44,0.35)] hover:-translate-y-0.5 transition-all duration-300"
+            class="inline-flex items-center justify-center gap-2.5 px-7 sm:px-8 py-3.5 sm:py-4 text-sm font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.25)] hover:bg-primary/95 hover:shadow-[0_8px_25px_rgba(240,90,44,0.35)] hover:-translate-y-0.5 transition-all duration-300"
           >
             Tell Us What Website You Need
             <ArrowRight class="w-4 h-4 text-white transition-transform duration-300" />
@@ -543,7 +557,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
     {page.subServices && <SubServicesDirectory data={page.subServices} />}
 
     <!-- 5. WEB DESIGN PROCESS SECTION -->
-    <section class="py-14 sm:py-16 md:py-20 bg-cream relative overflow-hidden">
+    <section class="wdk-band-warm py-14 sm:py-16 md:py-20 relative overflow-hidden">
       <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
         <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/tekenoppyadvantage.webp')] opacity-75"></div>
       </div>
@@ -560,21 +574,23 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
           </p>
         </div>
 
-        <ol class="wdk-process relative grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-4 gap-y-9 sm:gap-x-6 lg:gap-x-4 relative z-10">
+        <ol class="wdk-process relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 relative z-10">
           {page.process.steps.map((proc, idx) => {
             const IconComponent = processIcons[idx];
             return (
-              <li class="group relative flex flex-col items-center text-center">
-                <div class="relative z-10 w-16 h-16 rounded-full bg-white border border-primary/15 shadow-[0_18px_36px_-20px_rgba(160,60,20,0.55)] flex items-center justify-center text-primary mb-4 transition-all duration-300 group-hover:bg-primary group-hover:text-white group-hover:-translate-y-1">
+              <li class="wdk-card wdk-step group relative flex flex-row sm:flex-col items-start sm:items-center gap-4 sm:gap-0 p-5 text-left sm:text-center">
+                <div class="wdk-icon relative z-10 w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center sm:mb-4 shrink-0">
                   <IconComponent class="w-6 h-6" />
                 </div>
+                <div class="min-w-0 flex flex-col sm:items-center">
                 <span class="text-[11px] font-bold text-primary uppercase tracking-[0.14em] mb-1">Step {proc.step}</span>
                 <h3 class="text-base sm:text-lg font-bold text-neutral-900 leading-snug mb-1.5 group-hover:text-primary transition-colors duration-300">
                   {proc.title}
                 </h3>
-                <p class="text-neutral-600 text-xs sm:text-[0.84rem] leading-relaxed max-w-[15rem]">
+                <p class="text-neutral-600 text-xs sm:text-[0.84rem] leading-relaxed sm:max-w-[15rem]">
                   {proc.desc}
                 </p>
+                </div>
               </li>
             );
           })}
@@ -583,7 +599,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
         <div class="mt-10 sm:mt-12 flex justify-center">
           <a 
             href="/request-a-quote/" 
-            class="inline-flex items-center justify-center gap-2.5 px-7 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.25)] hover:bg-primary/95 hover:shadow-[0_8px_25px_rgba(240,90,44,0.35)] hover:-translate-y-0.5 transition-all duration-300"
+            class="inline-flex items-center justify-center gap-2.5 px-7 sm:px-8 py-3.5 sm:py-4 text-sm font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.25)] hover:bg-primary/95 hover:shadow-[0_8px_25px_rgba(240,90,44,0.35)] hover:-translate-y-0.5 transition-all duration-300"
           >
             Plan My Website Project
             <ArrowRight class="w-4 h-4 text-white transition-transform duration-300" />
@@ -609,7 +625,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
           </div>
 
           <div class="lg:col-span-7">
-            <div class="bg-white rounded-[1.75rem] border border-primary/10 overflow-hidden shadow-[0_30px_60px_-36px_rgba(160,60,20,0.45)]">
+            <div class="wdk-card wdk-price rounded-[1.75rem] overflow-hidden">
               <div class="overflow-x-auto">
                 <table class="w-full text-left border-collapse min-w-full">
                   <thead>
@@ -637,7 +653,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
         <div class="mt-10 sm:mt-12 text-center max-w-xl mx-auto flex flex-col items-center">
           <a 
             href="/request-a-quote/" 
-            class="inline-flex items-center justify-center gap-2.5 px-7 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.25)] hover:bg-primary/95 hover:shadow-[0_8px_25px_rgba(240,90,44,0.35)] hover:-translate-y-0.5 transition-all duration-300"
+            class="inline-flex items-center justify-center gap-2.5 px-7 sm:px-8 py-3.5 sm:py-4 text-sm font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.25)] hover:bg-primary/95 hover:shadow-[0_8px_25px_rgba(240,90,44,0.35)] hover:-translate-y-0.5 transition-all duration-300"
           >
             Get My Exact Website Quote
             <ArrowRight class="w-4 h-4 text-white transition-transform duration-300" />
@@ -650,10 +666,10 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
     </section>
 
     <!-- 7. TARGET INDUSTRIES SECTION -->
-    <section class="py-14 sm:py-16 md:py-20 bg-cream relative overflow-hidden">
+    <section class="wdk-band-warm py-14 sm:py-16 md:py-20 relative overflow-hidden">
       <!-- Subtle background -->
       <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
-        <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/industriesbg.webp')] opacity-40"></div>
+        <div class="absolute inset-0 theme-dim-bg bg-cover bg-center bg-no-repeat lg:bg-[url('/industriesbg.webp')] opacity-[0.04]"></div>
       </div>
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
         <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-10 md:mb-12">
@@ -675,16 +691,16 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
             return (
               <Card 
                 href={ind.href} 
-                class="group bg-white border border-neutral-100/90 hover:border-primary/30 p-6 sm:p-7 rounded-2xl shadow-sm hover:shadow-[0_15px_40px_rgba(240,90,44,0.06)] hover:-translate-y-1 transition-all duration-300 flex items-start gap-4"
+                class="wdk-card group p-6 sm:p-7 flex items-start gap-4"
               >
-                <div class="w-12 h-12 rounded-2xl bg-primary/5 text-primary border border-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                <div class="wdk-icon w-12 h-12 rounded-2xl flex items-center justify-center flex-shrink-0">
                   <IconComponent class="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 class:list={["text-base font-bold text-neutral-900 mb-1.5", ind.href && "group-hover:text-primary transition-colors duration-300"]}>
+                  <h3 class:list={["text-[0.95rem] sm:text-base font-bold text-neutral-900 mb-1.5 leading-snug", ind.href && "group-hover:text-primary transition-colors duration-300"]}>
                     {ind.name}
                   </h3>
-                  <p class="text-neutral-600 text-xs sm:text-sm leading-relaxed font-normal">
+                  <p class="text-neutral-600 text-xs sm:text-[0.82rem] leading-relaxed font-normal">
                     {ind.desc}
                   </p>
                   {ind.href && (
@@ -726,18 +742,33 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {page.projects.items.map(proj => (
-            <div class="bg-white rounded-2xl border border-neutral-100/90 hover:border-primary/30 p-6 sm:p-7 shadow-sm hover:shadow-[0_15px_40px_rgba(240,90,44,0.06)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          {page.projects.items.map(proj => {
+            const shot = (proj as { image?: string }).image ?? projectImages[proj.name];
+            return (
+            <div class="wdk-card wdk-accent group relative p-6 sm:p-7 flex flex-col justify-between">
               <div>
+                {shot && (
+                  <div class="wdk-shot mb-5 aspect-[16/9] rounded-xl overflow-hidden bg-neutral-100">
+                    <img
+                      src={shot}
+                      alt={`${proj.name} website homepage screenshot`}
+                      width="1280"
+                      height="720"
+                      loading="lazy"
+                      decoding="async"
+                      class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.04]"
+                    />
+                  </div>
+                )}
                 <div class="flex flex-col-reverse items-start gap-2 sm:flex-row sm:items-center sm:justify-between mb-4">
-                  <h3 class="text-xl font-bold text-neutral-900 leading-tight">{proj.name}</h3>
+                  <h3 class="text-[1.15rem] font-bold text-neutral-900 leading-snug">{proj.name}</h3>
                   <span class="text-[10px] sm:text-[11px] font-black text-primary bg-primary/10 border border-primary/20 px-2.5 py-1 rounded-full uppercase tracking-wider sm:shrink-0 max-w-full">
                     {proj.loc}
                   </span>
                 </div>
-                <p class="text-neutral-600 text-sm leading-relaxed font-normal mb-5">{proj.desc}</p>
+                <p class="text-neutral-600 text-[0.875rem] leading-relaxed font-normal mb-5">{proj.desc}</p>
                 {proj.result && (
-                  <div class="bg-cream/60 rounded-xl p-4 border border-neutral-100 mb-4">
+                  <div class="wdk-result rounded-xl p-4 mb-4">
                     <span class="block text-xs font-bold text-neutral-900 uppercase tracking-wider mb-1">Result</span>
                     <p class="text-neutral-600 text-xs sm:text-sm font-medium leading-relaxed">{proj.result}</p>
                   </div>
@@ -747,20 +778,21 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
                 Enquire for details <ArrowRight class="w-3.5 h-3.5" />
               </a>
             </div>
-          ))}
+            );
+          })}
         </div>
 
         <div class="mt-10 sm:mt-12 flex flex-col sm:flex-row items-center justify-center gap-3.5">
           <a 
             href="/request-a-quote/" 
-            class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.25)] hover:bg-primary/95 hover:shadow-[0_8px_25px_rgba(240,90,44,0.35)] hover:-translate-y-0.5 transition-all duration-300"
+            class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 sm:px-8 py-3.5 sm:py-4 text-sm font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.25)] hover:bg-primary/95 hover:shadow-[0_8px_25px_rgba(240,90,44,0.35)] hover:-translate-y-0.5 transition-all duration-300"
           >
             Build My Business Website
             <ArrowRight class="w-4 h-4 text-white transition-transform duration-300" />
           </a>
           <a 
             href={page.projects.allLink.href} 
-            class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-neutral-900 bg-white border border-neutral-200/90 rounded-full hover:border-primary hover:text-primary hover:shadow hover:-translate-y-0.5 transition-all duration-300 shadow-sm"
+            class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 text-sm font-bold text-neutral-900 bg-white border border-neutral-200/90 rounded-full hover:border-primary hover:text-primary hover:shadow hover:-translate-y-0.5 transition-all duration-300 shadow-sm"
           >
             {page.projects.allLink.label}
             <ArrowRight class="w-4 h-4" />
@@ -770,33 +802,34 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
     </section>
 
     <!-- 9. CASE STUDIES SECTION (PORTFOLIO SHOWCASE STYLE) -->
-    <section class="py-14 sm:py-16 md:py-20 bg-cream/40 relative overflow-hidden border-t border-neutral-100">
+    <section class="wdk-dark py-14 sm:py-16 md:py-20 relative overflow-hidden text-white">
+      <div class="wdk-dark-glow" aria-hidden="true"></div>
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
         <div class="max-w-3xl mb-8 sm:mb-10 md:mb-12">
           <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F9AE42]/10 border border-[#F9AE42]/30 text-primary text-sm font-bold uppercase tracking-wider mb-6 shadow-sm transform -rotate-1">
             {page.caseStudies.badge}
           </div>
-          <h2 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-neutral-900 mb-6">
+          <h2 class="text-4xl md:text-5xl font-black leading-tight text-white mb-6">
             {page.caseStudies.headingLead} <span class="text-primary">{page.caseStudies.headingAccent}</span> {page.caseStudies.headingRest}
           </h2>
-          <p class="text-lg md:text-xl text-neutral-600 font-medium leading-relaxed max-w-2xl">
+          <p class="text-base sm:text-lg text-white/70 font-medium leading-relaxed max-w-2xl">
             {page.caseStudies.intro}
           </p>
         </div>
 
-        <div class="space-y-12 sm:space-y-16 lg:space-y-20">
+        <div class="space-y-6 sm:space-y-8">
           {page.caseStudies.blocks.map((block, idx) => {
             const accent = caseAccents[block.accent];
             const num = String(idx + 1).padStart(2, '0');
             return (
-              <div class={`flex flex-col ${idx % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-10 lg:gap-14 group relative`}>
+              <div class={`wdk-case flex flex-col ${idx % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center lg:items-start gap-8 lg:gap-12 group relative p-5 sm:p-7 lg:p-9`}>
                 <!-- Left: Mockup Window -->
                 <div class="w-full lg:w-[48%] relative z-10">
                   <!-- Glow -->
                   <div class={`absolute inset-0 bg-gradient-to-tr ${accent.glow} rounded-[2.5rem] scale-105 opacity-0 group-hover:opacity-100 transition-all duration-700 blur-xl`}></div>
 
                   <!-- Browser Window -->
-                  <div class="relative bg-white rounded-2xl shadow-[0_20px_50px_rgba(240,90,44,0.06)] border border-neutral-100 overflow-hidden transform group-hover:-translate-y-2 group-hover:shadow-[0_30px_60px_rgba(240,90,44,0.12)] transition-all duration-700 z-20">
+                  <div class="relative bg-white rounded-2xl shadow-[0_30px_60px_-24px_rgba(0,0,0,0.8)] border border-white/10 overflow-hidden transform group-hover:-translate-y-2 group-hover:shadow-[0_36px_70px_-24px_rgba(240,90,44,0.45)] transition-all duration-700 z-20">
                     <div class="h-10 bg-neutral-50 border-b border-neutral-200/80 flex items-center px-4 gap-2">
                       <div class="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
                       <div class="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
@@ -828,24 +861,24 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
                 <div class="w-full lg:w-[52%] space-y-6">
                   <div>
                     <span class="text-xs font-black text-primary uppercase tracking-widest">Case Study {num} · {block.label}</span>
-                    <h3 class="text-2xl sm:text-3xl font-black text-neutral-900 mt-2 leading-snug">{block.title}</h3>
+                    <h3 class="text-xl sm:text-2xl font-black text-white mt-2 leading-snug">{block.title}</h3>
                   </div>
-                  <p class="text-sm sm:text-base text-neutral-600 leading-relaxed font-medium">
+                  <p class="text-sm sm:text-base text-white/70 leading-relaxed font-medium">
                     {block.intro}
                   </p>
 
                   <div class="grid sm:grid-cols-2 gap-4">
-                    <div class="bg-white rounded-2xl p-5 border border-neutral-100 shadow-sm">
-                      <h4 class="text-xs font-black text-neutral-900 uppercase tracking-wider mb-2">Our Approach</h4>
-                      <ul class="space-y-1.5 text-xs sm:text-sm text-neutral-600 font-medium list-disc pl-4">
+                    <div class="wdk-glass rounded-2xl p-5">
+                      <h4 class="text-xs font-black text-white uppercase tracking-wider mb-2">Our Approach</h4>
+                      <ul class="space-y-1.5 text-xs sm:text-sm text-white/70 font-medium list-disc pl-4 marker:text-primary">
                         {block.approach.map(point => (
                           <li>{point}</li>
                         ))}
                       </ul>
                     </div>
-                    <div class="bg-white rounded-2xl p-5 border border-neutral-100 shadow-sm">
-                      <h4 class="text-xs font-black text-neutral-900 uppercase tracking-wider mb-2">The Results</h4>
-                      <ul class="space-y-1.5 text-xs sm:text-sm text-neutral-600 font-medium list-disc pl-4">
+                    <div class="wdk-glass rounded-2xl p-5">
+                      <h4 class="text-xs font-black text-white uppercase tracking-wider mb-2">The Results</h4>
+                      <ul class="space-y-1.5 text-xs sm:text-sm text-white/70 font-medium list-disc pl-4 marker:text-primary">
                         {block.results.map(point => (
                           <li>{point}</li>
                         ))}
@@ -854,16 +887,16 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
                   </div>
 
                   <!-- Testimonial Quote -->
-                  <div class="border-l-4 border-primary pl-4 pr-4 py-3 bg-white rounded-r-2xl shadow-sm border border-l-0 border-neutral-100">
-                    <p class="text-xs sm:text-sm text-neutral-700 font-medium italic leading-relaxed">
+                  <div class="wdk-glass wdk-quote pl-4 pr-4 py-3 rounded-r-2xl">
+                    <p class="text-xs sm:text-sm text-white/85 font-medium italic leading-relaxed">
                       "{block.quote}"
                     </p>
-                    <span class="block text-xs font-black text-neutral-900 mt-2">{block.author}</span>
+                    <span class="block text-xs font-black text-white mt-2">{block.author}</span>
                   </div>
 
                   <!-- Video walkthrough + full write-up -->
                   <div class="flex flex-wrap items-center gap-3 pt-2">
-                    <a href={block.videoUrl} target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 text-xs sm:text-sm font-bold text-neutral-900 bg-white border border-neutral-200/90 rounded-full hover:border-primary hover:text-primary hover:shadow hover:-translate-y-0.5 transition-all shadow-sm">
+                    <a href={block.videoUrl} target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 text-xs sm:text-sm font-bold text-white bg-white/10 border border-white/25 rounded-full hover:bg-white hover:text-neutral-900 hover:-translate-y-0.5 transition-all">
                       <Play class="w-3.5 h-3.5 fill-current" />
                       Watch the client video
                     </a>
@@ -881,7 +914,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
         <div class="mt-10 sm:mt-12 flex justify-center">
           <a 
             href="/request-a-quote/" 
-            class="inline-flex items-center justify-center gap-2.5 px-7 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.25)] hover:bg-primary/95 hover:shadow-[0_8px_25px_rgba(240,90,44,0.35)] hover:-translate-y-0.5 transition-all duration-300"
+            class="inline-flex items-center justify-center gap-2.5 px-7 sm:px-8 py-3.5 sm:py-4 text-sm font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.25)] hover:bg-primary/95 hover:shadow-[0_8px_25px_rgba(240,90,44,0.35)] hover:-translate-y-0.5 transition-all duration-300"
           >
             Get Results Like These
             <ArrowRight class="w-4 h-4 text-white transition-transform duration-300" />
@@ -900,7 +933,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
       headingRest={page.testimonials.headingRest}
       intro={page.testimonials.intro}
       ctaText="Let's Build My Website"
-      ctaClassName="inline-flex items-center justify-center gap-2.5 px-7 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.25)] hover:bg-primary/95 hover:shadow-[0_8px_25px_rgba(240,90,44,0.35)] hover:-translate-y-0.5 transition-all shrink-0 group whitespace-nowrap"
+      ctaClassName="inline-flex items-center justify-center gap-2.5 px-7 sm:px-8 py-3.5 sm:py-4 text-sm font-bold text-white bg-primary rounded-full shadow-[0_6px_20px_rgba(240,90,44,0.25)] hover:bg-primary/95 hover:shadow-[0_8px_25px_rgba(240,90,44,0.35)] hover:-translate-y-0.5 transition-all shrink-0 group whitespace-nowrap"
       client:visible
     />
 
@@ -924,9 +957,9 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {blogPosts.map(post => (
-            <article class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md hover:border-primary/30 border border-neutral-100/90 transition-all duration-300 flex flex-col h-full">
+            <article class="wdk-card group overflow-hidden flex flex-col h-full">
               {post.image && (
-                <div class="overflow-hidden aspect-[16/10] bg-neutral-100 relative">
+                <div class="wdk-media overflow-hidden aspect-[4/3] bg-neutral-100 relative">
                   <img 
                     src={post.image} 
                     alt={post.title} 
@@ -936,32 +969,32 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
                   />
                 </div>
               )}
-              <div class="p-6 md:p-8 flex flex-col flex-grow justify-between">
-                <div class="space-y-4">
-                  <div class="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-medium text-neutral-400">
+              <div class="px-5 pt-4 pb-5 sm:px-6 sm:pb-6 flex flex-col flex-grow justify-between">
+                <div class="space-y-3.5">
+                  <div class="flex flex-wrap items-center gap-2 text-xs font-medium text-neutral-500">
                     <span class="text-[11px] font-black text-primary bg-primary/10 border border-primary/20 px-2.5 py-0.5 rounded-full uppercase tracking-wider whitespace-nowrap">
                       {post.category}
                     </span>
-                    <span class="flex items-center gap-1 whitespace-nowrap">
+                    <span class="wdk-chip flex items-center gap-1 whitespace-nowrap">
                       <Clock class="w-3.5 h-3.5" />
                       {post.readTime}
                     </span>
-                    <span class="flex items-center gap-1 whitespace-nowrap">
+                    <span class="wdk-chip flex items-center gap-1 whitespace-nowrap">
                       <Calendar class="w-3.5 h-3.5" />
                       {post.date}
                     </span>
                   </div>
 
-                  <h3 class="text-xl font-bold text-neutral-900 leading-snug group-hover:text-primary transition-colors duration-300">
+                  <h3 class="text-base sm:text-lg md:text-[1.125rem] font-bold text-neutral-900 leading-snug group-hover:text-primary transition-colors duration-300">
                     <a href={post.href}>{post.title}</a>
                   </h3>
 
-                  <p class="text-sm text-neutral-500 leading-relaxed font-medium">
+                  <p class="text-xs sm:text-[0.84rem] text-neutral-500 leading-relaxed font-medium">
                     {post.excerpt}
                   </p>
                 </div>
 
-                <div class="pt-6 mt-6 border-t border-neutral-100/80">
+                <div class="pt-4 mt-5 border-t border-neutral-100/80">
                   <a 
                     href={post.href} 
                     class="inline-flex items-center gap-2 text-sm font-bold text-neutral-850 hover:text-primary transition-colors duration-300"
@@ -985,7 +1018,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
     </section>
 
     <!-- 12. FAQS SECTION (MATCHING HOMEPAGE FAQ.ASTRO DESIGN SYSTEM) -->
-    <section id="faq" class="py-14 sm:py-16 md:py-20 bg-cream relative overflow-hidden">
+    <section id="faq" class="wdk-band-warm py-14 sm:py-16 md:py-20 relative overflow-hidden">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
         <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-10 md:mb-12">
           <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F9AE42]/10 border border-[#F9AE42]/30 text-primary text-sm font-bold uppercase tracking-wider mb-6 shadow-sm transform -rotate-1">
@@ -999,16 +1032,16 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
           </p>
         </div>
 
-        <div class="max-w-3xl mx-auto space-y-3">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 items-start">
           {page.faqs.items.map(faq => (
-            <details class="faq-group bg-white rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden border border-neutral-100 shadow-sm transition-all duration-300 hover:border-primary/20" name="faq">
-              <summary class="flex items-center justify-between px-5 sm:px-6 py-4 sm:py-5 cursor-pointer list-none font-bold text-sm sm:text-[15px] text-neutral-900 transition-colors faq-summary">
+            <details class="faq-group wdk-faq bg-white rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden transition-all duration-300" name="faq">
+              <summary class="flex items-center justify-between px-5 sm:px-6 py-4 sm:py-5 cursor-pointer list-none font-bold text-base sm:text-lg text-neutral-900 transition-colors faq-summary">
                 <h3 class="pr-6 leading-snug">{faq.q}</h3>
                 <span class="ml-auto flex-shrink-0 bg-primary/5 rounded-full p-2 transition-all duration-300 faq-icon-container shadow-sm border border-primary/10">
                   <ChevronDown className="w-4 h-4 text-primary transition-transform duration-300 faq-icon" />
                 </span>
               </summary>
-              <div class="px-5 sm:px-6 pb-5 text-neutral-600 leading-relaxed font-normal text-sm faq-content">
+              <div class="px-5 sm:px-6 pb-5 text-neutral-600 leading-relaxed font-normal text-xs sm:text-sm md:text-base faq-content">
                 <div class="h-px w-full bg-neutral-100 mb-5"></div>
                 <p set:html={faq.a}></p>
               </div>
@@ -1036,7 +1069,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
           </h2>
         </div>
 
-        <div class="max-w-4xl bg-white rounded-3xl border border-neutral-100/90 shadow-[0_12px_40px_-15px_rgba(0,0,0,0.05)] p-6 sm:p-8 md:p-10">
+        <div class="wdk-card wdk-author relative overflow-hidden max-w-4xl rounded-3xl p-6 sm:p-8 md:p-10">
           <div class="flex flex-col sm:flex-row sm:items-center gap-5 mb-6">
             <img 
               src="/team/sanal-edison.webp" 
@@ -1044,7 +1077,7 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
               width="64" 
               height="64" 
               loading="lazy" 
-              class="w-16 h-16 rounded-full object-cover shadow-sm ring-2 ring-primary/40 flex-shrink-0"
+              class="w-20 h-20 rounded-full object-cover shadow-[0_12px_28px_-10px_rgba(160,60,20,0.5)] ring-4 ring-white outline outline-2 outline-primary/40 flex-shrink-0"
             />
             <div>
               <h3 class="text-2xl font-black text-neutral-900">{page.author.name}</h3>
@@ -1052,12 +1085,12 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
             </div>
           </div>
 
-          <div class="flex flex-wrap items-center gap-x-6 gap-y-2 mb-6">
-            <a href={`mailto:${page.author.email}`} class="inline-flex items-center gap-2 text-xs font-bold text-neutral-600 hover:text-primary transition-colors">
+          <div class="flex flex-wrap items-center gap-2.5 mb-6">
+            <a href={`mailto:${page.author.email}`} class="wdk-chip inline-flex items-center gap-2 text-xs font-bold hover:text-primary transition-colors">
               <Mail class="w-4 h-4 text-primary" />
               {page.author.email}
             </a>
-            <a href={`tel:${page.author.phone.replace(/\s/g, '')}`} class="inline-flex items-center gap-2 text-xs font-bold text-neutral-600 hover:text-primary transition-colors">
+            <a href={`tel:${page.author.phone.replace(/\s/g, '')}`} class="wdk-chip inline-flex items-center gap-2 text-xs font-bold hover:text-primary transition-colors">
               <Phone class="w-4 h-4 text-primary" />
               {page.author.phone}
             </a>
@@ -1110,6 +1143,11 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
 <style>
   /* ---- Web Design in Kochi: reference design layer (page-scoped) ---- */
   .wdk-hero { background: radial-gradient(120% 90% at 76% 34%, #3a1608 0%, #1a0b05 45%, #0b0604 100%); }
+  /* The video band is now the first section, so it (not the hero) clears the fixed header
+     (67 / 73 / 77px, as in HomepageVideoHero). Kochi page only; the homepage is untouched. */
+  .wdk-page > .home-video-band { padding-top: calc(67px + clamp(1rem, 3vw, 2.5rem)); }
+  @media (min-width: 640px) { .wdk-page > .home-video-band { padding-top: calc(73px + clamp(1rem, 3vw, 2.5rem)); } }
+  @media (min-width: 1024px) { .wdk-page > .home-video-band { padding-top: calc(77px + clamp(1rem, 3vw, 2.5rem)); } }
   .wdk-hero-glow {
     position: absolute; right: -6%; top: 6%; width: 60%; height: 88%;
     background: radial-gradient(closest-side, rgba(255, 98, 30, 0.42), rgba(255, 98, 30, 0.12) 55%, transparent 100%);
@@ -1158,6 +1196,134 @@ const caseAccents: Record<string, { glow: string; mesh: string; label: string }>
     content: ""; flex: none; width: 1.9rem; height: 2.5px; border-radius: 2px; background: currentColor;
   }
   .wdk-page :global(section h2.font-black) { letter-spacing: -0.032em; line-height: 1.06; }
+
+  /* ---- Flagship design layer: the homepage's card, band and button language ---- */
+  /* warm cream bands (as the homepage city / process sections) */
+  .wdk-band-warm { background: linear-gradient(180deg, #fff4ec 0%, #fffaf6 100%); }
+
+  /* shared card: white-to-cream panel, warm border, orange-tinted depth, gentle lift */
+  .wdk-card {
+    background: linear-gradient(165deg, #ffffff 0%, #fff9f4 100%);
+    border: 1px solid rgba(240, 90, 44, 0.14);
+    border-radius: 1.5rem;
+    box-shadow:
+      0 1px 0 #ffffff inset,
+      0 2px 6px rgba(120, 50, 20, 0.05),
+      0 22px 44px -28px rgba(160, 60, 20, 0.42);
+    transition: transform 0.45s cubic-bezier(.2, .8, .2, 1), border-color 0.3s ease, box-shadow 0.45s ease;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .wdk-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(240, 90, 44, 0.34);
+      box-shadow:
+        0 1px 0 #ffffff inset,
+        0 2px 6px rgba(120, 50, 20, 0.05),
+        0 28px 56px -26px rgba(240, 90, 44, 0.42);
+    }
+  }
+  /* thin orange-to-yellow accent along the top edge */
+  .wdk-accent::before {
+    content: ""; position: absolute; top: 0; left: 1.5rem; right: 1.5rem; height: 3px;
+    border-radius: 0 0 3px 3px;
+    background: linear-gradient(90deg, var(--color-primary), #f9ae42);
+    opacity: 0.55; transition: opacity 0.3s ease;
+  }
+  .wdk-accent:hover::before { opacity: 1; }
+
+  /* icon tiles: cream gradient, fill orange on card hover (homepage advantage icons) */
+  .wdk-icon {
+    background: linear-gradient(135deg, #fff1e8, #ffe0cc);
+    border: 1px solid rgba(240, 90, 44, 0.12);
+    color: var(--color-primary);
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  .group:hover .wdk-icon {
+    background: var(--color-primary); color: #fff; border-color: var(--color-primary);
+    box-shadow: 0 8px 20px -6px rgba(240, 90, 44, 0.55);
+  }
+
+  /* intro statement */
+  .wdk-lead { text-wrap: pretty; }
+
+  /* process: dashed connector runs behind the step cards through the icon centres */
+  @media (min-width: 1024px) {
+    .wdk-process::before { top: calc(1.25rem + 2rem); z-index: -1; }
+  }
+
+  /* pricing table inside the card */
+  .wdk-price thead tr { background: #fff3ea; }
+  .wdk-price tbody tr:nth-child(even) { background: rgba(255, 244, 236, 0.45); }
+
+  /* featured project preview: live-site screenshot framed inside the card */
+  .wdk-shot {
+    border: 1px solid rgba(120, 50, 20, 0.08);
+    box-shadow: 0 12px 26px -18px rgba(160, 60, 20, 0.45);
+    isolation: isolate; /* keeps the hover zoom inside the rounded corners */
+  }
+  /* featured project result box */
+  .wdk-result { background: #fff4ec; border: 1px solid rgba(240, 90, 44, 0.12); }
+
+  /* case studies: dark showcase band (as the homepage projects band) */
+  .wdk-dark { background: linear-gradient(180deg, #1a1411 0%, #120f0e 45%, #0f0d0c 100%); }
+  .wdk-dark-glow {
+    position: absolute; inset: 0; pointer-events: none;
+    background:
+      radial-gradient(40rem 22rem at 10% 0%, rgba(255, 120, 50, 0.20), transparent 70%),
+      radial-gradient(36rem 22rem at 95% 40%, rgba(255, 150, 80, 0.10), transparent 70%);
+  }
+  .wdk-dark .text-primary { color: #ff9a66; }
+  .wdk-case {
+    border-radius: 1.75rem;
+    background: linear-gradient(170deg, #2a201b 0%, #1f1814 100%);
+    border: 1px solid rgba(255, 138, 82, 0.28);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.07) inset, 0 26px 50px -24px rgba(0, 0, 0, 0.85);
+  }
+  .wdk-glass {
+    background: linear-gradient(160deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.025));
+    border: 1px solid rgba(255, 255, 255, 0.10);
+  }
+  .wdk-quote { border-left: 4px solid var(--color-primary); }
+
+  /* blog cards: image inset inside the card, meta as cream chips */
+  .wdk-media { margin: 0.6rem 0.6rem 0; border-radius: 1rem; border: 1px solid rgba(120, 50, 20, 0.06); isolation: isolate; }
+  .wdk-chip {
+    padding: 0.3rem 0.65rem; border-radius: 9999px;
+    background: #fff1e7; border: 1px solid rgba(240, 90, 44, 0.12); color: #7a5a48;
+  }
+  .wdk-chip :global(svg) { color: var(--color-primary); }
+
+  /* FAQ items as soft cards */
+  .wdk-faq {
+    border: 1px solid rgba(240, 90, 44, 0.12);
+    box-shadow: 0 2px 6px rgba(120, 50, 20, 0.04), 0 14px 30px -24px rgba(160, 60, 20, 0.4);
+  }
+  .wdk-faq:hover { border-color: rgba(240, 90, 44, 0.3); }
+
+  /* author card: orange corner glow */
+  .wdk-author::after {
+    content: ""; position: absolute; top: -6rem; right: -6rem; width: 16rem; height: 16rem; pointer-events: none;
+    background: radial-gradient(closest-side, rgba(249, 174, 66, 0.18), transparent);
+  }
+
+  /* hero stats: gradient dividers and larger figures, as the homepage stats strip */
+  .wdk-stats > div + div { border-left: 0; }
+  .wdk-stats > div { position: relative; }
+  .wdk-stats > div + div::before {
+    content: ""; position: absolute; left: 0; top: 20%; bottom: 20%; width: 1.5px;
+    background: linear-gradient(180deg, transparent, rgba(240, 90, 44, 0.4), transparent);
+  }
+  @media (min-width: 1024px) { .wdk-stats span.text-xl { font-size: 1.9rem; } }
+  @media (max-width: 1023px) {
+    .wdk-stats > div:nth-child(3)::before { display: none; }
+    .wdk-stats > div:nth-child(n+3) { border-top: 1px solid #f3ebe5; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .wdk-card, .wdk-icon { transition: none; }
+    .wdk-card:hover { transform: none; }
+  }
+
   
 
   /* FAQ Interactive styling matching homepage */

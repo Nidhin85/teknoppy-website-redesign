@@ -80,7 +80,7 @@ const hasMedia = Astro.slots.has('media');
       </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-4.5 md:gap-5" data-stagger>
+    <div class="city-track grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-4.5 md:gap-5" data-stagger>
       {cities.map((item) => (
         <div class="group relative neu-card rounded-2xl p-4 sm:p-4.5 md:p-5 lg:p-5.5 flex flex-col justify-between h-full">
           <div>
@@ -137,4 +137,34 @@ const hasMedia = Astro.slots.has('media');
   .home-cities :global(.home-video-frame) { box-shadow: 0 1px 0 rgb(255 255 255 / 0.8) inset, 0 30px 60px -34px rgb(120 40 10 / 0.5), 0 0 0 6px rgb(255 255 255 / 0.6); }
   /* homepage: the MapPin inside the eyebrow is replaced by the dash */
   .home-cities [class*="tracking-"] > :global(svg) { display: none; }
+
+  /* Phones: one card at a time in a swipeable, snapping row; the next card peeks in.
+     The row bleeds to the screen edges (cancels the px-6 gutter) and keeps vertical
+     padding so the card shadow and hover lift are not clipped. Tablet/desktop keep the grid. */
+  @media (max-width: 767px) {
+    #kerala-cities .city-track {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      grid-template-columns: none;
+      gap: 0.875rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-padding-inline: 1.5rem;
+      overscroll-behavior-x: contain;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      margin-inline: -1.5rem;
+      padding: 0.5rem 1.5rem 1.25rem;
+    }
+    #kerala-cities .city-track::-webkit-scrollbar { display: none; }
+    #kerala-cities .city-track > * {
+      flex: 0 0 84%;
+      flex-shrink: 0;
+      width: 84%;
+      min-width: 0;
+      height: auto;
+      scroll-snap-align: start;
+    }
+  }
 </style>

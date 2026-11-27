@@ -206,7 +206,7 @@ export default function Testimonials({
           
           {/* Column 1: Testimonial Card */}
           <div 
-            className="lg:col-span-4 relative flex flex-col justify-between bg-white rounded-xl px-6 pb-7 pt-14 sm:p-8 sm:pt-16 border border-neutral-100 shadow-sm lg:min-h-[460px] overflow-visible"
+            className="lg:col-span-4 relative flex flex-col justify-between bg-white rounded-xl px-6 pb-5 pt-5 sm:px-8 sm:pb-7 sm:pt-9 border border-neutral-100 shadow-sm lg:min-h-[460px] overflow-visible"
           >
             {/* Stacked Cards Effect behind the main card */}
             <div className="absolute inset-0 bg-cream rounded-xl -translate-y-4 scale-[0.94] border border-neutral-100 -z-20"></div>
@@ -244,7 +244,7 @@ export default function Testimonials({
             </div>
 
             {/* Top Row: Quote Mark & Controls */}
-            <div className="flex justify-end items-center mb-6">
+            <div className="flex justify-end items-center mb-3 sm:mb-4">
               <div className="flex gap-1.5 bg-neutral-50 border border-neutral-100 p-1 rounded-full">
                 <button 
                   onClick={prevSlide}
@@ -264,8 +264,10 @@ export default function Testimonials({
             </div>
 
             {/* Middle: Testimonial Text with slide transition */}
-            <div className="flex-grow relative mb-6">
-              <p aria-hidden="true" className="invisible select-none text-sm md:text-base leading-relaxed font-medium italic">
+            {/* Phones: the quote sets the height (no empty band around short quotes).
+                md+: the longest quote reserves the height so the side-by-side cards never jump. */}
+            <div className="flex-grow relative mb-4 sm:mb-5">
+              <p aria-hidden="true" className="hidden md:block invisible select-none text-sm md:text-base leading-relaxed font-medium italic">
                 "{longestQuote}"
               </p>
               <AnimatePresence initial={false} custom={direction} mode="wait">
@@ -276,7 +278,7 @@ export default function Testimonials({
                   initial="enter"
                   animate="center"
                   exit="exit"
-                  className="absolute inset-0 w-full h-full flex flex-col justify-center"
+                  className="relative md:absolute md:inset-0 w-full md:h-full flex flex-col md:justify-center"
                 >
                   <p className="text-neutral-700 text-sm md:text-base leading-relaxed font-medium italic">
                     "{current.content}"
@@ -287,7 +289,7 @@ export default function Testimonials({
 
             {/* Bottom: Client Profile — animated on the same key and timing as the
                 quote and the portrait, so the name never runs ahead of the words. */}
-            <div className="pt-5 border-t border-neutral-100 h-[62px]">
+            <div className="pt-4 border-t border-neutral-100 h-[58px]">
               <AnimatePresence initial={false} mode="wait">
                 <motion.div
                   key={`profile-${currentIndex}`}

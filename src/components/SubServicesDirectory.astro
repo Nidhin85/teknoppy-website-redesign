@@ -1,11 +1,14 @@
 ---
 // Child-page directory under a pillar (badge, heading, intro, items[title,desc,href]).
+// Accordion: only the service names show; one description (with its page link) opens at a time.
+// Panels are open in the HTML and collapsed by the script, so without JS every description and
+// link stays visible, and all links are always in the markup for crawlers.
 import { ArrowRight } from "lucide-react";
 const { data } = Astro.props;
 ---
-  <section class="py-24 bg-white border-t border-neutral-100 relative">
+  <section class="py-14 sm:py-16 md:py-20 bg-white border-t border-neutral-100 relative">
     <div class="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
-      <div class="max-w-3xl mb-12">
+      <div class="max-w-3xl mb-8 sm:mb-10">
         <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[12px] font-bold uppercase tracking-wider mb-4 shadow-sm">
           {data.badge}
         </div>
@@ -17,19 +20,121 @@ const { data } = Astro.props;
         </p>
       </div>
 
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {data.items.map((item) => (
-          <a
-            href={item.href}
-            class="group bg-white rounded-2xl border border-neutral-100 p-5 sm:p-6 shadow-[0_12px_30px_-18px_rgba(0,0,0,0.08)] hover:border-primary/30 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,0,0,0.1)] transition-all duration-300 flex items-start justify-between gap-4"
-          >
-            <span class="min-w-0">
-              <span class="block text-[15px] font-black text-neutral-900 group-hover:text-primary transition-colors leading-snug">{item.title}</span>
-              <span class="block text-neutral-600 text-sm font-medium mt-1.5 leading-relaxed">{item.desc}</span>
-            </span>
-            <ArrowRight class="w-4 h-4 text-primary flex-shrink-0 mt-0.5 transition-transform duration-300 group-hover:translate-x-1" />
-          </a>
+      <div class="ssd-accordion max-w-4xl flex flex-col gap-3">
+        {data.items.map((item, i) => (
+          <div class="ssd-item">
+            <h3 class="m-0">
+              <button
+                type="button"
+                id={`ssd-btn-${i}`}
+                class="ssd-trigger w-full flex items-center justify-between gap-4 px-5 sm:px-6 py-4 sm:py-[1.125rem] text-left rounded-2xl cursor-pointer"
+                aria-expanded="true"
+                aria-controls={`ssd-panel-${i}`}
+              >
+                <span class="ssd-title min-w-0 text-[15px] sm:text-base font-black text-neutral-900 leading-snug">{item.title}</span>
+                <span class="ssd-indicator" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div id={`ssd-panel-${i}`} class="ssd-panel" role="region" aria-labelledby={`ssd-btn-${i}`}>
+              <div class="ssd-panel-inner">
+                <div class="px-5 sm:px-6 pb-5 -mt-1">
+                  <p class="text-neutral-600 text-sm font-medium leading-relaxed">{item.desc}</p>
+                  <a href={item.href} class="group inline-flex items-center gap-1.5 mt-3 text-xs sm:text-sm font-bold text-primary hover:text-neutral-900 transition-colors">
+                    Learn more
+                    <ArrowRight class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         ))}
       </div>
     </div>
   </section>
+
+<style>
+  .ssd-item {
+    background: linear-gradient(165deg, #ffffff 0%, #fff9f4 100%);
+    border: 1px solid rgba(240, 90, 44, 0.14);
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px rgba(120, 50, 20, 0.04), 0 14px 30px -24px rgba(160, 60, 20, 0.4);
+    transition: border-color 0.3s ease, box-shadow 0.35s ease;
+  }
+  .ssd-item:hover { border-color: rgba(240, 90, 44, 0.3); }
+  .ssd-item.is-open {
+    border-color: rgba(240, 90, 44, 0.45);
+    box-shadow: 0 0 0 3px rgba(240, 90, 44, 0.08), 0 20px 40px -26px rgba(240, 90, 44, 0.55);
+  }
+  .ssd-item.is-open .ssd-title { color: var(--color-primary); }
+  .ssd-trigger:hover .ssd-title { color: var(--color-primary); }
+  .ssd-trigger:focus-visible { outline: 2px solid var(--color-primary); outline-offset: -2px; }
+
+  /* height animates via grid rows (0fr <-> 1fr) */
+  .ssd-panel {
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s;
+  }
+  .ssd-panel-inner { min-height: 0; overflow: hidden; }
+  .ssd-panel-inner > div { transition: opacity 0.35s ease 0.05s; }
+  .ssd-accordion.is-ready .ssd-item:not(.is-open) .ssd-panel {
+    grid-template-rows: 0fr;
+    visibility: hidden; /* collapsed text and link are skipped by Tab and screen readers */
+  }
+  .ssd-accordion.is-ready .ssd-item:not(.is-open) .ssd-panel-inner > div { opacity: 0; transition-delay: 0s; }
+
+  /* plus / minus indicator */
+  .ssd-indicator {
+    position: relative; flex: none; width: 2rem; height: 2rem; border-radius: 9999px;
+    border: 1.5px solid rgba(240, 90, 44, 0.3); background: #fff;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  .ssd-indicator::before,
+  .ssd-indicator::after {
+    content: ""; position: absolute; left: 50%; top: 50%; width: 0.75rem; height: 2px; border-radius: 2px;
+    background: var(--color-primary); transform: translate(-50%, -50%);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s;
+  }
+  .ssd-indicator::after { transform: translate(-50%, -50%) rotate(90deg); }
+  .ssd-item.is-open .ssd-indicator { background: var(--color-primary); border-color: var(--color-primary); }
+  .ssd-item.is-open .ssd-indicator::before,
+  .ssd-item.is-open .ssd-indicator::after { background: #fff; }
+  .ssd-item.is-open .ssd-indicator::after { transform: translate(-50%, -50%) rotate(0deg); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ssd-panel, .ssd-panel-inner > div, .ssd-indicator::before, .ssd-indicator::after { transition: none; }
+  }
+</style>
+
+<script>
+  // Collapse all, open one at a time, click the same heading to close it.
+  document.querySelectorAll<HTMLElement>('.ssd-accordion').forEach((accordion) => {
+    const items = Array.from(accordion.querySelectorAll<HTMLElement>('.ssd-item'));
+    const triggers = items.map((item) => item.querySelector<HTMLButtonElement>('.ssd-trigger')!);
+    const setOpen = (item: HTMLElement, open: boolean) => {
+      item.classList.toggle('is-open', open);
+      item.querySelector('.ssd-trigger')?.setAttribute('aria-expanded', String(open));
+    };
+    items.forEach((item) => setOpen(item, false));
+    accordion.classList.add('is-ready');
+
+    items.forEach((item, i) => {
+      triggers[i].addEventListener('click', () => {
+        const willOpen = !item.classList.contains('is-open');
+        items.forEach((other) => setOpen(other, other === item && willOpen));
+      });
+    });
+
+    // Arrow keys / Home / End move between headings; Enter and Space toggle natively.
+    accordion.addEventListener('keydown', (e) => {
+      const i = triggers.indexOf(document.activeElement as HTMLButtonElement);
+      if (i === -1) return;
+      let next = -1;
+      if (e.key === 'ArrowDown') next = (i + 1) % triggers.length;
+      else if (e.key === 'ArrowUp') next = (i - 1 + triggers.length) % triggers.length;
+      else if (e.key === 'Home') next = 0;
+      else if (e.key === 'End') next = triggers.length - 1;
+      if (next !== -1) { e.preventDefault(); triggers[next].focus(); }
+    });
+  });
+</script>

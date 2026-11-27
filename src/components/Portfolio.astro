@@ -219,7 +219,7 @@ const projects = [
   .feat-grid {
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
-    gap: 1.25rem;
+    gap: 1.5rem;
   }
   .feat-card.is-top { grid-column: span 2; }
   .feat-card.is-bottom { grid-column: span 3; }
@@ -228,15 +228,24 @@ const projects = [
     flex-direction: column;
     border-radius: 1.6rem;
     overflow: hidden;
-    background: linear-gradient(170deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.025));
-    border: 1px solid rgba(255, 255, 255, 0.10);
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.07) inset, 0 30px 60px -36px rgba(0, 0, 0, 0.9);
+    /* Solid warm-charcoal card, clearly lighter than the #120f0e band, with an orange-brown edge */
+    background: linear-gradient(170deg, #36291f 0%, #291f19 100%);
+    border: 1px solid rgba(255, 138, 82, 0.40);
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.08) inset,
+      0 0 0 1px rgba(0, 0, 0, 0.45),
+      0 22px 44px -18px rgba(0, 0, 0, 0.85),
+      0 12px 36px -22px rgba(240, 90, 44, 0.30);
     transition: transform 0.45s cubic-bezier(.2, .8, .2, 1), border-color 0.35s, box-shadow 0.45s;
   }
   .feat-card:hover {
     transform: translateY(-6px);
-    border-color: rgba(255, 138, 82, 0.45);
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.09) inset, 0 36px 70px -34px rgba(240, 90, 44, 0.45);
+    border-color: rgba(255, 138, 82, 0.7);
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.1) inset,
+      0 0 0 1px rgba(0, 0, 0, 0.45),
+      0 30px 60px -22px rgba(0, 0, 0, 0.9),
+      0 18px 50px -24px rgba(240, 90, 44, 0.5);
   }
   .feat-media {
     position: relative;
@@ -244,6 +253,8 @@ const projects = [
     overflow: hidden;
     margin: 0.55rem 0.55rem 0;
     border-radius: 1.15rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    isolation: isolate; /* keeps the zooming screenshot clipped to the rounded corners */
   }
   .feat-card.is-bottom .feat-media { aspect-ratio: 16 / 8.2; }
   .feat-shot {
@@ -346,7 +357,7 @@ const projects = [
     .feat-card:last-child .feat-media { aspect-ratio: 16 / 8; }
   }
   @media (max-width: 639px) {
-    .feat-grid { grid-template-columns: 1fr; gap: 1rem; }
+    .feat-grid { grid-template-columns: 1fr; gap: 1.5rem; }
     .feat-card:last-child .feat-media { aspect-ratio: 16 / 10; }
     .feat-mountains { height: 260px; }
   }

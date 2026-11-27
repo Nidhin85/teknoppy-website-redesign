@@ -44,60 +44,59 @@ const {
       muted
       loop
       playsinline
-      preload="none"
+      webkit-playsinline
+      disablepictureinpicture
+      preload="auto"
       class="hero-video-element relative z-10 w-full h-full object-cover object-center pointer-events-none select-none block"
       aria-label={ariaLabel}
-      data-src="/video/Teknoppy-Web-Banner.mp4"
     >
-      <source data-src="/video/Teknoppy-Web-Banner.mp4" type="video/mp4" />
+      <!-- src in the markup so the download starts while the HTML is parsed, not after the stylesheets
+           (inline scripts wait for CSS). The MP4 is "faststart" (index at the front): one request to play. -->
+      <source src="/video/Teknoppy-Web-Banner.mp4" type="video/mp4" />
     </video>
   </div>
 </section>
 
 <script is:inline>
   (function () {
-    // 1. Attach the video source and autoplay it (muted + playsinline, so mobile browsers allow it)
+    // 1. The video is already downloading (src is in the markup). Keep the poster only for
+    //    reduced-motion or data-saver visitors (stop the download), otherwise make sure it plays.
     function initHeroVideo() {
-      // Respect prefers-reduced-motion
-      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        return;
-      }
-      // If user has data saver enabled, keep the lightweight crisp poster
-      if (navigator.connection && (navigator.connection.saveData || /2g/.test(navigator.connection.effectiveType || ''))) {
-        return;
-      }
-
       var video = document.getElementById("hero-bg-video");
       if (!video) return;
 
-      var source = video.querySelector("source");
-      var videoSrc = (source && source.getAttribute("data-src")) || video.getAttribute("data-src");
-      if (!videoSrc) return;
-
-      if (source && !source.src) {
-        source.src = videoSrc;
-      } else if (!video.src) {
-        video.src = videoSrc;
+      var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var saveData = navigator.connection && (navigator.connection.saveData || /2g/.test(navigator.connection.effectiveType || ''));
+      if (reduceMotion || saveData) {
+        // Remove the source and reset, which aborts the download; the poster stays visible.
+        video.removeAttribute("autoplay");
+        video.pause();
+        video.querySelectorAll("source").forEach(function (s) { s.remove(); });
+        video.removeAttribute("src");
+        video.load();
+        video.style.display = "none";
+        return;
       }
 
       video.muted = true;
       video.defaultMuted = true;
-      video.load();
+      video.setAttribute("muted", "");
+      video.playsInline = true;
 
-      var playPromise = video.play();
-      if (playPromise !== undefined) {
-        playPromise.catch(function () {
-          var resume = function () {
-            video.play();
-            window.removeEventListener("touchstart", resume);
-            window.removeEventListener("scroll", resume);
-            window.removeEventListener("click", resume);
-          };
-          window.addEventListener("touchstart", resume, { passive: true });
-          window.addEventListener("scroll", resume, { passive: true });
-          window.addEventListener("click", resume, { passive: true });
-        });
-      }
+      // Autoplay without any user gesture: try now, and again as soon as the browser has data
+      // (some mobile browsers reject play() until the first frame is decoded) and when the tab
+      // becomes visible again. No touch/scroll triggers. No video.load(): that would restart the download.
+      var tryPlay = function () {
+        if (!video.paused) return;
+        var p = video.play();
+        if (p && p.catch) p.catch(function () { /* blocked (e.g. iOS Low Power Mode): poster stays */ });
+      };
+      tryPlay();
+      video.addEventListener("loadeddata", tryPlay, { once: true });
+      video.addEventListener("canplay", tryPlay, { once: true });
+      document.addEventListener("visibilitychange", function () {
+        if (document.visibilityState === "visible") tryPlay();
+      });
     }
 
     // Start immediately on desktop and mobile; the poster stays visible until the first frame plays.
@@ -194,6 +193,15 @@ const {
   @media (min-width: 1024px) {
     .homepage-video-hero {
       padding-top: 77px;
+    }
+  }
+
+  /* Phones: size the frame to the landscape video (16:9) so the whole picture shows,
+     no crop and no letterbox. Tablet/desktop heights (md: and up) are untouched. */
+  @media (max-width: 767px) {
+    .video-container {
+      height: auto;
+      aspect-ratio: 16 / 9;
     }
   }
 
