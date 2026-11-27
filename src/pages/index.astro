@@ -110,7 +110,7 @@ const testimonials = (await getCollection('testimonials'))
     <WhyChooseUs />
     <KeralaIndustries />
     <Portfolio />
-    <Testimonials testimonials={testimonials} videos={videoTestimonials.videos} client:visible />
+    <Testimonials testimonials={testimonials} videos={videoTestimonials.videos} hideCardOnMobile client:visible />
     <GoogleReviews />
     <Blog />
     <FAQ />
